@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/fonts/fonticon.scss';
+import './assets/fonts/lato/fontlato.scss';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
