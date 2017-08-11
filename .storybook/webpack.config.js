@@ -39,7 +39,60 @@ module.exports = {
           'sass-loader'
         ],
         include: path.resolve(__dirname, '../')
-      }
+      },
+      {
+        test: /\.woff(\?.*)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            prefix: 'fonts',
+            limit: 10000,
+            mimetype: 'application/font-woff'
+          }
+        }
+      },
+      {
+        test: /\.woff2(\?.*)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            prefix: 'fonts',
+            limit: 10000,
+            mimetype: 'application/font-woff2'
+          }
+        }
+      },
+      {
+        test: /\.ttf(\?.*)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            prefix: 'fonts',
+            limit: 10000,
+            mimetype: 'application/octet-stream'
+          }
+        }
+      },
+      {
+        test: /\.svg(\?.*)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            prefix: 'fonts',
+            limit: 10000,
+            mimetype: 'image/svg+xml'
+          }
+        }
+      },
+      {
+        test: /\.eot(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            prefix: 'fonts'
+          }
+        }
+      },
     ]
   }
 };
