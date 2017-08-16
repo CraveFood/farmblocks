@@ -4,9 +4,8 @@
   "private": false,
   "author": "Crave Food Services",
   "email": "devops@cravefood.services",
-  "homepage": "https://sourcewhatsgood.com/",
   "main": "build/bundle.min.js",
-  "files": ["build/styles.css"],
+  "files": ["build/"],
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
@@ -45,8 +44,7 @@
     "url-loader": "^0.5.9",
     "webpack": "3.5.1",
     "webpack-dev-server": "2.7.1",
-    "webpack-manifest-plugin": "1.2.1",
-    "whatwg-fetch": "2.0.3"
+    "webpack-manifest-plugin": "1.2.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.0",
@@ -60,6 +58,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
+    "coverage": "node scripts/test.js --env=jsdom --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
