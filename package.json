@@ -5,7 +5,9 @@
   "author": "Crave Food Services",
   "email": "devops@cravefood.services",
   "main": "build/bundle.min.js",
-  "files": ["build/"],
+  "files": [
+    "build/"
+  ],
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
@@ -40,7 +42,6 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
     "style-loader": "0.18.2",
-    "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "^0.5.9",
     "webpack": "3.5.1",
     "webpack-dev-server": "2.7.1",
@@ -48,8 +49,10 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.0",
+    "@storybook/addon-info": "^3.2.4",
     "@storybook/addon-storyshots": "^3.2.3",
     "@storybook/react": "^3.2.3",
+    "classnames": "^2.2.5",
     "node-sass": "^4.5.3",
     "react-test-renderer": "^15.6.1",
     "sass-loader": "^6.0.6"
