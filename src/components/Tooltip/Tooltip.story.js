@@ -5,8 +5,13 @@ import {withInfo} from '@storybook/addon-info';
 import Tooltip from './Tooltip';
 
 storiesOf('Tooltip', module)
-.add('Default', withInfo()(() => (
-    <div style={{position: 'relative', width: '40px'}}>
-        <Tooltip text='Hey yo'/>
+  .add('isVisible true', withInfo()(() => (
+    <div style={{position: 'relative', width: '65px'}}>
+      <Tooltip isVisible text='Hey yo'/>
     </div>
-)));
+  )))
+  .add('isVisible false', withInfo('for snapshot testing (should be invisible)')(() => (
+    <div style={{position: 'relative', width: '65px'}}>
+      <Tooltip isVisible={false} text='Hey yo'/>
+    </div>
+  )));
