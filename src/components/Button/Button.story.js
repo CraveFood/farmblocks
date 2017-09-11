@@ -26,6 +26,11 @@ storiesOf('Button', module)
     .add('Neutral', () => (
         <Button type='neutral' onClick={action('buttonClicked')} text='The Ocean'/>
     ))
+    .add('Neutral Off', () => (
+        <div style={{backgroundColor: 'gray', padding: '10px', display: 'inline-block'}}>
+            <Button type='neutral-off' onClick={action('buttonClicked')} text='Neutral Off Button'/>
+        </div>
+    ))
     .add('Large button', () => (
         <Button size='large' onClick={action('buttonClicked')} text='Give me something'/>
     ))
