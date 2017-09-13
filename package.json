@@ -62,7 +62,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "coverage": "node scripts/test.js --env=jsdom --coverage && cat ./coverage/lcov.info | coveralls",
+    "coverage": "node scripts/test.js --env=jsdom --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
