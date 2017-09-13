@@ -53,6 +53,7 @@
     "@storybook/addon-storyshots": "^3.2.3",
     "@storybook/react": "^3.2.3",
     "classnames": "^2.2.5",
+    "coveralls": "^2.13.1",
     "node-sass": "^4.5.3",
     "react-test-renderer": "^15.6.1",
     "sass-loader": "^6.0.6"
@@ -61,7 +62,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "coverage": "node scripts/test.js --env=jsdom --coverage",
+    "coverage": "node scripts/test.js --env=jsdom --coverage && cat ./coverage/lcov.info | coveralls",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
