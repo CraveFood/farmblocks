@@ -25,24 +25,25 @@ describe('Button', function() {
     test('should show and hide the tooltip when mouse enters and leave the disabled button', function() {
       const wrapper = shallow(<Button disabled/>);
 
-      const buttonWrap = wrapper.find('button');
-      buttonWrap.simulate('mouseOver');
+      const hitBoxWrap = wrapper.children().at(0);
+      hitBoxWrap.simulate('mouseOver');
 
       expect(wrapper.state('showTooltip')).toBeTruthy();
-      buttonWrap.simulate('mouseLeave');
+      hitBoxWrap.simulate('mouseLeave');
       expect(wrapper.state('showTooltip')).toBeFalsy();
     });
 
     test('should do nothing if button is not disabled', function() {
       const wrapper = shallow(<Button/>);
 
-      const buttonWrap = wrapper.find('button');
+      const instance = wrapper.instance();
+      const setStateMock = jest.fn();
+      instance.setState = setStateMock;
 
-      buttonWrap.simulate('mouseOver');
-      expect(wrapper.state('showTooltip')).toBeFalsy();
+      instance.mouseOver();
+      instance.mouseLeaves();
 
-      buttonWrap.simulate('mouseLeave');
-      expect(wrapper.state('showTooltip')).toBeFalsy();
+      expect(setStateMock.mock.calls).toHaveLength(0);
     });
   });
 });

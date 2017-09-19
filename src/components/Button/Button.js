@@ -4,7 +4,6 @@ import classnames from 'classnames';
 
 import {SMALL, LARGE} from '../../constants/SizeTypes';
 import {PRIMARY, SECONDARY, NEGATIVE, NEUTRAL, NEUTRAL_OFF, CLOSED, REQUEST} from '../../constants/ButtonTypes';
-
 import Tooltip from '../Tooltip';
 
 import styles from './Button.scss';
@@ -26,8 +25,9 @@ class Button extends Component {
     const buttonStyle = this.getButtonStyle(this.props);
 
     const icon = this.props.loading ? 'wg-loading' : this.props.icon;
+    const iconWrapperClassname = this.props.loading ? styles['animate-icon'] : '';
     const disabled = this.props.disabled || this.props.loading;
-    const showingIcon = this.props.icon || this.props.loading;
+    const showIcon = this.props.icon || this.props.loading;
     const marginOffset = !!this.props.text ? 10 : 0;
 
     return (
@@ -41,12 +41,10 @@ class Button extends Component {
           <button className={buttonStyle}
                   onClick={this.props.onClick}
                   disabled={disabled}
-                  tabIndex={this.props.tabIndex}
-                  onMouseOver={this.mouseOver}
-                  onMouseLeave={this.mouseLeaves}>
+                  tabIndex={this.props.tabIndex}>
 
-            {showingIcon &&
-            <div style={{marginRight: marginOffset}}>
+            {showIcon &&
+            <div className={iconWrapperClassname} style={{marginRight: marginOffset}}>
               <i className={icon}/>
             </div>
             }
