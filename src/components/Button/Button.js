@@ -92,7 +92,7 @@ class Button extends Component {
 
 Button.defaultProps = {
   size: SMALL,
-  type: 'primary'
+  type: PRIMARY
 };
 
 Button.propTypes = {
