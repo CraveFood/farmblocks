@@ -43,13 +43,14 @@ class Button extends Component {
                   disabled={disabled}
                   tabIndex={this.props.tabIndex}>
 
-            {showIcon &&
-            <div className={iconWrapperClassname} style={{marginRight: marginOffset}}>
-              <i className={icon}/>
-            </div>
-            }
-            {this.props.text || this.props.children}
-          </button>
+          {showIcon &&
+          <div className={iconWrapperClassname}style={{marginRight: marginOffset}}>
+            <i className={icon}/>
+          </div>
+
+
+}          {this.props.text || this.props.children}
+        </button>
 
           <Tooltip text='This action is disabled.'
                    isVisible={this.state.showTooltip}/>

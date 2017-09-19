@@ -1,17 +1,16 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
-import {withInfo} from '@storybook/addon-info';
 import {action} from '@storybook/addon-actions';
 
 import Button from './index';
 
 storiesOf('Button', module)
-  .add('Primary', withInfo('Default usage')(() => (
+  .add('Primary', () => (
     <Button onClick={action('buttonClicked')} text='Primary Button'/>
-  )))
-  .add('Disabled', withInfo()(() => (
+  ))
+  .add('Disabled', () => (
     <Button disabled onClick={action('buttonClicked')} text='Disabled Button'/>
-  )))
+  ))
   .add('Primary with Icon', () => (
     <Button onClick={action('buttonClicked')} icon='wg-meat' text='Primary with Icon'/>
   ))
@@ -32,11 +31,11 @@ storiesOf('Button', module)
       <Button type='neutral-off' onClick={action('buttonClicked')} text='Neutral Off Button'/>
     </div>
   ))
-  .add('Loading', withInfo('Default usage')(() => (
-    <Button onClick={action('buttonClicked')} text='Loading Icon' loading/>
-  )))
   .add('Large button', () => (
     <Button size='large' onClick={action('buttonClicked')} text='Large Button'/>
+  ))
+  .add('Loading', () => (
+    <Button onClick={action('buttonClicked')} text='Loading Icon' loading/>
   ))
   .add('Icon only', () => (
     <Button type='neutral' onClick={action('buttonClicked')} icon='wg-edit'/>
