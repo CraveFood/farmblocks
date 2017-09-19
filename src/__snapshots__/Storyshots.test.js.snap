@@ -11,8 +11,6 @@ exports[`Storyshots Button Closed 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       Closed Button
@@ -112,8 +110,6 @@ exports[`Storyshots Button Disabled 1`] = `
             className="small undefined function small() { [native code] }"
             disabled={true}
             onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
             tabIndex={undefined}
           >
             Disabled Button
@@ -535,11 +531,10 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={true}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       <div
+        className=""
         style={
           Object {
             "marginRight": 0,
@@ -575,11 +570,10 @@ exports[`Storyshots Button Icon only (large) 1`] = `
       className="large undefined"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       <div
+        className=""
         style={
           Object {
             "marginRight": 0,
@@ -615,11 +609,10 @@ exports[`Storyshots Button Icon only 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       <div
+        className=""
         style={
           Object {
             "marginRight": 0,
@@ -655,8 +648,6 @@ exports[`Storyshots Button Large button 1`] = `
       className="large undefined"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       Large Button
@@ -674,6 +665,522 @@ exports[`Storyshots Button Large button 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button Loading 1`] = `
+<div>
+  <div
+    style={undefined}
+  >
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+          "color": "#444",
+          "fontFamily": "
+            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
+            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
+          ",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginTop": "50px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "borderBottom": "1px solid #eee",
+            "marginBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "35px",
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Button
+        </h1>
+        <h2
+          style={
+            Object {
+              "fontSize": "22px",
+              "fontWeight": 400,
+              "margin": "0 0 10px 0",
+              "padding": 0,
+            }
+          }
+        >
+          Loading
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div
+    style={Object {}}
+  >
+    <div
+      style={Object {}}
+    >
+      <div
+        className={undefined}
+      >
+        <div
+          className={undefined}
+        >
+          <button
+            className="small undefined function small() { [native code] }"
+            disabled={true}
+            onClick={[Function]}
+            tabIndex={undefined}
+          >
+            <div
+              className={undefined}
+              style={
+                Object {
+                  "marginRight": 10,
+                }
+              }
+            >
+              <i
+                className="wg-loading"
+              />
+            </div>
+            Loading Icon
+          </button>
+          <div
+            className={undefined}
+          >
+            <div
+              className="undefined"
+            >
+              This action is disabled.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={undefined}
+  >
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+          "color": "#444",
+          "fontFamily": "
+            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
+            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
+          ",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginTop": "50px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <p
+          style={
+            Object {
+              "WebkitFontSmoothing": "antialiased",
+              "color": "#444",
+              "fontFamily": "
+                -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
+                \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
+              ",
+              "fontSize": "15px",
+            }
+          }
+        >
+          Default usage
+        </p>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Story Source
+        </h1>
+        <pre
+          style={
+            Object {
+              "backgroundColor": "#fafafa",
+              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+              "fontSize": ".88em",
+              "lineHeight": 1.5,
+              "overflowX": "scroll",
+              "padding": ".5rem",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "paddingLeft": 18,
+                "paddingRight": 3,
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#777",
+                }
+              }
+            >
+              &lt;
+              Button
+            </span>
+            <span>
+              <span>
+                <span>
+                  <br />
+                    
+                </span>
+                <span
+                  style={Object {}}
+                >
+                  onClick
+                </span>
+                <span>
+                  =
+                  <span
+                    style={Object {}}
+                  >
+                    <span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#170",
+                          }
+                        }
+                      >
+                        buttonClicked()
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+              <span>
+                <span>
+                  <br />
+                    
+                </span>
+                <span
+                  style={Object {}}
+                >
+                  text
+                </span>
+                <span>
+                  =
+                  <span
+                    style={Object {}}
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      Loading Icon
+                      "
+                    </span>
+                  </span>
+                </span>
+              </span>
+              <span>
+                <span>
+                  <br />
+                    
+                </span>
+                <span
+                  style={Object {}}
+                >
+                  loading
+                </span>
+                <br />
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#777",
+                }
+              }
+            >
+              /&gt;
+            </span>
+          </div>
+        </pre>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Prop Types
+        </h1>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            Button
+            " Component
+          </h2>
+          <table
+            style={
+              Object {
+                "borderCollapse": "separate",
+                "borderSpacing": "10px 5px",
+                "marginLeft": -10,
+              }
+            }
+          >
+            <thead>
+              <tr>
+                <th>
+                  property
+                </th>
+                <th>
+                  propType
+                </th>
+                <th>
+                  required
+                </th>
+                <th>
+                  default
+                </th>
+                <th>
+                  description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  activated
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  disabled
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  fluid
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  icon
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  loading
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onClick
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  size
+                </td>
+                <td>
+                  other
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    small
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  tabIndex
+                </td>
+                <td>
+                  number
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  text
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  type
+                </td>
+                <td>
+                  other
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    primary
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button Neutral 1`] = `
 <div
   className={undefined}
@@ -685,8 +1192,6 @@ exports[`Storyshots Button Neutral 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       Neutral Button
@@ -724,8 +1229,6 @@ exports[`Storyshots Button Neutral Off 1`] = `
         className="small undefined function small() { [native code] }"
         disabled={undefined}
         onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
         tabIndex={undefined}
       >
         Neutral Off Button
@@ -821,8 +1324,6 @@ exports[`Storyshots Button Primary 1`] = `
             className="small undefined function small() { [native code] }"
             disabled={undefined}
             onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
             tabIndex={undefined}
           >
             Primary Button
@@ -1250,11 +1751,10 @@ exports[`Storyshots Button Primary with Icon 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       <div
+        className=""
         style={
           Object {
             "marginRight": 10,
@@ -1291,8 +1791,6 @@ exports[`Storyshots Button Request 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       Request Button
@@ -1321,8 +1819,6 @@ exports[`Storyshots Button Secondary 1`] = `
       className="small undefined function small() { [native code] }"
       disabled={undefined}
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
       tabIndex={undefined}
     >
       Secondary Button

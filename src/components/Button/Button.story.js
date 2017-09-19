@@ -32,6 +32,9 @@ storiesOf('Button', module)
       <Button type='neutral-off' onClick={action('buttonClicked')} text='Neutral Off Button'/>
     </div>
   ))
+  .add('Loading', withInfo('Default usage')(() => (
+    <Button onClick={action('buttonClicked')} text='Loading Icon' loading/>
+  )))
   .add('Large button', () => (
     <Button size='large' onClick={action('buttonClicked')} text='Large Button'/>
   ))
