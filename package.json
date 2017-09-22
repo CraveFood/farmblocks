@@ -4,9 +4,15 @@
   "description": "A collection of user interface blocks",
   "main": "index.js",
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/CraveFood/farmblocks.git"
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
   },
   "author": "Crave Food Services and AUTHORS",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+      "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.2.0"
+  }
 }
