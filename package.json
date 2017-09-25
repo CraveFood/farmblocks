@@ -17,15 +17,15 @@
   "workspaces": ["packages/*"],
   "devDependencies": {
     "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.0.0",
+    "cz-lerna-changelog": "^1.2.1",
     "husky": "^0.14.3",
     "lerna": "^2.2.0",
-    "lint-staged": "^4.2.2",
+    "lint-staged": "^4.2.3",
     "prettier": "^1.7.0"
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-lerna-changelog"
     }
   },
   "lint-staged": {
