@@ -34,3 +34,12 @@ npm script instead:
 yarn commit
 ```
 
+### (To be removed) Manually publish the package
+
+```
+yarn prerelease -- "branch-name"
+yarn postrelease -- "branch-name"
+lerna run build
+lerna run release
+```
+

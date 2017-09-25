@@ -7,6 +7,8 @@
     "prepush": "yarn typecheck",
     "commit": "git-cz",
     "typecheck": "flow",
+    "prerelease": "lerna-semantic-release pre --branch ",
+    "postrelease": "lerna-semantic-release post --branch ",
     "test": "jest"
   },
   "private": true,
@@ -32,6 +34,7 @@
     "husky": "^0.14.3",
     "jest": "^21.1.0",
     "lerna": "^2.2.0",
+    "lerna-semantic-release": "^9.1.0",
     "lint-staged": "^4.2.3",
     "prettier": "^1.7.0",
     "react-test-renderer": "^16.0.0-rc.3",
