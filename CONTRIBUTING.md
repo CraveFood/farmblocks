@@ -8,6 +8,22 @@ yarn install
 
 ### Submiting a patch
 
+#### Run tests
+
+Before commiting your patch, please check the new code against existing tests.
+
+** Inside a package subfolder **
+
+```
+yarn test
+```
+
+** On the root dir **
+
+```
+lerna run test
+```
+
 #### Commit messages
 
 Farmblocks uses commitizen to help with the formatting of commit messages,
