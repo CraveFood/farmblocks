@@ -40,6 +40,6 @@
     "presets": ["react"]
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "*.{js,json,css}": ["flow", "prettier --parser flow --write", "git add"]
   }
 }
