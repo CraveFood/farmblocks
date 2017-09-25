@@ -4,7 +4,9 @@
   "description": "A collection of user interface blocks",
   "scripts": {
     "precommit": "lint-staged",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "typecheck": "flow",
+    "test": "jest"
   },
   "private": true,
   "main": "index.js",
@@ -16,17 +18,26 @@
   "license": "MIT",
   "workspaces": ["packages/*"],
   "devDependencies": {
+    "babel-jest": "^21.0.2",
+    "babel-preset-react": "^6.24.1",
     "commitizen": "^2.9.6",
     "cz-lerna-changelog": "^1.2.1",
+    "flow-bin": "^0.55.0",
+    "flow-remove-types": "^1.2.1",
     "husky": "^0.14.3",
+    "jest": "^21.1.0",
     "lerna": "^2.2.0",
     "lint-staged": "^4.2.3",
-    "prettier": "^1.7.0"
+    "prettier": "^1.7.0",
+    "react-test-renderer": "^16.0.0-rc.3"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
     }
+  },
+  "babel": {
+    "presets": ["react"]
   },
   "lint-staged": {
     "*.{js,json,css}": ["prettier --write", "git add"]
