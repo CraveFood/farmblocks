@@ -4,6 +4,7 @@
   "description": "A collection of user interface blocks",
   "scripts": {
     "precommit": "lint-staged",
+    "prepush": "yarn typecheck",
     "commit": "git-cz",
     "typecheck": "flow",
     "test": "jest"
@@ -40,6 +41,6 @@
     "presets": ["react"]
   },
   "lint-staged": {
-    "*.{js,json,css}": ["flow", "prettier --parser flow --write", "git add"]
+    "*.{js,json,css}": ["prettier --parser flow --write", "git add"]
   }
 }
