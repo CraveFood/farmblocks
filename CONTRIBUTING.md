@@ -37,9 +37,8 @@ yarn commit
 ### (To be removed) Manually publish the package
 
 ```
-yarn prerelease -- "branch-name"
-yarn postrelease -- "branch-name"
-lerna run build
-lerna run release
+lerna publish --skip-git --skip-npm --conventional-commits
+lerna run build --scope my-component
+lerna run release --scope my-component
 ```
 
