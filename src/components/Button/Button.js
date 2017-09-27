@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import {SMALL, LARGE} from '../../constants/SizeTypes';
-import {PRIMARY, SECONDARY, NEGATIVE, NEUTRAL, CLOSED, REQUEST} from '../../constants/ButtonTypes';
-
+import {PRIMARY, SECONDARY, NEGATIVE, NEUTRAL, NEUTRAL_OFF, CLOSED, REQUEST} from '../../constants/ButtonTypes';
 import Tooltip from '../Tooltip';
 
 import styles from './Button.scss';
@@ -26,29 +25,36 @@ class Button extends Component {
     const buttonStyle = this.getButtonStyle(this.props);
 
     const icon = this.props.loading ? 'wg-loading' : this.props.icon;
+    const iconWrapperClassname = this.props.loading ? styles['animate-icon'] : '';
     const disabled = this.props.disabled || this.props.loading;
-    const showingIcon = this.props.icon || this.props.loading;
+    const showIcon = this.props.icon || this.props.loading;
     const marginOffset = !!this.props.text ? 10 : 0;
 
     return (
-      <div className={styles.container}
-           onMouseLeave={this.mouseLeaves}>
-        <button className={buttonStyle}
-                onClick={this.props.onClick}
-                disabled={disabled}
-                tabIndex={this.props.tabIndex}>
+      <div className={styles['outer-container']}>
+        {this.props.disabled &&
+        <div className={styles['hit-box-container']}
+             onMouseOver={this.mouseOver}
+             onMouseLeave={this.mouseLeaves}/>
+        }
+        <div className={styles.container}>
+          <button className={buttonStyle}
+                  onClick={this.props.onClick}
+                  disabled={disabled}
+                  tabIndex={this.props.tabIndex}>
 
-          {showingIcon &&
-          <div style={{marginRight: marginOffset}}>
+          {showIcon &&
+          <div className={iconWrapperClassname}style={{marginRight: marginOffset}}>
             <i className={icon}/>
           </div>
-          }
 
-          {this.props.text || this.props.children}
+
+}          {this.props.text || this.props.children}
         </button>
 
-        <Tooltip text='This action is disabled.'
-                 isVisible={this.state.showTooltip}/>
+          <Tooltip text='This action is disabled.'
+                   isVisible={this.state.showTooltip}/>
+        </div>
       </div>
     );
   }
@@ -62,7 +68,6 @@ class Button extends Component {
   }
 
   mouseLeaves() {
-    console.log('orra');
     if (this.props.disabled) {
       this.setState({
         showTooltip: false
@@ -87,7 +92,7 @@ class Button extends Component {
 
 Button.defaultProps = {
   size: SMALL,
-  type: 'primary'
+  type: PRIMARY
 };
 
 Button.propTypes = {
@@ -96,7 +101,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   text: PropTypes.string,
   size: PropTypes.oneOf([SMALL, LARGE]),
-  type: PropTypes.oneOf([PRIMARY, SECONDARY, NEGATIVE, NEUTRAL, CLOSED, REQUEST]),
+  type: PropTypes.oneOf([PRIMARY, SECONDARY, NEGATIVE, NEUTRAL, NEUTRAL_OFF, CLOSED, REQUEST]),
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,

@@ -1,10 +1,23 @@
+.outer-container {
+  position: relative;
+  display: inline-block;
+}
+
 .container {
   display: inline-block;
   position: relative;
 }
 
+.hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
 .button {
   display: flex;
+  align-items: flex-end;
 
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
@@ -16,6 +29,8 @@
   text-overflow: ellipsis;
   line-height: 13px;
   outline: 0;
+
+  cursor: pointer;
 
   &:disabled {
     background-color: rgba(0, 0, 0, 0.16);
@@ -64,6 +79,20 @@
   }
 }
 
+.animate-icon {
+  animation: spin 1.1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .only-icon {
   font-size: 16px;
 }
@@ -81,13 +110,15 @@
   padding: 16px 16px;
 }
 
-/* Mixins */
+.neutral-off {
+  color: white;
+}
 
 @mixin size($size, $color, $hoverColor) {
   .#{$size} {
     transition: background .3s ease;
 
-    border: solid 1px $color;
+    border: solid 1px rgba(0, 0, 0, 0.16);
 
     background-color: $color;
 
@@ -107,6 +138,7 @@
 }
 
 @include size(primary, #FF4411, #DD3311);
+@include size(neutral-off, transparent, #2980B9);
 @include size(secondary, #3498db, #2980B9);
 @include size(request, #2ECC71, #27AE60);
 @include size(closed, #9b59b6, #8e44ad);
