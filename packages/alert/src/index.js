@@ -2,6 +2,7 @@
 import type { StatelessFunctionalComponent, Node } from "react";
 import type { AlertType } from "./AlertTypes";
 import React from "react";
+import styled from "styled-components";
 import AlertTypes from "./AlertTypes";
 
 type AlertComponent = StatelessFunctionalComponent<{
