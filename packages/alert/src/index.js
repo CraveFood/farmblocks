@@ -1,63 +1,29 @@
 //@flow
-import type { StatelessFunctionalComponent } from "react";
-import type { AlertType } from "./AlertTypes";
 import React from "react";
+import type { StatelessFunctionalComponent } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import AlertTypes from "./AlertTypes";
 
-const DismissButton = ({ onClick, className }) => {
-  const buttonAttributes = onClick ? { onClick, className } : { className };
-  return <button {...buttonAttributes} />;
-};
+import type { AlertType } from "./constants/alertTypes";
+import Container from "./styledComponents/Container";
+import DismissButton from "./styledComponents/DismissButton";
+import AlertTypes from "./constants/alertTypes";
 
-const ThemedDismissButton = styled(DismissButton)`
-  position: absolute;
-  top: 50%;
-  margin-top: -16px;
-  right: 24px;
-  width: 32px;
-  height: 32px;
-  border-radius: 2.7px;
-  background-color: rgba(0, 0, 0, 0.16);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
-  border: solid 0.7px rgba(0, 0, 0, 0.16);
-`;
+const Alert: StatelessFunctionalComponent = (props: AlertProps) => (
+  <Container type={props.type}>
+    <p>{props.text}</p>
 
-const bgColors = {
-  [AlertTypes.NEWS]: "#3498db",
-  [AlertTypes.POSITIVE]: "#2ecc71",
-  [AlertTypes.NEGATIVE]: "#dd3311",
-  [AlertTypes.ATTENTION]: "#f1c618"
-};
+    {props.dismissable && (
+      <DismissButton onClick={props.onDismiss}>X</DismissButton>
+    )}
+  </Container>
+);
 
-const Alert: StatelessFunctionalComponent = (props: AlertProps) => {
-  const { dismissable, onDismiss, ...other } = props;
-  const buttonAttributes = onDismiss ? { onClick: onDismiss } : {};
-  const dismissButton = dismissable ? (
-    <ThemedDismissButton {...buttonAttributes} />
-  ) : null;
-  // return <ThemedBaseAlert {...props} />;
-  const ThemedAlert = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: ${props => bgColors[props.type]};
-    box-shadow: 0 2px 2px 0 rgba(46, 204, 113, 0.16);
-    border: solid 1px rgba(0, 0, 0, 0.16);
-    min-height: ${2 * 20 + 32}px;
-
-    > p {
-      color: white;
-    }
-  `;
-  return (
-    <ThemedAlert type={props.type}>
-      <p>{props.text}</p>
-      {dismissButton}
-    </ThemedAlert>
-  );
+type AlertProps = {
+  text: string,
+  type?: AlertType,
+  dismissable?: boolean,
+  onDismiss?: Function
 };
 
 Alert.propTypes = {
@@ -66,6 +32,7 @@ Alert.propTypes = {
   dismissable: PropTypes.bool,
   onDismiss: PropTypes.func
 };
+
 Alert.defaultProps = {
   type: AlertTypes.NEWS,
   dismissable: true,

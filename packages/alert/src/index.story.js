@@ -4,20 +4,58 @@ import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
 import Alert from ".";
-import { POSITIVE, NEWS, NEGATIVE, ATTENTION } from "./AlertTypes";
+import { POSITIVE, NEWS, NEGATIVE, ATTENTION } from "./constants/alertTypes";
 
 storiesOf("Alert", module)
-  .add("empty", () => <Alert />)
-  .add("empty non dismissable", () => <Alert dismissable={false} />)
-  .add("dismissable with text", () => <Alert dismissable text="Foo bar" />)
-  .add("dismissable with text, type positive", () => (
-    <Alert dismissable type={POSITIVE} text="Foo bar" />
-  ))
-  .add("all four types", () => (
-    <div>
-      <Alert dismissable type={POSITIVE} text="Foo bar" />
-      <Alert dismissable type={NEWS} text="Foo bar" />
-      <Alert dismissable type={NEGATIVE} text="Foo bar" />
-      <Alert dismissable type={ATTENTION} text="Foo bar" />
-    </div>
-  ));
+  .add(
+    "default",
+    withInfo()(() => <Alert text="Default is set to news type" />)
+  )
+  .add(
+    "non dismissable",
+    withInfo()(() => <Alert dismissable={false} text="I can't be dismissed!" />)
+  )
+  .add(
+    "type positive",
+    withInfo()(() => (
+      <Alert
+        dismissable
+        type={POSITIVE}
+        text="Positive alert!"
+        onDismiss={action("dismiss triggered")}
+      />
+    ))
+  )
+  .add(
+    "type news",
+    withInfo()(() => (
+      <Alert
+        dismissable
+        type={NEWS}
+        text="New alert!"
+        onDismiss={action("dismiss triggered")}
+      />
+    ))
+  )
+  .add(
+    "type negative",
+    withInfo()(() => (
+      <Alert
+        dismissable
+        type={NEGATIVE}
+        text="Negative alert!"
+        onDismiss={action("dismiss triggered")}
+      />
+    ))
+  )
+  .add(
+    "type attention",
+    withInfo()(() => (
+      <Alert
+        dismissable
+        type={ATTENTION}
+        text="Attention alert!"
+        onDismiss={action("dismiss triggered")}
+      />
+    ))
+  );
