@@ -18,12 +18,12 @@ npm install @crave/farmblocks-alert
 const React = require("react");
 const ReactDOM = require("react-dom");
 const Alert = require("@crave/farmblocks-alert");
-const { POSITIVE } = require("@crave/farmblocks-alert");
+const { AlertTypes } = require("@crave/farmblocks-alert");
 
 ReactDOM.render(
   <Alert
     dismissable
-    type={POSITIVE}
+    type={AlertTypes.POSITIVE}
     text="Positive alert!"
     onDismiss={action("dismiss triggered")}
   />,
