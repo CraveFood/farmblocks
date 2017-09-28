@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import bgColors from "../constants/colors";
+import { ATTENTION } from "../constants/alertTypes";
 
 const Container = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ const Container = styled.div`
     font-weight: 600;
     line-height: 1.33;
     text-align: center;
-    color: #ffffff;
+    color: ${props => (props.type === ATTENTION ? "#2f313a" : "#ffffff")};
   }
 `;
 
