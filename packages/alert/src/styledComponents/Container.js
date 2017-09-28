@@ -13,7 +13,12 @@ const Container = styled.div`
   min-height: ${2 * 20 + 32}px;
 
   > p {
-    color: white;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: center;
+    color: #ffffff;
   }
 `;
 
