@@ -1,15 +1,14 @@
 //@flow
 import React from "react";
-import type { StatelessFunctionalComponent } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import type { AlertType } from "./constants/alertTypes";
 import Container from "./styledComponents/Container";
 import DismissButton from "./styledComponents/DismissButton";
 import AlertTypes from "./constants/alertTypes";
 
-const Alert: StatelessFunctionalComponent = (props: AlertProps) => (
+// @FIXME annotating props as Object while issue #22 is not fixed
+const Alert = (props: Object) => (
   <Container type={props.type}>
     <p>{props.text}</p>
 
@@ -18,13 +17,6 @@ const Alert: StatelessFunctionalComponent = (props: AlertProps) => (
     )}
   </Container>
 );
-
-type AlertProps = {
-  text: string,
-  type?: AlertType,
-  dismissable?: boolean,
-  onDismiss?: Function
-};
 
 Alert.propTypes = {
   text: PropTypes.string.isRequired,
