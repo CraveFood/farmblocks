@@ -15,14 +15,26 @@ npm install @crave/farmblocks-alert
 ## Usage
 
 ```jsx
-const React = require('react');
-const ReactDOM = require('react-dom');
-const Alert = require('@crave/farmblocks-alert');
+const React = require("react");
+const ReactDOM = require("react-dom");
+const Alert = require("@crave/farmblocks-alert");
+const { POSITIVE } = require("@crave/farmblocks-alert");
 
 ReactDOM.render(
-    <Alert>
-        Hello World!
-    </Alert>,
-    document.getElementById('root')
-)
+  <Alert
+    dismissable
+    type={POSITIVE}
+    text="Positive alert!"
+    onDismiss={action("dismiss triggered")}
+  />,
+  document.getElementById("root")
+);
 ```
+
+## API
+
+See it [in the source](https://github.com/CraveFood/farmblocks/blob/feature/alert-component/packages/alert/src/index.js#L25-L36)
+
+## License
+
+MIT
