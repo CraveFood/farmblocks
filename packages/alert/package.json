@@ -1,14 +1,16 @@
 {
   "name": "@crave/farmblocks-alert",
-  "version": "1.1.0",
+  "version": "1.0.3",
   "description": "A React Component for displaying alert bar messages",
-  "main": "index.js",
+  "main": "dist/npm/index.js",
+  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "dist/npm"],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "release": "npm publish ./dist/npm --access=public",
-    "copy-npm-files":
-      "copy AUTHORS LICENSE README.md CHANGELOG.md package.json dist/npm/.",
-    "transpile": "babel ./src/ -d ./dist/npm/",
-    "build": "yarn transpile && yarn copy-npm-files",
+    "release": "npm publish",
+    "transpile": "babel ./src/ -d ./dist/npm/ --ignore '*.test.js,*.story.js'",
+    "build": "yarn transpile",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
