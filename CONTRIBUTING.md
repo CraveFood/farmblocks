@@ -37,7 +37,7 @@ yarn commit
 ### (To be removed) Manually publish the package
 
 ```
-lerna run build --scope my-component
-lerna publish --conventional-commits
+lerna run build
+lerna publish
 ```
 
