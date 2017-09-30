@@ -1,26 +1,33 @@
 git:
-    depth: 1
-
+  depth: 1
 sudo: false
-
 language: node_js
-
 node_js:
-    - "8"
-
+- '8'
 cache:
-    yarn: true
-    directories:
-        - node_modules
-
+  yarn: true
+  directories:
+  - node_modules
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.0.2
-  - export PATH="$HOME/.yarn/bin:$PATH"
-
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.0.2
+- export PATH="$HOME/.yarn/bin:$PATH"
+- openssl aes-256-cbc -K $encrypted_886ec638d38d_key -iv $encrypted_886ec638d38d_iv -in secrets.tar.enc -out secrets.tar -d
+- tar -xvf secrets.tar
+- cp .npmrc /home/travis/.npmrc
 install:
-    - yarn --frozen-lockfile
-    - lerna bootstrap
-
+- yarn --frozen-lockfile
+- lerna bootstrap
 script:
-    - yarn typecheck
-    - lerna run test
+- yarn typecheck
+- lerna run test
+after_success:
+- eval "$(ssh-agent -s)"
+- chmod 600 travis_github_key
+- ssh-add travis_github_key
+- git config user.name "Travis CI"
+- git config user.email "travis@cravefood.services"
+- lerna run build
+- npm whoami
+- npm config list
+- pwd
+- lerna publish --canary --yes
