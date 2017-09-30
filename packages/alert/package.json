@@ -8,9 +8,9 @@
     "access": "public"
   },
   "scripts": {
-    "release": "npm publish",
     "transpile": "babel ./src/ -d ./dist/npm/ --ignore '*.test.js,*.story.js'",
-    "build": "yarn transpile",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && yarn transpile",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
