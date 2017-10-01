@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.6...@crave/farmblocks-alert@1.0.7) (2017-10-01)
+
+
+### Bug Fixes
+
+* **readme:** fix broken tile ([d5ce414](https://github.com/CraveFood/farmblocks/commit/d5ce414))
+
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.5...@crave/farmblocks-alert@1.0.6) (2017-10-01)
 
