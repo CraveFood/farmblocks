@@ -1,4 +1,4 @@
-git:
+git: 
   depth: 1
 sudo: false
 language: node_js
@@ -14,6 +14,16 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_886ec638d38d_key -iv $encrypted_886ec638d38d_iv -in secrets.tar.enc -out secrets.tar -d
 - tar -xvf secrets.tar
 - cp .npmrc /home/travis/.npmrc
+- cp travis_github_key /home/travis/.ssh/id_rsa
+- eval "$(ssh-agent -s)"
+- chmod 600 travis_github_key
+- ssh-add travis_github_key
+- git config user.name "Travis CI"
+- git config user.email "travis@cravefood.services"
+- git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+- export BRANCH="${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}"
+- git fetch --all
+- git checkout "$BRANCH"
 install:
 - yarn --frozen-lockfile
 - lerna bootstrap
@@ -21,13 +31,6 @@ script:
 - yarn typecheck
 - lerna run test
 after_success:
-- eval "$(ssh-agent -s)"
-- chmod 600 travis_github_key
-- ssh-add travis_github_key
-- git config user.name "Travis CI"
-- git config user.email "travis@cravefood.services"
 - lerna run build
-- npm whoami
-- npm config list
-- pwd
-- lerna publish --canary --yes
+- lerna publish
+# - lerna publish --canary --yes
