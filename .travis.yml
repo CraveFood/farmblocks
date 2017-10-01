@@ -11,17 +11,8 @@ cache:
 before_install:
 - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.0.2
 - export PATH="$HOME/.yarn/bin:$PATH"
-- openssl aes-256-cbc -K $encrypted_886ec638d38d_key -iv $encrypted_886ec638d38d_iv -in secrets.tar.enc -out secrets.tar -d
-- tar -xvf secrets.tar
-- cp .npmrc /home/travis/.npmrc
-- cp travis_github_key /home/travis/.ssh/id_rsa
-- eval "$(ssh-agent -s)"
-- chmod 600 travis_github_key
-- ssh-add travis_github_key
-- git config user.name "Travis CI"
-- git config user.email "travis@cravefood.services"
-- git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
 - export BRANCH="${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}"
+- git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
 - git fetch --all
 - git checkout "$BRANCH"
 install:
@@ -32,5 +23,13 @@ script:
 - lerna run test
 after_success:
 - lerna run build
-- lerna publish
-# - lerna publish --canary --yes
+- echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
+- echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
+- if [ $BRANCH == "master" ]; then
+    git config user.name "Travis CI"
+    git config user.email "travis@cravefood.services"
+    git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git
+    lerna publish --yes;
+  else
+    lerna publish --canary --yes;
+  fi
