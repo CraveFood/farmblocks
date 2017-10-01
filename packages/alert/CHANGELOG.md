@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.8"></a>
+## [1.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.7...@crave/farmblocks-alert@1.0.8) (2017-10-01)
+
+
+### Bug Fixes
+
+* **readme:** npm will hide the package title if it is the same as the package name ([74d319f](https://github.com/CraveFood/farmblocks/commit/74d319f))
+
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.6...@crave/farmblocks-alert@1.0.7) (2017-10-01)
 
