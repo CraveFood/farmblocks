@@ -1,0 +1,52 @@
+{
+  "name": "@crave/farmblocks-alert",
+  "version": "1.1.0",
+  "description": "A React Component for displaying alert bar messages",
+  "main": "index.js",
+  "scripts": {
+    "release": "npm publish ./dist/npm --access=public",
+    "copy-npm-files":
+      "copy AUTHORS LICENSE README.md CHANGELOG.md package.json dist/npm/.",
+    "transpile": "babel ./src/ -d ./dist/npm/",
+    "build": "yarn transpile && yarn copy-npm-files",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "keywords": [
+    "farmblocks",
+    "react",
+    "component",
+    "alert",
+    "alertbar",
+    "widget"
+  ],
+  "author": "Crave Food Services and AUTHORS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0-rc.3",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.11",
+    "@storybook/addon-info": "^3.2.11",
+    "@storybook/addon-links": "^3.2.10",
+    "@storybook/addon-storyshots": "^3.2.11",
+    "@storybook/react": "^3.2.11",
+    "babel-cli": "^6.26.0",
+    "copy": "^0.3.1",
+    "flow-bin": "^0.55.0",
+    "flow-typed": "^2.1.5",
+    "jest": "^21.1.0",
+    "react-test-renderer": "^16.0.0"
+  }
+}
