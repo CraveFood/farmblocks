@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Tooltip from "@crave/farmblocks-tooltip";
 
 import { SMALL, LARGE } from "./constants/SizeTypes";
 import {
@@ -13,8 +14,6 @@ import {
 } from "./constants/ButtonTypes";
 import Container from "./styledComponents/Container";
 import StyledButton from "./styledComponents/Button";
-// @FIXME add tooltip
-// import Tooltip from './Tooltip';
 
 class Button extends Component {
   constructor(props) {
@@ -53,10 +52,10 @@ class Button extends Component {
           )}{" "}
           {this.props.text || this.props.children}
         </StyledButton>
-        {
-          // <Tooltip text='This action is disabled.'
-          // isVisible={this.state.showTooltip}/>
-        }
+        <Tooltip
+          text="This action is disabled."
+          isVisible={this.state.showTooltip}
+        />
       </Container>
     );
   }
