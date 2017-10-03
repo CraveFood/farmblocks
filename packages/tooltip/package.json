@@ -1,0 +1,41 @@
+{
+  "name": "@crave/farmblocks-tooltip",
+  "version": "0.1.0",
+  "description": "Tooltip component",
+  "main": "lib/index.js",
+  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "author": "Crave Food Services and AUTHORS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "styled-components": "^2.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-info": "^3.2.11",
+    "@storybook/addon-links": "^3.2.12",
+    "@storybook/addon-storyshots": "^3.2.11",
+    "@storybook/react": "^3.2.12",
+    "babel-cli": "^6.26.0",
+    "flow-bin": "^0.55.0",
+    "flow-typed": "^2.1.5",
+    "jest": "^21.1.0"
+  },
+  "keywords": []
+}
