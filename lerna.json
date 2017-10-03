@@ -1,9 +1,13 @@
 {
   "lerna": "2.2.0",
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): [ci skip] publish"
+    }
+  },
   "npmClient": "yarn",
   "useWorkspaces": true
 }
