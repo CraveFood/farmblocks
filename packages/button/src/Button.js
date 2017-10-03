@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+// @flow
+import * as React from "react";
 import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
 
@@ -15,8 +16,16 @@ import {
 import Container from "./styledComponents/Container";
 import StyledButton from "./styledComponents/Button";
 
-class Button extends Component {
-  constructor(props) {
+// @FIXME type anotating as Object while #22 dont gets fixed
+type Props = Object;
+type State = Object;
+class Button extends React.Component<Props, State> {
+  static defaultProps = {
+    size: SMALL,
+    type: PRIMARY
+  };
+
+  constructor(props: Props) {
     super(props);
 
     this.state = {
@@ -60,27 +69,22 @@ class Button extends Component {
     );
   }
 
-  mouseOver() {
+  mouseOver = function() {
     if (this.props.disabled) {
       this.setState({
         showTooltip: true
       });
     }
-  }
+  };
 
-  mouseLeaves() {
+  mouseLeaves = function() {
     if (this.props.disabled) {
       this.setState({
         showTooltip: false
       });
     }
-  }
+  };
 }
-
-Button.defaultProps = {
-  size: SMALL,
-  type: PRIMARY
-};
 
 Button.propTypes = {
   activated: PropTypes.bool,
