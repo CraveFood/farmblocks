@@ -12,7 +12,7 @@
   dependencies:
     conventional-changelog "0.0.17"
 
-"@storybook/addon-actions@^3.2.12":
+"@storybook/addon-actions@^3.2.11", "@storybook/addon-actions@^3.2.12":
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.2.12.tgz#58ea949a02bd9ee956da7f30802677a44d9db024"
   dependencies:
@@ -23,7 +23,7 @@
     react-inspector "^2.2.0"
     uuid "^3.1.0"
 
-"@storybook/addon-info@^3.2.12":
+"@storybook/addon-info@^3.2.11", "@storybook/addon-info@^3.2.12":
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-3.2.12.tgz#0600393398590dcc64fc1d24e509487f424e8354"
   dependencies:
@@ -36,13 +36,13 @@
     react-addons-create-fragment "^15.5.3"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-links@^3.2.12":
+"@storybook/addon-links@^3.2.10", "@storybook/addon-links@^3.2.12":
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.2.12.tgz#8b2f1d1496e1066d165d1e0615224a5e0a3e2db6"
   dependencies:
     "@storybook/addons" "^3.2.12"
 
-"@storybook/addon-storyshots@^3.2.12":
+"@storybook/addon-storyshots@^3.2.11", "@storybook/addon-storyshots@^3.2.12":
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.2.12.tgz#51cefa8acba9eb474fb81a478a96807cb9e7c9c1"
   dependencies:
@@ -84,7 +84,7 @@
     fuse.js "^3.0.1"
     prop-types "^15.5.9"
 
-"@storybook/react@^3.2.12":
+"@storybook/react@^3.2.11", "@storybook/react@^3.2.12":
   version "3.2.12"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-3.2.12.tgz#0283ba6812b1a2086dd628afc066274c2c6ed22a"
   dependencies:
@@ -3492,6 +3492,10 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+flow-bin@^0.55.0:
+  version "0.55.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.55.0.tgz#9083da9327bd8cab6b4076d63d85f2247a7eae1b"
+
 flow-bin@^0.56.0:
   version "0.56.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.56.0.tgz#ce43092203a344ba9bf63c0cabe95d95145f6cad"
@@ -4860,7 +4864,7 @@ jest-validate@^21.2.1:
     leven "^2.1.0"
     pretty-format "^21.2.1"
 
-jest@^21.2.1:
+jest@^21.1.0, jest@^21.2.1:
   version "21.2.1"
   resolved "https://registry.yarnpkg.com/jest/-/jest-21.2.1.tgz#c964e0b47383768a1438e3ccf3c3d470327604e1"
   dependencies:
@@ -6764,7 +6768,7 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
-react-test-renderer@16:
+react-test-renderer@16, react-test-renderer@^16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0.tgz#9fe7b8308f2f71f29fc356d4102086f131c9cb15"
   dependencies:
