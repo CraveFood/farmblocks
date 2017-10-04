@@ -11,6 +11,10 @@
     "storybook": "start-storybook -p 6006",
     "test": "jest"
   },
+  "babel": {
+    "plugins": ["transform-class-properties"],
+    "presets": ["flow", "env", "react"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CraveFood/farmblocks.git"
@@ -33,6 +37,10 @@
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/react": "^3.2.12",
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "flow-bin": "^0.56.0",

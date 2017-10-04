@@ -20,6 +20,8 @@ before_install:
 install:
     - yarn --frozen-lockfile
     - lerna bootstrap
+    - lerna link
+    - npx flow-typed install
 
 script:
     - yarn typecheck
