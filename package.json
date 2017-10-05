@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A collection of user interface blocks",
   "scripts": {
+    "test": "jest",
+    "typecheck": "flow",
+    "storybook": "start-storybook -p 6006 -s .storybook/assets",
     "precommit": "lint-staged",
     "prepush": "yarn typecheck",
     "commit": "git-cz",
