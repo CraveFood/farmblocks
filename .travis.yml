@@ -1,26 +1,33 @@
-git:
-    depth: 1
-
 sudo: false
-
 language: node_js
-
 node_js:
-    - "8"
-
+- '8'
 cache:
-    yarn: true
-    directories:
-        - node_modules
-
+  yarn: true
+  directories:
+  - node_modules
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.0.2
-  - export PATH="$HOME/.yarn/bin:$PATH"
-
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.0.2
+- export PATH="$HOME/.yarn/bin:$PATH"
+- export BRANCH="${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}"
+- git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+- git fetch --all
+- git checkout "$BRANCH"
 install:
-    - yarn --frozen-lockfile
-    - lerna bootstrap
-
+- yarn --frozen-lockfile
+- lerna bootstrap
 script:
-    - yarn typecheck
-    - lerna run test
+- yarn typecheck
+- lerna run test
+after_success:
+- lerna run build
+- echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
+- echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
+- if [ $BRANCH == "master" ]; then
+    git config user.name "Travis CI"
+    git config user.email "travis@cravefood.services"
+    git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git
+    lerna publish --yes;
+  else
+    lerna publish --canary --yes;
+  fi
