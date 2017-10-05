@@ -52,8 +52,7 @@ function paddingStyle(props) {
   let padding = "8px 16px";
   if (isLarge) {
     padding = "16px 16px";
-  }
-  if (isIconOnly(props)) {
+  } else if (isIconOnly(props)) {
     padding = "8px 8px";
   }
   return css`

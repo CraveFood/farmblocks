@@ -25,6 +25,9 @@ class Button extends React.Component<Props, State> {
     type: PRIMARY
   };
 
+  mouseOver: Function;
+  mouseLeaves: Function;
+
   constructor(props: Props) {
     super(props);
 
@@ -69,21 +72,21 @@ class Button extends React.Component<Props, State> {
     );
   }
 
-  mouseOver = function() {
+  mouseOver() {
     if (this.props.disabled) {
       this.setState({
         showTooltip: true
       });
     }
-  };
+  }
 
-  mouseLeaves = function() {
+  mouseLeaves() {
     if (this.props.disabled) {
       this.setState({
         showTooltip: false
       });
     }
-  };
+  }
 }
 
 Button.propTypes = {
