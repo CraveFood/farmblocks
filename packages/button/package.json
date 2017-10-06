@@ -1,0 +1,56 @@
+{
+  "name": "@crave/farmblocks-button",
+  "version": "0.2.0-alpha.299aaa60",
+  "description": "Button component",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/index.js",
+  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -s .storybook/assets",
+    "test": "jest"
+  },
+  "babel": {
+    "plugins": ["transform-class-properties"],
+    "presets": ["flow", "env", "react"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "author": "Crave Food Services and AUTHORS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0-rc.3",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-info": "^3.2.12",
+    "@storybook/addon-links": "^3.2.12",
+    "@storybook/addon-storyshots": "^3.2.12",
+    "@storybook/react": "^3.2.12",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "flow-bin": "^0.56.0",
+    "flow-typed": "^2.1.5",
+    "jest": "^21.2.1",
+    "jest-enzyme": "^4.0.0",
+    "react-test-renderer": "16"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@crave/farmblocks-tooltip": "^0.2.0-alpha.3a9dce98"
+  }
+}
