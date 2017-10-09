@@ -15,6 +15,7 @@ repos:
           - "--ignore-path=.eslintignore"
         language: system
         files: '^(?!.*\.test).*\.js$'
+        exclude: '^docs'
 
       - id: eslint-test
         name: eslint-test
