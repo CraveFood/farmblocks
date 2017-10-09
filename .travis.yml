@@ -25,4 +25,5 @@ install:
 
 script:
     - yarn typecheck
-    - lerna run test
+    - yarn test
+    - yarn coverage
