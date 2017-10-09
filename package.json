@@ -2,32 +2,52 @@
   "name": "farmblocks",
   "version": "0.1.0",
   "description": "A collection of user interface blocks",
-  "scripts": {
-    "precommit": "lint-staged",
-    "prepush": "yarn typecheck",
-    "commit": "git-cz",
-    "typecheck": "flow",
-    "test": "jest"
-  },
-  "private": true,
+  "author": "Crave Food Services and AUTHORS",
+  "license": "MIT",
   "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "typecheck": "flow",
+    "coverage":
+      "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "prepush": "yarn typecheck",
+    "storybook": "start-storybook -p 6006 -s .storybook/assets",
+    "build-storybook": "build-storybook -o docs"
+  },
+  "workspaces": ["packages/*"],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "babel": {
+    "plugins": ["transform-class-properties"],
+    "presets": ["flow", "env", "react"]
+  },
+  "lint-staged": {
+    "*.{js,json,css}": ["prettier --parser flow --write", "git add"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CraveFood/farmblocks.git"
   },
-  "author": "Crave Food Services and AUTHORS",
-  "license": "MIT",
-  "workspaces": ["packages/*"],
   "devDependencies": {
-    "@crave/farmblocks-tooltip": "^0.2.0-alpha.3a9dce98",
+    "@crave/farmblocks-tooltip": "^0.2.0-alpha.e320de4a",
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-info": "^3.2.12",
     "@storybook/addon-links": "^3.2.12",
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/react": "^3.2.12",
     "babel-cli": "^6.26.0",
-    "babel-preset-react": "^7.0.0-beta.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
     "commitizen": "^2.9.6",
+    "coveralls": "^3.0.0",
     "cz-lerna-changelog": "^1.2.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
@@ -43,17 +63,6 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-test-renderer": "16",
-    "styled-components": "^2.1.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
-  },
-  "babel": {
-    "presets": ["flow", "env", "react"]
-  },
-  "lint-staged": {
-    "*.{js,json,css}": ["prettier --parser flow --write", "git add"]
+    "styled-components": "^2.2.1"
   }
 }
