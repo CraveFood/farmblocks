@@ -7,6 +7,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "lint-staged": "lint-staged",
     "test": "jest",
     "typecheck": "flow",
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
@@ -14,7 +15,6 @@
       "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
     "coverage":
       "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "precommit": "lint-staged",
     "commit": "git-cz",
     "prepush": "yarn typecheck",
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
@@ -69,7 +69,6 @@
     "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.56.0",
     "flow-typed": "^2.1.5",
-    "husky": "^0.14.3",
     "jest": "^21.2.1",
     "jest-enzyme": "^4.0.0",
     "lerna": "^2.3.1",
@@ -80,5 +79,13 @@
     "react-dom": "^16.0.0",
     "react-test-renderer": "16",
     "styled-components": "^2.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "babel": {
+    "presets": ["flow", "env", "react"]
   }
 }
