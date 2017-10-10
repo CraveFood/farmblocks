@@ -9,6 +9,9 @@
   "scripts": {
     "test": "jest",
     "typecheck": "flow",
+    "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
+    "lint.test":
+      "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
     "coverage":
       "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "precommit": "lint-staged",
@@ -28,7 +31,9 @@
     "presets": ["flow", "env", "react"]
   },
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --parser flow --write", "git add"]
+    "*.js": ["yarn lint --quiet"],
+    "*.test.js": ["yarn lint.test"],
+    "*.{js,json,css}": ["prettier --parser flow --write"]
   },
   "repository": {
     "type": "git",
@@ -42,6 +47,7 @@
     "@storybook/addon-storyshots": "^3.2.12",
     "@storybook/react": "^3.2.12",
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
@@ -51,6 +57,16 @@
     "cz-lerna-changelog": "^1.2.1",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
     "flow-bin": "^0.56.0",
     "flow-typed": "^2.1.5",
     "husky": "^0.14.3",
