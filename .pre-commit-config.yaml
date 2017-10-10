@@ -1,4 +1,25 @@
 - repo: https://github.com/prettier/prettier
   sha: '1.7.0'
   hooks:
-  - id: prettier
+    - id: prettier
+
+- repo: local
+  hooks:
+    - id: eslint-app
+      name: eslint-app
+      entry: ./node_modules/eslint/bin/eslint.js
+      args:
+        - "--config=.eslintrc.js"
+        - "--ignore-path=.eslintignore"
+      language: system
+      files: '^(?!.*\.test).*\.js$'
+
+    - id: eslint-test
+      name: eslint-test
+      entry: ./node_modules/eslint/bin/eslint.js
+      args:
+        - "--config=.test.eslintrc.js"
+        - "--ignore-path=.test.eslintignore"
+      language: system
+      files: '\.test\.js$'
+
