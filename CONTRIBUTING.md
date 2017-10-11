@@ -16,10 +16,42 @@ Before commiting your patch, please check the new code against existing tests.
 yarn test
 ```
 
+#### Lint task
+
+You can check for linting errors manually using:
+
+```
+yarn lint .
+```
+
+For the source files, or for the test files:
+
+```
+yarn lint.test .
+```
+
+Or to check for lint errors only on staged files:
+
+```
+yarn lint.staged
+```
+
+But if you have pre-commit set, it will already run linters automatically before commits, see below.
+
 #### Precommit checks
 
-If you can please install [pre-commit](http://pre-commit.com/) on your machine and then setup the
-git hooks by running:
+This project use a config file with features that requires pre-commit
+version bigger than 1.1.0.
+
+If you already have it installed, check the version with:
+
+```
+pre-commit --version
+```
+
+If you dont have it, please install 
+[pre-commit](http://pre-commit.com/) on your machine and then 
+setup the git hooks by running:
 
 ```
 pre-commit install
@@ -38,8 +70,7 @@ yarn commit
 ### (To be removed) Manually publish the package
 
 ```
-lerna publish --skip-git --skip-npm --conventional-commits
-lerna run build --scope my-component
-lerna run release --scope my-component
+lerna run build
+lerna publish 
 ```
 
