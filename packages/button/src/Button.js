@@ -45,7 +45,7 @@ class Button extends React.Component<Props, State> {
 
     const disabled = this.props.disabled || this.props.loading;
     const showIcon = this.props.icon || this.props.loading;
-    const marginOffset = !!this.props.text ? 10 : 0;
+    const marginOffset = !this.props.text ? 10 : 0;
 
     return (
       <Container>
@@ -94,6 +94,7 @@ Button.propTypes = {
   icon: PropTypes.string,
   onClick: PropTypes.func,
   text: PropTypes.string,
+  children: PropTypes.node,
   size: PropTypes.oneOf([SMALL, LARGE]),
   type: PropTypes.oneOf([
     PRIMARY,

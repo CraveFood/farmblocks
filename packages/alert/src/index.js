@@ -1,7 +1,6 @@
 //@flow
 import * as React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 
 import Container from "./styledComponents/Container";
 import DismissButton from "./styledComponents/DismissButton";
