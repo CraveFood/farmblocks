@@ -25,5 +25,7 @@ install:
     - yarn add -D jest
 
 script:
+    - yarn lint
+    - yarn lint.test
     - yarn typecheck
     - yarn coverage

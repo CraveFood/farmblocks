@@ -12,16 +12,17 @@ yarn install
 
 Before commiting your patch, please check the new code against existing tests.
 
-** Inside a package subfolder **
-
 ```
 yarn test
 ```
 
-** On the root dir **
+#### Precommit checks
+
+If you can please install [pre-commit](http://pre-commit.com/) on your machine and then setup the
+git hooks by running:
 
 ```
-lerna run test
+pre-commit install
 ```
 
 #### Commit messages
