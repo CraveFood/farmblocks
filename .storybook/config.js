@@ -1,24 +1,51 @@
-/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
+import { injectGlobal } from "styled-components";
+import { configure } from "@storybook/react";
 
-import {configure} from '@storybook/react';
-import { setDefaults } from '@storybook/addon-info';
-
-import '../src/assets/fonts/fonticon.scss';
-import '../src/assets/fonts/lato/fontlato.scss';
-
-const req = require.context('../src/', true, /\.story\.js$/);
+const req = require.context("../", true, /\.story\.js$/);
 
 function loadStories() {
-  req.keys().forEach((filename) => req(filename));
+  req.keys().forEach(filename => req(filename));
 }
 
 configure(loadStories, module);
 
-// addon-info
-setDefaults({
-  inline: true,
-  maxPropsIntoLine: 1,
-  maxPropObjectKeys: 10,
-  maxPropArrayLength: 10,
-  maxPropStringLength: 100,
-});
+injectGlobal`
+@font-face {
+  font-family: 'whatsgood-fonticon';
+  src: url('./whatsgood-iconfont.eot?vexkpz');
+  src: url('./whatsgood-iconfont.eot?vexkpz#iefix') format('embedded-opentype'),
+  url('./whatsgood-iconfont.ttf?vexkpz') format('truetype'),
+  url('./whatsgood-iconfont.woff?vexkpz') format('woff'),
+  url('./whatsgood-iconfont.svg?vexkpz#whatsgood-iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+  .wg-meat:before {
+    content: "\\e933";
+  }
+
+  .wg-loading:before {
+    content: "\\e90b";
+  }
+
+  .wg-edit:before {
+    content: "\\e924";
+  }
+
+  .wg-meat,
+  .wg-loading,
+  .wg-edit {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'whatsgood-fonticon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+`;

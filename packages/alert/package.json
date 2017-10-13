@@ -1,0 +1,55 @@
+{
+  "name": "@crave/farmblocks-alert",
+  "version": "1.1.0",
+  "description": "A React Component for displaying alert bar messages",
+  "author": "Crave Food Services and AUTHORS",
+  "license": "MIT",
+  "main": "index.js",
+  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'",
+    "prestorybook": "cp -Rf ../../.storybook .",
+    "storybook": "start-storybook -p 6006"
+  },
+  "babel": {
+    "plugins": ["transform-class-properties"],
+    "presets": ["flow", "env", "react"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "styled-components": "^2.2.1"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.12",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "flow-bin": "^0.56.0",
+    "jest": "^21.2.1"
+  },
+  "keywords": [
+    "farmblocks",
+    "react",
+    "component",
+    "alert",
+    "alertbar",
+    "widget"
+  ]
+}
