@@ -22,7 +22,6 @@ install:
     - lerna bootstrap
     - lerna link
     - npx flow-typed install
-    - yarn add -D jest
 
 script:
     - yarn lint
