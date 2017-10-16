@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
+import { PRIMARY, NEUTRAL, NEUTRAL_OFF } from "./constants/ButtonTypes";
 
 import Button from "./index";
 
@@ -9,7 +10,7 @@ storiesOf("Button", module)
     <Button onClick={action("buttonClicked")} text="Primary Button" />
   ))
   .add("Disabled", () => (
-    <Button disabled onClick={action("buttonClicked")} text="Disabled Button" />
+    <Button disabled onClick={action("buttonClicked")} text="Disabled Buton" />
   ))
   .add("Primary with Icon", () => (
     <Button
@@ -24,6 +25,16 @@ storiesOf("Button", module)
       onClick={action("buttonClicked")}
       text="Secondary Button"
     />
+  ))
+  .add("Secondary (fluid)", () => (
+    <div style={{ width: 400, height: 400, background: "gray" }}>
+      <Button
+        type="secondary"
+        fluid
+        onClick={action("buttonClicked")}
+        text="Secondary Button"
+      />
+    </div>
   ))
   .add("Request", () => (
     <Button
@@ -41,7 +52,15 @@ storiesOf("Button", module)
   ))
   .add("Neutral", () => (
     <Button
-      type="neutral"
+      type={NEUTRAL}
+      onClick={action("buttonClicked")}
+      text="Neutral Button"
+    />
+  ))
+  .add("Neutral Activated", () => (
+    <Button
+      type={NEUTRAL}
+      activated
       onClick={action("buttonClicked")}
       text="Neutral Button"
     />
@@ -55,7 +74,7 @@ storiesOf("Button", module)
       }}
     >
       <Button
-        type="neutral-off"
+        type={NEUTRAL_OFF}
         onClick={action("buttonClicked")}
         text="Neutral Off Button"
       />
@@ -73,6 +92,9 @@ storiesOf("Button", module)
   ))
   .add("Icon only", () => (
     <Button type="neutral" onClick={action("buttonClicked")} icon="wg-edit" />
+  ))
+  .add("Icon only (primary)", () => (
+    <Button type={PRIMARY} onClick={action("buttonClicked")} icon="wg-edit" />
   ))
   .add("Icon only (disabled)", () => (
     <Button

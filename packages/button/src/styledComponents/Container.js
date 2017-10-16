@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
-  display: inline-block;
+  display: ${props => (props.fluid ? "block" : "inline-block")};
 
   > .hit-box-container {
     position: absolute;
