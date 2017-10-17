@@ -24,7 +24,7 @@ install:
     - npx flow-typed install
 
 script:
-    - yarn lint
-    - yarn lint.test
+    - yarn lint .
+    - yarn lint.test .
     - yarn typecheck
     - yarn coverage
