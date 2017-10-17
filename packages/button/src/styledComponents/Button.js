@@ -93,7 +93,6 @@ function typeStyle(props) {
     transition: background 0.3s ease;
     border: solid 1px rgba(0, 0, 0, 0.16);
     background-color: ${color};
-    color: ${props => isIconOnly(props) && color};
 
     &:hover {
       background-color: ${hoverColor};
