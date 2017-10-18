@@ -45,7 +45,7 @@ class Button extends React.Component<Props, State> {
     this.mouseLeaves = this.mouseLeaves.bind(this);
   }
 
-  render(): React.Node {
+  render() {
     // @FIXME revisit font icon assets on farmblocks
     const icon = this.props.loading ? "wg-loading" : this.props.icon;
 

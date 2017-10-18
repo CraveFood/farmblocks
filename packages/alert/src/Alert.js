@@ -18,7 +18,7 @@ type Props = {
 };
 
 class Alert extends React.Component<Props> {
-  render(): React.Node {
+  render() {
     return (
       <Container type={this.props.type}>
         <p>{this.props.text}</p>

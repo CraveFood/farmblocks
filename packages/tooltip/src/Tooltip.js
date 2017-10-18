@@ -8,7 +8,7 @@ type Props = {
   isVisible?: boolean
 };
 class Tooltip extends React.Component<Props> {
-  render(): React.Node {
+  render() {
     return (
       <Container>
         <StyledTooltip {...this.props}>{this.props.text}</StyledTooltip>
