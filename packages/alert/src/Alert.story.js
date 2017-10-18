@@ -3,8 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
-import Alert from ".";
-import { POSITIVE, NEWS, NEGATIVE, ATTENTION } from "./constants/alertTypes";
+import Alert, { AlertTypes } from ".";
 
 storiesOf("Alert", module)
   .add(
@@ -20,7 +19,7 @@ storiesOf("Alert", module)
     withInfo()(() => (
       <Alert
         dismissable
-        type={POSITIVE}
+        type={AlertTypes.POSITIVE}
         text="Positive alert!"
         onDismiss={action("dismiss triggered")}
       />
@@ -31,7 +30,7 @@ storiesOf("Alert", module)
     withInfo()(() => (
       <Alert
         dismissable
-        type={NEWS}
+        type={AlertTypes.NEWS}
         text="New alert!"
         onDismiss={action("dismiss triggered")}
       />
@@ -42,7 +41,7 @@ storiesOf("Alert", module)
     withInfo()(() => (
       <Alert
         dismissable
-        type={NEGATIVE}
+        type={AlertTypes.NEGATIVE}
         text="Negative alert!"
         onDismiss={action("dismiss triggered")}
       />
@@ -53,7 +52,7 @@ storiesOf("Alert", module)
     withInfo()(() => (
       <Alert
         dismissable
-        type={ATTENTION}
+        type={AlertTypes.ATTENTION}
         text="Attention alert!"
         onDismiss={action("dismiss triggered")}
       />
