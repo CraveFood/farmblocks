@@ -1,24 +1,30 @@
 // @flow
 import * as React from "react";
-import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
 
-import { SMALL, LARGE } from "./constants/SizeTypes";
-import {
-  PRIMARY,
-  SECONDARY,
-  NEGATIVE,
-  NEUTRAL,
-  NEUTRAL_OFF,
-  CLOSED,
-  REQUEST
-} from "./constants/ButtonTypes";
+import type { ButtonType } from "./constants/buttonTypes";
+import { SMALL, LARGE } from "./constants/sizeTypes";
+import { PRIMARY } from "./constants/buttonTypes";
 import Container from "./styledComponents/Container";
 import StyledButton from "./styledComponents/Button";
 
-// @FIXME type anotating as Object while #22 dont gets fixed
-type Props = Object;
-type State = Object;
+type Props = {
+  activated?: boolean,
+  icon?: string,
+  onClick?: Function,
+  text?: string,
+  children?: React.Node,
+  size: SMALL | LARGE,
+  type: ButtonType,
+  fluid?: boolean,
+  disabled?: boolean,
+  loading?: boolean,
+  tabIndex?: number
+};
+type State = {
+  showTooltip: boolean
+};
+
 class Button extends React.Component<Props, State> {
   static defaultProps = {
     size: SMALL,
@@ -39,7 +45,7 @@ class Button extends React.Component<Props, State> {
     this.mouseLeaves = this.mouseLeaves.bind(this);
   }
 
-  render() {
+  render(): React.Node {
     // @FIXME revisit font icon assets on farmblocks
     const icon = this.props.loading ? "wg-loading" : this.props.icon;
 
@@ -88,27 +94,5 @@ class Button extends React.Component<Props, State> {
     }
   }
 }
-
-Button.propTypes = {
-  activated: PropTypes.bool,
-  icon: PropTypes.string,
-  onClick: PropTypes.func,
-  text: PropTypes.string,
-  children: PropTypes.node,
-  size: PropTypes.oneOf([SMALL, LARGE]),
-  type: PropTypes.oneOf([
-    PRIMARY,
-    SECONDARY,
-    NEGATIVE,
-    NEUTRAL,
-    NEUTRAL_OFF,
-    CLOSED,
-    REQUEST
-  ]),
-  fluid: PropTypes.bool,
-  disabled: PropTypes.bool,
-  loading: PropTypes.bool,
-  tabIndex: PropTypes.number
-};
 
 export default Button;

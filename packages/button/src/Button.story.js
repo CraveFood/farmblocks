@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { PRIMARY, NEUTRAL, NEUTRAL_OFF } from "./constants/ButtonTypes";
+import { PRIMARY, NEUTRAL, NEUTRAL_OFF } from "./constants/buttonTypes";
 
 import Button from "./index";
 
