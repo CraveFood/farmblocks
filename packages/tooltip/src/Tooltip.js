@@ -1,24 +1,24 @@
 // @flow
 import * as React from "react";
-import PropTypes from "prop-types";
 
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 
-// @FIXME annotating props as Object while we dont have a way to prevent redundant type anotation.
-// see issue #22
-const Tooltip = (props: Object) => (
-  <Container>
-    <StyledTooltip {...props}>{props.text}</StyledTooltip>
-  </Container>
-);
-
-Tooltip.propTypes = {
-  text: PropTypes.string.isRequired,
-  isVisible: PropTypes.bool
+type Props = {
+  text: string,
+  isVisible?: boolean
 };
+class Tooltip extends React.Component<Props> {
+  render(): React.Node {
+    return (
+      <Container>
+        <StyledTooltip {...this.props}>{this.props.text}</StyledTooltip>
+      </Container>
+    );
+  }
 
-Tooltip.defaultProps = {
-  isVisible: true
-};
+  static defaultProps = {
+    isVisible: true
+  };
+}
 
 export default Tooltip;
