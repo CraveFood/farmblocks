@@ -3,41 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-<a name="1.0.0"></a>
-# 1.0.0 (2017-09-28)
+<a name="1.0.8"></a>
+## [1.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.7...@crave/farmblocks-alert@1.0.8) (2017-10-01)
 
 
 ### Bug Fixes
 
-* **alert-component:** improve the styling of the text and the dismiss button to better follow the sp ([8d23118](https://github.com/CraveFood/farmblocks/commit/8d23118))
-* **npm dist:** drop browserify in favor of a smiple babel transpiling ([0d493f5](https://github.com/CraveFood/farmblocks/commit/0d493f5))
-* **npm dist:** make the bundle universal and without external dependencies ([fa34530](https://github.com/CraveFood/farmblocks/commit/fa34530))
-* **npm dist:** move react to peerDepencendies and export as an external dependency ([f89643d](https://github.com/CraveFood/farmblocks/commit/f89643d))
-
-
-### Features
-
-* **alert-component:** style the alert according to the spec, api tweaks ([cfe3838](https://github.com/CraveFood/farmblocks/commit/cfe3838))
-* **npm:** initial package boilerplate ([d7b47ae](https://github.com/CraveFood/farmblocks/commit/d7b47ae))
-
-
-### WIP
-
-* **alert-component:** defining a new API based on the design spec and writing stories for it ([15acb24](https://github.com/CraveFood/farmblocks/commit/15acb24))
-
-
-### BREAKING CHANGES
-
-* **alert-component:** this is different from the legacy Notification component's API and also from the usage example in
-the README
+* **readme:** npm will hide the package title if it is the same as the package name ([74d319f](https://github.com/CraveFood/farmblocks/commit/74d319f))
 
 
 
 
-<a name="0.2.0"></a>
-# 0.2.0 (2017-09-25)
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.6...@crave/farmblocks-alert@1.0.7) (2017-10-01)
 
 
-### Features
+### Bug Fixes
 
-* **npm:** initial package boilerplate ([da19f1f](https://github.com/CraveFood/farmblocks/commit/da19f1f))
+* **readme:** fix broken tile ([d5ce414](https://github.com/CraveFood/farmblocks/commit/d5ce414))
+
+
+
+
+<a name="1.0.6"></a>
+## [1.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.5...@crave/farmblocks-alert@1.0.6) (2017-10-01)
+
+
+### Bug Fixes
+
+* **readme:** shrink the logo on readme ([222a22d](https://github.com/CraveFood/farmblocks/commit/222a22d))
+
+
+
+
+<a name="1.0.5"></a>
+## [1.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.4...@crave/farmblocks-alert@1.0.5) (2017-10-01)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-alert
+
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.3...@crave/farmblocks-alert@1.0.4) (2017-10-01)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-alert
+
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.2...@crave/farmblocks-alert@1.0.3) (2017-09-30)
+
+
+### Bug Fixes
+
+* **changelog:** minor, removed a redundant line ([d810eb0](https://github.com/CraveFood/farmblocks/commit/d810eb0))
+
+
+
+
+<a name="1.0.2"></a>
+## [1.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.1...@crave/farmblocks-alert@1.0.2) (2017-09-30)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-alert
+
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.0...@crave/farmblocks-alert@1.0.1) (2017-09-30)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-alert
