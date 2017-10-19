@@ -27,7 +27,7 @@
     }
   },
   "babel": {
-    "plugins": ["transform-class-properties"],
+    "plugins": ["transform-class-properties", "flow-react-proptypes"],
     "presets": ["flow", "env", "react"]
   },
   "lint-staged": {
@@ -48,6 +48,7 @@
     "@storybook/react": "^3.2.12",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
+    "babel-plugin-flow-react-proptypes": "^6.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-flow": "^6.23.0",
