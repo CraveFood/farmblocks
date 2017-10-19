@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2017-10-19)
+
+
+### Bug Fixes
+
+* **alert:** fixed text color of attention alert ([b1b553c](https://github.com/CraveFood/farmblocks/commit/b1b553c))
+* **alert-component:** improve the styling of the text and the dismiss button to better follow the sp ([f001419](https://github.com/CraveFood/farmblocks/commit/f001419))
+* **documentation:** fix usage sample ([cb142b9](https://github.com/CraveFood/farmblocks/commit/cb142b9))
+* **lint errors:** fix linting errors reported after the introduction of eslint checks ([bd16d38](https://github.com/CraveFood/farmblocks/commit/bd16d38))
+* **npm package:** fix main file location ([3e533a9](https://github.com/CraveFood/farmblocks/commit/3e533a9))
+* **tests:** fix broken snapshot test ([ad02e15](https://github.com/CraveFood/farmblocks/commit/ad02e15))
+
+
+### Features
+
+* **alert package exports:** export the AlertTypes enum to make usage easier ([0633eba](https://github.com/CraveFood/farmblocks/commit/0633eba))
+* **alert-component:** style the alert according to the spec, api tweaks ([e6fec3b](https://github.com/CraveFood/farmblocks/commit/e6fec3b))
+* **npm:** initial package boilerplate ([61f9f67](https://github.com/CraveFood/farmblocks/commit/61f9f67))
+
+
+### WIP
+
+* **alert-component:** defining a new API based on the design spec and writing stories for it ([540a060](https://github.com/CraveFood/farmblocks/commit/540a060))
+
+
+### BREAKING CHANGES
+
+* **alert-component:** this is different from the legacy Notification component's API and also from the usage example in
+the README
+
+WIP(alert-component): simple placeholder for the button and classname to be improvede/implemented
+
+affects: @crave/farmblocks-alert
+
+WIP(alert-component): code organizing and api design
+
+affects: @crave/farmblocks-alert
+
+
+
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@1.0.7...@crave/farmblocks-alert@1.0.8) (2017-10-01)
 

@@ -1,11 +1,17 @@
 {
   "name": "@crave/farmblocks-alert",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "A React Component for displaying alert bar messages",
   "author": "Crave Food Services and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
+  "files": [
+    "AUTHORS",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -17,8 +23,14 @@
     "storybook": "start-storybook -p 6006"
   },
   "babel": {
-    "plugins": ["transform-class-properties"],
-    "presets": ["flow", "env", "react"]
+    "plugins": [
+      "transform-class-properties"
+    ],
+    "presets": [
+      "flow",
+      "env",
+      "react"
+    ]
   },
   "repository": {
     "type": "git",
