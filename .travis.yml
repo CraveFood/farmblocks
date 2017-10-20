@@ -16,8 +16,7 @@ before_install:
   - git checkout "$BRANCH"
 install:
   - yarn --frozen-lockfile
-  - lerna bootstrap
-  - lerna link
+  - BABEL_ENV=production yarn build
   - npx flow-typed install
 script:
   - yarn lint .
@@ -25,7 +24,6 @@ script:
   - yarn typecheck
   - yarn coverage
 after_success:
-  - lerna run build
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
   - if [ $BRANCH == "master" ]; then

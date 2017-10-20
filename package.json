@@ -7,6 +7,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "build": "lerna run build",
     "lint.staged": "lint-staged",
     "test": "jest",
     "typecheck": "flow",
@@ -25,10 +26,6 @@
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
     }
-  },
-  "babel": {
-    "plugins": ["transform-class-properties"],
-    "presets": ["flow", "env", "react"]
   },
   "lint-staged": {
     "*.js": ["yarn lint --quiet"],
