@@ -3,7 +3,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
 
-import { SMALL, LARGE } from "./constants/SizeTypes";
+import { SMALL, LARGE } from "./constants/buttonSizes";
 import {
   PRIMARY,
   SECONDARY,
@@ -12,7 +12,7 @@ import {
   NEUTRAL_OFF,
   CLOSED,
   REQUEST
-} from "./constants/ButtonTypes";
+} from "./constants/buttonTypes";
 import Container from "./styledComponents/Container";
 import StyledButton from "./styledComponents/Button";
 

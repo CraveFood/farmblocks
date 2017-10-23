@@ -2,8 +2,8 @@
 import styled, { css } from "styled-components";
 
 import colorTypes from "../constants/colorTypes";
-import { LARGE } from "../constants/SizeTypes";
-import { NEUTRAL } from "../constants/ButtonTypes";
+import { LARGE } from "../constants/buttonSizes";
+import { NEUTRAL } from "../constants/buttonTypes";
 
 const Button = styled.button`
   display: flex;

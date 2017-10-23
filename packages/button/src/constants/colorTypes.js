@@ -5,7 +5,7 @@ import {
   NEUTRAL_OFF,
   CLOSED,
   REQUEST
-} from "./ButtonTypes";
+} from "./buttonTypes";
 
 export default {
   [PRIMARY]: {
