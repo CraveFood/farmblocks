@@ -39,7 +39,7 @@ document.body.appendChild(root);
 
 ## API
 
-See it [in the source](https://github.com/CraveFood/farmblocks/blob/feature/alert-component/packages/alert/src/index.js#L25-L36)
+See it [in the source](https://github.com/CraveFood/farmblocks/blob/master/packages/alert/src/Alert.js#L24-L35)
 
 ## License
 
