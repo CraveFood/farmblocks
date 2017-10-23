@@ -1,10 +1,10 @@
 import {
   PRIMARY,
   SECONDARY,
+  POSITIVE,
   NEGATIVE,
-  NEUTRAL_OFF,
   CLOSED,
-  REQUEST
+  NEUTRAL_OFF
 } from "./buttonTypes";
 
 export default {
@@ -12,24 +12,24 @@ export default {
     color: "#FF4411",
     hoverColor: "#DD3311"
   },
-  [NEUTRAL_OFF]: {
-    color: "transparent",
-    hoverColor: "#2980B9"
-  },
   [SECONDARY]: {
     color: "#3498db",
     hoverColor: "#2980B9"
   },
-  [REQUEST]: {
+  [POSITIVE]: {
     color: "#2ECC71",
     hoverColor: "#27AE60"
+  },
+  [NEGATIVE]: {
+    color: "#dd3311",
+    hoverColor: "#bc2b0e"
   },
   [CLOSED]: {
     color: "#9b59b6",
     hoverColor: "#8e44ad"
   },
-  [NEGATIVE]: {
-    color: "#dd3311",
-    hoverColor: "#bc2b0e"
+  [NEUTRAL_OFF]: {
+    color: "transparent",
+    hoverColor: "#2980B9"
   }
 };
