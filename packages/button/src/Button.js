@@ -14,7 +14,7 @@ type State = Object;
 class Button extends React.Component<Props, State> {
   static defaultProps = {
     size: buttonSizes.SMALL,
-    type: buttonTypes.PRIMARY
+    type: buttonTypes.NEUTRAL
   };
 
   mouseOver: Function;
