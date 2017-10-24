@@ -1,16 +1,23 @@
 import {
   PRIMARY,
+  NEUTRAL,
   SECONDARY,
   POSITIVE,
   NEGATIVE,
   CLOSED,
-  NEUTRAL_OFF
+  OFF_NEUTRAL
 } from "./buttonTypes";
 
 export default {
   [PRIMARY]: {
     color: "#FF4411",
     hoverColor: "#DD3311"
+  },
+  [NEUTRAL]: {
+    textColor: "#59636f",
+    iconColor: "rgba(0, 0, 0, 0.32)",
+    textHoverColor: "#3498db",
+    color: "#FFFFFF"
   },
   [SECONDARY]: {
     color: "#3498db",
@@ -28,8 +35,8 @@ export default {
     color: "#9b59b6",
     hoverColor: "#8e44ad"
   },
-  [NEUTRAL_OFF]: {
-    color: "transparent",
-    hoverColor: "#2980B9"
+  [OFF_NEUTRAL]: {
+    color: "rgba(0, 0, 0, 0.16)",
+    hoverColor: "#3498db"
   }
 };

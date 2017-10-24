@@ -2,43 +2,63 @@
 import styled, { css } from "styled-components";
 
 import colorTypes from "../constants/colorTypes";
-import { LARGE } from "../constants/buttonSizes";
+import { MEDIUM } from "../constants/buttonSizes";
 import { NEUTRAL } from "../constants/buttonTypes";
 
 const Button = styled.button`
   display: flex;
   align-items: flex-end;
 
+  border: solid 1px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
 
   color: white;
 
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato, sans-serif;
   font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 13px;
   outline: 0;
 
   cursor: pointer;
 
-  &:disabled {
-    background-color: rgba(0, 0, 0, 0.16);
-    color: rgba(0, 0, 0, 0.32);
-    border: solid 1px rgba(0, 0, 0, 0.16);
-    box-shadow: none;
+  .icon {
+    color: rgba(255, 255, 255, 0.56);
+  }
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.16);
-      color: rgba(0, 0, 0, 0.32);
-      border: solid 1px rgba(0, 0, 0, 0.16);
-    }
+  &:hover {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    color: white;
   }
 
   ${fluidStyle};
   ${loadingStyle};
   ${typeStyle};
   ${paddingStyle};
+
+  &:disabled,
+  &:disabled .icon,
+  &:disabled :hover {
+    color: rgba(0, 0, 0, 0.32);
+  }
+
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.16);
+    box-shadow: none;
+  }
 `;
 
 Button.displayName = "StyledButton";
@@ -48,7 +68,7 @@ function isIconOnly(props) {
 }
 
 function paddingStyle(props) {
-  const isLarge = props.size === LARGE;
+  const isLarge = props.size === MEDIUM;
   let padding = "8px 16px";
   if (isLarge) {
     padding = "16px 16px";
@@ -60,24 +80,25 @@ function paddingStyle(props) {
   `;
 }
 
-const activatedNeutralStyle = css`
-  color: #3498db;
-  border-color: #3498db;
-`;
-
 function neutralStyle(props) {
+  const { textColor, iconColor, textHoverColor, color } = colorTypes[NEUTRAL];
+  const activatedNeutralStyle = css`
+    color: ${textHoverColor};
+    border-color: ${textHoverColor};
+    > .icon {
+      color: ${textHoverColor};
+    }
+  `;
   return css`
-    background-color: white;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
-
-    border: solid 1px rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
-
-    color: #58636f;
-
+    background-color: ${color};
+    color: ${textColor};
+    > .icon {
+      color: ${iconColor};
+    }
     ${props => props.activated && activatedNeutralStyle};
 
-    &:hover {
+    &:hover,
+    &:focus {
       ${activatedNeutralStyle};
     }
   `;
@@ -91,7 +112,6 @@ function typeStyle(props) {
 
   return css`
     transition: background 0.3s ease;
-    border: solid 1px rgba(0, 0, 0, 0.16);
     background-color: ${color};
 
     &:hover {
@@ -100,7 +120,6 @@ function typeStyle(props) {
 
     &:focus {
       background-color: ${hoverColor};
-      box-shadow: none;
     }
   `;
 }
