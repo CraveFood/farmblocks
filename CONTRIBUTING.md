@@ -1,10 +1,34 @@
-## Contributing
+## Contributing With Code
 
 ### Setting up the development environment
 
 ```
 yarn install
+yarn build
 ```
+
+### Launching the dev gallery
+```
+yarn storybook
+```
+
+### To build individual packages after modifications
+
+Local / dev / ES modules version:
+
+```
+npx lerna run build --scope=@crave/farmblocks-packagename
+```
+
+Production / commonjs / npm version:
+
+```
+BABEL_ENV=production npx lerna run build --scope=@crave/farmblocks-packagename
+
+```
+
+If you try to run the npm version of the libs with the development storybook server, you may
+run into an ``exports is not defined`` error message.
 
 ### Submiting a patch
 
@@ -65,12 +89,5 @@ npm script instead:
 
 ```
 yarn commit
-```
-
-### (To be removed) Manually publish the package
-
-```
-lerna run build
-lerna publish 
 ```
 

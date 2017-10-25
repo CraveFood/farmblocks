@@ -1,0 +1,14 @@
+//@flow
+export type ButtonType = $Keys<typeof BUTTON_TYPES>;
+
+const BUTTON_TYPES = {
+  PRIMARY: "PRIMARY",
+  NEUTRAL: "NEUTRAL",
+  SECONDARY: "SECONDARY",
+  NEGATIVE: "NEGATIVE",
+  CLOSED: "CLOSED",
+  POSITIVE: "POSITIVE",
+  OFF_NEUTRAL: "OFF_NEUTRAL"
+};
+
+module.exports = BUTTON_TYPES;

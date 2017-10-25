@@ -3,16 +3,8 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
 
-import { SMALL, LARGE } from "./constants/SizeTypes";
-import {
-  PRIMARY,
-  SECONDARY,
-  NEGATIVE,
-  NEUTRAL,
-  NEUTRAL_OFF,
-  CLOSED,
-  REQUEST
-} from "./constants/ButtonTypes";
+import buttonSizes from "./constants/buttonSizes";
+import buttonTypes from "./constants/buttonTypes";
 import Container from "./styledComponents/Container";
 import StyledButton from "./styledComponents/Button";
 
@@ -21,8 +13,8 @@ type Props = Object;
 type State = Object;
 class Button extends React.Component<Props, State> {
   static defaultProps = {
-    size: SMALL,
-    type: PRIMARY
+    size: buttonSizes.SMALL,
+    type: buttonTypes.NEUTRAL
   };
 
   mouseOver: Function;
@@ -95,16 +87,8 @@ Button.propTypes = {
   onClick: PropTypes.func,
   text: PropTypes.string,
   children: PropTypes.node,
-  size: PropTypes.oneOf([SMALL, LARGE]),
-  type: PropTypes.oneOf([
-    PRIMARY,
-    SECONDARY,
-    NEGATIVE,
-    NEUTRAL,
-    NEUTRAL_OFF,
-    CLOSED,
-    REQUEST
-  ]),
+  size: PropTypes.oneOf(Object.keys(buttonSizes)),
+  type: PropTypes.oneOf(Object.keys(buttonTypes)),
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,

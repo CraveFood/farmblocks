@@ -15,6 +15,30 @@ configure(loadStories, module);
 
 injectGlobal`
 @font-face {
+  font-family: 'lato';
+  src: url('./lato-regular-webfont.woff2') format('woff2'),
+  url('./lato-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('./lato-semibold-webfont.woff2') format('woff2'),
+  url('./lato-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('./lato-light-webfont.woff2') format('woff2'),
+  url('./lato-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'whatsgood-fonticon';
   src: url('./whatsgood-iconfont.eot?vexkpz');
   src: url('./whatsgood-iconfont.eot?vexkpz#iefix') format('embedded-opentype'),
@@ -24,6 +48,10 @@ injectGlobal`
   font-weight: normal;
   font-style: normal;
 }
+  .wg-order:before {
+    content: "\\e906";
+  }
+
   .wg-meat:before {
     content: "\\e933";
   }
@@ -36,8 +64,14 @@ injectGlobal`
     content: "\\e924";
   }
 
+  .wg-close:before {
+    content: "\\e965";
+  }
+
+  .wg-order,
   .wg-meat,
   .wg-loading,
+  .wg-close,
   .wg-edit {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;

@@ -1,114 +1,140 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { PRIMARY, NEUTRAL, NEUTRAL_OFF } from "./constants/ButtonTypes";
+import buttonTypes from "./constants/buttonTypes";
+import buttonSizes from "./constants/buttonSizes";
 
 import Button from "./index";
 
 storiesOf("Button", module)
+  .add("Default", () => (
+    <Button onClick={action("buttonClicked")} text="Label" />
+  ))
   .add("Primary", () => (
-    <Button onClick={action("buttonClicked")} text="Primary Button" />
-  ))
-  .add("Disabled", () => (
-    <Button disabled onClick={action("buttonClicked")} text="Disabled Buton" />
-  ))
-  .add("Primary with Icon", () => (
     <Button
+      type={buttonTypes.PRIMARY}
       onClick={action("buttonClicked")}
-      icon="wg-meat"
-      text="Primary with Icon"
+      text="Label"
+    />
+  ))
+  .add("Neutral", () => (
+    <Button
+      type={buttonTypes.NEUTRAL}
+      onClick={action("buttonClicked")}
+      text="Neutral Button"
     />
   ))
   .add("Secondary", () => (
     <Button
-      type="secondary"
+      type={buttonTypes.SECONDARY}
       onClick={action("buttonClicked")}
       text="Secondary Button"
     />
   ))
-  .add("Secondary (fluid)", () => (
-    <div style={{ width: 400, height: 400, background: "gray" }}>
+  .add("Negative", () => (
+    <Button
+      type={buttonTypes.NEGATIVE}
+      onClick={action("buttonClicked")}
+      text="Label"
+    />
+  ))
+  .add("Closed", () => (
+    <Button
+      type={buttonTypes.CLOSED}
+      onClick={action("buttonClicked")}
+      text="Closed Button"
+    />
+  ))
+  .add("Positive", () => (
+    <Button
+      type={buttonTypes.POSITIVE}
+      onClick={action("buttonClicked")}
+      text="Positive Button"
+    />
+  ))
+  .add("Off Neutral Button", () => (
+    <div
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.32)",
+        padding: "10px",
+        display: "inline-block"
+      }}
+    >
       <Button
-        type="secondary"
+        type={buttonTypes.OFF_NEUTRAL}
+        onClick={action("buttonClicked")}
+        text="Label"
+      />
+    </div>
+  ))
+  .add("Default medium", () => (
+    <Button
+      size={buttonSizes.MEDIUM}
+      onClick={action("buttonClicked")}
+      text="Label"
+    />
+  ))
+  .add("Default with Icon", () => (
+    <Button
+      onClick={action("buttonClicked")}
+      icon="wg-order"
+      text="Send Order"
+    />
+  ))
+  .add("Neutral with Icon", () => (
+    <Button
+      type={buttonTypes.NEUTRAL}
+      onClick={action("buttonClicked")}
+      icon="wg-order"
+      text="Label"
+    />
+  ))
+  .add("Disabled", () => (
+    <Button disabled onClick={action("buttonClicked")} text="Disabled Buton" />
+  ))
+  .add("Saving Status", () => (
+    <Button onClick={action("buttonClicked")} text="Saving…" loading />
+  ))
+  .add("Icon only (neutral)", () => (
+    <Button
+      type={buttonTypes.NEUTRAL}
+      onClick={action("buttonClicked")}
+      icon="wg-edit"
+    />
+  ))
+  .add("Icon only (primary)", () => (
+    <Button
+      type={buttonTypes.PRIMARY}
+      onClick={action("buttonClicked")}
+      icon="wg-edit"
+    />
+  ))
+  .add("Icon only (disabled)", () => (
+    <Button disabled onClick={action("buttonClicked")} icon="wg-edit" />
+  ))
+  .add("Icon only (neutral medium)", () => (
+    <Button
+      type={buttonTypes.NEUTRAL}
+      size={buttonSizes.LARGE}
+      onClick={action("buttonClicked")}
+      icon="wg-edit"
+    />
+  ))
+  .add("Secondary (fluid)", () => (
+    <div style={{ width: 400, height: 400, background: "rgba(0, 0, 0, 0.32)" }}>
+      <Button
+        type={buttonTypes.SECONDARY}
         fluid
         onClick={action("buttonClicked")}
         text="Secondary Button"
       />
     </div>
   ))
-  .add("Request", () => (
-    <Button
-      type="request"
-      onClick={action("buttonClicked")}
-      text="Request Button"
-    />
-  ))
-  .add("Closed", () => (
-    <Button
-      type="closed"
-      onClick={action("buttonClicked")}
-      text="Closed Button"
-    />
-  ))
-  .add("Neutral", () => (
-    <Button
-      type={NEUTRAL}
-      onClick={action("buttonClicked")}
-      text="Neutral Button"
-    />
-  ))
   .add("Neutral Activated", () => (
     <Button
-      type={NEUTRAL}
+      type={buttonTypes.NEUTRAL}
       activated
       onClick={action("buttonClicked")}
       text="Neutral Button"
-    />
-  ))
-  .add("Neutral Off", () => (
-    <div
-      style={{
-        backgroundColor: "gray",
-        padding: "10px",
-        display: "inline-block"
-      }}
-    >
-      <Button
-        type={NEUTRAL_OFF}
-        onClick={action("buttonClicked")}
-        text="Neutral Off Button"
-      />
-    </div>
-  ))
-  .add("Large button", () => (
-    <Button
-      size="large"
-      onClick={action("buttonClicked")}
-      text="Large Button"
-    />
-  ))
-  .add("Loading", () => (
-    <Button onClick={action("buttonClicked")} text="Loading Icon" loading />
-  ))
-  .add("Icon only", () => (
-    <Button type="neutral" onClick={action("buttonClicked")} icon="wg-edit" />
-  ))
-  .add("Icon only (primary)", () => (
-    <Button type={PRIMARY} onClick={action("buttonClicked")} icon="wg-edit" />
-  ))
-  .add("Icon only (disabled)", () => (
-    <Button
-      disabled
-      type="neutral"
-      onClick={action("buttonClicked")}
-      icon="wg-edit"
-    />
-  ))
-  .add("Icon only (large)", () => (
-    <Button
-      type="neutral"
-      size="large"
-      onClick={action("buttonClicked")}
-      icon="wg-edit"
     />
   ));
