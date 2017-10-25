@@ -21,6 +21,13 @@ const Container = styled.div`
     text-align: center;
     color: ${props => (props.type === ATTENTION ? "#2f313a" : "#ffffff")};
   }
+
+  > .dismiss-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    right: 24px;
+  }
 `;
 
 export default Container;
