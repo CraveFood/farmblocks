@@ -11,7 +11,7 @@ import {
 export default {
   [PRIMARY]: {
     color: "#FF4411",
-    hoverColor: "#DD3311"
+    hoverColor: "#d7390e"
   },
   [NEUTRAL]: {
     textColor: "#59636f",
@@ -21,7 +21,7 @@ export default {
   },
   [SECONDARY]: {
     color: "#3498db",
-    hoverColor: "#2980B9"
+    hoverColor: "#2b7fb8"
   },
   [POSITIVE]: {
     color: "#2ECC71",
