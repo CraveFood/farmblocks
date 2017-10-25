@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@2.0.0...@crave/farmblocks-alert@2.1.0) (2017-10-25)
+
+
+### Bug Fixes
+
+* **alert lib:** export the alert types in the package ([f9dd37e](https://github.com/CraveFood/farmblocks/commit/f9dd37e))
+
+
+### Features
+
+* **close button:** use farmblocks button for the dismiss button ([a7d2718](https://github.com/CraveFood/farmblocks/commit/a7d2718))
+
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2017-10-19)
 
