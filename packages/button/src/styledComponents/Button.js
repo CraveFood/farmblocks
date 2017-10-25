@@ -68,9 +68,9 @@ function isIconOnly(props) {
 }
 
 function paddingStyle(props) {
-  const isLarge = props.size === MEDIUM;
+  const isMedium = props.size === MEDIUM;
   let padding = "8px 16px";
-  if (isLarge) {
+  if (isMedium) {
     padding = "16px 16px";
   } else if (isIconOnly(props)) {
     padding = "8px 8px";
