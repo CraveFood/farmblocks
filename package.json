@@ -19,7 +19,7 @@
     "commit": "git-cz",
     "prepush": "yarn typecheck",
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
-    "build-storybook": "build-storybook -o docs"
+    "build-storybook": "build-storybook -s .storybook/assets -o docs"
   },
   "workspaces": ["packages/*"],
   "config": {
