@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.0.0...@crave/farmblocks-button@1.0.1) (2017-10-25)
+
+
+### Bug Fixes
+
+* fix button hover colors ([b965356](https://github.com/CraveFood/farmblocks/commit/b965356))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@0.2.0...@crave/farmblocks-button@1.0.0) (2017-10-25)
 
