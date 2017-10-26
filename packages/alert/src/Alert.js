@@ -25,11 +25,19 @@ class Alert extends React.Component<Object, Object> {
     onDismiss: () => null
   };
 
+  dismissHandler: Function;
+
   constructor(props: Object) {
     super(props);
     this.state = {
       isVisible: true
     };
+    this.dismissHandler = this.dismissHandler.bind(this);
+  }
+
+  dismissHandler() {
+    this.setState({ isVisible: false });
+    this.props.onDismiss();
   }
 
   render() {
@@ -37,12 +45,8 @@ class Alert extends React.Component<Object, Object> {
       return null;
     }
     const { visibleTime, autoRemove, zIndex } = this.props;
-    const dismissHandler = () => {
-      this.setState({ isVisible: false });
-      this.props.onDismiss();
-    };
     const alert = (
-      <StyledAlert type={this.props.type} {...(zIndex ? { zIndex } : {})}>
+      <StyledAlert type={this.props.type} zIndex={zIndex}>
         <p>{this.props.text}</p>
 
         {this.props.dismissable && (
@@ -51,7 +55,7 @@ class Alert extends React.Component<Object, Object> {
               icon="wg-close"
               size={buttonSizes.SMALL}
               type={buttonTypes.OFF_NEUTRAL}
-              onClick={dismissHandler}
+              onClick={this.dismissHandler}
             />
           </div>
         )}
