@@ -7,6 +7,8 @@ import StyledAlert from "./styledComponents/Alert";
 import AlertTypes from "./constants/alertTypes";
 import BrieflyDisplay from "./BrieflyDisplay";
 
+const DEFAULT_Z_INDEX = 2500;
+
 class Alert extends React.Component<Object, Object> {
   static propTypes = {
     text: PropTypes.string.isRequired,
@@ -22,6 +24,7 @@ class Alert extends React.Component<Object, Object> {
     type: AlertTypes.NEWS,
     dismissable: true,
     autoRemove: true,
+    zIndex: DEFAULT_Z_INDEX,
     onDismiss: () => null
   };
 
