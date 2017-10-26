@@ -12,6 +12,7 @@ class Alert extends React.Component<Object, Object> {
     text: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.keys(AlertTypes)),
     dismissable: PropTypes.bool,
+    autoRemove: PropTypes.bool,
     onDismiss: PropTypes.func,
     visibleTime: PropTypes.number,
     zIndex: PropTypes.number
@@ -20,6 +21,7 @@ class Alert extends React.Component<Object, Object> {
   static defaultProps = {
     type: AlertTypes.NEWS,
     dismissable: true,
+    autoRemove: true,
     onDismiss: () => null
   };
 
@@ -31,10 +33,10 @@ class Alert extends React.Component<Object, Object> {
   }
 
   render() {
-    if (!this.state.isVisible) {
+    if (!this.state.isVisible && this.props.autoRemove) {
       return null;
     }
-    const { visibleTime, zIndex } = this.props;
+    const { visibleTime, autoRemove, zIndex } = this.props;
     const dismissHandler = () => {
       this.setState({ isVisible: false });
       this.props.onDismiss();
@@ -58,7 +60,11 @@ class Alert extends React.Component<Object, Object> {
     if (!visibleTime) {
       return alert;
     }
-    return <BrieflyDisplay time={visibleTime}>{alert}</BrieflyDisplay>;
+    return (
+      <BrieflyDisplay time={visibleTime} autoRemove={autoRemove}>
+        {alert}
+      </BrieflyDisplay>
+    );
   }
 }
 

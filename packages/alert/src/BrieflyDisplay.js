@@ -7,11 +7,13 @@ const DEFAULT_TIME = 2000;
 class BrieflyDisplay extends React.Component<Object, Object> {
   static propTypes = {
     time: PropTypes.number,
+    autoRemove: PropTypes.bool,
     children: PropTypes.node
   };
 
   static defaultProps = {
-    time: DEFAULT_TIME
+    time: DEFAULT_TIME,
+    autoRemove: true
   };
 
   constructor(props: Object) {
@@ -36,7 +38,7 @@ class BrieflyDisplay extends React.Component<Object, Object> {
   }
 
   render() {
-    if (!this.state.isVisible) {
+    if (!this.state.isVisible && this.props.autoRemove) {
       return null;
     }
     return this.props.children;
