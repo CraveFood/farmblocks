@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@2.1.1...@crave/farmblocks-alert@3.0.0) (2017-10-26)
+
+
+### Bug Fixes
+
+* **onDismiss:** onDismiss should be called on regular timeout as well ([877ac16](https://github.com/CraveFood/farmblocks/commit/877ac16))
+
+
+### Features
+
+* **alert props:** add new property autoRemove ([199f70b](https://github.com/CraveFood/farmblocks/commit/199f70b))
+* **briefly display:** create BrieflyDisplay component ([657004c](https://github.com/CraveFood/farmblocks/commit/657004c))
+* **css:** change position to fixed, on top, and remove margin from the p ([196db7d](https://github.com/CraveFood/farmblocks/commit/196db7d))
+* **new property:** add property zIndex to the alert component ([1341bb1](https://github.com/CraveFood/farmblocks/commit/1341bb1))
+* **stateful alert:** make alert comonent default dismiss hide the component and add property to hid ([77b7a98](https://github.com/CraveFood/farmblocks/commit/77b7a98))
+
+
+### BREAKING CHANGES
+
+* **css:** the position of the alert is now fixed and on tip always
+
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@2.1.0...@crave/farmblocks-alert@2.1.1) (2017-10-25)
 
