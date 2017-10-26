@@ -44,7 +44,7 @@ class Alert extends React.Component<Object, Object> {
     if (!this.state.isVisible && this.props.autoRemove) {
       return null;
     }
-    const { visibleTime, autoRemove, zIndex } = this.props;
+    const { visibleTime, autoRemove, onDismiss, zIndex } = this.props;
     const alert = (
       <StyledAlert type={this.props.type} zIndex={zIndex}>
         <p>{this.props.text}</p>
@@ -65,7 +65,11 @@ class Alert extends React.Component<Object, Object> {
       return alert;
     }
     return (
-      <BrieflyDisplay time={visibleTime} autoRemove={autoRemove}>
+      <BrieflyDisplay
+        time={visibleTime}
+        autoRemove={autoRemove}
+        onTimeout={onDismiss}
+      >
         {alert}
       </BrieflyDisplay>
     );
