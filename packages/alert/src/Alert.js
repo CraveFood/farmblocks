@@ -34,7 +34,7 @@ class Alert extends React.Component<Object, Object> {
     if (!this.state.isVisible) {
       return null;
     }
-    const { visibleTime: time, zIndex } = this.props;
+    const { visibleTime, zIndex } = this.props;
     const dismissHandler = () => {
       this.setState({ isVisible: false });
       this.props.onDismiss();
@@ -55,10 +55,10 @@ class Alert extends React.Component<Object, Object> {
         )}
       </StyledAlert>
     );
-    if (!this.props.visibleTime) {
+    if (!visibleTime) {
       return alert;
     }
-    return <BrieflyDisplay {...(time ? { time } : {})}>{alert}</BrieflyDisplay>;
+    return <BrieflyDisplay time={visibleTime}>{alert}</BrieflyDisplay>;
   }
 }
 
