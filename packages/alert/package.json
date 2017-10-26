@@ -5,13 +5,7 @@
   "author": "Crave Food Services and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": [
-    "AUTHORS",
-    "LICENSE",
-    "README.md",
-    "CHANGELOG.md",
-    "lib"
-  ],
+  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
   "publishConfig": {
     "access": "public"
   },
@@ -21,16 +15,6 @@
     "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'",
     "prestorybook": "cp -Rf ../../.storybook .",
     "storybook": "start-storybook -p 6006"
-  },
-  "babel": {
-    "plugins": [
-      "transform-class-properties"
-    ],
-    "presets": [
-      "flow",
-      "env",
-      "react"
-    ]
   },
   "repository": {
     "type": "git",
@@ -49,10 +33,6 @@
     "@storybook/react": "^3.2.13",
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0",
-    "babel-preset-react": "^6.24.1",
     "flow-bin": "^0.57.3",
     "jest": "^21.2.1"
   },

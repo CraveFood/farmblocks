@@ -1,16 +1,13 @@
 {
   "env": {
     "production": {
-      "plugins": ["transform-class-properties"],
-      "presets": ["flow", "env", "react"]
+      "presets": ["flow", "env", "stage-2", "react"]
     },
     "test": {
-      "plugins": ["transform-class-properties"],
-      "presets": ["flow", "env", "react"]
+      "presets": ["flow", "env", "stage-2", "react"]
     },
     "development": {
-      "plugins": ["transform-class-properties"],
-      "presets": ["flow", ["env", { "modules": false }], "react"]
+      "presets": ["flow", ["env", { "modules": false }], "stage-2", "react"]
     }
   }
 }
