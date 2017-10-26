@@ -13,7 +13,8 @@ class Alert extends React.Component<Object, Object> {
     type: PropTypes.oneOf(Object.keys(AlertTypes)),
     dismissable: PropTypes.bool,
     onDismiss: PropTypes.func,
-    visibleTime: PropTypes.number
+    visibleTime: PropTypes.number,
+    zIndex: PropTypes.number
   };
 
   static defaultProps = {
@@ -33,13 +34,13 @@ class Alert extends React.Component<Object, Object> {
     if (!this.state.isVisible) {
       return null;
     }
+    const { visibleTime: time, zIndex } = this.props;
     const dismissHandler = () => {
       this.setState({ isVisible: false });
       this.props.onDismiss();
     };
-    const time = this.props.visibleTime ? { time: this.props.visibleTime } : {};
     const alert = (
-      <StyledAlert type={this.props.type}>
+      <StyledAlert type={this.props.type} {...(zIndex ? { zIndex } : {})}>
         <p>{this.props.text}</p>
 
         {this.props.dismissable && (
@@ -57,7 +58,7 @@ class Alert extends React.Component<Object, Object> {
     if (!this.props.visibleTime) {
       return alert;
     }
-    return <BrieflyDisplay {...time}>{alert}</BrieflyDisplay>;
+    return <BrieflyDisplay {...(time ? { time } : {})}>{alert}</BrieflyDisplay>;
   }
 }
 

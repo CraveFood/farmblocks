@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import bgColors from "../constants/colors";
 import { ATTENTION } from "../constants/alertTypes";
@@ -12,6 +12,8 @@ const Container = styled.div`
   box-shadow: 0 2px 2px 0 rgba(46, 204, 113, 0.16);
   border: solid 1px rgba(0, 0, 0, 0.16);
   min-height: ${2 * 20 + 32}px;
+
+  ${props => (props.zIndex ? css`z-index: ${props.zIndex};` : "")};
 
   > p {
     font-family: Lato, sans-serif;
