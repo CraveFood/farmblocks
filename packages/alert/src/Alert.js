@@ -5,37 +5,60 @@ import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 
 import StyledAlert from "./styledComponents/Alert";
 import AlertTypes from "./constants/alertTypes";
+import BrieflyDisplay from "./BrieflyDisplay";
 
-// @FIXME annotating props as Object while we dont have a way to prevent redundant type anotation.
-// see issue #22
-const Alert = (props: Object) => (
-  <StyledAlert type={props.type}>
-    <p>{props.text}</p>
+class Alert extends React.Component<Object, Object> {
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+    type: PropTypes.oneOf(Object.keys(AlertTypes)),
+    dismissable: PropTypes.bool,
+    onDismiss: PropTypes.func,
+    visibleTime: PropTypes.number
+  };
 
-    {props.dismissable && (
-      <div className="dismiss-button">
-        <Button
-          icon="wg-close"
-          size={buttonSizes.SMALL}
-          type={buttonTypes.OFF_NEUTRAL}
-          onClick={props.onDismiss}
-        />
-      </div>
-    )}
-  </StyledAlert>
-);
+  static defaultProps = {
+    type: AlertTypes.NEWS,
+    dismissable: true,
+    onDismiss: () => null
+  };
 
-Alert.propTypes = {
-  text: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(Object.keys(AlertTypes)),
-  dismissable: PropTypes.bool,
-  onDismiss: PropTypes.func
-};
+  constructor(props: Object) {
+    super(props);
+    this.state = {
+      isVisible: true
+    };
+  }
 
-Alert.defaultProps = {
-  type: AlertTypes.NEWS,
-  dismissable: true,
-  onDismiss: () => null
-};
+  render() {
+    if (!this.state.isVisible) {
+      return null;
+    }
+    const dismissHandler = () => {
+      this.setState({ isVisible: false });
+      this.props.onDismiss();
+    };
+    const time = this.props.visibleTime ? { time: this.props.visibleTime } : {};
+    const alert = (
+      <StyledAlert type={this.props.type}>
+        <p>{this.props.text}</p>
+
+        {this.props.dismissable && (
+          <div className="dismiss-button">
+            <Button
+              icon="wg-close"
+              size={buttonSizes.SMALL}
+              type={buttonTypes.OFF_NEUTRAL}
+              onClick={dismissHandler}
+            />
+          </div>
+        )}
+      </StyledAlert>
+    );
+    if (!this.props.visibleTime) {
+      return alert;
+    }
+    return <BrieflyDisplay {...time}>{alert}</BrieflyDisplay>;
+  }
+}
 
 export default Alert;
