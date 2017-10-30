@@ -1,9 +1,7 @@
 // @flow
 import styled from "styled-components";
 
-const Container = styled.div`
-  position: relative;
-`;
+const Container = styled.div`position: relative;`;
 
 const StyledTooltip = styled.div`
   visibility: ${props => (props.isVisible ? "visible" : "hidden")};
@@ -15,6 +13,8 @@ const StyledTooltip = styled.div`
   border: solid 1px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   white-space: pre;
+
+  font-family: lato, sans-serif;
 
   right: 0;
 
