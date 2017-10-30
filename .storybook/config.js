@@ -14,6 +14,7 @@ function loadStories() {
 configure(loadStories, module);
 
 injectGlobal`
+
 @font-face {
   font-family: 'lato';
   src: url('./lato-regular-webfont.woff2') format('woff2'),
