@@ -1,0 +1,40 @@
+{
+  "name": "@crave/farmblocks-stepper",
+  "version": "1.0.0",
+  "description": "A React Component for displaying step to step actions",
+  "author": "Crave Food Systems and AUTHORS",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'",
+    "prestorybook": "cp -Rf ../../.storybook .",
+    "storybook": "start-storybook -p 6006"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "styled-components": "^2.2.1"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.13",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "flow-bin": "^0.57.3",
+    "jest": "^21.2.1"
+  },
+  "keywords": ["farmblocks", "react", "component", "stepper", "widget"]
+}
