@@ -16,7 +16,7 @@ before_install:
   - git checkout "$BRANCH"
 install:
   - yarn --frozen-lockfile
-  - BABEL_ENV=production yarn build
+  - yarn build
   - npx flow-typed install --overwrite
 script:
   - yarn lint .
