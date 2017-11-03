@@ -17,7 +17,7 @@ before_install:
 install:
   - yarn --frozen-lockfile
   - yarn build
-  - npx flow-typed install
+  - npx flow-typed install --overwrite
 script:
   - yarn lint .
   - yarn lint.test .
@@ -26,11 +26,16 @@ script:
 after_success:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
-  - if [ $BRANCH == "master" ]; then
+  - |
+    if [ $BRANCH == "master" ]; then
       git config user.name "Travis CI" || travis_terminate 1;
       git config user.email "travis@cravefood.services" || travis_terminate 1;
       git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git || travis_terminate 1;
       lerna publish --yes || travis_terminate 1;
+      yarn build-storybook || travis_terminate 1;
+      git add docs;
+      git commit -m "chore(docs): [ci skip] gallery update";
+      git push origin "$BRANCH";
     else
       lerna publish --canary --yes || travis_terminate 1;
     fi
