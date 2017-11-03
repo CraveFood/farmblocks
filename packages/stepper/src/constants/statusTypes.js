@@ -1,0 +1,5 @@
+export default {
+  CURRENT: "CURRENT",
+  COMPLETED: "COMPLETED",
+  PENDING: "PENDING"
+};

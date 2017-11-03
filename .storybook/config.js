@@ -77,12 +77,17 @@ injectGlobal`
     content: "\\e944";
   }
 
+  .wg-check:before {
+    content: "\\e91b";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
   .wg-close,
   .wg-alert,
   .wg-small-arrow-right,
+  .wg-check,
   .wg-edit {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
