@@ -69,10 +69,20 @@ injectGlobal`
     content: "\\e965";
   }
 
+  .wg-alert:before {
+    content: "\\e92c";
+  }
+
+  .wg-small-arrow-right:before {
+    content: "\\e944";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
   .wg-close,
+  .wg-alert,
+  .wg-small-arrow-right,
   .wg-edit {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
