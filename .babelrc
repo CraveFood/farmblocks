@@ -1,13 +1,3 @@
 {
-  "env": {
-    "production": {
-      "presets": ["flow", "env", "stage-2", "react"]
-    },
-    "test": {
-      "presets": ["flow", "env", "stage-2", "react"]
-    },
-    "development": {
-      "presets": ["flow", ["env", { "modules": false }], "stage-2", "react"]
-    }
-  }
+  "presets": ["flow", "env", "stage-2", "react"]
 }
