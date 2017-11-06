@@ -81,6 +81,10 @@ injectGlobal`
     content: "\\e91b";
   }
 
+  .wg-checker:before {
+    content: "\\e949";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -88,6 +92,7 @@ injectGlobal`
   .wg-alert,
   .wg-small-arrow-right,
   .wg-check,
+  .wg-checker,
   .wg-edit {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
