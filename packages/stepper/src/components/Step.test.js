@@ -9,18 +9,18 @@ import Step from "./Step";
 describe("Step", function() {
   Enzyme.configure({ adapter: new Adapter() });
   test("should not dispatch click on a completed step", function() {
-    const item = {
-      id: "1",
-      description: "Step 1",
-      status: statusTypes.COMPLETED
-    };
+    const index = 0;
+    const value = "Completed step";
+    const status = statusTypes.COMPLETED;
 
     const onClickMock = jest.fn();
     const eventMock = {
       stopPropagation: jest.fn()
     };
 
-    const wrapper = shallow(<Step item={item} onClick={onClickMock} />);
+    const wrapper = shallow(
+      <Step index={index} value={value} status={status} onClick={onClickMock} />
+    );
 
     wrapper.instance().onClick(eventMock);
 
@@ -29,18 +29,18 @@ describe("Step", function() {
   });
 
   test("should not dispatch click on a pending step", function() {
-    const item = {
-      id: "1",
-      description: "Step 1",
-      status: statusTypes.PENDING
-    };
+    const index = 0;
+    const value = "Pending step";
+    const status = statusTypes.PENDING;
 
     const onClickMock = jest.fn();
     const eventMock = {
       stopPropagation: jest.fn()
     };
 
-    const wrapper = shallow(<Step item={item} onClick={onClickMock} />);
+    const wrapper = shallow(
+      <Step index={index} value={value} status={status} onClick={onClickMock} />
+    );
 
     wrapper.instance().onClick(eventMock);
 
@@ -49,22 +49,22 @@ describe("Step", function() {
   });
 
   test("should dispatch click on a current step", function() {
-    const item = {
-      id: "1",
-      description: "Step 1",
-      status: statusTypes.CURRENT
-    };
+    const index = 0;
+    const value = "Current step";
+    const status = statusTypes.CURRENT;
 
     const onClickMock = jest.fn();
     const eventMock = {
       stopPropagation: jest.fn()
     };
 
-    const wrapper = shallow(<Step item={item} onClick={onClickMock} />);
+    const wrapper = shallow(
+      <Step index={index} value={value} status={status} onClick={onClickMock} />
+    );
 
     wrapper.instance().onClick(eventMock);
 
     expect(eventMock.stopPropagation).toBeCalled();
-    expect(onClickMock).toBeCalledWith(item.id);
+    expect(onClickMock).toBeCalledWith({ index, value });
   });
 });

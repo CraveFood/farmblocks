@@ -12,11 +12,9 @@ storiesOf("Step (private)", module)
     "pending",
     withInfo()(() => (
       <Step
-        item={{
-          id: "1",
-          description: "Pending step",
-          status: statusTypes.PENDING
-        }}
+        index={0}
+        value="Pending step"
+        status={statusTypes.PENDING}
         onClick={action("clicked")}
         style={style}
       />
@@ -26,11 +24,9 @@ storiesOf("Step (private)", module)
     "current",
     withInfo()(() => (
       <Step
-        item={{
-          id: "1",
-          description: "Current step",
-          status: statusTypes.CURRENT
-        }}
+        index={0}
+        value="Current step"
+        status={statusTypes.CURRENT}
         onClick={action("clicked")}
         style={style}
       />
@@ -40,11 +36,9 @@ storiesOf("Step (private)", module)
     "completed",
     withInfo()(() => (
       <Step
-        item={{
-          id: "1",
-          description: "Completed step",
-          status: statusTypes.COMPLETED
-        }}
+        index={0}
+        value="Completed step"
+        status={statusTypes.COMPLETED}
         onClick={action("clicked")}
         style={style}
       />

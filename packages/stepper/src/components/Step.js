@@ -14,24 +14,29 @@ export default class Step extends React.Component {
   onClick(event) {
     event.stopPropagation();
 
-    if (this.props.item.status !== statusTypes.CURRENT) {
+    const isCurrentStep = this.props.status === statusTypes.CURRENT;
+
+    if (!isCurrentStep) {
       return;
     }
 
-    return this.props.onClick(this.props.item.id);
+    return this.props.onClick({
+      index: this.props.index,
+      value: this.props.value
+    });
   }
 
   render() {
-    const isCompleted = this.props.item.status === statusTypes.COMPLETED;
+    const status = this.props.status;
+    const isCompleted = status === statusTypes.COMPLETED;
 
     return (
-      <Container status={this.props.item.status} onClick={this.onClick}>
+      <Container status={status} onClick={this.onClick}>
         {this._renderIcon(isCompleted ? "wg-check" : "wg-checker")}
 
-        <div className="description">{this.props.item.description}</div>
+        <div className="description">{this.props.value}</div>
 
-        {this.props.item.status !== statusTypes.COMPLETED &&
-          this._renderIcon("wg-small-arrow-right")}
+        {!isCompleted && this._renderIcon("wg-small-arrow-right")}
       </Container>
     );
   }
@@ -45,11 +50,9 @@ export default class Step extends React.Component {
   }
 
   static propTypes = {
-    item: PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired
-    }),
+    index: PropTypes.number.isRequired,
+    value: PropTypes.string.isRequired,
+    status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
     onClick: PropTypes.func.isRequired
   };
 }
