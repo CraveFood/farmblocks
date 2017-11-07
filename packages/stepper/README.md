@@ -19,6 +19,15 @@ npm install @crave/farmblocks-stepper
 
 ## Usage
 
+Pass a list of `steps` to be completed, the quantity of `completedSteps` and a function to handle `onClick`.
+
+The `Stepper` component will render:
+  - `COMPLETED` status from index 0 of the `steps` array until the index of the last completed step (`completedSteps - 1`);
+  - `CURRENT` status to the next step after the last completed step
+  - `PENDING` status to all remaining steps
+
+`onClick` will be called only for `PENDING` steps.
+
 ```jsx
 const React = require("react");
 const ReactDOM = require("react-dom");
@@ -28,25 +37,17 @@ const { statusTypes } = require("@crave/farmblocks-stepper");
 const root = document.createElement("div");
 
 const steps = [
-  {
-    id: "1",
-    description: "Complete profile",
-    status: statusTypes.COMPLETED
-  },
-  {
-    id: "2",
-    description: "Add products",
-    status: statusTypes.CURRENT
-  },
-  {
-    id: "3",
-    description: "Start selling",
-    status: statusTypes.PENDING
-  }
-]
+  "Complete profile",
+  "Add bank account",
+  "Connect to purchasers",
+  "Add products",
+  "Start selling"
+];
+
+const completedSteps = 2;
 
 ReactDOM.render(
-  <Stepper steps={steps} onClick={id => console.log("Handle click", id)} />,
+  <Stepper steps={steps} completedSteps={completedSteps} onClick={({index, value}) => console.log("Handle click", index, value)} />,
   root
 );
 
