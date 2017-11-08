@@ -1,8 +1,8 @@
+import { colors as colorConstants } from "@crave/farmblocks-constants";
+
 import statusTypes from "./statusTypes";
 
-export const CARBON = "#2f313a";
-export const INDIGO_MILK_CAP = "#3498db";
-export const LETTUCE = "#2ecc71";
+const { INDIGO_MILK_CAP, LETTUCE } = colorConstants;
 
 export default {
   [statusTypes.COMPLETED]: {

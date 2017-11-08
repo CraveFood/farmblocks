@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
+import { colors as colorConstants } from "@crave/farmblocks-constants";
 
-import colorTypes, { CARBON } from "../constants/colorTypes";
+import colorTypes from "../constants/colorTypes";
 import statusTypes from "../constants/statusTypes";
 
 const StepContainer = styled.div`
@@ -25,7 +26,7 @@ const StepContainer = styled.div`
 
   cursor: ${props => props.status === statusTypes.CURRENT && "pointer"};
 
-  color: ${CARBON};
+  color: ${colorConstants.CARBON};
 
   ${colors};
 `;
