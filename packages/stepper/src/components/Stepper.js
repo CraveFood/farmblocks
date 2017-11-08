@@ -11,6 +11,7 @@ export default class Stepper extends React.Component {
     super(props);
 
     this.getStatus = this.getStatus.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   getStatus(currentIndex, lastCompletedIndex) {
@@ -23,17 +24,31 @@ export default class Stepper extends React.Component {
     return statusTypes.PENDING;
   }
 
+  onClick(status, index, value) {
+    const isCurrentStep = status === statusTypes.CURRENT;
+
+    if (!isCurrentStep) {
+      return;
+    }
+
+    this.props.onClick({ index, value });
+  }
+
   render() {
-    return this.props.steps.map((value, index) => (
-      <Container key={index}>
-        <Step
-          value={value}
-          index={index}
-          status={this.getStatus(index, this.props.completedSteps - 1)}
-          onClick={this.props.onClick}
-        />
-      </Container>
-    ));
+    const steps = this.props.steps.map((value, index) => {
+      const status = this.getStatus(index, this.props.completedSteps - 1);
+      return (
+        <Container key={index}>
+          <Step
+            value={value}
+            status={status}
+            onClick={event => this.onClick(status, index, value)}
+          />
+        </Container>
+      );
+    });
+
+    return <div>{steps}</div>;
   }
 
   static propTypes = {

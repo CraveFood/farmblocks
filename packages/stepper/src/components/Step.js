@@ -5,33 +5,12 @@ import Container from "../styledComponents/Step";
 import statusTypes from "../constants/statusTypes";
 
 export default class Step extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick(event) {
-    event.stopPropagation();
-
-    const isCurrentStep = this.props.status === statusTypes.CURRENT;
-
-    if (!isCurrentStep) {
-      return;
-    }
-
-    return this.props.onClick({
-      index: this.props.index,
-      value: this.props.value
-    });
-  }
-
   render() {
     const status = this.props.status;
     const isCompleted = status === statusTypes.COMPLETED;
 
     return (
-      <Container status={status} onClick={this.onClick}>
+      <Container status={status} onClick={this.props.onClick}>
         {this._renderIcon(isCompleted ? "wg-check" : "wg-checker")}
 
         <div className="description">{this.props.value}</div>
@@ -50,7 +29,6 @@ export default class Step extends React.Component {
   }
 
   static propTypes = {
-    index: PropTypes.number.isRequired,
     value: PropTypes.string.isRequired,
     status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
     onClick: PropTypes.func.isRequired
