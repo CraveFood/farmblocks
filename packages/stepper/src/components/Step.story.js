@@ -12,24 +12,24 @@ storiesOf("Step (private)", module)
     "pending",
     withInfo()(() => (
       <Step
-        index={0}
-        value="Pending step"
         status={statusTypes.PENDING}
         onClick={action("clicked")}
         style={style}
-      />
+      >
+        Pending step
+      </Step>
     ))
   )
   .add(
     "current",
     withInfo()(() => (
       <Step
-        index={0}
-        value="Current step"
         status={statusTypes.CURRENT}
         onClick={action("clicked")}
         style={style}
-      />
+      >
+        Current step
+      </Step>
     ))
   )
   .add(
@@ -37,10 +37,11 @@ storiesOf("Step (private)", module)
     withInfo()(() => (
       <Step
         index={0}
-        value="Completed step"
         status={statusTypes.COMPLETED}
         onClick={action("clicked")}
         style={style}
-      />
+      >
+        Completed step
+      </Step>
     ))
   );

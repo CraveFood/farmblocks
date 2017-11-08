@@ -40,10 +40,11 @@ export default class Stepper extends React.Component {
       return (
         <Container key={index}>
           <Step
-            value={value}
             status={status}
             onClick={event => this.onClick(status, index, value)}
-          />
+          >
+            {value}
+          </Step>
         </Container>
       );
     });
