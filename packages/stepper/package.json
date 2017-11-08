@@ -14,7 +14,7 @@
     "clean": "rm -rf lib",
     "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'",
     "prestorybook": "cp -Rf ../../.storybook .",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006 -s .storybook/assets"
   },
   "repository": {
     "type": "git",
