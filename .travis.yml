@@ -33,6 +33,7 @@ script:
   - yarn coverage
   - greenkeeper-lockfile-upload
 after_success:
+  - snyk monitor
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
   - git config user.name "Travis CI" || travis_terminate 1;

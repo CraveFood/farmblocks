@@ -9,7 +9,7 @@
   "scripts": {
     "build": "lerna run build",
     "lint.staged": "lint-staged",
-    "test": "jest",
+    "test": "snyk test && jest",
     "typecheck": "flow",
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
     "lint.test":
@@ -76,6 +76,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
+    "snyk": "^1.56.0",
     "styled-components": "^2.2.4"
   }
 }
