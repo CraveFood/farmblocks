@@ -26,7 +26,7 @@ The `Stepper` component will render:
   - `CURRENT` status to the next step after the last completed step
   - `PENDING` status to all remaining steps
 
-`onClick` will be called only for `PENDING` steps.
+`onClick` will be called only for `CURRENT` steps.
 
 ```jsx
 const React = require("react");
