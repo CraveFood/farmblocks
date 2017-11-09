@@ -1,3 +1,5 @@
+import { colors as colorConstants } from "@crave/farmblocks-theme";
+
 import {
   PRIMARY,
   NEUTRAL,
@@ -10,33 +12,33 @@ import {
 
 export default {
   [PRIMARY]: {
-    color: "#FF4411",
-    hoverColor: "#d7390e"
+    color: colorConstants.RED_ORANGE,
+    hoverColor: colorConstants.STRAWBERRY
   },
   [NEUTRAL]: {
-    textColor: "#59636f",
-    iconColor: "rgba(0, 0, 0, 0.32)",
-    textHoverColor: "#3498db",
+    textColor: colorConstants.OYSTER,
+    iconColor: colorConstants.GREY_32,
+    textHoverColor: colorConstants.INDIGO_MILK_CAP,
     color: "#FFFFFF"
   },
   [SECONDARY]: {
-    color: "#3498db",
-    hoverColor: "#2b7fb8"
+    color: colorConstants.INDIGO_MILK_CAP,
+    hoverColor: colorConstants.BLUE_CORN
   },
   [POSITIVE]: {
-    color: "#2ECC71",
-    hoverColor: "#27AE60"
+    color: colorConstants.LETTUCE,
+    hoverColor: colorConstants.AVOCADO
   },
   [NEGATIVE]: {
-    color: "#dd3311",
-    hoverColor: "#bc2b0e"
+    color: colorConstants.STRAWBERRY,
+    hoverColor: colorConstants.TOMATO
   },
   [CLOSED]: {
-    color: "#9b59b6",
-    hoverColor: "#8e44ad"
+    color: colorConstants.GRAPE,
+    hoverColor: colorConstants.EGGPLANT
   },
   [OFF_NEUTRAL]: {
-    color: "rgba(0, 0, 0, 0.16)",
-    hoverColor: "#3498db"
+    color: colorConstants.GREY_16,
+    hoverColor: colorConstants.INDIGO_MILK_CAP
   }
 };
