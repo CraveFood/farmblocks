@@ -8,6 +8,7 @@ import { NEUTRAL } from "../constants/buttonTypes";
 const Button = styled.button`
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 
   border: solid 1px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
