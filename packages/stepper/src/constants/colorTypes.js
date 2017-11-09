@@ -1,4 +1,4 @@
-import { colors as colorConstants } from "@crave/farmblocks-constants";
+import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 import statusTypes from "./statusTypes";
 
