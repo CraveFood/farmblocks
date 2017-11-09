@@ -14,7 +14,9 @@ before_install:
   - git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
   - git fetch --all
   - git checkout "$BRANCH"
+  - yarn global add greenkeeper-lockfile@1
 install:
+  - greenkeeper-lockfile-update
   - yarn --frozen-lockfile
   - yarn build
   - npx flow-typed install --overwrite
@@ -23,6 +25,7 @@ script:
   - yarn lint.test .
   - yarn typecheck
   - yarn coverage
+  - greenkeeper-lockfile-upload
 after_success:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
