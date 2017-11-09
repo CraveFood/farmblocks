@@ -1,8 +1,10 @@
+import { colors as colorConstants } from "@crave/farmblocks-theme";
+
 import AlertTypes from "./alertTypes";
 
 export default {
-  [AlertTypes.NEWS]: "#3498db",
-  [AlertTypes.POSITIVE]: "#2ecc71",
-  [AlertTypes.NEGATIVE]: "#dd3311",
-  [AlertTypes.ATTENTION]: "#f1c618"
+  [AlertTypes.NEWS]: colorConstants.INDIGO_MILK_CAP,
+  [AlertTypes.POSITIVE]: colorConstants.LETTUCE,
+  [AlertTypes.NEGATIVE]: colorConstants.STRAWBERRY,
+  [AlertTypes.ATTENTION]: colorConstants.CORN
 };
