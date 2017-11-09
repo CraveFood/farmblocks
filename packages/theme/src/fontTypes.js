@@ -1,0 +1,16 @@
+import {
+  CARBON,
+  LETTUCE,
+  STRAWBERRY,
+  INDIGO_MILK_CAP,
+  GREY_32
+} from "./colors";
+
+export default {
+  NORMAL: CARBON,
+  POSITIVE: LETTUCE,
+  NEGATIVE: STRAWBERRY,
+  FOCUSED: INDIGO_MILK_CAP,
+  SUBTLE: GREY_32,
+  WHITE: "white"
+};
