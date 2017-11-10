@@ -3,23 +3,26 @@ import {
   LETTUCE,
   STRAWBERRY,
   INDIGO_MILK_CAP,
-  GREY_32
+  GREY_32,
+  OYSTER
 } from "./colors";
 
 const keys = {
   NORMAL: "NORMAL",
+  NEUTRAL: "NEUTRAL",
   POSITIVE: "POSITIVE",
   NEGATIVE: "NEGATIVE",
-  FOCUSED: "FOCUSED",
+  FEATURED: "FEATURED",
   SUBTLE: "SUBTLE",
   WHITE: "WHITE"
 };
 
 const values = {
   [keys.NORMAL]: CARBON,
+  [keys.NEUTRAL]: OYSTER,
   [keys.POSITIVE]: LETTUCE,
   [keys.NEGATIVE]: STRAWBERRY,
-  [keys.FOCUSED]: INDIGO_MILK_CAP,
+  [keys.FEATURED]: INDIGO_MILK_CAP,
   [keys.SUBTLE]: GREY_32,
   [keys.WHITE]: "white"
 };
