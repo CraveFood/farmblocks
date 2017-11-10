@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   CARBON: "#2f313a",
   OYSTER: "#59636f",
   SUGAR: "#f6f8f9",
