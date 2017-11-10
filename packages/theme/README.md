@@ -16,7 +16,10 @@ import { colors } from "@crave/farmblocks-theme";
 ## API
 
 See it in the source
-- [colors](https://github.com/CraveFood/farmblocks/blob/master/packages/constants/src/colors.js)
+- [colors](https://github.com/CraveFood/farmblocks/blob/master/packages/theme/src/colors.js)
+- [fontSizes](https://github.com/CraveFood/farmblocks/blob/master/packages/theme/src/fontSizes.js)
+- [fontTypes](https://github.com/CraveFood/farmblocks/blob/master/packages/theme/src/fontTypes.js)
+- [fontWeights](https://github.com/CraveFood/farmblocks/blob/master/packages/theme/src/fontWeights.js)
 
 ## License
 
