@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { colors as colorConstants } from "@crave/farmblocks-constants";
+import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 import colorTypes from "../constants/colorTypes";
 import statusTypes from "../constants/statusTypes";
