@@ -7,7 +7,7 @@ import fontTypes from "../constants/fontTypes";
 
 import Title from "./Title";
 
-storiesOf("Title", module)
+storiesOf("Text - Title", module)
   .add("default", withInfo()(() => <Title>Awesome title</Title>))
   .add(
     "SMALL size",

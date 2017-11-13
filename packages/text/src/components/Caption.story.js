@@ -7,7 +7,7 @@ import fontTypes from "../constants/fontTypes";
 
 import Caption from "./Caption";
 
-storiesOf("Caption", module)
+storiesOf("Text - Caption", module)
   .add(
     "default - LARGE size, NORMAL type, left aligned",
     withInfo()(() => <Caption>Awesome caption</Caption>)
