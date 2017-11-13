@@ -17,7 +17,7 @@ TBD
 const React = require("react");
 const ReactDOM = require("react-dom");
 const Image = require("@crave/farmblocks-image").default;
-const { thumbnailSizes, badgeSizes } = require("@crave/farmblocks-image")";
+const { imageTypes, thumbnailSizes, badgeSizes } = require("@crave/farmblocks-image")";
 
 const root = document.createElement("div");
 
