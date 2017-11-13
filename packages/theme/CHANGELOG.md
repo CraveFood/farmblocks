@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.3.0...@crave/farmblocks-theme@1.3.1) (2017-11-13)
+
+
+### Bug Fixes
+
+* **docs:** update theme readme ([b27e567](https://github.com/CraveFood/farmblocks/commit/b27e567))
+
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.2.0...@crave/farmblocks-theme@1.3.0) (2017-11-09)
 
