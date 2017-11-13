@@ -186,6 +186,20 @@ storiesOf("Button", module)
     ))
   )
   .add(
+    "Secondary (fluid) with icon",
+    withInfo()(() => (
+    <div style={{ width: 400, height: 400, background: "rgba(0, 0, 0, 0.32)" }}>
+      <Button
+        type={buttonTypes.SECONDARY}
+        fluid
+        onClick={action("buttonClicked")}
+        text="Secondary Button"
+        icon="wg-order"
+      />
+    </div>
+    ))
+  )
+  .add(
     "Neutral Activated",
     withInfo()(() => (
     <Button
