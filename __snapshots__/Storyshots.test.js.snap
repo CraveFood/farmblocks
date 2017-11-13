@@ -907,6 +907,170 @@ exports[`Storyshots Alert (private)/BrieflyDisplay display for 5 seconds 1`] = `
 `;
 
 exports[`Storyshots Alert default 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3498db;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -917,7 +1081,7 @@ exports[`Storyshots Alert default 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX cjwmky"
+      className="c0"
       type="NEWS"
     >
       <p>
@@ -927,10 +1091,10 @@ exports[`Storyshots Alert default 1`] = `
         className="dismiss-button"
       >
         <div
-          className="sc-htpNat ihtkAy"
+          className="c1"
         >
           <button
-            className="sc-bxivhb cRUnBp"
+            className="c2"
             disabled={undefined}
             icon="wg-close"
             onClick={[Function]}
@@ -952,10 +1116,10 @@ exports[`Storyshots Alert default 1`] = `
              
           </button>
           <div
-            className="sc-bdVaJa crGigL"
+            className="c3"
           >
             <div
-              className="sc-bwzfXH khUxsX"
+              className="c4"
             >
               This action is disabled.
             </div>
@@ -1395,6 +1559,47 @@ exports[`Storyshots Alert default 1`] = `
 `;
 
 exports[`Storyshots Alert non dismissable 1`] = `
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3498db;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -1405,7 +1610,7 @@ exports[`Storyshots Alert non dismissable 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX cjwmky"
+      className="c0"
       type="NEWS"
     >
       <p>
@@ -1872,6 +2077,170 @@ exports[`Storyshots Alert non dismissable 1`] = `
 `;
 
 exports[`Storyshots Alert type attention 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f1c618;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #2f313a;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -1882,7 +2251,7 @@ exports[`Storyshots Alert type attention 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX gaySES"
+      className="c0"
       type="ATTENTION"
     >
       <p>
@@ -1892,10 +2261,10 @@ exports[`Storyshots Alert type attention 1`] = `
         className="dismiss-button"
       >
         <div
-          className="sc-htpNat ihtkAy"
+          className="c1"
         >
           <button
-            className="sc-bxivhb cRUnBp"
+            className="c2"
             disabled={undefined}
             icon="wg-close"
             onClick={[Function]}
@@ -1917,10 +2286,10 @@ exports[`Storyshots Alert type attention 1`] = `
              
           </button>
           <div
-            className="sc-bdVaJa crGigL"
+            className="c3"
           >
             <div
-              className="sc-bwzfXH khUxsX"
+              className="c4"
             >
               This action is disabled.
             </div>
@@ -2415,6 +2784,170 @@ exports[`Storyshots Alert type attention 1`] = `
 `;
 
 exports[`Storyshots Alert type negative 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #dd3311;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -2425,7 +2958,7 @@ exports[`Storyshots Alert type negative 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX fIWVB"
+      className="c0"
       type="NEGATIVE"
     >
       <p>
@@ -2435,10 +2968,10 @@ exports[`Storyshots Alert type negative 1`] = `
         className="dismiss-button"
       >
         <div
-          className="sc-htpNat ihtkAy"
+          className="c1"
         >
           <button
-            className="sc-bxivhb cRUnBp"
+            className="c2"
             disabled={undefined}
             icon="wg-close"
             onClick={[Function]}
@@ -2460,10 +2993,10 @@ exports[`Storyshots Alert type negative 1`] = `
              
           </button>
           <div
-            className="sc-bdVaJa crGigL"
+            className="c3"
           >
             <div
-              className="sc-bwzfXH khUxsX"
+              className="c4"
             >
               This action is disabled.
             </div>
@@ -2958,6 +3491,170 @@ exports[`Storyshots Alert type negative 1`] = `
 `;
 
 exports[`Storyshots Alert type news 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3498db;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -2968,7 +3665,7 @@ exports[`Storyshots Alert type news 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX cjwmky"
+      className="c0"
       type="NEWS"
     >
       <p>
@@ -2978,10 +3675,10 @@ exports[`Storyshots Alert type news 1`] = `
         className="dismiss-button"
       >
         <div
-          className="sc-htpNat ihtkAy"
+          className="c1"
         >
           <button
-            className="sc-bxivhb cRUnBp"
+            className="c2"
             disabled={undefined}
             icon="wg-close"
             onClick={[Function]}
@@ -3003,10 +3700,10 @@ exports[`Storyshots Alert type news 1`] = `
              
           </button>
           <div
-            className="sc-bdVaJa crGigL"
+            className="c3"
           >
             <div
-              className="sc-bwzfXH khUxsX"
+              className="c4"
             >
               This action is disabled.
             </div>
@@ -3474,6 +4171,170 @@ exports[`Storyshots Alert type news 1`] = `
 `;
 
 exports[`Storyshots Alert type positive 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #2ecc71;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -3484,7 +4345,7 @@ exports[`Storyshots Alert type positive 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX iEFJpd"
+      className="c0"
       type="POSITIVE"
     >
       <p>
@@ -3494,10 +4355,10 @@ exports[`Storyshots Alert type positive 1`] = `
         className="dismiss-button"
       >
         <div
-          className="sc-htpNat ihtkAy"
+          className="c1"
         >
           <button
-            className="sc-bxivhb cRUnBp"
+            className="c2"
             disabled={undefined}
             icon="wg-close"
             onClick={[Function]}
@@ -3519,10 +4380,10 @@ exports[`Storyshots Alert type positive 1`] = `
              
           </button>
           <div
-            className="sc-bdVaJa crGigL"
+            className="c3"
           >
             <div
-              className="sc-bwzfXH khUxsX"
+              className="c4"
             >
               This action is disabled.
             </div>
@@ -4017,6 +4878,170 @@ exports[`Storyshots Alert type positive 1`] = `
 `;
 
 exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3498db;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -4027,7 +5052,7 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
     }
   >
     <div
-      className="sc-ifAKCX cjwmky"
+      className="c0"
       type="NEWS"
     >
       <p>
@@ -4037,10 +5062,10 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
         className="dismiss-button"
       >
         <div
-          className="sc-htpNat ihtkAy"
+          className="c1"
         >
           <button
-            className="sc-bxivhb cRUnBp"
+            className="c2"
             disabled={undefined}
             icon="wg-close"
             onClick={[Function]}
@@ -4062,10 +5087,10 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
              
           </button>
           <div
-            className="sc-bdVaJa crGigL"
+            className="c3"
           >
             <div
-              className="sc-bwzfXH khUxsX"
+              className="c4"
             >
               This action is disabled.
             </div>
@@ -4533,6 +5558,170 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
 `;
 
 exports[`Storyshots Alert with custom z-index 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3498db;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 11;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
 <div>
   <div
     style={
@@ -4566,7 +5755,7 @@ exports[`Storyshots Alert with custom z-index 1`] = `
         }
       />
       <div
-        className="sc-ifAKCX HxLOT"
+        className="c0"
         type="NEWS"
       >
         <p>
@@ -4576,10 +5765,10 @@ exports[`Storyshots Alert with custom z-index 1`] = `
           className="dismiss-button"
         >
           <div
-            className="sc-htpNat ihtkAy"
+            className="c1"
           >
             <button
-              className="sc-bxivhb cRUnBp"
+              className="c2"
               disabled={undefined}
               icon="wg-close"
               onClick={[Function]}
@@ -4601,10 +5790,10 @@ exports[`Storyshots Alert with custom z-index 1`] = `
                
             </button>
             <div
-              className="sc-bdVaJa crGigL"
+              className="c3"
             >
               <div
-                className="sc-bwzfXH khUxsX"
+                className="c4"
               >
                 This action is disabled.
               </div>
@@ -5388,6 +6577,129 @@ exports[`Storyshots Alert with custom z-index 1`] = `
 `;
 
 exports[`Storyshots Button Closed 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #9b59b6;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #8e44ad;
+}
+
+.c1:focus {
+  background-color: #8e44ad;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -5398,10 +6710,10 @@ exports[`Storyshots Button Closed 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM dbzHit"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -5411,10 +6723,10 @@ exports[`Storyshots Button Closed 1`] = `
         Closed Button
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -5930,6 +7242,135 @@ exports[`Storyshots Button Closed 1`] = `
 `;
 
 exports[`Storyshots Button Default 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -5940,10 +7381,10 @@ exports[`Storyshots Button Default 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM dNqTsH"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -5953,10 +7394,10 @@ exports[`Storyshots Button Default 1`] = `
         Label
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -6445,6 +7886,135 @@ exports[`Storyshots Button Default 1`] = `
 `;
 
 exports[`Storyshots Button Default medium 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 16px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -6455,10 +8025,10 @@ exports[`Storyshots Button Default medium 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM uDuNe"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="MEDIUM"
@@ -6468,10 +8038,10 @@ exports[`Storyshots Button Default medium 1`] = `
         Label
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -6987,6 +8557,135 @@ exports[`Storyshots Button Default medium 1`] = `
 `;
 
 exports[`Storyshots Button Default with Icon 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -6997,10 +8696,10 @@ exports[`Storyshots Button Default with Icon 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM dNqTsH"
+        className="c1"
         disabled={undefined}
         icon="wg-order"
         onClick={[Function]}
@@ -7023,10 +8722,10 @@ exports[`Storyshots Button Default with Icon 1`] = `
         Send Order
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -7542,6 +9241,135 @@ exports[`Storyshots Button Default with Icon 1`] = `
 `;
 
 exports[`Storyshots Button Disabled 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -7552,7 +9380,7 @@ exports[`Storyshots Button Disabled 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <div
         className="hit-box-container"
@@ -7560,7 +9388,7 @@ exports[`Storyshots Button Disabled 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="sc-bZQynM dNqTsH"
+        className="c1"
         disabled={true}
         onClick={[Function]}
         size="SMALL"
@@ -7570,10 +9398,10 @@ exports[`Storyshots Button Disabled 1`] = `
         Disabled Buton
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -8070,6 +9898,135 @@ exports[`Storyshots Button Disabled 1`] = `
 `;
 
 exports[`Storyshots Button Icon only (disabled) 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 8px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -8080,7 +10037,7 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <div
         className="hit-box-container"
@@ -8088,7 +10045,7 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="sc-bZQynM boxZdL"
+        className="c1"
         disabled={true}
         icon="wg-edit"
         onClick={[Function]}
@@ -8110,10 +10067,10 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
          
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -8610,6 +10567,135 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
 `;
 
 exports[`Storyshots Button Icon only (neutral medium) 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 8px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -8620,10 +10706,10 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM boxZdL"
+        className="c1"
         disabled={undefined}
         icon="wg-edit"
         onClick={[Function]}
@@ -8645,10 +10731,10 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
          
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -9137,6 +11223,135 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
 `;
 
 exports[`Storyshots Button Icon only (neutral) 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 8px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -9147,10 +11362,10 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM boxZdL"
+        className="c1"
         disabled={undefined}
         icon="wg-edit"
         onClick={[Function]}
@@ -9172,10 +11387,10 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
          
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -9664,6 +11879,129 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
 `;
 
 exports[`Storyshots Button Icon only (primary) 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #FF4411;
+  padding: 8px 8px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #d7390e;
+}
+
+.c1:focus {
+  background-color: #d7390e;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -9674,10 +12012,10 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM kapsPJ"
+        className="c1"
         disabled={undefined}
         icon="wg-edit"
         onClick={[Function]}
@@ -9699,10 +12037,10 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
          
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -10218,6 +12556,129 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
 `;
 
 exports[`Storyshots Button Negative 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #dd3311;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #bc2b0e;
+}
+
+.c1:focus {
+  background-color: #bc2b0e;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -10228,10 +12689,10 @@ exports[`Storyshots Button Negative 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM imlEpY"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -10241,10 +12702,10 @@ exports[`Storyshots Button Negative 1`] = `
         Label
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -10760,6 +13221,135 @@ exports[`Storyshots Button Negative 1`] = `
 `;
 
 exports[`Storyshots Button Neutral 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -10770,10 +13360,10 @@ exports[`Storyshots Button Neutral 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM dNqTsH"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -10783,10 +13373,10 @@ exports[`Storyshots Button Neutral 1`] = `
         Neutral Button
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -11275,6 +13865,141 @@ exports[`Storyshots Button Neutral 1`] = `
 `;
 
 exports[`Storyshots Button Neutral Activated 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  color: #3498db;
+  border-color: #3498db;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .icon {
+  color: #3498db;
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -11285,10 +14010,10 @@ exports[`Storyshots Button Neutral Activated 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM GqhuY"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -11298,10 +14023,10 @@ exports[`Storyshots Button Neutral Activated 1`] = `
         Neutral Button
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -11798,6 +14523,135 @@ exports[`Storyshots Button Neutral Activated 1`] = `
 `;
 
 exports[`Storyshots Button Neutral with Icon 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -11808,10 +14662,10 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM dNqTsH"
+        className="c1"
         disabled={undefined}
         icon="wg-order"
         onClick={[Function]}
@@ -11834,10 +14688,10 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
         Label
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -12353,6 +15207,129 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
 `;
 
 exports[`Storyshots Button Off Neutral Button 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #3498db;
+}
+
+.c1:focus {
+  background-color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -12372,10 +15349,10 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
       }
     >
       <div
-        className="sc-EHOje isUhQp"
+        className="c0"
       >
         <button
-          className="sc-bZQynM idbCKb"
+          className="c1"
           disabled={undefined}
           onClick={[Function]}
           size="SMALL"
@@ -12385,10 +15362,10 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
           Label
         </button>
         <div
-          className="sc-bdVaJa crGigL"
+          className="c2"
         >
           <div
-            className="sc-bwzfXH khUxsX"
+            className="c3"
           >
             This action is disabled.
           </div>
@@ -13055,6 +16032,129 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
 `;
 
 exports[`Storyshots Button Positive 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #2ECC71;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #27AE60;
+}
+
+.c1:focus {
+  background-color: #27AE60;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -13065,10 +16165,10 @@ exports[`Storyshots Button Positive 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM fscVuE"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -13078,10 +16178,10 @@ exports[`Storyshots Button Positive 1`] = `
         Positive Button
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -13597,6 +16697,129 @@ exports[`Storyshots Button Positive 1`] = `
 `;
 
 exports[`Storyshots Button Primary 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #FF4411;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #d7390e;
+}
+
+.c1:focus {
+  background-color: #d7390e;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -13607,10 +16830,10 @@ exports[`Storyshots Button Primary 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM kTkFzI"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -13620,10 +16843,10 @@ exports[`Storyshots Button Primary 1`] = `
         Label
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -14139,6 +17362,140 @@ exports[`Storyshots Button Primary 1`] = `
 `;
 
 exports[`Storyshots Button Saving Status 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  -webkit-animation: spin 1.1s infinite linear;
+  animation: spin 1.1s infinite linear;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -14149,10 +17506,10 @@ exports[`Storyshots Button Saving Status 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM gOGbfT"
+        className="c1"
         disabled={true}
         onClick={[Function]}
         size="SMALL"
@@ -14174,10 +17531,10 @@ exports[`Storyshots Button Saving Status 1`] = `
         Saving…
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -14674,6 +18031,131 @@ exports[`Storyshots Button Saving Status 1`] = `
 `;
 
 exports[`Storyshots Button Secondary (fluid) 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #2b7fb8;
+}
+
+.c1:focus {
+  background-color: #2b7fb8;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -14693,10 +18175,10 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
       }
     >
       <div
-        className="sc-EHOje isxqbX"
+        className="c0"
       >
         <button
-          className="sc-bZQynM deukpu"
+          className="c1"
           disabled={undefined}
           onClick={[Function]}
           size="SMALL"
@@ -14706,10 +18188,10 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
           Secondary Button
         </button>
         <div
-          className="sc-bdVaJa crGigL"
+          className="c2"
         >
           <div
-            className="sc-bwzfXH khUxsX"
+            className="c3"
           >
             This action is disabled.
           </div>
@@ -15398,6 +18880,131 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
 `;
 
 exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #2b7fb8;
+}
+
+.c1:focus {
+  background-color: #2b7fb8;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -15417,10 +19024,10 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
       }
     >
       <div
-        className="sc-EHOje isxqbX"
+        className="c0"
       >
         <button
-          className="sc-bZQynM deukpu"
+          className="c1"
           disabled={undefined}
           icon="wg-order"
           onClick={[Function]}
@@ -15443,10 +19050,10 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
           Secondary Button
         </button>
         <div
-          className="sc-bdVaJa crGigL"
+          className="c2"
         >
           <div
-            className="sc-bwzfXH khUxsX"
+            className="c3"
           >
             This action is disabled.
           </div>
@@ -16165,6 +19772,129 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
 `;
 
 exports[`Storyshots Button Secondary 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #2b7fb8;
+}
+
+.c1:focus {
+  background-color: #2b7fb8;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 <div>
   <div
     style={
@@ -16175,10 +19905,10 @@ exports[`Storyshots Button Secondary 1`] = `
     }
   >
     <div
-      className="sc-EHOje isUhQp"
+      className="c0"
     >
       <button
-        className="sc-bZQynM kIaChR"
+        className="c1"
         disabled={undefined}
         onClick={[Function]}
         size="SMALL"
@@ -16188,10 +19918,10 @@ exports[`Storyshots Button Secondary 1`] = `
         Secondary Button
       </button>
       <div
-        className="sc-bdVaJa crGigL"
+        className="c2"
       >
         <div
-          className="sc-bwzfXH khUxsX"
+          className="c3"
         >
           This action is disabled.
         </div>
@@ -16707,6 +20437,33 @@ exports[`Storyshots Button Secondary 1`] = `
 `;
 
 exports[`Storyshots Step (private) completed 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  color: #2f313a;
+  color: white;
+  background: #2ecc71;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c0 .description {
+  padding: 0 16px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
 <div>
   <div
     style={
@@ -16717,7 +20474,7 @@ exports[`Storyshots Step (private) completed 1`] = `
     }
   >
     <div
-      className="sc-gzVnrw kTAQlq"
+      className="c0"
       onClick={[Function]}
     >
       <div
@@ -17205,6 +20962,37 @@ exports[`Storyshots Step (private) completed 1`] = `
 `;
 
 exports[`Storyshots Step (private) current 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  cursor: pointer;
+  color: #2f313a;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c0 .description {
+  padding: 0 16px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.c0:hover {
+  color: #3498db;
+  border: solid 2px #3498db;
+}
+
 <div>
   <div
     style={
@@ -17215,7 +21003,7 @@ exports[`Storyshots Step (private) current 1`] = `
     }
   >
     <div
-      className="sc-gzVnrw ecHrEH"
+      className="c0"
       onClick={[Function]}
     >
       <div
@@ -17670,6 +21458,32 @@ exports[`Storyshots Step (private) current 1`] = `
 `;
 
 exports[`Storyshots Step (private) pending 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  color: #2f313a;
+  opacity: 0.24;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c0 .description {
+  padding: 0 16px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
 <div>
   <div
     style={
@@ -17680,7 +21494,7 @@ exports[`Storyshots Step (private) pending 1`] = `
     }
   >
     <div
-      className="sc-gzVnrw hQhWlM"
+      className="c0"
       onClick={[Function]}
     >
       <div
@@ -18135,6 +21949,95 @@ exports[`Storyshots Step (private) pending 1`] = `
 `;
 
 exports[`Storyshots Stepper default 1`] = `
+.c3 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  color: #2f313a;
+  opacity: 0.24;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c3 .description {
+  padding: 0 16px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  cursor: pointer;
+  color: #2f313a;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c2 .description {
+  padding: 0 16px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.c2:hover {
+  color: #3498db;
+  border: solid 2px #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  color: #2f313a;
+  color: white;
+  background: #2ecc71;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c1 .description {
+  padding: 0 16px;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  padding-bottom: 16px;
+  height: 55px;
+}
+
 <div>
   <div
     style={
@@ -18154,10 +22057,10 @@ exports[`Storyshots Stepper default 1`] = `
     >
       <div>
         <div
-          className="sc-htoDjs egVGUh"
+          className="c0"
         >
           <div
-            className="sc-gzVnrw kTAQlq"
+            className="c1"
             onClick={[Function]}
           >
             <div
@@ -18175,10 +22078,10 @@ exports[`Storyshots Stepper default 1`] = `
           </div>
         </div>
         <div
-          className="sc-htoDjs egVGUh"
+          className="c0"
         >
           <div
-            className="sc-gzVnrw kTAQlq"
+            className="c1"
             onClick={[Function]}
           >
             <div
@@ -18196,10 +22099,10 @@ exports[`Storyshots Stepper default 1`] = `
           </div>
         </div>
         <div
-          className="sc-htoDjs egVGUh"
+          className="c0"
         >
           <div
-            className="sc-gzVnrw ecHrEH"
+            className="c2"
             onClick={[Function]}
           >
             <div
@@ -18224,10 +22127,10 @@ exports[`Storyshots Stepper default 1`] = `
           </div>
         </div>
         <div
-          className="sc-htoDjs egVGUh"
+          className="c0"
         >
           <div
-            className="sc-gzVnrw hQhWlM"
+            className="c3"
             onClick={[Function]}
           >
             <div
@@ -18252,10 +22155,10 @@ exports[`Storyshots Stepper default 1`] = `
           </div>
         </div>
         <div
-          className="sc-htoDjs egVGUh"
+          className="c0"
         >
           <div
-            className="sc-gzVnrw hQhWlM"
+            className="c3"
             onClick={[Function]}
           >
             <div
@@ -18844,6 +22747,49 @@ exports[`Storyshots Stepper default 1`] = `
 `;
 
 exports[`Storyshots Tooltip isVisible false 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c1:after,
+.c1:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c1:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
 <div
   style={
     Object {
@@ -18853,10 +22799,10 @@ exports[`Storyshots Tooltip isVisible false 1`] = `
   }
 >
   <div
-    className="sc-dnqmqq hkGNhU"
+    className="c0"
   >
     <div
-      className="sc-iwsKbI gPFsQD"
+      className="c1"
     >
       Hey yo
     </div>
@@ -18865,6 +22811,49 @@ exports[`Storyshots Tooltip isVisible false 1`] = `
 `;
 
 exports[`Storyshots Tooltip isVisible true 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: visible;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c1:after,
+.c1:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c1:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
 <div
   style={
     Object {
@@ -18874,10 +22863,10 @@ exports[`Storyshots Tooltip isVisible true 1`] = `
   }
 >
   <div
-    className="sc-dnqmqq hkGNhU"
+    className="c0"
   >
     <div
-      className="sc-iwsKbI dHVtwc"
+      className="c1"
     >
       Hey yo
     </div>
