@@ -9,7 +9,8 @@ npm install @crave/farmblocks-image
 ```
 
 ## Spec
-TBD
+Thumbnails: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df2fee4fbc85eccb17b1
+Badges: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31bbc93198a853bbe2
 
 ## Usage
 
@@ -36,7 +37,7 @@ document.body.appendChild(root);
 
 ## API
 
-TBD
+https://github.com/CraveFood/farmblocks/blob/master/packages/image/src/Image.js#L11-L19
 
 ## License
 
