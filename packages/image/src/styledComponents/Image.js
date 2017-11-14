@@ -16,6 +16,9 @@ const borderColor = "rgba(0, 0, 0, 0.16)";
 const backgroundImage = props => props.src || window.encodeURI(props.src);
 
 const StyledImage = styled.div`
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
   width: ${size}px;
   height: ${size}px;
   overflow: hidden;
