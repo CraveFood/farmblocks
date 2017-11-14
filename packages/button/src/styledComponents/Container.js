@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
-  display: ${props => (props.fluid ? "block" : "inline-block")};
 
   > .hit-box-container {
     position: absolute;
@@ -11,6 +10,8 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  width: ${props => props.fluid && "100%"};
 `;
 
 export default Container;
