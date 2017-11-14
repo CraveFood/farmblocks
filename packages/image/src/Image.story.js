@@ -12,7 +12,7 @@ const imgSrc =
 storiesOf("Image", module)
   .add("default", withInfo()(() => <Image src={imgSrc} />))
   .add("thumbnail", withInfo()(() => <Image src={imgSrc} />))
-  .add("badge", withInfo()(() => <Image src={imgSrc} badge={true} />))
+  .add("badge", withInfo()(() => <Image src={imgSrc} badge />))
   .add(
     "thumbnail (small)",
     withInfo()(() => (
@@ -57,7 +57,7 @@ storiesOf("Image", module)
     "badge (extra small)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} badge={true} size={badgeSizes.X_SMALL} />
+        <Image src={imgSrc} badge size={badgeSizes.X_SMALL} />
       </div>
     ))
   )
@@ -65,7 +65,7 @@ storiesOf("Image", module)
     "badge (small)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} badge={true} size={badgeSizes.SMALL} />
+        <Image src={imgSrc} badge size={badgeSizes.SMALL} />
       </div>
     ))
   )
@@ -73,7 +73,7 @@ storiesOf("Image", module)
     "badge (medium)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} badge={true} size={badgeSizes.MEDIUM} />
+        <Image src={imgSrc} badge size={badgeSizes.MEDIUM} />
       </div>
     ))
   )
@@ -81,7 +81,7 @@ storiesOf("Image", module)
     "badge (large)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} badge={true} size={badgeSizes.LARGE} />
+        <Image src={imgSrc} badge size={badgeSizes.LARGE} />
       </div>
     ))
   );
