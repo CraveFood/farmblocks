@@ -1,19 +1,17 @@
 import styled from "styled-components";
-
 import thumbnailSizes from "../constants/thumbnailSizes";
-import imageTypes from "../constants/types";
+import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 const size = props => props.size;
 
-const borderRadius = props =>
-  props.type === imageTypes.THUMBNAIL ? "4px" : "100%";
+const borderRadius = props => (props.badge ? "100%" : "4px");
 
 const borderWidth = props =>
   props.size < thumbnailSizes.LARGE ? "1px" : "2px";
 
-const borderColor = "rgba(0, 0, 0, 0.16)";
+const borderColor = colorConstants.GREY_16;
 
-const backgroundImage = props => props.src || window.encodeURI(props.src);
+const backgroundImage = props => window.encodeURI(props.src);
 
 const StyledImage = styled.div`
   background-origin: border-box;

@@ -1,9 +1,9 @@
 const thumbnailSizes = {
-  EXTRA_SMALL: 40,
-  SMALL: 48,
-  MEDIUM: 72,
-  LARGE: 120,
-  EXTRA_LARGE: 240
+  SMALL: 40,
+  MEDIUM: 48,
+  LARGE: 72,
+  X_LARGE: 120,
+  HUGE: 240
 };
 
 module.exports = thumbnailSizes;

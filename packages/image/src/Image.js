@@ -2,7 +2,6 @@ import * as React from "react";
 import PropTypes from "prop-types";
 
 import StyledImage from "./styledComponents/Image";
-import { THUMBNAIL } from "./constants/types";
 import { MEDIUM } from "./constants/thumbnailSizes";
 
 const Image = props => {
@@ -11,12 +10,12 @@ const Image = props => {
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
-  type: PropTypes.string,
+  badge: PropTypes.bool,
   size: PropTypes.number
 };
 
 Image.defaultProps = {
-  type: THUMBNAIL,
+  badge: false,
   size: MEDIUM
 };
 

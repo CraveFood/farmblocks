@@ -3,7 +3,6 @@ import { storiesOf } from "@storybook/react";
 
 import thumbnailSizes from "./constants/thumbnailSizes";
 import badgeSizes from "./constants/badgeSizes";
-import imageTypes from "./constants/types";
 import Image from ".";
 import { withInfo } from "@storybook/addon-info";
 
@@ -11,30 +10,14 @@ const imgSrc =
   "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
 
 storiesOf("Image", module)
-  .add("default", () => <Image src={imgSrc} />)
-  .add("thumbnail", () => <Image src={imgSrc} type={imageTypes.THUMBNAIL} />)
-  .add("badge", () => <Image src={imgSrc} type={imageTypes.BADGE} />)
-  .add(
-    "thumbnail (extra small)",
-    withInfo()(() => (
-      <div>
-        <Image
-          src={imgSrc}
-          type={imageTypes.THUMBNAIL}
-          size={thumbnailSizes.EXTRA_SMALL}
-        />
-      </div>
-    ))
-  )
+  .add("default", withInfo()(() => <Image src={imgSrc} />))
+  .add("thumbnail", withInfo()(() => <Image src={imgSrc} />))
+  .add("badge", withInfo()(() => <Image src={imgSrc} badge={true} />))
   .add(
     "thumbnail (small)",
     withInfo()(() => (
       <div>
-        <Image
-          src={imgSrc}
-          type={imageTypes.THUMBNAIL}
-          size={thumbnailSizes.SMALL}
-        />
+        <Image src={imgSrc} size={thumbnailSizes.SMALL} />
       </div>
     ))
   )
@@ -42,11 +25,7 @@ storiesOf("Image", module)
     "thumbnail (medium)",
     withInfo()(() => (
       <div>
-        <Image
-          src={imgSrc}
-          type={imageTypes.THUMBNAIL}
-          size={thumbnailSizes.MEDIUM}
-        />
+        <Image src={imgSrc} size={thumbnailSizes.MEDIUM} />
       </div>
     ))
   )
@@ -54,11 +33,7 @@ storiesOf("Image", module)
     "thumbnail (large)",
     withInfo()(() => (
       <div>
-        <Image
-          src={imgSrc}
-          type={imageTypes.THUMBNAIL}
-          size={thumbnailSizes.LARGE}
-        />
+        <Image src={imgSrc} size={thumbnailSizes.LARGE} />
       </div>
     ))
   )
@@ -66,11 +41,15 @@ storiesOf("Image", module)
     "thumbnail (extra large)",
     withInfo()(() => (
       <div>
-        <Image
-          src={imgSrc}
-          type={imageTypes.THUMBNAIL}
-          size={thumbnailSizes.EXTRA_LARGE}
-        />
+        <Image src={imgSrc} size={thumbnailSizes.X_LARGE} />
+      </div>
+    ))
+  )
+  .add(
+    "thumbnail (huge)",
+    withInfo()(() => (
+      <div>
+        <Image src={imgSrc} size={thumbnailSizes.HUGE} />
       </div>
     ))
   )
@@ -78,11 +57,7 @@ storiesOf("Image", module)
     "badge (extra small)",
     withInfo()(() => (
       <div>
-        <Image
-          src={imgSrc}
-          type={imageTypes.BADGE}
-          size={badgeSizes.EXTRA_SMALL}
-        />
+        <Image src={imgSrc} badge={true} size={badgeSizes.X_SMALL} />
       </div>
     ))
   )
@@ -90,7 +65,7 @@ storiesOf("Image", module)
     "badge (small)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} type={imageTypes.BADGE} size={badgeSizes.SMALL} />
+        <Image src={imgSrc} badge={true} size={badgeSizes.SMALL} />
       </div>
     ))
   )
@@ -98,7 +73,7 @@ storiesOf("Image", module)
     "badge (medium)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} type={imageTypes.BADGE} size={badgeSizes.MEDIUM} />
+        <Image src={imgSrc} badge={true} size={badgeSizes.MEDIUM} />
       </div>
     ))
   )
@@ -106,7 +81,7 @@ storiesOf("Image", module)
     "badge (large)",
     withInfo()(() => (
       <div>
-        <Image src={imgSrc} type={imageTypes.BADGE} size={badgeSizes.LARGE} />
+        <Image src={imgSrc} badge={true} size={badgeSizes.LARGE} />
       </div>
     ))
   );
