@@ -7,27 +7,12 @@ import {
   OYSTER
 } from "./colors";
 
-const keys = {
-  NORMAL: "NORMAL",
-  NEUTRAL: "NEUTRAL",
-  POSITIVE: "POSITIVE",
-  NEGATIVE: "NEGATIVE",
-  FEATURED: "FEATURED",
-  SUBTLE: "SUBTLE",
-  WHITE: "WHITE"
-};
-
-const values = {
-  [keys.NORMAL]: CARBON,
-  [keys.NEUTRAL]: OYSTER,
-  [keys.POSITIVE]: LETTUCE,
-  [keys.NEGATIVE]: STRAWBERRY,
-  [keys.FEATURED]: INDIGO_MILK_CAP,
-  [keys.SUBTLE]: GREY_32,
-  [keys.WHITE]: "white"
-};
-
-export default {
-  keys,
-  values
+module.exports = {
+  NORMAL: CARBON,
+  NEUTRAL: OYSTER,
+  POSITIVE: LETTUCE,
+  NEGATIVE: STRAWBERRY,
+  FEATURED: INDIGO_MILK_CAP,
+  SUBTLE: GREY_32,
+  WHITE: "white"
 };
