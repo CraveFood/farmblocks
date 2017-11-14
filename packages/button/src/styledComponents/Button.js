@@ -45,7 +45,8 @@ const Button = styled.button`
     color: white;
   }
 
-  ${fluidStyle};
+  width: ${props => props.fluid && "100%"};
+
   ${loadingStyle};
   ${typeStyle};
   ${paddingStyle};
@@ -141,16 +142,6 @@ function loadingStyle(props) {
           }
         }
       }
-    `
-  );
-}
-
-function fluidStyle(props) {
-  return (
-    props.fluid &&
-    css`
-      max-width: 100%;
-      width: 100%;
     `
   );
 }
