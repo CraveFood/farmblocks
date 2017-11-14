@@ -14,18 +14,19 @@ TBD
 ## Usage
 
 ```jsx
-const React = require("react");
-const ReactDOM = require("react-dom");
-const Image = require("@crave/farmblocks-image").default;
-const { imageTypes, thumbnailSizes, badgeSizes } = require("@crave/farmblocks-image")";
+import React from "react";
+import ReactDOM from "react-dom";
+import Image, { imageTypes, thumbnailSizes, badgeSizes } from "@crave/farmblocks-image";
 
 const root = document.createElement("div");
 
+const imageUrl = "https://openclipart.org/image/300px/svg_to_png/290343/1510649016.png&disposition=attachment";
+
 ReactDOM.render(
   <Image
-    src=""
-    type={imageTypes.BADGE}
-    size={badgeSizes.MEDIUM}
+    src={imageUrl}
+    size={badgeSizes.LARGE}
+    badge
   />,
   root
 );
