@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 const CaptionContainer = styled.div`
   font-family: Lato, sans-serif;
-  font-size: ${props => fontSizes.values[props.size]};
+  font-size: ${props => `${props.size}px`};
 
-  color: ${props => fontTypes.values[props.type]};
+  color: ${props => props.type};
 
   text-align: ${props => props.align};
 `;

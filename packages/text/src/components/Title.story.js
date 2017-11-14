@@ -1,9 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-
-import fontSizes from "../constants/fontSizes";
-import fontTypes from "../constants/fontTypes";
+import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Title from "./Title";
 

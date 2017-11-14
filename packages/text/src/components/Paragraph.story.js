@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
-
-import fontSizes from "../constants/fontSizes";
-import fontTypes from "../constants/fontTypes";
+import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Paragraph from "./Paragraph";
 
@@ -32,7 +30,7 @@ storiesOf("Text - Paragraph", module)
     ))
   )
   .add(
-    "center aligned",
+    "center align",
     withInfo()(() => (
       <Container>
         <Paragraph align="center">{text}</Paragraph>
@@ -40,7 +38,15 @@ storiesOf("Text - Paragraph", module)
     ))
   )
   .add(
-    "right aligned",
+    "justify align",
+    withInfo()(() => (
+      <Container>
+        <Paragraph align="justify">{text}</Paragraph>
+      </Container>
+    ))
+  )
+  .add(
+    "right align",
     withInfo()(() => (
       <Container>
         <Paragraph align="right">{text}</Paragraph>

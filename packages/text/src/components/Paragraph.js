@@ -1,9 +1,8 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Container from "../styledComponents/Paragraph";
-import fontSizes from "../constants/fontSizes";
-import fontTypes from "../constants/fontTypes";
 
 export default class Paragraph extends React.Component {
   render() {
@@ -13,9 +12,9 @@ export default class Paragraph extends React.Component {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
-    size: PropTypes.oneOf(Object.keys(fontSizes)),
-    type: PropTypes.oneOf(Object.keys(fontTypes)),
-    align: PropTypes.oneOf(["left", "center", "right"])
+    size: PropTypes.oneOf(Object.values(fontSizes)),
+    type: PropTypes.oneOf(Object.values(fontTypes)),
+    align: PropTypes.oneOf(["left", "center", "right", "justify"])
   };
 
   static defaultProps = {

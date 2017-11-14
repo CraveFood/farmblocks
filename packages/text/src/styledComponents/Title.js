@@ -1,13 +1,13 @@
 // import styled, { css } from "styled-components";
 import styled from "styled-components";
-import { fontSizes, fontWeights, fontTypes } from "@crave/farmblocks-theme";
+import { fontWeights } from "@crave/farmblocks-theme";
 
 const TitleContainer = styled.div`
   font-family: Lato, sans-serif;
-  font-size: ${props => fontSizes.values[props.size]};
-  font-weight: ${fontWeights.values.SEMIBOLD};
+  font-size: ${props => `${props.size}px`};
+  font-weight: ${fontWeights.SEMIBOLD};
 
-  color: ${props => fontTypes.values[props.type]};
+  color: ${props => props.type};
 `;
 
 TitleContainer.displayName = "TitleContainer";
