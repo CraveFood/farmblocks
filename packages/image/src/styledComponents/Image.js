@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import badgeSizes from "../constants/badgeSizes";
 import thumbnailSizes from "../constants/thumbnailSizes";
 import { colors as colorConstants } from "@crave/farmblocks-theme";
 
@@ -6,8 +7,10 @@ const size = props => props.size;
 
 const borderRadius = props => (props.badge ? "100%" : "4px");
 
-const borderWidth = props =>
-  props.size < thumbnailSizes.LARGE ? "1px" : "2px";
+const borderWidth = props => {
+  const sizeLimit = props.badge ? badgeSizes.MEDIUM : thumbnailSizes.LARGE;
+  return props.size < sizeLimit ? "1px" : "2px";
+};
 
 const borderColor = colorConstants.GREY_16;
 
