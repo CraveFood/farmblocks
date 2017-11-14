@@ -1,4 +1,3 @@
-// import styled, { css } from "styled-components";
 import styled from "styled-components";
 import { fontWeights } from "@crave/farmblocks-theme";
 
