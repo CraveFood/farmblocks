@@ -12,7 +12,7 @@ export default class Paragraph extends React.Component {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
-    size: PropTypes.oneOf(Object.values(fontSizes)),
+    size: PropTypes.number,
     type: PropTypes.oneOf(Object.values(fontTypes)),
     align: PropTypes.oneOf(["left", "center", "right", "justify"])
   };
