@@ -7,6 +7,8 @@ const TitleContainer = styled.div`
   font-weight: ${fontWeights.SEMIBOLD};
 
   color: ${props => props.type};
+
+  line-height: ${props => props.lineHeight};
 `;
 
 TitleContainer.displayName = "TitleContainer";

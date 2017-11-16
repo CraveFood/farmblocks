@@ -14,7 +14,8 @@ export default class Caption extends React.Component {
     children: PropTypes.node.isRequired,
     size: PropTypes.number,
     type: PropTypes.oneOf(Object.values(fontTypes)),
-    align: PropTypes.oneOf(["left", "right"])
+    align: PropTypes.oneOf(["left", "right"]),
+    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   };
 
   static defaultProps = {

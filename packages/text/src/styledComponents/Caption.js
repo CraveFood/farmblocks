@@ -7,6 +7,8 @@ const CaptionContainer = styled.div`
   color: ${props => props.type};
 
   text-align: ${props => props.align};
+
+  line-height: ${props => props.lineHeight};
 `;
 
 CaptionContainer.displayName = "CaptionContainer";

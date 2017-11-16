@@ -30,6 +30,14 @@ storiesOf("Text/Paragraph", module)
     ))
   )
   .add(
+    "1.5 lineHeight",
+    withInfo()(() => (
+      <Container>
+        <Paragraph lineHeight={1.5}>{text}</Paragraph>
+      </Container>
+    ))
+  )
+  .add(
     "center align",
     withInfo()(() => (
       <Container>

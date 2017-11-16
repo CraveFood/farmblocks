@@ -16,7 +16,8 @@ export default class Title extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     size: PropTypes.number,
-    type: PropTypes.oneOf(Object.values(fontTypes))
+    type: PropTypes.oneOf(Object.values(fontTypes)),
+    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   };
 
   static defaultProps = {

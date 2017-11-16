@@ -14,7 +14,8 @@ export default class Paragraph extends React.Component {
     children: PropTypes.node.isRequired,
     size: PropTypes.number,
     type: PropTypes.oneOf(Object.values(fontTypes)),
-    align: PropTypes.oneOf(["left", "center", "right", "justify"])
+    align: PropTypes.oneOf(["left", "center", "right", "justify"]),
+    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   };
 
   static defaultProps = {
