@@ -5,7 +5,7 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Title from "./Title";
 
-storiesOf("Text - Title", module)
+storiesOf("Text/Title", module)
   .add("default", withInfo()(() => <Title>Awesome title</Title>))
   .add(
     "SMALL size",

@@ -20,7 +20,7 @@ Container.propTypes = {
 };
 Container.defaultProps = { background: "white" };
 
-storiesOf("Text - Paragraph", module)
+storiesOf("Text/Paragraph", module)
   .add(
     "default - LARGE size, NORMAL type, left aligned",
     withInfo()(() => (

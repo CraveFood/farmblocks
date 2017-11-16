@@ -5,7 +5,7 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Caption from "./Caption";
 
-storiesOf("Text - Caption", module)
+storiesOf("Text/Caption", module)
   .add(
     "default - LARGE size, NORMAL type, left aligned",
     withInfo()(() => <Caption>Awesome caption</Caption>)
