@@ -2,9 +2,9 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
-import Container from "../styledComponents/Paragraph";
+import Container from "../styledComponents/Text";
 
-export default class Paragraph extends React.Component {
+export default class Text extends React.Component {
   render() {
     const { children, ...props } = this.props;
     return <Container {...props}>{children}</Container>;

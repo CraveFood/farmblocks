@@ -1,4 +1,2 @@
-export { default as Title } from "./components/Title";
-export { default as Caption } from "./components/Caption";
-export { default as Paragraph } from "./components/Paragraph";
+export { default as Text } from "./components/Text";
 export { fontSizes, fontTypes } from "@crave/farmblocks-theme";
