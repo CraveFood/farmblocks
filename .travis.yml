@@ -16,8 +16,13 @@ before_install:
   - git checkout "$BRANCH"
   - yarn global add greenkeeper-lockfile@1
 install:
-  - greenkeeper-lockfile-update
-  - yarn --frozen-lockfile
+  - |
+    if [[ $BRANCH == *"greenkeeper"* ]]; then
+      greenkeeper-lockfile-update;
+      yarn install;
+    else
+      yarn install --frozen-lockfile;
+    fi
   - yarn build
   - npx flow-typed install --overwrite
 script:
