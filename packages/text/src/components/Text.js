@@ -15,12 +15,16 @@ export default class Text extends React.Component {
     size: PropTypes.number,
     type: PropTypes.oneOf(Object.values(fontTypes)),
     align: PropTypes.oneOf(["left", "center", "right", "justify"]),
-    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    paragraph: PropTypes.bool,
+    title: PropTypes.bool
   };
 
   static defaultProps = {
     size: fontSizes.LARGE,
     type: fontTypes.NORMAL,
-    align: "left"
+    align: "left",
+    paragraph: false,
+    title: false
   };
 }
