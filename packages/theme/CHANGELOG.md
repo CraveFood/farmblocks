@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.3.1...@crave/farmblocks-theme@1.4.0) (2017-11-20)
+
+
+### Bug Fixes
+
+* **theme:** fix colors export ([4f657be](https://github.com/CraveFood/farmblocks/commit/4f657be))
+
+
+### Features
+
+* **theme:** add NEUTRAL style to fontTypes theme ([d992cf6](https://github.com/CraveFood/farmblocks/commit/d992cf6))
+* **theme:** export keys and values of font related contants on theme package ([fc60445](https://github.com/CraveFood/farmblocks/commit/fc60445))
+
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.3.0...@crave/farmblocks-theme@1.3.1) (2017-11-13)
 
