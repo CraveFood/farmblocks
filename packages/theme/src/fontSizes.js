@@ -1,7 +1,7 @@
-export default {
-  HUGE: "24px",
-  X_LARGE: "20px",
-  LARGE: "18px",
-  MEDIUM: "16px",
-  SMALL: "14px"
+module.exports = {
+  HUGE: 24,
+  X_LARGE: 20,
+  LARGE: 18,
+  MEDIUM: 16,
+  SMALL: 14
 };
