@@ -78,7 +78,7 @@ class EmptyState extends React.Component<Props> {
       <div className="buttons">
         {hasSecondaryAction && (
           <Button
-            className={`secondaryButton ${secondaryButtonMargin}`}
+            className={secondaryButtonMargin}
             type={buttonTypes.NEUTRAL}
             size={buttonSizes.MEDIUM}
             text={secondaryActionText}
@@ -87,7 +87,6 @@ class EmptyState extends React.Component<Props> {
         )}
         {hasPrimaryAction && (
           <Button
-            className="primaryButton"
             type={buttonTypes.SECONDARY}
             size={buttonSizes.MEDIUM}
             text={primaryActionText}
