@@ -10,7 +10,8 @@ const Container = styled.div`
     margin-bottom: 24px;
   }
 
-  > .description {
+  > .description,
+  > .info {
     margin-top: 16px;
   }
 
@@ -22,10 +23,6 @@ const Container = styled.div`
 
   > .buttons .withMargin {
     margin-right: 16px;
-  }
-
-  > .info {
-    margin-top: 16px;
   }
 `;
 
