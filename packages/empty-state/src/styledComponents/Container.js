@@ -1,10 +1,7 @@
 // @flow
 import styled from "styled-components";
 
-const width = props => props.width;
-
 const Container = styled.div`
-  width: ${width}px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +15,14 @@ const Container = styled.div`
     margin-top: 16px;
   }
 
-  > .primaryButton {
+  > .buttons {
     margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  > .buttons .withMargin {
+    margin-right: 16px;
   }
 
   > .info {

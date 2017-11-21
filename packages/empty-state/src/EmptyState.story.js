@@ -20,12 +20,14 @@ storiesOf("EmptyState", module)
     ))
   )
   .add(
-    "Long Title",
+    "Long Title, inside a container",
     withInfo()(() => (
-      <EmptyState
-        title={twoLinesDescription}
-        description={twoLinesDescription}
-      />
+      <div style={{ width: 560, padding: "52px 0" }}>
+        <EmptyState
+          title={twoLinesDescription}
+          description={twoLinesDescription}
+        />
+      </div>
     ))
   )
   .add(
@@ -45,8 +47,48 @@ storiesOf("EmptyState", module)
         imageSrc={imgSrc}
         title="Empty State Title"
         description={twoLinesDescription}
-        primaryButtonLabel="Primary Action"
-        onPrimaryButtonClick={action("clicked")}
+        primaryActionText="Primary Action"
+        onPrimaryActionClick={action("clicked")}
+      />
+    ))
+  )
+  .add(
+    "With primary button, inside a container",
+    withInfo()(() => (
+      <div style={{ width: 560, padding: "52px 0" }}>
+        <EmptyState
+          imageSrc={imgSrc}
+          title="Empty State Title"
+          description={twoLinesDescription}
+          primaryActionText="Primary Action"
+          onPrimaryActionClick={action("clicked")}
+        />
+      </div>
+    ))
+  )
+  .add(
+    "With primary and secondary buttons",
+    withInfo()(() => (
+      <EmptyState
+        imageSrc={imgSrc}
+        title="Empty State Title"
+        description={twoLinesDescription}
+        primaryActionText="Primary Action"
+        onPrimaryActionClick={action("clicked")}
+        secondaryActionText="Neutral Action"
+        onSecondaryActionClick={action("clicked")}
+      />
+    ))
+  )
+  .add(
+    "With secondary button only",
+    withInfo()(() => (
+      <EmptyState
+        imageSrc={imgSrc}
+        title="Empty State Title"
+        description={twoLinesDescription}
+        secondaryActionText="Neutral Action"
+        onSecondaryActionClick={action("clicked")}
       />
     ))
   )
@@ -57,8 +99,8 @@ storiesOf("EmptyState", module)
         imageSrc={imgSrc}
         title="Empty State Title"
         description={twoLinesDescription}
-        primaryButtonLabel="Primary Action"
-        onPrimaryButtonClick={action("clicked")}
+        primaryActionText="Primary Action"
+        onPrimaryActionClick={action("clicked")}
         info={twoLinesDescription}
       />
     ))

@@ -38,9 +38,11 @@ render(<App />, document.getElementById('root'));
 ```
 
 ## API
-Text properties: ``title``(required), ``description``, ``info``
-Button: ``primaryButtonLabel``, ``onPrimaryButtonClick``
-Thumbnail: ``imageSrc``
+
+- Thumbnail: ``imageSrc``
+- Text properties: ``title``(required), ``description``, ``info``
+- Primary Button: ``primaryActionText``, ``onPrimaryActionClick``
+- Secondary Button: ``secondaryActionText``, ``onSecondaryActionClick``
 
 ## License
 

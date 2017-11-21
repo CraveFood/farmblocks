@@ -8,24 +8,19 @@ import Container from "./styledComponents/Container";
 
 type Props = {
   title: string,
-  width?: number,
   imageSrc?: string,
   description?: string,
-  primaryButtonLabel?: string,
-  onPrimaryButtonClick?: (SyntheticEvent<HTMLButtonElement>) => void,
+  primaryActionText?: string,
+  onPrimaryActionClick?: (SyntheticEvent<HTMLButtonElement>) => void,
+  secondaryActionText?: string,
+  onSecondaryActionClick?: (SyntheticEvent<HTMLButtonElement>) => void,
   info?: string
 };
 
 class EmptyState extends React.Component<Props> {
-  static defaultProps = {
-    width: 560
-  };
-
   render() {
-    const { primaryButtonLabel, onPrimaryButtonClick } = this.props;
-    const hasPrimaryButton = primaryButtonLabel && onPrimaryButtonClick;
     return (
-      <Container width={this.props.width}>
+      <Container>
         {this.props.imageSrc && (
           <Image
             className="thumbnail"
@@ -54,15 +49,7 @@ class EmptyState extends React.Component<Props> {
             {this.props.description}
           </Text>
         )}
-        {hasPrimaryButton && (
-          <Button
-            className="primaryButton"
-            type={buttonTypes.PRIMARY}
-            size={buttonSizes.MEDIUM}
-            text={primaryButtonLabel}
-            onClick={onPrimaryButtonClick}
-          />
-        )}
+        {this._renderButtons()}
         {this.props.info && (
           <Text
             className="info"
@@ -74,6 +61,43 @@ class EmptyState extends React.Component<Props> {
           </Text>
         )}
       </Container>
+    );
+  }
+
+  _renderButtons() {
+    const {
+      primaryActionText,
+      onPrimaryActionClick,
+      secondaryActionText,
+      onSecondaryActionClick
+    } = this.props;
+    const hasPrimaryAction = primaryActionText && onPrimaryActionClick;
+    const hasSecondaryAction = secondaryActionText && onSecondaryActionClick;
+    const secondaryButtonMargin = hasPrimaryAction ? "withMargin" : "";
+    if (!hasPrimaryAction && !hasSecondaryAction) {
+      return null;
+    }
+    return (
+      <div className="buttons">
+        {hasSecondaryAction && (
+          <Button
+            className={`secondaryButton ${secondaryButtonMargin}`}
+            type={buttonTypes.NEUTRAL}
+            size={buttonSizes.MEDIUM}
+            text={secondaryActionText}
+            onClick={onSecondaryActionClick}
+          />
+        )}
+        {hasPrimaryAction && (
+          <Button
+            className="primaryButton"
+            type={buttonTypes.SECONDARY}
+            size={buttonSizes.MEDIUM}
+            text={primaryActionText}
+            onClick={onPrimaryActionClick}
+          />
+        )}
+      </div>
     );
   }
 }
