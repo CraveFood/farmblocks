@@ -6,6 +6,7 @@ import paragraphLineHeights from "../constants/paragraphLineHeights";
 const TextContainer = styled.div`
   font-family: Lato, sans-serif;
   font-size: ${props => `${props.size}px`};
+  -webkit-font-smoothing: antialiased;
 
   color: ${props => props.type};
 

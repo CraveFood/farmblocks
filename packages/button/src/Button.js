@@ -38,9 +38,10 @@ class Button extends React.Component<Props, State> {
     const disabled = this.props.disabled || this.props.loading;
     const showIcon = this.props.icon || this.props.loading;
     const marginOffset = this.props.text !== undefined ? 10 : 0;
+    const { className, ...props } = this.props;
 
     return (
-      <Container fluid={this.props.fluid}>
+      <Container fluid={this.props.fluid} className={className}>
         {this.props.disabled && (
           <div
             className="hit-box-container"
@@ -48,7 +49,7 @@ class Button extends React.Component<Props, State> {
             onMouseLeave={this.mouseLeaves}
           />
         )}
-        <StyledButton {...this.props} disabled={disabled}>
+        <StyledButton {...props} disabled={disabled}>
           {showIcon && (
             <div className="icon" style={{ marginRight: marginOffset }}>
               <i className={icon} />
@@ -92,7 +93,8 @@ Button.propTypes = {
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
-  tabIndex: PropTypes.number
+  tabIndex: PropTypes.number,
+  className: PropTypes.string
 };
 
 export default Button;
