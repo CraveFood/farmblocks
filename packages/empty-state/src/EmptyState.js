@@ -21,46 +21,61 @@ class EmptyState extends React.Component<Props> {
   render() {
     return (
       <Container>
-        {this.props.imageSrc && (
-          <Image
-            className="thumbnail"
-            size={thumbnailSizes.LARGE}
-            src={this.props.imageSrc}
-          />
-        )}
-        <Text
-          title
-          align="center"
-          size={fontSizes.HUGE}
-          type={fontTypes.NORMAL}
-        >
-          {this.props.title}
-        </Text>
-        {this.props.description && (
-          <Text
-            className="description"
-            align="center"
-            size={fontSizes.LARGE}
-            type={fontTypes.NEUTRAL}
-          >
-            {this.props.description}
-          </Text>
-        )}
+        {this._renderThumbnail()}
+        {this._renderTitle()}
+        {this._renderDescription()}
         {this._renderButtons()}
-        {this.props.info && (
-          <Text
-            className="info"
-            align="center"
-            size={fontSizes.SMALL}
-            type={fontTypes.NEUTRAL}
-          >
-            {this.props.info}
-          </Text>
-        )}
+        {this._renderInfo()}
       </Container>
     );
   }
 
+  _renderThumbnail() {
+    return (
+      this.props.imageSrc && (
+        <Image
+          className="thumbnail"
+          size={thumbnailSizes.LARGE}
+          src={this.props.imageSrc}
+        />
+      )
+    );
+  }
+  _renderTitle() {
+    return (
+      <Text title align="center" size={fontSizes.HUGE} type={fontTypes.NORMAL}>
+        {this.props.title}
+      </Text>
+    );
+  }
+  _renderDescription() {
+    return (
+      this.props.description && (
+        <Text
+          className="description"
+          align="center"
+          size={fontSizes.LARGE}
+          type={fontTypes.NEUTRAL}
+        >
+          {this.props.description}
+        </Text>
+      )
+    );
+  }
+  _renderInfo() {
+    return (
+      this.props.info && (
+        <Text
+          className="info"
+          align="center"
+          size={fontSizes.SMALL}
+          type={fontTypes.NEUTRAL}
+        >
+          {this.props.info}
+        </Text>
+      )
+    );
+  }
   _renderButtons() {
     const {
       primaryActionText,
