@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.0.7...@crave/farmblocks-button@1.1.0) (2017-11-21)
+
+
+### Features
+
+* **properties:** support for className property ([ab9b05d](https://github.com/CraveFood/farmblocks/commit/ab9b05d))
+
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.0.6...@crave/farmblocks-button@1.0.7) (2017-11-20)
 
