@@ -1,67 +1,78 @@
 import styled, { css } from "styled-components";
+import { fontWeights, fontTypes } from "@crave/farmblocks-theme";
 
-import lineHeights from "../constants/lineHeights";
-import linkColors from "../constants/linkColors";
+import hoverColors from "../constants/hoverColors";
+import linkTypes from "../constants/linkTypes";
 
-import { fontSizes, fontWeights } from "@crave/farmblocks-theme";
-import { Tooltip } from "@crave/farmblocks-tooltip";
+const LinkContainer = styled.div`
+  font-family: Lato, sans-serif;
 
-const StyledLink = styled.div`
-  font-family: Lato, sans-serif;  
-  text-align: ${props => props.align};
-  
-  ${fontSize};  
-  ${fontColor};
-  ${lineHeight};
+  display: inline-block;
 
-  font-weight: ${fontWeights.SEMIBOLD};  
+  position: relative;
+
+  > .hit-box-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  > i.margin-left {
+    margin-left: 8px;
+  }
+
+  > i.margin-right {
+    margin-right: 8px;
+  }
+
+  font-size: ${props => props.size}px;
+  font-weight: ${fontWeights.SEMIBOLD};
+
+  line-height: ${props => props.lineHeight};
+
+  transition: all 0.3s ease;
+
+  ${textDecoration};
+
+  ${colorStyle};
 `;
 
-function fontSize (props) {  
-  const isLargeSize =  props.type === "EXTERNAL_DEFAULT" || props.type === "EXTERNAL_ADDRESS" || props.type === "EXTERNAL_ADDRESS_WHITE";
-  const isSmallSize = props.type === "EXTERNAL_ADDRESS_MINI" || props.type === "EXTERNAL_ADDRESS_MINI_WHITE";
-  let fontSize = `${fontSizes.MEDIUM}px`;  
-  if (isLargeSize) {
-    fontSize = `${fontSizes.LARGE}px`;      
-  }
-  if (isSmallSize) {   
-    fontSize = `${fontSizes.SMALL}px`;
-  }
+function textDecoration({ disabled, type }) {
+  const underline =
+    disabled || type === linkTypes.NEUTRAL || type === linkTypes.WHITE
+      ? "none"
+      : "underline";
+
   return css`
-    font-size: ${fontSize};
+    & > a {
+      text-decoration: none;
+      pointer-events: ${disabled && "none"};
+
+      &:hover {
+        text-decoration: ${underline};
+      }
+    }
   `;
 }
 
-function fontColor(props){
-  const { color, hoverColor } = linkColors[props.type];  
+function colorStyle({ disabled, type }) {
+  const color = disabled ? fontTypes.SUBTLE : type;
+  const hoverColor = disabled ? fontTypes.SUBTLE : hoverColors[type];
+
   return css`
-    transition: background 0.3s ease;
     color: ${color};
+
+    > a {
+      color: inherit;
+    }
 
     &:hover {
       color: ${hoverColor};
-    }    
+    }
   `;
 }
 
-function lineHeight (props){
-  const isMini = props.type === "EXTERNAL_ADDRESS_MINI" || "EXTERNAL_ADDRESS_MINI_WHITE";
-  const isExternal = props.type === "EXTERNAL_DEFAULT" || "EXTERNAL_ADDRESS" || "EXTERNAL_ADDRESS_WHITE";
-  const isRowTitle = props.type === "ROW_TITLE";  
-  let lineHeight = lineHeights.DEFAULT; 
-  if (isMini) {
-    lineHeight = `${lineHeights.MINI}`;
-  }
-  if (isExternal) {
-    lineHeight = `${lineHeights.EXTERNAL}`;
-  }
-  if (isRowTitle) {
-    lineHeight = `${lineHeights.ROW_TITLE}`;
-  }
-  return css`
-    line-height: ${lineHeight};  
-  `;
-}
+LinkContainer.displayName = "LinkContainer";
 
-export default StyledLink;
-
+export default LinkContainer;

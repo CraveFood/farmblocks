@@ -3,21 +3,136 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Link from "./Link";
+import linkTypes from "./constants/linkTypes";
 
-storiesOf("Link", module)
+import { fontSizes } from "@crave/farmblocks-theme";
+
+storiesOf("Link/Featured", module)
   .add(
-    "Primary link - left aligned",
-    withInfo()(() => <Link>Awesome Link</Link>   
-  ))
+    "Default - left aligned, medium size",
+    withInfo()(() => <Link href="#">Awesome Link</Link>)
+  )
   .add(
-    "Primary link - right aligned",
-    withInfo()(() => <Link align="right">Awesome Link</Link>
-  ))
+    "right aligned",
+    withInfo()(() => (
+      <div style={{ width: "500px" }}>
+        <Link href="#" align="right">
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  )
   .add(
-    "Disabled link - left aligned",
-    withInfo()(() => <Link type="DISABLED">Awesome Link</Link>
-  ))
+    "external",
+    withInfo()(() => (
+      <Link href="#" external>
+        Awesome Link
+      </Link>
+    ))
+  )
   .add(
-    "Disabled link - right aligned",
-    withInfo()(() => <Link type="DISABLED" align="right">Awesome Link</Link>
-  ));;
+    "with left icon",
+    withInfo()(() => (
+      <Link href="#" leftIcon="wg-place">
+        Awesome Link
+      </Link>
+    ))
+  )
+  .add(
+    "external, mini size",
+    withInfo()(() => (
+      <Link href="#" size={fontSizes.SMALL} external lineHeight={1.14}>
+        Awesome Link
+      </Link>
+    ))
+  )
+  .add(
+    "with left icon, mini size",
+    withInfo()(() => (
+      <Link
+        href="#"
+        size={fontSizes.SMALL}
+        leftIcon="wg-place"
+        lineHeight={1.14}
+      >
+        Awesome Link
+      </Link>
+    ))
+  )
+  .add(
+    "external, white color",
+    withInfo()(() => (
+      <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
+        <Link href="#" external type={linkTypes.WHITE}>
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  )
+  .add(
+    "external, mini size, white color",
+    withInfo()(() => (
+      <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
+        <Link
+          href="#"
+          external
+          type={linkTypes.WHITE}
+          size={fontSizes.SMALL}
+          lineHeight={1.14}
+        >
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  )
+  .add(
+    "with left icon, white color",
+    withInfo()(() => (
+      <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
+        <Link
+          address
+          type={linkTypes.WHITE}
+          lineHeight={1.33}
+          size={fontSizes.LARGE}
+        >
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  )
+  .add(
+    "with left icon, mini size, white color",
+    withInfo()(() => (
+      <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
+        <Link
+          address
+          type={linkTypes.WHITE}
+          leftIcon="wg-place"
+          size={fontSizes.SMALL}
+          lineHeight={1.14}
+        >
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  )
+  .add(
+    "disabled link",
+    withInfo()(() => (
+      <div style={{ width: "500px" }}>
+        <Link href="#" disabled>
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  )
+  .add(
+    "disabled link, right aligned",
+    withInfo()(() => (
+      <div style={{ width: "500px" }}>
+        <Link href="#" disabled align="right">
+          Awesome Link
+        </Link>
+      </div>
+    ))
+  );
