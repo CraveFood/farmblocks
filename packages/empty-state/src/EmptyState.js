@@ -30,7 +30,6 @@ class EmptyState extends React.Component<Props> {
         )}
         <Text
           title
-          className=""
           align="center"
           size={fontSizes.HUGE}
           type={fontTypes.NORMAL}
