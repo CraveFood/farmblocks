@@ -6,8 +6,12 @@ import Container from "../styledComponents/Text";
 
 export default class Text extends React.Component {
   render() {
-    const { children, ...props } = this.props;
-    return <Container {...props}>{children}</Container>;
+    const { children, title, ...props } = this.props;
+    return (
+      <Container isTitle={title} {...props}>
+        {children}
+      </Container>
+    );
   }
 
   static propTypes = {

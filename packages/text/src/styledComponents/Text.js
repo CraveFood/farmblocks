@@ -18,7 +18,7 @@ const TextContainer = styled.div`
 `;
 
 function titleStyle(props) {
-  if (props.title) {
+  if (props.isTitle) {
     return css`
       font-weight: ${fontWeights.SEMIBOLD};
     `;
