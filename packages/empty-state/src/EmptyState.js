@@ -28,17 +28,15 @@ class EmptyState extends React.Component<Props> {
             src={this.props.imageSrc}
           />
         )}
-        {this.props.title && (
-          <Text
-            title
-            className=""
-            align="center"
-            size={fontSizes.HUGE}
-            type={fontTypes.NORMAL}
-          >
-            {this.props.title}
-          </Text>
-        )}
+        <Text
+          title
+          className=""
+          align="center"
+          size={fontSizes.HUGE}
+          type={fontTypes.NORMAL}
+        >
+          {this.props.title}
+        </Text>
         {this.props.description && (
           <Text
             className="description"
