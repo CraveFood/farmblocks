@@ -48,7 +48,7 @@ storiesOf("EmptyState", module)
         title="Empty State Title"
         description={twoLinesDescription}
         primaryActionText="Primary Action"
-        onPrimaryActionClick={action("clicked")}
+        onPrimaryActionClick={action("onPrimaryActionClick")}
       />
     ))
   )
@@ -61,7 +61,7 @@ storiesOf("EmptyState", module)
           title="Empty State Title"
           description={twoLinesDescription}
           primaryActionText="Primary Action"
-          onPrimaryActionClick={action("clicked")}
+          onPrimaryActionClick={action("onPrimaryActionClick")}
         />
       </div>
     ))
@@ -74,9 +74,9 @@ storiesOf("EmptyState", module)
         title="Empty State Title"
         description={twoLinesDescription}
         primaryActionText="Primary Action"
-        onPrimaryActionClick={action("clicked")}
-        secondaryActionText="Neutral Action"
-        onSecondaryActionClick={action("clicked")}
+        onPrimaryActionClick={action("onPrimaryActionClick")}
+        secondaryActionText="Secondary Action"
+        onSecondaryActionClick={action("onSecondaryActionClick")}
       />
     ))
   )
@@ -87,8 +87,8 @@ storiesOf("EmptyState", module)
         imageSrc={imgSrc}
         title="Empty State Title"
         description={twoLinesDescription}
-        secondaryActionText="Neutral Action"
-        onSecondaryActionClick={action("clicked")}
+        secondaryActionText="Secondary Action"
+        onSecondaryActionClick={action("onSecondaryActionClick")}
       />
     ))
   )
@@ -100,7 +100,7 @@ storiesOf("EmptyState", module)
         title="Empty State Title"
         description={twoLinesDescription}
         primaryActionText="Primary Action"
-        onPrimaryActionClick={action("clicked")}
+        onPrimaryActionClick={action("onPrimaryActionClick")}
         info={twoLinesDescription}
       />
     ))
