@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 
-import EmptyState from ".";
+import EmptyState from "@crave/farmblocks-empty-state";
 
 const twoLinesDescription =
   "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.";
