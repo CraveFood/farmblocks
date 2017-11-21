@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 
-import EmptyState from "./EmptyState";
+import EmptyState from ".";
 
 const twoLinesDescription =
   "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.";
