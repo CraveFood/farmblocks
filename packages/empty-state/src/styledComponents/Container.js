@@ -5,7 +5,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-font-smoothing: antialiased;
 
   > .thumbnail {
     margin-bottom: 24px;
