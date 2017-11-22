@@ -48,8 +48,8 @@ const Footer = props => {
 
 Footer.propTypes = {
   helpText: PropTypes.string.isRequired,
-  helpLinkText: PropTypes.string.isRequired,
-  helpLinkHref: PropTypes.string.isRequired,
+  helpLinkText: PropTypes.string,
+  helpLinkHref: PropTypes.string,
   noAction: PropTypes.bool,
   onSecondaryActionClick: PropTypes.func,
   secondaryActionText: PropTypes.string,

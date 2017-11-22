@@ -6,31 +6,34 @@ import Image, { badgeSizes } from "@crave/farmblocks-image";
 
 import Container from "../styledComponents/HelperContent";
 
-const HelperContent = props => (
-  <Container>
-    <Image
-      src="https://user-images.githubusercontent.com/17936244/33067698-1f9e14b2-ce96-11e7-97a2-bd54205a9eea.png"
-      badge
-      size={badgeSizes.MEDIUM}
-    />
+const HelperContent = props => {
+  const renderLink = props.linkText && props.linkHref;
 
-    <div className="text">
-      <div style={{ backgroundX: "lightblue" }}>
+  return (
+    <Container>
+      <Image
+        src="https://user-images.githubusercontent.com/17936244/33067698-1f9e14b2-ce96-11e7-97a2-bd54205a9eea.png"
+        badge
+        size={badgeSizes.MEDIUM}
+      />
+
+      <div className="text">
         <Text size={fontSizes.MEDIUM}>{props.text}</Text>
+
+        {renderLink && (
+          <a className="link" href={props.linkHref}>
+            {props.linkText}
+          </a>
+        )}
       </div>
-      <div style={{ backgroundx: "lightblue" }}>
-        <a className="link" href={props.linkHref}>
-          {props.linkText}
-        </a>
-      </div>
-    </div>
-  </Container>
-);
+    </Container>
+  );
+};
 
 HelperContent.propTypes = {
   text: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired,
-  linkHref: PropTypes.string.isRequired
+  linkText: PropTypes.string,
+  linkHref: PropTypes.string
 };
 
 export default HelperContent;

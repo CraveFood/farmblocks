@@ -21,6 +21,18 @@ storiesOf("Footer", module)
     ))
   )
   .add(
+    "without link",
+    withInfo()(() => (
+      <Footer
+        helpText="Have questions about account setup?"
+        onSecondaryActionClick={action("onSecondaryActionClick")}
+        secondaryActionText="Secondary Action"
+        onPrimaryActionClick={action("onPrimaryActionClick")}
+        primaryActionText="Primary Action"
+      />
+    ))
+  )
+  .add(
     "loading primary action",
     withInfo()(() => (
       <Footer
