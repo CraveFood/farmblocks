@@ -89,7 +89,12 @@ storiesOf("Link/Featured", module)
     "with left icon, white color",
     withInfo()(() => (
       <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
-        <Link href="#" type={linkTypes.WHITE} leftIcon="wg-place">
+        <Link
+          address
+          type={linkTypes.WHITE}
+          lineHeight={1.33}
+          size={fontSizes.LARGE}
+        >
           Awesome Link
         </Link>
       </div>
@@ -100,7 +105,7 @@ storiesOf("Link/Featured", module)
     withInfo()(() => (
       <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
         <Link
-          href="#"
+          address
           type={linkTypes.WHITE}
           leftIcon="wg-place"
           size={fontSizes.SMALL}
