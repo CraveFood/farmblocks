@@ -85,6 +85,14 @@ injectGlobal`
     content: "\\e949";
   }
 
+  .wg-place:before {
+    content: "\\e972";
+  }
+
+  .wg-external-link:before {
+    content: "\\e973";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -93,7 +101,9 @@ injectGlobal`
   .wg-small-arrow-right,
   .wg-check,
   .wg-checker,
-  .wg-edit {
+  .wg-edit,
+  .wg-place,
+  .wg-external-link {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
     speak: none;
