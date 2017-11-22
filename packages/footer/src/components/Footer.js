@@ -12,6 +12,7 @@ const Footer = props => {
       text={props.helpText}
       linkText={props.helpLinkText}
       linkHref={props.helpLinkHref}
+      imageSrc={props.helpImageSrc}
     />
   );
   if (props.noAction) {
@@ -47,6 +48,7 @@ const Footer = props => {
 };
 
 Footer.propTypes = {
+  helpImageSrc: PropTypes.string,
   helpText: PropTypes.string.isRequired,
   helpLinkText: PropTypes.string,
   helpLinkHref: PropTypes.string,
