@@ -26594,6 +26594,74 @@ exports[`Storyshots Footer default 1`] = `
   height: 100%;
 }
 
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 16px 16px;
+}
+
+.c8 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #2980b9;
+}
+
+.c8:focus {
+  background-color: #2980b9;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -26668,72 +26736,26 @@ exports[`Storyshots Footer default 1`] = `
   box-shadow: none;
 }
 
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 16px;
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
   font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 16px 16px;
-}
-
-.c8 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c8:disabled {
-  background-color: rgba(0,0,0,0.16);
-  box-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
 }
 
 .c0 {
@@ -26761,27 +26783,6 @@ exports[`Storyshots Footer default 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -26840,7 +26841,6 @@ exports[`Storyshots Footer default 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -27789,6 +27789,28 @@ exports[`Storyshots Footer loading primary action 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   background-color: #f6f8f9;
@@ -27814,27 +27836,6 @@ exports[`Storyshots Footer loading primary action 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -27893,7 +27894,6 @@ exports[`Storyshots Footer loading primary action 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -28865,6 +28865,28 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   background-color: #f6f8f9;
@@ -28890,27 +28912,6 @@ exports[`Storyshots Footer loading secondary action 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -28969,7 +28970,6 @@ exports[`Storyshots Footer loading secondary action 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -29740,6 +29740,28 @@ exports[`Storyshots Footer loading secondary action 1`] = `
 `;
 
 exports[`Storyshots Footer no button 1`] = `
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   background-color: #f6f8f9;
@@ -29765,27 +29787,6 @@ exports[`Storyshots Footer no button 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -29844,7 +29845,6 @@ exports[`Storyshots Footer no button 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -30423,13 +30423,6 @@ exports[`Storyshots Footer no button 1`] = `
 `;
 
 exports[`Storyshots Footer noAction 1`] = `
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
 .c1 {
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -30442,6 +30435,14 @@ exports[`Storyshots Footer noAction 1`] = `
   background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
   background-size: cover;
   background-position: center;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
 }
 
 .c0 {
@@ -30497,7 +30498,6 @@ exports[`Storyshots Footer noAction 1`] = `
         <div
           className="c2"
           size={16}
-          title={false}
           type="#2f313a"
         >
           Have questions about account setup?
@@ -31205,6 +31205,28 @@ exports[`Storyshots Footer primary action only 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   background-color: #f6f8f9;
@@ -31230,27 +31252,6 @@ exports[`Storyshots Footer primary action only 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -31309,7 +31310,6 @@ exports[`Storyshots Footer primary action only 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -32101,6 +32101,28 @@ exports[`Storyshots Footer secondary action only 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   background-color: #f6f8f9;
@@ -32126,27 +32148,6 @@ exports[`Storyshots Footer secondary action only 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -32205,7 +32206,6 @@ exports[`Storyshots Footer secondary action only 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -32923,6 +32923,74 @@ exports[`Storyshots Footer without image 1`] = `
   height: 100%;
 }
 
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 16px 16px;
+}
+
+.c7 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c7:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c7:focus {
+  box-shadow: none;
+}
+
+.c7:hover .icon,
+.c7:focus .icon {
+  color: white;
+}
+
+.c7:hover {
+  background-color: #2980b9;
+}
+
+.c7:focus {
+  background-color: #2980b9;
+}
+
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -32997,72 +33065,12 @@ exports[`Storyshots Footer without image 1`] = `
   box-shadow: none;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 16px;
+.c2 {
+  font-family: Lato,sans-serif;
   font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 16px 16px;
-}
-
-.c7 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
-  box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7:hover {
-  background-color: #2980b9;
-}
-
-.c7:focus {
-  background-color: #2980b9;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:disabled {
-  background-color: rgba(0,0,0,0.16);
-  box-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
 }
 
 .c0 {
@@ -33090,13 +33098,6 @@ exports[`Storyshots Footer without image 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
 }
 
 .c1 {
@@ -33150,7 +33151,6 @@ exports[`Storyshots Footer without image 1`] = `
           <div
             className="c2"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
@@ -33922,6 +33922,74 @@ exports[`Storyshots Footer without link 1`] = `
   height: 100%;
 }
 
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 16px 16px;
+}
+
+.c8 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #2980b9;
+}
+
+.c8:focus {
+  background-color: #2980b9;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
 .c5 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -33996,72 +34064,26 @@ exports[`Storyshots Footer without link 1`] = `
   box-shadow: none;
 }
 
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 16px;
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
   font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 16px 16px;
-}
-
-.c8 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c8:disabled {
-  background-color: rgba(0,0,0,0.16);
-  box-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
 }
 
 .c0 {
@@ -34089,27 +34111,6 @@ exports[`Storyshots Footer without link 1`] = `
 
 .c0 .button-container > * {
   margin-left: 16px;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  text-align: left;
-}
-
-.c2 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
 }
 
 .c1 {
@@ -34168,7 +34169,6 @@ exports[`Storyshots Footer without link 1`] = `
           <div
             className="c3"
             size={16}
-            title={false}
             type="#2f313a"
           >
             Have questions about account setup?
