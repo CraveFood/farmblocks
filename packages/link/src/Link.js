@@ -1,31 +1,27 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-
-import linkTypes from "./constants/linkTypes"; 
-
-import StyledLink from "./styledComponents/Link"
 import Tooltip from "@crave/farmblocks-tooltip";
 import { fontSizes } from "@crave/farmblocks-theme";
-import Container from "./constants/Container";
 
+import linkTypes from "./constants/linkTypes";
+import Container from "./styledComponents/Link";
 
 export default class Link extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
+
     this.state = {
       showTooltip: false
-    };    
+    };
+
     this.mouseOver = this.mouseOver.bind(this);
     this.mouseLeaves = this.mouseLeaves.bind(this);
   }
-  
-  render() {  
-    const props = this.props;
-    const showIconAddress = props.icon && props.address;
-    const showIconExternal = props.icon && props.external;
 
+  render() {
+    const { children, ...props } = this.props;
     return (
-      <Container>        
+      <Container {...props}>
         {props.disabled && (
           <div
             className="hit-box-container"
@@ -33,17 +29,19 @@ export default class Link extends React.Component {
             onMouseLeave={this.mouseLeaves}
           />
         )}
-        <StyledLink {...props} />
-        {showIconAddress && (
-          <div className="icon">            
-          </div>
-        )}
+
+        {props.leftIcon && <i className={`${props.leftIcon} margin-right }`} />}
+
+        <a href={props.href}>{children}</a>
+
+        {props.external && <i className="wg-external-link margin-left" />}
+
         <Tooltip
-            text="This action is disabled."
-            isVisible={this.state.showTooltip}
+          text="This action is disabled."
+          isVisible={this.state.showTooltip}
         />
       </Container>
-    )
+    );
   }
 
   mouseOver() {
@@ -53,7 +51,7 @@ export default class Link extends React.Component {
       });
     }
   }
-  
+
   mouseLeaves() {
     if (this.props.disabled) {
       this.setState({
@@ -63,22 +61,23 @@ export default class Link extends React.Component {
   }
 
   static PropTypes = {
+    children: PropTypes.node.isRequired,
+    href: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.values(linkTypes)),
     align: PropTypes.oneOf(["left", "right"]),
-    icon: PropTypes.string,
+    leftIcon: PropTypes.string,
     disabled: PropTypes.bool,
     external: PropTypes.bool,
-    address: PropTypes.bool,
     size: PropTypes.number,
     lineHeight: PropTypes.number
-  }
+  };
 
   static defaultProps = {
-    type: linkTypes.PRIMARY,
+    type: linkTypes.FEATURED,
     align: "left",
     size: fontSizes.MEDIUM,
     lineHeight: 1,
-    disabled: false
-  }
-  
+    disabled: false,
+    external: false
+  };
 }

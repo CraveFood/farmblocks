@@ -1,8 +1,10 @@
+import { fontTypes } from "@crave/farmblocks-theme";
+
 const linkTypes = {
-  PRIMARY: "PRIMARY",  
-  NEUTRAL: "NEUTRAL",
-  ROW_TITLE: "ROW_TITLE",  
-  WHITE: "WHITE"  
+  FEATURED: fontTypes.FEATURED,
+  NEUTRAL: fontTypes.NEUTRAL,
+  NORMAL: fontTypes.NORMAL,
+  WHITE: fontTypes.WHITE
 };
 
 module.exports = linkTypes;

@@ -1,2 +1,3 @@
 export { default } from "./components/Link";
-export { fontSizes, colors } from "@crave/farmblocks-theme";
+export { fontSizes } from "@crave/farmblocks-theme";
+export { linkTypes } from "./constants/linkTypes";

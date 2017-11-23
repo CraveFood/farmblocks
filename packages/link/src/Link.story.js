@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Link from "./Link";
-import linkTypes from "../constants/linkTypes";
+import linkTypes from "./constants/linkTypes";
 
 import { fontSizes } from "@crave/farmblocks-theme";
 
