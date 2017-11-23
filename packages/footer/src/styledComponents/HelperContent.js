@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { colors as colorConstants, fontWeights } from "@crave/farmblocks-theme";
 
-const margin = "16px";
-
 const HelperContentContainer = styled.div`
   font-family: Lato, sans-serif;
 
@@ -10,15 +8,17 @@ const HelperContentContainer = styled.div`
 
   align-items: center;
 
-  .text {
-    margin-left: ${margin};
-
+  > .text {
     > :first-child {
       margin-bottom: 8px;
     }
   }
 
-  .link {
+  > .image {
+    margin-right: 16px;
+  }
+
+  > .link {
     color: ${colorConstants.OYSTER};
     font-weight: ${fontWeights.SEMIBOLD};
     text-decoration: none;

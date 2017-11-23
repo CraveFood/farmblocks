@@ -11,7 +11,14 @@ const HelperContent = props => {
 
   return (
     <Container>
-      <Image src={props.imageSrc} badge size={badgeSizes.MEDIUM} />
+      {props.imageSrc && (
+        <Image
+          src={props.imageSrc}
+          badge
+          size={badgeSizes.MEDIUM}
+          className="image"
+        />
+      )}
 
       <div className="text">
         <Text size={fontSizes.MEDIUM}>{props.text}</Text>
@@ -31,11 +38,6 @@ HelperContent.propTypes = {
   text: PropTypes.string.isRequired,
   linkText: PropTypes.string,
   linkHref: PropTypes.string
-};
-
-HelperContent.defaultProps = {
-  imageSrc:
-    "https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
 };
 
 export default HelperContent;

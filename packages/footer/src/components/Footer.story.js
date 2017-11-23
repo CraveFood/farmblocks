@@ -17,6 +17,7 @@ storiesOf("Footer", module)
         secondaryActionText="Secondary Action"
         onPrimaryActionClick={action("onPrimaryActionClick")}
         primaryActionText="Primary Action"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   )
@@ -25,6 +26,21 @@ storiesOf("Footer", module)
     withInfo()(() => (
       <Footer
         helpText="Have questions about account setup?"
+        onSecondaryActionClick={action("onSecondaryActionClick")}
+        secondaryActionText="Secondary Action"
+        onPrimaryActionClick={action("onPrimaryActionClick")}
+        primaryActionText="Primary Action"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+      />
+    ))
+  )
+  .add(
+    "without image",
+    withInfo()(() => (
+      <Footer
+        helpText="Have questions about account setup?"
+        helpLinkText="Get support"
+        helpLinkHref="#"
         onSecondaryActionClick={action("onSecondaryActionClick")}
         secondaryActionText="Secondary Action"
         onPrimaryActionClick={action("onPrimaryActionClick")}
@@ -44,6 +60,7 @@ storiesOf("Footer", module)
         onPrimaryActionClick={action("onPrimaryActionClick")}
         primaryActionText="Primary Action"
         loadingPrimaryAction
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   )
@@ -59,6 +76,7 @@ storiesOf("Footer", module)
         onPrimaryActionClick={action("onPrimaryActionClick")}
         primaryActionText="Primary Action"
         loadingSecondaryAction
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   )
@@ -71,6 +89,7 @@ storiesOf("Footer", module)
         helpLinkHref="#"
         onPrimaryActionClick={action("onPrimaryActionClick")}
         primaryActionText="Primary Action"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   )
@@ -83,6 +102,7 @@ storiesOf("Footer", module)
         helpLinkHref="#"
         onSecondaryActionClick={action("onSecondaryActionClick")}
         secondaryActionText="Secondary Action"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   )
@@ -93,6 +113,7 @@ storiesOf("Footer", module)
         helpText="Have questions about account setup?"
         helpLinkText="Get support"
         helpLinkHref="#"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   )
@@ -104,6 +125,7 @@ storiesOf("Footer", module)
         helpLinkText="Get support"
         helpLinkHref="#"
         noAction
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
   );

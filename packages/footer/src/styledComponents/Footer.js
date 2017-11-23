@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { colors as colorConstants } from "@crave/farmblocks-theme";
 
-const margin = "16px";
-
 const FooterContainer = styled.div`
   font-family: Lato, sans-serif;
 
@@ -21,7 +19,7 @@ const FooterContainer = styled.div`
     align: flex-end;
 
     > * {
-      margin-left: ${margin};
+      margin-left: 16px;
     }
   }
 `;
