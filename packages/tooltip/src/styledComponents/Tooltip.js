@@ -1,5 +1,6 @@
 // @flow
 import styled from "styled-components";
+import { colors } from "@crave/farmblocks-theme";
 
 const Container = styled.div`
   position: relative;
@@ -15,6 +16,7 @@ const StyledTooltip = styled.div`
   border: solid 1px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   white-space: pre;
+  color: ${colors.CARBON};
 
   font-family: lato, sans-serif;
 
