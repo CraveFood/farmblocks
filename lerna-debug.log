@@ -1,0 +1,46 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ], script: 'build', args: [] }
+2 verbose rootPath /home/felipe/Projects/farmblocks
+3 info version 2.4.0
+4 info versioning independent
+5 silly existsSync /home/felipe/Projects/farmblocks/VERSION
+6 silly initialize attempt
+7 silly initialize success
+8 silly execute attempt
+9 silly runScriptInDir build [] theme
+10 silly getExecOpts { cwd: '/home/felipe/Projects/farmblocks/packages/theme' }
+11 silly runScriptInDir build [] tooltip
+12 silly getExecOpts { cwd: '/home/felipe/Projects/farmblocks/packages/tooltip' }
+13 error build Errored while running script in '@crave/farmblocks-theme'
+14 error execute callback with error
+15 error Error: Command failed: npm run build
+15 error ReferenceError: Unknown plugin "flow-react-proptypes" specified in "/home/felipe/Projects/farmblocks/.babelrc" at 0, attempted to resolve relative to "/home/felipe/Projects/farmblocks"
+15 error     at /home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/file/options/option-manager.js:180:17
+15 error     at Array.map (<anonymous>)
+15 error     at Function.normalisePlugins (/home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/file/options/option-manager.js:158:20)
+15 error     at OptionManager.mergeOptions (/home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/file/options/option-manager.js:234:36)
+15 error     at OptionManager.init (/home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/file/options/option-manager.js:368:12)
+15 error     at File.initOptions (/home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/file/index.js:212:65)
+15 error     at new File (/home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/file/index.js:135:24)
+15 error     at Pipeline.transform (/home/felipe/Projects/farmblocks/node_modules/babel-core/lib/transformation/pipeline.js:46:16)
+15 error     at transform (/home/felipe/Projects/farmblocks/node_modules/babel-cli/lib/babel/util.js:50:22)
+15 error     at Object.compile (/home/felipe/Projects/farmblocks/node_modules/babel-cli/lib/babel/util.js:59:12)
+15 error npm ERR! code ELIFECYCLE
+15 error npm ERR! errno 1
+15 error npm ERR! @crave/farmblocks-theme@1.4.0 build: `yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'`
+15 error npm ERR! Exit status 1
+15 error npm ERR!
+15 error npm ERR! Failed at the @crave/farmblocks-theme@1.4.0 build script.
+15 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+15 error npm WARN Local package.json exists, but node_modules missing, did you mean to install?
+15 error
+15 error npm ERR! A complete log of this run can be found in:
+15 error npm ERR!     /home/felipe/.npm/_logs/2017-11-24T11_39_45_678Z-debug.log
+15 error
+15 error > @crave/farmblocks-theme@1.4.0 build /home/felipe/Projects/farmblocks/packages/theme
+15 error > yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'
+15 error
+15 error $ rm -rf lib
+15 error
+15 error     at Promise.all.then.arr (/home/felipe/Projects/farmblocks/node_modules/execa/index.js:236:11)
+15 error     at <anonymous>

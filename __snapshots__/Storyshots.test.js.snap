@@ -64653,7 +64653,7 @@ exports[`Storyshots Tooltip isVisible false 1`] = `
   border-radius: 4px;
   white-space: pre;
   font-family: lato,sans-serif;
-  right: 0;
+  left: 0;
 }
 
 .c1:after,
@@ -64671,21 +64671,22 @@ exports[`Storyshots Tooltip isVisible false 1`] = `
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
-  right: 7px;
+  left: 7px;
 }
 
 .c1:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
-  right: 8px;
+  left: 8px;
 }
 
 <div
   style={
     Object {
+      "border": "1px",
       "position": "relative",
-      "width": "65px",
+      "width": "250px",
     }
   }
 >
@@ -64701,7 +64702,72 @@ exports[`Storyshots Tooltip isVisible false 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tooltip isVisible true 1`] = `
+exports[`Storyshots Tooltip isVisible true - left aligned 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: visible;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c1:after,
+.c1:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+<div
+  style={
+    Object {
+      "border": "1px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      Hey yo
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip isVisible true - right aligned 1`] = `
 .c0 {
   position: relative;
 }
@@ -64748,8 +64814,9 @@ exports[`Storyshots Tooltip isVisible true 1`] = `
 <div
   style={
     Object {
+      "border": "1px solid",
       "position": "relative",
-      "width": "65px",
+      "width": "250px",
     }
   }
 >
