@@ -60,7 +60,7 @@ export default class Link extends React.Component {
     }
   }
 
-  static PropTypes = {
+  static propTypes = {
     children: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.values(linkTypes)),
