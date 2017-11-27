@@ -7,6 +7,8 @@ import linkTypes from "../constants/linkTypes";
 const LinkContainer = styled.div`
   font-family: Lato, sans-serif;
 
+  display: inline-block;
+
   position: relative;
 
   > .hit-box-container {
@@ -24,7 +26,6 @@ const LinkContainer = styled.div`
     margin-right: 8px;
   }
 
-  text-align: ${props => props.align};
   font-size: ${props => props.size}px;
   font-weight: ${fontWeights.SEMIBOLD};
 
