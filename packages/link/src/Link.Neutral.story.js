@@ -17,8 +17,8 @@ storiesOf("Link/Neutral", module)
   .add(
     "right aligned",
     withInfo()(() => (
-      <div style={{ width: "500px" }}>
-        <Link href="#" type={linkTypes.NEUTRAL} align="right">
+      <div style={{ width: "500px", textAlign: "right" }}>
+        <Link href="#" type={linkTypes.NEUTRAL}>
           Awesome Link
         </Link>
       </div>

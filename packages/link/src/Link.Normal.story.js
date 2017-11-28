@@ -17,8 +17,8 @@ storiesOf("Link/Normal", module)
   .add(
     "right aligned",
     withInfo()(() => (
-      <div style={{ width: "500px" }}>
-        <Link href="#" type={linkTypes.NORMAL} align="right">
+      <div style={{ width: "500px", textAlign: "right" }}>
+        <Link href="#" type={linkTypes.NORMAL}>
           Awesome Link
         </Link>
       </div>
