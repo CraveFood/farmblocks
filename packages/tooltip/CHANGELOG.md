@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.2.2...@crave/farmblocks-tooltip@0.3.0) (2017-11-28)
+
+
+### Features
+
+* **Tooltip:** add left align option ([bda0823](https://github.com/CraveFood/farmblocks/commit/bda0823))
+
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.2.1...@crave/farmblocks-tooltip@0.2.2) (2017-10-30)
 
