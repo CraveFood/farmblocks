@@ -12,38 +12,32 @@
     "test": "jest",
     "typecheck": "flow",
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
-    "lint.test": "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
-    "coverage": "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint.test":
+      "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
+    "coverage":
+      "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "commit": "git-cz",
     "prepush": "yarn typecheck",
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
     "build-storybook": "build-storybook -s .storybook/assets -o docs"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
     }
   },
   "lint-staged": {
-    "*.js": [
-      "yarn lint --quiet"
-    ],
-    "*.test.js": [
-      "yarn lint.test"
-    ],
-    "*.{js,json,css}": [
-      "prettier --parser flow --write"
-    ]
+    "*.js": ["yarn lint --quiet"],
+    "*.test.js": ["yarn lint.test"],
+    "*.{js,json,css}": ["prettier --parser flow --write"]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CraveFood/farmblocks.git"
   },
   "devDependencies": {
-    "@crave/farmblocks-tooltip": "^0.2.0-alpha.e320de4a",
+    "@crave/farmblocks-tooltip": "^0.3.0",
     "@storybook/addon-actions": "^3.2.13",
     "@storybook/addon-info": "^3.2.13",
     "@storybook/addon-links": "^3.2.13",
