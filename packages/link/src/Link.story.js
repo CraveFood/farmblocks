@@ -15,10 +15,8 @@ storiesOf("Link/Featured", module)
   .add(
     "right aligned",
     withInfo()(() => (
-      <div style={{ width: "500px" }}>
-        <Link href="#" align="right">
-          Awesome Link
-        </Link>
+      <div style={{ width: "500px", textAlign: "right" }}>
+        <Link href="#">Awesome Link</Link>
       </div>
     ))
   )
@@ -129,8 +127,8 @@ storiesOf("Link/Featured", module)
   .add(
     "disabled link, right aligned",
     withInfo()(() => (
-      <div style={{ width: "500px" }}>
-        <Link href="#" disabled align="right">
+      <div style={{ width: "500px", textAlign: "right" }}>
+        <Link href="#" disabled tooltipAlign="right">
           Awesome Link
         </Link>
       </div>
