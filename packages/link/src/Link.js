@@ -39,6 +39,7 @@ export default class Link extends React.Component {
         <Tooltip
           text="This action is disabled."
           isVisible={this.state.showTooltip}
+          align={props.tooltipAlign}
         />
       </Container>
     );
@@ -64,7 +65,7 @@ export default class Link extends React.Component {
     children: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.values(linkTypes)),
-    align: PropTypes.oneOf(["left", "right"]),
+    tooltipAlign: PropTypes.oneOf(["left", "right"]),
     leftIcon: PropTypes.string,
     disabled: PropTypes.bool,
     external: PropTypes.bool,
@@ -74,7 +75,7 @@ export default class Link extends React.Component {
 
   static defaultProps = {
     type: linkTypes.FEATURED,
-    align: "left",
+    tooltipAlign: "left",
     size: fontSizes.MEDIUM,
     lineHeight: 1,
     disabled: false,
