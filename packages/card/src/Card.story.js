@@ -13,7 +13,7 @@ storiesOf("Card", module)
   .add("Type Featured", withInfo()(() => <Card type={cardTypes.FEATURED} />))
   .add(
     "Type Featured with 300px width",
-    withInfo()(() => <Card width="200px" type={cardTypes.FEATURED} />)
+    withInfo()(() => <Card width="300px" type={cardTypes.FEATURED} />)
   )
   .add(
     "Floating with content (Empty State) and 560px width",
