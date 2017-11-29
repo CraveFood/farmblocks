@@ -1,4 +1,4 @@
-# Farmblocks-Links 
+# Farmblocks-Links
 
 A react component for links
 ## Installation
@@ -20,7 +20,7 @@ import Link from "@crave/farmblocks-link";
 const root = document.createElement("div");
 
 ReactDOM.render(
-  <Link>This is a link!</Link>,
+  <Link href="#">This is a link!</Link>,
   root
 );
 
