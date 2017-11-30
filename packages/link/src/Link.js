@@ -16,6 +16,7 @@ export default class Link extends React.Component {
 
     this.mouseOver = this.mouseOver.bind(this);
     this.mouseLeaves = this.mouseLeaves.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   render() {
@@ -29,7 +30,7 @@ export default class Link extends React.Component {
             {children}
           </span>
         ) : (
-          <a href={props.href} onClick={props.onClick}>
+          <a href={props.href} onClick={this.onClick}>
             {children}
           </a>
         )}
@@ -43,6 +44,11 @@ export default class Link extends React.Component {
         />
       </Container>
     );
+  }
+
+  onClick(e) {
+    e.stopPropagation();
+    return this.props.onClick(e);
   }
 
   mouseOver() {
