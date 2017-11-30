@@ -22,17 +22,15 @@ export default class Link extends React.Component {
     const { children, ...props } = this.props;
     return (
       <Container {...props}>
-        {props.disabled && (
-          <div
-            className="hit-box-container"
-            onMouseOver={this.mouseOver}
-            onMouseLeave={this.mouseLeaves}
-          />
-        )}
-
         {props.leftIcon && <i className={`${props.leftIcon} margin-right }`} />}
 
-        <a href={props.href}>{children}</a>
+        {props.disabled ? (
+          <span onMouseOver={this.mouseOver} onMouseLeave={this.mouseLeaves}>
+            {children}
+          </span>
+        ) : (
+          <a href={props.href}>{children}</a>
+        )}
 
         {props.external && <i className="wg-external-link margin-left" />}
 
