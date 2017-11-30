@@ -68,7 +68,7 @@ export default class Link extends React.Component {
     disabled: PropTypes.bool,
     external: PropTypes.bool,
     size: PropTypes.number,
-    lineHeight: PropTypes.number
+    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   };
 
   static defaultProps = {
