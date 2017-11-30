@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@1.1.3...@crave/farmblocks-stepper@1.1.4) (2017-11-30)
+
+
+### Bug Fixes
+
+* **Step:** change padding to margin on step component ([50271d3](https://github.com/CraveFood/farmblocks/commit/50271d3))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@1.1.2...@crave/farmblocks-stepper@1.1.3) (2017-11-20)
 
