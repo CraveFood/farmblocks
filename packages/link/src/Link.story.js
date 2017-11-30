@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
 
 import Link from "./Link";
 import linkTypes from "./constants/linkTypes";
@@ -131,6 +132,14 @@ storiesOf("Link/Featured", module)
         <Link href="#" disabled tooltipAlign="right">
           Awesome Link
         </Link>
+      </div>
+    ))
+  )
+  .add(
+    "link with onClick function",
+    withInfo()(() => (
+      <div style={{ width: "500px" }}>
+        <Link onClick={action("linkClicked")}>Awesome Link</Link>
       </div>
     ))
   );

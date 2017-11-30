@@ -29,7 +29,9 @@ export default class Link extends React.Component {
             {children}
           </span>
         ) : (
-          <a href={props.href}>{children}</a>
+          <a href={props.href} onClick={props.onClick}>
+            {children}
+          </a>
         )}
 
         {props.external && <i className="wg-external-link margin-left" />}
@@ -64,6 +66,7 @@ export default class Link extends React.Component {
     href: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.values(linkTypes)),
     tooltipAlign: PropTypes.oneOf(["left", "right"]),
+    onClick: PropTypes.func,
     leftIcon: PropTypes.string,
     disabled: PropTypes.bool,
     external: PropTypes.bool,
