@@ -13,6 +13,7 @@ const Footer = props => {
       linkText={props.helpLinkText}
       linkHref={props.helpLinkHref}
       imageSrc={props.helpImageSrc}
+      onClick={props.helpLinkOnClick}
     />
   );
   if (props.noAction) {
@@ -52,6 +53,7 @@ Footer.propTypes = {
   helpText: PropTypes.string.isRequired,
   helpLinkText: PropTypes.string,
   helpLinkHref: PropTypes.string,
+  helpLinkOnClick: PropTypes.func,
   noAction: PropTypes.bool,
   onSecondaryActionClick: PropTypes.func,
   secondaryActionText: PropTypes.string,
