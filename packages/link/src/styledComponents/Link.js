@@ -11,13 +11,6 @@ const LinkContainer = styled.div`
 
   position: relative;
 
-  > .hit-box-container {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-  }
-
   > i.margin-left {
     margin-left: 8px;
   }
@@ -38,16 +31,15 @@ const LinkContainer = styled.div`
   ${colorStyle};
 `;
 
-function textDecoration({ disabled, type }) {
+function textDecoration({ type }) {
   const underline =
-    disabled || type === linkTypes.NEUTRAL || type === linkTypes.WHITE
+    type === linkTypes.NEUTRAL || type === linkTypes.WHITE
       ? "none"
       : "underline";
 
   return css`
     & > a {
       text-decoration: none;
-      pointer-events: ${disabled && "none"};
 
       &:hover {
         text-decoration: ${underline};
