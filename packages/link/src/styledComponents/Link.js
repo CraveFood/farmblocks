@@ -25,6 +25,7 @@ const LinkContainer = styled.div`
   line-height: ${props => props.lineHeight};
 
   transition: all 0.3s ease;
+  cursor: ${props => (props.disabled ? "default" : "pointer")};
 
   ${textDecoration};
 

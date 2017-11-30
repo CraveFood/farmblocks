@@ -16,6 +16,7 @@ export default class Link extends React.Component {
 
     this.mouseOver = this.mouseOver.bind(this);
     this.mouseLeaves = this.mouseLeaves.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   render() {
@@ -29,7 +30,9 @@ export default class Link extends React.Component {
             {children}
           </span>
         ) : (
-          <a href={props.href}>{children}</a>
+          <a href={props.href} onClick={this.onClick}>
+            {children}
+          </a>
         )}
 
         {props.external && <i className="wg-external-link margin-left" />}
@@ -41,6 +44,11 @@ export default class Link extends React.Component {
         />
       </Container>
     );
+  }
+
+  onClick(e) {
+    e.stopPropagation();
+    return this.props.onClick(e);
   }
 
   mouseOver() {
@@ -64,6 +72,7 @@ export default class Link extends React.Component {
     href: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.values(linkTypes)),
     tooltipAlign: PropTypes.oneOf(["left", "right"]),
+    onClick: PropTypes.func,
     leftIcon: PropTypes.string,
     disabled: PropTypes.bool,
     external: PropTypes.bool,
