@@ -69,7 +69,7 @@ export default class Link extends React.Component {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
     type: PropTypes.oneOf(Object.values(linkTypes)),
     tooltipAlign: PropTypes.oneOf(["left", "right"]),
     onClick: PropTypes.func,
