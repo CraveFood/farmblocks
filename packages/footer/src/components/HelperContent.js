@@ -8,7 +8,7 @@ import Link from "@crave/farmblocks-link";
 import Container from "../styledComponents/HelperContent";
 
 const HelperContent = props => {
-  const renderLink = props.linkText && (props.linkHref || props.onClick);
+  const renderLink = props.linkText && (props.linkHref || props.linkOnClick);
 
   return (
     <Container>
@@ -26,7 +26,7 @@ const HelperContent = props => {
 
         {renderLink && (
           <Link
-            onClick={props.onClick}
+            onClick={props.linkOnClick}
             href={props.linkHref}
             type={fontTypes.NEUTRAL}
           >
@@ -43,7 +43,7 @@ HelperContent.propTypes = {
   text: PropTypes.string.isRequired,
   linkText: PropTypes.string,
   linkHref: PropTypes.string,
-  onClick: PropTypes.func
+  linkOnClick: PropTypes.func
 };
 
 export default HelperContent;

@@ -13,7 +13,7 @@ const Footer = props => {
       linkText={props.helpLinkText}
       linkHref={props.helpLinkHref}
       imageSrc={props.helpImageSrc}
-      onClick={props.helpLinkOnClick}
+      linkOnClick={props.helpLinkOnClick}
     />
   );
   if (props.noAction) {
