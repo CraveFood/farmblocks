@@ -5,32 +5,47 @@ import Adapter from "enzyme-adapter-react-16";
 import Link from ".";
 
 Enzyme.configure({ adapter: new Adapter() });
+describe("Link", function() {
+  describe("Tooltip", function() {
+    test("should show and hide the tooltip when mouse enters and leave the disabled link", function() {
+      const wrapper = shallow(
+        <Link href="#" disabled>
+          Link
+        </Link>
+      );
 
-describe("Tooltip", function() {
-  test("should show and hide the tooltip when mouse enters and leave the disabled link", function() {
-    const wrapper = shallow(
-      <Link href="#" disabled>
-        Link
-      </Link>
-    );
+      const hitBoxWrap = wrapper.children().at(0);
+      hitBoxWrap.simulate("mouseOver");
 
-    const hitBoxWrap = wrapper.children().at(0);
-    hitBoxWrap.simulate("mouseOver");
+      expect(wrapper.state("showTooltip")).toBeTruthy();
+      hitBoxWrap.simulate("mouseLeave");
+      expect(wrapper.state("showTooltip")).toBeFalsy();
+    });
+    test("should not show tooltip when link is not disabled", function() {
+      const wrapper = shallow(<Link href="#">Link</Link>);
 
-    expect(wrapper.state("showTooltip")).toBeTruthy();
-    hitBoxWrap.simulate("mouseLeave");
-    expect(wrapper.state("showTooltip")).toBeFalsy();
+      const instance = wrapper.instance();
+      const setStateMock = jest.fn();
+      instance.setState = setStateMock;
+
+      instance.mouseOver();
+      instance.mouseLeaves();
+
+      expect(setStateMock.mock.calls).toHaveLength(0);
+    });
   });
-  test("should not show tooltip when link is not disabled", function() {
-    const wrapper = shallow(<Link href="#">Link</Link>);
+  describe("onClick", function() {
+    test("should call onClick when clicking on the link", function() {
+      const onClickMock = jest.fn();
+      const stopPropagationMock = jest.fn();
+      const wrapper = shallow(<Link onClick={onClickMock}>Link!</Link>);
 
-    const instance = wrapper.instance();
-    const setStateMock = jest.fn();
-    instance.setState = setStateMock;
+      const linkWrap = wrapper.find("a");
 
-    instance.mouseOver();
-    instance.mouseLeaves();
+      linkWrap.simulate("click", { stopPropagation: stopPropagationMock });
 
-    expect(setStateMock.mock.calls).toHaveLength(0);
+      expect(onClickMock).toBeCalled();
+      expect(stopPropagationMock).toBeCalled();
+    });
   });
 });
