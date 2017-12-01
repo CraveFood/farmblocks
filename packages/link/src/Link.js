@@ -38,7 +38,7 @@ export default class Link extends React.Component {
         {props.external && <i className="wg-external-link margin-left" />}
 
         <Tooltip
-          text="This action is disabled."
+          text={props.tooltipText}
           isVisible={this.state.showTooltip}
           align={props.tooltipAlign}
         />
@@ -72,6 +72,7 @@ export default class Link extends React.Component {
     href: PropTypes.string,
     type: PropTypes.oneOf(Object.values(linkTypes)),
     tooltipAlign: PropTypes.oneOf(["left", "right"]),
+    tooltipText: PropTypes.string,
     onClick: PropTypes.func,
     leftIcon: PropTypes.string,
     disabled: PropTypes.bool,
@@ -83,6 +84,7 @@ export default class Link extends React.Component {
   static defaultProps = {
     type: linkTypes.FEATURED,
     tooltipAlign: "left",
+    tooltipText: "This link is disabled",
     size: fontSizes.MEDIUM,
     lineHeight: 1,
     disabled: false,
