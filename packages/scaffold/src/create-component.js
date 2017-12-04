@@ -4,8 +4,8 @@ const { prompt } = require("inquirer");
 const slug = require("slug");
 const { mkdir, ShellString, cp } = require("shelljs");
 
-const packageContents = require("./packageTemplate");
-const readmeContents = require("./readmeTemplate");
+const packageContents = require("./templates/package");
+const readmeContents = require("./templates/readme");
 
 const questions = [
   {
