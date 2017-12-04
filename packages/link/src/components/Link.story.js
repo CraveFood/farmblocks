@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
 import Link from "./Link";
-import linkTypes from "./constants/linkTypes";
+import linkTypes from "../constants/linkTypes";
 
 import { fontSizes } from "@crave/farmblocks-theme";
 

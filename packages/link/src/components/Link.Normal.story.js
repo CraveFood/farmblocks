@@ -3,13 +3,13 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 
 import Link from "./Link";
-import linkTypes from "./constants/linkTypes";
+import linkTypes from "../constants/linkTypes";
 
-storiesOf("Link/Neutral", module)
+storiesOf("Link/Normal", module)
   .add(
     "Default - left aligned",
     withInfo()(() => (
-      <Link href="#" type={linkTypes.NEUTRAL}>
+      <Link href="#" type={linkTypes.NORMAL}>
         Awesome Link
       </Link>
     ))
@@ -18,7 +18,7 @@ storiesOf("Link/Neutral", module)
     "right aligned",
     withInfo()(() => (
       <div style={{ width: "500px", textAlign: "right" }}>
-        <Link href="#" type={linkTypes.NEUTRAL}>
+        <Link href="#" type={linkTypes.NORMAL}>
           Awesome Link
         </Link>
       </div>
@@ -27,7 +27,7 @@ storiesOf("Link/Neutral", module)
   .add(
     "with left icon",
     withInfo()(() => (
-      <Link href="#" type={linkTypes.NEUTRAL} leftIcon="wg-place">
+      <Link href="#" type={linkTypes.NORMAL} leftIcon="wg-place">
         Awesome Link
       </Link>
     ))
@@ -37,7 +37,7 @@ storiesOf("Link/Neutral", module)
     withInfo()(() => (
       <Link
         href="#"
-        type={linkTypes.NEUTRAL}
+        type={linkTypes.NORMAL}
         disabled
         tooltipText="This link is disabled."
       >
@@ -48,7 +48,7 @@ storiesOf("Link/Neutral", module)
   .add(
     "external",
     withInfo()(() => (
-      <Link href="#" type={linkTypes.NEUTRAL} external>
+      <Link href="#" type={linkTypes.NORMAL} external>
         Awesome Link
       </Link>
     ))

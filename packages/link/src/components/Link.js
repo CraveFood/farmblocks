@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
 import { fontSizes } from "@crave/farmblocks-theme";
 
-import linkTypes from "./constants/linkTypes";
-import Container from "./styledComponents/Link";
+import linkTypes from "../constants/linkTypes";
+import Container from "../styledComponents/Link";
 
 export default class Link extends React.Component {
   constructor(props) {
