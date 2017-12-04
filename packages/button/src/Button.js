@@ -14,7 +14,8 @@ type State = Object;
 class Button extends React.Component<Props, State> {
   static defaultProps = {
     size: buttonSizes.SMALL,
-    type: buttonTypes.NEUTRAL
+    type: buttonTypes.NEUTRAL,
+    tooltipText: "This action is disabled"
   };
 
   mouseOver: Function;
@@ -58,7 +59,7 @@ class Button extends React.Component<Props, State> {
           {this.props.text || this.props.children}
         </StyledButton>
         <Tooltip
-          text="This action is disabled."
+          text={this.props.tooltipText}
           isVisible={this.state.showTooltip}
         />
       </Container>
@@ -94,7 +95,8 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   tabIndex: PropTypes.number,
-  className: PropTypes.string
+  className: PropTypes.string,
+  tooltipText: PropTypes.string
 };
 
 export default Button;
