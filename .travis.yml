@@ -28,6 +28,7 @@ install:
 script:
   - yarn lint .
   - yarn lint.test .
+  - pkill flow || true
   - yarn typecheck
   - yarn coverage
   - greenkeeper-lockfile-upload
