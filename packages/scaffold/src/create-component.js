@@ -2,10 +2,13 @@
 
 const { prompt } = require("inquirer");
 const slug = require("slug");
+const upperCamelCase = require("uppercamelcase");
 const { mkdir, ShellString, cp } = require("shelljs");
 
 const packageContents = require("./templates/package");
 const readmeContents = require("./templates/readme");
+const indexContents = require("./templates/index");
+const componentContents = require("./templates/component");
 
 const questions = [
   {
@@ -38,11 +41,16 @@ prompt(questions)
   .then(answers => {
     const packageJSON = packageContents(answers);
     const readme = readmeContents(answers);
-    const { shortName } = answers;
+    const { fullName, shortName } = answers;
+    const componentName = upperCamelCase(fullName);
+    const index = indexContents(componentName);
+    const component = componentContents(componentName);
     const dirName = `packages/${shortName}`;
     mkdir("-p", `${dirName}/src`);
     ShellString(packageJSON).to(`${dirName}/package.json`);
     ShellString(readme).to(`${dirName}/README.md`);
+    ShellString(index).to(`${dirName}/src/index.js`);
+    ShellString(component).to(`${dirName}/src/${componentName}.js`);
     cp(["AUTHORS", "LICENSE"], `${dirName}/.`);
   })
   .catch(console.error); // eslint-disable-line no-console
