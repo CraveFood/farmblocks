@@ -35,6 +35,18 @@ storiesOf("Text Input", "module")
     ))
   )
   .add(
+    "Disabled",
+    withInfo()(() => (
+      <TextInput
+        disabled
+        value="a value"
+        onChange={action("input changed")}
+        label="Field Label"
+        placeholder="input value here"
+      />
+    ))
+  )
+  .add(
     "Invalid",
     withInfo()(() => (
       <TextInput invalid value="invalid value" label="Field Label" />

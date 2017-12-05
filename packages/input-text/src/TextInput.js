@@ -13,6 +13,7 @@ class TextInput extends React.Component {
     onInvalid: PropTypes.func,
 
     placeholder: PropTypes.string,
+    disabled: PropTypes.bool,
     required: PropTypes.bool
     // and any other properties to forward to the html input element...
   };
