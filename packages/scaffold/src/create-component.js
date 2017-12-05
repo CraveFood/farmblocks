@@ -9,6 +9,7 @@ const packageContents = require("./templates/package");
 const readmeContents = require("./templates/readme");
 const indexContents = require("./templates/index");
 const componentContents = require("./templates/component");
+const storyContents = require("./templates/componentStory");
 
 const questions = [
   {
@@ -45,12 +46,14 @@ prompt(questions)
     const componentName = upperCamelCase(fullName);
     const index = indexContents(componentName);
     const component = componentContents(componentName);
+    const story = storyContents({ componentName, fullName });
     const dirName = `packages/${shortName}`;
     mkdir("-p", `${dirName}/src`);
     ShellString(packageJSON).to(`${dirName}/package.json`);
     ShellString(readme).to(`${dirName}/README.md`);
     ShellString(index).to(`${dirName}/src/index.js`);
     ShellString(component).to(`${dirName}/src/${componentName}.js`);
+    ShellString(story).to(`${dirName}/src/${componentName}.story.js`);
     cp(["AUTHORS", "LICENSE"], `${dirName}/.`);
   })
   .catch(console.error); // eslint-disable-line no-console
