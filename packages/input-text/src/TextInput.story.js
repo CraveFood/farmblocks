@@ -33,4 +33,50 @@ storiesOf("Text Input", "module")
         placeholder="input value here"
       />
     ))
+  )
+  .add(
+    "Invalid",
+    withInfo()(() => (
+      <TextInput invalid value="invalid value" label="Field Label" />
+    ))
+  )
+  .add(
+    "Invalid with custom text",
+    withInfo()(() => (
+      <TextInput
+        invalid
+        invalidText="You need to fill this field."
+        value="invalid value"
+        label="Field Label"
+      />
+    ))
+  )
+  .add(
+    "Required field",
+    withInfo()(() => (
+      <form onSubmit={e => e.preventDefault()}>
+        <TextInput
+          required
+          label="Required Field Label"
+          placeholder="a REQUIRED field"
+        />
+        <TextInput label="Field Label" placeholder="an OPTIONAL field" />
+        <input type="submit" />
+      </form>
+    ))
+  )
+  .add(
+    "Required field with invalid handler",
+    withInfo()(() => (
+      <form onSubmit={e => e.preventDefault()}>
+        <TextInput
+          required
+          onInvalid={action("invalid value")}
+          label="Required Field Label"
+          placeholder="a REQUIRED field"
+        />
+        <TextInput label="Field Label" placeholder="an OPTIONAL field" />
+        <input type="submit" />
+      </form>
+    ))
   );
