@@ -1,6 +1,9 @@
-# Farmblocks-Image 
+![logo-farmblocks](https://user-images.githubusercontent.com/7760/31051341-4d280118-a63c-11e7-9e8f-3b375ca8f9a0.png)
 
-A react component for thumbnail images
+# Farmblocks-Image
+
+A React component for thumbnail images. See
+[Storybook](https://cravefood.github.io/farmblocks/index.html?selectedKind=Image)
 
 ## Installation
 
@@ -9,6 +12,7 @@ npm install @crave/farmblocks-image
 ```
 
 ## Spec
+See it on zeplin:
 Thumbnails: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df2fee4fbc85eccb17b1
 Badges: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31bbc93198a853bbe2
 
@@ -17,7 +21,7 @@ Badges: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import Image, { imageTypes, thumbnailSizes, badgeSizes } from "@crave/farmblocks-image";
+import Image, { thumbnailSizes, badgeSizes } from "@crave/farmblocks-image";
 
 const root = document.createElement("div");
 
@@ -38,6 +42,20 @@ document.body.appendChild(root);
 ## API
 
 https://github.com/CraveFood/farmblocks/blob/master/packages/image/src/Image.js#L11-L19
+
+## Table of sizes
+
+| Type         | Value                | Size result         |
+| ------------ | -------------------- | ------------- |
+| badge - extra small | `badgeSizes.X_SMALL` | 16 px |
+| badge - small | `badgeSizes.SMALL` | 24 px |
+| badge - medium | `badgeSizes.MEDIUM` | 40 px |
+| badge - large | `badgeSizes.LARGE` | 56 px |
+| thumbnail - small | `thumbnailSizes.SMALL` | 40 px |
+| thumbnail - medium | `thumbnailSizes.MEDIUM` | 48 px |
+| thumbnail - large | `thumbnailSizes.LARGE` | 72 px |
+| thumbnail - extra large | `thumbnailSizes.X_LARGE` | 120 px |
+| thumbnail - huge | `thumbnailSizes.HUGE` | 240 px |
 
 ## License
 
