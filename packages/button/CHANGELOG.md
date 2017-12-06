@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.1.1...@crave/farmblocks-button@1.2.0) (2017-12-06)
+
+
+### Features
+
+* **button:** add configurable tooltipText for disabled buttons ([57db17f](https://github.com/CraveFood/farmblocks/commit/57db17f))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.1.0...@crave/farmblocks-button@1.1.1) (2017-11-28)
 
