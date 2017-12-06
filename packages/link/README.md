@@ -3,7 +3,7 @@
 # Farmblocks-Links
 
 A React component to create links. See
-[Storybook](https://cravefood.github.io/farmblocks/index.html?selectedKind=Link)
+[Storybook](https://cravefood.github.io/farmblocks/index.html?selectedKind=Link%2FFeatured)
 
 ## Installation
 
