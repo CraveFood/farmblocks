@@ -32,7 +32,7 @@ const Container = styled.label`
   .label {
     order: 1;
     text-transform: uppercase;
-    font-size: ${fontSizes.SMALL}px;
+    letter-spacing: 2px;
     margin-bottom: 8px;
     color: ${labelColor};
   }
@@ -70,8 +70,8 @@ const Container = styled.label`
 
   .messages {
     order: 4;
-    font-size: ${fontSizes.MEDIUM}px;
     & .message {
+      display: flex;
       margin-top: 16px;
       & .icon {
         display: inline-block;

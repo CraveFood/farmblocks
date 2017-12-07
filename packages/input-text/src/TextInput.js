@@ -2,6 +2,8 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
+import Text from "@crave/farmblocks-text";
+import { fontSizes } from "@crave/farmblocks-theme";
 
 import errorIconSrc from "./constants/errorIcon";
 import StyledLabel from "./styledComponents/TextInput";
@@ -63,7 +65,13 @@ class TextInput extends React.Component {
   }
 
   _renderLabel(label) {
-    return label && <div className="label">{label}</div>;
+    return (
+      label && (
+        <Text title className="label" size={fontSizes.SMALL} lineHeight={1.14}>
+          {label}
+        </Text>
+      )
+    );
   }
 
   _renderInput(inputProps) {
@@ -92,7 +100,12 @@ class TextInput extends React.Component {
                 badge
                 size={badgeSizes.SMALL}
               />
-              {text}
+              <Text
+                lineHeight={`${badgeSizes.SMALL}px`}
+                size={fontSizes.MEDIUM}
+              >
+                {text}
+              </Text>
             </div>
           ))}
         </div>
