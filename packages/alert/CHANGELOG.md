@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.11"></a>
+## [3.0.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@3.0.10...@crave/farmblocks-alert@3.0.11) (2017-12-07)
+
+
+### Bug Fixes
+
+* **licenses:** fix the year and add missing license files ([03a0c2b](https://github.com/CraveFood/farmblocks/commit/03a0c2b))
+
+
+
+
 <a name="3.0.10"></a>
 ## [3.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@3.0.9...@crave/farmblocks-alert@3.0.10) (2017-12-07)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@1.1.5...@crave/farmblocks-stepper@1.1.6) (2017-12-07)
+
+
+### Bug Fixes
+
+* **licenses:** fix the year and add missing license files ([03a0c2b](https://github.com/CraveFood/farmblocks/commit/03a0c2b))
+
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@1.1.4...@crave/farmblocks-stepper@1.1.5) (2017-12-07)
 
