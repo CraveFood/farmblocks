@@ -50,6 +50,9 @@ class TextInput extends React.Component {
       onMouseLeave: this.onMouseLeave,
       ...otherProps
     };
+    // The order of the elements with the label coming after the
+    // input is a trick that enables us to set a different label
+    // color when the input is focused using only css.
     return (
       <StyledLabel {...containerProps}>
         {this._renderInput(inputProps)}
