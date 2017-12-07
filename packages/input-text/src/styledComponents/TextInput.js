@@ -68,7 +68,7 @@ const Container = styled.label`
     order: 3;
   }
 
-  .message {
+  .messages {
     order: 4;
   }
 `;

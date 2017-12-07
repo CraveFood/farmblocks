@@ -80,7 +80,26 @@ storiesOf("Text Input", "module")
     withInfo()(() => (
       <TextInput
         invalid
-        invalidText="You need to fill this field."
+        validationErrors={["You need to fill this field."]}
+        value="invalid value"
+        label="Field Label"
+      />
+    ))
+  )
+  .add(
+    "Invalid with multiple errors",
+    withInfo()(() => (
+      <TextInput
+        invalid
+        validationErrors={[
+          "Your password needs to contain a capital letter",
+          "Your password needs to contain a number",
+          "Your password needs to contain an emoji",
+          "Your password needs to contain a plot",
+          "Your password needs to contain a protagonist",
+          "Your password needs to contain some character developtment",
+          "Your password needs to contain a twist end"
+        ]}
         value="invalid value"
         label="Field Label"
       />

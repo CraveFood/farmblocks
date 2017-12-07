@@ -25,7 +25,7 @@ class TextInput extends React.Component {
       value,
       onChange,
       invalid,
-      invalidText,
+      validationErrors,
       onInvalid,
       tooltipText,
       onMouseOver,
@@ -50,7 +50,7 @@ class TextInput extends React.Component {
         {this._renderInput(inputProps)}
         {this._renderLabel(label)}
         {this._renderTooltip(this.state.showTooltip, tooltipText)}
-        {this._renderFailedMessage(this.state.invalid, invalidText)}
+        {this._renderFailedMessages(this.state.invalid, validationErrors)}
       </StyledLabel>
     );
   }
@@ -73,8 +73,14 @@ class TextInput extends React.Component {
     );
   }
 
-  _renderFailedMessage(invalid, text) {
-    return invalid && <p className="message">{text}</p>;
+  _renderFailedMessages(invalid, errors) {
+    return (
+      invalid && (
+        <div className="messages">
+          {errors.map((text, index) => <p key={`err-${index}`}>{text}</p>)}
+        </div>
+      )
+    );
   }
   onChange(event) {
     this.setState({
@@ -113,7 +119,7 @@ class TextInput extends React.Component {
     value: PropTypes.string,
     onChange: PropTypes.func,
     invalid: PropTypes.bool,
-    invalidText: PropTypes.string,
+    validationErrors: PropTypes.arrayOf(PropTypes.string),
     tooltipText: PropTypes.string,
     onInvalid: PropTypes.func,
     onMouseOver: PropTypes.func,
@@ -132,7 +138,7 @@ class TextInput extends React.Component {
     onInvalid: () => null,
     onMouseOver: () => null,
     onMouseLeave: () => null,
-    invalidText: "This field is required.",
+    validationErrors: ["This field is required"],
     tooltipText: "This field is disabled."
   };
 }
