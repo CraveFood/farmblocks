@@ -39,7 +39,6 @@ storiesOf("Text Input", "module")
     withInfo()(() => (
       <TextInput
         disabled
-        value="a value"
         onChange={action("input changed")}
         label="Field Label"
         placeholder="input value here"

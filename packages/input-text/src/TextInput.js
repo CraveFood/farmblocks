@@ -62,6 +62,7 @@ class TextInput extends React.Component {
       ...otherProps
     } = this.props;
     const containerProps = {
+      filled: this.state.value.length > 0,
       invalid: this.state.invalid,
       disabled: otherProps.disabled
     };

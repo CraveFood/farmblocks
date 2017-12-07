@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const labelColor = props => {
@@ -6,9 +6,19 @@ const labelColor = props => {
     ? colors.STRAWBERRY
     : props.disabled ? colors.GREY_32 : colors.CARBON;
 };
-const inputBorder = props => {
-  const borderColor = props.invalid ? colors.STRAWBERRY : colors.GREY_16;
-  return `solid 1px ${borderColor}`;
+const inputBorderColor = props => {
+  return props.invalid ? colors.STRAWBERRY : colors.GREY_16;
+};
+const inputBoxShadow = focused => props => {
+  if (!focused && (props.disabled || props.filled)) {
+    return css`
+      box-shadow: none;
+    `;
+  }
+  const shadowSize = props.invalid ? "0 2px 2px 0" : "0 4px 4px 0";
+  return css`
+    box-shadow: ${shadowSize} ${colors.GREY_16};
+  `;
 };
 const Container = styled.label`
   font-family: Lato, sans-serif;
@@ -29,9 +39,23 @@ const Container = styled.label`
   input {
     order: 2;
     outline: none;
-    border: ${inputBorder};
+    border: solid 1px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    padding: 16px;
+    color: ${colors.CARBON};
+    border-color: ${inputBorderColor};
+    ${inputBoxShadow(false)};
+    &::placeholder {
+      color: ${colors.GREY_32};
+    }
     &:focus {
+      ${inputBoxShadow(true)};
       border: 1px solid ${colors.INDIGO_MILK_CAP};
+      &::placeholder {
+        color: ${colors.GREY_16};
+      }
     }
   }
 
