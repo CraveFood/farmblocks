@@ -1,7 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import Tooltip from "@crave/farmblocks-tooltip";
+import Image, { badgeSizes } from "@crave/farmblocks-image";
 
+import errorIconSrc from "./constants/errorIcon";
 import StyledLabel from "./styledComponents/TextInput";
 
 class TextInput extends React.Component {
@@ -28,6 +30,7 @@ class TextInput extends React.Component {
       validationErrors,
       onInvalid,
       tooltipText,
+      errorIconSrc,
       onMouseOver,
       onMouseLeave,
       ...otherProps
@@ -50,7 +53,11 @@ class TextInput extends React.Component {
         {this._renderInput(inputProps)}
         {this._renderLabel(label)}
         {this._renderTooltip(this.state.showTooltip, tooltipText)}
-        {this._renderFailedMessages(this.state.invalid, validationErrors)}
+        {this._renderFailedMessages(
+          this.state.invalid,
+          validationErrors,
+          errorIconSrc
+        )}
       </StyledLabel>
     );
   }
@@ -73,11 +80,21 @@ class TextInput extends React.Component {
     );
   }
 
-  _renderFailedMessages(invalid, errors) {
+  _renderFailedMessages(invalid, errors, iconSrc) {
     return (
       invalid && (
         <div className="messages">
-          {errors.map((text, index) => <p key={`err-${index}`}>{text}</p>)}
+          {errors.map((text, index) => (
+            <div className="message" key={`err-${index}`}>
+              <Image
+                className="icon"
+                src={iconSrc}
+                badge
+                size={badgeSizes.SMALL}
+              />
+              {text}
+            </div>
+          ))}
         </div>
       )
     );
@@ -120,6 +137,7 @@ class TextInput extends React.Component {
     onChange: PropTypes.func,
     invalid: PropTypes.bool,
     validationErrors: PropTypes.arrayOf(PropTypes.string),
+    errorIconSrc: PropTypes.string,
     tooltipText: PropTypes.string,
     onInvalid: PropTypes.func,
     onMouseOver: PropTypes.func,
@@ -138,6 +156,7 @@ class TextInput extends React.Component {
     onInvalid: () => null,
     onMouseOver: () => null,
     onMouseLeave: () => null,
+    errorIconSrc,
     validationErrors: ["This field is required"],
     tooltipText: "This field is disabled."
   };

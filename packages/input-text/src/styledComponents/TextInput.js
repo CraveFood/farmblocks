@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { colors } from "@crave/farmblocks-theme";
+import { colors, fontSizes } from "@crave/farmblocks-theme";
 
 const labelColor = props => {
   return props.invalid
@@ -32,7 +32,7 @@ const Container = styled.label`
   .label {
     order: 1;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: ${fontSizes.SMALL}px;
     margin-bottom: 8px;
     color: ${labelColor};
   }
@@ -46,7 +46,7 @@ const Container = styled.label`
     box-sizing: border-box;
     border: solid 1px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: ${fontSizes.MEDIUM}px;
     padding: 16px;
     color: ${colors.CARBON};
     border-color: ${inputBorderColor};
@@ -70,6 +70,15 @@ const Container = styled.label`
 
   .messages {
     order: 4;
+    font-size: ${fontSizes.MEDIUM}px;
+    & .message {
+      margin-top: 16px;
+      & .icon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+    }
   }
 `;
 

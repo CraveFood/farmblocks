@@ -69,19 +69,14 @@ storiesOf("Text Input", "module")
       />
     ))
   )
-  .add(
-    "Invalid",
-    withInfo()(() => (
-      <TextInput invalid value="invalid value" label="Field Label" />
-    ))
-  )
+  .add("Invalid", withInfo()(() => <TextInput invalid label="Field Label" />))
   .add(
     "Invalid with custom text",
     withInfo()(() => (
       <TextInput
         invalid
         validationErrors={["You need to fill this field."]}
-        value="invalid value"
+        placeholder="Type in the formfield content…"
         label="Field Label"
       />
     ))
