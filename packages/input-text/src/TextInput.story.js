@@ -46,6 +46,30 @@ storiesOf("Text Input", "module")
     ))
   )
   .add(
+    "Disabled with custom Tooltip text",
+    withInfo()(() => (
+      <TextInput
+        tooltipText="a custom tooltip"
+        disabled
+        label="Field Label"
+        placeholder="input value here"
+      />
+    ))
+  )
+  .add(
+    "with onMouseOver and onMouseLeave handlers",
+    withInfo()(() => (
+      <TextInput
+        onMouseOver={action("input hovered")}
+        onMouseLeave={action("input mouse leave")}
+        tooltipText="a custom tooltip"
+        disabled
+        label="Field Label"
+        placeholder="input value here"
+      />
+    ))
+  )
+  .add(
     "Invalid",
     withInfo()(() => (
       <TextInput invalid value="invalid value" label="Field Label" />
@@ -67,6 +91,11 @@ storiesOf("Text Input", "module")
     withInfo()(() => (
       <form onSubmit={e => e.preventDefault()}>
         <TextInput
+          label="Field Label"
+          placeholder="a DISABLED field"
+          disabled
+        />
+        <TextInput
           required
           label="Required Field Label"
           placeholder="a REQUIRED field"
@@ -80,6 +109,11 @@ storiesOf("Text Input", "module")
     "Required field with invalid handler",
     withInfo()(() => (
       <form onSubmit={e => e.preventDefault()}>
+        <TextInput
+          label="Field Label"
+          placeholder="a DISABLED field"
+          disabled
+        />
         <TextInput
           required
           onInvalid={action("invalid value")}

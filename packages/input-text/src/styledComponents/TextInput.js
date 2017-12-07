@@ -9,6 +9,9 @@ const labelColor = props => {
 const inputBorderColor = props => {
   return props.invalid ? colors.STRAWBERRY : colors.GREY_16;
 };
+const inputBackgroundColor = props => {
+  return props.disabled ? colors.GREY_16 : "white";
+};
 const inputBoxShadow = focused => props => {
   if (!focused && (props.disabled || props.filled)) {
     return css`
@@ -24,6 +27,7 @@ const Container = styled.label`
   font-family: Lato, sans-serif;
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 
   .label {
     order: 1;
@@ -39,13 +43,14 @@ const Container = styled.label`
   input {
     order: 2;
     outline: none;
+    box-sizing: border-box;
     border: solid 1px;
     border-radius: 4px;
-    background-color: white;
     font-size: 16px;
     padding: 16px;
     color: ${colors.CARBON};
     border-color: ${inputBorderColor};
+    background-color: ${inputBackgroundColor};
     ${inputBoxShadow(false)};
     &::placeholder {
       color: ${colors.GREY_32};
@@ -59,8 +64,12 @@ const Container = styled.label`
     }
   }
 
-  .message {
+  .tooltip {
     order: 3;
+  }
+
+  .message {
+    order: 4;
   }
 `;
 

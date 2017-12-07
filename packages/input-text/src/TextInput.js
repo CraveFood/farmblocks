@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import Tooltip from "@crave/farmblocks-tooltip";
 
 import StyledLabel from "./styledComponents/TextInput";
 
@@ -14,6 +15,8 @@ class TextInput extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     this.onInvalid = this.onInvalid.bind(this);
+    this.onMouseOver = this.onMouseOver.bind(this);
+    this.onMouseLeave = this.onMouseLeave.bind(this);
   }
 
   render() {
@@ -24,6 +27,9 @@ class TextInput extends React.Component {
       invalid,
       invalidText,
       onInvalid,
+      tooltipText,
+      onMouseOver,
+      onMouseLeave,
       ...otherProps
     } = this.props;
     const containerProps = {
@@ -35,12 +41,15 @@ class TextInput extends React.Component {
       value: this.state.value,
       onChange: this.onChange,
       onInvalid: this.onInvalid,
+      onMouseOver: this.onMouseOver,
+      onMouseLeave: this.onMouseLeave,
       ...otherProps
     };
     return (
       <StyledLabel {...containerProps}>
         {this._renderInput(inputProps)}
         {this._renderLabel(label)}
+        {this._renderTooltip(this.state.showTooltip, tooltipText)}
         {this._renderFailedMessage(this.state.invalid, invalidText)}
       </StyledLabel>
     );
@@ -52,6 +61,16 @@ class TextInput extends React.Component {
 
   _renderInput(inputProps) {
     return <input type="text" {...inputProps} />;
+  }
+
+  _renderTooltip(visible, text) {
+    return (
+      visible && (
+        <div className="tooltip">
+          <Tooltip text={text} />
+        </div>
+      )
+    );
   }
 
   _renderFailedMessage(invalid, text) {
@@ -71,13 +90,34 @@ class TextInput extends React.Component {
     return this.props.onInvalid(event);
   }
 
+  onMouseOver(event) {
+    if (this.props.disabled) {
+      this.setState({
+        showTooltip: true
+      });
+    }
+    return this.props.onMouseOver(event);
+  }
+
+  onMouseLeave(event) {
+    if (this.props.disabled) {
+      this.setState({
+        showTooltip: false
+      });
+    }
+    return this.props.onMouseLeave(event);
+  }
+
   static propTypes = {
     label: PropTypes.string,
     value: PropTypes.string,
     onChange: PropTypes.func,
     invalid: PropTypes.bool,
     invalidText: PropTypes.string,
+    tooltipText: PropTypes.string,
     onInvalid: PropTypes.func,
+    onMouseOver: PropTypes.func,
+    onMouseLeave: PropTypes.func,
 
     placeholder: PropTypes.string,
     disabled: PropTypes.bool,
@@ -87,10 +127,13 @@ class TextInput extends React.Component {
 
   static defaultProps = {
     value: "",
-    onChange: () => null,
     invalid: false,
-    invalidText: "This field is required",
-    onInvalid: () => null
+    onChange: () => null,
+    onInvalid: () => null,
+    onMouseOver: () => null,
+    onMouseLeave: () => null,
+    invalidText: "This field is required.",
+    tooltipText: "This field is disabled."
   };
 }
 
