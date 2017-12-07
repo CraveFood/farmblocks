@@ -61,7 +61,10 @@ class TextInput extends React.Component {
       onInvalid,
       ...otherProps
     } = this.props;
-    const containerProps = { invalid: this.state.invalid };
+    const containerProps = {
+      invalid: this.state.invalid,
+      disabled: otherProps.disabled
+    };
     const inputProps = {
       value: this.state.value,
       onChange: this.onChange,
@@ -70,15 +73,15 @@ class TextInput extends React.Component {
     };
     return (
       <StyledLabel {...containerProps}>
-        {this._renderLabel(label)}
         {this._renderInput(inputProps)}
+        {this._renderLabel(label)}
         {this._renderFailedMessage(this.state.invalid, invalidText)}
       </StyledLabel>
     );
   }
 
   _renderLabel(label) {
-    return label && <span className="label">{label}</span>;
+    return label && <div className="label">{label}</div>;
   }
 
   _renderInput(inputProps) {
@@ -86,7 +89,7 @@ class TextInput extends React.Component {
   }
 
   _renderFailedMessage(invalid, text) {
-    return invalid && <p>{text}</p>;
+    return invalid && <p className="message">{text}</p>;
   }
 }
 
