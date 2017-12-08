@@ -75,7 +75,7 @@ storiesOf("Text Input", "module")
     withInfo()(() => (
       <TextInput
         invalid
-        validationErrors={["You need to fill this field."]}
+        validationMessages={["You need to fill this field."]}
         placeholder="Type in the formfield content…"
         label="Field Label"
       />
@@ -86,7 +86,7 @@ storiesOf("Text Input", "module")
     withInfo()(() => (
       <TextInput
         invalid
-        validationErrors={[
+        validationMessages={[
           "Your password needs to contain a capital letter",
           "Your password needs to contain a number",
           "Your password needs to contain an emoji",
@@ -135,6 +135,40 @@ storiesOf("Text Input", "module")
           placeholder="a REQUIRED field"
         />
         <TextInput label="Field Label" placeholder="an OPTIONAL field" />
+        <input type="submit" />
+      </form>
+    ))
+  )
+  .add(
+    "Built-in constraint validation",
+    withInfo()(() => (
+      <form onSubmit={e => e.preventDefault()}>
+        <TextInput type="URL" label="URL Type" placeholder="an URL field" />
+        <TextInput
+          type="email"
+          label="Email Type"
+          placeholder="an EMAIL field"
+        />
+        <TextInput
+          label="Number type with Min and Max"
+          placeholder="A number between 2 and 5"
+          type="number"
+          min="2"
+          max="5"
+        />
+        <TextInput
+          label="maxlength"
+          maxLength="10"
+          placeholder="maxlength=10"
+        />
+        <TextInput required label="Required" placeholder="a REQUIRED field" />
+        <TextInput
+          label="regex Pattern"
+          placeholder="type a word ended with a"
+          pattern="^\w+a$"
+        />
+        <TextInput type="date" label="Date type" />
+        <TextInput type="password" label="Password type" />
         <input type="submit" />
       </form>
     ))

@@ -14,6 +14,7 @@ class TextInput extends React.Component {
     this.state = {
       value: this.props.value,
       invalid: this.props.invalid,
+      validationMessages: this.props.validationMessages,
       showTooltip: false
     };
 
@@ -29,7 +30,7 @@ class TextInput extends React.Component {
       value,
       onChange,
       invalid,
-      validationErrors,
+      validationMessages,
       onInvalid,
       tooltipText,
       errorIconSrc,
@@ -60,7 +61,7 @@ class TextInput extends React.Component {
         {this._renderTooltip(this.state.showTooltip, tooltipText)}
         {this._renderFailedMessages(
           this.state.invalid,
-          validationErrors,
+          this.state.validationMessages,
           errorIconSrc
         )}
       </StyledLabel>
@@ -78,7 +79,7 @@ class TextInput extends React.Component {
   }
 
   _renderInput(inputProps) {
-    return <input type="text" {...inputProps} />;
+    return <input {...inputProps} />;
   }
 
   _renderTooltip(visible, text) {
@@ -117,15 +118,33 @@ class TextInput extends React.Component {
   }
   onChange(event) {
     this.setState({
-      value: event.target.value,
-      invalid: false
+      value: event.target.value
     });
+    // if the invalid property was not passed, use built-in browser validation if available
+    if (
+      !this.props.invalid &&
+      event.target.validity &&
+      event.target.validity.valid !== undefined
+    ) {
+      this.setState({
+        invalid: !event.target.validity.valid
+      });
+    }
     return this.props.onChange(event);
   }
 
   onInvalid(event) {
     event.preventDefault();
-    this.setState({ invalid: true });
+    // use built-in browser validation message if available and if the validationErrors is not passed
+    if (
+      this.props.validationMessages.length === 0 &&
+      event.target.validationMessage
+    ) {
+      this.setState({
+        invalid: true,
+        validationMessages: [event.target.validationMessage]
+      });
+    }
     return this.props.onInvalid(event);
   }
 
@@ -150,9 +169,10 @@ class TextInput extends React.Component {
   static propTypes = {
     label: PropTypes.string,
     value: PropTypes.string,
+    type: PropTypes.string,
     onChange: PropTypes.func,
     invalid: PropTypes.bool,
-    validationErrors: PropTypes.arrayOf(PropTypes.string),
+    validationMessages: PropTypes.arrayOf(PropTypes.string),
     errorIconSrc: PropTypes.string,
     tooltipText: PropTypes.string,
     onInvalid: PropTypes.func,
@@ -167,13 +187,14 @@ class TextInput extends React.Component {
 
   static defaultProps = {
     value: "",
+    type: "text",
     invalid: false,
     onChange: () => null,
     onInvalid: () => null,
     onMouseOver: () => null,
     onMouseLeave: () => null,
     errorIconSrc,
-    validationErrors: ["This field is required"],
+    validationMessages: [],
     tooltipText: "This field is disabled."
   };
 }

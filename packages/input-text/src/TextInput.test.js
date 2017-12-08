@@ -45,11 +45,18 @@ describe("TextInput", function() {
     component.find("input").simulate("mouseleave", {});
     expect(onMouseLeaveMock).toBeCalled();
   });
-  test("onChange event clears invalid state and change value", function() {
+  test("onChange event change value", function() {
     const component = shallow(<TextInput />);
     component.find("input").simulate("change", { target: { value: "foo" } });
     const newState = component.state();
     expect(newState.value).toBe("foo");
+  });
+  test("onChange event clears invalid state if built-in validity says it is valid", function() {
+    const component = shallow(<TextInput />);
+    component.find("input").simulate("change", {
+      target: { value: "foo", validity: { valid: true } }
+    });
+    const newState = component.state();
     expect(newState.invalid).toBe(false);
   });
   test("mouseover and mouseleave events should change showTooltip state on disabled fields", function() {
@@ -73,13 +80,18 @@ describe("TextInput", function() {
     const component = shallow(<TextInput onInvalid={onInvalidMock} />);
     component
       .find("input")
-      .simulate("invalid", { preventDefault: preventDefaultMock });
+      .simulate("invalid", { preventDefault: preventDefaultMock, target: {} });
     expect(preventDefaultMock).toBeCalled();
     expect(onInvalidMock).toBeCalled();
   });
-  test("onInvalid event change the state to invalid", function() {
+  test("onInvalid event change the state to invalid and display the browser provided message if the custom validationMessages property is empty", function() {
     const component = shallow(<TextInput />);
-    component.find("input").simulate("invalid", { preventDefault: () => null });
-    expect(component.state().invalid).toBe(true);
+    component.find("input").simulate("invalid", {
+      preventDefault: () => null,
+      target: { validationMessage: "bar" }
+    });
+    const newState = component.state();
+    expect(newState.invalid).toBe(true);
+    expect(newState.validationMessages[0]).toBe("bar");
   });
 });
