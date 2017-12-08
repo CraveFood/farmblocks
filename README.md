@@ -10,6 +10,7 @@ User interface blocks.
 * [Farmblocks-Empty-State](https://github.com/CraveFood/farmblocks/tree/master/packages/empty-state) - A placeholder to use on screens without content.
 * [Farmblocks-Footer](https://github.com/CraveFood/farmblocks/tree/master/packages/footer) - A React component for displaying a helper footer.
 * [Farmblocks-Image](https://github.com/CraveFood/farmblocks/tree/master/packages/image) - A React component for rendering thumbnails.
+* [Farmblocks-Input-Text](https://github.com/CraveFood/farmblocks/tree/master/packages/input-text) - A form field to input simple text
 * [Farmblocks-Link](https://github.com/CraveFood/farmblocks/tree/master/packages/link) - A React component to create links.
 * [Farmblocks-Stepper](https://github.com/CraveFood/farmblocks/tree/master/packages/stepper) - A React component for displaying step to step actions.
 * [Farmblocks-Text](https://github.com/CraveFood/farmblocks/tree/master/packages/text) - React components for displaying texts.

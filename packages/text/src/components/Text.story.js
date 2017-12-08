@@ -63,4 +63,14 @@ storiesOf("Text/Default", module)
         <Text type={fontTypes.WHITE}>Awesome Text</Text>
       </div>
     ))
+  )
+  .add(
+    "custom line height",
+    withInfo()(() => (
+      <div style={{ height: 100, backgroundColor: "lightblue" }}>
+        <Text lineHeight="100px" type={fontTypes.SUBTLE}>
+          Awesome Text
+        </Text>
+      </div>
+    ))
   );
