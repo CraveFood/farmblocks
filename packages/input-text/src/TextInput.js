@@ -116,6 +116,14 @@ class TextInput extends React.Component {
       )
     );
   }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      invalid: nextProps.invalid,
+      validationMessages: nextProps.validationMessages
+    });
+  }
+
   onChange(event) {
     this.setState({
       value: event.target.value

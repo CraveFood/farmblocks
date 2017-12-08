@@ -7,6 +7,25 @@ import TextInput from ".";
 
 describe("TextInput", function() {
   configure({ adapter: new Adapter() });
+  jest.useFakeTimers();
+  afterEach(() => {
+    clearTimeout.mockClear();
+  });
+  test("changing the invalid property after instantiation should update the invalid state", function() {
+    const component = shallow(<TextInput />);
+    const state = component.state();
+    expect(state.invalid).toBe(false);
+
+    window.setTimeout(() => {
+      component.setProps({ invalid: true, validationMessages: ["foo", "bar"] });
+    }, 1000);
+
+    jest.runAllTimers();
+
+    const finalState = component.state();
+    expect(finalState.invalid).toBe(true);
+    expect(finalState.validationMessages[0]).toBe("foo");
+  });
   test("default onChange function returns null", function() {
     const component = renderer.create(<TextInput />);
     const tree = component.toTree();
