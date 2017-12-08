@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.3.2...@crave/farmblocks-tooltip@0.3.3) (2017-12-08)
+
+
+### Bug Fixes
+
+* **dependencies:** add missing farmblocks-theme dependency ([6efa8c5](https://github.com/CraveFood/farmblocks/commit/6efa8c5))
+
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.3.1...@crave/farmblocks-tooltip@0.3.2) (2017-12-07)
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.3...@crave/farmblocks-text@1.1.4) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-text
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.2...@crave/farmblocks-text@1.1.3) (2017-12-07)
 

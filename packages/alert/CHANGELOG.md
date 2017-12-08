@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.12"></a>
+## [3.0.12](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@3.0.11...@crave/farmblocks-alert@3.0.12) (2017-12-08)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-alert
+
 <a name="3.0.11"></a>
 ## [3.0.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@3.0.10...@crave/farmblocks-alert@3.0.11) (2017-12-07)
 
