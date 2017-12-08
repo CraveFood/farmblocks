@@ -18,7 +18,7 @@ const inputBoxShadow = focused => props => {
       box-shadow: none;
     `;
   }
-  const shadowSize = props.invalid ? "0 2px 2px 0" : "0 4px 4px 0";
+  const shadowSize = focused ? "0 4px 4px 0" : "0 2px 2px 0";
   return css`
     box-shadow: ${shadowSize} ${colors.GREY_16};
   `;
