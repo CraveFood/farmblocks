@@ -27,7 +27,7 @@ storiesOf("Footer", module)
       <Footer
         helpText="Have questions about account setup?"
         helpLinkText="Get support"
-        helpLinkOnClick={action("helpLinkOnClick")}
+        onHelpLinkClick={action("onHelpLinkClick")}
         onSecondaryActionClick={action("onSecondaryActionClick")}
         secondaryActionText="Secondary Action"
         onPrimaryActionClick={action("onPrimaryActionClick")}
