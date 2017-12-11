@@ -22,6 +22,21 @@ storiesOf("Footer", module)
     ))
   )
   .add(
+    "default - with onClick",
+    withInfo()(() => (
+      <Footer
+        helpText="Have questions about account setup?"
+        helpLinkText="Get support"
+        onHelpLinkClick={action("onHelpLinkClick")}
+        onSecondaryActionClick={action("onSecondaryActionClick")}
+        secondaryActionText="Secondary Action"
+        onPrimaryActionClick={action("onPrimaryActionClick")}
+        primaryActionText="Primary Action"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+      />
+    ))
+  )
+  .add(
     "without link",
     withInfo()(() => (
       <Footer

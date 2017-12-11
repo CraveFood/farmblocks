@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.7"></a>
+## [1.2.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.6...@crave/farmblocks-footer@1.2.7) (2017-12-11)
+
+
+### Bug Fixes
+
+* **dependency:** update link dependency on Footer component ([9312b4e](https://github.com/CraveFood/farmblocks/commit/9312b4e))
+* **footer:** rename on help link click property ([69e5cfd](https://github.com/CraveFood/farmblocks/commit/69e5cfd))
+* **Footer:** rename onclick property ([91fd7fc](https://github.com/CraveFood/farmblocks/commit/91fd7fc))
+
+
+
+
 <a name="1.2.6"></a>
 ## [1.2.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.5...@crave/farmblocks-footer@1.2.6) (2017-12-08)
 
