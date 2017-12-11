@@ -30352,12 +30352,12 @@ exports[`Storyshots EmptyState With secondary button only 1`] = `
 </div>
 `;
 
-exports[`Storyshots Footer default 1`] = `
-.c6 {
+exports[`Storyshots Footer default - with onClick 1`] = `
+.c5 {
   position: relative;
 }
 
-.c7 {
+.c6 {
   visibility: hidden;
   position: absolute;
   top: 15px;
@@ -30372,8 +30372,8 @@ exports[`Storyshots Footer default 1`] = `
   left: 0;
 }
 
-.c7:after,
-.c7:before {
+.c6:after,
+.c6:before {
   bottom: 100%;
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
@@ -30383,32 +30383,32 @@ exports[`Storyshots Footer default 1`] = `
   pointer-events: none;
 }
 
-.c7:before {
+.c6:before {
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
   left: 7px;
 }
 
-.c7:after {
+.c6:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
 }
 
-.c4 {
+.c7 {
   position: relative;
 }
 
-.c4 > .hit-box-container {
+.c7 > .hit-box-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30440,43 +30440,43 @@ exports[`Storyshots Footer default 1`] = `
   padding: 16px 16px;
 }
 
-.c8 .icon {
+.c9 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c8:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c8:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c8:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c9:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30507,45 +30507,45 @@ exports[`Storyshots Footer default 1`] = `
   padding: 16px 16px;
 }
 
-.c5 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c5 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:hover,
-.c5:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c5:hover > .icon,
-.c5:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c8:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
@@ -30599,6 +30599,43 @@ exports[`Storyshots Footer default 1`] = `
   margin-left: 16px;
 }
 
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -30617,16 +30654,6 @@ exports[`Storyshots Footer default 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -30659,22 +30686,40 @@ exports[`Storyshots Footer default 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
-            href="#"
+          <div
+            className="c4"
+            disabled={false}
+            href={undefined}
+            onClick={[Function]}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href={undefined}
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="button-container"
       >
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c5"
+            className="c8"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -30684,20 +30729,20 @@ exports[`Storyshots Footer default 1`] = `
             Secondary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
           </div>
         </div>
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c8"
+            className="c9"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -30707,10 +30752,1118 @@ exports[`Storyshots Footer default 1`] = `
             Primary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
+            >
+              This action is disabled
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginTop": "50px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Footer
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            default - with onClick
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;
+                Footer
+              </span>
+              <span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    helpText
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Have questions about account setup?
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    helpLinkText
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Get support
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    onHelpLinkClick
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onHelpLinkClick()
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    onSecondaryActionClick
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onSecondaryActionClick()
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    secondaryActionText
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Secondary Action
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    onPrimaryActionClick
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onPrimaryActionClick()
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    primaryActionText
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Primary Action
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    helpImageSrc
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        https://crave-whatsgood-sandbox.imgix.net/business…
+                        "
+                      </span>
+                    </span>
+                  </span>
+                  <br />
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              Footer
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    helpImageSrc
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    helpText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    yes
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    helpLinkText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    helpLinkHref
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    noAction
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#a11",
+                          }
+                        }
+                      >
+                        false
+                      </span>
+                      }
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onSecondaryActionClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    secondaryActionText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    loadingSecondaryAction
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#a11",
+                          }
+                        }
+                      >
+                        false
+                      </span>
+                      }
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onPrimaryActionClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    primaryActionText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    loadingPrimaryAction
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#a11",
+                          }
+                        }
+                      >
+                        false
+                      </span>
+                      }
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Footer default 1`] = `
+.c5 {
+  position: relative;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c6:after,
+.c6:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c7 {
+  position: relative;
+}
+
+.c7 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 16px 16px;
+}
+
+.c9 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c9:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c9:focus {
+  box-shadow: none;
+}
+
+.c9:hover .icon,
+.c9:focus .icon {
+  color: white;
+}
+
+.c9:hover {
+  background-color: #2980b9;
+}
+
+.c9:focus {
+  background-color: #2980b9;
+}
+
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 16px 16px;
+}
+
+.c8 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:hover,
+.c8:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c8:hover > .icon,
+.c8:focus > .icon {
+  color: #3498db;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c2 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+}
+
+.c0 {
+  font-family: Lato,sans-serif;
+  background-color: #f6f8f9;
+  border-top: solid 1px rgba(0,0,0,0.16);
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .button-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align: flex-end;
+}
+
+.c0 .button-container > * {
+  margin-left: 16px;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 > .text > :first-child {
+  margin-bottom: 8px;
+}
+
+.c1 > .image {
+  margin-right: 16px;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="c1"
+      >
+        <div
+          className="image c2"
+          size={40}
+          src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+        />
+        <div
+          className="text"
+        >
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Have questions about account setup?
+          </div>
+          <div
+            className="c4"
+            disabled={false}
+            href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
+          >
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="button-container"
+      >
+        <div
+          className="c7"
+        >
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            size="MEDIUM"
+            type="NEUTRAL"
+          >
+             
+            Secondary Action
+          </button>
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              This action is disabled
+            </div>
+          </div>
+        </div>
+        <div
+          className="c7"
+        >
+          <button
+            className="c9"
+            disabled={false}
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
+          >
+             
+            Primary Action
+          </button>
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
             >
               This action is disabled
             </div>
@@ -31250,6 +32403,21 @@ exports[`Storyshots Footer default 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -31400,11 +32568,11 @@ exports[`Storyshots Footer default 1`] = `
 `;
 
 exports[`Storyshots Footer loading primary action 1`] = `
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c7 {
+.c6 {
   visibility: hidden;
   position: absolute;
   top: 15px;
@@ -31419,8 +32587,8 @@ exports[`Storyshots Footer loading primary action 1`] = `
   left: 0;
 }
 
-.c7:after,
-.c7:before {
+.c6:after,
+.c6:before {
   bottom: 100%;
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
@@ -31430,32 +32598,32 @@ exports[`Storyshots Footer loading primary action 1`] = `
   pointer-events: none;
 }
 
-.c7:before {
+.c6:before {
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
   left: 7px;
 }
 
-.c7:after {
+.c6:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
 }
 
-.c4 {
+.c7 {
   position: relative;
 }
 
-.c4 > .hit-box-container {
+.c7 > .hit-box-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.c5 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31486,50 +32654,50 @@ exports[`Storyshots Footer loading primary action 1`] = `
   padding: 16px 16px;
 }
 
-.c5 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c5 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:hover,
-.c5:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c5:hover > .icon,
-.c5:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c8:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31561,43 +32729,43 @@ exports[`Storyshots Footer loading primary action 1`] = `
   padding: 16px 16px;
 }
 
-.c8 .icon {
+.c9 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c8:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c9 > .icon {
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c8:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c8:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c9:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
@@ -31651,6 +32819,43 @@ exports[`Storyshots Footer loading primary action 1`] = `
   margin-left: 16px;
 }
 
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -31669,16 +32874,6 @@ exports[`Storyshots Footer loading primary action 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -31711,22 +32906,40 @@ exports[`Storyshots Footer loading primary action 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
+          <div
+            className="c4"
+            disabled={false}
             href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="button-container"
       >
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c5"
+            className="c8"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -31736,20 +32949,20 @@ exports[`Storyshots Footer loading primary action 1`] = `
             Secondary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
           </div>
         </div>
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c8"
+            className="c9"
             disabled={true}
             onClick={[Function]}
             size="MEDIUM"
@@ -31771,10 +32984,10 @@ exports[`Storyshots Footer loading primary action 1`] = `
             Primary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
@@ -32325,6 +33538,21 @@ exports[`Storyshots Footer loading primary action 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -32475,11 +33703,11 @@ exports[`Storyshots Footer loading primary action 1`] = `
 `;
 
 exports[`Storyshots Footer loading secondary action 1`] = `
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c7 {
+.c6 {
   visibility: hidden;
   position: absolute;
   top: 15px;
@@ -32494,8 +33722,8 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   left: 0;
 }
 
-.c7:after,
-.c7:before {
+.c6:after,
+.c6:before {
   bottom: 100%;
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
@@ -32505,32 +33733,32 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   pointer-events: none;
 }
 
-.c7:before {
+.c6:before {
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
   left: 7px;
 }
 
-.c7:after {
+.c6:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
 }
 
-.c4 {
+.c7 {
   position: relative;
 }
 
-.c4 > .hit-box-container {
+.c7 > .hit-box-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32562,43 +33790,43 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   padding: 16px 16px;
 }
 
-.c8 .icon {
+.c9 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c8:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c8:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c8:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c9:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32629,50 +33857,50 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   padding: 16px 16px;
 }
 
-.c5 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c5 > .icon {
+.c8 > .icon {
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c5 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:hover,
-.c5:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c5:hover > .icon,
-.c5:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c8:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
@@ -32726,6 +33954,43 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   margin-left: 16px;
 }
 
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -32744,16 +34009,6 @@ exports[`Storyshots Footer loading secondary action 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -32786,22 +34041,40 @@ exports[`Storyshots Footer loading secondary action 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
+          <div
+            className="c4"
+            disabled={false}
             href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="button-container"
       >
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c5"
+            className="c8"
             disabled={true}
             onClick={[Function]}
             size="MEDIUM"
@@ -32823,20 +34096,20 @@ exports[`Storyshots Footer loading secondary action 1`] = `
             Secondary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
           </div>
         </div>
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c8"
+            className="c9"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -32846,10 +34119,10 @@ exports[`Storyshots Footer loading secondary action 1`] = `
             Primary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
@@ -33400,6 +34673,21 @@ exports[`Storyshots Footer loading secondary action 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -33550,6 +34838,50 @@ exports[`Storyshots Footer loading secondary action 1`] = `
 `;
 
 exports[`Storyshots Footer no button 1`] = `
+.c5 {
+  position: relative;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c6:after,
+.c6:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
 .c2 {
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -33599,6 +34931,43 @@ exports[`Storyshots Footer no button 1`] = `
   margin-left: 16px;
 }
 
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -33617,16 +34986,6 @@ exports[`Storyshots Footer no button 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -33659,12 +35018,30 @@ exports[`Storyshots Footer no button 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
+          <div
+            className="c4"
+            disabled={false}
             href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -34081,6 +35458,21 @@ exports[`Storyshots Footer no button 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -34231,6 +35623,50 @@ exports[`Storyshots Footer no button 1`] = `
 `;
 
 exports[`Storyshots Footer noAction 1`] = `
+.c4 {
+  position: relative;
+}
+
+.c5 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c5:after,
+.c5:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
 .c1 {
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -34253,6 +35689,43 @@ exports[`Storyshots Footer noAction 1`] = `
   text-align: left;
 }
 
+.c3 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c3 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c3 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c3 > a {
+  text-decoration: none;
+}
+
+.c3 > a:hover {
+  text-decoration: none;
+}
+
+.c3 > a {
+  color: inherit;
+}
+
+.c3:hover {
+  color: #3498db;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -34271,16 +35744,6 @@ exports[`Storyshots Footer noAction 1`] = `
 
 .c0 > .image {
   margin-right: 16px;
-}
-
-.c0 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c0 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -34310,12 +35773,30 @@ exports[`Storyshots Footer noAction 1`] = `
         >
           Have questions about account setup?
         </div>
-        <a
-          className="link"
+        <div
+          className="c3"
+          disabled={false}
           href="#"
+          onClick={undefined}
+          size={16}
+          type="#59636f"
         >
-          Get support
-        </a>
+          <a
+            href="#"
+            onClick={[Function]}
+          >
+            Get support
+          </a>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              This link is disabled
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -34739,6 +36220,21 @@ exports[`Storyshots Footer noAction 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -34889,11 +36385,11 @@ exports[`Storyshots Footer noAction 1`] = `
 `;
 
 exports[`Storyshots Footer primary action only 1`] = `
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c7 {
+.c6 {
   visibility: hidden;
   position: absolute;
   top: 15px;
@@ -34908,8 +36404,8 @@ exports[`Storyshots Footer primary action only 1`] = `
   left: 0;
 }
 
-.c7:after,
-.c7:before {
+.c6:after,
+.c6:before {
   bottom: 100%;
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
@@ -34919,32 +36415,32 @@ exports[`Storyshots Footer primary action only 1`] = `
   pointer-events: none;
 }
 
-.c7:before {
+.c6:before {
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
   left: 7px;
 }
 
-.c7:after {
+.c6:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
 }
 
-.c4 {
+.c7 {
   position: relative;
 }
 
-.c4 > .hit-box-container {
+.c7 > .hit-box-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.c5 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34976,38 +36472,38 @@ exports[`Storyshots Footer primary action only 1`] = `
   padding: 16px 16px;
 }
 
-.c5 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c5:hover {
+.c8:hover {
   background-color: #2980b9;
 }
 
-.c5:focus {
+.c8:focus {
   background-color: #2980b9;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c8:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
@@ -35061,6 +36557,43 @@ exports[`Storyshots Footer primary action only 1`] = `
   margin-left: 16px;
 }
 
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -35079,16 +36612,6 @@ exports[`Storyshots Footer primary action only 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -35121,22 +36644,40 @@ exports[`Storyshots Footer primary action only 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
+          <div
+            className="c4"
+            disabled={false}
             href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="button-container"
       >
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c5"
+            className="c8"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -35146,10 +36687,10 @@ exports[`Storyshots Footer primary action only 1`] = `
             Primary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
@@ -35628,6 +37169,21 @@ exports[`Storyshots Footer primary action only 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -35778,11 +37334,11 @@ exports[`Storyshots Footer primary action only 1`] = `
 `;
 
 exports[`Storyshots Footer secondary action only 1`] = `
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c7 {
+.c6 {
   visibility: hidden;
   position: absolute;
   top: 15px;
@@ -35797,8 +37353,8 @@ exports[`Storyshots Footer secondary action only 1`] = `
   left: 0;
 }
 
-.c7:after,
-.c7:before {
+.c6:after,
+.c6:before {
   bottom: 100%;
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
@@ -35808,32 +37364,32 @@ exports[`Storyshots Footer secondary action only 1`] = `
   pointer-events: none;
 }
 
-.c7:before {
+.c6:before {
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
   left: 7px;
 }
 
-.c7:after {
+.c6:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
 }
 
-.c4 {
+.c7 {
   position: relative;
 }
 
-.c4 > .hit-box-container {
+.c7 > .hit-box-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.c5 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35864,45 +37420,45 @@ exports[`Storyshots Footer secondary action only 1`] = `
   padding: 16px 16px;
 }
 
-.c5 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c5 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:hover,
-.c5:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c5:hover > .icon,
-.c5:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c8:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
@@ -35956,6 +37512,43 @@ exports[`Storyshots Footer secondary action only 1`] = `
   margin-left: 16px;
 }
 
+.c4 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c4 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c4 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c4 > a {
+  text-decoration: none;
+}
+
+.c4 > a:hover {
+  text-decoration: none;
+}
+
+.c4 > a {
+  color: inherit;
+}
+
+.c4:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -35974,16 +37567,6 @@ exports[`Storyshots Footer secondary action only 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -36016,22 +37599,40 @@ exports[`Storyshots Footer secondary action only 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
+          <div
+            className="c4"
+            disabled={false}
             href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c5"
+            >
+              <div
+                className="c6"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="button-container"
       >
         <div
-          className="c4"
+          className="c7"
         >
           <button
-            className="c5"
+            className="c8"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -36041,10 +37642,10 @@ exports[`Storyshots Footer secondary action only 1`] = `
             Secondary Action
           </button>
           <div
-            className="c6"
+            className="c5"
           >
             <div
-              className="c7"
+              className="c6"
             >
               This action is disabled
             </div>
@@ -36523,6 +38124,21 @@ exports[`Storyshots Footer secondary action only 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -36673,11 +38289,11 @@ exports[`Storyshots Footer secondary action only 1`] = `
 `;
 
 exports[`Storyshots Footer without image 1`] = `
-.c5 {
+.c4 {
   position: relative;
 }
 
-.c6 {
+.c5 {
   visibility: hidden;
   position: absolute;
   top: 15px;
@@ -36692,8 +38308,8 @@ exports[`Storyshots Footer without image 1`] = `
   left: 0;
 }
 
-.c6:after,
-.c6:before {
+.c5:after,
+.c5:before {
   bottom: 100%;
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
@@ -36703,32 +38319,32 @@ exports[`Storyshots Footer without image 1`] = `
   pointer-events: none;
 }
 
-.c6:before {
+.c5:before {
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
   border-width: 8px;
   left: 7px;
 }
 
-.c6:after {
+.c5:after {
   border-color: transparent;
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
 }
 
-.c3 {
+.c6 {
   position: relative;
 }
 
-.c3 > .hit-box-container {
+.c6 > .hit-box-container {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36760,43 +38376,43 @@ exports[`Storyshots Footer without image 1`] = `
   padding: 16px 16px;
 }
 
-.c7 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c7:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c7:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c7:hover .icon,
-.c7:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #2980b9;
 }
 
-.c7:focus {
+.c8:focus {
   background-color: #2980b9;
 }
 
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:disabled {
+.c8:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36827,45 +38443,45 @@ exports[`Storyshots Footer without image 1`] = `
   padding: 16px 16px;
 }
 
-.c4 .icon {
+.c7 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c4:hover .icon,
-.c4:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c4 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c4:hover,
-.c4:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c4:hover > .icon,
-.c4:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled :hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c4:disabled {
+.c7:disabled {
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
 }
@@ -36905,6 +38521,43 @@ exports[`Storyshots Footer without image 1`] = `
   margin-left: 16px;
 }
 
+.c3 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c3 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c3 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c3 > a {
+  text-decoration: none;
+}
+
+.c3 > a:hover {
+  text-decoration: none;
+}
+
+.c3 > a {
+  color: inherit;
+}
+
+.c3:hover {
+  color: #3498db;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: -webkit-box;
@@ -36923,16 +38576,6 @@ exports[`Storyshots Footer without image 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -36960,22 +38603,40 @@ exports[`Storyshots Footer without image 1`] = `
           >
             Have questions about account setup?
           </div>
-          <a
-            className="link"
+          <div
+            className="c3"
+            disabled={false}
             href="#"
+            onClick={undefined}
+            size={16}
+            type="#59636f"
           >
-            Get support
-          </a>
+            <a
+              href="#"
+              onClick={[Function]}
+            >
+              Get support
+            </a>
+            <div
+              className="c4"
+            >
+              <div
+                className="c5"
+              >
+                This link is disabled
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="button-container"
       >
         <div
-          className="c3"
+          className="c6"
         >
           <button
-            className="c4"
+            className="c7"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -36985,20 +38646,20 @@ exports[`Storyshots Footer without image 1`] = `
             Secondary Action
           </button>
           <div
-            className="c5"
+            className="c4"
           >
             <div
-              className="c6"
+              className="c5"
             >
               This action is disabled
             </div>
           </div>
         </div>
         <div
-          className="c3"
+          className="c6"
         >
           <button
-            className="c7"
+            className="c8"
             disabled={false}
             onClick={[Function]}
             size="MEDIUM"
@@ -37008,10 +38669,10 @@ exports[`Storyshots Footer without image 1`] = `
             Primary Action
           </button>
           <div
-            className="c5"
+            className="c4"
           >
             <div
-              className="c6"
+              className="c5"
             >
               This action is disabled
             </div>
@@ -37521,6 +39182,21 @@ exports[`Storyshots Footer without image 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     noAction
                   </td>
                   <td>
@@ -37935,16 +39611,6 @@ exports[`Storyshots Footer without link 1`] = `
 
 .c1 > .image {
   margin-right: 16px;
-}
-
-.c1 > .link {
-  color: #59636f;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.c1 > .link:hover {
-  color: #3498db;
 }
 
 <div>
@@ -38491,6 +40157,21 @@ exports[`Storyshots Footer without link 1`] = `
                   </td>
                   <td>
                     string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onHelpLinkClick
+                  </td>
+                  <td>
+                    func
                   </td>
                   <td>
                     no
