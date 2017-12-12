@@ -35,11 +35,11 @@ script:
 after_success:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
+  - git config user.name "Travis CI" || travis_terminate 1;
+  - git config user.email "travis@cravefood.services" || travis_terminate 1;
+  - git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git || travis_terminate 1;
   - |
     if [ $BRANCH == "master" ]; then
-      git config user.name "Travis CI" || travis_terminate 1;
-      git config user.email "travis@cravefood.services" || travis_terminate 1;
-      git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git || travis_terminate 1;
       lerna publish --yes || travis_terminate 1;
       yarn build-storybook || travis_terminate 1;
       git add docs;
@@ -48,3 +48,12 @@ after_success:
     else
       lerna publish --canary --yes || travis_terminate 1;
     fi
+  - |
+    if [[ $BRANCH == *"greenkeeper"* ]]; then
+      echo "this is a workaround for greenkeeper-lockfile bug #85";
+      echo "https://github.com/greenkeeperio/greenkeeper-lockfile/issues/85";
+      git add yarn.lock;
+      git commit -m "chore(lockfile): [ci skip] greenkeeper lockfile fix";
+      git push origin "$BRANCH";
+    fi
+
