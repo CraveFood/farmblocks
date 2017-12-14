@@ -143,4 +143,16 @@ storiesOf("Footer", module)
         helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
     ))
+  )
+  .add(
+    "custom font size",
+    withInfo()(() => (
+      <Footer
+        helpText="Have questions about account setup?"
+        helpLinkText="Get support"
+        helpLinkHref="#"
+        helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+        helpFontSize={12}
+      />
+    ))
   );

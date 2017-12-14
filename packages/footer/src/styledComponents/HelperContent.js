@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { fontSizes } from "@crave/farmblocks-theme";
+
 
 const HelperContentContainer = styled.div`
   font-family: Lato, sans-serif;
@@ -9,7 +11,7 @@ const HelperContentContainer = styled.div`
 
   > .text {
     > :first-child {
-      margin-bottom: 8px;
+      margin-bottom: ${props => props.size === fontSizes.MEDIUM && '8px'};
     }
   }
 

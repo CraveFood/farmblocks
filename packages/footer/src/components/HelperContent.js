@@ -11,7 +11,7 @@ const HelperContent = props => {
   const renderLink = props.linkText && (props.linkHref || props.linkOnClick);
 
   return (
-    <Container>
+    <Container size={props.size}>
       {props.imageSrc && (
         <Image
           src={props.imageSrc}
@@ -22,13 +22,14 @@ const HelperContent = props => {
       )}
 
       <div className="text">
-        <Text size={fontSizes.MEDIUM}>{props.text}</Text>
+        <Text size={props.size}>{props.text}</Text>
 
         {renderLink && (
           <Link
             onClick={props.linkOnClick}
             href={props.linkHref}
             type={fontTypes.NEUTRAL}
+            size={props.size}
           >
             {props.linkText}
           </Link>
@@ -43,7 +44,12 @@ HelperContent.propTypes = {
   text: PropTypes.string.isRequired,
   linkText: PropTypes.string,
   linkHref: PropTypes.string,
-  linkOnClick: PropTypes.func
+  linkOnClick: PropTypes.func,
+  size: PropTypes.number
 };
+
+HelperContent.defaultProps = {
+  size: fontSizes.MEDIUM
+}
 
 export default HelperContent;
