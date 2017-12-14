@@ -30,6 +30,7 @@ script:
   - yarn lint.test .
   - pkill flow || true
   - yarn typecheck
+  - yarn snyk
   - yarn coverage
   - greenkeeper-lockfile-upload
 after_success:

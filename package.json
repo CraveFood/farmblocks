@@ -9,7 +9,8 @@
   "scripts": {
     "build": "lerna run build",
     "lint.staged": "lint-staged",
-    "test": "snyk test && jest",
+    "test": "jest",
+    "snyk": "snyk test",
     "typecheck": "flow",
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
     "lint.test":
