@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.8"></a>
+## [1.2.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.7...@crave/farmblocks-footer@1.2.8) (2017-12-14)
+
+
+### Bug Fixes
+
+* **footer:** rename on help link click property ([850ac61](https://github.com/CraveFood/farmblocks/commit/850ac61))
+
+
+
+
 <a name="1.2.7"></a>
 ## [1.2.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.6...@crave/farmblocks-footer@1.2.7) (2017-12-11)
 
