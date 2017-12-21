@@ -25,6 +25,7 @@ const Card = styled.div`
   padding: ${padding};
   box-sizing: border-box;
   border-radius: 4px;
+  overflow: hidden;
 `;
 
 export default Card;
