@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import EmptyState from "@crave/farmblocks-empty-state";
+import Footer from "@crave/farmblocks-footer";
 import { cardTypes } from "./constants/cardTypes";
 
 import Card from ".";
@@ -28,6 +29,20 @@ storiesOf("Card", module)
     withInfo()(() => (
       <Card floating padding="40px" width="1136px">
         <EmptyState title="My Card Title" description="My card description" />
+      </Card>
+    ))
+  )
+  .add(
+    "With content (footer and empty state) and 1136px width",
+    withInfo()(() => (
+      <Card padding="0" width="1136px">
+        <EmptyState title="My Card Title" description="My card description" />
+        <Footer
+          helpText="Have questions about account setup?"
+          helpLinkText="Get support"
+          helpLinkHref="#"
+          helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+        />
       </Card>
     ))
   );
