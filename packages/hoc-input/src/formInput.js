@@ -111,7 +111,7 @@ const formInput = WrappedComponent => {
     }
 
     componentWillReceiveProps(nextProps) {
-      const nextState = { value: nextProps.value };
+      const nextState = { value: nextProps.value || this.state.value };
       if (nextProps.validationMessages !== this.props.validationMessages) {
         nextState.validationMessages = nextProps.validationMessages;
       }
