@@ -5,16 +5,19 @@ import { withInfo } from "@storybook/addon-info";
 
 import disabledTooltip from ".";
 
-const EnhancedInput = disabledTooltip("input");
+const InputComponent = props => <input {...props} />;
+
+// this hoc accepts both a component or an jsx element name as input
+const EnhancedInput = disabledTooltip(InputComponent);
 const EnhancedButton = disabledTooltip("button");
 
 storiesOf("HOC disabledTooltip", "module")
   .add(
-    "disabled html input",
+    "disabled input",
     withInfo()(() => <EnhancedInput disabled type="text" />)
   )
   .add(
-    "disabled html input with tooltip right aligned",
+    "disabled input with tooltip right aligned",
     withInfo()(() => (
       <EnhancedInput disabled type="text" tooltipAlign="right" />
     ))
@@ -38,7 +41,7 @@ storiesOf("HOC disabledTooltip", "module")
     ))
   )
   .add(
-    "disabled html input with custom Tooltip text",
+    "disabled input with custom Tooltip text",
     withInfo()(() => (
       <EnhancedInput
         type="checkbox"
