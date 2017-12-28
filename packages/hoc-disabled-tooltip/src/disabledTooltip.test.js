@@ -66,7 +66,7 @@ describe("disabledTooltip HOC", function() {
 
   test("mouseover and mouseleave events should change showTooltip state on disabled fields", function() {
     const EnhancedInput = disabledTooltip("input");
-    let component = mount(<EnhancedInput disabled />);
+    const component = mount(<EnhancedInput disabled />);
     const hitArea = component.find(".hit");
     const defaultState = component.state();
 
