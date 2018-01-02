@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.2.5...@crave/farmblocks-card@0.3.0) (2017-12-21)
+
+
+### Features
+
+* **Card:** add a CSS property to prevent children component to overflow its background ([a0a8f6e](https://github.com/CraveFood/farmblocks/commit/a0a8f6e))
+
+
+
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.2.4...@crave/farmblocks-card@0.2.5) (2017-12-08)
 
