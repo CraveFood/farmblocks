@@ -10,7 +10,7 @@ describe("formInput", function() {
 
   const EnhancedInput = formInput(props => React.createElement("input", props));
   test("changing the validationMessages property after instantiation should update the validationMessages state and leave value state as it is", function() {
-    const component = shallow(<EnhancedInput value='some value'/>);
+    const component = shallow(<EnhancedInput value="some value" />);
     const state = component.state();
     expect(state.validationMessages.length).toBe(0);
 
@@ -21,15 +21,11 @@ describe("formInput", function() {
     expect(component.state()).toEqual(expectedState);
   });
 
-  test("sending the same validationMessages property should not update the validationMessages state", function() {
+  test("changing the value property should update value state", function() {
     const component = shallow(<EnhancedInput />);
     const state = component.state();
-    expect(state.validationMessages.length).toBe(0);
-    const validationMessages = ["foo", "bar"];
-    component.setProps({ validationMessages, value: "123" });
-
-    const expectedState = { ...state, validationMessages, value: "456" };
-    component.setProps({ validationMessages, value: "456" });
+    const expectedState = { ...state, value: "456" };
+    component.setProps({ value: "456" });
     expect(component.state()).toEqual(expectedState);
   });
 
