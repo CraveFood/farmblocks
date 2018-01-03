@@ -52,6 +52,7 @@ This HOC will add the following properties to a given component:
 | disabled | Boolean | a flag that indicates that the element is disabled, and so should display the tooltip |
 | tooltipAlign | String, one of "left" or "right" | Which side to align the disabled tooltip balloon |
 | tooltipText | String | A custom text to display as tooltip when the component is disabled |
+| displayBlock | Boolean | use this flag to override the default css style of the resulting element from ``inline-block`` to ``block`` | 
 
 ## License
 

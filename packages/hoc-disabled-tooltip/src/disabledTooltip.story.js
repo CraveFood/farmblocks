@@ -14,7 +14,23 @@ const EnhancedButton = disabledTooltip("button");
 storiesOf("HOC disabledTooltip", "module")
   .add(
     "disabled input",
-    withInfo()(() => <EnhancedInput disabled type="text" />)
+    withInfo()(() => (
+      <div>
+        text before
+        <EnhancedInput disabled type="text" />
+        text after
+      </div>
+    ))
+  )
+  .add(
+    "enhanced element with display block",
+    withInfo()(() => (
+      <div>
+        text before
+        <EnhancedInput disabled displayBlock type="text" />
+        text after
+      </div>
+    ))
   )
   .add(
     "disabled input with tooltip right aligned",

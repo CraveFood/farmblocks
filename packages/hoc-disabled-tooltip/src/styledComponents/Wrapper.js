@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  display: inline-block;
+  display: ${props => (props.displayBlock ? "block" : "inline-block")};
 
   .hitWrapper {
     position: relative;

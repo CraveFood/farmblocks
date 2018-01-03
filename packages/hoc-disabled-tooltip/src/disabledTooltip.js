@@ -30,16 +30,18 @@ function disabledTooltip(wrappedComponentType) {
 
     render() {
       const {
+        displayBlock,
         tooltipAlign,
         tooltipText,
         ...wrappedComponentProps
       } = this.props;
+      const wrapperProps = { displayBlock };
       const hitAreaProps = {
         onMouseOver: this.onMouseOver,
         onMouseLeave: this.onMouseLeave
       };
       return (
-        <Wrapper>
+        <Wrapper {...wrapperProps}>
           <div className="hitWrapper">
             <WrappedComponent {...wrappedComponentProps} />
             {this.props.disabled && <div className="hit" {...hitAreaProps} />}
@@ -61,6 +63,7 @@ function disabledTooltip(wrappedComponentType) {
 
     static propTypes = {
       ...WrappedComponent.propTypes,
+      displayBlock: PropTypes.bool,
       disabled: PropTypes.bool,
       tooltipAlign: PropTypes.oneOf(["left", "right"]),
       tooltipText: PropTypes.string,
@@ -70,6 +73,7 @@ function disabledTooltip(wrappedComponentType) {
 
     static defaultProps = {
       ...WrappedComponent.defaultProps,
+      displayBlock: false,
       disabled: false,
       onMouseOver: () => null,
       onMouseLeave: () => null,
