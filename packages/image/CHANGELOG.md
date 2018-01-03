@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.2.4...@crave/farmblocks-image@0.3.0) (2018-01-03)
+
+
+### Features
+
+* **Image:** add prop "fit" to Image component ([ac1a9d7](https://github.com/CraveFood/farmblocks/commit/ac1a9d7))
+
+
+
+
 <a name="0.2.4"></a>
 ## [0.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.2.3...@crave/farmblocks-image@0.2.4) (2017-12-07)
 
