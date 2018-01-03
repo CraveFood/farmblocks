@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import StyledImage from "./styledComponents/Image";
 import { MEDIUM } from "./constants/thumbnailSizes";
+import { COVER } from "./constants/fitModes";
 
 const Image = props => {
   return <StyledImage {...props} />;
@@ -11,12 +12,14 @@ const Image = props => {
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   badge: PropTypes.bool,
-  size: PropTypes.number
+  size: PropTypes.number,
+  fit: PropTypes.string
 };
 
 Image.defaultProps = {
   badge: false,
-  size: MEDIUM
+  size: MEDIUM,
+  fit: COVER
 };
 
 export default Image;

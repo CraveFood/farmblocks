@@ -15,6 +15,7 @@ const borderWidth = props => {
 const borderColor = colorConstants.GREY_16;
 
 const backgroundImage = props => window.encodeURI(props.src);
+const backgroundSize = props => props.fit;
 
 const StyledImage = styled.div`
   background-origin: border-box;
@@ -26,7 +27,7 @@ const StyledImage = styled.div`
   border: solid ${borderWidth} ${borderColor};
   border-radius: ${borderRadius};
   background-image: url(${backgroundImage});
-  background-size: cover;
+  background-size: ${backgroundSize};
   background-position: center;
 `;
 

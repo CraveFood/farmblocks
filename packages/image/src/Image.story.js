@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 
 import thumbnailSizes from "./constants/thumbnailSizes";
 import badgeSizes from "./constants/badgeSizes";
+import fitModes from "./constants/fitModes";
 import Image from ".";
 import { withInfo } from "@storybook/addon-info";
 
@@ -82,6 +83,22 @@ storiesOf("Image", module)
     withInfo()(() => (
       <div>
         <Image src={imgSrc} badge size={badgeSizes.LARGE} />
+      </div>
+    ))
+  )
+  .add(
+    "fit (cover)",
+    withInfo()(() => (
+      <div>
+        <Image src={imgSrc} fit={fitModes.COVER} />
+      </div>
+    ))
+  )
+  .add(
+    "fit (contain)",
+    withInfo()(() => (
+      <div>
+        <Image src={imgSrc} fit={fitModes.CONTAIN} />
       </div>
     ))
   );
