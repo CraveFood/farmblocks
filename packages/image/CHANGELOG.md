@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.3.0...@crave/farmblocks-image@0.3.1) (2018-01-04)
+
+
+### Bug Fixes
+
+* **Image fitModes:** export fitModes at Image index ([bd8734c](https://github.com/CraveFood/farmblocks/commit/bd8734c))
+
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.2.4...@crave/farmblocks-image@0.3.0) (2018-01-03)
 
