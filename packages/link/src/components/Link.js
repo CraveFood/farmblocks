@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import values from "object.values";
 import { fontSizes } from "@crave/farmblocks-theme";
 import disabledTooltip, {
   disabledTooltipProps
