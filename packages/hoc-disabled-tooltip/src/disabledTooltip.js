@@ -5,6 +5,15 @@ import Tooltip from "@crave/farmblocks-tooltip";
 
 import Wrapper from "./styledComponents/Wrapper";
 
+export const newPropTypes = {
+  displayBlock: PropTypes.bool,
+  disabled: PropTypes.bool,
+  tooltipAlign: PropTypes.oneOf(["left", "right"]),
+  tooltipText: PropTypes.string,
+  onMouseLeave: PropTypes.func,
+  onMouseOver: PropTypes.func
+};
+
 function disabledTooltip(wrappedComponentType) {
   const WrappedComponent = props =>
     React.createElement(wrappedComponentType, props);
@@ -63,12 +72,7 @@ function disabledTooltip(wrappedComponentType) {
 
     static propTypes = {
       ...WrappedComponent.propTypes,
-      displayBlock: PropTypes.bool,
-      disabled: PropTypes.bool,
-      tooltipAlign: PropTypes.oneOf(["left", "right"]),
-      tooltipText: PropTypes.string,
-      onMouseLeave: PropTypes.func,
-      onMouseOver: PropTypes.func
+      ...newPropTypes
     };
 
     static defaultProps = {
@@ -82,5 +86,4 @@ function disabledTooltip(wrappedComponentType) {
     };
   };
 }
-
 export default disabledTooltip;
