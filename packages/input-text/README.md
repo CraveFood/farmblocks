@@ -51,8 +51,7 @@ properties that provides enhanced functionality:
 | property           | type             | description                                                                                                                 |
 | ------------------ | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | label              | string           | a text to be used as label for the field                                                                                    |
-| invalid            | boolean          | if passed will style the field as a field that needs attention / corrections                                                |
-| validationMessages | array of strings | text messages to display if the invalid property is present / true                                                          |
+| validationMessages | array of strings | text messages to display if the invalid property is present / true if passed will style the field as a field that needs attention / corrections |
 | errorIconSrc       | string           | the url for a custom icon to be displayed before all error messages                                                         |
 | tooltipText        | string           | the tooltip text is displayed on mouseover for the disabled field, use this property if you need to change the default text |
 
@@ -73,8 +72,8 @@ the default native browser balloon and display the validation message provided
 by the browser using the farmblocks styling.
 
 We recomend however that you do back-end validation regardless of the browser
-constraint support, and then use the `invalid` and `validationMessages`
-properties to present the returned field errors of your server-side validations.
+constraint support, and then use the `validationMessages`
+propertiy to present the returned field errors of your server-side validations.
 
 ## License
 
