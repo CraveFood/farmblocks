@@ -7,6 +7,19 @@ import { fontSizes } from "@crave/farmblocks-theme";
 import errorIconSrc from "./constants/errorIcon";
 import Wrapper from "./styledComponents/Wrapper";
 
+export const newPropTypes = {
+  label: PropTypes.string,
+  value: PropTypes.string,
+  focused: PropTypes.bool,
+  disabled: PropTypes.bool,
+  validationMessages: PropTypes.arrayOf(PropTypes.string),
+  errorIconSrc: PropTypes.string,
+  onChange: PropTypes.func,
+  onInvalid: PropTypes.func,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func
+};
+
 const formInput = WrappedComponent => {
   return class Input extends React.Component {
     constructor(props) {
@@ -165,16 +178,8 @@ const formInput = WrappedComponent => {
     }
 
     static propTypes = {
-      label: PropTypes.string,
-      value: PropTypes.string,
-      focused: PropTypes.bool,
-      disabled: PropTypes.bool,
-      validationMessages: PropTypes.arrayOf(PropTypes.string),
-      errorIconSrc: PropTypes.string,
-      onChange: PropTypes.func,
-      onInvalid: PropTypes.func,
-      onFocus: PropTypes.func,
-      onBlur: PropTypes.func
+      ...WrappedComponent.propTypes,
+      ...newPropTypes
     };
 
     static defaultProps = {

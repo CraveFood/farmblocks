@@ -1,1 +1,1 @@
-export { default } from "./formInput";
+export { default, newPropTypes } from "./formInput";
