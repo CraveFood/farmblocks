@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import wrapDisplayName from "recompose/wrapDisplayName";
 import Text from "@crave/farmblocks-text";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
 import { fontSizes } from "@crave/farmblocks-theme";
@@ -176,6 +177,8 @@ const formInput = WrappedComponent => {
       }
       return this.props.onInvalid(event);
     }
+
+    static displayName = wrapDisplayName(WrappedComponent, "formInput");
 
     static propTypes = {
       ...WrappedComponent.propTypes,
