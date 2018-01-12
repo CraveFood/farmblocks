@@ -994,6 +994,10 @@ exports[`Storyshots Alert default 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -2160,6 +2164,10 @@ exports[`Storyshots Alert type attention 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -2863,6 +2871,10 @@ exports[`Storyshots Alert type negative 1`] = `
 
 .c2 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c2:hover {
@@ -3570,6 +3582,10 @@ exports[`Storyshots Alert type news 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -4246,6 +4262,10 @@ exports[`Storyshots Alert type positive 1`] = `
 
 .c2 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c2:hover {
@@ -4953,6 +4973,10 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -5629,6 +5653,10 @@ exports[`Storyshots Alert with custom z-index 1`] = `
 
 .c2 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c2:hover {
@@ -6556,6 +6584,800 @@ exports[`Storyshots Alert with custom z-index 1`] = `
 </div>
 `;
 
+exports[`Storyshots Button Children content with Icons 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 8px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <button
+        className="c1"
+        disabled={undefined}
+        icon="wg-small-arrow-bottom"
+        onClick={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+         
+        ,_____,
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          This action is disabled
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginTop": "50px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Button
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Children content with Icons
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  Button
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      onClick
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span>
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#170",
+                              }
+                            }
+                          >
+                            buttonClicked()
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      icon
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          wg-small-arrow-bottom
+                          "
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      rightIcon
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          wg-small-arrow-bottom
+                          "
+                        </span>
+                      </span>
+                    </span>
+                    
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  ,_____,
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  Button
+                  &gt;
+                </span>
+              </div>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              Button
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    activated
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    icon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    text
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    children
+                  </td>
+                  <td>
+                    node
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    size
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      SMALL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      NEUTRAL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    fluid
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    disabled
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    loading
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tabIndex
+                  </td>
+                  <td>
+                    number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    className
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tooltipText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      This action is disabled
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button Closed 1`] = `
 .c2 {
   position: relative;
@@ -6646,6 +7468,10 @@ exports[`Storyshots Button Closed 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -7054,6 +7880,21 @@ exports[`Storyshots Button Closed 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -7349,6 +8190,10 @@ exports[`Storyshots Button Default 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -7737,6 +8582,21 @@ exports[`Storyshots Button Default 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -8032,6 +8892,10 @@ exports[`Storyshots Button Default medium 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -8447,6 +9311,21 @@ exports[`Storyshots Button Default medium 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -8742,6 +9621,10 @@ exports[`Storyshots Button Default with Icon 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -9170,6 +10053,762 @@ exports[`Storyshots Button Default with Icon 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    text
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    children
+                  </td>
+                  <td>
+                    node
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    size
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      SMALL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      NEUTRAL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    fluid
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    disabled
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    loading
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tabIndex
+                  </td>
+                  <td>
+                    number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    className
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tooltipText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      This action is disabled
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Default with Right Icon 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <button
+        className="c1"
+        disabled={undefined}
+        onClick={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
+      >
+         
+        Send Order
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          This action is disabled
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginTop": "50px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Button
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Default with Right Icon
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;
+                Button
+              </span>
+              <span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    onClick
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          buttonClicked()
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    rightIcon
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        wg-small-arrow-bottom
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    text
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Send Order
+                        "
+                      </span>
+                    </span>
+                  </span>
+                   
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              Button
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    activated
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    icon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -9465,6 +11104,10 @@ exports[`Storyshots Button Disabled 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -9905,6 +11548,21 @@ exports[`Storyshots Button Disabled 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -10200,6 +11858,10 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -10652,6 +12314,21 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -10947,6 +12624,10 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -11347,6 +13028,21 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -11642,6 +13338,10 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -12042,6 +13742,21 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -12338,6 +14053,10 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -12758,6 +14477,21 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -13054,6 +14788,10 @@ exports[`Storyshots Button Negative 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -13462,6 +15200,21 @@ exports[`Storyshots Button Negative 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -13757,6 +15510,10 @@ exports[`Storyshots Button Neutral 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -14145,6 +15902,21 @@ exports[`Storyshots Button Neutral 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -14442,6 +16214,10 @@ exports[`Storyshots Button Neutral Activated 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -14842,6 +16618,21 @@ exports[`Storyshots Button Neutral Activated 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -15137,6 +16928,10 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -15565,6 +17360,762 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    text
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    children
+                  </td>
+                  <td>
+                    node
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    size
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      SMALL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      NEUTRAL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    fluid
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    disabled
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    loading
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tabIndex
+                  </td>
+                  <td>
+                    number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    className
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tooltipText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      This action is disabled
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Neutral with Righ  Icon 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <button
+        className="c1"
+        disabled={undefined}
+        onClick={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
+      >
+         
+        Label
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          This action is disabled
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginTop": "50px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Button
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Neutral with Righ  Icon
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;
+                Button
+              </span>
+              <span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    onClick
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          buttonClicked()
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    rightIcon
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        wg-small-arrow-bottom
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    text
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Label
+                        "
+                      </span>
+                    </span>
+                  </span>
+                   
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              Button
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    activated
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    icon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -15861,6 +18412,10 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -16429,6 +18984,21 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -16725,6 +19295,10 @@ exports[`Storyshots Button Positive 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -17133,6 +19707,21 @@ exports[`Storyshots Button Positive 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -17429,6 +20018,10 @@ exports[`Storyshots Button Primary 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -17837,6 +20430,734 @@ exports[`Storyshots Button Primary 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    onClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    text
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    children
+                  </td>
+                  <td>
+                    node
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    size
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      SMALL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      NEUTRAL
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    fluid
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    disabled
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    loading
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tabIndex
+                  </td>
+                  <td>
+                    number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    className
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    tooltipText
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      This action is disabled
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Right Icon only (neutral) 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c3:after,
+.c3:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 8px 8px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <button
+        className="c1"
+        disabled={undefined}
+        onClick={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
+      >
+         
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 0,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          This action is disabled
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginTop": "50px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Button
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Right Icon only (neutral)
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;
+                Button
+              </span>
+              <span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    onClick
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          buttonClicked()
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    rightIcon
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        wg-small-arrow-bottom
+                        "
+                      </span>
+                    </span>
+                  </span>
+                   
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              Button
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    activated
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    icon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -18132,6 +21453,10 @@ exports[`Storyshots Button Saving Status 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -18545,6 +21870,21 @@ exports[`Storyshots Button Saving Status 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -18843,6 +22183,10 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -19433,6 +22777,21 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -19731,6 +23090,10 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -20364,6 +23727,21 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    rightIcon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     onClick
                   </td>
                   <td>
@@ -20660,6 +24038,10 @@ exports[`Storyshots Button Secondary 1`] = `
 
 .c1 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c1:hover {
@@ -21054,6 +24436,21 @@ exports[`Storyshots Button Secondary 1`] = `
                 <tr>
                   <td>
                     icon
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    rightIcon
                   </td>
                   <td>
                     string
@@ -27665,6 +31062,10 @@ exports[`Storyshots EmptyState With primary and secondary buttons 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c8 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -27730,6 +31131,10 @@ exports[`Storyshots EmptyState With primary and secondary buttons 1`] = `
 
 .c5 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c5:hover {
@@ -28584,6 +31989,10 @@ exports[`Storyshots EmptyState With primary button 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c5 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c5:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -29343,6 +32752,10 @@ exports[`Storyshots EmptyState With primary button and info 1`] = `
 
 .c5 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c5:hover {
@@ -30149,6 +33562,10 @@ exports[`Storyshots EmptyState With primary button, inside a container 1`] = `
 
 .c5 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c5:hover {
@@ -31046,6 +34463,10 @@ exports[`Storyshots EmptyState With secondary button only 1`] = `
 
 .c5 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c5:hover {
@@ -32644,6 +36065,10 @@ exports[`Storyshots Footer default - with onClick 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c9 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -32709,6 +36134,10 @@ exports[`Storyshots Footer default - with onClick 1`] = `
 
 .c8 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c8 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c8:hover {
@@ -33768,6 +37197,10 @@ exports[`Storyshots Footer default 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c9 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -33833,6 +37266,10 @@ exports[`Storyshots Footer default 1`] = `
 
 .c8 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c8 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c8:hover {
@@ -34890,6 +38327,10 @@ exports[`Storyshots Footer loading primary action 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c8 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -34963,6 +38404,10 @@ exports[`Storyshots Footer loading primary action 1`] = `
 
 .c9 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c9 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c9:hover {
@@ -36042,6 +39487,10 @@ exports[`Storyshots Footer loading secondary action 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c9 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -36107,6 +39556,10 @@ exports[`Storyshots Footer loading secondary action 1`] = `
 
 .c8 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c8 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c8:hover {
@@ -38772,6 +42225,10 @@ exports[`Storyshots Footer primary action only 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c8 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -39734,6 +43191,10 @@ exports[`Storyshots Footer secondary action only 1`] = `
 
 .c8 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c8 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c8:hover {
@@ -40708,6 +44169,10 @@ exports[`Storyshots Footer without image 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c8 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -40773,6 +44238,10 @@ exports[`Storyshots Footer without image 1`] = `
 
 .c7 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c7 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c7:hover {
@@ -41782,6 +45251,10 @@ exports[`Storyshots Footer without link 1`] = `
   color: rgba(255,255,255,0.56);
 }
 
+.c8 .icon i {
+  vertical-align: text-bottom;
+}
+
 .c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
@@ -41847,6 +45320,10 @@ exports[`Storyshots Footer without link 1`] = `
 
 .c5 .icon {
   color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
 }
 
 .c5:hover {

@@ -111,12 +111,33 @@ storiesOf("Button", module)
     ))
   )
   .add(
+    "Default with Right Icon",
+    withInfo()(() => (
+      <Button
+        onClick={action("buttonClicked")}
+        rightIcon="wg-small-arrow-bottom"
+        text="Send Order"
+      />
+    ))
+  )
+  .add(
     "Neutral with Icon",
     withInfo()(() => (
       <Button
         type={buttonTypes.NEUTRAL}
         onClick={action("buttonClicked")}
         icon="wg-order"
+        text="Label"
+      />
+    ))
+  )
+  .add(
+    "Neutral with Righ  Icon",
+    withInfo()(() => (
+      <Button
+        type={buttonTypes.NEUTRAL}
+        onClick={action("buttonClicked")}
+        rightIcon="wg-small-arrow-bottom"
         text="Label"
       />
     ))
@@ -178,6 +199,29 @@ storiesOf("Button", module)
         onClick={action("buttonClicked")}
         icon="wg-edit"
       />
+    ))
+  )
+  .add(
+    "Right Icon only (neutral)",
+    withInfo()(() => (
+      <Button
+        type={buttonTypes.NEUTRAL}
+        onClick={action("buttonClicked")}
+        rightIcon="wg-small-arrow-bottom"
+      />
+    ))
+  )
+  .add(
+    "Children content with Icons",
+    withInfo()(() => (
+      <Button
+        type={buttonTypes.NEUTRAL}
+        onClick={action("buttonClicked")}
+        icon="wg-small-arrow-bottom"
+        rightIcon="wg-small-arrow-bottom"
+      >
+        ,_____,
+      </Button>
     ))
   )
   .add(

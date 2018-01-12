@@ -93,6 +93,10 @@ injectGlobal`
     content: "\\e973";
   }
 
+  .wg-small-arrow-bottom:before {
+    content: "\\e942";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -103,7 +107,8 @@ injectGlobal`
   .wg-checker,
   .wg-edit,
   .wg-place,
-  .wg-external-link {
+  .wg-external-link,
+  .wg-small-arrow-bottom {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
     speak: none;
