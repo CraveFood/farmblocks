@@ -1,1 +1,1 @@
-export { default, newPropTypes } from "./disabledTooltip";
+export { default, disabledTooltipProps } from "./disabledTooltip";

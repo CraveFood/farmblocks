@@ -2,7 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { fontSizes } from "@crave/farmblocks-theme";
 import disabledTooltip, {
-  newPropTypes
+  disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import linkTypes from "../constants/linkTypes";
@@ -49,7 +49,7 @@ Link.propTypes = {
   external: PropTypes.bool,
   size: PropTypes.number,
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  ...newPropTypes
+  ...disabledTooltipProps
   //... and all properties of html <a>
 };
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import disabledTooltip, {
-  newPropTypes
+  disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import buttonSizes from "./constants/buttonSizes";
@@ -58,7 +58,7 @@ Button.propTypes = {
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
-  ...newPropTypes
+  ...disabledTooltipProps
   //... and all properties accepted by the html button
 };
 

@@ -2,11 +2,9 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
 import disabledTooltip, {
-  newPropTypes as disabledTooltipPropTypes
+  disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
-import formInput, {
-  newPropTypes as inputPropTypes
-} from "@crave/farmblocks-hoc-input";
+import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 
 import Container from "./styledComponents/TextInput";
 const EnhancedInput = compose(disabledTooltip, formInput)("input");
@@ -18,8 +16,8 @@ const TextInput = props => (
 );
 
 TextInput.propTypes = {
-  ...disabledTooltipPropTypes,
-  ...inputPropTypes,
+  ...disabledTooltipProps,
+  ...formInputProps,
 
   type: PropTypes.string,
   placeholder: PropTypes.string,

@@ -8,7 +8,7 @@ import { fontSizes } from "@crave/farmblocks-theme";
 import errorIconSrc from "./constants/errorIcon";
 import Wrapper from "./styledComponents/Wrapper";
 
-export const newPropTypes = {
+export const formInputProps = {
   label: PropTypes.string,
   value: PropTypes.string,
   focused: PropTypes.bool,
@@ -182,7 +182,7 @@ const formInput = WrappedComponent => {
 
     static propTypes = {
       ...WrappedComponent.propTypes,
-      ...newPropTypes
+      ...formInputProps
     };
 
     static defaultProps = {

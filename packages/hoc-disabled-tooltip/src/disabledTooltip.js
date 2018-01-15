@@ -5,7 +5,7 @@ import Tooltip from "@crave/farmblocks-tooltip";
 
 import Wrapper from "./styledComponents/Wrapper";
 
-export const newPropTypes = {
+export const disabledTooltipProps = {
   displayBlock: PropTypes.bool,
   disabled: PropTypes.bool,
   tooltipAlign: PropTypes.oneOf(["left", "right"]),
@@ -72,7 +72,7 @@ function disabledTooltip(wrappedComponentType) {
 
     static propTypes = {
       ...WrappedComponent.propTypes,
-      ...newPropTypes
+      ...disabledTooltipProps
     };
 
     static defaultProps = {
