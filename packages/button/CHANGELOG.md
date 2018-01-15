@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.2.3...@crave/farmblocks-button@1.3.0) (2018-01-15)
+
+
+### Features
+
+* **button:** add rightIcon prop to Button ([9660a70](https://github.com/CraveFood/farmblocks/commit/9660a70))
+
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.2.2...@crave/farmblocks-button@1.2.3) (2017-12-08)
 
