@@ -35,10 +35,11 @@ class Button extends React.Component<Props, State> {
   render() {
     // @FIXME revisit font icon assets on farmblocks
     const icon = this.props.loading ? "wg-loading" : this.props.icon;
+    const rightIcon = this.props.rightIcon;
 
     const disabled = this.props.disabled || this.props.loading;
     const showIcon = this.props.icon || this.props.loading;
-    const marginOffset = this.props.text !== undefined ? 10 : 0;
+    const marginOffset = this.props.text || this.props.children ? 10 : 0;
     const { className, ...props } = this.props;
 
     return (
@@ -57,6 +58,11 @@ class Button extends React.Component<Props, State> {
             </div>
           )}{" "}
           {this.props.text || this.props.children}
+          {rightIcon && (
+            <div className="icon" style={{ marginLeft: marginOffset }}>
+              <i className={rightIcon} />
+            </div>
+          )}
         </StyledButton>
         <Tooltip
           text={this.props.tooltipText}
@@ -86,6 +92,7 @@ class Button extends React.Component<Props, State> {
 Button.propTypes = {
   activated: PropTypes.bool,
   icon: PropTypes.string,
+  rightIcon: PropTypes.string,
   onClick: PropTypes.func,
   text: PropTypes.string,
   children: PropTypes.node,

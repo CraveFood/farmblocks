@@ -30,6 +30,9 @@ const Button = styled.button`
 
   .icon {
     color: rgba(255, 255, 255, 0.56);
+    i {
+      vertical-align: text-bottom;
+    }
   }
 
   &:hover {
