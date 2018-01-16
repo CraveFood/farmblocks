@@ -1,32 +1,39 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const size = "16px";
 const margin = "8px";
-const borderRadius = "4px";
-const checkmarkSize = "8px";
-const borderHoverWidth = props => (props.disabled ? "1px" : "2px");
-const checkmarkVisibility = props => (props.checked ? "visible" : "hidden");
-const labelMargin = props => (props.hasText ? margin : "0");
-const borderColor = props =>
-  props.checked && !props.disabled ? colors.INDIGO_MILK_CAP : colors.GREY_16;
-const borderHoverColor = props =>
-  props.disabled ? colors.GREY_16 : colors.INDIGO_MILK_CAP;
-const borderFocusColor = colors.INDIGO_MILK_CAP;
-const backgroundColor = props => {
+
+const baseColors = props => {
   if (props.disabled) {
-    return colors.GREY_16;
+    return css`
+      color: ${colors.GREY_16};
+      background-color: ${colors.GREY_16};
+      border-color: ${colors.GREY_16};
+    `;
   }
-  if (props.checked) {
-    return colors.INDIGO_MILK_CAP;
-  }
-  return "#FFFFFF";
+  return css`
+    color: ${props.checked ? "#FFFFFF" : colors.INDIGO_MILK_CAP};
+    background-color: ${props.checked ? colors.INDIGO_MILK_CAP : "#FFFFFF"};
+    border-color: ${props.checked ? colors.INDIGO_MILK_CAP : colors.GREY_16};
+  `;
 };
-const backgroundHoverColor = props =>
-  props.disabled ? colors.GREY_16 : "#FFFFFF";
-const checkmarkColor = props => (props.disabled ? colors.GREY_16 : "#FFFFFF");
-const checkMarkHoverColor = props =>
-  props.disabled ? colors.GREY_16 : colors.INDIGO_MILK_CAP;
+
+const hoverColors = props => {
+  if (props.disabled) {
+    return;
+  }
+  if (!props.checked) {
+    return css`
+      border-color: ${colors.INDIGO_MILK_CAP};
+    `;
+  }
+  return css`
+    color: ${props.checked ? colors.INDIGO_MILK_CAP : "#FFFFFF"};
+    background-color: ${props.checked ? "#FFFFFF" : colors.INDIGO_MILK_CAP};
+    border-color: ${colors.INDIGO_MILK_CAP};
+  `;
+};
 
 const Label = styled.label`
   display: inline-flex;
@@ -50,28 +57,25 @@ const Label = styled.label`
     width: ${size};
     height: ${size};
     line-height: ${size};
-    font-size: ${checkmarkSize};
-    color: ${checkmarkColor};
-    border: 1px solid ${borderColor};
-    border-radius: ${borderRadius};
-    background-color: ${backgroundColor};
+    font-size: 8px;
+    border: 1px solid;
+    border-radius: 4px;
     text-align: center;
-    margin-right: ${labelMargin};
+    margin-right: ${props => (props.hasText ? margin : "0")};
+    ${baseColors};
 
     .checkmark {
-      visibility: ${checkmarkVisibility};
+      visibility: ${props => (props.checked ? "visible" : "hidden")};
     }
   }
 
   :hover .visibleCheckbox {
-    background-color: ${backgroundHoverColor};
-    border-width: ${borderHoverWidth};
-    border-color: ${borderHoverColor};
-    color: ${checkMarkHoverColor};
+    border-width: ${props => (props.disabled ? "1px" : "2px")};
+    ${hoverColors};
   }
 
   .hiddenCheckbox:focus + div .visibleCheckbox {
-    border-color: ${borderFocusColor};
+    border-color: ${colors.INDIGO_MILK_CAP};
   }
 `;
 
