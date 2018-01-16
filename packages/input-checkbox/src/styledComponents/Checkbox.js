@@ -21,6 +21,8 @@ const backgroundColor = props => {
   }
   return "#FFFFFF";
 };
+const backgroundHoverColor = props =>
+  props.disabled ? colors.GREY_16 : "#FFFFFF";
 const checkmarkColor = props => (props.disabled ? colors.GREY_16 : "#FFFFFF");
 const checkMarkHoverColor = props =>
   props.disabled ? colors.GREY_16 : colors.INDIGO_MILK_CAP;
@@ -61,7 +63,7 @@ const Label = styled.label`
   }
 
   :hover .visibleCheckbox {
-    background-color: #ffffff;
+    background-color: ${backgroundHoverColor};
     border-width: ${borderHoverWidth};
     border-color: ${borderHoverColor};
     color: ${checkMarkHoverColor};
