@@ -38,7 +38,7 @@ const Label = styled.label`
   }
 
   .hiddenCheckbox {
-    visibility: hidden;
+    opacity: 0;
     width: 0;
     margin: 0;
   }
