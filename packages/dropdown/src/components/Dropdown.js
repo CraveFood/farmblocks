@@ -11,7 +11,7 @@ import DropdownWrapper from "../styledComponents/DropdownWrapper";
 import DropdownMenuWrapper from "../styledComponents/DropdownMenuWrapper";
 
 const Dropdown = props => (
-  <DropdownWrapper align={props.align}>
+  <DropdownWrapper>
     <AriaWrapper onSelection={props.handleSelection}>
       <AriaButtonWrapper>
         <Button

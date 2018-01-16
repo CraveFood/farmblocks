@@ -11,7 +11,7 @@ describe("Dropdown", function() {
 
   test("default handle selection function returns null", function() {
     const component = renderer.create(
-      <Dropdown align="right">
+      <Dropdown>
         <DropdownItem value={1}>Option 1</DropdownItem>
         <DropdownItem value={2}>Option 2</DropdownItem>
       </Dropdown>
@@ -46,5 +46,27 @@ describe("Dropdown", function() {
       .simulate("click");
 
     expect(handleSelectionMock).toBeCalledWith(1, expect.anything());
+  });
+
+  test("should align options to the right and set zIndex", function() {
+    const align = "right";
+    const zIndex = 10;
+    const tree = mount(
+      <Dropdown align={align} zIndex={zIndex}>
+        <DropdownItem value={1}>Option 1</DropdownItem>
+        <DropdownItem value={2}>Option 2</DropdownItem>
+      </Dropdown>
+    );
+
+    // dropdown items should be hidden after mounting component
+    expect(tree.find("DropdownMenuWrapper").length).toBe(0);
+
+    // click on trigger button should open the dropdown items
+    tree.find("Button").simulate("click");
+    expect(tree.find("DropdownMenuWrapper").length).toBe(1);
+
+    const props = tree.find("DropdownMenuWrapper").props();
+    expect(props.align).toBe(align);
+    expect(props.zIndex).toBe(zIndex);
   });
 });
