@@ -12,6 +12,7 @@ const borderColor = props =>
   props.checked && !props.disabled ? colors.INDIGO_MILK_CAP : colors.GREY_16;
 const borderHoverColor = props =>
   props.disabled ? colors.GREY_16 : colors.INDIGO_MILK_CAP;
+const borderFocusColor = colors.INDIGO_MILK_CAP;
 const backgroundColor = props => {
   if (props.disabled) {
     return colors.GREY_16;
@@ -67,6 +68,10 @@ const Label = styled.label`
     border-width: ${borderHoverWidth};
     border-color: ${borderHoverColor};
     color: ${checkMarkHoverColor};
+  }
+
+  .hiddenCheckbox:focus + div .visibleCheckbox {
+    border-color: ${borderFocusColor};
   }
 `;
 
