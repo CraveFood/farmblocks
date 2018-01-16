@@ -26,10 +26,14 @@ const checkMarkHoverColor = props =>
   props.disabled ? colors.GREY_16 : colors.INDIGO_MILK_CAP;
 
 const Label = styled.label`
-  display: flex;
-  align-items: center;
-  margin: ${margin};
-  cursor: pointer;
+  display: inline-flex;
+
+  .tooltipTarget {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: ${margin};
+  }
 
   .hiddenCheckbox {
     visibility: hidden;

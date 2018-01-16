@@ -8,7 +8,7 @@ import disabledTooltip, {
 
 import StyledLabel from "./styledComponents/Checkbox";
 
-const Label = disabledTooltip(StyledLabel);
+const TooltipTarget = disabledTooltip("div");
 
 class Checkbox extends React.Component {
   constructor(props) {
@@ -38,7 +38,6 @@ class Checkbox extends React.Component {
       hasText: !!label
     };
     const tooltipProps = {
-      displayBlock,
       onMouseLeave,
       onMouseOver,
       tooltipText,
@@ -49,17 +48,19 @@ class Checkbox extends React.Component {
     inputProps.onChange = this.onChange;
     const fontColor = inputProps.disabled ? fontTypes.SUBTLE : fontTypes.NORMAL;
     return (
-      <Label {...labelProps} {...tooltipProps}>
+      <StyledLabel {...labelProps}>
         <input type="checkbox" {...inputProps} className="hiddenCheckbox" />
-        <div className="visibleCheckbox">
-          <i className="checkmark wg-check" />
-        </div>
-        {label && (
-          <Text title type={fontColor} size={fontSizes.MEDIUM}>
-            {label}
-          </Text>
-        )}
-      </Label>
+        <TooltipTarget {...tooltipProps} className="tooltipTarget">
+          <div className="visibleCheckbox">
+            <i className="checkmark wg-check" />
+          </div>
+          {label && (
+            <Text title type={fontColor} size={fontSizes.MEDIUM}>
+              {label}
+            </Text>
+          )}
+        </TooltipTarget>
+      </StyledLabel>
     );
   }
 
