@@ -33,6 +33,12 @@ storiesOf("Checkbox Input", "module")
         <Checkbox label="Checkbox Label 1" name="foo" />
         <Checkbox disabled label="Checkbox Label 2" name="foo" />
         <Checkbox label="Checkbox Label 3" name="foo" />
+        <div style={{ marginTop: 24 }}>
+          <label>
+            Another field
+            <input type="text" />
+          </label>
+        </div>
       </fieldset>
     ))
   );
