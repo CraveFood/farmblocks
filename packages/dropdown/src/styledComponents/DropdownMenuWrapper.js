@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { colors as colorConstants } from "@crave/farmblocks-theme";
 
-export default styled.div`
+const DropdownMenuWrapper = styled.div`
   margin-top: 16px;
   min-width: 100%;
 
@@ -23,3 +23,6 @@ export default styled.div`
     padding: 0;
   }
 `;
+
+DropdownMenuWrapper.displayName = "DropdownMenuWrapper";
+export default DropdownMenuWrapper;

@@ -4,7 +4,7 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 const borderRadius = "3px";
 
-export default styled.li`
+const DropdownItemWrapper = styled.li`
   cursor: pointer;
 
   transition: all ease 0.2s;
@@ -30,3 +30,6 @@ export default styled.li`
     padding: 14px;
   }
 `;
+
+DropdownItemWrapper.displayName = "DropdownItemWrapper";
+export default DropdownItemWrapper;
