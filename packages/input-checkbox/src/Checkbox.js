@@ -1,10 +1,14 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import Text from "@crave/farmblocks-text";
+import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 import disabledTooltip, {
   disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 
-const Label = disabledTooltip("label");
+import StyledLabel from "./styledComponents/Checkbox";
+
+const Label = disabledTooltip(StyledLabel);
 
 class Checkbox extends React.Component {
   constructor(props) {
@@ -27,6 +31,12 @@ class Checkbox extends React.Component {
       tooltipAlign,
       ...inputProps
     } = this.props;
+    const checkedState = this.state.checked;
+    const labelProps = {
+      checked: checkedState,
+      disabled: inputProps.disabled,
+      hasText: !!label
+    };
     const tooltipProps = {
       displayBlock,
       onMouseLeave,
@@ -35,11 +45,20 @@ class Checkbox extends React.Component {
       tooltipAlign,
       disabled: inputProps.disabled
     };
-    inputProps.checked = this.state.checked;
+    inputProps.defaultChecked = checkedState;
+    inputProps.onChange = this.onChange;
+    const fontColor = inputProps.disabled ? fontTypes.SUBTLE : fontTypes.NORMAL;
     return (
-      <Label {...tooltipProps}>
-        <input type="checkbox" {...inputProps} />
-        {label && <span className="label">{label}</span>}
+      <Label {...labelProps} {...tooltipProps}>
+        <input type="checkbox" {...inputProps} className="hiddenCheckbox" />
+        <div className="visibleCheckbox">
+          <i className="checkmark wg-check" />
+        </div>
+        {label && (
+          <Text title type={fontColor} size={fontSizes.MEDIUM}>
+            {label}
+          </Text>
+        )}
       </Label>
     );
   }
