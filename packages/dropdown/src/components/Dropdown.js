@@ -22,7 +22,11 @@ const Dropdown = props => (
       </AriaButtonWrapper>
 
       <Menu>
-        <DropdownMenuWrapper align={props.align} zIndex={props.zIndex}>
+        <DropdownMenuWrapper
+          align={props.align}
+          zIndex={props.zIndex}
+          width={props.width}
+        >
           <ul>{props.children}</ul>
         </DropdownMenuWrapper>
       </Menu>
@@ -41,7 +45,8 @@ Dropdown.propTypes = {
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
   align: PropTypes.oneOf(["left", "right"]),
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
+  width: PropTypes.string
 };
 
 export default Dropdown;

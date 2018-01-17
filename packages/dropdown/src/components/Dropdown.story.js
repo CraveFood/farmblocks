@@ -77,4 +77,18 @@ storiesOf("Dropdown", "module")
         </div>
       </div>
     ))
+  )
+  .add(
+    "Custom menu width",
+    withInfo()(() => (
+      <Dropdown
+        text="Select fruit"
+        handleSelection={action("handleSelection")}
+        width="200px"
+      >
+        <DropdownItem value={1} text="Banana" />
+        <DropdownItem value={2}>Apple</DropdownItem>
+        <DropdownItem value={3} text="Strawberry" />
+      </Dropdown>
+    ))
   );

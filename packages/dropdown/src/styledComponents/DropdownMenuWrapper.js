@@ -5,6 +5,7 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 const DropdownMenuWrapper = styled.div`
   margin-top: 16px;
   min-width: 100%;
+  width: ${props => props.width};
 
   border: solid 1px ${colorConstants.GREY_16};
   border-radius: 4px;
