@@ -33437,6 +33437,1036 @@ exports[`Storyshots Checkbox Input with text label 1`] = `
 </div>
 `;
 
+exports[`Storyshots Dropdown Custom menu width 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c4:after,
+.c4:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c4:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 > .hit-box-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 16px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 16px 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:hover,
+.c2:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c2:hover > .icon,
+.c2:focus > .icon {
+  color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="c0"
+    >
+      <div>
+        <span
+          aria-disabled={undefined}
+          aria-expanded={false}
+          aria-haspopup={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c1"
+          >
+            <button
+              className="c2"
+              disabled={undefined}
+              size="MEDIUM"
+              type="NEUTRAL"
+            >
+               
+              Select fruit
+              <div
+                className="icon"
+                style={
+                  Object {
+                    "marginLeft": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-small-arrow-bottom"
+                />
+              </div>
+            </button>
+            <div
+              className="c3"
+            >
+              <div
+                className="c4"
+              >
+                This action is disabled
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginTop": "50px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Dropdown
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Custom menu width
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  Dropdown
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      text
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          Select fruit
+                          "
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      handleSelection
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span>
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#170",
+                              }
+                            }
+                          >
+                            handleSelection()
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      width
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          200px
+                          "
+                        </span>
+                      </span>
+                    </span>
+                    
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  DropdownItem
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      value
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span>
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#a11",
+                              }
+                            }
+                          >
+                            1
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      text
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          Banana
+                          "
+                        </span>
+                      </span>
+                    </span>
+                     
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+              <div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &lt;
+                    DropdownItem
+                  </span>
+                  <span>
+                    <span>
+                       
+                      <span
+                        style={Object {}}
+                      >
+                        value
+                      </span>
+                      <span>
+                        =
+                        <span
+                          style={Object {}}
+                        >
+                          <span>
+                            {
+                            <span
+                              style={
+                                Object {
+                                  "color": "#a11",
+                                }
+                              }
+                            >
+                              2
+                            </span>
+                            }
+                          </span>
+                        </span>
+                      </span>
+                      
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &gt;
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 48,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    Apple
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#777",
+                      }
+                    }
+                  >
+                    &lt;/
+                    DropdownItem
+                    &gt;
+                  </span>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  DropdownItem
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      value
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span>
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#a11",
+                              }
+                            }
+                          >
+                            3
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      text
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          "
+                          Strawberry
+                          "
+                        </span>
+                      </span>
+                    </span>
+                     
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  Dropdown
+                  &gt;
+                </span>
+              </div>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              Dropdown
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    handleSelection
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#170",
+                          }
+                        }
+                      >
+                        handleSelection()
+                      </span>
+                      }
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    children
+                  </td>
+                  <td>
+                    node
+                  </td>
+                  <td>
+                    yes
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    text
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    align
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      left
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    zIndex
+                  </td>
+                  <td>
+                    number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    width
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }
+            >
+              "
+              DropdownItem
+              " Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }
+            >
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                  <th>
+                    description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    value
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    text
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    children
+                  </td>
+                  <td>
+                    node
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Dropdown Icon only 1`] = `
 .c3 {
   position: relative;
@@ -34289,6 +35319,21 @@ exports[`Storyshots Dropdown Icon only 1`] = `
                   </td>
                   <td>
                     number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    width
+                  </td>
+                  <td>
+                    string
                   </td>
                   <td>
                     no
@@ -35446,6 +36491,21 @@ exports[`Storyshots Dropdown Right aligned 1`] = `
                   </td>
                   <td />
                 </tr>
+                <tr>
+                  <td>
+                    width
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
               </tbody>
             </table>
           </div>
@@ -36425,6 +37485,21 @@ exports[`Storyshots Dropdown With text 1`] = `
                   </td>
                   <td>
                     number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    width
+                  </td>
+                  <td>
+                    string
                   </td>
                   <td>
                     no
@@ -37893,6 +38968,21 @@ exports[`Storyshots Dropdown With z-index 1`] = `
                   </td>
                   <td>
                     number
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    -
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    width
+                  </td>
+                  <td>
+                    string
                   </td>
                   <td>
                     no
