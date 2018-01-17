@@ -6,6 +6,7 @@ const DropdownMenuWrapper = styled.div`
   margin-top: 16px;
   min-width: 100%;
   width: ${props => props.width};
+  whitespace: no-wrap;
 
   border: solid 1px ${colorConstants.GREY_16};
   border-radius: 4px;
