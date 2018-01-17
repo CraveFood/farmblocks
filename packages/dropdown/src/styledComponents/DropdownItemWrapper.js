@@ -9,6 +9,8 @@ const DropdownItemWrapper = styled.li`
 
   transition: all ease 0.2s;
 
+  color: ${colorConstants.OYSTER};
+
   :hover {
     background: ${colorConstants.INDIGO_MILK_CAP};
     color: white;
