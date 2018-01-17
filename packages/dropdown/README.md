@@ -23,7 +23,7 @@ class App extends Component {
                 handleSelection={(value, event) => console.log('handle selection', value)}>
         <DropdownItem value={1}>Banana</DropdownItem>
         <DropdownItem value={2}>Apple</DropdownItem>
-        <DropdownItem value={3}>Apple</DropdownItem>
+        <DropdownItem value={3}>Strawberry</DropdownItem>
       </Dropdown>
     );
   }
@@ -49,6 +49,7 @@ This code will render:
 | handleSelection | Function to handle selection of a DropdownItem. The first argument is the value, the second is the event | function                 |          | () => false |
 | align           | Align of dropdown items container                                                                        | oneof(['left', 'right']) |          | left        |
 | zIndex          | z-index passed to the dropdown items container                                                           | number                   |          |             |
+| width           | Custom dropdown items container width                                                                    | string                   |          |             |
 
 ### DropdownItem
 
