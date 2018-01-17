@@ -1,4 +1,17 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
-ignore: {}
+version: v1.10.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:shelljs:20140723':
+    - '@crave/farmblocks-dev-scaffold > shelljs':
+        reason: >-
+          the scaffold tool is not exposed to browsers, it is used to create
+          files and dirs, so command injection is part of this regular features
+        expires: '2018-05-16T18:02:17.612Z'
+  'npm:slug:20170907':
+    - '@crave/farmblocks-dev-scaffold > slug':
+        reason: >-
+          this dependency is only used by the scaffold tool and we wont abuse
+          it's regular expressions
+        expires: '2018-05-16T18:02:17.612Z'
 patch: {}
