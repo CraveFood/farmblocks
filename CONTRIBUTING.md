@@ -18,6 +18,14 @@ yarn storybook
 npx lerna run build --scope=@crave/farmblocks-packagename
 ```
 
+### Creating a new component
+
+There is a tool to create some initial folders and files for new components:
+
+```
+yarn create-component
+```
+
 ### Submiting a patch
 
 #### Run tests
