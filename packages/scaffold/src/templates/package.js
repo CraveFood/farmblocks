@@ -17,7 +17,7 @@ const packageTemplate = ({
   "name": "@crave/farmblocks-${shortName}",
   "version": "0.1.0",
   "description": "${description}",
-  "author": "Crave Food Services and AUTHORS",
+  "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
