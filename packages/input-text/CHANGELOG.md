@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.0.0...@crave/farmblocks-input-text@1.0.1) (2018-01-18)
+
+
+### Bug Fixes
+
+* **dependencies:** update the 4 packages that depends on link or text ([278f456](https://github.com/CraveFood/farmblocks/commit/278f456))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@0.2.2...@crave/farmblocks-input-text@1.0.0) (2018-01-18)
 

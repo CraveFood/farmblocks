@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.13"></a>
+## [1.2.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.12...@crave/farmblocks-footer@1.2.13) (2018-01-18)
+
+
+### Bug Fixes
+
+* **dependencies:** update the 4 packages that depends on link or text ([278f456](https://github.com/CraveFood/farmblocks/commit/278f456))
+
+
+
+
 <a name="1.2.12"></a>
 ## [1.2.12](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.11...@crave/farmblocks-footer@1.2.12) (2018-01-18)
 
