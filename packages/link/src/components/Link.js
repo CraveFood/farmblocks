@@ -45,7 +45,7 @@ const Link = props => {
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
-  type: PropTypes.oneOf(Object.values(linkTypes)),
+  type: PropTypes.oneOf(values(linkTypes)),
   leftIcon: PropTypes.string,
   external: PropTypes.bool,
   size: PropTypes.number,
