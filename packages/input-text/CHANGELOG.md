@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.0.0...@crave/farmblocks-input-text@1.0.1) (2018-01-18)
+
+
+### Bug Fixes
+
+* **dependencies:** update the 4 packages that depends on link or text ([278f456](https://github.com/CraveFood/farmblocks/commit/278f456))
+
+
+
+
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@0.2.2...@crave/farmblocks-input-text@1.0.0) (2018-01-18)
+
+
+### Code Refactoring
+
+* **exports:** use better proptypes export names instead of just "newProps" ([031b732](https://github.com/CraveFood/farmblocks/commit/031b732))
+* **input-text:** replace tooltip code with the tooltip hoc and ([5007cd3](https://github.com/CraveFood/farmblocks/commit/5007cd3))
+
+
+### BREAKING CHANGES
+
+* **exports:** this package no longer exports a "newProps" propTypes dictionary, check the source for the new
+export name
+* **input-text:** the invalid property got deprecated, all errored fields must now include at least one message in the
+validationMessages property
+
+squash! refactor(input-text): replace tooltip code with the tooltip hoc and input code with the hoc-input
+
+
+
+
 <a name="0.2.2"></a>
 ## [0.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@0.2.1...@crave/farmblocks-input-text@0.2.2) (2018-01-04)
 

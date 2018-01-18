@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.3.3...@crave/farmblocks-tooltip@0.4.0) (2018-01-18)
+
+
+### Features
+
+* **new property:** zIndex is a property now ([8a83ba0](https://github.com/CraveFood/farmblocks/commit/8a83ba0))
+
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.3.2...@crave/farmblocks-tooltip@0.3.3) (2017-12-08)
 

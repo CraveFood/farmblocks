@@ -15,12 +15,14 @@ const Tooltip = (props: Object) => (
 Tooltip.propTypes = {
   text: PropTypes.string.isRequired,
   isVisible: PropTypes.bool,
-  align: PropTypes.oneOf(["left", "right"])
+  align: PropTypes.oneOf(["left", "right"]),
+  zIndex: PropTypes.number
 };
 
 Tooltip.defaultProps = {
   isVisible: true,
-  align: "left"
+  align: "left",
+  zIndex: 1000
 };
 
 export default Tooltip;

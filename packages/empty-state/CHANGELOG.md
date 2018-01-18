@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.11"></a>
+## [1.0.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.10...@crave/farmblocks-empty-state@1.0.11) (2018-01-18)
+
+
+### Bug Fixes
+
+* **dependencies:** update the 4 packages that depends on link or text ([278f456](https://github.com/CraveFood/farmblocks/commit/278f456))
+
+
+
+
+<a name="1.0.10"></a>
+## [1.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.9...@crave/farmblocks-empty-state@1.0.10) (2018-01-18)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-empty-state
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.8...@crave/farmblocks-empty-state@1.0.9) (2018-01-15)
 

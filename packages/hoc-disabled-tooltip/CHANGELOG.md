@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-disabled-tooltip@0.2.0...@crave/farmblocks-hoc-disabled-tooltip@1.0.0) (2018-01-18)
+
+
+### Code Refactoring
+
+* **exports:** use better proptypes export names instead of just "newProps" ([031b732](https://github.com/CraveFood/farmblocks/commit/031b732))
+
+
+### Features
+
+* **exports:** include the new proptypes of the disabledtooltip hoc in the exports ([791e36a](https://github.com/CraveFood/farmblocks/commit/791e36a))
+
+
+### BREAKING CHANGES
+
+* **exports:** this package no longer exports a "newProps" propTypes dictionary, check the source for the new
+export name
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-01-09)
 

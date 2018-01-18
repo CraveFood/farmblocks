@@ -1,11 +1,25 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import wrapDisplayName from "recompose/wrapDisplayName";
 import Text from "@crave/farmblocks-text";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
 import { fontSizes } from "@crave/farmblocks-theme";
 
 import errorIconSrc from "./constants/errorIcon";
 import Wrapper from "./styledComponents/Wrapper";
+
+export const formInputProps = {
+  label: PropTypes.string,
+  value: PropTypes.string,
+  focused: PropTypes.bool,
+  disabled: PropTypes.bool,
+  validationMessages: PropTypes.arrayOf(PropTypes.string),
+  errorIconSrc: PropTypes.string,
+  onChange: PropTypes.func,
+  onInvalid: PropTypes.func,
+  onFocus: PropTypes.func,
+  onBlur: PropTypes.func
+};
 
 const formInput = WrappedComponent => {
   return class Input extends React.Component {
@@ -164,17 +178,11 @@ const formInput = WrappedComponent => {
       return this.props.onInvalid(event);
     }
 
+    static displayName = wrapDisplayName(WrappedComponent, "formInput");
+
     static propTypes = {
-      label: PropTypes.string,
-      value: PropTypes.string,
-      focused: PropTypes.bool,
-      disabled: PropTypes.bool,
-      validationMessages: PropTypes.arrayOf(PropTypes.string),
-      errorIconSrc: PropTypes.string,
-      onChange: PropTypes.func,
-      onInvalid: PropTypes.func,
-      onFocus: PropTypes.func,
-      onBlur: PropTypes.func
+      ...WrappedComponent.propTypes,
+      ...formInputProps
     };
 
     static defaultProps = {

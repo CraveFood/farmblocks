@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.5"></a>
+## [1.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.4...@crave/farmblocks-text@1.1.5) (2018-01-18)
+
+
+### Bug Fixes
+
+* **compatibility:** use a shim for Object.values ([402df85](https://github.com/CraveFood/farmblocks/commit/402df85))
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.3...@crave/farmblocks-text@1.1.4) (2017-12-08)
 

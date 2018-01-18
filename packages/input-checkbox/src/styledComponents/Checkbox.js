@@ -23,14 +23,16 @@ const hoverColors = props => {
   if (props.disabled) {
     return;
   }
+
   if (!props.checked) {
     return css`
       border-color: ${colors.INDIGO_MILK_CAP};
     `;
   }
+
   return css`
-    color: ${props.checked ? colors.INDIGO_MILK_CAP : "#FFFFFF"};
-    background-color: ${props.checked ? "#FFFFFF" : colors.INDIGO_MILK_CAP};
+    color: ${colors.INDIGO_MILK_CAP};
+    background-color: #ffffff;
     border-color: ${colors.INDIGO_MILK_CAP};
   `;
 };
