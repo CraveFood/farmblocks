@@ -1,93 +1,54 @@
-// @flow
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tooltip from "@crave/farmblocks-tooltip";
+import disabledTooltip, {
+  disabledTooltipProps
+} from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import buttonSizes from "./constants/buttonSizes";
 import buttonTypes from "./constants/buttonTypes";
-import Container from "./styledComponents/Container";
 import StyledButton from "./styledComponents/Button";
 
-// @FIXME type anotating as Object while #22 dont gets fixed
-type Props = Object;
-type State = Object;
-class Button extends React.Component<Props, State> {
-  static defaultProps = {
-    size: buttonSizes.SMALL,
-    type: buttonTypes.NEUTRAL,
-    tooltipText: "This action is disabled"
-  };
+const EnhancedButton = disabledTooltip(StyledButton);
 
-  mouseOver: Function;
-  mouseLeaves: Function;
+const Button = props => {
+  const { disabled, icon, rightIcon, text, children, ...buttonProps } = props;
 
-  constructor(props: Props) {
-    super(props);
+  // @FIXME revisit font icon assets on farmblocks
+  const iconName = buttonProps.loading ? "wg-loading" : icon;
 
-    this.state = {
-      showTooltip: false
-    };
+  const isDisabled = disabled || buttonProps.loading;
+  const showIcon = icon || buttonProps.loading;
+  const marginOffset = text || children ? 10 : 0;
+  const buttonContent = text || children;
+  const isIconOnly = buttonContent === undefined;
 
-    this.mouseOver = this.mouseOver.bind(this);
-    this.mouseLeaves = this.mouseLeaves.bind(this);
-  }
+  return (
+    <EnhancedButton
+      disabled={isDisabled}
+      isIconOnly={isIconOnly}
+      displayBlock={buttonProps.fluid}
+      {...buttonProps}
+    >
+      {showIcon && (
+        <div className="icon" style={{ marginRight: marginOffset }}>
+          <i className={iconName} />
+        </div>
+      )}
+      {buttonContent}
+      {rightIcon && (
+        <div className="icon" style={{ marginLeft: marginOffset }}>
+          <i className={rightIcon} />
+        </div>
+      )}
+    </EnhancedButton>
+  );
+};
 
-  render() {
-    // @FIXME revisit font icon assets on farmblocks
-    const icon = this.props.loading ? "wg-loading" : this.props.icon;
-    const rightIcon = this.props.rightIcon;
-
-    const disabled = this.props.disabled || this.props.loading;
-    const showIcon = this.props.icon || this.props.loading;
-    const marginOffset = this.props.text || this.props.children ? 10 : 0;
-    const { className, ...props } = this.props;
-
-    return (
-      <Container fluid={this.props.fluid} className={className}>
-        {this.props.disabled && (
-          <div
-            className="hit-box-container"
-            onMouseOver={this.mouseOver}
-            onMouseLeave={this.mouseLeaves}
-          />
-        )}
-        <StyledButton {...props} disabled={disabled}>
-          {showIcon && (
-            <div className="icon" style={{ marginRight: marginOffset }}>
-              <i className={icon} />
-            </div>
-          )}{" "}
-          {this.props.text || this.props.children}
-          {rightIcon && (
-            <div className="icon" style={{ marginLeft: marginOffset }}>
-              <i className={rightIcon} />
-            </div>
-          )}
-        </StyledButton>
-        <Tooltip
-          text={this.props.tooltipText}
-          isVisible={this.state.showTooltip}
-        />
-      </Container>
-    );
-  }
-
-  mouseOver() {
-    if (this.props.disabled) {
-      this.setState({
-        showTooltip: true
-      });
-    }
-  }
-
-  mouseLeaves() {
-    if (this.props.disabled) {
-      this.setState({
-        showTooltip: false
-      });
-    }
-  }
-}
+Button.defaultProps = {
+  size: buttonSizes.SMALL,
+  type: buttonTypes.NEUTRAL,
+  tooltipText: "This action is disabled"
+};
 
 Button.propTypes = {
   activated: PropTypes.bool,
@@ -101,9 +62,8 @@ Button.propTypes = {
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
-  tabIndex: PropTypes.number,
-  className: PropTypes.string,
-  tooltipText: PropTypes.string
+  ...disabledTooltipProps
+  //... and all properties accepted by the html button
 };
 
 export default Button;

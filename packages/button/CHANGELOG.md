@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.3.0...@crave/farmblocks-button@2.0.0) (2018-01-18)
+
+
+### Bug Fixes
+
+* **rightIcon:** add rightIcon support ([8ee5c92](https://github.com/CraveFood/farmblocks/commit/8ee5c92))
+
+
+### Code Refactoring
+
+* **exports:** use better proptypes export names instead of just "newProps" ([031b732](https://github.com/CraveFood/farmblocks/commit/031b732))
+
+
+### BREAKING CHANGES
+
+* **exports:** this package no longer exports a "newProps" propTypes dictionary, check the source for the new
+export name
+
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@1.2.3...@crave/farmblocks-button@1.3.0) (2018-01-15)
 

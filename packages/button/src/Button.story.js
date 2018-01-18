@@ -195,7 +195,7 @@ storiesOf("Button", module)
     withInfo()(() => (
       <Button
         type={buttonTypes.NEUTRAL}
-        size={buttonSizes.LARGE}
+        size={buttonSizes.MEDIUM}
         onClick={action("buttonClicked")}
         icon="wg-edit"
       />

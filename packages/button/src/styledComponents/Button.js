@@ -1,4 +1,3 @@
-// @flow
 import styled, { css } from "styled-components";
 
 import colorTypes from "../constants/colorTypes";
@@ -68,16 +67,12 @@ const Button = styled.button`
 
 Button.displayName = "StyledButton";
 
-function isIconOnly(props) {
-  return !props.text;
-}
-
 function paddingStyle(props) {
   const isMedium = props.size === MEDIUM;
   let padding = "8px 16px";
   if (isMedium) {
     padding = "16px 16px";
-  } else if (isIconOnly(props)) {
+  } else if (props.isIconOnly) {
     padding = "8px 8px";
   }
   return css`

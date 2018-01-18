@@ -34,7 +34,6 @@ const labelColor = props => {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
 
   .input {
     order: 2;
