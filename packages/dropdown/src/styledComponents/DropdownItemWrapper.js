@@ -30,6 +30,15 @@ const DropdownItemWrapper = styled.li`
 
   > div {
     padding: 14px;
+
+    :focus {
+      outline: auto;
+      outline-color: ${colorConstants.INDIGO_MILK_CAP};
+    }
+
+    :hover {
+      outline: none;
+    }
   }
 `;
 
