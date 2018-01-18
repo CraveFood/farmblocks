@@ -4,6 +4,7 @@ import Adapter from "enzyme-adapter-react-16";
 import { shallow, mount, configure } from "enzyme";
 
 import formInput from ".";
+import Wrapper from "./styledComponents/Wrapper";
 
 describe("formInput", function() {
   configure({ adapter: new Adapter() });
@@ -122,5 +123,23 @@ describe("formInput", function() {
     const component = renderer.create(<EnhancedInput />);
     const tree = component.toTree();
     expect(tree.props.onBlur()).toBeNull();
+  });
+
+  test("get focus on wrapper click", function() {
+    const focusMock = jest.fn();
+    const component = mount(<EnhancedInput />);
+    const wrapper = component.find(Wrapper);
+    const input = component.find("input").instance();
+    input.focus = focusMock;
+    wrapper.simulate("click");
+    expect(focusMock).toHaveBeenCalledTimes(1);
+  });
+
+  test("get have no value when clear button is clicked", function() {
+    const value = "tomato";
+    const component = mount(<EnhancedInput type="search" value={value} />);
+    expect(component.state("value")).toBe(value);
+    component.find("a").simulate("click");
+    expect(component.state("value")).toBe("");
   });
 });

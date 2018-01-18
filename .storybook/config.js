@@ -97,6 +97,14 @@ injectGlobal`
     content: "\\e942";
   }
 
+  .wg-search:before {
+    content: "\\e941";
+  }
+
+  .wg-close-int:before {
+    content: "\\e91d";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -108,7 +116,9 @@ injectGlobal`
   .wg-edit,
   .wg-place,
   .wg-external-link,
-  .wg-small-arrow-bottom {
+  .wg-small-arrow-bottom,
+  .wg-search,
+  .wg-close-int {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
     speak: none;

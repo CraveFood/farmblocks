@@ -40,14 +40,18 @@ const Wrapper = styled.div`
     box-sizing: border-box;
     border: solid 1px;
     border-radius: 4px;
-    padding: 16px;
+    padding: ${props => (props.compact ? "8" : "16")}px;
     border-color: ${inputBorderColor};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
     ${inputBoxShadow};
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: text;
 
     input {
       border: 0;
-      width: 100%;
+      flex: 1;
       outline: none;
       font-family: Lato, sans-serif;
       font-size: ${fontSizes.MEDIUM}px;
@@ -55,6 +59,37 @@ const Wrapper = styled.div`
       background: none;
       &::placeholder {
         color: ${placeholderColor};
+      }
+      &[type="search"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        &::-webkit-search-cancel-button {
+          display: none;
+        }
+        &::-ms-clear {
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+
+    .icon {
+      color: ${inputBorderColor};
+      margin-right: 8px;
+      height: 16px;
+    }
+
+    .clear {
+      color: ${colors.GREY_16};
+      margin-left: 8px;
+      height: 16px;
+      cursor: normal;
+      &:hover {
+        text-decoration: none;
+        color: ${colors.INDIGO_MILK_CAP};
+      }
+      a {
+        text-decoration: none;
       }
     }
   }
