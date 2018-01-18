@@ -2,13 +2,12 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const Container = styled.div`
-  position: relative;
-`;
+const Container = styled.div`position: relative;`;
 
 const StyledTooltip = styled.div`
   visibility: ${props => (props.isVisible ? "visible" : "hidden")};
   position: absolute;
+  z-index: ${props => props.zIndex};
   top: 15px;
   padding: 8px;
   background-color: #ffffff;

@@ -69,12 +69,10 @@ storiesOf("Text Input", "module")
       />
     ))
   )
-  .add("Invalid", withInfo()(() => <TextInput invalid label="Field Label" />))
   .add(
     "Invalid with custom text",
     withInfo()(() => (
       <TextInput
-        invalid
         validationMessages={["You need to fill this field."]}
         placeholder="Type in the formfield content…"
         label="Field Label"
@@ -85,7 +83,6 @@ storiesOf("Text Input", "module")
     "Invalid with multiple errors",
     withInfo()(() => (
       <TextInput
-        invalid
         validationMessages={[
           "Your password needs to contain a capital letter",
           "Your password needs to contain a number",
