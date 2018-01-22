@@ -12,6 +12,7 @@ import Wrapper from "./styledComponents/Wrapper";
 export const formInputProps = {
   label: PropTypes.string,
   value: PropTypes.string,
+  type: PropTypes.string,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
   validationMessages: PropTypes.arrayOf(PropTypes.string),
@@ -19,12 +20,7 @@ export const formInputProps = {
   onChange: PropTypes.func,
   onInvalid: PropTypes.func,
   onFocus: PropTypes.func,
-  onBlur: PropTypes.func,
-  compact: PropTypes.bool
-};
-
-const searchProps = {
-  icon: "wg-search"
+  onBlur: PropTypes.func
 };
 
 const formInput = WrappedComponent => {
@@ -55,7 +51,6 @@ const formInput = WrappedComponent => {
         onFocus,
         onBlur,
         onInvalid,
-        compact,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
@@ -63,7 +58,7 @@ const formInput = WrappedComponent => {
         invalid: this.state.validationMessages.length > 0,
         filled: this.state.value.length > 0,
         disabled: wrappedComponentProps.disabled,
-        compact
+        type: wrappedComponentProps.type
       };
       return (
         <Wrapper {...wrapperProps} onClick={this.handleWrapperClick}>
@@ -84,12 +79,9 @@ const formInput = WrappedComponent => {
 
       const isSearch =
         inputProps.type && inputProps.type.toLowerCase() === "search";
-      const composedProps = isSearch
-        ? { ...searchProps, ...inputProps }
-        : inputProps;
-      const icon = composedProps.icon && (
+      const icon = isSearch && (
         <div className="icon">
-          <i className={composedProps.icon} />
+          <i className="wg-search" />
         </div>
       );
       const clearButton = isSearch &&
@@ -108,7 +100,7 @@ const formInput = WrappedComponent => {
         >
           {icon}
           <WrappedComponent
-            {...composedProps}
+            {...inputProps}
             {...handlers}
             value={this.state.value}
           />
@@ -170,21 +162,11 @@ const formInput = WrappedComponent => {
 
     handleClearClick = () => {
       this.setState({ value: "" });
-
-      /* istanbul ignore else */
-      if (this.inputRef) {
-        const input = this.inputRef;
-        const lastValue = input.value;
-        input.value = "";
-        let event = new Event("input", { bubbles: true }); // eslint-disable-line no-undef
-
-        // @FIXME Hack so React will run onChange. May not work in future versions of React
-        // https://github.com/facebook/react/issues/11488#issuecomment-347775628
-        let tracker = input._valueTracker;
-        tracker && tracker.setValue(lastValue);
-
-        input.dispatchEvent(event);
-      }
+      this.props.onChange({
+        type: "change",
+        value: "",
+        target: { value: "" }
+      });
     };
 
     handleWrapperClick = () => {
@@ -243,6 +225,7 @@ const formInput = WrappedComponent => {
 
     static defaultProps = {
       value: "",
+      type: "text",
       focused: false,
       disabled: false,
       onChange: () => null,
@@ -250,8 +233,7 @@ const formInput = WrappedComponent => {
       onFocus: () => null,
       onBlur: () => null,
       errorIconSrc,
-      validationMessages: [],
-      compact: false
+      validationMessages: []
     };
   };
 };

@@ -31,6 +31,9 @@ const labelColor = props => {
   return props.disabled ? colors.GREY_32 : colors.CARBON;
 };
 
+const ifSearch = (searchValue, defaultValue) => props =>
+  props.type.toLowerCase() === "search" ? searchValue : defaultValue;
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,9 +41,10 @@ const Wrapper = styled.div`
   .input {
     order: 2;
     box-sizing: border-box;
+    height: ${ifSearch("32", "48")}px;
     border: solid 1px;
     border-radius: 4px;
-    padding: ${props => (props.compact ? "8" : "16")}px;
+    padding: 0 ${ifSearch("8", "16")}px;
     border-color: ${inputBorderColor};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
     ${inputBoxShadow};
@@ -54,7 +58,7 @@ const Wrapper = styled.div`
       flex: 1;
       outline: none;
       font-family: Lato, sans-serif;
-      font-size: ${fontSizes.MEDIUM}px;
+      font-size: ${ifSearch(fontSizes.SMALL, fontSizes.MEDIUM)}px;
       color: ${colors.CARBON};
       background: none;
       &::placeholder {
@@ -80,10 +84,8 @@ const Wrapper = styled.div`
     }
 
     .clear {
-      color: ${colors.GREY_16};
-      margin-left: 8px;
+      color: ${colors.GREY_32};
       height: 16px;
-      cursor: normal;
       &:hover {
         text-decoration: none;
         color: ${colors.INDIGO_MILK_CAP};

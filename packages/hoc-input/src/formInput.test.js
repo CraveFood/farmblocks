@@ -135,7 +135,7 @@ describe("formInput", function() {
     expect(focusMock).toHaveBeenCalledTimes(1);
   });
 
-  test("get have no value when clear button is clicked", function() {
+  test("no value when clear button is clicked", function() {
     const value = "tomato";
     const component = mount(<EnhancedInput type="search" value={value} />);
     expect(component.state("value")).toBe(value);

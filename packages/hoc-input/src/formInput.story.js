@@ -74,14 +74,6 @@ storiesOf("HOC formInput", "module")
       </div>
     ))
   )
-  .add(
-    "html text input with icon",
-    withInfo()(() => <EnhancedInput icon={"wg-meat"} type="text" />)
-  )
-  .add(
-    "html compact text input",
-    withInfo()(() => <EnhancedInput compact type="text" />)
-  )
   .add("html search input", withInfo()(() => <EnhancedInput type="search" />))
   .add(
     "html search input with value",

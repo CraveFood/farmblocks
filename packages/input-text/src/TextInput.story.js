@@ -175,10 +175,4 @@ storiesOf("Text Input", "module")
     withInfo()(() => (
       <TextInput type="search" onChange={action("input changed")} />
     ))
-  )
-  .add(
-    "Compact Search (Filter)",
-    withInfo()(() => (
-      <TextInput type="search" onChange={action("input changed")} compact />
-    ))
   );

@@ -58044,709 +58044,6 @@ exports[`Storyshots HOC disabledTooltip enhanced element with display block 1`] 
 </div>
 `;
 
-exports[`Storyshots HOC formInput html compact text input 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  padding: 8px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-}
-
-.c0 .input input {
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c0 .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input .icon {
-  color: rgba(0,0,0,0.16);
-  margin-right: 8px;
-  height: 16px;
-}
-
-.c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
-  height: 16px;
-}
-
-.c0 .input .clear:hover {
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c0 .input .clear a {
-  text-decoration: none;
-}
-
-.c0 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-}
-
-.c0 .messages {
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c0 .messages .message {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 16px;
-}
-
-.c0 .messages .message .icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-<div>
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="c0"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <div
-        className="input"
-      >
-        <input
-          disabled={false}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onInvalid={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-  </div>
-  <button
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#28c",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-  <div
-    style={
-      Object {
-        "background": "white",
-        "bottom": 0,
-        "display": "none",
-        "left": 0,
-        "overflow": "auto",
-        "padding": "0 40px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "zIndex": 99999,
-      }
-    }
-  >
-    <button
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#28c",
-          "border": "none",
-          "borderRadius": "0 0 0 5px",
-          "color": "#fff",
-          "cursor": "pointer",
-          "display": "block",
-          "fontFamily": "sans-serif",
-          "fontSize": "12px",
-          "padding": "5px 15px",
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-        }
-      }
-      type="button"
-    >
-      ×
-    </button>
-    <div
-      style={undefined}
-    >
-      <div
-        style={
-          Object {
-            "WebkitFontSmoothing": "antialiased",
-            "backgroundColor": "#fff",
-            "border": "1px solid #eee",
-            "borderRadius": "2px",
-            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-            "fontSize": "15px",
-            "fontWeight": 300,
-            "lineHeight": 1.45,
-            "marginTop": "50px",
-            "padding": "20px 40px 40px",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "borderBottom": "1px solid #eee",
-              "marginBottom": 10,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <h1
-            style={
-              Object {
-                "fontSize": "35px",
-                "margin": 0,
-                "padding": 0,
-              }
-            }
-          >
-            HOC formInput
-          </h1>
-          <h2
-            style={
-              Object {
-                "fontSize": "22px",
-                "fontWeight": 400,
-                "margin": "0 0 10px 0",
-                "padding": 0,
-              }
-            }
-          >
-            html compact text input
-          </h2>
-        </div>
-        
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Story Source
-          </h1>
-          <pre
-            style={
-              Object {
-                "backgroundColor": "#fafafa",
-                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                "fontSize": ".88em",
-                "lineHeight": 1.5,
-                "overflowX": "scroll",
-                "padding": ".5rem",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                formInput(Component)
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    compact
-                  </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Prop Types
-          </h1>
-          <div>
-            <h2
-              style={
-                Object {
-                  "margin": "20px 0 0 0",
-                }
-              }
-            >
-              "
-              formInput(Component)
-              " Component
-            </h2>
-            <table
-              style={
-                Object {
-                  "borderCollapse": "separate",
-                  "borderSpacing": "10px 5px",
-                  "marginLeft": -10,
-                }
-              }
-            >
-              <thead>
-                <tr>
-                  <th>
-                    property
-                  </th>
-                  <th>
-                    propType
-                  </th>
-                  <th>
-                    required
-                  </th>
-                  <th>
-                    default
-                  </th>
-                  <th>
-                    description
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    label
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    value
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    focused
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    disabled
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    validationMessages
-                  </td>
-                  <td>
-                    other
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        [
-                        ]
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    errorIconSrc
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYA…
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onChange
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onChange()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onInvalid
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onInvalid()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onFocus
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onFocus()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onBlur
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onBlur()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
@@ -58773,9 +58070,10 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -58821,6 +58119,20 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -58828,8 +58140,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -58889,6 +58200,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
         className="c0"
         disabled={true}
         onClick={[Function]}
+        type="text"
       >
         <div
           className="input"
@@ -59136,33 +58448,6 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
                         </span>
                       </span>
                     </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      type
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          "
-                          text
-                          "
-                        </span>
-                      </span>
-                    </span>
                      
                   </span>
                 </span>
@@ -59289,6 +58574,32 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -59510,33 +58821,6 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -59563,9 +58847,10 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 32px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 8px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -59590,7 +58875,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   flex: 1;
   outline: none;
   font-family: Lato,sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #2f313a;
   background: none;
 }
@@ -59611,6 +58896,20 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -59618,8 +58917,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -59678,6 +58976,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="search"
     >
       <div
         className="input"
@@ -59691,7 +58990,6 @@ exports[`Storyshots HOC formInput html search input 1`] = `
         </div>
         <input
           disabled={false}
-          icon="wg-search"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -60000,6 +59298,32 @@ exports[`Storyshots HOC formInput html search input 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -60214,33 +59538,6 @@ exports[`Storyshots HOC formInput html search input 1`] = `
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -60319,9 +59616,10 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 32px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 8px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -60346,7 +59644,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   flex: 1;
   outline: none;
   font-family: Lato,sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #2f313a;
   background: none;
 }
@@ -60367,6 +59665,20 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -60374,8 +59686,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -60434,6 +59745,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="search"
     >
       <div
         className="input"
@@ -60447,7 +59759,6 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
         </div>
         <input
           disabled={false}
-          icon="wg-search"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -60807,6 +60118,32 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -61021,33 +60358,6 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -61074,9 +60384,10 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -61122,6 +60433,20 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -61129,8 +60454,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -61189,6 +60513,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="text"
     >
       <div
         className="input"
@@ -61363,36 +60688,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
                 &lt;
                 formInput(Component)
               </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
+              <span />
               <span
                 style={
                   Object {
@@ -61495,6 +60791,32 @@ exports[`Storyshots HOC formInput html text input 1`] = `
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -61710,763 +61032,6 @@ exports[`Storyshots HOC formInput html text input 1`] = `
                         }
                       >
                         onBlur()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots HOC formInput html text input with icon 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  padding: 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-}
-
-.c0 .input input {
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c0 .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input .icon {
-  color: rgba(0,0,0,0.16);
-  margin-right: 8px;
-  height: 16px;
-}
-
-.c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
-  height: 16px;
-}
-
-.c0 .input .clear:hover {
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c0 .input .clear a {
-  text-decoration: none;
-}
-
-.c0 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-}
-
-.c0 .messages {
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c0 .messages .message {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 16px;
-}
-
-.c0 .messages .message .icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-<div>
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="c0"
-      disabled={false}
-      onClick={[Function]}
-    >
-      <div
-        className="input"
-      >
-        <div
-          className="icon"
-        >
-          <i
-            className="wg-meat"
-          />
-        </div>
-        <input
-          disabled={false}
-          icon="wg-meat"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onInvalid={[Function]}
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-  </div>
-  <button
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#28c",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-  <div
-    style={
-      Object {
-        "background": "white",
-        "bottom": 0,
-        "display": "none",
-        "left": 0,
-        "overflow": "auto",
-        "padding": "0 40px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "zIndex": 99999,
-      }
-    }
-  >
-    <button
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#28c",
-          "border": "none",
-          "borderRadius": "0 0 0 5px",
-          "color": "#fff",
-          "cursor": "pointer",
-          "display": "block",
-          "fontFamily": "sans-serif",
-          "fontSize": "12px",
-          "padding": "5px 15px",
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-        }
-      }
-      type="button"
-    >
-      ×
-    </button>
-    <div
-      style={undefined}
-    >
-      <div
-        style={
-          Object {
-            "WebkitFontSmoothing": "antialiased",
-            "backgroundColor": "#fff",
-            "border": "1px solid #eee",
-            "borderRadius": "2px",
-            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-            "fontSize": "15px",
-            "fontWeight": 300,
-            "lineHeight": 1.45,
-            "marginTop": "50px",
-            "padding": "20px 40px 40px",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "borderBottom": "1px solid #eee",
-              "marginBottom": 10,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <h1
-            style={
-              Object {
-                "fontSize": "35px",
-                "margin": 0,
-                "padding": 0,
-              }
-            }
-          >
-            HOC formInput
-          </h1>
-          <h2
-            style={
-              Object {
-                "fontSize": "22px",
-                "fontWeight": 400,
-                "margin": "0 0 10px 0",
-                "padding": 0,
-              }
-            }
-          >
-            html text input with icon
-          </h2>
-        </div>
-        
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Story Source
-          </h1>
-          <pre
-            style={
-              Object {
-                "backgroundColor": "#fafafa",
-                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                "fontSize": ".88em",
-                "lineHeight": 1.5,
-                "overflowX": "scroll",
-                "padding": ".5rem",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                formInput(Component)
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    icon
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        wg-meat
-                        "
-                      </span>
-                    </span>
-                  </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Prop Types
-          </h1>
-          <div>
-            <h2
-              style={
-                Object {
-                  "margin": "20px 0 0 0",
-                }
-              }
-            >
-              "
-              formInput(Component)
-              " Component
-            </h2>
-            <table
-              style={
-                Object {
-                  "borderCollapse": "separate",
-                  "borderSpacing": "10px 5px",
-                  "marginLeft": -10,
-                }
-              }
-            >
-              <thead>
-                <tr>
-                  <th>
-                    property
-                  </th>
-                  <th>
-                    propType
-                  </th>
-                  <th>
-                    required
-                  </th>
-                  <th>
-                    default
-                  </th>
-                  <th>
-                    description
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    label
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    value
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    focused
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    disabled
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    validationMessages
-                  </td>
-                  <td>
-                    other
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        [
-                        ]
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    errorIconSrc
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYA…
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onChange
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onChange()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onInvalid
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onInvalid()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onFocus
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onFocus()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onBlur
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#170",
-                          }
-                        }
-                      >
-                        onBlur()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
                       </span>
                       }
                     </span>
@@ -62509,9 +61074,10 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -62557,6 +61123,20 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -62564,8 +61144,7 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -62624,6 +61203,7 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="text"
     >
       <div
         className="input"
@@ -62860,33 +61440,6 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
                       </span>
                     </span>
                   </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
                    
                 </span>
               </span>
@@ -62992,6 +61545,32 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -63213,33 +61792,6 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -63276,9 +61828,10 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: #3498db;
   background-color: #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
@@ -63324,6 +61877,20 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   color: rgba(0,0,0,0.16);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: #3498db;
   margin-right: 8px;
@@ -63331,8 +61898,7 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -63391,6 +61957,7 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="text"
     >
       <div
         className="input"
@@ -63607,33 +62174,6 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
                       </span>
                     </span>
                   </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
                    
                 </span>
               </span>
@@ -63739,6 +62279,32 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -63960,33 +62526,6 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -64023,9 +62562,10 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -64071,6 +62611,20 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -64078,8 +62632,7 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -64138,6 +62691,7 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="text"
     >
       <div
         className="input"
@@ -64374,33 +62928,6 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
                       </span>
                     </span>
                   </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
                    
                 </span>
               </span>
@@ -64506,6 +63033,32 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -64727,33 +63280,6 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -64813,9 +63339,10 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: #dd3311;
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -64861,6 +63388,20 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: #dd3311;
   margin-right: 8px;
@@ -64868,8 +63409,7 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -64928,6 +63468,7 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
       className="c0"
       disabled={false}
       onClick={[Function]}
+      type="text"
     >
       <div
         className="input"
@@ -65226,33 +63767,6 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
                       </span>
                     </span>
                   </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        text
-                        "
-                      </span>
-                    </span>
-                  </span>
                    
                 </span>
               </span>
@@ -65358,6 +63872,32 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -65579,33 +64119,6 @@ exports[`Storyshots HOC formInput input with custom error messages 1`] = `
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -65642,9 +64155,10 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -65690,6 +64204,20 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -65697,8 +64225,7 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -65760,6 +64287,7 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
         className="c0"
         disabled={false}
         onClick={[Function]}
+        type="email"
       >
         <div
           className="input"
@@ -65787,6 +64315,7 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
         className="c0"
         disabled={false}
         onClick={[Function]}
+        type="text"
       >
         <div
           className="input"
@@ -66178,33 +64707,6 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
                     <span
                       style={Object {}}
                     >
-                      type
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          "
-                          text
-                          "
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
                       required
                     </span>
                      
@@ -66391,6 +64893,32 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
                     >
                       "
                       
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
                       "
                     </span>
                   </td>
@@ -66612,33 +65140,6 @@ exports[`Storyshots HOC formInput input with native browser validation 1`] = `
                   </td>
                   <td />
                 </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
               </tbody>
             </table>
           </div>
@@ -66675,9 +65176,10 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -66723,6 +65225,20 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c0 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -66730,8 +65246,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 }
 
 .c0 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -66791,6 +65306,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
         className="c0"
         disabled={false}
         onClick={[Function]}
+        type="text"
       >
         <div
           className="input"
@@ -66817,6 +65333,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
         className="c0"
         disabled={false}
         onClick={[Function]}
+        type="checkbox"
       >
         <div
           className="input"
@@ -67056,33 +65573,6 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
                         </span>
                       </span>
                     </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      type
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          "
-                          text
-                          "
-                        </span>
-                      </span>
-                    </span>
                      
                   </span>
                 </span>
@@ -67301,6 +65791,32 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -67509,33 +66025,6 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
                         }
                       >
                         onBlur()
-                      </span>
-                      }
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span>
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#a11",
-                          }
-                        }
-                      >
-                        false
                       </span>
                       }
                     </span>
@@ -93520,9 +92009,10 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -93568,6 +92058,20 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -93575,8 +92079,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -93652,6 +92155,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="URL"
             >
               <div
                 className="input"
@@ -93693,6 +92197,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="email"
             >
               <div
                 className="input"
@@ -93734,6 +92239,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="number"
             >
               <div
                 className="input"
@@ -93777,6 +92283,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -93819,6 +92326,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -93861,6 +92369,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -93903,6 +92412,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="date"
             >
               <div
                 className="input"
@@ -93943,6 +92453,7 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
               className="c2"
               disabled={false}
               onClick={[Function]}
+              type="password"
             >
               <div
                 className="input"
@@ -95335,126 +93846,6 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    focused
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    validationMessages
-                  </td>
-                  <td>
-                    other
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    errorIconSrc
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onChange
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onInvalid
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onFocus
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onBlur
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     type
                   </td>
                   <td>
@@ -95476,657 +93867,6 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
                       text
                       "
                     </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    placeholder
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    required
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Text Input Compact Search (Filter) 1`] = `
-.c1 {
-  display: block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  padding: 8px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-}
-
-.c2 .input input {
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c2 .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .input .icon {
-  color: rgba(0,0,0,0.16);
-  margin-right: 8px;
-  height: 16px;
-}
-
-.c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
-  height: 16px;
-}
-
-.c2 .input .clear:hover {
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c2 .input .clear a {
-  text-decoration: none;
-}
-
-.c2 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-}
-
-.c2 .messages {
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c2 .messages .message {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 16px;
-}
-
-.c2 .messages .message .icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-.c0 {
-  font-family: Lato,sans-serif;
-  margin-bottom: 24px;
-}
-
-<div>
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="c0"
-    >
-      <div
-        className="c1"
-      >
-        <div
-          className="hitWrapper"
-        >
-          <div
-            className="c2"
-            disabled={false}
-            onClick={[Function]}
-          >
-            <div
-              className="input"
-            >
-              <div
-                className="icon"
-              >
-                <i
-                  className="wg-search"
-                />
-              </div>
-              <input
-                disabled={false}
-                icon="wg-search"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                type="search"
-                value=""
-              />
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#28c",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
-  <div
-    style={
-      Object {
-        "background": "white",
-        "bottom": 0,
-        "display": "none",
-        "left": 0,
-        "overflow": "auto",
-        "padding": "0 40px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "zIndex": 99999,
-      }
-    }
-  >
-    <button
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#28c",
-          "border": "none",
-          "borderRadius": "0 0 0 5px",
-          "color": "#fff",
-          "cursor": "pointer",
-          "display": "block",
-          "fontFamily": "sans-serif",
-          "fontSize": "12px",
-          "padding": "5px 15px",
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-        }
-      }
-      type="button"
-    >
-      ×
-    </button>
-    <div
-      style={undefined}
-    >
-      <div
-        style={
-          Object {
-            "WebkitFontSmoothing": "antialiased",
-            "backgroundColor": "#fff",
-            "border": "1px solid #eee",
-            "borderRadius": "2px",
-            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-            "fontSize": "15px",
-            "fontWeight": 300,
-            "lineHeight": 1.45,
-            "marginTop": "50px",
-            "padding": "20px 40px 40px",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "borderBottom": "1px solid #eee",
-              "marginBottom": 10,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <h1
-            style={
-              Object {
-                "fontSize": "35px",
-                "margin": 0,
-                "padding": 0,
-              }
-            }
-          >
-            Text Input
-          </h1>
-          <h2
-            style={
-              Object {
-                "fontSize": "22px",
-                "fontWeight": 400,
-                "margin": "0 0 10px 0",
-                "padding": 0,
-              }
-            }
-          >
-            Compact Search (Filter)
-          </h2>
-        </div>
-        
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Story Source
-          </h1>
-          <pre
-            style={
-              Object {
-                "backgroundColor": "#fafafa",
-                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                "fontSize": ".88em",
-                "lineHeight": 1.5,
-                "overflowX": "scroll",
-                "padding": ".5rem",
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                TextInput
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    type
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#22a",
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        "
-                        search
-                        "
-                      </span>
-                    </span>
-                  </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    onChange
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span>
-                        {
-                        <span
-                          style={
-                            Object {
-                              "color": "#170",
-                            }
-                          }
-                        >
-                          input changed()
-                        </span>
-                        }
-                      </span>
-                    </span>
-                  </span>
-                </span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    compact
-                  </span>
-                   
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Prop Types
-          </h1>
-          <div>
-            <h2
-              style={
-                Object {
-                  "margin": "20px 0 0 0",
-                }
-              }
-            >
-              "
-              TextInput
-              " Component
-            </h2>
-            <table
-              style={
-                Object {
-                  "borderCollapse": "separate",
-                  "borderSpacing": "10px 5px",
-                  "marginLeft": -10,
-                }
-              }
-            >
-              <thead>
-                <tr>
-                  <th>
-                    property
-                  </th>
-                  <th>
-                    propType
-                  </th>
-                  <th>
-                    required
-                  </th>
-                  <th>
-                    default
-                  </th>
-                  <th>
-                    description
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    displayBlock
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    disabled
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    tooltipAlign
-                  </td>
-                  <td>
-                    other
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    tooltipText
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      This field is disabled.
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onMouseLeave
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    onMouseOver
-                  </td>
-                  <td>
-                    func
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    label
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    value
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
                   </td>
                   <td />
                 </tr>
@@ -96232,47 +93972,6 @@ exports[`Storyshots Text Input Compact Search (Filter) 1`] = `
                   </td>
                   <td>
                     -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
                   </td>
                   <td />
                 </tr>
@@ -96347,9 +94046,10 @@ exports[`Storyshots Text Input Default 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -96395,6 +94095,20 @@ exports[`Storyshots Text Input Default 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -96402,8 +94116,7 @@ exports[`Storyshots Text Input Default 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -96476,6 +94189,7 @@ exports[`Storyshots Text Input Default 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -96855,6 +94569,32 @@ exports[`Storyshots Text Input Default 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -96960,47 +94700,6 @@ exports[`Storyshots Text Input Default 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -97080,9 +94779,10 @@ exports[`Storyshots Text Input Disabled 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -97128,6 +94828,20 @@ exports[`Storyshots Text Input Disabled 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -97135,8 +94849,7 @@ exports[`Storyshots Text Input Disabled 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -97209,6 +94922,7 @@ exports[`Storyshots Text Input Disabled 1`] = `
             className="c2"
             disabled={true}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -97705,6 +95419,32 @@ exports[`Storyshots Text Input Disabled 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -97810,47 +95550,6 @@ exports[`Storyshots Text Input Disabled 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -97930,9 +95629,10 @@ exports[`Storyshots Text Input Disabled with custom Tooltip text 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -97978,6 +95678,20 @@ exports[`Storyshots Text Input Disabled with custom Tooltip text 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -97985,8 +95699,7 @@ exports[`Storyshots Text Input Disabled with custom Tooltip text 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -98059,6 +95772,7 @@ exports[`Storyshots Text Input Disabled with custom Tooltip text 1`] = `
             className="c2"
             disabled={true}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -98554,6 +96268,32 @@ exports[`Storyshots Text Input Disabled with custom Tooltip text 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -98654,47 +96394,6 @@ exports[`Storyshots Text Input Disabled with custom Tooltip text 1`] = `
                   </td>
                   <td>
                     -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
                   </td>
                   <td />
                 </tr>
@@ -98802,9 +96501,10 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: #dd3311;
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -98850,6 +96550,20 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: #dd3311;
   margin-right: 8px;
@@ -98857,8 +96571,7 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -98931,6 +96644,7 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -99435,6 +97149,32 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -99535,47 +97275,6 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
                   </td>
                   <td>
                     -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
                   </td>
                   <td />
                 </tr>
@@ -99683,9 +97382,10 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: #dd3311;
   background-color: #ffffff;
   box-shadow: none;
@@ -99731,6 +97431,20 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: #dd3311;
   margin-right: 8px;
@@ -99738,8 +97452,7 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -99812,6 +97525,7 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -100439,6 +98153,32 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -100544,47 +98284,6 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -100664,9 +98363,10 @@ exports[`Storyshots Text Input Required field 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -100712,6 +98412,20 @@ exports[`Storyshots Text Input Required field 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c4 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c4 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c4 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -100719,8 +98433,7 @@ exports[`Storyshots Text Input Required field 1`] = `
 }
 
 .c4 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -100781,9 +98494,10 @@ exports[`Storyshots Text Input Required field 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -100829,6 +98543,20 @@ exports[`Storyshots Text Input Required field 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -100836,8 +98564,7 @@ exports[`Storyshots Text Input Required field 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -100913,6 +98640,7 @@ exports[`Storyshots Text Input Required field 1`] = `
               className="c2"
               disabled={true}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -100959,6 +98687,7 @@ exports[`Storyshots Text Input Required field 1`] = `
               className="c4"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -101001,6 +98730,7 @@ exports[`Storyshots Text Input Required field 1`] = `
               className="c4"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -101773,6 +99503,32 @@ exports[`Storyshots Text Input Required field 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -101878,47 +99634,6 @@ exports[`Storyshots Text Input Required field 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -101998,9 +99713,10 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -102046,6 +99762,20 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c4 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c4 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c4 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -102053,8 +99783,7 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
 }
 
 .c4 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -102115,9 +99844,10 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -102163,6 +99893,20 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -102170,8 +99914,7 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -102247,6 +99990,7 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
               className="c2"
               disabled={true}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -102293,6 +100037,7 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
               className="c4"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -102335,6 +100080,7 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
               className="c4"
               disabled={false}
               onClick={[Function]}
+              type="text"
             >
               <div
                 className="input"
@@ -103147,6 +100893,32 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -103252,47 +101024,6 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -103362,9 +101093,10 @@ exports[`Storyshots Text Input Search 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 32px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 8px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -103389,7 +101121,7 @@ exports[`Storyshots Text Input Search 1`] = `
   flex: 1;
   outline: none;
   font-family: Lato,sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #2f313a;
   background: none;
 }
@@ -103410,6 +101142,20 @@ exports[`Storyshots Text Input Search 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -103417,8 +101163,7 @@ exports[`Storyshots Text Input Search 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -103491,6 +101236,7 @@ exports[`Storyshots Text Input Search 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="search"
           >
             <div
               className="input"
@@ -103504,7 +101250,6 @@ exports[`Storyshots Text Input Search 1`] = `
               </div>
               <input
                 disabled={false}
-                icon="wg-search"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
@@ -103936,6 +101681,32 @@ exports[`Storyshots Text Input Search 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -104041,47 +101812,6 @@ exports[`Storyshots Text Input Search 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -104161,9 +101891,10 @@ exports[`Storyshots Text Input With change handler 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -104209,6 +101940,20 @@ exports[`Storyshots Text Input With change handler 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -104216,8 +101961,7 @@ exports[`Storyshots Text Input With change handler 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -104290,6 +102034,7 @@ exports[`Storyshots Text Input With change handler 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -104761,6 +102506,32 @@ exports[`Storyshots Text Input With change handler 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -104866,47 +102637,6 @@ exports[`Storyshots Text Input With change handler 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -104986,9 +102716,10 @@ exports[`Storyshots Text Input With label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -105034,6 +102765,20 @@ exports[`Storyshots Text Input With label 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -105041,8 +102786,7 @@ exports[`Storyshots Text Input With label 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -105115,6 +102859,7 @@ exports[`Storyshots Text Input With label 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -105530,6 +103275,32 @@ exports[`Storyshots Text Input With label 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -105635,47 +103406,6 @@ exports[`Storyshots Text Input With label 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -105755,9 +103485,10 @@ exports[`Storyshots Text Input With placeholder 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -105803,6 +103534,20 @@ exports[`Storyshots Text Input With placeholder 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -105810,8 +103555,7 @@ exports[`Storyshots Text Input With placeholder 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -105884,6 +103628,7 @@ exports[`Storyshots Text Input With placeholder 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -106327,6 +104072,32 @@ exports[`Storyshots Text Input With placeholder 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -106432,47 +104203,6 @@ exports[`Storyshots Text Input With placeholder 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -106552,9 +104282,10 @@ exports[`Storyshots Text Input With value 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -106600,6 +104331,20 @@ exports[`Storyshots Text Input With value 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -106607,8 +104352,7 @@ exports[`Storyshots Text Input With value 1`] = `
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -106681,6 +104425,7 @@ exports[`Storyshots Text Input With value 1`] = `
             className="c2"
             disabled={false}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -107151,6 +104896,32 @@ exports[`Storyshots Text Input With value 1`] = `
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -107256,47 +105027,6 @@ exports[`Storyshots Text Input With value 1`] = `
                 </tr>
                 <tr>
                   <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
                     placeholder
                   </td>
                   <td>
@@ -107376,9 +105106,10 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
+  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -107424,6 +105155,20 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
   color: rgba(0,0,0,0.32);
 }
 
+.c2 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
 .c2 .input .icon {
   color: rgba(0,0,0,0.16);
   margin-right: 8px;
@@ -107431,8 +105176,7 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
 }
 
 .c2 .input .clear {
-  color: rgba(0,0,0,0.16);
-  margin-left: 8px;
+  color: rgba(0,0,0,0.32);
   height: 16px;
 }
 
@@ -107505,6 +105249,7 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
             className="c2"
             disabled={true}
             onClick={[Function]}
+            type="text"
           >
             <div
               className="input"
@@ -108062,6 +105807,32 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
                 </tr>
                 <tr>
                   <td>
+                    type
+                  </td>
+                  <td>
+                    string
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }
+                    >
+                      "
+                      text
+                      "
+                    </span>
+                  </td>
+                  <td />
+                </tr>
+                <tr>
+                  <td>
                     focused
                   </td>
                   <td>
@@ -108162,47 +105933,6 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
                   </td>
                   <td>
                     -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    compact
-                  </td>
-                  <td>
-                    bool
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    -
-                  </td>
-                  <td />
-                </tr>
-                <tr>
-                  <td>
-                    type
-                  </td>
-                  <td>
-                    string
-                  </td>
-                  <td>
-                    no
-                  </td>
-                  <td>
-                    <span
-                      style={
-                        Object {
-                          "color": "#22a",
-                          "wordBreak": "break-word",
-                        }
-                      }
-                    >
-                      "
-                      text
-                      "
-                    </span>
                   </td>
                   <td />
                 </tr>
