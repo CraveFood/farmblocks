@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import Text from "@crave/farmblocks-text";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
+import Link from "@crave/farmblocks-link";
 import { fontSizes } from "@crave/farmblocks-theme";
 
 import errorIconSrc from "./constants/errorIcon";
@@ -11,6 +12,7 @@ import Wrapper from "./styledComponents/Wrapper";
 export const formInputProps = {
   label: PropTypes.string,
   value: PropTypes.string,
+  type: PropTypes.string,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
   validationMessages: PropTypes.arrayOf(PropTypes.string),
@@ -55,10 +57,11 @@ const formInput = WrappedComponent => {
         focused: this.state.focused,
         invalid: this.state.validationMessages.length > 0,
         filled: this.state.value.length > 0,
-        disabled: wrappedComponentProps.disabled
+        disabled: wrappedComponentProps.disabled,
+        type: wrappedComponentProps.type
       };
       return (
-        <Wrapper {...wrapperProps}>
+        <Wrapper {...wrapperProps} onClick={this.handleWrapperClick}>
           {this._renderInput(wrappedComponentProps)}
           {this._renderLabel(label)}
           {this._renderFailedMessages(wrapperProps.invalid)}
@@ -73,13 +76,35 @@ const formInput = WrappedComponent => {
         onFocus: this.onFocus,
         onBlur: this.onBlur
       };
+
+      const isSearch =
+        inputProps.type && inputProps.type.toLowerCase() === "search";
+      const icon = isSearch && (
+        <div className="icon">
+          <i className="wg-search" />
+        </div>
+      );
+      const clearButton = isSearch &&
+        this.state.value && (
+          <Link className="clear" onClick={this.handleClearClick}>
+            <i className="wg-close-int" />
+          </Link>
+        );
+
       return (
-        <div className="input">
+        <div
+          className="input"
+          ref={element => {
+            this.inputRef = element && element.querySelector("input");
+          }}
+        >
+          {icon}
           <WrappedComponent
             {...inputProps}
             {...handlers}
             value={this.state.value}
           />
+          {clearButton}
         </div>
       );
     }
@@ -135,6 +160,19 @@ const formInput = WrappedComponent => {
       this.setState(nextState);
     }
 
+    handleClearClick = () => {
+      this.setState({ value: "" });
+      this.props.onChange({
+        type: "change",
+        value: "",
+        target: { value: "" }
+      });
+    };
+
+    handleWrapperClick = () => {
+      this.inputRef && this.inputRef.focus();
+    };
+
     onChange(event) {
       this.setState({
         value: event.value || event.target.value
@@ -187,6 +225,7 @@ const formInput = WrappedComponent => {
 
     static defaultProps = {
       value: "",
+      type: "text",
       focused: false,
       disabled: false,
       onChange: () => null,

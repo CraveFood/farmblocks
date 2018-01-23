@@ -169,4 +169,10 @@ storiesOf("Text Input", "module")
         <input type="submit" />
       </form>
     ))
+  )
+  .add(
+    "Search",
+    withInfo()(() => (
+      <TextInput type="search" onChange={action("input changed")} />
+    ))
   );

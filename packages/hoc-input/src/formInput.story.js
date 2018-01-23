@@ -73,4 +73,9 @@ storiesOf("HOC formInput", "module")
         <EnhancedInput disabled label="Input Label" type="text" />
       </div>
     ))
+  )
+  .add("html search input", withInfo()(() => <EnhancedInput type="search" />))
+  .add(
+    "html search input with value",
+    withInfo()(() => <EnhancedInput type="search" value="broccoli" />)
   );
