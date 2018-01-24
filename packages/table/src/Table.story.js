@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
+import { rowHeights } from "./constants";
 
 import { Table, Column } from ".";
 
@@ -30,6 +31,17 @@ storiesOf("Table", "module")
     "one column, three rows",
     withInfo()(() => (
       <Table
+        data={[{ name: "Apple" }, { name: "Banana" }, { name: "Coconut" }]}
+      >
+        <Column title="Fruit" cell={row => <div>{row.name}</div>} />
+      </Table>
+    ))
+  )
+  .add(
+    "smaller rowHeight",
+    withInfo()(() => (
+      <Table
+        rowHeight={rowHeights.SMALL}
         data={[{ name: "Apple" }, { name: "Banana" }, { name: "Coconut" }]}
       >
         <Column title="Fruit" cell={row => <div>{row.name}</div>} />
