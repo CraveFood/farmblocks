@@ -83,34 +83,40 @@ class Table extends React.Component {
     );
   }
 
-  _renderColumnTitle(index, props) {
-    const cellContent = props.clickable ? (
-      <div className="link">
-        <Link
-          type={fontTypes.NORMAL}
-          size={fontSizes.SMALL}
-          onClick={this.titleClick(index)}
-        >
-          {props.title}
-        </Link>
-      </div>
-    ) : (
+  _renderColumnTitle(columnIndex, columnProps) {
+    const wrapper = content => (
+      <HeaderCell className="cell" {...columnProps.options}>
+        {content}
+      </HeaderCell>
+    );
+
+    if (columnProps.customTitle) {
+      return wrapper(columnProps.customTitle(this.props.data, this.state));
+    }
+
+    if (columnProps.clickable) {
+      return wrapper(
+        <div className="link">
+          <Link
+            type={fontTypes.NORMAL}
+            size={fontSizes.SMALL}
+            onClick={this.titleClick(columnIndex)}
+          >
+            {columnProps.title}
+          </Link>
+          <i className="wg-small-arrow-bottom icon" />
+        </div>
+      );
+    }
+
+    return wrapper(
       <Text
         title
         size={fontSizes.SMALL}
-        align={props.options && props.options.align}
+        align={columnProps.options && columnProps.options.align}
       >
-        {props.title}
+        {columnProps.title}
       </Text>
-    );
-    const downArrow = props.clickable && (
-      <i className="wg-small-arrow-bottom icon" />
-    );
-    return (
-      <HeaderCell className="cell" {...props.options}>
-        {cellContent}
-        {downArrow}
-      </HeaderCell>
     );
   }
 
