@@ -24,6 +24,7 @@ class Checkbox extends React.Component {
       type,
       label,
       checked,
+      onChange,
       displayBlock,
       onMouseLeave,
       onMouseOver,
@@ -73,8 +74,13 @@ class Checkbox extends React.Component {
   }
 
   onChange(event) {
+    // ignore the checked value from event.target.checked and
+    // overwrite it with the inverse of current checked state
+    // state.checked is our single source of truth
+    const newCheckedState = !this.state.checked;
+    event.target.checked = newCheckedState;
     this.setState({
-      checked: event.target.checked
+      checked: newCheckedState
     });
     return this.props.onChange(event);
   }
