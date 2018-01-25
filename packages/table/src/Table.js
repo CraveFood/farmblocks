@@ -109,15 +109,19 @@ class Table extends React.Component {
       );
     }
 
-    return headerCell(
-      <Text
-        title
-        size={fontSizes.SMALL}
-        align={columnProps.options && columnProps.options.align}
-      >
-        {columnProps.title}
-      </Text>
-    );
+    if (columnProps.title) {
+      return headerCell(
+        <Text
+          title
+          size={fontSizes.SMALL}
+          align={columnProps.options && columnProps.options.align}
+        >
+          {columnProps.title}
+        </Text>
+      );
+    }
+
+    return headerCell(null);
   }
 
   _renderColumnCell(row, rowIndex, columnProps) {
