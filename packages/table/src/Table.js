@@ -84,10 +84,10 @@ class Table extends React.Component {
   }
 
   _renderColumnTitle(columnIndex, columnProps) {
+    const { width, align } = columnProps;
+    const cellProps = { width, align, className: "cell" };
     const headerCell = content => (
-      <HeaderCell className="cell" {...columnProps.options}>
-        {content}
-      </HeaderCell>
+      <HeaderCell {...cellProps}>{content}</HeaderCell>
     );
 
     if (columnProps.customTitle) {
@@ -111,11 +111,7 @@ class Table extends React.Component {
 
     if (columnProps.title) {
       return headerCell(
-        <Text
-          title
-          size={fontSizes.SMALL}
-          align={columnProps.options && columnProps.options.align}
-        >
+        <Text title size={fontSizes.SMALL} align={columnProps.align}>
           {columnProps.title}
         </Text>
       );
@@ -125,16 +121,15 @@ class Table extends React.Component {
   }
 
   _renderColumnCell(row, rowIndex, columnProps) {
+    const { width, align } = columnProps;
     const rowSelected = this.state.selectedRows.indexOf(rowIndex) !== -1;
-    const bodyCell = content => (
-      <BodyCell
-        className="cell"
-        {...columnProps.options}
-        selected={rowSelected}
-      >
-        {content}
-      </BodyCell>
-    );
+    const cellProps = {
+      width,
+      align,
+      className: "cell",
+      selected: rowSelected
+    };
+    const bodyCell = content => <BodyCell {...cellProps}>{content}</BodyCell>;
     if (columnProps.customCell) {
       return bodyCell(columnProps.customCell(row, rowIndex, rowSelected));
     }
@@ -142,12 +137,12 @@ class Table extends React.Component {
     if (columnProps.text) {
       const text = columnProps.text(row);
       const textProps = {
-        align: columnProps.options && columnProps.options.align,
+        align: columnProps.align,
         size: fontSizes.MEDIUM
       };
-      if (columnProps.featured) {
+      if (columnProps.fontType) {
         return bodyCell(
-          <Text {...textProps} type={fontTypes.FEATURED}>
+          <Text {...textProps} type={columnProps.fontType}>
             {text}
           </Text>
         );
