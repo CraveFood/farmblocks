@@ -84,18 +84,18 @@ class Table extends React.Component {
   }
 
   _renderColumnTitle(columnIndex, columnProps) {
-    const wrapper = content => (
+    const headerCell = content => (
       <HeaderCell className="cell" {...columnProps.options}>
         {content}
       </HeaderCell>
     );
 
     if (columnProps.customTitle) {
-      return wrapper(columnProps.customTitle(this.props.data, this.state));
+      return headerCell(columnProps.customTitle(this.props.data, this.state));
     }
 
     if (columnProps.clickable) {
-      return wrapper(
+      return headerCell(
         <div className="link">
           <Link
             type={fontTypes.NORMAL}
@@ -109,7 +109,7 @@ class Table extends React.Component {
       );
     }
 
-    return wrapper(
+    return headerCell(
       <Text
         title
         size={fontSizes.SMALL}
@@ -120,13 +120,41 @@ class Table extends React.Component {
     );
   }
 
-  _renderColumnCell(row, rowIndex, props) {
+  _renderColumnCell(row, rowIndex, columnProps) {
     const rowSelected = this.state.selectedRows.indexOf(rowIndex) !== -1;
-    return (
-      <BodyCell className="cell" {...props.options} selected={rowSelected}>
-        {props.cell(row)}
+    const bodyCell = content => (
+      <BodyCell
+        className="cell"
+        {...columnProps.options}
+        selected={rowSelected}
+      >
+        {content}
       </BodyCell>
     );
+    if (columnProps.customCell) {
+      return bodyCell(columnProps.customCell(row));
+    }
+
+    if (columnProps.text) {
+      const text = columnProps.text(row);
+      const textProps = {
+        align: columnProps.options && columnProps.options.align,
+        size: fontSizes.MEDIUM
+      };
+      if (columnProps.featured) {
+        return bodyCell(
+          <Text {...textProps} type={fontTypes.FEATURED}>
+            {text}
+          </Text>
+        );
+      }
+      return bodyCell(
+        <Text title {...textProps} type={fontTypes.NORMAL}>
+          {text}
+        </Text>
+      );
+    }
+    return bodyCell(null);
   }
 
   selectAllToggle(checked, dataLength) {

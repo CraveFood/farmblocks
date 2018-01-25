@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 
-const Column = props => props.cell(props.rowData);
+const Column = props => null;
 
 Column.propTypes = {
   title: PropTypes.string,
-  cell: PropTypes.func.isRequired,
+  text: PropTypes.func,
+  customCell: PropTypes.func,
+  featured: PropTypes.bool,
   clickable: PropTypes.bool
 };
 
