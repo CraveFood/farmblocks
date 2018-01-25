@@ -4,7 +4,8 @@ const Column = props => props.cell(props.rowData);
 
 Column.propTypes = {
   title: PropTypes.string,
-  cell: PropTypes.func.isRequired
+  cell: PropTypes.func.isRequired,
+  clickable: PropTypes.bool
 };
 
 export default Column;
