@@ -136,7 +136,7 @@ class Table extends React.Component {
       </BodyCell>
     );
     if (columnProps.customCell) {
-      return bodyCell(columnProps.customCell(row));
+      return bodyCell(columnProps.customCell(row, rowIndex, rowSelected));
     }
 
     if (columnProps.text) {
