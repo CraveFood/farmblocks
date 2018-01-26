@@ -21,6 +21,7 @@ const Table = styled.table`
     /* @HACK checkbox component already have a left padding,
      so we use negative margin to keep only the table padding */
     & .checkbox {
+      height: 16px;
       margin-left: -8px;
     }
   }
