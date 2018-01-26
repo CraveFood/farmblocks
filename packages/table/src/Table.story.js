@@ -30,7 +30,7 @@ const farms = [
     address: "7 Carroll Avenue, Newport, RI 02840",
     url: "http://example.com",
     distance: 2.8,
-    created_date: "2017-07-23",
+    created_date: "2017-07-23T12:00:00",
     type: "farm",
     status: "not_connected",
     slug: "madeline-farm"
@@ -41,7 +41,7 @@ const farms = [
     address: "7 Carroll Avenue, Newport, RI 02840",
     url: "http://example.com",
     distance: 2.8,
-    created_date: "2017-07-23",
+    created_date: "2017-07-23T12:00:00",
     type: "food_hub",
     status: "connected",
     slug: "farm-honey"
