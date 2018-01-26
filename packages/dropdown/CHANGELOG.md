@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.3.0...@crave/farmblocks-dropdown@0.4.0) (2018-01-26)
+
+
+### Features
+
+* **sizes:** add property size to allow trigger buttons of the same sizes as button ([dc1331c](https://github.com/CraveFood/farmblocks/commit/dc1331c))
+
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.2.1...@crave/farmblocks-dropdown@0.3.0) (2018-01-18)
 

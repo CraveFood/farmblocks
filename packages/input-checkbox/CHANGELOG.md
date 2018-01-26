@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@0.2.3...@crave/farmblocks-input-checkbox@0.2.4) (2018-01-26)
+
+
+### Bug Fixes
+
+* **onChange:** onChange event from a checkbox that got it's checked property changed programatically ([4a9876d](https://github.com/CraveFood/farmblocks/commit/4a9876d))
+
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@0.2.2...@crave/farmblocks-input-checkbox@0.2.3) (2018-01-18)
 
