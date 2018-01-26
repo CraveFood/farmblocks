@@ -91,4 +91,27 @@ describe("Table", function() {
     expect(preventDefaultMock).toBeCalled();
     expect(onTitleClickMock).toBeCalled();
   });
+
+  test("Table with selection header bar should clear all selected row if the passed clearFunction is called", function() {
+    const selectionHeaderRenderer = (data, clearFunction) => (
+      <button id="testButton" onClick={clearFunction} />
+    );
+    const component = mount(
+      <Table
+        data={dataFixture}
+        selectableRows
+        selectionHeader={selectionHeaderRenderer}
+      >
+        <Column clickable title="Name" text={row => row.name} />
+      </Table>
+    );
+    const firstRowCheckbox = component.find("td input").first();
+    firstRowCheckbox.simulate("change", { target: { checked: true } });
+
+    const testButton = component.find("#testButton");
+    expect(component.state().selectedRows.length).toBe(1);
+
+    testButton.simulate("click");
+    expect(component.state().selectedRows.length).toBe(0);
+  });
 });

@@ -441,7 +441,59 @@ storiesOf("Table/Main", "module")
     })
   );
 
-storiesOf("Table/SelectionBar", "module").add(
-  "Default",
-  withInfo()(() => <SelectionBar />)
-);
+storiesOf("Table/SelectionBar", "module")
+  .add("Default", withInfo()(() => <SelectionBar />))
+  .add(
+    "One item selected",
+    withInfo()(() => <SelectionBar selectedRows={[{ name: "foo" }]} />)
+  )
+  .add(
+    "Two items selected",
+    withInfo()(() => (
+      <SelectionBar selectedRows={[{ name: "foo" }, { name: "bar" }]} />
+    ))
+  )
+  .add(
+    "Clear Button",
+    withInfo()(() => (
+      <SelectionBar
+        selectedRows={[{ name: "foo" }, { name: "bar" }]}
+        clearSelection={action("clear selection called")}
+      />
+    ))
+  )
+  .add(
+    "Primary button",
+    withInfo()(() => (
+      <SelectionBar
+        selectedRows={[{ name: "foo" }]}
+        clearSelection={action("clear selection called")}
+        primaryAction={action("primary button clicked")}
+        primaryButtonLabel="Primary Action"
+      />
+    ))
+  )
+  .add(
+    "Secondary button",
+    withInfo()(() => (
+      <SelectionBar
+        selectedRows={[{ name: "foo" }, { name: "bar" }]}
+        clearSelection={action("clear selection called")}
+        secondaryAction={action("secondary button clicked")}
+        secondaryButtonLabel="Secondary Action"
+      />
+    ))
+  )
+  .add(
+    "Both action buttons",
+    withInfo()(() => (
+      <SelectionBar
+        selectedRows={[{ name: "foo" }, { name: "bar" }]}
+        clearSelection={action("clear selection called")}
+        primaryAction={action("primary button clicked")}
+        primaryButtonLabel="Primary Action"
+        secondaryAction={action("secondary button clicked")}
+        secondaryButtonLabel="Secondary Action"
+      />
+    ))
+  );

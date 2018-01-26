@@ -14,7 +14,7 @@ const SelectionBar = props => {
   } = props;
   const hasActions = !!secondaryAction || !!primaryAction;
   const hasSecondaryButton = !!secondaryAction;
-  const clearButtonClick = clearSelection => evt => clearSelection();
+  const clearButtonClick = clearFn => evt => clearFn();
   const buttonClick = selectedRows => actionFunction => evt =>
     actionFunction(selectedRows);
   const barProps = { hasActions, hasSecondaryButton };
