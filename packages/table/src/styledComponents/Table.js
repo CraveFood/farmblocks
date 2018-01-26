@@ -8,6 +8,7 @@ const Table = styled.table`
   border: ${border};
   padding: 8px 16px;
 
+  ${props => props.selectionHeaderVisible && css`border-top: none;`};
   .cell {
     box-sizing: border-box;
     height: ${props => props.rowHeight};

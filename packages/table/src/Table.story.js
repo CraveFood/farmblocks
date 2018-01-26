@@ -10,8 +10,7 @@ import Link from "@crave/farmblocks-link";
 import Button, { buttonSizes, buttonTypes } from "@crave/farmblocks-button";
 import { Dropdown, DropdownItem } from "@crave/farmblocks-dropdown";
 
-import { rowHeights } from "./constants";
-import { Table, Column } from ".";
+import { Table, Column, SelectionBar, rowHeights } from ".";
 
 const fruits = [
   { id: 0, name: "Apple", price: "$ 0.50" },
@@ -83,7 +82,7 @@ ThumbnailCell.propTypes = {
   text: PropTypes.string
 };
 
-storiesOf("Table", "module")
+storiesOf("Table/Main", "module")
   .add(
     "Default sizes",
     withInfo()(() => (
@@ -202,6 +201,35 @@ storiesOf("Table", "module")
     "With selectable rows",
     withInfo()(() => (
       <Table data={fruits} selectableRows>
+        <Column title="Fruit" text={row => row.name} />
+        <Column
+          fontType={fontTypes.FEATURED}
+          title="Price"
+          text={row => row.price}
+        />
+      </Table>
+    ))
+  )
+  .add(
+    "With selectable rows and a selection header",
+    withInfo()(() => (
+      <Table
+        width="1000px"
+        data={fruits}
+        selectableRows
+        selectionHeader={(selectedRows, clearFunction) => (
+          <SelectionBar
+            selectedRows={selectedRows}
+            clearSelection={clearFunction}
+            title={count =>
+              count === 1 ? "1 fruit selected" : `${count} Fruits selected`}
+            primaryButtonLabel="Connect"
+            primaryAction={action("primary button clicked")}
+            secondaryButtonLabel="View Profile"
+            secondaryAction={action("secondary button clicked")}
+          />
+        )}
+      >
         <Column title="Fruit" text={row => row.name} />
         <Column
           fontType={fontTypes.FEATURED}
@@ -412,3 +440,8 @@ storiesOf("Table", "module")
       );
     })
   );
+
+storiesOf("Table/SelectionBar", "module").add(
+  "Default",
+  withInfo()(() => <SelectionBar />)
+);

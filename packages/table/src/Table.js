@@ -22,11 +22,33 @@ class Table extends React.Component {
   }
 
   render() {
-    const { data, children, width, rowHeight, selectableRows } = this.props;
+    const {
+      data,
+      children,
+      width,
+      rowHeight,
+      selectableRows,
+      selectionHeader
+    } = this.props;
     const emptySelection = this.state.selectedRows.length === 0;
-    const tableProps = { width, rowHeight, emptySelection };
+    const selectionHeaderVisible = selectionHeader && !emptySelection;
+    const tableProps = {
+      width,
+      rowHeight,
+      emptySelection,
+      selectionHeaderVisible
+    };
+    const selectedData = this.props.data.filter(
+      (row, index) => this.state.selectedRows.indexOf(index) !== -1
+    );
+    const clearFunction = () =>
+      this.selectAllToggle(false, this.state.selectedRows.length);
     return (
       <StyledTable {...tableProps}>
+        <caption>
+          {selectionHeaderVisible &&
+            selectionHeader(selectedData, clearFunction)}
+        </caption>
         <thead>
           <tr>
             {selectableRows && this._renderSelectAllButton()}
@@ -195,6 +217,7 @@ class Table extends React.Component {
     rowHeight: PropTypes.oneOf([rowHeights.SMALL, rowHeights.MEDIUM]),
     onTitleClick: PropTypes.func,
     selectableRows: PropTypes.bool,
+    selectionHeader: PropTypes.func,
     children: PropTypes.node
   };
 
