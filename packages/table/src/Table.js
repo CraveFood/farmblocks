@@ -22,9 +22,9 @@ class Table extends React.Component {
   }
 
   render() {
-    const { data, children, rowHeight, selectableRows } = this.props;
+    const { data, children, width, rowHeight, selectableRows } = this.props;
     const emptySelection = this.state.selectedRows.length === 0;
-    const tableProps = { rowHeight, emptySelection };
+    const tableProps = { width, rowHeight, emptySelection };
     return (
       <StyledTable {...tableProps}>
         <thead>
@@ -191,6 +191,7 @@ class Table extends React.Component {
 
   static propTypes = {
     data: PropTypes.arrayOf(PropTypes.object),
+    width: PropTypes.string,
     rowHeight: PropTypes.oneOf([rowHeights.SMALL, rowHeights.MEDIUM]),
     onTitleClick: PropTypes.func,
     selectableRows: PropTypes.bool,
