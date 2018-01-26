@@ -77,12 +77,13 @@ class Checkbox extends React.Component {
     // ignore the checked value from event.target.checked and
     // overwrite it with the inverse of current checked state
     // state.checked is our single source of truth
-    const newCheckedState = !this.state.checked;
-    event.target.checked = newCheckedState;
-    this.setState({
-      checked: newCheckedState
+    event.persist();
+    this.setState(prevState => {
+      const newCheckedState = !prevState.checked;
+      event.target.checked = newCheckedState;
+      this.props.onChange(event);
+      return { checked: !prevState.checked };
     });
-    return this.props.onChange(event);
   }
 
   static propTypes = {
