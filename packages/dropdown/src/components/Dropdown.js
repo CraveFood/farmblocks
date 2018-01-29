@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import values from "object.values";
 import Button, { buttonSizes } from "@crave/farmblocks-button";
 import {
   Button as AriaButtonWrapper,
@@ -17,7 +18,7 @@ const Dropdown = props => (
         <Button
           rightIcon="wg-small-arrow-bottom"
           text={props.text}
-          size={buttonSizes.MEDIUM}
+          size={props.size}
         />
       </AriaButtonWrapper>
 
@@ -37,7 +38,8 @@ const Dropdown = props => (
 Dropdown.defaultProps = {
   handleSelection: () => false,
   text: "",
-  align: "left"
+  align: "left",
+  size: buttonSizes.MEDIUM
 };
 
 Dropdown.propTypes = {
@@ -46,6 +48,7 @@ Dropdown.propTypes = {
   text: PropTypes.string,
   align: PropTypes.oneOf(["left", "right"]),
   zIndex: PropTypes.number,
+  size: PropTypes.oneOf(values(buttonSizes)),
   width: PropTypes.string
 };
 

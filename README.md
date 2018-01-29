@@ -14,6 +14,8 @@ User interface blocks.
 * [Farmblocks-Input-Text](https://github.com/CraveFood/farmblocks/tree/master/packages/input-text) - A form field to input simple text
 * [Farmblocks-Link](https://github.com/CraveFood/farmblocks/tree/master/packages/link) - A React component to create links.
 * [Farmblocks-Stepper](https://github.com/CraveFood/farmblocks/tree/master/packages/stepper) - A React component for displaying step to step actions.
+* [Farmblocks-Table](https://github.com/CraveFood/farmblocks/tree/master/packages/table) - A component for rendering data tables
+.
 * [Farmblocks-Text](https://github.com/CraveFood/farmblocks/tree/master/packages/text) - React components for displaying texts.
 * [Farmblocks-Theme](https://github.com/CraveFood/farmblocks/tree/master/packages/theme) - Theme constants for farmblocks components.
 

@@ -1,8 +1,8 @@
 {
-  "name": "@crave/farmblocks-dropdown",
-  "version": "0.4.0",
-  "description": "",
-  "author": "Crave Food Services and AUTHORS",
+  "name": "@crave/farmblocks-table",
+  "version": "1.0.0",
+  "description": "A component for rendering data tables.",
+  "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
   "files": [
@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
   "keywords": [
-    "dropdown"
+    "farmblocks",
+    "react",
+    "table",
+    "data",
+    "data table",
+    "data grid"
   ],
   "peerDependencies": {
     "prop-types": "^15.6.0",
@@ -33,9 +38,17 @@
     "styled-components": "^2.2.1"
   },
   "dependencies": {
-    "@crave/farmblocks-button": "^2.0.0",
+    "@crave/farmblocks-input-checkbox": "^0.2.4",
+    "@crave/farmblocks-link": "^2.0.1",
+    "@crave/farmblocks-text": "^1.1.5",
     "@crave/farmblocks-theme": "^1.4.1",
-    "object.values": "^1.0.4",
-    "react-aria-menubutton": "^5.1.1"
+    "object.values": "^1.0.4"
+  },
+  "devDependencies": {
+    "@crave/farmblocks-button": "^2.0.0",
+    "@crave/farmblocks-dropdown": "^0.4.0",
+    "@crave/farmblocks-image": "^0.3.1",
+    "@crave/farmblocks-link": "^2.0.1",
+    "@crave/farmblocks-text": "^1.1.5"
   }
 }
