@@ -20,7 +20,8 @@ export const formInputProps = {
   onChange: PropTypes.func,
   onInvalid: PropTypes.func,
   onFocus: PropTypes.func,
-  onBlur: PropTypes.func
+  onBlur: PropTypes.func,
+  innerRef: PropTypes.func
 };
 
 const formInput = WrappedComponent => {
@@ -69,7 +70,7 @@ const formInput = WrappedComponent => {
       );
     }
 
-    _renderInput(inputProps) {
+    _renderInput({ innerRef, ...inputProps }) {
       const handlers = {
         onChange: this.onChange,
         onInvalid: this.onInvalid,
@@ -102,6 +103,7 @@ const formInput = WrappedComponent => {
           <WrappedComponent
             {...inputProps}
             {...handlers}
+            ref={innerRef}
             value={this.state.value}
           />
           {clearButton}
