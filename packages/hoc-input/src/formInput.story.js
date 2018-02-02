@@ -78,4 +78,12 @@ storiesOf("HOC formInput", "module")
   .add(
     "html search input with value",
     withInfo()(() => <EnhancedInput type="search" value="broccoli" />)
+  )
+  .add(
+    "html text input with combobox role",
+    withInfo()(() => (
+      <div style={{ width: "300px" }}>
+        <EnhancedInput role="combobox" placeholder="Select value" />
+      </div>
+    ))
   );

@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import Text from "@crave/farmblocks-text";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
@@ -81,7 +82,7 @@ const formInput = WrappedComponent => {
       const isSearch =
         inputProps.type && inputProps.type.toLowerCase() === "search";
       const icon = isSearch && (
-        <div className="icon">
+        <div className="icon search">
           <i className="wg-search" />
         </div>
       );
@@ -92,9 +93,16 @@ const formInput = WrappedComponent => {
           </Link>
         );
 
+      const isDropdown = inputProps.role === "combobox";
+      const dropDownIcon = isDropdown && (
+        <div className="icon dropdown">
+          <i className="wg-small-arrow-bottom" />
+        </div>
+      );
+
       return (
         <div
-          className="input"
+          className={classNames("input", { dropdown: isDropdown })}
           ref={element => {
             this.inputRef = element && element.querySelector("input");
           }}
@@ -107,6 +115,7 @@ const formInput = WrappedComponent => {
             value={this.state.value}
           />
           {clearButton}
+          {dropDownIcon}
         </div>
       );
     }

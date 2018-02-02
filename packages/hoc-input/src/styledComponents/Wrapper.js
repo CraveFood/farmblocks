@@ -75,12 +75,22 @@ const Wrapper = styled.div`
           height: 0;
         }
       }
+      &[role="combobox"] {
+        cursor: pointer;
+      }
     }
 
     .icon {
       color: ${inputBorderColor};
-      margin-right: 8px;
       height: 16px;
+    }
+
+    .icon.search {
+      margin-right: 8px;
+    }
+
+    .icon.dropdown {
+      margin-left: 8px;
     }
 
     .clear {
@@ -94,6 +104,10 @@ const Wrapper = styled.div`
         text-decoration: none;
       }
     }
+  }
+
+  .input.dropdown {
+    cursor: pointer;
   }
 
   .label {
