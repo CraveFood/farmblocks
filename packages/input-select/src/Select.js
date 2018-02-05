@@ -1,6 +1,10 @@
 import * as React from "react";
 import ReactAutocomplete from "react-autocomplete";
 import PropTypes from "prop-types";
+import { compose } from "recompose";
+import disabledTooltip, {
+  disabledTooltipProps
+} from "@crave/farmblocks-hoc-disabled-tooltip";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
   DropdownWrapper,
@@ -8,7 +12,7 @@ import {
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
 
-const EnhancedInput = formInput("input");
+const EnhancedInput = compose(disabledTooltip, formInput)("input");
 
 class Select extends React.Component {
   constructor(props) {
@@ -78,15 +82,14 @@ class Select extends React.Component {
 
   _renderInput(autoCompleteProps) {
     const { ref, ...rest } = autoCompleteProps;
-    const inputProps = {
-      label: this.props.label,
-      placeholder: this.props.placeholder,
-      validationMessages: this.state.isMenuOpen
-        ? []
-        : this.props.validationMessages,
-      disabled: this.props.disabled
-    };
-    return <EnhancedInput {...rest} {...inputProps} innerRef={ref} />;
+
+    const { renderItem, ...inputProps } = this.props;
+
+    inputProps.validationMessages = this.state.isMenuOpen
+      ? []
+      : this.props.validationMessages;
+
+    return <EnhancedInput {...inputProps} {...rest} innerRef={ref} />;
   }
 
   _renderMenu(items) {
@@ -139,7 +142,8 @@ Select.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string || PropTypes.number]),
   onChange: PropTypes.func,
   renderItem: PropTypes.func,
-  ...formInputProps
+  ...formInputProps,
+  ...disabledTooltipProps
 };
 
 export default Select;
