@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Text, { fontSizes, fontTypes } from "@crave/farmblocks-text";
 import Link from "@crave/farmblocks-link";
 import Checkbox from "@crave/farmblocks-input-checkbox";
@@ -46,8 +47,14 @@ class Table extends React.Component {
     return (
       <StyledTable {...tableProps}>
         <caption>
-          {selectionHeaderVisible &&
-            selectionHeader(selectedData, clearFunction)}
+          <ReactCSSTransitionGroup
+            transitionName="grow"
+            transitionEnterTimeout={300}
+            transitionLeaveTimeout={300}
+          >
+            {selectionHeaderVisible &&
+              selectionHeader(selectedData, clearFunction)}
+          </ReactCSSTransitionGroup>
         </caption>
         <thead>
           <tr>

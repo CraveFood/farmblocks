@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.0.1...@crave/farmblocks-table@1.1.0) (2018-02-05)
+
+
+### Features
+
+* **css-transition:** add transition to table selection bar ([f16807a](https://github.com/CraveFood/farmblocks/commit/f16807a))
+
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.0.0...@crave/farmblocks-table@1.0.1) (2018-01-29)
 
