@@ -24,12 +24,9 @@ install:
       yarn install --frozen-lockfile;
     fi
   - yarn build
-  - npx flow-typed install --overwrite
 script:
   - yarn lint .
   - yarn lint.test .
-  - pkill flow || true
-  - yarn typecheck
   - yarn snyk
   - yarn coverage
   - greenkeeper-lockfile-upload
