@@ -92343,7 +92343,9 @@ exports[`Storyshots Table/Main Button Column (custom cell example) 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -94090,7 +94092,9 @@ exports[`Storyshots Table/Main Clickable column titles 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -95756,7 +95760,9 @@ exports[`Storyshots Table/Main Complete example 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -97762,7 +97768,9 @@ exports[`Storyshots Table/Main Custom align and width 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -99094,7 +99102,9 @@ exports[`Storyshots Table/Main Custom column header 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -100511,7 +100521,9 @@ exports[`Storyshots Table/Main Default sizes 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -101739,7 +101751,9 @@ exports[`Storyshots Table/Main Empty column 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -102915,7 +102929,9 @@ exports[`Storyshots Table/Main Featured column 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -104314,7 +104330,9 @@ exports[`Storyshots Table/Main Image + title + link (custom cell example) 1`] = 
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -105922,7 +105940,9 @@ exports[`Storyshots Table/Main Menu Column (custom cell example) 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -107897,7 +107917,9 @@ exports[`Storyshots Table/Main Small row heights 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -109432,7 +109454,9 @@ exports[`Storyshots Table/Main Small with Menu Column (custom cell example) 1`] 
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -111426,7 +111450,9 @@ exports[`Storyshots Table/Main Table with width set 1`] = `
       className="c0"
       width="1000px"
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -112759,7 +112785,9 @@ exports[`Storyshots Table/Main With selectable rows 1`] = `
       className="c0"
       width={undefined}
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -114314,7 +114342,9 @@ exports[`Storyshots Table/Main With selectable rows and a selection header 1`] =
       className="c0"
       width="1000px"
     >
-      <caption />
+      <caption>
+        <span />
+      </caption>
       <thead>
         <tr>
           <th
@@ -116045,6 +116075,48 @@ exports[`Storyshots Table/SelectionBar Both action buttons 1`] = `
   padding-left: 24px;
 }
 
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
 .c0 .title {
   margin-right: auto;
 }
@@ -116962,6 +117034,48 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
   padding-left: 24px;
 }
 
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
 .c0 .title {
   margin-right: auto;
 }
@@ -117615,6 +117729,48 @@ exports[`Storyshots Table/SelectionBar Default 1`] = `
   padding-left: 24px;
 }
 
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
 .c0 .title {
   margin-right: auto;
 }
@@ -118114,6 +118270,48 @@ exports[`Storyshots Table/SelectionBar One item selected 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   padding-right: 24px;
   padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
 .c0 .title {
@@ -118847,6 +119045,48 @@ exports[`Storyshots Table/SelectionBar Primary button 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   padding-right: 24px;
   padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
 .c0 .title {
@@ -119721,6 +119961,48 @@ exports[`Storyshots Table/SelectionBar Secondary button 1`] = `
   padding-left: 24px;
 }
 
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
 .c0 .title {
   margin-right: auto;
 }
@@ -120459,6 +120741,48 @@ exports[`Storyshots Table/SelectionBar Two items selected 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   padding-right: 24px;
   padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
 .c0 .title {
