@@ -8,7 +8,6 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
-    "lint.staged": "lint-staged",
     "test": "jest",
     "snyk": "snyk test",
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
@@ -26,11 +25,6 @@
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
     }
-  },
-  "lint-staged": {
-    "*.js": ["yarn lint --quiet"],
-    "*.test.js": ["yarn lint.test"],
-    "*.{js,json,css}": ["prettier --parser flow --write"]
   },
   "repository": {
     "type": "git",
@@ -66,7 +60,6 @@
     "jest-enzyme": "^4.0.0",
     "jest-styled-components": "^4.11.0-0",
     "lerna": "^2.5.1",
-    "lint-staged": "^6.0.0",
     "prettier": "^1.8.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
