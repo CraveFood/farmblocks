@@ -105,7 +105,7 @@ class Select extends React.Component {
         selected={this.state.selectedLabel === item.label}
       >
         <div>
-          {item.value} - {item.label}
+          {this.props.renderItem ? this.props.renderItem(item) : item.label}
         </div>
       </DropdownItemWrapper>
     );
@@ -138,6 +138,7 @@ Select.propTypes = {
   ).isRequired,
   value: PropTypes.oneOfType([PropTypes.string || PropTypes.number]),
   onChange: PropTypes.func,
+  renderItem: PropTypes.func,
   ...formInputProps
 };
 

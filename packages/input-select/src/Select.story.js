@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 import styled from "styled-components";
+import Image from "@crave/farmblocks-image";
 
 import Select from ".";
 
@@ -13,6 +14,9 @@ const items = [
 ];
 
 const Wrapper = styled.div`width: 200px;`;
+
+const imgSrc =
+  "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
 
 storiesOf("Select", "module")
   .add(
@@ -52,6 +56,27 @@ storiesOf("Select", "module")
           items={items}
           onChange={action("onChange")}
           validationMessages={["Select at least one option"]}
+        />
+      </Wrapper>
+    ))
+  )
+  .add(
+    "Custom items",
+    withInfo()(() => (
+      <Wrapper>
+        <Select
+          placeholder="Select fruit"
+          label="Fruit"
+          items={items.map(item => ({ ...item, image: imgSrc }))}
+          onChange={action("onChange")}
+          renderItem={item => (
+            <div style={{ display: "flex" }}>
+              <Image src={item.image} />
+              <div style={{ alignSelf: "center", marginLeft: "10px" }}>
+                {item.label}
+              </div>
+            </div>
+          )}
         />
       </Wrapper>
     ))
