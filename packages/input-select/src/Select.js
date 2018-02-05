@@ -14,14 +14,17 @@ class Select extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: props.value,
-      search: "",
-      item: {}
+      selectedValue: props.value,
+      selectedLabel: this.getSelectedLabel(props),
+      isSearching: false,
+      isMenuOpen: false
     };
 
     this._renderInput = this._renderInput.bind(this);
     this._renderItem = this._renderItem.bind(this);
     this._shouldItemRender = this._shouldItemRender.bind(this);
+    this.onFilter = this.onFilter.bind(this);
+    this.onSelect = this.onSelect.bind(this);
   }
 
   render() {
@@ -31,28 +34,57 @@ class Select extends React.Component {
           items={this.props.items}
           shouldItemRender={this._shouldItemRender}
           getItemValue={item => item.label}
-          renderItem={this._renderItem}
-          value={this.state.value}
-          onChange={e =>
-            this.setState({ value: e.target.value, search: e.target.value })}
-          onSelect={(value, item) => {
-            this.setState({ value, search: "", item });
-          }}
-          renderMenu={this._renderMenu}
-          // open
+          value={this.state.selectedLabel}
+          onChange={this.onFilter}
+          onSelect={this.onSelect}
           renderInput={this._renderInput}
+          renderMenu={this._renderMenu}
+          renderItem={this._renderItem}
           autoHighlight={false}
-          style={{ cursor: "pointer" }}
+          onMenuVisibilityChange={isMenuOpen => this.setState({ isMenuOpen })}
         />
       </DropdownWrapper>
     );
   }
 
-  _renderInput(props) {
-    const { ref, ...rest } = props;
+  onFilter(event) {
+    // !this.state.isSearching && this.props.onChange("");
+    this.setState({ selectedLabel: event.target.value, isSearching: true });
+  }
+
+  onSelect(selectedLabel, item) {
+    this.setState({ selectedLabel, isSearching: false });
+    this.props.onChange(item.value);
+  }
+
+  getSelectedLabel(props) {
+    const item = props.value && props.items.find(x => x.value === props.value);
+
+    return item && item.label;
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (
+      newProps.value &&
+      newProps.value !== this.props.value &&
+      newProps.value !== this.state.selectedValue
+    ) {
+      this.setState({
+        selectedValue: newProps.value,
+        selectedLabel: this.getSelectedLabel(newProps)
+      });
+    }
+  }
+
+  _renderInput(autoCompleteProps) {
+    const { ref, ...rest } = autoCompleteProps;
     const inputProps = {
       label: this.props.label,
-      placeholder: this.props.placeholder
+      placeholder: this.props.placeholder,
+      validationMessages: this.state.isMenuOpen
+        ? []
+        : this.props.validationMessages,
+      disabled: this.props.disabled
     };
     return <EnhancedInput {...rest} {...inputProps} innerRef={ref} />;
   }
@@ -68,21 +100,23 @@ class Select extends React.Component {
   _renderItem(item, highlighted) {
     return (
       <DropdownItemWrapper
-        key={item.id}
+        key={item.value}
         highlighted={highlighted}
-        selected={this.state.value === item.label}
+        selected={this.state.selectedLabel === item.label}
       >
         <div>
-          {item.id} - {item.label}
+          {item.value} - {item.label}
         </div>
       </DropdownItemWrapper>
     );
   }
 
   _shouldItemRender(item, value) {
-    if (this.state.search) {
+    if (this.state.isSearching) {
       return (
-        item.label.toLowerCase().indexOf(this.state.search.toLowerCase()) > -1
+        item.label
+          .toLowerCase()
+          .indexOf(this.state.selectedLabel.toLowerCase()) > -1
       );
     }
 
@@ -91,9 +125,19 @@ class Select extends React.Component {
   }
 }
 
+Select.defaultProps = {
+  onChange: () => false
+};
+
 Select.propTypes = {
-  items: PropTypes.array,
-  value: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.oneOfType([PropTypes.string || PropTypes.number]),
+      label: PropTypes.string
+    })
+  ).isRequired,
+  value: PropTypes.oneOfType([PropTypes.string || PropTypes.number]),
+  onChange: PropTypes.func,
   ...formInputProps
 };
 
