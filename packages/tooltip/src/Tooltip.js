@@ -1,12 +1,9 @@
-// @flow
 import * as React from "react";
 import PropTypes from "prop-types";
 
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 
-// @FIXME annotating props as Object while we dont have a way to prevent redundant type anotation.
-// see issue #22
-const Tooltip = (props: Object) => (
+const Tooltip = props => (
   <Container>
     <StyledTooltip {...props}>{props.text}</StyledTooltip>
   </Container>
