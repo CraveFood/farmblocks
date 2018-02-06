@@ -18,7 +18,7 @@ const Wrapper = styled.div`width: 200px;`;
 const imgSrc =
   "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
 
-storiesOf("Select", "module")
+storiesOf("Select Input", "module")
   .add(
     "Default",
     withInfo()(() => (
