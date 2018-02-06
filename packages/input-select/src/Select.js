@@ -13,6 +13,7 @@ import {
 } from "@crave/farmblocks-dropdown";
 
 const EnhancedInput = compose(disabledTooltip, formInput)("input");
+EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
   constructor(props) {
@@ -52,7 +53,8 @@ class Select extends React.Component {
   }
 
   onFilter(event) {
-    // !this.state.isSearching && this.props.onChange("");
+    !this.state.isSearching && this.props.onChange("");
+
     this.setState({ selectedLabel: event.target.value, isSearching: true });
   }
 
@@ -114,7 +116,7 @@ class Select extends React.Component {
     );
   }
 
-  _shouldItemRender(item, value) {
+  _shouldItemRender(item) {
     if (this.state.isSearching) {
       return (
         item.label
@@ -135,11 +137,11 @@ Select.defaultProps = {
 Select.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      value: PropTypes.oneOfType([PropTypes.string || PropTypes.number]),
+      value: PropTypes.string,
       label: PropTypes.string
     })
   ).isRequired,
-  value: PropTypes.oneOfType([PropTypes.string || PropTypes.number]),
+  value: PropTypes.string,
   onChange: PropTypes.func,
   renderItem: PropTypes.func,
   ...formInputProps,
