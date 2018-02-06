@@ -70,7 +70,12 @@ storiesOf("HOC formInput", "module")
     "html disabled input with label",
     withInfo()(() => (
       <div>
-        <EnhancedInput disabled label="Input Label" type="text" />
+        <EnhancedInput
+          disabled
+          label="Input Label"
+          type="text"
+          value="Disabled field"
+        />
       </div>
     ))
   )

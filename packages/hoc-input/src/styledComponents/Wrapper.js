@@ -59,7 +59,7 @@ const Wrapper = styled.div`
       outline: none;
       font-family: Lato, sans-serif;
       font-size: ${ifSearch(fontSizes.SMALL, fontSizes.MEDIUM)}px;
-      color: ${colors.CARBON};
+      color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {
         color: ${placeholderColor};
