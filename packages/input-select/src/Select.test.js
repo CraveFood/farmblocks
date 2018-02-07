@@ -41,18 +41,29 @@ describe("Select input", () => {
     expect(shouldItemRender(items[1])).toBe(false);
   });
 
-  test("test renderMenu function", () => {
-    const autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-    const { renderMenu } = autoCompleteWrapper.instance().props;
+  describe("test renderMenu function", () => {
+    let autoCompleteWrapper;
+    let renderMenu;
+    beforeEach(() => {
+      autoCompleteWrapper = wrapper.find(ReactAutocomplete);
+      renderMenu = autoCompleteWrapper.instance().props.renderMenu;
+    });
+    test("should render items", () => {
+      const menuWrapper = shallow(
+        renderMenu(items.map(x => <li key={x.value}>{x.label}</li>))
+      );
 
-    const menuWrapper = shallow(
-      renderMenu(items.map(x => <li key={x.value}>{x.label}</li>))
-    );
+      const ulWrapper = menuWrapper.find("ul");
 
-    const ulWrapper = menuWrapper.find("ul");
+      expect(ulWrapper.length).toBe(1);
+      expect(ulWrapper.find("li").length).toBe(2);
+    });
 
-    expect(ulWrapper.length).toBe(1);
-    expect(ulWrapper.find("li").length).toBe(2);
+    test("should render empty card when no items list is empty", () => {
+      const menuWrapper = shallow(renderMenu([]));
+
+      expect(menuWrapper.find("EmptyCard").length).toBe(1);
+    });
   });
 
   describe("renderItem function", () => {

@@ -12,6 +12,8 @@ import {
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
 
+import EmptyCard from "./components/EmptyCard";
+
 const EnhancedInput = compose(disabledTooltip, formInput)("input");
 EnhancedInput.displayName = "EnhancedInput";
 
@@ -26,6 +28,7 @@ class Select extends React.Component {
     };
 
     this._renderInput = this._renderInput.bind(this);
+    this._renderMenu = this._renderMenu.bind(this);
     this._renderItem = this._renderItem.bind(this);
     this._shouldItemRender = this._shouldItemRender.bind(this);
     this.onFilter = this.onFilter.bind(this);
@@ -95,6 +98,10 @@ class Select extends React.Component {
   }
 
   _renderMenu(items) {
+    if (!items || !items.length) {
+      return <EmptyCard noResultsMessage={this.props.noResultsMessage} />;
+    }
+
     return (
       <DropdownMenuWrapper>
         <ul>{items}</ul>
@@ -144,6 +151,7 @@ Select.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
   renderItem: PropTypes.func,
+  noResultsMessage: PropTypes.string,
   ...formInputProps,
   ...disabledTooltipProps
 };
