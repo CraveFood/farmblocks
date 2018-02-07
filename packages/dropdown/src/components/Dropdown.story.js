@@ -6,7 +6,7 @@ import { action } from "@storybook/addon-actions";
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
 
-storiesOf("Dropdown", "module")
+storiesOf("Dropdown/Component", "module")
   .add(
     "With text",
     withInfo()(() => (
@@ -88,6 +88,22 @@ storiesOf("Dropdown", "module")
       >
         <DropdownItem value={1} text="Banana" />
         <DropdownItem value={2}>Apple</DropdownItem>
+        <DropdownItem value={3} text="Strawberry" />
+      </Dropdown>
+    ))
+  )
+  .add(
+    "With selected item",
+    withInfo()(() => (
+      <Dropdown
+        text="Select fruit"
+        handleSelection={action("handleSelection")}
+        width="200px"
+      >
+        <DropdownItem value={1} text="Banana" />
+        <DropdownItem value={2} selected>
+          Apple
+        </DropdownItem>
         <DropdownItem value={3} text="Strawberry" />
       </Dropdown>
     ))

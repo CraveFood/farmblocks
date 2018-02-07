@@ -5,9 +5,10 @@ import { MenuItem } from "react-aria-menubutton";
 import DropdownItemWrapper from "../styledComponents/DropdownItemWrapper";
 
 const DropdownItem = props => {
+  const { value, text, children, ...rest } = props;
   return (
-    <DropdownItemWrapper>
-      <MenuItem value={props.value}>{props.text || props.children}</MenuItem>
+    <DropdownItemWrapper {...rest}>
+      <MenuItem value={value}>{text || children}</MenuItem>
     </DropdownItemWrapper>
   );
 };
