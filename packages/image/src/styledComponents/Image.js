@@ -21,6 +21,8 @@ const StyledImage = styled.div`
   background-origin: border-box;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  min-width: ${size}px;
+  min-height: ${size}px;
   width: ${size}px;
   height: ${size}px;
   overflow: hidden;
