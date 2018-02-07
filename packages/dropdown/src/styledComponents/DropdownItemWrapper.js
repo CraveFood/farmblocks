@@ -1,20 +1,35 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 const borderRadius = "3px";
+
+const hoverColors = props => {
+  return css`
+    background: ${colorConstants.INDIGO_MILK_CAP};
+    color: white;
+  `;
+};
+
+const fontColor = props => {
+  if (props.selected && !props.highlighted) {
+    return colorConstants.INDIGO_MILK_CAP;
+  }
+
+  return colorConstants.OYSTER;
+};
 
 const DropdownItemWrapper = styled.li`
   cursor: pointer;
 
   transition: all ease 0.2s;
 
-  color: ${colorConstants.OYSTER};
+  color: ${fontColor};
 
   :hover {
-    background: ${colorConstants.INDIGO_MILK_CAP};
-    color: white;
+    ${hoverColors};
   }
+  ${props => props.highlighted && hoverColors};
 
   border-bottom: solid 1px ${colorConstants.GREY_16};
 
