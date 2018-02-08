@@ -19,5 +19,6 @@ module.exports = {
   EGGPLANT: "#8e44ad",
   GREY_16: "rgba(0, 0, 0, 0.16)",
   GREY_32: "rgba(0, 0, 0, 0.32)",
+  WHITE_32: "rgba(255, 255, 255, 0.32)",
   WHITE_56: "rgba(255, 255, 255, 0.56)"
 };
