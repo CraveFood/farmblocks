@@ -1,10 +1,11 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const size = "16px";
+const checkboxSize = "16px";
+const toggleSize = "24px";
 const margin = "8px";
 
-const baseColors = props => {
+const checkboxColors = props => {
   if (props.disabled) {
     return css`
       color: ${colors.GREY_16};
@@ -19,9 +20,86 @@ const baseColors = props => {
   `;
 };
 
-const hoverColors = props => {
+const checkboxStyles = props =>
+  !props.switch &&
+  css`
+    width: ${checkboxSize};
+    height: ${checkboxSize};
+    font-size: 8px;
+    border-radius: 4px;
+
+    .checkmark {
+      visibility: ${props => (props.checked ? "visible" : "hidden")};
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    ${checkboxColors};
+  `;
+
+const switchBackground = props => {
+  if (props.disabled) {
+    return css`
+      background: ${colors.GREY_32};
+    `;
+  }
+  if (props.checked) {
+    return css`
+      background: ${colors.LETTUCE};
+    `;
+  }
+  return css`
+    background: ${colors.SUGAR};
+  `;
+};
+
+const switchStyles = props =>
+  props.switch &&
+  css`
+    width: 56px;
+    height: 32px;
+    border-radius: 100px;
+    border-color: ${colors.GREY_16};
+
+    .toggle {
+      position: relative;
+      transition: ease all 0.2s;
+      width: ${toggleSize};
+      height: ${toggleSize};
+      border: 1px solid transparent;
+      border-radius: ${toggleSize};
+      box-sizing: border-box;
+      background: ${props.disabled ? colors.WHITE_32 : "white"};
+      box-shadow: 0 0 2px 0 ${colors.GREY_16};
+      left: ${props => (props.checked ? "28px" : "4px")};
+    }
+    ${switchBackground};
+  `;
+
+const hoverStyles = props => {
   if (props.disabled) {
     return;
+  }
+
+  if (props.switch) {
+    if (props.checked) {
+      return css`
+        background: ${colors.AVOCADO};
+        border-color: ${colors.GREY_16};
+        .toggle {
+          border-color: ${colors.LETTUCE};
+          left: 22px;
+        }
+      `;
+    }
+    return css`
+      background: ${colors.SUGAR};
+      border-color: ${colors.INDIGO_MILK_CAP};
+      .toggle {
+        border-color: ${colors.INDIGO_MILK_CAP};
+        left: 10px;
+      }
+    `;
   }
 
   if (!props.checked) {
@@ -54,30 +132,24 @@ const Label = styled.label`
   }
 
   .visibleCheckbox {
-    display: inline-block;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
     box-sizing: border-box;
-    width: ${size};
-    height: ${size};
-    line-height: ${size};
-    font-size: 8px;
     border: 1px solid;
-    border-radius: 4px;
-    text-align: center;
     margin-right: ${props => (props.hasText ? margin : "0")};
-    ${baseColors};
 
-    .checkmark {
-      visibility: ${props => (props.checked ? "visible" : "hidden")};
-    }
+    ${switchStyles};
+    ${checkboxStyles};
   }
 
   :hover .visibleCheckbox {
-    border-width: ${props => (props.disabled ? "1px" : "2px")};
-    ${hoverColors};
+    ${hoverStyles};
+    border-width: ${props => (props.disabled || props.switch ? "1px" : "2px")};
   }
 
   .hiddenCheckbox:focus + div .visibleCheckbox {
-    border-color: ${colors.INDIGO_MILK_CAP};
+    ${props => !props.switch && css`border-color: ${colors.INDIGO_MILK_CAP};`};
   }
 `;
 
