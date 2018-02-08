@@ -57,10 +57,10 @@ const createCheckbox = ({ isSwitch }) =>
           <input type="checkbox" {...inputProps} className="hiddenCheckbox" />
           <TooltipTarget {...tooltipProps} className="tooltipTarget">
             <div className="visibleCheckbox">
-              {!isSwitch && <i className="checkmark wg-check" />}
+              <div className={isSwitch ? "toggle" : "checkmark wg-check"} />
             </div>
             {label && (
-              <Text title type={fontColor} size={fontSizes.MEDIUM}>
+              <Text title={!isSwitch} type={fontColor} size={fontSizes.MEDIUM}>
                 {label}
               </Text>
             )}
