@@ -10,92 +10,97 @@ import StyledLabel from "./styledComponents/Checkbox";
 
 const TooltipTarget = disabledTooltip("div");
 
-class Checkbox extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      checked: props.checked
-    };
-    this.onChange = this.onChange.bind(this);
-  }
-
-  render() {
-    const {
-      type,
-      label,
-      checked,
-      onChange,
-      displayBlock,
-      onMouseLeave,
-      onMouseOver,
-      tooltipText,
-      tooltipAlign,
-      ...inputProps
-    } = this.props;
-    const checkedState = this.state.checked;
-    const labelProps = {
-      checked: checkedState,
-      disabled: inputProps.disabled,
-      hasText: !!label
-    };
-    const tooltipProps = {
-      onMouseLeave,
-      onMouseOver,
-      tooltipText,
-      tooltipAlign,
-      disabled: inputProps.disabled
-    };
-    inputProps.defaultChecked = checkedState;
-    inputProps.onChange = this.onChange;
-    const fontColor = inputProps.disabled ? fontTypes.SUBTLE : fontTypes.NORMAL;
-    return (
-      <StyledLabel {...labelProps}>
-        <input type="checkbox" {...inputProps} className="hiddenCheckbox" />
-        <TooltipTarget {...tooltipProps} className="tooltipTarget">
-          <div className="visibleCheckbox">
-            <i className="checkmark wg-check" />
-          </div>
-          {label && (
-            <Text title type={fontColor} size={fontSizes.MEDIUM}>
-              {label}
-            </Text>
-          )}
-        </TooltipTarget>
-      </StyledLabel>
-    );
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const nextState = {};
-    if (nextProps.checked !== this.props.checked) {
-      nextState.checked = nextProps.checked;
+const createCheckbox = ({ isSwitch }) =>
+  class Checkbox extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        checked: props.checked
+      };
+      this.onChange = this.onChange.bind(this);
     }
-    this.setState(nextState);
-  }
 
-  onChange(event) {
-    // ignore the checked value from event.target.checked and
-    // overwrite it with the inverse of current checked state
-    // state.checked is our single source of truth
-    event.persist();
-    this.setState(prevState => {
-      const newCheckedState = !prevState.checked;
-      event.target.checked = newCheckedState;
-      this.props.onChange(event);
-      return { checked: !prevState.checked };
-    });
-  }
+    render() {
+      const {
+        type,
+        label,
+        checked,
+        onChange,
+        displayBlock,
+        onMouseLeave,
+        onMouseOver,
+        tooltipText,
+        tooltipAlign,
+        ...inputProps
+      } = this.props;
+      const checkedState = this.state.checked;
+      const labelProps = {
+        switch: isSwitch,
+        checked: checkedState,
+        disabled: inputProps.disabled,
+        hasText: !!label
+      };
+      const tooltipProps = {
+        onMouseLeave,
+        onMouseOver,
+        tooltipText,
+        tooltipAlign,
+        disabled: inputProps.disabled
+      };
+      inputProps.defaultChecked = checkedState;
+      inputProps.onChange = this.onChange;
+      const fontColor = inputProps.disabled
+        ? fontTypes.SUBTLE
+        : fontTypes.NORMAL;
+      return (
+        <StyledLabel {...labelProps}>
+          <input type="checkbox" {...inputProps} className="hiddenCheckbox" />
+          <TooltipTarget {...tooltipProps} className="tooltipTarget">
+            <div className="visibleCheckbox">
+              {!isSwitch && <i className="checkmark wg-check" />}
+            </div>
+            {label && (
+              <Text title type={fontColor} size={fontSizes.MEDIUM}>
+                {label}
+              </Text>
+            )}
+          </TooltipTarget>
+        </StyledLabel>
+      );
+    }
 
-  static propTypes = {
-    label: PropTypes.string,
-    checked: PropTypes.bool,
-    onChange: PropTypes.func,
-    ...disabledTooltipProps
+    componentWillReceiveProps(nextProps) {
+      const nextState = {};
+      if (nextProps.checked !== this.props.checked) {
+        nextState.checked = nextProps.checked;
+      }
+      this.setState(nextState);
+    }
+
+    onChange(event) {
+      // ignore the checked value from event.target.checked and
+      // overwrite it with the inverse of current checked state
+      // state.checked is our single source of truth
+      event.persist();
+      this.setState(prevState => {
+        const newCheckedState = !prevState.checked;
+        event.target.checked = newCheckedState;
+        this.props.onChange(event);
+        return { checked: !prevState.checked };
+      });
+    }
+
+    static propTypes = {
+      label: PropTypes.string,
+      checked: PropTypes.bool,
+      onChange: PropTypes.func,
+      ...disabledTooltipProps
+    };
+
+    static defaultProps = {
+      onChange: () => null
+    };
   };
 
-  static defaultProps = {
-    onChange: () => null
-  };
-}
-
-export default Checkbox;
+export const Checkbox = createCheckbox({ isSwitch: false });
+export const Switch = createCheckbox({ isSwitch: true });

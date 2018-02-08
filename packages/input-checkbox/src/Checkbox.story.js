@@ -3,9 +3,9 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
 
-import Checkbox from ".";
+import { Checkbox, Switch } from ".";
 
-storiesOf("Checkbox Input", "module")
+storiesOf("Checkbox/Checkbox Input", "module")
   .add("Default", withInfo()(() => <Checkbox />))
   .add("checked", withInfo()(() => <Checkbox checked />))
   .add("with text label", withInfo()(() => <Checkbox label="Checkbox Label" />))
@@ -48,3 +48,7 @@ storiesOf("Checkbox Input", "module")
       </fieldset>
     ))
   );
+storiesOf("Checkbox/Switch Input", "module").add(
+  "Default",
+  withInfo()(() => <Switch />)
+);
