@@ -27,11 +27,9 @@ install:
 script:
   - yarn lint .
   - yarn lint.test .
-  - yarn snyk
   - yarn coverage
   - greenkeeper-lockfile-upload
 after_success:
-  - snyk monitor
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
   - git config user.name "Travis CI" || travis_terminate 1;
@@ -39,6 +37,8 @@ after_success:
   - git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git || travis_terminate 1;
   - |
     if [ $BRANCH == "master" ]; then
+      yarn snyk || travis_terminate 1;
+      snyk monitor || travis_terminate 1;
       lerna publish --yes || travis_terminate 1;
       yarn build-storybook || travis_terminate 1;
       git add docs;
