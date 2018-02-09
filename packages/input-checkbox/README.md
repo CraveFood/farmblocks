@@ -13,7 +13,7 @@ npm install @crave/farmblocks-input-checkbox
 ```javascript
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Checkbox from "@crave/farmblocks-input-checkbox";
+import { Checkbox } from "@crave/farmblocks-input-checkbox";
 
 const root = document.createElement("div");
 document.body.appendChild(root);
