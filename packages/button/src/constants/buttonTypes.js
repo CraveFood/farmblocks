@@ -1,6 +1,3 @@
-//@flow
-export type ButtonType = $Keys<typeof BUTTON_TYPES>;
-
 const BUTTON_TYPES = {
   PRIMARY: "PRIMARY",
   NEUTRAL: "NEUTRAL",

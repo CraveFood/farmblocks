@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@1.2.0...@crave/farmblocks-hoc-input@1.2.1) (2018-02-08)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-hoc-input
+
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@1.1.1...@crave/farmblocks-hoc-input@1.2.0) (2018-02-07)
+
+
+### Bug Fixes
+
+* **style:** fix disabled text color on hoc input ([25fee9d](https://github.com/CraveFood/farmblocks/commit/25fee9d))
+
+
+### Features
+
+* **formInput:** add innerRef prop on the formInput hoc ([293f964](https://github.com/CraveFood/farmblocks/commit/293f964))
+* **hoc-input:** add styles to input with combobox role ([69782af](https://github.com/CraveFood/farmblocks/commit/69782af))
+
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@1.1.0...@crave/farmblocks-hoc-input@1.1.1) (2018-01-29)
 

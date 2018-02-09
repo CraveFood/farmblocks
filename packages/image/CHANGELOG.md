@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.3"></a>
+## [0.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.3.2...@crave/farmblocks-image@0.3.3) (2018-02-08)
+
+
+### Bug Fixes
+
+* **image:** fix div dimensions on Image component ([75409d8](https://github.com/CraveFood/farmblocks/commit/75409d8))
+
+
+
+
 <a name="0.3.2"></a>
 ## [0.3.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.3.1...@crave/farmblocks-image@0.3.2) (2018-01-29)
 

@@ -12,6 +12,8 @@ User interface blocks.
 * [Farmblocks-Footer](https://github.com/CraveFood/farmblocks/tree/master/packages/footer) - A React component for displaying a helper footer.
 * [Farmblocks-Image](https://github.com/CraveFood/farmblocks/tree/master/packages/image) - A React component for rendering thumbnails.
 * [Farmblocks-Input-Text](https://github.com/CraveFood/farmblocks/tree/master/packages/input-text) - A form field to input simple text
+* [Farmblocks-Input-Select](https://github.com/CraveFood/farmblocks/tree/master/packages/input-select) -
+  A select form field component
 * [Farmblocks-Link](https://github.com/CraveFood/farmblocks/tree/master/packages/link) - A React component to create links.
 * [Farmblocks-Stepper](https://github.com/CraveFood/farmblocks/tree/master/packages/stepper) - A React component for displaying step to step actions.
 * [Farmblocks-Table](https://github.com/CraveFood/farmblocks/tree/master/packages/table) - A component for rendering data tables

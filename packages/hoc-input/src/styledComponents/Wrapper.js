@@ -59,7 +59,7 @@ const Wrapper = styled.div`
       outline: none;
       font-family: Lato, sans-serif;
       font-size: ${ifSearch(fontSizes.SMALL, fontSizes.MEDIUM)}px;
-      color: ${colors.CARBON};
+      color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {
         color: ${placeholderColor};
@@ -75,12 +75,22 @@ const Wrapper = styled.div`
           height: 0;
         }
       }
+      &[role="combobox"] {
+        cursor: pointer;
+      }
     }
 
     .icon {
       color: ${inputBorderColor};
-      margin-right: 8px;
       height: 16px;
+    }
+
+    .icon.search {
+      margin-right: 8px;
+    }
+
+    .icon.dropdown {
+      margin-left: 8px;
     }
 
     .clear {
@@ -94,6 +104,10 @@ const Wrapper = styled.div`
         text-decoration: none;
       }
     }
+  }
+
+  .input.dropdown {
+    cursor: pointer;
   }
 
   .label {
