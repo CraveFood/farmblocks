@@ -1,4 +1,3 @@
-//@flow
 import * as React from "react";
 import PropTypes from "prop-types";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
@@ -9,7 +8,7 @@ import BrieflyDisplay from "./BrieflyDisplay";
 
 const DEFAULT_Z_INDEX = 2500;
 
-class Alert extends React.Component<Object, Object> {
+class Alert extends React.Component {
   static propTypes = {
     text: PropTypes.string.isRequired,
     type: PropTypes.oneOf(Object.keys(AlertTypes)),
@@ -30,7 +29,7 @@ class Alert extends React.Component<Object, Object> {
 
   dismissHandler: Function;
 
-  constructor(props: Object) {
+  constructor(props) {
     super(props);
     this.state = {
       isVisible: true

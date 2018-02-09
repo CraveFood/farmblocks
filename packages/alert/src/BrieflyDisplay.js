@@ -1,10 +1,9 @@
-//@flow
 import * as React from "react";
 import PropTypes from "prop-types";
 
 const DEFAULT_TIME = 2000;
 
-class BrieflyDisplay extends React.Component<Object, Object> {
+class BrieflyDisplay extends React.Component {
   static propTypes = {
     time: PropTypes.number,
     autoRemove: PropTypes.bool,
@@ -18,7 +17,7 @@ class BrieflyDisplay extends React.Component<Object, Object> {
     onTimeout: () => null
   };
 
-  constructor(props: Object) {
+  constructor(props) {
     super(props);
     this.state = {
       isVisible: true,

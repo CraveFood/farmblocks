@@ -1,23 +1,12 @@
-// @flow
 import * as React from "react";
+import PropTypes from "prop-types";
 import Image, { thumbnailSizes } from "@crave/farmblocks-image";
 import Text, { fontTypes, fontSizes } from "@crave/farmblocks-text";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 
 import Container from "./styledComponents/Container";
 
-type Props = {
-  title: string,
-  imageSrc?: string,
-  description?: string,
-  primaryActionText?: string,
-  onPrimaryActionClick?: (SyntheticEvent<HTMLButtonElement>) => void,
-  secondaryActionText?: string,
-  onSecondaryActionClick?: (SyntheticEvent<HTMLButtonElement>) => void,
-  info?: string
-};
-
-class EmptyState extends React.Component<Props> {
+class EmptyState extends React.Component {
   render() {
     return (
       <Container>
@@ -111,6 +100,16 @@ class EmptyState extends React.Component<Props> {
       </div>
     );
   }
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    imageSrc: PropTypes.string,
+    description: PropTypes.string,
+    primaryActionText: PropTypes.string,
+    onPrimaryActionClick: PropTypes.func,
+    secondaryActionText: PropTypes.string,
+    onSecondaryActionClick: PropTypes.func,
+    info: PropTypes.string
+  };
 }
 
 export default EmptyState;
