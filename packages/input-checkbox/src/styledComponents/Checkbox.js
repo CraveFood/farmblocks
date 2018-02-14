@@ -144,10 +144,14 @@ const Label = styled.label`
 
   .hiddenCheckbox:focus + div .visibleCheckbox {
     ${props =>
-      !props.switch &&
-      css`
-        border-color: ${colors.INDIGO_MILK_CAP};
-      `};
+      props.switch
+        ? css`
+            outline: auto 2px Highlight;
+            outline: auto 5px -webkit-focus-ring-color;
+          `
+        : css`
+            border-color: ${colors.INDIGO_MILK_CAP};
+          `};
   }
 `;
 
