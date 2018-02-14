@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.4.2...@crave/farmblocks-theme@1.5.0) (2018-02-14)
+
+
+### Features
+
+* **colors:** adds a new color ([c89573f](https://github.com/CraveFood/farmblocks/commit/c89573f))
+
+
+
+
 <a name="1.4.2"></a>
 ## 1.4.2 (2018-01-29)
 

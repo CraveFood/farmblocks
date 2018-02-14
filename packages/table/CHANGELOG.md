@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.3...@crave/farmblocks-table@1.1.4) (2018-02-14)
+
+
+### Bug Fixes
+
+* **checkbox dependants:** change the format of the import ([ee6eaf4](https://github.com/CraveFood/farmblocks/commit/ee6eaf4))
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.2...@crave/farmblocks-table@1.1.3) (2018-02-09)
 

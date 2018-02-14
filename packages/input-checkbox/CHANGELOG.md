@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@0.2.5...@crave/farmblocks-input-checkbox@1.0.0) (2018-02-14)
+
+
+### Bug Fixes
+
+* **checkbox dependants:** change the format of the import ([ee6eaf4](https://github.com/CraveFood/farmblocks/commit/ee6eaf4))
+
+
+### Features
+
+* **checkbox:** export Checkbox and Switch as separated libs ([7ba48e1](https://github.com/CraveFood/farmblocks/commit/7ba48e1))
+* **checkmark:** add classname for the switch "checkmark" (the toogle) and remove bold label when th ([14e6a91](https://github.com/CraveFood/farmblocks/commit/14e6a91))
+* **styles:** new styles for the switch component ([266ac95](https://github.com/CraveFood/farmblocks/commit/266ac95))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** There is no default import anymore
+
+
+
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@0.2.4...@crave/farmblocks-input-checkbox@0.2.5) (2018-01-29)
 
