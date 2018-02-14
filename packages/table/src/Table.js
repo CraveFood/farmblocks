@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Text, { fontSizes, fontTypes } from "@crave/farmblocks-text";
 import Link from "@crave/farmblocks-link";
-import Checkbox from "@crave/farmblocks-input-checkbox";
+import { Checkbox } from "@crave/farmblocks-input-checkbox";
 import StyledTable from "./styledComponents/Table";
 import { HeaderCell, BodyCell } from "./styledComponents/Cell";
 import { rowHeights } from "./constants";

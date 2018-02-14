@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import Adapter from "enzyme-adapter-react-16";
 import { shallow, mount, configure } from "enzyme";
 
-import Checkbox from ".";
+import { Checkbox } from ".";
 
 //@TODO the functionality of the tests below
 //are very similar to functionality that the hoc-input

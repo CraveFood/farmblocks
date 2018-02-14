@@ -1,6 +1,9 @@
-# Farmblocks Checkbox Input
+# Farmblocks Checkbox Inputs
 
-Checkbox form element.
+Input elements that behaves like a toggle:
+
+* Checkbox
+* Switch
 
 ## Installation
 
@@ -13,7 +16,7 @@ npm install @crave/farmblocks-input-checkbox
 ```javascript
 import React, { Component } from "react";
 import { render } from "react-dom";
-import Checkbox from "@crave/farmblocks-input-checkbox";
+import { Checkbox, Switch } from "@crave/farmblocks-input-checkbox";
 
 const root = document.createElement("div");
 document.body.appendChild(root);
@@ -21,7 +24,9 @@ document.body.appendChild(root);
 render(
   <div>
     <Checkbox label="Checkbox Label" />
+    <Switch label="Switch Label" />
     <Checkbox checked label="Checkbox Label" />
+    <Switch checked label="Switch Label" />
     <Checkbox
       disabled
       tooltipText="custom disabled text"
@@ -39,11 +44,12 @@ See the stories source code for more usage examples.
 
 This package assumes that the application using it uses a font icon that have a
 checkmark symbol, and that the class name to include that icon is `.wg-check`.
+This icon is used by the Checkbox component only.
 
 ## Properties
 
-The core of the Checkbox Input component is an html `input` element of type
-`type="checkbox"`. So the APIs are very similar.
+The core of the Checkbox and Switch components is an html `input` element of
+type `type="checkbox"`. So the APIs are very similar.
 
 This component also accepts the properties `disabled` and `tooltipText` from the
 [Disabled Tooltip HOC](https://github.com/CraveFood/farmblocks/tree/master/packages/hoc-disabled-tooltip)
