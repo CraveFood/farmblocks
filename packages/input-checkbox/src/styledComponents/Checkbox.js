@@ -39,18 +39,12 @@ const checkboxStyles = props =>
 
 const switchBackground = props => {
   if (props.disabled) {
-    return css`
-      background: ${colors.GREY_32};
-    `;
+    return colors.GREY_32;
   }
   if (props.checked) {
-    return css`
-      background: ${colors.LETTUCE};
-    `;
+    return colors.LETTUCE;
   }
-  return css`
-    background: ${colors.SUGAR};
-  `;
+  return colors.SUGAR;
 };
 
 const switchStyles = props =>
@@ -73,7 +67,7 @@ const switchStyles = props =>
       box-shadow: 0 0 2px 0 ${colors.GREY_16};
       left: ${props => (props.checked ? "28px" : "4px")};
     }
-    ${switchBackground};
+    background: ${switchBackground};
   `;
 
 const hoverStyles = props => {
@@ -149,7 +143,11 @@ const Label = styled.label`
   }
 
   .hiddenCheckbox:focus + div .visibleCheckbox {
-    ${props => !props.switch && css`border-color: ${colors.INDIGO_MILK_CAP};`};
+    ${props =>
+      !props.switch &&
+      css`
+        border-color: ${colors.INDIGO_MILK_CAP};
+      `};
   }
 `;
 
