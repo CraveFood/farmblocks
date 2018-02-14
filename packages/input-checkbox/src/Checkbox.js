@@ -15,8 +15,10 @@ const createCheckbox = ({ isSwitch }) =>
     constructor(props) {
       super(props);
       this.state = {
-        checked: props.checked
+        checked: props.checked,
+        clicked: false
       };
+      this.onMouseUp = this.onMouseUp.bind(this);
       this.onChange = this.onChange.bind(this);
     }
 
@@ -25,6 +27,7 @@ const createCheckbox = ({ isSwitch }) =>
         type,
         label,
         checked,
+        onMouseUp,
         onChange,
         displayBlock,
         onMouseLeave,
@@ -35,6 +38,7 @@ const createCheckbox = ({ isSwitch }) =>
       } = this.props;
       const checkedState = this.state.checked;
       const labelProps = {
+        onMouseUp: this.onMouseUp,
         switch: isSwitch,
         checked: checkedState,
         disabled: inputProps.disabled,
@@ -77,7 +81,21 @@ const createCheckbox = ({ isSwitch }) =>
       this.setState(nextState);
     }
 
+    onMouseUp(event) {
+      if (isSwitch) {
+        // we use a clicked state to flag that the
+        // switch change started from a pointer click and not the spacebar
+        this.setState({ clicked: true });
+      }
+      return this.props.onMouseUp(event);
+    }
+
     onChange(event) {
+      if (this.state.clicked) {
+        // we only want to show the focus outline for when
+        // the focus was gained with a tab keypress and not a click
+        event.target.blur();
+      }
       // ignore the checked value from event.target.checked and
       // overwrite it with the inverse of current checked state
       // state.checked is our single source of truth
@@ -86,18 +104,20 @@ const createCheckbox = ({ isSwitch }) =>
         const newCheckedState = !prevState.checked;
         event.target.checked = newCheckedState;
         this.props.onChange(event);
-        return { checked: !prevState.checked };
+        return { checked: !prevState.checked, clicked: false };
       });
     }
 
     static propTypes = {
       label: PropTypes.string,
       checked: PropTypes.bool,
+      onMouseUp: PropTypes.func,
       onChange: PropTypes.func,
       ...disabledTooltipProps
     };
 
     static defaultProps = {
+      onMouseUp: () => null,
       onChange: () => null
     };
   };
