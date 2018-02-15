@@ -65,4 +65,12 @@ storiesOf("HOC disabledTooltip", "module")
         tooltipText="A custom tooltip text"
       />
     ))
+  )
+  .add(
+    "no tooltip",
+    withInfo()(() => (
+      <EnhancedButton disabled noTooltip>
+        A disabled Button
+      </EnhancedButton>
+    ))
   );

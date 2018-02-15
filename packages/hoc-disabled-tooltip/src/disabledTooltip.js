@@ -8,6 +8,7 @@ import Wrapper from "./styledComponents/Wrapper";
 export const disabledTooltipProps = {
   displayBlock: PropTypes.bool,
   disabled: PropTypes.bool,
+  noTooltip: PropTypes.bool,
   tooltipAlign: PropTypes.oneOf(["left", "right"]),
   tooltipText: PropTypes.string,
   onMouseLeave: PropTypes.func,
@@ -28,7 +29,7 @@ function disabledTooltip(wrappedComponentType) {
     }
 
     onMouseOver(event) {
-      this.setState({ showTooltip: true });
+      this.setState({ showTooltip: !this.props.noTooltip });
       return this.props.onMouseOver(event);
     }
 
@@ -40,6 +41,7 @@ function disabledTooltip(wrappedComponentType) {
     render() {
       const {
         displayBlock,
+        noTooltip,
         tooltipAlign,
         tooltipText,
         ...wrappedComponentProps
@@ -79,6 +81,7 @@ function disabledTooltip(wrappedComponentType) {
       ...WrappedComponent.defaultProps,
       displayBlock: false,
       disabled: false,
+      noTooltip: false,
       onMouseOver: () => null,
       onMouseLeave: () => null,
       tooltipAlign: "left",
