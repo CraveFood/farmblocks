@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
+import { ThemeProvider } from "styled-components";
 import buttonTypes from "./constants/buttonTypes";
 import buttonSizes from "./constants/buttonSizes";
 
@@ -264,5 +265,24 @@ storiesOf("Button", module)
         onClick={action("buttonClicked")}
         text="Neutral Button"
       />
+    ))
+  )
+  .add(
+    "Custom Theme",
+    withInfo()(() => (
+      <ThemeProvider
+        theme={{
+          [buttonTypes.PRIMARY]: {
+            color: "deeppink",
+            hoverColor: "blueviolet"
+          }
+        }}
+      >
+        <Button
+          type={buttonTypes.PRIMARY}
+          onClick={action("buttonClicked")}
+          text="🦄 My Beautiful Button"
+        />
+      </ThemeProvider>
     ))
   );
