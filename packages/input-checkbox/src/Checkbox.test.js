@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import Adapter from "enzyme-adapter-react-16";
 import { shallow, mount, configure } from "enzyme";
 
-import { Checkbox } from ".";
+import { Checkbox, Switch } from ".";
 
 //@TODO the functionality of the tests below
 //are very similar to functionality that the hoc-input
@@ -37,6 +37,42 @@ describe("Checkbox", function() {
     const component = renderer.create(<Checkbox />);
     const tree = component.toTree();
     expect(tree.props.onChange()).toBeNull();
+  });
+
+  test("default onMouseUp function returns null", function() {
+    const component = renderer.create(<Checkbox />);
+    const tree = component.toTree();
+    expect(tree.props.onMouseUp()).toBeNull();
+  });
+
+  test("onMouseUp event on a Switch set clicked flag", function() {
+    const component = mount(<Switch />);
+    component.find("label").simulate("mouseUp", {});
+    const newState = component.state();
+    expect(newState.clicked).toBe(true);
+  });
+
+  test("onMouseUp event on a Checkbox dont set clicked flag", function() {
+    const component = mount(<Checkbox />);
+    component.find("label").simulate("mouseUp", {});
+    const newState = component.state();
+    expect(newState.clicked).toBe(false);
+  });
+
+  test("Switch loses focus after a mouse-initiated change event", function() {
+    const blurMock = jest.fn();
+    const component = mount(<Switch />);
+    component.find("label").simulate("mouseUp", {});
+    component.find("input").simulate("change", { target: { blur: blurMock, checked: true } });
+    expect(blurMock).toBeCalled();
+  });
+
+  test("After a mouse-initiated onChange on a Switch the clicked flag is cleared", function() {
+    const component = mount(<Switch />);
+    component.find("label").simulate("mouseUp", {});
+    component.find("input").simulate("change", { target: { blur: ()=>null, checked: true } });
+    const newState = component.state();
+    expect(newState.clicked).toBe(false);
   });
 
   test("onChange property is called after input change", function() {
