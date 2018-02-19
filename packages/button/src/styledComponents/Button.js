@@ -80,8 +80,8 @@ function paddingStyle(props) {
   `;
 }
 
-function neutralStyle(props, theme) {
-  const { textColor, iconColor, textHoverColor, color } = theme[NEUTRAL];
+function neutralStyle(props) {
+  const { textColor, iconColor, textHoverColor, color } = props.theme[NEUTRAL];
   const activatedNeutralStyle = css`
     color: ${textHoverColor};
     border-color: ${textHoverColor};
@@ -107,7 +107,7 @@ function neutralStyle(props, theme) {
 function typeStyle(props) {
   const theme = Object.assign({}, colorTypes, props.theme);
   if (props.type === NEUTRAL) {
-    return neutralStyle(props, theme);
+    return neutralStyle({ ...props, theme });
   }
   const { color, hoverColor } = theme[props.type];
 

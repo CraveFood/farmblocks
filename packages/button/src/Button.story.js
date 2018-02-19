@@ -285,4 +285,25 @@ storiesOf("Button", module)
         />
       </ThemeProvider>
     ))
+  )
+  .add(
+    "Neutral with Custom Theme",
+    withInfo()(() => (
+      <ThemeProvider
+        theme={{
+          [buttonTypes.NEUTRAL]: {
+            textColor: "aqua",
+            iconColor: "aqua",
+            textHoverColor: "slateblue",
+            color: "chartreuse"
+          }
+        }}
+      >
+        <Button
+          type={buttonTypes.NEUTRAL}
+          onClick={action("buttonClicked")}
+          text="Neutral enough?"
+        />
+      </ThemeProvider>
+    ))
   );
