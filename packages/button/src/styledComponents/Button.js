@@ -66,6 +66,9 @@ const Button = styled.button`
 `;
 
 Button.displayName = "StyledButton";
+Button.defaultProps = {
+  theme: {}
+};
 
 function paddingStyle(props) {
   const isMedium = props.size === MEDIUM;
@@ -105,7 +108,7 @@ function neutralStyle(props) {
 }
 
 function typeStyle(props) {
-  const theme = Object.assign({}, colorTypes, props.theme);
+  const theme = { ...colorTypes, ...props.theme };
   if (props.type === NEUTRAL) {
     return neutralStyle({ ...props, theme });
   }
