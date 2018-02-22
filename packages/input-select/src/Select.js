@@ -11,10 +11,15 @@ import {
   DropdownMenuWrapper,
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
+import withMessages, {
+  withMessagesProps
+} from "@crave/farmblocks-hoc-validation-messages";
 
 import EmptyCard from "./components/EmptyCard";
 
-const EnhancedInput = compose(disabledTooltip, formInput)("input");
+const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
+  "input"
+);
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
@@ -153,6 +158,7 @@ Select.propTypes = {
   renderItem: PropTypes.func,
   noResultsMessage: PropTypes.string,
   ...formInputProps,
+  ...withMessagesProps,
   ...disabledTooltipProps
 };
 
