@@ -117,18 +117,5 @@ const Wrapper = styled.div`
     margin-bottom: 8px;
     color: ${labelColor};
   }
-
-  .messages {
-    order: 4;
-    & .message {
-      display: flex;
-      margin-top: 16px;
-      & .icon {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 8px;
-      }
-    }
-  }
 `;
 export default Wrapper;
