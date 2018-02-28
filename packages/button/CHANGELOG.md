@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.0.4...@crave/farmblocks-button@2.1.0) (2018-02-28)
+
+
+### Features
+
+* **Button:** hide tooltip on disabled loading buttons ([dfa3e11](https://github.com/CraveFood/farmblocks/commit/dfa3e11))
+
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.0.3...@crave/farmblocks-button@2.0.4) (2018-02-15)
 
