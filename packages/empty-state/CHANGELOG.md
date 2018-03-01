@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.18"></a>
+## [1.0.18](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.17...@crave/farmblocks-empty-state@1.0.18) (2018-03-01)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-empty-state
+
 <a name="1.0.17"></a>
 ## [1.0.17](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.16...@crave/farmblocks-empty-state@1.0.17) (2018-02-28)
 
