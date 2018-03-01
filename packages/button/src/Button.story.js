@@ -78,7 +78,7 @@ storiesOf("Button", module)
     withInfo()(() => (
       <div
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.32)",
+          backgroundColor: "rgba(0,0,0,0.32)",
           padding: "10px",
           display: "inline-block"
         }}
@@ -87,6 +87,25 @@ storiesOf("Button", module)
           type={buttonTypes.OFF_NEUTRAL}
           onClick={action("buttonClicked")}
           text="Label"
+        />
+      </div>
+    ))
+  )
+  .add(
+    "Off Neutral Button Loading",
+    withInfo()(() => (
+      <div
+        style={{
+          backgroundColor: "rgba(0,0,0,0.32)",
+          padding: "10px",
+          display: "inline-block"
+        }}
+      >
+        <Button
+          type={buttonTypes.OFF_NEUTRAL}
+          onClick={action("buttonClicked")}
+          text="Label"
+          loading
         />
       </div>
     ))
