@@ -15,16 +15,13 @@ export const withMessagesProps = {
 
 const withMessages = WrappedComponent => {
   return class ValidationMessages extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        messages: props.validationMessages
-      };
+    state = {
+      messages: this.props.validationMessages
+    };
 
-      this.onInvalid = this.onInvalid.bind(this);
-      this.onChange = this.onChange.bind(this);
-      this.hasPropsValidations = this.hasPropsValidations.bind(this);
-    }
+    onInvalid = this.onInvalid.bind(this);
+    onChange = this.onChange.bind(this);
+    hasPropsValidations = this.hasPropsValidations.bind(this);
 
     componentWillReceiveProps(nextProps) {
       if (nextProps.validationMessages !== this.props.validationMessages) {
