@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.2.0...@crave/farmblocks-button@2.2.1) (2018-03-01)
+
+
+### Bug Fixes
+
+* **style:** fix disabled background color on buttons ([38ee354](https://github.com/CraveFood/farmblocks/commit/38ee354))
+
+
+
+
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.1.0...@crave/farmblocks-button@2.2.0) (2018-03-01)
+
+
+### Features
+
+* **whitelabel:** enable custom themes for buttons ([168f0cb](https://github.com/CraveFood/farmblocks/commit/168f0cb))
+
+
+
+
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.0.4...@crave/farmblocks-button@2.1.0) (2018-02-28)
+
+
+### Features
+
+* **Button:** hide tooltip on disabled loading buttons ([dfa3e11](https://github.com/CraveFood/farmblocks/commit/dfa3e11))
+
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.0.3...@crave/farmblocks-button@2.0.4) (2018-02-15)
 
