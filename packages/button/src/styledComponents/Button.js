@@ -60,7 +60,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    background-color: rgba(0, 0, 0, 0.16);
+    background-color: #ccc;
     box-shadow: none;
   }
 `;
