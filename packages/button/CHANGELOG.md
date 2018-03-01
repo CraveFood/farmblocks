@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.1"></a>
+## [2.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.2.0...@crave/farmblocks-button@2.2.1) (2018-03-01)
+
+
+### Bug Fixes
+
+* **style:** fix disabled background color on buttons ([38ee354](https://github.com/CraveFood/farmblocks/commit/38ee354))
+
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.1.0...@crave/farmblocks-button@2.2.0) (2018-03-01)
 
