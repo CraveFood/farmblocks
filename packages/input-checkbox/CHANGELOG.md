@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@1.0.0...@crave/farmblocks-input-checkbox@1.1.0) (2018-02-19)
+
+
+### Features
+
+* **style:** add styling for the focused state of the switch component ([fba2029](https://github.com/CraveFood/farmblocks/commit/fba2029))
+* **switch onChange:** remove focus after switch toggle if it was from a mouse click ([ebbea3c](https://github.com/CraveFood/farmblocks/commit/ebbea3c))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@0.2.5...@crave/farmblocks-input-checkbox@1.0.0) (2018-02-14)
 

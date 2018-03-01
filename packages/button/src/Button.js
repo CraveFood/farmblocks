@@ -21,12 +21,14 @@ const Button = props => {
   const marginOffset = text || children ? 10 : 0;
   const buttonContent = text || children;
   const isIconOnly = buttonContent === undefined;
+  const noTooltip = buttonProps.loading;
 
   return (
     <EnhancedButton
       disabled={isDisabled}
       isIconOnly={isIconOnly}
       displayBlock={buttonProps.fluid}
+      noTooltip={noTooltip}
       {...buttonProps}
     >
       {showIcon && (

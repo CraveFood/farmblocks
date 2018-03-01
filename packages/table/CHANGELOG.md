@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.7"></a>
+## [1.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.6...@crave/farmblocks-table@1.1.7) (2018-02-28)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-table
+
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.5...@crave/farmblocks-table@1.1.6) (2018-02-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-table
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.4...@crave/farmblocks-table@1.1.5) (2018-02-15)
 
