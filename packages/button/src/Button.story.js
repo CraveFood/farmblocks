@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
+import { ThemeProvider } from "styled-components";
 import buttonTypes from "./constants/buttonTypes";
 import buttonSizes from "./constants/buttonSizes";
 
@@ -77,7 +78,7 @@ storiesOf("Button", module)
     withInfo()(() => (
       <div
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.32)",
+          backgroundColor: "rgba(0,0,0,0.32)",
           padding: "10px",
           display: "inline-block"
         }}
@@ -86,6 +87,25 @@ storiesOf("Button", module)
           type={buttonTypes.OFF_NEUTRAL}
           onClick={action("buttonClicked")}
           text="Label"
+        />
+      </div>
+    ))
+  )
+  .add(
+    "Off Neutral Button Loading",
+    withInfo()(() => (
+      <div
+        style={{
+          backgroundColor: "rgba(0,0,0,0.32)",
+          padding: "10px",
+          display: "inline-block"
+        }}
+      >
+        <Button
+          type={buttonTypes.OFF_NEUTRAL}
+          onClick={action("buttonClicked")}
+          text="Label"
+          loading
         />
       </div>
     ))
@@ -264,5 +284,45 @@ storiesOf("Button", module)
         onClick={action("buttonClicked")}
         text="Neutral Button"
       />
+    ))
+  )
+  .add(
+    "Custom Theme",
+    withInfo()(() => (
+      <ThemeProvider
+        theme={{
+          [buttonTypes.PRIMARY]: {
+            color: "deeppink",
+            hoverColor: "blueviolet"
+          }
+        }}
+      >
+        <Button
+          type={buttonTypes.PRIMARY}
+          onClick={action("buttonClicked")}
+          text="🦄 My Beautiful Button"
+        />
+      </ThemeProvider>
+    ))
+  )
+  .add(
+    "Neutral with Custom Theme",
+    withInfo()(() => (
+      <ThemeProvider
+        theme={{
+          [buttonTypes.NEUTRAL]: {
+            textColor: "aqua",
+            iconColor: "aqua",
+            textHoverColor: "slateblue",
+            color: "chartreuse"
+          }
+        }}
+      >
+        <Button
+          type={buttonTypes.NEUTRAL}
+          onClick={action("buttonClicked")}
+          text="Neutral enough?"
+        />
+      </ThemeProvider>
     ))
   );

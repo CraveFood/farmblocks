@@ -60,12 +60,15 @@ const Button = styled.button`
   }
 
   &:disabled {
-    background-color: rgba(0, 0, 0, 0.16);
+    background-color: #ccc;
     box-shadow: none;
   }
 `;
 
 Button.displayName = "StyledButton";
+Button.defaultProps = {
+  theme: {}
+};
 
 function paddingStyle(props) {
   const isMedium = props.size === MEDIUM;
@@ -81,7 +84,7 @@ function paddingStyle(props) {
 }
 
 function neutralStyle(props) {
-  const { textColor, iconColor, textHoverColor, color } = colorTypes[NEUTRAL];
+  const { textColor, iconColor, textHoverColor, color } = props.theme[NEUTRAL];
   const activatedNeutralStyle = css`
     color: ${textHoverColor};
     border-color: ${textHoverColor};
@@ -105,10 +108,11 @@ function neutralStyle(props) {
 }
 
 function typeStyle(props) {
+  const theme = { ...colorTypes, ...props.theme };
   if (props.type === NEUTRAL) {
-    return neutralStyle(props);
+    return neutralStyle({ ...props, theme });
   }
-  const { color, hoverColor } = colorTypes[props.type];
+  const { color, hoverColor } = theme[props.type];
 
   return css`
     transition: background 0.3s ease;
