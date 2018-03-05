@@ -13,11 +13,20 @@ const DemoGrid = styled.div`
   background: url("${gridBackground}");
 `;
 
-storiesOf("Map Balloon", "module").add(
-  "Default",
-  withInfo()(() => (
-    <DemoGrid>
-      <MapBalloon x={400} y={400} />
-    </DemoGrid>
-  ))
-);
+storiesOf("Map Balloon", "module")
+  .add(
+    "Default",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon x={400} y={400} />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Open Balloon",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon x={400} y={400} open />
+      </DemoGrid>
+    ))
+  );
