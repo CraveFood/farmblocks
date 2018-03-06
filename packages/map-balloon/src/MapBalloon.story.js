@@ -13,6 +13,13 @@ const DemoGrid = styled.div`
   background: url("${gridBackground}");
 `;
 
+const products = [
+  {
+    image: "https://picsum.photos/640/640/?random",
+    name: "Romaine Lettuce"
+  }
+];
+
 storiesOf("Map Balloon", "module")
   .add(
     "Default",
@@ -26,7 +33,13 @@ storiesOf("Map Balloon", "module")
     "Open Balloon",
     withInfo()(() => (
       <DemoGrid>
-        <MapBalloon x={400} y={400} open />
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          products={products}
+          farm="Paloma Orchards"
+        />
       </DemoGrid>
     ))
   );
