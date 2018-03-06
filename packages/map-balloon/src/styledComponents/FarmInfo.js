@@ -27,7 +27,7 @@ const FarmInfo = ({ name }) => (
         <i className="wg-purveyor" />
       </Text>
     </Icon>
-    <Text type={fontTypes.NEUTRAL} size={fontSizes.HUGE}>
+    <Text title type={fontTypes.NEUTRAL} size={fontSizes.HUGE}>
       {name}
     </Text>
   </Container>

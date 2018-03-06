@@ -32,7 +32,7 @@ const ProductImages = ({ products }) => {
   return (
     <Container image={firstProduct.image}>
       <Gradient>
-        <Text size={36} type={"white"}>
+        <Text title size={36} type={"white"}>
           {firstProduct.name}
         </Text>
       </Gradient>

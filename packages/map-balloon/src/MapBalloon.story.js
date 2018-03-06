@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
 
 import gridBackground from "./demoGrid.png";
-import MapBalloon from ".";
+import MapBalloon, { alignments } from ".";
 
 const DemoGrid = styled.div`
   position: relative;
@@ -15,7 +15,7 @@ const DemoGrid = styled.div`
 
 const products = [
   {
-    image: "https://picsum.photos/640/640/?random",
+    image: "https://picsum.photos/640/?random",
     name: "Romaine Lettuce"
   }
 ];
@@ -39,6 +39,21 @@ storiesOf("Map Balloon", "module")
           open
           products={products}
           farm="Paloma Orchards"
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Open Balloon at Right",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          products={products}
+          farm="Paloma Orchards"
+          align={alignments.RIGHT}
         />
       </DemoGrid>
     ))
