@@ -3,6 +3,13 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Text from "@crave/farmblocks-text";
 
+export const productsPropType = PropTypes.arrayOf(
+  PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
+  })
+);
+
 const Container = styled.div`
   flex: 1;
   background-image: url(${props => props.image});
@@ -42,12 +49,5 @@ const ProductImages = ({ products }) => {
 ProductImages.propTypes = {
   products: productsPropType
 };
-
-const productsPropType = PropTypes.arrayOf(
-  PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
-  })
-);
 
 export default ProductImages;

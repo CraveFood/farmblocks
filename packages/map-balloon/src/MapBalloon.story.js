@@ -3,14 +3,13 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
 
-import gridBackground from "./demoGrid.png";
 import MapBalloon, { alignments } from ".";
 
 const DemoGrid = styled.div`
   position: relative;
   width: 800px;
   height: 800px;
-  background: url("${gridBackground}");
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=");
 `;
 
 const products = [
@@ -54,6 +53,18 @@ storiesOf("Map Balloon", "module")
           products={products}
           farm="Paloma Orchards"
           align={alignments.RIGHT}
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Logo",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          logo={"http://via.placeholder.com/180x180"}
         />
       </DemoGrid>
     ))
