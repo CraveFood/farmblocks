@@ -35,7 +35,7 @@ const Gradient = styled.div`
 `;
 
 const ProductImages = ({ products }) => {
-  const [firstProduct] = products || [];
+  const [firstProduct] = products;
   return (
     <Container image={firstProduct.image}>
       <Gradient>
@@ -47,7 +47,7 @@ const ProductImages = ({ products }) => {
   );
 };
 ProductImages.propTypes = {
-  products: productsPropType
+  products: productsPropType.isRequired
 };
 
 export default ProductImages;

@@ -24,7 +24,12 @@ storiesOf("Map Balloon", "module")
     "Default",
     withInfo()(() => (
       <DemoGrid>
-        <MapBalloon x={400} y={400} />
+        <MapBalloon
+          x={400}
+          y={400}
+          products={products}
+          farm="Paloma Orchards"
+        />
       </DemoGrid>
     ))
   )

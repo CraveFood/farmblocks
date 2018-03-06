@@ -14,22 +14,29 @@ const MapBalloon = ({ x, y, open, align, products, farm, logo }) => (
   <Wrapper x={x} y={y}>
     <Pin highlighted={!logo} />
     {(logo && <Logo src={logo} />) ||
-      (open && (
-        <Balloon align={align}>
-          <ProductImages products={products} />
-          <FarmInfo name={farm} />
-        </Balloon>
-      ))}
+      (open &&
+        products && (
+          <Balloon align={align}>
+            <ProductImages products={products} />
+            <FarmInfo name={farm} />
+          </Balloon>
+        ))}
   </Wrapper>
 );
+
+export const requiredIfNoLogo = propType => (...args) => {
+  const [props] = args;
+  return props["logo"] ? propType(...args) : propType.isRequired(...args);
+};
+
 MapBalloon.propTypes = {
   x: PropTypes.number.isRequired,
   y: PropTypes.number.isRequired,
   align: PropTypes.oneOf(values(alignments)),
-  farm: PropTypes.string,
-  products: productsPropType,
-  open: PropTypes.bool,
-  logo: PropTypes.string
+  logo: PropTypes.string,
+  farm: requiredIfNoLogo(PropTypes.string),
+  products: requiredIfNoLogo(productsPropType),
+  open: PropTypes.bool
 };
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
