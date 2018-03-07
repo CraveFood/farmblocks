@@ -30,8 +30,8 @@ export const requiredIfNoLogo = propType => (...args) => {
 };
 
 MapBalloon.propTypes = {
-  x: PropTypes.number.isRequired,
-  y: PropTypes.number.isRequired,
+  x: PropTypes.number,
+  y: PropTypes.number,
   align: PropTypes.oneOf(values(alignments)),
   logo: PropTypes.string,
   farm: requiredIfNoLogo(PropTypes.string),
