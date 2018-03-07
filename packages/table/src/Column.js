@@ -9,6 +9,7 @@ Column.propTypes = {
   text: PropTypes.func,
   customTitle: PropTypes.func,
   customCell: PropTypes.func,
+  onClick: PropTypes.func,
   clickable: PropTypes.bool,
   width: PropTypes.string,
   align: PropTypes.oneOf(["left", "right"]),

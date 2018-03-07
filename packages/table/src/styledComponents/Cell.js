@@ -21,4 +21,5 @@ export const HeaderCell = styled.th`
 export const BodyCell = styled.td`
   text-align: ${textAlign};
   background-color: ${props => (props.selected ? "white" : colors.SUGAR)};
+  cursor: ${props => props.onClick && "pointer"};
 `;

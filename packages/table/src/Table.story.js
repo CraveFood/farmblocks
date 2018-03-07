@@ -267,6 +267,7 @@ storiesOf("Table/Main", "module")
                 linkSrc={row.url}
               />
             )}
+            onClick={action("onClick")}
           />
           <Column
             fontType={fontTypes.NEUTRAL}

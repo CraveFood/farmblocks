@@ -164,7 +164,8 @@ class Table extends React.Component {
       width,
       align,
       className: "cell",
-      selected: rowSelected
+      selected: rowSelected,
+      onClick: columnProps.onClick
     };
     const bodyCell = content => <BodyCell {...cellProps}>{content}</BodyCell>;
     if (columnProps.customCell) {
@@ -177,15 +178,13 @@ class Table extends React.Component {
         align: columnProps.align,
         size: fontSizes.MEDIUM
       };
-      if (columnProps.fontType) {
-        return bodyCell(
-          <Text {...textProps} type={columnProps.fontType}>
-            {text}
-          </Text>
-        );
-      }
+
+      const type = columnProps.fontType
+        ? columnProps.fontType
+        : fontTypes.NORMAL;
+
       return bodyCell(
-        <Text title {...textProps} type={fontTypes.NORMAL}>
+        <Text {...textProps} type={type}>
           {text}
         </Text>
       );
