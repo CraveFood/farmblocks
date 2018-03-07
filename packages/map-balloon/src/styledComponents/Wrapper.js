@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: absolute;
-  top: ${props => props.x}px;
-  left: ${props => props.y}px;
+  top: ${props => props.y}px;
+  left: ${props => props.x}px;
 `;
 Wrapper.propTypes = {
   x: PropTypes.number.isRequired,
