@@ -102,6 +102,19 @@ storiesOf("Table/Main", "module")
     ))
   )
   .add(
+    "null Table chidren",
+    withInfo()(() => (
+      <Table data={fruits}>
+        {null}
+        <Column title="Fruit" text={row => row.name} />
+        {false}
+        <Column />
+        <Column title="Price" text={row => row.price} />
+        {undefined}
+      </Table>
+    ))
+  )
+  .add(
     "Table with width set",
     withInfo()(() => (
       <Table data={fruits} width="1000px">

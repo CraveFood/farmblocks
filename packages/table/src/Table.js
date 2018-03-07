@@ -59,8 +59,12 @@ class Table extends React.Component {
         <thead>
           <tr>
             {selectableRows && this._renderSelectAllButton()}
-            {React.Children.map(children, (column, index) =>
-              this._renderColumnTitle(index, column.props)
+            {React.Children.map(
+              children,
+              (column, index) =>
+                column &&
+                column.props &&
+                this._renderColumnTitle(index, column.props)
             )}
           </tr>
         </thead>
@@ -69,8 +73,12 @@ class Table extends React.Component {
             return (
               <tr key={index} className="row">
                 {selectableRows && this._renderSelectRowButton(index)}
-                {React.Children.map(children, column =>
-                  this._renderColumnCell(row, index, column.props)
+                {React.Children.map(
+                  children,
+                  column =>
+                    column &&
+                    column.props &&
+                    this._renderColumnCell(row, index, column.props)
                 )}
               </tr>
             );
