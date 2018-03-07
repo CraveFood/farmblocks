@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.10"></a>
+## [1.1.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.9...@crave/farmblocks-table@1.1.10) (2018-03-07)
+
+
+### Bug Fixes
+
+* **table-children:** support for empty / null / false childs inside Table component ([0ed58d0](https://github.com/CraveFood/farmblocks/commit/0ed58d0))
+
+
+
+
 <a name="1.1.9"></a>
 ## [1.1.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.8...@crave/farmblocks-table@1.1.9) (2018-03-01)
 
