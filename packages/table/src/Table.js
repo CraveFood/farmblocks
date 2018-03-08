@@ -29,7 +29,8 @@ class Table extends React.Component {
       width,
       rowHeight,
       selectableRows,
-      selectionHeader
+      selectionHeader,
+      borderless
     } = this.props;
     const emptySelection = this.state.selectedRows.length === 0;
     const selectionHeaderVisible = selectionHeader && !emptySelection;
@@ -37,7 +38,8 @@ class Table extends React.Component {
       width,
       rowHeight,
       emptySelection,
-      selectionHeaderVisible
+      selectionHeaderVisible,
+      borderless
     };
     const selectedData = this.props.data.filter(
       (row, index) => this.state.selectedRows.indexOf(index) !== -1
@@ -233,10 +235,12 @@ class Table extends React.Component {
     onTitleClick: PropTypes.func,
     selectableRows: PropTypes.bool,
     selectionHeader: PropTypes.func,
+    borderless: PropTypes.bool,
     children: PropTypes.node
   };
 
   static defaultProps = {
+    borderless: false,
     rowHeight: rowHeights.MEDIUM
   };
 }
