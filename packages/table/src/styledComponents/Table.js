@@ -5,7 +5,7 @@ const border = `1px solid ${colors.GREY_16}`;
 
 const Table = styled.table`
   border-collapse: collapse;
-  border: ${border};
+  border: ${props => !props.borderless && border};
   padding: 8px 16px;
 
   ${props => props.selectionHeaderVisible && css`border-top: none;`};

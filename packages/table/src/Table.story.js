@@ -383,6 +383,15 @@ storiesOf("Table/Main", "module")
     ))
   )
   .add(
+    "Borderless",
+    withInfo()(() => (
+      <Table data={fruits} borderless>
+        <Column title="Fruit" text={row => row.name} />
+        <Column title="Price" text={row => row.price} />
+      </Table>
+    ))
+  )
+  .add(
     "Complete example",
     withInfo()(() => {
       const formattedDateColumnCell = (rowData, rowIndex, selected) =>
