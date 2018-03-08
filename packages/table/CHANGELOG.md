@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.10...@crave/farmblocks-table@1.2.0) (2018-03-08)
+
+
+### Features
+
+* **Table:** add borderless property to Table component ([69da4aa](https://github.com/CraveFood/farmblocks/commit/69da4aa))
+
+
+
+
 <a name="1.1.10"></a>
 ## [1.1.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.1.9...@crave/farmblocks-table@1.1.10) (2018-03-07)
 
