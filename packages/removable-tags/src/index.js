@@ -1,1 +1,1 @@
-export { default } from "./RemovableTags";
+export { default } from "components/RemovableTags";
