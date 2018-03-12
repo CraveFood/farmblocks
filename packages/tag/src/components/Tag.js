@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 import StyledTag from "./styledComponent/StyledTag";
 
-const RemovableTags = props => {
-  const { text, removable, onRemove } = props;
+const Tag = props => {
+  const { text, onRemove } = props;
   return (
     <StyledTag {...props}>
       {text}
-      {removable && (
+      {onRemove && (
         <div className="icon" onClick={onRemove}>
           <i className="wg-close" />
         </div>
@@ -17,15 +17,9 @@ const RemovableTags = props => {
   );
 };
 
-RemovableTags.propTypes = {
+Tag.propTypes = {
   text: PropTypes.string.isRequired,
-  onRemove: PropTypes.func,
-  removable: PropTypes.bool
+  onRemove: PropTypes.func
 };
 
-RemovableTags.defaultProps = {
-  onRemove: () => null,
-  removable: true
-};
-
-export default RemovableTags;
+export default Tag;

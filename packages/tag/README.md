@@ -1,11 +1,11 @@
-# Farmblocks Removable-tags
+# Farmblocks Tag
 
 A styled and removable tag.
 
 ## Installation
 
 ```
-npm install @crave/farmblocks-removable-tags
+npm install @crave/farmblocks-tags
 ```
 
 ## API
@@ -13,8 +13,7 @@ npm install @crave/farmblocks-removable-tags
 | Property | Description | Type |
 |----------|-------------|------|
 | text (required) | tag text | string |
-| onClose | function to be called when the tag is closed | function |
-
+| onRemove | function to be called when the tag is closed - its absence hide the remove button | function |
 
 ## License
 

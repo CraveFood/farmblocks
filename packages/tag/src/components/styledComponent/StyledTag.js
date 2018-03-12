@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors as colorConstants } from "@crave/farmblocks-theme";
 
-const rightPadding = props => (props.removable ? "0px" : "8px");
+const rightPadding = props => (props.onRemove ? "0px" : "8px");
 
 const StyledTag = styled.div`
   display: inline-block;
