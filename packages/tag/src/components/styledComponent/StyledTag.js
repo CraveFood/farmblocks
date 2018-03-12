@@ -4,7 +4,7 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 const rightPadding = props => (props.onRemove ? "0px" : "8px");
 
 const StyledTag = styled.div`
-  display: inline-block;
+  display: inline-flex;
   box-sizing: border-box;
   border: 1px solid ${colorConstants.GREY_16};
   border-radius: 4px;
@@ -27,9 +27,9 @@ const StyledTag = styled.div`
   }
 
   .icon {
-    display: inline-block;
+    display: inline-flex;
     box-sizing: border-box;
-    padding: 6px 8px 8px 8px;
+    padding: 5px 8px 8px 8px;
 
     font-size: 8px;
     color: ${colorConstants.GREY_32};
