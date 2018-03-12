@@ -23,6 +23,14 @@ storiesOf("Tag", "module")
     ))
   )
   .add(
+    "Removable with value",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag onRemove={action("onRemove")} text="Removable Tag #1" value="1" />
+      </div>
+    ))
+  )
+  .add(
     "Multiple tags",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
