@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { colors as colorConstants } from "@crave/farmblocks-theme";
 
+const rightPadding = props => (props.removable ? "0px" : "8px");
+
 const StyledTag = styled.div`
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid ${colorConstants.GREY_16};
   border-radius: 4px;
-  padding: 6px 0px 8px 8px;
+  padding: 6px ${rightPadding} 8px 8px;
   background-color: ${colorConstants.INDIGO_MILK_CAP};
   height: 32px;
   margin: 2px;

@@ -7,9 +7,9 @@ import RemovableTags from "./RemovableTags";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Removable tags", function() {
-  test("should call onClose when clicking on the icon", function() {
+  test("should call onRemove when clicking on the icon", function() {
     const onClickMock = jest.fn();
-    const wrapper = shallow(<RemovableTags onClose={onClickMock} />);
+    const wrapper = shallow(<RemovableTags onRemove={onClickMock} />);
     wrapper.find(".icon").simulate("click");
 
     expect(onClickMock).toHaveBeenCalledTimes(1);

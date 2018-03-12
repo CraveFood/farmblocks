@@ -7,11 +7,11 @@ class RemovableTags extends Component {
   state = {
     isVisible: true
   };
-  onCloseHandler = this.onCloseHandler.bind(this);
+  onRemoveHandler = this.onRemoveHandler.bind(this);
 
-  onCloseHandler() {
+  onRemoveHandler() {
     this.setState({ isVisible: false });
-    this.props.onClose();
+    this.props.onRemove();
   }
 
   render() {
@@ -19,11 +19,13 @@ class RemovableTags extends Component {
       return null;
     }
     return (
-      <StyledTag>
+      <StyledTag {...this.props}>
         {this.props.text}
-        <div className="icon" onClick={this.onCloseHandler}>
-          <i className="wg-close" />
-        </div>
+        {this.props.removable && (
+          <div className="icon" onClick={this.onRemoveHandler}>
+            <i className="wg-close" />
+          </div>
+        )}
       </StyledTag>
     );
   }
@@ -31,11 +33,13 @@ class RemovableTags extends Component {
 
 RemovableTags.propTypes = {
   text: PropTypes.string.isRequired,
-  onClose: PropTypes.func
+  onRemove: PropTypes.func,
+  removable: PropTypes.bool
 };
 
 RemovableTags.defaultProps = {
-  onClose: () => null
+  onRemove: () => null,
+  removable: true
 };
 
 export default RemovableTags;

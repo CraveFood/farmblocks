@@ -10,7 +10,15 @@ storiesOf("Removable-tags", "module")
     "Default",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
-        <RemovableTags onClose={action("tag clicked")} text="THIS IS A TAG" />
+        <RemovableTags onRemove={action("tag removed")} text="THIS IS A TAG" />
+      </div>
+    ))
+  )
+  .add(
+    "Not removable",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <RemovableTags text="You can't remove this tag" removable={false} />
       </div>
     ))
   )
@@ -18,13 +26,13 @@ storiesOf("Removable-tags", "module")
     "Multiple tags",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
-        <RemovableTags onClose={action("tag clicked")} text="Aug 16, 2018 " />
+        <RemovableTags onRemove={action("tag removed")} text="Aug 16, 2018 " />
         <RemovableTags
-          onClose={action("tag clicked")}
+          onRemove={action("tag removed")}
           text="This is a long removable tag"
         />
         <RemovableTags
-          onClose={action("tag clicked")}
+          onRemove={action("tag removed")}
           text="And that's an even bigger and wider removable tag"
         />
       </div>
