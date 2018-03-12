@@ -9,9 +9,12 @@ Enzyme.configure({ adapter: new Adapter() });
 describe("Removable tags", function() {
   test("should call onRemove when clicking on the icon", function() {
     const onRemoveMock = jest.fn();
-    const wrapper = shallow(<Tag text="some text" onRemove={onRemoveMock} />);
+    const value = { value: "some value" };
+    const wrapper = shallow(
+      <Tag text="some text" value={value} onRemove={onRemoveMock} />
+    );
     wrapper.find(".icon").simulate("click");
 
-    expect(onRemoveMock).toHaveBeenCalledTimes(1);
+    expect(onRemoveMock).toHaveBeenCalledWith(value);
   });
 });

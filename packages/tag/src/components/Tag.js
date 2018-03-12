@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 import StyledTag from "./styledComponent/StyledTag";
 
 const Tag = props => {
-  const { text, onRemove } = props;
+  const { text, onRemove, value } = props;
   return (
     <StyledTag {...props}>
       {text}
       {onRemove && (
-        <div className="icon" onClick={onRemove}>
+        <div className="icon" onClick={onRemove(value)}>
           <i className="wg-close" />
         </div>
       )}
@@ -19,7 +19,8 @@ const Tag = props => {
 
 Tag.propTypes = {
   text: PropTypes.string.isRequired,
-  onRemove: PropTypes.func
+  onRemove: PropTypes.func,
+  value: PropTypes.any
 };
 
 export default Tag;
