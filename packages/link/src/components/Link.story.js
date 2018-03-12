@@ -146,4 +146,5 @@ storiesOf("Link/Featured", module)
         <Link onClick={action("linkClicked")}>Awesome Link</Link>
       </div>
     ))
-  );
+  )
+  .add("no href", withInfo()(() => <Link>Awesome Link</Link>));
