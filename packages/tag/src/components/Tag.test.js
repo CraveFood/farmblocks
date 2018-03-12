@@ -6,7 +6,7 @@ import Tag from "./Tag";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("Removable tags", function() {
+describe("Tag", function() {
   test("should call onRemove when clicking on the icon", function() {
     const onRemoveMock = jest.fn();
     const value = { value: "some value" };
