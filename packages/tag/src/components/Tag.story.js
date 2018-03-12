@@ -10,7 +10,7 @@ storiesOf("Removable-tags", "module")
     "Default",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
-        <Tag onRemove={action("tag removed")} text="THIS IS A TAG" />
+        <Tag onRemove={action("onRemove")} text="THIS IS A TAG" />
       </div>
     ))
   )
@@ -26,13 +26,13 @@ storiesOf("Removable-tags", "module")
     "Multiple tags",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
-        <Tag onRemove={action("tag removed")} text="Aug 16, 2018 " />
+        <Tag onRemove={action("onRemove")} text="Aug 16, 2018 " />
         <Tag
-          onRemove={action("tag removed")}
+          onRemove={action("onRemove")}
           text="This is a long removable tag"
         />
         <Tag
-          onRemove={action("tag removed")}
+          onRemove={action("onRemove")}
           text="And that's an even bigger and wider removable tag"
         />
       </div>
