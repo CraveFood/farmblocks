@@ -17,6 +17,7 @@ const StyledTag = styled.div`
   font-weight: 600;
 
   cursor: default;
+  pointer-events: none;
   &:hover {
     border: 2px solid ${colorConstants.GREY_32};
     padding: 5px 0px 7px 7px;
@@ -30,6 +31,8 @@ const StyledTag = styled.div`
 
     font-size: 8px;
     color: ${colorConstants.GREY_32};
+
+    pointer-events: auto;
   }
 
   &:hover .icon,
