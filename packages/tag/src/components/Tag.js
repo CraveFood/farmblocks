@@ -9,7 +9,7 @@ const Tag = props => {
     <StyledTag {...props}>
       {text}
       {onRemove && (
-        <div className="icon" onClick={onRemove(value)}>
+        <div className="icon" onClick={() => onRemove(value)}>
           <i className="wg-close" />
         </div>
       )}
