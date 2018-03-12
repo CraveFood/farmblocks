@@ -14,6 +14,7 @@ npm install @crave/farmblocks-tags
 |----------|-------------|------|
 | text (required) | tag text | string |
 | onRemove | function to be called when the tag is closed - its absence hide the remove button | function |
+| value | a value to be passed with onRemove when the function is called  | any |
 
 ## License
 
