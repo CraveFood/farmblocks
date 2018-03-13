@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const Pin = styled.div`
-  height: 18px;
-  width: 18px;
+  height: ${props => props.theme.pinSize}px;
+  width: ${props => props.theme.pinSize}px;
   position: absolute;
-  top: -9px;
-  left: -9px;
+  top: -${props => props.theme.pinSize / 2}px;
+  left: -${props => props.theme.pinSize / 2}px;
   border: 2px solid rgba(0, 0, 0, 0.16);
   background-color: ${props => (props.highlighted && colors.CORN) || "white"};
   border-radius: 50%;

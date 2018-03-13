@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
 
-import MapBalloon, { alignments } from ".";
+import MapBalloon, { alignments, balloonSizes } from ".";
 
 const DemoGrid = styled.div`
   position: relative;
@@ -85,6 +85,21 @@ storiesOf("Map Balloon", "module")
           x={400}
           y={400}
           logo={"http://via.placeholder.com/180x180"}
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "size: SMALL",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          products={products}
+          farm="Paloma Orchards"
+          size={balloonSizes.SMALL}
         />
       </DemoGrid>
     ))

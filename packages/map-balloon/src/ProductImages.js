@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
+import { withTheme } from "styled-components";
 
 import PhotoBox from "./styledComponents/PhotoBox";
 import Gradient from "./styledComponents/Gradient";
@@ -12,12 +13,12 @@ export const productsPropType = PropTypes.arrayOf(
   })
 );
 
-const ProductImages = ({ products }) => {
+export const ProductImages = ({ products, theme }) => {
   const [firstProduct] = products;
   return (
     <PhotoBox image={firstProduct.image}>
       <Gradient>
-        <Text title size={36} type={"white"}>
+        <Text title size={theme.productNameSize} type={"white"}>
           {firstProduct.name}
         </Text>
       </Gradient>
@@ -25,7 +26,10 @@ const ProductImages = ({ products }) => {
   );
 };
 ProductImages.propTypes = {
-  products: productsPropType.isRequired
+  products: productsPropType.isRequired,
+  theme: PropTypes.shape({
+    productNameSize: PropTypes.number.isRequired
+  }).isRequired
 };
 
-export default ProductImages;
+export default withTheme(ProductImages);

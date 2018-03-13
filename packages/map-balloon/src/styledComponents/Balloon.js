@@ -30,8 +30,9 @@ const animation = css`animation: ${open} 0.3s ease-in-out;`;
 const Balloon = styled(Card)`
   ${props => props.animated && animation} position: absolute;
   bottom: 17px;
-  ${props => alignStyles[props.align]} height: 320px;
-  width: 320px;
+  ${props => alignStyles[props.align]} height: ${props =>
+      props.theme.balloonSize}px;
+  width: ${props => props.theme.balloonSize}px;
   padding: 0;
   border-radius: 8px;
   border: none;
