@@ -69,11 +69,15 @@ describe("Table", function() {
         <Column clickable title="Name" text={row => row.name} />
       </Table>
     );
-    const firstTitleLink = component.find("th a").first();
+    const firstTitleLink = component.find("th Link").first();
+
     const preventDefaultMock = jest.fn();
     const clickReturn = firstTitleLink
       .props()
       .onClick({ preventDefault: preventDefaultMock });
+
+    firstTitleLink.simulate("click", { preventDefault: preventDefaultMock });
+
     expect(preventDefaultMock).toBeCalled();
     expect(clickReturn).toBe(null);
   });
@@ -86,8 +90,10 @@ describe("Table", function() {
         <Column clickable title="Name" text={row => row.name} />
       </Table>
     );
-    const firstTitleLink = component.find("th a").first();
-    firstTitleLink.simulate("click", { preventDefault: preventDefaultMock });
+    const firstTitleLink = component.find("th Link").first();
+
+    firstTitleLink.props().onClick({ preventDefault: preventDefaultMock });
+
     expect(preventDefaultMock).toBeCalled();
     expect(onTitleClickMock).toBeCalled();
   });

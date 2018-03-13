@@ -139,7 +139,8 @@ describe("formInput", function() {
     const value = "tomato";
     const component = mount(<EnhancedInput type="search" value={value} />);
     expect(component.state("value")).toBe(value);
-    component.find("a").simulate("click");
+
+    component.find("div.clear").simulate("click");
     expect(component.state("value")).toBe("");
   });
 });

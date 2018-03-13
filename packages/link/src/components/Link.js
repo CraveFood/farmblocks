@@ -34,10 +34,13 @@ const Link = props => {
     tooltipAlign,
     displayBlock
   };
+
+  const componentType = linkProps.href ? "a" : "div";
+
   return (
     <Container {...containerProps}>
       {leftIcon && <i className={`${leftIcon} margin-right }`} />}
-      <a {...linkProps}>{children}</a>
+      {React.createElement(componentType, { ...linkProps }, children)}
       {external && <i className="wg-external-link margin-left" />}
     </Container>
   );
@@ -50,6 +53,7 @@ Link.propTypes = {
   external: PropTypes.bool,
   size: PropTypes.number,
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  onClick: PropTypes.func,
   ...disabledTooltipProps
   //... and all properties of html <a>
 };
