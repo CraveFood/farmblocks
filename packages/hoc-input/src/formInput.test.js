@@ -15,9 +15,12 @@ describe("formInput", function() {
     const value = "some value";
     const component = shallow(<EnhancedInput value={value} />);
 
+    const setStateMock = jest.fn();
+    component.instance().setState = setStateMock;
+
     component.setProps({ value });
 
-    expect(component.state().value).toEqual(value);
+    expect(setStateMock.mock.calls.length).toBe(0);
   });
 
   test("changing the value property should update value state", function() {
