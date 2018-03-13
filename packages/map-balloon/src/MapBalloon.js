@@ -10,13 +10,13 @@ import FarmInfo from "./styledComponents/FarmInfo";
 import ProductImages, { productsPropType } from "./ProductImages";
 import Logo from "./styledComponents/Logo";
 
-const MapBalloon = ({ x, y, open, align, products, farm, logo }) => (
+const MapBalloon = ({ x, y, open, align, products, farm, logo, animated }) => (
   <Wrapper x={x} y={y}>
     <Pin highlighted={!logo} />
     {(logo && <Logo src={logo} />) ||
       (open &&
         products && (
-          <Balloon align={align}>
+          <Balloon align={align} animated={animated}>
             <ProductImages products={products} />
             <FarmInfo name={farm} />
           </Balloon>
@@ -36,13 +36,15 @@ MapBalloon.propTypes = {
   logo: PropTypes.string,
   farm: requiredIfNoLogo(PropTypes.string),
   products: requiredIfNoLogo(productsPropType),
-  open: PropTypes.bool
+  open: PropTypes.bool,
+  animated: PropTypes.bool
 };
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
   open: false,
   x: 0,
-  y: 0
+  y: 0,
+  animated: false
 };
 
 export default MapBalloon;

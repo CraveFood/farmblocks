@@ -48,6 +48,21 @@ storiesOf("Map Balloon", "module")
     ))
   )
   .add(
+    "Animated",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          products={products}
+          farm="Paloma Orchards"
+          animated
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
     "Open Balloon at Right",
     withInfo()(() => (
       <DemoGrid>

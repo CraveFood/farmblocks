@@ -25,9 +25,10 @@ const open = keyframes`
   }
 `;
 
+const animation = css`animation: ${open} 0.3s ease-in-out;`;
+
 const Balloon = styled(Card)`
-  animation: ${open} 0.3s ease-in-out;
-  position: absolute;
+  ${props => props.animated && animation} position: absolute;
   bottom: 17px;
   ${props => alignStyles[props.align]} height: 320px;
   width: 320px;
