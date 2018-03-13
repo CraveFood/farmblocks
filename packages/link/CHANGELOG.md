@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.0.5...@crave/farmblocks-link@2.1.0) (2018-03-13)
+
+
+### Features
+
+* **Link:** render div instead of anchor element when Link does not receive href property ([f77720f](https://github.com/CraveFood/farmblocks/commit/f77720f))
+
+
+
+
 <a name="2.0.5"></a>
 ## [2.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.0.4...@crave/farmblocks-link@2.0.5) (2018-02-15)
 
