@@ -16,6 +16,15 @@ storiesOf("Tooltip", module)
       <Tooltip isVisible text="This is a right aligned tooltip" align="right" />
     </div>
   ))
+  .add("isVisible true - center aligned", () => (
+    <div style={{ position: "relative", width: "350px", border: "1px solid" }}>
+      <Tooltip
+        isVisible
+        text="This is a center aligned tooltip"
+        align="center"
+      />
+    </div>
+  ))
   .add("isVisible false", () => (
     <div style={{ position: "relative", width: "250px", border: "1px" }}>
       <Tooltip isVisible={false} text="Hey yo" />

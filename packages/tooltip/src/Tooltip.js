@@ -16,7 +16,7 @@ Tooltip.propTypes = {
   text: PropTypes.string,
   children: PropTypes.node,
   isVisible: PropTypes.bool,
-  align: PropTypes.oneOf(["left", "right"]),
+  align: PropTypes.oneOf(["left", "right", "center"]),
   zIndex: PropTypes.number
 };
 
