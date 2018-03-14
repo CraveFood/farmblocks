@@ -8,9 +8,9 @@ import sizes from "./constants/sizes";
 import Wrapper from "./styledComponents/Wrapper";
 import Pin from "./styledComponents/Pin";
 import Balloon from "./styledComponents/Balloon";
-import FarmInfo from "./styledComponents/FarmInfo";
-import ProductImages, { productsPropType } from "./ProductImages";
-import Logo from "./styledComponents/Logo";
+import Caption from "./styledComponents/Caption";
+import ImageSet, { imageSetPropType } from "./ImageSet";
+import SingleImage from "./styledComponents/SingleImage";
 import themes from "./styledComponents/themes";
 
 const MapBalloon = ({
@@ -18,9 +18,9 @@ const MapBalloon = ({
   y,
   open,
   align,
-  products,
-  farm,
-  logo,
+  imageSet,
+  caption,
+  singleImage,
   animated,
   size
 }) => {
@@ -28,13 +28,13 @@ const MapBalloon = ({
   return (
     <ThemeProvider theme={theme}>
       <Wrapper x={x} y={y}>
-        <Pin highlighted={!logo} />
-        {(logo && <Logo src={logo} />) ||
+        <Pin highlighted={!singleImage} />
+        {(singleImage && <SingleImage src={singleImage} />) ||
           (open &&
-            products && (
+            imageSet && (
               <Balloon align={align} animated={animated}>
-                <ProductImages products={products} />
-                <FarmInfo name={farm} />
+                <ImageSet set={imageSet} />
+                <Caption text={caption} />
               </Balloon>
             ))}
       </Wrapper>
@@ -42,7 +42,7 @@ const MapBalloon = ({
   );
 };
 
-export const requiredIfNoLogo = propType => (...args) => {
+export const requiredIfNoSingleImage = propType => (...args) => {
   const [props] = args;
   return props["logo"] ? propType(...args) : propType.isRequired(...args);
 };
@@ -51,9 +51,9 @@ MapBalloon.propTypes = {
   x: PropTypes.number,
   y: PropTypes.number,
   align: PropTypes.oneOf(values(alignments)),
-  logo: PropTypes.string,
-  farm: requiredIfNoLogo(PropTypes.string),
-  products: requiredIfNoLogo(productsPropType),
+  singleImage: PropTypes.string,
+  caption: requiredIfNoSingleImage(PropTypes.string),
+  imageSet: requiredIfNoSingleImage(imageSetPropType),
   open: PropTypes.bool,
   animated: PropTypes.bool,
   size: PropTypes.oneOf(values(sizes))

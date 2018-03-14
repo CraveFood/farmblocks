@@ -6,14 +6,14 @@ export default {
     balloonSize: 320,
     pinSize: 18,
     iconBox: 48,
-    iconSize: fontSizes.HUGE,
-    productNameSize: 36
+    captionSize: fontSizes.HUGE,
+    imageTextSize: 36
   },
   [sizes.SMALL]: {
     balloonSize: 260,
     pinSize: 16,
     iconBox: 40,
-    iconSize: fontSizes.LARGE,
-    productNameSize: 28
+    captionSize: fontSizes.LARGE,
+    imageTextSize: 28
   }
 };

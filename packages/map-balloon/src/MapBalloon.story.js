@@ -12,10 +12,10 @@ const DemoGrid = styled.div`
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=");
 `;
 
-const products = [
+const imageSet = [
   {
     image: "https://picsum.photos/640/?random",
-    name: "Romaine Lettuce"
+    text: "Romaine Lettuce"
   }
 ];
 
@@ -27,8 +27,8 @@ storiesOf("Map Balloon", "module")
         <MapBalloon
           x={400}
           y={400}
-          products={products}
-          farm="Paloma Orchards"
+          imageSet={imageSet}
+          caption="Paloma Orchards"
         />
       </DemoGrid>
     ))
@@ -41,8 +41,8 @@ storiesOf("Map Balloon", "module")
           x={400}
           y={400}
           open
-          products={products}
-          farm="Paloma Orchards"
+          imageSet={imageSet}
+          caption="Paloma Orchards"
         />
       </DemoGrid>
     ))
@@ -55,8 +55,8 @@ storiesOf("Map Balloon", "module")
           x={400}
           y={400}
           open
-          products={products}
-          farm="Paloma Orchards"
+          imageSet={imageSet}
+          caption="Paloma Orchards"
           animated
         />
       </DemoGrid>
@@ -70,21 +70,21 @@ storiesOf("Map Balloon", "module")
           x={400}
           y={400}
           open
-          products={products}
-          farm="Paloma Orchards"
+          imageSet={imageSet}
+          caption="Paloma Orchards"
           align={alignments.RIGHT}
         />
       </DemoGrid>
     ))
   )
   .add(
-    "Logo",
+    "Single Image",
     withInfo()(() => (
       <DemoGrid>
         <MapBalloon
           x={400}
           y={400}
-          logo={"http://via.placeholder.com/180x180"}
+          singleImage={"https://picsum.photos/180/?random"}
         />
       </DemoGrid>
     ))
@@ -97,8 +97,8 @@ storiesOf("Map Balloon", "module")
           x={400}
           y={400}
           open
-          products={products}
-          farm="Paloma Orchards"
+          imageSet={imageSet}
+          caption="Paloma Orchards"
           size={balloonSizes.SMALL}
         />
       </DemoGrid>

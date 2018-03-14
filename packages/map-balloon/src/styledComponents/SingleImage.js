@@ -11,9 +11,9 @@ const EnhancedImage = styled(Image)`
   border-radius: 8px;
 `;
 
-const Logo = ({ src }) => <EnhancedImage src={src} size={184} />;
-Logo.propTypes = {
+const SingleImage = ({ src }) => <EnhancedImage src={src} size={184} />;
+SingleImage.propTypes = {
   src: PropTypes.string
 };
 
-export default Logo;
+export default SingleImage;

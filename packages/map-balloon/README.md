@@ -34,8 +34,8 @@ ReactDOM.render(
       x={50}
       y={400}
       open
-      farm="My Farm"
-      products={[
+      caption="My Farm"
+      imageSet={[
         {
           name: "Strawberries",
           image: "https://source.unsplash.com/eCre0iMGtEA/800x800"
@@ -62,12 +62,13 @@ farm symbol, and that the class name to include that icon is `.wg-purveyor`.
 * `align`: string (default: 'left') You can use our constants by importing the
   `alignments` object:
   * `import MapBalloon, { alignments } from "@crave/farmblocks-map-balloon";`
-* `logo`: string. Path to a logo image. If this prop is given, the balloon will
-  show a smaller version
-* `farm`: string (required if `logo` is not given). Name of the farm.
-* `products`: array (required if `logo` is not given). Items should be objects
+* `singleImage`: string. Path for a single image. If this prop is given, the
+  balloon will show a smaller version with no caption
+* `caption`: string (required if `logo` is not given). Text to show under the
+  images.
+* `imageSet`: array (required if `logo` is not given). Items should be objects
   with the following properties:
-  * `name`: string (required). Name of the product.
+  * `text`: string (required). Text to show over the the image.
   * `image`: string (required). Path to product image.
 * `open`: boolean. Defines if the balloon wil be visible. Otherwise only the pin
   will be rendered
