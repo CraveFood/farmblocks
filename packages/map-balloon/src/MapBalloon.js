@@ -45,7 +45,9 @@ const MapBalloon = ({
 
 export const requiredIfNoSingleImage = propType => (...args) => {
   const [props] = args;
-  return props["logo"] ? propType(...args) : propType.isRequired(...args);
+  return props["singleImage"]
+    ? propType(...args)
+    : propType.isRequired(...args);
 };
 
 MapBalloon.propTypes = {

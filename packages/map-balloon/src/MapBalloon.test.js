@@ -1,22 +1,22 @@
-import { requiredIfNoLogo } from "./MapBalloon";
+import { requiredIfNoSingleImage } from "./MapBalloon";
 
 describe("MapBalloon", () => {
-  describe("requiredIfNoLogo", () => {
-    test("prop should be optional if logo exists", () => {
+  describe("requiredIfNoSingleImage", () => {
+    test("prop should be optional if singleImage exists", () => {
       const propTypeMock = jest.fn();
       const props = {
-        logo: "a logo url"
+        singleImage: "an image url"
       };
       const args = [props, "another argument"];
-      requiredIfNoLogo(propTypeMock)(...args);
+      requiredIfNoSingleImage(propTypeMock)(...args);
 
       expect(propTypeMock).toBeCalledWith(...args);
     });
-    test("prop should be required if logo does not exists", () => {
+    test("prop should be required if singleImage does not exists", () => {
       const propTypeMock = { isRequired: jest.fn() };
       const props = {};
       const args = [props, "another argument"];
-      requiredIfNoLogo(propTypeMock)(...args);
+      requiredIfNoSingleImage(propTypeMock)(...args);
 
       expect(propTypeMock.isRequired).toBeCalledWith(...args);
     });
