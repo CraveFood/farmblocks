@@ -13,7 +13,6 @@ const StyledTooltip = styled.div`
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   border: solid 1px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  min-width: 15px;
   color: ${colors.CARBON};
 
   font-family: lato, sans-serif;

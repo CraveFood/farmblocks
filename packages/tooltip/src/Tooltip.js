@@ -7,9 +7,9 @@ const Tooltip = props => {
   const content = props.children || props.text;
   return (
     <Container>
-      <StyledTooltip {...props}>{content}</StyledTooltip>
+      {content && <StyledTooltip {...props}>{content}</StyledTooltip>}
     </Container>
-  )
+  );
 };
 
 Tooltip.propTypes = {

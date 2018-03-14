@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import Card from '@crave/farmblocks-card';
+import Card from "@crave/farmblocks-card";
 
 import Tooltip from "./Tooltip";
 
@@ -24,14 +24,12 @@ storiesOf("Tooltip", module)
   .add("with card", () => (
     <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
       <Tooltip isVisible={true}>
-        <Card>
-          this is a Card
-        </Card>
+        <Card>this is a Card</Card>
       </Tooltip>
     </div>
   ))
-  .add("empty", () => (
+  .add("without content", () => (
     <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible={true} />
+      <Tooltip />
     </div>
   ));
