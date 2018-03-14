@@ -64,6 +64,7 @@ farm symbol, and that the class name to include that icon is `.wg-purveyor`.
   * `import MapBalloon, { alignments } from "@crave/farmblocks-map-balloon";`
 * `singleImage`: string. Path for a single image. If this prop is given, the
   balloon will show a smaller version with no caption
+* `iconClass`: string (default: 'wg-purveyor'). Class name for font icon.
 * `caption`: string (required if `logo` is not given). Text to show under the
   images.
 * `imageSet`: array (required if `logo` is not given). Items should be objects

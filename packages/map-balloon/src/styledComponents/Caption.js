@@ -25,8 +25,5 @@ Caption.propTypes = {
     captionSize: PropTypes.number.isRequired
   }).isRequired
 };
-Caption.defaultProps = {
-  iconClass: "wg-purveyor"
-};
 
 export default withTheme(Caption);

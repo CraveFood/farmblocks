@@ -19,6 +19,7 @@ const MapBalloon = ({
   open,
   align,
   imageSet,
+  iconClass,
   caption,
   singleImage,
   animated,
@@ -34,7 +35,7 @@ const MapBalloon = ({
             imageSet && (
               <Balloon align={align} animated={animated}>
                 <ImageSet set={imageSet} />
-                <Caption text={caption} />
+                <Caption text={caption} iconClass={iconClass} />
               </Balloon>
             ))}
       </Wrapper>
@@ -52,6 +53,7 @@ MapBalloon.propTypes = {
   y: PropTypes.number,
   align: PropTypes.oneOf(values(alignments)),
   singleImage: PropTypes.string,
+  iconClass: PropTypes.string,
   caption: requiredIfNoSingleImage(PropTypes.string),
   imageSet: requiredIfNoSingleImage(imageSetPropType),
   open: PropTypes.bool,
@@ -64,7 +66,8 @@ MapBalloon.defaultProps = {
   x: 0,
   y: 0,
   animated: false,
-  size: sizes.MEDIUM
+  size: sizes.MEDIUM,
+  iconClass: "wg-purveyor"
 };
 
 export default MapBalloon;

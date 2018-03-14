@@ -9,7 +9,8 @@ const DemoGrid = styled.div`
   position: relative;
   width: 800px;
   height: 800px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=");
+  background: #ccc
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=");
 `;
 
 const imageSet = [
@@ -100,6 +101,21 @@ storiesOf("Map Balloon", "module")
           imageSet={imageSet}
           caption="Paloma Orchards"
           size={balloonSizes.SMALL}
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Custom Icon",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          imageSet={imageSet}
+          caption="Paloma Orchards"
+          iconClass="wg-place"
         />
       </DemoGrid>
     ))
