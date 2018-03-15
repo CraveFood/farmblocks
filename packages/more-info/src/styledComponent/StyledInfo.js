@@ -12,13 +12,6 @@ const align = props => {
 };
 
 const StyledInfo = styled.div`
-	display: inline-block;
-	color: ${colorConstants.OYSTER};
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 600;
-	pointer-events: none;
-
 	.tooltip {
 		${align};
 	}
@@ -29,6 +22,10 @@ const StyledInfo = styled.div`
 	}
 
 	.icon:hover, .hovered {
+		color: ${colorConstants.INDIGO_MILK_CAP};
+	}
+
+	.icon:hover {
 		color: ${colorConstants.INDIGO_MILK_CAP};
 	}
 }`;

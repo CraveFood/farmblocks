@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import Tooltip from "@crave/farmblocks-tooltip";
+import Text from "@crave/farmblocks-text";
+import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import StyledInfo from "./styledComponent/StyledInfo";
 
@@ -39,14 +42,16 @@ class MoreInfo extends Component {
     return (
       <StyledInfo {...this.props}>
         <Text
+          title
           type={fontTypes.NEUTRAL}
           size={fontSizes.MEDIUM}
           className={this.state.showTooltip && "hovered"}
         >
-          <i className={this.props.icon} />
-          <Tooltip
-            isVisible={this.state.showTooltip}
-            align={this.props.tooltipAlign}
+          {this.props.text}
+          <div
+            className="icon"
+            onMouseOver={this.showTooltip}
+            ref={container => (this.container = container)}
           >
             <i className={this.props.icon} />
             <Tooltip
