@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@1.2.7...@crave/farmblocks-hoc-input@2.0.0) (2018-03-15)
+
+
+### Features
+
+* **hoc-input:** remove validationMessages from formInput hoc ([ec36a21](https://github.com/CraveFood/farmblocks/commit/ec36a21))
+
+
+### BREAKING CHANGES
+
+* **hoc-input:** Packages that use this hoc now must also be composed with the withMessages hoc from
+hoc-validation-messages in order to render the error messages.
+
+ISSUES CLOSED: #261
+
+
+
+
 <a name="1.2.7"></a>
 ## [1.2.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@1.2.6...@crave/farmblocks-hoc-input@1.2.7) (2018-03-15)
 

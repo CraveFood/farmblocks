@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.2.10...@crave/farmblocks-input-select@0.3.0) (2018-03-15)
+
+
+### Features
+
+* use withMessages hoc on select input ([9107706](https://github.com/CraveFood/farmblocks/commit/9107706))
+
+
+
+
 <a name="0.2.10"></a>
 ## [0.2.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.2.9...@crave/farmblocks-input-select@0.2.10) (2018-03-15)
 
