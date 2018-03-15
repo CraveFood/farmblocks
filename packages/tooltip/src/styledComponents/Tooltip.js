@@ -1,7 +1,21 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const Container = styled.div`position: relative;`;
+
+const centerAlignment = css`
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
+const alignX = coordinate => props => {
+  const { align } = props;
+  if (align === "center") {
+    return centerAlignment;
+  }
+
+  return css`${align}: ${coordinate}`;
+};
 
 const StyledTooltip = styled.div`
   visibility: ${props => (props.isVisible ? "visible" : "hidden")};
@@ -18,7 +32,7 @@ const StyledTooltip = styled.div`
 
   font-family: lato, sans-serif;
 
-  ${props => props.align}: 0;
+  ${alignX(0)};
 
   &:after,
   &:before {
@@ -35,14 +49,14 @@ const StyledTooltip = styled.div`
     border-color: transparent;
     border-bottom-color: rgba(0, 0, 0, 0.16);
     border-width: 8px;
-    ${props => props.align}: 7px;
+    ${alignX("7px")};
   }
 
   &:after {
     border-color: transparent;
     border-bottom-color: #ffffff;
     border-width: 7px;
-    ${props => props.align}: 8px;
+    ${alignX("8px")};
   }
 `;
 
