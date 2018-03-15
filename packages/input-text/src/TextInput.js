@@ -5,9 +5,14 @@ import disabledTooltip, {
   disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
+import withMessages, {
+  withMessagesProps
+} from "@crave/farmblocks-hoc-validation-messages";
 
 import Container from "./styledComponents/TextInput";
-const EnhancedInput = compose(disabledTooltip, formInput)("input");
+const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
+  "input"
+);
 
 const TextInput = props => (
   <Container>
@@ -18,6 +23,7 @@ const TextInput = props => (
 TextInput.propTypes = {
   ...disabledTooltipProps,
   ...formInputProps,
+  ...withMessagesProps,
 
   type: PropTypes.string,
   placeholder: PropTypes.string,

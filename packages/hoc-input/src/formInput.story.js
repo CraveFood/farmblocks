@@ -43,27 +43,9 @@ storiesOf("HOC formInput", "module")
     withInfo()(() => <EnhancedInput focused label="Input Label" type="text" />)
   )
   .add(
-    "input with custom error messages",
+    "invalid input",
     withInfo()(() => (
-      <EnhancedInput
-        validationMessages={["Invalid card number", "another error"]}
-        label="Input Label"
-        type="text"
-      />
-    ))
-  )
-  .add(
-    "input with native browser validation",
-    withInfo()(() => (
-      <form onSubmit={e => e.preventDefault()}>
-        <EnhancedInput
-          label="Email"
-          type="email"
-          placeholder="enter a valid email"
-        />
-        <EnhancedInput label="Required field" type="text" required />
-        <input type="submit" />
-      </form>
+      <EnhancedInput label="Input Label" type="text" invalid="true" />
     ))
   )
   .add(

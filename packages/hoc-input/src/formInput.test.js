@@ -10,16 +10,17 @@ describe("formInput", function() {
   configure({ adapter: new Adapter() });
 
   const EnhancedInput = formInput(props => React.createElement("input", props));
-  test("changing the validationMessages property after instantiation should update the validationMessages state and leave value state as it is", function() {
-    const component = shallow(<EnhancedInput value="some value" />);
-    const state = component.state();
-    expect(state.validationMessages.length).toBe(0);
 
-    const validationMessages = ["foo", "bar"];
-    component.setProps({ validationMessages });
+  test("passing the same value on props should leave value state as it is", function() {
+    const value = "some value";
+    const component = shallow(<EnhancedInput value={value} />);
 
-    const expectedState = { ...state, validationMessages };
-    expect(component.state()).toEqual(expectedState);
+    const setStateMock = jest.fn();
+    component.instance().setState = setStateMock;
+
+    component.setProps({ value });
+
+    expect(setStateMock.mock.calls.length).toBe(0);
   });
 
   test("changing the value property should update value state", function() {
@@ -36,12 +37,6 @@ describe("formInput", function() {
     expect(tree.props.onChange()).toBeNull();
   });
 
-  test("default onInvalid function returns null", function() {
-    const component = renderer.create(<EnhancedInput />);
-    const tree = component.toTree();
-    expect(tree.props.onInvalid()).toBeNull();
-  });
-
   test("onChange property is called after input change", function() {
     const onChangeMock = jest.fn();
     const component = mount(<EnhancedInput onChange={onChangeMock} />);
@@ -54,36 +49,6 @@ describe("formInput", function() {
     component.find("input").simulate("change", { target: { value: "foo" } });
     const newState = component.state();
     expect(newState.value).toBe("foo");
-  });
-
-  test("onChange event clears invalid state if built-in validity says it is valid", function() {
-    const component = mount(<EnhancedInput />);
-    component.find("input").simulate("change", {
-      target: { value: "foo", validity: { valid: true } }
-    });
-    const newState = component.state();
-    expect(newState.validationMessages.length).toBe(0);
-  });
-
-  test("onInvalid property is called after input change", function() {
-    const onInvalidMock = jest.fn();
-    const preventDefaultMock = jest.fn();
-    const component = mount(<EnhancedInput onInvalid={onInvalidMock} />);
-    component
-      .find("input")
-      .simulate("invalid", { preventDefault: preventDefaultMock, target: {} });
-    expect(preventDefaultMock).toBeCalled();
-    expect(onInvalidMock).toBeCalled();
-  });
-
-  test("onInvalid event change the state to invalid and display the browser provided message if the custom validationMessages property is empty", function() {
-    const component = mount(<EnhancedInput />);
-    component.find("input").simulate("invalid", {
-      preventDefault: () => null,
-      target: { validationMessage: "bar" }
-    });
-    const newState = component.state();
-    expect(newState.validationMessages[0]).toBe("bar");
   });
 
   test("onFocus property is called after input gains focus", function() {
