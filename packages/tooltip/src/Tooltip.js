@@ -3,16 +3,20 @@ import PropTypes from "prop-types";
 
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 
-const Tooltip = props => (
-  <Container>
-    <StyledTooltip {...props}>{props.text}</StyledTooltip>
-  </Container>
-);
+const Tooltip = props => {
+  const content = props.children || props.text;
+  return (
+    <Container>
+      {content && <StyledTooltip {...props}>{content}</StyledTooltip>}
+    </Container>
+  );
+};
 
 Tooltip.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
+  children: PropTypes.node,
   isVisible: PropTypes.bool,
-  align: PropTypes.oneOf(["left", "right"]),
+  align: PropTypes.oneOf(["left", "right", "center"]),
   zIndex: PropTypes.number
 };
 

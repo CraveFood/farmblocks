@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.5.0...@crave/farmblocks-tooltip@0.6.0) (2018-03-15)
+
+
+### Features
+
+* **tooltip:** add a center align option to tooltip ([6c4d35f](https://github.com/CraveFood/farmblocks/commit/6c4d35f))
+
+
+
+
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.4.3...@crave/farmblocks-tooltip@0.5.0) (2018-03-14)
+
+
+### Bug Fixes
+
+* **tooltip:** prevent rendering without content ([c0df57c](https://github.com/CraveFood/farmblocks/commit/c0df57c))
+
+
+### Features
+
+* **tooltip:** allow children to be rendered instead of only text ([67d5b29](https://github.com/CraveFood/farmblocks/commit/67d5b29))
+
+
+
+
 <a name="0.4.3"></a>
 ## [0.4.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.4.2...@crave/farmblocks-tooltip@0.4.3) (2018-02-14)
 
