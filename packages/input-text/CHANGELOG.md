@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.1.9...@crave/farmblocks-input-text@1.2.0) (2018-03-15)
+
+
+### Features
+
+* use withMessages hoc on text input ([8702c44](https://github.com/CraveFood/farmblocks/commit/8702c44))
+
+
+
+
 <a name="1.1.9"></a>
 ## [1.1.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.1.8...@crave/farmblocks-input-text@1.1.9) (2018-03-15)
 
