@@ -16,7 +16,7 @@ const DemoGrid = styled.div`
 const imageSet = [
   {
     image: "https://picsum.photos/640/?random",
-    text: "Romaine Lettuce"
+    name: "Romaine Lettuce"
   }
 ];
 

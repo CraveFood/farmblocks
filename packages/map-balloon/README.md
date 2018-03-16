@@ -69,7 +69,7 @@ farm symbol, and that the class name to include that icon is `.wg-purveyor`.
   images.
 * `imageSet`: array (required if `logo` is not given). Items should be objects
   with the following properties:
-  * `text`: string (required). Text to show over the the image.
+  * `name`: string (required). Text to show over the the image.
   * `image`: string (required). Path to product image.
 * `open`: boolean. Defines if the balloon wil be visible. Otherwise only the pin
   will be rendered
