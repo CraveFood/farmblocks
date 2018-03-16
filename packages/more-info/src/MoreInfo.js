@@ -9,7 +9,7 @@ import StyledInfo from "./styledComponent/StyledInfo";
 
 class MoreInfo extends Component {
   state = {
-    showTooltip: false
+    tooltipVisible: false
   };
 
   showTooltip = this.showTooltip.bind(this);
@@ -22,13 +22,13 @@ class MoreInfo extends Component {
 
   showTooltip() {
     this.setState({
-      showTooltip: true
+      tooltipVisible: true
     });
   }
 
   hideTooltip() {
     this.setState({
-      showTooltip: false
+      tooltipVisible: false
     });
   }
 
@@ -45,7 +45,7 @@ class MoreInfo extends Component {
           title
           type={fontTypes.NEUTRAL}
           size={fontSizes.MEDIUM}
-          className={this.state.showTooltip && "hovered"}
+          className={this.state.tooltipVisible && "hovered"}
         >
           {this.props.text}
           <div
@@ -56,10 +56,12 @@ class MoreInfo extends Component {
             <i className={this.props.icon} />
             <Tooltip
               className="tooltip"
-              isVisible={this.state.showTooltip}
+              isVisible={this.state.tooltipVisible}
               align={this.props.tooltipAlign}
             >
-              {this.props.children}
+              <div className="hit-area" onMouseOut={this.hideTooltip}>
+                {this.props.children}
+              </div>
             </Tooltip>
           </div>
         </Text>
