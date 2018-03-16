@@ -5,7 +5,7 @@ import Tooltip from "@crave/farmblocks-tooltip";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
-import StyledInfo from "./styledComponent/StyledInfo";
+import StyledInfo from "../styledComponents/StyledInfo";
 
 class MoreInfo extends Component {
   state = {

@@ -5,7 +5,7 @@ import Card from "@crave/farmblocks-card";
 import Button from "@crave/farmblocks-button";
 import { action } from "@storybook/addon-actions";
 
-import MoreInfo from ".";
+import MoreInfo from "./MoreInfo";
 
 storiesOf("More info", "module")
   .add(

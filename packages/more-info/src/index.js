@@ -1,1 +1,1 @@
-export { default } from "./MoreInfo";
+export { default } from "./components/MoreInfo";
