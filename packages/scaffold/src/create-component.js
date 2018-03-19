@@ -3,7 +3,7 @@
 const { prompt } = require("inquirer");
 const slug = require("slug");
 const upperCamelCase = require("uppercamelcase");
-const { mkdir, ShellString, cp } = require("shelljs");
+const { mkdir, ShellString, cp, grep } = require("shelljs");
 
 const packageContents = require("./templates/package");
 const readmeContents = require("./templates/readme");
@@ -35,6 +35,11 @@ const questions = [
     default: "farmblocks, react",
     filter: value => value.split(",").map(value => value.trim()),
     message: "Keywords"
+  },
+  {
+    type: "input",
+    name: "inactiveAuthors",
+    message: "Type a pattern of AUTHORS to exclude"
   }
 ];
 
@@ -48,6 +53,9 @@ prompt(questions)
     const component = componentContents(componentName);
     const story = storyContents({ componentName, fullName });
     const dirName = `packages/${shortName}`;
+    const inactiveAuthors = answers.inactiveAuthors
+      ? new RegExp(answers.inactiveAuthors, "i")
+      : null;
     mkdir("-p", `${dirName}/src`);
     ShellString(packageJSON).to(`${dirName}/package.json`);
     ShellString(readme).to(`${dirName}/README.md`);
@@ -55,5 +63,9 @@ prompt(questions)
     ShellString(component).to(`${dirName}/src/${componentName}.js`);
     ShellString(story).to(`${dirName}/src/${componentName}.story.js`);
     cp(["AUTHORS", "LICENSE"], `${dirName}/.`);
+    inactiveAuthors &&
+      grep("-v", inactiveAuthors, `${dirName}/AUTHORS`).to(
+        `${dirName}/AUTHORS`
+      );
   })
   .catch(console.error); // eslint-disable-line no-console
