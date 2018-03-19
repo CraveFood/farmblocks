@@ -13,11 +13,12 @@ class Radio extends React.Component {
   handleClick = event => {
     event.preventDefault();
     const { disabled, onClick } = this.props;
-    !disabled &&
+    if (!disabled) {
       this.setState({
         checked: true
       });
-    onClick && onClick(event);
+      onClick && onClick(event);
+    }
   };
 
   render() {
