@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
 import Tooltip from "@crave/farmblocks-tooltip";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
@@ -14,11 +13,6 @@ class MoreInfo extends Component {
 
   showTooltip = this.showTooltip.bind(this);
   hideTooltip = this.hideTooltip.bind(this);
-  handleClickOutside = this.handleClickOutside.bind(this);
-
-  componentDidMount() {
-    document.addEventListener("click", this.handleClickOutside);
-  }
 
   showTooltip() {
     this.setState({
@@ -32,12 +26,6 @@ class MoreInfo extends Component {
     });
   }
 
-  handleClickOutside(event) {
-    if (this.container && !this.container.contains(event.target)) {
-      this.hideTooltip();
-    }
-  }
-
   render() {
     return (
       <StyledInfo {...this.props}>
@@ -48,11 +36,7 @@ class MoreInfo extends Component {
           className={this.state.tooltipVisible && "hovered"}
         >
           {this.props.text}
-          <div
-            className="icon"
-            onMouseOver={this.showTooltip}
-            ref={container => (this.container = container)}
-          >
+          <div className="icon" onMouseOver={this.showTooltip}>
             <i className={this.props.icon} />
             <Tooltip
               className="tooltip"

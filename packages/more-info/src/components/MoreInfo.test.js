@@ -41,32 +41,4 @@ describe("More info", () => {
 
     expect(wrapper.state("tooltipVisible")).toBe(false);
   });
-
-  test("should add the event listener at mounting", () => {
-    wrapper = shallow(<MoreInfo icon="icon">Test</MoreInfo>);
-    expect(addEventListenerMock).toHaveBeenCalledTimes(1);
-  });
-
-  test("should remove the event listener at unmounting", () => {
-    wrapper.unmount();
-    expect(removeEventListenerMock).toHaveBeenCalledTimes(1);
-  });
-
-  test("should call hideTooltip() through handleClickOutside correctly", () => {
-    const mockContainer = {
-      contains: jest.fn(() => false)
-    };
-
-    const event = {
-      target: {}
-    };
-
-    const mockHideTooltip = jest.fn();
-
-    wrapper.instance().container = mockContainer;
-    wrapper.instance().hideTooltip = mockHideTooltip;
-    wrapper.instance().handleClickOutside(event);
-
-    expect(wrapper.instance().hideTooltip).toHaveBeenCalledTimes(1);
-  });
 });

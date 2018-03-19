@@ -43,7 +43,7 @@ storiesOf("More info", "module")
     withInfo()(() => (
       <div>
         <MoreInfo text="Mouse over the icon for more info" icon="wg-order">
-          <Card>this is a Card</Card>
+          <Card>This is a Card.</Card>
         </MoreInfo>
       </div>
     ))
@@ -53,7 +53,7 @@ storiesOf("More info", "module")
     withInfo()(() => (
       <div>
         <MoreInfo text="Mouse over the icon for more info" icon="wg-order">
-          <Button onClick={action("button clicked")}>this is a Button</Button>
+          <Button onClick={action("button clicked")}>This is a Button</Button>
         </MoreInfo>
       </div>
     ))
