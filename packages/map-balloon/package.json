@@ -1,0 +1,37 @@
+{
+  "name": "@crave/farmblocks-map-balloon",
+  "version": "0.1.0",
+  "description": "Displays pictures and a caption over a map",
+  "author": "Crave Food Systems and AUTHORS",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": ["AUTHORS", "lib"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "keywords": ["farmblocks", "react"],
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "styled-components": "^2.2.1"
+  },
+  "dependencies": {
+    "@crave/farmblocks-card": "^0.3.13",
+    "@crave/farmblocks-image": "^0.3.4",
+    "@crave/farmblocks-text": "^1.1.7",
+    "@crave/farmblocks-theme": "^1.5.0",
+    "object.values": "^1.0.4"
+  }
+}

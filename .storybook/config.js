@@ -105,6 +105,10 @@ injectGlobal`
     content: "\\e91d";
   }
 
+  .wg-purveyor:before {
+    content: "\\e908";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -118,7 +122,8 @@ injectGlobal`
   .wg-external-link,
   .wg-small-arrow-bottom,
   .wg-search,
-  .wg-close-int {
+  .wg-close-int,
+  .wg-purveyor {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
     speak: none;
