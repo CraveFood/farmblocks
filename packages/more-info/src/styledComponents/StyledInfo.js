@@ -7,7 +7,7 @@ const align = props => {
     return null;
   }
   return css`
-    transform: translateX(${tooltipAlign === "left" && "-"}10px);
+    margin-${tooltipAlign}: -10px;
   `;
 };
 
@@ -19,6 +19,13 @@ const StyledInfo = styled.div`
 	.icon {
 		display: inline-block;
 		margin: 0 8px;
+	}
+
+	.hit-area{
+		margin: -12px;
+		padding: 12px;
+		margin-top: -62px;
+		padding-top: 62px;
 	}
 
 	.icon:hover, .hovered {
