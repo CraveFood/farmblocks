@@ -13,6 +13,13 @@ Image.propTypes = {
   src: PropTypes.string.isRequired,
   badge: PropTypes.bool,
   size: PropTypes.number,
+  border: PropTypes.shape({
+    radius: PropTypes.string,
+    width: PropTypes.string,
+    color: PropTypes.string
+  }),
+  width: PropTypes.string,
+  height: PropTypes.string,
   fit: PropTypes.string
 };
 
