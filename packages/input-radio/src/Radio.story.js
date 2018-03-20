@@ -21,4 +21,10 @@ storiesOf("Radio", "module")
   .add(
     "onClick",
     withInfo()(() => <Radio label="Click me" onClick={action("onClick")} />)
+  )
+  .add(
+    "onChange",
+    withInfo()(() => (
+      <Radio label="Click me" onChange={action("onChange")} value="a value" />
+    ))
   );

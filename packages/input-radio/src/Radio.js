@@ -12,17 +12,19 @@ class Radio extends React.Component {
 
   handleClick = event => {
     event.preventDefault();
-    const { disabled, onClick } = this.props;
+    const { disabled, onClick, onChange, value } = this.props;
+    const { checked } = this.state;
     if (!disabled) {
       this.setState({
         checked: true
       });
       onClick && onClick(event);
+      !checked && onChange && onChange(value);
     }
   };
 
   render() {
-    const { label, onClick, ...inputProps } = this.props;
+    const { label, onClick, onChange, ...inputProps } = this.props;
     const { checked } = this.state;
 
     const labelProps = {
@@ -54,7 +56,9 @@ class Radio extends React.Component {
     label: PropTypes.string,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    onChange: PropTypes.func,
+    value: PropTypes.any
   };
 
   static defaultProps = {
