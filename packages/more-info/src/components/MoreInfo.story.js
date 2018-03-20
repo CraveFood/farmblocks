@@ -12,7 +12,7 @@ storiesOf("More info", "module")
     "Default",
     withInfo()(() => (
       <div>
-        <MoreInfo text="Mouse over the icon for more info" icon="wg-order">
+        <MoreInfo text="Mouse over the icon for more info">
           Tooltip with text
         </MoreInfo>
       </div>
@@ -22,9 +22,7 @@ storiesOf("More info", "module")
     "Without text - tooltip left aligned",
     withInfo()(() => (
       <div>
-        <MoreInfo icon="wg-order" tooltipAlign="left">
-          Tooltip left aligned with text
-        </MoreInfo>
+        <MoreInfo tooltipAlign="left">Tooltip left aligned with text</MoreInfo>
       </div>
     ))
   )
@@ -32,9 +30,7 @@ storiesOf("More info", "module")
     "Without text - tooltip right aligned",
     withInfo()(() => (
       <div style={{ marginLeft: "200px" }}>
-        <MoreInfo icon="wg-order" tooltipAlign="right">
-          Awesome tooltip
-        </MoreInfo>
+        <MoreInfo tooltipAlign="right">Awesome tooltip</MoreInfo>
       </div>
     ))
   )
@@ -42,7 +38,7 @@ storiesOf("More info", "module")
     "with card",
     withInfo()(() => (
       <div>
-        <MoreInfo text="Mouse over the icon for more info" icon="wg-order">
+        <MoreInfo text="Mouse over the icon for more info">
           <Card>This is a Card.</Card>
         </MoreInfo>
       </div>
@@ -52,7 +48,7 @@ storiesOf("More info", "module")
     "with button",
     withInfo()(() => (
       <div>
-        <MoreInfo text="Mouse over the icon for more info" icon="wg-order">
+        <MoreInfo text="Mouse over the icon for more info">
           <Button onClick={action("button clicked")}>This is a Button</Button>
         </MoreInfo>
       </div>

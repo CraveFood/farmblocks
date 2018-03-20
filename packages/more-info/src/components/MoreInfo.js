@@ -62,7 +62,8 @@ MoreInfo.propTypes = {
 };
 
 MoreInfo.defaultProps = {
-  tooltipAlign: "center"
+  tooltipAlign: "center",
+  icon: "wg-question"
 };
 
 export default MoreInfo;
