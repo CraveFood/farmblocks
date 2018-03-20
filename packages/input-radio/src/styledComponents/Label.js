@@ -27,9 +27,12 @@ const checkedStyles = props =>
   `;
 
 export default styled.label`
-  display: inline-flex;
-  align-items: center;
-  margin: 4px 0;
+  margin: 8px 0;
+
+  .tooltipTarget {
+    display: inline-flex;
+    align-items: center;
+  }
 
   .hiddenInput {
     opacity: 0;
@@ -43,7 +46,7 @@ export default styled.label`
     color: ${colors.INDIGO_MILK_CAP};
     border: 1px solid currentColor;
     border-radius: 8px;
-    margin: 8px;
+    margin: 4px 8px;
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -2,8 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
+import disabledTooltip, {
+  disabledTooltipProps
+} from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import Label from "./styledComponents/Label";
+
+const TooltipTarget = disabledTooltip("div");
 
 class Radio extends React.Component {
   state = {
@@ -33,6 +38,10 @@ class Radio extends React.Component {
       onClick,
       onChange,
       checked: checkedProp,
+      onMouseLeave,
+      onMouseOver,
+      tooltipText,
+      tooltipAlign,
       ...inputProps
     } = this.props;
     const { checked } = this.state;
@@ -42,6 +51,13 @@ class Radio extends React.Component {
       onClick: this.handleClick,
       disabled: inputProps.disabled
     };
+    const tooltipProps = {
+      onMouseLeave,
+      onMouseOver,
+      tooltipText,
+      tooltipAlign,
+      disabled: inputProps.disabled
+    };
     inputProps.defaultChecked = checked;
 
     const fontColor =
@@ -49,15 +65,17 @@ class Radio extends React.Component {
 
     return (
       <Label {...labelProps}>
-        <input className="hiddenInput" type="radio" {...inputProps} />
-        <div className="visibleInput">
-          <div className="checked" />
-        </div>
-        {label && (
-          <Text title type={fontColor} size={fontSizes.MEDIUM}>
-            {label}
-          </Text>
-        )}
+        <TooltipTarget {...tooltipProps} className="tooltipTarget">
+          <input className="hiddenInput" type="radio" {...inputProps} />
+          <div className="visibleInput">
+            <div className="checked" />
+          </div>
+          {label && (
+            <Text title type={fontColor} size={fontSizes.MEDIUM}>
+              {label}
+            </Text>
+          )}
+        </TooltipTarget>
       </Label>
     );
   }
@@ -68,11 +86,13 @@ class Radio extends React.Component {
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
     onChange: PropTypes.func,
-    value: PropTypes.any
+    value: PropTypes.any,
+    ...disabledTooltipProps
   };
 
   static defaultProps = {
-    checked: false
+    checked: false,
+    tooltipText: "This option is disabled."
   };
 }
 
