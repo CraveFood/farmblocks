@@ -28,7 +28,13 @@ class Radio extends React.Component {
   }
 
   render() {
-    const { label, onClick, onChange, ...inputProps } = this.props;
+    const {
+      label,
+      onClick,
+      onChange,
+      checked: checkedProp,
+      ...inputProps
+    } = this.props;
     const { checked } = this.state;
 
     const labelProps = {
@@ -36,7 +42,7 @@ class Radio extends React.Component {
       onClick: this.handleClick,
       disabled: inputProps.disabled
     };
-    inputProps.checked = checked;
+    inputProps.defaultChecked = checked;
 
     const fontColor =
       (inputProps.disabled && fontTypes.SUBTLE) || fontTypes.NORMAL;
