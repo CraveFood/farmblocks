@@ -11,7 +11,8 @@ const enabledtyles = props =>
     `) ||
   css`
     cursor: pointer;
-    &:hover .visibleInput {
+    &:hover .visibleInput,
+    & .hiddenInput:focus + .visibleInput {
       color: ${colors.INDIGO_MILK_CAP};
       border-width: 2px;
     }

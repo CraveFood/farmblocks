@@ -8,27 +8,17 @@ describe("Radio", function() {
   configure({ adapter: new Adapter() });
 
   describe("handleClick", () => {
-    let onClickSpy, event, onChangeSpy;
+    let onClickSpy, onChangeSpy;
     beforeEach(() => {
       onClickSpy = jest.fn();
-      event = {
-        preventDefault: jest.fn()
-      };
       onChangeSpy = jest.fn();
     });
     afterEach(() => {
       onClickSpy.mockReset();
-      event.preventDefault.mockReset();
       onChangeSpy.mockReset();
     });
-    test("should prevent default event behavior", function() {
-      const component = shallow(<Radio onClick={onClickSpy} />);
-      const { handleClick } = component.instance();
-      handleClick(event);
-
-      expect(event.preventDefault).toHaveBeenCalledTimes(1);
-    });
     test("should repass event to given onClick prop", function() {
+      const event = {};
       const component = shallow(<Radio onClick={onClickSpy} />);
       const { handleClick } = component.instance();
       handleClick(event);
@@ -39,7 +29,7 @@ describe("Radio", function() {
     test("should not call onClick if prop disabled is given", function() {
       const component = shallow(<Radio onClick={onClickSpy} disabled />);
       const { handleClick } = component.instance();
-      handleClick(event);
+      handleClick();
 
       expect(onClickSpy).not.toHaveBeenCalled();
     });
@@ -47,7 +37,7 @@ describe("Radio", function() {
       const value = "a value";
       const component = shallow(<Radio onChange={onChangeSpy} value={value} />);
       const { handleClick } = component.instance();
-      handleClick(event);
+      handleClick();
 
       expect(onChangeSpy).toHaveBeenCalledTimes(1);
       expect(onChangeSpy).toHaveBeenCalledWith(value);
@@ -55,7 +45,7 @@ describe("Radio", function() {
     test("should not call onChange if already checked", function() {
       const component = shallow(<Radio onChange={onChangeSpy} checked />);
       const { handleClick } = component.instance();
-      handleClick(event);
+      handleClick();
 
       expect(onChangeSpy).toHaveBeenCalledTimes(0);
     });

@@ -16,7 +16,6 @@ class Radio extends React.Component {
   };
 
   handleClick = event => {
-    event.preventDefault();
     const { disabled, onClick, onChange, value } = this.props;
     const { checked } = this.state;
     if (!disabled) {
@@ -42,13 +41,17 @@ class Radio extends React.Component {
       onMouseOver,
       tooltipText,
       tooltipAlign,
-      ...inputProps
+      ...remainingProps
     } = this.props;
     const { checked } = this.state;
+    const inputProps = {
+      ...remainingProps,
+      defaultChecked: checked,
+      onClick: this.handleClick
+    };
 
     const labelProps = {
       checked,
-      onClick: this.handleClick,
       disabled: inputProps.disabled
     };
     const tooltipProps = {
@@ -58,7 +61,6 @@ class Radio extends React.Component {
       tooltipAlign,
       disabled: inputProps.disabled
     };
-    inputProps.defaultChecked = checked;
 
     const fontColor =
       (inputProps.disabled && fontTypes.SUBTLE) || fontTypes.NORMAL;
