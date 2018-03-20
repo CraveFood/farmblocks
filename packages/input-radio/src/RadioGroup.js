@@ -14,15 +14,22 @@ class RadioGroup extends React.Component {
     onChange && onChange(value);
   };
   render() {
-    const { children, name } = this.props;
+    const { children, name, disabled } = this.props;
     const { value } = this.state;
 
-    const childrenProps = { name, onChange: this.handleChange };
+    const allChildrenProps = { name, onChange: this.handleChange };
     return (
       <div>
         {React.Children.map(children, child => {
           const checked = child.props.value === value;
-          return React.cloneElement(child, { ...childrenProps, checked });
+          const childProps = {
+            checked,
+            disabled: child.props.disabled || disabled
+          };
+          return React.cloneElement(child, {
+            ...allChildrenProps,
+            ...childProps
+          });
         })}
       </div>
     );
@@ -32,7 +39,8 @@ class RadioGroup extends React.Component {
     children: PropTypes.node.isRequired,
     name: PropTypes.string.isRequired,
     defaultValue: PropTypes.any,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    disabled: PropTypes.bool
   };
 }
 
