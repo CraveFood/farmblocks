@@ -20,8 +20,8 @@ const enabledtyles = props =>
 const checkedStyles = props =>
   props.checked &&
   css`
-    .checked {
-      background-color: currentColor;
+    .checkedIndicator {
+      opacity: 1;
       transform: scale(1);
     }
   `;
@@ -53,14 +53,16 @@ export default styled.label`
     box-sizing: border-box;
   }
 
-  .checked {
+  .checkedIndicator {
     height: 8px;
     width: 8px;
     border-radius: 4px;
-    background: transparent;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
     transform-origin: center;
     transform: scale(0.2);
+    will-change: opacity, transform;
   }
 
   ${enabledtyles};

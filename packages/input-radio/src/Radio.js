@@ -68,7 +68,7 @@ class Radio extends React.Component {
         <TooltipTarget {...tooltipProps} className="tooltipTarget">
           <input className="hiddenInput" type="radio" {...inputProps} />
           <div className="visibleInput">
-            <div className="checked" />
+            <div className="checkedIndicator" />
           </div>
           {label && (
             <Text title type={fontColor} size={fontSizes.MEDIUM}>
