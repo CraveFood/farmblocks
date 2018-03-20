@@ -9,6 +9,7 @@ storiesOf("Radio", "module")
   .add("Default", withInfo()(() => <Radio />))
   .add("Checked", withInfo()(() => <Radio checked />))
   .add("Disabled", withInfo()(() => <Radio disabled />))
+  .add("Disabled checked", withInfo()(() => <Radio disabled checked />))
   .add("Default w/ label", withInfo()(() => <Radio label="Default radio" />))
   .add(
     "Checked w/ label",

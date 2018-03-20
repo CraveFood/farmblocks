@@ -49,7 +49,7 @@ storiesOf("RadioGroup", "module")
   .add(
     "all disabled",
     withInfo()(() => (
-      <RadioGroup name="radioExample" disabled>
+      <RadioGroup name="radioExample" disabled defaultValue="third">
         <Radio value="first" label="First" />
         <Radio value="second" label="Second" />
         <Radio value="third" label="Third" />
