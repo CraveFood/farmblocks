@@ -23,6 +23,10 @@ class Radio extends React.Component {
     }
   };
 
+  componentWillReceiveProps({ checked }) {
+    if (checked !== this.props.checked) this.setState({ checked });
+  }
+
   render() {
     const { label, onClick, onChange, ...inputProps } = this.props;
     const { checked } = this.state;

@@ -60,4 +60,25 @@ describe("Radio", function() {
       expect(onChangeSpy).toHaveBeenCalledTimes(0);
     });
   });
+  describe("componentWillReceiveProps", () => {
+    let setStateSpy;
+
+    beforeEach(() => {
+      setStateSpy = jest.fn();
+    });
+    test("should change checked state if prop changes", () => {
+      const component = shallow(<Radio />);
+      expect(component.state().checked).toBe(false);
+
+      component.setProps({ checked: true });
+      expect(component.state().checked).toBe(true);
+    });
+    test("should not update state unnecessarily", () => {
+      const component = shallow(<Radio checked />);
+      component.instance().setState = setStateSpy;
+      component.setProps({ checked: true });
+      component.setProps({ unrelatedProp: false });
+      expect(setStateSpy).toHaveBeenCalledTimes(0);
+    });
+  });
 });
