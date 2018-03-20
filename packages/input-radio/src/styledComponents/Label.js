@@ -21,16 +21,15 @@ const checkedStyles = props =>
   props.checked &&
   css`
     .checked {
-      height: 8px;
-      width: 8px;
-      border-radius: 4px;
-      background: currentColor;
+      background-color: currentColor;
+      transform: scale(1);
     }
   `;
 
 export default styled.label`
   display: inline-flex;
   align-items: center;
+  margin: 4px 0;
 
   .hiddenInput {
     opacity: 0;
@@ -49,6 +48,16 @@ export default styled.label`
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+  }
+
+  .checked {
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform-origin: center;
+    transform: scale(0.2);
   }
 
   ${enabledtyles};

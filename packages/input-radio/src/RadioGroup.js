@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import Group from "./styledComponents/Group";
+
 class RadioGroup extends React.Component {
   state = {
     value: this.props.defaultValue
@@ -19,7 +21,7 @@ class RadioGroup extends React.Component {
 
     const allChildrenProps = { name, onChange: this.handleChange };
     return (
-      <div>
+      <Group>
         {React.Children.map(children, child => {
           const checked = child.props.value === value;
           const childProps = {
@@ -31,7 +33,7 @@ class RadioGroup extends React.Component {
             ...childProps
           });
         })}
-      </div>
+      </Group>
     );
   }
 
