@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const enabledtyles = props =>
+const enabledStyles = props =>
   (props.disabled &&
     css`
       .visibleInput {
@@ -66,6 +66,6 @@ export default styled.label`
     will-change: opacity, transform;
   }
 
-  ${enabledtyles};
+  ${enabledStyles};
   ${checkedStyles};
 `;
