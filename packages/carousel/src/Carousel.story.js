@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
 
 import Carousel from ".";
 
@@ -48,7 +49,41 @@ storiesOf("Carousel", "module")
     withInfo()(() => <Carousel imageSet={imageSet.slice(0, 1)} />)
   )
   .add(
+    "1 photo with onEnd",
+    withInfo()(() => (
+      <Carousel
+        onEnd={action("slideshow end")}
+        imageSet={imageSet.slice(0, 1)}
+      />
+    ))
+  )
+  .add(
     "2 photos",
     withInfo()(() => <Carousel imageSet={imageSet.slice(0, 2)} />)
   )
-  .add("all photos", withInfo()(() => <Carousel imageSet={imageSet} />));
+  .add("all photos", withInfo()(() => <Carousel imageSet={imageSet} />))
+  .add(
+    "all photos with onChange and onEnd",
+    withInfo()(() => (
+      <Carousel
+        onChange={action("photo changed")}
+        onEnd={action("end")}
+        imageSet={imageSet}
+      />
+    ))
+  )
+  .add(
+    "custom config",
+    withInfo()(() => (
+      <Carousel
+        itemConfig={{
+          width: 200,
+          height: 200,
+          margin: 2,
+          displayTime: 6000,
+          border: { radius: "100%", width: "4px", color: "green" }
+        }}
+        imageSet={imageSet}
+      />
+    ))
+  );

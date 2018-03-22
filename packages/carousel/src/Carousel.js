@@ -8,6 +8,7 @@ const defaultConfig = {
   width: 656,
   height: 328,
   margin: 20,
+  displayTime: 4000,
   border: {
     radius: "16px",
     width: "4px",
@@ -17,26 +18,35 @@ const defaultConfig = {
 
 class Carousel extends React.Component {
   state = {
-    activeItem: 0
+    activeItem: 0,
+    transitionInterval: 0
   };
 
   nextItem = () => {
     if (this.state.activeItem + 1 === this.props.imageSet.length) {
+      if (this.state.transitionInterval) {
+        window.clearInterval(this.state.transitionInterval);
+        this.props.onEnd();
+      }
       return null;
     }
-    return this.setState({
-      activeItem: this.state.activeItem + 1
-    });
+    const activeItem = this.state.activeItem + 1;
+    this.props.onChange(activeItem);
+    return this.setState({ activeItem });
+  };
+
+  componentDidMount = () => {
+    const transitionInterval = window.setInterval(
+      this.nextItem,
+      this.props.itemConfig.displayTime
+    );
+    return this.setState({ transitionInterval });
   };
 
   render() {
     const { imageSet, itemConfig } = this.props;
     return (
-      <Container
-        activeItem={this.state.activeItem}
-        onClick={this.nextItem}
-        itemConfig={itemConfig}
-      >
+      <Container activeItem={this.state.activeItem} itemConfig={itemConfig}>
         <ul>
           {imageSet.map((item, index) => {
             const isActive = index === this.state.activeItem;
@@ -59,10 +69,13 @@ class Carousel extends React.Component {
 
   static propTypes = {
     imageSet: PropTypes.arrayOf(PropTypes.shape({ image: PropTypes.string })),
+    onChange: PropTypes.func,
+    onEnd: PropTypes.func,
     itemConfig: PropTypes.shape({
       width: PropTypes.number,
       height: PropTypes.number,
       margin: PropTypes.number,
+      displayTime: PropTypes.number,
       border: PropTypes.shape({
         width: PropTypes.string,
         radius: PropTypes.string,
@@ -72,7 +85,9 @@ class Carousel extends React.Component {
   };
 
   static defaultProps = {
-    itemConfig: defaultConfig
+    itemConfig: defaultConfig,
+    onChange: () => null,
+    onEnd: () => null
   };
 }
 
