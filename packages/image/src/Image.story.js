@@ -13,6 +13,21 @@ const imgSrc =
 storiesOf("Image", module)
   .add("default", withInfo()(() => <Image src={imgSrc} />))
   .add("thumbnail", withInfo()(() => <Image src={imgSrc} />))
+  .add(
+    "custom dimensions and border",
+    withInfo()(() => (
+      <Image
+        src={imgSrc}
+        width="800px"
+        height="400px"
+        border={{
+          radius: "16px",
+          width: "4px",
+          color: "rgba(255, 255, 255, 0.56)"
+        }}
+      />
+    ))
+  )
   .add("badge", withInfo()(() => <Image src={imgSrc} badge />))
   .add(
     "thumbnail (small)",

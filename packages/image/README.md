@@ -41,7 +41,16 @@ document.body.appendChild(root);
 
 ## API
 
-https://github.com/CraveFood/farmblocks/blob/master/packages/image/src/Image.js#L11-L19
+| Property | Description | Type |
+| ---------|-------------|------|
+| src | required, the URL of the image | string |
+| badge | make the image a circle | boolean |
+| size | if your image uses the same size in pixels for width and height, you can use this shorthand | number |
+| border | and object describing border properties: radius, width, color | {radius: string, width: string, color: string} |
+| width | the width of the image | string |
+| height | the height of the image | string |
+| fit | how should the image fit the size (same options that the background-scale css attribute) | string |
+
 
 ## Table of sizes
 
