@@ -77,7 +77,9 @@ class Carousel extends React.Component {
   }
 
   static propTypes = {
-    imageSet: PropTypes.arrayOf(PropTypes.shape({ image: PropTypes.string })),
+    imageSet: PropTypes.arrayOf(
+      PropTypes.shape({ image: PropTypes.string, name: PropTypes.string })
+    ),
     onChange: PropTypes.func,
     onEnd: PropTypes.func,
     itemConfig: PropTypes.shape({
