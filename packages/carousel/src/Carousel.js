@@ -8,7 +8,8 @@ const defaultConfig = {
   width: 656,
   height: 328,
   margin: 20,
-  displayTime: 4000,
+  displayTime: 4,
+  transitionTime: 2,
   border: {
     radius: "16px",
     width: "4px",
@@ -18,35 +19,38 @@ const defaultConfig = {
 
 class Carousel extends React.Component {
   state = {
-    activeItem: 0,
-    transitionInterval: 0
+    activeItem: 0
   };
 
   nextItem = () => {
-    if (this.state.activeItem + 1 === this.props.imageSet.length) {
-      if (this.state.transitionInterval) {
-        window.clearInterval(this.state.transitionInterval);
-        this.props.onEnd();
-      }
+    const activeItem = this.state.activeItem + 1;
+    if (activeItem === this.props.imageSet.length) {
+      window.clearInterval(this.transitionId);
+      this.props.onEnd();
       return null;
     }
-    const activeItem = this.state.activeItem + 1;
     this.props.onChange(activeItem);
-    return this.setState({ activeItem });
+    this.setState({ activeItem });
   };
 
   componentDidMount = () => {
-    const transitionInterval = window.setInterval(
+    this.transitionId = window.setInterval(
       this.nextItem,
-      this.props.itemConfig.displayTime
+      this.props.itemConfig.displayTime * 1000
     );
-    return this.setState({ transitionInterval });
+  };
+
+  componentWillUnmount = () => {
+    window.clearInterval(this.transitionId);
   };
 
   render() {
     const { imageSet, itemConfig } = this.props;
     return (
-      <Container activeItem={this.state.activeItem} itemConfig={itemConfig}>
+      <Container
+        activeItem={this.state.activeItem}
+        itemConfig={{ ...defaultConfig, ...itemConfig }}
+      >
         <ul>
           {imageSet.map((item, index) => {
             const isActive = index === this.state.activeItem;
@@ -76,6 +80,7 @@ class Carousel extends React.Component {
       height: PropTypes.number,
       margin: PropTypes.number,
       displayTime: PropTypes.number,
+      transitionTime: PropTypes.number,
       border: PropTypes.shape({
         width: PropTypes.string,
         radius: PropTypes.string,

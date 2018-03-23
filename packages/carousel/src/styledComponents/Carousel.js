@@ -2,15 +2,18 @@ import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const scale = 1.219;
+const activeItemWidth = props => props.itemConfig.width * scale;
+const activeItemHeight = props => props.itemConfig.height * scale;
+const spaceBetweenItems = props => props.itemConfig.margin * 2;
+const stepDistance = props => props.itemConfig.width + spaceBetweenItems(props);
 
 const Container = styled.div`
   position: relative;
   ul {
     position: relative;
     left: 50%;
-    margin-left: ${props => -props.itemConfig.width * scale / 2}px;
-    height: ${props =>
-      props.itemConfig.height * scale + props.itemConfig.margin * 2}px;
+    margin-left: ${props => -(activeItemWidth(props) / 2)}px;
+    height: ${props => activeItemHeight(props) + spaceBetweenItems(props)}px;
     list-style: none;
     padding: 0;
     display: inline-flex;
@@ -18,7 +21,7 @@ const Container = styled.div`
 
     li {
       margin: ${props => props.itemConfig.margin}px;
-      transition: all 2s;
+      transition: all ${props => props.itemConfig.transitionTime}s;
       width: ${props => props.itemConfig.width}px;
       height: ${props => props.itemConfig.height}px;
 
@@ -27,13 +30,11 @@ const Container = styled.div`
       }
 
       &.active {
-        width: ${props => props.itemConfig.width * scale}px;
-        height: ${props => props.itemConfig.height * scale}px;
+        width: ${activeItemWidth}px;
+        height: ${activeItemHeight}px;
       }
       &:first-child {
-        margin-left: ${props =>
-          `${-props.activeItem *
-            (props.itemConfig.width + props.itemConfig.margin * 2)}px`};
+        margin-left: ${props => -(props.activeItem * stepDistance(props))}px;
       }
     }
   }

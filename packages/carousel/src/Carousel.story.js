@@ -73,6 +73,18 @@ storiesOf("Carousel", "module")
     ))
   )
   .add(
+    "partial custom config",
+    withInfo()(() => (
+      <Carousel
+        itemConfig={{
+          displayTime: 1.5,
+          transitionTime: 0.5
+        }}
+        imageSet={imageSet}
+      />
+    ))
+  )
+  .add(
     "custom config",
     withInfo()(() => (
       <Carousel
@@ -80,7 +92,8 @@ storiesOf("Carousel", "module")
           width: 200,
           height: 200,
           margin: 2,
-          displayTime: 6000,
+          displayTime: 2,
+          transitionTime: 0.5,
           border: { radius: "100%", width: "4px", color: "green" }
         }}
         imageSet={imageSet}
