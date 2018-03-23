@@ -1,6 +1,6 @@
 # Farmblocks Carousel
 
-Images carousel that changes the active item automatically from times to times.
+Images carousel that changes the active item automatically from time to time.
 See storybook
 
 ## Installation
