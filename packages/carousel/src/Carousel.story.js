@@ -77,8 +77,8 @@ storiesOf("Carousel", "module")
     withInfo()(() => (
       <Carousel
         itemConfig={{
-          displayTime: 1.5,
-          transitionTime: 0.5
+          displayTime: 6.5,
+          transitionTime: 2.5
         }}
         imageSet={imageSet}
       />

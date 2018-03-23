@@ -29,9 +29,19 @@ const Container = styled.div`
         box-shadow: 0 4px 40px 0 ${colors.GREY_32};
       }
 
+      .caption {
+        text-align: center;
+        font-size: ${props => props.itemConfig.fontSize};
+        transition: opacity ${props => props.itemConfig.transitionTime}s;
+        opacity: 0.32;
+      }
+
       &.active {
         width: ${activeItemWidth}px;
         height: ${activeItemHeight}px;
+        .caption {
+          opacity: 1;
+        }
       }
       &:first-child {
         margin-left: ${props => -(props.activeItem * stepDistance(props))}px;

@@ -1,6 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import Image from "@crave/farmblocks-image";
+import Text from "@crave/farmblocks-text";
 
 import Container from "./styledComponents/Carousel";
 
@@ -8,6 +9,7 @@ const defaultConfig = {
   width: 656,
   height: 328,
   margin: 20,
+  fontSize: "88px",
   displayTime: 4,
   transitionTime: 2,
   border: {
@@ -63,6 +65,9 @@ class Carousel extends React.Component {
                   width="100%"
                   height="100%"
                 />
+                <Text className="caption" title>
+                  {item.name}
+                </Text>
               </li>
             );
           })}
@@ -79,6 +84,7 @@ class Carousel extends React.Component {
       width: PropTypes.number,
       height: PropTypes.number,
       margin: PropTypes.number,
+      fontSize: PropTypes.string,
       displayTime: PropTypes.number,
       transitionTime: PropTypes.number,
       border: PropTypes.shape({
