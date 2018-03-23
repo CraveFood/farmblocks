@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.3.4...@crave/farmblocks-image@0.4.0) (2018-03-23)
+
+
+### Features
+
+* **image:** add new properties width, height, border, and update docs ([28e3d75](https://github.com/CraveFood/farmblocks/commit/28e3d75))
+
+
+
+
 <a name="0.3.4"></a>
 ## [0.3.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.3.3...@crave/farmblocks-image@0.3.4) (2018-02-14)
 
