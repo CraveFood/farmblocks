@@ -6,6 +6,17 @@ const activeItemWidth = props => props.itemConfig.width * scale;
 const activeItemHeight = props => props.itemConfig.height * scale;
 const spaceBetweenItems = props => props.itemConfig.margin * 2;
 const stepDistance = props => props.itemConfig.width + spaceBetweenItems(props);
+const activeItemMargin = ({ itemConfig }) => {
+  const scaledWidth = itemConfig.width * scale;
+
+  // We get the difference from scaled width and normal width.
+  // This difference is the total margin we have to compensate due to transform: scale.
+  // Then we divide it by 2 because we need to add this on left and right margin
+  const scaledMargin = (scaledWidth - itemConfig.width) / 2;
+
+  // Just add the default margin to it
+  return scaledMargin + itemConfig.margin;
+};
 
 const Container = styled.div`
   position: relative;
@@ -45,8 +56,8 @@ const Container = styled.div`
       }
 
       &.active {
-        width: ${activeItemWidth}px;
-        height: ${activeItemHeight}px;
+        transform: scale(${scale});
+        margin: 0 ${activeItemMargin}px;
         .caption {
           opacity: 1;
         }
