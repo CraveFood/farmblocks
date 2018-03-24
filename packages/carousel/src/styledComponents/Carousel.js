@@ -19,11 +19,19 @@ const Container = styled.div`
     display: inline-flex;
     align-items: center;
 
+    transform: translateX(
+      ${props => -(props.activeItem * stepDistance(props))}px
+    );
+    transition: transform ${props => props.itemConfig.transitionTime}s;
+    will-change: transform;
+
     li {
       margin: ${props => props.itemConfig.margin}px;
-      transition: all ${props => props.itemConfig.transitionTime}s;
       width: ${props => props.itemConfig.width}px;
       height: ${props => props.itemConfig.height}px;
+
+      transition: all ${props => props.itemConfig.transitionTime}s;
+      will-change: transform;
 
       .image {
         box-shadow: 0 4px 40px 0 ${colors.GREY_32};
@@ -42,9 +50,6 @@ const Container = styled.div`
         .caption {
           opacity: 1;
         }
-      }
-      &:first-child {
-        margin-left: ${props => -(props.activeItem * stepDistance(props))}px;
       }
     }
   }
