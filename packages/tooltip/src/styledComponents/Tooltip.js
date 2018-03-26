@@ -9,8 +9,7 @@ const centerAlignment = css`
   transform: translateX(-50%);
 `;
 
-const alignX = coordinate => props => {
-  const { align } = props;
+const alignX = coordinate => ({ align }) => {
   if (align === CENTER) {
     return centerAlignment;
   }
