@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@0.2.0...@crave/farmblocks-tags@0.2.1) (2018-03-26)
+
+
+### Bug Fixes
+
+* **tags:** fix export path ([c81dd0b](https://github.com/CraveFood/farmblocks/commit/c81dd0b))
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-03-12)
 
