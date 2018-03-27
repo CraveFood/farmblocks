@@ -3,7 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Card from "@crave/farmblocks-card";
 
-import Tooltip from "./Tooltip";
+import Tooltip, { alignments } from "./";
 
 storiesOf("Tooltip", module)
   .add("isVisible true - left aligned", () => (
@@ -13,7 +13,11 @@ storiesOf("Tooltip", module)
   ))
   .add("isVisible true - right aligned", () => (
     <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible text="This is a right aligned tooltip" align="right" />
+      <Tooltip
+        isVisible
+        text="This is a right aligned tooltip"
+        align={alignments.RIGHT}
+      />
     </div>
   ))
   .add("isVisible true - center aligned", () => (
@@ -21,7 +25,7 @@ storiesOf("Tooltip", module)
       <Tooltip
         isVisible
         text="This is a center aligned tooltip"
-        align="center"
+        align={alignments.CENTER}
       />
     </div>
   ))
