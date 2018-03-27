@@ -52,6 +52,7 @@ class Carousel extends React.Component {
       <Container
         activeItem={this.state.activeItem}
         itemConfig={{ ...itemConfig, ...defaultConfig }}
+        scale={this.props.scale}
       >
         <ul>
           {imageSet.map((item, index) => {
@@ -82,6 +83,7 @@ class Carousel extends React.Component {
     ),
     onChange: PropTypes.func,
     onEnd: PropTypes.func,
+    scale: PropTypes.bool,
     itemConfig: PropTypes.shape({
       width: PropTypes.number,
       height: PropTypes.number,
@@ -99,6 +101,7 @@ class Carousel extends React.Component {
 
   static defaultProps = {
     itemConfig: defaultConfig,
+    scale: true,
     onChange: () => null,
     onEnd: () => null
   };

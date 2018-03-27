@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const scale = 1.219;
-const activeItemWidth = props => props.itemConfig.width * scale;
-const activeItemHeight = props => props.itemConfig.height * scale;
+const scale = props => (props.scale ? 1.219 : 1);
+const activeItemWidth = props => props.itemConfig.width * scale(props);
+const activeItemHeight = props => props.itemConfig.height * scale(props);
 const spaceBetweenItems = props => props.itemConfig.margin * 2;
 const stepDistance = props => props.itemConfig.width + spaceBetweenItems(props);
-const activeItemMargin = ({ itemConfig }) => {
-  const scaledWidth = itemConfig.width * scale;
+const activeItemMargin = props => {
+  const { itemConfig } = props;
+  const scaledWidth = itemConfig.width * scale(props);
 
   // We get the difference from scaled width and normal width.
   // This difference is the total margin we have to compensate due to transform: scale.
