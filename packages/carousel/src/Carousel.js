@@ -9,7 +9,7 @@ const defaultConfig = {
   width: 656,
   height: 328,
   margin: 20,
-  fontSize: "88px",
+  fontSize: 88,
   displayTime: 4,
   transitionTime: 2,
   border: {
@@ -66,7 +66,7 @@ class Carousel extends React.Component {
                   width="100%"
                   height="100%"
                 />
-                <Text className="caption" title>
+                <Text size={itemConfig.fontSize} align="center" title>
                   {item.name}
                 </Text>
               </li>
@@ -88,7 +88,7 @@ class Carousel extends React.Component {
       width: PropTypes.number,
       height: PropTypes.number,
       margin: PropTypes.number,
-      fontSize: PropTypes.string,
+      fontSize: PropTypes.number,
       displayTime: PropTypes.number,
       transitionTime: PropTypes.number,
       border: PropTypes.shape({
