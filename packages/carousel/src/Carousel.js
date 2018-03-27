@@ -51,7 +51,7 @@ class Carousel extends React.Component {
     return (
       <Container
         activeItem={this.state.activeItem}
-        itemConfig={{ ...defaultConfig, ...itemConfig }}
+        itemConfig={{ ...itemConfig, ...defaultConfig }}
       >
         <ul>
           {imageSet.map((item, index) => {
