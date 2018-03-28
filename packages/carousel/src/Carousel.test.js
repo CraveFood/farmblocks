@@ -63,7 +63,7 @@ describe("Carousel", () => {
     expect(setIntervalSpy).toHaveBeenCalledTimes(1);
   });
 
-  test("clearInterval should be cleared on unmount", () => {
+  test("clearInterval should be called on unmount", () => {
     const imageSet = [
       { image: "http://example.com/1.png", name: "1" },
       { image: "http://example.com/2.png", name: "2" },
