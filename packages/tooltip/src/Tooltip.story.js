@@ -54,17 +54,13 @@ storiesOf("Tooltip", module)
         width: "100%"
       }}
     >
-      <div
-        style={{ position: "relative", width: "250px", border: "1px solid" }}
-      >
+      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
         <Tooltip
           align={alignments.AUTO}
           text="This is an auto aligned tooltip"
         />
       </div>
-      <div
-        style={{ position: "relative", width: "250px", border: "1px solid" }}
-      >
+      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
         <Tooltip
           align={alignments.AUTO}
           text="This is an auto aligned tooltip"
