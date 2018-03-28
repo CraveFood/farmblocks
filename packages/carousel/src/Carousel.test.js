@@ -6,8 +6,18 @@ import Carousel from ".";
 describe("Carousel", () => {
   jest.useFakeTimers();
 
+  let clearIntervalSpy;
+  let setIntervalSpy;
+
+  beforeEach(() => {
+    clearIntervalSpy = jest.spyOn(window, "clearInterval");
+    setIntervalSpy = jest.spyOn(window, "setInterval");
+  });
+
   afterEach(() => {
     clearTimeout.mockClear();
+    clearIntervalSpy.mockClear();
+    setIntervalSpy.mockClear();
   });
 
   test("active photo should change after displayTime", () => {
@@ -39,16 +49,68 @@ describe("Carousel", () => {
     expect(onEndMock).toBeCalled();
   });
 
-  test("timer should be cleared on unmount", () => {
+  test("setInterval should be called on mount and not called if there's a transitionId", () => {
+    const imageSet = [{ image: "http://example.com/1.png", name: "1" }];
+    const component = renderer.create(<Carousel imageSet={imageSet} />);
+
+    const cb = component.getInstance().nextItem;
+
+    expect(setIntervalSpy).toHaveBeenCalledWith(cb, 4000);
+    expect(setIntervalSpy).toHaveBeenCalledTimes(1);
+
+    // set interval should not be called again
+    component.getInstance().setInterval();
+    expect(setIntervalSpy).toHaveBeenCalledTimes(1);
+  });
+
+  test("clearInterval should be cleared on unmount", () => {
     const imageSet = [
       { image: "http://example.com/1.png", name: "1" },
       { image: "http://example.com/2.png", name: "2" },
       { image: "http://example.com/3.png", name: "3" }
     ];
     const component = renderer.create(<Carousel imageSet={imageSet} />);
-    const spy = jest.spyOn(window, "clearInterval");
-    expect(component.getInstance().transitionId).toBeDefined();
+
+    const transitionId = component.getInstance().transitionId;
+
+    expect(transitionId).toBeDefined();
     component.unmount();
-    expect(spy).toHaveBeenCalled();
+    expect(clearIntervalSpy).toHaveBeenCalledWith(transitionId);
+  });
+
+  test("clearInterval should not be called if there is no transitionId on unmount", () => {
+    const imageSet = [{ image: "http://example.com/1.png", name: "1" }];
+    const component = renderer.create(<Carousel imageSet={imageSet} />);
+
+    delete component.getInstance().transitionId;
+
+    component.unmount();
+    expect(clearIntervalSpy).not.toHaveBeenCalled();
+  });
+
+  describe("componentWillReceiveProps", () => {
+    const imageSet = [{ image: "http://example.com/1.png", name: "1" }];
+    let component, setStateSpy;
+
+    beforeEach(() => {
+      component = renderer.create(<Carousel imageSet={imageSet} />);
+      setStateSpy = jest.spyOn(component.getInstance(), "setState");
+    });
+
+    afterEach(() => {
+      setStateSpy.mockClear();
+    });
+
+    test("activeItem should be set to 0 when imageSet changes", () => {
+      component.getInstance().componentWillReceiveProps({ imageSet: [] });
+
+      expect(setStateSpy).toHaveBeenCalledWith({ activeItem: 0 });
+    });
+
+    test("state should not change when imageSet doesn't change", () => {
+      component.getInstance().componentWillReceiveProps({ imageSet });
+
+      expect(setStateSpy).not.toHaveBeenCalled();
+    });
   });
 });
