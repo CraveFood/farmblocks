@@ -72,7 +72,7 @@ class Carousel extends React.Component {
     return (
       <Container
         activeItem={this.state.activeItem}
-        itemConfig={{ ...itemConfig, ...defaultConfig }}
+        itemConfig={{ ...defaultConfig, ...itemConfig }}
         scale={this.props.scale}
       >
         <ul>
