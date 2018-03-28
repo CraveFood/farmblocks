@@ -7,8 +7,9 @@ import alignments from "./constants/alignments";
 
 export const getAutoAlign = bodyWidth => containerRef => {
   if (containerRef) {
-    const { x } = containerRef.getBoundingClientRect();
-    if (x > bodyWidth / 2) return alignments.RIGHT;
+    const { x } = containerRef.getBoundingClientRect(); // Position of the element on viewport
+    const halfViewport = bodyWidth / 2;
+    if (x > halfViewport) return alignments.RIGHT;
   }
   return alignments.LEFT;
 };
