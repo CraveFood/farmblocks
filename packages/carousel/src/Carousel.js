@@ -27,23 +27,44 @@ class Carousel extends React.Component {
   nextItem = () => {
     const activeItem = this.state.activeItem + 1;
     if (activeItem === this.props.imageSet.length) {
-      window.clearInterval(this.transitionId);
-      this.props.onEnd();
-      return null;
+      this.clearInterval();
+      return this.props.onEnd();
     }
     this.props.onChange(activeItem);
     this.setState({ activeItem });
   };
 
   componentDidMount = () => {
+    this.setInterval();
+  };
+
+  componentWillUnmount = () => {
+    this.clearInterval();
+  };
+
+  componentWillReceiveProps({ imageSet }) {
+    if (imageSet !== this.props.imageSet) {
+      this.setState({ activeItem: 0 });
+      this.setInterval();
+    }
+  }
+
+  setInterval = () => {
+    if (this.transitionId) {
+      return;
+    }
+
     this.transitionId = window.setInterval(
       this.nextItem,
       this.props.itemConfig.displayTime * 1000
     );
   };
 
-  componentWillUnmount = () => {
-    window.clearInterval(this.transitionId);
+  clearInterval = () => {
+    if (this.transitionId) {
+      window.clearInterval(this.transitionId);
+      delete this.transitionId;
+    }
   };
 
   render() {
