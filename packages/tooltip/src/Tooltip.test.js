@@ -1,4 +1,4 @@
-import { LEFT, RIGHT, AUTO } from "./constants/alignments";
+import { LEFT, RIGHT } from "./constants/alignments";
 import { getAutoAlign } from "./Tooltip";
 
 describe("Tooltip", () => {
@@ -11,21 +11,18 @@ describe("Tooltip", () => {
       containerRef = {
         getBoundingClientRect: getBoundingClientRectMock
       };
-      getAlign = getAutoAlign(bodyWidth)(containerRef);
-    });
-    it("should return the given align if it's not auto", () => {
-      expect(getAlign("other")).toBe("other");
+      getAlign = getAutoAlign(bodyWidth);
     });
     it("should get element position in document", () => {
-      getAlign(AUTO);
+      getAlign(containerRef);
       expect(containerRef.getBoundingClientRect).toHaveBeenCalledTimes(1);
     });
     it("should return left when element is on left side of the document", () => {
-      expect(getAlign(AUTO)).toBe(LEFT);
+      expect(getAlign(containerRef)).toBe(LEFT);
     });
     it("should return right when element is on the right side of the document", () => {
       getBoundingClientRectMock.mockReturnValue({ x: 800 });
-      expect(getAlign(AUTO)).toBe(RIGHT);
+      expect(getAlign(containerRef)).toBe(RIGHT);
     });
   });
 });

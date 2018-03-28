@@ -5,8 +5,7 @@ import values from "object.values";
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
 
-export const getAutoAlign = bodyWidth => containerRef => align => {
-  if (align !== alignments.AUTO) return align;
+export const getAutoAlign = bodyWidth => containerRef => {
   if (containerRef) {
     const { x } = containerRef.getBoundingClientRect();
     if (x > bodyWidth / 2) return alignments.RIGHT;
@@ -19,11 +18,11 @@ class Tooltip extends React.Component {
     align: this.props.align
   };
   componentDidMount = () => {
-    this.setState({
-      align: getAutoAlign(document.body.clientWidth)(this.containerRef)(
-        this.props.align
-      )
-    });
+    const align =
+      this.props.align === alignments.AUTO
+        ? getAutoAlign(document.body.clientWidth)(this.containerRef)
+        : this.props.align;
+    this.setState({ align });
   };
   render() {
     const content = this.props.children || this.props.text;
