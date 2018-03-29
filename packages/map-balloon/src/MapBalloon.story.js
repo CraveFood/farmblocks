@@ -106,6 +106,22 @@ storiesOf("Map Balloon", "module")
     ))
   )
   .add(
+    "custom border radius",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          singleImage="https://picsum.photos/180/?random"
+          caption="Paloma Orchards"
+          size={balloonSizes.SMALL}
+          borderRadius="50%"
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
     "Custom Icon",
     withInfo()(() => (
       <DemoGrid>

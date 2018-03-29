@@ -35,7 +35,7 @@ const Balloon = styled(Card)`
       props.theme.balloonSize}px;
   width: ${props => props.theme.balloonSize}px;
   padding: 0;
-  border-radius: 8px;
+  border-radius: ${props => props.borderRadius};
   border: none;
   display: flex;
   flex-direction: column;

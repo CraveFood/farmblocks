@@ -8,12 +8,15 @@ const EnhancedImage = styled(Image)`
   position: absolute;
   bottom: 17px;
   left: -92px;
-  border-radius: 8px;
+  border-radius: ${props => props.borderRadius};
 `;
 
-const SingleImage = ({ src }) => <EnhancedImage src={src} size={184} />;
+const SingleImage = ({ src, borderRadius }) => (
+  <EnhancedImage src={src} size={184} borderRadius={borderRadius} />
+);
 SingleImage.propTypes = {
-  src: PropTypes.string
+  src: PropTypes.string,
+  borderRadius: PropTypes.string
 };
 
 export default SingleImage;

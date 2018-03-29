@@ -23,17 +23,24 @@ const MapBalloon = ({
   caption,
   singleImage,
   animated,
-  size
+  size,
+  borderRadius
 }) => {
   const theme = themes[size];
   return (
     <ThemeProvider theme={theme}>
       <Wrapper x={x} y={y}>
         <Pin highlighted={!singleImage} />
-        {(singleImage && <SingleImage src={singleImage} />) ||
+        {(singleImage && (
+          <SingleImage src={singleImage} borderRadius={borderRadius} />
+        )) ||
           (open &&
             imageSet && (
-              <Balloon align={align} animated={animated}>
+              <Balloon
+                align={align}
+                animated={animated}
+                borderRadius={borderRadius}
+              >
                 <ImageSet set={imageSet} />
                 <Caption text={caption} iconClass={iconClass} />
               </Balloon>
@@ -60,7 +67,8 @@ MapBalloon.propTypes = {
   imageSet: requiredIfNoSingleImage(imageSetPropType),
   open: PropTypes.bool,
   animated: PropTypes.bool,
-  size: PropTypes.oneOf(values(sizes))
+  size: PropTypes.oneOf(values(sizes)),
+  borderRadius: PropTypes.string
 };
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
@@ -69,7 +77,8 @@ MapBalloon.defaultProps = {
   y: 0,
   animated: false,
   size: sizes.MEDIUM,
-  iconClass: "wg-purveyor"
+  iconClass: "wg-purveyor",
+  borderRadius: "8px"
 };
 
 export default MapBalloon;
