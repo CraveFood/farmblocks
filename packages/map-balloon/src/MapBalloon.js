@@ -29,7 +29,8 @@ const MapBalloon = ({
   return (
     <ThemeProvider theme={theme}>
       <Wrapper x={x} y={y}>
-        <Pin highlighted={!singleImage} />
+        <Pin className="wg-location" highlighted={!singleImage} />
+
         {(singleImage && (
           <SingleImage src={singleImage} borderRadius={borderRadius} />
         )) ||
