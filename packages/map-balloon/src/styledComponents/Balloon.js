@@ -39,6 +39,10 @@ const Balloon = styled(Card)`
   border: none;
   display: flex;
   flex-direction: column;
+
+  .caption {
+    margin: 16px 8px;
+  }
 `;
 
 export default Balloon;

@@ -2,13 +2,13 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import values from "object.values";
 import { ThemeProvider } from "styled-components";
+import Text, { fontTypes } from "@crave/farmblocks-text";
 
 import alignments from "./constants/alignments";
 import sizes from "./constants/sizes";
 import Wrapper from "./styledComponents/Wrapper";
 import Pin from "./styledComponents/Pin";
 import Balloon from "./styledComponents/Balloon";
-import Caption from "./styledComponents/Caption";
 import ImageSet, { imageSetPropType } from "./ImageSet";
 import SingleImage from "./styledComponents/SingleImage";
 import themes from "./styledComponents/themes";
@@ -19,7 +19,6 @@ const MapBalloon = ({
   open,
   align,
   imageSet,
-  iconClass,
   caption,
   singleImage,
   animated,
@@ -42,7 +41,15 @@ const MapBalloon = ({
                 borderRadius={borderRadius}
               >
                 <ImageSet set={imageSet} />
-                <Caption text={caption} iconClass={iconClass} />
+
+                <Text
+                  title
+                  type={fontTypes.NEUTRAL}
+                  size={theme.captionSize}
+                  className="caption"
+                >
+                  {caption}
+                </Text>
               </Balloon>
             ))}
       </Wrapper>
@@ -77,7 +84,6 @@ MapBalloon.defaultProps = {
   y: 0,
   animated: false,
   size: sizes.MEDIUM,
-  iconClass: "wg-purveyor",
   borderRadius: "8px"
 };
 
