@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import values from "object.values";
 import { ThemeProvider } from "styled-components";
 import Text, { fontTypes } from "@crave/farmblocks-text";
+import { colors } from "@crave/farmblocks-theme";
 
 import alignments from "./constants/alignments";
 import sizes from "./constants/sizes";
@@ -23,13 +24,14 @@ const MapBalloon = ({
   singleImage,
   animated,
   size,
-  borderRadius
+  borderRadius,
+  pinColor
 }) => {
   const theme = themes[size];
   return (
     <ThemeProvider theme={theme}>
       <Wrapper x={x} y={y}>
-        <Pin className="wg-location" highlighted={!singleImage} />
+        <Pin className="wg-location" pinColor={pinColor} />
 
         {(singleImage && (
           <SingleImage src={singleImage} borderRadius={borderRadius} />
@@ -75,7 +77,8 @@ MapBalloon.propTypes = {
   open: PropTypes.bool,
   animated: PropTypes.bool,
   size: PropTypes.oneOf(values(sizes)),
-  borderRadius: PropTypes.string
+  borderRadius: PropTypes.string,
+  pinColor: PropTypes.string
 };
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
@@ -84,7 +87,9 @@ MapBalloon.defaultProps = {
   y: 0,
   animated: false,
   size: sizes.MEDIUM,
-  borderRadius: "8px"
+  borderRadius: "8px",
+  pinColor: colors.CORN,
+  opacity: 1
 };
 
 export default MapBalloon;
