@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
+import { colors } from "@crave/farmblocks-theme";
 
 import MapBalloon, { alignments, balloonSizes } from ".";
 
@@ -122,7 +123,7 @@ storiesOf("Map Balloon", "module")
     ))
   )
   .add(
-    "Custom Icon",
+    "Custom pin",
     withInfo()(() => (
       <DemoGrid>
         <MapBalloon
@@ -131,7 +132,8 @@ storiesOf("Map Balloon", "module")
           open
           imageSet={imageSet}
           caption="Paloma Orchards"
-          iconClass="wg-place"
+          pinColor={colors.CORN}
+          pinSize={40}
         />
       </DemoGrid>
     ))

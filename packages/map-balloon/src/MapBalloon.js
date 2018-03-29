@@ -25,16 +25,21 @@ const MapBalloon = ({
   animated,
   size,
   borderRadius,
-  pinColor
+  pinColor,
+  pinSize
 }) => {
   const theme = themes[size];
   return (
     <ThemeProvider theme={theme}>
       <Wrapper x={x} y={y}>
-        <Pin className="wg-location" pinColor={pinColor} />
+        <Pin className="wg-location" pinColor={pinColor} pinSize={pinSize} />
 
         {(singleImage && (
-          <SingleImage src={singleImage} borderRadius={borderRadius} />
+          <SingleImage
+            src={singleImage}
+            borderRadius={borderRadius}
+            pinSize={pinSize}
+          />
         )) ||
           (open &&
             imageSet && (
@@ -42,6 +47,7 @@ const MapBalloon = ({
                 align={align}
                 animated={animated}
                 borderRadius={borderRadius}
+                pinSize={pinSize}
               >
                 <ImageSet set={imageSet} />
 
@@ -78,7 +84,8 @@ MapBalloon.propTypes = {
   animated: PropTypes.bool,
   size: PropTypes.oneOf(values(sizes)),
   borderRadius: PropTypes.string,
-  pinColor: PropTypes.string
+  pinColor: PropTypes.string,
+  pinSize: PropTypes.number
 };
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
