@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@0.2.0...@crave/farmblocks-carousel@1.0.0) (2018-03-29)
+
+
+### Bug Fixes
+
+* **Carousel:** fix itemConfig spread default ([6c38f7f](https://github.com/CraveFood/farmblocks/commit/6c38f7f))
+
+
+### Features
+
+* **Carousel:** add scale property ([f534883](https://github.com/CraveFood/farmblocks/commit/f534883))
+* **Carousel:** remove text opacity and change fontSize property type ([995c2cd](https://github.com/CraveFood/farmblocks/commit/995c2cd))
+* **Carousel:** restart carousel interval when imageSet changes ([5eed3ac](https://github.com/CraveFood/farmblocks/commit/5eed3ac))
+
+
+### Performance Improvements
+
+* **Carousel:** move elements to the left using translateX instead of margin-left ([b5cb3cd](https://github.com/CraveFood/farmblocks/commit/b5cb3cd))
+* **Carousel:** scale active item using transform instead of setting width and height ([6cb186f](https://github.com/CraveFood/farmblocks/commit/6cb186f))
+
+
+### Reverts
+
+* **Carousel:** swap itemConfig and defaultConfig ([cb6cd29](https://github.com/CraveFood/farmblocks/commit/cb6cd29))
+
+
+### BREAKING CHANGES
+
+* **Carousel:** fontSize property used to be a string. Now it accepts a number and passes it to the Text component
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-03-23)
 
