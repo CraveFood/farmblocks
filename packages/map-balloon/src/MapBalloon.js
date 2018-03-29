@@ -69,7 +69,6 @@ MapBalloon.propTypes = {
   y: PropTypes.number,
   align: PropTypes.oneOf(values(alignments)),
   singleImage: PropTypes.string,
-  iconClass: PropTypes.string,
   caption: requiredIfNoSingleImage(PropTypes.string),
   imageSet: requiredIfNoSingleImage(imageSetPropType),
   open: PropTypes.bool,
