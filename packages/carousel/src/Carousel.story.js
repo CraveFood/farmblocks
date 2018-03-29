@@ -63,6 +63,10 @@ storiesOf("Carousel", "module")
   )
   .add("all photos", withInfo()(() => <Carousel imageSet={imageSet} />))
   .add(
+    "no scale",
+    withInfo()(() => <Carousel imageSet={imageSet} scale={false} />)
+  )
+  .add(
     "all photos with onChange and onEnd",
     withInfo()(() => (
       <Carousel

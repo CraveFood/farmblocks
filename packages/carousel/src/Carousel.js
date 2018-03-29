@@ -9,7 +9,7 @@ const defaultConfig = {
   width: 656,
   height: 328,
   margin: 20,
-  fontSize: "88px",
+  fontSize: 88,
   displayTime: 4,
   transitionTime: 2,
   border: {
@@ -27,23 +27,44 @@ class Carousel extends React.Component {
   nextItem = () => {
     const activeItem = this.state.activeItem + 1;
     if (activeItem === this.props.imageSet.length) {
-      window.clearInterval(this.transitionId);
-      this.props.onEnd();
-      return null;
+      this.clearInterval();
+      return this.props.onEnd();
     }
     this.props.onChange(activeItem);
     this.setState({ activeItem });
   };
 
   componentDidMount = () => {
+    this.setInterval();
+  };
+
+  componentWillUnmount = () => {
+    this.clearInterval();
+  };
+
+  componentWillReceiveProps({ imageSet }) {
+    if (imageSet !== this.props.imageSet) {
+      this.setState({ activeItem: 0 });
+      this.setInterval();
+    }
+  }
+
+  setInterval = () => {
+    if (this.transitionId) {
+      return;
+    }
+
     this.transitionId = window.setInterval(
       this.nextItem,
       this.props.itemConfig.displayTime * 1000
     );
   };
 
-  componentWillUnmount = () => {
-    window.clearInterval(this.transitionId);
+  clearInterval = () => {
+    if (this.transitionId) {
+      window.clearInterval(this.transitionId);
+      delete this.transitionId;
+    }
   };
 
   render() {
@@ -52,6 +73,7 @@ class Carousel extends React.Component {
       <Container
         activeItem={this.state.activeItem}
         itemConfig={{ ...defaultConfig, ...itemConfig }}
+        scale={this.props.scale}
       >
         <ul>
           {imageSet.map((item, index) => {
@@ -65,7 +87,7 @@ class Carousel extends React.Component {
                   width="100%"
                   height="100%"
                 />
-                <Text className="caption" title>
+                <Text size={itemConfig.fontSize} align="center" title>
                   {item.name}
                 </Text>
               </li>
@@ -82,11 +104,12 @@ class Carousel extends React.Component {
     ),
     onChange: PropTypes.func,
     onEnd: PropTypes.func,
+    scale: PropTypes.bool,
     itemConfig: PropTypes.shape({
       width: PropTypes.number,
       height: PropTypes.number,
       margin: PropTypes.number,
-      fontSize: PropTypes.string,
+      fontSize: PropTypes.number,
       displayTime: PropTypes.number,
       transitionTime: PropTypes.number,
       border: PropTypes.shape({
@@ -99,6 +122,7 @@ class Carousel extends React.Component {
 
   static defaultProps = {
     itemConfig: defaultConfig,
+    scale: true,
     onChange: () => null,
     onEnd: () => null
   };
