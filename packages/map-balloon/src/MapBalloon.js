@@ -26,12 +26,13 @@ const MapBalloon = ({
   size,
   borderRadius,
   pinColor,
-  pinSize
+  pinSize,
+  opacity
 }) => {
   const theme = themes[size];
   return (
     <ThemeProvider theme={theme}>
-      <Wrapper x={x} y={y}>
+      <Wrapper x={x} y={y} opacity={opacity}>
         <Pin className="wg-location" pinColor={pinColor} pinSize={pinSize} />
 
         {(singleImage && (
@@ -85,8 +86,10 @@ MapBalloon.propTypes = {
   size: PropTypes.oneOf(values(sizes)),
   borderRadius: PropTypes.string,
   pinColor: PropTypes.string,
-  pinSize: PropTypes.number
+  pinSize: PropTypes.number,
+  opacity: PropTypes.number
 };
+
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
   open: false,

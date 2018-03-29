@@ -137,4 +137,21 @@ storiesOf("Map Balloon", "module")
         />
       </DemoGrid>
     ))
+  )
+  .add(
+    "Custom opacity",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          imageSet={imageSet}
+          caption="Paloma Orchards"
+          pinColor={colors.CORN}
+          pinSize={40}
+          opacity={0.5}
+        />
+      </DemoGrid>
+    ))
   );
