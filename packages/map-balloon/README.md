@@ -57,28 +57,31 @@ farm symbol, and that the class name to include that icon is `.wg-purveyor`.
 
 ## API
 
-* `x`: number (default: 0)
-* `y`: number (default: 0)
-* `align`: string (default: 'left') You can use our constants by importing the
-  `alignments` object:
+* `x`: number (default: 0). The x position of the pin, in pixels.
+* `y`: number (default: 0). The y position of the pin, in pixels.
+* `align`: string (default: 'left') The alignment of the balloon relative to the
+  pin. You can use our constants by importing the `alignments` object:
   * `import MapBalloon, { alignments } from "@crave/farmblocks-map-balloon";`
-* `singleImage`: string. Path for a single image. If this prop is given, the
-  balloon will show a smaller version with no caption
-* `caption`: string (required if `logo` is not given). Text to show under the
-  images.
-* `imageSet`: array (required if `logo` is not given). Items should be objects
-  with the following properties:
+* `singleImage`: string. Path for a single image to be displayed in a smaller
+  balloon without caption.
+* `caption`: string (required if `singleImage` is not used). Text to show under
+  the images.
+* `imageSet`: array (required if `singleImage` is not used). The list of images
+  to be displayed on a balloon. Items should be objects with the following
+  properties:
   * `name`: string (required). Text to show over the the image.
   * `image`: string (required). Path to product image.
 * `open`: boolean (default: 0). Defines if the balloon wil be visible. Otherwise
   only the pin will be rendered
 * `animated`: boolean (default: false). Defines if the balloon is animated or
   not
-* `size`: number (default: 320). Balloon size
+* `balloonSize`: number (default: 260). Balloon size
 * `borderRadius`: string (default: 8px). Defines the balloon border radius
 * `pinColor`: string (default: #f1c618). Color to be set to the pin icon
-* `pinSize`: number (default: 18). Size to be set to the pin icon
+* `pinSize`: number (default: 40). Size to be set to the pin icon
 * `opacity`: number (default: 1)
+* `captionSize`: number (default: 18), Size of the caption text.
+* `imageTextSize`: number (default: 28), Size of the text overlay on images.
 
 ## License
 
