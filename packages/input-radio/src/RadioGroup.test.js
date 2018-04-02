@@ -8,9 +8,10 @@ describe("RadioGroup", function() {
   configure({ adapter: new Adapter() });
 
   describe("handleChange", () => {
-    let onChangeSpy;
+    let onChangeSpy, setStateSpy;
     beforeEach(() => {
       onChangeSpy = jest.fn();
+      setStateSpy = jest.fn();
     });
     test("should run onChange when children changes", function() {
       const value = "a value";
@@ -28,6 +29,43 @@ describe("RadioGroup", function() {
 
       expect(onChangeSpy).toHaveBeenCalledTimes(1);
       expect(onChangeSpy).toHaveBeenCalledWith(value);
+    });
+    test("should change value state when defaultValue prop changes", () => {
+      const component = mount(
+        <RadioGroup name="radioExample" defaultValue="oldValue">
+          <Radio value="first" label="First" />
+        </RadioGroup>
+      );
+      const newValue = "newValue";
+      component.setProps({ defaultValue: newValue });
+      expect(component.state("value")).toBe(newValue);
+    });
+    test("should not change the state unnecessarily", () => {
+      const defaultValue = "default";
+      const component = mount(
+        <RadioGroup name="radioExample" defaultValue={defaultValue}>
+          <Radio value="first" label="First" />
+        </RadioGroup>
+      );
+      component.instance().setState = setStateSpy;
+
+      component.setProps({ unrelatedProp: true });
+      component.setProps({ defaultValue });
+      expect(setStateSpy).toHaveBeenCalledTimes(0);
+    });
+    test("changes in defaultValue should not dispatch onChange", () => {
+      const component = mount(
+        <RadioGroup
+          name="radioExample"
+          defaultValue="oldValue"
+          onChange={onChangeSpy}
+        >
+          <Radio value="first" label="First" />
+        </RadioGroup>
+      );
+      const newValue = "newValue";
+      component.setProps({ defaultValue: newValue });
+      expect(onChangeSpy).toHaveBeenCalledTimes(0);
     });
   });
 });

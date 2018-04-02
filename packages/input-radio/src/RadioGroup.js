@@ -8,6 +8,11 @@ class RadioGroup extends React.Component {
     value: this.props.defaultValue
   };
 
+  componentWillReceiveProps = ({ defaultValue }) => {
+    if (defaultValue !== this.props.defaultValue)
+      this.setState({ value: defaultValue });
+  };
+
   handleChange = value => {
     const { onChange } = this.props;
     this.setState({
