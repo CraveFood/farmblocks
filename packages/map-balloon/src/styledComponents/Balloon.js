@@ -3,8 +3,6 @@ import Card from "@crave/farmblocks-card";
 
 import alignments from "../constants/alignments";
 
-import { pinSize } from "./Pin";
-
 const alignStyles = {
   [alignments.LEFT]: css`
     left: -33px;
@@ -32,11 +30,12 @@ const animation = css`animation: ${open} 0.3s ease-in-out;`;
 const Balloon = styled(Card)`
   ${props => props.animated && animation};
   position: absolute;
-  bottom: ${props => pinSize(props) + 8}px;
+  bottom: ${props => props.pinSize + 8}px;
 
-  ${props => alignStyles[props.align]} height: ${props =>
-      props.theme.balloonSize}px;
-  width: ${props => props.theme.balloonSize}px;
+  ${props => alignStyles[props.align]};
+
+  height: ${props => props.balloonSize}px;
+  width: ${props => props.balloonSize}px;
   padding: 0;
   border-radius: ${props => props.borderRadius};
   border: none;

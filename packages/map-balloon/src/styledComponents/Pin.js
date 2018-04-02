@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-export const pinSize = props => props.pinSize || props.theme.pinSize;
+const pinSize = props => props.pinSize;
 const offset = props => pinSize(props) / 2;
 
 const Pin = styled.div`

@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-import MapBalloon, { alignments, balloonSizes } from ".";
+import MapBalloon, { alignments } from ".";
 
 const DemoGrid = styled.div`
   position: relative;
@@ -92,7 +92,7 @@ storiesOf("Map Balloon", "module")
     ))
   )
   .add(
-    "size: SMALL",
+    "custom sizes",
     withInfo()(() => (
       <DemoGrid>
         <MapBalloon
@@ -101,7 +101,9 @@ storiesOf("Map Balloon", "module")
           open
           imageSet={imageSet}
           caption="Paloma Orchards"
-          size={balloonSizes.SMALL}
+          balloonSize={350}
+          captionSize={30}
+          imageTextSize={30}
         />
       </DemoGrid>
     ))
@@ -116,7 +118,6 @@ storiesOf("Map Balloon", "module")
           open
           singleImage="https://picsum.photos/180/?random"
           caption="Paloma Orchards"
-          size={balloonSizes.SMALL}
           borderRadius="50%"
         />
       </DemoGrid>
@@ -132,8 +133,8 @@ storiesOf("Map Balloon", "module")
           open
           imageSet={imageSet}
           caption="Paloma Orchards"
-          pinColor={colors.CORN}
-          pinSize={40}
+          pinColor="black"
+          pinSize={30}
         />
       </DemoGrid>
     ))

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
-import { withTheme } from "styled-components";
 
 import PhotoBox from "./styledComponents/PhotoBox";
 import Gradient from "./styledComponents/Gradient";
@@ -13,12 +12,12 @@ export const imageSetPropType = PropTypes.arrayOf(
   })
 );
 
-export const ImageSet = ({ set, theme }) => {
+export const ImageSet = ({ set, fontSize }) => {
   const [firstPhoto] = set;
   return (
     <PhotoBox image={firstPhoto.image}>
       <Gradient>
-        <Text title size={theme.imageTextSize} type={"white"}>
+        <Text title size={fontSize} type={"white"}>
           {firstPhoto.name}
         </Text>
       </Gradient>
@@ -27,9 +26,7 @@ export const ImageSet = ({ set, theme }) => {
 };
 ImageSet.propTypes = {
   set: imageSetPropType.isRequired,
-  theme: PropTypes.shape({
-    imageTextSize: PropTypes.number.isRequired
-  }).isRequired
+  fontSize: PropTypes.number.isRequired
 };
 
-export default withTheme(ImageSet);
+export default ImageSet;
