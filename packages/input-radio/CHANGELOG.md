@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.1"></a>
+## [0.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@0.2.0...@crave/farmblocks-input-radio@0.2.1) (2018-04-02)
+
+
+### Bug Fixes
+
+* **radio:** change value state when defaultValue prop is modified ([04115e6](https://github.com/CraveFood/farmblocks/commit/04115e6))
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-03-21)
 
