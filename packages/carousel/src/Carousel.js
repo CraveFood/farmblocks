@@ -54,10 +54,9 @@ class Carousel extends React.Component {
       return;
     }
 
-    this.transitionId = window.setInterval(
-      this.nextItem,
-      this.props.itemConfig.displayTime * 1000
-    );
+    const { displayTime } = { ...defaultConfig, ...this.props.itemConfig };
+
+    this.transitionId = window.setInterval(this.nextItem, displayTime * 1000);
   };
 
   clearInterval = () => {
@@ -69,10 +68,12 @@ class Carousel extends React.Component {
 
   render() {
     const { imageSet, itemConfig } = this.props;
+    const configProps = { ...defaultConfig, ...itemConfig };
+
     return (
       <Container
         activeItem={this.state.activeItem}
-        itemConfig={{ ...defaultConfig, ...itemConfig }}
+        itemConfig={configProps}
         scale={this.props.scale}
       >
         <ul>
@@ -83,11 +84,11 @@ class Carousel extends React.Component {
                 <Image
                   className="image"
                   src={item.image}
-                  border={itemConfig.border}
+                  border={configProps.border}
                   width="100%"
                   height="100%"
                 />
-                <Text size={itemConfig.fontSize} align="center" title>
+                <Text size={configProps.fontSize} align="center" title>
                   {item.name}
                 </Text>
               </li>
