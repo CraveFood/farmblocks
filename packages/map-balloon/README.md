@@ -64,15 +64,21 @@ farm symbol, and that the class name to include that icon is `.wg-purveyor`.
   * `import MapBalloon, { alignments } from "@crave/farmblocks-map-balloon";`
 * `singleImage`: string. Path for a single image. If this prop is given, the
   balloon will show a smaller version with no caption
-* `iconClass`: string (default: 'wg-purveyor'). Class name for font icon.
 * `caption`: string (required if `logo` is not given). Text to show under the
   images.
 * `imageSet`: array (required if `logo` is not given). Items should be objects
   with the following properties:
   * `name`: string (required). Text to show over the the image.
   * `image`: string (required). Path to product image.
-* `open`: boolean. Defines if the balloon wil be visible. Otherwise only the pin
-  will be rendered
+* `open`: boolean (default: 0). Defines if the balloon wil be visible. Otherwise
+  only the pin will be rendered
+* `animated`: boolean (default: false). Defines if the balloon is animated or
+  not
+* `size`: number (default: 320). Balloon size
+* `borderRadius`: string (default: 8px). Defines the balloon border radius
+* `pinColor`: string (default: #f1c618). Color to be set to the pin icon
+* `pinSize`: number (default: 18). Size to be set to the pin icon
+* `opacity`: number (default: 1)
 
 ## License
 
