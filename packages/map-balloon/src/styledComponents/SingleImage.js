@@ -6,14 +6,16 @@ import Image from "@crave/farmblocks-image";
 const EnhancedImage = styled(Image)`
   background-color: white;
   position: absolute;
-  bottom: 17px;
+  bottom: ${props => props.pinSize + 8}px;
   left: -92px;
-  border-radius: 8px;
+  border-radius: ${props => props.borderRadius};
 `;
 
-const SingleImage = ({ src }) => <EnhancedImage src={src} size={184} />;
+const SingleImage = props => <EnhancedImage {...props} size={184} />;
 SingleImage.propTypes = {
-  src: PropTypes.string
+  src: PropTypes.string,
+  borderRadius: PropTypes.string,
+  pinSize: PropTypes.number
 };
 
 export default SingleImage;

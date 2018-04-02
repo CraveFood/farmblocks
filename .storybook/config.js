@@ -113,6 +113,10 @@ injectGlobal`
     content: "\\e93d";
   }
 
+  .wg-location:before {
+    content: "\\e931";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -128,7 +132,8 @@ injectGlobal`
   .wg-search,
   .wg-close-int,
   .wg-purveyor,
-  .wg-question {
+  .wg-question,
+  .wg-location {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
     speak: none;

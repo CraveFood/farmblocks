@@ -30,15 +30,21 @@ const animation = css`animation: ${open} 0.3s ease-in-out;`;
 const Balloon = styled(Card)`
   ${props => props.animated && animation};
   position: absolute;
-  bottom: 17px;
-  ${props => alignStyles[props.align]} height: ${props =>
-      props.theme.balloonSize}px;
-  width: ${props => props.theme.balloonSize}px;
+  bottom: ${props => props.pinSize + 8}px;
+
+  ${props => alignStyles[props.align]};
+
+  height: ${props => props.balloonSize}px;
+  width: ${props => props.balloonSize}px;
   padding: 0;
-  border-radius: 8px;
+  border-radius: ${props => props.borderRadius};
   border: none;
   display: flex;
   flex-direction: column;
+
+  .caption {
+    margin: 16px 8px;
+  }
 `;
 
 export default Balloon;

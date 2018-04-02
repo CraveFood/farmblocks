@@ -1,17 +1,15 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import values from "object.values";
-import { ThemeProvider } from "styled-components";
+import Text, { fontTypes } from "@crave/farmblocks-text";
+import { colors, fontSizes } from "@crave/farmblocks-theme";
 
 import alignments from "./constants/alignments";
-import sizes from "./constants/sizes";
 import Wrapper from "./styledComponents/Wrapper";
 import Pin from "./styledComponents/Pin";
 import Balloon from "./styledComponents/Balloon";
-import Caption from "./styledComponents/Caption";
 import ImageSet, { imageSetPropType } from "./ImageSet";
 import SingleImage from "./styledComponents/SingleImage";
-import themes from "./styledComponents/themes";
 
 const MapBalloon = ({
   x,
@@ -19,27 +17,50 @@ const MapBalloon = ({
   open,
   align,
   imageSet,
-  iconClass,
   caption,
   singleImage,
   animated,
-  size
+  borderRadius,
+  pinColor,
+  pinSize,
+  opacity,
+  balloonSize,
+  captionSize,
+  imageTextSize
 }) => {
-  const theme = themes[size];
   return (
-    <ThemeProvider theme={theme}>
-      <Wrapper x={x} y={y}>
-        <Pin highlighted={!singleImage} />
-        {(singleImage && <SingleImage src={singleImage} />) ||
-          (open &&
-            imageSet && (
-              <Balloon align={align} animated={animated}>
-                <ImageSet set={imageSet} />
-                <Caption text={caption} iconClass={iconClass} />
-              </Balloon>
-            ))}
-      </Wrapper>
-    </ThemeProvider>
+    <Wrapper x={x} y={y} opacity={opacity}>
+      <Pin className="wg-location" pinColor={pinColor} pinSize={pinSize} />
+
+      {(singleImage && (
+        <SingleImage
+          src={singleImage}
+          borderRadius={borderRadius}
+          pinSize={pinSize}
+        />
+      )) ||
+        (open &&
+          imageSet && (
+            <Balloon
+              align={align}
+              animated={animated}
+              borderRadius={borderRadius}
+              pinSize={pinSize}
+              balloonSize={balloonSize}
+            >
+              <ImageSet set={imageSet} fontSize={imageTextSize} />
+
+              <Text
+                title
+                type={fontTypes.NEUTRAL}
+                size={captionSize}
+                className="caption"
+              >
+                {caption}
+              </Text>
+            </Balloon>
+          ))}
+    </Wrapper>
   );
 };
 
@@ -55,21 +76,32 @@ MapBalloon.propTypes = {
   y: PropTypes.number,
   align: PropTypes.oneOf(values(alignments)),
   singleImage: PropTypes.string,
-  iconClass: PropTypes.string,
   caption: requiredIfNoSingleImage(PropTypes.string),
   imageSet: requiredIfNoSingleImage(imageSetPropType),
   open: PropTypes.bool,
   animated: PropTypes.bool,
-  size: PropTypes.oneOf(values(sizes))
+  borderRadius: PropTypes.string,
+  pinColor: PropTypes.string,
+  pinSize: PropTypes.number,
+  opacity: PropTypes.number,
+  balloonSize: PropTypes.number,
+  captionSize: PropTypes.number,
+  imageTextSize: PropTypes.number
 };
+
 MapBalloon.defaultProps = {
   align: alignments.LEFT,
   open: false,
   x: 0,
   y: 0,
   animated: false,
-  size: sizes.MEDIUM,
-  iconClass: "wg-purveyor"
+  borderRadius: "8px",
+  pinColor: colors.CORN,
+  opacity: 1,
+  pinSize: 40,
+  balloonSize: 260,
+  captionSize: fontSizes.LARGE,
+  imageTextSize: 28
 };
 
 export default MapBalloon;
