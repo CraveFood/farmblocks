@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@1.0.0...@crave/farmblocks-carousel@1.0.1) (2018-04-02)
+
+
+### Bug Fixes
+
+* **Carousel:** custom fontsize and border were not being respected ([58b0381](https://github.com/CraveFood/farmblocks/commit/58b0381))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@0.2.0...@crave/farmblocks-carousel@1.0.0) (2018-03-29)
 
