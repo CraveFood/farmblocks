@@ -147,4 +147,8 @@ storiesOf("Link/Featured", module)
       </div>
     ))
   )
-  .add("no href", withInfo()(() => <Link>Awesome Link</Link>));
+  .add("no href", withInfo()(() => <Link>Awesome Link</Link>))
+  .add(
+    "no href with left icon",
+    withInfo()(() => <Link leftIcon="wg-place">Awesome Link</Link>)
+  );

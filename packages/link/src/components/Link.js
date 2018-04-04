@@ -35,7 +35,7 @@ const Link = props => {
     displayBlock
   };
 
-  const componentType = linkProps.href ? "a" : "div";
+  const componentType = linkProps.href ? "a" : "span";
 
   return (
     <Container {...containerProps}>
