@@ -105,7 +105,7 @@ describe("formInput", function() {
     const component = mount(<EnhancedInput type="search" value={value} />);
     expect(component.state("value")).toBe(value);
 
-    component.find("div.clear").simulate("click");
+    component.find("span.clear").simulate("click");
     expect(component.state("value")).toBe("");
   });
 });
