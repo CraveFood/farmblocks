@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.0.1...@crave/farmblocks-hoc-input@2.0.2) (2018-04-04)
+
+
+### Bug Fixes
+
+* **Input-Hoc tests:** fix a test which uses Link ([870acb9](https://github.com/CraveFood/farmblocks/commit/870acb9))
+
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.0.0...@crave/farmblocks-hoc-input@2.0.1) (2018-03-23)
 
