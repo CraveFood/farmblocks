@@ -36,6 +36,30 @@ Before commiting your patch, please check the new code against existing tests.
 yarn test
 ```
 
+If you want to keep the tests running in watch mode, you might need to install
+a Jest dependency watchman.
+
+- https://facebook.github.io/watchman/docs/install.html
+
+And then:
+```
+yarn test --watch
+```
+
+#### Generate new snapshots and coverage reports
+To run the full test suite and generate a coverage report use:
+
+```
+yarn test --coverage
+```
+
+And open the html generated in ``coverage/lcov-report/index.html``
+
+To update the snapshots use
+```
+yarn test -u
+```
+
 #### Lint task
 
 You can check for linting errors manually using:
