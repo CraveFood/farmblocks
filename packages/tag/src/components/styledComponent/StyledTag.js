@@ -11,7 +11,7 @@ const StyledTag = styled.div`
   padding: 6px ${rightPadding} 8px 8px;
   background-color: ${colorConstants.INDIGO_MILK_CAP};
   height: 32px;
-  margin: 2px;
+  margin: 0 8px 8px 0;
 
   font-size: 14px;
   color: white;
