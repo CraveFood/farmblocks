@@ -67,4 +67,32 @@ storiesOf("Tooltip", module)
         />
       </div>
     </div>
+  ))
+  .add("auto aligned (with bondaries)", () => (
+    <div
+      style={{
+        border: "solid 1px orangered",
+        display: "flex",
+        justifyContent: "space-between",
+        width: "600px"
+      }}
+      className="exampleContainer"
+    >
+      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
+        Child
+        <Tooltip
+          align={alignments.AUTO}
+          text="This is an auto aligned tooltip"
+          bondariesSelector=".exampleContainer"
+        />
+      </div>
+      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
+        Child
+        <Tooltip
+          align={alignments.AUTO}
+          text="This is an auto aligned tooltip"
+          bondariesSelector=".exampleContainer"
+        />
+      </div>
+    </div>
   ));

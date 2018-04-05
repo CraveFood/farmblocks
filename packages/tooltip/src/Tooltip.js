@@ -5,11 +5,18 @@ import values from "object.values";
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
 
-export const getAutoAlign = bodyWidth => containerRef => {
-  if (containerRef) {
-    const { x } = containerRef.getBoundingClientRect(); // Position of the element on viewport
-    const halfViewport = bodyWidth / 2;
-    if (x > halfViewport) return alignments.RIGHT;
+export const getAutoAlign = (tooltipRef, bondariesSelector) => {
+  if (tooltipRef) {
+    const { right } = tooltipRef.getBoundingClientRect();
+
+    const bondariesNode =
+      bondariesSelector && tooltipRef.closest(bondariesSelector);
+
+    const maxRight =
+      (bondariesNode && bondariesNode.getBoundingClientRect().right) ||
+      window.innerWidth;
+
+    if (right >= maxRight) return alignments.RIGHT;
   }
   return alignments.LEFT;
 };
@@ -19,10 +26,11 @@ class Tooltip extends React.Component {
     align: this.props.align
   };
   componentDidMount = () => {
+    const { align: originalAlign, bondariesSelector } = this.props;
     const align =
-      this.props.align === alignments.AUTO
-        ? getAutoAlign(document.body.clientWidth)(this.containerRef)
-        : this.props.align;
+      originalAlign === alignments.AUTO
+        ? getAutoAlign(this.tooltipRef, bondariesSelector)
+        : originalAlign;
     this.setState({ align });
   };
   render() {
@@ -30,13 +38,15 @@ class Tooltip extends React.Component {
 
     return (
       <Container>
-        <div ref={element => (this.containerRef = element)}>
-          {content && (
-            <StyledTooltip {...this.props} align={this.state.align}>
-              {content}
-            </StyledTooltip>
-          )}
-        </div>
+        {content && (
+          <StyledTooltip
+            {...this.props}
+            align={this.state.align}
+            innerRef={element => (this.tooltipRef = element)}
+          >
+            {content}
+          </StyledTooltip>
+        )}
       </Container>
     );
   }
@@ -47,7 +57,8 @@ Tooltip.propTypes = {
   children: PropTypes.node,
   isVisible: PropTypes.bool,
   align: PropTypes.oneOf(values(alignments)),
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
+  bondariesSelector: PropTypes.string
 };
 
 Tooltip.defaultProps = {
