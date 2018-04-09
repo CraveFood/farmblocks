@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# 1.2.0 (2018-04-09)
+
+
+### Features
+
+* **Checkbox:** add noTooltip option to checkbox ([a7c2618](https://github.com/CraveFood/farmblocks/commit/a7c2618))
+* **Checkbox:** upgrade farmblocks-hoc-disabled-tooltip dependency ([616727c](https://github.com/CraveFood/farmblocks/commit/616727c))
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@1.0.0...@crave/farmblocks-input-checkbox@1.1.0) (2018-02-19)
 
