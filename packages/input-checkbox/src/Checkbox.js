@@ -34,6 +34,7 @@ const createCheckbox = ({ isSwitch }) =>
         onMouseOver,
         tooltipText,
         tooltipAlign,
+        noTooltip,
         ...inputProps
       } = this.props;
       const checkedState = this.state.checked;
@@ -49,7 +50,8 @@ const createCheckbox = ({ isSwitch }) =>
         onMouseOver,
         tooltipText,
         tooltipAlign,
-        disabled: inputProps.disabled
+        disabled: inputProps.disabled,
+        noTooltip
       };
       inputProps.defaultChecked = checkedState;
       inputProps.onChange = this.onChange;

@@ -31,6 +31,12 @@ const checkboxStories = (moduleTitle, Checkbox) =>
       ))
     )
     .add(
+      "disabled with no tooltip",
+      withInfo()(() => (
+        <Checkbox disabled noTooltip checked label="Checkbox Label" />
+      ))
+    )
+    .add(
       "in a fieldset",
       withInfo()(() => (
         <fieldset>
