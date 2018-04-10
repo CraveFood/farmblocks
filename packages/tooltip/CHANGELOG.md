@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.6.1...@crave/farmblocks-tooltip@0.7.0) (2018-04-10)
+
+
+### Features
+
+* **tooltip:** add option to define a container as limit for auto align ([6ede97e](https://github.com/CraveFood/farmblocks/commit/6ede97e))
+* **tooltip align:** add auto alignment option ([71ac09f](https://github.com/CraveFood/farmblocks/commit/71ac09f))
+
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.6.0...@crave/farmblocks-tooltip@0.6.1) (2018-04-05)
 
