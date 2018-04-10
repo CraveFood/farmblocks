@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
+import { CENTER } from "../constants/alignments";
 
 const Container = styled.div`position: relative;`;
 
@@ -8,9 +9,8 @@ const centerAlignment = css`
   transform: translateX(-50%);
 `;
 
-const alignX = coordinate => props => {
-  const { align } = props;
-  if (align === "center") {
+const alignX = coordinate => ({ align }) => {
+  if (align === CENTER) {
     return centerAlignment;
   }
 
