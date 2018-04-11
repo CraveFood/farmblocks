@@ -18,7 +18,11 @@ export const formInputProps = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
-  innerRef: PropTypes.func
+  innerRef: PropTypes.func,
+  input: PropTypes.shape({
+    value: PropTypes.any,
+    onChange: PropTypes.func
+  })
 };
 
 const formInput = WrappedComponent => {
@@ -26,7 +30,7 @@ const formInput = WrappedComponent => {
     constructor(props) {
       super(props);
       this.state = {
-        value: props.value,
+        value: props.input ? props.input.value : props.value,
         focused: props.focused
       };
 
@@ -44,6 +48,8 @@ const formInput = WrappedComponent => {
         onFocus,
         onBlur,
         invalid,
+        input,
+        meta,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
@@ -126,9 +132,17 @@ const formInput = WrappedComponent => {
     }
 
     componentWillReceiveProps(nextProps) {
-      if (nextProps.value !== this.props.value) {
+      const nextValue = nextProps.input
+        ? nextProps.input.value
+        : nextProps.value;
+
+      const currentValue = this.props.input
+        ? this.props.input.value
+        : this.props.value;
+
+      if (nextValue !== currentValue) {
         this.setState({
-          value: nextProps.value
+          value: nextValue
         });
       }
     }
@@ -151,6 +165,12 @@ const formInput = WrappedComponent => {
         value: event.value || event.target.value
       });
 
+      if (this.props.input && this.props.input.onChange) {
+        console.log("input.onChange"); // eslint-disable-line no-console
+        return this.props.input.onChange(event);
+      }
+
+      console.log("regular onChange"); // eslint-disable-line no-console
       return this.props.onChange(event);
     }
 
@@ -178,7 +198,8 @@ const formInput = WrappedComponent => {
       disabled: false,
       onChange: () => null,
       onFocus: () => null,
-      onBlur: () => null
+      onBlur: () => null,
+      input: null
     };
   };
 };
