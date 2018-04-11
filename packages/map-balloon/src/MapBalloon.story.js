@@ -6,12 +6,13 @@ import { colors } from "@crave/farmblocks-theme";
 
 import MapBalloon, { alignments } from ".";
 
+const bgImage =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=";
 const DemoGrid = styled.div`
   position: relative;
   width: 800px;
   height: 800px;
-  background: #ccc
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=");
+  background: #ccc url(${bgImage});
 `;
 
 const imageSet = [
