@@ -21,6 +21,7 @@ const Link = props => {
     tooltipAlign,
     displayBlock,
     leftIcon,
+    rightIcon,
     external,
     children,
     ...linkProps
@@ -41,6 +42,7 @@ const Link = props => {
     <Container {...containerProps}>
       {leftIcon && <i className={`${leftIcon} margin-right }`} />}
       {React.createElement(componentType, { ...linkProps }, children)}
+      {rightIcon && <i className={`${rightIcon} margin-left }`} />}
       {external && <i className="wg-external-link margin-left" />}
     </Container>
   );
@@ -50,6 +52,7 @@ Link.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.oneOf(values(linkTypes)),
   leftIcon: PropTypes.string,
+  rightIcon: PropTypes.string,
   external: PropTypes.bool,
   size: PropTypes.number,
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
