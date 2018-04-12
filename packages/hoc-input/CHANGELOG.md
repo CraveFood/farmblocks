@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.0.5...@crave/farmblocks-hoc-input@2.1.0) (2018-04-12)
+
+
+### Features
+
+* **formInput hoc:** support onChange and value comming from redux-form Field ([771c61c](https://github.com/CraveFood/farmblocks/commit/771c61c)), closes [#327](https://github.com/CraveFood/farmblocks/issues/327)
+
+
+
+
 <a name="2.0.5"></a>
 ## [2.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.0.4...@crave/farmblocks-hoc-input@2.0.5) (2018-04-11)
 
