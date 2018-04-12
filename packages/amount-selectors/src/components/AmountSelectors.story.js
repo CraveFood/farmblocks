@@ -6,7 +6,7 @@ import { action } from "@storybook/addon-actions";
 import selectorSizes from "../constants/selectorSizes";
 import AmountSelectors from "./AmountSelectors";
 
-storiesOf("Amount selectors", "module")
+storiesOf("Amount selectors", module)
   .add("Default", withInfo()(() => <AmountSelectors />))
   .add("With value set", withInfo()(() => <AmountSelectors value={2} />))
   .add(

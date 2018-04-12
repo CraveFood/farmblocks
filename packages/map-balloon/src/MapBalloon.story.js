@@ -22,7 +22,7 @@ const imageSet = [
   }
 ];
 
-storiesOf("Map Balloon", "module")
+storiesOf("Map Balloon", module)
   .add(
     "Default",
     withInfo()(() => (

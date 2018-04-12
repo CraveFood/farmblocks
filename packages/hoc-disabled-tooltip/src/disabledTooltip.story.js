@@ -11,7 +11,7 @@ const InputComponent = props => <input {...props} />;
 const EnhancedInput = disabledTooltip(InputComponent);
 const EnhancedButton = disabledTooltip("button");
 
-storiesOf("HOC disabledTooltip", "module")
+storiesOf("HOC disabledTooltip", module)
   .add(
     "disabled input",
     withInfo()(() => (

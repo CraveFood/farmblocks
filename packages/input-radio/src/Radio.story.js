@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 
 import Radio from ".";
 
-storiesOf("Radio", "module")
+storiesOf("Radio", module)
   .add("Default", withInfo()(() => <Radio />))
   .add("Checked", withInfo()(() => <Radio checked />))
   .add("Disabled", withInfo()(() => <Radio disabled />))

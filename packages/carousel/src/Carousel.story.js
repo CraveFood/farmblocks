@@ -43,7 +43,8 @@ const imageSet = [
     name: "Romaine Lettuce"
   }
 ];
-storiesOf("Carousel", "module")
+
+storiesOf("Carousel", module)
   .add(
     "1 photo",
     withInfo()(() => <Carousel imageSet={imageSet.slice(0, 1)} />)

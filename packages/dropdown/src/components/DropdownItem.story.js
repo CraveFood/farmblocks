@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 import DropdownItemWrapper from "../styledComponents/DropdownItemWrapper";
 import DropdownMenuWrapper from "../styledComponents/DropdownMenuWrapper";
 
-storiesOf("Dropdown/Styled components/Menu and item", "module")
+storiesOf("Dropdown/Styled components/Menu and item", module)
   .add(
     "Default",
     withInfo()(() => (

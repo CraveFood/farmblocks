@@ -82,7 +82,7 @@ ThumbnailCell.propTypes = {
   text: PropTypes.string
 };
 
-storiesOf("Table/Main", "module")
+storiesOf("Table/Main", module)
   .add(
     "Default sizes",
     withInfo()(() => (
@@ -472,7 +472,7 @@ storiesOf("Table/Main", "module")
     })
   );
 
-storiesOf("Table/SelectionBar", "module")
+storiesOf("Table/SelectionBar", module)
   .add("Default", withInfo()(() => <SelectionBar />))
   .add(
     "One item selected",

@@ -8,7 +8,7 @@ import Item from "./Item";
 const imgSrc = "https://picsum.photos/100";
 const Wrapper = styled.div`width: 300px;`;
 
-storiesOf("Select Input/Item", "module")
+storiesOf("Select Input/Item", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
   .add("text only", withInfo()(() => <Item label="Hello" />))
   .add("with image", withInfo()(() => <Item label="Hello" image={imgSrc} />))

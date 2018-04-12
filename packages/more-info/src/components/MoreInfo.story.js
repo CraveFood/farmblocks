@@ -7,7 +7,7 @@ import { action } from "@storybook/addon-actions";
 
 import MoreInfo from "./MoreInfo";
 
-storiesOf("More info", "module")
+storiesOf("More info", module)
   .add(
     "Default",
     withInfo()(() => (

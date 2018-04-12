@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 
 import TextInput from ".";
 
-storiesOf("Text Input", "module")
+storiesOf("Text Input", module)
   .add("Default", withInfo()(() => <TextInput />))
   .add("With label", withInfo()(() => <TextInput label="Field Label" />))
   .add(
