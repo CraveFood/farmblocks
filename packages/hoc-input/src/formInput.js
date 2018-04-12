@@ -166,11 +166,9 @@ const formInput = WrappedComponent => {
       });
 
       if (this.props.input && this.props.input.onChange) {
-        console.log("input.onChange"); // eslint-disable-line no-console
         return this.props.input.onChange(event);
       }
 
-      console.log("regular onChange"); // eslint-disable-line no-console
       return this.props.onChange(event);
     }
 
