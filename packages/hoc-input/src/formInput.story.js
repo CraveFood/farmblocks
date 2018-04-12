@@ -20,6 +20,19 @@ storiesOf("HOC formInput", "module")
     ))
   )
   .add(
+    "html text input with input.onChange and input.value ",
+    withInfo()(() => (
+      <EnhancedInput
+        input={{
+          onChange: action("input.onChange"),
+          value: "input.value"
+        }}
+        label="Input Label"
+        type="text"
+      />
+    ))
+  )
+  .add(
     "two html inputs with label",
     withInfo()(() => (
       <div>

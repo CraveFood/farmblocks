@@ -51,6 +51,16 @@ describe("formInput", function() {
     expect(newState.value).toBe("foo");
   });
 
+  test("input.onChange property is called after input change", function() {
+    const onChangeMock = jest.fn();
+    const component = mount(
+      <EnhancedInput input={{ onChange: onChangeMock, value: "foo" }} />
+    );
+
+    component.find("input").simulate("change", { target: { value: "bar" } });
+    expect(onChangeMock).toBeCalled();
+  });
+
   test("onFocus property is called after input gains focus", function() {
     const onFocusMock = jest.fn();
     const component = mount(<EnhancedInput onFocus={onFocusMock} />);
