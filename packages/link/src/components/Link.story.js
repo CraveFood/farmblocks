@@ -38,6 +38,14 @@ storiesOf("Link/Featured", module)
     ))
   )
   .add(
+    "with right icon",
+    withInfo()(() => (
+      <Link href="#" rightIcon="wg-place">
+        Awesome Link
+      </Link>
+    ))
+  )
+  .add(
     "external, mini size",
     withInfo()(() => (
       <Link href="#" size={fontSizes.SMALL} external lineHeight={1.14}>

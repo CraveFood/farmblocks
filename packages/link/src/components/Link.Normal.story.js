@@ -33,6 +33,14 @@ storiesOf("Link/Normal", module)
     ))
   )
   .add(
+    "with right icon",
+    withInfo()(() => (
+      <Link href="#" type={linkTypes.NORMAL} rightIcon="wg-place">
+        Awesome Link
+      </Link>
+    ))
+  )
+  .add(
     "disabled",
     withInfo()(() => (
       <Link
