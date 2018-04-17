@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.1.6...@crave/farmblocks-link@2.2.0) (2018-04-17)
+
+
+### Features
+
+* **Link:** add rightIcon prop to Link ([50af72b](https://github.com/CraveFood/farmblocks/commit/50af72b)), closes [#326](https://github.com/CraveFood/farmblocks/issues/326)
+
+
+
+
 <a name="2.1.6"></a>
 ## [2.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.1.5...@crave/farmblocks-link@2.1.6) (2018-04-11)
 
