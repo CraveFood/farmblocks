@@ -42,7 +42,7 @@ class Select extends React.Component {
 
   render() {
     return (
-      <DropdownWrapper>
+      <DropdownWrapper displayBlock>
         <ReactAutocomplete
           items={this.props.items}
           shouldItemRender={this._shouldItemRender}
@@ -55,6 +55,7 @@ class Select extends React.Component {
           renderItem={this._renderItem}
           autoHighlight={false}
           onMenuVisibilityChange={isMenuOpen => this.setState({ isMenuOpen })}
+          wrapperStyle={{ display: "block" }}
         />
       </DropdownWrapper>
     );
@@ -99,7 +100,9 @@ class Select extends React.Component {
       ? []
       : this.props.validationMessages;
 
-    return <EnhancedInput {...inputProps} {...rest} innerRef={ref} />;
+    return (
+      <EnhancedInput {...inputProps} {...rest} innerRef={ref} displayBlock />
+    );
   }
 
   _renderMenu(items) {
