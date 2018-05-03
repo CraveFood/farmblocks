@@ -156,4 +156,18 @@ storiesOf("Map Balloon", "module")
         />
       </DemoGrid>
     ))
+  )
+  .add(
+    "imageSet without name",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          x={400}
+          y={400}
+          open
+          imageSet={[{ image: "https://picsum.photos/640/?random" }]}
+          caption="Paloma Orchards"
+        />
+      </DemoGrid>
+    ))
   );
