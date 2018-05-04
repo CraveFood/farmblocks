@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.0.3...@crave/farmblocks-map-balloon@1.1.0) (2018-05-04)
+
+
+### Features
+
+* **map-balloon:** make imageSet names optional ([b46878d](https://github.com/CraveFood/farmblocks/commit/b46878d)), closes [#337](https://github.com/CraveFood/farmblocks/issues/337)
+
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.0.2...@crave/farmblocks-map-balloon@1.0.3) (2018-04-11)
 
