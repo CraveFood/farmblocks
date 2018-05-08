@@ -19,6 +19,7 @@ const Dropdown = props => (
           rightIcon="wg-small-arrow-bottom"
           text={props.text}
           size={props.size}
+          innerRef={props.innerRef}
         />
       </AriaButtonWrapper>
 
@@ -49,7 +50,8 @@ Dropdown.propTypes = {
   align: PropTypes.oneOf(["left", "right"]),
   zIndex: PropTypes.number,
   size: PropTypes.oneOf(values(buttonSizes)),
-  width: PropTypes.string
+  width: PropTypes.string,
+  innerRef: PropTypes.func
 };
 
 export default Dropdown;
