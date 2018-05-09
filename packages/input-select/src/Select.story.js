@@ -62,22 +62,25 @@ storiesOf("Select Input", "module")
   .add(
     "Custom items",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items.map(item => ({ ...item, image: imgSrc }))}
-          onChange={action("onChange")}
-          renderItem={item => (
-            <div style={{ display: "flex" }}>
-              <Image src={item.image} />
-              <div style={{ alignSelf: "center", marginLeft: "10px" }}>
-                {item.label}
-              </div>
-            </div>
-          )}
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items.map(item => ({ ...item, image: imgSrc }))}
+        onChange={action("onChange")}
+        renderItem={item => (
+          <div
+            style={{
+              flex: 1,
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center"
+            }}
+          >
+            {item.label}
+            <Image src={item.image} />
+          </div>
+        )}
+      />
     ))
   )
   .add(
