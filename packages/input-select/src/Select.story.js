@@ -15,7 +15,7 @@ const items = [
 
 const Wrapper = styled.div`width: 200px;`;
 
-const imgSrc = "https://picsum.photos/100/100/?random";
+const imgSrc = "https://picsum.photos/100";
 
 storiesOf("Select Input", "module")
   .add(
@@ -119,7 +119,10 @@ storiesOf("Select Input", "module")
         <Select
           placeholder="Select fruit"
           label="Fruit"
-          items={items.map(item => ({ ...item, image: imgSrc }))}
+          items={items.map((item, index) => ({
+            ...item,
+            image: `${imgSrc}?image=${index + 1080}`
+          }))}
           onChange={action("onChange")}
         />
       </Wrapper>

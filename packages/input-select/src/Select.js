@@ -14,6 +14,7 @@ import {
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
+import { badgeSizes, thumbnailSizes } from "@crave/farmblocks-image";
 
 import EmptyCard from "./components/EmptyCard";
 import ItemImage from "./styledComponents/ItemImage";
@@ -102,12 +103,25 @@ class Select extends React.Component {
       ? []
       : this.props.validationMessages;
 
+    const selectedItem = this.props.items.find(
+      item => item.label === autoCompleteProps.value
+    );
+    const image = selectedItem && selectedItem.image;
     return (
       <EnhancedInput
         readOnly={disableSearch}
         {...inputProps}
         {...rest}
         innerRef={ref}
+        renderContent={
+          image &&
+          (content => (
+            <ItemContainer>
+              <ItemImage src={image} size={badgeSizes.SMALL} badge />
+              {content}
+            </ItemContainer>
+          ))
+        }
       />
     );
   }
@@ -143,7 +157,7 @@ class Select extends React.Component {
   _renderLabel = item =>
     item.image ? (
       <ItemContainer>
-        <ItemImage src={item.image} size={40} /> {item.label}
+        <ItemImage src={item.image} size={thumbnailSizes.SMALL} /> {item.label}
       </ItemContainer>
     ) : (
       item.label
