@@ -16,6 +16,8 @@ import withMessages, {
 } from "@crave/farmblocks-hoc-validation-messages";
 
 import EmptyCard from "./components/EmptyCard";
+import ItemImage from "./styledComponents/ItemImage";
+import ItemContainer from "./styledComponents/ItemContainer";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
@@ -35,6 +37,7 @@ class Select extends React.Component {
     this._renderInput = this._renderInput.bind(this);
     this._renderMenu = this._renderMenu.bind(this);
     this._renderItem = this._renderItem.bind(this);
+    this._renderLabel = this._renderLabel.bind(this);
     this._shouldItemRender = this._shouldItemRender.bind(this);
     this.onFilter = this.onFilter.bind(this);
     this.onSelect = this.onSelect.bind(this);
@@ -129,11 +132,22 @@ class Select extends React.Component {
         selected={this.state.selectedLabel === item.label}
       >
         <div>
-          {this.props.renderItem ? this.props.renderItem(item) : item.label}
+          {this.props.renderItem
+            ? this.props.renderItem(item)
+            : this._renderLabel(item)}
         </div>
       </DropdownItemWrapper>
     );
   }
+
+  _renderLabel = item =>
+    item.image ? (
+      <ItemContainer>
+        <ItemImage src={item.image} size={40} /> {item.label}
+      </ItemContainer>
+    ) : (
+      item.label
+    );
 
   _shouldItemRender(item) {
     if (this.state.isSearching) {
@@ -157,7 +171,8 @@ Select.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string,
-      label: PropTypes.string
+      label: PropTypes.string,
+      image: PropTypes.string
     })
   ).isRequired,
   value: PropTypes.string,

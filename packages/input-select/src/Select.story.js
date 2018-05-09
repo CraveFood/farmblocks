@@ -15,8 +15,7 @@ const items = [
 
 const Wrapper = styled.div`width: 200px;`;
 
-const imgSrc =
-  "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
+const imgSrc = "https://picsum.photos/100/100/?random";
 
 storiesOf("Select Input", "module")
   .add(
@@ -106,6 +105,19 @@ storiesOf("Select Input", "module")
           items={items}
           onChange={action("onChange")}
           disableSearch
+        />
+      </Wrapper>
+    ))
+  )
+  .add(
+    "With Images",
+    withInfo()(() => (
+      <Wrapper>
+        <Select
+          placeholder="Select fruit"
+          label="Fruit"
+          items={items.map(item => ({ ...item, image: imgSrc }))}
+          onChange={action("onChange")}
         />
       </Wrapper>
     ))
