@@ -26,24 +26,6 @@ const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedValue: props.value,
-      selectedLabel: this.getSelectedLabel(props),
-      isSearching: false,
-      isMenuOpen: false
-    };
-
-    this._renderInput = this._renderInput.bind(this);
-    this._renderMenu = this._renderMenu.bind(this);
-    this._renderItem = this._renderItem.bind(this);
-    this._renderLabel = this._renderLabel.bind(this);
-    this._shouldItemRender = this._shouldItemRender.bind(this);
-    this.onFilter = this.onFilter.bind(this);
-    this.onSelect = this.onSelect.bind(this);
-  }
-
   render() {
     return (
       <DropdownWrapper>
@@ -64,24 +46,24 @@ class Select extends React.Component {
     );
   }
 
-  onFilter(event) {
+  onFilter = event => {
     !this.state.isSearching && this.props.onChange("");
 
     this.setState({ selectedLabel: event.target.value, isSearching: true });
-  }
+  };
 
-  onSelect(selectedLabel, item) {
+  onSelect = (selectedLabel, item) => {
     this.setState({ selectedLabel, isSearching: false });
     this.props.onChange(item.value);
-  }
+  };
 
-  getSelectedLabel(props) {
+  getSelectedLabel = props => {
     const item = props.value && props.items.find(x => x.value === props.value);
 
     return item && item.label;
-  }
+  };
 
-  componentWillReceiveProps(newProps) {
+  componentWillReceiveProps = newProps => {
     if (
       newProps.value &&
       newProps.value !== this.props.value &&
@@ -92,9 +74,9 @@ class Select extends React.Component {
         selectedLabel: this.getSelectedLabel(newProps)
       });
     }
-  }
+  };
 
-  _renderInput(autoCompleteProps) {
+  _renderInput = autoCompleteProps => {
     const { ref, ...rest } = autoCompleteProps;
 
     const { renderItem, disableSearch, items, ...inputProps } = this.props;
@@ -124,9 +106,9 @@ class Select extends React.Component {
         }
       />
     );
-  }
+  };
 
-  _renderMenu(items) {
+  _renderMenu = items => {
     if (!items || !items.length) {
       return <EmptyCard noResultsMessage={this.props.noResultsMessage} />;
     }
@@ -136,23 +118,21 @@ class Select extends React.Component {
         <ul>{items}</ul>
       </DropdownMenuWrapper>
     );
-  }
+  };
 
-  _renderItem(item, highlighted) {
-    return (
-      <DropdownItemWrapper
-        key={item.value}
-        highlighted={highlighted}
-        selected={this.state.selectedLabel === item.label}
-      >
-        <div>
-          {this.props.renderItem
-            ? this.props.renderItem(item)
-            : this._renderLabel(item)}
-        </div>
-      </DropdownItemWrapper>
-    );
-  }
+  _renderItem = (item, highlighted) => (
+    <DropdownItemWrapper
+      key={item.value}
+      highlighted={highlighted}
+      selected={this.state.selectedLabel === item.label}
+    >
+      <div>
+        {this.props.renderItem
+          ? this.props.renderItem(item)
+          : this._renderLabel(item)}
+      </div>
+    </DropdownItemWrapper>
+  );
 
   _renderLabel = item =>
     item.image ? (
@@ -163,7 +143,7 @@ class Select extends React.Component {
       item.label
     );
 
-  _shouldItemRender(item) {
+  _shouldItemRender = item => {
     if (this.state.isSearching) {
       return (
         item.label
@@ -174,29 +154,36 @@ class Select extends React.Component {
 
     // If user is not searching, we render the full list of items
     return true;
-  }
+  };
+
+  state = {
+    selectedValue: this.props.value,
+    selectedLabel: this.getSelectedLabel(this.props),
+    isSearching: false,
+    isMenuOpen: false
+  };
+
+  static defaultProps = {
+    onChange: () => false
+  };
+
+  static propTypes = {
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.string,
+        label: PropTypes.string,
+        image: PropTypes.string
+      })
+    ).isRequired,
+    value: PropTypes.string,
+    onChange: PropTypes.func,
+    renderItem: PropTypes.func,
+    noResultsMessage: PropTypes.string,
+    disableSearch: PropTypes.bool,
+    ...formInputProps,
+    ...withMessagesProps,
+    ...disabledTooltipProps
+  };
 }
-
-Select.defaultProps = {
-  onChange: () => false
-};
-
-Select.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.string,
-      label: PropTypes.string,
-      image: PropTypes.string
-    })
-  ).isRequired,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-  renderItem: PropTypes.func,
-  noResultsMessage: PropTypes.string,
-  disableSearch: PropTypes.bool,
-  ...formInputProps,
-  ...withMessagesProps,
-  ...disabledTooltipProps
-};
 
 export default Select;
