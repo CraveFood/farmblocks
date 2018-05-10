@@ -107,4 +107,18 @@ storiesOf("Dropdown/Component", "module")
         <DropdownItem value={3} text="Strawberry" />
       </Dropdown>
     ))
+  )
+  .add(
+    "With ref",
+    withInfo()(() => (
+      <Dropdown
+        text="Select fruit"
+        handleSelection={action("handleSelection")}
+        innerRef={action("innerRef")}
+      >
+        <DropdownItem value={1} text="Banana" />
+        <DropdownItem value={2}>Apple</DropdownItem>
+        <DropdownItem value={3} text="Strawberry" />
+      </Dropdown>
+    ))
   );
