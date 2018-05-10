@@ -97,7 +97,7 @@ storiesOf("Select Input", "module")
     ))
   )
   .add(
-    "Read Only",
+    "Search (autocomplete) disabled",
     withInfo()(() => (
       <Wrapper>
         <Select
@@ -105,7 +105,7 @@ storiesOf("Select Input", "module")
           label="Fruit"
           items={items}
           onChange={action("onChange")}
-          readOnly
+          disableSearch
         />
       </Wrapper>
     ))
