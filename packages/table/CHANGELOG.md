@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.2.10...@crave/farmblocks-table@1.3.0) (2018-05-10)
+
+
+### Features
+
+* **Table/Column:** add light option ([40c8517](https://github.com/CraveFood/farmblocks/commit/40c8517)), closes [#344](https://github.com/CraveFood/farmblocks/issues/344)
+
+
+
+
 <a name="1.2.10"></a>
 ## [1.2.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.2.9...@crave/farmblocks-table@1.2.10) (2018-04-17)
 
