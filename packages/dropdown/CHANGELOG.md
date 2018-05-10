@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.5.11...@crave/farmblocks-dropdown@0.6.0) (2018-05-10)
+
+
+### Features
+
+* **Dropdown:** add innerRef property ([5a87168](https://github.com/CraveFood/farmblocks/commit/5a87168)), closes [#342](https://github.com/CraveFood/farmblocks/issues/342)
+
+
+
+
 <a name="0.5.11"></a>
 ## [0.5.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.5.10...@crave/farmblocks-dropdown@0.5.11) (2018-04-11)
 
