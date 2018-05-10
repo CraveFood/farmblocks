@@ -53,6 +53,10 @@ const Wrapper = styled.div`
     align-items: center;
     cursor: text;
 
+    .wrapped {
+      flex: 1;
+    }
+
     input {
       border: 0;
       flex: 1;
