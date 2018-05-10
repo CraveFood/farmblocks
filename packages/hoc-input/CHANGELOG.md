@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.2"></a>
+## [2.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.1.1...@crave/farmblocks-hoc-input@2.1.2) (2018-05-10)
+
+
+### Bug Fixes
+
+* **hoc-input:** possible fix for a css issue preventing Stripe Card Element to display when wrapped ([c1abfaa](https://github.com/CraveFood/farmblocks/commit/c1abfaa)), closes [#348](https://github.com/CraveFood/farmblocks/issues/348)
+
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.1.0...@crave/farmblocks-hoc-input@2.1.1) (2018-04-17)
 
