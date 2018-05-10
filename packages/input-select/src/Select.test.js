@@ -73,14 +73,14 @@ describe("Select input", () => {
       const { renderItem } = autoCompleteWrapper.instance().props;
 
       const highlighted = false;
-      const itemWrapper = shallow(renderItem(items[0], highlighted));
+      const itemWrapper = mount(renderItem(items[0], highlighted));
 
       // Render text item
       const itemInstance = itemWrapper.instance();
 
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(false);
-      expect(itemInstance.props.children).toEqual(<div>{items[0].label}</div>);
+      expect(itemWrapper.text()).toBe(items[0].label);
     });
 
     test("render item label with image", () => {
@@ -103,16 +103,14 @@ describe("Select input", () => {
       const { renderItem } = autoCompleteWrapper.instance().props;
 
       const highlighted = true;
-      const itemWrapper = shallow(renderItem(items[0], highlighted));
+      const itemWrapper = mount(renderItem(items[0], highlighted));
 
       // Render text item
       const itemInstance = itemWrapper.instance();
 
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(false);
-      expect(itemInstance.props.children).toEqual(
-        <div>{customRenderItem(items[0])}</div>
-      );
+      expect(itemWrapper.text()).toBe(customRenderItem(items[0]));
     });
 
     test("with selected item style", () => {
@@ -122,14 +120,14 @@ describe("Select input", () => {
       const { renderItem } = autoCompleteWrapper.instance().props;
 
       const highlighted = false;
-      const itemWrapper = shallow(renderItem(items[0], highlighted));
+      const itemWrapper = mount(renderItem(items[0], highlighted));
 
       // Render text item
       const itemInstance = itemWrapper.instance();
 
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(true);
-      expect(itemInstance.props.children).toEqual(<div>{items[0].label}</div>);
+      expect(itemWrapper.text()).toBe(items[0].label);
     });
   });
 

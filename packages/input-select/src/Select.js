@@ -18,6 +18,7 @@ import { badgeSizes, thumbnailSizes } from "@crave/farmblocks-image";
 import EmptyCard from "./components/EmptyCard";
 import ItemImage from "./styledComponents/ItemImage";
 import ItemContainer from "./styledComponents/ItemContainer";
+import LabelContainer from "./styledComponents/LabelContainer";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
@@ -98,10 +99,10 @@ class Select extends React.Component {
         innerRef={ref}
         displayBlock
         renderContent={content => (
-          <ItemContainer>
+          <LabelContainer>
             {image && <ItemImage src={image} size={badgeSizes.SMALL} badge />}
             {content}
-          </ItemContainer>
+          </LabelContainer>
         )}
       />
     );
@@ -119,25 +120,29 @@ class Select extends React.Component {
     );
   };
 
-  _renderItem = (item, highlighted) => (
-    <DropdownItemWrapper
-      key={item.value}
-      highlighted={highlighted}
-      selected={this.state.selectedLabel === item.label}
-    >
-      <div>
-        {this.props.renderItem
-          ? this.props.renderItem(item)
-          : this._renderLabel(item)}
-      </div>
-    </DropdownItemWrapper>
-  );
+  _renderItem = (item, highlighted) => {
+    const selected = this.state.selectedLabel === item.label;
+    return (
+      <DropdownItemWrapper
+        key={item.value}
+        highlighted={highlighted}
+        selected={selected}
+      >
+        <ItemContainer>
+          {this.props.renderItem
+            ? this.props.renderItem(item)
+            : this._renderLabel(item)}
+          {selected && <i className="icon wg-check" />}
+        </ItemContainer>
+      </DropdownItemWrapper>
+    );
+  };
 
   _renderLabel = item =>
     item.image ? (
-      <ItemContainer>
+      <LabelContainer>
         <ItemImage src={item.image} size={thumbnailSizes.SMALL} /> {item.label}
-      </ItemContainer>
+      </LabelContainer>
     ) : (
       item.label
     );
