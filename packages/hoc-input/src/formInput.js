@@ -22,7 +22,8 @@ export const formInputProps = {
   input: PropTypes.shape({
     value: PropTypes.any,
     onChange: PropTypes.func
-  })
+  }),
+  readOnly: PropTypes.bool
 };
 
 const formInput = WrappedComponent => {
