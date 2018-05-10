@@ -105,6 +105,7 @@ const formInput = WrappedComponent => {
         >
           {icon}
           <WrappedComponent
+            className="wrapped"
             {...inputProps}
             {...handlers}
             ref={innerRef}
