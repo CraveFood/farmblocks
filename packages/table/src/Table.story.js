@@ -93,6 +93,15 @@ storiesOf("Table/Main", "module")
     ))
   )
   .add(
+    "Light column",
+    withInfo()(() => (
+      <Table data={fruits}>
+        <Column title="Fruit" text={row => row.name} light />
+        <Column title="Price" text={row => row.price} light />
+      </Table>
+    ))
+  )
+  .add(
     "Empty column",
     withInfo()(() => (
       <Table data={fruits}>

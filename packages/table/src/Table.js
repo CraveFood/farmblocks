@@ -9,18 +9,9 @@ import { HeaderCell, BodyCell } from "./styledComponents/Cell";
 import { rowHeights } from "./constants";
 
 class Table extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedRows: []
-    };
-    this._renderColumnTitle = this._renderColumnTitle.bind(this);
-    this._renderSelectAllButton = this._renderSelectAllButton.bind(this);
-    this._renderSelectRowButton = this._renderSelectRowButton.bind(this);
-    this.selectAllToggle = this.selectAllToggle.bind(this);
-    this.selectRowToggle = this.selectRowToggle.bind(this);
-    this.titleClick = this.titleClick.bind(this);
-  }
+  state = {
+    selectedRows: []
+  };
 
   render() {
     const {
@@ -90,7 +81,7 @@ class Table extends React.Component {
     );
   }
 
-  _renderSelectAllButton() {
+  _renderSelectAllButton = () => {
     const dataLength = this.props.data.length;
     return (
       <HeaderCell className="cell">
@@ -104,9 +95,9 @@ class Table extends React.Component {
         </div>
       </HeaderCell>
     );
-  }
+  };
 
-  _renderSelectRowButton(rowIndex) {
+  _renderSelectRowButton = rowIndex => {
     const isChecked = this.state.selectedRows.indexOf(rowIndex) !== -1;
     return (
       <BodyCell className="cell checkbox" selected={isChecked}>
@@ -120,9 +111,9 @@ class Table extends React.Component {
         </div>
       </BodyCell>
     );
-  }
+  };
 
-  _renderColumnTitle(columnIndex, columnProps) {
+  _renderColumnTitle = (columnIndex, columnProps) => {
     const { width, align } = columnProps;
     const cellProps = { width, align, className: "cell" };
     const headerCell = content => (
@@ -157,9 +148,9 @@ class Table extends React.Component {
     }
 
     return headerCell(null);
-  }
+  };
 
-  _renderColumnCell(row, rowIndex, columnProps) {
+  _renderColumnCell = (row, rowIndex, columnProps) => {
     const { width, align } = columnProps;
     const rowSelected = this.state.selectedRows.indexOf(rowIndex) !== -1;
     const cellProps = {
@@ -179,32 +170,30 @@ class Table extends React.Component {
         align: columnProps.align,
         size: fontSizes.MEDIUM
       };
-      if (columnProps.fontType) {
-        return bodyCell(
-          <Text {...textProps} type={columnProps.fontType}>
-            {text}
-          </Text>
-        );
-      }
+
+      const type = columnProps.fontType
+        ? columnProps.fontType
+        : fontTypes.NORMAL;
+
       return bodyCell(
-        <Text title {...textProps} type={fontTypes.NORMAL}>
+        <Text title={!columnProps.light} {...textProps} type={type}>
           {text}
         </Text>
       );
     }
     return bodyCell(null);
-  }
+  };
 
-  selectAllToggle(checked, dataLength) {
+  selectAllToggle = (checked, dataLength) => {
     if (checked) {
       return this.setState({
         selectedRows: new Array(dataLength).fill().map((item, index) => index)
       });
     }
     return this.setState({ selectedRows: [] });
-  }
+  };
 
-  selectRowToggle(index, checked) {
+  selectRowToggle = (index, checked) => {
     const nextSelectedRows = checked
       ? [...this.state.selectedRows, index]
       : this.state.selectedRows.filter(value => value !== index);
@@ -212,9 +201,9 @@ class Table extends React.Component {
     return this.setState({
       selectedRows: nextSelectedRows
     });
-  }
+  };
 
-  titleClick(index) {
+  titleClick = index => {
     const { data, onTitleClick } = this.props;
     if (!onTitleClick) {
       return event => {
@@ -226,7 +215,7 @@ class Table extends React.Component {
       event.preventDefault();
       return onTitleClick(index, data);
     };
-  }
+  };
 
   static propTypes = {
     data: PropTypes.arrayOf(PropTypes.object),
