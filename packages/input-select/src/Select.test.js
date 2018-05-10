@@ -4,6 +4,7 @@ import { shallow, mount, configure } from "enzyme";
 import ReactAutocomplete from "react-autocomplete";
 
 import Select from "./Select";
+import ItemImage from "./styledComponents/ItemImage";
 
 describe("Select input", () => {
   configure({ adapter: new Adapter() });
@@ -80,6 +81,17 @@ describe("Select input", () => {
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(false);
       expect(itemInstance.props.children).toEqual(<div>{items[0].label}</div>);
+    });
+
+    test("render item label with image", () => {
+      const autoCompleteWrapper = wrapper.find(ReactAutocomplete);
+      const { renderItem } = autoCompleteWrapper.instance().props;
+      const image = "an image path";
+
+      const itemWrapper = shallow(renderItem({ ...items[0], image }, false));
+      const imageWrapper = itemWrapper.find(ItemImage);
+
+      expect(imageWrapper.prop("src")).toBe(image);
     });
 
     test("custom item render", () => {

@@ -114,6 +114,21 @@ storiesOf("Select Input", "module")
     ))
   )
   .add(
+    "With Selected Image",
+    withInfo()(() => (
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items.map((item, index) => ({
+          ...item,
+          image: `${imgSrc}?image=${index + 1080}`
+        }))}
+        value={items[1].value}
+        onChange={action("onChange")}
+      />
+    ))
+  )
+  .add(
     "Custom width",
     withInfo()(() => (
       <Select
