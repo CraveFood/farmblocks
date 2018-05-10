@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.3.9...@crave/farmblocks-input-select@0.4.0) (2018-05-10)
+
+
+### Features
+
+* **Select:** add disableSearch prop ([b6cc841](https://github.com/CraveFood/farmblocks/commit/b6cc841)), closes [#243](https://github.com/CraveFood/farmblocks/issues/243)
+
+
+
+
 <a name="0.3.9"></a>
 ## [0.3.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.3.8...@crave/farmblocks-input-select@0.3.9) (2018-05-10)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.1.2...@crave/farmblocks-hoc-input@2.2.0) (2018-05-10)
+
+
+### Features
+
+* **Hoc-Input:** add readOnly property ([65765af](https://github.com/CraveFood/farmblocks/commit/65765af)), closes [#243](https://github.com/CraveFood/farmblocks/issues/243)
+
+
+
+
 <a name="2.1.2"></a>
 ## [2.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.1.1...@crave/farmblocks-hoc-input@2.1.2) (2018-05-10)
 
