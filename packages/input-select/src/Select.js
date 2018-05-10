@@ -93,13 +93,20 @@ class Select extends React.Component {
   _renderInput(autoCompleteProps) {
     const { ref, ...rest } = autoCompleteProps;
 
-    const { renderItem, ...inputProps } = this.props;
+    const { renderItem, disableSearch, ...inputProps } = this.props;
 
     inputProps.validationMessages = this.state.isMenuOpen
       ? []
       : this.props.validationMessages;
 
-    return <EnhancedInput {...inputProps} {...rest} innerRef={ref} />;
+    return (
+      <EnhancedInput
+        readOnly={disableSearch}
+        {...inputProps}
+        {...rest}
+        innerRef={ref}
+      />
+    );
   }
 
   _renderMenu(items) {
@@ -157,6 +164,7 @@ Select.propTypes = {
   onChange: PropTypes.func,
   renderItem: PropTypes.func,
   noResultsMessage: PropTypes.string,
+  disableSearch: PropTypes.bool,
   ...formInputProps,
   ...withMessagesProps,
   ...disabledTooltipProps

@@ -86,4 +86,12 @@ storiesOf("HOC formInput", "module")
         <EnhancedInput role="combobox" placeholder="Select value" />
       </div>
     ))
+  )
+  .add(
+    "html text input with combobox readonly role",
+    withInfo()(() => (
+      <div style={{ width: "300px" }}>
+        <EnhancedInput role="combobox" placeholder="Select value" readOnly />
+      </div>
+    ))
   );

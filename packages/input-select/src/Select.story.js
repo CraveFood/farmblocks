@@ -95,4 +95,18 @@ storiesOf("Select Input", "module")
         />
       </Wrapper>
     ))
+  )
+  .add(
+    "Search (autocomplete) disabled",
+    withInfo()(() => (
+      <Wrapper>
+        <Select
+          placeholder="Select fruit"
+          label="Fruit"
+          items={items}
+          onChange={action("onChange")}
+          disableSearch
+        />
+      </Wrapper>
+    ))
   );
