@@ -47,6 +47,7 @@ This code will render:
 | ---------------- | ------------------------------------------------------------------------------------- | ----------------------------------------- | -------- | ----------- |
 | items            | Items to be rendered as options                                                       | ArrayOf({ value: string, label: string }) | x        |             |
 | value            | Selected option                                                                       | string                                    |          |             |
+| width            | Width of the component                                                                | string                                    |          | 200px       |
 | onChange         | Function to handle selection of an item.                                              | onChange(value:string)                    |          | () => false |
 | renderItem       | Custom render item function                                                           | renderItem(item): node                    |          |             |
 | noResultsMessage | Custom no results message to be displayed when there is no result available on search | string                                    |          |             |

@@ -7,7 +7,6 @@ import disabledTooltip, {
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
-  DropdownWrapper,
   DropdownMenuWrapper,
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
@@ -19,6 +18,7 @@ import { badgeSizes, thumbnailSizes } from "@crave/farmblocks-image";
 import EmptyCard from "./components/EmptyCard";
 import ItemImage from "./styledComponents/ItemImage";
 import ItemContainer from "./styledComponents/ItemContainer";
+import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
@@ -28,7 +28,7 @@ EnhancedInput.displayName = "EnhancedInput";
 class Select extends React.Component {
   render() {
     return (
-      <DropdownWrapper>
+      <DropdownWrapper width={this.props.width}>
         <ReactAutocomplete
           items={this.props.items}
           shouldItemRender={this._shouldItemRender}
@@ -41,6 +41,7 @@ class Select extends React.Component {
           renderItem={this._renderItem}
           autoHighlight={false}
           onMenuVisibilityChange={isMenuOpen => this.setState({ isMenuOpen })}
+          wrapperStyle={{}}
         />
       </DropdownWrapper>
     );
@@ -95,15 +96,13 @@ class Select extends React.Component {
         {...inputProps}
         {...rest}
         innerRef={ref}
-        renderContent={
-          image &&
-          (content => (
-            <ItemContainer>
-              <ItemImage src={image} size={badgeSizes.SMALL} badge />
-              {content}
-            </ItemContainer>
-          ))
-        }
+        displayBlock
+        renderContent={content => (
+          <ItemContainer>
+            {image && <ItemImage src={image} size={badgeSizes.SMALL} badge />}
+            {content}
+          </ItemContainer>
+        )}
       />
     );
   };
@@ -164,7 +163,8 @@ class Select extends React.Component {
   };
 
   static defaultProps = {
-    onChange: () => false
+    onChange: () => false,
+    width: "200px"
   };
 
   static propTypes = {
@@ -176,6 +176,7 @@ class Select extends React.Component {
       })
     ).isRequired,
     value: PropTypes.string,
+    width: PropTypes.string,
     onChange: PropTypes.func,
     renderItem: PropTypes.func,
     noResultsMessage: PropTypes.string,

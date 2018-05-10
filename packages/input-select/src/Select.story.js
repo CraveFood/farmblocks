@@ -2,7 +2,6 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
-import styled from "styled-components";
 import Image from "@crave/farmblocks-image";
 
 import Select from ".";
@@ -13,50 +12,42 @@ const items = [
   { value: "3", label: "Pear" }
 ];
 
-const Wrapper = styled.div`width: 200px;`;
-
 const imgSrc = "https://picsum.photos/100";
 
 storiesOf("Select Input", "module")
   .add(
     "Default",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items}
-          onChange={action("onChange")}
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
+      />
     ))
   )
   .add(
     "With value",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items}
-          onChange={action("onChange")}
-          value={items[1].value}
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
+        value={items[1].value}
+      />
     ))
   )
   .add(
     "With errors",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items}
-          onChange={action("onChange")}
-          validationMessages={["Select at least one option"]}
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
+        validationMessages={["Select at least one option"]}
+      />
     ))
   )
   .add(
@@ -86,45 +77,51 @@ storiesOf("Select Input", "module")
   .add(
     "Disabled",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items}
-          onChange={action("onChange")}
-          value={items[1].value}
-          disabled
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
+        value={items[1].value}
+        disabled
+      />
     ))
   )
   .add(
     "Search (autocomplete) disabled",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items}
-          onChange={action("onChange")}
-          disableSearch
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
+        disableSearch
+      />
     ))
   )
   .add(
     "With Images",
     withInfo()(() => (
-      <Wrapper>
-        <Select
-          placeholder="Select fruit"
-          label="Fruit"
-          items={items.map((item, index) => ({
-            ...item,
-            image: `${imgSrc}?image=${index + 1080}`
-          }))}
-          onChange={action("onChange")}
-        />
-      </Wrapper>
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items.map((item, index) => ({
+          ...item,
+          image: `${imgSrc}?image=${index + 1080}`
+        }))}
+        onChange={action("onChange")}
+      />
+    ))
+  )
+  .add(
+    "Custom width",
+    withInfo()(() => (
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
+        width="400px"
+      />
     ))
   );
