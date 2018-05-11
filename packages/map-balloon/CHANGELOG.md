@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.1.0...@crave/farmblocks-map-balloon@1.2.0) (2018-05-11)
+
+
+### Features
+
+* **Pin:** add box-shaddow ([5219502](https://github.com/CraveFood/farmblocks/commit/5219502))
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.0.3...@crave/farmblocks-map-balloon@1.1.0) (2018-05-04)
 
