@@ -93,7 +93,7 @@ class Select extends React.Component {
   _renderInput(autoCompleteProps) {
     const { ref, ...rest } = autoCompleteProps;
 
-    const { renderItem, disableSearch, ...inputProps } = this.props;
+    const { renderItem, disableSearch, items, ...inputProps } = this.props;
 
     inputProps.validationMessages = this.state.isMenuOpen
       ? []
