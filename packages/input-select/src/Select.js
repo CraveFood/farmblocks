@@ -128,12 +128,14 @@ class Select extends React.Component {
         highlighted={highlighted}
         selected={selected}
       >
-        <ItemContainer>
-          {this.props.renderItem
-            ? this.props.renderItem(item)
-            : this._renderLabel(item)}
-          {selected && <i className="icon wg-check" />}
-        </ItemContainer>
+        {this.props.renderItem ? (
+          this.props.renderItem(item, selected)
+        ) : (
+          <ItemContainer>
+            {this._renderLabel(item)}
+            {selected && <i className="icon wg-check" />}
+          </ItemContainer>
+        )}
       </DropdownItemWrapper>
     );
   };

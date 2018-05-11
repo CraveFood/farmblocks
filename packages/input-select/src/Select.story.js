@@ -58,16 +58,25 @@ storiesOf("Select Input", "module")
         label="Fruit"
         items={items.map(item => ({ ...item, image: imgSrc }))}
         onChange={action("onChange")}
-        renderItem={item => (
+        renderItem={(item, selected) => (
           <div
             style={{
               flex: 1,
               display: "flex",
-              justifyContent: "space-between",
               alignItems: "center"
             }}
           >
-            {item.label}
+            <span
+              style={{
+                flex: 1,
+                display: "flex",
+                justifyContent: "space-between",
+                marginRight: 16
+              }}
+            >
+              {item.label}
+              {selected && <i className="icon wg-check" />}
+            </span>
             <Image src={item.image} />
           </div>
         )}
