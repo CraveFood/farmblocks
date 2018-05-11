@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.4.0...@crave/farmblocks-input-select@0.4.1) (2018-05-11)
+
+
+### Bug Fixes
+
+* **input-select:** stop passing the items props to the html input element ([e18139a](https://github.com/CraveFood/farmblocks/commit/e18139a)), closes [#350](https://github.com/CraveFood/farmblocks/issues/350)
+
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.3.9...@crave/farmblocks-input-select@0.4.0) (2018-05-10)
 
