@@ -24,7 +24,7 @@ export const formInputProps = {
     onChange: PropTypes.func
   }),
   readOnly: PropTypes.bool,
-  renderContent: PropTypes.func
+  refName: PropTypes.string
 };
 
 const formInput = WrappedComponent => {
@@ -70,7 +70,7 @@ const formInput = WrappedComponent => {
       );
     }
 
-    _renderInput({ innerRef, renderContent, ...inputProps }) {
+    _renderInput({ innerRef, refName, ...inputProps }) {
       const handlers = {
         onChange: this.onChange,
         onFocus: this.onFocus,
@@ -106,15 +106,13 @@ const formInput = WrappedComponent => {
           }}
         >
           {icon}
-          {renderContent(
-            <WrappedComponent
-              className="wrapped"
-              {...inputProps}
-              {...handlers}
-              ref={innerRef}
-              value={this.state.value}
-            />
-          )}
+          <WrappedComponent
+            className="wrapped"
+            {...inputProps}
+            {...handlers}
+            {...{ [refName]: innerRef }}
+            value={this.state.value}
+          />
           {clearButton}
           {dropDownIcon}
         </div>
@@ -203,7 +201,7 @@ const formInput = WrappedComponent => {
       onFocus: () => null,
       onBlur: () => null,
       input: null,
-      renderContent: content => content
+      refName: "ref"
     };
   };
 };

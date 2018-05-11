@@ -13,17 +13,21 @@ import {
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
-import { badgeSizes, thumbnailSizes } from "@crave/farmblocks-image";
+import { thumbnailSizes } from "@crave/farmblocks-image";
 
+import withImage, { refName } from "./components/withImage";
 import EmptyCard from "./components/EmptyCard";
 import ItemImage from "./styledComponents/ItemImage";
 import ItemContainer from "./styledComponents/ItemContainer";
 import LabelContainer from "./styledComponents/LabelContainer";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
-const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
-  "input"
-);
+const EnhancedInput = compose(
+  disabledTooltip,
+  withMessages,
+  formInput,
+  withImage
+)("input");
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
@@ -97,13 +101,9 @@ class Select extends React.Component {
         {...inputProps}
         {...rest}
         innerRef={ref}
+        refName={refName}
+        image={image}
         displayBlock
-        renderContent={content => (
-          <LabelContainer>
-            {image && <ItemImage src={image} size={badgeSizes.SMALL} badge />}
-            {content}
-          </LabelContainer>
-        )}
       />
     );
   };
