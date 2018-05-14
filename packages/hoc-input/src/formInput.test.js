@@ -11,24 +11,48 @@ describe("formInput", function() {
 
   const EnhancedInput = formInput(props => React.createElement("input", props));
 
-  test("passing the same value on props should leave value state as it is", function() {
-    const value = "some value";
-    const component = shallow(<EnhancedInput value={value} />);
+  describe("(with value prop)", () => {
+    test("passing the same value on props should leave value state as it is", function() {
+      const value = "some value";
+      const component = shallow(<EnhancedInput value={value} />);
 
-    const setStateMock = jest.fn();
-    component.instance().setState = setStateMock;
+      const setStateMock = jest.fn();
+      component.instance().setState = setStateMock;
 
-    component.setProps({ value });
+      component.setProps({ value });
 
-    expect(setStateMock.mock.calls.length).toBe(0);
+      expect(setStateMock.mock.calls.length).toBe(0);
+    });
+
+    test("changing the value property should update value state", function() {
+      const component = shallow(<EnhancedInput />);
+      const state = component.state();
+      const expectedState = { ...state, value: "456" };
+      component.setProps({ value: "456" });
+      expect(component.state()).toEqual(expectedState);
+    });
   });
 
-  test("changing the value property should update value state", function() {
-    const component = shallow(<EnhancedInput />);
-    const state = component.state();
-    const expectedState = { ...state, value: "456" };
-    component.setProps({ value: "456" });
-    expect(component.state()).toEqual(expectedState);
+  describe("(with redux-form input porp)", () => {
+    test("passing the same value on props should leave value state as it is", function() {
+      const value = "some value";
+      const component = shallow(<EnhancedInput input={{ value }} />);
+
+      const setStateMock = jest.fn();
+      component.instance().setState = setStateMock;
+
+      component.setProps({ input: { value } });
+
+      expect(setStateMock.mock.calls.length).toBe(0);
+    });
+
+    test("changing the value property should update value state", function() {
+      const component = shallow(<EnhancedInput input={{ value: "0" }} />);
+      const state = component.state();
+      const expectedState = { ...state, value: "456" };
+      component.setProps({ input: { value: "456" } });
+      expect(component.state()).toEqual(expectedState);
+    });
   });
 
   test("default onChange function returns null", function() {

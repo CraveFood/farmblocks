@@ -7,42 +7,33 @@ import disabledTooltip, {
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
-  DropdownWrapper,
   DropdownMenuWrapper,
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
+import { thumbnailSizes } from "@crave/farmblocks-image";
 
+import withImage, { refName } from "./components/withImage";
 import EmptyCard from "./components/EmptyCard";
+import ItemImage from "./styledComponents/ItemImage";
+import ItemContainer from "./styledComponents/ItemContainer";
+import LabelContainer from "./styledComponents/LabelContainer";
+import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
-const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
-  "input"
-);
+const EnhancedInput = compose(
+  disabledTooltip,
+  withMessages,
+  formInput,
+  withImage
+)("input");
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedValue: props.value,
-      selectedLabel: this.getSelectedLabel(props),
-      isSearching: false,
-      isMenuOpen: false
-    };
-
-    this._renderInput = this._renderInput.bind(this);
-    this._renderMenu = this._renderMenu.bind(this);
-    this._renderItem = this._renderItem.bind(this);
-    this._shouldItemRender = this._shouldItemRender.bind(this);
-    this.onFilter = this.onFilter.bind(this);
-    this.onSelect = this.onSelect.bind(this);
-  }
-
   render() {
     return (
-      <DropdownWrapper>
+      <DropdownWrapper width={this.props.width}>
         <ReactAutocomplete
           items={this.props.items}
           shouldItemRender={this._shouldItemRender}
@@ -55,29 +46,30 @@ class Select extends React.Component {
           renderItem={this._renderItem}
           autoHighlight={false}
           onMenuVisibilityChange={isMenuOpen => this.setState({ isMenuOpen })}
+          wrapperStyle={{}}
         />
       </DropdownWrapper>
     );
   }
 
-  onFilter(event) {
+  onFilter = event => {
     !this.state.isSearching && this.props.onChange("");
 
     this.setState({ selectedLabel: event.target.value, isSearching: true });
-  }
+  };
 
-  onSelect(selectedLabel, item) {
+  onSelect = (selectedLabel, item) => {
     this.setState({ selectedLabel, isSearching: false });
     this.props.onChange(item.value);
-  }
+  };
 
-  getSelectedLabel(props) {
+  getSelectedLabel = props => {
     const item = props.value && props.items.find(x => x.value === props.value);
 
     return item && item.label;
-  }
+  };
 
-  componentWillReceiveProps(newProps) {
+  componentWillReceiveProps = newProps => {
     if (
       newProps.value &&
       newProps.value !== this.props.value &&
@@ -88,9 +80,9 @@ class Select extends React.Component {
         selectedLabel: this.getSelectedLabel(newProps)
       });
     }
-  }
+  };
 
-  _renderInput(autoCompleteProps) {
+  _renderInput = autoCompleteProps => {
     const { ref, ...rest } = autoCompleteProps;
 
     const { renderItem, disableSearch, items, ...inputProps } = this.props;
@@ -99,17 +91,24 @@ class Select extends React.Component {
       ? []
       : this.props.validationMessages;
 
+    const selectedItem = this.props.items.find(
+      item => item.label === autoCompleteProps.value
+    );
+    const image = selectedItem && selectedItem.image;
     return (
       <EnhancedInput
         readOnly={disableSearch}
         {...inputProps}
         {...rest}
         innerRef={ref}
+        refName={refName}
+        image={image}
+        displayBlock
       />
     );
-  }
+  };
 
-  _renderMenu(items) {
+  _renderMenu = items => {
     if (!items || !items.length) {
       return <EmptyCard noResultsMessage={this.props.noResultsMessage} />;
     }
@@ -119,23 +118,38 @@ class Select extends React.Component {
         <ul>{items}</ul>
       </DropdownMenuWrapper>
     );
-  }
+  };
 
-  _renderItem(item, highlighted) {
+  _renderItem = (item, highlighted) => {
+    const selected = this.state.selectedLabel === item.label;
     return (
       <DropdownItemWrapper
         key={item.value}
         highlighted={highlighted}
-        selected={this.state.selectedLabel === item.label}
+        selected={selected}
       >
-        <div>
-          {this.props.renderItem ? this.props.renderItem(item) : item.label}
-        </div>
+        {this.props.renderItem ? (
+          this.props.renderItem(item, selected)
+        ) : (
+          <ItemContainer>
+            {this._renderLabel(item)}
+            {selected && <i className="icon wg-check" />}
+          </ItemContainer>
+        )}
       </DropdownItemWrapper>
     );
-  }
+  };
 
-  _shouldItemRender(item) {
+  _renderLabel = item =>
+    item.image ? (
+      <LabelContainer>
+        <ItemImage src={item.image} size={thumbnailSizes.SMALL} /> {item.label}
+      </LabelContainer>
+    ) : (
+      item.label
+    );
+
+  _shouldItemRender = item => {
     if (this.state.isSearching) {
       return (
         item.label
@@ -146,28 +160,38 @@ class Select extends React.Component {
 
     // If user is not searching, we render the full list of items
     return true;
-  }
+  };
+
+  state = {
+    selectedValue: this.props.value,
+    selectedLabel: this.getSelectedLabel(this.props),
+    isSearching: false,
+    isMenuOpen: false
+  };
+
+  static defaultProps = {
+    onChange: () => false,
+    width: "200px"
+  };
+
+  static propTypes = {
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.string,
+        label: PropTypes.string,
+        image: PropTypes.string
+      })
+    ).isRequired,
+    value: PropTypes.string,
+    width: PropTypes.string,
+    onChange: PropTypes.func,
+    renderItem: PropTypes.func,
+    noResultsMessage: PropTypes.string,
+    disableSearch: PropTypes.bool,
+    ...formInputProps,
+    ...withMessagesProps,
+    ...disabledTooltipProps
+  };
 }
-
-Select.defaultProps = {
-  onChange: () => false
-};
-
-Select.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      value: PropTypes.string,
-      label: PropTypes.string
-    })
-  ).isRequired,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-  renderItem: PropTypes.func,
-  noResultsMessage: PropTypes.string,
-  disableSearch: PropTypes.bool,
-  ...formInputProps,
-  ...withMessagesProps,
-  ...disabledTooltipProps
-};
 
 export default Select;

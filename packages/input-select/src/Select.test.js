@@ -4,6 +4,7 @@ import { shallow, mount, configure } from "enzyme";
 import ReactAutocomplete from "react-autocomplete";
 
 import Select from "./Select";
+import ItemImage from "./styledComponents/ItemImage";
 
 describe("Select input", () => {
   configure({ adapter: new Adapter() });
@@ -72,14 +73,25 @@ describe("Select input", () => {
       const { renderItem } = autoCompleteWrapper.instance().props;
 
       const highlighted = false;
-      const itemWrapper = shallow(renderItem(items[0], highlighted));
+      const itemWrapper = mount(renderItem(items[0], highlighted));
 
       // Render text item
       const itemInstance = itemWrapper.instance();
 
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(false);
-      expect(itemInstance.props.children).toEqual(<div>{items[0].label}</div>);
+      expect(itemWrapper.text()).toBe(items[0].label);
+    });
+
+    test("render item label with image", () => {
+      const autoCompleteWrapper = wrapper.find(ReactAutocomplete);
+      const { renderItem } = autoCompleteWrapper.instance().props;
+      const image = "an image path";
+
+      const itemWrapper = shallow(renderItem({ ...items[0], image }, false));
+      const imageWrapper = itemWrapper.find(ItemImage);
+
+      expect(imageWrapper.prop("src")).toBe(image);
     });
 
     test("custom item render", () => {
@@ -91,16 +103,14 @@ describe("Select input", () => {
       const { renderItem } = autoCompleteWrapper.instance().props;
 
       const highlighted = true;
-      const itemWrapper = shallow(renderItem(items[0], highlighted));
+      const itemWrapper = mount(renderItem(items[0], highlighted));
 
       // Render text item
       const itemInstance = itemWrapper.instance();
 
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(false);
-      expect(itemInstance.props.children).toEqual(
-        <div>{customRenderItem(items[0])}</div>
-      );
+      expect(itemWrapper.text()).toBe(customRenderItem(items[0]));
     });
 
     test("with selected item style", () => {
@@ -110,14 +120,14 @@ describe("Select input", () => {
       const { renderItem } = autoCompleteWrapper.instance().props;
 
       const highlighted = false;
-      const itemWrapper = shallow(renderItem(items[0], highlighted));
+      const itemWrapper = mount(renderItem(items[0], highlighted));
 
       // Render text item
       const itemInstance = itemWrapper.instance();
 
       expect(itemInstance.props.highlighted).toBe(highlighted);
       expect(itemInstance.props.selected).toBe(true);
-      expect(itemInstance.props.children).toEqual(<div>{items[0].label}</div>);
+      expect(itemWrapper.text()).toBe(items[0].label);
     });
   });
 
