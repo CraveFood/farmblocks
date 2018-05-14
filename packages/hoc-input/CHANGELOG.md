@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.2.0...@crave/farmblocks-hoc-input@2.3.0) (2018-05-14)
+
+
+### Features
+
+* **hoc-input:** enable custom content rendering ([3686d36](https://github.com/CraveFood/farmblocks/commit/3686d36))
+
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.1.2...@crave/farmblocks-hoc-input@2.2.0) (2018-05-10)
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.4.1...@crave/farmblocks-input-select@0.5.0) (2018-05-14)
+
+
+### Bug Fixes
+
+* **input-select:** move custom renderItem to outside of ItemContainer ([9e6a232](https://github.com/CraveFood/farmblocks/commit/9e6a232))
+
+
+### Features
+
+* **input-select:** add width prop ([5a33b31](https://github.com/CraveFood/farmblocks/commit/5a33b31))
+* **input-select:** allow items with images ([479139a](https://github.com/CraveFood/farmblocks/commit/479139a))
+* **input-select:** show checkmark in selected item ([ee48575](https://github.com/CraveFood/farmblocks/commit/ee48575))
+* **input-select:** show image of selected item ([21cb876](https://github.com/CraveFood/farmblocks/commit/21cb876))
+
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.4.0...@crave/farmblocks-input-select@0.4.1) (2018-05-11)
 
