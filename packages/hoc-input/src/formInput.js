@@ -10,7 +10,7 @@ import Wrapper from "./styledComponents/Wrapper";
 
 export const formInputProps = {
   label: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
