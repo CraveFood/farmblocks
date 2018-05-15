@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.5.0...@crave/farmblocks-input-select@0.6.0) (2018-05-15)
+
+
+### Features
+
+* **Select:** support empty items and number values ([522d7a1](https://github.com/CraveFood/farmblocks/commit/522d7a1)), closes [#357](https://github.com/CraveFood/farmblocks/issues/357)
+
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.4.1...@crave/farmblocks-input-select@0.5.0) (2018-05-14)
 
