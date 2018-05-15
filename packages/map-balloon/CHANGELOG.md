@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.2.0...@crave/farmblocks-map-balloon@1.2.1) (2018-05-15)
+
+
+### Bug Fixes
+
+* **map-balloon:** fix pin shadow on IE11 ([665fb02](https://github.com/CraveFood/farmblocks/commit/665fb02)), closes [#364](https://github.com/CraveFood/farmblocks/issues/364)
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.1.0...@crave/farmblocks-map-balloon@1.2.0) (2018-05-11)
 
