@@ -148,4 +148,16 @@ storiesOf("Select Input", "module")
         width="400px"
       />
     ))
+  )
+  .add(
+    "Empty items",
+    withInfo()(() => (
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        value={1}
+        onChange={action("onChange")}
+        width="400px"
+      />
+    ))
   );
