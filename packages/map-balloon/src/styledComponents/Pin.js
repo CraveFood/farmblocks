@@ -13,7 +13,7 @@ const Pin = styled.div`
 
   color: ${props => props.pinColor};
 
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.24));
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
 `;
 Pin.propTypes = {
   highlighted: PropTypes.bool
