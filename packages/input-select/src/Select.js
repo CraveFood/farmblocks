@@ -31,7 +31,7 @@ EnhancedInput.displayName = "EnhancedInput";
 class Select extends React.Component {
   render() {
     return (
-      <DropdownWrapper width={this.props.width}>
+      <DropdownWrapper width={this.props.width} zIndex={this.props.zIndex}>
         <ReactAutocomplete
           items={this.props.items}
           shouldItemRender={this._shouldItemRender}
@@ -159,7 +159,8 @@ class Select extends React.Component {
   static defaultProps = {
     onChange: () => false,
     width: "200px",
-    items: []
+    items: [],
+    zIndex: 1000
   };
 
   static propTypes = {
@@ -176,6 +177,7 @@ class Select extends React.Component {
     renderItem: PropTypes.func,
     noResultsMessage: PropTypes.string,
     disableSearch: PropTypes.bool,
+    zIndex: PropTypes.number,
     ...formInputProps,
     ...withMessagesProps,
     ...disabledTooltipProps
