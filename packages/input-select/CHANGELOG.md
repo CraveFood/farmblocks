@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.6.0...@crave/farmblocks-input-select@0.6.1) (2018-05-16)
+
+
+### Bug Fixes
+
+* **Select:** update selected value after receiving new items ([283f3e5](https://github.com/CraveFood/farmblocks/commit/283f3e5))
+
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.5.0...@crave/farmblocks-input-select@0.6.0) (2018-05-15)
 
