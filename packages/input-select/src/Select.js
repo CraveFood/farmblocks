@@ -71,9 +71,10 @@ class Select extends React.Component {
 
   componentWillReceiveProps = newProps => {
     if (
-      newProps.value &&
-      newProps.value !== this.props.value &&
-      newProps.value !== this.state.selectedValue
+      (newProps.value &&
+        newProps.value !== this.props.value &&
+        newProps.value !== this.state.selectedValue) ||
+      newProps.items !== this.props.items
     ) {
       this.setState({
         selectedValue: newProps.value,
