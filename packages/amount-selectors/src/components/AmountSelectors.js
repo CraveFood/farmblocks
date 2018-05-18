@@ -32,6 +32,7 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
           icon="wg-minus"
+          disabled={this.state.value === this.props.minValue}
           onClick={this.decrement}
         />
         <div className="inputContainer">
@@ -41,6 +42,7 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
           icon="wg-add"
+          disabled={this.state.value === this.props.maxValue}
           onClick={this.increment}
         />
       </Wrapper>
