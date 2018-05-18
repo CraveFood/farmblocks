@@ -13,6 +13,48 @@ class AmountSelectors extends React.Component {
     };
   }
 
+  isDigit = key => {
+    return /\d/.test(key);
+  };
+
+  isTypedKeyValid = key => {
+    const commonAcceptedKeys = [
+      "Backspace",
+      "ArrowRight",
+      "ArrowLeft",
+      "Delete",
+      "."
+    ];
+
+    const isValidKey = commonAcceptedKeys.indexOf(key) !== -1;
+
+    return this.isDigit(key) || isValidKey;
+  };
+
+  onKeyDown = event => {
+    if (!this.isTypedKeyValid(event.key)) {
+      event.stopPropagation();
+      event.preventDefault();
+    }
+  };
+
+  onChange = event => {
+    const value = event.target.value;
+    const parsedValue = this.isDigit(value) && parseFloat(value);
+
+    if (
+      parsedValue &&
+      parsedValue > this.props.minValue &&
+      parsedValue < this.props.maxValue
+    ) {
+      this.setState({
+        value: parsedValue
+      });
+
+      this.props.onChange(parsedValue);
+    }
+  };
+
   decrement = () => {
     const value = this.state.value - this.props.step;
     this.setState({
@@ -46,6 +88,9 @@ class AmountSelectors extends React.Component {
           <InputText
             value={this.state.value}
             readOnly={this.props.disableEdit}
+            onKeyDown={this.onKeyDown}
+            onChange={this.onChange}
+            size={4}
           />
         </div>
         <Button
