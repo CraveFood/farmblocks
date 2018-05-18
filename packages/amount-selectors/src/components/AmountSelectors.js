@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import InputText from "@crave/farmblocks-input-text";
 
+import Wrapper from "../styledComponents/AmountSelector";
+
 class AmountSelectors extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +27,7 @@ class AmountSelectors extends React.Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         <Button
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
@@ -41,7 +43,7 @@ class AmountSelectors extends React.Component {
           icon="wg-add"
           onClick={this.increment}
         />
-      </div>
+      </Wrapper>
     );
   }
 
