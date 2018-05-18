@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
+import { action } from "@storybook/addon-actions";
 
 import AmountSelectors from "./AmountSelectors";
 
@@ -14,4 +15,9 @@ storiesOf("Amount selectors", "module")
   .add(
     "With a maxValue of 3",
     withInfo()(() => <AmountSelectors maxValue={3} value={2} step={0.5} />)
-  );
+  )
+  .add(
+    "With onChange function",
+    withInfo()(() => <AmountSelectors onChange={action("amount changed")} />)
+  )
+  .add("Disabled typing", withInfo()(() => <AmountSelectors disableEdit />));

@@ -14,15 +14,21 @@ class AmountSelectors extends React.Component {
   }
 
   decrement = () => {
+    const value = this.state.value - this.props.step;
     this.setState({
-      value: Math.max(this.state.value - this.props.step, this.props.minValue)
+      value: Math.max(value, this.props.minValue)
     });
+
+    this.props.onChange(value);
   };
 
   increment = () => {
+    const value = this.state.value + this.props.step;
     this.setState({
-      value: Math.min(this.state.value + this.props.step, this.props.maxValue)
+      value: Math.min(value, this.props.maxValue)
     });
+
+    this.props.onChange(value);
   };
 
   render() {
@@ -34,9 +40,13 @@ class AmountSelectors extends React.Component {
           icon="wg-minus"
           disabled={this.state.value === this.props.minValue}
           onClick={this.decrement}
+          noTooltip
         />
         <div className="inputContainer">
-          <InputText value={this.state.value} />
+          <InputText
+            value={this.state.value}
+            readOnly={this.props.disableEdit}
+          />
         </div>
         <Button
           type={buttonTypes.SECONDARY}
@@ -44,6 +54,7 @@ class AmountSelectors extends React.Component {
           icon="wg-add"
           disabled={this.state.value === this.props.maxValue}
           onClick={this.increment}
+          tooltipText="There is no more available amount."
         />
       </Wrapper>
     );
@@ -53,14 +64,18 @@ class AmountSelectors extends React.Component {
     value: PropTypes.number,
     step: PropTypes.number,
     minValue: PropTypes.number,
-    maxValue: PropTypes.number
+    maxValue: PropTypes.number,
+    onChange: PropTypes.func,
+    disableEdit: PropTypes.bool
   };
 
   static defaultProps = {
     value: 0,
     step: 1,
     minValue: 0,
-    maxValue: Number.MAX_VALUE
+    maxValue: Number.MAX_VALUE,
+    onChange: () => false,
+    disableEdit: false
   };
 }
 
