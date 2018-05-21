@@ -159,8 +159,7 @@ class Select extends React.Component {
   static defaultProps = {
     onChange: () => false,
     width: "200px",
-    items: [],
-    zIndex: 1000
+    items: []
   };
 
   static propTypes = {
