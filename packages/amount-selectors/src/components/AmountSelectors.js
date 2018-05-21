@@ -6,15 +6,13 @@ import InputText from "@crave/farmblocks-input-text";
 import Wrapper from "../styledComponents/AmountSelector";
 
 class AmountSelectors extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: props.value
-    };
-  }
+  state = {
+    value: this.props.value,
+    validationMessages: []
+  };
 
-  isDigit = key => {
-    return /\d/.test(key);
+  isDigit = value => {
+    return !Number.isNaN(parseFloat(value));
   };
 
   isTypedKeyValid = key => {
@@ -39,38 +37,37 @@ class AmountSelectors extends React.Component {
   };
 
   onChange = event => {
-    const value = event.target.value;
-    const parsedValue = this.isDigit(value) && parseFloat(value);
+    const value = typeof event === "number" ? event : event.target.value;
+    const parsedValue = parseFloat(value);
 
     if (
-      parsedValue &&
-      parsedValue > this.props.minValue &&
-      parsedValue < this.props.maxValue
+      this.isDigit(parsedValue) &&
+      parsedValue >= this.props.min &&
+      parsedValue <= this.props.max
     ) {
       this.setState({
-        value: parsedValue
+        value: parsedValue,
+        validationMessages: []
       });
 
-      this.props.onChange(parsedValue);
+      return this.props.onChange(parsedValue);
     }
+
+    this.setState({
+      validationMessages: ["Invalid value"]
+    });
   };
 
   decrement = () => {
     const value = this.state.value - this.props.step;
-    this.setState({
-      value: Math.max(value, this.props.minValue)
-    });
 
-    this.props.onChange(value);
+    this.onChange(Math.max(value, this.props.min));
   };
 
   increment = () => {
     const value = this.state.value + this.props.step;
-    this.setState({
-      value: Math.min(value, this.props.maxValue)
-    });
 
-    this.props.onChange(value);
+    this.onChange(Math.min(value, this.props.max));
   };
 
   render() {
@@ -80,7 +77,7 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
           icon="wg-minus"
-          disabled={this.state.value === this.props.minValue}
+          disabled={this.state.value === this.props.min}
           onClick={this.decrement}
           noTooltip
         />
@@ -91,13 +88,14 @@ class AmountSelectors extends React.Component {
             onKeyDown={this.onKeyDown}
             onChange={this.onChange}
             size={4}
+            validationMessages={this.state.validationMessages}
           />
         </div>
         <Button
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
           icon="wg-add"
-          disabled={this.state.value === this.props.maxValue}
+          disabled={this.state.value === this.props.max}
           onClick={this.increment}
           tooltipText="There is no more available amount."
         />
@@ -108,8 +106,8 @@ class AmountSelectors extends React.Component {
   static propTypes = {
     value: PropTypes.number,
     step: PropTypes.number,
-    minValue: PropTypes.number,
-    maxValue: PropTypes.number,
+    min: PropTypes.number,
+    max: PropTypes.number,
     onChange: PropTypes.func,
     disableEdit: PropTypes.bool
   };
@@ -117,8 +115,8 @@ class AmountSelectors extends React.Component {
   static defaultProps = {
     value: 0,
     step: 1,
-    minValue: 0,
-    maxValue: Number.MAX_VALUE,
+    min: 0,
+    max: Number.MAX_VALUE,
     onChange: () => false,
     disableEdit: false
   };
