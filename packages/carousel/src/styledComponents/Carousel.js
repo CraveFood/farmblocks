@@ -39,6 +39,7 @@ const Container = styled.div`
 
     li {
       margin: ${props => props.itemConfig.margin}px;
+      min-width: ${props => props.itemConfig.width}px;
       width: ${props => props.itemConfig.width}px;
       height: ${props => props.itemConfig.height}px;
 

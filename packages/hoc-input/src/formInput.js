@@ -10,7 +10,7 @@ import Wrapper from "./styledComponents/Wrapper";
 
 export const formInputProps = {
   label: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -43,6 +43,7 @@ const formInput = WrappedComponent => {
     }
 
     render() {
+      const { value } = this.state;
       const {
         label,
         focused,
@@ -57,7 +58,7 @@ const formInput = WrappedComponent => {
       const wrapperProps = {
         focused: this.state.focused,
         invalid: invalid === "true",
-        filled: this.state.value.length > 0,
+        filled: !!value || value === 0,
         disabled: wrappedComponentProps.disabled,
         type: wrappedComponentProps.type
       };

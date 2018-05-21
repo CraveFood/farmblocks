@@ -71,9 +71,10 @@ class Select extends React.Component {
 
   componentWillReceiveProps = newProps => {
     if (
-      newProps.value &&
-      newProps.value !== this.props.value &&
-      newProps.value !== this.state.selectedValue
+      (newProps.value &&
+        newProps.value !== this.props.value &&
+        newProps.value !== this.state.selectedValue) ||
+      newProps.items !== this.props.items
     ) {
       this.setState({
         selectedValue: newProps.value,
@@ -171,18 +172,19 @@ class Select extends React.Component {
 
   static defaultProps = {
     onChange: () => false,
-    width: "200px"
+    width: "200px",
+    items: []
   };
 
   static propTypes = {
     items: PropTypes.arrayOf(
       PropTypes.shape({
-        value: PropTypes.string,
+        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         label: PropTypes.string,
         image: PropTypes.string
       })
     ).isRequired,
-    value: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     width: PropTypes.string,
     onChange: PropTypes.func,
     renderItem: PropTypes.func,
