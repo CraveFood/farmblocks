@@ -113,6 +113,14 @@ injectGlobal`
     content: "\\e93d";
   }
 
+  .wg-add:before {
+    content: "\\e90f";
+  }
+
+  .wg-minus:before {
+    content: "\\e974";
+  }
+
   .wg-location:before {
     content: "\\e931";
   }
@@ -133,6 +141,8 @@ injectGlobal`
   .wg-close-int,
   .wg-purveyor,
   .wg-question,
+  .wg-minus,
+  .wg-add,
   .wg-location {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
