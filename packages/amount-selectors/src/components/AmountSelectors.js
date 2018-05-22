@@ -11,40 +11,11 @@ class AmountSelectors extends React.Component {
     validationMessages: this.props.validationMessages
   };
 
-  isDigit = value => {
-    return !Number.isNaN(parseFloat(value));
-  };
-
-  isTypedKeyValid = key => {
-    const commonAcceptedKeys = [
-      "Backspace",
-      "ArrowRight",
-      "ArrowLeft",
-      "Delete",
-      "."
-    ];
-
-    const isValidKey = commonAcceptedKeys.indexOf(key) !== -1;
-
-    return this.isDigit(key) || isValidKey;
-  };
-
-  onKeyDown = event => {
-    if (!this.isTypedKeyValid(event.key)) {
-      event.stopPropagation();
-      event.preventDefault();
-    }
-  };
-
   onChange = event => {
     const value = typeof event === "number" ? event : event.target.value;
     const parsedValue = parseFloat(value) || 0;
 
-    if (
-      this.isDigit(parsedValue) &&
-      parsedValue >= this.props.min &&
-      parsedValue <= this.props.max
-    ) {
+    if (parsedValue >= this.props.min && parsedValue <= this.props.max) {
       this.setState({
         value: parsedValue,
         validationMessages: []
@@ -84,6 +55,10 @@ class AmountSelectors extends React.Component {
         />
         <div className="inputContainer">
           <InputText
+            type="number"
+            min={this.props.min}
+            max={this.props.max}
+            step={this.props.step}
             value={this.state.value}
             readOnly={this.props.disableTyping}
             onKeyDown={this.onKeyDown}

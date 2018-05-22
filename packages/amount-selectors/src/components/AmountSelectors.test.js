@@ -83,32 +83,4 @@ describe("Amount selectors", () => {
       expect(component.state("value")).toBe(event.target.value);
     });
   });
-  describe("onKeyDown", () => {
-    const event = {
-      key: 1,
-      stopPropagation: jest.fn(),
-      preventDefault: jest.fn()
-    };
-
-    const component = shallow(<AmountSelectors />);
-    const { onKeyDown } = component.instance();
-
-    test("should allow a valid key to be registered", () => {
-      onKeyDown(event);
-
-      expect(event.stopPropagation).toHaveBeenCalledTimes(0);
-      expect(event.preventDefault).toHaveBeenCalledTimes(0);
-    });
-    test("should not allow a valid key to be registered", () => {
-      const notAllowedEvent = {
-        ...event,
-        key: "a"
-      };
-
-      onKeyDown(notAllowedEvent);
-
-      expect(notAllowedEvent.stopPropagation).toHaveBeenCalledTimes(1);
-      expect(notAllowedEvent.preventDefault).toHaveBeenCalledTimes(1);
-    });
-  });
 });
