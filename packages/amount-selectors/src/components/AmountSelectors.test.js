@@ -37,6 +37,17 @@ describe("Amount selectors", () => {
       expect(component.state("displayValue")).toBe(expectedDisplayValue);
     });
 
+    test("empty input should display 0", () => {
+      const component = mount(<AmountSelectors value={10} />);
+      const newValue = "";
+      const expectedDisplayValue = "0.00";
+      component
+        .find("input")
+        .simulate("change", { target: { value: newValue } });
+      component.find("input").simulate("blur", {});
+      expect(component.state("displayValue")).toBe(expectedDisplayValue);
+    });
+
     test("value should be capped at max and min fter onBlur", () => {
       const maxValue = 10;
       const minValue = 4;
