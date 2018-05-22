@@ -4,10 +4,18 @@ import colorTypes from "../constants/colorTypes";
 import { MEDIUM } from "../constants/buttonSizes";
 import { NEUTRAL } from "../constants/buttonTypes";
 
+const buttonHeight = ({ size }) => (size === MEDIUM ? "48px" : "32px");
+const paddingStyle = ({ size, isIconOnly }) =>
+  css`
+    padding: 0 ${size !== MEDIUM && isIconOnly ? "8px" : "16px"};
+  `;
+
 const Button = styled.button`
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  height: ${buttonHeight};
+  box-sizing: border-box;
 
   border: solid 1px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
@@ -69,19 +77,6 @@ Button.displayName = "StyledButton";
 Button.defaultProps = {
   theme: {}
 };
-
-function paddingStyle(props) {
-  const isMedium = props.size === MEDIUM;
-  let padding = "8px 16px";
-  if (isMedium) {
-    padding = "16px 16px";
-  } else if (props.isIconOnly) {
-    padding = "8px 8px";
-  }
-  return css`
-    padding: ${padding};
-  `;
-}
 
 function neutralStyle(props) {
   const { textColor, iconColor, textHoverColor, color } = props.theme[NEUTRAL];

@@ -325,4 +325,15 @@ storiesOf("Button", module)
         />
       </ThemeProvider>
     ))
+  )
+  .add(
+    "Plus and minus icon buttons in small and medium sizes",
+    withInfo()(() => (
+      <div>
+        <Button icon="wg-minus" />
+        <Button icon="wg-add" />
+        <Button icon="wg-minus" size={buttonSizes.MEDIUM} />
+        <Button icon="wg-add" size={buttonSizes.MEDIUM} />
+      </div>
+    ))
   );
