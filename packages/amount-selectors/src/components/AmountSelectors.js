@@ -11,18 +11,22 @@ import Wrapper from "../styledComponents/AmountSelector";
 class AmountSelectors extends React.Component {
   state = {
     value: this.props.value,
+    displayValue: this.props.value,
     validationMessages: this.props.validationMessages
   };
 
-  onChange = event => {
+  onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
     const parsedValue = parseFloat(value) || 0;
 
     if (parsedValue >= this.props.min && parsedValue <= this.props.max) {
-      this.setState({
-        value: parsedValue,
-        validationMessages: []
-      });
+      this.setState(
+        {
+          value: parsedValue,
+          validationMessages: []
+        },
+        cb
+      );
 
       return this.props.onChange(parsedValue);
     }
@@ -32,16 +36,22 @@ class AmountSelectors extends React.Component {
     });
   };
 
+  updateDisplayValue = () => {
+    this.setState({
+      displayValue: this.state.value.toFixed(2)
+    });
+  };
+
   decrement = () => {
     const value = this.state.value - this.props.step;
 
-    this.onChange(Math.max(value, this.props.min));
+    this.onChange(Math.max(value, this.props.min), this.updateDisplayValue);
   };
 
   increment = () => {
     const value = this.state.value + this.props.step;
 
-    this.onChange(Math.min(value, this.props.max));
+    this.onChange(Math.min(value, this.props.max), this.updateDisplayValue);
   };
 
   render() {
@@ -62,10 +72,11 @@ class AmountSelectors extends React.Component {
             min={this.props.min}
             max={this.props.max}
             step={this.props.step}
-            value={this.state.value}
+            value={this.state.displayValue}
             readOnly={this.props.disableTyping}
             onKeyDown={this.onKeyDown}
             onChange={this.onChange}
+            onBlur={this.updateDisplayValue}
             size={4}
             validationMessages={this.state.validationMessages}
             fontSize={fontSizes[this.props.size]}
