@@ -17,7 +17,8 @@ npm install @crave/farmblocks-amount-selectors
 | min | minimum amount available | number |
 | max | maximum amount available | number |
 | onChange | function to handle the input onChange event | function |
-| disableEdit | disables direct typing | bool |
+| disableTyping | disables direct typing | bool |
+| validationMessages | display validation messages below input field | array of strings |
 
 ## License
 

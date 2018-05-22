@@ -20,4 +20,8 @@ storiesOf("Amount selectors", "module")
     "With onChange function",
     withInfo()(() => <AmountSelectors onChange={action("amount changed")} />)
   )
-  .add("Disabled typing", withInfo()(() => <AmountSelectors disableEdit />));
+  .add("Disabled typing", withInfo()(() => <AmountSelectors disableTyping />))
+  .add(
+    "With validation messages",
+    withInfo()(() => <AmountSelectors validationMessages={["Error"]} max={3} />)
+  );

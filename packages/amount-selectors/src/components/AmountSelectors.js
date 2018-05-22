@@ -8,7 +8,7 @@ import Wrapper from "../styledComponents/AmountSelector";
 class AmountSelectors extends React.Component {
   state = {
     value: this.props.value,
-    validationMessages: []
+    validationMessages: this.props.validationMessages
   };
 
   isDigit = value => {
@@ -85,7 +85,7 @@ class AmountSelectors extends React.Component {
         <div className="inputContainer">
           <InputText
             value={this.state.value}
-            readOnly={this.props.disableEdit}
+            readOnly={this.props.disableTyping}
             onKeyDown={this.onKeyDown}
             onChange={this.onChange}
             size={4}
@@ -111,7 +111,8 @@ class AmountSelectors extends React.Component {
     min: PropTypes.number,
     max: PropTypes.number,
     onChange: PropTypes.func,
-    disableEdit: PropTypes.bool
+    disableTyping: PropTypes.bool,
+    validationMessages: PropTypes.arrayOf(PropTypes.string)
   };
 
   static defaultProps = {
@@ -120,7 +121,7 @@ class AmountSelectors extends React.Component {
     min: 0,
     max: Number.MAX_VALUE,
     onChange: () => false,
-    disableEdit: false
+    disableTyping: false
   };
 }
 
