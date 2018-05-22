@@ -74,6 +74,7 @@ class AmountSelectors extends React.Component {
     return (
       <Wrapper>
         <Button
+          className="decreaseButton"
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
           icon="wg-minus"
@@ -92,6 +93,7 @@ class AmountSelectors extends React.Component {
           />
         </div>
         <Button
+          className="increaseButton"
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
           icon="wg-add"

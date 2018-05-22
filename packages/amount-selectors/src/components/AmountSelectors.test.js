@@ -12,10 +12,7 @@ describe("Amount selectors", () => {
       const initialValue = 2;
       const expectedValue = 1;
       const component = shallow(<AmountSelectors value={initialValue} />);
-      component
-        .children("Button")
-        .at(0)
-        .simulate("click");
+      component.children(".decreaseButton").simulate("click");
 
       expect(component.state("value")).toBe(expectedValue);
     });
@@ -23,10 +20,7 @@ describe("Amount selectors", () => {
       const initialValue = 1;
       const expectedValue = 2;
       const component = shallow(<AmountSelectors value={initialValue} />);
-      component
-        .children("Button")
-        .at(1)
-        .simulate("click");
+      component.children(".increaseButton").simulate("click");
 
       expect(component.state("value")).toBe(expectedValue);
     });
