@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
+import selectorSizes from "../constants/selectorSizes";
 import AmountSelectors from "./AmountSelectors";
 
 storiesOf("Amount selectors", "module")
@@ -24,4 +25,8 @@ storiesOf("Amount selectors", "module")
   .add(
     "With validation messages",
     withInfo()(() => <AmountSelectors validationMessages={["Error"]} max={3} />)
+  )
+  .add(
+    "Small size",
+    withInfo()(() => <AmountSelectors size={selectorSizes.SMALL} />)
   );

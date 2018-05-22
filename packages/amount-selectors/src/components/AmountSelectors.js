@@ -1,8 +1,11 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import Button, { buttonTypes } from "@crave/farmblocks-button";
 import InputText from "@crave/farmblocks-input-text";
+import { fontSizes } from "@crave/farmblocks-theme";
+import values from "object.values";
 
+import selectorSizes from "../constants/selectorSizes";
 import Wrapper from "../styledComponents/AmountSelector";
 
 class AmountSelectors extends React.Component {
@@ -47,7 +50,7 @@ class AmountSelectors extends React.Component {
         <Button
           className="decreaseButton"
           type={buttonTypes.SECONDARY}
-          size={buttonSizes.MEDIUM}
+          size={this.props.size}
           icon="wg-minus"
           disabled={this.state.value === this.props.min}
           onClick={this.decrement}
@@ -65,12 +68,13 @@ class AmountSelectors extends React.Component {
             onChange={this.onChange}
             size={4}
             validationMessages={this.state.validationMessages}
+            fontSize={fontSizes[this.props.size]}
           />
         </div>
         <Button
           className="increaseButton"
           type={buttonTypes.SECONDARY}
-          size={buttonSizes.MEDIUM}
+          size={this.props.size}
           icon="wg-add"
           disabled={this.state.value === this.props.max}
           onClick={this.increment}
@@ -87,7 +91,8 @@ class AmountSelectors extends React.Component {
     max: PropTypes.number,
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
-    validationMessages: PropTypes.arrayOf(PropTypes.string)
+    validationMessages: PropTypes.arrayOf(PropTypes.string),
+    size: PropTypes.oneOf(values(selectorSizes))
   };
 
   static defaultProps = {
@@ -96,7 +101,8 @@ class AmountSelectors extends React.Component {
     min: 0,
     max: Number.MAX_VALUE,
     onChange: () => false,
-    disableTyping: false
+    disableTyping: false,
+    size: selectorSizes.MEDIUM
   };
 }
 
