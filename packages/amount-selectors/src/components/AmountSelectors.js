@@ -26,24 +26,23 @@ class AmountSelectors extends React.Component {
 
   onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
-    const parsedValue = parseFloat(value) || 0;
-
-    if (parsedValue >= this.props.min && parsedValue <= this.props.max) {
-      this.setState(
-        {
-          value: parsedValue
-        },
-        cb
-      );
-
-      return this.props.onChange(parsedValue);
-    }
+    this.setState({ value }, cb);
+    return this.props.onChange(value);
   };
 
   updateDisplayValue = () => {
+    const parsedValue = parseFloat(this.state.value) || 0;
+    const validValue = Math.min(
+      this.props.max,
+      Math.max(this.props.min, parsedValue)
+    );
+
     this.setState({
-      displayValue: this.state.value.toFixed(2)
+      value: validValue,
+      displayValue: validValue.toFixed(2)
     });
+
+    return this.props.onChange(validValue);
   };
 
   decrement = () => {
@@ -66,7 +65,7 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-minus"
-          disabled={this.state.value === this.props.min}
+          disabled={this.state.value <= this.props.min}
           onClick={this.decrement}
           noTooltip
         />
@@ -90,7 +89,7 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-add"
-          disabled={this.state.value === this.props.max}
+          disabled={this.state.value >= this.props.max}
           onClick={this.increment}
           tooltipText="There is no more available amount."
         />
