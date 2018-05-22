@@ -46,7 +46,7 @@ class AmountSelectors extends React.Component {
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper size={this.props.size}>
         <Button
           className="decreaseButton"
           type={buttonTypes.SECONDARY}

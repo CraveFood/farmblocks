@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
+import selectorSizes from "../constants/selectorSizes";
+
+const componentHeight = ({ size }) =>
+  size === selectorSizes.SMALL ? "32px" : "48px";
+
 export default styled.div`
   display: flex;
-  height: 48px;
+  height: ${componentHeight};
 
   .inputContainer {
     width: 70px;
     margin: 0 8px;
+
+    input {
+      width: 100%;
+      text-align: center;
+    }
 
     input[type="number"] {
       -moz-appearance: textfield;
