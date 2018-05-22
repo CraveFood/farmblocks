@@ -11,8 +11,7 @@ import Wrapper from "../styledComponents/AmountSelector";
 class AmountSelectors extends React.Component {
   state = {
     value: this.props.value,
-    displayValue: this.props.value,
-    validationMessages: this.props.validationMessages
+    displayValue: this.props.value
   };
 
   onChange = (event, cb) => {
@@ -22,18 +21,13 @@ class AmountSelectors extends React.Component {
     if (parsedValue >= this.props.min && parsedValue <= this.props.max) {
       this.setState(
         {
-          value: parsedValue,
-          validationMessages: []
+          value: parsedValue
         },
         cb
       );
 
       return this.props.onChange(parsedValue);
     }
-
-    this.setState({
-      validationMessages: ["Invalid value"]
-    });
   };
 
   updateDisplayValue = () => {
@@ -78,7 +72,6 @@ class AmountSelectors extends React.Component {
             onChange={this.onChange}
             onBlur={this.updateDisplayValue}
             size={4}
-            validationMessages={this.state.validationMessages}
             fontSize={fontSizes[this.props.size]}
           />
         </div>
@@ -102,7 +95,6 @@ class AmountSelectors extends React.Component {
     max: PropTypes.number,
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
-    validationMessages: PropTypes.arrayOf(PropTypes.string),
     size: PropTypes.oneOf(values(selectorSizes))
   };
 

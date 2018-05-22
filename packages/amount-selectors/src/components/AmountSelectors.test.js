@@ -50,7 +50,6 @@ describe("Amount selectors", () => {
       onChange(onChangeValue);
 
       expect(component.state("value")).toBe(onChangeValue);
-      expect(component.state("validationMessages")).toEqual([]);
     });
     test("should not add to state a value below min value", () => {
       const initialValue = 1;
@@ -64,7 +63,6 @@ describe("Amount selectors", () => {
       onChange(onChangeValue);
 
       expect(component.state("value")).toBe(initialValue);
-      expect(component.state("validationMessages")).toEqual(["Invalid value"]);
     });
     test("should not add to state a value above max value", () => {
       const initialValue = 1;
@@ -78,7 +76,6 @@ describe("Amount selectors", () => {
       onChange(onChangeValue);
 
       expect(component.state("value")).toBe(initialValue);
-      expect(component.state("validationMessages")).toEqual(["Invalid value"]);
     });
     test("should handle an event fired by input", () => {
       const initialValue = 0;

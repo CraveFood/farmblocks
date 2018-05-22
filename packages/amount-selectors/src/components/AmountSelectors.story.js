@@ -23,10 +23,6 @@ storiesOf("Amount selectors", "module")
   )
   .add("Disabled typing", withInfo()(() => <AmountSelectors disableTyping />))
   .add(
-    "With validation messages",
-    withInfo()(() => <AmountSelectors validationMessages={["Error"]} max={3} />)
-  )
-  .add(
     "Small size",
     withInfo()(() => <AmountSelectors size={selectorSizes.SMALL} />)
   );
