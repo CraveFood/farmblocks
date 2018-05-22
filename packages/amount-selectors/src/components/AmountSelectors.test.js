@@ -1,5 +1,5 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
+import Enzyme, { mount, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 import AmountSelectors from "./AmountSelectors";
@@ -23,6 +23,18 @@ describe("Amount selectors", () => {
       component.children(".increaseButton").simulate("click");
 
       expect(component.state("value")).toBe(expectedValue);
+    });
+  });
+  describe("Formatting", () => {
+    test("value should be formatted after onBlur", () => {
+      const component = mount(<AmountSelectors />);
+      const newValue = "2";
+      const expectedDisplayValue = "2.00";
+      component
+        .find("input")
+        .simulate("change", { target: { value: newValue } });
+      component.find("input").simulate("blur", {});
+      expect(component.state("displayValue")).toBe(expectedDisplayValue);
     });
   });
   describe("onChange function", () => {
