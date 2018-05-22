@@ -38,7 +38,7 @@ class AmountSelectors extends React.Component {
 
   onChange = event => {
     const value = typeof event === "number" ? event : event.target.value;
-    const parsedValue = parseFloat(value);
+    const parsedValue = parseFloat(value) || 0;
 
     if (
       this.isDigit(parsedValue) &&
