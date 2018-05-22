@@ -36,6 +36,25 @@ describe("Amount selectors", () => {
       component.find("input").simulate("blur", {});
       expect(component.state("displayValue")).toBe(expectedDisplayValue);
     });
+
+    test("value should be capped at max and min fter onBlur", () => {
+      const maxValue = 10;
+      const minValue = 4;
+      const bigVaalue = "300";
+      const smallValue = "1";
+      const expectedMaxDisplayValue = "10.00";
+      const expectedMinDisplayValue = "4.00";
+      const component = mount(
+        <AmountSelectors max={maxValue} min={minValue} />
+      );
+      const input = component.find("input");
+      input.simulate("change", { target: { value: bigVaalue } });
+      input.simulate("blur", {});
+      expect(component.state("displayValue")).toBe(expectedMaxDisplayValue);
+      input.simulate("change", { target: { value: smallValue } });
+      input.simulate("blur", {});
+      expect(component.state("displayValue")).toBe(expectedMinDisplayValue);
+    });
   });
   describe("onChange function", () => {
     test("should add to state a value between min and max values", () => {
@@ -50,32 +69,6 @@ describe("Amount selectors", () => {
       onChange(onChangeValue);
 
       expect(component.state("value")).toBe(onChangeValue);
-    });
-    test("should not add to state a value below min value", () => {
-      const initialValue = 1;
-      const onChangeValue = 0;
-
-      const component = shallow(
-        <AmountSelectors min={initialValue} value={initialValue} />
-      );
-      const { onChange } = component.instance();
-
-      onChange(onChangeValue);
-
-      expect(component.state("value")).toBe(initialValue);
-    });
-    test("should not add to state a value above max value", () => {
-      const initialValue = 1;
-      const onChangeValue = 2;
-
-      const component = shallow(
-        <AmountSelectors max={initialValue} value={initialValue} />
-      );
-      const { onChange } = component.instance();
-
-      onChange(onChangeValue);
-
-      expect(component.state("value")).toBe(initialValue);
     });
     test("should handle an event fired by input", () => {
       const initialValue = 0;
