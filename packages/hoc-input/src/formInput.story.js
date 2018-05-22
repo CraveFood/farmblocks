@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
+import { fontSizes } from "@crave/farmblocks-theme";
 
 import formInput from ".";
 
@@ -73,6 +74,10 @@ storiesOf("HOC formInput", "module")
         />
       </div>
     ))
+  )
+  .add(
+    "input with fontSize property SMALL",
+    withInfo()(() => <EnhancedInput fontSize={fontSizes.SMALL} />)
   )
   .add("html search input", withInfo()(() => <EnhancedInput type="search" />))
   .add(

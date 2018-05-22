@@ -12,6 +12,7 @@ export const formInputProps = {
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
+  fontSize: PropTypes.number,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
   invalid: PropTypes.string,
@@ -60,7 +61,8 @@ const formInput = WrappedComponent => {
         invalid: invalid === "true",
         filled: !!value || value === 0,
         disabled: wrappedComponentProps.disabled,
-        type: wrappedComponentProps.type
+        type: wrappedComponentProps.type,
+        fontSize: wrappedComponentProps.fontSize
       };
 
       return (
