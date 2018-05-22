@@ -1,12 +1,22 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Button, { buttonTypes } from "@crave/farmblocks-button";
+import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import InputText from "@crave/farmblocks-input-text";
 import { fontSizes } from "@crave/farmblocks-theme";
 import values from "object.values";
 
 import selectorSizes from "../constants/selectorSizes";
 import Wrapper from "../styledComponents/AmountSelector";
+
+const selectorSizeToButtonSize = {
+  [selectorSizes.SMALL]: buttonSizes.SMALL,
+  [selectorSizes.MEDIUM]: buttonSizes.MEDIUM
+};
+
+const selectorSizeToFontSize = {
+  [selectorSizes.SMALL]: fontSizes.SMALL,
+  [selectorSizes.MEDIUM]: fontSizes.MEDIUM
+};
 
 class AmountSelectors extends React.Component {
   state = {
@@ -54,7 +64,7 @@ class AmountSelectors extends React.Component {
         <Button
           className="decreaseButton"
           type={buttonTypes.SECONDARY}
-          size={this.props.size}
+          size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-minus"
           disabled={this.state.value === this.props.min}
           onClick={this.decrement}
@@ -72,13 +82,13 @@ class AmountSelectors extends React.Component {
             onChange={this.onChange}
             onBlur={this.updateDisplayValue}
             size={4}
-            fontSize={fontSizes[this.props.size]}
+            fontSize={selectorSizeToFontSize[this.props.size]}
           />
         </div>
         <Button
           className="increaseButton"
           type={buttonTypes.SECONDARY}
-          size={this.props.size}
+          size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-add"
           disabled={this.state.value === this.props.max}
           onClick={this.increment}
