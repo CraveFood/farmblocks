@@ -31,8 +31,10 @@ const labelColor = props => {
   return props.disabled ? colors.GREY_32 : colors.CARBON;
 };
 
-const ifSearch = (searchValue, defaultValue) => props =>
-  props.type.toLowerCase() === "search" ? searchValue : defaultValue;
+const ifSmall = (smallValue, defaultValue) => props =>
+  props.type.toLowerCase() === "search" || props.fontSize === fontSizes.SMALL
+    ? smallValue
+    : defaultValue;
 
 const Wrapper = styled.div`
   display: flex;
@@ -41,10 +43,10 @@ const Wrapper = styled.div`
   .input {
     order: 2;
     box-sizing: border-box;
-    height: ${ifSearch("32", "48")}px;
+    height: ${ifSmall("32", "48")}px;
     border: solid 1px;
     border-radius: 4px;
-    padding: 0 ${ifSearch("8", "16")}px;
+    padding: 0 ${ifSmall("8", "16")}px;
     border-color: ${inputBorderColor};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
     ${inputBoxShadow};
@@ -62,7 +64,7 @@ const Wrapper = styled.div`
       flex: 1;
       outline: none;
       font-family: Lato, sans-serif;
-      font-size: ${ifSearch(fontSizes.SMALL, fontSizes.MEDIUM)}px;
+      font-size: ${ifSmall(fontSizes.SMALL, fontSizes.MEDIUM)}px;
       color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {

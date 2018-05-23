@@ -1,0 +1,40 @@
+{
+  "name": "@crave/farmblocks-amount-selectors",
+  "version": "0.2.0",
+  "description": "Amount selectors",
+  "author": "Crave Food Systems and AUTHORS",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "AUTHORS",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "keywords": [
+    "selector",
+    "amount"
+  ],
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "styled-components": "^3.0.2"
+  },
+  "dependencies": {
+    "@crave/farmblocks-button": "^3.0.0",
+    "@crave/farmblocks-input-text": "^1.2.13"
+  }
+}
