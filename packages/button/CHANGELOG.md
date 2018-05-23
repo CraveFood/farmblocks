@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.2.6...@crave/farmblocks-button@4.0.0) (2018-05-23)
+
+
+### Bug Fixes
+
+* **button:** use height and box-sizing to have the correct button height computed ([ad504e7](https://github.com/CraveFood/farmblocks/commit/ad504e7))
+
+
+### BREAKING CHANGES
+
+* **button:** buttons are a little shorter now because the border sizes are included in the height
+
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.2.6...@crave/farmblocks-button@3.0.0) (2018-05-22)
 

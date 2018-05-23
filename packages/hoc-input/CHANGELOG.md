@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.6.0"></a>
+# [2.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.4.1...@crave/farmblocks-hoc-input@2.6.0) (2018-05-23)
+
+
+### Features
+
+* **hoc-input:** add new property fonSize to hoc input and set input heights based on that ([9cee5d0](https://github.com/CraveFood/farmblocks/commit/9cee5d0))
+
+
+
+
 <a name="2.5.0"></a>
 # [2.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.4.1...@crave/farmblocks-hoc-input@2.5.0) (2018-05-22)
 

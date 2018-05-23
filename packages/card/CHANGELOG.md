@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.21"></a>
+## [0.3.21](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.3.19...@crave/farmblocks-card@0.3.21) (2018-05-23)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-card
+
 <a name="0.3.20"></a>
 ## [0.3.20](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.3.19...@crave/farmblocks-card@0.3.20) (2018-05-22)
 
