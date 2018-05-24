@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.3.0...@crave/farmblocks-amount-selectors@0.4.0) (2018-05-24)
+
+
+### Features
+
+* **Amount-selectors:** export selectorSizes constants ([66c6eee](https://github.com/CraveFood/farmblocks/commit/66c6eee)), closes [#372](https://github.com/CraveFood/farmblocks/issues/372)
+
+
+
+
 <a name="0.3.0"></a>
 # 0.3.0 (2018-05-23)
 
