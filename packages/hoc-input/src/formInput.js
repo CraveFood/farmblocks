@@ -55,6 +55,7 @@ const formInput = WrappedComponent => {
         invalid,
         input,
         meta,
+        clearIcon,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
