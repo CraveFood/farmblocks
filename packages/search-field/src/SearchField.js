@@ -16,8 +16,16 @@ EnhancedInput.displayName = "EnhancedInput";
 
 class SearchField extends React.Component {
   render() {
-    const { onChange } = this.props;
-    return <EnhancedInput onChange={onChange} type="search" />;
+    const { onChange, ...inputProps } = this.props;
+    return (
+      <EnhancedInput
+        onChange={onChange}
+        type="search"
+        clearIcon="wg-edit"
+        displayBlock
+        {...inputProps}
+      />
+    );
   }
 
   static defaultProps = {

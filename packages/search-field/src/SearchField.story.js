@@ -13,17 +13,20 @@ const items = [
 
 storiesOf("Search Field", "module")
   .add("Default", withInfo()(() => <SearchField />))
-  .add("withItems", withInfo()(() => <SearchField items={items} />))
+  .add(
+    "withItems",
+    withInfo()(() => <SearchField items={items} label="Fruits" />)
+  )
   .add(
     "onChange (debounced)",
     withInfo()(() => (
-      <SearchField items={items} onChange={action("onChange")} />
+      <SearchField items={items} label="Fruits" onChange={action("onChange")} />
     ))
   )
   .add(
     "onSelect",
     withInfo()(() => (
-      <SearchField items={items} onSelect={action("onSelect")} />
+      <SearchField items={items} label="Fruits" onSelect={action("onSelect")} />
     ))
   )
   .add(
@@ -31,6 +34,7 @@ storiesOf("Search Field", "module")
     withInfo()(() => (
       <SearchField
         items={items}
+        label="Fruits"
         onScrollReachEnd={action("onScrollReachEnd")}
       />
     ))
@@ -41,14 +45,20 @@ storiesOf("Search Field", "module")
       This controls both the visibility and the visual of the loading indicator:
       - Pass a node to render it at the end of the list.
       - Pass a falsy value or remove the prop to hide the loading indicator.
-    `)(() => <SearchField items={items} loading={<div>Loading</div>} />)
+    `)(() => (
+      <SearchField items={items} label="Fruits" loading={<div>Loading</div>} />
+    ))
   )
-  .add("disabled", withInfo()(() => <SearchField items={items} disabled />))
+  .add(
+    "disabled",
+    withInfo()(() => <SearchField items={items} label="Fruits" disabled />)
+  )
   .add(
     "custom debounce delay",
     withInfo()(() => (
       <SearchField
         items={items}
+        label="Fruits"
         onChange={action("onChange")}
         debounceDelay={500}
       />
@@ -56,5 +66,7 @@ storiesOf("Search Field", "module")
   )
   .add(
     "custom menu height",
-    withInfo()(() => <SearchField items={items} maxMenuHeight={800} />)
+    withInfo()(() => (
+      <SearchField items={items} label="Fruits" maxMenuHeight={800} />
+    ))
   );
