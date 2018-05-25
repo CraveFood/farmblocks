@@ -9,6 +9,8 @@ import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
 
+import DropdownWrapper from "./styledComponents/DropdwonWrapper";
+
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
 );
@@ -18,13 +20,15 @@ class SearchField extends React.Component {
   render() {
     const { onChange, ...inputProps } = this.props;
     return (
-      <EnhancedInput
-        onChange={onChange}
-        type="search"
-        clearIcon="wg-edit"
-        displayBlock
-        {...inputProps}
-      />
+      <DropdownWrapper width={this.props.width}>
+        <EnhancedInput
+          onChange={onChange}
+          type="search"
+          clearIcon="wg-edit"
+          displayBlock
+          {...inputProps}
+        />
+      </DropdownWrapper>
     );
   }
 

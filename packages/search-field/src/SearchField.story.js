@@ -13,6 +13,7 @@ const items = [
 
 storiesOf("Search Field", "module")
   .add("Default", withInfo()(() => <SearchField />))
+  .add("custom width", withInfo()(() => <SearchField width="50%" />))
   .add(
     "withItems",
     withInfo()(() => <SearchField items={items} label="Fruits" />)
