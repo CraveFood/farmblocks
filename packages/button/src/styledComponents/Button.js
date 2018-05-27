@@ -4,7 +4,8 @@ import colorTypes from "../constants/colorTypes";
 import { MEDIUM } from "../constants/buttonSizes";
 import { NEUTRAL } from "../constants/buttonTypes";
 
-const buttonHeight = ({ size }) => (size === MEDIUM ? "48px" : "32px");
+const buttonHeight = ({ size }) => (size === MEDIUM ? 48 : 32);
+const lineHeight = props => buttonHeight(props) - 2;
 const paddingStyle = ({ size, isIconOnly }) =>
   css`
     padding: 0 ${size !== MEDIUM && isIconOnly ? "8px" : "16px"};
@@ -14,7 +15,7 @@ const Button = styled.button`
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: ${buttonHeight};
+  height: ${buttonHeight}px;
   box-sizing: border-box;
 
   border: solid 1px rgba(0, 0, 0, 0.16);
@@ -23,7 +24,7 @@ const Button = styled.button`
 
   color: white;
 
-  line-height: 16px;
+  line-height: ${lineHeight}px;
   font-size: 16px;
   font-family: lato, sans-serif;
   font-weight: 600;
