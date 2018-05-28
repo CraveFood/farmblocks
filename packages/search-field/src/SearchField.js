@@ -1,6 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
+import debounce from "lodash.debounce";
 import disabledTooltip, {
   disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
@@ -17,15 +18,53 @@ const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
 EnhancedInput.displayName = "EnhancedInput";
 
 class SearchField extends React.Component {
+  debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
+  onChange = event => {
+    // retain synthetic events for async use.
+    // https://reactjs.org/docs/events.html#event-pooling
+    event && event.persist && event.persist();
+
+    this.debouncedOnChange(event);
+  };
+
+  componentDidUpdate = prevProps => {
+    if (
+      prevProps.debounceDelay !== this.props.debounceDelay ||
+      prevProps.onChange !== this.props.onChange
+    ) {
+      this.debouncedOnChange && this.debouncedOnChange.cancel();
+      this.debouncedOnChange = debounce(
+        this.props.onChange,
+        this.props.debounceDelay
+      );
+    }
+  };
+
+  componentWillUnmount = () => {
+    this.debouncedOnChange.cancel(); // Avoid a debounced event to trigger after the component is unmounted
+  };
+
+  onKeyUp = ({ key }) => {
+    if (key === "Enter") {
+      this.debouncedOnChange.flush();
+    }
+  };
+
   render() {
-    const { onChange, ...inputProps } = this.props;
+    const {
+      onChange,
+      debounceDelay,
+      maxMenuHeight,
+      ...inputProps
+    } = this.props;
     return (
       <DropdownWrapper width={this.props.width}>
         <EnhancedInput
-          onChange={onChange}
+          onChange={this.onChange}
           type="search"
           clearIcon="wg-edit"
           displayBlock
+          onKeyUp={this.onKeyUp}
           {...inputProps}
         />
       </DropdownWrapper>
@@ -36,7 +75,8 @@ class SearchField extends React.Component {
     onChange: () => false,
     onSelect: () => false,
     width: "200px",
-    maxMenuHeight: "353px"
+    maxMenuHeight: "353px",
+    debounceDelay: 500
   };
 
   static propTypes = {
@@ -53,6 +93,7 @@ class SearchField extends React.Component {
     loading: PropTypes.node,
     width: PropTypes.string,
     maxMenuHeight: PropTypes.string,
+    debounceDelay: PropTypes.number,
     onChange: PropTypes.func,
     onSelect: PropTypes.func,
     ...formInputProps,

@@ -61,7 +61,8 @@ storiesOf("Search Field", "module")
         items={items}
         label="Fruits"
         onChange={action("onChange")}
-        debounceDelay={500}
+        debounceDelay={3000}
+        placeholder="3s delay"
       />
     ))
   )
