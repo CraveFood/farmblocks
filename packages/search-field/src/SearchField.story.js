@@ -10,6 +10,22 @@ const items = [
   { value: "2", label: "Banana", image },
   { value: "3", label: "Pear", image }
 ];
+const extraItems = [
+  { value: "4", label: "Avocado", image },
+  { value: "5", label: "Blueberry", image },
+  { value: "6", label: "Cherry", image },
+  { value: "7", label: "Coconut", image },
+  { value: "8", label: "Grape", image },
+  { value: "9", label: "Lemon", image },
+  { value: "10", label: "Mango", image },
+  { value: "11", label: "Peach", image },
+  { value: "12", label: "Orange", image },
+  { value: "13", label: "Star fruit", image },
+  { value: "14", label: "Papaya", image },
+  { value: "15", label: "Watermelon", image },
+  { value: "16", label: "Dragonfruit", image },
+  { value: "17", label: "Lychee", image }
+];
 
 storiesOf("Search Field", "module")
   .add("Default", withInfo()(() => <SearchField />))
@@ -34,7 +50,7 @@ storiesOf("Search Field", "module")
     "onScrollReachEnd",
     withInfo()(() => (
       <SearchField
-        items={items}
+        items={[...items, ...extraItems]}
         label="Fruits"
         onScrollReachEnd={action("onScrollReachEnd")}
       />

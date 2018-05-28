@@ -9,8 +9,13 @@ import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
+import {
+  DropdownMenuWrapper,
+  DropdownItemWrapper
+} from "@crave/farmblocks-dropdown";
 
 import DropdownWrapper from "./styledComponents/DropdwonWrapper";
+import ScrollWrapper from "./styledComponents/ScrollWrapper";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
@@ -18,6 +23,10 @@ const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
 EnhancedInput.displayName = "EnhancedInput";
 
 class SearchField extends React.Component {
+  state = {
+    highlightedIndex: -1
+  };
+
   debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
   onChange = event => {
     // retain synthetic events for async use.
@@ -44,29 +53,70 @@ class SearchField extends React.Component {
     this.debouncedOnChange.cancel(); // Avoid a debounced event to trigger after the component is unmounted
   };
 
-  onKeyUp = ({ key }) => {
-    if (key === "Enter") {
-      this.debouncedOnChange.flush();
+  onKeyDown = event => {
+    const { key } = event;
+    switch (key) {
+      case "Enter":
+        this.debouncedOnChange.flush();
+        break;
+      case "ArrowUp":
+        event.preventDefault();
+        this.setState(prevState => ({
+          highlightedIndex: Math.max(prevState.highlightedIndex - 1, -1)
+        }));
+        break;
+      case "ArrowDown":
+        event.preventDefault();
+        this.setState(prevState => ({
+          highlightedIndex: Math.min(
+            prevState.highlightedIndex + 1,
+            this.props.items.length - 1
+          )
+        }));
+        break;
     }
+  };
+
+  _renderItem = (item, highlighted) => {
+    return (
+      <DropdownItemWrapper key={item.value} highlighted={highlighted}>
+        {item.label}
+      </DropdownItemWrapper>
+    );
   };
 
   render() {
     const {
+      width,
       onChange,
       debounceDelay,
       maxMenuHeight,
+      items,
+      onScrollReachEnd,
       ...inputProps
     } = this.props;
     return (
-      <DropdownWrapper width={this.props.width}>
+      <DropdownWrapper width={width}>
         <EnhancedInput
           onChange={this.onChange}
           type="search"
           clearIcon="wg-edit"
           displayBlock
-          onKeyUp={this.onKeyUp}
+          onKeyDown={this.onKeyDown}
           {...inputProps}
         />
+        {items && (
+          <DropdownMenuWrapper>
+            <ScrollWrapper style={{ maxHeight: maxMenuHeight }}>
+              {items.map((item, index) => {
+                return this._renderItem(
+                  item,
+                  index === this.state.highlightedIndex
+                );
+              })}
+            </ScrollWrapper>
+          </DropdownMenuWrapper>
+        )}
       </DropdownWrapper>
     );
   }
@@ -75,7 +125,7 @@ class SearchField extends React.Component {
     onChange: () => false,
     onSelect: () => false,
     width: "200px",
-    maxMenuHeight: "353px",
+    maxMenuHeight: 353,
     debounceDelay: 500
   };
 
@@ -92,7 +142,7 @@ class SearchField extends React.Component {
     ),
     loading: PropTypes.node,
     width: PropTypes.string,
-    maxMenuHeight: PropTypes.string,
+    maxMenuHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
     onChange: PropTypes.func,
     onSelect: PropTypes.func,
