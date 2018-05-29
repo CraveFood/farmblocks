@@ -14,8 +14,8 @@ import {
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
 
-import DropdownWrapper from "./styledComponents/DropdwonWrapper";
-import ScrollWrapper from "./styledComponents/ScrollWrapper";
+import DropdownWrapper from "./styledComponents/DropdownWrapper";
+import ScrollBox from "./ScrollBox";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
@@ -53,6 +53,21 @@ class SearchField extends React.Component {
     this.debouncedOnChange.cancel(); // Avoid a debounced event to trigger after the component is unmounted
   };
 
+  changeHighlight = modifier => {
+    this.setState(prevState => {
+      const highlightedIndex = Math.max(
+        Math.min(
+          prevState.highlightedIndex + modifier,
+          this.props.items.length - 1
+        ),
+        -1
+      );
+      return {
+        highlightedIndex
+      };
+    });
+  };
+
   onKeyDown = event => {
     const { key } = event;
     switch (key) {
@@ -61,29 +76,20 @@ class SearchField extends React.Component {
         break;
       case "ArrowUp":
         event.preventDefault();
-        this.setState(prevState => ({
-          highlightedIndex: Math.max(prevState.highlightedIndex - 1, -1)
-        }));
+        this.changeHighlight(-1);
         break;
       case "ArrowDown":
         event.preventDefault();
-        this.setState(prevState => ({
-          highlightedIndex: Math.min(
-            prevState.highlightedIndex + 1,
-            this.props.items.length - 1
-          )
-        }));
+        this.changeHighlight(1);
         break;
     }
   };
 
-  _renderItem = (item, highlighted) => {
-    return (
-      <DropdownItemWrapper key={item.value} highlighted={highlighted}>
-        {item.label}
-      </DropdownItemWrapper>
-    );
-  };
+  _renderItem = (item, highlighted) => (
+    <DropdownItemWrapper key={item.value} highlighted={highlighted}>
+      <div>{item.label}</div>
+    </DropdownItemWrapper>
+  );
 
   render() {
     const {
@@ -96,7 +102,7 @@ class SearchField extends React.Component {
       ...inputProps
     } = this.props;
     return (
-      <DropdownWrapper width={width}>
+      <DropdownWrapper style={{ width }}>
         <EnhancedInput
           onChange={this.onChange}
           type="search"
@@ -107,14 +113,14 @@ class SearchField extends React.Component {
         />
         {items && (
           <DropdownMenuWrapper>
-            <ScrollWrapper style={{ maxHeight: maxMenuHeight }}>
+            <ScrollBox maxHeight={maxMenuHeight} onReachEnd={onScrollReachEnd}>
               {items.map((item, index) => {
                 return this._renderItem(
                   item,
                   index === this.state.highlightedIndex
                 );
               })}
-            </ScrollWrapper>
+            </ScrollBox>
           </DropdownMenuWrapper>
         )}
       </DropdownWrapper>
@@ -124,7 +130,7 @@ class SearchField extends React.Component {
   static defaultProps = {
     onChange: () => false,
     onSelect: () => false,
-    width: "200px",
+    width: 200,
     maxMenuHeight: 353,
     debounceDelay: 500
   };
