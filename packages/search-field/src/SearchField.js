@@ -62,6 +62,7 @@ class SearchField extends React.Component {
         ),
         -1
       );
+      this.scroller && this.scroller.centerChildByIndex(highlightedIndex);
       return {
         highlightedIndex
       };
@@ -111,18 +112,23 @@ class SearchField extends React.Component {
           onKeyDown={this.onKeyDown}
           {...inputProps}
         />
-        {items && (
-          <DropdownMenuWrapper>
-            <ScrollBox maxHeight={maxMenuHeight} onReachEnd={onScrollReachEnd}>
-              {items.map((item, index) => {
-                return this._renderItem(
-                  item,
-                  index === this.state.highlightedIndex
-                );
-              })}
-            </ScrollBox>
-          </DropdownMenuWrapper>
-        )}
+        {!this.props.disabled &&
+          items && (
+            <DropdownMenuWrapper>
+              <ScrollBox
+                maxHeight={maxMenuHeight}
+                onReachEnd={onScrollReachEnd}
+                ref={node => (this.scroller = node)}
+              >
+                {items.map((item, index) => {
+                  return this._renderItem(
+                    item,
+                    index === this.state.highlightedIndex
+                  );
+                })}
+              </ScrollBox>
+            </DropdownMenuWrapper>
+          )}
       </DropdownWrapper>
     );
   }
@@ -147,7 +153,7 @@ class SearchField extends React.Component {
       ])
     ),
     loading: PropTypes.node,
-    width: PropTypes.string,
+    width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     maxMenuHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
     onChange: PropTypes.func,

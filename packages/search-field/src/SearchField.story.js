@@ -10,7 +10,8 @@ const items = [
   { value: "2", label: "Banana", image },
   { value: "3", label: "Pear", image }
 ];
-const extraItems = [
+const manyItems = [
+  ...items,
   { value: "4", label: "Avocado", image },
   { value: "5", label: "Blueberry", image },
   { value: "6", label: "Cherry", image },
@@ -50,7 +51,7 @@ storiesOf("Search Field", "module")
     "onScrollReachEnd",
     withInfo()(() => (
       <SearchField
-        items={[...items, ...extraItems]}
+        items={manyItems}
         label="Fruits"
         onScrollReachEnd={action("onScrollReachEnd")}
       />
@@ -66,15 +67,11 @@ storiesOf("Search Field", "module")
       <SearchField items={items} label="Fruits" loading={<div>Loading</div>} />
     ))
   )
-  .add(
-    "disabled",
-    withInfo()(() => <SearchField items={items} label="Fruits" disabled />)
-  )
+  .add("disabled", withInfo()(() => <SearchField label="Fruits" disabled />))
   .add(
     "custom debounce delay",
     withInfo()(() => (
       <SearchField
-        items={items}
         label="Fruits"
         onChange={action("onChange")}
         debounceDelay={3000}
@@ -85,6 +82,6 @@ storiesOf("Search Field", "module")
   .add(
     "custom menu height",
     withInfo()(() => (
-      <SearchField items={items} label="Fruits" maxMenuHeight={800} />
+      <SearchField items={manyItems} label="Fruits" maxMenuHeight={150} />
     ))
   );

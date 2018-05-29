@@ -6,19 +6,27 @@ import ScrollWrapper from "./styledComponents/ScrollWrapper";
 
 export default class ScrollBox extends React.Component {
   componentDidMount = () => {
-    this.scroller.addEventListener("scroll", this.onScroll);
+    this.wrapper.addEventListener("scroll", this.onScroll);
   };
   componentWillUnmount = () => {
-    this.scroller.removeEventListener("scroll", this.onScroll);
+    this.wrapper.removeEventListener("scroll", this.onScroll);
   };
 
-  onScroll = debounce(event => {
+  centerChildByIndex = index => {
+    const element = this.wrapper.childNodes[index];
+    if (!element) return;
+    const elementCenter = element.offsetTop + element.clientHeight / 2;
+    this.wrapper.scrollTop =
+      elementCenter - this.wrapper.offsetTop - this.wrapper.clientHeight / 2;
+  };
+
+  onScroll = debounce(() => {
     const reachEnd =
-      this.scroller.scrollHeight -
-        this.scroller.scrollTop -
-        this.scroller.clientHeight <
-      this.scroller.clientHeight / 2;
-    if (reachEnd) this.props.onReachEnd(event);
+      this.wrapper.scrollHeight -
+        this.wrapper.scrollTop -
+        this.wrapper.clientHeight <
+      this.wrapper.clientHeight / 2;
+    if (reachEnd) this.props.onReachEnd();
   }, 300);
 
   render() {
@@ -26,12 +34,16 @@ export default class ScrollBox extends React.Component {
     return (
       <ScrollWrapper
         style={{ maxHeight }}
-        innerRef={node => (this.scroller = node)}
+        innerRef={node => (this.wrapper = node)}
       >
         {children}
       </ScrollWrapper>
     );
   }
+
+  static defaultProps = {
+    onReachEnd: () => false
+  };
 
   static propTypes = {
     children: PropTypes.node,
