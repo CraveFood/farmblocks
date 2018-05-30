@@ -74,7 +74,11 @@ class SearchField extends React.Component {
     const { key } = event;
     switch (key) {
       case "Enter":
-        this.debouncedOnChange.flush();
+        if (this.state.highlightedIndex < 0) {
+          this.debouncedOnChange.flush();
+        } else {
+          this.props.onSelect(this.props.items[this.state.highlightedIndex]);
+        }
         break;
       case "ArrowUp":
         event.preventDefault();
@@ -93,8 +97,22 @@ class SearchField extends React.Component {
     event.preventDefault();
   };
 
+  onItemClick = ({ currentTarget }) => {
+    const selectedIndex =
+      this.scroller &&
+      this.scroller.wrapper && // ref inside a ref 😜
+      Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
+
+    this.props.items && this.props.onSelect(this.props.items[selectedIndex]);
+    this.input && this.input.blur();
+  };
+
   _renderItem = (item, highlighted) => (
-    <DropdownItemWrapper key={item.value} highlighted={highlighted}>
+    <DropdownItemWrapper
+      key={item.value}
+      highlighted={highlighted}
+      onClick={this.onItemClick}
+    >
       <div>{item.label}</div>
     </DropdownItemWrapper>
   );
@@ -107,6 +125,7 @@ class SearchField extends React.Component {
       maxMenuHeight,
       items,
       onScrollReachEnd,
+      onSelect,
       ...inputProps
     } = this.props;
     return (
