@@ -24,7 +24,8 @@ EnhancedInput.displayName = "EnhancedInput";
 
 class SearchField extends React.Component {
   state = {
-    highlightedIndex: -1
+    highlightedIndex: -1,
+    focused: false
   };
 
   debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
@@ -50,7 +51,7 @@ class SearchField extends React.Component {
   };
 
   componentWillUnmount = () => {
-    this.debouncedOnChange.cancel(); // Avoid a debounced event to trigger after the component is unmounted
+    this.debouncedOnChange.cancel();
   };
 
   changeHighlight = modifier => {
@@ -86,6 +87,12 @@ class SearchField extends React.Component {
     }
   };
 
+  onFocus = () => this.setState({ focused: true });
+  onBlur = () => this.setState({ focused: false });
+  preventBlur = event => {
+    event.preventDefault();
+  };
+
   _renderItem = (item, highlighted) => (
     <DropdownItemWrapper key={item.value} highlighted={highlighted}>
       <div>{item.label}</div>
@@ -110,11 +117,15 @@ class SearchField extends React.Component {
           clearIcon="wg-edit"
           displayBlock
           onKeyDown={this.onKeyDown}
+          onFocus={this.onFocus}
+          onBlur={this.onBlur}
+          innerRef={node => (this.input = node)}
           {...inputProps}
         />
         {!this.props.disabled &&
+          this.state.focused &&
           items && (
-            <DropdownMenuWrapper>
+            <DropdownMenuWrapper onMouseDown={this.preventBlur}>
               <ScrollBox
                 maxHeight={maxMenuHeight}
                 onReachEnd={onScrollReachEnd}
