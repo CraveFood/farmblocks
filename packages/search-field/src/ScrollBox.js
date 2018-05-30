@@ -5,6 +5,10 @@ import debounce from "lodash.debounce";
 import ScrollWrapper from "./styledComponents/ScrollWrapper";
 
 export default class ScrollBox extends React.Component {
+  state = {
+    atEnd: false
+  };
+
   componentDidMount = () => {
     this.wrapper.addEventListener("scroll", this.onScroll);
   };
@@ -26,7 +30,14 @@ export default class ScrollBox extends React.Component {
         this.wrapper.scrollTop -
         this.wrapper.clientHeight <
       this.wrapper.clientHeight / 2;
-    if (reachEnd) this.props.onReachEnd();
+    if (reachEnd) {
+      this.setState(prevState => {
+        if (!prevState.atEnd) this.props.onReachEnd();
+        return { atEnd: true };
+      });
+    } else {
+      this.setState({ atEnd: false });
+    }
   }, 300);
 
   render() {
