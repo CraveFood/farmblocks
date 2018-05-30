@@ -21,12 +21,22 @@ const selectorSizeToFontSize = {
 class AmountSelectors extends React.Component {
   state = {
     value: this.props.value,
+    disableBoth: false,
     displayValue: this.props.value
   };
 
+  // Conditions to disable both buttons,
+  // see https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
+  disableBoth = validity => validity.badInput || validity.stepMismatch;
+
   onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
-    this.setState({ value }, cb);
+    const hasBrowserValidation =
+      event.target && event.target.validity !== undefined;
+    const disableBoth =
+      !!hasBrowserValidation && this.disableBoth(event.target.validity);
+
+    this.setState({ value, disableBoth }, cb);
     return this.props.onChange(value);
   };
 
@@ -65,7 +75,9 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-minus"
-          disabled={this.state.value <= this.props.min}
+          disabled={
+            this.state.disableBoth || this.state.value <= this.props.min
+          }
           onClick={this.decrement}
           noTooltip
         />
@@ -89,7 +101,9 @@ class AmountSelectors extends React.Component {
           type={buttonTypes.SECONDARY}
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-add"
-          disabled={this.state.value >= this.props.max}
+          disabled={
+            this.state.disableBoth || this.state.value >= this.props.max
+          }
           onClick={this.increment}
           tooltipText="There is no more available amount."
         />
