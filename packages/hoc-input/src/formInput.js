@@ -92,7 +92,7 @@ const formInput = WrappedComponent => {
       const clearButton = isSearch &&
         this.state.value && (
           <Link className="clear" onClick={this.handleClearClick}>
-            <i className={`icon ${clearIcon}`} />
+            <i className={clearIcon} />
           </Link>
         );
 

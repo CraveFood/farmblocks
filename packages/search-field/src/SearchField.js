@@ -114,7 +114,7 @@ class SearchField extends React.Component {
         <EnhancedInput
           onChange={this.onChange}
           type="search"
-          clearIcon="wg-edit"
+          clearIcon={this.state.focused ? undefined : "wg-edit"} // use default clearIcon when editing
           displayBlock
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
