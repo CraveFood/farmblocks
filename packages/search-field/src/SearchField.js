@@ -13,9 +13,10 @@ import {
   DropdownMenuWrapper,
   DropdownItemWrapper
 } from "@crave/farmblocks-dropdown";
+import { Item } from "@crave/farmblocks-input-select";
 
+import ScrollBox from "./components/ScrollBox";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
-import ScrollBox from "./ScrollBox";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
@@ -113,7 +114,11 @@ class SearchField extends React.Component {
       highlighted={highlighted}
       onClick={this.onItemClick}
     >
-      <div>{item.label}</div>
+      {item.render ? (
+        item.render(highlighted, item)
+      ) : (
+        <Item label={item.label} image={item.image} />
+      )}
     </DropdownItemWrapper>
   );
 
