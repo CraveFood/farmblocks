@@ -49,13 +49,13 @@ class AmountSelectors extends React.Component {
     return this.props.onChange(validValue);
   };
 
-  updateDisplayValue = () => {
-    const parsedValue = parseFloat(this.state.value) || 0;
-    const validValue = Math.min(
-      this.props.max,
-      Math.max(this.props.min, parsedValue)
-    );
+  validValue = value => {
+    const parsedValue = parseFloat(value) || 0;
+    return Math.min(this.props.max, Math.max(this.props.min, parsedValue));
+  };
 
+  updateDisplayValue = () => {
+    const validValue = this.validValue(this.state.value);
     this.setState({
       value: validValue,
       displayValue: validValue.toFixed(2)
@@ -75,6 +75,16 @@ class AmountSelectors extends React.Component {
 
     this.onChange(Math.min(value, this.props.max), this.updateDisplayValue);
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.value !== this.props.value) {
+      const validValue = this.validValue(this.props.value);
+      this.setState({
+        value: validValue,
+        displayValue: validValue.toFixed(2)
+      });
+    }
+  }
 
   render() {
     return (
