@@ -13,13 +13,10 @@ import {
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
-import { thumbnailSizes } from "@crave/farmblocks-image";
 
 import withImage, { refName } from "./components/withImage";
+import Item from "./components/Item";
 import EmptyCard from "./components/EmptyCard";
-import ItemImage from "./styledComponents/ItemImage";
-import ItemContainer from "./styledComponents/ItemContainer";
-import LabelContainer from "./styledComponents/LabelContainer";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
 const EnhancedInput = compose(
@@ -132,23 +129,11 @@ class Select extends React.Component {
         {this.props.renderItem ? (
           this.props.renderItem(item, selected)
         ) : (
-          <ItemContainer>
-            {this._renderLabel(item)}
-            {selected && <i className="icon wg-check" />}
-          </ItemContainer>
+          <Item label={item.label} image={item.image} selected={selected} />
         )}
       </DropdownItemWrapper>
     );
   };
-
-  _renderLabel = item =>
-    item.image ? (
-      <LabelContainer>
-        <ItemImage src={item.image} size={thumbnailSizes.SMALL} /> {item.label}
-      </LabelContainer>
-    ) : (
-      item.label
-    );
 
   _shouldItemRender = item => {
     if (this.state.isSearching) {
