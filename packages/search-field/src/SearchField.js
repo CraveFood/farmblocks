@@ -26,7 +26,8 @@ EnhancedInput.displayName = "EnhancedInput";
 class SearchField extends React.Component {
   state = {
     highlightedIndex: -1,
-    focused: false
+    focused: false,
+    inputValue: this.props.displayValue || this.props.value
   };
 
   debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
@@ -35,6 +36,7 @@ class SearchField extends React.Component {
     // https://reactjs.org/docs/events.html#event-pooling
     event && event.persist && event.persist();
 
+    this.setState({ inputValue: event.target.value, highlightedIndex: -1 });
     this.debouncedOnChange(event);
   };
 
@@ -78,8 +80,11 @@ class SearchField extends React.Component {
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnChange.flush();
         } else {
-          this.props.onSelect(this.props.items[this.state.highlightedIndex]);
+          this.onSelect(this.state.highlightedIndex);
         }
+        break;
+      case "Escape":
+        this.setState({ highlightedIndex: -1 });
         break;
       case "ArrowUp":
         event.preventDefault();
@@ -92,8 +97,17 @@ class SearchField extends React.Component {
     }
   };
 
-  onFocus = () => this.setState({ focused: true });
-  onBlur = () => this.setState({ focused: false });
+  onSelect = index => {
+    const selectedItem = this.props.items && this.props.items[index];
+    if (selectedItem) {
+      this.setState({ inputValue: selectedItem.label });
+      this.props.onSelect(selectedItem.value);
+    }
+    this.input && this.input.blur();
+  };
+
+  onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
+  onBlur = () => this.setState({ focused: false, highlightedIndex: -1 });
   preventBlur = event => {
     event.preventDefault();
   };
@@ -104,8 +118,7 @@ class SearchField extends React.Component {
       this.scroller.wrapper && // ref inside a ref 😜
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
 
-    this.props.items && this.props.onSelect(this.props.items[selectedIndex]);
-    this.input && this.input.blur();
+    this.onSelect(selectedIndex);
   };
 
   _renderItem = (item, highlighted) => (
@@ -137,6 +150,11 @@ class SearchField extends React.Component {
     return (
       <DropdownWrapper style={{ width }}>
         <EnhancedInput
+          value={
+            this.state.highlightedIndex === -1
+              ? this.state.inputValue
+              : items[this.state.highlightedIndex].label
+          }
           onChange={this.onChange}
           type="search"
           clearIcon={this.state.focused ? undefined : "wg-edit"} // use default clearIcon when editing
@@ -196,6 +214,7 @@ class SearchField extends React.Component {
     debounceDelay: PropTypes.number,
     onChange: PropTypes.func,
     onSelect: PropTypes.func,
+    displayValue: PropTypes.string,
     ...formInputProps,
     ...withMessagesProps,
     ...disabledTooltipProps
