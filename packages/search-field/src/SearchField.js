@@ -131,6 +131,7 @@ class SearchField extends React.Component {
       items,
       onScrollReachEnd,
       onSelect,
+      loading,
       ...inputProps
     } = this.props;
     return (
@@ -148,19 +149,21 @@ class SearchField extends React.Component {
         />
         {!this.props.disabled &&
           this.state.focused &&
-          items && (
+          (items || loading) && (
             <DropdownMenuWrapper onMouseDown={this.preventBlur}>
               <ScrollBox
                 maxHeight={maxMenuHeight}
                 onReachEnd={onScrollReachEnd}
                 ref={node => (this.scroller = node)}
               >
-                {items.map((item, index) => {
-                  return this._renderItem(
-                    item,
-                    index === this.state.highlightedIndex
-                  );
-                })}
+                {items &&
+                  items.map((item, index) => {
+                    return this._renderItem(
+                      item,
+                      index === this.state.highlightedIndex
+                    );
+                  })}
+                {loading}
               </ScrollBox>
             </DropdownMenuWrapper>
           )}

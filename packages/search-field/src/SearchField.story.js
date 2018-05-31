@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf, action } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
+import styled, { keyframes } from "styled-components";
 
 import SearchField from ".";
 
@@ -27,6 +28,27 @@ const manyItems = [
   { value: "16", label: "Dragonfruit", image },
   { value: "17", label: "Lychee", image }
 ];
+
+const spin = keyframes`
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+`;
+const Loading = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 0.5em;
+
+  i {
+    animation: ${spin} 2s linear infinite;
+  }
+`;
 
 storiesOf("Search Field", "module")
   .add("Default", withInfo()(() => <SearchField />))
@@ -64,7 +86,14 @@ storiesOf("Search Field", "module")
       - Pass a node to render it at the end of the list.
       - Pass a falsy value or remove the prop to hide the loading indicator.
     `)(() => (
-      <SearchField items={items} label="Fruits" loading={<div>Loading</div>} />
+      <SearchField
+        label="Fruits"
+        loading={
+          <Loading>
+            <i className="wg-loading" />
+          </Loading>
+        }
+      />
     ))
   )
   .add("disabled", withInfo()(() => <SearchField label="Fruits" disabled />))
