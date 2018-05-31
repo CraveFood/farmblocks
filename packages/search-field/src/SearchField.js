@@ -1,4 +1,5 @@
 import * as React from "react";
+import { polyfill } from "react-lifecycles-compat";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
 import debounce from "lodash.debounce";
@@ -51,6 +52,11 @@ class SearchField extends React.Component {
         this.props.debounceDelay
       );
     }
+  };
+
+  static getDerivedStateFromProps = (props, state) => {
+    const value = props.displayValue || props.value;
+    return value !== state.inputValue ? { inputValue: value } : null;
   };
 
   componentWillUnmount = () => {
@@ -145,6 +151,8 @@ class SearchField extends React.Component {
       onScrollReachEnd,
       onSelect,
       loading,
+      value,
+      displayValue,
       ...inputProps
     } = this.props;
     return (
@@ -220,5 +228,8 @@ class SearchField extends React.Component {
     ...disabledTooltipProps
   };
 }
+
+// For React 16.2 or older
+polyfill(SearchField);
 
 export default SearchField;

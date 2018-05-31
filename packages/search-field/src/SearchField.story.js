@@ -53,6 +53,13 @@ const Loading = styled.div`
 storiesOf("Search Field", "module")
   .add("Default", withInfo()(() => <SearchField />))
   .add("custom width", withInfo()(() => <SearchField width="50%" />))
+  .add("with value", withInfo()(() => <SearchField value="999" />))
+  .add(
+    "with displayValue",
+    withInfo(
+      `Use \`displayValue\` whenever you need a human friendly value while keeping the original \`value\` as an id or slug`
+    )(() => <SearchField value="999" displayValue="Jackfruit" />)
+  )
   .add(
     "withItems",
     withInfo()(() => <SearchField items={items} label="Fruits" />)
