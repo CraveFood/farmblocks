@@ -29,6 +29,17 @@ const manyItems = [
   { value: "17", label: "Lychee", image }
 ];
 
+const Footer = () => (
+  <div
+    style={{
+      background: "limegreen",
+      padding: 16
+    }}
+  >
+    This is a footer
+  </div>
+);
+
 const spin = keyframes`
 from {
   transform: rotate(0deg);
@@ -93,14 +104,18 @@ storiesOf("Search Field", "module")
     ))
   )
   .add(
+    "with footer",
+    withInfo()(() => (
+      <SearchField footer={<Footer />} items={items} label="Fruits" />
+    ))
+  )
+  .add(
     "loading",
     withInfo(`
-      This controls both the visibility and the visual of the loading indicator:
-      - Pass a node to render it at the end of the list.
-      - Pass a falsy value or remove the prop to hide the loading indicator.
+      \`footer\` can be used for multiple purposes. For example, to display a loading spinner
     `)(() => (
       <SearchField
-        loading={
+        footer={
           <Loading>
             <i className="wg-loading" />
           </Loading>
@@ -109,7 +124,7 @@ storiesOf("Search Field", "module")
       />
     ))
   )
-  .add("disabled", withInfo()(() => <SearchField label="Fruits" disabled />))
+  .add("disabled", withInfo()(() => <SearchField disabled label="Fruits" />))
   .add(
     "custom debounce delay",
     withInfo()(() => (

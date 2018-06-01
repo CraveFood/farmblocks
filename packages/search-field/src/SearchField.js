@@ -150,7 +150,7 @@ class SearchField extends React.Component {
       items,
       onScrollReachEnd,
       onSelect,
-      loading,
+      footer,
       value,
       displayValue,
       ...inputProps
@@ -175,9 +175,9 @@ class SearchField extends React.Component {
           innerRef={node => (this.input = node)}
           {...inputProps}
         />
-        {!this.props.disabled &&
-          this.state.focused &&
-          (items || loading) && (
+        {!inputProps.disabled &&
+          focused &&
+          (items || footer) && (
             <DropdownMenuWrapper onMouseDown={this.preventBlur}>
               <ScrollBox
                 maxHeight={maxMenuHeight}
@@ -191,7 +191,7 @@ class SearchField extends React.Component {
                       index === this.state.highlightedIndex
                     );
                   })}
-                {loading}
+                {footer}
               </ScrollBox>
             </DropdownMenuWrapper>
           )}
@@ -218,7 +218,7 @@ class SearchField extends React.Component {
         PropTypes.node
       ])
     ),
-    loading: PropTypes.node,
+    footer: PropTypes.node,
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     maxMenuHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
