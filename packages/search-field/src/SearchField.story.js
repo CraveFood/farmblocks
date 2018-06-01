@@ -51,14 +51,20 @@ const Loading = styled.div`
 `;
 
 storiesOf("Search Field", "module")
-  .add("Default", withInfo()(() => <SearchField />))
-  .add("custom width", withInfo()(() => <SearchField width="50%" />))
-  .add("with value", withInfo()(() => <SearchField value="999" />))
+  .add("Default", withInfo()(() => <SearchField label="Fruits" />))
+  .add(
+    "custom width",
+    withInfo()(() => <SearchField width="50%" label="Fruits" />)
+  )
+  .add(
+    "with value",
+    withInfo()(() => <SearchField value="999" label="Fruits" />)
+  )
   .add(
     "with displayValue",
     withInfo(
       `Use \`displayValue\` whenever you need a human friendly value while keeping the original \`value\` as an id or slug`
-    )(() => <SearchField value="999" displayValue="Jackfruit" />)
+    )(() => <SearchField value="999" displayValue="Jackfruit" label="Fruits" />)
   )
   .add(
     "withItems",
@@ -67,22 +73,22 @@ storiesOf("Search Field", "module")
   .add(
     "onChange (debounced)",
     withInfo()(() => (
-      <SearchField items={items} label="Fruits" onChange={action("onChange")} />
+      <SearchField onChange={action("onChange")} items={items} label="Fruits" />
     ))
   )
   .add(
     "onSelect",
     withInfo()(() => (
-      <SearchField items={items} label="Fruits" onSelect={action("onSelect")} />
+      <SearchField onSelect={action("onSelect")} items={items} label="Fruits" />
     ))
   )
   .add(
     "onScrollReachEnd",
     withInfo()(() => (
       <SearchField
+        onScrollReachEnd={action("onScrollReachEnd")}
         items={manyItems}
         label="Fruits"
-        onScrollReachEnd={action("onScrollReachEnd")}
       />
     ))
   )
@@ -94,12 +100,12 @@ storiesOf("Search Field", "module")
       - Pass a falsy value or remove the prop to hide the loading indicator.
     `)(() => (
       <SearchField
-        label="Fruits"
         loading={
           <Loading>
             <i className="wg-loading" />
           </Loading>
         }
+        label="Fruits"
       />
     ))
   )
@@ -108,16 +114,16 @@ storiesOf("Search Field", "module")
     "custom debounce delay",
     withInfo()(() => (
       <SearchField
-        label="Fruits"
         onChange={action("onChange")}
         debounceDelay={3000}
         placeholder="3s delay"
+        label="Fruits"
       />
     ))
   )
   .add(
     "custom menu height",
     withInfo()(() => (
-      <SearchField items={manyItems} label="Fruits" maxMenuHeight={150} />
+      <SearchField items={manyItems} maxMenuHeight={150} label="Fruits" />
     ))
   );

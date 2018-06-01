@@ -155,17 +155,19 @@ class SearchField extends React.Component {
       displayValue,
       ...inputProps
     } = this.props;
+
+    const { focused, highlightedIndex, inputValue } = this.state;
+
     return (
       <DropdownWrapper style={{ width }}>
         <EnhancedInput
           value={
-            this.state.highlightedIndex === -1
-              ? this.state.inputValue
-              : items[this.state.highlightedIndex].label
+            highlightedIndex === -1 ? inputValue : items[highlightedIndex].label
           }
           onChange={this.onChange}
-          type="search"
-          clearIcon={this.state.focused ? undefined : "wg-edit"} // use default clearIcon when editing
+          type={focused || !inputValue ? "search" : "text"}
+          clearable
+          clearIcon={!focused && inputValue ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
