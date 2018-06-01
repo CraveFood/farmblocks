@@ -65,13 +65,13 @@ class SearchField extends React.Component {
 
   changeHighlight = modifier => {
     this.setState(prevState => {
-      const highlightedIndex = Math.max(
-        Math.min(
-          prevState.highlightedIndex + modifier,
-          this.props.items.length - 1
-        ),
-        -1
-      );
+      const { items } = this.props;
+      const highlightedIndex = items
+        ? Math.max(
+            Math.min(prevState.highlightedIndex + modifier, items.length - 1),
+            -1
+          )
+        : -1;
       this.scroller && this.scroller.centerChildByIndex(highlightedIndex);
       return {
         highlightedIndex
