@@ -133,11 +133,7 @@ class SearchField extends React.Component {
       highlighted={highlighted}
       onClick={this.onItemClick}
     >
-      {item.render ? (
-        item.render(highlighted, item)
-      ) : (
-        <Item label={item.label} image={item.image} />
-      )}
+      <Item label={item.label} image={item.image} />
     </DropdownItemWrapper>
   );
 
@@ -209,14 +205,11 @@ class SearchField extends React.Component {
 
   static propTypes = {
     items: PropTypes.arrayOf(
-      PropTypes.oneOfType([
-        PropTypes.shape({
-          value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-          label: PropTypes.string,
-          image: PropTypes.string
-        }),
-        PropTypes.node
-      ])
+      PropTypes.shape({
+        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        label: PropTypes.string,
+        image: PropTypes.string
+      })
     ),
     footer: PropTypes.node,
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
