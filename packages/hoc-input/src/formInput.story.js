@@ -91,6 +91,10 @@ storiesOf("HOC formInput", "module")
     ))
   )
   .add(
+    "html input with clear button",
+    withInfo()(() => <EnhancedInput clearable />)
+  )
+  .add(
     "html text input with combobox role",
     withInfo()(() => (
       <div style={{ width: "300px" }}>

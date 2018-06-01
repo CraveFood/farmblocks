@@ -26,6 +26,7 @@ export const formInputProps = {
   }),
   readOnly: PropTypes.bool,
   refName: PropTypes.string,
+  clearable: PropTypes.bool,
   clearIcon: PropTypes.string
 };
 
@@ -75,7 +76,7 @@ const formInput = WrappedComponent => {
       );
     }
 
-    _renderInput({ innerRef, refName, clearIcon, ...inputProps }) {
+    _renderInput({ innerRef, refName, clearable, clearIcon, ...inputProps }) {
       const handlers = {
         onChange: this.onChange,
         onFocus: this.onFocus,
@@ -89,7 +90,7 @@ const formInput = WrappedComponent => {
           <i className="wg-search" />
         </div>
       );
-      const clearButton = isSearch &&
+      const clearButton = (clearable || isSearch) &&
         this.state.value && (
           <Link className="clear" onClick={this.handleClearClick}>
             <i className={clearIcon} />
@@ -207,6 +208,7 @@ const formInput = WrappedComponent => {
       onBlur: () => null,
       input: null,
       refName: "ref",
+      clearable: false,
       clearIcon: "wg-close-int"
     };
   };
