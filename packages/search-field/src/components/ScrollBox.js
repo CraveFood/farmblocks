@@ -24,7 +24,7 @@ export default class ScrollBox extends React.Component {
       elementCenter - this.wrapper.offsetTop - this.wrapper.clientHeight / 2;
   };
 
-  onScroll = debounce(() => {
+  checkScrollPosition = () => {
     const reachEnd =
       this.wrapper.scrollHeight -
         this.wrapper.scrollTop -
@@ -38,7 +38,9 @@ export default class ScrollBox extends React.Component {
     } else {
       this.setState({ atEnd: false });
     }
-  }, 300);
+  };
+
+  onScroll = debounce(this.checkScrollPosition, 300);
 
   render() {
     const { children, maxHeight } = this.props;
