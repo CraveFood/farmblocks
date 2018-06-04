@@ -197,6 +197,7 @@ class SearchField extends React.Component {
 
   static defaultProps = {
     onChange: () => false,
+    onScrollReachEnd: () => false,
     onSelect: () => false,
     width: 200,
     maxMenuHeight: 353,
@@ -216,6 +217,7 @@ class SearchField extends React.Component {
     maxMenuHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
     onChange: PropTypes.func,
+    onScrollReachEnd: PropTypes.func,
     onSelect: PropTypes.func,
     displayValue: PropTypes.string,
     ...formInputProps,
