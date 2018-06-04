@@ -14,6 +14,7 @@ export default styled.div`
     margin: 0 8px;
 
     input {
+      flex: none !important;
       width: 100%;
       text-align: center;
     }
