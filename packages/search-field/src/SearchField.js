@@ -137,6 +137,29 @@ class SearchField extends React.Component {
     </DropdownItemWrapper>
   );
 
+  _renderMenu = () => {
+    const { maxMenuHeight, items, onScrollReachEnd, footer } = this.props;
+
+    return (
+      <DropdownMenuWrapper onMouseDown={this.preventBlur}>
+        <ScrollBox
+          maxHeight={maxMenuHeight}
+          onReachEnd={onScrollReachEnd}
+          ref={node => (this.scroller = node)}
+        >
+          {items &&
+            items.map((item, index) => {
+              return this._renderItem(
+                item,
+                index === this.state.highlightedIndex
+              );
+            })}
+          {footer}
+        </ScrollBox>
+      </DropdownMenuWrapper>
+    );
+  };
+
   render() {
     const {
       width,
@@ -173,24 +196,8 @@ class SearchField extends React.Component {
         />
         {!inputProps.disabled &&
           focused &&
-          (items || footer) && (
-            <DropdownMenuWrapper onMouseDown={this.preventBlur}>
-              <ScrollBox
-                maxHeight={maxMenuHeight}
-                onReachEnd={onScrollReachEnd}
-                ref={node => (this.scroller = node)}
-              >
-                {items &&
-                  items.map((item, index) => {
-                    return this._renderItem(
-                      item,
-                      index === this.state.highlightedIndex
-                    );
-                  })}
-                {footer}
-              </ScrollBox>
-            </DropdownMenuWrapper>
-          )}
+          (items || footer) &&
+          this._renderMenu()}
       </DropdownWrapper>
     );
   }
