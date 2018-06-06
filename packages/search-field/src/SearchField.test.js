@@ -1,6 +1,7 @@
 import debounce from "lodash.debounce";
 
 import SearchField from "./SearchField";
+import Menu from "./components/Menu";
 
 jest.mock("lodash.debounce");
 
@@ -348,6 +349,18 @@ describe("SearchField", () => {
       expect(onSelectSpy).toHaveBeenCalledWith(items[index].value);
     });
 
+    test("should NOT update inputValue state if couldn't find selected item", () => {
+      instance.onSelect(9999);
+
+      expect(setStateSpy).not.toHaveBeenCalled();
+    });
+
+    test("should NOT call onSelect prop if couldn't find selected item", () => {
+      instance.onSelect(9999);
+
+      expect(onSelectSpy).not.toHaveBeenCalled();
+    });
+
     test("should blur input", () => {
       instance.onSelect(1);
 
@@ -427,6 +440,135 @@ describe("SearchField", () => {
       instance.onItemClick(event);
 
       expect(onSelectSpy).toHaveBeenCalledWith(2);
+    });
+  });
+
+  describe("render", () => {
+    let items, renderMenuSpy;
+    beforeEach(() => {
+      renderMenuSpy = jest.fn();
+      instance._renderMenu = renderMenuSpy;
+      items = [
+        { label: "A", value: "a" },
+        { label: "B", value: "b" },
+        { label: "C", value: "c" }
+      ];
+      instance.state = {
+        ...instance.state,
+        focused: true
+      };
+      instance.props = {
+        ...instance.props,
+        items
+      };
+    });
+    afterEach(() => {
+      renderMenuSpy.mockReset();
+      items = null;
+      instance.state = null;
+      instance.props = null;
+    });
+
+    test("should display highlighted item label on input", () => {
+      const index = 1;
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: index
+      };
+      const input = instance
+        .render()
+        .props.children.find(
+          child => child.type.displayName === "EnhancedInput"
+        );
+
+      expect(input.props.value).toEqual(items[index].label);
+    });
+
+    test(`should display inputValue state on input when there's no item highlighted`, () => {
+      const inputValue = "something";
+      instance.state = {
+        ...instance.state,
+        inputValue
+      };
+      const input = instance
+        .render()
+        .props.children.find(
+          child => child.type.displayName === "EnhancedInput"
+        );
+
+      expect(input.props.value).toEqual(inputValue);
+    });
+
+    test("should show Menu when has focus and items", () => {
+      instance.render();
+
+      expect(renderMenuSpy).toHaveBeenCalledTimes(1);
+    });
+
+    test("should NOT show Menu if input is not focused", () => {
+      instance.state.focused = false;
+      instance.render();
+
+      expect(renderMenuSpy).not.toHaveBeenCalled();
+    });
+
+    test("should NOT show Menu if input is disabled", () => {
+      instance.props.disabled = true;
+      instance.render();
+
+      expect(renderMenuSpy).not.toHaveBeenCalled();
+    });
+
+    test("should NOT show Menu if has no items nor footer", () => {
+      instance.props.items = null;
+      instance.render();
+
+      expect(renderMenuSpy).not.toHaveBeenCalled();
+    });
+
+    test("should show Menu when has focus and footer", () => {
+      instance.props.items = null;
+      instance.props.footer = () => "footer";
+      instance.render();
+
+      expect(renderMenuSpy).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe("_renderMenu", () => {
+    test("should return a Menu component", () => {
+      const result = instance._renderMenu();
+
+      expect(result).toHaveProperty("type", Menu);
+    });
+
+    test("should store scroller innerRef", () => {
+      const node = {};
+      const menu = instance._renderMenu();
+
+      menu.props.innerRef(node);
+
+      expect(instance.scroller).toEqual(node);
+    });
+  });
+
+  describe("defaultProps", () => {
+    test("onChange should return false", () => {
+      const result = SearchField.defaultProps.onChange();
+
+      expect(result).toBe(false);
+    });
+
+    test("onSelect should return false", () => {
+      const result = SearchField.defaultProps.onSelect();
+
+      expect(result).toBe(false);
+    });
+
+    test("onScrollReachEnd should return false", () => {
+      const result = SearchField.defaultProps.onScrollReachEnd();
+
+      expect(result).toBe(false);
     });
   });
 });

@@ -122,6 +122,24 @@ class SearchField extends React.Component {
     this.onSelect(selectedIndex);
   };
 
+  _renderMenu = () => {
+    const { maxMenuHeight, items, onScrollReachEnd, footer } = this.props;
+    const { highlightedIndex } = this.state;
+
+    return (
+      <Menu
+        innerRef={node => (this.scroller = node)}
+        maxMenuHeight={maxMenuHeight}
+        onScrollReachEnd={onScrollReachEnd}
+        items={items}
+        onItemClick={this.onItemClick}
+        onMenuMouseDown={this.preventBlur}
+        highlightedIndex={highlightedIndex}
+        footer={footer}
+      />
+    );
+  };
+
   render() {
     const {
       width,
@@ -148,7 +166,7 @@ class SearchField extends React.Component {
           onChange={this.onChange}
           type={focused ? "search" : "text"}
           clearable={!!inputValue}
-          clearIcon={focused && "wg-edit"}
+          clearIcon={focused ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
@@ -158,18 +176,8 @@ class SearchField extends React.Component {
         />
         {!inputProps.disabled &&
           focused &&
-          (items || footer) && (
-            <Menu
-              innerRef={node => (this.scroller = node)}
-              maxMenuHeight={maxMenuHeight}
-              onScrollReachEnd={onScrollReachEnd}
-              items={items}
-              onItemClick={this.onItemClick}
-              onMenuMouseDown={this.preventBlur}
-              highlightedIndex={highlightedIndex}
-              footer={footer}
-            />
-          )}
+          (items || footer) &&
+          this._renderMenu()}
       </DropdownWrapper>
     );
   }
