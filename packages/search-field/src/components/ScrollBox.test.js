@@ -181,4 +181,12 @@ describe("Search Fields / ScrollBox", () => {
       expect(debounce).toHaveBeenCalledWith(instance.checkScrollPosition, 300);
     });
   });
+
+  describe("defaultProps", () => {
+    test("onReachEnd should return false", () => {
+      const result = ScrollBox.defaultProps.onReachEnd();
+
+      expect(result).toBe(false);
+    });
+  });
 });

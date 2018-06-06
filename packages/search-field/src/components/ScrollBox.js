@@ -10,10 +10,10 @@ export default class ScrollBox extends React.Component {
   };
 
   componentDidMount = () => {
-    this.wrapper.addEventListener("scroll", this.onScroll);
+    this.wrapper && this.wrapper.addEventListener("scroll", this.onScroll);
   };
   componentWillUnmount = () => {
-    this.wrapper.removeEventListener("scroll", this.onScroll);
+    this.wrapper && this.wrapper.removeEventListener("scroll", this.onScroll);
   };
 
   centerChildByIndex = index => {
