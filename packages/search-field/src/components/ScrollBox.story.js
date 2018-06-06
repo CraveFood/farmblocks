@@ -19,7 +19,7 @@ const Content = styled.div`
   );
 `;
 
-storiesOf("Search Field/ScrollBox", "module")
+storiesOf("Search Field/ScrollBox (Private)", "module")
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
   .add(
     "Default",

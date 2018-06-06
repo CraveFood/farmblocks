@@ -10,14 +10,9 @@ import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
-import {
-  DropdownMenuWrapper,
-  DropdownItemWrapper
-} from "@crave/farmblocks-dropdown";
-import { Item } from "@crave/farmblocks-input-select";
 
-import ScrollBox from "./components/ScrollBox";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
+import Menu from "./components/Menu";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
@@ -127,39 +122,6 @@ class SearchField extends React.Component {
     this.onSelect(selectedIndex);
   };
 
-  _renderItem = (item, highlighted) => (
-    <DropdownItemWrapper
-      key={item.value}
-      highlighted={highlighted}
-      onClick={this.onItemClick}
-    >
-      <Item label={item.label} image={item.image} />
-    </DropdownItemWrapper>
-  );
-
-  _renderMenu = () => {
-    const { maxMenuHeight, items, onScrollReachEnd, footer } = this.props;
-
-    return (
-      <DropdownMenuWrapper onMouseDown={this.preventBlur}>
-        <ScrollBox
-          maxHeight={maxMenuHeight}
-          onReachEnd={onScrollReachEnd}
-          ref={node => (this.scroller = node)}
-        >
-          {items &&
-            items.map((item, index) => {
-              return this._renderItem(
-                item,
-                index === this.state.highlightedIndex
-              );
-            })}
-          {footer}
-        </ScrollBox>
-      </DropdownMenuWrapper>
-    );
-  };
-
   render() {
     const {
       width,
@@ -196,8 +158,18 @@ class SearchField extends React.Component {
         />
         {!inputProps.disabled &&
           focused &&
-          (items || footer) &&
-          this._renderMenu()}
+          (items || footer) && (
+            <Menu
+              innerRef={node => (this.scroller = node)}
+              maxMenuHeight={maxMenuHeight}
+              onScrollReachEnd={onScrollReachEnd}
+              items={items}
+              onItemClick={this.onItemClick}
+              onMenuMouseDown={this.preventBlur}
+              highlightedIndex={highlightedIndex}
+              footer={footer}
+            />
+          )}
       </DropdownWrapper>
     );
   }
@@ -212,21 +184,12 @@ class SearchField extends React.Component {
   };
 
   static propTypes = {
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        label: PropTypes.string,
-        image: PropTypes.string
-      })
-    ),
-    footer: PropTypes.node,
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    maxMenuHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
     onChange: PropTypes.func,
-    onScrollReachEnd: PropTypes.func,
     onSelect: PropTypes.func,
     displayValue: PropTypes.string,
+    ...Menu.propTypes,
     ...formInputProps,
     ...withMessagesProps,
     ...disabledTooltipProps
