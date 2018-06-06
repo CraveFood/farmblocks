@@ -146,9 +146,9 @@ class SearchField extends React.Component {
             highlightedIndex === -1 ? inputValue : items[highlightedIndex].label
           }
           onChange={this.onChange}
-          type={focused || !inputValue ? "search" : "text"}
-          clearable
-          clearIcon={!focused && inputValue ? "wg-edit" : undefined}
+          type={focused ? "search" : "text"}
+          clearable={!!inputValue}
+          clearIcon={focused && "wg-edit"}
           displayBlock
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
