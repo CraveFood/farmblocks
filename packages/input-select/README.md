@@ -53,6 +53,33 @@ This code will render:
 | noResultsMessage | Custom no results message to be displayed when there is no result available on search | string                                                             |          |             |
 | disableSearch    | Disables item search                                                                  | boolean                                                            |          | false       |
 
+## Subcomponent: Item
+
+This subcomponent is exported so it can reused by components that have similar
+visuals:
+
+* `@crave/farmblocks-search-field`
+
+### Usage
+
+```jsx
+import { Item } from "@crave/farmblocks-input-select";
+
+const Component = () => (
+  <div>
+    <Item label="First Item" />
+    <Item label="Second Item" />
+  </div>
+);
+```
+
+### API
+
+| Property | Description                                  | Type   | Required | Default |
+| -------- | -------------------------------------------- | ------ | -------- | ------- |
+| label    | Text to display on Item                      | string | x        |         |
+| image    | Path for image to display on Item (optional) | string |          |         |
+
 ## License
 
 MIT

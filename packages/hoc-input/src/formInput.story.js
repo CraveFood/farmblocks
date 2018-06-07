@@ -85,6 +85,16 @@ storiesOf("HOC formInput", "module")
     withInfo()(() => <EnhancedInput type="search" value="broccoli" />)
   )
   .add(
+    "html search input with custom clear icon",
+    withInfo()(() => (
+      <EnhancedInput type="search" value="broccoli" clearIcon="wg-close" />
+    ))
+  )
+  .add(
+    "html input with clear button",
+    withInfo()(() => <EnhancedInput clearable />)
+  )
+  .add(
     "html text input with combobox role",
     withInfo()(() => (
       <div style={{ width: "300px" }}>

@@ -32,9 +32,7 @@ const labelColor = props => {
 };
 
 const ifSmall = (smallValue, defaultValue) => props =>
-  props.type.toLowerCase() === "search" || props.fontSize === fontSizes.SMALL
-    ? smallValue
-    : defaultValue;
+  props.fontSize === fontSizes.SMALL ? smallValue : defaultValue;
 
 const Wrapper = styled.div`
   display: flex;
