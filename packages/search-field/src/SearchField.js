@@ -158,7 +158,10 @@ class SearchField extends React.Component {
     const { focused, highlightedIndex, inputValue } = this.state;
 
     return (
-      <DropdownWrapper style={{ width }}>
+      <DropdownWrapper
+        style={{ width }}
+        className={!focused && value && "selected"}
+      >
         <EnhancedInput
           value={
             highlightedIndex === -1 ? inputValue : items[highlightedIndex].label
