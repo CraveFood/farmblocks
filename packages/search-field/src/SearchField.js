@@ -27,8 +27,11 @@ class SearchField extends React.Component {
     selectedItem: null
   };
 
-  debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
-  onChange = event => {
+  debouncedOnSearchChange = debounce(
+    this.props.onSearchChange,
+    this.props.debounceDelay
+  );
+  onSearchChange = event => {
     const { value } = event.target;
 
     this.setState({
@@ -37,21 +40,21 @@ class SearchField extends React.Component {
       selectedItem: null
     });
     if (value) {
-      this.debouncedOnChange(value);
+      this.debouncedOnSearchChange(value);
     } else {
-      this.props.onChange(value);
-      this.props.onSelect();
+      this.props.onSearchChange(value);
+      this.props.onChange();
     }
   };
 
   componentDidUpdate = prevProps => {
     if (
       prevProps.debounceDelay !== this.props.debounceDelay ||
-      prevProps.onChange !== this.props.onChange
+      prevProps.onSearchChange !== this.props.onSearchChange
     ) {
-      this.debouncedOnChange && this.debouncedOnChange.cancel();
-      this.debouncedOnChange = debounce(
-        this.props.onChange,
+      this.debouncedOnSearchChange && this.debouncedOnSearchChange.cancel();
+      this.debouncedOnSearchChange = debounce(
+        this.props.onSearchChange,
         this.props.debounceDelay
       );
     }
@@ -67,7 +70,7 @@ class SearchField extends React.Component {
   };
 
   componentWillUnmount = () => {
-    this.debouncedOnChange.cancel();
+    this.debouncedOnSearchChange.cancel();
   };
 
   changeHighlight = modifier => {
@@ -91,9 +94,9 @@ class SearchField extends React.Component {
     switch (key) {
       case "Enter":
         if (this.state.highlightedIndex < 0) {
-          this.debouncedOnChange.flush();
+          this.debouncedOnSearchChange.flush();
         } else {
-          this.onSelect(this.state.highlightedIndex);
+          this.onChange(this.state.highlightedIndex);
         }
         break;
       case "Escape":
@@ -110,11 +113,11 @@ class SearchField extends React.Component {
     }
   };
 
-  onSelect = index => {
+  onChange = index => {
     const selectedItem = this.props.items && this.props.items[index];
     if (selectedItem) {
       this.setState({ selectedItem });
-      this.props.onSelect(selectedItem.value);
+      this.props.onChange(selectedItem.value);
     }
     this.input && this.input.blur();
   };
@@ -126,8 +129,8 @@ class SearchField extends React.Component {
       if (prevState.selectedItem) {
         return focusReset;
       }
-      this.props.onChange("");
-      this.props.onSelect();
+      this.props.onSearchChange("");
+      this.props.onChange();
       return { ...focusReset, inputValue: "" };
     });
   };
@@ -141,7 +144,7 @@ class SearchField extends React.Component {
       this.scroller.wrapper && // ref inside a ref 😜
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
 
-    this.onSelect(selectedIndex);
+    this.onChange(selectedIndex);
   };
 
   _renderMenu = () => {
@@ -165,12 +168,12 @@ class SearchField extends React.Component {
   render() {
     const {
       width,
-      onChange,
+      onSearchChange,
       debounceDelay,
       maxMenuHeight,
       items,
       onScrollReachEnd,
-      onSelect,
+      onChange,
       footer,
       value,
       ...inputProps
@@ -191,7 +194,7 @@ class SearchField extends React.Component {
                 ? inputValue
                 : items[highlightedIndex].label
           }
-          onChange={this.onChange}
+          onChange={this.onSearchChange}
           type={focused || !inputValue ? "search" : "text"}
           clearable={!!inputValue}
           clearIcon={selectedItem ? "wg-edit" : undefined}
@@ -211,9 +214,9 @@ class SearchField extends React.Component {
   }
 
   static defaultProps = {
-    onChange: () => false,
+    onSearchChange: () => false,
     onScrollReachEnd: () => false,
-    onSelect: () => false,
+    onChange: () => false,
     width: 200,
     maxMenuHeight: 353,
     debounceDelay: 500
@@ -222,8 +225,8 @@ class SearchField extends React.Component {
   static propTypes = {
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
+    onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
-    onSelect: PropTypes.func,
     ...Menu.propTypes,
     ...formInputProps,
     ...withMessagesProps,

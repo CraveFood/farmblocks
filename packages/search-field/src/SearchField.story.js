@@ -76,23 +76,27 @@ storiesOf("Search Field", "module")
     withInfo()(() => <SearchField value="2" items={items} label="Fruits" />)
   )
   .add(
-    "onChange (debounced)",
+    "onSearchChange (debounced)",
+    withInfo()(() => (
+      <SearchField
+        onSearchChange={action("onSearchChange")}
+        items={items}
+        label="Fruits"
+      />
+    ))
+  )
+  .add(
+    "onChange",
     withInfo()(() => (
       <SearchField onChange={action("onChange")} items={items} label="Fruits" />
     ))
   )
   .add(
-    "onSelect",
-    withInfo()(() => (
-      <SearchField onSelect={action("onSelect")} items={items} label="Fruits" />
-    ))
-  )
-  .add(
-    "onChange + onSelect",
+    "onSearchChange + onChange",
     withInfo()(() => (
       <SearchField
+        onSearchChange={action("onSearchChange")}
         onChange={action("onChange")}
-        onSelect={action("onSelect")}
         items={items}
         label="Fruits"
       />
@@ -134,7 +138,7 @@ storiesOf("Search Field", "module")
     "custom debounce delay",
     withInfo()(() => (
       <SearchField
-        onChange={action("onChange")}
+        onSearchChange={action("onSearchChange")}
         debounceDelay={3000}
         placeholder="3s delay"
         label="Fruits"
