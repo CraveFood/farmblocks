@@ -94,6 +94,17 @@ storiesOf("Search Field", "module")
     ))
   )
   .add(
+    "onChange + onSelect",
+    withInfo()(() => (
+      <SearchField
+        onChange={action("onChange")}
+        onSelect={action("onSelect")}
+        items={items}
+        label="Fruits"
+      />
+    ))
+  )
+  .add(
     "onScrollReachEnd",
     withInfo()(() => (
       <SearchField

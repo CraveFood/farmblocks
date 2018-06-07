@@ -23,17 +23,27 @@ class SearchField extends React.Component {
   state = {
     highlightedIndex: -1,
     focused: false,
-    inputValue: this.props.displayValue || this.props.value
+    inputValue: this.props.displayValue || this.props.value,
+    selectedItem:
+      this.props.items &&
+      this.props.items.find(item => item.value === this.props.value)
   };
 
   debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
   onChange = event => {
-    // retain synthetic events for async use.
-    // https://reactjs.org/docs/events.html#event-pooling
-    event && event.persist && event.persist();
+    const { value } = event.target;
 
-    this.setState({ inputValue: event.target.value, highlightedIndex: -1 });
-    this.debouncedOnChange(event);
+    this.setState({
+      inputValue: value,
+      highlightedIndex: -1,
+      selectedItem: null
+    });
+    if (value) {
+      this.debouncedOnChange(value);
+    } else {
+      this.props.onChange(value);
+      this.props.onSelect();
+    }
   };
 
   componentDidUpdate = prevProps => {
@@ -101,14 +111,24 @@ class SearchField extends React.Component {
   onSelect = index => {
     const selectedItem = this.props.items && this.props.items[index];
     if (selectedItem) {
-      this.setState({ inputValue: selectedItem.label });
+      this.setState({ selectedItem });
       this.props.onSelect(selectedItem.value);
     }
     this.input && this.input.blur();
   };
 
   onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
-  onBlur = () => this.setState({ focused: false, highlightedIndex: -1 });
+  onBlur = () => {
+    const focusReset = { focused: false, highlightedIndex: -1 };
+    this.setState(prevState => {
+      if (prevState.selectedItem) {
+        return focusReset;
+      }
+      this.props.onChange("");
+      this.props.onSelect();
+      return { ...focusReset, inputValue: "" };
+    });
+  };
   preventBlur = event => {
     event.preventDefault();
   };
@@ -155,21 +175,25 @@ class SearchField extends React.Component {
       ...inputProps
     } = this.props;
 
-    const { focused, highlightedIndex, inputValue } = this.state;
+    const { focused, highlightedIndex, inputValue, selectedItem } = this.state;
 
     return (
       <DropdownWrapper
         style={{ width }}
-        className={!focused && value && "selected"}
+        className={!focused && !!selectedItem && "selected"}
       >
         <EnhancedInput
           value={
-            highlightedIndex === -1 ? inputValue : items[highlightedIndex].label
+            selectedItem
+              ? selectedItem.label
+              : highlightedIndex === -1
+                ? inputValue
+                : items[highlightedIndex].label
           }
           onChange={this.onChange}
           type={focused || !inputValue ? "search" : "text"}
           clearable={!!inputValue}
-          clearIcon={focused ? undefined : "wg-edit"}
+          clearIcon={selectedItem ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
