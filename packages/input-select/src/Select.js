@@ -27,6 +27,7 @@ const EnhancedInput = compose(
 )("input");
 EnhancedInput.displayName = "EnhancedInput";
 
+/* eslint-disable-next-line react/no-deprecated */
 class Select extends React.Component {
   render() {
     return (

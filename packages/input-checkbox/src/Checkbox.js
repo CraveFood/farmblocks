@@ -11,6 +11,7 @@ import StyledLabel from "./styledComponents/Checkbox";
 const TooltipTarget = disabledTooltip("div");
 
 const createCheckbox = ({ isSwitch }) =>
+  /* eslint-disable-next-line react/no-deprecated */
   class Checkbox extends React.Component {
     constructor(props) {
       super(props);
