@@ -68,18 +68,12 @@ storiesOf("Search Field", "module")
     withInfo()(() => <SearchField width="50%" label="Fruits" />)
   )
   .add(
-    "with value",
-    withInfo()(() => <SearchField value="999" label="Fruits" />)
-  )
-  .add(
-    "with displayValue",
-    withInfo(
-      `Use \`displayValue\` whenever you need a human friendly value while keeping the original \`value\` as an id or slug`
-    )(() => <SearchField value="999" displayValue="Jackfruit" label="Fruits" />)
-  )
-  .add(
     "withItems",
     withInfo()(() => <SearchField items={items} label="Fruits" />)
+  )
+  .add(
+    "with selected item",
+    withInfo()(() => <SearchField value="2" items={items} label="Fruits" />)
   )
   .add(
     "onChange (debounced)",

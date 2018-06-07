@@ -23,10 +23,8 @@ class SearchField extends React.Component {
   state = {
     highlightedIndex: -1,
     focused: false,
-    inputValue: this.props.displayValue || this.props.value,
-    selectedItem:
-      this.props.items &&
-      this.props.items.find(item => item.value === this.props.value)
+    inputValue: null,
+    selectedItem: null
   };
 
   debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
@@ -60,8 +58,12 @@ class SearchField extends React.Component {
   };
 
   static getDerivedStateFromProps = (props, state) => {
-    const value = props.displayValue || props.value;
-    return value !== state.inputValue ? { inputValue: value } : null;
+    if (props.value !== state.inputValue) {
+      const selectedItem =
+        props.items && props.items.find(item => item.value === props.value);
+      return { inputValue: selectedItem && selectedItem.label, selectedItem };
+    }
+    return null;
   };
 
   componentWillUnmount = () => {
@@ -171,7 +173,6 @@ class SearchField extends React.Component {
       onSelect,
       footer,
       value,
-      displayValue,
       ...inputProps
     } = this.props;
 
@@ -223,7 +224,6 @@ class SearchField extends React.Component {
     debounceDelay: PropTypes.number,
     onChange: PropTypes.func,
     onSelect: PropTypes.func,
-    displayValue: PropTypes.string,
     ...Menu.propTypes,
     ...formInputProps,
     ...withMessagesProps,
