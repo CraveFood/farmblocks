@@ -25,11 +25,30 @@ export default class ScrollBox extends React.Component {
   };
 
   checkScrollPosition = () => {
-    const reachEnd =
+    /*
+      -----------------------  --|
+      :                     :    |
+      : scrollTop           :    |
+      :                     :    |
+      =======================    |
+      |                     |    |
+      |                     |    |
+      | clientHeight        |    | scrollHeight
+      | (visible area)      |    |
+      |                     |    |
+      =======================    |
+      : remainingContent    :    |
+      :                     :    |
+      -----------------------  --|
+    */
+    const remainingContent =
       this.wrapper.scrollHeight -
-        this.wrapper.scrollTop -
-        this.wrapper.clientHeight <
-      this.wrapper.clientHeight / 2;
+      this.wrapper.scrollTop -
+      this.wrapper.clientHeight;
+
+    const halfPage = this.wrapper.clientHeight / 2;
+    const reachEnd = remainingContent < halfPage;
+
     if (reachEnd) {
       this.setState(prevState => {
         if (!prevState.atEnd) this.props.onReachEnd();
