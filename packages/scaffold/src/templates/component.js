@@ -1,7 +1,8 @@
 const { format } = require("prettier");
 
 const componentTemplate = componentName =>
-  format(`
+  format(
+    `
 import * as React from "react"; 
  
 const ${componentName} = props => { 
@@ -9,6 +10,8 @@ const ${componentName} = props => {
 }; 
  
 export default ${componentName}; 
-`);
+`,
+    { parser: "babylon" }
+  );
 
 module.exports = componentTemplate;

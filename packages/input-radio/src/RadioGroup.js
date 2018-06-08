@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import Group from "./styledComponents/Group";
 
+/* eslint-disable-next-line react/no-deprecated */
 class RadioGroup extends React.Component {
   state = {
     value: this.props.defaultValue

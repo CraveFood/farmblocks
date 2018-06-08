@@ -14,6 +14,7 @@ export const withMessagesProps = {
 };
 
 const withMessages = WrappedComponent => {
+  /* eslint-disable-next-line react/no-deprecated */
   return class ValidationMessages extends React.Component {
     state = {
       messages: this.props.validationMessages

@@ -31,6 +31,7 @@ export const formInputProps = {
 };
 
 const formInput = WrappedComponent => {
+  /* eslint-disable-next-line react/no-deprecated */
   return class Input extends React.Component {
     constructor(props) {
       super(props);

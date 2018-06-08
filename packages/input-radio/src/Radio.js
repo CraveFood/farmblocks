@@ -10,6 +10,7 @@ import Label from "./styledComponents/Label";
 
 const TooltipTarget = disabledTooltip("div");
 
+/* eslint-disable-next-line react/no-deprecated */
 class Radio extends React.Component {
   state = {
     checked: this.props.checked

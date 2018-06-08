@@ -19,6 +19,7 @@ const defaultConfig = {
   }
 };
 
+/* eslint-disable-next-line react/no-deprecated */
 class Carousel extends React.Component {
   state = {
     activeItem: 0
