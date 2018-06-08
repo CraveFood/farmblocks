@@ -13,17 +13,21 @@ import withMessages, {
 
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import Menu from "./components/Menu";
+import StaticInput from "./components/StaticInput";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
 );
 EnhancedInput.displayName = "EnhancedInput";
+const ReadOnly = compose(disabledTooltip, withMessages, formInput)(StaticInput);
+ReadOnly.displayName = "ReadOnly";
 
 class SearchField extends React.Component {
   state = {
     highlightedIndex: -1,
     focused: false,
-    inputValue: null,
+    inputValue: "",
+    lastValue: "",
     selectedItem: null
   };
 
@@ -134,7 +138,7 @@ class SearchField extends React.Component {
       }
       this.props.onSearchChange("");
       this.props.onChange();
-      return { ...focusReset, inputValue: "" };
+      return { ...focusReset, inputValue: "", selectedItem: null };
     });
   };
   preventBlur = event => {
@@ -168,6 +172,17 @@ class SearchField extends React.Component {
     );
   };
 
+  getInputValue = () => {
+    const { selectedItem, highlightedIndex, inputValue } = this.state;
+    const { items } = this.props;
+    const highlightedItem = items[highlightedIndex];
+
+    if (selectedItem) return selectedItem.label;
+    if (highlightedIndex === -1) return inputValue;
+    if (highlightedItem) return highlightedItem.label;
+    return "";
+  };
+
   render() {
     const {
       width,
@@ -182,24 +197,20 @@ class SearchField extends React.Component {
       ...inputProps
     } = this.props;
 
-    const { focused, highlightedIndex, inputValue, selectedItem } = this.state;
+    const { focused, selectedItem } = this.state;
+
+    const Input = selectedItem ? ReadOnly : EnhancedInput;
 
     return (
       <DropdownWrapper
         style={{ width }}
         className={!focused && !!selectedItem && "selected"}
       >
-        <EnhancedInput
-          value={
-            selectedItem
-              ? selectedItem.label
-              : highlightedIndex === -1
-                ? inputValue
-                : items[highlightedIndex].label
-          }
+        <Input
+          value={this.getInputValue()}
           onChange={this.onSearchChange}
-          type={focused || !inputValue ? "search" : "text"}
-          clearable={!!inputValue}
+          type={selectedItem ? "text" : "search"}
+          clearable
           clearIcon={selectedItem ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
@@ -208,10 +219,7 @@ class SearchField extends React.Component {
           innerRef={node => (this.input = node)}
           {...inputProps}
         />
-        {!inputProps.disabled &&
-          focused &&
-          (items || footer) &&
-          this._renderMenu()}
+        {focused && (items || footer) && this._renderMenu()}
       </DropdownWrapper>
     );
   }

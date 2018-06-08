@@ -9,5 +9,6 @@ export default styled(DropdownWrapper)`
   }
   &.selected .input {
     background: ${colors.SUGAR};
+    cursor: auto;
   }
 `;
