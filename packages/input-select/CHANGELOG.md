@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.6.3...@crave/farmblocks-input-select@0.7.0) (2018-06-08)
+
+
+### Features
+
+* **input-select:** export item ([d73537a](https://github.com/CraveFood/farmblocks/commit/d73537a))
+
+
+
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.6.1...@crave/farmblocks-input-select@0.6.3) (2018-05-23)
 

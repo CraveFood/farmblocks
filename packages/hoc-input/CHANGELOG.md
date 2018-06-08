@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.6.0...@crave/farmblocks-hoc-input@3.0.0) (2018-06-08)
+
+
+### Bug Fixes
+
+* **hoc-input:** clear icon class ([096499a](https://github.com/CraveFood/farmblocks/commit/096499a))
+
+
+### Features
+
+* **hoc-input:** add clearable prop ([ab83f7c](https://github.com/CraveFood/farmblocks/commit/ab83f7c))
+* **hoc-input:** add prop for custom clear icon ([1c002dc](https://github.com/CraveFood/farmblocks/commit/1c002dc))
+* **hoc-input:** make inputs type=search follow regular size ([2564a1e](https://github.com/CraveFood/farmblocks/commit/2564a1e))
+* **search-field:** change edit icon to default clear when editing field ([8991840](https://github.com/CraveFood/farmblocks/commit/8991840))
+
+
+### BREAKING CHANGES
+
+* **hoc-input:** Search inputs are now the same height as regular inputs. You can use fontSize SMALL to have the old
+look
+
+
+
+
 <a name="2.6.0"></a>
 # [2.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@2.4.1...@crave/farmblocks-hoc-input@2.6.0) (2018-05-23)
 

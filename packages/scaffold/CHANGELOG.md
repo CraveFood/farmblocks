@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.2"></a>
+## 0.3.2 (2018-06-08)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-dev-scaffold
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dev-scaffold@0.3.0...@crave/farmblocks-dev-scaffold@0.3.1) (2018-04-11)
 

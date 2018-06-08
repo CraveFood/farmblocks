@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@4.0.0...@crave/farmblocks-button@4.0.1) (2018-06-08)
+
+
+### Bug Fixes
+
+* **button:** fix button label alignment on IE ([6b615d0](https://github.com/CraveFood/farmblocks/commit/6b615d0)), closes [#375](https://github.com/CraveFood/farmblocks/issues/375)
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@2.2.6...@crave/farmblocks-button@4.0.0) (2018-05-23)
 

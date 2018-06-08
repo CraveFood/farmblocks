@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.4.0...@crave/farmblocks-amount-selectors@0.4.1) (2018-06-08)
+
+
+### Bug Fixes
+
+* **amount-selector:** fix value visibility on Firefox ([511bbe7](https://github.com/CraveFood/farmblocks/commit/511bbe7)), closes [#377](https://github.com/CraveFood/farmblocks/issues/377)
+
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.3.0...@crave/farmblocks-amount-selectors@0.4.0) (2018-05-24)
 
