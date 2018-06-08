@@ -60,10 +60,14 @@ class SearchField extends React.Component {
   };
 
   static getDerivedStateFromProps = (props, state) => {
-    if (props.value !== state.inputValue) {
+    if (props.value !== state.lastValue) {
       const selectedItem =
         props.items && props.items.find(item => item.value === props.value);
-      return { inputValue: selectedItem && selectedItem.label, selectedItem };
+      return {
+        inputValue: selectedItem ? selectedItem.label : "",
+        selectedItem,
+        lastValue: props.value
+      };
     }
     return null;
   };
