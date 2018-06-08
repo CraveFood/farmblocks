@@ -39,10 +39,9 @@ class SearchField extends React.Component {
       highlightedIndex: -1,
       selectedItem: null
     });
-    if (value) {
-      this.debouncedOnSearchChange(value);
-    } else {
-      this.props.onSearchChange(value);
+    this.debouncedOnSearchChange(value);
+    if (!value) {
+      this.debouncedOnSearchChange.flush();
       this.props.onChange();
     }
   };
