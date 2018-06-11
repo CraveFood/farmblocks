@@ -150,4 +150,37 @@ storiesOf("Search Field", "module")
     withInfo()(() => (
       <SearchField items={manyItems} maxMenuHeight={150} label="Fruits" />
     ))
+  )
+  .add(
+    "Z-index",
+    withInfo()(() => (
+      <div>
+        <div
+          style={{
+            width: 200,
+            height: 400,
+            top: 150,
+            position: "absolute",
+            zIndex: 10,
+            background: "gray"
+          }}
+        >
+          Z-index: 10
+        </div>
+        <SearchField items={items} label="Fruits" zIndex={11} />
+        <div
+          style={{
+            width: 300,
+            height: 200,
+            top: 150,
+            left: 100,
+            position: "absolute",
+            zIndex: 12,
+            background: "blue"
+          }}
+        >
+          Z-index: 12
+        </div>
+      </div>
+    ))
   );

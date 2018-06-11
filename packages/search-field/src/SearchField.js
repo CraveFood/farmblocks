@@ -196,6 +196,7 @@ class SearchField extends React.Component {
       onChange,
       footer,
       value,
+      zIndex,
       ...inputProps
     } = this.props;
 
@@ -206,7 +207,7 @@ class SearchField extends React.Component {
 
     return (
       <DropdownWrapper
-        style={{ width }}
+        style={{ width, zIndex }}
         className={!focused && !!selectedItem && "selected"}
       >
         <Input
@@ -241,6 +242,7 @@ class SearchField extends React.Component {
     debounceDelay: PropTypes.number,
     onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
+    zIndex: PropTypes.number,
     ...Menu.propTypes,
     ...formInputProps,
     ...withMessagesProps,
