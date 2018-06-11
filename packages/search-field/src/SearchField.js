@@ -174,11 +174,13 @@ class SearchField extends React.Component {
 
   getInputValue = () => {
     const { selectedItem, highlightedIndex, inputValue } = this.state;
-    const { items } = this.props;
-    const highlightedItem = items[highlightedIndex];
 
     if (selectedItem) return selectedItem.label;
     if (highlightedIndex === -1) return inputValue;
+
+    const { items } = this.props;
+    const highlightedItem = items && items[highlightedIndex];
+
     if (highlightedItem) return highlightedItem.label;
     return "";
   };
@@ -200,6 +202,7 @@ class SearchField extends React.Component {
     const { focused, selectedItem } = this.state;
 
     const Input = selectedItem ? ReadOnly : EnhancedInput;
+    Input.displayName = "Input";
 
     return (
       <DropdownWrapper

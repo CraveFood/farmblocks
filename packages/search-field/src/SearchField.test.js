@@ -140,15 +140,19 @@ describe("SearchField", () => {
     test("should return new state if value changes", () => {
       const item = { value: "ab", label: "AB" };
       const props = { value: "ab", items: [item] };
-      const state = { inputValue: "a" };
+      const state = { lastValue: "a" };
       const result = SearchField.getDerivedStateFromProps(props, state);
 
-      expect(result).toEqual({ selectedItem: item, inputValue: item.label });
+      expect(result).toEqual({
+        selectedItem: item,
+        inputValue: item.label,
+        lastValue: props.value
+      });
     });
 
     test("should return null if there is no change", () => {
       const props = { value: "a" };
-      const state = { inputValue: "a" };
+      const state = { lastValue: "a" };
       const result = SearchField.getDerivedStateFromProps(props, state);
 
       expect(result).toBeNull();
@@ -509,6 +513,78 @@ describe("SearchField", () => {
     });
   });
 
+  describe("getInputValue", () => {
+    let item;
+    beforeEach(() => {
+      item = {
+        value: "bananaValue",
+        label: "Banana Label"
+      };
+    });
+    afterEach(() => {
+      item = null;
+    });
+
+    test(`should return selectedItem's label if there's one`, () => {
+      instance.state = {
+        ...instance.state,
+        selectedItem: item
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe(item.label);
+    });
+
+    test(`should return inputValue if there's no item highlighted`, () => {
+      const expectedValue = "strawberry";
+      instance.state = {
+        ...instance.state,
+        inputValue: expectedValue
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe(expectedValue);
+    });
+
+    test(`should return highlighted item's label`, () => {
+      instance.props = {
+        ...instance.props,
+        items: [{ value: "otherItem", label: "Not Highlighted" }, item]
+      };
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: 1
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe(item.label);
+    });
+
+    test("should return empty string if theres no items", () => {
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: 1
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe("");
+    });
+
+    test("should return empty string if highlightedIndex is invalid", () => {
+      instance.props = {
+        ...instance.props,
+        items: [{ value: "otherItem", label: "Not Highlighted" }, item]
+      };
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: 10
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe("");
+    });
+  });
+
   describe("render", () => {
     let items, renderMenuSpy;
     beforeEach(() => {
@@ -535,34 +611,15 @@ describe("SearchField", () => {
       instance.props = null;
     });
 
-    test("should display highlighted item label on input", () => {
-      const index = 1;
-      instance.state = {
-        ...instance.state,
-        highlightedIndex: index
-      };
+    test("should use getInputValue result on Input", () => {
+      const expectedValue = "banana";
+      instance.getInputValue = jest.fn().mockReturnValue(expectedValue);
       const input = instance
         .render()
-        .props.children.find(
-          child => child.type.displayName === "EnhancedInput"
-        );
+        .props.children.find(child => child.type.displayName === "Input");
 
-      expect(input.props.value).toEqual(items[index].label);
-    });
-
-    test(`should display inputValue state on input when there's no item highlighted`, () => {
-      const inputValue = "something";
-      instance.state = {
-        ...instance.state,
-        inputValue
-      };
-      const input = instance
-        .render()
-        .props.children.find(
-          child => child.type.displayName === "EnhancedInput"
-        );
-
-      expect(input.props.value).toEqual(inputValue);
+      expect(instance.getInputValue).toHaveBeenCalled();
+      expect(input.props).toHaveProperty("value", expectedValue);
     });
 
     test("should show Menu when has focus and items", () => {
@@ -573,13 +630,6 @@ describe("SearchField", () => {
 
     test("should NOT show Menu if input is not focused", () => {
       instance.state.focused = false;
-      instance.render();
-
-      expect(renderMenuSpy).not.toHaveBeenCalled();
-    });
-
-    test("should NOT show Menu if input is disabled", () => {
-      instance.props.disabled = true;
       instance.render();
 
       expect(renderMenuSpy).not.toHaveBeenCalled();
