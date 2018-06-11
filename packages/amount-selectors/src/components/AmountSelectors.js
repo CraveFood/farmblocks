@@ -27,7 +27,8 @@ class AmountSelectors extends React.Component {
 
   // Conditions to disable both buttons,
   // see https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
-  disableBoth = validity => validity.badInput || validity.stepMismatch;
+  disableBoth = validity =>
+    validity.badInput || (validity.stepMismatch && this.props.enforceStep);
 
   onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
@@ -116,6 +117,7 @@ class AmountSelectors extends React.Component {
     step: PropTypes.number,
     min: PropTypes.number,
     max: PropTypes.number,
+    enforceStep: PropTypes.bool,
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
     size: PropTypes.oneOf(values(selectorSizes))
