@@ -22,6 +22,7 @@ class AmountSelectors extends React.Component {
   state = {
     value: this.props.value,
     disableBoth: false,
+    tooltipText: "",
     displayValue: this.props.value
   };
 
@@ -32,12 +33,17 @@ class AmountSelectors extends React.Component {
 
   onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
-    const hasBrowserValidation =
-      event.target && event.target.validity !== undefined;
+    const hasBrowserValidation = !!(
+      event.target && event.target.validity !== undefined
+    );
     const disableBoth =
-      !!hasBrowserValidation && this.disableBoth(event.target.validity);
+      hasBrowserValidation && this.disableBoth(event.target.validity);
 
-    this.setState({ value, disableBoth }, cb);
+    const tooltipText = hasBrowserValidation
+      ? event.target.validationMessage
+      : "";
+
+    this.setState({ value, disableBoth, tooltipText }, cb);
     return this.props.onChange(value);
   };
 
@@ -80,7 +86,7 @@ class AmountSelectors extends React.Component {
             this.state.disableBoth || this.state.value <= this.props.min
           }
           onClick={this.decrement}
-          noTooltip
+          tooltipText={this.state.tooltipText}
         />
         <div className="inputContainer">
           <InputText
@@ -106,7 +112,7 @@ class AmountSelectors extends React.Component {
             this.state.disableBoth || this.state.value >= this.props.max
           }
           onClick={this.increment}
-          tooltipText="There is no more available amount."
+          tooltipText={this.state.tooltipText}
         />
       </Wrapper>
     );
