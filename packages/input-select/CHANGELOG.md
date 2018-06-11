@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.7.0...@crave/farmblocks-input-select@0.8.0) (2018-06-11)
+
+
+### Features
+
+* **Select:** add zIndex prop ([76de300](https://github.com/CraveFood/farmblocks/commit/76de300)), closes [#356](https://github.com/CraveFood/farmblocks/issues/356)
+
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.6.3...@crave/farmblocks-input-select@0.7.0) (2018-06-08)
 
