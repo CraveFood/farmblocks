@@ -160,4 +160,43 @@ storiesOf("Select Input", "module")
         width="400px"
       />
     ))
+  )
+  .add(
+    "Z-index",
+    withInfo()(() => (
+      <div>
+        <div
+          style={{
+            width: 200,
+            height: 400,
+            top: 150,
+            position: "absolute",
+            zIndex: 10,
+            background: "gray"
+          }}
+        >
+          Z-index: 10
+        </div>
+        <Select
+          placeholder="Z-index: 11"
+          label="Fruit"
+          items={items}
+          onChange={action("onChange")}
+          zIndex={11}
+        />
+        <div
+          style={{
+            width: 300,
+            height: 200,
+            top: 150,
+            left: 100,
+            position: "absolute",
+            zIndex: 12,
+            background: "blue"
+          }}
+        >
+          Z-index: 12
+        </div>
+      </div>
+    ))
   );
