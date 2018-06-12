@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.6"></a>
+## 1.1.6 (2018-06-12)
+
+
+### Bug Fixes
+
+* **stories:** the second argument of storiesOf shouldnt be a string ([ea2bbee](https://github.com/CraveFood/farmblocks/commit/ea2bbee))
+
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-disabled-tooltip@1.1.4...@crave/farmblocks-hoc-disabled-tooltip@1.1.5) (2018-04-11)
 

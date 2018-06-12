@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.6.3...@crave/farmblocks-dropdown@0.6.4) (2018-06-12)
+
+
+### Bug Fixes
+
+* **stories:** the second argument of storiesOf shouldnt be a string ([ea2bbee](https://github.com/CraveFood/farmblocks/commit/ea2bbee))
+
+
+
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.6.2...@crave/farmblocks-dropdown@0.6.3) (2018-06-08)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.4"></a>
+## 0.3.4 (2018-06-12)
+
+
+### Bug Fixes
+
+* **stories:** the second argument of storiesOf shouldnt be a string ([ea2bbee](https://github.com/CraveFood/farmblocks/commit/ea2bbee))
+
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@0.3.2...@crave/farmblocks-more-info@0.3.3) (2018-04-11)
 

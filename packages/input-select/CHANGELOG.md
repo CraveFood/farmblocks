@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.1"></a>
+## [0.8.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.0...@crave/farmblocks-input-select@0.8.1) (2018-06-12)
+
+
+### Bug Fixes
+
+* **stories:** the second argument of storiesOf shouldnt be a string ([ea2bbee](https://github.com/CraveFood/farmblocks/commit/ea2bbee))
+
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.7.0...@crave/farmblocks-input-select@0.8.0) (2018-06-11)
 
