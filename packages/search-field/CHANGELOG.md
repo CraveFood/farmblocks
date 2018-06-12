@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@0.2.1...@crave/farmblocks-search-field@1.0.0) (2018-06-12)
+
+
+### Bug Fixes
+
+* **search-field:** clear input on blur ([a9cc4a4](https://github.com/CraveFood/farmblocks/commit/a9cc4a4))
+* **search-field:** component behavior on input clear or blur ([a4f8884](https://github.com/CraveFood/farmblocks/commit/a4f8884))
+* **search-field:** input behavior when an item is selected ([d8463de](https://github.com/CraveFood/farmblocks/commit/d8463de))
+
+
+### Features
+
+* **search-field:** add zIndex prop ([d5fb830](https://github.com/CraveFood/farmblocks/commit/d5fb830))
+* **search-field:** change input background when an item is selected ([7c3bde5](https://github.com/CraveFood/farmblocks/commit/7c3bde5)), closes [#387](https://github.com/CraveFood/farmblocks/issues/387)
+* **search-field:** discard displayValue prop ([e658fd1](https://github.com/CraveFood/farmblocks/commit/e658fd1))
+* **search-field:** rename event props for consistency with other components ([6881237](https://github.com/CraveFood/farmblocks/commit/6881237))
+
+
+### BREAKING CHANGES
+
+* **search-field:** onChange is now onSearchChange; onSelect is now onChange
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@0.2.0...@crave/farmblocks-search-field@0.2.1) (2018-06-11)
 
