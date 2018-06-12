@@ -6,7 +6,7 @@ import { withInfo } from "@storybook/addon-info";
 import { Checkbox as CheckboxComponent, Switch } from ".";
 
 const checkboxStories = (moduleTitle, Checkbox) =>
-  storiesOf(moduleTitle, "module")
+  storiesOf(moduleTitle, module)
     .add("Default", withInfo()(() => <Checkbox />))
     .add("checked", withInfo()(() => <Checkbox checked />))
     .add(

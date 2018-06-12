@@ -8,7 +8,7 @@ import formInput from ".";
 
 const EnhancedInput = formInput(props => React.createElement("input", props));
 
-storiesOf("HOC formInput", "module")
+storiesOf("HOC formInput", module)
   .add("html text input", withInfo()(() => <EnhancedInput type="text" />))
   .add(
     "html text input with label",

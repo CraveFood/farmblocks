@@ -10,7 +10,7 @@ const WithMessagesInput = withMessages(props =>
 
 const WithMessagesDiv = withMessages(() => <div>I am a div</div>);
 
-storiesOf("HOC withMessages", "module")
+storiesOf("HOC withMessages", module)
   .add(
     "Input",
     withInfo()(() => (

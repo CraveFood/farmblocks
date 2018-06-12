@@ -61,7 +61,7 @@ const Loading = styled.div`
   }
 `;
 
-storiesOf("Search Field", "module")
+storiesOf("Search Field", module)
   .add("Default", withInfo()(() => <SearchField label="Fruits" />))
   .add(
     "custom width",

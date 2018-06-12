@@ -8,7 +8,7 @@ import withImage from "./withImage";
 const EnhancedInput = withImage("input");
 const imgSrc = "https://picsum.photos/100";
 
-storiesOf("Select Input (private)", "module")
+storiesOf("Select Input (private)", module)
   .add(
     "withImage - Valid image path",
     withInfo()(() => <EnhancedInput image={imgSrc} />)

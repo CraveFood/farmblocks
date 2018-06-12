@@ -14,7 +14,7 @@ const items = [
 
 const imgSrc = "https://picsum.photos/100";
 
-storiesOf("Select Input", "module")
+storiesOf("Select Input", module)
   .add(
     "Default",
     withInfo()(() => (

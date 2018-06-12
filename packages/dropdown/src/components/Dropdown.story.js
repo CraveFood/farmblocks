@@ -6,7 +6,7 @@ import { action } from "@storybook/addon-actions";
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
 
-storiesOf("Dropdown/Component", "module")
+storiesOf("Dropdown/Component", module)
   .add(
     "With text",
     withInfo()(() => (

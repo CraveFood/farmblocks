@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions";
 
 import Tag from "./Tag";
 
-storiesOf("Tag", "module")
+storiesOf("Tag", module)
   .add(
     "Default",
     withInfo()(() => (

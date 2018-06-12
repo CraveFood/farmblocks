@@ -14,7 +14,7 @@ const items = [
   { value: "3", label: "Pear", image }
 ];
 
-storiesOf("Search Field/Menu (Private)", "module")
+storiesOf("Search Field/Menu (Private)", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
   .add("Default", withInfo()(() => <Menu items={items} />))
   .add(

@@ -1,0 +1,1189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Radio Checked 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0:hover .visibleInput,
+.c0 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c0 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+<label
+  checked={true}
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={false}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={true}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio Checked w/ label 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0:hover .visibleInput,
+.c0 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c0 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+<label
+  checked={true}
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={false}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={true}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c2"
+          size={16}
+          type="#2f313a"
+        >
+          Checked radio
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio Default 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0:hover .visibleInput,
+.c0 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+<label
+  checked={false}
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={false}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio Default w/ label 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0:hover .visibleInput,
+.c0 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+<label
+  checked={false}
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={false}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c2"
+          size={16}
+          type="#2f313a"
+        >
+          Default radio
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio Disabled 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  margin: 8px 0;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+<label
+  checked={false}
+  className="c0"
+  disabled={true}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={true}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          disabled={true}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+      </div>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio Disabled checked 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  margin: 8px 0;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+.c0 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+<label
+  checked={true}
+  className="c0"
+  disabled={true}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={true}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={true}
+          disabled={true}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+      </div>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio Disabled w/ label 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.32);
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  margin: 8px 0;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+<label
+  checked={false}
+  className="c0"
+  disabled={true}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={true}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          disabled={true}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c2"
+          size={16}
+          type="rgba(0, 0, 0, 0.32)"
+        >
+          Disabled radio
+        </div>
+      </div>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio onChange 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0:hover .visibleInput,
+.c0 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+<label
+  checked={false}
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={false}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          onClick={[Function]}
+          type="radio"
+          value="a value"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c2"
+          size={16}
+          type="#2f313a"
+        >
+          Click me
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Radio onClick 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c0 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c0 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c0:hover .visibleInput,
+.c0 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+<label
+  checked={false}
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div
+        className="tooltipTarget"
+        disabled={false}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          onClick={[Function]}
+          type="radio"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c2"
+          size={16}
+          type="#2f313a"
+        >
+          Click me
+        </div>
+      </div>
+    </div>
+  </div>
+</label>
+`;

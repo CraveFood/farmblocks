@@ -5,7 +5,7 @@ import { withInfo } from "@storybook/addon-info";
 
 import Radio, { RadioGroup } from ".";
 
-storiesOf("RadioGroup", "module")
+storiesOf("RadioGroup", module)
   .add(
     "Default",
     withInfo()(() => (

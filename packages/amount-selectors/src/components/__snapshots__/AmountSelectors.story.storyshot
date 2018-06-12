@@ -1,0 +1,3181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Amount selectors Default 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={true}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors Disabled typing 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={true}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={true}
+                  size={4}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors Small size 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 32px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 8px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="SMALL"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={true}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={14}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={14}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={0.5}
+                  type="number"
+                  value={2}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation (browser) 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={0.5}
+                  type="number"
+                  value={2}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With a max value of 3 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={3}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={0.5}
+                  type="number"
+                  value={2}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With onChange function 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={true}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+      <div
+        className="hit"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={1}
+                  type="number"
+                  value={0}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With value set 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  display: block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #2980b9;
+}
+
+.c2:focus {
+  background-color: #2980b9;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  -webkit-flex: none !important;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 100%;
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c0 .inputContainer input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 .inputContainer input[type="number"]::-webkit-inner-spin-button,
+.c0 .inputContainer input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="decreaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-minus"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  readOnly={false}
+                  size={4}
+                  step={1}
+                  type="number"
+                  value={2}
+                />
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <button
+        className="increaseButton c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-add"
+          />
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;

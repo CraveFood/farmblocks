@@ -1,0 +1,1445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots RadioGroup Default 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c1 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c1 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c1 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c1:hover .visibleInput,
+.c1 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="first"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            First
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="second"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Second
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="third"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Third
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots RadioGroup all disabled 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.32);
+  text-align: left;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 8px 0;
+}
+
+.c1 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c1 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c1 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c1 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+.c4 {
+  margin: 8px 0;
+}
+
+.c4 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c4 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c4 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c4 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+.c4 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+    disabled={true}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={true}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            disabled={true}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="first"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="rgba(0, 0, 0, 0.32)"
+          >
+            First
+          </div>
+        </div>
+        <div
+          className="hit"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+    disabled={true}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={true}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            disabled={true}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="second"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="rgba(0, 0, 0, 0.32)"
+          >
+            Second
+          </div>
+        </div>
+        <div
+          className="hit"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+      </div>
+    </div>
+  </label>
+  <label
+    checked={true}
+    className="c4"
+    disabled={true}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={true}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={true}
+            disabled={true}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="third"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="rgba(0, 0, 0, 0.32)"
+          >
+            Third
+          </div>
+        </div>
+        <div
+          className="hit"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots RadioGroup onChange 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c1 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c1 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c1 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c1:hover .visibleInput,
+.c1 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="first"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            First
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="second"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Second
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="third"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Third
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots RadioGroup w/ default value 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c1 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c1 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c1 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c1:hover .visibleInput,
+.c1 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c4 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c4 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c4 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c4 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c4:hover .visibleInput,
+.c4 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c4 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="first"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            First
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={true}
+    className="c4"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={true}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="second"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Second
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="third"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Third
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots RadioGroup w/ disabled option 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.32);
+  text-align: left;
+  font-weight: 600;
+}
+
+.c1 {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.c1 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c1 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c1 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c1:hover .visibleInput,
+.c1 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c4 {
+  margin: 8px 0;
+}
+
+.c4 .tooltipTarget {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c4 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c4 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c4 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="first"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            First
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={false}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="second"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c3"
+            size={16}
+            type="#2f313a"
+          >
+            Second
+          </div>
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="c4"
+    disabled={true}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div
+          className="tooltipTarget"
+          disabled={true}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        >
+          <input
+            className="hiddenInput"
+            defaultChecked={false}
+            disabled={true}
+            name="radioExample"
+            onClick={[Function]}
+            type="radio"
+            value="third"
+          />
+          <div
+            className="visibleInput"
+          >
+            <div
+              className="checkedIndicator"
+            />
+          </div>
+          <div
+            className="c5"
+            size={16}
+            type="rgba(0, 0, 0, 0.32)"
+          >
+            Third
+          </div>
+        </div>
+        <div
+          className="hit"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+      </div>
+    </div>
+  </label>
+</div>
+`;
