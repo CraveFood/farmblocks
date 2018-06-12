@@ -18,63 +18,85 @@ describe("SearchField", () => {
     instance = null;
   });
 
-  describe("onChange", () => {
-    let onChangeSpy, persistSpy, event;
+  describe("onSearchChange", () => {
+    let event;
     beforeEach(() => {
-      onChangeSpy = jest.fn();
-      persistSpy = jest.fn();
-      event = { persist: persistSpy, target: { value: "a" } };
+      event = { target: { value: "a" } };
     });
     afterEach(() => {
-      onChangeSpy.mockReset();
-      persistSpy.mockReset();
       event = null;
     });
 
     test("should be debounced", () => {
-      const { onChange, debounceDelay } = SearchField.defaultProps;
+      const { onSearchChange, debounceDelay } = SearchField.defaultProps;
 
-      expect(debounce).toHaveBeenCalledWith(onChange, debounceDelay);
+      expect(debounce).toHaveBeenCalledWith(onSearchChange, debounceDelay);
     });
 
-    test("should persist syntethic events", () => {
-      instance.onChange(event);
-
-      expect(persistSpy).toHaveBeenCalledTimes(1);
-    });
-
-    test("should update inputValue state", () => {
-      instance.onChange(event);
+    test("should reset state", () => {
+      instance.onSearchChange(event);
       const stateChange = setStateSpy.mock.calls[0][0];
 
       expect(stateChange).toHaveProperty("inputValue", event.target.value);
+      expect(stateChange).toHaveProperty("highlightedIndex", -1);
+      expect(stateChange).toHaveProperty("selectedItem", null);
     });
 
-    test("should reset highlightedIndex", () => {
-      instance.onChange(event);
-      const stateChange = setStateSpy.mock.calls[0][0];
+    test("should pass value to onSearchChange", () => {
+      instance.onSearchChange(event);
 
-      expect(stateChange).toHaveProperty("highlightedIndex", -1);
+      expect(instance.debouncedOnSearchChange).toHaveBeenCalledWith(
+        event.target.value
+      );
+    });
+
+    describe("with no value", () => {
+      let onChangeSpy;
+      beforeEach(() => {
+        event = { target: { value: "" } };
+        onChangeSpy = jest.fn();
+        instance.props = {
+          ...instance.props,
+          onChange: onChangeSpy
+        };
+      });
+      afterEach(() => {
+        event = null;
+        onChangeSpy.mockReset();
+        instance.props = null;
+      });
+
+      test("should flush debouncedOnSearchChange", () => {
+        instance.onSearchChange(event);
+
+        expect(instance.debouncedOnSearchChange.flush).toHaveBeenCalledTimes(1);
+      });
+
+      test("should call onChange with no item", () => {
+        instance.onSearchChange(event);
+
+        expect(onChangeSpy).toHaveBeenCalledWith();
+      });
     });
   });
 
   describe("componentDidUpdate", () => {
-    let onChangeSpy, debounceDelay, previousDebounce;
+    let onSearchChangeSpy, debounceDelay, previousDebounce;
     beforeEach(() => {
-      onChangeSpy = jest.fn();
+      onSearchChangeSpy = jest.fn();
       debounceDelay = 100;
       instance.props = {
-        onChange: onChangeSpy,
+        onSearchChange: onSearchChangeSpy,
         debounceDelay
       };
       previousDebounce = { cancel: jest.fn() };
-      instance.debouncedOnChange = previousDebounce;
+      instance.debouncedOnSearchChange = previousDebounce;
     });
     afterEach(() => {
-      onChangeSpy.mockReset();
+      onSearchChangeSpy.mockReset();
       debounceDelay = null;
       instance.props = null;
-      instance.debouncedOnChange = null;
+      instance.debouncedOnSearchChange = null;
       previousDebounce = null;
     });
 
@@ -84,7 +106,7 @@ describe("SearchField", () => {
         anotherProp: 1
       });
 
-      expect(instance.debouncedOnChange.cancel).not.toHaveBeenCalled();
+      expect(instance.debouncedOnSearchChange.cancel).not.toHaveBeenCalled();
       expect(debounce).toHaveBeenCalledTimes(1); // Called at instantiation
     });
 
@@ -97,51 +119,40 @@ describe("SearchField", () => {
       expect(previousDebounce.cancel).toHaveBeenCalledTimes(1);
     });
 
-    test("should create new debounce for onChange updates", () => {
+    test("should create new debounce for onSearchChange updates", () => {
       const newProps = {
         ...instance.props,
-        onChange: () => true
+        onSearchChange: () => true
       };
       const prevProps = instance.props;
       instance.props = newProps;
       instance.componentDidUpdate(prevProps);
 
       expect(debounce).toHaveBeenCalledTimes(2);
-      expect(debounce).toHaveBeenCalledWith(newProps.onChange, debounceDelay);
+      expect(debounce).toHaveBeenCalledWith(
+        newProps.onSearchChange,
+        debounceDelay
+      );
     });
   });
 
   describe("getDerivedStateFromProps", () => {
     test("should return new state if value changes", () => {
-      const props = { value: "ab" };
-      const state = { inputValue: "a" };
+      const item = { value: "ab", label: "AB" };
+      const props = { value: "ab", items: [item] };
+      const state = { lastValue: "a" };
       const result = SearchField.getDerivedStateFromProps(props, state);
 
-      expect(result).toEqual({ inputValue: props.value });
-    });
-
-    test("should return new state if displayValue changes", () => {
-      const props = { displayValue: "ab" };
-      const state = { inputValue: "a" };
-      const result = SearchField.getDerivedStateFromProps(props, state);
-
-      expect(result).toEqual({ inputValue: props.displayValue });
-    });
-
-    test("should give priority to displayValue", () => {
-      const props = {
-        value: "a",
-        displayValue: "b"
-      };
-      const state = { inputValue: "c" };
-      const result = SearchField.getDerivedStateFromProps(props, state);
-
-      expect(result).toEqual({ inputValue: props.displayValue });
+      expect(result).toEqual({
+        selectedItem: item,
+        inputValue: item.label,
+        lastValue: props.value
+      });
     });
 
     test("should return null if there is no change", () => {
       const props = { value: "a" };
-      const state = { inputValue: "a" };
+      const state = { lastValue: "a" };
       const result = SearchField.getDerivedStateFromProps(props, state);
 
       expect(result).toBeNull();
@@ -152,7 +163,7 @@ describe("SearchField", () => {
     test("should cancel a pending debounce", () => {
       instance.componentWillUnmount();
 
-      expect(instance.debouncedOnChange.cancel).toHaveBeenCalledTimes(1);
+      expect(instance.debouncedOnSearchChange.cancel).toHaveBeenCalledTimes(1);
     });
   });
 
@@ -227,30 +238,30 @@ describe("SearchField", () => {
   });
 
   describe("onKeyDown", () => {
-    let preventDefaultSpy, event, onSelectSpy, changeHighlightSpy;
+    let preventDefaultSpy, event, onChangeSpy, changeHighlightSpy;
     beforeEach(() => {
       preventDefaultSpy = jest.fn();
       event = {
         key: "a",
         preventDefault: preventDefaultSpy
       };
-      onSelectSpy = jest.fn();
-      instance.onSelect = onSelectSpy;
+      onChangeSpy = jest.fn();
+      instance.onChange = onChangeSpy;
       changeHighlightSpy = jest.fn();
       instance.changeHighlight = changeHighlightSpy;
     });
     afterEach(() => {
       preventDefaultSpy.mockReset();
       event = null;
-      onSelectSpy.mockReset();
+      onChangeSpy.mockReset();
       changeHighlightSpy.mockReset();
     });
 
     test("should do nothing for unrelated keys", () => {
       instance.onKeyDown(event);
 
-      expect(instance.debouncedOnChange.flush).not.toHaveBeenCalled();
-      expect(onSelectSpy).not.toHaveBeenCalled();
+      expect(instance.debouncedOnSearchChange.flush).not.toHaveBeenCalled();
+      expect(onChangeSpy).not.toHaveBeenCalled();
       expect(setStateSpy).not.toHaveBeenCalled();
       expect(preventDefaultSpy).not.toHaveBeenCalled();
       expect(changeHighlightSpy).not.toHaveBeenCalled();
@@ -260,16 +271,16 @@ describe("SearchField", () => {
       event.key = "Enter";
       instance.onKeyDown(event);
 
-      expect(instance.debouncedOnChange.flush).toHaveBeenCalledTimes(1);
+      expect(instance.debouncedOnSearchChange.flush).toHaveBeenCalledTimes(1);
     });
 
-    test("should run onSelect on Enter key with highlighted item", () => {
+    test("should run onChange on Enter key with highlighted item", () => {
       const index = 10;
       event.key = "Enter";
       instance.state.highlightedIndex = index;
       instance.onKeyDown(event);
 
-      expect(onSelectSpy).toHaveBeenCalledWith(index);
+      expect(onChangeSpy).toHaveBeenCalledWith(index);
     });
 
     test("should reset highlight on Esc key", () => {
@@ -309,18 +320,18 @@ describe("SearchField", () => {
     });
   });
 
-  describe("onSelect", () => {
-    let items, onSelectSpy, blurSpy;
+  describe("onChange", () => {
+    let items, onChangeSpy, blurSpy;
     beforeEach(() => {
       items = [
         { label: "A", value: "a" },
         { label: "B", value: "b" },
         { label: "C", value: "c" }
       ];
-      onSelectSpy = jest.fn();
+      onChangeSpy = jest.fn();
       instance.props = {
         ...instance.props,
-        onSelect: onSelectSpy,
+        onChange: onChangeSpy,
         items
       };
       blurSpy = jest.fn();
@@ -328,41 +339,41 @@ describe("SearchField", () => {
     });
     afterEach(() => {
       items = null;
-      onSelectSpy.mockReset();
+      onChangeSpy.mockReset();
       instance.props = null;
       blurSpy.mockReset;
       instance.input = null;
     });
 
-    test("should update inputValue state to selected item label", () => {
+    test("should update selectedItem state", () => {
       const index = 1;
-      instance.onSelect(index);
+      instance.onChange(index);
       const stateChange = setStateSpy.mock.calls[0][0];
 
-      expect(stateChange).toHaveProperty("inputValue", items[index].label);
+      expect(stateChange).toHaveProperty("selectedItem", items[index]);
     });
 
-    test("should call onSelect prop with selected item value", () => {
+    test("should call onChange prop with selected item value", () => {
       const index = 1;
-      instance.onSelect(index);
+      instance.onChange(index);
 
-      expect(onSelectSpy).toHaveBeenCalledWith(items[index].value);
+      expect(onChangeSpy).toHaveBeenCalledWith(items[index].value);
     });
 
     test("should NOT update inputValue state if couldn't find selected item", () => {
-      instance.onSelect(9999);
+      instance.onChange(9999);
 
       expect(setStateSpy).not.toHaveBeenCalled();
     });
 
-    test("should NOT call onSelect prop if couldn't find selected item", () => {
-      instance.onSelect(9999);
+    test("should NOT call onChange prop if couldn't find selected item", () => {
+      instance.onChange(9999);
 
-      expect(onSelectSpy).not.toHaveBeenCalled();
+      expect(onChangeSpy).not.toHaveBeenCalled();
     });
 
     test("should blur input", () => {
-      instance.onSelect(1);
+      instance.onChange(1);
 
       expect(blurSpy).toHaveBeenCalledTimes(1);
     });
@@ -383,16 +394,75 @@ describe("SearchField", () => {
   });
 
   describe("onBlur", () => {
-    test("should set focused state to false", () => {
+    let selectedItem, onSearchChangeSpy, onChangeSpy;
+    beforeEach(() => {
+      selectedItem = {};
+      onSearchChangeSpy = jest.fn();
+      onChangeSpy = jest.fn();
+      instance.props = {
+        ...instance.props,
+        onSearchChange: onSearchChangeSpy,
+        onChange: onChangeSpy
+      };
+    });
+    afterEach(() => {
+      selectedItem = null;
+      onSearchChangeSpy.mockReset();
+      onChangeSpy.mockReset();
+      instance.props = null;
+    });
+    const getStateChange = (prevState = {}) => {
       instance.onBlur();
-      const stateChange = setStateSpy.mock.calls[0][0];
-      expect(stateChange).toHaveProperty("focused", false);
+
+      // run function given to setState
+      const updater = setStateSpy.mock.calls[0][0];
+      return updater(prevState);
+    };
+
+    describe("with selectedItem", () => {
+      test("should set focused state to false", () => {
+        const stateChange = getStateChange({ selectedItem });
+
+        expect(stateChange).toHaveProperty("focused", false);
+      });
+
+      test("should reset highlightIndex", () => {
+        const stateChange = getStateChange({ selectedItem });
+
+        expect(stateChange).toHaveProperty("highlightedIndex", -1);
+      });
     });
 
-    test("should reset highlightIndex", () => {
-      instance.onBlur();
-      const stateChange = setStateSpy.mock.calls[0][0];
-      expect(stateChange).toHaveProperty("highlightedIndex", -1);
+    describe("without selectedItem", () => {
+      test("should trigger onSearchChange with empty string", () => {
+        getStateChange();
+
+        expect(onSearchChangeSpy).toHaveBeenCalledWith("");
+      });
+
+      test("should trigger onChange with no item", () => {
+        getStateChange();
+
+        expect(onChangeSpy).toHaveBeenCalledWith();
+      });
+
+      test("should set focused state to false", () => {
+        const stateChange = getStateChange();
+
+        expect(stateChange).toHaveProperty("focused", false);
+      });
+
+      test("should reset highlightIndex", () => {
+        const stateChange = getStateChange();
+
+        expect(stateChange).toHaveProperty("highlightedIndex", -1);
+      });
+
+      test("should reset inputValue", () => {
+        const stateChange = getStateChange();
+
+        expect(stateChange).toHaveProperty("inputValue", "");
+      });
     });
   });
 
@@ -414,7 +484,7 @@ describe("SearchField", () => {
   });
 
   describe("onItemClick", () => {
-    let currentTarget, event, scroller, onSelectSpy;
+    let currentTarget, event, scroller, onChangeSpy;
     beforeEach(() => {
       currentTarget = {};
       event = { currentTarget };
@@ -424,22 +494,94 @@ describe("SearchField", () => {
         }
       };
       instance.scroller = scroller;
-      onSelectSpy = jest.fn();
-      instance.onSelect = onSelectSpy;
+      onChangeSpy = jest.fn();
+      instance.onChange = onChangeSpy;
     });
     afterEach(() => {
       currentTarget = null;
       event = null;
       scroller = null;
       instance.scroller = null;
-      onSelectSpy.mockReset();
-      instance.onSelect = null;
+      onChangeSpy.mockReset();
+      instance.onChange = null;
     });
 
-    test("should pass event currentTarget`s index to onSelect", () => {
+    test("should pass event currentTarget`s index to onChange", () => {
       instance.onItemClick(event);
 
-      expect(onSelectSpy).toHaveBeenCalledWith(2);
+      expect(onChangeSpy).toHaveBeenCalledWith(2);
+    });
+  });
+
+  describe("getInputValue", () => {
+    let item;
+    beforeEach(() => {
+      item = {
+        value: "bananaValue",
+        label: "Banana Label"
+      };
+    });
+    afterEach(() => {
+      item = null;
+    });
+
+    test(`should return selectedItem's label if there's one`, () => {
+      instance.state = {
+        ...instance.state,
+        selectedItem: item
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe(item.label);
+    });
+
+    test(`should return inputValue if there's no item highlighted`, () => {
+      const expectedValue = "strawberry";
+      instance.state = {
+        ...instance.state,
+        inputValue: expectedValue
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe(expectedValue);
+    });
+
+    test(`should return highlighted item's label`, () => {
+      instance.props = {
+        ...instance.props,
+        items: [{ value: "otherItem", label: "Not Highlighted" }, item]
+      };
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: 1
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe(item.label);
+    });
+
+    test("should return empty string if theres no items", () => {
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: 1
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe("");
+    });
+
+    test("should return empty string if highlightedIndex is invalid", () => {
+      instance.props = {
+        ...instance.props,
+        items: [{ value: "otherItem", label: "Not Highlighted" }, item]
+      };
+      instance.state = {
+        ...instance.state,
+        highlightedIndex: 10
+      };
+      const result = instance.getInputValue();
+
+      expect(result).toBe("");
     });
   });
 
@@ -469,34 +611,15 @@ describe("SearchField", () => {
       instance.props = null;
     });
 
-    test("should display highlighted item label on input", () => {
-      const index = 1;
-      instance.state = {
-        ...instance.state,
-        highlightedIndex: index
-      };
+    test("should use getInputValue result on Input", () => {
+      const expectedValue = "banana";
+      instance.getInputValue = jest.fn().mockReturnValue(expectedValue);
       const input = instance
         .render()
-        .props.children.find(
-          child => child.type.displayName === "EnhancedInput"
-        );
+        .props.children.find(child => child.type.displayName === "Input");
 
-      expect(input.props.value).toEqual(items[index].label);
-    });
-
-    test(`should display inputValue state on input when there's no item highlighted`, () => {
-      const inputValue = "something";
-      instance.state = {
-        ...instance.state,
-        inputValue
-      };
-      const input = instance
-        .render()
-        .props.children.find(
-          child => child.type.displayName === "EnhancedInput"
-        );
-
-      expect(input.props.value).toEqual(inputValue);
+      expect(instance.getInputValue).toHaveBeenCalled();
+      expect(input.props).toHaveProperty("value", expectedValue);
     });
 
     test("should show Menu when has focus and items", () => {
@@ -507,13 +630,6 @@ describe("SearchField", () => {
 
     test("should NOT show Menu if input is not focused", () => {
       instance.state.focused = false;
-      instance.render();
-
-      expect(renderMenuSpy).not.toHaveBeenCalled();
-    });
-
-    test("should NOT show Menu if input is disabled", () => {
-      instance.props.disabled = true;
       instance.render();
 
       expect(renderMenuSpy).not.toHaveBeenCalled();
@@ -553,14 +669,14 @@ describe("SearchField", () => {
   });
 
   describe("defaultProps", () => {
-    test("onChange should return false", () => {
-      const result = SearchField.defaultProps.onChange();
+    test("onSearchChange should return false", () => {
+      const result = SearchField.defaultProps.onSearchChange();
 
       expect(result).toBe(false);
     });
 
-    test("onSelect should return false", () => {
-      const result = SearchField.defaultProps.onSelect();
+    test("onChange should return false", () => {
+      const result = SearchField.defaultProps.onChange();
 
       expect(result).toBe(false);
     });

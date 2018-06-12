@@ -30,8 +30,8 @@ class App extends Component {
         placeholder="Select fruit"
         label="Fruit"
         items={items}
+        onSearchChange={value => console.log("onSearchChange", value)}
         onChange={value => console.log("onChange", value)}
-        onSelect={value => console.log("onSelect", value)}
       />
     );
   }
@@ -47,18 +47,17 @@ edit symbol, and that the class name to include that icon is `.wg-edit`.
 
 ## API
 
-| Property         | Description                                                                                           | Type                                                               | Required | Default     |
-| ---------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------- | ----------- |
-| items            | Items to be rendered as options                                                                       | ArrayOf({ value: string, label: string, image: (optional)string }) |          |             |
-| value            | Selected option                                                                                       | string                                                             |          |             |
-| displayValue     | Use this whenever you need a human friendly value while keeping the original `value` as an id or slug | string                                                             |          |             |
-| footer           | Component to render at the menu bottom                                                                | node                                                               |          |             |
-| width            | Width of the component                                                                                | number or string                                                   |          | 200         |
-| maxMenuHeight    | Maximum height of the menu. After that, the menu will have a scroll                                   | number or string                                                   |          | 353         |
-| debounceDelay    | Time in miliseconds to wait for new key presses before dispatching `onChange`                         | number                                                             |          | 500         |
-| onChange         | Function to handle changes in the search term                                                         | onChange(event: SyntethicEvent)                                    |          | () => false |
-| onScrollReachEnd | Function to handle the end of the scroll. Usefull for pagination                                      | onScrollReachEnd()                                                 |          | () => false |
-| onSelect         | Function to handle selection of an item                                                               | onSelect(value: string)                                            |          | () => false |
+| Property         | Description                                                                         | Type                                                               | Required | Default     |
+| ---------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------- | ----------- |
+| items            | Items to be rendered as options                                                     | ArrayOf({ value: string, label: string, image: (optional)string }) |          |             |
+| value            | Selected option. It's expected that `items` have an element with the same value     | string                                                             |          |             |
+| footer           | Component to render at the menu bottom                                              | node                                                               |          |             |
+| width            | Width of the component                                                              | number or string                                                   |          | 200         |
+| maxMenuHeight    | Maximum height of the menu. After that, the menu will have a scroll                 | number or string                                                   |          | 353         |
+| debounceDelay    | Time in miliseconds to wait for new key presses before dispatching `onSearchChange` | number                                                             |          | 500         |
+| onSearchChange   | Function to handle changes in the search term                                       | onSearchChange(value: string)                                      |          | () => false |
+| onScrollReachEnd | Function to handle the end of the scroll. Usefull for pagination                    | onScrollReachEnd()                                                 |          | () => false |
+| onChange         | Function to handle selection of an item                                             | onChange(value: string)                                            |          | () => false |
 
 ## License
 

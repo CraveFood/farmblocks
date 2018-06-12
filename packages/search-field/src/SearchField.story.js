@@ -68,29 +68,38 @@ storiesOf("Search Field", "module")
     withInfo()(() => <SearchField width="50%" label="Fruits" />)
   )
   .add(
-    "with value",
-    withInfo()(() => <SearchField value="999" label="Fruits" />)
-  )
-  .add(
-    "with displayValue",
-    withInfo(
-      `Use \`displayValue\` whenever you need a human friendly value while keeping the original \`value\` as an id or slug`
-    )(() => <SearchField value="999" displayValue="Jackfruit" label="Fruits" />)
-  )
-  .add(
     "withItems",
     withInfo()(() => <SearchField items={items} label="Fruits" />)
   )
   .add(
-    "onChange (debounced)",
+    "with selected item",
+    withInfo()(() => <SearchField value="2" items={items} label="Fruits" />)
+  )
+  .add(
+    "onSearchChange (debounced)",
+    withInfo()(() => (
+      <SearchField
+        onSearchChange={action("onSearchChange")}
+        items={items}
+        label="Fruits"
+      />
+    ))
+  )
+  .add(
+    "onChange",
     withInfo()(() => (
       <SearchField onChange={action("onChange")} items={items} label="Fruits" />
     ))
   )
   .add(
-    "onSelect",
+    "onSearchChange + onChange",
     withInfo()(() => (
-      <SearchField onSelect={action("onSelect")} items={items} label="Fruits" />
+      <SearchField
+        onSearchChange={action("onSearchChange")}
+        onChange={action("onChange")}
+        items={items}
+        label="Fruits"
+      />
     ))
   )
   .add(
@@ -129,7 +138,7 @@ storiesOf("Search Field", "module")
     "custom debounce delay",
     withInfo()(() => (
       <SearchField
-        onChange={action("onChange")}
+        onSearchChange={action("onSearchChange")}
         debounceDelay={3000}
         placeholder="3s delay"
         label="Fruits"
@@ -140,5 +149,38 @@ storiesOf("Search Field", "module")
     "custom menu height",
     withInfo()(() => (
       <SearchField items={manyItems} maxMenuHeight={150} label="Fruits" />
+    ))
+  )
+  .add(
+    "Z-index",
+    withInfo()(() => (
+      <div>
+        <div
+          style={{
+            width: 200,
+            height: 400,
+            top: 150,
+            position: "absolute",
+            zIndex: 10,
+            background: "gray"
+          }}
+        >
+          Z-index: 10
+        </div>
+        <SearchField items={items} label="Fruits" zIndex={11} />
+        <div
+          style={{
+            width: 300,
+            height: 200,
+            top: 150,
+            left: 100,
+            position: "absolute",
+            zIndex: 12,
+            background: "blue"
+          }}
+        >
+          Z-index: 12
+        </div>
+      </div>
     ))
   );

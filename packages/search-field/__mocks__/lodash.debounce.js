@@ -1,5 +1,5 @@
 const mock = jest.fn().mockImplementation((func, delay) => {
-  const callImmediately = (...args) => func(...args);
+  const callImmediately = jest.fn().mockImplementation(func);
   callImmediately.cancel = jest.fn();
   callImmediately.flush = jest.fn();
   return callImmediately;

@@ -13,49 +13,71 @@ import withMessages, {
 
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import Menu from "./components/Menu";
+import StaticInput from "./components/StaticInput";
 
 const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
   "input"
 );
 EnhancedInput.displayName = "EnhancedInput";
+const ReadOnly = compose(disabledTooltip, withMessages, formInput)(StaticInput);
+ReadOnly.displayName = "ReadOnly";
 
 class SearchField extends React.Component {
   state = {
     highlightedIndex: -1,
     focused: false,
-    inputValue: this.props.displayValue || this.props.value
+    inputValue: "",
+    lastValue: "",
+    selectedItem: null
   };
 
-  debouncedOnChange = debounce(this.props.onChange, this.props.debounceDelay);
-  onChange = event => {
-    // retain synthetic events for async use.
-    // https://reactjs.org/docs/events.html#event-pooling
-    event && event.persist && event.persist();
+  debouncedOnSearchChange = debounce(
+    this.props.onSearchChange,
+    this.props.debounceDelay
+  );
+  onSearchChange = event => {
+    const { value } = event.target;
 
-    this.setState({ inputValue: event.target.value, highlightedIndex: -1 });
-    this.debouncedOnChange(event);
+    this.setState({
+      inputValue: value,
+      highlightedIndex: -1,
+      selectedItem: null
+    });
+    this.debouncedOnSearchChange(value);
+    if (!value) {
+      this.debouncedOnSearchChange.flush();
+      this.props.onChange();
+    }
   };
 
   componentDidUpdate = prevProps => {
     if (
       prevProps.debounceDelay !== this.props.debounceDelay ||
-      prevProps.onChange !== this.props.onChange
+      prevProps.onSearchChange !== this.props.onSearchChange
     ) {
-      this.debouncedOnChange && this.debouncedOnChange.cancel();
-      this.debouncedOnChange = debounce(
-        this.props.onChange,
+      this.debouncedOnSearchChange && this.debouncedOnSearchChange.cancel();
+      this.debouncedOnSearchChange = debounce(
+        this.props.onSearchChange,
         this.props.debounceDelay
       );
     }
   };
 
   static getDerivedStateFromProps = (props, state) => {
-    const value = props.displayValue || props.value;
-    return value !== state.inputValue ? { inputValue: value } : null;
+    if (props.value !== state.lastValue) {
+      const selectedItem =
+        props.items && props.items.find(item => item.value === props.value);
+      return {
+        inputValue: selectedItem ? selectedItem.label : "",
+        selectedItem,
+        lastValue: props.value
+      };
+    }
+    return null;
   };
 
   componentWillUnmount = () => {
-    this.debouncedOnChange.cancel();
+    this.debouncedOnSearchChange.cancel();
   };
 
   changeHighlight = modifier => {
@@ -79,9 +101,9 @@ class SearchField extends React.Component {
     switch (key) {
       case "Enter":
         if (this.state.highlightedIndex < 0) {
-          this.debouncedOnChange.flush();
+          this.debouncedOnSearchChange.flush();
         } else {
-          this.onSelect(this.state.highlightedIndex);
+          this.onChange(this.state.highlightedIndex);
         }
         break;
       case "Escape":
@@ -98,17 +120,27 @@ class SearchField extends React.Component {
     }
   };
 
-  onSelect = index => {
+  onChange = index => {
     const selectedItem = this.props.items && this.props.items[index];
     if (selectedItem) {
-      this.setState({ inputValue: selectedItem.label });
-      this.props.onSelect(selectedItem.value);
+      this.setState({ selectedItem });
+      this.props.onChange(selectedItem.value);
     }
     this.input && this.input.blur();
   };
 
   onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
-  onBlur = () => this.setState({ focused: false, highlightedIndex: -1 });
+  onBlur = () => {
+    const focusReset = { focused: false, highlightedIndex: -1 };
+    this.setState(prevState => {
+      if (prevState.selectedItem) {
+        return focusReset;
+      }
+      this.props.onSearchChange("");
+      this.props.onChange();
+      return { ...focusReset, inputValue: "", selectedItem: null };
+    });
+  };
   preventBlur = event => {
     event.preventDefault();
   };
@@ -119,7 +151,7 @@ class SearchField extends React.Component {
       this.scroller.wrapper && // ref inside a ref 😜
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
 
-    this.onSelect(selectedIndex);
+    this.onChange(selectedIndex);
   };
 
   _renderMenu = () => {
@@ -140,33 +172,50 @@ class SearchField extends React.Component {
     );
   };
 
+  getInputValue = () => {
+    const { selectedItem, highlightedIndex, inputValue } = this.state;
+
+    if (selectedItem) return selectedItem.label;
+    if (highlightedIndex === -1) return inputValue;
+
+    const { items } = this.props;
+    const highlightedItem = items && items[highlightedIndex];
+
+    if (highlightedItem) return highlightedItem.label;
+    return "";
+  };
+
   render() {
     const {
       width,
-      onChange,
+      onSearchChange,
       debounceDelay,
       maxMenuHeight,
       items,
       onScrollReachEnd,
-      onSelect,
+      onChange,
       footer,
       value,
-      displayValue,
+      zIndex,
       ...inputProps
     } = this.props;
 
-    const { focused, highlightedIndex, inputValue } = this.state;
+    const { focused, selectedItem } = this.state;
+
+    const Input = selectedItem ? ReadOnly : EnhancedInput;
+    Input.displayName = "Input";
 
     return (
-      <DropdownWrapper style={{ width }}>
-        <EnhancedInput
-          value={
-            highlightedIndex === -1 ? inputValue : items[highlightedIndex].label
-          }
-          onChange={this.onChange}
-          type={focused || !inputValue ? "search" : "text"}
-          clearable={!!inputValue}
-          clearIcon={focused ? undefined : "wg-edit"}
+      <DropdownWrapper
+        style={{ width, zIndex }}
+        className={!focused && !!selectedItem && "selected"}
+      >
+        <Input
+          value={this.getInputValue()}
+          onChange={this.onSearchChange}
+          type={selectedItem ? "text" : "search"}
+          clearable
+          clearIcon={selectedItem ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
@@ -174,18 +223,15 @@ class SearchField extends React.Component {
           innerRef={node => (this.input = node)}
           {...inputProps}
         />
-        {!inputProps.disabled &&
-          focused &&
-          (items || footer) &&
-          this._renderMenu()}
+        {focused && (items || footer) && this._renderMenu()}
       </DropdownWrapper>
     );
   }
 
   static defaultProps = {
-    onChange: () => false,
+    onSearchChange: () => false,
     onScrollReachEnd: () => false,
-    onSelect: () => false,
+    onChange: () => false,
     width: 200,
     maxMenuHeight: 353,
     debounceDelay: 500
@@ -194,9 +240,9 @@ class SearchField extends React.Component {
   static propTypes = {
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
+    onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
-    onSelect: PropTypes.func,
-    displayValue: PropTypes.string,
+    zIndex: PropTypes.number,
     ...Menu.propTypes,
     ...formInputProps,
     ...withMessagesProps,
