@@ -96,7 +96,7 @@ describe("Amount selectors", () => {
       expect(component.state("value")).toBe(event.target.value);
     });
 
-    test("should disable both buttons if browser validation fail with step mismatch", () => {
+    test("should disable both buttons when enforceStep is passed if browser validation fail with step mismatch", () => {
       const step = 0.5;
       const event = {
         target: {
@@ -106,7 +106,7 @@ describe("Amount selectors", () => {
           }
         }
       };
-      const component = shallow(<AmountSelectors step={step} />);
+      const component = shallow(<AmountSelectors step={step} enforceStep />);
       component.instance().onChange(event);
       expect(component.state().disableBoth).toBe(true);
     });
