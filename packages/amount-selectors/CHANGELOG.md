@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.4.1...@crave/farmblocks-amount-selectors@0.5.0) (2018-06-12)
+
+
+### Bug Fixes
+
+* **amount-selector:** remove Firefox default :invalid styles for the amount selector input ([313612f](https://github.com/CraveFood/farmblocks/commit/313612f))
+* **amount-selector:** remove hardcoded tooltip and use browser provided validationMessage for toolti ([2e1495e](https://github.com/CraveFood/farmblocks/commit/2e1495e))
+
+
+### Features
+
+* **amount-selector:** disable both buttons if the browser validation fails for the typed value ([b41cab9](https://github.com/CraveFood/farmblocks/commit/b41cab9))
+* **amount-selector:** include option to use step mismatch validation from browser ([fb72b5e](https://github.com/CraveFood/farmblocks/commit/fb72b5e))
+
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.4.0...@crave/farmblocks-amount-selectors@0.4.1) (2018-06-08)
 
