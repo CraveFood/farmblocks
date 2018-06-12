@@ -18,6 +18,7 @@ npm install @crave/farmblocks-amount-selectors
 | max | maximum amount available | number |
 | onChange | function to handle the input onChange event | function |
 | disableTyping | disables direct typing | bool |
+| enforceStep | disable both buttons when a number outside of the step is typed | bool |
 | size | size of the amount selector | one of selectorSizes.SMALL or selectorSizes.MEDIUM |
 
 ## License
