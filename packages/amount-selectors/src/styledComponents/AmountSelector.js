@@ -17,6 +17,10 @@ export default styled.div`
       flex: none !important;
       width: 100%;
       text-align: center;
+      &:invalid {
+        /* remove Firefox default styling (red box-shadow) */
+        box-shadow: none;
+      }
     }
 
     input[type="number"] {

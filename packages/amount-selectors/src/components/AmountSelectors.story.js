@@ -14,6 +14,10 @@ storiesOf("Amount selectors", "module")
     withInfo()(() => <AmountSelectors value={2} step={0.5} />)
   )
   .add(
+    "With 0.5 steps and step mismatch validation (browser)",
+    withInfo()(() => <AmountSelectors value={2} step={0.5} enforceStep />)
+  )
+  .add(
     "With a max value of 3",
     withInfo()(() => <AmountSelectors max={3} value={2} step={0.5} />)
   )

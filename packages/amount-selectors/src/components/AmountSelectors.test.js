@@ -95,5 +95,35 @@ describe("Amount selectors", () => {
 
       expect(component.state("value")).toBe(event.target.value);
     });
+
+    test("should disable both buttons when enforceStep is passed if browser validation fail with step mismatch", () => {
+      const step = 0.5;
+      const event = {
+        target: {
+          value: 1.2,
+          validity: {
+            stepMismatch: true
+          }
+        }
+      };
+      const component = shallow(<AmountSelectors step={step} enforceStep />);
+      component.instance().onChange(event);
+      expect(component.state().disableBoth).toBe(true);
+    });
+
+    test("should disable both buttons if browser validation fail with bad input error", () => {
+      const event = {
+        target: {
+          value: "aaa",
+          validity: {
+            stepMismatch: false,
+            badInput: true
+          }
+        }
+      };
+      const component = shallow(<AmountSelectors />);
+      component.instance().onChange(event);
+      expect(component.state().disableBoth).toBe(true);
+    });
   });
 });
