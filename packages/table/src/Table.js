@@ -19,6 +19,7 @@ class Table extends React.Component {
       children,
       width,
       rowHeight,
+      rowGroupKey,
       selectableRows,
       selectionHeader,
       borderless
@@ -61,25 +62,50 @@ class Table extends React.Component {
             )}
           </tr>
         </thead>
-        <tbody className="body">
-          {data.map((row, index) => {
-            return (
-              <tr key={index} className="row">
-                {selectableRows && this._renderSelectRowButton(index)}
-                {React.Children.map(
-                  children,
-                  column =>
-                    column &&
-                    column.props &&
-                    this._renderColumnCell(row, index, column.props)
-                )}
-              </tr>
-            );
-          })}
-        </tbody>
+        {data.map((row, index) => {
+          const isRowGroup =
+            row[rowGroupKey] && Array.isArray(row[rowGroupKey]);
+          if (isRowGroup) {
+            return this._renderRowGroup(row, index);
+          }
+          return (
+            <tbody key={index} className="body">
+              {this._renderRow(row, index)}
+            </tbody>
+          );
+        })}
       </StyledTable>
     );
   }
+
+  _renderRow = (row, index) => {
+    const { selectableRows, children } = this.props;
+    return (
+      <tr key={index} className="row">
+        {selectableRows && this._renderSelectRowButton(index)}
+        {React.Children.map(
+          children,
+          column =>
+            column &&
+            column.props &&
+            this._renderColumnCell(row, index, column.props)
+        )}
+      </tr>
+    );
+  };
+
+  _renderRowGroup = (row, index) => {
+    const { rowGroupKey } = this.props;
+    const { [rowGroupKey]: childRows, ...parentRow } = row;
+    return (
+      <tbody className="body" key={index}>
+        {this._renderRow(parentRow, index)}
+        {childRows.map((row, subindex) =>
+          this._renderRow(row, `${index}-${subindex}`)
+        )}
+      </tbody>
+    );
+  };
 
   _renderSelectAllButton = () => {
     const dataLength = this.props.data.length;
@@ -221,6 +247,7 @@ class Table extends React.Component {
     data: PropTypes.arrayOf(PropTypes.object),
     width: PropTypes.string,
     rowHeight: PropTypes.oneOf([rowHeights.SMALL, rowHeights.MEDIUM]),
+    rowGroupKey: PropTypes.string,
     onTitleClick: PropTypes.func,
     selectableRows: PropTypes.bool,
     selectionHeader: PropTypes.func,
