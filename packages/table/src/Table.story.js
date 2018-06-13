@@ -474,7 +474,114 @@ storiesOf("Table/Custom Cells", module)
     })
   );
 
-storiesOf("Table/SelectionBar", module)
+const orders = [
+  {
+    name: "Farm A",
+    orderDate: "20181206",
+    itemQty: 1,
+    totalLabel: "$ 5",
+    status: "accepted"
+  },
+  {
+    name: "Farm Market 1",
+    totalLabel: "$ 20",
+    itemQty: 4,
+    suborders: [
+      {
+        name: "Farm B",
+        orderDate: "20181306",
+        itemQty: 2,
+        totalLabel: "$ 10",
+        status: "pending"
+      },
+      {
+        name: "Farm C",
+        orderDate: "20181206",
+        itemQty: 2,
+        totalLabel: "$ 10",
+        status: "accepted"
+      }
+    ]
+  },
+  {
+    name: "Farm D",
+    orderDate: "20181206",
+    itemQty: 1,
+    totalLabel: "$ 5",
+    status: "accepted"
+  },
+  {
+    name: "Farm Market 2",
+    totalLabel: "$ 15",
+    itemQty: 4,
+    suborders: [
+      {
+        name: "Farm E",
+        orderDate: "20181306",
+        itemQty: 2,
+        totalLabel: "$ 10",
+        status: "pending"
+      },
+      {
+        name: "Farm F",
+        orderDate: "20181206",
+        itemQty: 2,
+        totalLabel: "$ 5",
+        status: "accepted"
+      },
+      {
+        name: "Farm G",
+        orderDate: "20181206",
+        itemQty: 2,
+        totalLabel: "$ 5",
+        status: "canceled"
+      }
+    ]
+  }
+];
+
+storiesOf("Table/Row Groups", module)
+  .add(
+    "With row groups",
+    withInfo()(() => {
+      return (
+        <Table data={orders} rowGroupKey="suborders">
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Expandable Groups",
+    withInfo()(() => {
+      return (
+        <Table data={orders} collapsed rowGroupKey="suborders">
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Small height, Expandable Groups and Selectable row",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          selectableRows
+          collapsed
+          rowGroupKey="suborders"
+          rowHeight={rowHeights.SMALL}
+        >
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  );
+
+storiesOf("Table/SelectionBar", "module")
   .add("Default", withInfo()(() => <SelectionBar />))
   .add(
     "One item selected",

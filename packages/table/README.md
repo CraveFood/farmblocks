@@ -58,6 +58,8 @@ core of the whole thing, it should be an array of objects, each item representin
 | selectionHeader | function ``(selectedRows, clearFunction) => React.node`` | a function that receives an array of selected rows data plus a function to clear selection; and should return a react node to be rendered as an action bar on top of the table, there is a helper component SelectionBar that can be used as the return of this function, or you can create your own... see the stories files for usage examples |
 | width | string | use this to manually change the width of the table |
 | rowHeight | string | use this to manually change the height of the body rows of the table, the package exports a set of named values as ``rowHeights``, you can import them and use ``rowHeights.SMALL`` to have a more compact table |
+| rowGroupKey | string | if you have rows that contains sub-rows as a list under a key, you can pass this property with the name of the key, to have a table with row groups generated |
+| collapsed | boolean | if row groups are used, this flag will add a button column with buttons that works as expand/collapse toggle on the start of row groups. The groups will start collapsed. |
 | onTitleClick | function ``(columnIndex, data) => any`` | when the option ``clickable`` is used on the Column children, that column title will be a link and will have the ``wg-arrow-down`` icon displayed, upon click such columns will trigger the function you provide in this property, it will be called with 2 arguments, the index of the clicked column from left to right and the whole table data |
 | children | React nodes  | the table comopnent expect Column children that describes how to interpret and render the table data on each column for all rows  |
 
