@@ -3,6 +3,13 @@ import { colors } from "@crave/farmblocks-theme";
 
 const textAlign = props => props.align || "left";
 
+const cellBg = props => {
+  if (props.selected) {
+    return `${colors.INDIGO_MILK_CAP_06} !important`;
+  }
+  return props.grouped ? colors.SUGAR : "white";
+};
+
 export const HeaderCell = styled.th`
   text-align: ${textAlign};
   background-color: ${colors.SUGAR};
@@ -20,5 +27,5 @@ export const HeaderCell = styled.th`
 `;
 export const BodyCell = styled.td`
   text-align: ${textAlign};
-  background-color: ${props => (props.selected ? "white" : colors.SUGAR)};
+  background-color: ${cellBg};
 `;

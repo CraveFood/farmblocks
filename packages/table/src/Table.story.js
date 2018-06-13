@@ -199,8 +199,7 @@ storiesOf("Table/Basic", module)
     ))
   );
 
-const imgSrc =
-  "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
+const imgSrc = "https://picsum.photos/200";
 
 const farms = [
   {

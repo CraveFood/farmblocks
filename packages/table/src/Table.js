@@ -29,7 +29,6 @@ class Table extends React.Component {
     const tableProps = {
       width,
       rowHeight,
-      emptySelection,
       selectionHeaderVisible,
       borderless
     };
@@ -101,7 +100,7 @@ class Table extends React.Component {
       <tbody className="body" key={index}>
         {this._renderRow(parentRow, index)}
         {childRows.map((row, subindex) =>
-          this._renderRow(row, `${index}-${subindex}`)
+          this._renderRow({ ...row, grouped: true }, `${index}-${subindex}`)
         )}
       </tbody>
     );
@@ -179,9 +178,11 @@ class Table extends React.Component {
   _renderColumnCell = (row, rowIndex, columnProps) => {
     const { width, align } = columnProps;
     const rowSelected = this.state.selectedRows.indexOf(rowIndex) !== -1;
+    const { grouped } = row;
     const cellProps = {
       width,
       align,
+      grouped,
       className: "cell",
       selected: rowSelected
     };

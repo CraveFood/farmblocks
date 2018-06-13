@@ -27,9 +27,10 @@ const Table = styled.table`
     }
   }
 
-  .body .cell {
-    ${props =>
-      props.emptySelection && css`background-color: white !important;`};
+  tbody tr:hover {
+    & .cell {
+      background: ${colors.DEMERARA_SUGAR};
+    }
   }
 `;
 
