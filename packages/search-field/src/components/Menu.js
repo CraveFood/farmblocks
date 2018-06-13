@@ -44,21 +44,28 @@ const Menu = ({
   onItemClick,
   highlightedIndex,
   footer
-}) => (
-  <DropdownMenuWrapper onMouseDown={onMenuMouseDown}>
-    <ScrollBox
-      maxHeight={maxMenuHeight}
-      onReachEnd={onScrollReachEnd}
-      ref={innerRef}
-    >
-      {items &&
-        items.map((item, index) => {
-          return renderItem(item, onItemClick, index === highlightedIndex);
-        })}
-      {footer}
-    </ScrollBox>
-  </DropdownMenuWrapper>
-);
+}) => {
+  if (!footer && !items.length) return null;
+  return (
+    <DropdownMenuWrapper onMouseDown={onMenuMouseDown}>
+      <ScrollBox
+        maxHeight={maxMenuHeight}
+        onReachEnd={onScrollReachEnd}
+        ref={innerRef}
+      >
+        {items.length
+          ? items.map((item, index) =>
+              renderItem(item, onItemClick, index === highlightedIndex)
+            )
+          : null}
+        {footer}
+      </ScrollBox>
+    </DropdownMenuWrapper>
+  );
+};
+Menu.defaultProps = {
+  items: []
+};
 Menu.propTypes = {
   ...menuPropTypes,
   innerRef: PropTypes.func

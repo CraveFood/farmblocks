@@ -68,8 +68,19 @@ storiesOf("Search Field", module)
     withInfo()(() => <SearchField width="50%" label="Fruits" />)
   )
   .add(
-    "withItems",
+    "with items",
     withInfo()(() => <SearchField items={items} label="Fruits" />)
+  )
+  .add(
+    "with empty items array",
+    withInfo()(() => (
+      <SearchField
+        items={[]}
+        placeholder="Click here. Menu should not open"
+        width={600}
+        label="Fruits"
+      />
+    ))
   )
   .add(
     "with selected item",
