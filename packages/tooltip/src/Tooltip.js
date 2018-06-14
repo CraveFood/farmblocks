@@ -58,7 +58,9 @@ Tooltip.propTypes = {
   isVisible: PropTypes.bool,
   align: PropTypes.oneOf(values(alignments)),
   zIndex: PropTypes.number,
-  bondariesSelector: PropTypes.string
+  bondariesSelector: PropTypes.string,
+  hideArrow: PropTypes.bool,
+  padding: PropTypes.string
 };
 
 Tooltip.defaultProps = {

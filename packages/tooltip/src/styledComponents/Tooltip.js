@@ -34,6 +34,38 @@ const visibility = ({ isVisible }) => {
   `;
 };
 
+const arrow = ({ hideArrow }) => {
+  return (
+    !hideArrow &&
+    css`
+      &:after,
+      &:before {
+        bottom: 100%;
+        border: solid 1px rgba(0, 0, 0, 0.16);
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      &:before {
+        border-color: transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.16);
+        border-width: 8px;
+        ${alignX("7px")};
+      }
+
+      &:after {
+        border-color: transparent;
+        border-bottom-color: #ffffff;
+        border-width: 7px;
+        ${alignX("8px")};
+      }
+    `
+  );
+};
+
 const StyledTooltip = styled.div`
   transition: visibility 0s linear 0.1s, opacity 0.1s linear;
   ${visibility};
@@ -53,30 +85,7 @@ const StyledTooltip = styled.div`
 
   ${alignX(0)};
 
-  &:after,
-  &:before {
-    bottom: 100%;
-    border: solid 1px rgba(0, 0, 0, 0.16);
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
-
-  &:before {
-    border-color: transparent;
-    border-bottom-color: rgba(0, 0, 0, 0.16);
-    border-width: 8px;
-    ${alignX("7px")};
-  }
-
-  &:after {
-    border-color: transparent;
-    border-bottom-color: #ffffff;
-    border-width: 7px;
-    ${alignX("8px")};
-  }
+  ${arrow};
 `;
 
 export { Container, StyledTooltip };
