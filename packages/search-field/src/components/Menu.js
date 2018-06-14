@@ -53,11 +53,9 @@ const Menu = ({
         onReachEnd={onScrollReachEnd}
         ref={innerRef}
       >
-        {items.length
-          ? items.map((item, index) =>
-              renderItem(item, onItemClick, index === highlightedIndex)
-            )
-          : null}
+        {items.map((item, index) =>
+          renderItem(item, onItemClick, index === highlightedIndex)
+        )}
         {footer}
       </ScrollBox>
     </DropdownMenuWrapper>
