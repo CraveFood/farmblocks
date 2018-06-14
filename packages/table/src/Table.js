@@ -124,11 +124,12 @@ class Table extends React.Component {
   };
 
   _renderExpandToggle = index => {
+    const icon =
+      this.state.expandedRows.indexOf(index) !== -1
+        ? "wg-small-arrow-top"
+        : "wg-small-arrow-bottom";
     return (
-      <Button
-        icon="wg-small-arrow-bottom"
-        onClick={() => this.expandToggleClicked(index)}
-      />
+      <Button icon={icon} onClick={() => this.expandToggleClicked(index)} />
     );
   };
 
