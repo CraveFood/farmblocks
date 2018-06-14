@@ -14,11 +14,30 @@ const alignX = coordinate => ({ align }) => {
     return centerAlignment;
   }
 
-  return css`${align}: ${coordinate}`;
+  return css`
+    ${align}: ${coordinate};
+  `;
+};
+
+const visibility = ({ isVisible }) => {
+  if (isVisible) {
+    return css`
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;
+    `;
+  }
+
+  return css`
+    visibility: hidden;
+    opacity: 0;
+  `;
 };
 
 const StyledTooltip = styled.div`
-  visibility: ${props => (props.isVisible ? "visible" : "hidden")};
+  transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+  ${visibility};
+
   position: absolute;
   z-index: ${props => props.zIndex};
   top: 15px;
