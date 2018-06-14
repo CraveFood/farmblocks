@@ -194,6 +194,58 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
+.c1 {
+  margin-top: 16px;
+  min-width: 100%;
+  whitespace: no-wrap;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  background: white;
+  position: absolute;
+}
+
+.c1 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 {
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.c0 {
+  width: 400px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <ul
+      className="c2"
+      style={
+        Object {
+          "maxHeight": undefined,
+        }
+      }
+    >
+      <p>
+        a footer
+      </p>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
 .c7 {
   background-origin: border-box;
@@ -584,4 +636,14 @@ exports[`Storyshots Search Field/Menu (Private) onMenuMouseDown 1`] = `
     </ul>
   </div>
 </div>
+`;
+
+exports[`Storyshots Search Field/Menu (Private) with empty items 1`] = `
+.c0 {
+  width: 400px;
+}
+
+<div
+  className="c0"
+/>
 `;

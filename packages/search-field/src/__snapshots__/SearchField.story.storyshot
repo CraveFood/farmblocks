@@ -2699,7 +2699,492 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
 </div>
 `;
 
+exports[`Storyshots Search Field with empty items array 1`] = `
+.c2 {
+  display: block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c3 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c3 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c3 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c3 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c3 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c3 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c0 input {
+  width: 100%;
+  min-width: 0;
+}
+
+.c0.selected .input {
+  background: #f6f8f9;
+  cursor: auto;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "width": 600,
+      "zIndex": undefined,
+    }
+  }
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div>
+        <div
+          className="c3"
+          disabled={false}
+          onClick={[Function]}
+          type="search"
+        >
+          <div
+            className="input"
+          >
+            <div
+              className="icon search"
+            >
+              <i
+                className="wg-search"
+              />
+            </div>
+            <input
+              className="wrapped"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInvalid={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              placeholder="Click here. Menu should not open"
+              type="search"
+              value=""
+            />
+            
+          </div>
+          <div
+            className="label c4"
+            size={14}
+            type="#2f313a"
+          >
+            Fruits
+          </div>
+        </div>
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Search Field with footer 1`] = `
+.c2 {
+  display: block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  height: 48px;
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 0 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c3 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .input input {
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c3 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c3 .input .icon.search {
+  margin-right: 8px;
+}
+
+.c3 .input .icon.dropdown {
+  margin-left: 8px;
+}
+
+.c3 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+}
+
+.c3 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c0 input {
+  width: 100%;
+  min-width: 0;
+}
+
+.c0.selected .input {
+  background: #f6f8f9;
+  cursor: auto;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "width": 200,
+      "zIndex": undefined,
+    }
+  }
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="hitWrapper"
+    >
+      <div>
+        <div
+          className="c3"
+          disabled={false}
+          onClick={[Function]}
+          type="search"
+        >
+          <div
+            className="input"
+          >
+            <div
+              className="icon search"
+            >
+              <i
+                className="wg-search"
+              />
+            </div>
+            <input
+              className="wrapped"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onInvalid={[Function]}
+              onKeyDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              type="search"
+              value=""
+            />
+            
+          </div>
+          <div
+            className="label c4"
+            size={14}
+            type="#2f313a"
+          >
+            Fruits
+          </div>
+        </div>
+        <div />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Search Field with items 1`] = `
 .c2 {
   display: block;
 }
@@ -3237,248 +3722,6 @@ exports[`Storyshots Search Field with selected item 1`] = `
           </div>
           <div
             className="label c6"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
-        </div>
-        <div />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Search Field withItems 1`] = `
-.c2 {
-  display: block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 1.14;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  height: 48px;
-  border: solid 1px;
-  border-radius: 4px;
-  padding: 0 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-}
-
-.c3 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 .input input {
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c3 .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3 .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3 .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3 .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3 .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c3 .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c3 .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c3 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c3 .input .icon.search {
-  margin-right: 8px;
-}
-
-.c3 .input .icon.dropdown {
-  margin-left: 8px;
-}
-
-.c3 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-}
-
-.c3 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c3 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3 .input.dropdown {
-  cursor: pointer;
-}
-
-.c3 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-}
-
-.c1 {
-  font-family: lato,sans-serif;
-  display: inline-block;
-  position: relative;
-}
-
-.c1 *:focus {
-  outline: none;
-}
-
-.c0 input {
-  width: 100%;
-  min-width: 0;
-}
-
-.c0.selected .input {
-  background: #f6f8f9;
-  cursor: auto;
-}
-
-<div
-  className="c0 c1"
-  style={
-    Object {
-      "width": 200,
-      "zIndex": undefined,
-    }
-  }
->
-  <div
-    className="c2"
-  >
-    <div
-      className="hitWrapper"
-    >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
-          <div
-            className="input"
-          >
-            <div
-              className="icon search"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              type="search"
-              value=""
-            />
-            
-          </div>
-          <div
-            className="label c4"
             size={14}
             type="#2f313a"
           >
