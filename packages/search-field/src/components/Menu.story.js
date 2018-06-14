@@ -26,4 +26,12 @@ storiesOf("Search Field/Menu (Private)", module)
   .add(
     "onItemClick",
     withInfo()(() => <Menu onItemClick={action("onItemClick")} items={items} />)
+  )
+  .add(
+    "with empty items",
+    withInfo("This should render nothing")(() => <Menu items={[]} />)
+  )
+  .add(
+    "footer only",
+    withInfo()(() => <Menu footer={<p>a footer</p>} items={[]} />)
   );
