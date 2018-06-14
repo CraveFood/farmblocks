@@ -4,13 +4,16 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Text, { fontSizes, fontTypes } from "@crave/farmblocks-text";
 import Link from "@crave/farmblocks-link";
 import { Checkbox } from "@crave/farmblocks-input-checkbox";
+import Button from "@crave/farmblocks-button";
+
 import StyledTable from "./styledComponents/Table";
 import { HeaderCell, BodyCell } from "./styledComponents/Cell";
 import { rowHeights } from "./constants";
 
 class Table extends React.Component {
   state = {
-    selectedRows: []
+    selectedRows: [],
+    expandedRows: []
   };
 
   render() {
@@ -20,6 +23,7 @@ class Table extends React.Component {
       width,
       rowHeight,
       rowGroupKey,
+      collapsed,
       selectableRows,
       selectionHeader,
       borderless
@@ -59,6 +63,7 @@ class Table extends React.Component {
                 column.props &&
                 this._renderColumnTitle(index, column.props)
             )}
+            {collapsed && this._renderColumnTitle()}
           </tr>
         </thead>
         {data.map((row, index) => {
@@ -77,10 +82,10 @@ class Table extends React.Component {
     );
   }
 
-  _renderRow = (row, index) => {
-    const { selectableRows, children } = this.props;
+  _renderRow = (row, index, subIndex, group = false) => {
+    const { selectableRows, collapsed, children } = this.props;
     return (
-      <tr key={index} className="row">
+      <tr key={`${index}-${subIndex}`} className="row">
         {selectableRows && this._renderSelectRowButton(index)}
         {React.Children.map(
           children,
@@ -89,6 +94,15 @@ class Table extends React.Component {
             column.props &&
             this._renderColumnCell(row, index, column.props)
         )}
+        {collapsed && (
+          <BodyCell
+            className="cell"
+            selected={row.selected}
+            grouped={row.grouped}
+          >
+            {group && this._renderExpandToggle(index)}
+          </BodyCell>
+        )}
       </tr>
     );
   };
@@ -96,14 +110,39 @@ class Table extends React.Component {
   _renderRowGroup = (row, index) => {
     const { rowGroupKey } = this.props;
     const { [rowGroupKey]: childRows, ...parentRow } = row;
+    const expanded =
+      !this.props.collapsed || this.state.expandedRows.indexOf(index) !== -1;
     return (
       <tbody className="body" key={index}>
-        {this._renderRow(parentRow, index)}
-        {childRows.map((row, subindex) =>
-          this._renderRow({ ...row, grouped: true }, `${index}-${subindex}`)
-        )}
+        {this._renderRow(parentRow, index, null, true)}
+        {expanded &&
+          childRows.map((row, subindex) =>
+            this._renderRow({ ...row, grouped: true }, index, subindex)
+          )}
       </tbody>
     );
+  };
+
+  _renderExpandToggle = index => {
+    return (
+      <Button
+        icon="wg-small-arrow-bottom"
+        onClick={() => this.expandToggleClicked(index)}
+      />
+    );
+  };
+
+  expandToggleClicked = index => {
+    const oldExpandedRows = this.state.expandedRows;
+    const expandedIndexOf = oldExpandedRows.indexOf(index);
+    const expandedRows =
+      expandedIndexOf !== -1
+        ? [
+            ...oldExpandedRows.slice(0, expandedIndexOf),
+            ...oldExpandedRows.slice(expandedIndexOf + 1)
+          ]
+        : [...oldExpandedRows, index];
+    return this.setState({ expandedRows });
   };
 
   _renderSelectAllButton = () => {
@@ -138,7 +177,7 @@ class Table extends React.Component {
     );
   };
 
-  _renderColumnTitle = (columnIndex, columnProps) => {
+  _renderColumnTitle = (columnIndex, columnProps = {}) => {
     const { width, align } = columnProps;
     const cellProps = { width, align, className: "cell" };
     const headerCell = content => (
@@ -250,6 +289,7 @@ class Table extends React.Component {
     rowHeight: PropTypes.oneOf([rowHeights.SMALL, rowHeights.MEDIUM]),
     rowGroupKey: PropTypes.string,
     onTitleClick: PropTypes.func,
+    collapsed: PropTypes.bool,
     selectableRows: PropTypes.bool,
     selectionHeader: PropTypes.func,
     borderless: PropTypes.bool,
