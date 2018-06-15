@@ -106,11 +106,17 @@ class Table extends React.Component {
     );
   }
 
-  _renderRow = (row, index, subIndex = "", group = false) => {
+  _renderRow = (
+    row,
+    index,
+    subIndex = "",
+    group = false,
+    flattened = false
+  ) => {
     const { selectableRows, collapsed, children } = this.props;
     const rowKey = `${index},${subIndex}`;
     const selected = this.state.selectedRows.indexOf(rowKey) !== -1;
-    const grouped = typeof subIndex === "number";
+    const grouped = typeof subIndex === "number" && !flattened;
     const rowProps = { selected, grouped };
     return (
       <tr key={rowKey} className="row">
@@ -135,16 +141,19 @@ class Table extends React.Component {
   };
 
   _renderRowGroup = (row, index) => {
-    const { rowGroupKey } = this.props;
+    const { rowGroupKey, flatGroupCondition } = this.props;
     const { [rowGroupKey]: childRows, ...parentRow } = row;
+    const shouldUngroup = !!(flatGroupCondition && flatGroupCondition(row));
     const expanded =
-      !this.props.collapsed || this.state.expandedRows.indexOf(index) !== -1;
+      shouldUngroup ||
+      !this.props.collapsed ||
+      this.state.expandedRows.indexOf(index) !== -1;
     return (
       <tbody className="body" key={index}>
-        {this._renderRow(parentRow, index, "", true)}
+        {!shouldUngroup && this._renderRow(parentRow, index, "", true)}
         {expanded &&
           childRows.map((row, subindex) =>
-            this._renderRow(row, index, subindex)
+            this._renderRow(row, index, subindex, false, shouldUngroup)
           )}
       </tbody>
     );
@@ -312,6 +321,7 @@ class Table extends React.Component {
     width: PropTypes.string,
     rowHeight: PropTypes.oneOf([rowHeights.SMALL, rowHeights.MEDIUM]),
     rowGroupKey: PropTypes.string,
+    flatGroupCondition: PropTypes.func,
     onTitleClick: PropTypes.func,
     collapsed: PropTypes.bool,
     selectableRows: PropTypes.bool,

@@ -564,6 +564,22 @@ storiesOf("Table/Row Groups", module)
     })
   )
   .add(
+    "With some groups flattened",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          collapsed
+          rowGroupKey="suborders"
+          flatGroupCondition={row => row.name === "Farm Market 1"}
+        >
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
     "Small height, Expandable Groups and Selectable row",
     withInfo()(() => {
       return (
