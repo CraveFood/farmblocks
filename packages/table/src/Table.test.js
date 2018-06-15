@@ -55,7 +55,7 @@ describe("Table", function() {
         <Column title="Name" text={row => row.name} />
       </Table>
     );
-    component.setState({ selectedRows: [0] });
+    component.setState({ selectedRows: ["0,"] });
     const firstRowCheckbox = component.find("td input").first();
     expect(component.state().selectedRows.length).toBe(1);
 
