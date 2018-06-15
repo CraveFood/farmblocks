@@ -81,6 +81,7 @@ describe("Amount selectors", () => {
 
       expect(component.state("value")).toBe(onChangeValue);
     });
+
     test("should handle an event fired by input", () => {
       const initialValue = 0;
       const event = {
@@ -124,6 +125,26 @@ describe("Amount selectors", () => {
       const component = shallow(<AmountSelectors />);
       component.instance().onChange(event);
       expect(component.state().disableBoth).toBe(true);
+    });
+  });
+
+  describe("component update", () => {
+    test("should update value when prop value is set after mount", () => {
+      const onChange = jest.fn();
+      const component = mount(
+        <AmountSelectors value={1} onChange={onChange} />
+      );
+      const newValue = 2;
+      component.setProps({ value: newValue });
+      expect(component.state("value")).toBe(newValue);
+    });
+
+    test("should update displayed value when prop value changes", () => {
+      const nextValue = 10;
+      const expectedDisplayValue = "10.00";
+      const component = mount(<AmountSelectors value={0} />);
+      component.setProps({ value: nextValue });
+      expect(component.state().displayValue).toBe(expectedDisplayValue);
     });
   });
 });
