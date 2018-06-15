@@ -88,6 +88,27 @@ describe("Table", function() {
     });
   });
 
+  describe("Expandable Row Groups", () => {
+    test("Click on the expand button should expand/collapse a group", () => {
+      const component = mount(
+        <Table
+          data={[{ name: "Foo", items: [{ name: "Fooson" }] }, { name: "Bar" }]}
+          rowGroupKey="items"
+          collapsed
+        >
+          <Column title="Name" text={row => row.name} />
+        </Table>
+      );
+      const firstExpandButton = component.find("td Button").first();
+
+      firstExpandButton.props().onClick({});
+      expect(component.state().expandedRows.length).toBe(1);
+
+      firstExpandButton.props().onClick({});
+      expect(component.state().expandedRows.length).toBe(0);
+    });
+  });
+
   describe("Headers", () => {
     test("Clicking on a column title on a table without onTitleClick should return null", function() {
       const component = mount(
