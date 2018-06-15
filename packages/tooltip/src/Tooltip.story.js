@@ -102,4 +102,13 @@ storiesOf("Tooltip", module)
         />
       </div>
     </div>
+  ))
+  .add("custom padding", () => (
+    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+      <Tooltip
+        isVisible
+        text="Left aligned with custom padding"
+        padding="30px"
+      />
+    </div>
   ));

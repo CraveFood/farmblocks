@@ -73,7 +73,7 @@ const StyledTooltip = styled.div`
   position: absolute;
   z-index: ${props => props.zIndex};
   top: 15px;
-  padding: 8px;
+  padding: ${props => props.padding || "8px"};
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   border: solid 1px rgba(0, 0, 0, 0.16);
