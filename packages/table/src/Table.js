@@ -17,7 +17,7 @@ class Table extends React.Component {
     expandedRows: []
   };
 
-  componentDidMount() {
+  updateRowsMap() {
     const { rowGroupKey } = this.props;
     const hasSubRows = row =>
       rowGroupKey && row[rowGroupKey] && row[rowGroupKey].length;
@@ -38,6 +38,16 @@ class Table extends React.Component {
       return { ...entries, [`${index},`]: row };
     }, {});
     this.setState({ rowsMap });
+  }
+
+  componentDidMount() {
+    this.updateRowsMap();
+  }
+
+  componentDidUpdate(oldProps) {
+    if (oldProps.data.length !== this.props.data.length) {
+      this.updateRowsMap();
+    }
   }
 
   render() {
