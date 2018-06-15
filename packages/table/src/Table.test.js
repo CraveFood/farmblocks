@@ -86,6 +86,27 @@ describe("Table", function() {
       testButton.simulate("click");
       expect(component.state().selectedRows.length).toBe(0);
     });
+
+    test("Table with selection header bar should send selected data for rows added after mount", () => {
+      const selectionHeaderRenderer = jest.fn();
+      const component = mount(
+        <Table
+          data={dataFixture}
+          selectableRows
+          selectionHeader={selectionHeaderRenderer}
+        >
+          <Column clickable title="Name" text={row => row.name} />
+        </Table>
+      );
+
+      const newRow = { name: "New Row" };
+      const newData = dataFixture.concat(newRow);
+      component.setProps({ data: newData });
+
+      const lastRowCheckbox = component.find("td input").last();
+      lastRowCheckbox.simulate("change", { target: { checked: true } });
+      expect(selectionHeaderRenderer.mock.calls[0][0]).toEqual([newRow]);
+    });
   });
 
   describe("Expandable Row Groups", () => {
