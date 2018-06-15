@@ -174,10 +174,7 @@ class Table extends React.Component {
     const expandedIndexOf = oldExpandedRows.indexOf(index);
     const expandedRows =
       expandedIndexOf !== -1
-        ? [
-            ...oldExpandedRows.slice(0, expandedIndexOf),
-            ...oldExpandedRows.slice(expandedIndexOf + 1)
-          ]
+        ? oldExpandedRows.filter((item, index) => index !== expandedIndexOf)
         : [...oldExpandedRows, index];
     return this.setState({ expandedRows });
   };
