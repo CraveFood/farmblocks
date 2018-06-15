@@ -43,8 +43,10 @@ class AmountSelectors extends React.Component {
       ? event.target.validationMessage
       : "";
 
-    this.setState({ value, disableBoth, tooltipText }, cb);
-    return this.props.onChange(value);
+    const validValue = parseFloat(value) || 0;
+
+    this.setState({ value: validValue, disableBoth, tooltipText }, cb);
+    return this.props.onChange(validValue);
   };
 
   updateDisplayValue = () => {
