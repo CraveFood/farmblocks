@@ -588,6 +588,7 @@ storiesOf("Table/Row Groups", module)
           selectableRows
           collapsed
           rowGroupKey="suborders"
+          flatGroupCondition={row => row.name === "Farm Market 1"}
           rowHeight={rowHeights.SMALL}
         >
           <Column title="Name" text={row => row.name} />
@@ -620,6 +621,60 @@ storiesOf("Table/Row Groups", module)
           <Column title="Price" text={row => row.totalLabel} />
         </Table>
       );
+    })
+  )
+  .add(
+    "Table data updated after mount",
+    withInfo()(() => {
+      class MyStory extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            data: orders
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <button
+                onClick={() =>
+                  this.setState({
+                    data: this.state.data.concat({
+                      name: `Foo ${new Date().getTime()}`,
+                      totalLabel: `$ ${Math.random()}`
+                    })
+                  })
+                }
+              >
+                Add row
+              </button>
+              <Table
+                data={this.state.data}
+                selectableRows
+                selectionHeader={(selectedRows, clearFunction) => (
+                  <SelectionBar
+                    selectedRows={selectedRows}
+                    clearSelection={clearFunction}
+                    title={count =>
+                      count === 1
+                        ? "1 Order selected"
+                        : `${count} Orders selected`
+                    }
+                  />
+                )}
+                collapsed
+                rowGroupKey="suborders"
+                rowHeight={rowHeights.SMALL}
+              >
+                <Column title="Name" text={row => row.name} />
+                <Column title="Price" text={row => row.totalLabel} />
+              </Table>
+            </div>
+          );
+        }
+      }
+      return <MyStory />;
     })
   );
 
