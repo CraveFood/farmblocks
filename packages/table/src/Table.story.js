@@ -181,7 +181,8 @@ storiesOf("Table/Basic", module)
             selectedRows={selectedRows}
             clearSelection={clearFunction}
             title={count =>
-              count === 1 ? "1 fruit selected" : `${count} Fruits selected`}
+              count === 1 ? "1 fruit selected" : `${count} Fruits selected`
+            }
             primaryButtonLabel="Connect"
             primaryAction={action("primary button clicked")}
             secondaryButtonLabel="View Profile"
@@ -578,9 +579,35 @@ storiesOf("Table/Row Groups", module)
         </Table>
       );
     })
+  )
+  .add(
+    "Expandable, Selectable with selection header",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          selectableRows
+          selectionHeader={(selectedRows, clearFunction) => (
+            <SelectionBar
+              selectedRows={selectedRows}
+              clearSelection={clearFunction}
+              title={count =>
+                count === 1 ? "1 Order selected" : `${count} Orders selected`
+              }
+            />
+          )}
+          collapsed
+          rowGroupKey="suborders"
+          rowHeight={rowHeights.SMALL}
+        >
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
   );
 
-storiesOf("Table/SelectionBar", "module")
+storiesOf("Table/SelectionBar", module)
   .add("Default", withInfo()(() => <SelectionBar />))
   .add(
     "One item selected",
