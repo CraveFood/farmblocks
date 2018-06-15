@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.3"></a>
+## [0.5.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.5.2...@crave/farmblocks-amount-selectors@0.5.3) (2018-06-15)
+
+
+### Bug Fixes
+
+* **amount-selector:** update input value when prop is set after mount ([fadb825](https://github.com/CraveFood/farmblocks/commit/fadb825))
+
+
+
+
 <a name="0.5.2"></a>
 ## [0.5.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.5.1...@crave/farmblocks-amount-selectors@0.5.2) (2018-06-15)
 
