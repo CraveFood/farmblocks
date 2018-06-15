@@ -12,9 +12,33 @@ import { rowHeights } from "./constants";
 
 class Table extends React.Component {
   state = {
+    rowsMap: {},
     selectedRows: [],
     expandedRows: []
   };
+
+  componentDidMount() {
+    const { rowGroupKey } = this.props;
+    const hasSubRows = row =>
+      rowGroupKey && row[rowGroupKey] && row[rowGroupKey].length;
+
+    // iterate over all rows and sub-rows to create
+    // a hash table of rows indexed by keys in the
+    // format "<index>,<subIndex>"
+    const rowsMap = this.props.data.reduce((entries, row, index) => {
+      if (hasSubRows(row)) {
+        const subRows = row[rowGroupKey].reduce(
+          (subRowEntries, subRow, subIndex) => {
+            return { ...subRowEntries, [`${index},${subIndex}`]: subRow };
+          },
+          {}
+        );
+        return { ...entries, ...subRows };
+      }
+      return { ...entries, [`${index},`]: row };
+    }, {});
+    this.setState({ rowsMap });
+  }
 
   render() {
     const {
@@ -36,9 +60,9 @@ class Table extends React.Component {
       selectionHeaderVisible,
       borderless
     };
-    const selectedData = this.props.data.filter(
-      (row, index) => this.state.selectedRows.indexOf(index) !== -1
-    );
+    const selectedData = Object.keys(this.state.rowsMap)
+      .filter(key => this.state.selectedRows.indexOf(key) !== -1)
+      .map(key => this.state.rowsMap[key]);
     const clearFunction = () =>
       this.selectAllToggle(false, this.state.selectedRows.length);
     return (
@@ -82,24 +106,27 @@ class Table extends React.Component {
     );
   }
 
-  _renderRow = (row, index, subIndex, group = false) => {
+  _renderRow = (row, index, subIndex = "", group = false) => {
     const { selectableRows, collapsed, children } = this.props;
+    const rowKey = `${index},${subIndex}`;
+    const selected = this.state.selectedRows.indexOf(rowKey) !== -1;
+    const grouped = typeof subIndex === "number";
+    const rowProps = { selected, grouped };
     return (
-      <tr key={`${index}-${subIndex}`} className="row">
-        {selectableRows && this._renderSelectRowButton(index)}
+      <tr key={rowKey} className="row">
+        {selectableRows && this._renderSelectRowButton(rowKey, rowProps, group)}
         {React.Children.map(
           children,
           column =>
             column &&
             column.props &&
-            this._renderColumnCell(row, index, column.props)
+            this._renderColumnCell(row, index, {
+              ...column.props,
+              ...rowProps
+            })
         )}
         {collapsed && (
-          <BodyCell
-            className="cell"
-            selected={row.selected}
-            grouped={row.grouped}
-          >
+          <BodyCell className="cell" {...rowProps}>
             {group && this._renderExpandToggle(index)}
           </BodyCell>
         )}
@@ -114,10 +141,10 @@ class Table extends React.Component {
       !this.props.collapsed || this.state.expandedRows.indexOf(index) !== -1;
     return (
       <tbody className="body" key={index}>
-        {this._renderRow(parentRow, index, null, true)}
+        {this._renderRow(parentRow, index, "", true)}
         {expanded &&
           childRows.map((row, subindex) =>
-            this._renderRow({ ...row, grouped: true }, index, subindex)
+            this._renderRow(row, index, subindex)
           )}
       </tbody>
     );
@@ -147,7 +174,7 @@ class Table extends React.Component {
   };
 
   _renderSelectAllButton = () => {
-    const dataLength = this.props.data.length;
+    const dataLength = Object.keys(this.state.rowsMap).length;
     return (
       <HeaderCell className="cell">
         <div className="checkbox">
@@ -162,15 +189,15 @@ class Table extends React.Component {
     );
   };
 
-  _renderSelectRowButton = rowIndex => {
-    const isChecked = this.state.selectedRows.indexOf(rowIndex) !== -1;
+  _renderSelectRowButton = (rowKey, rowProps, disabled) => {
     return (
-      <BodyCell className="cell checkbox" selected={isChecked}>
+      <BodyCell className="cell checkbox" {...rowProps}>
         <div className="checkbox">
           <Checkbox
-            checked={isChecked}
+            checked={rowProps.selected}
+            disabled={disabled}
             onChange={event => {
-              this.selectRowToggle(rowIndex, event.target.checked);
+              this.selectRowToggle(rowKey, event.target.checked);
             }}
           />
         </div>
@@ -215,35 +242,31 @@ class Table extends React.Component {
     return headerCell(null);
   };
 
-  _renderColumnCell = (row, rowIndex, columnProps) => {
-    const { width, align } = columnProps;
-    const rowSelected = this.state.selectedRows.indexOf(rowIndex) !== -1;
-    const { grouped } = row;
+  _renderColumnCell = (row, rowIndex, props) => {
+    const { width, align, selected, grouped } = props;
     const cellProps = {
       width,
       align,
-      grouped,
       className: "cell",
-      selected: rowSelected
+      selected,
+      grouped
     };
     const bodyCell = content => <BodyCell {...cellProps}>{content}</BodyCell>;
-    if (columnProps.customCell) {
-      return bodyCell(columnProps.customCell(row, rowIndex, rowSelected));
+    if (props.customCell) {
+      return bodyCell(props.customCell(row, rowIndex, cellProps.selected));
     }
 
-    if (columnProps.text) {
-      const text = columnProps.text(row);
+    if (props.text) {
+      const text = props.text(row);
       const textProps = {
-        align: columnProps.align,
+        align: props.align,
         size: fontSizes.MEDIUM
       };
 
-      const type = columnProps.fontType
-        ? columnProps.fontType
-        : fontTypes.NORMAL;
+      const type = props.fontType ? props.fontType : fontTypes.NORMAL;
 
       return bodyCell(
-        <Text title={!columnProps.light} {...textProps} type={type}>
+        <Text title={!props.light} {...textProps} type={type}>
           {text}
         </Text>
       );
@@ -254,16 +277,16 @@ class Table extends React.Component {
   selectAllToggle = (checked, dataLength) => {
     if (checked) {
       return this.setState({
-        selectedRows: new Array(dataLength).fill().map((item, index) => index)
+        selectedRows: Object.keys(this.state.rowsMap)
       });
     }
     return this.setState({ selectedRows: [] });
   };
 
-  selectRowToggle = (index, checked) => {
+  selectRowToggle = (key, checked) => {
     const nextSelectedRows = checked
-      ? [...this.state.selectedRows, index]
-      : this.state.selectedRows.filter(value => value !== index);
+      ? [...this.state.selectedRows, key]
+      : this.state.selectedRows.filter(value => value !== key);
 
     return this.setState({
       selectedRows: nextSelectedRows
