@@ -43,6 +43,10 @@ See the stories source code for more usage examples.
 This package assumes that the application using it uses a font icon that have a
 checkmark symbol, and that the class name to include that icon is `.wg-check`.
 
+### Required Polyfills
+
+This package assumes it will run on an enviroment that has support for Array.includes and Object.keys, if you need to support IE and other older browsers, make sure you have those polyfills in place.
+
 ## Properties
 
 The Table component can be used for showing data grids using text cells in like the simple example above, but it also supports

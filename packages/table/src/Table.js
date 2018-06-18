@@ -71,7 +71,7 @@ class Table extends React.Component {
       borderless
     };
     const selectedData = Object.keys(this.state.rowsMap)
-      .filter(key => this.state.selectedRows.indexOf(key) !== -1)
+      .filter(key => this.state.selectedRows.includes(key))
       .map(key => this.state.rowsMap[key]);
     const clearFunction = () =>
       this.selectAllToggle(false, this.state.selectedRows.length);
@@ -125,7 +125,7 @@ class Table extends React.Component {
   ) => {
     const { selectableRows, collapsed, children } = this.props;
     const rowKey = `${index},${subIndex}`;
-    const selected = this.state.selectedRows.indexOf(rowKey) !== -1;
+    const selected = this.state.selectedRows.includes(rowKey);
     const grouped = typeof subIndex === "number" && !flattened;
     const rowProps = { selected, grouped };
     return (
@@ -157,7 +157,7 @@ class Table extends React.Component {
     const expanded =
       shouldUngroup ||
       !this.props.collapsed ||
-      this.state.expandedRows.indexOf(index) !== -1;
+      this.state.expandedRows.includes(index);
     return (
       <tbody className={`body ${!expanded ? "collapsed" : ""}`} key={index}>
         {!shouldUngroup && this._renderRow(parentRow, index, "", true)}
@@ -169,10 +169,9 @@ class Table extends React.Component {
   };
 
   _renderExpandToggle = index => {
-    const icon =
-      this.state.expandedRows.indexOf(index) !== -1
-        ? "wg-small-arrow-top"
-        : "wg-small-arrow-bottom";
+    const icon = this.state.expandedRows.includes(index)
+      ? "wg-small-arrow-top"
+      : "wg-small-arrow-bottom";
     return (
       <Button icon={icon} onClick={() => this.expandToggleClicked(index)} />
     );
