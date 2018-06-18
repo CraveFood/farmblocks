@@ -8,7 +8,11 @@ const Table = styled.table`
   border: ${props => !props.borderless && border};
   padding: 8px 16px;
 
-  ${props => props.selectionHeaderVisible && css`border-top: none;`};
+  ${props =>
+    props.selectionHeaderVisible &&
+    css`
+      border-top: none;
+    `};
   .cell {
     box-sizing: border-box;
     height: ${props => props.rowHeight};
@@ -25,6 +29,10 @@ const Table = styled.table`
       height: 16px;
       margin-left: -8px;
     }
+  }
+
+  tbody.collapsed tr.grouped {
+    display: none;
   }
 
   tbody tr:hover {

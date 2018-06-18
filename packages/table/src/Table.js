@@ -129,7 +129,7 @@ class Table extends React.Component {
     const grouped = typeof subIndex === "number" && !flattened;
     const rowProps = { selected, grouped };
     return (
-      <tr key={rowKey} className="row">
+      <tr key={rowKey} className={`row ${grouped ? "grouped" : ""}`}>
         {selectableRows && this._renderSelectRowButton(rowKey, rowProps, group)}
         {React.Children.map(
           children,
@@ -159,12 +159,11 @@ class Table extends React.Component {
       !this.props.collapsed ||
       this.state.expandedRows.indexOf(index) !== -1;
     return (
-      <tbody className="body" key={index}>
+      <tbody className={`body ${!expanded ? "collapsed" : ""}`} key={index}>
         {!shouldUngroup && this._renderRow(parentRow, index, "", true)}
-        {expanded &&
-          childRows.map((row, subindex) =>
-            this._renderRow(row, index, subindex, false, shouldUngroup)
-          )}
+        {childRows.map((row, subindex) =>
+          this._renderRow(row, index, subindex, false, shouldUngroup)
+        )}
       </tbody>
     );
   };
