@@ -5,7 +5,6 @@ module.exports = {
   DEMERARA_SUGAR: "#e9ebec",
   RED_ORANGE: "#ff4411",
   INDIGO_MILK_CAP: "#3498db",
-  INDIGO_MILK_CAP_06: "rgba(52,152,219,0.06)",
   BLUE_CORN: "#2980b9",
   LETTUCE: "#2ecc71",
   AVOCADO: "#27ae60",

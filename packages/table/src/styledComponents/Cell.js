@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
+import { transparentize } from "polished";
 
 const textAlign = props => props.align || "left";
 
+const selectedBg = transparentize(0.94, colors.INDIGO_MILK_CAP);
+
 const cellBg = props => {
   if (props.selected) {
-    return `${colors.INDIGO_MILK_CAP_06} !important`;
+    return `${selectedBg} !important`;
   }
   return props.grouped ? colors.SUGAR : "white";
 };
