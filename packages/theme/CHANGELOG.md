@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.0"></a>
+# 1.6.0 (2018-06-18)
+
+
+### Features
+
+* **table:** change selection background color and add different backgroud for grouped rows ([c37e2a9](https://github.com/CraveFood/farmblocks/commit/c37e2a9))
+
+
+
+
 <a name="1.5.1"></a>
 ## 1.5.1 (2018-04-11)
 

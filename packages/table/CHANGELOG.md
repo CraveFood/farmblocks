@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.3.5...@crave/farmblocks-table@1.4.0) (2018-06-18)
+
+
+### Bug Fixes
+
+* **table:** fix row selection and select/unselect all for tables with row groups ([d0391d5](https://github.com/CraveFood/farmblocks/commit/d0391d5))
+* **table:** update rowsMap after prop data update ([197d577](https://github.com/CraveFood/farmblocks/commit/197d577))
+
+
+### Features
+
+* **table:** change arrow icon from down to up when user expand a group ([d9632ba](https://github.com/CraveFood/farmblocks/commit/d9632ba))
+* **table:** change selection background color and add different backgroud for grouped rows ([c37e2a9](https://github.com/CraveFood/farmblocks/commit/c37e2a9))
+* **table:** implement expandable groups and row buttons ([48b5cd8](https://github.com/CraveFood/farmblocks/commit/48b5cd8))
+* **table:** include blue corner icon after checkbox on grouped rows ([8ac57dd](https://github.com/CraveFood/farmblocks/commit/8ac57dd))
+* **table:** new property for describing which groups to ungroup ([3bff390](https://github.com/CraveFood/farmblocks/commit/3bff390))
+* **table:** render nested rows with a parent row ([d2ad874](https://github.com/CraveFood/farmblocks/commit/d2ad874))
+
+
+
+
 <a name="1.3.5"></a>
 ## [1.3.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.3.4...@crave/farmblocks-table@1.3.5) (2018-06-12)
 
