@@ -1,7 +1,17 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
+import { transparentize } from "polished";
 
 const textAlign = props => props.align || "left";
+
+const selectedBg = transparentize(0.94, colors.INDIGO_MILK_CAP);
+
+const cellBg = props => {
+  if (props.selected) {
+    return `${selectedBg} !important`;
+  }
+  return props.grouped ? colors.SUGAR : "white";
+};
 
 export const HeaderCell = styled.th`
   text-align: ${textAlign};
@@ -20,5 +30,5 @@ export const HeaderCell = styled.th`
 `;
 export const BodyCell = styled.td`
   text-align: ${textAlign};
-  background-color: ${props => (props.selected ? "white" : colors.SUGAR)};
+  background-color: ${cellBg};
 `;

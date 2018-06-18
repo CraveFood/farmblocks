@@ -19,70 +19,7 @@ const fruits = [
   { id: 3, name: "Coconut", price: "$ 2.30" }
 ];
 
-const imgSrc =
-  "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
-
-const farms = [
-  {
-    name: "Madeline Farms",
-    thumbnail: imgSrc,
-    address: "7 Carroll Avenue, Newport, RI 02840",
-    url: "http://example.com",
-    distance: 2.8,
-    created_date: "2017-07-23T12:00:00",
-    type: "farm",
-    status: "not_connected",
-    slug: "madeline-farm"
-  },
-  {
-    name: "Farm Honey",
-    thumbnail: imgSrc,
-    address: "7 Carroll Avenue, Newport, RI 02840",
-    url: "http://example.com",
-    distance: 2.8,
-    created_date: "2017-07-23T12:00:00",
-    type: "food_hub",
-    status: "connected",
-    slug: "farm-honey"
-  }
-];
-
-const InfoCell = props => (
-  <div style={{ display: "flex" }}>
-    <Image src={props.imageSrc} />
-    <div style={{ marginLeft: 8 }}>
-      <div style={{ marginBottom: 8 }}>
-        <Text title size={fontSizes.MEDIUM}>
-          {props.title}
-        </Text>
-      </div>
-      <Link leftIcon="wg-place" href={props.linkSrc}>
-        {props.linkText}
-      </Link>
-    </div>
-  </div>
-);
-InfoCell.propTypes = {
-  imageSrc: PropTypes.string,
-  title: PropTypes.string,
-  linkText: PropTypes.string,
-  linkSrc: PropTypes.string
-};
-
-const ThumbnailCell = props => (
-  <div style={{ display: "flex" }}>
-    <div style={{ marginRight: 8 }}>
-      <Image badge size={24} src={props.imageSrc} />
-    </div>
-    <Text type={fontTypes.NEUTRAL}>{props.text}</Text>
-  </div>
-);
-ThumbnailCell.propTypes = {
-  imageSrc: PropTypes.string,
-  text: PropTypes.string
-};
-
-storiesOf("Table/Main", module)
+storiesOf("Table/Basic", module)
   .add(
     "Default sizes",
     withInfo()(() => (
@@ -244,7 +181,8 @@ storiesOf("Table/Main", module)
             selectedRows={selectedRows}
             clearSelection={clearFunction}
             title={count =>
-              count === 1 ? "1 fruit selected" : `${count} Fruits selected`}
+              count === 1 ? "1 fruit selected" : `${count} Fruits selected`
+            }
             primaryButtonLabel="Connect"
             primaryAction={action("primary button clicked")}
             secondaryButtonLabel="View Profile"
@@ -260,7 +198,71 @@ storiesOf("Table/Main", module)
         />
       </Table>
     ))
-  )
+  );
+
+const imgSrc = "https://picsum.photos/200";
+
+const farms = [
+  {
+    name: "Madeline Farms",
+    thumbnail: imgSrc,
+    address: "7 Carroll Avenue, Newport, RI 02840",
+    url: "http://example.com",
+    distance: 2.8,
+    created_date: "2017-07-23T12:00:00",
+    type: "farm",
+    status: "not_connected",
+    slug: "madeline-farm"
+  },
+  {
+    name: "Farm Honey",
+    thumbnail: imgSrc,
+    address: "7 Carroll Avenue, Newport, RI 02840",
+    url: "http://example.com",
+    distance: 2.8,
+    created_date: "2017-07-23T12:00:00",
+    type: "food_hub",
+    status: "connected",
+    slug: "farm-honey"
+  }
+];
+
+const InfoCell = props => (
+  <div style={{ display: "flex" }}>
+    <Image src={props.imageSrc} />
+    <div style={{ marginLeft: 8 }}>
+      <div style={{ marginBottom: 8 }}>
+        <Text title size={fontSizes.MEDIUM}>
+          {props.title}
+        </Text>
+      </div>
+      <Link leftIcon="wg-place" href={props.linkSrc}>
+        {props.linkText}
+      </Link>
+    </div>
+  </div>
+);
+InfoCell.propTypes = {
+  imageSrc: PropTypes.string,
+  title: PropTypes.string,
+  linkText: PropTypes.string,
+  linkSrc: PropTypes.string
+};
+
+const ThumbnailCell = props => (
+  <div style={{ display: "flex" }}>
+    <div style={{ marginRight: 8 }}>
+      <Image badge size={24} src={props.imageSrc} />
+    </div>
+    <Text type={fontTypes.NEUTRAL}>{props.text}</Text>
+  </div>
+);
+ThumbnailCell.propTypes = {
+  imageSrc: PropTypes.string,
+  text: PropTypes.string
+};
+
+storiesOf("Table/Custom Cells", module)
   .add(
     "Image + title + link (custom cell example)",
     withInfo()(() => {
@@ -469,6 +471,210 @@ storiesOf("Table/Main", module)
           />
         </Table>
       );
+    })
+  );
+
+const orders = [
+  {
+    name: "Farm A",
+    orderDate: "20181206",
+    itemQty: 1,
+    totalLabel: "$ 5",
+    status: "accepted"
+  },
+  {
+    name: "Farm Market 1",
+    totalLabel: "$ 20",
+    itemQty: 4,
+    suborders: [
+      {
+        name: "Farm B",
+        orderDate: "20181306",
+        itemQty: 2,
+        totalLabel: "$ 10",
+        status: "pending"
+      },
+      {
+        name: "Farm C",
+        orderDate: "20181206",
+        itemQty: 2,
+        totalLabel: "$ 10",
+        status: "accepted"
+      }
+    ]
+  },
+  {
+    name: "Farm D",
+    orderDate: "20181206",
+    itemQty: 1,
+    totalLabel: "$ 5",
+    status: "accepted"
+  },
+  {
+    name: "Farm Market 2",
+    totalLabel: "$ 15",
+    itemQty: 4,
+    suborders: [
+      {
+        name: "Farm E",
+        orderDate: "20181306",
+        itemQty: 2,
+        totalLabel: "$ 10",
+        status: "pending"
+      },
+      {
+        name: "Farm F",
+        orderDate: "20181206",
+        itemQty: 2,
+        totalLabel: "$ 5",
+        status: "accepted"
+      },
+      {
+        name: "Farm G",
+        orderDate: "20181206",
+        itemQty: 2,
+        totalLabel: "$ 5",
+        status: "canceled"
+      }
+    ]
+  }
+];
+
+storiesOf("Table/Row Groups", module)
+  .add(
+    "With row groups",
+    withInfo()(() => {
+      return (
+        <Table data={orders} rowGroupKey="suborders">
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Expandable Groups",
+    withInfo()(() => {
+      return (
+        <Table data={orders} collapsed rowGroupKey="suborders">
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "With some groups flattened",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          collapsed
+          rowGroupKey="suborders"
+          flatGroupCondition={row => row.name === "Farm Market 1"}
+        >
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Small height, Expandable Groups and Selectable row",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          selectableRows
+          collapsed
+          rowGroupKey="suborders"
+          flatGroupCondition={row => row.name === "Farm Market 1"}
+          rowHeight={rowHeights.SMALL}
+        >
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Expandable, Selectable with selection header",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          selectableRows
+          selectionHeader={(selectedRows, clearFunction) => (
+            <SelectionBar
+              selectedRows={selectedRows}
+              clearSelection={clearFunction}
+              title={count =>
+                count === 1 ? "1 Order selected" : `${count} Orders selected`
+              }
+            />
+          )}
+          collapsed
+          rowGroupKey="suborders"
+          rowHeight={rowHeights.SMALL}
+        >
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Table data updated after mount",
+    withInfo()(() => {
+      class MyStory extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            data: orders
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <button
+                onClick={() =>
+                  this.setState({
+                    data: this.state.data.concat({
+                      name: `Foo ${new Date().getTime()}`,
+                      totalLabel: `$ ${Math.random()}`
+                    })
+                  })
+                }
+              >
+                Add row
+              </button>
+              <Table
+                data={this.state.data}
+                selectableRows
+                selectionHeader={(selectedRows, clearFunction) => (
+                  <SelectionBar
+                    selectedRows={selectedRows}
+                    clearSelection={clearFunction}
+                    title={count =>
+                      count === 1
+                        ? "1 Order selected"
+                        : `${count} Orders selected`
+                    }
+                  />
+                )}
+                collapsed
+                rowGroupKey="suborders"
+                rowHeight={rowHeights.SMALL}
+              >
+                <Column title="Name" text={row => row.name} />
+                <Column title="Price" text={row => row.totalLabel} />
+              </Table>
+            </div>
+          );
+        }
+      }
+      return <MyStory />;
     })
   );
 

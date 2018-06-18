@@ -97,6 +97,10 @@ injectGlobal`
     content: "\\e942";
   }
 
+  .wg-small-arrow-top:before {
+    content: "\\e945";
+  }
+
   .wg-search:before {
     content: "\\e941";
   }
@@ -137,6 +141,7 @@ injectGlobal`
   .wg-place,
   .wg-external-link,
   .wg-small-arrow-bottom,
+  .wg-small-arrow-top,
   .wg-search,
   .wg-close-int,
   .wg-purveyor,
