@@ -45,7 +45,9 @@ const Menu = ({
   highlightedIndex,
   footer
 }) => {
-  if (!footer && !items.length) return null;
+  if (!footer && !items.length) {
+    return null;
+  }
   return (
     <DropdownMenuWrapper onMouseDown={onMenuMouseDown}>
       <ScrollBox
