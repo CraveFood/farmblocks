@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.2...@crave/farmblocks-search-field@1.0.3) (2018-06-18)
+
+
+### Bug Fixes
+
+* **search-field:** dont render menu if items list is empty ([d0a01b6](https://github.com/CraveFood/farmblocks/commit/d0a01b6))
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.1...@crave/farmblocks-search-field@1.0.2) (2018-06-18)
 
