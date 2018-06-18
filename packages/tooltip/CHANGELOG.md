@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.3"></a>
+## [0.7.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.7.2...@crave/farmblocks-tooltip@0.7.3) (2018-06-18)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-tooltip
+
 <a name="0.7.2"></a>
 ## 0.7.2 (2018-06-12)
 

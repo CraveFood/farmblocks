@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.2"></a>
+## [2.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.2.1...@crave/farmblocks-link@2.2.2) (2018-06-18)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-link
+
 <a name="2.2.1"></a>
 ## 2.2.1 (2018-06-12)
 
