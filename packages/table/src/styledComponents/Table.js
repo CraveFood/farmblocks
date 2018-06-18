@@ -23,6 +23,20 @@ const Table = styled.table`
       padding-right: 16px;
     }
 
+    /* corner icon for grouped rows */
+    &.corner-icon:before {
+      content: "";
+      display: block;
+      float: left;
+      box-sizing: border-box;
+      width: 8px;
+      height: 8px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border-left: 2px solid ${colors.INDIGO_MILK_CAP};
+      border-bottom: 2px solid ${colors.INDIGO_MILK_CAP};
+    }
+
     /* @HACK checkbox component already have a left padding,
      so we use negative margin to keep only the table padding */
     & .checkbox {

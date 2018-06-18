@@ -133,12 +133,13 @@ class Table extends React.Component {
         {selectableRows && this._renderSelectRowButton(rowKey, rowProps, group)}
         {React.Children.map(
           children,
-          column =>
+          (column, columnIndex) =>
             column &&
             column.props &&
             this._renderColumnCell(row, index, {
               ...column.props,
-              ...rowProps
+              ...rowProps,
+              columnIndex
             })
         )}
         {collapsed && (
@@ -257,11 +258,11 @@ class Table extends React.Component {
   };
 
   _renderColumnCell = (row, rowIndex, props) => {
-    const { width, align, selected, grouped } = props;
+    const { width, align, selected, grouped, columnIndex } = props;
     const cellProps = {
       width,
       align,
-      className: "cell",
+      className: `cell ${grouped && columnIndex === 0 ? "corner-icon" : ""}`,
       selected,
       grouped
     };
