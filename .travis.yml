@@ -44,6 +44,8 @@ after_success:
       git add docs;
       git commit -m "chore(docs): [ci skip] gallery update";
       git push origin "$BRANCH";
+      ./bin/github_get_release_id.sh;
+      ./bin/github_get_publish_release.sh;
     else
       lerna publish --canary --yes || travis_terminate 1;
     fi
