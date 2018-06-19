@@ -36,14 +36,8 @@ after_success:
   - git config user.email "travis@cravefood.services" || travis_terminate 1;
   - git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git || travis_terminate 1;
   - |
-    if [ $BRANCH == "master" ]; then
-      yarn snyk || travis_terminate 1;
-      snyk monitor || travis_terminate 1;
-      lerna publish --yes || travis_terminate 1;
+    if [ $BRANCH == "test-master-1" ]; then
       yarn build-storybook || travis_terminate 1;
-      git add docs;
-      git commit -m "chore(docs): [ci skip] gallery update";
-      git push origin "$BRANCH";
       ./bin/github_get_release_id.sh;
       ./bin/github_get_publish_release.sh;
     else
