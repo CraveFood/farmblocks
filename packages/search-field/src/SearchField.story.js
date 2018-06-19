@@ -194,4 +194,45 @@ storiesOf("Search Field", module)
         </div>
       </div>
     ))
+  )
+  .add(
+    "update items",
+    withInfo()(() => {
+      class Test extends React.Component {
+        state = {
+          items,
+          value: "2"
+        };
+
+        render() {
+          return (
+            <div>
+              <button
+                onClick={() => {
+                  this.setState({
+                    value: "444"
+                  });
+
+                  setTimeout(() => {
+                    this.setState({
+                      items: [{ value: "444", label: "Avocado", image }]
+                    });
+                  }, 1000);
+                }}
+              >
+                Update items
+              </button>
+
+              <SearchField
+                value={this.state.value}
+                items={this.state.items}
+                label="Fruits"
+              />
+            </div>
+          );
+        }
+      }
+
+      return <Test />;
+    })
   );
