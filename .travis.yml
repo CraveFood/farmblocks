@@ -39,7 +39,7 @@ after_success:
     if [ $BRANCH == "test-master-1" ]; then
       yarn build-storybook || travis_terminate 1;
       ./bin/github_get_release_id.sh;
-      ./bin/github_get_publish_release.sh;
+      ./bin/github_publish_release.sh;
     else
       lerna publish --canary --yes || travis_terminate 1;
     fi
