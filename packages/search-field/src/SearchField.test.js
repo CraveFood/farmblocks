@@ -140,13 +140,28 @@ describe("SearchField", () => {
     test("should return new state if value changes", () => {
       const item = { value: "ab", label: "AB" };
       const props = { value: "ab", items: [item] };
-      const state = { lastValue: "a" };
+      const state = { lastValue: "a", lastItems: [item] };
       const result = SearchField.getDerivedStateFromProps(props, state);
 
       expect(result).toEqual({
         selectedItem: item,
         inputValue: item.label,
-        lastValue: props.value
+        lastValue: props.value,
+        lastItems: props.items
+      });
+    });
+
+    test("should return new state if items changes", () => {
+      const item = { value: "ab", label: "AB" };
+      const props = { value: "ab", items: [item] };
+      const state = { lastValue: "ab", lastItems: [] };
+      const result = SearchField.getDerivedStateFromProps(props, state);
+
+      expect(result).toEqual({
+        selectedItem: item,
+        inputValue: item.label,
+        lastValue: props.value,
+        lastItems: props.items
       });
     });
 

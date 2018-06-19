@@ -3,6 +3,7 @@ import { polyfill } from "react-lifecycles-compat";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
 import debounce from "lodash.debounce";
+import isEqual from "lodash.isequal";
 import disabledTooltip, {
   disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
@@ -28,6 +29,7 @@ class SearchField extends React.Component {
     focused: false,
     inputValue: "",
     lastValue: "",
+    lastItems: [],
     selectedItem: null
   };
 
@@ -64,13 +66,17 @@ class SearchField extends React.Component {
   };
 
   static getDerivedStateFromProps = (props, state) => {
-    if (props.value !== state.lastValue) {
+    if (
+      props.value !== state.lastValue ||
+      !isEqual(props.items, state.lastItems)
+    ) {
       const selectedItem =
         props.items && props.items.find(item => item.value === props.value);
       return {
         inputValue: selectedItem ? selectedItem.label : "",
         selectedItem,
-        lastValue: props.value
+        lastValue: props.value,
+        lastItems: props.items
       };
     }
     return null;
