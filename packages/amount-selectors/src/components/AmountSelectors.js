@@ -79,7 +79,12 @@ class AmountSelectors extends React.Component {
 
   getValidValue = value => {
     const parsedValue = parseFloat(value) || 0;
-    return Math.min(this.props.max, Math.max(this.props.min, parsedValue));
+    const validValue = Math.min(
+      this.props.max,
+      Math.max(this.props.min, parsedValue)
+    );
+
+    return Number(validValue.toFixed(2));
   };
 
   updateStateWithNewValue = value => {
