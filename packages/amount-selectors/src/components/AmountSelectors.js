@@ -19,15 +19,19 @@ const selectorSizeToFontSize = {
 };
 
 class AmountSelectors extends React.Component {
-  state = {
-    value: 0,
-    disableBoth: false,
-    tooltipText: "",
-    displayValue: ""
-  };
+  constructor(props) {
+    super(props);
 
-  componentDidMount() {
-    this.updateStateWithNewValue(this.props.value);
+    const { value } = this.props;
+    const parsedValue = parseFloat(value) || 0;
+    const displayValue = parsedValue.toFixed(2);
+
+    this.state = {
+      value: Number(displayValue),
+      disableBoth: false,
+      tooltipText: "",
+      displayValue
+    };
   }
 
   componentDidUpdate(prevProps, prevState) {
