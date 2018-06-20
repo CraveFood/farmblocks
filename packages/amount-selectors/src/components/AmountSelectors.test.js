@@ -147,4 +147,16 @@ describe("Amount selectors", () => {
       expect(component.state().displayValue).toBe(expectedDisplayValue);
     });
   });
+
+  test("getValidValue should return a valid value with 2 decimal places", () => {
+    const component = shallow(<AmountSelectors />);
+    const { getValidValue } = component.instance();
+
+    const value = 3.345678;
+    const validValue = getValidValue(value);
+
+    const expectedValue = Number(value.toFixed(2));
+
+    expect(validValue).toBe(expectedValue);
+  });
 });
