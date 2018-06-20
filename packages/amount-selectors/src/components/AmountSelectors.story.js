@@ -41,6 +41,10 @@ storiesOf("Amount selectors", module)
     withInfo()(() => <AmountSelectors max={3} value={2} step={0.5} />)
   )
   .add(
+    "With a max value of 3 and initial value = 5",
+    withInfo()(() => <AmountSelectors max={3} value={5} />)
+  )
+  .add(
     "With onChange function",
     withInfo()(() => <AmountSelectors onChange={action("amount changed")} />)
   )
