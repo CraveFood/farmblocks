@@ -14,7 +14,7 @@
     "lint.test":
       "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
     "coverage":
-      "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose",
+      "yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
     "build-storybook": "build-storybook -s .storybook/assets -o docs",
