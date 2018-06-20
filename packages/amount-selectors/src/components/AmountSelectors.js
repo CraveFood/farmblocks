@@ -20,11 +20,21 @@ const selectorSizeToFontSize = {
 
 class AmountSelectors extends React.Component {
   state = {
-    value: this.props.value,
+    value: 0,
     disableBoth: false,
     tooltipText: "",
-    displayValue: this.props.value
+    displayValue: ""
   };
+
+  componentDidMount() {
+    this.updateStateWithNewValue(this.props.value);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.value !== this.props.value) {
+      this.updateStateWithNewValue(this.props.value);
+    }
+  }
 
   // Conditions to disable both buttons,
   // see https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
@@ -49,21 +59,6 @@ class AmountSelectors extends React.Component {
     return this.props.onChange(validValue);
   };
 
-  validValue = value => {
-    const parsedValue = parseFloat(value) || 0;
-    return Math.min(this.props.max, Math.max(this.props.min, parsedValue));
-  };
-
-  updateDisplayValue = () => {
-    const validValue = this.validValue(this.state.value);
-    this.setState({
-      value: validValue,
-      displayValue: validValue.toFixed(2)
-    });
-
-    return this.props.onChange(validValue);
-  };
-
   decrement = () => {
     const value = this.state.value - this.props.step;
 
@@ -76,15 +71,31 @@ class AmountSelectors extends React.Component {
     this.onChange(Math.min(value, this.props.max), this.updateDisplayValue);
   };
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevProps.value !== this.props.value) {
-      const validValue = this.validValue(this.props.value);
-      this.setState({
-        value: validValue,
-        displayValue: validValue.toFixed(2)
-      });
-    }
-  }
+  updateDisplayValue = () => {
+    const validValue = this.updateStateWithNewValue(this.state.value);
+
+    return this.props.onChange(validValue);
+  };
+
+  getValidValue = value => {
+    const parsedValue = parseFloat(value) || 0;
+    const validValue = Math.min(
+      this.props.max,
+      Math.max(this.props.min, parsedValue)
+    );
+
+    return Number(validValue.toFixed(2));
+  };
+
+  updateStateWithNewValue = value => {
+    const validValue = this.getValidValue(value);
+    this.setState({
+      value: validValue,
+      displayValue: validValue.toFixed(2)
+    });
+
+    return validValue;
+  };
 
   render() {
     return (
