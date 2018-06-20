@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.6"></a>
+## [0.5.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.5.5...@crave/farmblocks-amount-selectors@0.5.6) (2018-06-20)
+
+
+### Bug Fixes
+
+* **AmountSelectors:** render initial value even though its value is out of range ([bd036ff](https://github.com/CraveFood/farmblocks/commit/bd036ff)), closes [#412](https://github.com/CraveFood/farmblocks/issues/412)
+
+
+
+
 <a name="0.5.5"></a>
 ## [0.5.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.5.4...@crave/farmblocks-amount-selectors@0.5.5) (2018-06-20)
 
