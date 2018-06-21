@@ -46,12 +46,9 @@ describe("Popover", () => {
   });
 
   describe("handleOuterClick", () => {
-    const map = {};
-    document.addEventListener = jest.fn((event, cb) => {
-      map[event] = cb;
-    });
+    const originalEventListener = document.addEventListener;
 
-    let wrapper, popoverInstance;
+    let wrapper, popoverInstance, map;
 
     class PopoverComponent extends React.Component {
       render() {
@@ -70,11 +67,20 @@ describe("Popover", () => {
     }
 
     beforeEach(() => {
+      map = {};
+      document.addEventListener = jest.fn((event, cb) => {
+        map[event] = cb;
+      });
+
       wrapper = mount(<PopoverComponent />);
 
       // open popover
       popoverInstance = wrapper.find(Popover).instance();
       wrapper.find("#trigger").simulate("click");
+    });
+
+    afterEach(() => {
+      document.addEventListener = originalEventListener;
     });
 
     test("should dismiss popover on outer click", () => {
