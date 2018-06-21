@@ -28,7 +28,7 @@ class Popover extends React.Component {
   };
 
   toggle = () => {
-    this.setState((prevState, props) => ({ isVisible: !prevState.isVisible }));
+    this.setState(prevState => ({ isVisible: !prevState.isVisible }));
   };
 
   hide = () => this.setState({ isVisible: false });
