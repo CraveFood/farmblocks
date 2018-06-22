@@ -29,6 +29,13 @@ storiesOf("Tooltip", module)
       />
     </div>
   ))
+  .add("isVisible true - hideArrow", () => (
+    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+      <Tooltip isVisible hideArrow>
+        This is a left aligned tooltip without arrow
+      </Tooltip>
+    </div>
+  ))
   .add("isVisible false", () => (
     <div style={{ position: "relative", width: "250px", border: "1px" }}>
       <Tooltip isVisible={false} text="Hey yo" />
@@ -94,5 +101,14 @@ storiesOf("Tooltip", module)
           bondariesSelector=".exampleContainer"
         />
       </div>
+    </div>
+  ))
+  .add("custom padding", () => (
+    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+      <Tooltip
+        isVisible
+        text="Left aligned with custom padding"
+        padding="30px"
+      />
     </div>
   ));
