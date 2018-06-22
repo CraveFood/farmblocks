@@ -28,7 +28,7 @@ install:
 script:
   - yarn lint .
   - yarn lint.test .
-  - yarn coverage
+  - travis_wait yarn coverage
   - greenkeeper-lockfile-upload
 after_success:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
