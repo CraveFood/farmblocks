@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.7.3...@crave/farmblocks-tooltip@0.8.0) (2018-06-22)
+
+
+### Features
+
+* **Tooltip:** add animation ([0a5a7ee](https://github.com/CraveFood/farmblocks/commit/0a5a7ee))
+* **Tooltip:** add padding property ([ea42ffe](https://github.com/CraveFood/farmblocks/commit/ea42ffe))
+* **Tooltip:** add showArrow property ([07869da](https://github.com/CraveFood/farmblocks/commit/07869da))
+
+
+
+
 <a name="0.7.3"></a>
 ## [0.7.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.7.2...@crave/farmblocks-tooltip@0.7.3) (2018-06-18)
 
