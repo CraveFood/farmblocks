@@ -37,8 +37,16 @@ class SearchField extends React.Component {
     this.props.onSearchChange,
     this.props.debounceDelay
   );
+
   onSearchChange = event => {
     const { value } = event.target;
+
+    // We are forcing an update and calling focus
+    // on its callback to prevent the SearchField
+    // from losing focus when editing/cleaning an selectedItem
+    if (value === "") {
+      this.forceUpdate(() => this.input.focus());
+    }
 
     this.setState({
       inputValue: value,
@@ -139,6 +147,7 @@ class SearchField extends React.Component {
   };
 
   onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
+
   onBlur = () => {
     const focusReset = { focused: false, highlightedIndex: -1 };
     this.setState(prevState => {
@@ -150,6 +159,7 @@ class SearchField extends React.Component {
       return { ...focusReset, inputValue: "", selectedItem: null };
     });
   };
+
   preventBlur = event => {
     event.preventDefault();
   };
@@ -183,7 +193,6 @@ class SearchField extends React.Component {
 
   getInputValue = () => {
     const { selectedItem, highlightedIndex, inputValue } = this.state;
-
     if (selectedItem) return selectedItem.label;
     if (highlightedIndex === -1) return inputValue;
 
@@ -212,8 +221,8 @@ class SearchField extends React.Component {
     const { focused, selectedItem } = this.state;
 
     const Input = selectedItem ? ReadOnly : EnhancedInput;
-    Input.displayName = "Input";
 
+    Input.displayName = "Input";
     return (
       <DropdownWrapper
         style={{ width, zIndex }}
