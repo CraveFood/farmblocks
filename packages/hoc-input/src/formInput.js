@@ -90,9 +90,19 @@ const formInput = WrappedComponent => {
           <i className="wg-search" />
         </div>
       );
+
+      // We are preventing blur on MouseDown event to avoid a bug that
+      // happens in the SearchField when typing and then clicking on the
+      // clearButton. In this case, SearchField would lose focus because of
+      // its onBlur function, which is fired before this clearButton's onClick,
+      // and hence handleClearClick would not be called.
       const clearButton = (clearable || isSearch) &&
         this.state.value && (
-          <Link className="clear" onClick={this.handleClearClick}>
+          <Link
+            className="clear"
+            onClick={this.handleClearClick}
+            onMouseDown={this.preventBlur}
+          >
             <i className={clearIcon} />
           </Link>
         );
@@ -155,6 +165,8 @@ const formInput = WrappedComponent => {
         });
       }
     }
+
+    preventBlur = event => event.preventDefault();
 
     handleClearClick = () => {
       this.setState({ value: "" });
