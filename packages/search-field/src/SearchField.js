@@ -41,9 +41,9 @@ class SearchField extends React.Component {
   onSearchChange = event => {
     const { value } = event.target;
 
-    // We are forcing an update and calling focus
-    // on its callback to prevent the SearchField
-    // from losing focus when editing/cleaning an selectedItem
+    // We are forcing an update to render an input,
+    // otherwise we'd have a div instead,
+    // and calling focus on it
     if (value === "") {
       this.forceUpdate(() => this.input.focus());
     }
