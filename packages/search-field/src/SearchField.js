@@ -40,14 +40,6 @@ class SearchField extends React.Component {
 
   onSearchChange = event => {
     const { value } = event.target;
-
-    // We are forcing an update to render an input,
-    // otherwise we'd have a div instead,
-    // and calling focus on it
-    if (value === "") {
-      this.forceUpdate(() => this.input.focus());
-    }
-
     this.setState({
       inputValue: value,
       highlightedIndex: -1,
@@ -223,6 +215,15 @@ class SearchField extends React.Component {
     const Input = selectedItem ? ReadOnly : EnhancedInput;
 
     Input.displayName = "Input";
+
+    // Focus the input component after
+    // selecting an item and then clearing it
+    // by clicking on the pencil icon
+    const autoFocus =
+      this.input !== undefined &&
+      this.input.nodeName === undefined &&
+      !selectedItem;
+
     return (
       <DropdownWrapper
         style={{ width, zIndex }}
@@ -233,6 +234,7 @@ class SearchField extends React.Component {
           onChange={this.onSearchChange}
           type={selectedItem ? "text" : "search"}
           clearable
+          focused={autoFocus}
           clearIcon={selectedItem ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
