@@ -69,7 +69,7 @@ const formInput = WrappedComponent => {
       };
 
       return (
-        <Wrapper {...wrapperProps} onClick={this.handleWrapperClick}>
+        <Wrapper {...wrapperProps} onClick={this.setInputFocus}>
           {this._renderInput(wrappedComponentProps)}
           {this._renderLabel(label)}
         </Wrapper>
@@ -91,18 +91,9 @@ const formInput = WrappedComponent => {
         </div>
       );
 
-      // We are preventing blur on MouseDown event to avoid a bug that
-      // happens in the SearchField when typing and then clicking on the
-      // clearButton. In this case, SearchField would lose focus because of
-      // its onBlur function, which is fired before this clearButton's onClick,
-      // and hence handleClearClick would not be called.
       const clearButton = (clearable || isSearch) &&
         this.state.value && (
-          <Link
-            className="clear"
-            onClick={this.handleClearClick}
-            onMouseDown={this.preventBlur}
-          >
+          <Link className="clear" onClick={this.handleClearClick}>
             <i className={clearIcon} />
           </Link>
         );
@@ -120,6 +111,7 @@ const formInput = WrappedComponent => {
           ref={element => {
             this.inputRef = element && element.querySelector("input");
           }}
+          onMouseDown={this.preventBlur}
         >
           {icon}
           <WrappedComponent
@@ -150,6 +142,12 @@ const formInput = WrappedComponent => {
       );
     }
 
+    componentDidMount() {
+      if (this.props.focused) {
+        this.setInputFocus();
+      }
+    }
+
     componentWillReceiveProps(nextProps) {
       const nextValue = nextProps.input
         ? nextProps.input.value
@@ -177,7 +175,7 @@ const formInput = WrappedComponent => {
       });
     };
 
-    handleWrapperClick = () => {
+    setInputFocus = () => {
       this.inputRef && this.inputRef.focus();
     };
 
