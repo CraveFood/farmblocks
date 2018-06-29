@@ -63,6 +63,7 @@ storiesOf("Tag", module)
           onRemove={action("onRemove")}
           text="This is a long removable tag"
         />
+        <Tag text="Neutral tag" type={tagTypes.NEUTRAL} />
         <Tag text="And that's an even bigger and wider not removable tag" />
       </div>
     ))
