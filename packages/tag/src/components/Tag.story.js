@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
-import Tag from "./Tag";
+import Tag, { tagTypes } from "..";
 
 storiesOf("Tag", module)
   .add(
@@ -27,6 +27,26 @@ storiesOf("Tag", module)
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
         <Tag onRemove={action("onRemove")} text="Removable Tag #1" value="1" />
+      </div>
+    ))
+  )
+  .add(
+    "Neutral",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag type={tagTypes.NEUTRAL} text="THIS IS A TAG" />
+      </div>
+    ))
+  )
+  .add(
+    "Neutral removable",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag
+          type={tagTypes.NEUTRAL}
+          text="You can remove this tag"
+          onRemove={action("onRemove")}
+        />
       </div>
     ))
   )
