@@ -7,15 +7,11 @@ const rightPadding = props => (props.onRemove ? "0px" : "8px");
 
 const typeStyles = {
   [tagTypes.SECONDARY]: css`
-    border-color: ${colorConstants.GREY_16};
     background-color: ${colorConstants.INDIGO_MILK_CAP};
     color: white;
     &:hover {
       border-color: ${colorConstants.GREY_32};
       background-color: ${colorConstants.BLUE_CORN};
-    }
-    .icon {
-      color: ${colorConstants.GREY_32};
     }
     &:hover .icon,
     &:focus .icon {
@@ -23,14 +19,10 @@ const typeStyles = {
     }
   `,
   [tagTypes.NEUTRAL]: css`
-    border-color: ${colorConstants.GREY_16};
     background-color: ${colorConstants.SUGAR};
     color: ${colorConstants.OYSTER};
     &:hover {
       background-color: ${colorConstants.GREY_16};
-    }
-    .icon {
-      color: ${colorConstants.GREY_32};
     }
   `
 };
@@ -38,7 +30,7 @@ const typeStyles = {
 const StyledTag = styled.div`
   display: inline-flex;
   box-sizing: border-box;
-  border: 1px solid;
+  border: 1px solid ${colorConstants.GREY_16};
   border-radius: 4px;
   padding: 6px ${rightPadding} 8px 8px;
   height: 32px;
@@ -60,6 +52,7 @@ const StyledTag = styled.div`
     box-sizing: border-box;
     padding: 5px 8px 8px 8px;
     font-size: 8px;
+    color: ${colorConstants.GREY_32};
 
     pointer-events: auto;
   }
