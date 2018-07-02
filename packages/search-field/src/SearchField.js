@@ -216,12 +216,13 @@ class SearchField extends React.Component {
 
     Input.displayName = "Input";
 
-    // Focus the input component after
-    // selecting an item and then clearing it
-    // by clicking on the pencil icon
+    // When there's an item selected and we click the edit icon,
+    // the input ref points to the StaticInput instance, which has no focus().
+    // By setting the component focused prop, the regular
+    // input will get focus when it gets mounted.
     const autoFocus =
       this.input !== undefined &&
-      this.input.nodeName === undefined &&
+      this.input.nodeName !== "INPUT" &&
       !selectedItem;
 
     return (
