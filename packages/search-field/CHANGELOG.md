@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.6...@crave/farmblocks-search-field@1.0.7) (2018-07-03)
+
+
+### Bug Fixes
+
+* **Search Field:** fix check for null or undefined value ([e2baac9](https://github.com/CraveFood/farmblocks/commit/e2baac9))
+* **Search Field:** fix check to avoid focus when updating items ([442fd38](https://github.com/CraveFood/farmblocks/commit/442fd38))
+* **Search Field:** focus on input after selecting an item and clearing it ([faec8f2](https://github.com/CraveFood/farmblocks/commit/faec8f2))
+
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.5...@crave/farmblocks-search-field@1.0.6) (2018-06-25)
 

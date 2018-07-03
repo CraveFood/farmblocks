@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.4"></a>
+## [3.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.0.3...@crave/farmblocks-hoc-input@3.0.4) (2018-07-03)
+
+
+### Bug Fixes
+
+* **Input Hoc:** add an preventBlur function on MouseDown event of clearButton ([d8490bf](https://github.com/CraveFood/farmblocks/commit/d8490bf))
+* **Input Hoc:** change the way the component handles focus ([2b5c1b4](https://github.com/CraveFood/farmblocks/commit/2b5c1b4))
+
+
+
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.0.2...@crave/farmblocks-hoc-input@3.0.3) (2018-06-22)
 
