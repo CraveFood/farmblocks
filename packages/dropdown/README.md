@@ -58,6 +58,7 @@ This code will render:
 | children | content to be rendered as the item text                                                                                | node             |          |         |
 | text     | This property is rendered as children of the item component. If passed, it suppress the children property              | string           |          |         |
 | value    | Option value. This property will be passed as the first argument on `handleSelection` property from Dropdown component | string or number |          |         |
+| footer   | Flag to use on a last item to behave like a footer, without hover color and regular cursor                             |                  | false    |
 
 ## License
 
