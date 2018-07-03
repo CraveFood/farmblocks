@@ -221,9 +221,7 @@ class SearchField extends React.Component {
     // By setting the component focused prop, the regular
     // input will get focus when it gets mounted.
     const autoFocus =
-      this.input !== undefined &&
-      this.input.nodeName !== "INPUT" &&
-      !selectedItem;
+      this.input && this.input.nodeName !== "INPUT" && !selectedItem;
 
     return (
       <DropdownWrapper
