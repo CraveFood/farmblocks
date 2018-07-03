@@ -1,9 +1,14 @@
+import React from "react";
+import Adapter from "enzyme-adapter-react-16";
 import debounce from "lodash.debounce";
+import Enzyme, { mount } from "enzyme";
 
 import SearchField from "./SearchField";
 import Menu from "./components/Menu";
 
 jest.mock("lodash.debounce");
+
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("SearchField", () => {
   let setStateSpy, instance;
@@ -700,6 +705,35 @@ describe("SearchField", () => {
       const result = SearchField.defaultProps.onScrollReachEnd();
 
       expect(result).toBe(false);
+    });
+
+    test("autofocus should return undefined at mount", () => {
+      const component = mount(<SearchField />);
+      const input = component.find("Input").first();
+
+      expect(input.props().focused).toBe(undefined);
+    });
+
+    test("autofocus should return true", () => {
+      const component = mount(<SearchField />);
+
+      component.setState({ selectedItem: "1" });
+
+      component.setState({ selectedItem: null });
+
+      const input = component.find("Input").first();
+
+      expect(input.props().focused).toBe(true);
+    });
+
+    test("autofocus should return false", () => {
+      const component = mount(<SearchField />);
+
+      component.setState({ selectedItem: null });
+
+      const input = component.find("Input").first();
+
+      expect(input.props().focused).toBe(false);
     });
   });
 });
