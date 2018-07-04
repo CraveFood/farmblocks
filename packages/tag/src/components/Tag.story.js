@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
-import Tag from "./Tag";
+import Tag, { tagTypes } from "..";
 
 storiesOf("Tag", module)
   .add(
@@ -31,6 +31,26 @@ storiesOf("Tag", module)
     ))
   )
   .add(
+    "Neutral",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag type={tagTypes.NEUTRAL} text="THIS IS A TAG" />
+      </div>
+    ))
+  )
+  .add(
+    "Neutral removable",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag
+          type={tagTypes.NEUTRAL}
+          text="You can remove this tag"
+          onRemove={action("onRemove")}
+        />
+      </div>
+    ))
+  )
+  .add(
     "Multiple tags",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
@@ -43,6 +63,7 @@ storiesOf("Tag", module)
           onRemove={action("onRemove")}
           text="This is a long removable tag"
         />
+        <Tag text="Neutral tag" type={tagTypes.NEUTRAL} />
         <Tag text="And that's an even bigger and wider not removable tag" />
       </div>
     ))

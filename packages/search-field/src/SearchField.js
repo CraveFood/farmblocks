@@ -37,9 +37,9 @@ class SearchField extends React.Component {
     this.props.onSearchChange,
     this.props.debounceDelay
   );
+
   onSearchChange = event => {
     const { value } = event.target;
-
     this.setState({
       inputValue: value,
       highlightedIndex: -1,
@@ -139,6 +139,7 @@ class SearchField extends React.Component {
   };
 
   onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
+
   onBlur = () => {
     const focusReset = { focused: false, highlightedIndex: -1 };
     this.setState(prevState => {
@@ -150,6 +151,7 @@ class SearchField extends React.Component {
       return { ...focusReset, inputValue: "", selectedItem: null };
     });
   };
+
   preventBlur = event => {
     event.preventDefault();
   };
@@ -183,7 +185,6 @@ class SearchField extends React.Component {
 
   getInputValue = () => {
     const { selectedItem, highlightedIndex, inputValue } = this.state;
-
     if (selectedItem) return selectedItem.label;
     if (highlightedIndex === -1) return inputValue;
 
@@ -212,7 +213,15 @@ class SearchField extends React.Component {
     const { focused, selectedItem } = this.state;
 
     const Input = selectedItem ? ReadOnly : EnhancedInput;
+
     Input.displayName = "Input";
+
+    // When there's an item selected and we click the edit icon,
+    // the input ref points to the StaticInput instance, which has no focus().
+    // By setting the component focused prop, the regular
+    // input will get focus when it gets mounted.
+    const autoFocus =
+      this.input && this.input.nodeName !== "INPUT" && selectedItem === null; //selectedItem === null avoid focus when updating items
 
     return (
       <DropdownWrapper
@@ -224,6 +233,7 @@ class SearchField extends React.Component {
           onChange={this.onSearchChange}
           type={selectedItem ? "text" : "search"}
           clearable
+          focused={autoFocus}
           clearIcon={selectedItem ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}

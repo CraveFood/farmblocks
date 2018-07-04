@@ -10,21 +10,20 @@ exports[`Storyshots Tag Default 1`] = `
   border: 1px solid rgba(0,0,0,0.16);
   border-radius: 4px;
   padding: 6px 8px 8px 8px;
-  background-color: #3498db;
   height: 32px;
   margin: 0 8px 8px 0;
   font-size: 14px;
-  color: white;
   font-family: Lato;
   font-weight: 600;
   cursor: default;
   pointer-events: none;
+  background-color: #3498db;
+  color: white;
 }
 
 .c0:hover {
-  border: 2px solid rgba(0,0,0,0.32);
+  border-width: 2px;
   padding: 5px 0px 7px 7px;
-  background-color: #2980b9;
 }
 
 .c0 .icon {
@@ -42,8 +41,17 @@ exports[`Storyshots Tag Default 1`] = `
 .c0:hover .icon,
 .c0:focus .icon {
   padding-right: 7px;
-  color: white;
   cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
 }
 
 <div
@@ -55,6 +63,7 @@ exports[`Storyshots Tag Default 1`] = `
 >
   <div
     className="c0"
+    type="SECONDARY"
   >
     THIS IS A TAG
   </div>
@@ -62,6 +71,112 @@ exports[`Storyshots Tag Default 1`] = `
 `;
 
 exports[`Storyshots Tag Multiple tags 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 8px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c2:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c2 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c2:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c0:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -71,21 +186,20 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   border: 1px solid rgba(0,0,0,0.16);
   border-radius: 4px;
   padding: 6px 8px 8px 8px;
-  background-color: #3498db;
   height: 32px;
   margin: 0 8px 8px 0;
   font-size: 14px;
-  color: white;
   font-family: Lato;
   font-weight: 600;
   cursor: default;
   pointer-events: none;
+  background-color: #f6f8f9;
+  color: #59636f;
 }
 
 .c1:hover {
-  border: 2px solid rgba(0,0,0,0.32);
+  border-width: 2px;
   padding: 5px 0px 7px 7px;
-  background-color: #2980b9;
 }
 
 .c1 .icon {
@@ -103,53 +217,11 @@ exports[`Storyshots Tag Multiple tags 1`] = `
 .c1:hover .icon,
 .c1:focus .icon {
   padding-right: 7px;
-  color: white;
   cursor: pointer;
 }
 
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,0.16);
-  border-radius: 4px;
-  padding: 6px 0px 8px 8px;
-  background-color: #3498db;
-  height: 32px;
-  margin: 0 8px 8px 0;
-  font-size: 14px;
-  color: white;
-  font-family: Lato;
-  font-weight: 600;
-  cursor: default;
-  pointer-events: none;
-}
-
-.c0:hover {
-  border: 2px solid rgba(0,0,0,0.32);
-  padding: 5px 0px 7px 7px;
-  background-color: #2980b9;
-}
-
-.c0 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-sizing: border-box;
-  padding: 5px 8px 8px 8px;
-  font-size: 8px;
-  color: rgba(0,0,0,0.32);
-  pointer-events: auto;
-}
-
-.c0:hover .icon,
-.c0:focus .icon {
-  padding-right: 7px;
-  color: white;
-  cursor: pointer;
+.c1:hover {
+  background-color: rgba(0,0,0,0.16);
 }
 
 <div
@@ -161,6 +233,7 @@ exports[`Storyshots Tag Multiple tags 1`] = `
 >
   <div
     className="c0"
+    type="SECONDARY"
     value="18-08-16"
   >
     Aug 16, 2018
@@ -175,6 +248,7 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   </div>
   <div
     className="c0"
+    type="SECONDARY"
   >
     This is a long removable tag
     <div
@@ -188,13 +262,20 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   </div>
   <div
     className="c1"
+    type="NEUTRAL"
+  >
+    Neutral tag
+  </div>
+  <div
+    className="c2"
+    type="SECONDARY"
   >
     And that's an even bigger and wider not removable tag
   </div>
 </div>
 `;
 
-exports[`Storyshots Tag Removable 1`] = `
+exports[`Storyshots Tag Neutral 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -203,22 +284,21 @@ exports[`Storyshots Tag Removable 1`] = `
   box-sizing: border-box;
   border: 1px solid rgba(0,0,0,0.16);
   border-radius: 4px;
-  padding: 6px 0px 8px 8px;
-  background-color: #3498db;
+  padding: 6px 8px 8px 8px;
   height: 32px;
   margin: 0 8px 8px 0;
   font-size: 14px;
-  color: white;
   font-family: Lato;
   font-weight: 600;
   cursor: default;
   pointer-events: none;
+  background-color: #f6f8f9;
+  color: #59636f;
 }
 
 .c0:hover {
-  border: 2px solid rgba(0,0,0,0.32);
+  border-width: 2px;
   padding: 5px 0px 7px 7px;
-  background-color: #2980b9;
 }
 
 .c0 .icon {
@@ -236,8 +316,11 @@ exports[`Storyshots Tag Removable 1`] = `
 .c0:hover .icon,
 .c0:focus .icon {
   padding-right: 7px;
-  color: white;
   cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(0,0,0,0.16);
 }
 
 <div
@@ -249,6 +332,149 @@ exports[`Storyshots Tag Removable 1`] = `
 >
   <div
     className="c0"
+    type="NEUTRAL"
+  >
+    THIS IS A TAG
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Neutral removable 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #f6f8f9;
+  color: #59636f;
+}
+
+.c0:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(0,0,0,0.16);
+}
+
+<div
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="c0"
+    type="NEUTRAL"
+  >
+    You can remove this tag
+    <div
+      className="icon"
+      onClick={[Function]}
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Removable 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c0:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+<div
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="c0"
+    type="SECONDARY"
   >
     You can remove this tag
     <div
@@ -273,21 +499,20 @@ exports[`Storyshots Tag Removable with value 1`] = `
   border: 1px solid rgba(0,0,0,0.16);
   border-radius: 4px;
   padding: 6px 0px 8px 8px;
-  background-color: #3498db;
   height: 32px;
   margin: 0 8px 8px 0;
   font-size: 14px;
-  color: white;
   font-family: Lato;
   font-weight: 600;
   cursor: default;
   pointer-events: none;
+  background-color: #3498db;
+  color: white;
 }
 
 .c0:hover {
-  border: 2px solid rgba(0,0,0,0.32);
+  border-width: 2px;
   padding: 5px 0px 7px 7px;
-  background-color: #2980b9;
 }
 
 .c0 .icon {
@@ -305,8 +530,17 @@ exports[`Storyshots Tag Removable with value 1`] = `
 .c0:hover .icon,
 .c0:focus .icon {
   padding-right: 7px;
-  color: white;
   cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
 }
 
 <div
@@ -318,6 +552,7 @@ exports[`Storyshots Tag Removable with value 1`] = `
 >
   <div
     className="c0"
+    type="SECONDARY"
     value="1"
   >
     Removable Tag #1

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@0.2.5...@crave/farmblocks-tags@0.3.0) (2018-07-02)
+
+
+### Features
+
+* **tag:** add neutral type ([868764e](https://github.com/CraveFood/farmblocks/commit/868764e)), closes [#420](https://github.com/CraveFood/farmblocks/issues/420)
+
+
+
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@0.2.4...@crave/farmblocks-tags@0.2.5) (2018-06-18)
 

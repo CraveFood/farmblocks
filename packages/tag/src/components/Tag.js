@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import values from "object.values";
 
 import StyledTag from "./styledComponent/StyledTag";
+import tagTypes from "../constants/tagTypes";
 
 const Tag = props => {
   const { text, onRemove, value } = props;
@@ -17,10 +19,15 @@ const Tag = props => {
   );
 };
 
+Tag.defaultProps = {
+  type: tagTypes.SECONDARY
+};
+
 Tag.propTypes = {
   text: PropTypes.string.isRequired,
   onRemove: PropTypes.func,
-  value: PropTypes.any
+  value: PropTypes.any,
+  type: PropTypes.oneOf(values(tagTypes))
 };
 
 export default Tag;

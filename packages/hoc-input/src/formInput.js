@@ -69,7 +69,7 @@ const formInput = WrappedComponent => {
       };
 
       return (
-        <Wrapper {...wrapperProps} onClick={this.handleWrapperClick}>
+        <Wrapper {...wrapperProps} onClick={this.setInputFocus}>
           {this._renderInput(wrappedComponentProps)}
           {this._renderLabel(label)}
         </Wrapper>
@@ -90,6 +90,7 @@ const formInput = WrappedComponent => {
           <i className="wg-search" />
         </div>
       );
+
       const clearButton = (clearable || isSearch) &&
         this.state.value && (
           <Link className="clear" onClick={this.handleClearClick}>
@@ -110,6 +111,7 @@ const formInput = WrappedComponent => {
           ref={element => {
             this.inputRef = element && element.querySelector("input");
           }}
+          onMouseDown={this.preventBlur}
         >
           {icon}
           <WrappedComponent
@@ -140,6 +142,12 @@ const formInput = WrappedComponent => {
       );
     }
 
+    componentDidMount() {
+      if (this.props.focused) {
+        this.setInputFocus();
+      }
+    }
+
     componentWillReceiveProps(nextProps) {
       const nextValue = nextProps.input
         ? nextProps.input.value
@@ -156,6 +164,8 @@ const formInput = WrappedComponent => {
       }
     }
 
+    preventBlur = event => event.preventDefault();
+
     handleClearClick = () => {
       this.setState({ value: "" });
       this.props.onChange({
@@ -165,7 +175,7 @@ const formInput = WrappedComponent => {
       });
     };
 
-    handleWrapperClick = () => {
+    setInputFocus = () => {
       this.inputRef && this.inputRef.focus();
     };
 

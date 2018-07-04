@@ -142,4 +142,11 @@ describe("formInput", function() {
     component.find("span.clear").simulate("click");
     expect(component.state("value")).toBe("");
   });
+  test("call preventBlur on mouse down", function() {
+    const component = mount(<EnhancedInput />);
+    const event = { preventDefault: jest.fn() };
+
+    component.find("div.input").simulate("mousedown", event);
+    expect(event.preventDefault).toHaveBeenCalledTimes(1);
+  });
 });
