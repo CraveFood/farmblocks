@@ -72,6 +72,16 @@ storiesOf("Search Field", module)
     withInfo()(() => <SearchField items={items} label="Fruits" />)
   )
   .add(
+    "with validation message",
+    withInfo()(() => (
+      <SearchField
+        validationMessages={["One error", "Another error"]}
+        items={items}
+        label="Fruits"
+      />
+    ))
+  )
+  .add(
     "with empty items array",
     withInfo()(() => (
       <SearchField
