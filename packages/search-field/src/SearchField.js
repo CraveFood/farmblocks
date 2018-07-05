@@ -40,16 +40,20 @@ class SearchField extends React.Component {
 
   onSearchChange = event => {
     const { value } = event.target;
-    this.setState({
-      inputValue: value,
-      highlightedIndex: -1,
-      selectedItem: null
-    });
+    this.setState(
+      {
+        inputValue: value,
+        highlightedIndex: -1,
+        selectedItem: null
+      },
+      () => {
+        if (!value) {
+          this.debouncedOnSearchChange.flush();
+          this.props.onChange();
+        }
+      }
+    );
     this.debouncedOnSearchChange(value);
-    if (!value) {
-      this.debouncedOnSearchChange.flush();
-      this.props.onChange();
-    }
   };
 
   componentDidUpdate = prevProps => {

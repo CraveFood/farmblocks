@@ -13,7 +13,9 @@ Enzyme.configure({ adapter: new Adapter() });
 describe("SearchField", () => {
   let setStateSpy, instance;
   beforeEach(() => {
-    setStateSpy = jest.fn();
+    setStateSpy = jest
+      .fn()
+      .mockImplementation((stateChanges, callback) => callback && callback());
     instance = new SearchField(SearchField.defaultProps);
     instance.setState = setStateSpy;
   });
