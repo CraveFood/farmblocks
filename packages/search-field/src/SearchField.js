@@ -66,7 +66,10 @@ class SearchField extends React.Component {
   };
 
   static getDerivedStateFromProps = (props, state) => {
-    const valueChanged = props.value !== state.lastValue;
+    // we use a non-strict comparison below because
+    // undefined to null should be considered no change
+    const valueChanged = props.value != state.lastValue;
+
     if (valueChanged || !isEqual(props.items, state.lastItems)) {
       const selectedItem =
         props.items && props.items.find(item => item.value === props.value);
