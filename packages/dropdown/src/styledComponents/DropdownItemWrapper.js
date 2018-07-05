@@ -5,6 +5,9 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 const borderRadius = "3px";
 
 const hoverColors = props => {
+  if (props.footer) {
+    return "";
+  }
   return css`
     background: ${colorConstants.INDIGO_MILK_CAP};
     color: white;
@@ -19,8 +22,12 @@ const fontColor = props => {
   return colorConstants.OYSTER;
 };
 
+const cursor = props => (props.footer ? "auto" : "pointer");
+
 const DropdownItemWrapper = styled.li`
-  cursor: pointer;
+  cursor: ${cursor};
+
+  overflow: hidden;
 
   transition: all ease 0.2s;
 

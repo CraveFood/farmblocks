@@ -20,6 +20,7 @@ exports[`Storyshots Dropdown/Styled components/Menu and item Default 1`] = `
 
 .c1 {
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   color: #59636f;
@@ -76,6 +77,115 @@ exports[`Storyshots Dropdown/Styled components/Menu and item Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Dropdown/Styled components/Menu and item Footer 1`] = `
+.c0 {
+  margin-top: 16px;
+  min-width: 100%;
+  whitespace: no-wrap;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  background: white;
+  position: absolute;
+}
+
+.c0 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c1:hover {
+  background: #3498db;
+  color: white;
+}
+
+.c1:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c1:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c1 > div {
+  padding: 14px;
+}
+
+.c1 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c1 > div:hover {
+  outline: none;
+}
+
+.c2 {
+  cursor: auto;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c2:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c2:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c2 > div {
+  padding: 14px;
+}
+
+.c2 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c2 > div:hover {
+  outline: none;
+}
+
+<div
+  className="c0"
+>
+  <ul>
+    <li
+      className="c1"
+    >
+      <div>
+        Option 1
+      </div>
+    </li>
+    <li
+      className="c2"
+    >
+      <div>
+        Footer
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Dropdown/Styled components/Menu and item Highlighted 1`] = `
 .c0 {
   margin-top: 16px;
@@ -96,6 +206,7 @@ exports[`Storyshots Dropdown/Styled components/Menu and item Highlighted 1`] = `
 
 .c1 {
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   color: #59636f;
@@ -132,6 +243,7 @@ exports[`Storyshots Dropdown/Styled components/Menu and item Highlighted 1`] = `
 
 .c2 {
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   color: #59636f;
@@ -210,6 +322,7 @@ exports[`Storyshots Dropdown/Styled components/Menu and item Selected 1`] = `
 
 .c1 {
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   color: #59636f;
@@ -246,6 +359,7 @@ exports[`Storyshots Dropdown/Styled components/Menu and item Selected 1`] = `
 
 .c2 {
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   color: #3498db;

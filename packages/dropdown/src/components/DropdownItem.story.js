@@ -53,4 +53,20 @@ storiesOf("Dropdown/Styled components/Menu and item", module)
         </ul>
       </DropdownMenuWrapper>
     ))
+  )
+  .add(
+    "Footer",
+    withInfo()(() => (
+      <DropdownMenuWrapper>
+        <ul>
+          <DropdownItemWrapper>
+            <div>Option 1</div>
+          </DropdownItemWrapper>
+
+          <DropdownItemWrapper footer>
+            <div>Footer</div>
+          </DropdownItemWrapper>
+        </ul>
+      </DropdownMenuWrapper>
+    ))
   );

@@ -58,7 +58,7 @@ const Menu = ({
         {items.map((item, index) =>
           renderItem(item, onItemClick, index === highlightedIndex)
         )}
-        {footer}
+        <DropdownItemWrapper footer>{footer}</DropdownItemWrapper>
       </ScrollBox>
     </DropdownMenuWrapper>
   );
