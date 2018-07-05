@@ -25,6 +25,19 @@ storiesOf("Text Input", module)
     ))
   )
   .add(
+    "With a protected value",
+    withInfo()(() => (
+      <TextInput
+        protected
+        value="a protected value"
+        onReplace={action("the user replaced the protected value")}
+        onCancel={action("the user cancelled the editing")}
+        label="Field Label"
+        placeholder="input value here"
+      />
+    ))
+  )
+  .add(
     "With change handler",
     withInfo()(() => (
       <TextInput
