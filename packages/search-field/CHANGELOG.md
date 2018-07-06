@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.9"></a>
+## [1.0.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.8...@crave/farmblocks-search-field@1.0.9) (2018-07-06)
+
+
+### Bug Fixes
+
+* **search-field:** position the items menu absolutely below the input, over validation messages ([d466ce5](https://github.com/CraveFood/farmblocks/commit/d466ce5))
+
+
+
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.7...@crave/farmblocks-search-field@1.0.8) (2018-07-05)
 
