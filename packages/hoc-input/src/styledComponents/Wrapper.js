@@ -116,6 +116,7 @@ const Wrapper = styled.div`
 
   .label {
     order: 1;
+    line-height: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 8px;

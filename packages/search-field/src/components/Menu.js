@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import {
   DropdownMenuWrapper,
@@ -35,6 +36,12 @@ const renderItem = (item, onClick, highlighted) => (
   </DropdownItemWrapper>
 );
 
+const MenuWrapper = styled(DropdownMenuWrapper)`
+  top: 72px;
+  position: absolute;
+  width: 100%;
+`;
+
 const Menu = ({
   onMenuMouseDown,
   maxMenuHeight,
@@ -49,7 +56,7 @@ const Menu = ({
     return null;
   }
   return (
-    <DropdownMenuWrapper onMouseDown={onMenuMouseDown}>
+    <MenuWrapper onMouseDown={onMenuMouseDown}>
       <ScrollBox
         maxHeight={maxMenuHeight}
         onReachEnd={onScrollReachEnd}
@@ -60,7 +67,7 @@ const Menu = ({
         )}
         <DropdownItemWrapper footer>{footer}</DropdownItemWrapper>
       </ScrollBox>
-    </DropdownMenuWrapper>
+    </MenuWrapper>
   );
 };
 Menu.defaultProps = {
