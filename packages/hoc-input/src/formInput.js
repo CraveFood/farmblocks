@@ -148,6 +148,16 @@ const formInput = WrappedComponent => {
       }
     }
 
+    componentDidUpdate = prevProps => {
+      if (this.props.focused && !prevProps.focused) {
+        this.setInputFocus();
+      }
+
+      if (!this.props.focused && prevProps.focused) {
+        this.inputRef && this.inputRef.blur();
+      }
+    };
+
     componentWillReceiveProps(nextProps) {
       const nextValue = nextProps.input
         ? nextProps.input.value
