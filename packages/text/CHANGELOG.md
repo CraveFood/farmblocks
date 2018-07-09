@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.10...@crave/farmblocks-text@1.2.0) (2018-07-09)
+
+
+### Features
+
+* **Text:** add letterSpacing property ([d5e89ec](https://github.com/CraveFood/farmblocks/commit/d5e89ec)), closes [#425](https://github.com/CraveFood/farmblocks/issues/425)
+
+
+
+
 <a name="1.1.10"></a>
 ## [1.1.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.9...@crave/farmblocks-text@1.1.10) (2018-06-18)
 

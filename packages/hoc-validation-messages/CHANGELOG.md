@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.6"></a>
+## [0.2.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@0.2.5...@crave/farmblocks-hoc-validation-messages@0.2.6) (2018-07-09)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-hoc-validation-messages
+
 <a name="0.2.5"></a>
 ## [0.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@0.2.4...@crave/farmblocks-hoc-validation-messages@0.2.5) (2018-06-18)
 
