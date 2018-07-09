@@ -4,7 +4,9 @@ import styled from "styled-components";
 import values from "object.values";
 import Tooltip, { alignments } from "@crave/farmblocks-tooltip";
 
-const Container = styled.div`display: inline-block;`;
+const Container = styled.div`
+  display: inline-block;
+`;
 
 class Popover extends React.Component {
   state = {
@@ -47,7 +49,7 @@ class Popover extends React.Component {
           zIndex={this.props.zIndex}
           padding={this.props.padding}
         >
-          {this.props.content(this.hide)}
+          {this.state.isVisible && this.props.content(this.hide)}
         </Tooltip>
       </Container>
     );
