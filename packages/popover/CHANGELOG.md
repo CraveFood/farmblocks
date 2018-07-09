@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.2.0...@crave/farmblocks-popover@0.3.0) (2018-07-09)
+
+
+### Features
+
+* **Popover:** remove content node from dom when popover is not visible ([267e25e](https://github.com/CraveFood/farmblocks/commit/267e25e))
+
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2018-06-22)
 
