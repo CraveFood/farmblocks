@@ -22,7 +22,8 @@ export default class Text extends React.Component {
     align: PropTypes.oneOf(["left", "center", "right", "justify"]),
     lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     paragraph: PropTypes.bool,
-    title: PropTypes.bool
+    title: PropTypes.bool,
+    letterSpacing: PropTypes.string
   };
 
   static defaultProps = {
