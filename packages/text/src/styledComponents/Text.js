@@ -16,6 +16,8 @@ const TextContainer = styled.div`
   ${paragraphStyle};
 
   line-height: ${props => props.lineHeight};
+
+  letter-spacing: ${props => props.letterSpacing};
 `;
 
 function titleStyle(props) {

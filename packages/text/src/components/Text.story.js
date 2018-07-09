@@ -73,4 +73,8 @@ storiesOf("Text/Default", module)
         </Text>
       </div>
     ))
+  )
+  .add(
+    "custom letter-spacing",
+    withInfo()(() => <Text letterSpacing="3px">Awesome Text</Text>)
   );
