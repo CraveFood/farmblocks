@@ -33,6 +33,28 @@ describe("formInput", function() {
     });
   });
 
+  describe("(with value focused)", () => {
+    test("changing focused property from false to true should focus", function() {
+      const originalFocused = false;
+      const focused = true;
+      const setInputFocusMock = jest.fn();
+      const component = shallow(<EnhancedInput focused={originalFocused} />);
+      component.instance().setInputFocus = setInputFocusMock;
+      component.setProps({ focused });
+      expect(setInputFocusMock).toBeCalled();
+    });
+
+    test("changing focused property from true to false should remove input focus", function() {
+      const originalFocused = true;
+      const focused = false;
+      const onBlurMock = jest.fn();
+      const component = shallow(<EnhancedInput focused={originalFocused} />);
+      component.instance().inputRef = { blur: onBlurMock };
+      component.setProps({ focused });
+      expect(onBlurMock).toBeCalled();
+    });
+  });
+
   describe("(with redux-form input porp)", () => {
     test("passing the same value on props should leave value state as it is", function() {
       const value = "some value";
