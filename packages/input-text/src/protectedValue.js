@@ -18,7 +18,7 @@ const Cover = styled(styledInput)`
   }
   .clear {
     position: absolute;
-    right: 8px;
+    right: 16px;
   }
 `;
 Cover.displayName = "InputCover";
