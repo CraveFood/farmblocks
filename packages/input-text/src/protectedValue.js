@@ -102,7 +102,7 @@ export default WrappedComponent => {
           <WrappedComponent
             {...wrappedComponentProps}
             focused={this.state.isEditing}
-            value={this.state.isEditing ? "" : wrappedComponentProps.value}
+            value={this.state.isEditing ? "" : this.state.value}
             onKeyDown={covered ? this.onKeyDown : onKeyDown}
           />
           {covered && !this.state.isEditing && this._renderCover()}
