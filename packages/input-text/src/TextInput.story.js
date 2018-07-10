@@ -38,6 +38,43 @@ storiesOf("Text Input", module)
     ))
   )
   .add(
+    "Protected value changing programatically every 3 seconds",
+    withInfo()(() => {
+      class Story extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { count: 0 };
+        }
+
+        componentDidMount() {
+          this.interval = window.setInterval(() => {
+            this.setState({ count: this.state.count + 1 });
+          }, 3000);
+        }
+
+        componentWillUnmount() {
+          window.clearInterval(this.interval);
+        }
+
+        render() {
+          const value = `the value is ${this.state.count}`;
+          return (
+            <TextInput
+              protected
+              value={value}
+              onReplace={action("the user replaced the protected value")}
+              onCancel={action("the user cancelled the editing")}
+              label="Field Label"
+              placeholder="input value here"
+            />
+          );
+        }
+      }
+
+      return <Story />;
+    })
+  )
+  .add(
     "With change handler",
     withInfo()(() => (
       <TextInput

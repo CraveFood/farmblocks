@@ -59,7 +59,7 @@ export default WrappedComponent => {
 
     componentDidUpdate = prevProps => {
       if (this.props.value !== prevProps.value) {
-        this.onReplace(this.props.value);
+        this.setState({ value: this.props.value, isEditing: false });
       }
     };
 
