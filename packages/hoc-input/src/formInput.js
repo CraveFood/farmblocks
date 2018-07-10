@@ -57,9 +57,11 @@ const formInput = WrappedComponent => {
         invalid,
         input,
         meta,
+        protected: covered,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
+        protected: covered,
         focused: this.state.focused,
         invalid: invalid === "true",
         filled: !!value || value === 0,
@@ -147,6 +149,16 @@ const formInput = WrappedComponent => {
         this.setInputFocus();
       }
     }
+
+    componentDidUpdate = prevProps => {
+      if (this.props.focused && !prevProps.focused) {
+        this.setInputFocus();
+      }
+
+      if (!this.props.focused && prevProps.focused) {
+        this.inputRef && this.inputRef.blur();
+      }
+    };
 
     componentWillReceiveProps(nextProps) {
       const nextValue = nextProps.input
