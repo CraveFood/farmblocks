@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.0.5...@crave/farmblocks-hoc-input@3.1.0) (2018-07-10)
+
+
+### Bug Fixes
+
+* **hoc-input:** add point cursor to clear link ([830d0b5](https://github.com/CraveFood/farmblocks/commit/830d0b5))
+* **hoc-input:** focus the input when the property focused changes from false to true ([e01704a](https://github.com/CraveFood/farmblocks/commit/e01704a))
+
+
+### Features
+
+* **hoc-input:** do not change label color of disabled protected fields ([f6cdbc6](https://github.com/CraveFood/farmblocks/commit/f6cdbc6))
+* **hoc-input:** export the wrapper style as part of the lib ([4aa115f](https://github.com/CraveFood/farmblocks/commit/4aa115f))
+
+
+
+
 <a name="3.0.5"></a>
 ## [3.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.0.4...@crave/farmblocks-hoc-input@3.0.5) (2018-07-06)
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.2.21...@crave/farmblocks-input-text@1.3.0) (2018-07-10)
+
+
+### Bug Fixes
+
+* **input-text:** dont call onReplace when property value is programatically updated ([b2e54be](https://github.com/CraveFood/farmblocks/commit/b2e54be))
+* **input-text:** fix right margin for the edit button on protected inputs ([299dbff](https://github.com/CraveFood/farmblocks/commit/299dbff))
+
+
+### Features
+
+* **text-input:** hide edit icon when disable and forward protected prop to the input below ([5282da0](https://github.com/CraveFood/farmblocks/commit/5282da0))
+* **text-input:** new HOC for adding protected field behavior ([c3f90f7](https://github.com/CraveFood/farmblocks/commit/c3f90f7))
+* **text-input:** support for new properties related with protected fields ([61f8d7b](https://github.com/CraveFood/farmblocks/commit/61f8d7b))
+
+
+
+
 <a name="1.2.21"></a>
 ## [1.2.21](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.2.20...@crave/farmblocks-input-text@1.2.21) (2018-07-09)
 
