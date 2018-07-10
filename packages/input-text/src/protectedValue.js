@@ -68,11 +68,13 @@ export default WrappedComponent => {
         <Cover>
           <div className="input">
             {this.state.value}
-            <div className="clear">
-              <a onClick={this.onUncover}>
-                <i className="wg-edit" />
-              </a>
-            </div>
+            {!this.props.disabled && (
+              <div className="clear">
+                <a onClick={this.onUncover}>
+                  <i className="wg-edit" />
+                </a>
+              </div>
+            )}
           </div>
         </Cover>
       );
@@ -101,6 +103,7 @@ export default WrappedComponent => {
         <div style={{ position: "relative" }}>
           <WrappedComponent
             {...wrappedComponentProps}
+            protected={covered}
             focused={this.state.isEditing}
             value={this.state.isEditing ? "" : this.state.value}
             onKeyDown={covered ? this.onKeyDown : onKeyDown}
