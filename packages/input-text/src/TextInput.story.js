@@ -38,6 +38,18 @@ storiesOf("Text Input", module)
     ))
   )
   .add(
+    "disabled protected value",
+    withInfo()(() => (
+      <TextInput
+        protected
+        disabled
+        value="a protected value"
+        label="Field Label"
+        placeholder="input value here"
+      />
+    ))
+  )
+  .add(
     "Protected value changing programatically every 3 seconds",
     withInfo()(() => {
       class Story extends React.Component {
