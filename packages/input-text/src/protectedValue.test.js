@@ -77,7 +77,7 @@ describe("TextInput > protectedValue", () => {
     expect(isCovered()).toBe(true);
   });
 
-  test("replacing the value by changing the property after mount should trigger the onReplace handler", () => {
+  test("replacing the value by changing the property after mount should change state value without triggering the onReplace handler", () => {
     const originalValue = "Foo";
     const newValue = "Bar";
     const onReplaceMock = jest.fn();
@@ -89,6 +89,7 @@ describe("TextInput > protectedValue", () => {
       />
     );
     component.setProps({ value: newValue });
-    expect(onReplaceMock).toBeCalledWith(newValue);
+    expect(component.state("value")).toBe(newValue);
+    expect(onReplaceMock).not.toBeCalled();
   });
 });
