@@ -57,9 +57,11 @@ const formInput = WrappedComponent => {
         invalid,
         input,
         meta,
+        protected: covered,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
+        protected: covered,
         focused: this.state.focused,
         invalid: invalid === "true",
         filled: !!value || value === 0,

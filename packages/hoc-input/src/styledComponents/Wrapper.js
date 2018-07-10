@@ -28,7 +28,10 @@ const labelColor = props => {
   if (props.invalid) {
     return colors.STRAWBERRY;
   }
-  return props.disabled ? colors.GREY_32 : colors.CARBON;
+  if (props.disabled && !props.protected) {
+    return colors.GREY_32;
+  }
+  return colors.CARBON;
 };
 
 const ifSmall = (smallValue, defaultValue) => props =>
