@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import { colors } from "@crave/farmblocks-theme";
+import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import { formInputProps, styledInput } from "@crave/farmblocks-hoc-input";
 
 // the cover of a protected field is a div (instead of an input) enhanced with formInput hoc and some extra style overridings
@@ -22,6 +23,20 @@ const Cover = styled(styledInput)`
   }
 `;
 Cover.displayName = "InputCover";
+
+const Container = styled.div`
+  position: relative;
+  display: ${props => props.isEditing && "flex"};
+  align-items: flex-end;
+
+  > :first-child {
+    flex-grow: 1;
+  }
+
+  .margin-button {
+    margin: 0 8px;
+  }
+`;
 
 // extra properties supported/extended by the protected field HOC
 export const protectedValueProps = {
@@ -99,8 +114,10 @@ export default WrappedComponent => {
         onKeyDown,
         ...wrappedComponentProps
       } = this.props;
+      const { isEditing } = this.state;
+
       return (
-        <div style={{ position: "relative" }}>
+        <Container isEditing={isEditing}>
           <WrappedComponent
             {...wrappedComponentProps}
             protected={covered}
@@ -109,7 +126,22 @@ export default WrappedComponent => {
             onKeyDown={covered ? this.onKeyDown : onKeyDown}
           />
           {covered && !this.state.isEditing && this._renderCover()}
-        </div>
+          {covered &&
+            isEditing && (
+              <div>
+                <Button
+                  onClick={this.onCancel}
+                  size={buttonSizes.MEDIUM}
+                  className="margin-button"
+                >
+                  Cancel
+                </Button>
+                <Button type={buttonTypes.SECONDARY} size={buttonSizes.MEDIUM}>
+                  Save
+                </Button>
+              </div>
+            )}
+        </Container>
       );
     }
 
