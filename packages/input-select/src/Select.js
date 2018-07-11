@@ -84,13 +84,19 @@ class Select extends React.Component {
   _renderInput = autoCompleteProps => {
     const { ref, ...rest } = autoCompleteProps;
 
-    const { renderItem, disableSearch, items, ...inputProps } = this.props;
+    const {
+      renderItem,
+      disableSearch,
+      items,
+      zIndex,
+      ...inputProps
+    } = this.props;
 
     inputProps.validationMessages = this.state.isMenuOpen
       ? []
       : this.props.validationMessages;
 
-    const selectedItem = this.props.items.find(
+    const selectedItem = items.find(
       item => item.label === autoCompleteProps.value
     );
     const image = selectedItem && selectedItem.image;
