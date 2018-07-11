@@ -50,31 +50,33 @@ export const protectedValueProps = {
 // until the edit button is clicked
 export default WrappedComponent => {
   return class ProtectedInput extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        isEditing: false,
-        value: props.value
-      };
-    }
+    state = {
+      isEditing: false,
+      value: this.props.value,
+      editedValue: ""
+    };
 
     onUncover = () => {
       this.setState({ isEditing: true });
     };
 
     onCancel = () => {
-      this.setState({ isEditing: false });
+      this.setState({ isEditing: false, editedValue: "" });
       return this.props.onCancel && this.props.onCancel();
     };
 
     onReplace = value => {
-      this.setState({ value, isEditing: false });
+      this.setState({ value, isEditing: false, editedValue: "" });
       return this.props.onReplace && this.props.onReplace(value);
     };
 
     componentDidUpdate = prevProps => {
       if (this.props.value !== prevProps.value) {
-        this.setState({ value: this.props.value, isEditing: false });
+        this.setState({
+          value: this.props.value,
+          isEditing: false,
+          editedValue: ""
+        });
       }
     };
 
@@ -112,6 +114,8 @@ export default WrappedComponent => {
         protected: covered,
         onReplace,
         onKeyDown,
+        onBlur,
+        onChange,
         ...wrappedComponentProps
       } = this.props;
       const { isEditing } = this.state;
@@ -124,19 +128,39 @@ export default WrappedComponent => {
             focused={this.state.isEditing}
             value={this.state.isEditing ? "" : this.state.value}
             onKeyDown={covered ? this.onKeyDown : onKeyDown}
+            onChange={event => {
+              this.setState({ editedValue: event.target.value });
+              onChange && onChange(event);
+            }}
+            onBlur={event => {
+              covered && isEditing && this.onCancel();
+              onBlur && onBlur(event);
+            }}
           />
           {covered && !this.state.isEditing && this._renderCover()}
           {covered &&
             isEditing && (
               <div>
                 <Button
+                  id="cancel-button"
                   onClick={this.onCancel}
                   size={buttonSizes.MEDIUM}
                   className="margin-button"
                 >
                   Cancel
                 </Button>
-                <Button type={buttonTypes.SECONDARY} size={buttonSizes.MEDIUM}>
+                <Button
+                  id="save-button"
+                  onClick={() => {
+                    this.onReplace(this.state.editedValue);
+                  }}
+                  onMouseDown={e => {
+                    // We do this in order to avoid onBlur event on input
+                    e.preventDefault();
+                  }}
+                  type={buttonTypes.SECONDARY}
+                  size={buttonSizes.MEDIUM}
+                >
                   Save
                 </Button>
               </div>
