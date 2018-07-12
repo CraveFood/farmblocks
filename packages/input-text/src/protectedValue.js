@@ -43,7 +43,9 @@ export const protectedValueProps = {
   protected: PropTypes.bool,
   onReplace: PropTypes.func,
   onCancel: PropTypes.func,
-  onKeyDown: PropTypes.func
+  onKeyDown: PropTypes.func,
+  cancelButtonText: PropTypes.string,
+  saveButtonText: PropTypes.string
 };
 
 // HOC that covers a component with a dummy text field
@@ -116,6 +118,8 @@ export default WrappedComponent => {
         onKeyDown,
         onBlur,
         onChange,
+        cancelButtonText,
+        saveButtonText,
         ...wrappedComponentProps
       } = this.props;
       const { isEditing } = this.state;
@@ -147,7 +151,7 @@ export default WrappedComponent => {
                   size={buttonSizes.MEDIUM}
                   className="margin-button"
                 >
-                  Cancel
+                  {cancelButtonText}
                 </Button>
                 <Button
                   id="save-button"
@@ -161,13 +165,18 @@ export default WrappedComponent => {
                   type={buttonTypes.SECONDARY}
                   size={buttonSizes.MEDIUM}
                 >
-                  Save
+                  {saveButtonText}
                 </Button>
               </div>
             )}
         </Container>
       );
     }
+
+    static defaultProps = {
+      cancelButtonText: "Cancel",
+      saveButtonText: "Save"
+    };
 
     static propTypes = {
       ...protectedValueProps,
