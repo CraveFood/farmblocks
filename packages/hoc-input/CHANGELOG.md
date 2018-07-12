@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.1"></a>
+## [3.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.0...@crave/farmblocks-hoc-input@3.1.1) (2018-07-12)
+
+
+### Bug Fixes
+
+* **hoc-input:** only prevent click event from bubbling if it is over the clear icon ([addcdce](https://github.com/CraveFood/farmblocks/commit/addcdce)), closes [#436](https://github.com/CraveFood/farmblocks/issues/436)
+
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.0.5...@crave/farmblocks-hoc-input@3.1.0) (2018-07-10)
 
