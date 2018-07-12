@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.3.1...@crave/farmblocks-input-text@1.4.0) (2018-07-12)
+
+
+### Bug Fixes
+
+* **protectedValue:** fix value passed to formInput ([ea5316a](https://github.com/CraveFood/farmblocks/commit/ea5316a))
+
+
+### Features
+
+* **Protected input:** add cancel and save buttons ([40d1678](https://github.com/CraveFood/farmblocks/commit/40d1678)), closes [#438](https://github.com/CraveFood/farmblocks/issues/438)
+* **Protected input:** handle cancel/save click ([4471950](https://github.com/CraveFood/farmblocks/commit/4471950)), closes [#438](https://github.com/CraveFood/farmblocks/issues/438)
+* **protectedValue:** receive cancel and save button texts from props ([d6535f4](https://github.com/CraveFood/farmblocks/commit/d6535f4))
+
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.3.0...@crave/farmblocks-input-text@1.3.1) (2018-07-12)
 
