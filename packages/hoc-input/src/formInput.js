@@ -113,7 +113,7 @@ const formInput = WrappedComponent => {
           ref={element => {
             this.inputRef = element && element.querySelector("input");
           }}
-          onMouseDown={this.preventBlur}
+          onMouseDown={this.preventBlurOfClearIcon}
         >
           {icon}
           <WrappedComponent
@@ -176,7 +176,12 @@ const formInput = WrappedComponent => {
       }
     }
 
-    preventBlur = event => event.preventDefault();
+    preventBlurOfClearIcon = event => {
+      // do not blur the text field if the click is on the clear icon
+      if (event.target.nodeName === "I") {
+        event.preventDefault();
+      }
+    };
 
     handleClearClick = () => {
       this.setState({ value: "" });

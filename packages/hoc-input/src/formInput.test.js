@@ -164,11 +164,13 @@ describe("formInput", function() {
     component.find("span.clear").simulate("click");
     expect(component.state("value")).toBe("");
   });
-  test("call preventBlur on mouse down", function() {
-    const component = mount(<EnhancedInput />);
+  test("click on the button to clear the input should not remove input's focus", function() {
+    const value = "tomato";
+    const component = mount(<EnhancedInput clearable value={value} />);
     const event = { preventDefault: jest.fn() };
 
     component.find("div.input").simulate("mousedown", event);
+    component.find(".clear i").simulate("mousedown", event);
     expect(event.preventDefault).toHaveBeenCalledTimes(1);
   });
 });
