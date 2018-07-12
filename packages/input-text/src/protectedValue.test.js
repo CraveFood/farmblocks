@@ -47,7 +47,12 @@ describe("TextInput > protectedValue", () => {
     };
     component.instance().onKeyDown(keyDownEvent);
     component.update();
-    expect(component.state("value")).toBe(originalValue);
+    const expectedState = {
+      value: originalValue,
+      isEditing: false,
+      editedValue: ""
+    };
+    expect(component.state()).toEqual(expectedState);
     expect(onCancelMock).toBeCalled();
     expect(isCovered()).toBe(true);
   });
@@ -72,7 +77,12 @@ describe("TextInput > protectedValue", () => {
     };
     component.instance().onKeyDown(keyDownEvent);
     component.update();
-    expect(component.state("value")).toBe(newValue);
+    const expectedState = {
+      value: newValue,
+      isEditing: false,
+      editedValue: ""
+    };
+    expect(component.state()).toEqual(expectedState);
     expect(onReplaceMock).toBeCalledWith(newValue);
     expect(isCovered()).toBe(true);
   });
@@ -89,7 +99,142 @@ describe("TextInput > protectedValue", () => {
       />
     );
     component.setProps({ value: newValue });
-    expect(component.state("value")).toBe(newValue);
+    const expectedState = {
+      value: newValue,
+      isEditing: false,
+      editedValue: ""
+    };
+    expect(component.state()).toEqual(expectedState);
     expect(onReplaceMock).not.toBeCalled();
+  });
+
+  describe("onBlur", () => {
+    test("input onBlur should call onCancel when user is editing", () => {
+      const onCancelMock = jest.fn();
+      const onBlurMock = jest.fn();
+
+      const component = mount(
+        <EnhancedInput
+          value=""
+          protected
+          onCancel={onCancelMock}
+          onBlur={onBlurMock}
+        />
+      );
+
+      // set editing state
+      component.instance().onUncover();
+      component.update();
+
+      const mockedEvent = {};
+
+      component
+        .find(Input)
+        .props()
+        .onBlur(mockedEvent);
+
+      expect(onCancelMock).toBeCalled();
+      expect(onBlurMock).toBeCalledWith(mockedEvent);
+    });
+
+    test("input onBlur should not call onCancel when user is not editing", () => {
+      const onCancelMock = jest.fn();
+
+      const component = mount(
+        <EnhancedInput value="" protected onCancel={onCancelMock} />
+      );
+
+      component
+        .find(Input)
+        .props()
+        .onBlur();
+
+      expect(onCancelMock).not.toBeCalled();
+    });
+  });
+
+  test("input onChange should update state with the edited value", () => {
+    const onChangeMock = jest.fn();
+    const component = mount(
+      <EnhancedInput value="" protected onChange={onChangeMock} />
+    );
+
+    // set editing state
+    component.instance().onUncover();
+
+    const editedValue = "New value";
+    const mockedEvent = { target: { value: editedValue } };
+
+    component
+      .find(Input)
+      .props()
+      .onChange(mockedEvent);
+
+    const expectedState = {
+      value: "",
+      isEditing: true,
+      editedValue
+    };
+    expect(component.state()).toEqual(expectedState);
+    expect(onChangeMock).toBeCalledWith(mockedEvent);
+  });
+
+  test("click on Cancel button should call onCancel when user is editing", () => {
+    const onCancelMock = jest.fn();
+
+    const component = mount(
+      <EnhancedInput value="" protected onCancel={onCancelMock} />
+    );
+
+    // set editing state
+    component.instance().onUncover();
+
+    // force re-render
+    component.update();
+
+    const cancelButton = component.find("#cancel-button");
+    cancelButton.find("button").simulate("click");
+
+    expect(onCancelMock).toBeCalled();
+  });
+
+  describe("Save button", () => {
+    test("click should call onReplace when user is editing", () => {
+      const onReplaceMock = jest.fn();
+
+      const component = mount(
+        <EnhancedInput value="" protected onReplace={onReplaceMock} />
+      );
+
+      // set editing state
+      component.instance().onUncover();
+
+      // force re-render
+      component.update();
+
+      const saveButton = component.find("#save-button");
+      saveButton.find("button").simulate("click");
+
+      expect(onReplaceMock).toBeCalledWith("");
+    });
+
+    test("mouse down should prevent default", () => {
+      const preventDefaultMock = jest.fn();
+
+      const component = mount(<EnhancedInput value="" protected />);
+
+      // set editing state
+      component.instance().onUncover();
+
+      // force re-render
+      component.update();
+
+      const saveButton = component.find("#save-button");
+      saveButton
+        .find("button")
+        .simulate("mousedown", { preventDefault: preventDefaultMock });
+
+      expect(preventDefaultMock).toBeCalled();
+    });
   });
 });
