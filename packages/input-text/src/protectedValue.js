@@ -130,7 +130,7 @@ export default WrappedComponent => {
             {...wrappedComponentProps}
             protected={covered}
             focused={this.state.isEditing}
-            value={this.state.isEditing ? "" : this.state.value}
+            value={isEditing ? this.state.editedValue : this.state.value}
             onKeyDown={covered ? this.onKeyDown : onKeyDown}
             onChange={event => {
               this.setState({ editedValue: event.target.value });
@@ -141,7 +141,7 @@ export default WrappedComponent => {
               onBlur && onBlur(event);
             }}
           />
-          {covered && !this.state.isEditing && this._renderCover()}
+          {covered && !isEditing && this._renderCover()}
           {covered &&
             isEditing && (
               <div>
