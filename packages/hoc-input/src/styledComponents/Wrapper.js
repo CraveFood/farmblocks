@@ -131,5 +131,15 @@ const Wrapper = styled.div`
     margin-bottom: 8px;
     color: ${labelColor};
   }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    min-width: 0; /* firefox */
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `;
 export default Wrapper;
