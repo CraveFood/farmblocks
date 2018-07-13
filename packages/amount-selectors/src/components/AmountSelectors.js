@@ -126,7 +126,6 @@ class AmountSelectors extends React.Component {
             onKeyDown={this.onKeyDown}
             onChange={this.onChange}
             onBlur={this.updateDisplayValue}
-            size={4}
             fontSize={selectorSizeToFontSize[this.props.size]}
           />
         </div>
