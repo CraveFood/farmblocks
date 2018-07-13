@@ -1,166 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots HOC formInput custom renderContent 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  height: 48px;
-  border: solid 1px;
-  border-radius: 4px;
-  padding: 0 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-}
-
-.c0 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c0 .input input {
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c0 .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c0 .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c0 .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c0 .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c0 .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c0 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c0 .input .icon.search {
-  margin-right: 8px;
-}
-
-.c0 .input .icon.dropdown {
-  margin-left: 8px;
-}
-
-.c0 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-}
-
-.c0 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c0 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c0 .input.dropdown {
-  cursor: pointer;
-}
-
-.c0 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-}
-
-<div
-  className="c0"
-  disabled={false}
-  onClick={[Function]}
-  type="text"
->
-  <div
-    className="input"
-    onMouseDown={[Function]}
-  >
-    <input
-      className="wrapped"
-      disabled={false}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      renderContent={[Function]}
-      type="text"
-      value=""
-    />
-  </div>
-</div>
-`;
-
 exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
@@ -187,10 +26,8 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -215,6 +52,9 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -245,6 +85,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -266,16 +107,18 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -306,6 +149,17 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: rgba(0,0,0,0.32);
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div>
@@ -356,10 +210,8 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -384,6 +236,9 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -414,6 +269,7 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -435,16 +291,18 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -475,6 +333,17 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -517,10 +386,8 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -545,6 +412,9 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -575,6 +445,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -596,16 +467,18 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -636,6 +509,17 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -739,10 +623,8 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -767,6 +649,9 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -797,6 +682,7 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -818,16 +704,18 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -858,6 +746,17 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -985,10 +884,8 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -1013,6 +910,9 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1043,6 +943,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1064,16 +965,18 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -1104,6 +1007,17 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -1177,10 +1091,8 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1205,6 +1117,9 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1235,6 +1150,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1256,16 +1172,18 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -1296,6 +1214,17 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -1337,10 +1266,8 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1365,6 +1292,9 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1395,6 +1325,7 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1416,16 +1347,18 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -1456,6 +1389,17 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -1515,10 +1459,8 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1543,6 +1485,9 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1573,6 +1518,7 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1594,16 +1540,18 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -1634,6 +1582,17 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -1702,10 +1661,8 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -1730,6 +1687,9 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1760,6 +1720,7 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1781,16 +1742,18 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -1821,6 +1784,17 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -1879,10 +1853,8 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1907,6 +1879,9 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1937,6 +1912,7 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1958,16 +1934,18 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -1998,6 +1976,17 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -2056,10 +2045,8 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: #3498db;
   background-color: #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
@@ -2084,6 +2071,9 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2114,6 +2104,7 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2135,16 +2126,18 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -2175,6 +2168,17 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #3498db;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -2233,10 +2237,8 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2261,6 +2263,9 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2291,6 +2296,7 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2312,16 +2318,18 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -2352,6 +2360,17 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -2401,10 +2420,8 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 32px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 8px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2429,6 +2446,9 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 }
 
 .c0 .input input {
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2459,6 +2479,7 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2480,16 +2501,18 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -2520,6 +2543,17 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -2573,10 +2607,8 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: #dd3311;
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2601,6 +2633,9 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2631,6 +2666,7 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2652,16 +2688,18 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -2692,6 +2730,17 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #dd3311;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div
@@ -2750,10 +2799,8 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2778,6 +2825,9 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 }
 
 .c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2808,6 +2858,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 .c0 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c0 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2829,16 +2880,18 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 }
 
 .c0 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c0 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c0 .input .clear:hover {
@@ -2869,6 +2922,17 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 <div>

@@ -41,10 +41,8 @@ exports[`Storyshots Select Input Custom items 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -69,6 +67,9 @@ exports[`Storyshots Select Input Custom items 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -99,6 +100,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -120,16 +122,18 @@ exports[`Storyshots Select Input Custom items 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -160,6 +164,17 @@ exports[`Storyshots Select Input Custom items 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -305,10 +320,8 @@ exports[`Storyshots Select Input Custom width 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -333,6 +346,9 @@ exports[`Storyshots Select Input Custom width 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -363,6 +379,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -384,16 +401,18 @@ exports[`Storyshots Select Input Custom width 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -424,6 +443,17 @@ exports[`Storyshots Select Input Custom width 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -569,10 +599,8 @@ exports[`Storyshots Select Input Default 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -597,6 +625,9 @@ exports[`Storyshots Select Input Default 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -627,6 +658,7 @@ exports[`Storyshots Select Input Default 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -648,16 +680,18 @@ exports[`Storyshots Select Input Default 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -688,6 +722,17 @@ exports[`Storyshots Select Input Default 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -833,10 +878,8 @@ exports[`Storyshots Select Input Disabled 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -861,6 +904,9 @@ exports[`Storyshots Select Input Disabled 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -891,6 +937,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -912,16 +959,18 @@ exports[`Storyshots Select Input Disabled 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -952,6 +1001,17 @@ exports[`Storyshots Select Input Disabled 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: rgba(0,0,0,0.32);
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1102,10 +1162,8 @@ exports[`Storyshots Select Input Empty items 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1130,6 +1188,9 @@ exports[`Storyshots Select Input Empty items 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1160,6 +1221,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1181,16 +1243,18 @@ exports[`Storyshots Select Input Empty items 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -1221,6 +1285,17 @@ exports[`Storyshots Select Input Empty items 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1366,10 +1441,8 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1394,6 +1467,9 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1424,6 +1500,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1445,16 +1522,18 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -1485,6 +1564,17 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1631,10 +1721,8 @@ exports[`Storyshots Select Input With Images 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1659,6 +1747,9 @@ exports[`Storyshots Select Input With Images 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1689,6 +1780,7 @@ exports[`Storyshots Select Input With Images 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1710,16 +1802,18 @@ exports[`Storyshots Select Input With Images 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -1750,6 +1844,17 @@ exports[`Storyshots Select Input With Images 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1895,10 +2000,8 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -1923,6 +2026,9 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1953,6 +2059,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1974,16 +2081,18 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2016,6 +2125,17 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   color: #2f313a;
 }
 
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .c6 {
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -2042,11 +2162,6 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   outline: none;
 }
 
-.c5 {
-  margin: -6px;
-  margin-right: 8px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2061,6 +2176,11 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 
 .c4 > input {
   width: 100%;
+}
+
+.c5 {
+  margin-right: -7px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -2185,10 +2305,8 @@ exports[`Storyshots Select Input With errors 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: #dd3311;
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2213,6 +2331,9 @@ exports[`Storyshots Select Input With errors 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2243,6 +2364,7 @@ exports[`Storyshots Select Input With errors 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2264,16 +2386,18 @@ exports[`Storyshots Select Input With errors 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2304,6 +2428,17 @@ exports[`Storyshots Select Input With errors 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #dd3311;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c7 {
@@ -2505,10 +2640,8 @@ exports[`Storyshots Select Input With value 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -2533,6 +2666,9 @@ exports[`Storyshots Select Input With value 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2563,6 +2699,7 @@ exports[`Storyshots Select Input With value 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2584,16 +2721,18 @@ exports[`Storyshots Select Input With value 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2624,6 +2763,17 @@ exports[`Storyshots Select Input With value 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -2769,10 +2919,8 @@ exports[`Storyshots Select Input Z-index 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2797,6 +2945,9 @@ exports[`Storyshots Select Input Z-index 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2827,6 +2978,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2848,16 +3000,18 @@ exports[`Storyshots Select Input Z-index 1`] = `
 }
 
 .c3 .input .icon.search {
-  margin-right: 8px;
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2888,6 +3042,17 @@ exports[`Storyshots Select Input Z-index 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
