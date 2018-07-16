@@ -16,7 +16,7 @@ const Dropdown = props => (
     <AriaWrapper onSelection={props.handleSelection}>
       <AriaButtonWrapper>
         <Button
-          rightIcon="wg-small-arrow-bottom"
+          rightIcon='wg-small-arrow-bottom'
           text={props.text}
           size={props.size}
           innerRef={props.innerRef}
