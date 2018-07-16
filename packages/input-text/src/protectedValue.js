@@ -11,6 +11,8 @@ const Cover = styled(styledInput)`
   .input {
     position: absolute;
     width: 100%;
+    height: 48px;
+    padding: 16px;
     bottom: 0;
     background: ${colors.SUGAR};
     color: ${colors.CARBON};
@@ -19,7 +21,7 @@ const Cover = styled(styledInput)`
   }
   .clear {
     position: absolute;
-    right: 16px;
+    right: 0px;
   }
 `;
 Cover.displayName = "InputCover";
