@@ -30,7 +30,7 @@ const renderItem = (item, onClick, highlighted) => (
   <DropdownItemWrapper
     key={item.value}
     highlighted={highlighted}
-    onClick={onClick}
+    onMouseDown={onClick}
   >
     <Item label={item.label} image={item.image} />
   </DropdownItemWrapper>
