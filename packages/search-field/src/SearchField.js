@@ -1,27 +1,12 @@
 import * as React from "react";
 import { polyfill } from "react-lifecycles-compat";
 import PropTypes from "prop-types";
-import { compose } from "recompose";
 import debounce from "lodash.debounce";
 import isEqual from "lodash.isequal";
-import disabledTooltip, {
-  disabledTooltipProps
-} from "@crave/farmblocks-hoc-disabled-tooltip";
-import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
-import withMessages, {
-  withMessagesProps
-} from "@crave/farmblocks-hoc-validation-messages";
+import Input from "@crave/farmblocks-input-text";
 
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import Menu from "./components/Menu";
-import StaticInput from "./components/StaticInput";
-
-const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
-  "input"
-);
-EnhancedInput.displayName = "EnhancedInput";
-const ReadOnly = compose(disabledTooltip, withMessages, formInput)(StaticInput);
-ReadOnly.displayName = "ReadOnly";
 
 class SearchField extends React.Component {
   state = {
@@ -212,17 +197,6 @@ class SearchField extends React.Component {
 
     const { focused, selectedItem } = this.state;
 
-    const Input = selectedItem ? ReadOnly : EnhancedInput;
-
-    Input.displayName = "Input";
-
-    // When there's an item selected and we click the edit icon,
-    // the input ref points to the StaticInput instance, which has no focus().
-    // By setting the component focused prop, the regular
-    // input will get focus when it gets mounted.
-    const autoFocus =
-      this.input && this.input.nodeName !== "INPUT" && selectedItem === null; //selectedItem === null avoid focus when updating items
-
     return (
       <DropdownWrapper
         style={{ width, zIndex }}
@@ -233,7 +207,6 @@ class SearchField extends React.Component {
           onChange={this.onSearchChange}
           type={selectedItem ? "text" : "search"}
           clearable
-          focused={autoFocus}
           clearIcon={selectedItem ? "wg-edit" : undefined}
           displayBlock
           onKeyDown={this.onKeyDown}
@@ -262,10 +235,7 @@ class SearchField extends React.Component {
     onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
-    ...Menu.propTypes,
-    ...formInputProps,
-    ...withMessagesProps,
-    ...disabledTooltipProps
+    ...Menu.propTypes
   };
 }
 
