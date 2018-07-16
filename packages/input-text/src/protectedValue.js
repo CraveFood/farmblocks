@@ -43,11 +43,13 @@ const Container = styled.div`
 // extra properties supported/extended by the protected field HOC
 export const protectedValueProps = {
   protected: PropTypes.bool,
+  onUncover: PropTypes.func,
   onReplace: PropTypes.func,
   onCancel: PropTypes.func,
   onKeyDown: PropTypes.func,
   cancelButtonText: PropTypes.string,
-  saveButtonText: PropTypes.string
+  saveButtonText: PropTypes.string,
+  disableManualReplace: PropTypes.bool
 };
 
 // HOC that covers a component with a dummy text field
@@ -61,7 +63,9 @@ export default WrappedComponent => {
     };
 
     onUncover = () => {
+      const { onUncover } = this.props;
       this.setState({ isEditing: true });
+      onUncover && onUncover();
     };
 
     onCancel = () => {
@@ -116,8 +120,10 @@ export default WrappedComponent => {
     render() {
       const {
         protected: covered,
+        disableManualReplace,
         onReplace,
         onKeyDown,
+        onUncover,
         onBlur,
         onChange,
         cancelButtonText,
@@ -126,6 +132,8 @@ export default WrappedComponent => {
       } = this.props;
       const { isEditing } = this.state;
 
+      const displayButtons = !disableManualReplace;
+
       return (
         <Container isEditing={isEditing}>
           <WrappedComponent
@@ -133,7 +141,9 @@ export default WrappedComponent => {
             protected={covered}
             focused={this.state.isEditing}
             value={isEditing ? this.state.editedValue : this.state.value}
-            onKeyDown={covered ? this.onKeyDown : onKeyDown}
+            onKeyDown={
+              covered && !disableManualReplace ? this.onKeyDown : onKeyDown
+            }
             onChange={event => {
               this.setState({ editedValue: event.target.value });
               onChange && onChange(event);
@@ -145,6 +155,7 @@ export default WrappedComponent => {
           />
           {covered && !isEditing && this._renderCover()}
           {covered &&
+            displayButtons &&
             isEditing && (
               <div>
                 <Button
