@@ -120,7 +120,6 @@ class SearchField extends React.Component {
       this.setState({ selectedItem });
       this.props.onChange(selectedItem.value);
     }
-    this.input && this.input.blur();
   };
 
   onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
@@ -214,7 +213,6 @@ class SearchField extends React.Component {
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
-          innerRef={node => (this.input = node)}
           {...inputProps}
         />
         {focused && (items || footer) && this._renderMenu(menuProps)}
