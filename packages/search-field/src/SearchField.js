@@ -199,10 +199,7 @@ class SearchField extends React.Component {
     const { focused, selectedItem } = this.state;
 
     return (
-      <DropdownWrapper
-        style={{ width, zIndex }}
-        className={!focused && !!selectedItem && "selected"}
-      >
+      <DropdownWrapper style={{ width, zIndex }}>
         <Input
           value={this.getInputValue()}
           onChange={this.onSearchChange}
