@@ -64,7 +64,7 @@ export default WrappedComponent => {
 
     onUncover = () => {
       const { onUncover } = this.props;
-      this.setState({ isEditing: true });
+      this.setState({ isEditing: true, editedValue: "" });
       onUncover && onUncover();
     };
 
