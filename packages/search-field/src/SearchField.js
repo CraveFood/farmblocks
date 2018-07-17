@@ -160,18 +160,6 @@ class SearchField extends React.Component {
     );
   };
 
-  getInputValue = () => {
-    const { selectedItem, highlightedIndex, inputValue } = this.state;
-    if (selectedItem) return selectedItem.label;
-    if (highlightedIndex === -1) return inputValue;
-
-    const { items } = this.props;
-    const highlightedItem = items && items[highlightedIndex];
-
-    if (highlightedItem) return highlightedItem.label;
-    return "";
-  };
-
   render() {
     const {
       width,
@@ -194,16 +182,16 @@ class SearchField extends React.Component {
       footer
     };
 
-    const { focused, selectedItem } = this.state;
+    const { focused, selectedItem, inputValue } = this.state;
 
     return (
       <DropdownWrapper style={{ width, zIndex }}>
         <Input
-          value={this.getInputValue()}
-          type={selectedItem ? "text" : "search"}
-          clearable
-          clearIcon={selectedItem ? "wg-edit" : undefined}
-          displayBlock
+          {...inputProps}
+          type="search"
+          protected={!!selectedItem}
+          disableManualReplace
+          value={inputValue}
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
           onChange={this.onSearchChange}
