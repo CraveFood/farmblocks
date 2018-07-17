@@ -150,20 +150,15 @@ class SearchField extends React.Component {
     this.onChange(selectedIndex);
   };
 
-  _renderMenu = () => {
-    const { maxMenuHeight, items, onScrollReachEnd, footer } = this.props;
+  _renderMenu = props => {
     const { highlightedIndex } = this.state;
 
     return (
       <Menu
+        {...props}
         innerRef={node => (this.scroller = node)}
-        maxMenuHeight={maxMenuHeight}
-        onScrollReachEnd={onScrollReachEnd}
-        items={items}
         onItemClick={this.onItemClick}
-        onMenuMouseDown={this.preventBlur}
         highlightedIndex={highlightedIndex}
-        footer={footer}
       />
     );
   };
@@ -195,6 +190,13 @@ class SearchField extends React.Component {
       ...inputProps
     } = this.props;
 
+    const menuProps = {
+      maxMenuHeight,
+      items,
+      onScrollReachEnd,
+      footer
+    };
+
     const { focused, selectedItem } = this.state;
 
     return (
@@ -215,7 +217,7 @@ class SearchField extends React.Component {
           innerRef={node => (this.input = node)}
           {...inputProps}
         />
-        {focused && (items || footer) && this._renderMenu()}
+        {focused && (items || footer) && this._renderMenu(menuProps)}
       </DropdownWrapper>
     );
   }
