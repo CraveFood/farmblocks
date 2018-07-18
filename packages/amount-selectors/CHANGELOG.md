@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.5.13...@crave/farmblocks-amount-selectors@1.0.0) (2018-07-18)
+
+
+### Bug Fixes
+
+* **AmountSelector:** let formInput hoc handle number input type css ([91f38b1](https://github.com/CraveFood/farmblocks/commit/91f38b1))
+
+
+### Code Refactoring
+
+* **AmountSelectors:** remove size property passed to InputText ([c699107](https://github.com/CraveFood/farmblocks/commit/c699107))
+
+
+### BREAKING CHANGES
+
+* **AmountSelectors:** size=4 property has been removed
+
+
+
+
 <a name="0.5.13"></a>
 ## [0.5.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@0.5.12...@crave/farmblocks-amount-selectors@0.5.13) (2018-07-12)
 

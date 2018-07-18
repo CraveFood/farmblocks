@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.14"></a>
+## [1.0.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.13...@crave/farmblocks-search-field@1.0.14) (2018-07-18)
+
+
+### Bug Fixes
+
+* **search-field:** fix style of StaticInput ([e54f1c2](https://github.com/CraveFood/farmblocks/commit/e54f1c2))
+
+
+
+
 <a name="1.0.13"></a>
 ## [1.0.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.12...@crave/farmblocks-search-field@1.0.13) (2018-07-12)
 

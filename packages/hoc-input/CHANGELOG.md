@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.2"></a>
+## [3.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.1...@crave/farmblocks-hoc-input@3.1.2) (2018-07-18)
+
+
+### Bug Fixes
+
+* **AmountSelector:** let formInput hoc handle number input type css ([91f38b1](https://github.com/CraveFood/farmblocks/commit/91f38b1))
+* **formInput:** input height and padding are handled in the input tag now ([75ce85d](https://github.com/CraveFood/farmblocks/commit/75ce85d))
+
+
+
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.0...@crave/farmblocks-hoc-input@3.1.1) (2018-07-12)
 
