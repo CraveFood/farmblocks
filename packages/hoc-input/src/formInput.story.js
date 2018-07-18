@@ -109,15 +109,4 @@ storiesOf("HOC formInput", module)
         <EnhancedInput role="combobox" placeholder="Select value" readOnly />
       </div>
     ))
-  )
-  .add(
-    "custom renderContent",
-    withInfo()(() => (
-      <EnhancedInput
-        type="text"
-        renderContent={content => (
-          <div style={{ border: "dotted 4px hotpink" }}>{content}</div>
-        )}
-      />
-    ))
   );
