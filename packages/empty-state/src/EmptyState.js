@@ -20,15 +20,25 @@ class EmptyState extends React.Component {
   }
 
   _renderThumbnail() {
-    return (
-      this.props.imageSrc && (
+    const { imageSrc, icon } = this.props;
+
+    if (imageSrc) {
+      return (
         <Image
           className="thumbnail"
           size={thumbnailSizes.LARGE}
-          src={this.props.imageSrc}
+          src={imageSrc}
         />
-      )
-    );
+      );
+    }
+
+    if (icon) {
+      return (
+        <div className="icon">
+          <i className={icon} />
+        </div>
+      );
+    }
   }
   _renderTitle() {
     return (
@@ -108,7 +118,8 @@ class EmptyState extends React.Component {
     onPrimaryActionClick: PropTypes.func,
     secondaryActionText: PropTypes.string,
     onSecondaryActionClick: PropTypes.func,
-    info: PropTypes.string
+    info: PropTypes.string,
+    icon: PropTypes.string
   };
 }
 
