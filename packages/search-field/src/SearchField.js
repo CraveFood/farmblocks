@@ -85,14 +85,16 @@ class SearchField extends React.Component {
   };
 
   onKeyDown = event => {
-    const { key } = event;
+    const { key, target } = event;
     switch (key) {
       case "Enter":
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnSearchChange.flush();
         } else {
-          event.target && event.target.blur && event.target.blur();
-          this.selectResult(this.state.highlightedIndex);
+          this.selectResult(
+            this.state.highlightedIndex,
+            () => target && target.blur && target.blur()
+          );
         }
         break;
       case "Escape":
@@ -121,9 +123,10 @@ class SearchField extends React.Component {
     this.setState({ inputValue: value });
   };
 
-  valueUpdated = value => {
+  valueUpdated = (value, cb) => {
     const { onChange } = this.props;
-    return onChange && onChange(value);
+    onChange && onChange(value);
+    return cb && cb();
   };
 
   onBlur = () => {
@@ -137,14 +140,14 @@ class SearchField extends React.Component {
     return this.setState({ focused: false, highlightedIndex: -1, inputValue });
   };
 
-  selectResult = index => {
+  selectResult = (index, cb) => {
     const { items } = this.props;
     const selectedItem = items && items[index];
     return (
       selectedItem &&
       this.setState(
         { selectedItem, focused: false, inputValue: selectedItem.label },
-        () => this.valueUpdated(selectedItem.value)
+        () => this.valueUpdated(selectedItem.value, cb)
       )
     );
   };
