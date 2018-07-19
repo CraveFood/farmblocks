@@ -1,5 +1,4 @@
 import * as React from "react";
-import { polyfill } from "react-lifecycles-compat";
 import PropTypes from "prop-types";
 import debounce from "lodash.debounce";
 import isEqual from "lodash.isequal";
@@ -13,8 +12,7 @@ class SearchField extends React.Component {
     highlightedIndex: -1,
     focused: false,
     inputValue: "",
-    lastValue: "",
-    lastItems: [],
+    items: [],
     selectedItem: null
   };
 
@@ -22,6 +20,28 @@ class SearchField extends React.Component {
     this.props.onSearchChange,
     this.props.debounceDelay
   );
+
+  setValueFromProps = () => {
+    const { value, items } = this.props;
+    const selectedItem = items.find(item => item.value === value);
+    if (selectedItem) {
+      this.setState({
+        inputValue: selectedItem.label,
+        selectedItem
+      });
+    }
+  };
+
+  componentDidMount = () => {
+    const { value, items } = this.props;
+    if (items) {
+      this.setState({ items });
+    }
+
+    if (value) {
+      this.setValueFromProps();
+    }
+  };
 
   componentDidUpdate = prevProps => {
     if (
@@ -34,26 +54,14 @@ class SearchField extends React.Component {
         this.props.debounceDelay
       );
     }
-  };
 
-  static getDerivedStateFromProps = (props, state) => {
-    const valueChanged = props.value !== state.lastValue;
-    if (valueChanged || !isEqual(props.items, state.lastItems)) {
-      const selectedItem =
-        props.items && props.items.find(item => item.value === props.value);
-      const inputValue = selectedItem
-        ? selectedItem.label
-        : valueChanged
-          ? ""
-          : state.inputValue;
-      return {
-        inputValue,
-        selectedItem,
-        lastValue: props.value,
-        lastItems: props.items
-      };
+    if (!isEqual(prevProps.items, this.props.items)) {
+      this.setState({ items: this.props.items });
     }
-    return null;
+
+    if (prevProps.value !== this.props.value) {
+      this.setValueFromProps();
+    }
   };
 
   componentWillUnmount = () => {
@@ -83,6 +91,7 @@ class SearchField extends React.Component {
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnSearchChange.flush();
         } else {
+          event.target.blur && event.target.blur();
           this.selectResult(this.state.highlightedIndex);
         }
         break;
@@ -177,7 +186,7 @@ class SearchField extends React.Component {
 
     const menuProps = {
       maxMenuHeight,
-      items,
+      items: this.state.items,
       onScrollReachEnd,
       footer
     };
@@ -197,7 +206,7 @@ class SearchField extends React.Component {
           onChange={this.onSearchChange}
           onBlur={this.onBlur}
         />
-        {focused && (items || footer) && this._renderMenu(menuProps)}
+        {focused && (this.state.items || footer) && this._renderMenu(menuProps)}
       </DropdownWrapper>
     );
   }
@@ -220,8 +229,5 @@ class SearchField extends React.Component {
     ...Menu.propTypes
   };
 }
-
-// For React 16.2 or older
-polyfill(SearchField);
 
 export default SearchField;
