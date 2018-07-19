@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.1"></a>
+## [3.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.0...@crave/farmblocks-hoc-input@3.2.1) (2018-07-19)
+
+
+### Bug Fixes
+
+* **formInput:** adjust margin of clear icon on small sized search inputs ([477d362](https://github.com/CraveFood/farmblocks/commit/477d362))
+
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.2...@crave/farmblocks-hoc-input@3.2.0) (2018-07-19)
 
