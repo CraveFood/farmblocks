@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.2...@crave/farmblocks-hoc-input@3.2.0) (2018-07-19)
+
+
+### Features
+
+* **formInput:** add leftIcon property ([ab3046c](https://github.com/CraveFood/farmblocks/commit/ab3046c)), closes [#444](https://github.com/CraveFood/farmblocks/issues/444)
+
+
+
+
 <a name="3.1.2"></a>
 ## [3.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.1...@crave/farmblocks-hoc-input@3.1.2) (2018-07-18)
 
