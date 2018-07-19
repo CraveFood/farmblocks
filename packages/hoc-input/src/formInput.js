@@ -27,7 +27,8 @@ export const formInputProps = {
   readOnly: PropTypes.bool,
   refName: PropTypes.string,
   clearable: PropTypes.bool,
-  clearIcon: PropTypes.string
+  clearIcon: PropTypes.string,
+  leftIcon: PropTypes.string
 };
 
 const formInput = WrappedComponent => {
@@ -78,7 +79,14 @@ const formInput = WrappedComponent => {
       );
     }
 
-    _renderInput({ innerRef, refName, clearable, clearIcon, ...inputProps }) {
+    _renderInput({
+      innerRef,
+      refName,
+      clearable,
+      clearIcon,
+      leftIcon,
+      ...inputProps
+    }) {
       const handlers = {
         onChange: this.onChange,
         onFocus: this.onFocus,
@@ -87,11 +95,7 @@ const formInput = WrappedComponent => {
 
       const isSearch =
         inputProps.type && inputProps.type.toLowerCase() === "search";
-      const icon = isSearch && (
-        <div className="icon search">
-          <i className="wg-search" />
-        </div>
-      );
+      const iconName = leftIcon || (isSearch && "wg-search");
 
       const clearButton = (clearable || isSearch) &&
         this.state.value && (
@@ -115,7 +119,11 @@ const formInput = WrappedComponent => {
           }}
           onMouseDown={this.preventBlurOfClearIcon}
         >
-          {icon}
+          {iconName && (
+            <div className="icon left">
+              <i className={iconName} />
+            </div>
+          )}
           <WrappedComponent
             className="wrapped"
             {...inputProps}

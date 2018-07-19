@@ -109,4 +109,18 @@ storiesOf("HOC formInput", module)
         <EnhancedInput role="combobox" placeholder="Select value" readOnly />
       </div>
     ))
+  )
+  .add(
+    "html input with leftIcon",
+    withInfo()(() => <EnhancedInput leftIcon="wg-order" value="olar" />)
+  )
+  .add(
+    "small html input with leftIcon",
+    withInfo()(() => (
+      <EnhancedInput
+        leftIcon="wg-order"
+        fontSize={fontSizes.SMALL}
+        value="olar"
+      />
+    ))
   );

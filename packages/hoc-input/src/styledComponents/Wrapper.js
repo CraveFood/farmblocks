@@ -95,8 +95,8 @@ const Wrapper = styled.div`
       height: 16px;
     }
 
-    .icon.search {
-      margin-left: 16px;
+    .icon.left {
+      margin-left: ${ifSmall("8", "16")}px;
     }
 
     .icon.dropdown {
