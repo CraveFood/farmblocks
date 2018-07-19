@@ -292,28 +292,42 @@ describe("SearchField", () => {
     });
 
     test("should run onChange on Enter key with highlighted item", () => {
-      const index = 10;
-      event.key = "Enter";
-      instance.state.highlightedIndex = index;
-      instance.onKeyDown(event);
+      const index = 0;
+      const value = 42;
+      const items = [{ value, label: "Foo" }];
+      const onChangeMock = jest.fn();
 
-      expect(onChangeSpy).toHaveBeenCalledWith(index);
+      const component = mount(
+        <SearchField items={items} onChange={onChangeMock} />
+      );
+      event.key = "Enter";
+      component.setState({ highlightedIndex: index });
+      component.instance().onKeyDown(event);
+
+      expect(onChangeMock).toHaveBeenCalledWith(value);
     });
 
     test("should remove focus from the input on Enter key with highlighted item", () => {
-      const index = 10;
+      const index = 0;
+      const value = 42;
+      const items = [{ value, label: "Foo" }];
+
+      const component = mount(<SearchField items={items} />);
       event.key = "Enter";
-      instance.state.highlightedIndex = index;
-      instance.onKeyDown(event);
+      component.setState({ highlightedIndex: index });
+      component.instance().onKeyDown(event);
 
       expect(onBlurSpy).toHaveBeenCalled();
     });
-    test("should reset highlight on Esc key", () => {
+    test("should reset highlight on Esc key", done => {
       event.key = "Escape";
       instance.onKeyDown(event);
       const stateChange = setStateSpy.mock.calls[0][0];
 
-      expect(stateChange).toHaveProperty("highlightedIndex", -1);
+      window.setTimeout(() => {
+        expect(stateChange).toHaveProperty("highlightedIndex", -1);
+        done();
+      }, 1000);
     });
 
     test("should preventDefault on ArrowUp key", () => {
