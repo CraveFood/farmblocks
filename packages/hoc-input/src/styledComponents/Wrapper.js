@@ -115,7 +115,7 @@ const Wrapper = styled.div`
         text-decoration: none;
         cursor: pointer;
       }
-      margin-right: 16px;
+      margin-right: ${ifSmall("8", "16")}px;
     }
   }
 
