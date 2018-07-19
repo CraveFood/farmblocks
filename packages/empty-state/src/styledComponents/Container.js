@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fontTypes } from "@crave/farmblocks-text";
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +23,11 @@ const Container = styled.div`
 
   > .buttons .withMargin {
     margin-right: 16px;
+  }
+
+  .icon {
+    font-size: 72px;
+    color: ${fontTypes.SUBTLE};
   }
 `;
 

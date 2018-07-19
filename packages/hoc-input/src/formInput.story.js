@@ -85,6 +85,16 @@ storiesOf("HOC formInput", module)
     withInfo()(() => <EnhancedInput type="search" value="broccoli" />)
   )
   .add(
+    "small html search input with value",
+    withInfo()(() => (
+      <EnhancedInput
+        type="search"
+        fontSize={fontSizes.SMALL}
+        value="broccoli"
+      />
+    ))
+  )
+  .add(
     "html search input with custom clear icon",
     withInfo()(() => (
       <EnhancedInput type="search" value="broccoli" clearIcon="wg-close" />
@@ -112,7 +122,7 @@ storiesOf("HOC formInput", module)
   )
   .add(
     "html input with leftIcon",
-    withInfo()(() => <EnhancedInput leftIcon="wg-order" value="olar" />)
+    withInfo()(() => <EnhancedInput leftIcon="wg-order" value="foo bar" />)
   )
   .add(
     "small html input with leftIcon",
@@ -120,7 +130,7 @@ storiesOf("HOC formInput", module)
       <EnhancedInput
         leftIcon="wg-order"
         fontSize={fontSizes.SMALL}
-        value="olar"
+        value="foo bar"
       />
     ))
   );
