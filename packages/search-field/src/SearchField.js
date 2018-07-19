@@ -130,8 +130,10 @@ class SearchField extends React.Component {
     const { selectedItem } = this.state;
     const inputValue =
       selectedItem && selectedItem.label ? selectedItem.label : "";
-    this.props.onSearchChange(inputValue);
-    this.props.onChange(inputValue);
+    if (!selectedItem) {
+      this.props.onSearchChange(inputValue);
+      this.props.onChange(inputValue);
+    }
     return this.setState({ focused: false, highlightedIndex: -1, inputValue });
   };
 
