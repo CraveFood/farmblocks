@@ -23,7 +23,7 @@ class SearchField extends React.Component {
 
   setValueFromProps = () => {
     const { value, items } = this.props;
-    const selectedItem = items.find(item => item.value === value);
+    const selectedItem = items && items.find(item => item.value === value);
     if (selectedItem) {
       this.setState({
         inputValue: selectedItem.label,
@@ -91,7 +91,7 @@ class SearchField extends React.Component {
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnSearchChange.flush();
         } else {
-          event.target.blur && event.target.blur();
+          event.target && event.target.blur && event.target.blur();
           this.selectResult(this.state.highlightedIndex);
         }
         break;
@@ -206,7 +206,9 @@ class SearchField extends React.Component {
           onChange={this.onSearchChange}
           onBlur={this.onBlur}
         />
-        {focused && (this.state.items || footer) && this._renderMenu(menuProps)}
+        {focused &&
+          ((this.state.items && this.state.items.length) || footer) &&
+          this._renderMenu(menuProps)}
       </DropdownWrapper>
     );
   }

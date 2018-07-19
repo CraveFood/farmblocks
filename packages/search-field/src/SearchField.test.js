@@ -137,43 +137,37 @@ describe("SearchField", () => {
         debounceDelay
       );
     });
-  });
 
-  describe("getDerivedStateFromProps", () => {
     test("should return new state if value changes", () => {
       const item = { value: "ab", label: "AB" };
-      const props = { value: "ab", items: [item] };
-      const state = { lastValue: "a", lastItems: [item] };
-      const result = SearchField.getDerivedStateFromProps(props, state);
+      const props = { value: "ab" };
+      const component = mount(<SearchField items={[item]} value="ba" />);
+      const oldState = component.state();
+      component.setProps(props);
 
-      expect(result).toEqual({
-        selectedItem: item,
-        inputValue: item.label,
-        lastValue: props.value,
-        lastItems: props.items
-      });
+      expect(component.state()).not.toEqual(oldState);
+      expect(component.state("selectedItem")).toEqual(item);
+      expect(component.state("inputValue")).toBe(item.label);
     });
 
     test("should return new state if items changes", () => {
       const item = { value: "ab", label: "AB" };
-      const props = { value: "ab", items: [item] };
-      const state = { lastValue: "ab", lastItems: [] };
-      const result = SearchField.getDerivedStateFromProps(props, state);
+      const props = { items: [item] };
+      const component = mount(<SearchField items={[]} value="" />);
+      const oldState = component.state();
+      component.setProps(props);
 
-      expect(result).toEqual({
-        selectedItem: item,
-        inputValue: item.label,
-        lastValue: props.value,
-        lastItems: props.items
-      });
+      expect(component.state()).not.toEqual(oldState);
+      expect(component.state("items")).toEqual([item]);
     });
 
-    test("should return null if there is no change", () => {
+    test("should not change state if there props are the same", () => {
       const props = { value: "a" };
-      const state = { lastValue: "a" };
-      const result = SearchField.getDerivedStateFromProps(props, state);
+      const component = mount(<SearchField value={props.value} />);
+      const oldState = component.state();
+      component.setProps(props);
 
-      expect(result).toBeNull();
+      expect(component.state()).toEqual(oldState);
     });
   });
 
@@ -256,11 +250,15 @@ describe("SearchField", () => {
   });
 
   describe("onKeyDown", () => {
-    let preventDefaultSpy, event, onChangeSpy, changeHighlightSpy;
+    let preventDefaultSpy, event, onBlurSpy, onChangeSpy, changeHighlightSpy;
     beforeEach(() => {
       preventDefaultSpy = jest.fn();
+      onBlurSpy = jest.fn();
       event = {
         key: "a",
+        target: {
+          blur: onBlurSpy
+        },
         preventDefault: preventDefaultSpy
       };
       onChangeSpy = jest.fn();
@@ -271,6 +269,7 @@ describe("SearchField", () => {
     afterEach(() => {
       preventDefaultSpy.mockReset();
       event = null;
+      onBlurSpy.mockReset();
       onChangeSpy.mockReset();
       changeHighlightSpy.mockReset();
     });
@@ -301,6 +300,14 @@ describe("SearchField", () => {
       expect(onChangeSpy).toHaveBeenCalledWith(index);
     });
 
+    test("should remove focus from the input on Enter key with highlighted item", () => {
+      const index = 10;
+      event.key = "Enter";
+      instance.state.highlightedIndex = index;
+      instance.onKeyDown(event);
+
+      expect(onBlurSpy).toHaveBeenCalled();
+    });
     test("should reset highlight on Esc key", () => {
       event.key = "Escape";
       instance.onKeyDown(event);
@@ -407,7 +414,7 @@ describe("SearchField", () => {
   describe("onBlur", () => {
     let selectedItem, onSearchChangeSpy, onChangeSpy;
     beforeEach(() => {
-      selectedItem = {};
+      selectedItem = { label: "foo", value: 42 };
       onSearchChangeSpy = jest.fn();
       onChangeSpy = jest.fn();
       instance.props = {
@@ -423,6 +430,7 @@ describe("SearchField", () => {
       instance.props = null;
     });
     const getStateChange = (prevState = {}) => {
+      instance.state = prevState;
       instance.onBlur();
       return setStateSpy.mock.calls[0][0];
     };
@@ -438,6 +446,12 @@ describe("SearchField", () => {
         const stateChange = getStateChange({ selectedItem });
 
         expect(stateChange).toHaveProperty("highlightedIndex", -1);
+      });
+
+      test("should reset inpuValue to previous selected item label", () => {
+        const stateChange = getStateChange({ selectedItem });
+
+        expect(stateChange).toHaveProperty("inputValue", selectedItem.label);
       });
     });
 
@@ -541,9 +555,10 @@ describe("SearchField", () => {
     });
 
     test("should show Menu when has focus and items", () => {
-      instance.render();
-
-      expect(renderMenuSpy).toHaveBeenCalledTimes(1);
+      const component = mount(<SearchField items={items} />);
+      component.setState({ focused: true });
+      const menuElements = component.find("Menu");
+      expect(menuElements.length).toBe(1);
     });
 
     test("should NOT show Menu if input is not focused", () => {
