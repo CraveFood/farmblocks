@@ -13,19 +13,15 @@ const backgroundColor = props => {
     : cardTypeColors[cardTypes.DEFAULT];
 };
 
-const width = props => props.width || "100%";
-
-const padding = props => props.padding || "16px";
-
 const Card = styled.div`
   background-color: ${backgroundColor};
   box-shadow: ${boxShadow};
   border: solid 1px ${colors.GREY_16};
-  width: ${width};
-  padding: ${padding};
+  width: ${props => props.width};
+  padding: ${props => props.padding};
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: ${props => props.overflow};
 `;
 
 export default Card;
