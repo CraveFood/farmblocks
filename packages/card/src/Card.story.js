@@ -3,6 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import EmptyState from "@crave/farmblocks-empty-state";
 import Footer from "@crave/farmblocks-footer";
+import Button from "@crave/farmblocks-button";
+
 import { cardTypes } from "./constants/cardTypes";
 
 import Card from ".";
@@ -43,6 +45,14 @@ storiesOf("Card", module)
           helpLinkHref="#"
           helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
         />
+      </Card>
+    ))
+  )
+  .add(
+    "With overflow visible",
+    withInfo()(() => (
+      <Card overflow="visible">
+        <Button text="Hover me to show tooltip" disabled />
       </Card>
     ))
   );
