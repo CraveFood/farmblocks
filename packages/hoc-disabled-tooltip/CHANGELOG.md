@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.9"></a>
+## [1.1.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-disabled-tooltip@1.1.8...@crave/farmblocks-hoc-disabled-tooltip@1.1.9) (2018-07-20)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-hoc-disabled-tooltip
+
 <a name="1.1.8"></a>
 ## [1.1.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-disabled-tooltip@1.1.7...@crave/farmblocks-hoc-disabled-tooltip@1.1.8) (2018-06-22)
 
