@@ -462,7 +462,7 @@ describe("SearchField", () => {
         expect(stateChange).toHaveProperty("highlightedIndex", -1);
       });
 
-      test("should reset inpuValue to previous selected item label", () => {
+      test("should reset inputValue to previous selected item label", () => {
         const stateChange = getStateChange({ selectedItem });
 
         expect(stateChange).toHaveProperty("inputValue", selectedItem.label);
