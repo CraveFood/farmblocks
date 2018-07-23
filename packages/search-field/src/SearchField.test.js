@@ -161,7 +161,7 @@ describe("SearchField", () => {
       expect(component.state("items")).toEqual([item]);
     });
 
-    test("should not change state if there props are the same", () => {
+    test("should not change state if the props are the same", () => {
       const props = { value: "a" };
       const component = mount(<SearchField value={props.value} />);
       const oldState = component.state();
@@ -319,15 +319,12 @@ describe("SearchField", () => {
 
       expect(onBlurSpy).toHaveBeenCalled();
     });
-    test("should reset highlight on Esc key", done => {
+    test("should reset highlight on Esc key", () => {
       event.key = "Escape";
       instance.onKeyDown(event);
       const stateChange = setStateSpy.mock.calls[0][0];
 
-      window.setTimeout(() => {
-        expect(stateChange).toHaveProperty("highlightedIndex", -1);
-        done();
-      }, 1000);
+      expect(stateChange).toHaveProperty("highlightedIndex", -1);
     });
 
     test("should preventDefault on ArrowUp key", () => {
