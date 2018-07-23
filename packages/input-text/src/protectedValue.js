@@ -139,9 +139,7 @@ export default WrappedComponent => {
             protected={covered}
             focused={this.state.isEditing}
             value={isEditing ? this.state.editedValue : this.state.value}
-            onKeyDown={
-              covered && !disableManualReplace ? this.onKeyDown : onKeyDown
-            }
+            onKeyDown={covered && displayButtons ? this.onKeyDown : onKeyDown}
             onChange={event => {
               this.setState({ editedValue: event.target.value });
               onChange && onChange(event);
