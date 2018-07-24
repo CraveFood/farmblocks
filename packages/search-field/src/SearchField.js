@@ -23,13 +23,21 @@ class SearchField extends React.Component {
 
   setValueFromProps = () => {
     const { value, items } = this.props;
+    const emptyState = { inputValue: "", selectedItem: null };
+
+    if (!value) {
+      return this.setState(emptyState);
+    }
+
     const selectedItem = items && items.find(item => item.value === value);
     if (selectedItem) {
-      this.setState({
+      return this.setState({
         inputValue: selectedItem.label,
         selectedItem
       });
     }
+
+    return this.setState(emptyState);
   };
 
   componentDidMount = () => {

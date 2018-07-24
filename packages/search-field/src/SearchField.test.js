@@ -150,6 +150,34 @@ describe("SearchField", () => {
       expect(component.state("inputValue")).toBe(item.label);
     });
 
+    test("should remove previous selected if value changes to null", () => {
+      const item = { value: "ab", label: "AB" };
+      const props = { value: null };
+      const component = mount(<SearchField items={[item]} value="ab" />);
+      const oldState = component.state();
+
+      component.setProps(props);
+      const newState = component.state();
+
+      expect(newState).not.toEqual(oldState);
+      expect(newState.selectedItem).toEqual(null);
+      expect(newState.inputValue).toEqual("");
+    });
+
+    test("should remove previous selected if value changes to something not on the list", () => {
+      const item = { value: "ab", label: "AB" };
+      const props = { value: "ba" };
+      const component = mount(<SearchField items={[item]} value="ab" />);
+      const oldState = component.state();
+
+      component.setProps(props);
+      const newState = component.state();
+
+      expect(newState).not.toEqual(oldState);
+      expect(newState.selectedItem).toEqual(null);
+      expect(newState.inputValue).toEqual("");
+    });
+
     test("should return new state if items changes", () => {
       const item = { value: "ab", label: "AB" };
       const props = { items: [item] };
