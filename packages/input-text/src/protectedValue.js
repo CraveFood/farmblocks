@@ -8,6 +8,8 @@ import { formInputProps, styledInput } from "@crave/farmblocks-hoc-input";
 
 // the cover of a protected field is a div (instead of an input) enhanced with formInput hoc and some extra style overridings
 const Cover = styled(styledInput)`
+  display: block;
+
   .input {
     position: absolute;
     width: 100%;
