@@ -52,6 +52,7 @@ This code will render:
 | renderItem       | Custom render item function                                                           | renderItem(item): node                                             |          |             |
 | noResultsMessage | Custom no results message to be displayed when there is no result available on search | string                                                             |          |             |
 | disableSearch    | Disables item search                                                                  | boolean                                                            |          | false       |
+| maxHeight        | Set a maximum height for the menu                                                     | string                                                             |          |             |
 
 ## Subcomponent: Item
 

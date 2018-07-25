@@ -12,6 +12,13 @@ const items = [
   { value: "3", label: "Pear" }
 ];
 
+const moreItems = [
+  ...items,
+  { value: "4", label: "Strawberry" },
+  { value: "5", label: "Peach" },
+  { value: "6", label: "Coconut" }
+];
+
 const imgSrc = "https://picsum.photos/100";
 
 storiesOf("Select Input", module)
@@ -198,5 +205,18 @@ storiesOf("Select Input", module)
           Z-index: 12
         </div>
       </div>
+    ))
+  )
+  .add(
+    "With max height",
+    withInfo()(() => (
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        value={1}
+        items={moreItems}
+        onChange={action("onChange")}
+        maxHeight="150px"
+      />
     ))
   );
