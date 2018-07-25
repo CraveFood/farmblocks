@@ -206,39 +206,42 @@ storiesOf("Search Field", module)
     ))
   )
   .add(
-    "update items",
+    "update items every 3 seconds",
     withInfo()(() => {
+      const itemsA = items;
+      const itemsB = [{ value: "444", label: "Avocado", image }];
+      const valueA = "2";
+      const valueB = "444";
+
       class Test extends React.Component {
         state = {
-          items,
+          items: [],
+          count: 0,
           value: "2"
+        };
+
+        componentDidMount = () => {
+          this.interval = window.setInterval(() => {
+            const items = this.state.count % 2 ? itemsA : itemsB;
+            const value = this.state.count % 2 ? valueA : valueB;
+            this.setState({
+              items,
+              value,
+              count: this.state.count + 1
+            });
+          }, 3000);
+        };
+        componentWillUnmount = () => {
+          window.clearInterval(this.interval);
         };
 
         render() {
           return (
-            <div>
-              <button
-                onClick={() => {
-                  this.setState({
-                    value: "444"
-                  });
-
-                  setTimeout(() => {
-                    this.setState({
-                      items: [{ value: "444", label: "Avocado", image }]
-                    });
-                  }, 1000);
-                }}
-              >
-                Update items
-              </button>
-
-              <SearchField
-                value={this.state.value}
-                items={this.state.items}
-                label="Fruits"
-              />
-            </div>
+            <SearchField
+              value={this.state.value}
+              items={this.state.items}
+              label="Fruits"
+            />
           );
         }
       }

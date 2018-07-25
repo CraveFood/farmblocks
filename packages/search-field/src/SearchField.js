@@ -1,35 +1,18 @@
 import * as React from "react";
-import { polyfill } from "react-lifecycles-compat";
 import PropTypes from "prop-types";
-import { compose } from "recompose";
 import debounce from "lodash.debounce";
 import isEqual from "lodash.isequal";
-import disabledTooltip, {
-  disabledTooltipProps
-} from "@crave/farmblocks-hoc-disabled-tooltip";
-import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
-import withMessages, {
-  withMessagesProps
-} from "@crave/farmblocks-hoc-validation-messages";
+import Input from "@crave/farmblocks-input-text";
 
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import Menu from "./components/Menu";
-import StaticInput from "./components/StaticInput";
-
-const EnhancedInput = compose(disabledTooltip, withMessages, formInput)(
-  "input"
-);
-EnhancedInput.displayName = "EnhancedInput";
-const ReadOnly = compose(disabledTooltip, withMessages, formInput)(StaticInput);
-ReadOnly.displayName = "ReadOnly";
 
 class SearchField extends React.Component {
   state = {
     highlightedIndex: -1,
     focused: false,
     inputValue: "",
-    lastValue: "",
-    lastItems: [],
+    items: [],
     selectedItem: null
   };
 
@@ -38,17 +21,33 @@ class SearchField extends React.Component {
     this.props.debounceDelay
   );
 
-  onSearchChange = event => {
-    const { value } = event.target;
-    this.setState({
-      inputValue: value,
-      highlightedIndex: -1,
-      selectedItem: null
-    });
-    this.debouncedOnSearchChange(value);
+  setValueFromProps = () => {
+    const { value, items } = this.props;
+    const emptyState = { inputValue: "", selectedItem: null };
+
     if (!value) {
-      this.debouncedOnSearchChange.flush();
-      this.props.onChange();
+      return this.setState(emptyState);
+    }
+
+    const selectedItem = items && items.find(item => item.value === value);
+    if (selectedItem) {
+      return this.setState({
+        inputValue: selectedItem.label,
+        selectedItem
+      });
+    }
+
+    return this.setState(emptyState);
+  };
+
+  componentDidMount = () => {
+    const { value, items } = this.props;
+    if (items) {
+      this.setState({ items });
+    }
+
+    if (value) {
+      this.setValueFromProps();
     }
   };
 
@@ -63,26 +62,14 @@ class SearchField extends React.Component {
         this.props.debounceDelay
       );
     }
-  };
 
-  static getDerivedStateFromProps = (props, state) => {
-    const valueChanged = props.value !== state.lastValue;
-    if (valueChanged || !isEqual(props.items, state.lastItems)) {
-      const selectedItem =
-        props.items && props.items.find(item => item.value === props.value);
-      const inputValue = selectedItem
-        ? selectedItem.label
-        : valueChanged
-          ? ""
-          : state.inputValue;
-      return {
-        inputValue,
-        selectedItem,
-        lastValue: props.value,
-        lastItems: props.items
-      };
+    if (!isEqual(prevProps.items, this.props.items)) {
+      this.setState({ items: this.props.items });
     }
-    return null;
+
+    if (prevProps.value !== this.props.value) {
+      this.setValueFromProps();
+    }
   };
 
   componentWillUnmount = () => {
@@ -106,13 +93,16 @@ class SearchField extends React.Component {
   };
 
   onKeyDown = event => {
-    const { key } = event;
+    const { key, target } = event;
     switch (key) {
       case "Enter":
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnSearchChange.flush();
         } else {
-          this.onChange(this.state.highlightedIndex);
+          this.selectResult(
+            this.state.highlightedIndex,
+            () => target && target.blur && target.blur()
+          );
         }
         break;
       case "Escape":
@@ -129,31 +119,45 @@ class SearchField extends React.Component {
     }
   };
 
-  onChange = index => {
-    const selectedItem = this.props.items && this.props.items[index];
-    if (selectedItem) {
-      this.setState({ selectedItem });
-      this.props.onChange(selectedItem.value);
-    }
-    this.input && this.input.blur();
-  };
-
   onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
 
-  onBlur = () => {
-    const focusReset = { focused: false, highlightedIndex: -1 };
-    this.setState(prevState => {
-      if (prevState.selectedItem) {
-        return focusReset;
-      }
-      this.props.onSearchChange("");
-      this.props.onChange();
-      return { ...focusReset, inputValue: "", selectedItem: null };
-    });
+  onSearchChange = event => {
+    const { value } = event.target;
+    this.debouncedOnSearchChange(value);
+    if (!value) {
+      this.debouncedOnSearchChange.flush();
+      this.valueUpdated();
+    }
+    this.setState({ inputValue: value });
   };
 
-  preventBlur = event => {
-    event.preventDefault();
+  valueUpdated = (value, cb) => {
+    const { onChange } = this.props;
+    onChange && onChange(value);
+    return cb && cb();
+  };
+
+  onBlur = () => {
+    const { selectedItem } = this.state;
+    const inputValue =
+      selectedItem && selectedItem.label ? selectedItem.label : "";
+    if (!selectedItem) {
+      this.props.onSearchChange(inputValue);
+      this.props.onChange(inputValue);
+    }
+    return this.setState({ focused: false, highlightedIndex: -1, inputValue });
+  };
+
+  selectResult = (index, cb) => {
+    const { items } = this.props;
+    const selectedItem = items && items[index];
+    return (
+      selectedItem &&
+      this.setState(
+        { selectedItem, focused: false, inputValue: selectedItem.label },
+        () => this.valueUpdated(selectedItem.value, cb)
+      )
+    );
   };
 
   onItemClick = ({ currentTarget }) => {
@@ -162,37 +166,20 @@ class SearchField extends React.Component {
       this.scroller.wrapper && // ref inside a ref 😜
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
 
-    this.onChange(selectedIndex);
+    this.selectResult(selectedIndex);
   };
 
-  _renderMenu = () => {
-    const { maxMenuHeight, items, onScrollReachEnd, footer } = this.props;
+  _renderMenu = props => {
     const { highlightedIndex } = this.state;
 
     return (
       <Menu
+        {...props}
         innerRef={node => (this.scroller = node)}
-        maxMenuHeight={maxMenuHeight}
-        onScrollReachEnd={onScrollReachEnd}
-        items={items}
         onItemClick={this.onItemClick}
-        onMenuMouseDown={this.preventBlur}
         highlightedIndex={highlightedIndex}
-        footer={footer}
       />
     );
-  };
-
-  getInputValue = () => {
-    const { selectedItem, highlightedIndex, inputValue } = this.state;
-    if (selectedItem) return selectedItem.label;
-    if (highlightedIndex === -1) return inputValue;
-
-    const { items } = this.props;
-    const highlightedItem = items && items[highlightedIndex];
-
-    if (highlightedItem) return highlightedItem.label;
-    return "";
   };
 
   render() {
@@ -210,39 +197,31 @@ class SearchField extends React.Component {
       ...inputProps
     } = this.props;
 
-    const { focused, selectedItem } = this.state;
+    const menuProps = {
+      maxMenuHeight,
+      items: this.state.items,
+      onScrollReachEnd,
+      footer
+    };
 
-    const Input = selectedItem ? ReadOnly : EnhancedInput;
-
-    Input.displayName = "Input";
-
-    // When there's an item selected and we click the edit icon,
-    // the input ref points to the StaticInput instance, which has no focus().
-    // By setting the component focused prop, the regular
-    // input will get focus when it gets mounted.
-    const autoFocus =
-      this.input && this.input.nodeName !== "INPUT" && selectedItem === null; //selectedItem === null avoid focus when updating items
+    const { focused, selectedItem, inputValue } = this.state;
 
     return (
-      <DropdownWrapper
-        style={{ width, zIndex }}
-        className={!focused && !!selectedItem && "selected"}
-      >
+      <DropdownWrapper style={{ width, zIndex }}>
         <Input
-          value={this.getInputValue()}
-          onChange={this.onSearchChange}
-          type={selectedItem ? "text" : "search"}
-          clearable
-          focused={autoFocus}
-          clearIcon={selectedItem ? "wg-edit" : undefined}
-          displayBlock
+          {...inputProps}
+          type="search"
+          protected={!!selectedItem}
+          disableManualReplace
+          value={inputValue}
           onKeyDown={this.onKeyDown}
           onFocus={this.onFocus}
+          onChange={this.onSearchChange}
           onBlur={this.onBlur}
-          innerRef={node => (this.input = node)}
-          {...inputProps}
         />
-        {focused && (items || footer) && this._renderMenu()}
+        {focused &&
+          ((this.state.items && this.state.items.length) || footer) &&
+          this._renderMenu(menuProps)}
       </DropdownWrapper>
     );
   }
@@ -262,14 +241,8 @@ class SearchField extends React.Component {
     onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
-    ...Menu.propTypes,
-    ...formInputProps,
-    ...withMessagesProps,
-    ...disabledTooltipProps
+    ...Menu.propTypes
   };
 }
-
-// For React 16.2 or older
-polyfill(SearchField);
 
 export default SearchField;

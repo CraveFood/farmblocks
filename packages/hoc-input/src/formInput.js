@@ -59,6 +59,7 @@ const formInput = WrappedComponent => {
         input,
         meta,
         protected: covered,
+        disableManualReplace,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {

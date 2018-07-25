@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Search Field Default 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ exports[`Storyshots Search Field Default 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,7 +36,7 @@ exports[`Storyshots Search Field Default 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -60,13 +60,13 @@ exports[`Storyshots Search Field Default 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -81,78 +81,78 @@ exports[`Storyshots Search Field Default 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -166,15 +166,39 @@ exports[`Storyshots Search Field Default 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -210,73 +234,81 @@ exports[`Storyshots Search Field Default 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Search Field Z-index 1`] = `
-.c2 {
+exports[`Storyshots Search Field With other elements in a form 1`] = `
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -286,7 +318,7 @@ exports[`Storyshots Search Field Z-index 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -296,7 +328,7 @@ exports[`Storyshots Search Field Z-index 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -320,13 +352,13 @@ exports[`Storyshots Search Field Z-index 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -341,78 +373,78 @@ exports[`Storyshots Search Field Z-index 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -426,15 +458,402 @@ exports[`Storyshots Search Field Z-index 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c0 input {
+  width: 100%;
+  min-width: 0;
+}
+
+.c0.selected .input {
+  background: #f6f8f9;
+  cursor: auto;
+}
+
+<form>
+  <div
+    className="c0 c1"
+    style={
+      Object {
+        "width": 200,
+        "zIndex": undefined,
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c4"
+            >
+              <div
+                className="c5"
+                disabled={false}
+                onClick={[Function]}
+                type="search"
+              >
+                <div
+                  className="input"
+                  onMouseDown={[Function]}
+                >
+                  <div
+                    className="icon left"
+                  >
+                    <i
+                      className="wg-search"
+                    />
+                  </div>
+                  <input
+                    className="wrapped"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onInvalid={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    type="search"
+                    value=""
+                  />
+                  
+                </div>
+                <div
+                  className="label c6"
+                  size={14}
+                  type="#2f313a"
+                >
+                  Fruits
+                </div>
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c0 c1"
+    style={
+      Object {
+        "width": 200,
+        "zIndex": undefined,
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c4"
+            >
+              <div
+                className="c5"
+                disabled={false}
+                onClick={[Function]}
+                type="search"
+              >
+                <div
+                  className="input"
+                  onMouseDown={[Function]}
+                >
+                  <div
+                    className="icon left"
+                  >
+                    <i
+                      className="wg-search"
+                    />
+                  </div>
+                  <input
+                    className="wrapped"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onInvalid={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    type="search"
+                    value=""
+                  />
+                  
+                </div>
+                <div
+                  className="label c6"
+                  size={14}
+                  type="#2f313a"
+                >
+                  More Fruits
+                </div>
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Search Field Z-index 1`] = `
+.c3 {
+  display: block;
+}
+
+.c3 .hitWrapper {
+  position: relative;
+}
+
+.c3 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -485,50 +904,58 @@ exports[`Storyshots Search Field Z-index 1`] = `
       className="c2"
     >
       <div
-        className="hitWrapper"
+        className="c3"
       >
-        <div>
-          <div
-            className="c3"
-            disabled={false}
-            onClick={[Function]}
-            type="search"
-          >
+        <div
+          className="hitWrapper"
+        >
+          <div>
             <div
-              className="input"
-              onMouseDown={[Function]}
+              className="c4"
             >
               <div
-                className="icon left"
-              >
-                <i
-                  className="wg-search"
-                />
-              </div>
-              <input
-                className="wrapped"
+                className="c5"
                 disabled={false}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
-                onKeyDown={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
+                onClick={[Function]}
                 type="search"
-                value=""
-              />
-              
+              >
+                <div
+                  className="input"
+                  onMouseDown={[Function]}
+                >
+                  <div
+                    className="icon left"
+                  >
+                    <i
+                      className="wg-search"
+                    />
+                  </div>
+                  <input
+                    className="wrapped"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onInvalid={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    type="search"
+                    value=""
+                  />
+                  
+                </div>
+                <div
+                  className="label c6"
+                  size={14}
+                  type="#2f313a"
+                >
+                  Fruits
+                </div>
+              </div>
             </div>
-            <div
-              className="label c4"
-              size={14}
-              type="#2f313a"
-            >
-              Fruits
-            </div>
+            <div />
           </div>
-          <div />
         </div>
       </div>
     </div>
@@ -552,22 +979,22 @@ exports[`Storyshots Search Field Z-index 1`] = `
 `;
 
 exports[`Storyshots Search Field custom debounce delay 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -577,7 +1004,7 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -587,7 +1014,7 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -611,13 +1038,13 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -632,78 +1059,78 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -717,15 +1144,39 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -761,51 +1212,59 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              placeholder="3s delay"
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  placeholder="3s delay"
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -813,22 +1272,22 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
 `;
 
 exports[`Storyshots Search Field custom menu height 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -838,7 +1297,7 @@ exports[`Storyshots Search Field custom menu height 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -848,7 +1307,7 @@ exports[`Storyshots Search Field custom menu height 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -872,13 +1331,13 @@ exports[`Storyshots Search Field custom menu height 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -893,78 +1352,78 @@ exports[`Storyshots Search Field custom menu height 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -978,15 +1437,39 @@ exports[`Storyshots Search Field custom menu height 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -1022,50 +1505,58 @@ exports[`Storyshots Search Field custom menu height 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -1073,22 +1564,22 @@ exports[`Storyshots Search Field custom menu height 1`] = `
 `;
 
 exports[`Storyshots Search Field custom width 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1098,7 +1589,7 @@ exports[`Storyshots Search Field custom width 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1108,7 +1599,7 @@ exports[`Storyshots Search Field custom width 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1132,13 +1623,13 @@ exports[`Storyshots Search Field custom width 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -1153,78 +1644,78 @@ exports[`Storyshots Search Field custom width 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1238,15 +1729,39 @@ exports[`Storyshots Search Field custom width 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -1282,50 +1797,58 @@ exports[`Storyshots Search Field custom width 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -1333,22 +1856,22 @@ exports[`Storyshots Search Field custom width 1`] = `
 `;
 
 exports[`Storyshots Search Field disabled 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1358,7 +1881,7 @@ exports[`Storyshots Search Field disabled 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1368,7 +1891,7 @@ exports[`Storyshots Search Field disabled 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1392,13 +1915,13 @@ exports[`Storyshots Search Field disabled 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -1413,78 +1936,78 @@ exports[`Storyshots Search Field disabled 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1498,15 +2021,39 @@ exports[`Storyshots Search Field disabled 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -1542,78 +2089,86 @@ exports[`Storyshots Search Field disabled 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={true}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={true}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={true}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
+        <div
+          className="hit"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
       </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Search Field loading 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1623,7 +2178,7 @@ exports[`Storyshots Search Field loading 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1633,7 +2188,7 @@ exports[`Storyshots Search Field loading 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1657,13 +2212,13 @@ exports[`Storyshots Search Field loading 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -1678,78 +2233,78 @@ exports[`Storyshots Search Field loading 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1763,15 +2318,39 @@ exports[`Storyshots Search Field loading 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -1807,50 +2386,58 @@ exports[`Storyshots Search Field loading 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -1858,22 +2445,22 @@ exports[`Storyshots Search Field loading 1`] = `
 `;
 
 exports[`Storyshots Search Field onChange 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1883,7 +2470,7 @@ exports[`Storyshots Search Field onChange 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1893,7 +2480,7 @@ exports[`Storyshots Search Field onChange 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1917,13 +2504,13 @@ exports[`Storyshots Search Field onChange 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -1938,78 +2525,78 @@ exports[`Storyshots Search Field onChange 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2023,15 +2610,39 @@ exports[`Storyshots Search Field onChange 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -2067,50 +2678,58 @@ exports[`Storyshots Search Field onChange 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -2118,22 +2737,22 @@ exports[`Storyshots Search Field onChange 1`] = `
 `;
 
 exports[`Storyshots Search Field onScrollReachEnd 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2143,7 +2762,7 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2153,7 +2772,7 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2177,13 +2796,13 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -2198,78 +2817,78 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2283,15 +2902,39 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -2327,50 +2970,58 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -2378,22 +3029,22 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
 `;
 
 exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2403,7 +3054,7 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2413,7 +3064,7 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2437,13 +3088,13 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -2458,78 +3109,78 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2543,15 +3194,39 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -2587,50 +3262,58 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -2638,22 +3321,22 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
 `;
 
 exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2663,7 +3346,7 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2673,7 +3356,7 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2697,13 +3380,13 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -2718,78 +3401,78 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2803,15 +3486,39 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -2847,88 +3554,81 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Search Field update items 1`] = `
-.c5 {
-  display: inline-block;
-}
-
-.c5 .hitWrapper {
-  position: relative;
-}
-
-.c5 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
+exports[`Storyshots Search Field update items every 3 seconds 1`] = `
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c7 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2938,46 +3638,7 @@ exports[`Storyshots Search Field update items 1`] = `
   line-height: 1.14;
 }
 
-.c6 {
-  font-family: Lato,sans-serif;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  color: #3498db;
-}
-
-.c6 > i.margin-left {
-  margin-left: 8px;
-}
-
-.c6 > i.margin-right {
-  margin-right: 8px;
-}
-
-.c6 > a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 > a:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6 > a {
-  color: inherit;
-}
-
-.c6:hover {
-  color: #2980b9;
-}
-
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2987,7 +3648,7 @@ exports[`Storyshots Search Field update items 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2996,7 +3657,7 @@ exports[`Storyshots Search Field update items 1`] = `
   border-radius: 4px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3011,13 +3672,13 @@ exports[`Storyshots Search Field update items 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -3032,78 +3693,78 @@ exports[`Storyshots Search Field update items 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3117,15 +3778,39 @@ exports[`Storyshots Search Field update items 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -3148,91 +3833,67 @@ exports[`Storyshots Search Field update items 1`] = `
   cursor: auto;
 }
 
-.c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  height: 46px;
-  padding: 0 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-<div>
-  <button
-    onClick={[Function]}
-  >
-    Update items
-  </button>
-  <div
-    className="selected c0 c1"
-    style={
-      Object {
-        "width": 200,
-        "zIndex": undefined,
-      }
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "width": 200,
+      "zIndex": undefined,
     }
+  }
+>
+  <div
+    className="c2"
   >
     <div
-      className="c2"
+      className="c3"
     >
       <div
         className="hitWrapper"
       >
         <div>
           <div
-            className="c3"
-            disabled={false}
-            onClick={[Function]}
-            type="text"
+            className="c4"
           >
             <div
-              className="input"
-              onMouseDown={[Function]}
+              className="c5"
+              disabled={false}
+              onClick={[Function]}
+              type="search"
             >
               <div
-                className="c4"
-              >
-                Banana
-              </div>
-              <div
-                className="c5"
+                className="input"
+                onMouseDown={[Function]}
               >
                 <div
-                  className="hitWrapper"
+                  className="icon left"
                 >
-                  <div
-                    className="c6"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size={16}
-                    type="#3498db"
-                  >
-                    <span
-                      className="clear"
-                      onClick={[Function]}
-                    >
-                      <i
-                        className="wg-edit"
-                      />
-                    </span>
-                  </div>
+                  <i
+                    className="wg-search"
+                  />
                 </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
               </div>
-            </div>
-            <div
-              className="label c7"
-              size={14}
-              type="#2f313a"
-            >
-              Fruits
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
             </div>
           </div>
           <div />
@@ -3244,22 +3905,22 @@ exports[`Storyshots Search Field update items 1`] = `
 `;
 
 exports[`Storyshots Search Field with empty items array 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -3269,7 +3930,7 @@ exports[`Storyshots Search Field with empty items array 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3279,7 +3940,7 @@ exports[`Storyshots Search Field with empty items array 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3303,13 +3964,13 @@ exports[`Storyshots Search Field with empty items array 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -3324,78 +3985,78 @@ exports[`Storyshots Search Field with empty items array 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3409,15 +4070,39 @@ exports[`Storyshots Search Field with empty items array 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -3453,51 +4138,59 @@ exports[`Storyshots Search Field with empty items array 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              placeholder="Click here. Menu should not open"
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  placeholder="Click here. Menu should not open"
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -3505,22 +4198,22 @@ exports[`Storyshots Search Field with empty items array 1`] = `
 `;
 
 exports[`Storyshots Search Field with footer 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -3530,7 +4223,7 @@ exports[`Storyshots Search Field with footer 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3540,7 +4233,7 @@ exports[`Storyshots Search Field with footer 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3564,13 +4257,13 @@ exports[`Storyshots Search Field with footer 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -3585,78 +4278,78 @@ exports[`Storyshots Search Field with footer 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3670,15 +4363,39 @@ exports[`Storyshots Search Field with footer 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -3714,50 +4431,58 @@ exports[`Storyshots Search Field with footer 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -3765,22 +4490,22 @@ exports[`Storyshots Search Field with footer 1`] = `
 `;
 
 exports[`Storyshots Search Field with items 1`] = `
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -3790,7 +4515,7 @@ exports[`Storyshots Search Field with items 1`] = `
   line-height: 1.14;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3800,7 +4525,7 @@ exports[`Storyshots Search Field with items 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3824,13 +4549,13 @@ exports[`Storyshots Search Field with items 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -3845,78 +4570,78 @@ exports[`Storyshots Search Field with items 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3930,15 +4655,39 @@ exports[`Storyshots Search Field with items 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -3974,50 +4723,58 @@ exports[`Storyshots Search Field with items 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="input"
-            onMouseDown={[Function]}
+            className="c4"
           >
             <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
+              className="c5"
               disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
+              onClick={[Function]}
               type="search"
-              value=""
-            />
-            
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
           </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
+          <div />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -4025,37 +4782,37 @@ exports[`Storyshots Search Field with items 1`] = `
 `;
 
 exports[`Storyshots Search Field with selected item 1`] = `
-.c5 {
+.c6 {
   display: inline-block;
 }
 
-.c5 .hitWrapper {
+.c6 .hitWrapper {
   position: relative;
 }
 
-.c5 .hitWrapper .hit {
+.c6 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c2 {
+.c3 {
   display: block;
 }
 
-.c2 .hitWrapper {
+.c3 .hitWrapper {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c3 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c7 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -4065,7 +4822,7 @@ exports[`Storyshots Search Field with selected item 1`] = `
   line-height: 1.14;
 }
 
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -4078,33 +4835,33 @@ exports[`Storyshots Search Field with selected item 1`] = `
   color: #3498db;
 }
 
-.c6 > i.margin-left {
+.c7 > i.margin-left {
   margin-left: 8px;
 }
 
-.c6 > i.margin-right {
+.c7 > i.margin-right {
   margin-right: 8px;
 }
 
-.c6 > a {
+.c7 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c6 > a:hover {
+.c7 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6 > a {
+.c7 > a {
   color: inherit;
 }
 
-.c6:hover {
+.c7:hover {
   color: #2980b9;
 }
 
-.c3 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4114,7 +4871,7 @@ exports[`Storyshots Search Field with selected item 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4138,13 +4895,13 @@ exports[`Storyshots Search Field with selected item 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -4159,78 +4916,78 @@ exports[`Storyshots Search Field with selected item 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4244,152 +5001,18 @@ exports[`Storyshots Search Field with selected item 1`] = `
   color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c1 {
-  font-family: lato,sans-serif;
-  display: inline-block;
-  position: relative;
-}
-
-.c1 *:focus {
-  outline: none;
-}
-
-.c0 input {
-  width: 100%;
-  min-width: 0;
-}
-
-.c0.selected .input {
-  background: #f6f8f9;
-  cursor: auto;
-}
-
-.c4 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  height: 46px;
-  padding: 0 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-<div
-  className="selected c0 c1"
-  style={
-    Object {
-      "width": 200,
-      "zIndex": undefined,
-    }
-  }
->
-  <div
-    className="c2"
-  >
-    <div
-      className="hitWrapper"
-    >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="text"
-        >
-          <div
-            className="input"
-            onMouseDown={[Function]}
-          >
-            <div
-              className="c4"
-            >
-              Banana
-            </div>
-            <div
-              className="c5"
-            >
-              <div
-                className="hitWrapper"
-              >
-                <div
-                  className="c6"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size={16}
-                  type="#3498db"
-                >
-                  <span
-                    className="clear"
-                    onClick={[Function]}
-                  >
-                    <i
-                      className="wg-edit"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="label c7"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
-        </div>
-        <div />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Search Field with validation message 1`] = `
-.c2 {
-  display: block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 1.14;
-}
-
-.c3 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4399,14 +5022,14 @@ exports[`Storyshots Search Field with validation message 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c10 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: #dd3311;
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -4423,13 +5046,13 @@ exports[`Storyshots Search Field with validation message 1`] = `
   cursor: text;
 }
 
-.c3 .input .wrapped {
+.c10 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c10 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -4444,78 +5067,78 @@ exports[`Storyshots Search Field with validation message 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder {
+.c10 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder {
+.c10 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder {
+.c10 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder {
+.c10 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"] {
+.c10 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button {
+.c10 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear {
+.c10 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"] {
+.c10 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
-  color: #dd3311;
+.c10 .input .icon {
+  color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c10 .input .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c10 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c10 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c10 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c10 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c3 .input.dropdown {
+.c10 .input.dropdown {
   cursor: pointer;
 }
 
-.c3 .label {
+.c10 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4526,57 +5149,63 @@ exports[`Storyshots Search Field with validation message 1`] = `
   -ms-letter-spacing: 2px;
   letter-spacing: 2px;
   margin-bottom: 8px;
-  color: #dd3311;
+  color: #2f313a;
 }
 
-.c3 input[type="number"] {
+.c10 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c3 input[type="number"]::-webkit-inner-spin-button,
-.c3 input[type="number"]::-webkit-outer-spin-button {
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c6 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 24px;
-  min-height: 24px;
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(data:image/png;base64,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);
-  background-size: cover;
-  background-position: center;
-}
-
-.c7 {
+.c2 {
   font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
+  margin-bottom: 24px;
+}
+
+.c9 {
+  display: block;
+}
+
+.c9 .input {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  padding: 16px;
+  bottom: 0;
+  background: #f6f8f9;
   color: #2f313a;
-  text-align: left;
-  line-height: 24px;
+  box-shadow: none;
+  cursor: auto;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 16px;
+.c9 .clear {
+  position: absolute;
+  right: 0px;
 }
 
-.c5 .icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
 }
 
 .c1 {
@@ -4612,80 +5241,463 @@ exports[`Storyshots Search Field with validation message 1`] = `
     className="c2"
   >
     <div
-      className="hitWrapper"
+      className="c3"
     >
-      <div>
-        <div
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
-        >
-          <div
-            className="input"
-            onMouseDown={[Function]}
-          >
-            <div
-              className="icon left"
-            >
-              <i
-                className="wg-search"
-              />
-            </div>
-            <input
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              type="search"
-              value=""
-            />
-            
-          </div>
-          <div
-            className="label c4"
-            size={14}
-            type="#2f313a"
-          >
-            Fruits
-          </div>
-        </div>
+      <div
+        className="hitWrapper"
+      >
         <div>
           <div
-            className="c5"
+            className="c4"
           >
             <div
-              className="icon c6"
-              size={24}
-              src="data:image/png;base64,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"
-            />
-            <div
-              className="c7"
-              size={16}
-              type="#2f313a"
+              className="c5"
+              disabled={false}
+              onClick={[Function]}
+              type="search"
             >
-              One error
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value="Banana"
+                />
+                <div
+                  className="c6"
+                >
+                  <div
+                    className="hitWrapper"
+                  >
+                    <div
+                      className="c7"
+                      disabled={false}
+                      onMouseLeave={[Function]}
+                      onMouseOver={[Function]}
+                      size={16}
+                      type="#3498db"
+                    >
+                      <span
+                        className="clear"
+                        onClick={[Function]}
+                      >
+                        <i
+                          className="wg-close-int"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="label c8"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
+            <div
+              className="c9 c10"
+            >
+              <div
+                className="input"
+              >
+                Banana
+                <div
+                  className="clear"
+                >
+                  <a
+                    onClick={[Function]}
+                  >
+                    <i
+                      className="wg-edit"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Search Field with validation message 1`] = `
+.c3 {
+  display: block;
+}
+
+.c3 .hitWrapper {
+  position: relative;
+}
+
+.c3 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: #dd3311;
+  height: 16px;
+}
+
+.c5 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #dd3311;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 24px;
+  min-height: 24px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+  background-position: center;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 24px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.c7 .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c0 input {
+  width: 100%;
+  min-width: 0;
+}
+
+.c0.selected .input {
+  background: #f6f8f9;
+  cursor: auto;
+}
+
+<div
+  className="c0 c1"
+  style={
+    Object {
+      "width": 200,
+      "zIndex": undefined,
+    }
+  }
+>
+  <div
+    className="c2"
+  >
+    <div
+      className="c3"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div>
           <div
-            className="c5"
+            className="c4"
           >
             <div
-              className="icon c6"
-              size={24}
-              src="data:image/png;base64,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"
-            />
+              className="c5"
+              disabled={false}
+              onClick={[Function]}
+              type="search"
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="icon left"
+                >
+                  <i
+                    className="wg-search"
+                  />
+                </div>
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  type="search"
+                  value=""
+                />
+                
+              </div>
+              <div
+                className="label c6"
+                size={14}
+                type="#2f313a"
+              >
+                Fruits
+              </div>
+            </div>
+          </div>
+          <div>
             <div
               className="c7"
-              size={16}
-              type="#2f313a"
             >
-              Another error
+              <div
+                className="icon c8"
+                size={24}
+                src="data:image/png;base64,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"
+              />
+              <div
+                className="c9"
+                size={16}
+                type="#2f313a"
+              >
+                One error
+              </div>
+            </div>
+            <div
+              className="c7"
+            >
+              <div
+                className="icon c8"
+                size={24}
+                src="data:image/png;base64,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"
+              />
+              <div
+                className="c9"
+                size={16}
+                type="#2f313a"
+              >
+                Another error
+              </div>
             </div>
           </div>
         </div>
