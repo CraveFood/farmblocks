@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.17...@crave/farmblocks-search-field@1.1.0) (2018-07-25)
+
+
+### Bug Fixes
+
+* **input-text:** fix css position difference in the label caused by the cover of a protected input ([71af426](https://github.com/CraveFood/farmblocks/commit/71af426))
+* **search-field:** fix bug of extra onChange and onSearchChange on selection ([7c9aced](https://github.com/CraveFood/farmblocks/commit/7c9aced))
+* **search-field:** wait until the setState to blur the input ([0ce836b](https://github.com/CraveFood/farmblocks/commit/0ce836b))
+
+
+### Features
+
+* **search-input:** cover the cases where the value changes from something to nothing or to some not ([e1c0bdc](https://github.com/CraveFood/farmblocks/commit/e1c0bdc))
+
+
+
+
 <a name="1.0.17"></a>
 ## [1.0.17](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.16...@crave/farmblocks-search-field@1.0.17) (2018-07-20)
 

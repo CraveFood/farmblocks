@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.3"></a>
+## [3.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.2...@crave/farmblocks-hoc-input@3.2.3) (2018-07-25)
+
+
+### Bug Fixes
+
+* **hoc-input:** fix react warning of custom parameter getting to a dom element ([99dda12](https://github.com/CraveFood/farmblocks/commit/99dda12))
+
+
+
+
 <a name="3.2.2"></a>
 ## [3.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.1...@crave/farmblocks-hoc-input@3.2.2) (2018-07-20)
 
