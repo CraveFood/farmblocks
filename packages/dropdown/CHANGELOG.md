@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.7.1...@crave/farmblocks-dropdown@0.8.0) (2018-07-26)
+
+
+### Features
+
+* **Dropdown:** allow a scroll bar to appear when content overflows the menu with a set max-height ([278057e](https://github.com/CraveFood/farmblocks/commit/278057e))
+
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@0.7.0...@crave/farmblocks-dropdown@0.7.1) (2018-07-20)
 

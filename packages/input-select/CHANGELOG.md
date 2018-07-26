@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.15...@crave/farmblocks-input-select@0.9.0) (2018-07-26)
+
+
+### Features
+
+* **Select Input:** add a maxHeight prop to set a maximum height for the menu ([1c9f1ac](https://github.com/CraveFood/farmblocks/commit/1c9f1ac)), closes [#450](https://github.com/CraveFood/farmblocks/issues/450)
+
+
+
+
 <a name="0.8.15"></a>
 ## [0.8.15](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.14...@crave/farmblocks-input-select@0.8.15) (2018-07-25)
 
