@@ -61,6 +61,7 @@ properties that provides enhanced functionality:
 | onCancel             | function         | if the field is protected, you can pass a function to be called when the user cancels the editing by pressing Esc                                                                                                                                                     |         |
 | cancelButtonText     | string           | protected only: text to be used on save button                                                                                                                                                                                                                        | Cancel  |
 | saveButtonText       | string           | protected only: text to be used on save button                                                                                                                                                                                                                        |
+| mask                 | string           | when a mask is present, the component will wrap an instance of [react-input-mask](https://github.com/sanniassin/react-input-mask), check its docs for further information                                                                                             |
 
 ## Built-in constraint validation
 
