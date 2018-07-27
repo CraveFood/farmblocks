@@ -13,7 +13,8 @@ describe("Select input", () => {
 
   const items = [
     { value: "1", label: "Banana" },
-    { value: "2", label: "Apple" }
+    { value: "2", label: "Apple" },
+    { value: 0, label: "Coconut" }
   ];
 
   beforeEach(() => {
@@ -56,7 +57,7 @@ describe("Select input", () => {
       const ulWrapper = menuWrapper.find("ul");
 
       expect(ulWrapper.length).toBe(1);
-      expect(ulWrapper.find("li").length).toBe(2);
+      expect(ulWrapper.find("li").length).toBe(items.length);
     });
 
     test("should render empty card when no items list is empty", () => {
@@ -202,7 +203,7 @@ describe("Select input", () => {
       expect(newState).toBe(state);
     });
 
-    test("should update state with nw value", () => {
+    test("should update state with new value", () => {
       const state = wrapper.state();
 
       const item = items[0];
@@ -214,6 +215,24 @@ describe("Select input", () => {
         selectedLabel: item.label,
         selectedValue: item.value
       };
+
+      expect(expectedState).toEqual(newState);
+    });
+
+    test("should update state if new value is equal to zero", () => {
+      const state = wrapper.state();
+
+      const item = items[2];
+
+      wrapper.setProps({ value: item.value });
+
+      const expectedState = {
+        ...state,
+        selectedLabel: item.label,
+        selectedValue: item.value
+      };
+
+      const newState = wrapper.state();
 
       expect(expectedState).toEqual(newState);
     });

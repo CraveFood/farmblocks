@@ -62,14 +62,18 @@ class Select extends React.Component {
   };
 
   getSelectedLabel = props => {
-    const item = props.value && props.items.find(x => x.value === props.value);
+    const item =
+      (props.value || props.value === 0) &&
+      props.items.find(x => x.value === props.value);
 
-    return item && item.label;
+    if (item) {
+      return item.label;
+    }
   };
 
   componentWillReceiveProps = newProps => {
     if (
-      (newProps.value &&
+      ((newProps.value || newProps.value === 0) &&
         newProps.value !== this.props.value &&
         newProps.value !== this.state.selectedValue) ||
       newProps.items !== this.props.items
