@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.9.0...@crave/farmblocks-input-select@0.9.1) (2018-07-27)
+
+
+### Bug Fixes
+
+* **Select input:** fix label display when value is equal to zero ([6454294](https://github.com/CraveFood/farmblocks/commit/6454294)), closes [#452](https://github.com/CraveFood/farmblocks/issues/452)
+
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.15...@crave/farmblocks-input-select@0.9.0) (2018-07-26)
 
