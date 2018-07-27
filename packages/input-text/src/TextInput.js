@@ -1,6 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
+import styled from "styled-components";
 import ReactInputMask from "react-input-mask";
 import disabledTooltip, {
   disabledTooltipProps
@@ -10,7 +11,6 @@ import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
 
-import Container from "./styledComponents/TextInput";
 import protectedValue, { protectedValueProps } from "./protectedValue";
 const EnhancedInput = compose(
   disabledTooltip,
@@ -21,6 +21,11 @@ const EnhancedInput = compose(
 
 const RegularInput = EnhancedInput("input");
 const MaskedInput = EnhancedInput(ReactInputMask);
+
+const Container = styled.div`
+  font-family: Lato, sans-serif;
+  margin-bottom: 24px;
+`;
 
 const TextInput = props => {
   const Input = props.mask ? MaskedInput : RegularInput;
