@@ -1,6 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
+import ReactInputMask from "react-input-mask";
 import disabledTooltip, {
   disabledTooltipProps
 } from "@crave/farmblocks-hoc-disabled-tooltip";
@@ -16,13 +17,20 @@ const EnhancedInput = compose(
   withMessages,
   protectedValue,
   formInput
-)("input");
-
-const TextInput = props => (
-  <Container>
-    <EnhancedInput {...props} displayBlock />
-  </Container>
 );
+
+const RegularInput = EnhancedInput("input");
+const MaskedInput = EnhancedInput(ReactInputMask);
+
+const TextInput = props => {
+  const Input = props.mask ? MaskedInput : RegularInput;
+
+  return (
+    <Container>
+      <Input {...props} displayBlock />
+    </Container>
+  );
+};
 
 TextInput.propTypes = {
   ...disabledTooltipProps,
@@ -32,7 +40,8 @@ TextInput.propTypes = {
 
   type: PropTypes.string,
   placeholder: PropTypes.string,
-  required: PropTypes.bool
+  required: PropTypes.bool,
+  mask: PropTypes.string
   // and any other properties to forward to the html input element...
 };
 
