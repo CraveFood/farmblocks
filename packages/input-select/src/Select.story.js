@@ -3,7 +3,6 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 import Image from "@crave/farmblocks-image";
-import MoreInfo from "@crave/farmblocks-more-info";
 
 import Select from ".";
 
@@ -281,43 +280,16 @@ storiesOf("Select Input", module)
     })
   )
   .add(
-    "With several examples of types of labels",
+    "With more info content",
     withInfo()(() => (
-      <div>
-        <div style={{ paddingTop: "20px" }}>
-          <Select
-            placeholder="Select fruit"
-            label={<Image src={imgSrc} />}
-            value={1}
-            items={items}
-            onChange={action("onChange")}
-            width="300px"
-          />
-        </div>
-        <div style={{ paddingTop: "20px" }}>
-          <Select
-            placeholder="Select fruit"
-            label="This is a string"
-            value={1}
-            items={items}
-            onChange={action("onChange")}
-            width="300px"
-          />
-        </div>
-        <div style={{ paddingTop: "20px" }}>
-          <Select
-            placeholder="Select fruit"
-            label={
-              <MoreInfo text="This is a more info component">
-                More info
-              </MoreInfo>
-            }
-            value={1}
-            items={items}
-            onChange={action("onChange")}
-            width="500px"
-          />
-        </div>
-      </div>
+      <Select
+        placeholder="Select fruit"
+        label="Regular label"
+        moreInfoContent="More info text"
+        value={1}
+        items={items}
+        onChange={action("onChange")}
+        width="300px"
+      />
     ))
   );
