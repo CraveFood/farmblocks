@@ -9,7 +9,7 @@ import { fontSizes } from "@crave/farmblocks-theme";
 import Wrapper from "./styledComponents/Wrapper";
 
 export const formInputProps = {
-  label: PropTypes.string,
+  label: PropTypes.node,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
   fontSize: PropTypes.number,
