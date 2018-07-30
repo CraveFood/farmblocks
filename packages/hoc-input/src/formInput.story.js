@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { withInfo } from "@storybook/addon-info";
 import { fontSizes } from "@crave/farmblocks-theme";
-import MoreInfo from "@crave/farmblocks-more-info";
+import { alignments } from "@crave/farmblocks-tooltip";
 
 import formInput from ".";
 
@@ -136,13 +136,13 @@ storiesOf("HOC formInput", module)
     ))
   )
   .add(
-    "with a component as label",
+    "with label and more info",
     withInfo()(() => (
       <EnhancedInput
         onChange={action("change event")}
-        label={
-          <MoreInfo text="This is a more info component">More info</MoreInfo>
-        }
+        label="this is a regular label"
+        moreInfoContent="this is a more info text"
+        moreInfoAlign={alignments.CENTER}
         type="text"
       />
     ))
