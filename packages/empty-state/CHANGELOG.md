@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.1.0...@crave/farmblocks-empty-state@1.1.1) (2018-07-20)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-empty-state
+
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.31...@crave/farmblocks-empty-state@1.1.0) (2018-07-19)
+
+
+### Features
+
+* **EmptyState:** add icon property ([98e13a9](https://github.com/CraveFood/farmblocks/commit/98e13a9))
+
+
+
+
 <a name="1.0.31"></a>
 ## [1.0.31](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.0.30...@crave/farmblocks-empty-state@1.0.31) (2018-06-22)
 

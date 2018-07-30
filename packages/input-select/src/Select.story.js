@@ -12,6 +12,13 @@ const items = [
   { value: "3", label: "Pear" }
 ];
 
+const moreItems = [
+  ...items,
+  { value: "4", label: "Strawberry" },
+  { value: "5", label: "Peach" },
+  { value: "6", label: "Coconut" }
+];
+
 const imgSrc = "https://picsum.photos/100";
 
 storiesOf("Select Input", module)
@@ -199,4 +206,76 @@ storiesOf("Select Input", module)
         </div>
       </div>
     ))
+  )
+  .add(
+    "With max height",
+    withInfo()(() => (
+      <Select
+        placeholder="Select fruit"
+        label="Fruit"
+        value={1}
+        items={moreItems}
+        onChange={action("onChange")}
+        maxHeight="150px"
+      />
+    ))
+  )
+  .add(
+    "Receiving new value",
+    withInfo()(() => {
+      class SelectStory extends React.Component {
+        state = {
+          itemValue: null
+        };
+
+        items = [
+          {
+            value: 0,
+            label: "zero"
+          },
+          {
+            value: 1,
+            label: "one"
+          }
+        ];
+
+        changeToOne = () => {
+          this.setState({
+            itemValue: this.items[1].value
+          });
+        };
+
+        changeToZero = () => {
+          this.setState({
+            itemValue: this.items[0].value
+          });
+        };
+
+        onSelectChange = value => {
+          this.setState({
+            itemValue: value
+          });
+          action("onChange")(value);
+        };
+
+        render() {
+          return (
+            <div>
+              <Select
+                placeholder="Select fruit"
+                label="Fruit"
+                value={this.state.itemValue}
+                items={this.items}
+                onChange={this.onSelectChange}
+                disableSearch
+              />
+              <button onClick={this.changeToOne}>Change to one</button>
+              <button onClick={this.changeToZero}>Change to zero</button>
+            </div>
+          );
+        }
+      }
+
+      return <SelectStory />;
+    })
   );

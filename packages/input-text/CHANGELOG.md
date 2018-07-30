@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.4.4...@crave/farmblocks-input-text@2.0.0) (2018-07-25)
+
+
+### Bug Fixes
+
+* **input-text:** clear input field when uncover the protection ([e9edcc0](https://github.com/CraveFood/farmblocks/commit/e9edcc0))
+* **input-text:** dont change editing status when value prop changes ([069d700](https://github.com/CraveFood/farmblocks/commit/069d700))
+* **input-text:** fix css position difference in the label caused by the cover of a protected input ([71af426](https://github.com/CraveFood/farmblocks/commit/71af426))
+
+
+### Features
+
+* **input-text:** new properties for calling a function on unCover and disable manual value replacem ([b514660](https://github.com/CraveFood/farmblocks/commit/b514660))
+
+
+### BREAKING CHANGES
+
+* **input-text:** changing the value prop wont cover the input automatically anymore
+
+
+
+
+<a name="1.4.4"></a>
+## [1.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.4.3...@crave/farmblocks-input-text@1.4.4) (2018-07-20)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-text
+
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.4.2...@crave/farmblocks-input-text@1.4.3) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-text
+
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.4.1...@crave/farmblocks-input-text@1.4.2) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-text
+
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.4.0...@crave/farmblocks-input-text@1.4.1) (2018-07-18)
+
+
+### Bug Fixes
+
+* **protected:** fix cover style ([3f230fd](https://github.com/CraveFood/farmblocks/commit/3f230fd))
+
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.3.1...@crave/farmblocks-input-text@1.4.0) (2018-07-12)
 

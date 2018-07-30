@@ -3,6 +3,75 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.1...@crave/farmblocks-search-field@1.1.2) (2018-07-27)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-search-field
+
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.0...@crave/farmblocks-search-field@1.1.1) (2018-07-26)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-search-field
+
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.17...@crave/farmblocks-search-field@1.1.0) (2018-07-25)
+
+
+### Bug Fixes
+
+* **input-text:** fix css position difference in the label caused by the cover of a protected input ([71af426](https://github.com/CraveFood/farmblocks/commit/71af426))
+* **search-field:** fix bug of extra onChange and onSearchChange on selection ([7c9aced](https://github.com/CraveFood/farmblocks/commit/7c9aced))
+* **search-field:** wait until the setState to blur the input ([0ce836b](https://github.com/CraveFood/farmblocks/commit/0ce836b))
+
+
+### Features
+
+* **search-input:** cover the cases where the value changes from something to nothing or to some not ([e1c0bdc](https://github.com/CraveFood/farmblocks/commit/e1c0bdc))
+
+
+
+
+<a name="1.0.17"></a>
+## [1.0.17](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.16...@crave/farmblocks-search-field@1.0.17) (2018-07-20)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-search-field
+
+<a name="1.0.16"></a>
+## [1.0.16](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.15...@crave/farmblocks-search-field@1.0.16) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-search-field
+
+<a name="1.0.15"></a>
+## [1.0.15](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.14...@crave/farmblocks-search-field@1.0.15) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-search-field
+
+<a name="1.0.14"></a>
+## [1.0.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.13...@crave/farmblocks-search-field@1.0.14) (2018-07-18)
+
+
+### Bug Fixes
+
+* **search-field:** fix style of StaticInput ([e54f1c2](https://github.com/CraveFood/farmblocks/commit/e54f1c2))
+
+
+
+
 <a name="1.0.13"></a>
 ## [1.0.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.0.12...@crave/farmblocks-search-field@1.0.13) (2018-07-12)
 

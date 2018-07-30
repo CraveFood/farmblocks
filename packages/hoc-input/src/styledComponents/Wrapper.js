@@ -44,10 +44,8 @@ const Wrapper = styled.div`
   .input {
     order: 2;
     box-sizing: border-box;
-    height: ${ifSmall("32", "48")}px;
     border: solid 1px;
     border-radius: 4px;
-    padding: 0 ${ifSmall("8", "16")}px;
     border-color: ${inputBorderColor};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
     ${inputBoxShadow};
@@ -61,6 +59,10 @@ const Wrapper = styled.div`
     }
 
     input {
+      height: ${ifSmall("30", "46")}px;
+      padding: 0 ${ifSmall("8", "16")}px;
+      border-radius: 4px;
+
       border: 0;
       flex: 1;
       outline: none;
@@ -81,6 +83,7 @@ const Wrapper = styled.div`
           width: 0;
           height: 0;
         }
+        padding-left: 8px;
       }
       &[role="combobox"] {
         cursor: pointer;
@@ -92,12 +95,13 @@ const Wrapper = styled.div`
       height: 16px;
     }
 
-    .icon.search {
-      margin-right: 8px;
+    .icon.left {
+      margin-left: ${ifSmall("8", "16")}px;
     }
 
     .icon.dropdown {
       margin-left: 8px;
+      margin-right: 16px;
     }
 
     .clear {
@@ -111,6 +115,7 @@ const Wrapper = styled.div`
         text-decoration: none;
         cursor: pointer;
       }
+      margin-right: ${ifSmall("8", "16")}px;
     }
   }
 
@@ -125,6 +130,16 @@ const Wrapper = styled.div`
     letter-spacing: 2px;
     margin-bottom: 8px;
     color: ${labelColor};
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    min-width: 0; /* firefox */
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 `;
 export default Wrapper;

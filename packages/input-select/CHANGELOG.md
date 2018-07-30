@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.9.0...@crave/farmblocks-input-select@0.9.1) (2018-07-27)
+
+
+### Bug Fixes
+
+* **Select input:** fix label display when value is equal to zero ([6454294](https://github.com/CraveFood/farmblocks/commit/6454294)), closes [#452](https://github.com/CraveFood/farmblocks/issues/452)
+
+
+
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.15...@crave/farmblocks-input-select@0.9.0) (2018-07-26)
+
+
+### Features
+
+* **Select Input:** add a maxHeight prop to set a maximum height for the menu ([1c9f1ac](https://github.com/CraveFood/farmblocks/commit/1c9f1ac)), closes [#450](https://github.com/CraveFood/farmblocks/issues/450)
+
+
+
+
+<a name="0.8.15"></a>
+## [0.8.15](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.14...@crave/farmblocks-input-select@0.8.15) (2018-07-25)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-select
+
+<a name="0.8.14"></a>
+## [0.8.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.13...@crave/farmblocks-input-select@0.8.14) (2018-07-20)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-select
+
+<a name="0.8.13"></a>
+## [0.8.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.12...@crave/farmblocks-input-select@0.8.13) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-select
+
+<a name="0.8.12"></a>
+## [0.8.12](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.11...@crave/farmblocks-input-select@0.8.12) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-input-select
+
+<a name="0.8.11"></a>
+## [0.8.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.10...@crave/farmblocks-input-select@0.8.11) (2018-07-18)
+
+
+### Bug Fixes
+
+* **input-select:** render input with image ([abb5a5d](https://github.com/CraveFood/farmblocks/commit/abb5a5d))
+
+
+
+
 <a name="0.8.10"></a>
 ## [0.8.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.8.9...@crave/farmblocks-input-select@0.8.10) (2018-07-12)
 

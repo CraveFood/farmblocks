@@ -14,22 +14,11 @@ export default styled.div`
     margin: 0 8px;
 
     input {
-      flex: none !important;
-      width: 100%;
       text-align: center;
       &:invalid {
         /* remove Firefox default styling (red box-shadow) */
         box-shadow: none;
       }
-    }
-
-    input[type="number"] {
-      -moz-appearance: textfield;
-    }
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
     }
   }
 `;

@@ -56,6 +56,11 @@ exports[`Storyshots EmptyState Default 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   className="c0"
 >
@@ -132,6 +137,11 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   style={
     Object {
@@ -161,6 +171,94 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
 </div>
 `;
 
+exports[`Storyshots EmptyState With icon 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: center;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .thumbnail {
+  margin-bottom: 24px;
+}
+
+.c0 > .description,
+.c0 > .info {
+  margin-top: 16px;
+}
+
+.c0 > .buttons {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 > .buttons .withMargin {
+  margin-right: 16px;
+}
+
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="icon"
+  >
+    <i
+      className="wg-order"
+    />
+  </div>
+  <div
+    className="c1"
+    size={24}
+    type="#2f313a"
+  >
+    Empty State Title
+  </div>
+  <div
+    className="description c2"
+    size={18}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+</div>
+`;
+
 exports[`Storyshots EmptyState With image 1`] = `
 .c1 {
   background-origin: border-box;
@@ -173,7 +271,7 @@ exports[`Storyshots EmptyState With image 1`] = `
   overflow: hidden;
   border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg);
+  background-image: url(https://picsum.photos/200);
   background-size: cover;
   background-position: center;
 }
@@ -233,13 +331,18 @@ exports[`Storyshots EmptyState With image 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   className="c0"
 >
   <div
     className="thumbnail c1"
     size={72}
-    src="https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg"
+    src="https://picsum.photos/200"
   />
   <div
     className="c2"
@@ -439,7 +542,7 @@ exports[`Storyshots EmptyState With primary and secondary buttons 1`] = `
   overflow: hidden;
   border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg);
+  background-image: url(https://picsum.photos/200);
   background-size: cover;
   background-position: center;
 }
@@ -499,13 +602,18 @@ exports[`Storyshots EmptyState With primary and secondary buttons 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   className="c0"
 >
   <div
     className="thumbnail c1"
     size={72}
-    src="https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg"
+    src="https://picsum.photos/200"
   />
   <div
     className="c2"
@@ -667,7 +775,7 @@ exports[`Storyshots EmptyState With primary button 1`] = `
   overflow: hidden;
   border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg);
+  background-image: url(https://picsum.photos/200);
   background-size: cover;
   background-position: center;
 }
@@ -727,13 +835,18 @@ exports[`Storyshots EmptyState With primary button 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   className="c0"
 >
   <div
     className="thumbnail c1"
     size={72}
-    src="https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg"
+    src="https://picsum.photos/200"
   />
   <div
     className="c2"
@@ -876,7 +989,7 @@ exports[`Storyshots EmptyState With primary button and info 1`] = `
   overflow: hidden;
   border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg);
+  background-image: url(https://picsum.photos/200);
   background-size: cover;
   background-position: center;
 }
@@ -944,13 +1057,18 @@ exports[`Storyshots EmptyState With primary button and info 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   className="c0"
 >
   <div
     className="thumbnail c1"
     size={72}
-    src="https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg"
+    src="https://picsum.photos/200"
   />
   <div
     className="c2"
@@ -1100,7 +1218,7 @@ exports[`Storyshots EmptyState With primary button, inside a container 1`] = `
   overflow: hidden;
   border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg);
+  background-image: url(https://picsum.photos/200);
   background-size: cover;
   background-position: center;
 }
@@ -1160,6 +1278,11 @@ exports[`Storyshots EmptyState With primary button, inside a container 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   style={
     Object {
@@ -1174,7 +1297,7 @@ exports[`Storyshots EmptyState With primary button, inside a container 1`] = `
     <div
       className="thumbnail c1"
       size={72}
-      src="https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg"
+      src="https://picsum.photos/200"
     />
     <div
       className="c2"
@@ -1324,7 +1447,7 @@ exports[`Storyshots EmptyState With secondary button only 1`] = `
   overflow: hidden;
   border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg);
+  background-image: url(https://picsum.photos/200);
   background-size: cover;
   background-position: center;
 }
@@ -1384,13 +1507,18 @@ exports[`Storyshots EmptyState With secondary button only 1`] = `
   margin-right: 16px;
 }
 
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
 <div
   className="c0"
 >
   <div
     className="thumbnail c1"
     size={72}
-    src="https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg"
+    src="https://picsum.photos/200"
   />
   <div
     className="c2"

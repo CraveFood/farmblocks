@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.3.26...@crave/farmblocks-card@0.4.0) (2018-07-20)
+
+
+### Features
+
+* **card:** expose everflow css rule as prop ([4b2b153](https://github.com/CraveFood/farmblocks/commit/4b2b153)), closes [#241](https://github.com/CraveFood/farmblocks/issues/241)
+
+
+
+
+<a name="0.3.26"></a>
+## [0.3.26](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.3.25...@crave/farmblocks-card@0.3.26) (2018-07-19)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-card
+
 <a name="0.3.25"></a>
 ## [0.3.25](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.3.24...@crave/farmblocks-card@0.3.25) (2018-06-22)
 

@@ -1,9 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { badgeSizes } from "@crave/farmblocks-image";
+import Image, { badgeSizes } from "@crave/farmblocks-image";
+import styled from "styled-components";
 
-import ItemImage from "../styledComponents/ItemImage";
 import LabelContainer from "../styledComponents/LabelContainer";
+
+const ItemImage = styled(Image)`
+  margin-right: -7px;
+  margin-left: 10px;
+`;
 
 export const refName = "inputRef";
 

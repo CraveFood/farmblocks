@@ -3,13 +3,12 @@ import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 
-import EmptyState from "@crave/farmblocks-empty-state";
+import EmptyState from "./EmptyState";
 
 const twoLinesDescription =
   "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.";
 
-const imgSrc =
-  "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
+const imgSrc = "https://picsum.photos/200";
 
 storiesOf("EmptyState", module)
   .add(
@@ -101,6 +100,16 @@ storiesOf("EmptyState", module)
         primaryActionText="Primary Action"
         onPrimaryActionClick={action("onPrimaryActionClick")}
         info={twoLinesDescription}
+      />
+    ))
+  )
+  .add(
+    "With icon",
+    withInfo()(() => (
+      <EmptyState
+        icon="wg-order"
+        title="Empty State Title"
+        description={twoLinesDescription}
       />
     ))
   );

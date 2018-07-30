@@ -8,9 +8,13 @@ import { formInputProps, styledInput } from "@crave/farmblocks-hoc-input";
 
 // the cover of a protected field is a div (instead of an input) enhanced with formInput hoc and some extra style overridings
 const Cover = styled(styledInput)`
+  display: block;
+
   .input {
     position: absolute;
     width: 100%;
+    height: 48px;
+    padding: 16px;
     bottom: 0;
     background: ${colors.SUGAR};
     color: ${colors.CARBON};
@@ -19,7 +23,7 @@ const Cover = styled(styledInput)`
   }
   .clear {
     position: absolute;
-    right: 16px;
+    right: 0px;
   }
 `;
 Cover.displayName = "InputCover";
@@ -41,11 +45,13 @@ const Container = styled.div`
 // extra properties supported/extended by the protected field HOC
 export const protectedValueProps = {
   protected: PropTypes.bool,
+  onUncover: PropTypes.func,
   onReplace: PropTypes.func,
   onCancel: PropTypes.func,
   onKeyDown: PropTypes.func,
   cancelButtonText: PropTypes.string,
-  saveButtonText: PropTypes.string
+  saveButtonText: PropTypes.string,
+  disableManualReplace: PropTypes.bool
 };
 
 // HOC that covers a component with a dummy text field
@@ -59,7 +65,9 @@ export default WrappedComponent => {
     };
 
     onUncover = () => {
-      this.setState({ isEditing: true });
+      const { onUncover } = this.props;
+      this.setState({ isEditing: true, editedValue: "" });
+      onUncover && onUncover();
     };
 
     onCancel = () => {
@@ -75,9 +83,7 @@ export default WrappedComponent => {
     componentDidUpdate = prevProps => {
       if (this.props.value !== prevProps.value) {
         this.setState({
-          value: this.props.value,
-          isEditing: false,
-          editedValue: ""
+          value: this.props.value
         });
       }
     };
@@ -114,8 +120,10 @@ export default WrappedComponent => {
     render() {
       const {
         protected: covered,
+        disableManualReplace,
         onReplace,
         onKeyDown,
+        onUncover,
         onBlur,
         onChange,
         cancelButtonText,
@@ -124,6 +132,8 @@ export default WrappedComponent => {
       } = this.props;
       const { isEditing } = this.state;
 
+      const displayButtons = !disableManualReplace;
+
       return (
         <Container isEditing={isEditing}>
           <WrappedComponent
@@ -131,7 +141,7 @@ export default WrappedComponent => {
             protected={covered}
             focused={this.state.isEditing}
             value={isEditing ? this.state.editedValue : this.state.value}
-            onKeyDown={covered ? this.onKeyDown : onKeyDown}
+            onKeyDown={covered && displayButtons ? this.onKeyDown : onKeyDown}
             onChange={event => {
               this.setState({ editedValue: event.target.value });
               onChange && onChange(event);
@@ -143,6 +153,7 @@ export default WrappedComponent => {
           />
           {covered && !isEditing && this._renderCover()}
           {covered &&
+            displayButtons &&
             isEditing && (
               <div>
                 <Button

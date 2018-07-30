@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { thumbnailSizes } from "@crave/farmblocks-image";
+import styled from "styled-components";
+import Image, { thumbnailSizes } from "@crave/farmblocks-image";
 
-import ItemImage from "../styledComponents/ItemImage";
 import ItemContainer from "../styledComponents/ItemContainer";
 import LabelContainer from "../styledComponents/LabelContainer";
+
+const ItemImage = styled(Image)`
+  margin: -6px;
+  margin-right: 8px;
+`;
 
 const Item = ({ selected, image, label }) => (
   <ItemContainer>

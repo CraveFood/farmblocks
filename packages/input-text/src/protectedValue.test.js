@@ -21,6 +21,18 @@ describe("TextInput > protectedValue", () => {
     expect(component.state("isEditing")).toBe(true);
   });
 
+  test("click on the pencil should call function onUncover if provided", () => {
+    const originalValue = "Foo";
+    const onUncoverSpy = jest.fn();
+    const component = mount(
+      <EnhancedInput onUncover={onUncoverSpy} value={originalValue} protected />
+    );
+    const editButton = component.find("a");
+    editButton.simulate("click");
+
+    expect(onUncoverSpy).toBeCalled();
+  });
+
   test("the passed onKeyDown handler should be called after executing the internal component's onKeyDown", () => {
     const onKeyDownMock = jest.fn();
     const component = mount(

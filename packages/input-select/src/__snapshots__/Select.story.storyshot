@@ -41,10 +41,8 @@ exports[`Storyshots Select Input Custom items 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -69,6 +67,9 @@ exports[`Storyshots Select Input Custom items 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -99,6 +100,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -119,17 +121,19 @@ exports[`Storyshots Select Input Custom items 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -160,6 +164,17 @@ exports[`Storyshots Select Input Custom items 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -305,10 +320,8 @@ exports[`Storyshots Select Input Custom width 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -333,6 +346,9 @@ exports[`Storyshots Select Input Custom width 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -363,6 +379,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -383,17 +400,19 @@ exports[`Storyshots Select Input Custom width 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -424,6 +443,17 @@ exports[`Storyshots Select Input Custom width 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -569,10 +599,8 @@ exports[`Storyshots Select Input Default 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -597,6 +625,9 @@ exports[`Storyshots Select Input Default 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -627,6 +658,7 @@ exports[`Storyshots Select Input Default 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -647,17 +679,19 @@ exports[`Storyshots Select Input Default 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -688,6 +722,17 @@ exports[`Storyshots Select Input Default 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -833,10 +878,8 @@ exports[`Storyshots Select Input Disabled 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -861,6 +904,9 @@ exports[`Storyshots Select Input Disabled 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -891,6 +937,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -911,17 +958,19 @@ exports[`Storyshots Select Input Disabled 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -952,6 +1001,17 @@ exports[`Storyshots Select Input Disabled 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: rgba(0,0,0,0.32);
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1102,10 +1162,8 @@ exports[`Storyshots Select Input Empty items 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1130,6 +1188,9 @@ exports[`Storyshots Select Input Empty items 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1160,6 +1221,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1180,17 +1242,19 @@ exports[`Storyshots Select Input Empty items 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -1221,6 +1285,17 @@ exports[`Storyshots Select Input Empty items 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1325,6 +1400,298 @@ exports[`Storyshots Select Input Empty items 1`] = `
 </div>
 `;
 
+exports[`Storyshots Select Input Receiving new value 1`] = `
+.c2 {
+  display: block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c3 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c3 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c3 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c3 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c3 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c3 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c4 > input {
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    width="200px"
+  >
+    <div
+      style={Object {}}
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c3"
+              disabled={false}
+              onClick={[Function]}
+              type="text"
+            >
+              <div
+                className="input dropdown"
+                onMouseDown={[Function]}
+              >
+                <div
+                  className="c4"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-expanded={false}
+                    autoComplete="off"
+                    className="wrapped"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onInvalid={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    placeholder="Select fruit"
+                    readOnly={true}
+                    role="combobox"
+                    type="text"
+                    value=""
+                    width="200px"
+                  />
+                </div>
+                <div
+                  className="icon dropdown"
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </div>
+              <div
+                className="label c5"
+                size={14}
+                type="#2f313a"
+              >
+                Fruit
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Change to one
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Change to zero
+  </button>
+</div>
+`;
+
 exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 .c2 {
   display: block;
@@ -1366,10 +1733,8 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1394,6 +1759,9 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1424,6 +1792,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1444,17 +1813,19 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -1485,6 +1856,17 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1631,10 +2013,8 @@ exports[`Storyshots Select Input With Images 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -1659,6 +2039,9 @@ exports[`Storyshots Select Input With Images 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1689,6 +2072,7 @@ exports[`Storyshots Select Input With Images 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1709,17 +2093,19 @@ exports[`Storyshots Select Input With Images 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -1750,6 +2136,17 @@ exports[`Storyshots Select Input With Images 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -1895,10 +2292,8 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -1923,6 +2318,9 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1953,6 +2351,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -1973,17 +2372,19 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2016,6 +2417,17 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   color: #2f313a;
 }
 
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .c6 {
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -2042,11 +2454,6 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   outline: none;
 }
 
-.c5 {
-  margin: -6px;
-  margin-right: 8px;
-}
-
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2061,6 +2468,11 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 
 .c4 > input {
   width: 100%;
+}
+
+.c5 {
+  margin-right: -7px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -2185,10 +2597,8 @@ exports[`Storyshots Select Input With errors 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: #dd3311;
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2213,6 +2623,9 @@ exports[`Storyshots Select Input With errors 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2243,6 +2656,7 @@ exports[`Storyshots Select Input With errors 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2263,17 +2677,19 @@ exports[`Storyshots Select Input With errors 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2304,6 +2720,17 @@ exports[`Storyshots Select Input With errors 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #dd3311;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c7 {
@@ -2464,6 +2891,285 @@ exports[`Storyshots Select Input With errors 1`] = `
 </div>
 `;
 
+exports[`Storyshots Select Input With max height 1`] = `
+.c2 {
+  display: block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c3 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c3 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c3 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c3 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c3 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c3 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c4 > input {
+  width: 100%;
+}
+
+.c0 {
+  width: 200px;
+}
+
+<div
+  className="c0 c1"
+  width="200px"
+>
+  <div
+    style={Object {}}
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <div>
+          <div
+            className="c3"
+            disabled={false}
+            onClick={[Function]}
+            type="text"
+          >
+            <div
+              className="input dropdown"
+              onMouseDown={[Function]}
+            >
+              <div
+                className="c4"
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-expanded={false}
+                  autoComplete="off"
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  placeholder="Select fruit"
+                  role="combobox"
+                  type="text"
+                  value=""
+                  width="200px"
+                />
+              </div>
+              <div
+                className="icon dropdown"
+              >
+                <i
+                  className="wg-small-arrow-bottom"
+                />
+              </div>
+            </div>
+            <div
+              className="label c5"
+              size={14}
+              type="#2f313a"
+            >
+              Fruit
+            </div>
+          </div>
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Select Input With value 1`] = `
 .c2 {
   display: block;
@@ -2505,10 +3211,8 @@ exports[`Storyshots Select Input With value 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: none;
@@ -2533,6 +3237,9 @@ exports[`Storyshots Select Input With value 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2563,6 +3270,7 @@ exports[`Storyshots Select Input With value 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2583,17 +3291,19 @@ exports[`Storyshots Select Input With value 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2624,6 +3334,17 @@ exports[`Storyshots Select Input With value 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {
@@ -2769,10 +3490,8 @@ exports[`Storyshots Select Input Z-index 1`] = `
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  height: 48px;
   border: solid 1px;
   border-radius: 4px;
-  padding: 0 16px;
   border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -2797,6 +3516,9 @@ exports[`Storyshots Select Input Z-index 1`] = `
 }
 
 .c3 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
   border: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2827,6 +3549,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
 .c3 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
+  padding-left: 8px;
 }
 
 .c3 .input input[type="search"]::-webkit-search-cancel-button {
@@ -2847,17 +3570,19 @@ exports[`Storyshots Select Input Z-index 1`] = `
   height: 16px;
 }
 
-.c3 .input .icon.search {
-  margin-right: 8px;
+.c3 .input .icon.left {
+  margin-left: 16px;
 }
 
 .c3 .input .icon.dropdown {
   margin-left: 8px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
+  margin-right: 16px;
 }
 
 .c3 .input .clear:hover {
@@ -2888,6 +3613,17 @@ exports[`Storyshots Select Input Z-index 1`] = `
   letter-spacing: 2px;
   margin-bottom: 8px;
   color: #2f313a;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .c1 {

@@ -62,14 +62,18 @@ class Select extends React.Component {
   };
 
   getSelectedLabel = props => {
-    const item = props.value && props.items.find(x => x.value === props.value);
+    const item =
+      (props.value || props.value === 0) &&
+      props.items.find(x => x.value === props.value);
 
-    return item && item.label;
+    if (item) {
+      return item.label;
+    }
   };
 
   componentWillReceiveProps = newProps => {
     if (
-      (newProps.value &&
+      ((newProps.value || newProps.value === 0) &&
         newProps.value !== this.props.value &&
         newProps.value !== this.state.selectedValue) ||
       newProps.items !== this.props.items
@@ -89,6 +93,7 @@ class Select extends React.Component {
       disableSearch,
       items,
       zIndex,
+      maxHeight,
       ...inputProps
     } = this.props;
 
@@ -114,12 +119,13 @@ class Select extends React.Component {
   };
 
   _renderMenu = items => {
-    if (!items || !items.length) {
-      return <EmptyCard noResultsMessage={this.props.noResultsMessage} />;
-    }
+    const { noResultsMessage, maxHeight } = this.props;
 
+    if (!items || !items.length) {
+      return <EmptyCard noResultsMessage={noResultsMessage} />;
+    }
     return (
-      <DropdownMenuWrapper>
+      <DropdownMenuWrapper maxHeight={maxHeight}>
         <ul>{items}</ul>
       </DropdownMenuWrapper>
     );
@@ -183,6 +189,7 @@ class Select extends React.Component {
     noResultsMessage: PropTypes.string,
     disableSearch: PropTypes.bool,
     zIndex: PropTypes.number,
+    maxHeight: PropTypes.string,
     ...formInputProps,
     ...withMessagesProps,
     ...disabledTooltipProps

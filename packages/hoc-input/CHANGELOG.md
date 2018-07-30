@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.3"></a>
+## [3.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.2...@crave/farmblocks-hoc-input@3.2.3) (2018-07-25)
+
+
+### Bug Fixes
+
+* **hoc-input:** fix react warning of custom parameter getting to a dom element ([99dda12](https://github.com/CraveFood/farmblocks/commit/99dda12))
+
+
+
+
+<a name="3.2.2"></a>
+## [3.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.1...@crave/farmblocks-hoc-input@3.2.2) (2018-07-20)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-hoc-input
+
+<a name="3.2.1"></a>
+## [3.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.0...@crave/farmblocks-hoc-input@3.2.1) (2018-07-19)
+
+
+### Bug Fixes
+
+* **formInput:** adjust margin of clear icon on small sized search inputs ([477d362](https://github.com/CraveFood/farmblocks/commit/477d362))
+
+
+
+
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.2...@crave/farmblocks-hoc-input@3.2.0) (2018-07-19)
+
+
+### Features
+
+* **formInput:** add leftIcon property ([ab3046c](https://github.com/CraveFood/farmblocks/commit/ab3046c)), closes [#444](https://github.com/CraveFood/farmblocks/issues/444)
+
+
+
+
+<a name="3.1.2"></a>
+## [3.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.1...@crave/farmblocks-hoc-input@3.1.2) (2018-07-18)
+
+
+### Bug Fixes
+
+* **AmountSelector:** let formInput hoc handle number input type css ([91f38b1](https://github.com/CraveFood/farmblocks/commit/91f38b1))
+* **formInput:** input height and padding are handled in the input tag now ([75ce85d](https://github.com/CraveFood/farmblocks/commit/75ce85d))
+
+
+
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.1.0...@crave/farmblocks-hoc-input@3.1.1) (2018-07-12)
 
