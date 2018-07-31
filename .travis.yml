@@ -50,12 +50,4 @@ after_success:
     else
       lerna publish --canary --yes || travis_terminate 1;
     fi
-  - |
-    if [[ $BRANCH == *"greenkeeper"* ]]; then
-      echo "this is a workaround for greenkeeper-lockfile bug #85";
-      echo "https://github.com/greenkeeperio/greenkeeper-lockfile/issues/85";
-      git add yarn.lock;
-      git commit -m "chore(lockfile): [ci skip] greenkeeper lockfile fix";
-      git push origin "$BRANCH";
-    fi
 
