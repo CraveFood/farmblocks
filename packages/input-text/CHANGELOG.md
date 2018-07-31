@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@2.0.0...@crave/farmblocks-input-text@2.1.0) (2018-07-31)
+
+
+### Features
+
+* **input-text:** render ReactInputMask instead of regular input when mask property is present ([52edf05](https://github.com/CraveFood/farmblocks/commit/52edf05)), closes [#443](https://github.com/CraveFood/farmblocks/issues/443)
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@1.4.4...@crave/farmblocks-input-text@2.0.0) (2018-07-25)
 
