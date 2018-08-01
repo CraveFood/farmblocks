@@ -187,7 +187,24 @@ storiesOf("Table/Basic", module)
             primaryAction={action("primary button clicked")}
             secondaryButtonLabel="View Profile"
             secondaryAction={action("secondary button clicked")}
-          />
+          >
+            <div
+              style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}
+            >
+              <Button
+                type={buttonTypes.SECONDARY}
+                onClick={() => action("secondary button clicked")()}
+              >
+                View Profile
+              </Button>
+              <Button
+                type={buttonTypes.PRIMARY}
+                onClick={() => action("primary button clicked")()}
+              >
+                Connect
+              </Button>
+            </div>
+          </SelectionBar>
         )}
       >
         <Column title="Fruit" text={row => row.name} />
@@ -700,37 +717,63 @@ storiesOf("Table/SelectionBar", module)
     ))
   )
   .add(
-    "Primary button",
+    "One action button",
     withInfo()(() => (
       <SelectionBar
         selectedRows={[{ name: "foo" }]}
         clearSelection={action("clear selection called")}
-        primaryAction={action("primary button clicked")}
-        primaryButtonLabel="Primary Action"
-      />
+      >
+        <Button
+          type={buttonTypes.PRIMARY}
+          onClick={() => action("primary button clicked")()}
+        >
+          Primary Action
+        </Button>
+      </SelectionBar>
     ))
   )
   .add(
-    "Secondary button",
+    "Two action buttons",
     withInfo()(() => (
       <SelectionBar
         selectedRows={[{ name: "foo" }, { name: "bar" }]}
         clearSelection={action("clear selection called")}
-        secondaryAction={action("secondary button clicked")}
-        secondaryButtonLabel="Secondary Action"
-      />
+      >
+        <div style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}>
+          <Button
+            type={buttonTypes.SECONDARY}
+            onClick={() => action("secondary button clicked")()}
+          >
+            Secondary Action
+          </Button>
+          <Button
+            type={buttonTypes.PRIMARY}
+            onClick={() => action("primary button clicked")()}
+          >
+            Primary Action
+          </Button>
+        </div>
+      </SelectionBar>
     ))
   )
   .add(
-    "Both action buttons",
+    "Actions dropdown",
     withInfo()(() => (
       <SelectionBar
         selectedRows={[{ name: "foo" }, { name: "bar" }]}
         clearSelection={action("clear selection called")}
-        primaryAction={action("primary button clicked")}
-        primaryButtonLabel="Primary Action"
-        secondaryAction={action("secondary button clicked")}
-        secondaryButtonLabel="Secondary Action"
-      />
+      >
+        <Dropdown
+          size={buttonSizes.SMALL}
+          text="Options"
+          handleSelection={value => action(`${value} option selected`)()}
+          align="right"
+          width="150px"
+        >
+          <DropdownItem value={"first"}>First Option</DropdownItem>
+          <DropdownItem value={"second"}>Second Option</DropdownItem>
+          <DropdownItem value={"third"}>Third Option</DropdownItem>
+        </Dropdown>
+      </SelectionBar>
     ))
   );
