@@ -130,6 +130,12 @@ const Wrapper = styled.div`
     letter-spacing: 2px;
     margin-bottom: 8px;
     color: ${labelColor};
+    float: left;
+  }
+
+  .moreInfo {
+    position: relative;
+    top: -1px;
   }
 
   input[type="number"] {

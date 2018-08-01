@@ -278,4 +278,18 @@ storiesOf("Select Input", module)
 
       return <SelectStory />;
     })
+  )
+  .add(
+    "With more info content",
+    withInfo()(() => (
+      <Select
+        placeholder="Select fruit"
+        label="Regular label"
+        moreInfoContent="More info text"
+        value={1}
+        items={items}
+        onChange={action("onChange")}
+        width="300px"
+      />
+    ))
   );

@@ -5,6 +5,9 @@ import wrapDisplayName from "recompose/wrapDisplayName";
 import Text from "@crave/farmblocks-text";
 import Link from "@crave/farmblocks-link";
 import { fontSizes } from "@crave/farmblocks-theme";
+import MoreInfo from "@crave/farmblocks-more-info";
+import { alignments } from "@crave/farmblocks-tooltip";
+import values from "object.values";
 
 import Wrapper from "./styledComponents/Wrapper";
 
@@ -28,7 +31,9 @@ export const formInputProps = {
   refName: PropTypes.string,
   clearable: PropTypes.bool,
   clearIcon: PropTypes.string,
-  leftIcon: PropTypes.string
+  leftIcon: PropTypes.string,
+  moreInfoContent: PropTypes.node,
+  moreInfoAlign: PropTypes.oneOf(values(alignments))
 };
 
 const formInput = WrappedComponent => {
@@ -60,6 +65,8 @@ const formInput = WrappedComponent => {
         meta,
         protected: covered,
         disableManualReplace,
+        moreInfoContent,
+        moreInfoAlign,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
@@ -75,7 +82,7 @@ const formInput = WrappedComponent => {
       return (
         <Wrapper {...wrapperProps} onClick={this.setInputFocus}>
           {this._renderInput(wrappedComponentProps)}
-          {this._renderLabel(label)}
+          {this._renderLabel(label, moreInfoContent, moreInfoAlign)}
         </Wrapper>
       );
     }
@@ -138,17 +145,24 @@ const formInput = WrappedComponent => {
       );
     }
 
-    _renderLabel(label, focused) {
+    _renderLabel(label, moreInfoContent, moreInfoAlign) {
       return (
         label && (
-          <Text
-            title
-            className="label"
-            size={fontSizes.SMALL}
-            lineHeight={1.14}
-          >
-            {label}
-          </Text>
+          <div>
+            <Text
+              title
+              className="label"
+              size={fontSizes.SMALL}
+              lineHeight={1.14}
+            >
+              {label}
+            </Text>
+            {moreInfoContent && (
+              <MoreInfo className="moreInfo" tooltipAlign={moreInfoAlign}>
+                {moreInfoContent}
+              </MoreInfo>
+            )}
+          </div>
         )
       );
     }
@@ -245,7 +259,8 @@ const formInput = WrappedComponent => {
       input: null,
       refName: "ref",
       clearable: false,
-      clearIcon: "wg-close-int"
+      clearIcon: "wg-close-int",
+      moreInfoAlign: alignments.LEFT
     };
   };
 };
