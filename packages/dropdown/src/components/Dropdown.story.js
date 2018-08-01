@@ -5,6 +5,7 @@ import { action } from "@storybook/addon-actions";
 
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
+import { buttonSizes } from "../index";
 
 storiesOf("Dropdown/Component", module)
   .add(
@@ -112,6 +113,21 @@ storiesOf("Dropdown/Component", module)
     "With ref",
     withInfo()(() => (
       <Dropdown
+        text="Select fruit"
+        handleSelection={action("handleSelection")}
+        innerRef={action("innerRef")}
+      >
+        <DropdownItem value={1} text="Banana" />
+        <DropdownItem value={2}>Apple</DropdownItem>
+        <DropdownItem value={3} text="Strawberry" />
+      </Dropdown>
+    ))
+  )
+  .add(
+    "Small size",
+    withInfo()(() => (
+      <Dropdown
+        size={buttonSizes.SMALL}
         text="Select fruit"
         handleSelection={action("handleSelection")}
         innerRef={action("innerRef")}

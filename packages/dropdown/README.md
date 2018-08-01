@@ -42,14 +42,15 @@ This code will render:
 
 ### Dropdown
 
-| Property        | Description                                                                                              | Type                     | Required | Default     |
-| --------------- | -------------------------------------------------------------------------------------------------------- | ------------------------ | -------- | ----------- |
-| children        | Pass children of DropdownItem instances                                                                  | node                     | x        |             |
-| text            | The dropdown label. Renders only the icon if this property is empty                                      | string                   |          | ''          |
-| handleSelection | Function to handle selection of a DropdownItem. The first argument is the value, the second is the event | function                 |          | () => false |
-| align           | Align of dropdown items container                                                                        | oneof(['left', 'right']) |          | left        |
-| zIndex          | z-index passed to the dropdown items container                                                           | number                   |          |             |
-| width           | Custom dropdown items container width                                                                    | string                   |          |             |
+| Property        | Description                                                                                                                             | Type                     | Required | Default            |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------- | ------------------ |
+| children        | Pass children of DropdownItem instances                                                                                                 | node                     | x        |                    |
+| text            | The dropdown label. Renders only the icon if this property is empty                                                                     | string                   |          | ''                 |
+| handleSelection | Function to handle selection of a DropdownItem. The first argument is the value, the second is the event                                | function                 |          | () => false        |
+| align           | Align of dropdown items container                                                                                                       | oneof(['left', 'right']) |          | left               |
+| zIndex          | z-index passed to the dropdown items container                                                                                          | number                   |          |                    |
+| width           | Custom dropdown items container width                                                                                                   | string                   |          |                    |
+| size            | One of the constants in `buttonSizes` from `farmblocks-button` package. For convenience, `buttonSizes` is also exported on this package | string                   |          | buttonSizes.MEDIUM |
 
 ### DropdownItem
 

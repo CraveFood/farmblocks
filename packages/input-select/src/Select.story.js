@@ -4,7 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 import Image from "@crave/farmblocks-image";
 
-import Select from ".";
+import Select, { fontSizes } from ".";
 
 const items = [
   { value: "1", label: "Apple" },
@@ -290,6 +290,18 @@ storiesOf("Select Input", module)
         items={items}
         onChange={action("onChange")}
         width="300px"
+      />
+    ))
+  )
+  .add(
+    "Small size",
+    withInfo()(() => (
+      <Select
+        fontSize={fontSizes.SMALL}
+        placeholder="Select fruit"
+        label="Fruit"
+        items={items}
+        onChange={action("onChange")}
       />
     ))
   );

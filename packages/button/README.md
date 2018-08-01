@@ -23,7 +23,7 @@ const root = document.createElement("div");
 ReactDOM.render(
   <Button
     type={buttonTypes.NEUTRAL}
-    size={buttonSizes.LARGE}
+    size={buttonSizes.MEDIUM}
     text="Neutral Button"
     onClick={() => {
       console.log("button clicked");
@@ -33,7 +33,6 @@ ReactDOM.render(
 );
 
 document.body.appendChild(root);
-
 ```
 
 ## API
