@@ -2,10 +2,10 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
-import { buttonSizes } from "@crave/farmblocks-button";
 
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
+import { buttonSizes } from "../index";
 
 storiesOf("Dropdown/Component", module)
   .add(

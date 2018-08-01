@@ -7,3 +7,5 @@ export {
 export {
   default as DropdownItemWrapper
 } from "./styledComponents/DropdownItemWrapper";
+
+export { buttonSizes } from "@crave/farmblocks-button";
