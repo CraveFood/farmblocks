@@ -13540,7 +13540,1049 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
 </table>
 `;
 
-exports[`Storyshots Table/SelectionBar Both action buttons 1`] = `
+exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c3 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c3 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c3:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover .icon,
+.c3:focus .icon {
+  color: white;
+}
+
+.c3 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:hover,
+.c3:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c3:hover > .icon,
+.c3:focus > .icon {
+  color: #3498db;
+}
+
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c4 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c4 *:focus {
+  outline: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0 .title {
+  margin-right: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 .actions {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+  height="64px"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="c1"
+      size={18}
+      type="#2f313a"
+    >
+      2 Items selected
+    </div>
+  </div>
+  <div
+    className="clear"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c3"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="actions"
+  >
+    <div
+      className="c4"
+    >
+      <div>
+        <span
+          aria-expanded={false}
+          aria-haspopup={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="hitWrapper"
+            >
+              <button
+                className="c3"
+                disabled={false}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                size="SMALL"
+                type="NEUTRAL"
+              >
+                Options
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 10,
+                    }
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c3 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c3 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c3:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover .icon,
+.c3:focus .icon {
+  color: white;
+}
+
+.c3 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:hover,
+.c3:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c3:hover > .icon,
+.c3:focus > .icon {
+  color: #3498db;
+}
+
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0 .title {
+  margin-right: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 .actions {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+  height="64px"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="c1"
+      size={18}
+      type="#2f313a"
+    >
+      2 Items selected
+    </div>
+  </div>
+  <div
+    className="clear"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c3"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table/SelectionBar Default 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0 .title {
+  margin-right: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 .actions {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+  height="64px"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="c1"
+      size={18}
+      type="#2f313a"
+    >
+      0 Items selected
+    </div>
+  </div>
+  <div
+    className="clear"
+  />
+</div>
+`;
+
+exports[`Storyshots Table/SelectionBar One action button 1`] = `
+.c2 {
+  display: inline-block;
+}
+
+.c2 .hitWrapper {
+  position: relative;
+}
+
+.c2 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c3 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c3 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c3:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover .icon,
+.c3:focus .icon {
+  color: white;
+}
+
+.c3 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:hover,
+.c3:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c3:hover > .icon,
+.c3:focus > .icon {
+  color: #3498db;
+}
+
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #ff4411;
+  padding: 0 16px;
+}
+
+.c4 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c4 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c4:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c4:focus {
+  box-shadow: none;
+}
+
+.c4:hover .icon,
+.c4:focus .icon {
+  color: white;
+}
+
+.c4:hover {
+  background-color: #dd3311;
+}
+
+.c4:focus {
+  background-color: #dd3311;
+}
+
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0 .title {
+  margin-right: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 .actions {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+  height="64px"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="c1"
+      size={18}
+      type="#2f313a"
+    >
+      1 Item selected
+    </div>
+  </div>
+  <div
+    className="clear"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c3"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="actions"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c4"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="PRIMARY"
+        >
+          Primary Action
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Table/SelectionBar One item selected 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 64px;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.c0.grow-enter {
+  max-height: 1px;
+}
+
+.c0.grow-enter > div {
+  opacity: 0.01;
+}
+
+.c0.grow-enter.grow-enter-active {
+  max-height: 64px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-enter.grow-enter-active > div {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0.grow-leave {
+  max-height: 64px;
+}
+
+.c0.grow-leave > div {
+  opacity: 1;
+}
+
+.c0.grow-leave.grow-leave-active {
+  max-height: 1px;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
+}
+
+.c0.grow-leave.grow-leave-active > div {
+  opacity: 0.01;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.c0 .title {
+  margin-right: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 .actions {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+  height="64px"
+>
+  <div
+    className="title"
+  >
+    <div
+      className="c1"
+      size={18}
+      type="#2f313a"
+    >
+      1 Item selected
+    </div>
+  </div>
+  <div
+    className="clear"
+  />
+</div>
+`;
+
+exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
 .c2 {
   display: inline-block;
 }
@@ -13857,25 +14899,22 @@ exports[`Storyshots Table/SelectionBar Both action buttons 1`] = `
 
 .c0 .title {
   margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 24px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c0 .actions {
+  margin-left: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c0 .primaryButton {
-  margin-left: 8px;
-}
-
 <div
   className="c0"
+  height="64px"
 >
   <div
     className="title"
@@ -13915,27 +14954,33 @@ exports[`Storyshots Table/SelectionBar Both action buttons 1`] = `
     className="actions"
   >
     <div
-      className="c2"
+      style={
+        Object {
+          "display": "grid",
+          "gridAutoFlow": "column",
+          "gridGap": 8,
+        }
+      }
     >
       <div
-        className="hitWrapper"
+        className="c2"
       >
-        <button
-          className="c4"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="SECONDARY"
+        <div
+          className="hitWrapper"
         >
-          Secondary Action
-        </button>
+          <button
+            className="c4"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="SECONDARY"
+          >
+            Secondary Action
+          </button>
+        </div>
       </div>
-    </div>
-    <div
-      className="primaryButton"
-    >
       <div
         className="c2"
       >
@@ -13954,1113 +14999,6 @@ exports[`Storyshots Table/SelectionBar Both action buttons 1`] = `
             Primary Action
           </button>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c3 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c3 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c3:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c3:focus {
-  box-shadow: none;
-}
-
-.c3:hover .icon,
-.c3:focus .icon {
-  color: white;
-}
-
-.c3 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:hover,
-.c3:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c3:hover > .icon,
-.c3:focus > .icon {
-  color: #3498db;
-}
-
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 64px;
-  position: relative;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.c0.grow-enter {
-  max-height: 1px;
-}
-
-.c0.grow-enter > div {
-  opacity: 0.01;
-}
-
-.c0.grow-enter.grow-enter-active {
-  max-height: 64px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-enter.grow-enter-active > div {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0.grow-leave {
-  max-height: 64px;
-}
-
-.c0.grow-leave > div {
-  opacity: 1;
-}
-
-.c0.grow-leave.grow-leave-active {
-  max-height: 1px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-leave.grow-leave-active > div {
-  opacity: 0.01;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0 .title {
-  margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 0;
-}
-
-.c0 .actions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 .primaryButton {
-  margin-left: 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="title"
-  >
-    <div
-      className="c1"
-      size={18}
-      type="#2f313a"
-    >
-      2 Items selected
-    </div>
-  </div>
-  <div
-    className="clear"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
-        >
-          Clear
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="actions"
-  />
-</div>
-`;
-
-exports[`Storyshots Table/SelectionBar Default 1`] = `
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 64px;
-  position: relative;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.c0.grow-enter {
-  max-height: 1px;
-}
-
-.c0.grow-enter > div {
-  opacity: 0.01;
-}
-
-.c0.grow-enter.grow-enter-active {
-  max-height: 64px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-enter.grow-enter-active > div {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0.grow-leave {
-  max-height: 64px;
-}
-
-.c0.grow-leave > div {
-  opacity: 1;
-}
-
-.c0.grow-leave.grow-leave-active {
-  max-height: 1px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-leave.grow-leave-active > div {
-  opacity: 0.01;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0 .title {
-  margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 0;
-}
-
-.c0 .actions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 .primaryButton {
-  margin-left: 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="title"
-  >
-    <div
-      className="c1"
-      size={18}
-      type="#2f313a"
-    >
-      0 Items selected
-    </div>
-  </div>
-  <div
-    className="clear"
-  />
-  <div
-    className="actions"
-  />
-</div>
-`;
-
-exports[`Storyshots Table/SelectionBar One item selected 1`] = `
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 64px;
-  position: relative;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.c0.grow-enter {
-  max-height: 1px;
-}
-
-.c0.grow-enter > div {
-  opacity: 0.01;
-}
-
-.c0.grow-enter.grow-enter-active {
-  max-height: 64px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-enter.grow-enter-active > div {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0.grow-leave {
-  max-height: 64px;
-}
-
-.c0.grow-leave > div {
-  opacity: 1;
-}
-
-.c0.grow-leave.grow-leave-active {
-  max-height: 1px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-leave.grow-leave-active > div {
-  opacity: 0.01;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0 .title {
-  margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 0;
-}
-
-.c0 .actions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 .primaryButton {
-  margin-left: 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="title"
-  >
-    <div
-      className="c1"
-      size={18}
-      type="#2f313a"
-    >
-      1 Item selected
-    </div>
-  </div>
-  <div
-    className="clear"
-  />
-  <div
-    className="actions"
-  />
-</div>
-`;
-
-exports[`Storyshots Table/SelectionBar Primary button 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c3 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c3 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c3:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c3:focus {
-  box-shadow: none;
-}
-
-.c3:hover .icon,
-.c3:focus .icon {
-  color: white;
-}
-
-.c3 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:hover,
-.c3:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c3:hover > .icon,
-.c3:focus > .icon {
-  color: #3498db;
-}
-
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #ff4411;
-  padding: 0 16px;
-}
-
-.c4 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c4 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c4:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c4:focus {
-  box-shadow: none;
-}
-
-.c4:hover .icon,
-.c4:focus .icon {
-  color: white;
-}
-
-.c4:hover {
-  background-color: #dd3311;
-}
-
-.c4:focus {
-  background-color: #dd3311;
-}
-
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 64px;
-  position: relative;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.c0.grow-enter {
-  max-height: 1px;
-}
-
-.c0.grow-enter > div {
-  opacity: 0.01;
-}
-
-.c0.grow-enter.grow-enter-active {
-  max-height: 64px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-enter.grow-enter-active > div {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0.grow-leave {
-  max-height: 64px;
-}
-
-.c0.grow-leave > div {
-  opacity: 1;
-}
-
-.c0.grow-leave.grow-leave-active {
-  max-height: 1px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-leave.grow-leave-active > div {
-  opacity: 0.01;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0 .title {
-  margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 24px;
-}
-
-.c0 .actions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 .primaryButton {
-  margin-left: 0;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="title"
-  >
-    <div
-      className="c1"
-      size={18}
-      type="#2f313a"
-    >
-      1 Item selected
-    </div>
-  </div>
-  <div
-    className="clear"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
-        >
-          Clear
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="actions"
-  >
-    <div
-      className="primaryButton"
-    >
-      <div
-        className="c2"
-      >
-        <div
-          className="hitWrapper"
-        >
-          <button
-            className="c4"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="PRIMARY"
-          >
-            Primary Action
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Table/SelectionBar Secondary button 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c3 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c3 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c3:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c3:focus {
-  box-shadow: none;
-}
-
-.c3:hover .icon,
-.c3:focus .icon {
-  color: white;
-}
-
-.c3 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:hover,
-.c3:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c3:hover > .icon,
-.c3:focus > .icon {
-  color: #3498db;
-}
-
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c4 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c4 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c4:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c4:focus {
-  box-shadow: none;
-}
-
-.c4:hover .icon,
-.c4:focus .icon {
-  color: white;
-}
-
-.c4:hover {
-  background-color: #2980b9;
-}
-
-.c4:focus {
-  background-color: #2980b9;
-}
-
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-  -ms-flex-pack: right;
-  justify-content: right;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 64px;
-  position: relative;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  padding-right: 24px;
-  padding-left: 24px;
-}
-
-.c0.grow-enter {
-  max-height: 1px;
-}
-
-.c0.grow-enter > div {
-  opacity: 0.01;
-}
-
-.c0.grow-enter.grow-enter-active {
-  max-height: 64px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-enter.grow-enter-active > div {
-  opacity: 1;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0.grow-leave {
-  max-height: 64px;
-}
-
-.c0.grow-leave > div {
-  opacity: 1;
-}
-
-.c0.grow-leave.grow-leave-active {
-  max-height: 1px;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms ease-in-out;
-  transition: max-height 300ms ease-in-out;
-}
-
-.c0.grow-leave.grow-leave-active > div {
-  opacity: 0.01;
-  -webkit-transition: opacity 300ms ease-in;
-  transition: opacity 300ms ease-in;
-}
-
-.c0 .title {
-  margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 24px;
-}
-
-.c0 .actions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c0 .primaryButton {
-  margin-left: 8px;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="title"
-  >
-    <div
-      className="c1"
-      size={18}
-      type="#2f313a"
-    >
-      2 Items selected
-    </div>
-  </div>
-  <div
-    className="clear"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
-        >
-          Clear
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="actions"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c4"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="SECONDARY"
-        >
-          Secondary Action
-        </button>
       </div>
     </div>
   </div>
@@ -15141,25 +15079,22 @@ exports[`Storyshots Table/SelectionBar Two items selected 1`] = `
 
 .c0 .title {
   margin-right: auto;
-}
-
-.c0 .clear {
-  margin-right: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c0 .actions {
+  margin-left: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c0 .primaryButton {
-  margin-left: 0;
-}
-
 <div
   className="c0"
+  height="64px"
 >
   <div
     className="title"
@@ -15174,9 +15109,6 @@ exports[`Storyshots Table/SelectionBar Two items selected 1`] = `
   </div>
   <div
     className="clear"
-  />
-  <div
-    className="actions"
   />
 </div>
 `;
