@@ -3,9 +3,8 @@ import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 import Image from "@crave/farmblocks-image";
-import { fontSizes } from "@crave/farmblocks-theme";
 
-import Select from ".";
+import Select, { fontSizes } from ".";
 
 const items = [
   { value: "1", label: "Apple" },

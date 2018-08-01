@@ -43,16 +43,17 @@ This code will render:
 
 ## API
 
-| Property         | Description                                                                           | Type                                                               | Required | Default     |
-| ---------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------- | ----------- |
-| items            | Items to be rendered as options                                                       | ArrayOf({ value: string, label: string, image: (optional)string }) | x        |             |
-| value            | Selected option                                                                       | string                                                             |          |             |
-| width            | Width of the component                                                                | string                                                             |          | 200px       |
-| onChange         | Function to handle selection of an item.                                              | onChange(value:string)                                             |          | () => false |
-| renderItem       | Custom render item function                                                           | renderItem(item): node                                             |          |             |
-| noResultsMessage | Custom no results message to be displayed when there is no result available on search | string                                                             |          |             |
-| disableSearch    | Disables item search                                                                  | boolean                                                            |          | false       |
-| maxHeight        | Set a maximum height for the menu                                                     | string                                                             |          |             |
+| Property         | Description                                                                                                                        | Type                                                               | Required | Default     |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------- | ----------- |
+| items            | Items to be rendered as options                                                                                                    | ArrayOf({ value: string, label: string, image: (optional)string }) | x        |             |
+| value            | Selected option                                                                                                                    | string                                                             |          |             |
+| width            | Width of the component                                                                                                             | string                                                             |          | 200px       |
+| onChange         | Function to handle selection of an item.                                                                                           | onChange(value:string)                                             |          | () => false |
+| renderItem       | Custom render item function                                                                                                        | renderItem(item): node                                             |          |             |
+| noResultsMessage | Custom no results message to be displayed when there is no result available on search                                              | string                                                             |          |             |
+| disableSearch    | Disables item search                                                                                                               | boolean                                                            |          | false       |
+| maxHeight        | Set a maximum height for the menu                                                                                                  | string                                                             |          |             |
+| fontSize         | One of the constants in `fontSizes` from `farmblocks-theme` package. For convenience, `fontSizes` is also exported on this package | number                                                             |          |             |
 
 ## Subcomponent: Item
 
