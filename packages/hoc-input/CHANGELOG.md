@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.3.0"></a>
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.3...@crave/farmblocks-hoc-input@3.3.0) (2018-08-01)
+
+
+### Features
+
+* **Input hoc:** add moreInfoContent prop ([ac12396](https://github.com/CraveFood/farmblocks/commit/ac12396))
+* **Input hoc:** update label proptype to allow anything that can be rendered ([3e41b25](https://github.com/CraveFood/farmblocks/commit/3e41b25)), closes [#455](https://github.com/CraveFood/farmblocks/issues/455)
+
+
+
+
 <a name="3.2.3"></a>
 ## [3.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.2.2...@crave/farmblocks-hoc-input@3.2.3) (2018-07-25)
 
