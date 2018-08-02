@@ -183,23 +183,19 @@ storiesOf("Table/Basic", module)
             title={count =>
               count === 1 ? "1 fruit selected" : `${count} Fruits selected`
             }
-            primaryButtonLabel="Connect"
-            primaryAction={action("primary button clicked")}
-            secondaryButtonLabel="View Profile"
-            secondaryAction={action("secondary button clicked")}
           >
             <div
               style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}
             >
               <Button
                 type={buttonTypes.SECONDARY}
-                onClick={() => action("secondary button clicked")()}
+                onClick={() => action("secondary button clicked")(selectedRows)}
               >
                 View Profile
               </Button>
               <Button
                 type={buttonTypes.PRIMARY}
-                onClick={() => action("primary button clicked")()}
+                onClick={() => action("primary button clicked")(selectedRows)}
               >
                 Connect
               </Button>
@@ -725,7 +721,7 @@ storiesOf("Table/SelectionBar", module)
       >
         <Button
           type={buttonTypes.PRIMARY}
-          onClick={() => action("primary button clicked")()}
+          onClick={action("primary button clicked")}
         >
           Primary Action
         </Button>
@@ -742,13 +738,13 @@ storiesOf("Table/SelectionBar", module)
         <div style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}>
           <Button
             type={buttonTypes.SECONDARY}
-            onClick={() => action("secondary button clicked")()}
+            onClick={action("secondary button clicked")}
           >
             Secondary Action
           </Button>
           <Button
             type={buttonTypes.PRIMARY}
-            onClick={() => action("primary button clicked")()}
+            onClick={action("primary button clicked")}
           >
             Primary Action
           </Button>
