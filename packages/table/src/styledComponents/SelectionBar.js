@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const height = "64px";
-
 const SelectionBar = styled.div`
   display: flex;
   justify-content: right;
   align-items: center;
-  height: ${height};
+  height: ${props => props.height};
   position: relative;
   box-shadow: 0 2px 2px 0 ${colors.GREY_16};
   padding-right: 24px;
@@ -20,7 +18,7 @@ const SelectionBar = styled.div`
     }
   }
   &.grow-enter.grow-enter-active {
-    max-height: ${height};
+    max-height: ${props => props.height};
     overflow: hidden;
     transition: max-height 300ms ease-in-out;
     & > div {
@@ -29,7 +27,7 @@ const SelectionBar = styled.div`
     }
   }
   &.grow-leave {
-    max-height: ${height};
+    max-height: ${props => props.height};
     & > div {
       opacity: 1;
     }
@@ -46,18 +44,12 @@ const SelectionBar = styled.div`
 
   .title {
     margin-right: auto;
-  }
-
-  .clear {
-    margin-right: ${props => (props.hasActions ? "24px" : "0")};
+    flex: 1;
   }
 
   .actions {
+    margin-left: 24px;
     display: flex;
-  }
-
-  .primaryButton {
-    margin-left: ${props => (props.hasSecondaryButton ? "8px" : "0")};
   }
 `;
 

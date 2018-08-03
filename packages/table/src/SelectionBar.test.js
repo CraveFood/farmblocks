@@ -16,21 +16,4 @@ describe("Table/SelectionBar", function() {
     clearButton.simulate("click");
     expect(clearFunctionMock).toBeCalled();
   });
-
-  test("Click on an action button should call their function", function() {
-    const primaryActionMock = jest.fn();
-    const secondaryActionMock = jest.fn();
-    const component = mount(
-      <SelectionBar
-        primaryAction={primaryActionMock}
-        secondaryAction={secondaryActionMock}
-      />
-    );
-    const primaryButton = component.find(".actions button").last();
-    primaryButton.simulate("click");
-    expect(primaryActionMock).toBeCalled();
-    const secondaryButton = component.find(".actions button").first();
-    secondaryButton.simulate("click");
-    expect(secondaryActionMock).toBeCalled();
-  });
 });
