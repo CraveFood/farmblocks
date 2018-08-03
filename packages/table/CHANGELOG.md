@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.4.7...@crave/farmblocks-table@2.0.0) (2018-08-03)
+
+
+### Code Refactoring
+
+* **table:** render SelectionBar actions from children ([0f6ce18](https://github.com/CraveFood/farmblocks/commit/0f6ce18)), closes [#462](https://github.com/CraveFood/farmblocks/issues/462)
+
+
+### BREAKING CHANGES
+
+* **table:** SelectionBar now can receive children to render the actions.
+Primary and Secondary action props are not available anymore.
+
+
+
+
 <a name="1.4.7"></a>
 ## [1.4.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@1.4.6...@crave/farmblocks-table@1.4.7) (2018-08-01)
 
