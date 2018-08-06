@@ -248,4 +248,39 @@ storiesOf("Search Field", module)
 
       return <Test />;
     })
+  )
+  .add(
+    "update items and keep value the same",
+    withInfo()(() => {
+      const items = [{ value: 1, label: "Apple", image }];
+      const newItems = [{ value: 1, label: "A new Apple", image }];
+      class SearchTest extends React.Component {
+        state = {
+          items,
+          value: 1
+        };
+
+        changeItems = () => {
+          this.setState({
+            items: newItems
+          });
+        };
+
+        render() {
+          return (
+            <div>
+              <SearchField
+                value={this.state.value}
+                items={this.state.items}
+                label="Fruits"
+              />
+              <br />
+              <button onClick={this.changeItems}>Change items</button>
+            </div>
+          );
+        }
+      }
+
+      return <SearchTest />;
+    })
   );

@@ -65,6 +65,7 @@ class SearchField extends React.Component {
 
     if (!isEqual(prevProps.items, this.props.items)) {
       this.setState({ items: this.props.items });
+      this.setValueFromProps();
     }
 
     if (prevProps.value !== this.props.value) {
