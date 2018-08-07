@@ -16,7 +16,7 @@ export default class Text extends React.Component {
   }
 
   static propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node,
     size: PropTypes.number,
     type: PropTypes.oneOf(values(fontTypes)),
     align: PropTypes.oneOf(["left", "center", "right", "justify"]),
