@@ -3337,6 +3337,590 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
 </div>
 `;
 
+exports[`Storyshots Search Field update items and keep value the same 1`] = `
+.c6 {
+  display: inline-block;
+}
+
+.c6 .hitWrapper {
+  position: relative;
+}
+
+.c6 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
+  display: block;
+}
+
+.c3 .hitWrapper {
+  position: relative;
+}
+
+.c3 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  line-height: 1.14;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c7 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c7 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c7 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 > a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c7 > a {
+  color: inherit;
+}
+
+.c7:hover {
+  color: #2980b9;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+  float: left;
+}
+
+.c5 .moreInfo {
+  position: relative;
+  top: -1px;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c10 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c10 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c10 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c10 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c10 .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c10 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c10 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c10 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c10 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c10 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c10 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c10 .input.dropdown {
+  cursor: pointer;
+}
+
+.c10 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+  float: left;
+}
+
+.c10 .moreInfo {
+  position: relative;
+  top: -1px;
+}
+
+.c10 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c9 {
+  display: block;
+}
+
+.c9 .input {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  padding: 16px;
+  bottom: 0;
+  background: #f6f8f9;
+  color: #2f313a;
+  box-shadow: none;
+  cursor: auto;
+}
+
+.c9 .clear {
+  position: absolute;
+  right: 0px;
+}
+
+.c4 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 .margin-button {
+  margin: 0 8px;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin-bottom: 24px;
+}
+
+.c1 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c1 *:focus {
+  outline: none;
+}
+
+.c0 input {
+  width: 100%;
+  min-width: 0;
+}
+
+.c0.selected .input {
+  background: #f6f8f9;
+  cursor: auto;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    style={
+      Object {
+        "width": 200,
+        "zIndex": undefined,
+      }
+    }
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <div>
+            <div
+              className="c4"
+            >
+              <div
+                className="c5"
+                disabled={false}
+                onClick={[Function]}
+                type="search"
+              >
+                <div
+                  className="input"
+                  onMouseDown={[Function]}
+                >
+                  <div
+                    className="icon left"
+                  >
+                    <i
+                      className="wg-search"
+                    />
+                  </div>
+                  <input
+                    className="wrapped"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    onInvalid={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseOver={[Function]}
+                    type="search"
+                    value="Apple"
+                  />
+                  <div
+                    className="c6"
+                  >
+                    <div
+                      className="hitWrapper"
+                    >
+                      <div
+                        className="c7"
+                        disabled={false}
+                        onMouseLeave={[Function]}
+                        onMouseOver={[Function]}
+                        size={16}
+                        type="#3498db"
+                      >
+                        <span
+                          className="clear"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="wg-close-int"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="label c8"
+                    size={14}
+                    type="#2f313a"
+                  >
+                    Fruits
+                  </div>
+                </div>
+              </div>
+              <div
+                className="c9 c10"
+              >
+                <div
+                  className="input"
+                >
+                  Apple
+                  <div
+                    className="clear"
+                  >
+                    <a
+                      onClick={[Function]}
+                    >
+                      <i
+                        className="wg-edit"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Change items
+  </button>
+</div>
+`;
+
 exports[`Storyshots Search Field update items every 3 seconds 1`] = `
 .c3 {
   display: block;
