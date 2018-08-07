@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.6"></a>
+## [1.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.5...@crave/farmblocks-search-field@1.1.6) (2018-08-07)
+
+
+### Bug Fixes
+
+* **Search field:** update inputValue when items changes ([98d5de4](https://github.com/CraveFood/farmblocks/commit/98d5de4)), closes [#469](https://github.com/CraveFood/farmblocks/issues/469)
+
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.4...@crave/farmblocks-search-field@1.1.5) (2018-08-01)
 
