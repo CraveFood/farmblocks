@@ -77,4 +77,23 @@ storiesOf("Text/Default", module)
   .add(
     "custom letter-spacing",
     withInfo()(() => <Text letterSpacing="3px">Awesome Text</Text>)
+  )
+  .add(
+    "empty text, filled after 3 seconds",
+    withInfo()(() => {
+      class TextSoon extends React.Component {
+        state = {};
+        componentDidMount() {
+          window.setTimeout(
+            () => this.setState({ text: "Translated text" }),
+            3000
+          );
+        }
+        render() {
+          const { text } = this.state;
+          return text ? <Text>{text}</Text> : <Text />;
+        }
+      }
+      return <TextSoon />;
+    })
   );
