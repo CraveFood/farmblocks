@@ -11,7 +11,6 @@ import StyledLabel from "./styledComponents/Checkbox";
 const TooltipTarget = disabledTooltip("div");
 
 const createCheckbox = ({ isSwitch }) =>
-  /* eslint-disable-next-line react/no-deprecated */
   class Checkbox extends React.Component {
     constructor(props) {
       super(props);
@@ -76,12 +75,10 @@ const createCheckbox = ({ isSwitch }) =>
       );
     }
 
-    componentWillReceiveProps(nextProps) {
-      const nextState = {};
-      if (nextProps.checked !== this.props.checked) {
-        nextState.checked = nextProps.checked;
+    componentDidUpdate(prevProps) {
+      if (prevProps.checked !== this.props.checked) {
+        this.setState({ checked: this.props.checked });
       }
-      this.setState(nextState);
     }
 
     onMouseUp(event) {
