@@ -14,7 +14,6 @@ export const withMessagesProps = {
 };
 
 const withMessages = WrappedComponent => {
-  /* eslint-disable-next-line react/no-deprecated */
   return class ValidationMessages extends React.Component {
     state = {
       messages: this.props.validationMessages
@@ -24,10 +23,10 @@ const withMessages = WrappedComponent => {
     onChange = this.onChange.bind(this);
     hasPropsValidations = this.hasPropsValidations.bind(this);
 
-    componentWillReceiveProps(nextProps) {
-      if (nextProps.validationMessages !== this.props.validationMessages) {
+    componentDidUpdate(prevProps) {
+      if (prevProps.validationMessages !== this.props.validationMessages) {
         this.setState({
-          messages: nextProps.validationMessages
+          messages: this.props.validationMessages
         });
       }
     }
