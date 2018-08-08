@@ -75,7 +75,7 @@ class Carousel extends React.Component {
       <Container
         activeItem={this.state.activeItem}
         itemConfig={configProps}
-        scale={this.props.scale}
+        shouldScale={this.props.scale}
       >
         <ul>
           {imageSet.map((item, index) => {

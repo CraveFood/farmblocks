@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const scale = props => (props.scale ? 1.219 : 1);
+const scale = props => (props.shouldScale ? 1.219 : 1);
 const activeItemWidth = props => props.itemConfig.width * scale(props);
 const activeItemHeight = props => props.itemConfig.height * scale(props);
 const spaceBetweenItems = props => props.itemConfig.margin * 2;
