@@ -37,7 +37,6 @@ export const formInputProps = {
 };
 
 const formInput = WrappedComponent => {
-  /* eslint-disable-next-line react/no-deprecated */
   return class Input extends React.Component {
     constructor(props) {
       super(props);
@@ -181,23 +180,17 @@ const formInput = WrappedComponent => {
       if (!this.props.focused && prevProps.focused) {
         this.inputRef && this.inputRef.blur();
       }
-    };
 
-    componentWillReceiveProps(nextProps) {
-      const nextValue = nextProps.input
-        ? nextProps.input.value
-        : nextProps.value;
-
-      const currentValue = this.props.input
-        ? this.props.input.value
-        : this.props.value;
-
-      if (nextValue !== currentValue) {
+      const nextValue = this.getValueFromProps(this.props);
+      const prevValue = this.getValueFromProps(prevProps);
+      if (nextValue !== prevValue) {
         this.setState({
           value: nextValue
         });
       }
-    }
+    };
+
+    getValueFromProps = ({ input, value }) => (input ? input.value : value);
 
     preventBlurOfClearIcon = event => {
       // do not blur the text field if the click is on the clear icon
