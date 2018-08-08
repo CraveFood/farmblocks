@@ -201,7 +201,8 @@ const formInput = WrappedComponent => {
 
     preventBlurOfClearIcon = event => {
       // do not blur the text field if the click is on the clear icon
-      if (event.target.nodeName === "I") {
+      const { nodeName, className } = event.target;
+      if (nodeName === "I" && className === this.props.clearIcon) {
         event.preventDefault();
       }
     };
