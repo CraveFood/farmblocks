@@ -1,9 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-
+import Enzyme, { mount } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 import Carousel from ".";
 
 describe("Carousel", () => {
+  Enzyme.configure({ adapter: new Adapter() });
   jest.useFakeTimers();
 
   let clearIntervalSpy;
@@ -88,29 +90,33 @@ describe("Carousel", () => {
     expect(clearIntervalSpy).not.toHaveBeenCalled();
   });
 
-  describe("componentWillReceiveProps", () => {
+  describe("Receiving new props", () => {
     const imageSet = [{ image: "http://example.com/1.png", name: "1" }];
-    let component, setStateSpy;
+    let component, setStateSpy, setIntervalSpy;
 
     beforeEach(() => {
-      component = renderer.create(<Carousel imageSet={imageSet} />);
-      setStateSpy = jest.spyOn(component.getInstance(), "setState");
+      component = mount(<Carousel imageSet={imageSet} />);
+      setStateSpy = jest.spyOn(component.instance(), "setState");
+      setIntervalSpy = jest.spyOn(component.instance(), "setInterval");
     });
 
     afterEach(() => {
       setStateSpy.mockClear();
+      setIntervalSpy.mockClear();
     });
 
     test("activeItem should be set to 0 when imageSet changes", () => {
-      component.getInstance().componentWillReceiveProps({ imageSet: [] });
+      component.setProps({ imageSet: [] });
 
       expect(setStateSpy).toHaveBeenCalledWith({ activeItem: 0 });
+      expect(setIntervalSpy).toHaveBeenCalledTimes(1);
     });
 
     test("state should not change when imageSet doesn't change", () => {
-      component.getInstance().componentWillReceiveProps({ imageSet });
+      component.setProps({ imageSet });
 
       expect(setStateSpy).not.toHaveBeenCalled();
+      expect(setIntervalSpy).not.toHaveBeenCalled();
     });
   });
 });
