@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.2.0...@crave/farmblocks-text@2.0.0) (2018-08-08)
+
+
+### Features
+
+* **text:** make children optional ([c96cd8d](https://github.com/CraveFood/farmblocks/commit/c96cd8d)), closes [#474](https://github.com/CraveFood/farmblocks/issues/474)
+
+
+### BREAKING CHANGES
+
+* **text:** children is no longer required
+
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@1.1.10...@crave/farmblocks-text@1.2.0) (2018-07-09)
 
