@@ -111,6 +111,8 @@ describe("Table", function() {
 
   describe("Expandable Row Groups", () => {
     test("Click on the expand button should expand/collapse a group", () => {
+      const stopPropagationSpy = jest.fn();
+
       const component = mount(
         <Table
           data={[{ name: "Foo", items: [{ name: "Fooson" }] }, { name: "Bar" }]}
@@ -122,11 +124,17 @@ describe("Table", function() {
       );
       const firstExpandButton = component.find("td Button").first();
 
-      firstExpandButton.props().onClick({});
+      firstExpandButton
+        .props()
+        .onClick({ stopPropagation: stopPropagationSpy });
       expect(component.state().expandedRows.length).toBe(1);
 
-      firstExpandButton.props().onClick({});
+      firstExpandButton
+        .props()
+        .onClick({ stopPropagation: stopPropagationSpy });
       expect(component.state().expandedRows.length).toBe(0);
+
+      expect(stopPropagationSpy).toHaveBeenCalledTimes(2);
     });
   });
 
@@ -164,6 +172,63 @@ describe("Table", function() {
 
       expect(preventDefaultMock).toBeCalled();
       expect(onTitleClickMock).toBeCalled();
+    });
+  });
+
+  describe("onRowClick", () => {
+    let component, onRowClickSpy, expandToggleClickedSpy;
+    beforeEach(() => {
+      onRowClickSpy = jest.fn();
+
+      component = mount(
+        <Table
+          data={[{ name: "Foo", items: [{ name: "Fooson" }] }, { name: "Bar" }]}
+          rowGroupKey="items"
+          collapsed
+          selectableRows
+          onRowClick={onRowClickSpy}
+        >
+          <Column title="Name" text={row => row.name} />
+        </Table>
+      );
+
+      expandToggleClickedSpy = jest.spyOn(
+        component.instance(),
+        "expandToggleClicked"
+      );
+    });
+
+    afterEach(() => {
+      onRowClickSpy.mockClear();
+      expandToggleClickedSpy.mockClear();
+    });
+
+    test("click on expandable row should expand row and not call onRowClick ", () => {
+      component
+        .find("td")
+        .first()
+        .simulate("click");
+
+      expect(onRowClickSpy).toHaveBeenCalledTimes(0);
+      expect(expandToggleClickedSpy).toHaveBeenCalledTimes(1);
+    });
+
+    test("click on the checkbox of selectableRow should not call onRowClick", () => {
+      component
+        .find("td Checkbox")
+        .first()
+        .simulate("click");
+
+      expect(onRowClickSpy).toHaveBeenCalledTimes(0);
+    });
+
+    test("click on row should call onRowClick", () => {
+      component
+        .find("tbody tr")
+        .at(2)
+        .simulate("click");
+
+      expect(onRowClickSpy).toHaveBeenCalledTimes(1);
     });
   });
 });
