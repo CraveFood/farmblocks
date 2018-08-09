@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { mount } from "enzyme";
+import { configure, mount } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Carousel from ".";
 
 describe("Carousel", () => {
-  Enzyme.configure({ adapter: new Adapter() });
+  configure({ adapter: new Adapter() });
   jest.useFakeTimers();
 
   let clearIntervalSpy;
