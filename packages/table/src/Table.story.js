@@ -157,6 +157,15 @@ storiesOf("Table/Basic", module)
     ))
   )
   .add(
+    "With row click listener",
+    withInfo()(() => (
+      <Table data={fruits} onRowClick={action("onRowClick")}>
+        <Column title="Fruit" text={row => row.name} />
+        <Column title="Price" text={row => row.price} />
+      </Table>
+    ))
+  )
+  .add(
     "With selectable rows",
     withInfo()(() => (
       <Table data={fruits} selectableRows>
@@ -175,6 +184,7 @@ storiesOf("Table/Basic", module)
       <Table
         width="1000px"
         data={fruits}
+        onRowClick={action("onRowClick")}
         selectableRows
         selectionHeader={(selectedRows, clearFunction) => (
           <SelectionBar
@@ -570,6 +580,22 @@ storiesOf("Table/Row Groups", module)
     withInfo()(() => {
       return (
         <Table data={orders} collapsed rowGroupKey="suborders">
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
+    "Expandable Groups with row click listener",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          collapsed
+          rowGroupKey="suborders"
+          onRowClick={action("onRowClick")}
+        >
           <Column title="Name" text={row => row.name} />
           <Column title="Price" text={row => row.totalLabel} />
         </Table>
