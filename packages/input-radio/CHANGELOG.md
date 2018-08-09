@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@0.2.9...@crave/farmblocks-input-radio@1.0.0) (2018-08-09)
+
+
+### Code Refactoring
+
+* **Radio:** dropped componentWillReceiveProps in favor of componentDidUpdate ([59f7731](https://github.com/CraveFood/farmblocks/commit/59f7731)), closes [#390](https://github.com/CraveFood/farmblocks/issues/390)
+
+
+### BREAKING CHANGES
+
+* **Radio:** In this version the use of the deprecated function componentWillReceiveProps has been removed in
+favor of componentDidUpdate
+
+
+
+
 <a name="0.2.9"></a>
 ## [0.2.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@0.2.8...@crave/farmblocks-input-radio@0.2.9) (2018-08-08)
 

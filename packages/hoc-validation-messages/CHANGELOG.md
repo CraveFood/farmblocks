@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@0.2.8...@crave/farmblocks-hoc-validation-messages@1.0.0) (2018-08-09)
+
+
+### Code Refactoring
+
+* **withMessages:** dropped componentWillReceiveProps in favor of componentDidUpdate ([b718c89](https://github.com/CraveFood/farmblocks/commit/b718c89)), closes [#390](https://github.com/CraveFood/farmblocks/issues/390)
+
+
+### BREAKING CHANGES
+
+* **withMessages:** In this version the use of the deprecated function componentWillReceiveProps has been removed in
+favor of componentDidUpdate
+
+
+
+
 <a name="0.2.8"></a>
 ## [0.2.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@0.2.7...@crave/farmblocks-hoc-validation-messages@0.2.8) (2018-08-08)
 

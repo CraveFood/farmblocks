@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@1.0.9...@crave/farmblocks-carousel@2.0.0) (2018-08-09)
+
+
+### Code Refactoring
+
+* **Carousel:** dropped componentWillReceiveProps in favor of componentDidUpdate ([4532673](https://github.com/CraveFood/farmblocks/commit/4532673)), closes [#390](https://github.com/CraveFood/farmblocks/issues/390)
+
+
+### BREAKING CHANGES
+
+* **Carousel:** In this version the use of the deprecated function componentWillReceiveProps has been removed in
+favor of componentDidUpdate
+
+
+
+
 <a name="1.0.9"></a>
 ## [1.0.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@1.0.8...@crave/farmblocks-carousel@1.0.9) (2018-08-08)
 

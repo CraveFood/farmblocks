@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.3.1...@crave/farmblocks-hoc-input@4.0.0) (2018-08-09)
+
+
+### Code Refactoring
+
+* **formInput:** dropped componentWillReceiveProps in favor of componentDidUpdate ([c6883e0](https://github.com/CraveFood/farmblocks/commit/c6883e0)), closes [#390](https://github.com/CraveFood/farmblocks/issues/390)
+
+
+### BREAKING CHANGES
+
+* **formInput:** In this version the use of the deprecated function componentWillReceiveProps has been removed in
+favor of componentDidUpdate
+
+
+
+
 <a name="3.3.1"></a>
 ## [3.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@3.3.0...@crave/farmblocks-hoc-input@3.3.1) (2018-08-08)
 

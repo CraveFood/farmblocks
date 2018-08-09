@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.9.5...@crave/farmblocks-input-select@1.0.0) (2018-08-09)
+
+
+### Code Refactoring
+
+* **Select:** dropped componentWillReceiveProps in favor of componentDidUpdate ([04b57e1](https://github.com/CraveFood/farmblocks/commit/04b57e1)), closes [#390](https://github.com/CraveFood/farmblocks/issues/390)
+
+
+### BREAKING CHANGES
+
+* **Select:** In this version the use of the deprecated function componentWillReceiveProps has been removed in
+favor of componentDidUpdate
+
+
+
+
 <a name="0.9.5"></a>
 ## [0.9.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@0.9.4...@crave/farmblocks-input-select@0.9.5) (2018-08-08)
 
