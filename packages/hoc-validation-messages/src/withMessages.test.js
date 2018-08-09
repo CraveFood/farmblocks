@@ -12,7 +12,7 @@ describe("withMessages", () => {
     React.createElement("input", props)
   );
 
-  describe("componentWillReceiveProps", () => {
+  describe("receiving new props", () => {
     test("changing the validationMessages property after instantiation should update the validationMessages state and leave value state as it is", () => {
       const component = shallow(<EnhancedInput value="some value" />);
       const state = component.state();

@@ -36,21 +36,14 @@ export const formInputProps = {
   moreInfoAlign: PropTypes.oneOf(values(alignments))
 };
 
-const formInput = WrappedComponent => {
-  /* eslint-disable-next-line react/no-deprecated */
-  return class Input extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        value: props.input ? props.input.value : props.value,
-        focused: props.focused
-      };
+const getValueFromProps = ({ input, value }) => (input ? input.value : value);
 
-      this.onChange = this.onChange.bind(this);
-      this.onFocus = this.onFocus.bind(this);
-      this.onBlur = this.onBlur.bind(this);
-      this._renderInput = this._renderInput.bind(this);
-    }
+const formInput = WrappedComponent => {
+  return class Input extends React.Component {
+    state = {
+      value: getValueFromProps(this.props),
+      focused: this.props.focused
+    };
 
     render() {
       const { value } = this.state;
@@ -87,14 +80,14 @@ const formInput = WrappedComponent => {
       );
     }
 
-    _renderInput({
+    _renderInput = ({
       innerRef,
       refName,
       clearable,
       clearIcon,
       leftIcon,
       ...inputProps
-    }) {
+    }) => {
       const handlers = {
         onChange: this.onChange,
         onFocus: this.onFocus,
@@ -143,7 +136,7 @@ const formInput = WrappedComponent => {
           {dropDownIcon}
         </div>
       );
-    }
+    };
 
     _renderLabel(label, moreInfoContent, moreInfoAlign) {
       return (
@@ -181,23 +174,15 @@ const formInput = WrappedComponent => {
       if (!this.props.focused && prevProps.focused) {
         this.inputRef && this.inputRef.blur();
       }
-    };
 
-    componentWillReceiveProps(nextProps) {
-      const nextValue = nextProps.input
-        ? nextProps.input.value
-        : nextProps.value;
-
-      const currentValue = this.props.input
-        ? this.props.input.value
-        : this.props.value;
-
-      if (nextValue !== currentValue) {
+      const nextValue = getValueFromProps(this.props);
+      const prevValue = getValueFromProps(prevProps);
+      if (nextValue !== prevValue) {
         this.setState({
           value: nextValue
         });
       }
-    }
+    };
 
     preventBlurOfClearIcon = event => {
       // do not blur the text field if the click is on the clear icon
@@ -220,7 +205,7 @@ const formInput = WrappedComponent => {
       this.inputRef && this.inputRef.focus();
     };
 
-    onChange(event) {
+    onChange = event => {
       this.setState({
         value: event.value || event.target.value
       });
@@ -230,17 +215,17 @@ const formInput = WrappedComponent => {
       }
 
       return this.props.onChange(event);
-    }
+    };
 
-    onFocus(event) {
+    onFocus = event => {
       this.setState({ focused: true });
       return this.props.onFocus(event);
-    }
+    };
 
-    onBlur(event) {
+    onBlur = event => {
       this.setState({ focused: false });
       return this.props.onBlur(event);
-    }
+    };
 
     static displayName = wrapDisplayName(WrappedComponent, "formInput");
 

@@ -9,27 +9,45 @@ import Wrapper from "./styledComponents/Wrapper";
 describe("formInput", function() {
   configure({ adapter: new Adapter() });
 
-  const EnhancedInput = formInput(props => React.createElement("input", props));
+  const EnhancedInput = formInput("input");
 
-  describe("(with value prop)", () => {
-    test("passing the same value on props should leave value state as it is", function() {
-      const value = "some value";
-      const component = shallow(<EnhancedInput value={value} />);
+  describe("receiving new props", () => {
+    const value = "some value";
+    let component, setStateSpy;
 
-      const setStateMock = jest.fn();
-      component.instance().setState = setStateMock;
-
-      component.setProps({ value });
-
-      expect(setStateMock.mock.calls.length).toBe(0);
+    beforeEach(() => {
+      component = mount(<EnhancedInput value={value} />);
+      setStateSpy = jest.spyOn(component.instance(), "setState");
     });
 
-    test("changing the value property should update value state", function() {
-      const component = shallow(<EnhancedInput />);
-      const state = component.state();
-      const expectedState = { ...state, value: "456" };
-      component.setProps({ value: "456" });
-      expect(component.state()).toEqual(expectedState);
+    afterEach(() => {
+      setStateSpy.mockClear();
+    });
+
+    test("passing the same value on props should leave value state as it is", () => {
+      component.setProps({ value });
+      component.update();
+
+      expect(setStateSpy).not.toHaveBeenCalled();
+    });
+
+    test("changing the value property should update value state", () => {
+      const newValue = "New value";
+
+      component.setProps({ value: newValue });
+      expect(setStateSpy).toHaveBeenCalledWith({ value: newValue });
+    });
+
+    test("not changing the input.value property should not update value state", () => {
+      component.setProps({ input: { value } });
+      expect(setStateSpy).not.toHaveBeenCalled();
+    });
+
+    test("changing the input.value property should update value state", () => {
+      const newValue = "Other value";
+
+      component.setProps({ input: { value: newValue } });
+      expect(setStateSpy).toHaveBeenCalledWith({ value: newValue });
     });
   });
 
@@ -52,28 +70,6 @@ describe("formInput", function() {
       component.instance().inputRef = { blur: onBlurMock };
       component.setProps({ focused });
       expect(onBlurMock).toBeCalled();
-    });
-  });
-
-  describe("(with redux-form input porp)", () => {
-    test("passing the same value on props should leave value state as it is", function() {
-      const value = "some value";
-      const component = shallow(<EnhancedInput input={{ value }} />);
-
-      const setStateMock = jest.fn();
-      component.instance().setState = setStateMock;
-
-      component.setProps({ input: { value } });
-
-      expect(setStateMock.mock.calls.length).toBe(0);
-    });
-
-    test("changing the value property should update value state", function() {
-      const component = shallow(<EnhancedInput input={{ value: "0" }} />);
-      const state = component.state();
-      const expectedState = { ...state, value: "456" };
-      component.setProps({ input: { value: "456" } });
-      expect(component.state()).toEqual(expectedState);
     });
   });
 

@@ -19,7 +19,6 @@ const defaultConfig = {
   }
 };
 
-/* eslint-disable-next-line react/no-deprecated */
 class Carousel extends React.Component {
   state = {
     activeItem: 0
@@ -43,8 +42,8 @@ class Carousel extends React.Component {
     this.clearInterval();
   };
 
-  componentWillReceiveProps({ imageSet }) {
-    if (imageSet !== this.props.imageSet) {
+  componentDidUpdate(prevProps) {
+    if (prevProps.imageSet !== this.props.imageSet) {
       this.setState({ activeItem: 0 });
       this.setInterval();
     }
@@ -75,7 +74,7 @@ class Carousel extends React.Component {
       <Container
         activeItem={this.state.activeItem}
         itemConfig={configProps}
-        scale={this.props.scale}
+        shouldScale={this.props.scale}
       >
         <ul>
           {imageSet.map((item, index) => {

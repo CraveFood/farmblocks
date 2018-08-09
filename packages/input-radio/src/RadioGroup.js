@@ -3,15 +3,16 @@ import PropTypes from "prop-types";
 
 import Group from "./styledComponents/Group";
 
-/* eslint-disable-next-line react/no-deprecated */
 class RadioGroup extends React.Component {
   state = {
     value: this.props.defaultValue
   };
 
-  componentWillReceiveProps = ({ defaultValue }) => {
-    if (defaultValue !== this.props.defaultValue)
+  componentDidUpdate = prevProps => {
+    const { defaultValue } = this.props;
+    if (prevProps.defaultValue !== defaultValue) {
       this.setState({ value: defaultValue });
+    }
   };
 
   handleChange = value => {
@@ -21,6 +22,7 @@ class RadioGroup extends React.Component {
     });
     onChange && onChange(value);
   };
+
   render() {
     const { children, name, disabled } = this.props;
     const { value } = this.state;

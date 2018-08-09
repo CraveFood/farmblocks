@@ -11,17 +11,11 @@ import StyledLabel from "./styledComponents/Checkbox";
 const TooltipTarget = disabledTooltip("div");
 
 const createCheckbox = ({ isSwitch }) =>
-  /* eslint-disable-next-line react/no-deprecated */
   class Checkbox extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        checked: props.checked,
-        clicked: false
-      };
-      this.onMouseUp = this.onMouseUp.bind(this);
-      this.onChange = this.onChange.bind(this);
-    }
+    state = {
+      checked: this.props.checked,
+      clicked: false
+    };
 
     render() {
       const {
@@ -76,24 +70,22 @@ const createCheckbox = ({ isSwitch }) =>
       );
     }
 
-    componentWillReceiveProps(nextProps) {
-      const nextState = {};
-      if (nextProps.checked !== this.props.checked) {
-        nextState.checked = nextProps.checked;
+    componentDidUpdate(prevProps) {
+      if (prevProps.checked !== this.props.checked) {
+        this.setState({ checked: this.props.checked });
       }
-      this.setState(nextState);
     }
 
-    onMouseUp(event) {
+    onMouseUp = event => {
       if (isSwitch) {
         // we use a clicked state to flag that the
         // switch change started from a pointer click and not the spacebar
         this.setState({ clicked: true });
       }
       return this.props.onMouseUp(event);
-    }
+    };
 
-    onChange(event) {
+    onChange = event => {
       if (this.state.clicked) {
         // we only want to show the focus outline for when
         // the focus was gained with a tab keypress and not a click
@@ -109,7 +101,7 @@ const createCheckbox = ({ isSwitch }) =>
         this.props.onChange(event);
         return { checked: !prevState.checked, clicked: false };
       });
-    }
+    };
 
     static propTypes = {
       label: PropTypes.string,

@@ -27,7 +27,6 @@ const EnhancedInput = compose(
 )("input");
 EnhancedInput.displayName = "EnhancedInput";
 
-/* eslint-disable-next-line react/no-deprecated */
 class Select extends React.Component {
   render() {
     return (
@@ -71,16 +70,17 @@ class Select extends React.Component {
     }
   };
 
-  componentWillReceiveProps = newProps => {
+  componentDidUpdate = prevProps => {
+    const { value } = this.props;
     if (
-      ((newProps.value || newProps.value === 0) &&
-        newProps.value !== this.props.value &&
-        newProps.value !== this.state.selectedValue) ||
-      newProps.items !== this.props.items
+      ((value || value === 0) &&
+        value !== prevProps.value &&
+        value !== this.state.selectedValue) ||
+      prevProps.items !== this.props.items
     ) {
       this.setState({
-        selectedValue: newProps.value,
-        selectedLabel: this.getSelectedLabel(newProps)
+        selectedValue: value,
+        selectedLabel: this.getSelectedLabel(this.props)
       });
     }
   };

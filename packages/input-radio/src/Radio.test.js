@@ -50,7 +50,7 @@ describe("Radio", function() {
       expect(onChangeSpy).toHaveBeenCalledTimes(0);
     });
   });
-  describe("componentWillReceiveProps", () => {
+  describe("receiving new props", () => {
     let setStateSpy;
 
     beforeEach(() => {
