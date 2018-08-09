@@ -56,24 +56,34 @@ class Table extends React.Component {
     }
   }
 
-  onRowClick = (e, rowData, rowKey) => {
-    if (this.props.selectableRows) {
-      const refName = getRefName(CHECKBOX, rowKey);
-      const clickedOnCheckbox = this[refName].contains(e.target);
+  onRowClick = (e, rowData, rowKey, rowIsAggregator) => {
+    // ignores clicks on checkboxes
+    if (this.props.onRowClick) {
+      if (this.props.selectableRows) {
+        const refName = getRefName(CHECKBOX, rowKey);
+        const clickedOnCheckbox = this[refName].contains(e.target);
 
-      if (clickedOnCheckbox) {
-        return;
+        if (clickedOnCheckbox) {
+          return;
+        }
       }
-    }
 
-    if (this.props.collapsed) {
-      const expandButtonRef = this[getRefName(EXP_BUTTON, rowKey)];
-      if (expandButtonRef && expandButtonRef.contains(e.target)) {
-        return;
+      if (this.props.collapsed) {
+        // ignores clicks on expand/collapse buttons
+        const expandButtonRef = this[getRefName(EXP_BUTTON, rowKey)];
+        if (expandButtonRef && expandButtonRef.contains(e.target)) {
+          return;
+        }
+
+        // expand/collapse row
+        if (rowIsAggregator) {
+          return this.expandToggleClicked(rowKey);
+        }
       }
-    }
 
-    this.props.onRowClick && this.props.onRowClick(e, rowData);
+      // all good, click can move forward
+      this.props.onRowClick(e, rowData);
+    }
   };
 
   render() {
@@ -168,7 +178,7 @@ class Table extends React.Component {
       <tr
         key={rowKey}
         className={`row ${groupedClass} ${clickableClass}`}
-        onClick={e => this.onRowClick(e, row, rowKey)}
+        onClick={e => this.onRowClick(e, row, rowKey, group)}
       >
         {selectableRows && this._renderSelectRowButton(rowKey, rowProps, group)}
         {React.Children.map(
