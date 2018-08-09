@@ -173,4 +173,14 @@ describe("formInput", function() {
     component.find(".clear i").simulate("mousedown", event);
     expect(event.preventDefault).toHaveBeenCalledTimes(1);
   });
+
+  test("click on the dropdown icon should remove input's focus", () => {
+    const value = "tomato";
+    const component = mount(<EnhancedInput role="combobox" value={value} />);
+    const event = { preventDefault: jest.fn() };
+
+    component.find("div.input").simulate("mousedown", event);
+    component.find("i").simulate("mousedown", event);
+    expect(event.preventDefault).toHaveBeenCalledTimes(0);
+  });
 });

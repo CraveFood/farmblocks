@@ -189,6 +189,22 @@ describe("SearchField", () => {
       expect(component.state("items")).toEqual([item]);
     });
 
+    test("should return new inputValue if items changes but value does not", () => {
+      const item = { value: "ab", label: "AB" };
+      const newItem = { value: "ab", label: "New AB" };
+      const props = { items: [newItem] };
+      const component = mount(
+        <SearchField items={[item]} value={item.value} />
+      );
+      const oldState = component.state();
+
+      component.setProps(props);
+
+      expect(component.state()).not.toEqual(oldState);
+      expect(component.state("items")).toEqual([newItem]);
+      expect(component.state("inputValue")).toEqual(newItem.label);
+    });
+
     test("should not change state if the props are the same", () => {
       const props = { value: "a" };
       const component = mount(<SearchField value={props.value} />);
