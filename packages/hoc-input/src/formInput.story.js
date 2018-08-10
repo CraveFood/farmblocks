@@ -114,6 +114,14 @@ storiesOf("HOC formInput", module)
     ))
   )
   .add(
+    "disabled html text input with combobox role",
+    withInfo()(() => (
+      <div style={{ width: "300px" }}>
+        <EnhancedInput role="combobox" disabled placeholder="Select value" />
+      </div>
+    ))
+  )
+  .add(
     "html text input with combobox readonly role",
     withInfo()(() => (
       <div style={{ width: "300px" }}>

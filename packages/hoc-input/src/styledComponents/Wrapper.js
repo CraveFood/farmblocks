@@ -37,6 +37,8 @@ const labelColor = props => {
 const ifSmall = (smallValue, defaultValue) => props =>
   props.fontSize === fontSizes.SMALL ? smallValue : defaultValue;
 
+const customCursor = props => (props.disabled ? "default" : "pointer");
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -86,7 +88,7 @@ const Wrapper = styled.div`
         padding-left: 8px;
       }
       &[role="combobox"] {
-        cursor: pointer;
+        cursor: ${customCursor};
       }
     }
 
@@ -120,7 +122,7 @@ const Wrapper = styled.div`
   }
 
   .input.dropdown {
-    cursor: pointer;
+    cursor: ${customCursor};
   }
 
   .label {
