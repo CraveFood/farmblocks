@@ -2,9 +2,6 @@ import * as React from "react";
 import ReactAutocomplete from "react-autocomplete";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
-import disabledTooltip, {
-  disabledTooltipProps
-} from "@crave/farmblocks-hoc-disabled-tooltip";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
   DropdownMenuWrapper,
@@ -19,20 +16,16 @@ import Item from "./components/Item";
 import EmptyCard from "./components/EmptyCard";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
-const EnhancedInput = compose(
-  disabledTooltip,
-  withMessages,
-  formInput,
-  withImage
-)("input");
+const EnhancedInput = compose(withMessages, formInput, withImage)("input");
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
   render() {
+    const { width, zIndex, items } = this.props;
     return (
-      <DropdownWrapper width={this.props.width} zIndex={this.props.zIndex}>
+      <DropdownWrapper width={width} zIndex={zIndex}>
         <ReactAutocomplete
-          items={this.props.items}
+          items={items}
           shouldItemRender={this._shouldItemRender}
           getItemValue={item => item.label}
           value={this.state.selectedLabel}
@@ -113,7 +106,6 @@ class Select extends React.Component {
         innerRef={ref}
         refName={refName}
         image={image}
-        displayBlock
       />
     );
   };
@@ -191,8 +183,7 @@ class Select extends React.Component {
     zIndex: PropTypes.number,
     maxHeight: PropTypes.string,
     ...formInputProps,
-    ...withMessagesProps,
-    ...disabledTooltipProps
+    ...withMessagesProps
   };
 }
 
