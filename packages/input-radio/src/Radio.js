@@ -2,13 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
-import disabledTooltip, {
-  disabledTooltipProps
-} from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import Label from "./styledComponents/Label";
-
-const TooltipTarget = disabledTooltip("div");
 
 class Radio extends React.Component {
   state = {
@@ -40,10 +35,6 @@ class Radio extends React.Component {
       onClick,
       onChange,
       checked: checkedProp,
-      onMouseLeave,
-      onMouseOver,
-      tooltipText,
-      tooltipAlign,
       ...remainingProps
     } = this.props;
     const { checked } = this.state;
@@ -53,34 +44,26 @@ class Radio extends React.Component {
       onClick: this.handleClick
     };
 
+    const disabled = inputProps.disabled;
+
     const labelProps = {
       checked,
-      disabled: inputProps.disabled
-    };
-    const tooltipProps = {
-      onMouseLeave,
-      onMouseOver,
-      tooltipText,
-      tooltipAlign,
-      disabled: inputProps.disabled
+      disabled
     };
 
-    const fontColor =
-      (inputProps.disabled && fontTypes.SUBTLE) || fontTypes.NORMAL;
+    const fontColor = (disabled && fontTypes.SUBTLE) || fontTypes.NORMAL;
 
     return (
       <Label {...labelProps}>
-        <TooltipTarget {...tooltipProps} className="tooltipTarget">
-          <input className="hiddenInput" type="radio" {...inputProps} />
-          <div className="visibleInput">
-            <div className="checkedIndicator" />
-          </div>
-          {label && (
-            <Text title type={fontColor} size={fontSizes.MEDIUM}>
-              {label}
-            </Text>
-          )}
-        </TooltipTarget>
+        <input className="hiddenInput" type="radio" {...inputProps} />
+        <div className="visibleInput">
+          <div className="checkedIndicator" />
+        </div>
+        {label && (
+          <Text title type={fontColor} size={fontSizes.MEDIUM}>
+            {label}
+          </Text>
+        )}
       </Label>
     );
   }
@@ -91,13 +74,11 @@ class Radio extends React.Component {
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
     onChange: PropTypes.func,
-    value: PropTypes.any,
-    ...disabledTooltipProps
+    value: PropTypes.any
   };
 
   static defaultProps = {
-    checked: false,
-    tooltipText: "This option is disabled."
+    checked: false
   };
 }
 
