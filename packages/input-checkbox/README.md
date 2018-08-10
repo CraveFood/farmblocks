@@ -54,9 +54,10 @@ This component also accepts the properties `disabled` and `tooltipText` from the
 In addition to the properties described above, there are some other optional
 properties:
 
-| property | type   | description                                       |
-| -------- | ------ | ------------------------------------------------- |
-| label    | string | a text to be used as label for the checkbox field |
+| property | type     | description                                       |
+| -------- | -------- | ------------------------------------------------- |
+| label    | string   | a text to be used as label for the checkbox field |
+| innerRef | function | ref function passed to the component              |
 
 ## License
 
