@@ -168,6 +168,16 @@ storiesOf("Button", module)
       <Button
         disabled
         onClick={action("buttonClicked")}
+        text="Disabled Buton"
+      />
+    ))
+  )
+  .add(
+    "Disabled with tooltip",
+    withInfo()(() => (
+      <Button
+        disabled
+        onClick={action("buttonClicked")}
         tooltipText="This button is disabled."
         text="Disabled Buton"
       />
