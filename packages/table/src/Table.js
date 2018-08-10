@@ -11,7 +11,6 @@ import { HeaderCell, BodyCell } from "./styledComponents/Cell";
 import { rowHeights } from "./constants";
 
 const CHECKBOX = "checkbox";
-const EXP_BUTTON = "expand-button";
 
 const getRefName = (type, key) => `${type}-${key}`;
 const getRowKey = (index, subIndex = "") => `${index},${subIndex}`;
@@ -69,17 +68,9 @@ class Table extends React.Component {
         }
       }
 
-      if (this.props.collapsed) {
-        // ignores clicks on expand/collapse buttons
-        const expandButtonRef = this[getRefName(EXP_BUTTON, rowKey)];
-        if (expandButtonRef && expandButtonRef.contains(e.target)) {
-          return;
-        }
-
+      if (this.props.collapsed && rowIsAggregator) {
         // expand/collapse row
-        if (rowIsAggregator) {
-          return this.expandToggleClicked(rowKey);
-        }
+        return this.expandToggleClicked(rowKey);
       }
 
       // all good, click can move forward
@@ -230,8 +221,10 @@ class Table extends React.Component {
     return (
       <Button
         icon={icon}
-        onClick={() => this.expandToggleClicked(rowKey)}
-        innerRef={ref => (this[getRefName(EXP_BUTTON, rowKey)] = ref)}
+        onClick={e => {
+          this.expandToggleClicked(rowKey);
+          e.stopPropagation();
+        }}
       />
     );
   };
