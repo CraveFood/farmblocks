@@ -2,13 +2,8 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
-import disabledTooltip, {
-  disabledTooltipProps
-} from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import StyledLabel from "./styledComponents/Checkbox";
-
-const TooltipTarget = disabledTooltip("div");
 
 const createCheckbox = ({ isSwitch }) =>
   class Checkbox extends React.Component {
@@ -18,20 +13,8 @@ const createCheckbox = ({ isSwitch }) =>
     };
 
     render() {
-      const {
-        type,
-        label,
-        checked,
-        onMouseUp,
-        onChange,
-        displayBlock,
-        onMouseLeave,
-        onMouseOver,
-        tooltipText,
-        tooltipAlign,
-        noTooltip,
-        ...inputProps
-      } = this.props;
+      const { label, checked, onMouseUp, onChange, ...inputProps } = this.props;
+
       const checkedState = this.state.checked;
       const labelProps = {
         onMouseUp: this.onMouseUp,
@@ -40,23 +23,18 @@ const createCheckbox = ({ isSwitch }) =>
         disabled: inputProps.disabled,
         hasText: !!label
       };
-      const tooltipProps = {
-        onMouseLeave,
-        onMouseOver,
-        tooltipText,
-        tooltipAlign,
-        disabled: inputProps.disabled,
-        noTooltip
-      };
+
       inputProps.defaultChecked = checkedState;
       inputProps.onChange = this.onChange;
+
       const fontColor = inputProps.disabled
         ? fontTypes.SUBTLE
         : fontTypes.NORMAL;
+
       return (
         <StyledLabel {...labelProps}>
-          <input type="checkbox" {...inputProps} className="hiddenCheckbox" />
-          <TooltipTarget {...tooltipProps} className="tooltipTarget">
+          <input {...inputProps} type="checkbox" className="hiddenCheckbox" />
+          <div className="centerVisibleCheckbox">
             <div className="visibleCheckbox">
               <div className={isSwitch ? "toggle" : "checkmark wg-check"} />
             </div>
@@ -65,7 +43,7 @@ const createCheckbox = ({ isSwitch }) =>
                 {label}
               </Text>
             )}
-          </TooltipTarget>
+          </div>
         </StyledLabel>
       );
     }
@@ -108,7 +86,7 @@ const createCheckbox = ({ isSwitch }) =>
       checked: PropTypes.bool,
       onMouseUp: PropTypes.func,
       onChange: PropTypes.func,
-      ...disabledTooltipProps
+      disabled: PropTypes.bool
     };
 
     static defaultProps = {

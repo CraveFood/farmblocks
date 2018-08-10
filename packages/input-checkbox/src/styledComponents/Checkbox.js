@@ -111,12 +111,12 @@ const hoverStyles = props => {
 
 const Label = styled.label`
   display: inline-flex;
+  cursor: ${props => (props.disabled ? "default" : "pointer")};
+  padding-left: ${margin};
 
-  .tooltipTarget {
+  .centerVisibleCheckbox {
     display: flex;
     align-items: center;
-    cursor: pointer;
-    padding-left: ${margin};
   }
 
   .hiddenCheckbox {
