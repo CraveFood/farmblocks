@@ -108,23 +108,11 @@ storiesOf("Text Input", module)
     ))
   )
   .add(
-    "Disabled with custom Tooltip text",
-    withInfo()(() => (
-      <TextInput
-        tooltipText="a custom tooltip"
-        disabled
-        label="Field Label"
-        placeholder="input value here"
-      />
-    ))
-  )
-  .add(
     "with onMouseOver and onMouseLeave handlers",
     withInfo()(() => (
       <TextInput
         onMouseOver={action("input hovered")}
         onMouseLeave={action("input mouse leave")}
-        tooltipText="a custom tooltip"
         disabled
         label="Field Label"
         placeholder="input value here"
