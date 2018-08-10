@@ -61,7 +61,8 @@ class Table extends React.Component {
     if (this.props.onRowClick) {
       if (this.props.selectableRows) {
         const refName = getRefName(CHECKBOX, rowKey);
-        const clickedOnCheckbox = this[refName].contains(e.target);
+        const clickedOnCheckbox =
+          this[refName] && this[refName].contains(e.target);
 
         if (clickedOnCheckbox) {
           return;
