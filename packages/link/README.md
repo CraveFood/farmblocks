@@ -45,20 +45,18 @@ document.body.appendChild(root);
 
 ## API
 
-| Property     | Description                                                                              | Type                                                                |
-| ------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| children     | the contents of the card                                                                 | React.Node                                                          |
-| href         | an URI to a desired destination                                                          | string                                                              |
-| type         | the type of link (reflects on color and text-decoration)                                 | one of "FEATURED", "NEUTRAL", "NORMAL" or "WHITE" from linkTypes.js |
-| disabled     | indicates a disabled link                                                                | boolean                                                             |
-| tooltipText  | a text for a tooltip presented `onMouseOver` in disabled links                           | string                                                              |
-| tooltipAlign | align position for a tooltip presented `onMouseOver` in disabled links                   | string (one of "left" or "right")                                   |
-| onClick      | a function to handle an onClick event                                                    | function                                                            |
-| leftIcon     | an icon to be placed on the left side of the link                                        | string                                                              |
-| rightIcon    | an icon to be placed on the right side of the link                                       | string                                                              |
-| external     | an indication of an external link (an icon will be placed on the right side of the link) | boolean                                                             |
-| size         | a `font-size` css value for `children`                                                   | number                                                              |
-| lineHeight   | a `line-height` css value for `children`                                                 | number or string                                                    |
+| Property   | Description                                                                              | Type                                                                |
+| ---------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| children   | the contents of the card                                                                 | React.Node                                                          |
+| href       | an URI to a desired destination                                                          | string                                                              |
+| type       | the type of link (reflects on color and text-decoration)                                 | one of "FEATURED", "NEUTRAL", "NORMAL" or "WHITE" from linkTypes.js |
+| disabled   | indicates a disabled link                                                                | boolean                                                             |
+| onClick    | a function to handle an onClick event                                                    | function                                                            |
+| leftIcon   | an icon to be placed on the left side of the link                                        | string                                                              |
+| rightIcon  | an icon to be placed on the right side of the link                                       | string                                                              |
+| external   | an indication of an external link (an icon will be placed on the right side of the link) | boolean                                                             |
+| size       | a `font-size` css value for `children`                                                   | number                                                              |
+| lineHeight | a `line-height` css value for `children`                                                 | number or string                                                    |
 
 ## License
 
