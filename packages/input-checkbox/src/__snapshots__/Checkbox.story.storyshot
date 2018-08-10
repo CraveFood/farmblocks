@@ -1,29 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,8 +19,6 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -96,54 +81,30 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="checkmark wg-check"
-          />
-        </div>
-      </div>
+        className="checkmark wg-check"
+      />
     </div>
   </div>
 </label>
 `;
 
 exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -152,8 +113,6 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -220,25 +179,14 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="checkmark wg-check"
-          />
-        </div>
-      </div>
+        className="checkmark wg-check"
+      />
     </div>
   </div>
 </label>
@@ -246,21 +194,6 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -274,9 +207,11 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -285,8 +220,6 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -352,181 +285,21 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="checkmark wg-check"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="rgba(0, 0, 0, 0.32)"
-        >
-          Checkbox Label
-        </div>
-      </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
+        className="checkmark wg-check"
       />
     </div>
-  </div>
-</label>
-`;
-
-exports[`Storyshots Checkbox/Checkbox Input disabled with no tooltip 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 .tooltipTarget {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
-}
-
-.c0 .hiddenCheckbox {
-  opacity: 0;
-  width: 0;
-  margin: 0;
-}
-
-.c0 .visibleCheckbox {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  border: 1px solid;
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  font-size: 8px;
-  border-radius: 4px;
-  color: rgba(0,0,0,0.16);
-  background-color: rgba(0,0,0,0.16);
-  border-color: rgba(0,0,0,0.16);
-}
-
-.c0 .visibleCheckbox .checkmark {
-  visibility: visible;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.c0:hover .visibleCheckbox {
-  border-width: 1px;
-}
-
-.c0 .hiddenCheckbox:focus + div .visibleCheckbox {
-  border-color: #3498db;
-}
-
-<label
-  checked={true}
-  className="c0"
-  disabled={true}
-  onMouseUp={[Function]}
->
-  <input
-    className="hiddenCheckbox"
-    defaultChecked={true}
-    disabled={true}
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <div
-    className="c1"
-  >
     <div
-      className="hitWrapper"
+      className="c1"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
     >
-      <div
-        className="tooltipTarget"
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="checkmark wg-check"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="rgba(0, 0, 0, 0.32)"
-        >
-          Checkbox Label
-        </div>
-      </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
+      Checkbox Label
     </div>
   </div>
 </label>
@@ -534,21 +307,6 @@ exports[`Storyshots Checkbox/Checkbox Input disabled with no tooltip 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -557,7 +315,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   font-weight: 600;
 }
 
-.c4 {
+.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -571,9 +329,11 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -582,8 +342,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -636,14 +394,16 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   border-color: #3498db;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
 }
 
-.c5 .tooltipTarget {
+.c4 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -652,17 +412,15 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
-.c5 .hiddenCheckbox {
+.c4 .hiddenCheckbox {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c5 .visibleCheckbox {
+.c4 .visibleCheckbox {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -684,7 +442,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   border-color: rgba(0,0,0,0.16);
 }
 
-.c5 .visibleCheckbox .checkmark {
+.c4 .visibleCheckbox .checkmark {
   visibility: visible;
   display: -webkit-box;
   display: -webkit-flex;
@@ -697,22 +455,24 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   width: 100%;
 }
 
-.c5:hover .visibleCheckbox {
+.c4:hover .visibleCheckbox {
   border-width: 1px;
 }
 
-.c5 .hiddenCheckbox:focus + div .visibleCheckbox {
+.c4 .hiddenCheckbox:focus + div .visibleCheckbox {
   border-color: #3498db;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
 }
 
-.c3 .tooltipTarget {
+.c2 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -721,17 +481,15 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
-.c3 .hiddenCheckbox {
+.c2 .hiddenCheckbox {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c3 .visibleCheckbox {
+.c2 .visibleCheckbox {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -753,7 +511,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   border-color: rgba(0,0,0,0.16);
 }
 
-.c3 .visibleCheckbox .checkmark {
+.c2 .visibleCheckbox .checkmark {
   visibility: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -766,11 +524,11 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   width: 100%;
 }
 
-.c3:hover .visibleCheckbox {
+.c2:hover .visibleCheckbox {
   border-width: 1px;
 }
 
-.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+.c2 .hiddenCheckbox:focus + div .visibleCheckbox {
   border-color: #3498db;
 }
 
@@ -786,37 +544,26 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="checkmark wg-check"
-            />
-          </div>
-          <div
-            className="c2"
-            size={16}
-            type="#2f313a"
-          >
-            Checkbox Label 1
-          </div>
-        </div>
+          className="checkmark wg-check"
+        />
+      </div>
+      <div
+        className="c1"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox Label 1
       </div>
     </div>
   </label>
   <label
-    className="c3"
+    className="c2"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -828,43 +575,27 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="checkmark wg-check"
-            />
-          </div>
-          <div
-            className="c4"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Disabled Checkbox
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
+          className="checkmark wg-check"
         />
+      </div>
+      <div
+        className="c3"
+        size={16}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Disabled Checkbox
       </div>
     </div>
   </label>
   <label
     checked={true}
-    className="c5"
+    className="c4"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -877,37 +608,21 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="checkmark wg-check"
-            />
-          </div>
-          <div
-            className="c4"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Checked Disabled Checkbox
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
+          className="checkmark wg-check"
         />
+      </div>
+      <div
+        className="c3"
+        size={16}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Checked Disabled Checkbox
       </div>
     </div>
   </label>
@@ -922,32 +637,21 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="checkmark wg-check"
-            />
-          </div>
-          <div
-            className="c2"
-            size={16}
-            type="#2f313a"
-          >
-            Checkbox Label 3
-          </div>
-        </div>
+          className="checkmark wg-check"
+        />
+      </div>
+      <div
+        className="c1"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox Label 3
       </div>
     </div>
   </label>
@@ -970,21 +674,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -998,9 +687,11 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1009,8 +700,6 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -1073,32 +762,21 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="checkmark wg-check"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="#2f313a"
-        >
-          Checkbox Label
-        </div>
-      </div>
+        className="checkmark wg-check"
+      />
+    </div>
+    <div
+      className="c1"
+      size={16}
+      type="#2f313a"
+    >
+      Checkbox Label
     </div>
   </div>
 </label>
@@ -1106,21 +784,6 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1134,9 +797,11 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1145,8 +810,6 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -1209,61 +872,37 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="checkmark wg-check"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="#2f313a"
-        >
-          Checkbox Label
-        </div>
-      </div>
+        className="checkmark wg-check"
+      />
+    </div>
+    <div
+      className="c1"
+      size={16}
+      type="#2f313a"
+    >
+      Checkbox Label
     </div>
   </div>
 </label>
 `;
 
 exports[`Storyshots Checkbox/Switch Input Default 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1272,8 +911,6 @@ exports[`Storyshots Checkbox/Switch Input Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -1342,54 +979,30 @@ exports[`Storyshots Checkbox/Switch Input Default 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="toggle"
-          />
-        </div>
-      </div>
+        className="toggle"
+      />
     </div>
   </div>
 </label>
 `;
 
 exports[`Storyshots Checkbox/Switch Input checked 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1398,8 +1011,6 @@ exports[`Storyshots Checkbox/Switch Input checked 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -1470,25 +1081,14 @@ exports[`Storyshots Checkbox/Switch Input checked 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="toggle"
-          />
-        </div>
-      </div>
+        className="toggle"
+      />
     </div>
   </div>
 </label>
@@ -1496,21 +1096,6 @@ exports[`Storyshots Checkbox/Switch Input checked 1`] = `
 
 exports[`Storyshots Checkbox/Switch Input disabled 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1523,9 +1108,11 @@ exports[`Storyshots Checkbox/Switch Input disabled 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1534,8 +1121,6 @@ exports[`Storyshots Checkbox/Switch Input disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -1601,180 +1186,21 @@ exports[`Storyshots Checkbox/Switch Input disabled 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="toggle"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="rgba(0, 0, 0, 0.32)"
-        >
-          Checkbox Label
-        </div>
-      </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
+        className="toggle"
       />
     </div>
-  </div>
-</label>
-`;
-
-exports[`Storyshots Checkbox/Switch Input disabled with no tooltip 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c0 .tooltipTarget {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
-}
-
-.c0 .hiddenCheckbox {
-  opacity: 0;
-  width: 0;
-  margin: 0;
-}
-
-.c0 .visibleCheckbox {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  border: 1px solid;
-  margin-right: 8px;
-  width: 56px;
-  height: 32px;
-  border-radius: 100px;
-  border-color: rgba(0,0,0,0.16);
-  background: rgba(0,0,0,0.32);
-}
-
-.c0 .visibleCheckbox .toggle {
-  position: relative;
-  -webkit-transition: ease all 0.2s;
-  transition: ease all 0.2s;
-  width: 24px;
-  height: 24px;
-  border: 1px solid transparent;
-  border-radius: 24px;
-  box-sizing: border-box;
-  background: rgba(255,255,255,0.32);
-  box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
-  left: 28px;
-}
-
-.c0:hover .visibleCheckbox {
-  border-width: 1px;
-}
-
-.c0 .hiddenCheckbox:focus + div .visibleCheckbox {
-  outline: auto 2px Highlight;
-  outline: auto 5px -webkit-focus-ring-color;
-}
-
-<label
-  checked={true}
-  className="c0"
-  disabled={true}
-  onMouseUp={[Function]}
->
-  <input
-    className="hiddenCheckbox"
-    defaultChecked={true}
-    disabled={true}
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <div
-    className="c1"
-  >
     <div
-      className="hitWrapper"
+      className="c1"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
     >
-      <div
-        className="tooltipTarget"
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="toggle"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="rgba(0, 0, 0, 0.32)"
-        >
-          Checkbox Label
-        </div>
-      </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
+      Checkbox Label
     </div>
   </div>
 </label>
@@ -1782,21 +1208,6 @@ exports[`Storyshots Checkbox/Switch Input disabled with no tooltip 1`] = `
 
 exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1804,7 +1215,7 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   text-align: left;
 }
 
-.c4 {
+.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1817,9 +1228,11 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1828,8 +1241,6 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -1888,14 +1299,16 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
 }
 
-.c5 .tooltipTarget {
+.c4 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1904,17 +1317,15 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
-.c5 .hiddenCheckbox {
+.c4 .hiddenCheckbox {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c5 .visibleCheckbox {
+.c4 .visibleCheckbox {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1934,7 +1345,7 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   background: rgba(0,0,0,0.32);
 }
 
-.c5 .visibleCheckbox .toggle {
+.c4 .visibleCheckbox .toggle {
   position: relative;
   -webkit-transition: ease all 0.2s;
   transition: ease all 0.2s;
@@ -1948,23 +1359,25 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   left: 28px;
 }
 
-.c5:hover .visibleCheckbox {
+.c4:hover .visibleCheckbox {
   border-width: 1px;
 }
 
-.c5 .hiddenCheckbox:focus + div .visibleCheckbox {
+.c4 .hiddenCheckbox:focus + div .visibleCheckbox {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
 
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
 }
 
-.c3 .tooltipTarget {
+.c2 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1973,17 +1386,15 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
-.c3 .hiddenCheckbox {
+.c2 .hiddenCheckbox {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c3 .visibleCheckbox {
+.c2 .visibleCheckbox {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2003,7 +1414,7 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   background: rgba(0,0,0,0.32);
 }
 
-.c3 .visibleCheckbox .toggle {
+.c2 .visibleCheckbox .toggle {
   position: relative;
   -webkit-transition: ease all 0.2s;
   transition: ease all 0.2s;
@@ -2017,11 +1428,11 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   left: 4px;
 }
 
-.c3:hover .visibleCheckbox {
+.c2:hover .visibleCheckbox {
   border-width: 1px;
 }
 
-.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+.c2 .hiddenCheckbox:focus + div .visibleCheckbox {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -2038,37 +1449,26 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="toggle"
-            />
-          </div>
-          <div
-            className="c2"
-            size={16}
-            type="#2f313a"
-          >
-            Checkbox Label 1
-          </div>
-        </div>
+          className="toggle"
+        />
+      </div>
+      <div
+        className="c1"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox Label 1
       </div>
     </div>
   </label>
   <label
-    className="c3"
+    className="c2"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -2080,43 +1480,27 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="toggle"
-            />
-          </div>
-          <div
-            className="c4"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Disabled Checkbox
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
+          className="toggle"
         />
+      </div>
+      <div
+        className="c3"
+        size={16}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Disabled Checkbox
       </div>
     </div>
   </label>
   <label
     checked={true}
-    className="c5"
+    className="c4"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -2129,37 +1513,21 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="toggle"
-            />
-          </div>
-          <div
-            className="c4"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Checked Disabled Checkbox
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
+          className="toggle"
         />
+      </div>
+      <div
+        className="c3"
+        size={16}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Checked Disabled Checkbox
       </div>
     </div>
   </label>
@@ -2174,32 +1542,21 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
       type="checkbox"
     />
     <div
-      className="c1"
+      className="centerVisibleCheckbox"
     >
       <div
-        className="hitWrapper"
+        className="visibleCheckbox"
       >
         <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <div
-            className="visibleCheckbox"
-          >
-            <div
-              className="toggle"
-            />
-          </div>
-          <div
-            className="c2"
-            size={16}
-            type="#2f313a"
-          >
-            Checkbox Label 3
-          </div>
-        </div>
+          className="toggle"
+        />
+      </div>
+      <div
+        className="c1"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox Label 3
       </div>
     </div>
   </label>
@@ -2222,21 +1579,6 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
 
 exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -2249,9 +1591,11 @@ exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2260,8 +1604,6 @@ exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -2330,32 +1672,21 @@ exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="toggle"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="#2f313a"
-        >
-          Checkbox Label
-        </div>
-      </div>
+        className="toggle"
+      />
+    </div>
+    <div
+      className="c1"
+      size={16}
+      type="#2f313a"
+    >
+      Checkbox Label
     </div>
   </div>
 </label>
@@ -2363,21 +1694,6 @@ exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
 
 exports[`Storyshots Checkbox/Switch Input with text label 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -2390,9 +1706,11 @@ exports[`Storyshots Checkbox/Switch Input with text label 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
 }
 
-.c0 .tooltipTarget {
+.c0 .centerVisibleCheckbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2401,8 +1719,6 @@ exports[`Storyshots Checkbox/Switch Input with text label 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  cursor: pointer;
-  padding-left: 8px;
 }
 
 .c0 .hiddenCheckbox {
@@ -2471,32 +1787,21 @@ exports[`Storyshots Checkbox/Switch Input with text label 1`] = `
     type="checkbox"
   />
   <div
-    className="c1"
+    className="centerVisibleCheckbox"
   >
     <div
-      className="hitWrapper"
+      className="visibleCheckbox"
     >
       <div
-        className="tooltipTarget"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      >
-        <div
-          className="visibleCheckbox"
-        >
-          <div
-            className="toggle"
-          />
-        </div>
-        <div
-          className="c2"
-          size={16}
-          type="#2f313a"
-        >
-          Checkbox Label
-        </div>
-      </div>
+        className="toggle"
+      />
+    </div>
+    <div
+      className="c1"
+      size={16}
+      type="#2f313a"
+    >
+      Checkbox Label
     </div>
   </div>
 </label>

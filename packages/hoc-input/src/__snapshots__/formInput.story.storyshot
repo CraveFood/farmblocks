@@ -1,5 +1,203 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots HOC formInput disabled html text input with combobox role 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+}
+
+.c0 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 .input input {
+  height: 46px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c0 .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c0 .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c0 .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c0 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c0 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c0 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c0 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c0 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c0 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c0 .input.dropdown {
+  cursor: default;
+}
+
+.c0 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: rgba(0,0,0,0.32);
+  float: left;
+}
+
+.c0 .moreInfo {
+  position: relative;
+  top: -1px;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+  min-width: 0;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+<div
+  style={
+    Object {
+      "width": "300px",
+    }
+  }
+>
+  <div
+    className="c0"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input dropdown"
+      onMouseDown={[Function]}
+    >
+      <input
+        className="wrapped"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Select value"
+        role="combobox"
+        type="text"
+        value=""
+      />
+      <div
+        className="icon dropdown"
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
@@ -98,7 +296,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 }
 
 .c0 .input input[role="combobox"] {
-  cursor: pointer;
+  cursor: default;
 }
 
 .c0 .input .icon {
@@ -134,7 +332,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 }
 
 .c0 .input.dropdown {
-  cursor: pointer;
+  cursor: default;
 }
 
 .c0 .label {
@@ -763,21 +961,6 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 
 exports[`Storyshots HOC formInput html search input with custom clear icon 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -790,29 +973,29 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   color: #3498db;
 }
 
-.c2 > i.margin-left {
+.c1 > i.margin-left {
   margin-left: 8px;
 }
 
-.c2 > i.margin-right {
+.c1 > i.margin-right {
   margin-right: 8px;
 }
 
-.c2 > a {
+.c1 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 > a:hover {
+.c1 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2 > a {
+.c1 > a {
   color: inherit;
 }
 
-.c2:hover {
+.c1:hover {
   color: #2980b9;
 }
 
@@ -1001,28 +1184,18 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
     />
     <div
       className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
     >
-      <div
-        className="hitWrapper"
+      <span
+        className="clear"
+        onClick={[Function]}
       >
-        <div
-          className="c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size={16}
-          type="#3498db"
-        >
-          <span
-            className="clear"
-            onClick={[Function]}
-          >
-            <i
-              className="wg-close"
-            />
-          </span>
-        </div>
-      </div>
+        <i
+          className="wg-close"
+        />
+      </span>
     </div>
   </div>
 </div>
@@ -1030,21 +1203,6 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 
 exports[`Storyshots HOC formInput html search input with value 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -1057,29 +1215,29 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   color: #3498db;
 }
 
-.c2 > i.margin-left {
+.c1 > i.margin-left {
   margin-left: 8px;
 }
 
-.c2 > i.margin-right {
+.c1 > i.margin-right {
   margin-right: 8px;
 }
 
-.c2 > a {
+.c1 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 > a:hover {
+.c1 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2 > a {
+.c1 > a {
   color: inherit;
 }
 
-.c2:hover {
+.c1:hover {
   color: #2980b9;
 }
 
@@ -1268,28 +1426,18 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
     />
     <div
       className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
     >
-      <div
-        className="hitWrapper"
+      <span
+        className="clear"
+        onClick={[Function]}
       >
-        <div
-          className="c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size={16}
-          type="#3498db"
-        >
-          <span
-            className="clear"
-            onClick={[Function]}
-          >
-            <i
-              className="wg-close-int"
-            />
-          </span>
-        </div>
-      </div>
+        <i
+          className="wg-close-int"
+        />
+      </span>
     </div>
   </div>
 </div>
@@ -3249,21 +3397,6 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
 
 exports[`Storyshots HOC formInput small html search input with value 1`] = `
 .c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
-  position: relative;
-}
-
-.c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -3276,29 +3409,29 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
   color: #3498db;
 }
 
-.c2 > i.margin-left {
+.c1 > i.margin-left {
   margin-left: 8px;
 }
 
-.c2 > i.margin-right {
+.c1 > i.margin-right {
   margin-right: 8px;
 }
 
-.c2 > a {
+.c1 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 > a:hover {
+.c1 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2 > a {
+.c1 > a {
   color: inherit;
 }
 
-.c2:hover {
+.c1:hover {
   color: #2980b9;
 }
 
@@ -3489,28 +3622,18 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
     />
     <div
       className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
     >
-      <div
-        className="hitWrapper"
+      <span
+        className="clear"
+        onClick={[Function]}
       >
-        <div
-          className="c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size={16}
-          type="#3498db"
-        >
-          <span
-            className="clear"
-            onClick={[Function]}
-          >
-            <i
-              className="wg-close-int"
-            />
-          </span>
-        </div>
-      </div>
+        <i
+          className="wg-close-int"
+        />
+      </span>
     </div>
   </div>
 </div>
