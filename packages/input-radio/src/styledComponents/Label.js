@@ -28,12 +28,10 @@ const checkedStyles = props =>
   `;
 
 export default styled.label`
-  margin: 8px 0;
+  margin: 0;
 
-  .tooltipTarget {
-    display: inline-flex;
-    align-items: center;
-  }
+  display: inline-flex;
+  align-items: center;
 
   .hiddenInput {
     opacity: 0;

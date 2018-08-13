@@ -2,21 +2,6 @@
 
 exports[`Storyshots Link/Featured Default - left aligned, medium size 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -29,73 +14,48 @@ exports[`Storyshots Link/Featured Default - left aligned, medium size 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
+  <a
+    href="#"
   >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={16}
-      type="#3498db"
-    >
-      <a
-        href="#"
-      >
-        Awesome Link
-      </a>
-    </div>
-  </div>
+    Awesome Link
+  </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured disabled link 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -108,29 +68,29 @@ exports[`Storyshots Link/Featured disabled link 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -143,144 +103,21 @@ exports[`Storyshots Link/Featured disabled link 1`] = `
 >
   <div
     className="c0"
+    disabled={true}
+    size={16}
+    type="#3498db"
   >
-    <div
-      className="hitWrapper"
+    <span
+      href="#"
     >
-      <div
-        className="c1"
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={16}
-        type="#3498db"
-      >
-        <a
-          href="#"
-        >
-          Awesome Link
-        </a>
-      </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Link/Featured disabled link, right aligned 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor: default;
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > i.margin-left {
-  margin-left: 8px;
-}
-
-.c1 > i.margin-right {
-  margin-right: 8px;
-}
-
-.c1 > a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 > a:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1 > a {
-  color: inherit;
-}
-
-.c1:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-<div
-  style={
-    Object {
-      "textAlign": "right",
-      "width": "500px",
-    }
-  }
->
-  <div
-    className="c0"
-  >
-    <div
-      className="hitWrapper"
-    >
-      <div
-        className="c1"
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={16}
-        type="#3498db"
-      >
-        <a
-          href="#"
-        >
-          Awesome Link
-        </a>
-      </div>
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-    </div>
+      Awesome Link
+    </span>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured external 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -293,76 +130,51 @@ exports[`Storyshots Link/Featured external 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
+  <a
+    href="#"
   >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={16}
-      type="#3498db"
-    >
-      <a
-        href="#"
-      >
-        Awesome Link
-      </a>
-      <i
-        className="wg-external-link margin-left"
-      />
-    </div>
-  </div>
+    Awesome Link
+  </a>
+  <i
+    className="wg-external-link margin-left"
+  />
 </div>
 `;
 
 exports[`Storyshots Link/Featured external, mini size 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -375,76 +187,51 @@ exports[`Storyshots Link/Featured external, mini size 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={14}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
+  <a
+    href="#"
   >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={14}
-      type="#3498db"
-    >
-      <a
-        href="#"
-      >
-        Awesome Link
-      </a>
-      <i
-        className="wg-external-link margin-left"
-      />
-    </div>
-  </div>
+    Awesome Link
+  </a>
+  <i
+    className="wg-external-link margin-left"
+  />
 </div>
 `;
 
 exports[`Storyshots Link/Featured external, mini size, white color 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -457,29 +244,29 @@ exports[`Storyshots Link/Featured external, mini size, white color 1`] = `
   color: white;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: rgba(255,255,255,0.56);
 }
 
@@ -492,49 +279,24 @@ exports[`Storyshots Link/Featured external, mini size, white color 1`] = `
 >
   <div
     className="c0"
+    disabled={false}
+    size={14}
+    type="white"
   >
-    <div
-      className="hitWrapper"
+    <a
+      href="#"
     >
-      <div
-        className="c1"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={14}
-        type="white"
-      >
-        <a
-          href="#"
-        >
-          Awesome Link
-        </a>
-        <i
-          className="wg-external-link margin-left"
-        />
-      </div>
-    </div>
+      Awesome Link
+    </a>
+    <i
+      className="wg-external-link margin-left"
+    />
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured external, white color 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -547,29 +309,29 @@ exports[`Storyshots Link/Featured external, white color 1`] = `
   color: white;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: rgba(255,255,255,0.56);
 }
 
@@ -582,49 +344,24 @@ exports[`Storyshots Link/Featured external, white color 1`] = `
 >
   <div
     className="c0"
+    disabled={false}
+    size={16}
+    type="white"
   >
-    <div
-      className="hitWrapper"
+    <a
+      href="#"
     >
-      <div
-        className="c1"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={16}
-        type="white"
-      >
-        <a
-          href="#"
-        >
-          Awesome Link
-        </a>
-        <i
-          className="wg-external-link margin-left"
-        />
-      </div>
-    </div>
+      Awesome Link
+    </a>
+    <i
+      className="wg-external-link margin-left"
+    />
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured link with onClick function 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -637,29 +374,29 @@ exports[`Storyshots Link/Featured link with onClick function 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
@@ -672,46 +409,21 @@ exports[`Storyshots Link/Featured link with onClick function 1`] = `
 >
   <div
     className="c0"
+    disabled={false}
+    size={16}
+    type="#3498db"
   >
-    <div
-      className="hitWrapper"
+    <span
+      onClick={[Function]}
     >
-      <div
-        className="c1"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={16}
-        type="#3498db"
-      >
-        <span
-          onClick={[Function]}
-        >
-          Awesome Link
-        </span>
-      </div>
-    </div>
+      Awesome Link
+    </span>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured no href 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -724,71 +436,46 @@ exports[`Storyshots Link/Featured no href 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
-  >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={16}
-      type="#3498db"
-    >
-      <span>
-        Awesome Link
-      </span>
-    </div>
-  </div>
+  <span>
+    Awesome Link
+  </span>
 </div>
 `;
 
 exports[`Storyshots Link/Featured no href with left icon 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -801,74 +488,49 @@ exports[`Storyshots Link/Featured no href with left icon 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
-  >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={16}
-      type="#3498db"
-    >
-      <i
-        className="wg-place margin-right }"
-      />
-      <span>
-        Awesome Link
-      </span>
-    </div>
-  </div>
+  <i
+    className="wg-place margin-right }"
+  />
+  <span>
+    Awesome Link
+  </span>
 </div>
 `;
 
 exports[`Storyshots Link/Featured right aligned 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -881,29 +543,29 @@ exports[`Storyshots Link/Featured right aligned 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
@@ -917,46 +579,21 @@ exports[`Storyshots Link/Featured right aligned 1`] = `
 >
   <div
     className="c0"
+    disabled={false}
+    size={16}
+    type="#3498db"
   >
-    <div
-      className="hitWrapper"
+    <a
+      href="#"
     >
-      <div
-        className="c1"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={16}
-        type="#3498db"
-      >
-        <a
-          href="#"
-        >
-          Awesome Link
-        </a>
-      </div>
-    </div>
+      Awesome Link
+    </a>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with left icon 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -969,76 +606,51 @@ exports[`Storyshots Link/Featured with left icon 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
+  <i
+    className="wg-place margin-right }"
+  />
+  <a
+    href="#"
   >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={16}
-      type="#3498db"
-    >
-      <i
-        className="wg-place margin-right }"
-      />
-      <a
-        href="#"
-      >
-        Awesome Link
-      </a>
-    </div>
-  </div>
+    Awesome Link
+  </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with left icon, mini size 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -1051,76 +663,51 @@ exports[`Storyshots Link/Featured with left icon, mini size 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={14}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
+  <i
+    className="wg-place margin-right }"
+  />
+  <a
+    href="#"
   >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={14}
-      type="#3498db"
-    >
-      <i
-        className="wg-place margin-right }"
-      />
-      <a
-        href="#"
-      >
-        Awesome Link
-      </a>
-    </div>
-  </div>
+    Awesome Link
+  </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -1133,29 +720,29 @@ exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
   color: white;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: rgba(255,255,255,0.56);
 }
 
@@ -1168,47 +755,22 @@ exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
 >
   <div
     className="c0"
+    disabled={false}
+    size={14}
+    type="white"
   >
-    <div
-      className="hitWrapper"
-    >
-      <div
-        className="c1"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={14}
-        type="white"
-      >
-        <i
-          className="wg-place margin-right }"
-        />
-        <span>
-          Awesome Link
-        </span>
-      </div>
-    </div>
+    <i
+      className="wg-place margin-right }"
+    />
+    <span>
+      Awesome Link
+    </span>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with left icon, white color 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -1221,29 +783,29 @@ exports[`Storyshots Link/Featured with left icon, white color 1`] = `
   color: white;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: rgba(255,255,255,0.56);
 }
 
@@ -1256,47 +818,22 @@ exports[`Storyshots Link/Featured with left icon, white color 1`] = `
 >
   <div
     className="c0"
+    disabled={false}
+    size={18}
+    type="white"
   >
-    <div
-      className="hitWrapper"
-    >
-      <div
-        className="c1"
-        disabled={false}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size={18}
-        type="white"
-      >
-        <i
-          className="wg-place margin-right }"
-        />
-        <span>
-          Awesome Link
-        </span>
-      </div>
-    </div>
+    <i
+      className="wg-place margin-right }"
+    />
+    <span>
+      Awesome Link
+    </span>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with right icon 1`] = `
 .c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -1309,55 +846,45 @@ exports[`Storyshots Link/Featured with right icon 1`] = `
   color: #3498db;
 }
 
-.c1 > i.margin-left {
+.c0 > i.margin-left {
   margin-left: 8px;
 }
 
-.c1 > i.margin-right {
+.c0 > i.margin-right {
   margin-right: 8px;
 }
 
-.c1 > a {
+.c0 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a:hover {
+.c0 > a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 > a {
+.c0 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c0:hover {
   color: #2980b9;
 }
 
 <div
   className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
 >
-  <div
-    className="hitWrapper"
+  <a
+    href="#"
   >
-    <div
-      className="c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size={16}
-      type="#3498db"
-    >
-      <a
-        href="#"
-      >
-        Awesome Link
-      </a>
-      <i
-        className="wg-place margin-left }"
-      />
-    </div>
-  </div>
+    Awesome Link
+  </a>
+  <i
+    className="wg-place margin-left }"
+  />
 </div>
 `;

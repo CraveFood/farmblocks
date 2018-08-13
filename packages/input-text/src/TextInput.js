@@ -3,21 +3,13 @@ import PropTypes from "prop-types";
 import { compose } from "recompose";
 import styled from "styled-components";
 import ReactInputMask from "react-input-mask";
-import disabledTooltip, {
-  disabledTooltipProps
-} from "@crave/farmblocks-hoc-disabled-tooltip";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import withMessages, {
   withMessagesProps
 } from "@crave/farmblocks-hoc-validation-messages";
 
 import protectedValue, { protectedValueProps } from "./protectedValue";
-const EnhancedInput = compose(
-  disabledTooltip,
-  withMessages,
-  protectedValue,
-  formInput
-);
+const EnhancedInput = compose(withMessages, protectedValue, formInput);
 
 const RegularInput = EnhancedInput("input");
 const MaskedInput = EnhancedInput(ReactInputMask);
@@ -32,13 +24,12 @@ const TextInput = props => {
 
   return (
     <Container>
-      <Input {...props} displayBlock />
+      <Input {...props} />
     </Container>
   );
 };
 
 TextInput.propTypes = {
-  ...disabledTooltipProps,
   ...formInputProps,
   ...protectedValueProps,
   ...withMessagesProps,
@@ -51,8 +42,7 @@ TextInput.propTypes = {
 };
 
 TextInput.defaultProps = {
-  type: "text",
-  tooltipText: "This field is disabled."
+  type: "text"
 };
 
 export default TextInput;

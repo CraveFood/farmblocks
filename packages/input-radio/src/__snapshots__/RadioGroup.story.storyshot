@@ -2,21 +2,6 @@
 
 exports[`Storyshots RadioGroup Default 1`] = `
 .c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -26,11 +11,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
 }
 
 .c1 {
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-.c1 .tooltipTarget {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -39,6 +20,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .c1 .hiddenInput {
@@ -114,126 +96,81 @@ exports[`Storyshots RadioGroup Default 1`] = `
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="first"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="first"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            First
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      First
     </div>
   </label>
   <label
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="second"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="second"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Second
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Second
     </div>
   </label>
   <label
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="third"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="third"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Third
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Third
     </div>
   </label>
 </div>
@@ -241,21 +178,6 @@ exports[`Storyshots RadioGroup Default 1`] = `
 
 exports[`Storyshots RadioGroup all disabled 1`] = `
 .c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -265,10 +187,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
 }
 
 .c1 {
-  margin: 8px 0;
-}
-
-.c1 .tooltipTarget {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -330,11 +249,8 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   background: currentColor;
 }
 
-.c4 {
-  margin: 8px 0;
-}
-
-.c4 .tooltipTarget {
+.c3 {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -345,13 +261,13 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   align-items: center;
 }
 
-.c4 .hiddenInput {
+.c3 .hiddenInput {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c4 .visibleInput {
+.c3 .visibleInput {
   height: 16px;
   width: 16px;
   color: #3498db;
@@ -373,7 +289,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   box-sizing: border-box;
 }
 
-.c4 .checkedIndicator {
+.c3 .checkedIndicator {
   height: 8px;
   width: 8px;
   border-radius: 4px;
@@ -391,12 +307,12 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   will-change: opacity,transform;
 }
 
-.c4 .visibleInput {
+.c3 .visibleInput {
   color: rgba(0,0,0,0.16);
   background: currentColor;
 }
 
-.c4 .checkedIndicator {
+.c3 .checkedIndicator {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -425,48 +341,28 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
     className="c1"
     disabled={true}
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      disabled={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="first"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            disabled={true}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="first"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            First
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
+    >
+      First
     </div>
   </label>
   <label
@@ -474,97 +370,57 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
     className="c1"
     disabled={true}
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      disabled={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="second"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            disabled={true}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="second"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Second
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
+    >
+      Second
     </div>
   </label>
   <label
     checked={true}
-    className="c4"
+    className="c3"
     disabled={true}
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={true}
+      disabled={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="third"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={true}
-            disabled={true}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="third"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Third
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
+    >
+      Third
     </div>
   </label>
 </div>
@@ -572,21 +428,6 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
 
 exports[`Storyshots RadioGroup onChange 1`] = `
 .c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -596,11 +437,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
 }
 
 .c1 {
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-.c1 .tooltipTarget {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -609,6 +446,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .c1 .hiddenInput {
@@ -684,126 +522,81 @@ exports[`Storyshots RadioGroup onChange 1`] = `
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="first"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="first"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            First
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      First
     </div>
   </label>
   <label
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="second"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="second"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Second
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Second
     </div>
   </label>
   <label
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="third"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="third"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Third
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Third
     </div>
   </label>
 </div>
@@ -811,21 +604,6 @@ exports[`Storyshots RadioGroup onChange 1`] = `
 
 exports[`Storyshots RadioGroup w/ default value 1`] = `
 .c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -835,11 +613,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
 }
 
 .c1 {
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-.c1 .tooltipTarget {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -848,6 +622,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .c1 .hiddenInput {
@@ -902,12 +677,8 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   border-width: 2px;
 }
 
-.c4 {
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-.c4 .tooltipTarget {
+.c3 {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -916,15 +687,16 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.c4 .hiddenInput {
+.c3 .hiddenInput {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c4 .visibleInput {
+.c3 .visibleInput {
   height: 16px;
   width: 16px;
   color: #3498db;
@@ -946,7 +718,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   box-sizing: border-box;
 }
 
-.c4 .checkedIndicator {
+.c3 .checkedIndicator {
   height: 8px;
   width: 8px;
   border-radius: 4px;
@@ -964,13 +736,13 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   will-change: opacity,transform;
 }
 
-.c4:hover .visibleInput,
-.c4 .hiddenInput:focus + .visibleInput {
+.c3:hover .visibleInput,
+.c3 .hiddenInput:focus + .visibleInput {
   color: #3498db;
   border-width: 2px;
 }
 
-.c4 .checkedIndicator {
+.c3 .checkedIndicator {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -998,126 +770,81 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="first"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="first"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            First
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      First
     </div>
   </label>
   <label
     checked={true}
-    className="c4"
+    className="c3"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="second"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={true}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="second"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Second
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Second
     </div>
   </label>
   <label
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="third"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="third"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Third
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Third
     </div>
   </label>
 </div>
@@ -1125,21 +852,6 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
 
 exports[`Storyshots RadioGroup w/ disabled option 1`] = `
 .c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
-  position: relative;
-}
-
-.c2 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1148,7 +860,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   font-weight: 600;
 }
 
-.c5 {
+.c4 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1158,11 +870,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
 }
 
 .c1 {
-  margin: 8px 0;
-  cursor: pointer;
-}
-
-.c1 .tooltipTarget {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1171,6 +879,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .c1 .hiddenInput {
@@ -1225,11 +934,8 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   border-width: 2px;
 }
 
-.c4 {
-  margin: 8px 0;
-}
-
-.c4 .tooltipTarget {
+.c3 {
+  margin: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1240,13 +946,13 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   align-items: center;
 }
 
-.c4 .hiddenInput {
+.c3 .hiddenInput {
   opacity: 0;
   width: 0;
   margin: 0;
 }
 
-.c4 .visibleInput {
+.c3 .visibleInput {
   height: 16px;
   width: 16px;
   color: #3498db;
@@ -1268,7 +974,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   box-sizing: border-box;
 }
 
-.c4 .checkedIndicator {
+.c3 .checkedIndicator {
   height: 8px;
   width: 8px;
   border-radius: 4px;
@@ -1286,7 +992,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   will-change: opacity,transform;
 }
 
-.c4 .visibleInput {
+.c3 .visibleInput {
   color: rgba(0,0,0,0.16);
   background: currentColor;
 }
@@ -1312,133 +1018,83 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="first"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="first"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            First
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      First
     </div>
   </label>
   <label
     checked={false}
     className="c1"
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="second"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="second"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c3"
-            size={16}
-            type="#2f313a"
-          >
-            Second
-          </div>
-        </div>
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c2"
+      size={16}
+      type="#2f313a"
+    >
+      Second
     </div>
   </label>
   <label
     checked={false}
-    className="c4"
+    className="c3"
     disabled={true}
   >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      disabled={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="third"
+    />
     <div
-      className="c2"
+      className="visibleInput"
     >
       <div
-        className="hitWrapper"
-      >
-        <div
-          className="tooltipTarget"
-          disabled={true}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        >
-          <input
-            className="hiddenInput"
-            defaultChecked={false}
-            disabled={true}
-            name="radioExample"
-            onClick={[Function]}
-            type="radio"
-            value="third"
-          />
-          <div
-            className="visibleInput"
-          >
-            <div
-              className="checkedIndicator"
-            />
-          </div>
-          <div
-            className="c5"
-            size={16}
-            type="rgba(0, 0, 0, 0.32)"
-          >
-            Third
-          </div>
-        </div>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-      </div>
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c4"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
+    >
+      Third
     </div>
   </label>
 </div>

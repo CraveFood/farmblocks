@@ -27,12 +27,7 @@ render(
     <Switch label="Switch Label" />
     <Checkbox checked label="Checkbox Label" />
     <Switch checked label="Switch Label" />
-    <Checkbox
-      disabled
-      tooltipText="custom disabled text"
-      checked
-      label="Checkbox Label"
-    />
+    <Checkbox disabled checked label="Checkbox Label" />
   </div>,
   root
 );

@@ -16,21 +16,6 @@ exports[`Storyshots Amount selectors Default 1`] = `
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -105,7 +90,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -115,7 +100,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -139,13 +124,13 @@ exports[`Storyshots Amount selectors Default 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -160,78 +145,78 @@ exports[`Storyshots Amount selectors Default 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -246,23 +231,23 @@ exports[`Storyshots Amount selectors Default 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -270,14 +255,14 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -352,50 +337,40 @@ exports[`Storyshots Amount selectors Default 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={1}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={1}
-                    type="number"
-                    value="0.00"
-                  />
-                </div>
-              </div>
+                value="0.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -448,21 +423,6 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -537,7 +497,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -547,7 +507,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -571,13 +531,13 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -592,78 +552,78 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -678,23 +638,23 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -702,14 +662,14 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -784,50 +744,40 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={true}
+                step={1}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={true}
-                    step={1}
-                    type="number"
-                    value="0.00"
-                  />
-                </div>
-              </div>
+                value="0.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -874,21 +824,6 @@ exports[`Storyshots Amount selectors Small size 1`] = `
 }
 
 .c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
@@ -969,7 +904,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -979,7 +914,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1003,13 +938,13 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 30px;
   padding: 0 8px;
   border-radius: 4px;
@@ -1024,78 +959,78 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 8px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1110,23 +1045,23 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1134,14 +1069,14 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -1216,50 +1151,40 @@ exports[`Storyshots Amount selectors Small size 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={14}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={14}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={1}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={14}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={1}
-                    type="number"
-                    value="0.00"
-                  />
-                </div>
-              </div>
+                value="0.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -1312,21 +1237,6 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1401,7 +1311,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1411,7 +1321,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1435,13 +1345,13 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -1456,78 +1366,78 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1542,23 +1452,23 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1566,14 +1476,14 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -1643,50 +1553,40 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={0.5}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={0.5}
-                    type="number"
-                    value="2.00"
-                  />
-                </div>
-              </div>
+                value="2.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -1739,21 +1639,6 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1828,7 +1713,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1838,7 +1723,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1862,13 +1747,13 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -1883,78 +1768,78 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1969,23 +1854,23 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1993,14 +1878,14 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -2070,50 +1955,40 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={0.5}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={0.5}
-                    type="number"
-                    value="2.00"
-                  />
-                </div>
-              </div>
+                value="2.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -2166,21 +2041,6 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2255,7 +2115,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2265,7 +2125,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2289,13 +2149,13 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -2310,78 +2170,78 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2396,23 +2256,23 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2420,14 +2280,14 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -2497,50 +2357,40 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={3}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={0.5}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={3}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={0.5}
-                    type="number"
-                    value="2.00"
-                  />
-                </div>
-              </div>
+                value="2.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -2593,21 +2443,6 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2682,7 +2517,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2692,7 +2527,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2716,13 +2551,13 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -2737,78 +2572,78 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2823,23 +2658,23 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2847,14 +2682,14 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -2924,50 +2759,40 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={3}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={1}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={3}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={1}
-                    type="number"
-                    value="5.00"
-                  />
-                </div>
-              </div>
+                value="5.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -3025,21 +2850,6 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   height: 100%;
 }
 
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3114,7 +2924,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3124,7 +2934,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3148,13 +2958,13 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -3169,78 +2979,78 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3255,23 +3065,23 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3279,14 +3089,14 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -3361,50 +3171,40 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={1}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={1}
-                    type="number"
-                    value="0.00"
-                  />
-                </div>
-              </div>
+                value="0.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -3451,21 +3251,6 @@ exports[`Storyshots Amount selectors With value set 1`] = `
 }
 
 .c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
@@ -3546,7 +3331,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3556,7 +3341,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3580,13 +3365,13 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -3601,78 +3386,78 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3687,23 +3472,23 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3711,14 +3496,14 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -3788,50 +3573,40 @@ exports[`Storyshots Amount selectors With value set 1`] = `
     <div
       className="c3"
     >
-      <div
-        className="c4"
-      >
+      <div>
         <div
-          className="hitWrapper"
+          className="c4"
         >
-          <div>
+          <div
+            className="c5"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
             <div
-              className="c5"
+              className="input"
+              onMouseDown={[Function]}
             >
-              <div
-                className="c6"
+              <input
+                className="wrapped"
                 disabled={false}
                 fontSize={16}
-                onClick={[Function]}
+                max={1.7976931348623157e+308}
+                min={0}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={1}
                 type="number"
-              >
-                <div
-                  className="input"
-                  onMouseDown={[Function]}
-                >
-                  <input
-                    className="wrapped"
-                    disabled={false}
-                    fontSize={16}
-                    max={1.7976931348623157e+308}
-                    min={0}
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    onInvalid={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    readOnly={false}
-                    step={1}
-                    type="number"
-                    value="2.00"
-                  />
-                </div>
-              </div>
+                value="2.00"
+              />
             </div>
-            <div />
           </div>
         </div>
+        <div />
       </div>
     </div>
   </div>
@@ -3878,21 +3653,6 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
 }
 
 .c1 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 {
-  display: block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
   position: absolute;
   top: 0;
   width: 100%;
@@ -3973,7 +3733,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3983,7 +3743,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   flex-direction: column;
 }
 
-.c6 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4007,13 +3767,13 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   cursor: text;
 }
 
-.c6 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .input input {
+.c5 .input input {
   height: 46px;
   padding: 0 16px;
   border-radius: 4px;
@@ -4028,78 +3788,78 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   background: none;
 }
 
-.c6 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input::placeholder {
+.c5 .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .input input[type="search"] {
+.c5 .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 .input input[role="combobox"] {
+.c5 .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c6 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c6 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c6 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c6 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4114,23 +3874,23 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   float: left;
 }
 
-.c6 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c6 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
   min-width: 0;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -4138,14 +3898,14 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   align-items: flex-end;
 }
 
-.c5 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
@@ -4216,50 +3976,40 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
       <div
         className="c3"
       >
-        <div
-          className="c4"
-        >
+        <div>
           <div
-            className="hitWrapper"
+            className="c4"
           >
-            <div>
+            <div
+              className="c5"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
               <div
-                className="c5"
+                className="input"
+                onMouseDown={[Function]}
               >
-                <div
-                  className="c6"
+                <input
+                  className="wrapped"
                   disabled={false}
                   fontSize={16}
-                  onClick={[Function]}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  readOnly={false}
+                  step={1}
                   type="number"
-                >
-                  <div
-                    className="input"
-                    onMouseDown={[Function]}
-                  >
-                    <input
-                      className="wrapped"
-                      disabled={false}
-                      fontSize={16}
-                      max={1.7976931348623157e+308}
-                      min={0}
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      onInvalid={[Function]}
-                      onMouseLeave={[Function]}
-                      onMouseOver={[Function]}
-                      readOnly={false}
-                      step={1}
-                      type="number"
-                      value="10.00"
-                    />
-                  </div>
-                </div>
+                  value="10.00"
+                />
               </div>
-              <div />
             </div>
           </div>
+          <div />
         </div>
       </div>
     </div>

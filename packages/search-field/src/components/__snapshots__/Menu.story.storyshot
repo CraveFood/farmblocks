@@ -243,21 +243,6 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
 
 exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
 .c8 {
-  display: inline-block;
-}
-
-.c8 .hitWrapper {
-  position: relative;
-}
-
-.c8 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c9 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -270,29 +255,29 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   color: #59636f;
 }
 
-.c9 > i.margin-left {
+.c8 > i.margin-left {
   margin-left: 8px;
 }
 
-.c9 > i.margin-right {
+.c8 > i.margin-right {
   margin-right: 8px;
 }
 
-.c9 > a {
+.c8 > a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 > a:hover {
+.c8 > a:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 > a {
+.c8 > a {
   color: inherit;
 }
 
-.c9:hover {
+.c8:hover {
   color: #3498db;
 }
 
@@ -464,25 +449,15 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
             >
               <div
                 className="c8"
+                disabled={false}
+                size={16}
+                type="#59636f"
               >
-                <div
-                  className="hitWrapper"
+                <span
+                  className="link"
                 >
-                  <div
-                    className="c9"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size={16}
-                    type="#59636f"
-                  >
-                    <span
-                      className="link"
-                    >
-                      Contact Support?
-                    </span>
-                  </div>
-                </div>
+                  Contact Support?
+                </span>
               </div>
             </div>
           </div>

@@ -43,12 +43,7 @@ storiesOf("Link/Neutral", module)
   .add(
     "disabled",
     withInfo()(() => (
-      <Link
-        href="#"
-        type={linkTypes.NEUTRAL}
-        disabled
-        tooltipText="This link is disabled."
-      >
+      <Link href="#" type={linkTypes.NEUTRAL} disabled>
         Awesome Link
       </Link>
     ))

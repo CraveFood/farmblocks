@@ -126,22 +126,7 @@ storiesOf("Link/Featured", module)
     "disabled link",
     withInfo()(() => (
       <div style={{ width: "500px" }}>
-        <Link href="#" disabled tooltipText="This link is disabled.">
-          Awesome Link
-        </Link>
-      </div>
-    ))
-  )
-  .add(
-    "disabled link, right aligned",
-    withInfo()(() => (
-      <div style={{ width: "500px", textAlign: "right" }}>
-        <Link
-          href="#"
-          disabled
-          tooltipAlign="right"
-          tooltipText="This action is disabled."
-        >
+        <Link href="#" disabled>
           Awesome Link
         </Link>
       </div>

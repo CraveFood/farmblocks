@@ -11,7 +11,15 @@ import StyledButton from "./styledComponents/Button";
 const EnhancedButton = disabledTooltip(StyledButton);
 
 const Button = props => {
-  const { disabled, icon, rightIcon, text, children, ...buttonProps } = props;
+  const {
+    disabled,
+    icon,
+    rightIcon,
+    text,
+    children,
+    noTooltip,
+    ...buttonProps
+  } = props;
 
   // @FIXME revisit font icon assets on farmblocks
   const iconName = buttonProps.loading ? "wg-loading" : icon;
@@ -21,14 +29,13 @@ const Button = props => {
   const marginOffset = text || children ? 10 : 0;
   const buttonContent = text || children;
   const isIconOnly = buttonContent === undefined;
-  const noTooltip = buttonProps.loading;
 
   return (
     <EnhancedButton
       disabled={isDisabled}
       isIconOnly={isIconOnly}
       displayBlock={buttonProps.fluid}
-      noTooltip={noTooltip}
+      noTooltip={!buttonProps.tooltipText}
       {...buttonProps}
     >
       {showIcon && (
@@ -48,8 +55,7 @@ const Button = props => {
 
 Button.defaultProps = {
   size: buttonSizes.SMALL,
-  type: buttonTypes.NEUTRAL,
-  tooltipText: "This action is disabled"
+  type: buttonTypes.NEUTRAL
 };
 
 Button.propTypes = {
@@ -62,7 +68,6 @@ Button.propTypes = {
   size: PropTypes.oneOf(Object.keys(buttonSizes)),
   type: PropTypes.oneOf(Object.keys(buttonTypes)),
   fluid: PropTypes.bool,
-  disabled: PropTypes.bool,
   loading: PropTypes.bool,
   ...disabledTooltipProps
   //... and all properties accepted by the html button
