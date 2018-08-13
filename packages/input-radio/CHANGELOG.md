@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@1.0.0...@crave/farmblocks-input-radio@2.0.0) (2018-08-13)
+
+
+### Features
+
+* **Radio:** remove default tooltip for disabled state ([3a29057](https://github.com/CraveFood/farmblocks/commit/3a29057))
+
+
+### BREAKING CHANGES
+
+* **Radio:** This change removes the tooltip when the component is disabled.
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@0.2.9...@crave/farmblocks-input-radio@1.0.0) (2018-08-09)
 

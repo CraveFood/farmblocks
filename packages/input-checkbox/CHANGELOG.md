@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@2.0.0...@crave/farmblocks-input-checkbox@3.0.0) (2018-08-13)
+
+
+### Features
+
+* **Checkbox:** remove default tooltip for disabled state ([2aa82ce](https://github.com/CraveFood/farmblocks/commit/2aa82ce)), closes [#478](https://github.com/CraveFood/farmblocks/issues/478)
+
+
+### BREAKING CHANGES
+
+* **Checkbox:** This change removes the tooltip when the component is disabled.
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@1.2.9...@crave/farmblocks-input-checkbox@2.0.0) (2018-08-09)
 

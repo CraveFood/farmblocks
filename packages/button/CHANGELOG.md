@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@4.0.6...@crave/farmblocks-button@5.0.0) (2018-08-13)
+
+
+### Features
+
+* **Button:** show disabled tooltip only if a tooltipText is explicitly passed ([5205e3c](https://github.com/CraveFood/farmblocks/commit/5205e3c))
+
+
+### BREAKING CHANGES
+
+* **Button:** This change removes the default tooltip when the component is disabled, so any uses that rely on it
+to display a tooltip have to pass explicitly a tooltipText now.
+
+
+
+
 <a name="4.0.6"></a>
 ## [4.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@4.0.5...@crave/farmblocks-button@4.0.6) (2018-08-01)
 

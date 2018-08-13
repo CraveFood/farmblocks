@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.2.4...@crave/farmblocks-link@3.0.0) (2018-08-13)
+
+
+### Features
+
+* **Link:** remove default tooltip for disabled state ([5db7262](https://github.com/CraveFood/farmblocks/commit/5db7262))
+
+
+### BREAKING CHANGES
+
+* **Link:** This change removes the tooltip when the component is disabled.
+
+
+
+
 <a name="2.2.4"></a>
 ## [2.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@2.2.3...@crave/farmblocks-link@2.2.4) (2018-07-20)
 

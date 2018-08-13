@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@2.1.5...@crave/farmblocks-input-text@3.0.0) (2018-08-13)
+
+
+### Features
+
+* **Input text:** remove default tooltip for disabled state ([3aafb78](https://github.com/CraveFood/farmblocks/commit/3aafb78))
+
+
+### BREAKING CHANGES
+
+* **Input text:** This change removes the tooltip when the component is disabled.
+
+
+
+
 <a name="2.1.5"></a>
 ## [2.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@2.1.4...@crave/farmblocks-input-text@2.1.5) (2018-08-09)
 
