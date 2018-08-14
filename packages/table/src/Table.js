@@ -10,6 +10,11 @@ import StyledTable from "./styledComponents/Table";
 import { HeaderCell, BodyCell } from "./styledComponents/Cell";
 import { rowHeights } from "./constants";
 
+const CHECKBOX = "checkbox";
+
+const getRefName = (type, key) => `${type}-${key}`;
+const getRowKey = (index, subIndex = "") => `${index},${subIndex}`;
+
 class Table extends React.Component {
   state = {
     rowsMap: {},
@@ -29,13 +34,13 @@ class Table extends React.Component {
       if (hasSubRows(row)) {
         const subRows = row[rowGroupKey].reduce(
           (subRowEntries, subRow, subIndex) => {
-            return { ...subRowEntries, [`${index},${subIndex}`]: subRow };
+            return { ...subRowEntries, [getRowKey(index, subIndex)]: subRow };
           },
           {}
         );
         return { ...entries, ...subRows };
       }
-      return { ...entries, [`${index},`]: row };
+      return { ...entries, [getRowKey(index, "")]: row };
     }, {});
     this.setState({ rowsMap });
   }
@@ -49,6 +54,29 @@ class Table extends React.Component {
       this.updateRowsMap();
     }
   }
+
+  onRowClick = (e, rowData, rowKey, rowIsAggregator) => {
+    // ignores clicks on checkboxes
+    if (this.props.onRowClick) {
+      if (this.props.selectableRows) {
+        const refName = getRefName(CHECKBOX, rowKey);
+        const clickedOnCheckbox =
+          this[refName] && this[refName].contains(e.target);
+
+        if (clickedOnCheckbox) {
+          return;
+        }
+      }
+
+      if (this.props.collapsed && rowIsAggregator) {
+        // expand/collapse row
+        return this.expandToggleClicked(rowKey);
+      }
+
+      // all good, click can move forward
+      this.props.onRowClick(e, rowData);
+    }
+  };
 
   render() {
     const {
@@ -70,11 +98,14 @@ class Table extends React.Component {
       selectionHeaderVisible,
       borderless
     };
+
     const selectedData = Object.keys(this.state.rowsMap)
       .filter(key => this.state.selectedRows.includes(key))
       .map(key => this.state.rowsMap[key]);
+
     const clearFunction = () =>
       this.selectAllToggle(false, this.state.selectedRows.length);
+
     return (
       <StyledTable {...tableProps}>
         <caption>
@@ -87,6 +118,7 @@ class Table extends React.Component {
               selectionHeader(selectedData, clearFunction)}
           </ReactCSSTransitionGroup>
         </caption>
+
         <thead>
           <tr>
             {selectableRows && this._renderSelectAllButton()}
@@ -100,12 +132,14 @@ class Table extends React.Component {
             {collapsed && this._renderColumnTitle()}
           </tr>
         </thead>
+
         {data.map((row, index) => {
           const isRowGroup =
             row[rowGroupKey] && Array.isArray(row[rowGroupKey]);
           if (isRowGroup) {
             return this._renderRowGroup(row, index);
           }
+
           return (
             <tbody key={index} className="body">
               {this._renderRow(row, index)}
@@ -123,13 +157,21 @@ class Table extends React.Component {
     group = false,
     flattened = false
   ) => {
-    const { selectableRows, collapsed, children } = this.props;
-    const rowKey = `${index},${subIndex}`;
+    const { selectableRows, collapsed, children, onRowClick } = this.props;
+    const rowKey = getRowKey(index, subIndex);
     const selected = this.state.selectedRows.includes(rowKey);
     const grouped = typeof subIndex === "number" && !flattened;
     const rowProps = { selected, grouped };
+
+    const groupedClass = grouped ? "grouped" : "";
+    const clickableClass = onRowClick ? "clickable" : "";
+
     return (
-      <tr key={rowKey} className={`row ${grouped ? "grouped" : ""}`}>
+      <tr
+        key={rowKey}
+        className={`row ${groupedClass} ${clickableClass}`}
+        onClick={e => this.onRowClick(e, row, rowKey, group)}
+      >
         {selectableRows && this._renderSelectRowButton(rowKey, rowProps, group)}
         {React.Children.map(
           children,
@@ -144,7 +186,7 @@ class Table extends React.Component {
         )}
         {collapsed && (
           <BodyCell className="cell" {...rowProps}>
-            {group && this._renderExpandToggle(index)}
+            {group && this._renderExpandToggle(rowKey)}
           </BodyCell>
         )}
       </tr>
@@ -155,10 +197,13 @@ class Table extends React.Component {
     const { rowGroupKey, flatGroupCondition } = this.props;
     const { [rowGroupKey]: childRows, ...parentRow } = row;
     const shouldUngroup = !!(flatGroupCondition && flatGroupCondition(row));
+    const rowKey = getRowKey(index, "");
+
     const expanded =
       shouldUngroup ||
       !this.props.collapsed ||
-      this.state.expandedRows.includes(index);
+      this.state.expandedRows.includes(rowKey);
+
     return (
       <tbody className={`body ${!expanded ? "collapsed" : ""}`} key={index}>
         {!shouldUngroup && this._renderRow(parentRow, index, "", true)}
@@ -169,23 +214,30 @@ class Table extends React.Component {
     );
   };
 
-  _renderExpandToggle = index => {
-    const icon = this.state.expandedRows.includes(index)
+  _renderExpandToggle = rowKey => {
+    const icon = this.state.expandedRows.includes(rowKey)
       ? "wg-small-arrow-top"
       : "wg-small-arrow-bottom";
     return (
-      <Button icon={icon} onClick={() => this.expandToggleClicked(index)} />
+      <Button
+        icon={icon}
+        onClick={e => {
+          this.expandToggleClicked(rowKey);
+          e.stopPropagation();
+        }}
+      />
     );
   };
 
-  expandToggleClicked = index => {
+  expandToggleClicked = rowKey => {
     const oldExpandedRows = this.state.expandedRows;
-    const expandedIndexOf = oldExpandedRows.indexOf(index);
-    const expandedRows =
-      expandedIndexOf !== -1
-        ? oldExpandedRows.filter((item, index) => index !== expandedIndexOf)
-        : [...oldExpandedRows, index];
-    return this.setState({ expandedRows });
+    const isRowExpanded = oldExpandedRows.includes(rowKey);
+
+    const expandedRows = isRowExpanded
+      ? oldExpandedRows.filter(item => item !== rowKey)
+      : [...oldExpandedRows, rowKey];
+
+    this.setState({ expandedRows });
   };
 
   _renderSelectAllButton = () => {
@@ -209,6 +261,8 @@ class Table extends React.Component {
       <BodyCell className="cell checkbox" {...rowProps}>
         <div className="checkbox">
           <Checkbox
+            key={rowKey}
+            innerRef={ref => (this[getRefName(CHECKBOX, rowKey)] = ref)}
             checked={rowProps.selected}
             disabled={disabled}
             onChange={event => {
@@ -329,6 +383,7 @@ class Table extends React.Component {
     rowGroupKey: PropTypes.string,
     flatGroupCondition: PropTypes.func,
     onTitleClick: PropTypes.func,
+    onRowClick: PropTypes.func,
     collapsed: PropTypes.bool,
     selectableRows: PropTypes.bool,
     selectionHeader: PropTypes.func,

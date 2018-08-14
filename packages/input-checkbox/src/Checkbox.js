@@ -13,7 +13,14 @@ const createCheckbox = ({ isSwitch }) =>
     };
 
     render() {
-      const { label, checked, onMouseUp, onChange, ...inputProps } = this.props;
+      const {
+        label,
+        checked,
+        onMouseUp,
+        onChange,
+        innerRef,
+        ...inputProps
+      } = this.props;
 
       const checkedState = this.state.checked;
       const labelProps = {
@@ -32,7 +39,7 @@ const createCheckbox = ({ isSwitch }) =>
         : fontTypes.NORMAL;
 
       return (
-        <StyledLabel {...labelProps}>
+        <StyledLabel {...labelProps} innerRef={innerRef}>
           <input {...inputProps} type="checkbox" className="hiddenCheckbox" />
           <div className="centerVisibleCheckbox">
             <div className="visibleCheckbox">
@@ -86,7 +93,8 @@ const createCheckbox = ({ isSwitch }) =>
       checked: PropTypes.bool,
       onMouseUp: PropTypes.func,
       onChange: PropTypes.func,
-      disabled: PropTypes.bool
+      disabled: PropTypes.bool,
+      innerRef: PropTypes.func
     };
 
     static defaultProps = {

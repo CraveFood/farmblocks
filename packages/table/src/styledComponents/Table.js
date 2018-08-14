@@ -54,6 +54,10 @@ const Table = styled.table`
       background: ${colors.DEMERARA_SUGAR};
     }
   }
+
+  tbody tr.clickable {
+    cursor: pointer;
+  }
 `;
 
 export default Table;

@@ -45,13 +45,19 @@ checkmark symbol, and that the class name to include that icon is `.wg-check`.
 
 ### Required Polyfills
 
-This package assumes it will run on an enviroment that has support for Array.includes and Object.keys, if you need to support IE and other older browsers, make sure you have those polyfills in place.
+This package assumes it will run on an enviroment that has support for
+Array.includes and Object.keys, if you need to support IE and other older
+browsers, make sure you have those polyfills in place.
 
 ## Properties
 
-The Table component can be used for showing data grids using text cells in like the simple example above, but it also supports
-complex rendering inside the cells using the `customCell` property. The idea is to describe the columns using the Column component and map the data to columns in any way you choose using functions. The `data` property of the Table component is the
-core of the whole thing, it should be an array of objects, each item representing a row of the table.
+The Table component can be used for showing data grids using text cells in like
+the simple example above, but it also supports complex rendering inside the
+cells using the `customCell` property. The idea is to describe the columns using
+the Column component and map the data to columns in any way you choose using
+functions. The `data` property of the Table component is the core of the whole
+thing, it should be an array of objects, each item representing a row of the
+table.
 
 ### Table
 
@@ -67,17 +73,25 @@ core of the whole thing, it should be an array of objects, each item representin
 | collapsed          | boolean                                                | if row groups are used, this flag will add a button column with buttons that works as expand/collapse toggle on the start of row groups. The groups will start collapsed.                                                                                                                                                                        |
 | onTitleClick       | function `(columnIndex, data) => any`                  | when the option `clickable` is used on the Column children, that column title will be a link and will have the `wg-arrow-down` icon displayed, upon click such columns will trigger the function you provide in this property, it will be called with 2 arguments, the index of the clicked column from left to right and the whole table data   |
 | children           | React nodes                                            | the table comopnent expect Column children that describes how to interpret and render the table data on each column for all rows                                                                                                                                                                                                                 |
+| onRowClick         | function                                               | use this function to listen to row clicks. Please note that click on buttons or links also propagate the click until it reachs the row. To prevent this behaviour, you should call `event.stopPropagation` on the target element.                                                                                                                |
 
 ### Column
 
-Columns are components that describes what data should be rendered in a column, as well as the name of the column, the two most important properties are `title`, that is the text name for the column and `text` that is a function that receives a full row and should return the text value to print on the cells of the column. If the simple text values and text properties (`fontType`) are not enough, you can use functions that returns React nodes instead in the `customTitle` and `customCell` properties.
+Columns are components that describes what data should be rendered in a column,
+as well as the name of the column, the two most important properties are
+`title`, that is the text name for the column and `text` that is a function that
+receives a full row and should return the text value to print on the cells of
+the column. If the simple text values and text properties (`fontType`) are not
+enough, you can use functions that returns React nodes instead in the
+`customTitle` and `customCell` properties.
 
 Other properties:
 
 * `clickable`, a flag to make the column title clickeable
 * `width`, to manually set the column width
 * `align`, `left` or `right` for a particular column
-* `fontType`, one of the available font types in farmblocks-theme, will work only for `text` columns, not `customCell`
+* `fontType`, one of the available font types in farmblocks-theme, will work
+  only for `text` columns, not `customCell`
 
 ## License
 
