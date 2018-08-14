@@ -11,15 +11,6 @@ A React component to create links. See
 npm install @crave/farmblocks-link
 ```
 
-## Design Spec
-
-See it on zeplin:
-https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59ee42d9ed214b77c54c4e1f
-https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59ee42d9b95cec4ea9ed4e14
-https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59ee42dab95cec4ea9ed4e48
-https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59ee42dac5418ce9dc27ffa2
-https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59ee42da064e270badd9be38
-
 ## Usage
 
 A Link renders a stylized `<a>` tag, which has to have a `href` value or a
