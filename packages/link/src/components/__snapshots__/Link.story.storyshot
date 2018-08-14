@@ -1,5 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Link/Featured Custom color 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: hotpink;
+}
+
+.c0 > i.margin-left {
+  margin-left: 8px;
+}
+
+.c0 > i.margin-right {
+  margin-right: 8px;
+}
+
+.c0 > a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 > a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 > a {
+  color: inherit;
+}
+
+<div
+  className="c0"
+  disabled={false}
+  size={16}
+  type="hotpink"
+>
+  <a
+    href="#"
+  >
+    Awesome Link
+  </a>
+</div>
+`;
+
 exports[`Storyshots Link/Featured Default - left aligned, medium size 1`] = `
 .c0 {
   font-family: Lato,sans-serif;
