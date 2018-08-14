@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.0.3...@crave/farmblocks-table@2.1.0) (2018-08-14)
+
+
+### Bug Fixes
+
+* **Table:** check if checkbox ref is present before calling contains ([7e68533](https://github.com/CraveFood/farmblocks/commit/7e68533))
+
+
+### Features
+
+* **Table:** added onRowClick property ([04bf579](https://github.com/CraveFood/farmblocks/commit/04bf579))
+* **Table:** expand/collapse rows on line click when onRowClick is present ([f28a2de](https://github.com/CraveFood/farmblocks/commit/f28a2de))
+
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.0.2...@crave/farmblocks-table@2.0.3) (2018-08-13)
 
