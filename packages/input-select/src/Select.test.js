@@ -40,6 +40,11 @@ describe("Select input", () => {
     wrapper.setState({ isSearching: true, selectedLabel: "bana" });
     expect(shouldItemRender(items[0])).toBe(true);
     expect(shouldItemRender(items[1])).toBe(false);
+
+    // Should not render items when the selectedLabel is undefined
+    wrapper.setState({ isSearching: true, selectedLabel: undefined });
+    expect(shouldItemRender(items[0])).toBe(false);
+    expect(shouldItemRender(items[1])).toBe(false);
   });
 
   describe("test renderMenu function", () => {
