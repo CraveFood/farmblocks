@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@2.0.0...@crave/farmblocks-input-select@2.0.1) (2018-08-14)
+
+
+### Bug Fixes
+
+* **Select:** fix shouldItemRender function to handle nullable search terms ([75675ae](https://github.com/CraveFood/farmblocks/commit/75675ae)), closes [#485](https://github.com/CraveFood/farmblocks/issues/485)
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@1.0.0...@crave/farmblocks-input-select@2.0.0) (2018-08-13)
 
