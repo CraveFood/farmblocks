@@ -1,6 +1,5 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import values from "object.values";
 import { fontSizes } from "@crave/farmblocks-theme";
 
 import linkTypes from "../constants/linkTypes";
@@ -40,7 +39,7 @@ const Link = props => {
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
-  type: PropTypes.oneOf(values(linkTypes)),
+  type: PropTypes.string,
   leftIcon: PropTypes.string,
   rightIcon: PropTypes.string,
   external: PropTypes.bool,

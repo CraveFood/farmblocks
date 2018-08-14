@@ -144,4 +144,12 @@ storiesOf("Link/Featured", module)
   .add(
     "no href with left icon",
     withInfo()(() => <Link leftIcon="wg-place">Awesome Link</Link>)
+  )
+  .add(
+    "Custom color",
+    withInfo()(() => (
+      <Link href="#" type="hotpink">
+        Awesome Link
+      </Link>
+    ))
   );
