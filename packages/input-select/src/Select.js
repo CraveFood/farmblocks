@@ -141,11 +141,12 @@ class Select extends React.Component {
   };
 
   _shouldItemRender = item => {
+    const { selectedLabel } = this.state;
     if (this.state.isSearching) {
       return (
         item.label
           .toLowerCase()
-          .indexOf(this.state.selectedLabel.toLowerCase()) > -1
+          .indexOf(selectedLabel && selectedLabel.toLowerCase()) > -1
       );
     }
 
