@@ -10,6 +10,7 @@ import helperSrc from "../constants/helperIcon";
 const CardWrapper = styled(Card)`
   margin-top: 16px;
   display: flex;
+  position: absolute;
 
   .centered {
     align-self: center;
