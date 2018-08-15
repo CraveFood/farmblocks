@@ -44,7 +44,7 @@ class Select extends React.Component {
   }
 
   onMenuVisibilityChange = isMenuOpen => {
-    if (!this.props.disableSearch && isMenuOpen) {
+    if (!this.props.disableSearch && isMenuOpen && this.input) {
       this.input.select();
     }
     this.setState({ isMenuOpen });
