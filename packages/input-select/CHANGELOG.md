@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@2.0.2...@crave/farmblocks-input-select@2.1.0) (2018-08-15)
+
+
+### Features
+
+* **Select:** highlight input text on menu open ([6e3e500](https://github.com/CraveFood/farmblocks/commit/6e3e500)), closes [#491](https://github.com/CraveFood/farmblocks/issues/491)
+
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@2.0.1...@crave/farmblocks-input-select@2.0.2) (2018-08-14)
 
