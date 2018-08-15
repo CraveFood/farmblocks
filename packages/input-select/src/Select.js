@@ -35,12 +35,20 @@ class Select extends React.Component {
           renderMenu={this._renderMenu}
           renderItem={this._renderItem}
           autoHighlight={false}
-          onMenuVisibilityChange={isMenuOpen => this.setState({ isMenuOpen })}
+          onMenuVisibilityChange={this.onMenuVisibilityChange}
           wrapperStyle={{}}
+          ref={ref => (this.input = ref)}
         />
       </DropdownWrapper>
     );
   }
+
+  onMenuVisibilityChange = isMenuOpen => {
+    if (!this.props.disableSearch && isMenuOpen) {
+      this.input.select();
+    }
+    this.setState({ isMenuOpen });
+  };
 
   onFilter = event => {
     !this.state.isSearching && this.props.onChange("");

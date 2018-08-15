@@ -7,9 +7,7 @@ import Select from "./Select";
 
 describe("Select input", () => {
   configure({ adapter: new Adapter() });
-  let wrapper;
-  let autoCompleteWrapper;
-  let onChangeMock;
+  let wrapper, autoCompleteWrapper, onChangeMock;
 
   const items = [
     { value: "1", label: "Banana" },
@@ -131,13 +129,48 @@ describe("Select input", () => {
     expect(getItemValue(items[0])).toBe(items[0].label);
   });
 
-  test("onMenuVisibilityChange function should update state", () => {
-    const { onMenuVisibilityChange } = autoCompleteWrapper.instance().props;
+  describe("onMenuVisibilityChange", () => {
+    test("should update state and select text on input", () => {
+      wrapper = mount(
+        <Select items={items} onChange={onChangeMock} value={0} />
+      );
 
-    const isOpen = true;
-    onMenuVisibilityChange(isOpen);
+      autoCompleteWrapper = wrapper.find(ReactAutocomplete);
 
-    expect(wrapper.state().isMenuOpen).toBe(isOpen);
+      const { onMenuVisibilityChange } = autoCompleteWrapper.instance().props;
+
+      const isOpen = true;
+      onMenuVisibilityChange(isOpen);
+
+      const input = autoCompleteWrapper.instance().refs.input;
+
+      const inputSelectionRange = input.selectionEnd - input.selectionStart;
+
+      expect(inputSelectionRange).toBe(input.value.length);
+      expect(wrapper.state().isMenuOpen).toBe(isOpen);
+    });
+
+    test("should update state and not select text on input", () => {
+      wrapper = mount(
+        <Select items={items} onChange={onChangeMock} value={0} disableSearch />
+      );
+
+      autoCompleteWrapper = wrapper.find(ReactAutocomplete);
+
+      const { onMenuVisibilityChange } = autoCompleteWrapper.instance().props;
+
+      const isOpen = false;
+
+      onMenuVisibilityChange(isOpen);
+
+      const input = autoCompleteWrapper.instance().refs.input;
+
+      const inputSelectionRange = input.selectionEnd - input.selectionStart;
+
+      expect(inputSelectionRange).toBe(0);
+      expect(inputSelectionRange).not.toBe(input.value.length);
+      expect(wrapper.state().isMenuOpen).toBe(isOpen);
+    });
   });
 
   describe("onFilter", () => {
