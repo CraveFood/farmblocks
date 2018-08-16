@@ -587,6 +587,17 @@ storiesOf("Table/Row Groups", module)
     })
   )
   .add(
+    "Expandable Groups - Wide table",
+    withInfo()(() => {
+      return (
+        <Table width="800px" data={orders} collapsed rowGroupKey="suborders">
+          <Column title="Name" text={row => row.name} />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
     "Expandable Groups with row click listener",
     withInfo()(() => {
       return (

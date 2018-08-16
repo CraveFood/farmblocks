@@ -185,7 +185,7 @@ class Table extends React.Component {
             })
         )}
         {collapsed && (
-          <BodyCell className="cell" {...rowProps}>
+          <BodyCell className="cell" align="right" {...rowProps}>
             {group && this._renderExpandToggle(rowKey)}
           </BodyCell>
         )}
