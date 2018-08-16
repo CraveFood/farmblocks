@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.1"></a>
+## [2.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@2.1.0...@crave/farmblocks-input-select@2.1.1) (2018-08-16)
+
+
+### Bug Fixes
+
+* **Select:** set absolute position to "no results" container ([0d047f7](https://github.com/CraveFood/farmblocks/commit/0d047f7)), closes [#490](https://github.com/CraveFood/farmblocks/issues/490)
+
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@2.0.2...@crave/farmblocks-input-select@2.1.0) (2018-08-15)
 
