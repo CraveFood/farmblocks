@@ -195,7 +195,7 @@ class Table extends React.Component {
 
   _renderRowGroup = (row, index) => {
     const { rowGroupKey, flatGroupCondition } = this.props;
-    const { [rowGroupKey]: childRows, ...parentRow } = row;
+    const { [rowGroupKey]: childRows } = row;
     const shouldUngroup = !!(flatGroupCondition && flatGroupCondition(row));
     const rowKey = getRowKey(index, "");
 
@@ -206,7 +206,7 @@ class Table extends React.Component {
 
     return (
       <tbody className={`body ${!expanded ? "collapsed" : ""}`} key={index}>
-        {!shouldUngroup && this._renderRow(parentRow, index, "", true)}
+        {!shouldUngroup && this._renderRow(row, index, "", true)}
         {childRows.map((row, subindex) =>
           this._renderRow(row, index, subindex, false, shouldUngroup)
         )}
