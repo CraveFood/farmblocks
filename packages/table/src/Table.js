@@ -322,7 +322,9 @@ class Table extends React.Component {
     };
     const bodyCell = content => <BodyCell {...cellProps}>{content}</BodyCell>;
     if (props.customCell) {
-      return bodyCell(props.customCell(row, rowIndex, cellProps.selected));
+      return bodyCell(
+        props.customCell(row, rowIndex, cellProps.selected, grouped)
+      );
     }
 
     if (props.text) {
