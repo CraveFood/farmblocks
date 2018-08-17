@@ -630,6 +630,30 @@ storiesOf("Table/Row Groups", module)
     })
   )
   .add(
+    "Custom cells with some groups flattened",
+    withInfo()(() => {
+      return (
+        <Table
+          data={orders}
+          collapsed
+          rowGroupKey="suborders"
+          flatGroupCondition={row => row.name === "Farm Market 1"}
+        >
+          <Column
+            title="Name"
+            customCell={(row, _index, _selected, grouped) => (
+              <Text>
+                {row.name}
+                {grouped && " (grouped)"}
+              </Text>
+            )}
+          />
+          <Column title="Price" text={row => row.totalLabel} />
+        </Table>
+      );
+    })
+  )
+  .add(
     "Small height, Expandable Groups and Selectable row",
     withInfo()(() => {
       return (
