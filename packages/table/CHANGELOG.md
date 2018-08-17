@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.2.0...@crave/farmblocks-table@2.3.0) (2018-08-17)
+
+
+### Features
+
+* **table:** pass grouped to customCell ([ac546ef](https://github.com/CraveFood/farmblocks/commit/ac546ef)), closes [#499](https://github.com/CraveFood/farmblocks/issues/499)
+
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.1.2...@crave/farmblocks-table@2.2.0) (2018-08-17)
 
