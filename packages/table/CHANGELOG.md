@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.1.2...@crave/farmblocks-table@2.2.0) (2018-08-17)
+
+
+### Features
+
+* **table:** pass full row to parents of row groups ([127dd9b](https://github.com/CraveFood/farmblocks/commit/127dd9b)), closes [#496](https://github.com/CraveFood/farmblocks/issues/496)
+
+
+
+
 <a name="2.1.2"></a>
 ## [2.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.1.1...@crave/farmblocks-table@2.1.2) (2018-08-16)
 
