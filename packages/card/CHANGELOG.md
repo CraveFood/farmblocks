@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.4.4...@crave/farmblocks-card@0.5.0) (2018-08-22)
+
+
+### Features
+
+* **card:** export cardTypes constants ([7313f6d](https://github.com/CraveFood/farmblocks/commit/7313f6d)), closes [#504](https://github.com/CraveFood/farmblocks/issues/504)
+
+
+
+
 <a name="0.4.4"></a>
 ## [0.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.4.3...@crave/farmblocks-card@0.4.4) (2018-08-13)
 
