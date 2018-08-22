@@ -5,9 +5,7 @@ import EmptyState from "@crave/farmblocks-empty-state";
 import Footer from "@crave/farmblocks-footer";
 import Button from "@crave/farmblocks-button";
 
-import { cardTypes } from "./constants/cardTypes";
-
-import Card from ".";
+import Card, { cardTypes } from ".";
 
 storiesOf("Card", module)
   .add("Default", withInfo()(() => <Card />))
