@@ -28,7 +28,9 @@ const MapBalloon = ({
   balloonSize,
   captionSize,
   imageTextSize,
-  interactive
+  interactive,
+  reference,
+  onPinClick
 }) => {
   const pinIconClass = interactive ? "wg-place" : "wg-location";
   return (
@@ -39,6 +41,8 @@ const MapBalloon = ({
         pinHighlightColor={pinHighlightColor}
         pinSize={pinSize}
         interactive={interactive}
+        animated={animated}
+        onClick={interactive && (event => onPinClick(reference, event))}
       />
 
       {(singleImage && (
@@ -111,7 +115,6 @@ MapBalloon.defaultProps = {
   animated: false,
   borderRadius: "8px",
   pinColor: colors.CORN,
-  pinHighlightColor: colors.CORN,
   opacity: 1,
   pinSize: 40,
   balloonSize: 260,

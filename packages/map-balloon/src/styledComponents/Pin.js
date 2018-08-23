@@ -20,12 +20,17 @@ const Pin = styled.div`
 
   ${props => (props.interactive ? interactiveStyle : "")};
 `;
+
 Pin.propTypes = {
-  interactive: PropTypes.bool
+  interactive: PropTypes.bool,
+  animated: PropTypes.bool
 };
 
 const interactiveStyle = css`
-  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  ${props =>
+    props.animated
+      ? "transition: transform 0.3s, color 0.3s, background-color 0.3s"
+      : ""};
   font-size: ${props => props.pinSize - 16}px;
   padding: 8px;
   height: ${pinSize}px;
@@ -49,7 +54,7 @@ const interactiveStyle = css`
 
   &.open {
     color: white;
-    background-color: ${props => props.pinHighlightColor};
+    background-color: ${props => props.pinHighlightColor || props.pinColor};
   }
 `;
 
