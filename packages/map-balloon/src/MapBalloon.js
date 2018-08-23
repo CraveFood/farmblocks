@@ -22,15 +22,24 @@ const MapBalloon = ({
   animated,
   borderRadius,
   pinColor,
+  pinHighlightColor,
   pinSize,
   opacity,
   balloonSize,
   captionSize,
-  imageTextSize
+  imageTextSize,
+  interactive
 }) => {
+  const pinIconClass = interactive ? "wg-place" : "wg-location";
   return (
     <Wrapper x={x} y={y} opacity={opacity}>
-      <Pin className="wg-location" pinColor={pinColor} pinSize={pinSize} />
+      <Pin
+        className={`${pinIconClass} ${open ? "open" : ""}`}
+        pinColor={pinColor}
+        pinHighlightColor={pinHighlightColor}
+        pinSize={pinSize}
+        interactive={interactive}
+      />
 
       {(singleImage && (
         <SingleImage
@@ -82,11 +91,16 @@ MapBalloon.propTypes = {
   animated: PropTypes.bool,
   borderRadius: PropTypes.string,
   pinColor: PropTypes.string,
+  pinHighlightColor: PropTypes.string,
   pinSize: PropTypes.number,
   opacity: PropTypes.number,
   balloonSize: PropTypes.number,
   captionSize: PropTypes.number,
-  imageTextSize: PropTypes.number
+  imageTextSize: PropTypes.number,
+  interactive: PropTypes.bool,
+  onPinClick: PropTypes.func,
+  onBalloonClick: PropTypes.func,
+  reference: PropTypes.any
 };
 
 MapBalloon.defaultProps = {
@@ -97,11 +111,15 @@ MapBalloon.defaultProps = {
   animated: false,
   borderRadius: "8px",
   pinColor: colors.CORN,
+  pinHighlightColor: colors.CORN,
   opacity: 1,
   pinSize: 40,
   balloonSize: 260,
   captionSize: fontSizes.LARGE,
-  imageTextSize: 28
+  imageTextSize: 28,
+  interactive: false,
+  onPinClick: () => null,
+  onBalloonClick: () => null
 };
 
 export default MapBalloon;
