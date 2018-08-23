@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, action } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
@@ -166,6 +166,43 @@ storiesOf("Map Balloon", module)
           y={400}
           open
           imageSet={[{ image: "https://picsum.photos/640/?random" }]}
+          caption="Paloma Orchards"
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Interactive",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          onPinClick={action("onPinClick")}
+          onBalloonClick={action("onBalloonClick")}
+          reference="paloma-orchards"
+          pinColor="FireBrick"
+          pinHighlightColor="FireBrick"
+          x={400}
+          y={400}
+          imageSet={imageSet}
+          caption="Paloma Orchards"
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Interactive open",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          open
+          onPinClick={action("onPinClick")}
+          onBalloonClick={action("onBalloonClick")}
+          reference="paloma-orchards"
+          pinColor="FireBrick"
+          pinHighlightColor="FireBrick"
+          x={400}
+          y={400}
+          imageSet={imageSet}
           caption="Paloma Orchards"
         />
       </DemoGrid>
