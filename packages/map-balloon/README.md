@@ -78,10 +78,14 @@ farm symbol, and that the class name to include that icon is `.wg-purveyor`.
 * `balloonSize`: number (default: 260). Balloon size
 * `borderRadius`: string (default: 8px). Defines the balloon border radius
 * `pinColor`: string (default: #f1c618). Color to be set to the pin icon
+* `pinHighlightColor`: string (defaults to the `pinColor` value). Color to be set to the highlighted pin
 * `pinSize`: number (default: 40). Size to be set to the pin icon
 * `opacity`: number (default: 1)
 * `captionSize`: number (default: 18), Size of the caption text.
 * `imageTextSize`: number (default: 28), Size of the text overlay on images.
+* `onPinClick`: function. Called when the pin is clicked. If set, changes the pin visual into a round button
+* `onBalloonClick`: function. Called when the balloon is clicked. If set, adds an indicator to the balloon text.
+* `reference`: any. A value that will be passed as first argument for `onPinClick` and `onBalloonClick` calls. This can be handy to identify which pin/balloon was clicked.
 
 ## License
 
