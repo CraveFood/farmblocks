@@ -4,6 +4,7 @@ import values from "object.values";
 import Text, { fontTypes } from "@crave/farmblocks-text";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 import { Flex, Box } from "grid-styled";
+import { CSSTransition } from "react-transition-group";
 
 import alignments from "./constants/alignments";
 import Wrapper from "./styledComponents/Wrapper";
@@ -45,7 +46,7 @@ const MapBalloon = ({
         pinSize={pinSize}
         interactive={interactivePin}
         animated={animated}
-        onClick={interactivePin && (event => onPinClick(reference, event))}
+        onClick={interactivePin ? event => onPinClick(reference, event) : null}
       />
 
       {(singleImage && (
@@ -54,44 +55,51 @@ const MapBalloon = ({
           borderRadius={borderRadius}
           pinSize={pinSize}
         />
-      )) ||
-        (open &&
-          imageSet && (
-            <Balloon
-              align={align}
-              animated={animated}
-              borderRadius={borderRadius}
-              pinSize={pinSize}
-              interactive={interactiveBalloon}
-              onClick={
-                interactiveBalloon &&
-                (event => onBalloonClick(reference, event))
-              }
-              balloonSize={balloonSize}
-            >
-              <ImageSet set={imageSet} fontSize={imageTextSize} />
+      )) || (
+        <CSSTransition
+          in={open}
+          classNames="fade"
+          timeout={300}
+          mountOnEnter
+          unmountOnExit
+        >
+          <Balloon
+            align={align}
+            animated={animated}
+            borderRadius={borderRadius}
+            pinSize={pinSize}
+            interactive={interactiveBalloon}
+            onClick={
+              interactiveBalloon
+                ? event => onBalloonClick(reference, event)
+                : null
+            }
+            balloonSize={balloonSize}
+          >
+            <ImageSet set={imageSet} fontSize={imageTextSize} />
 
-              <Flex
-                title
-                type={fontTypes.NEUTRAL}
-                size={captionSize}
-                className="caption"
-                is={Text}
-                alignItems="center"
-                justifyContent="space-between"
-              >
-                <Box>{caption}</Box>
-                {interactiveBalloon ? (
-                  <Text
-                    title
-                    type={fontTypes.SUBTLE}
-                    size={captionSize}
-                    className="wg-small-arrow-right"
-                  />
-                ) : null}
-              </Flex>
-            </Balloon>
-          ))}
+            <Flex
+              title
+              type={fontTypes.NEUTRAL}
+              size={captionSize}
+              className="caption"
+              is={Text}
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Box>{caption}</Box>
+              {interactiveBalloon ? (
+                <Text
+                  title
+                  type={fontTypes.SUBTLE}
+                  size={captionSize}
+                  className="wg-small-arrow-right"
+                />
+              ) : null}
+            </Flex>
+          </Balloon>
+        </CSSTransition>
+      )}
     </Wrapper>
   );
 };

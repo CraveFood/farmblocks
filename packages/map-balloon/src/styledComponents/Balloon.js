@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import Card from "@crave/farmblocks-card";
 import { colors } from "@crave/farmblocks-theme";
 
@@ -15,20 +15,19 @@ const alignStyles = {
   `
 };
 
-const open = keyframes`
-  from {
-    transform: scale(.5);
+const animation = css`
+  transition: transform 0.3s, opacity 0.3s, color 0.3s;
+
+  &.fade-enter,
+  &.fade-exit-active {
+    transform: scale(0.5);
     opacity: 0;
   }
-  to {
+  &.fade-enter-active,
+  &.fade-enter-done {
     transform: scale(1);
     opacity: 1;
   }
-`;
-
-const animation = css`
-  animation: ${open} 0.3s ease-in-out;
-  transition: transform 0.3s, color 0.3s;
 
   .wg-small-arrow-right {
     transition: color 0.3s;
