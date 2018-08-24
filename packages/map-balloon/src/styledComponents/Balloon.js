@@ -1,5 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 import Card from "@crave/farmblocks-card";
+import { colors } from "@crave/farmblocks-theme";
 
 import alignments from "../constants/alignments";
 
@@ -25,7 +26,14 @@ const open = keyframes`
   }
 `;
 
-const animation = css`animation: ${open} 0.3s ease-in-out;`;
+const animation = css`
+  animation: ${open} 0.3s ease-in-out;
+  transition: transform 0.3s, color 0.3s;
+
+  .wg-small-arrow-right {
+    transition: color 0.3s;
+  }
+`;
 
 const Balloon = styled(Card)`
   ${props => props.animated && animation};
@@ -42,8 +50,30 @@ const Balloon = styled(Card)`
   display: flex;
   flex-direction: column;
 
+  user-select: none;
+
   .caption {
     margin: 16px 8px;
+  }
+
+  ${props => (props.interactive ? interactiveStyle : "")};
+`;
+
+const interactiveStyle = css`
+  cursor: pointer;
+
+  bottom: ${props => props.pinSize / 2 + 8}px;
+
+  .wg-small-arrow-right {
+    color: ${colors.GREY_16};
+  }
+
+  &:active {
+    transform: translateY(2px);
+
+    .wg-small-arrow-right {
+      color: ${colors.GREY_32};
+    }
   }
 `;
 

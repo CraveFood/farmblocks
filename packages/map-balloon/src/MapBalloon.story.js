@@ -210,7 +210,7 @@ storiesOf("Map Balloon", module)
   .add(
     "Interactive toggle",
     withInfo(
-      `MapBalloon is a dumb component, it won't open automatically on pin click. This story is just for animation tests.`
+      `MapBalloon is a stateless component, it won't open automatically on pin click. This story is just for animation tests.`
     )(() => (
       <DemoGrid>
         <ToggleOpen />
@@ -224,22 +224,19 @@ class ToggleOpen extends React.Component {
     this.setState(prevState => ({ open: !prevState.open }));
   render() {
     return (
-      <div>
-        <MapBalloon
-          interactive
-          open={this.state.open}
-          onPinClick={this.handlePinClick}
-          onBalloonClick={action("onBalloonClick")}
-          reference="paloma-orchards"
-          pinColor="DarkBlue"
-          pinHighlightColor="DodgerBlue"
-          animated
-          x={400}
-          y={400}
-          imageSet={imageSet}
-          caption="Paloma Orchards"
-        />
-      </div>
+      <MapBalloon
+        open={this.state.open}
+        onPinClick={this.handlePinClick}
+        onBalloonClick={action("onBalloonClick")}
+        reference="paloma-orchards"
+        pinColor="DarkBlue"
+        pinHighlightColor="DodgerBlue"
+        animated
+        x={400}
+        y={400}
+        imageSet={imageSet}
+        caption="Paloma Orchards"
+      />
     );
   }
 }

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import values from "object.values";
 import Text, { fontTypes } from "@crave/farmblocks-text";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
+import { Flex, Box } from "grid-styled";
 
 import alignments from "./constants/alignments";
 import Wrapper from "./styledComponents/Wrapper";
@@ -28,11 +29,13 @@ const MapBalloon = ({
   balloonSize,
   captionSize,
   imageTextSize,
-  interactive,
   reference,
-  onPinClick
+  onPinClick,
+  onBalloonClick
 }) => {
-  const pinIconClass = interactive ? "wg-place" : "wg-location";
+  const interactivePin = !!onPinClick;
+  const interactiveBalloon = !!onBalloonClick;
+  const pinIconClass = interactivePin ? "wg-place" : "wg-location";
   return (
     <Wrapper x={x} y={y} opacity={opacity}>
       <Pin
@@ -40,9 +43,9 @@ const MapBalloon = ({
         pinColor={pinColor}
         pinHighlightColor={pinHighlightColor}
         pinSize={pinSize}
-        interactive={interactive}
+        interactive={interactivePin}
         animated={animated}
-        onClick={interactive && (event => onPinClick(reference, event))}
+        onClick={interactivePin && (event => onPinClick(reference, event))}
       />
 
       {(singleImage && (
@@ -59,18 +62,34 @@ const MapBalloon = ({
               animated={animated}
               borderRadius={borderRadius}
               pinSize={pinSize}
+              interactive={interactiveBalloon}
+              onClick={
+                interactiveBalloon &&
+                (event => onBalloonClick(reference, event))
+              }
               balloonSize={balloonSize}
             >
               <ImageSet set={imageSet} fontSize={imageTextSize} />
 
-              <Text
+              <Flex
                 title
                 type={fontTypes.NEUTRAL}
                 size={captionSize}
                 className="caption"
+                is={Text}
+                alignItems="center"
+                justifyContent="space-between"
               >
-                {caption}
-              </Text>
+                <Box>{caption}</Box>
+                {interactiveBalloon ? (
+                  <Text
+                    title
+                    type={fontTypes.SUBTLE}
+                    size={captionSize}
+                    className="wg-small-arrow-right"
+                  />
+                ) : null}
+              </Flex>
             </Balloon>
           ))}
     </Wrapper>
@@ -101,7 +120,6 @@ MapBalloon.propTypes = {
   balloonSize: PropTypes.number,
   captionSize: PropTypes.number,
   imageTextSize: PropTypes.number,
-  interactive: PropTypes.bool,
   onPinClick: PropTypes.func,
   onBalloonClick: PropTypes.func,
   reference: PropTypes.any
@@ -119,10 +137,7 @@ MapBalloon.defaultProps = {
   pinSize: 40,
   balloonSize: 260,
   captionSize: fontSizes.LARGE,
-  imageTextSize: 28,
-  interactive: false,
-  onPinClick: () => null,
-  onBalloonClick: () => null
+  imageTextSize: 28
 };
 
 export default MapBalloon;
