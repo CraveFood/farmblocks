@@ -20,7 +20,7 @@ const animation = css`
 
   &.fade-enter,
   &.fade-exit-active {
-    transform: scale(0.5);
+    transform: scale(0.5) rotate(5deg);
     opacity: 0;
   }
   &.fade-enter-active,

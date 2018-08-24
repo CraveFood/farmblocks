@@ -89,7 +89,7 @@ const MapBalloon = ({
                 alignItems="center"
                 justifyContent="space-between"
               >
-                <Box>{caption}</Box>
+                <Box ml={"8px"}>{caption}</Box>
                 {interactiveBalloon ? (
                   <Text
                     title
