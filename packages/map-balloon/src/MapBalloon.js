@@ -39,66 +39,69 @@ const MapBalloon = ({
   const pinIconClass = interactivePin ? "wg-place" : "wg-location";
   return (
     <Wrapper x={x} y={y} opacity={opacity}>
-      <Pin
-        className={`${pinIconClass} ${open ? "open" : ""}`}
-        pinColor={pinColor}
-        pinHighlightColor={pinHighlightColor}
-        pinSize={pinSize}
-        interactive={interactivePin}
-        animated={animated}
-        onClick={interactivePin ? event => onPinClick(reference, event) : null}
-      />
-
       {(singleImage && (
         <SingleImage
           src={singleImage}
           borderRadius={borderRadius}
-          pinSize={pinSize}
+          pinColor={pinColor}
         />
       )) || (
-        <CSSTransition
-          in={open}
-          classNames="fade"
-          timeout={300}
-          mountOnEnter
-          unmountOnExit
-        >
-          <Balloon
-            align={align}
-            animated={animated}
-            borderRadius={borderRadius}
+        <div>
+          <Pin
+            className={`${pinIconClass} ${open ? "open" : ""}`}
+            pinColor={pinColor}
+            pinHighlightColor={pinHighlightColor}
             pinSize={pinSize}
-            interactive={interactiveBalloon}
+            interactive={interactivePin}
+            animated={animated}
             onClick={
-              interactiveBalloon
-                ? event => onBalloonClick(reference, event)
-                : null
+              interactivePin ? event => onPinClick(reference, event) : null
             }
-            balloonSize={balloonSize}
+          />
+          <CSSTransition
+            in={open}
+            classNames="fade"
+            timeout={300}
+            mountOnEnter
+            unmountOnExit
           >
-            <ImageSet set={imageSet} fontSize={imageTextSize} />
-
-            <Flex
-              title
-              type={fontTypes.NEUTRAL}
-              size={captionSize}
-              className="caption"
-              is={Text}
-              alignItems="center"
-              justifyContent="space-between"
+            <Balloon
+              align={align}
+              animated={animated}
+              borderRadius={borderRadius}
+              pinSize={pinSize}
+              interactive={interactiveBalloon}
+              onClick={
+                interactiveBalloon
+                  ? event => onBalloonClick(reference, event)
+                  : null
+              }
+              balloonSize={balloonSize}
             >
-              <Box>{caption}</Box>
-              {interactiveBalloon ? (
-                <Text
-                  title
-                  type={fontTypes.SUBTLE}
-                  size={captionSize}
-                  className="wg-small-arrow-right"
-                />
-              ) : null}
-            </Flex>
-          </Balloon>
-        </CSSTransition>
+              <ImageSet set={imageSet} fontSize={imageTextSize} />
+
+              <Flex
+                title
+                type={fontTypes.NEUTRAL}
+                size={captionSize}
+                className="caption"
+                is={Text}
+                alignItems="center"
+                justifyContent="space-between"
+              >
+                <Box>{caption}</Box>
+                {interactiveBalloon ? (
+                  <Text
+                    title
+                    type={fontTypes.SUBTLE}
+                    size={captionSize}
+                    className="wg-small-arrow-right"
+                  />
+                ) : null}
+              </Flex>
+            </Balloon>
+          </CSSTransition>
+        </div>
       )}
     </Wrapper>
   );

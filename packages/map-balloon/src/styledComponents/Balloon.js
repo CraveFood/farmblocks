@@ -46,6 +46,8 @@ const Balloon = styled(Card)`
   padding: 0;
   border-radius: ${props => props.borderRadius};
   border: none;
+  box-shadow: 0 2px 16px 0 ${colors.GREY_16};
+
   display: flex;
   flex-direction: column;
 
