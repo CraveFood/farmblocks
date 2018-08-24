@@ -54,9 +54,7 @@ const MapBalloon = ({
             pinSize={pinSize}
             interactive={interactivePin}
             animated={animated}
-            onClick={
-              interactivePin ? event => onPinClick(reference, event) : null
-            }
+            onClick={onPinClick && (event => onPinClick(value, event))}
           />
           <CSSTransition
             in={open}
@@ -72,9 +70,7 @@ const MapBalloon = ({
               pinSize={pinSize}
               interactive={interactiveBalloon}
               onClick={
-                interactiveBalloon
-                  ? event => onBalloonClick(reference, event)
-                  : null
+                onBalloonClick && (event => onBalloonClick(value, event))
               }
               balloonSize={balloonSize}
             >
