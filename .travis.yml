@@ -40,7 +40,7 @@ after_success:
     if [ $BRANCH == "master" ]; then
       yarn snyk || travis_terminate 1;
       snyk monitor || travis_terminate 1;
-      lerna publish --yes || travis_terminate 1;
+      lerna publish --npm-client npm --yes || travis_terminate 1;
       yarn build-storybook || travis_terminate 1;
       git add docs;
       git commit -m "chore(docs): [ci skip] gallery update";
@@ -48,6 +48,6 @@ after_success:
       source ./bin/github_get_release_id.sh;
       ./bin/github_publish_release.sh;
     else
-      lerna publish --canary --yes || travis_terminate 1;
+      lerna publish --canary --npm-client npm --yes || travis_terminate 1;
     fi
 
