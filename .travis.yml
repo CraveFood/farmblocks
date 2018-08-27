@@ -47,7 +47,7 @@ after_success:
       git push origin "$BRANCH";
       source ./bin/github_get_release_id.sh;
       ./bin/github_publish_release.sh;
-    else
+    elif [ $TRAVIS_EVENT_TYPE == "push" ]; then
       lerna publish --canary --npm-client npm --yes || travis_terminate 1;
     fi
 
