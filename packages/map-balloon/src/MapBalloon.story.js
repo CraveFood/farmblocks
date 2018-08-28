@@ -196,7 +196,7 @@ storiesOf("Map Balloon", module)
         <MapBalloon
           onPinClick={action("onPinClick")}
           onBalloonClick={action("onBalloonClick")}
-          reference="paloma-orchards"
+          value="paloma-orchards"
           pinColor="FireBrick"
           pinHighlightColor="FireBrick"
           x={400}
@@ -215,7 +215,7 @@ storiesOf("Map Balloon", module)
           open
           onPinClick={action("onPinClick")}
           onBalloonClick={action("onBalloonClick")}
-          reference="paloma-orchards"
+          value="paloma-orchards"
           pinColor="FireBrick"
           x={400}
           y={400}
@@ -240,7 +240,7 @@ storiesOf("Map Balloon", module)
               open={this.state.open}
               onPinClick={this.handlePinClick}
               onBalloonClick={action("onBalloonClick")}
-              reference="paloma-orchards"
+              value="paloma-orchards"
               pinColor="DarkBlue"
               pinHighlightColor="DodgerBlue"
               animated

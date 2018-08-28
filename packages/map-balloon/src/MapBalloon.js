@@ -30,7 +30,7 @@ const MapBalloon = ({
   balloonSize,
   captionSize,
   imageTextSize,
-  reference,
+  value,
   onPinClick,
   onBalloonClick
 }) => {
@@ -129,7 +129,7 @@ MapBalloon.propTypes = {
   imageTextSize: PropTypes.number,
   onPinClick: PropTypes.func,
   onBalloonClick: PropTypes.func,
-  reference: PropTypes.any
+  value: PropTypes.any
 };
 
 MapBalloon.defaultProps = {

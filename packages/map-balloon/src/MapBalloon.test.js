@@ -10,14 +10,14 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe("MapBalloon", () => {
   describe("click events", () => {
-    let reference, event, onPinClickSpy, onBalloonClickSpy, commonProps;
+    let value, event, onPinClickSpy, onBalloonClickSpy, commonProps;
     beforeEach(() => {
-      reference = "some Id";
+      value = "some Id";
       event = {};
       onPinClickSpy = jest.fn();
       onBalloonClickSpy = jest.fn();
       commonProps = {
-        reference,
+        value,
         x: 400,
         y: 400,
         caption: "Paloma Orchards",
@@ -30,7 +30,7 @@ describe("MapBalloon", () => {
       };
     });
     afterEach(() => {
-      reference = null;
+      value = null;
       event = null;
       onPinClickSpy.mockReset();
       onBalloonClickSpy.mockReset();
@@ -38,26 +38,26 @@ describe("MapBalloon", () => {
     });
 
     describe("onPinClick", () => {
-      test("should pass the reference", () => {
+      test("should pass the value", () => {
         const wrapper = shallow(
           <MapBalloon onPinClick={onPinClickSpy} {...commonProps} />
         );
         wrapper.find(Pin).simulate("click", event);
 
         expect(onPinClickSpy).toHaveBeenCalledTimes(1);
-        expect(onPinClickSpy).toHaveBeenCalledWith(reference, event);
+        expect(onPinClickSpy).toHaveBeenCalledWith(value, event);
       });
     });
 
     describe("onBalloonClick", () => {
-      test("should pass the reference", () => {
+      test("should pass the value", () => {
         const wrapper = shallow(
           <MapBalloon onBalloonClick={onBalloonClickSpy} {...commonProps} />
         );
         wrapper.find(Balloon).simulate("click", event);
 
         expect(onBalloonClickSpy).toHaveBeenCalledTimes(1);
-        expect(onBalloonClickSpy).toHaveBeenCalledWith(reference, event);
+        expect(onBalloonClickSpy).toHaveBeenCalledWith(value, event);
       });
     });
   });
