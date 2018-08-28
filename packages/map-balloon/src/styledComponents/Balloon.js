@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import Card from "@crave/farmblocks-card";
 import { colors } from "@crave/farmblocks-theme";
+import Text from "@crave/farmblocks-text";
 
 import alignments from "../constants/alignments";
 
@@ -76,6 +77,13 @@ const interactiveStyle = css`
       color: ${colors.GREY_32};
     }
   }
+`;
+
+export const Caption = styled(Text)`
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export default Balloon;

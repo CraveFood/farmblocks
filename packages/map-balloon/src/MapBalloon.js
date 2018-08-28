@@ -3,13 +3,12 @@ import PropTypes from "prop-types";
 import values from "object.values";
 import Text, { fontTypes } from "@crave/farmblocks-text";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
-import { Flex, Box } from "grid-styled";
 import { CSSTransition } from "react-transition-group";
 
 import alignments from "./constants/alignments";
 import Wrapper from "./styledComponents/Wrapper";
 import Pin from "./styledComponents/Pin";
-import Balloon from "./styledComponents/Balloon";
+import Balloon, { Caption } from "./styledComponents/Balloon";
 import ImageSet, { imageSetPropType } from "./ImageSet";
 import SingleImage from "./styledComponents/SingleImage";
 
@@ -76,16 +75,13 @@ const MapBalloon = ({
             >
               <ImageSet set={imageSet} fontSize={imageTextSize} />
 
-              <Flex
+              <Caption
                 title
                 type={fontTypes.NEUTRAL}
                 size={captionSize}
                 className="caption"
-                is={Text}
-                alignItems="center"
-                justifyContent="space-between"
               >
-                <Box ml={"8px"}>{caption}</Box>
+                {caption}
                 {interactiveBalloon ? (
                   <Text
                     title
@@ -94,7 +90,7 @@ const MapBalloon = ({
                     className="wg-small-arrow-right"
                   />
                 ) : null}
-              </Flex>
+              </Caption>
             </Balloon>
           </CSSTransition>
         </div>
