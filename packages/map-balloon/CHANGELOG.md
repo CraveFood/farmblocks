@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.2.15...@crave/farmblocks-map-balloon@2.0.0) (2018-08-28)
+
+
+### Features
+
+* **map-balloon:** add interactive pin style ([12e5eb8](https://github.com/CraveFood/farmblocks/commit/12e5eb8))
+* **map-balloon:** add onBalloonClick ([43d257c](https://github.com/CraveFood/farmblocks/commit/43d257c))
+* **map-balloon:** add onPinClick ([00d5fef](https://github.com/CraveFood/farmblocks/commit/00d5fef))
+* **map-balloon:** change singeImage pin into a small circle ([275da16](https://github.com/CraveFood/farmblocks/commit/275da16))
+* **map-balloon:** use react-transition-group so we can animate the balloon exit as well ([0565186](https://github.com/CraveFood/farmblocks/commit/0565186))
+* **map-balloon:** visual improvements ([c30b872](https://github.com/CraveFood/farmblocks/commit/c30b872))
+
+
+### BREAKING CHANGES
+
+* **map-balloon:** pinSize won't affect pins with singleImage. It will be fixed to 16px
+
+
+
+
 <a name="1.2.15"></a>
 ## [1.2.15](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@1.2.14...@crave/farmblocks-map-balloon@1.2.15) (2018-08-22)
 
