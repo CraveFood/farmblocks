@@ -1,5 +1,7 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import Card from "@crave/farmblocks-card";
+import { colors } from "@crave/farmblocks-theme";
+import Text from "@crave/farmblocks-text";
 
 import alignments from "../constants/alignments";
 
@@ -14,18 +16,24 @@ const alignStyles = {
   `
 };
 
-const open = keyframes`
-  from {
-    transform: scale(.5);
+const animation = css`
+  transition: transform 0.3s, opacity 0.3s, color 0.3s;
+
+  &.fade-enter,
+  &.fade-exit-active {
+    transform: scale(0.5) rotate(5deg);
     opacity: 0;
   }
-  to {
+  &.fade-enter-active,
+  &.fade-enter-done {
     transform: scale(1);
     opacity: 1;
   }
-`;
 
-const animation = css`animation: ${open} 0.3s ease-in-out;`;
+  .wg-small-arrow-right {
+    transition: color 0.3s;
+  }
+`;
 
 const Balloon = styled(Card)`
   ${props => props.animated && animation};
@@ -39,12 +47,43 @@ const Balloon = styled(Card)`
   padding: 0;
   border-radius: ${props => props.borderRadius};
   border: none;
+  box-shadow: 0 2px 16px 0 ${colors.GREY_16};
+
   display: flex;
   flex-direction: column;
+
+  user-select: none;
 
   .caption {
     margin: 16px 8px;
   }
+
+  ${props => (props.interactive ? interactiveStyle : "")};
+`;
+
+const interactiveStyle = css`
+  cursor: pointer;
+
+  bottom: ${props => props.pinSize / 2 + 8}px;
+
+  .wg-small-arrow-right {
+    color: ${colors.GREY_16};
+  }
+
+  &:active {
+    transform: translateY(2px);
+
+    .wg-small-arrow-right {
+      color: ${colors.GREY_32};
+    }
+  }
+`;
+
+export const Caption = styled(Text)`
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export default Balloon;

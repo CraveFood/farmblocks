@@ -10,7 +10,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -39,6 +39,8 @@ exports[`Storyshots Map Balloon Animated 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -47,8 +49,9 @@ exports[`Storyshots Map Balloon Animated 1`] = `
 }
 
 .c3 {
-  -webkit-animation: hyisGg 0.3s ease-in-out;
-  animation: hyisGg 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s,opacity 0.3s,color 0.3s;
+  -webkit-transition: transform 0.3s,opacity 0.3s,color 0.3s;
+  transition: transform 0.3s,opacity 0.3s,color 0.3s;
   position: absolute;
   bottom: 48px;
   left: -33px;
@@ -60,6 +63,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,10 +71,51 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c3.fade-enter,
+.c3.fade-exit-active {
+  -webkit-transform: scale(0.5) rotate(5deg);
+  -ms-transform: scale(0.5) rotate(5deg);
+  transform: scale(0.5) rotate(5deg);
+  opacity: 0;
+}
+
+.c3.fade-enter-active,
+.c3.fade-enter-done {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.c3 .wg-small-arrow-right {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -127,35 +172,37 @@ exports[`Storyshots Map Balloon Animated 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
+      />
+      <div
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
-            size={28}
-            type="white"
+            className="c6"
           >
-            Romaine Lettuce
+            <div
+              className="c7"
+              size={28}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        className="caption c8"
-        size={18}
-        type="#59636f"
-      >
-        Paloma Orchards
+        <div
+          className="caption c8 c9"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>
@@ -172,7 +219,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -201,6 +248,8 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -220,6 +269,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -227,10 +277,30 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -287,35 +357,37 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
+      />
+      <div
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
-            size={28}
-            type="white"
+            className="c6"
           >
-            Romaine Lettuce
+            <div
+              className="c7"
+              size={28}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        className="caption c8"
-        size={18}
-        type="#59636f"
-      >
-        Paloma Orchards
+        <div
+          className="caption c8 c9"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>
@@ -332,7 +404,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -361,6 +433,8 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
 
 .c2 {
   font-size: 30px;
+  text-align: center;
+  width: 30px;
   position: absolute;
   bottom: 0;
   left: -15px;
@@ -380,6 +454,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -387,10 +462,30 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -447,35 +542,37 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
+      />
+      <div
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
-            size={28}
-            type="white"
+            className="c6"
           >
-            Romaine Lettuce
+            <div
+              className="c7"
+              size={28}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        className="caption c8"
-        size={18}
-        type="#59636f"
-      >
-        Paloma Orchards
+        <div
+          className="caption c8 c9"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>
@@ -492,6 +589,8 @@ exports[`Storyshots Map Balloon Default 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -515,9 +614,390 @@ exports[`Storyshots Map Balloon Default 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
+    <div>
+      <div
+        className="wg-location  c2"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Map Balloon Interactive 1`] = `
+.c1 {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  opacity: 1;
+}
+
+.c2 {
+  font-size: 40px;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  color: FireBrick;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  font-size: 24px;
+  padding: 8px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  bottom: -20px;
+  text-shadow: none;
+  color: FireBrick;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.16);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+}
+
+.c2:active {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.c2.open {
+  color: white;
+  background-color: FireBrick;
+}
+
+.c0 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    opacity={1}
+    x={400}
+    y={400}
+  >
+    <div>
+      <div
+        className="wg-place  c2"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Map Balloon Interactive open 1`] = `
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 28px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.32);
+  text-align: left;
+  font-weight: 600;
+}
+
+.c4 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  opacity: 1;
+}
+
+.c2 {
+  font-size: 40px;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  color: FireBrick;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  font-size: 24px;
+  padding: 8px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  bottom: -20px;
+  text-shadow: none;
+  color: FireBrick;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.16);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+}
+
+.c2:active {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.c2.open {
+  color: white;
+  background-color: FireBrick;
+}
+
+.c3 {
+  position: absolute;
+  bottom: 48px;
+  left: -33px;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  height: 260px;
+  width: 260px;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  bottom: 28px;
+}
+
+.c3 .caption {
+  margin: 16px 8px;
+}
+
+.c3 .wg-small-arrow-right {
+  color: rgba(0,0,0,0.16);
+}
+
+.c3:active {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.c3:active .wg-small-arrow-right {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url(https://picsum.photos/640/?random);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c6 {
+  height: 147px;
+  box-sizing: border-box;
+  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.c0 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    opacity={1}
+    x={400}
+    y={400}
+  >
+    <div>
+      <div
+        className="wg-place open c2"
+        onClick={[Function]}
+      />
+      <div
+        className="c3 c4"
+        onClick={[Function]}
+        overflow="hidden"
+        width="100%"
+      >
+        <div
+          className="c5"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+              size={28}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
+          </div>
+        </div>
+        <div
+          className="caption c8 c9"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+          <div
+            className="wg-small-arrow-right c10"
+            size={18}
+            type="rgba(0, 0, 0, 0.32)"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Map Balloon Interactive toggle 1`] = `
+.c1 {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  opacity: 1;
+}
+
+.c2 {
+  font-size: 40px;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  color: DarkBlue;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-transition: -webkit-transform 0.3s,color 0.3s,background-color 0.3s;
+  -webkit-transition: transform 0.3s,color 0.3s,background-color 0.3s;
+  transition: transform 0.3s,color 0.3s,background-color 0.3s;
+  font-size: 24px;
+  padding: 8px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  bottom: -20px;
+  text-shadow: none;
+  color: DarkBlue;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.16);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+}
+
+.c2:active {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.c2.open {
+  color: white;
+  background-color: DodgerBlue;
+}
+
+.c0 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    opacity={1}
+    x={400}
+    y={400}
+  >
+    <div>
+      <div
+        className="wg-place  c2"
+        onClick={[Function]}
+      />
+    </div>
   </div>
 </div>
 `;
@@ -532,7 +1012,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -561,6 +1041,8 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -580,6 +1062,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -587,10 +1070,30 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -647,35 +1150,37 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
+      />
+      <div
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
-            size={28}
-            type="white"
+            className="c6"
           >
-            Romaine Lettuce
+            <div
+              className="c7"
+              size={28}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        className="caption c8"
-        size={18}
-        type="#59636f"
-      >
-        Paloma Orchards
+        <div
+          className="caption c8 c9"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>
@@ -692,7 +1197,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -721,6 +1226,8 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -740,6 +1247,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -747,10 +1255,30 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -807,35 +1335,37 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
+      />
+      <div
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
-            size={28}
-            type="white"
+            className="c6"
           >
-            Romaine Lettuce
+            <div
+              className="c7"
+              size={28}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        className="caption c8"
-        size={18}
-        type="#59636f"
-      >
-        Paloma Orchards
+        <div
+          className="caption c8 c9"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>
@@ -866,21 +1396,24 @@ exports[`Storyshots Map Balloon Single Image 1`] = `
   opacity: 1;
 }
 
-.c2 {
-  font-size: 40px;
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
-}
-
 .c3 {
   background-color: white;
   position: absolute;
-  bottom: 48px;
+  bottom: 16px;
   left: -92px;
   border-radius: 8px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  background-color: #f1c618;
 }
 
 .c0 {
@@ -899,14 +1432,17 @@ exports[`Storyshots Map Balloon Single Image 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      size={184}
-      src="https://picsum.photos/180/?random"
-    />
+    <div>
+      <div
+        className="c2"
+        src="https://picsum.photos/180/?random"
+      />
+      <div
+        className="c3 c4"
+        size={184}
+        src="https://picsum.photos/180/?random"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -935,21 +1471,24 @@ exports[`Storyshots Map Balloon custom border radius 1`] = `
   opacity: 1;
 }
 
-.c2 {
-  font-size: 40px;
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
-}
-
 .c3 {
   background-color: white;
   position: absolute;
-  bottom: 48px;
+  bottom: 16px;
   left: -92px;
   border-radius: 50%;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  background-color: #f1c618;
 }
 
 .c0 {
@@ -968,14 +1507,17 @@ exports[`Storyshots Map Balloon custom border radius 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      size={184}
-      src="https://picsum.photos/180/?random"
-    />
+    <div>
+      <div
+        className="c2"
+        src="https://picsum.photos/180/?random"
+      />
+      <div
+        className="c3 c4"
+        size={184}
+        src="https://picsum.photos/180/?random"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -990,7 +1532,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 30px;
   -webkit-font-smoothing: antialiased;
@@ -1019,6 +1561,8 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -1038,6 +1582,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1045,10 +1590,30 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c8 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -1105,35 +1670,37 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
+      />
+      <div
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
         <div
-          className="c6"
+          className="c5"
         >
           <div
-            className="c7"
-            size={30}
-            type="white"
+            className="c6"
           >
-            Romaine Lettuce
+            <div
+              className="c7"
+              size={30}
+              type="white"
+            >
+              Romaine Lettuce
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        className="caption c8"
-        size={30}
-        type="#59636f"
-      >
-        Paloma Orchards
+        <div
+          className="caption c8 c9"
+          size={30}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>
@@ -1141,7 +1708,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
 `;
 
 exports[`Storyshots Map Balloon imageSet without name 1`] = `
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1170,6 +1737,8 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
 
 .c2 {
   font-size: 40px;
+  text-align: center;
+  width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
@@ -1189,6 +1758,7 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
   padding: 0;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1196,10 +1766,30 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c3 .caption {
   margin: 16px 8px;
+}
+
+.c6 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .c5 {
@@ -1238,23 +1828,25 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
     x={400}
     y={400}
   >
-    <div
-      className="wg-location c2"
-    />
-    <div
-      className="c3 c4"
-      overflow="hidden"
-      width="100%"
-    >
+    <div>
       <div
-        className="c5"
+        className="wg-location open c2"
       />
       <div
-        className="caption c6"
-        size={18}
-        type="#59636f"
+        className="c3 c4"
+        overflow="hidden"
+        width="100%"
       >
-        Paloma Orchards
+        <div
+          className="c5"
+        />
+        <div
+          className="caption c6 c7"
+          size={18}
+          type="#59636f"
+        >
+          Paloma Orchards
+        </div>
       </div>
     </div>
   </div>

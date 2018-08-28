@@ -3,11 +3,12 @@ import PropTypes from "prop-types";
 import values from "object.values";
 import Text, { fontTypes } from "@crave/farmblocks-text";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
+import { CSSTransition } from "react-transition-group";
 
 import alignments from "./constants/alignments";
 import Wrapper from "./styledComponents/Wrapper";
 import Pin from "./styledComponents/Pin";
-import Balloon from "./styledComponents/Balloon";
+import Balloon, { Caption } from "./styledComponents/Balloon";
 import ImageSet, { imageSetPropType } from "./ImageSet";
 import SingleImage from "./styledComponents/SingleImage";
 
@@ -22,44 +23,78 @@ const MapBalloon = ({
   animated,
   borderRadius,
   pinColor,
+  pinHighlightColor,
   pinSize,
   opacity,
   balloonSize,
   captionSize,
-  imageTextSize
+  imageTextSize,
+  value,
+  onPinClick,
+  onBalloonClick
 }) => {
+  const interactivePin = !!onPinClick;
+  const interactiveBalloon = !!onBalloonClick;
+  const pinIconClass = interactivePin ? "wg-place" : "wg-location";
   return (
     <Wrapper x={x} y={y} opacity={opacity}>
-      <Pin className="wg-location" pinColor={pinColor} pinSize={pinSize} />
-
       {(singleImage && (
         <SingleImage
           src={singleImage}
           borderRadius={borderRadius}
-          pinSize={pinSize}
+          pinColor={pinColor}
         />
-      )) ||
-        (open &&
-          imageSet && (
+      )) || (
+        <div>
+          <Pin
+            className={`${pinIconClass} ${open ? "open" : ""}`}
+            pinColor={pinColor}
+            pinHighlightColor={pinHighlightColor}
+            pinSize={pinSize}
+            interactive={interactivePin}
+            animated={animated}
+            onClick={onPinClick && (event => onPinClick(value, event))}
+          />
+          <CSSTransition
+            in={open}
+            classNames="fade"
+            timeout={300}
+            mountOnEnter
+            unmountOnExit
+          >
             <Balloon
               align={align}
               animated={animated}
               borderRadius={borderRadius}
               pinSize={pinSize}
+              interactive={interactiveBalloon}
+              onClick={
+                onBalloonClick && (event => onBalloonClick(value, event))
+              }
               balloonSize={balloonSize}
             >
               <ImageSet set={imageSet} fontSize={imageTextSize} />
 
-              <Text
+              <Caption
                 title
                 type={fontTypes.NEUTRAL}
                 size={captionSize}
                 className="caption"
               >
                 {caption}
-              </Text>
+                {interactiveBalloon ? (
+                  <Text
+                    title
+                    type={fontTypes.SUBTLE}
+                    size={captionSize}
+                    className="wg-small-arrow-right"
+                  />
+                ) : null}
+              </Caption>
             </Balloon>
-          ))}
+          </CSSTransition>
+        </div>
+      )}
     </Wrapper>
   );
 };
@@ -82,11 +117,15 @@ MapBalloon.propTypes = {
   animated: PropTypes.bool,
   borderRadius: PropTypes.string,
   pinColor: PropTypes.string,
+  pinHighlightColor: PropTypes.string,
   pinSize: PropTypes.number,
   opacity: PropTypes.number,
   balloonSize: PropTypes.number,
   captionSize: PropTypes.number,
-  imageTextSize: PropTypes.number
+  imageTextSize: PropTypes.number,
+  onPinClick: PropTypes.func,
+  onBalloonClick: PropTypes.func,
+  value: PropTypes.any
 };
 
 MapBalloon.defaultProps = {

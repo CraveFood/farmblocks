@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, action } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
@@ -52,18 +52,36 @@ storiesOf("Map Balloon", module)
   )
   .add(
     "Animated",
-    withInfo()(() => (
-      <DemoGrid>
-        <MapBalloon
-          x={400}
-          y={400}
-          open
-          imageSet={imageSet}
-          caption="Paloma Orchards"
-          animated
-        />
-      </DemoGrid>
-    ))
+    withInfo()(() => {
+      class AlternateOpen extends React.Component {
+        state = { open: true };
+        componentDidMount() {
+          this.interval = window.setInterval(
+            () => this.setState(prevState => ({ open: !prevState.open })),
+            2000
+          );
+        }
+        componentWillUnmount = () => {
+          window.clearInterval(this.interval);
+        };
+
+        render() {
+          return (
+            <DemoGrid>
+              <MapBalloon
+                x={400}
+                y={400}
+                open={this.state.open}
+                imageSet={imageSet}
+                caption="Paloma Orchards"
+                animated
+              />
+            </DemoGrid>
+          );
+        }
+      }
+      return <AlternateOpen />;
+    })
   )
   .add(
     "Open Balloon at Right",
@@ -170,4 +188,74 @@ storiesOf("Map Balloon", module)
         />
       </DemoGrid>
     ))
+  )
+  .add(
+    "Interactive",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          onPinClick={action("onPinClick")}
+          onBalloonClick={action("onBalloonClick")}
+          value="paloma-orchards"
+          pinColor="FireBrick"
+          pinHighlightColor="FireBrick"
+          x={400}
+          y={400}
+          imageSet={imageSet}
+          caption="Paloma Orchards"
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Interactive open",
+    withInfo()(() => (
+      <DemoGrid>
+        <MapBalloon
+          open
+          onPinClick={action("onPinClick")}
+          onBalloonClick={action("onBalloonClick")}
+          value="paloma-orchards"
+          pinColor="FireBrick"
+          x={400}
+          y={400}
+          imageSet={imageSet}
+          caption="Paloma Orchards"
+        />
+      </DemoGrid>
+    ))
+  )
+  .add(
+    "Interactive toggle",
+    withInfo(
+      `MapBalloon is a stateless component, it won't open automatically on pin click. This story is just for animation tests.`
+    )(() => {
+      class ToggleOpen extends React.Component {
+        state = { open: false };
+        handlePinClick = () =>
+          this.setState(prevState => ({ open: !prevState.open }));
+        render() {
+          return (
+            <MapBalloon
+              open={this.state.open}
+              onPinClick={this.handlePinClick}
+              onBalloonClick={action("onBalloonClick")}
+              value="paloma-orchards"
+              pinColor="DarkBlue"
+              pinHighlightColor="DodgerBlue"
+              animated
+              x={400}
+              y={400}
+              imageSet={imageSet}
+              caption="Paloma Orchards"
+            />
+          );
+        }
+      }
+      return (
+        <DemoGrid>
+          <ToggleOpen />
+        </DemoGrid>
+      );
+    })
   );
