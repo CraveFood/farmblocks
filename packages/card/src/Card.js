@@ -19,6 +19,7 @@ Card.propTypes = {
   children: PropTypes.node,
   width: PropTypes.string,
   padding: PropTypes.string,
-  overflow: PropTypes.string
+  overflow: PropTypes.string,
+  boxShadow: PropTypes.string
 };
 export default Card;

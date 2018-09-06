@@ -10,6 +10,7 @@ import Card, { cardTypes } from ".";
 storiesOf("Card", module)
   .add("Default", withInfo()(() => <Card />))
   .add("Floating", withInfo()(() => <Card floating />))
+  .add("Custom box shadow", withInfo()(() => <Card boxShadow="none" />))
   .add("Type Neutral", withInfo()(() => <Card type={cardTypes.NEUTRAL} />))
   .add("Type Featured", withInfo()(() => <Card type={cardTypes.FEATURED} />))
   .add(
