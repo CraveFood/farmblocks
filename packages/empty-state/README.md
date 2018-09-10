@@ -4,19 +4,13 @@
 
 A placeholder to use on screens without content.
 
-## Design specs
-
-- [Neutral Empty State](https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31487698229288a969)
-- [Customized Empty State](https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31bbc93198a853bbd7)
-- [In Section - Empty States](https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df3106cb3d119936d6d6)
-
 ## Usage
 
 ```jsx
-import React from 'react';
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
 
-import EmptyState from '@crave/farmblocks-empty-state';
+import EmptyState from "@crave/farmblocks-empty-state";
 
 const text =
   "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.";
@@ -28,21 +22,30 @@ const App = () => (
     imageSrc={imgSrc}
     title="Empty State Title"
     description={text}
-    primaryActionText="Primary Action"
-    onPrimaryActionClick={() => console.log("clicked")}
+    actions={[
+      {
+        text: "Primary Action",
+        onClick: () => console.log("clicked"),
+        type: buttonTypes.PRIMARY
+      }
+    ]}
     info={text}
   />
 );
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
 ```
 
 ## API
 
-- Thumbnail: ``imageSrc``
-- Text properties: ``title``(required), ``description``, ``info``
-- Primary Button: ``primaryActionText``, ``onPrimaryActionClick``
-- Secondary Button: ``secondaryActionText``, ``onSecondaryActionClick``
+| property    | type             | description                                                                                                                                                                                                    | Required |
+| ----------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| title       | string           | a text that is bold and will be rendered on the first line                                                                                                                                                     | Yes      |
+| description | string           | a text that will be rendered bellow title                                                                                                                                                                      |          |
+| imageSrc    | string           | image source to be rendered. This property overrides `icon` if both are present                                                                                                                                |          |
+| icon        | string           | icon name to be rendered                                                                                                                                                                                       |          |
+| actions     | array of objects | each object corresponds to one button that will be rendered. We expect 3 required properties on each object: text (string), type(string) a valid farmblocks-theme.buttonTypes or any color, onClick (function) |          |
+| info        | string           | a text that is smaller than the others and will be rendered bellow buttons                                                                                                                                     |          |
 
 ## License
 
