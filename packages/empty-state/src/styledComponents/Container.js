@@ -17,12 +17,10 @@ const Container = styled.div`
 
   > .buttons {
     margin-top: 24px;
-    display: flex;
-    flex-direction: row;
-  }
 
-  > .buttons .withMargin {
-    margin-right: 16px;
+    > * {
+      margin: 0 8px;
+    }
   }
 
   .icon {
