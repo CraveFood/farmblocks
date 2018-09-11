@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.1.5...@crave/farmblocks-empty-state@2.0.0) (2018-09-11)
+
+
+### Features
+
+* **EmptyState:** created actions property to replace primary and secondary properties ([71bf678](https://github.com/CraveFood/farmblocks/commit/71bf678)), closes [#524](https://github.com/CraveFood/farmblocks/issues/524)
+
+
+### BREAKING CHANGES
+
+* **EmptyState:** The properties primaryActionText, onPrimaryActionClick, secondaryActionText and
+onSecondaryActionClick no longer work. They have been replaced by the "actions" property.
+
+
+
+
 <a name="1.1.5"></a>
 ## [1.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@1.1.4...@crave/farmblocks-empty-state@1.1.5) (2018-08-13)
 
