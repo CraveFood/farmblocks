@@ -2,7 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Image, { thumbnailSizes } from "@crave/farmblocks-image";
 import Text, { fontTypes, fontSizes } from "@crave/farmblocks-text";
-import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import Button, { buttonSizes } from "@crave/farmblocks-button";
 
 import Container from "./styledComponents/Container";
 
@@ -76,37 +76,20 @@ class EmptyState extends React.Component {
     );
   }
   _renderButtons() {
-    const {
-      primaryActionText,
-      onPrimaryActionClick,
-      secondaryActionText,
-      onSecondaryActionClick
-    } = this.props;
-    const hasPrimaryAction = primaryActionText && onPrimaryActionClick;
-    const hasSecondaryAction = secondaryActionText && onSecondaryActionClick;
-    const secondaryButtonMargin = hasPrimaryAction ? "withMargin" : "";
-    if (!hasPrimaryAction && !hasSecondaryAction) {
+    const { actions } = this.props;
+    if (!actions || !actions.length) {
       return null;
     }
+
     return (
       <div className="buttons">
-        {hasSecondaryAction && (
+        {actions.map((buttonProps, index) => (
           <Button
-            className={secondaryButtonMargin}
-            type={buttonTypes.NEUTRAL}
+            key={`empty-state-button-${index}`}
             size={buttonSizes.MEDIUM}
-            text={secondaryActionText}
-            onClick={onSecondaryActionClick}
+            {...buttonProps}
           />
-        )}
-        {hasPrimaryAction && (
-          <Button
-            type={buttonTypes.SECONDARY}
-            size={buttonSizes.MEDIUM}
-            text={primaryActionText}
-            onClick={onPrimaryActionClick}
-          />
-        )}
+        ))}
       </div>
     );
   }
@@ -114,10 +97,13 @@ class EmptyState extends React.Component {
     title: PropTypes.string.isRequired,
     imageSrc: PropTypes.string,
     description: PropTypes.string,
-    primaryActionText: PropTypes.string,
-    onPrimaryActionClick: PropTypes.func,
-    secondaryActionText: PropTypes.string,
-    onSecondaryActionClick: PropTypes.func,
+    actions: PropTypes.arrayOf(
+      PropTypes.shape({
+        text: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        onClick: PropTypes.func.isRequired
+      })
+    ),
     info: PropTypes.string,
     icon: PropTypes.string
   };

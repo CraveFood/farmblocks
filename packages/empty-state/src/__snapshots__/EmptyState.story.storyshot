@@ -43,17 +43,10 @@ exports[`Storyshots EmptyState Default 1`] = `
 
 .c0 > .buttons {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
+.c0 > .buttons > * {
+  margin: 0 8px;
 }
 
 .c0 .icon {
@@ -124,17 +117,10 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
 
 .c0 > .buttons {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
+.c0 > .buttons > * {
+  margin: 0 8px;
 }
 
 .c0 .icon {
@@ -214,17 +200,10 @@ exports[`Storyshots EmptyState With icon 1`] = `
 
 .c0 > .buttons {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
+.c0 > .buttons > * {
+  margin: 0 8px;
 }
 
 .c0 .icon {
@@ -318,17 +297,10 @@ exports[`Storyshots EmptyState With image 1`] = `
 
 .c0 > .buttons {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
+.c0 > .buttons > * {
+  margin: 0 8px;
 }
 
 .c0 .icon {
@@ -361,7 +333,652 @@ exports[`Storyshots EmptyState With image 1`] = `
 </div>
 `;
 
-exports[`Storyshots EmptyState With primary and secondary buttons 1`] = `
+exports[`Storyshots EmptyState With one action 1`] = `
+.c4 {
+  display: inline-block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c5 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c5:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c5:focus {
+  box-shadow: none;
+}
+
+.c5:hover .icon,
+.c5:focus .icon {
+  color: white;
+}
+
+.c5:hover {
+  background-color: #2980b9;
+}
+
+.c5:focus {
+  background-color: #2980b9;
+}
+
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: center;
+}
+
+.c1 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 72px;
+  min-height: 72px;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  background-position: center;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .thumbnail {
+  margin-bottom: 24px;
+}
+
+.c0 > .description,
+.c0 > .info {
+  margin-top: 16px;
+}
+
+.c0 > .buttons {
+  margin-top: 24px;
+}
+
+.c0 > .buttons > * {
+  margin: 0 8px;
+}
+
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="thumbnail c1"
+    size={72}
+    src="https://picsum.photos/200"
+  />
+  <div
+    className="c2"
+    size={24}
+    type="#2f313a"
+  >
+    Empty State Title
+  </div>
+  <div
+    className="description c3"
+    size={18}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+  <div
+    className="buttons"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c5"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="MEDIUM"
+          type="SECONDARY"
+        >
+          Primary Action
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EmptyState With one action and info 1`] = `
+.c4 {
+  display: inline-block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c5 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c5:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c5:focus {
+  box-shadow: none;
+}
+
+.c5:hover .icon,
+.c5:focus .icon {
+  color: white;
+}
+
+.c5:hover {
+  background-color: #2980b9;
+}
+
+.c5:focus {
+  background-color: #2980b9;
+}
+
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: center;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: center;
+}
+
+.c1 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 72px;
+  min-height: 72px;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  background-position: center;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .thumbnail {
+  margin-bottom: 24px;
+}
+
+.c0 > .description,
+.c0 > .info {
+  margin-top: 16px;
+}
+
+.c0 > .buttons {
+  margin-top: 24px;
+}
+
+.c0 > .buttons > * {
+  margin: 0 8px;
+}
+
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="thumbnail c1"
+    size={72}
+    src="https://picsum.photos/200"
+  />
+  <div
+    className="c2"
+    size={24}
+    type="#2f313a"
+  >
+    Empty State Title
+  </div>
+  <div
+    className="description c3"
+    size={18}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+  <div
+    className="buttons"
+  >
+    <div
+      className="c4"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c5"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="MEDIUM"
+          type="SECONDARY"
+        >
+          Primary Action
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="info c6"
+    size={14}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+</div>
+`;
+
+exports[`Storyshots EmptyState With one action, inside a container 1`] = `
+.c4 {
+  display: inline-block;
+}
+
+.c4 .hitWrapper {
+  position: relative;
+}
+
+.c4 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c5 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c5 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c5:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c5:focus {
+  box-shadow: none;
+}
+
+.c5:hover .icon,
+.c5:focus .icon {
+  color: white;
+}
+
+.c5:hover {
+  background-color: #2980b9;
+}
+
+.c5:focus {
+  background-color: #2980b9;
+}
+
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: center;
+}
+
+.c1 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 72px;
+  min-height: 72px;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  background-position: center;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .thumbnail {
+  margin-bottom: 24px;
+}
+
+.c0 > .description,
+.c0 > .info {
+  margin-top: 16px;
+}
+
+.c0 > .buttons {
+  margin-top: 24px;
+}
+
+.c0 > .buttons > * {
+  margin: 0 8px;
+}
+
+.c0 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
+<div
+  style={
+    Object {
+      "padding": "52px 0",
+      "width": 560,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="thumbnail c1"
+      size={72}
+      src="https://picsum.photos/200"
+    />
+    <div
+      className="c2"
+      size={24}
+      type="#2f313a"
+    >
+      Empty State Title
+    </div>
+    <div
+      className="description c3"
+      size={18}
+      type="#59636f"
+    >
+      Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+    </div>
+    <div
+      className="buttons"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="hitWrapper"
+        >
+          <button
+            className="c5"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
+          >
+            Primary Action
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EmptyState With two actions 1`] = `
 .c4 {
   display: inline-block;
 }
@@ -589,922 +1206,10 @@ exports[`Storyshots EmptyState With primary and secondary buttons 1`] = `
 
 .c0 > .buttons {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
-}
-
-.c0 .icon {
-  font-size: 72px;
-  color: rgba(0,0,0,0.32);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="thumbnail c1"
-    size={72}
-    src="https://picsum.photos/200"
-  />
-  <div
-    className="c2"
-    size={24}
-    type="#2f313a"
-  >
-    Empty State Title
-  </div>
-  <div
-    className="description c3"
-    size={18}
-    type="#59636f"
-  >
-    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-  </div>
-  <div
-    className="buttons"
-  >
-    <div
-      className="c4"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="withMargin c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Secondary Action
-        </button>
-      </div>
-    </div>
-    <div
-      className="c4"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c6"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
-        >
-          Primary Action
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState With primary button 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c5 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c5 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5:hover {
-  background-color: #2980b9;
-}
-
-.c5:focus {
-  background-color: #2980b9;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: center;
-  font-weight: 600;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #59636f;
-  text-align: center;
-}
-
-.c1 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 72px;
-  min-height: 72px;
-  width: 72px;
-  height: 72px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  background-image: url(https://picsum.photos/200);
-  background-size: cover;
-  background-position: center;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0 > .thumbnail {
-  margin-bottom: 24px;
-}
-
-.c0 > .description,
-.c0 > .info {
-  margin-top: 16px;
-}
-
-.c0 > .buttons {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
-}
-
-.c0 .icon {
-  font-size: 72px;
-  color: rgba(0,0,0,0.32);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="thumbnail c1"
-    size={72}
-    src="https://picsum.photos/200"
-  />
-  <div
-    className="c2"
-    size={24}
-    type="#2f313a"
-  >
-    Empty State Title
-  </div>
-  <div
-    className="description c3"
-    size={18}
-    type="#59636f"
-  >
-    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-  </div>
-  <div
-    className="buttons"
-  >
-    <div
-      className="c4"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
-        >
-          Primary Action
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState With primary button and info 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c5 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c5 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5:hover {
-  background-color: #2980b9;
-}
-
-.c5:focus {
-  background-color: #2980b9;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: center;
-  font-weight: 600;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #59636f;
-  text-align: center;
-}
-
-.c6 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #59636f;
-  text-align: center;
-}
-
-.c1 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 72px;
-  min-height: 72px;
-  width: 72px;
-  height: 72px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  background-image: url(https://picsum.photos/200);
-  background-size: cover;
-  background-position: center;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0 > .thumbnail {
-  margin-bottom: 24px;
-}
-
-.c0 > .description,
-.c0 > .info {
-  margin-top: 16px;
-}
-
-.c0 > .buttons {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
-}
-
-.c0 .icon {
-  font-size: 72px;
-  color: rgba(0,0,0,0.32);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="thumbnail c1"
-    size={72}
-    src="https://picsum.photos/200"
-  />
-  <div
-    className="c2"
-    size={24}
-    type="#2f313a"
-  >
-    Empty State Title
-  </div>
-  <div
-    className="description c3"
-    size={18}
-    type="#59636f"
-  >
-    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-  </div>
-  <div
-    className="buttons"
-  >
-    <div
-      className="c4"
-    >
-      <div
-        className="hitWrapper"
-      >
-        <button
-          className="c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
-        >
-          Primary Action
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    className="info c6"
-    size={14}
-    type="#59636f"
-  >
-    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState With primary button, inside a container 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c5 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c5 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5:hover {
-  background-color: #2980b9;
-}
-
-.c5:focus {
-  background-color: #2980b9;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: center;
-  font-weight: 600;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #59636f;
-  text-align: center;
-}
-
-.c1 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 72px;
-  min-height: 72px;
-  width: 72px;
-  height: 72px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  background-image: url(https://picsum.photos/200);
-  background-size: cover;
-  background-position: center;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0 > .thumbnail {
-  margin-bottom: 24px;
-}
-
-.c0 > .description,
-.c0 > .info {
-  margin-top: 16px;
-}
-
-.c0 > .buttons {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
-}
-
-.c0 .icon {
-  font-size: 72px;
-  color: rgba(0,0,0,0.32);
-}
-
-<div
-  style={
-    Object {
-      "padding": "52px 0",
-      "width": 560,
-    }
-  }
->
-  <div
-    className="c0"
-  >
-    <div
-      className="thumbnail c1"
-      size={72}
-      src="https://picsum.photos/200"
-    />
-    <div
-      className="c2"
-      size={24}
-      type="#2f313a"
-    >
-      Empty State Title
-    </div>
-    <div
-      className="description c3"
-      size={18}
-      type="#59636f"
-    >
-      Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
-    </div>
-    <div
-      className="buttons"
-    >
-      <div
-        className="c4"
-      >
-        <div
-          className="hitWrapper"
-        >
-          <button
-            className="c5"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="MEDIUM"
-            type="SECONDARY"
-          >
-            Primary Action
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState With secondary button only 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
-  position: relative;
-}
-
-.c4 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c5 .icon {
-  color: rgba(255,255,255,0.56);
-}
-
-.c5 .icon i {
-  vertical-align: text-bottom;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:hover,
-.c5:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c5:hover > .icon,
-.c5:focus > .icon {
-  color: #3498db;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  font-size: 24px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: center;
-  font-weight: 600;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  color: #59636f;
-  text-align: center;
-}
-
-.c1 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 72px;
-  min-height: 72px;
-  width: 72px;
-  height: 72px;
-  overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  background-image: url(https://picsum.photos/200);
-  background-size: cover;
-  background-position: center;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0 > .thumbnail {
-  margin-bottom: 24px;
-}
-
-.c0 > .description,
-.c0 > .info {
-  margin-top: 16px;
-}
-
-.c0 > .buttons {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0 > .buttons .withMargin {
-  margin-right: 16px;
+.c0 > .buttons > * {
+  margin: 0 8px;
 }
 
 .c0 .icon {
@@ -1553,6 +1258,25 @@ exports[`Storyshots EmptyState With secondary button only 1`] = `
           type="NEUTRAL"
         >
           Secondary Action
+        </button>
+      </div>
+    </div>
+    <div
+      className="c4"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c6"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="MEDIUM"
+          type="SECONDARY"
+        >
+          Primary Action
         </button>
       </div>
     </div>
