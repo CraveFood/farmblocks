@@ -17,7 +17,7 @@ storiesOf("Alert", module)
     "default at bottom",
     withInfo()(() => (
       <Alert
-        bottomPosition
+        bottomAligned
         text="Default is set to news type, and have default onDismiss function that hides the alert."
       />
     ))

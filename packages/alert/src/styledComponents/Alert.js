@@ -6,7 +6,7 @@ import { ATTENTION } from "../constants/alertTypes";
 const Container = styled.div`
   position: fixed;
 
-  ${props => (props.bottomPosition ? "bottom: 0" : "top: 0")};
+  ${props => (props.bottomAligned ? "bottom: 0" : "top: 0")};
   left: 0;
   right: 0;
 
