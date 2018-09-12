@@ -1,4 +1,4 @@
-# Farmblocks-Alert 
+# Farmblocks-Alert
 
 A React component for displaying messages on an alert bar.
 
@@ -40,6 +40,19 @@ document.body.appendChild(root);
 ## API
 
 See it [in the source](https://github.com/CraveFood/farmblocks/blob/master/packages/alert/src/Alert.js#L24-L35)
+
+## Props
+
+| Property      | Description                                                                                    | Type              | Default value     |
+| ------------- | ---------------------------------------------------------------------------------------------- | ----------------- | ----------------- |
+| text          | text to be displayed at the alert (required)                                                   | string            |
+| type          | changes the alert color                                                                        | oneOf(AlertTypes) | `AlertTypes.NEWS` |
+| dismissable   | allows the alert to be closed. If `false` it can't be closed by user action.                   | boolean           | `true`            |
+| autoRemove    | automatically closes the alert after the amount of time set in `visibleTime` prop              | boolean           | `true`            |
+| onDismiss     | function to be called when the alert is closed                                                 | function          | `() => null`      |
+| visibleTime   | amount of time that the alert should be visible once `autoRemove` is `true` -- in milliseconds | number            | `2000`            |
+| zIndex        | custom zIndex                                                                                  | number            | `2500`            |
+| bottomAligned | align the alert on the bottom of its container, instead of the default `top` alignment         | boolean           | `false`           |
 
 ## License
 

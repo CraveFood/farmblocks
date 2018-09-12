@@ -175,6 +175,181 @@ exports[`Storyshots Alert default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Alert default at bottom 1`] = `
+.c1 {
+  display: inline-block;
+}
+
+.c1 .hitWrapper {
+  position: relative;
+}
+
+.c1 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 0 8px;
+}
+
+.c2 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c2 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2:hover {
+  background-color: #3498db;
+}
+
+.c2:focus {
+  background-color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c0 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #3498db;
+  box-shadow: 0 2px 2px 0 rgba(46,204,113,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  min-height: 72px;
+  z-index: 2500;
+}
+
+.c0 > p {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.c0 > .dismiss-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  right: 24px;
+}
+
+<div
+  className="c0"
+  type="NEWS"
+>
+  <p>
+    Default is set to news type, and have default onDismiss function that hides the alert.
+  </p>
+  <div
+    className="dismiss-button"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="hitWrapper"
+      >
+        <button
+          className="c2"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="OFF_NEUTRAL"
+        >
+          <div
+            className="icon"
+            style={
+              Object {
+                "marginRight": 0,
+              }
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Alert non dismissable 1`] = `
 .c0 {
   position: fixed;
