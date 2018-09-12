@@ -14,6 +14,15 @@ storiesOf("Alert", module)
     ))
   )
   .add(
+    "default at bottom",
+    withInfo()(() => (
+      <Alert
+        bottomPosition
+        text="Default is set to news type, and have default onDismiss function that hides the alert."
+      />
+    ))
+  )
+  .add(
     "visibleTime 2 seconds",
     withInfo()(() => (
       <Alert
