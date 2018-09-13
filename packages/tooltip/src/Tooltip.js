@@ -6,7 +6,6 @@ import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
 
 export const getAutoAlign = (tooltipRef, bondariesSelector) => {
-  console.log("go");
   if (tooltipRef) {
     const { right } = tooltipRef.getBoundingClientRect();
 
