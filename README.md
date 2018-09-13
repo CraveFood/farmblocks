@@ -35,5 +35,5 @@ User interface blocks.
 
 ![browserstack-logo-600x315](https://user-images.githubusercontent.com/7760/34738829-7327ddc4-f561-11e7-97e2-2fe0474eaf05.png)
 
-This components are expected to work on somewhat modern browsers, but if it breaks on a particular version of a particular browser, please [file an issue](https://github.com/CraveFood/farmblocks/issues), we can check the problem using [browserstack](http://browserstack.com/), that is a nice service and supports open source projects like this one :)
+These components are expected to work on somewhat modern browsers, but if it breaks on a particular version of a particular browser, please [file an issue](https://github.com/CraveFood/farmblocks/issues), we can check the problem using [browserstack](http://browserstack.com/), that is a nice service and supports open source projects like this one :)
 
