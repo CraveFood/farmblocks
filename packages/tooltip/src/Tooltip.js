@@ -31,7 +31,7 @@ class Tooltip extends React.Component {
       originalAlign === alignments.AUTO
         ? getAutoAlign(this.tooltipRef, bondariesSelector)
         : originalAlign;
-    this.setState({ align });
+    this.setState({ align, originalAlign });
   };
   render() {
     const content = this.props.children || this.props.text;
