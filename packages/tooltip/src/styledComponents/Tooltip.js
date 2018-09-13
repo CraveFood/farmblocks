@@ -55,7 +55,6 @@ const arrow = ({ hideArrow }) => {
         border-color: transparent;
         border-bottom-color: rgba(0, 0, 0, 0.16);
         border-width: 8px;
-        color: red;
         ${alignX("7px")};
       }
 
@@ -63,7 +62,6 @@ const arrow = ({ hideArrow }) => {
         border-color: transparent;
         border-bottom-color: #ffffff;
         border-width: 7px;
-        color: red;
         ${alignX("8px")};
       }
     `
