@@ -31,7 +31,7 @@ const Footer = styled.div`
   border-top: 1px solid ${colors.GREY_16};
 `;
 
-const FormPopover = props => {
+const FormWrapper = props => {
   const { title, extraContent } = props;
   return (
     <div>
@@ -69,12 +69,12 @@ const FormPopover = props => {
   );
 };
 
-FormPopover.defaultProps = {
+FormWrapper.defaultProps = {
   cancelLabel: "Cancel",
-  saveLabel: "Save Changes"
+  saveLabel: "Save"
 };
 
-FormPopover.propTypes = {
+FormWrapper.propTypes = {
   onCancel: PropTypes.func.isRequired,
   onSave: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
@@ -85,4 +85,4 @@ FormPopover.propTypes = {
   loading: PropTypes.bool
 };
 
-export default FormPopover;
+export default FormWrapper;

@@ -4,35 +4,35 @@ import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 import Input from "@crave/farmblocks-input-text";
 
-import FormPopover from ".";
+import FormWrapper from ".";
 
-storiesOf("Form Popover", module)
+storiesOf("Form Wrapper", module)
   .add(
     "Default",
     withInfo()(() => (
-      <FormPopover onCancel={action("onCancel")} onSave={action("onSave")}>
+      <FormWrapper onCancel={action("onCancel")} onSave={action("onSave")}>
         <Input label="First Name" />
         <Input label="Last Name" />
-      </FormPopover>
+      </FormWrapper>
     ))
   )
   .add(
     "With title",
     withInfo()(() => (
-      <FormPopover
+      <FormWrapper
         onCancel={action("onCancel")}
         onSave={action("onSave")}
         title="Title"
       >
         <Input label="First Name" />
         <Input label="Last Name" />
-      </FormPopover>
+      </FormWrapper>
     ))
   )
   .add(
     "loading",
     withInfo()(() => (
-      <FormPopover
+      <FormWrapper
         onCancel={action("onCancel")}
         onSave={action("onSave")}
         title="Title"
@@ -40,13 +40,13 @@ storiesOf("Form Popover", module)
       >
         <Input label="First Name" />
         <Input label="Last Name" />
-      </FormPopover>
+      </FormWrapper>
     ))
   )
   .add(
     "extra content",
     withInfo()(() => (
-      <FormPopover
+      <FormWrapper
         onCancel={action("onCancel")}
         onSave={action("onSave")}
         title="Title"
@@ -54,6 +54,6 @@ storiesOf("Form Popover", module)
       >
         <Input label="First Name" />
         <Input label="Last Name" />
-      </FormPopover>
+      </FormWrapper>
     ))
   );
