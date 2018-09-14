@@ -350,4 +350,8 @@ storiesOf("Button", module)
   .add(
     "Custom box-shadow",
     withInfo()(() => <Button boxShadow="none">Custom box-shadow</Button>)
+  )
+  .add(
+    "Custom padding",
+    withInfo()(() => <Button padding="0 8px">Custom padding</Button>)
   );

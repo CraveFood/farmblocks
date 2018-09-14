@@ -6,10 +6,17 @@ import { NEUTRAL } from "../constants/buttonTypes";
 
 const buttonHeight = ({ size }) => (size === MEDIUM ? 48 : 32);
 const lineHeight = props => buttonHeight(props) - 2;
-const paddingStyle = ({ size, isIconOnly }) =>
-  css`
+const paddingStyle = ({ size, isIconOnly, padding }) => {
+  if (padding) {
+    return css`
+      padding: ${padding};
+    `;
+  }
+
+  return css`
     padding: 0 ${size !== MEDIUM && isIconOnly ? "8px" : "16px"};
   `;
+};
 
 const Button = styled.button`
   display: flex;
