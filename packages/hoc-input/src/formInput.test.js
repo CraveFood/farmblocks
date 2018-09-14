@@ -157,7 +157,10 @@ describe("formInput", function() {
     const component = mount(<EnhancedInput type="search" value={value} />);
     expect(component.state("value")).toBe(value);
 
-    component.find("span.clear").simulate("click");
+    component
+      .find("LinkContainer[className='clear']")
+      .find("span")
+      .simulate("click");
     expect(component.state("value")).toBe("");
   });
   test("click on the button to clear the input should not remove input's focus", function() {
