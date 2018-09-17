@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.0.4...@crave/farmblocks-hoc-input@4.1.0) (2018-09-17)
+
+
+### Features
+
+* **hoc-input:** add prefix and suffix props ([058eae0](https://github.com/CraveFood/farmblocks/commit/058eae0)), closes [#532](https://github.com/CraveFood/farmblocks/issues/532)
+
+
+
+
 <a name="4.0.4"></a>
 ## [4.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.0.3...@crave/farmblocks-hoc-input@4.0.4) (2018-09-17)
 
