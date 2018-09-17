@@ -129,6 +129,10 @@ injectGlobal`
     content: "\\e931";
   }
 
+  .wg-check-box:before {
+    content: "\\e978";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -148,7 +152,8 @@ injectGlobal`
   .wg-question,
   .wg-minus,
   .wg-add,
-  .wg-location {
+  .wg-location,
+  .wg-check-box {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
     speak: none;
