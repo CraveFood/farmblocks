@@ -154,4 +154,88 @@ storiesOf("HOC formInput", module)
         type="text"
       />
     ))
+  )
+  .add(
+    "with prefix",
+    withInfo()(() => (
+      <div>
+        <EnhancedInput type="text" prefix="$" label="Default" />
+        <EnhancedInput
+          type="text"
+          prefix="$"
+          label="Focused on Mount"
+          focused
+        />
+        <EnhancedInput type="text" prefix="$" label="Disabled" disabled />
+        <EnhancedInput type="text" prefix="$" label="Invalid" invalid="true" />
+        <EnhancedInput type="search" prefix="$" label="Search" />
+        <EnhancedInput
+          type="text"
+          prefix="$"
+          label="Small"
+          fontSize={fontSizes.SMALL}
+        />
+      </div>
+    ))
+  )
+  .add(
+    "with suffix",
+    withInfo()(() => (
+      <div>
+        <EnhancedInput type="text" suffix="CS" label="Default" />
+        <EnhancedInput
+          type="text"
+          suffix="CS"
+          label="Focused on Mount"
+          focused
+        />
+        <EnhancedInput type="text" suffix="CS" label="Disabled" disabled />
+        <EnhancedInput type="text" suffix="CS" label="Invalid" invalid="true" />
+        <EnhancedInput type="search" suffix="CS" label="Search" />
+        <EnhancedInput
+          type="text"
+          suffix="CS"
+          label="Small"
+          fontSize={fontSizes.SMALL}
+        />
+      </div>
+    ))
+  )
+
+  .add(
+    "with prefix and suffix",
+    withInfo()(() => (
+      <div>
+        <EnhancedInput type="text" prefix="$" suffix="CS" label="Default" />
+        <EnhancedInput
+          type="text"
+          prefix="$"
+          suffix="CS"
+          label="Focused on Mount"
+          focused
+        />
+        <EnhancedInput
+          type="text"
+          prefix="$"
+          suffix="CS"
+          label="Disabled"
+          disabled
+        />
+        <EnhancedInput
+          type="text"
+          prefix="$"
+          suffix="CS"
+          label="Invalid"
+          invalid="true"
+        />
+        <EnhancedInput type="search" prefix="$" suffix="CS" label="Search" />
+        <EnhancedInput
+          type="text"
+          prefix="$"
+          suffix="CS"
+          label="Small"
+          fontSize={fontSizes.SMALL}
+        />
+      </div>
+    ))
   );
