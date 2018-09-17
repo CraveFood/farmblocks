@@ -13,7 +13,7 @@ const FilterPopover = props => {
         <Button
           rightIcon="wg-small-arrow-bottom"
           boxShadow="none"
-          padding="0 8px"
+          paddingX="8px"
           activated={props.hasValue}
         >
           {props.triggerLabel}
