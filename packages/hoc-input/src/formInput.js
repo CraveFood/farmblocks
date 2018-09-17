@@ -33,7 +33,9 @@ export const formInputProps = {
   clearIcon: PropTypes.string,
   leftIcon: PropTypes.string,
   moreInfoContent: PropTypes.node,
-  moreInfoAlign: PropTypes.oneOf(values(alignments))
+  moreInfoAlign: PropTypes.oneOf(values(alignments)),
+  prefix: PropTypes.string,
+  suffix: PropTypes.string
 };
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
@@ -86,6 +88,8 @@ const formInput = WrappedComponent => {
       clearable,
       clearIcon,
       leftIcon,
+      prefix,
+      suffix,
       ...inputProps
     }) => {
       const handlers = {
@@ -120,6 +124,7 @@ const formInput = WrappedComponent => {
           }}
           onMouseDown={this.preventBlurOfClearIcon}
         >
+          {prefix && <div className="prefix">{prefix}</div>}
           {iconName && (
             <div className="icon left">
               <i className={iconName} />
@@ -134,6 +139,7 @@ const formInput = WrappedComponent => {
           />
           {clearButton}
           {dropDownIcon}
+          {suffix && <div className="suffix">{suffix}</div>}
         </div>
       );
     };

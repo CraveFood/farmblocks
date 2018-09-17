@@ -39,6 +39,36 @@ const ifSmall = (smallValue, defaultValue) => props =>
 
 const customCursor = props => (props.disabled ? "default" : "pointer");
 
+const fontStyles = css`
+  font-family: Lato, sans-serif;
+  font-size: ${ifSmall(fontSizes.SMALL, fontSizes.MEDIUM)}px;
+`;
+
+const addonColor = props => {
+  if (props.focused) {
+    return css`
+      background-color: ${colors.INDIGO_MILK_CAP};
+      color: white;
+    `;
+  }
+  if (props.invalid) {
+    return css`
+      background-color: ${colors.STRAWBERRY};
+      color: white;
+    `;
+  }
+  if (props.disabled && !props.protected) {
+    return css`
+      background-color: ${colors.GREY_16};
+      color: ${colors.GREY_32};
+    `;
+  }
+  return css`
+    background-color: ${colors.SUGAR};
+    color: ${colors.CARBON};
+  `;
+};
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,6 +85,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     cursor: text;
+    overflow: auto; /* clip children background to border radius */
 
     .wrapped {
       flex: 1;
@@ -63,13 +94,11 @@ const Wrapper = styled.div`
     input {
       height: ${ifSmall("30", "46")}px;
       padding: 0 ${ifSmall("8", "16")}px;
-      border-radius: 4px;
 
       border: 0;
       flex: 1;
       outline: none;
-      font-family: Lato, sans-serif;
-      font-size: ${ifSmall(fontSizes.SMALL, fontSizes.MEDIUM)}px;
+      ${fontStyles};
       color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {
@@ -148,6 +177,16 @@ const Wrapper = styled.div`
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+
+  .prefix,
+  .suffix {
+    ${fontStyles};
+    ${addonColor};
+    padding: 0 16px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
   }
 `;
 export default Wrapper;
