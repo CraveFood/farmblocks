@@ -15,6 +15,7 @@ const Link = props => {
     rightIcon,
     external,
     children,
+    className,
     ...linkProps
   } = props;
 
@@ -22,7 +23,8 @@ const Link = props => {
     size,
     lineHeight,
     type,
-    disabled
+    disabled,
+    className
   };
 
   const componentType = linkProps.href && !disabled ? "a" : "span";
@@ -46,7 +48,8 @@ Link.propTypes = {
   size: PropTypes.number,
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   onClick: PropTypes.func,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  className: PropTypes.string
   //... and all properties of html <a>
 };
 
