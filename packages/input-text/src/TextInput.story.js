@@ -7,6 +7,7 @@ import TextInput from ".";
 
 storiesOf("Text Input", module)
   .add("Default", withInfo()(() => <TextInput />))
+  .add("Focused", withInfo()(() => <TextInput focused />))
   .add("With label", withInfo()(() => <TextInput label="Field Label" />))
   .add(
     "With placeholder",

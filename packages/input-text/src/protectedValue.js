@@ -128,6 +128,7 @@ export default WrappedComponent => {
         onChange,
         cancelButtonText,
         saveButtonText,
+        focused,
         ...wrappedComponentProps
       } = this.props;
       const { isEditing } = this.state;
@@ -139,7 +140,7 @@ export default WrappedComponent => {
           <WrappedComponent
             {...wrappedComponentProps}
             protected={covered}
-            focused={this.state.isEditing}
+            focused={covered ? this.state.isEditing : focused}
             value={isEditing ? this.state.editedValue : this.state.value}
             onKeyDown={covered && displayButtons ? this.onKeyDown : onKeyDown}
             onChange={event => {
