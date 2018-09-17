@@ -6,10 +6,10 @@ import { NEUTRAL } from "../constants/buttonTypes";
 
 const buttonHeight = ({ size }) => (size === MEDIUM ? 48 : 32);
 const lineHeight = props => buttonHeight(props) - 2;
-const paddingStyle = ({ size, isIconOnly, padding }) => {
-  if (padding) {
+const paddingStyle = ({ size, isIconOnly, paddingX }) => {
+  if (paddingX) {
     return css`
-      padding: ${padding};
+      padding: 0 ${paddingX};
     `;
   }
 

@@ -353,5 +353,5 @@ storiesOf("Button", module)
   )
   .add(
     "Custom padding",
-    withInfo()(() => <Button padding="0 8px">Custom padding</Button>)
+    withInfo()(() => <Button paddingX="48px">Custom padding X</Button>)
   );

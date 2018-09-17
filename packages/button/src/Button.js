@@ -70,7 +70,7 @@ Button.propTypes = {
   fluid: PropTypes.bool,
   loading: PropTypes.bool,
   boxShadow: PropTypes.string,
-  padding: PropTypes.string,
+  paddingX: PropTypes.string,
   ...disabledTooltipProps
   //... and all properties accepted by the html button
 };
