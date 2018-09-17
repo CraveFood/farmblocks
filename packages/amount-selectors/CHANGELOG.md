@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.14"></a>
+## [1.0.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@1.0.13...@crave/farmblocks-amount-selectors@1.0.14) (2018-09-17)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-amount-selectors
+
 <a name="1.0.13"></a>
 ## [1.0.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@1.0.12...@crave/farmblocks-amount-selectors@1.0.13) (2018-09-14)
 
