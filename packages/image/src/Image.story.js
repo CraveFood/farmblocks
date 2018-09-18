@@ -7,8 +7,7 @@ import fitModes from "./constants/fitModes";
 import Image from ".";
 import { withInfo } from "@storybook/addon-info";
 
-const imgSrc =
-  "https://sourcewhatsgood.com/assets/images/utility_images/gallery-third-about-a518a29f64.jpg";
+const imgSrc = "https://picsum.photos/512";
 
 storiesOf("Image", module)
   .add("default", withInfo()(() => <Image src={imgSrc} />))
