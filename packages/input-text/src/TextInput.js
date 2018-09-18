@@ -16,14 +16,14 @@ const MaskedInput = EnhancedInput(ReactInputMask);
 
 const Container = styled.div`
   font-family: Lato, sans-serif;
-  margin-bottom: 24px;
+  margin: ${({ margin }) => margin};
 `;
 
-const TextInput = props => {
+const TextInput = ({ margin, ...props }) => {
   const Input = props.mask ? MaskedInput : RegularInput;
 
   return (
-    <Container>
+    <Container margin={margin}>
       <Input {...props} />
     </Container>
   );
@@ -37,12 +37,14 @@ TextInput.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
-  mask: PropTypes.string
+  mask: PropTypes.string,
+  margin: PropTypes.string
   // and any other properties to forward to the html input element...
 };
 
 TextInput.defaultProps = {
-  type: "text"
+  type: "text",
+  margin: "0 0 24px 0"
 };
 
 export default TextInput;
