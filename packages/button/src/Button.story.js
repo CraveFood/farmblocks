@@ -346,4 +346,12 @@ storiesOf("Button", module)
         <Button icon="wg-add" size={buttonSizes.MEDIUM} />
       </div>
     ))
+  )
+  .add(
+    "Custom box-shadow",
+    withInfo()(() => <Button boxShadow="none">Custom box-shadow</Button>)
+  )
+  .add(
+    "Custom padding",
+    withInfo()(() => <Button paddingX="48px">Custom padding X</Button>)
   );

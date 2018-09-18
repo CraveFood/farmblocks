@@ -69,6 +69,8 @@ Button.propTypes = {
   type: PropTypes.oneOf(Object.keys(buttonTypes)),
   fluid: PropTypes.bool,
   loading: PropTypes.bool,
+  boxShadow: PropTypes.string,
+  paddingX: PropTypes.string,
   ...disabledTooltipProps
   //... and all properties accepted by the html button
 };
