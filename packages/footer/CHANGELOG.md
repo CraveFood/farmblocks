@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.41"></a>
+## [1.2.41](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.40...@crave/farmblocks-footer@1.2.41) (2018-09-18)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-footer
+
 <a name="1.2.40"></a>
 ## [1.2.40](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.39...@crave/farmblocks-footer@1.2.40) (2018-09-17)
 
