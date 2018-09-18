@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.0.5...@crave/farmblocks-input-text@3.1.0) (2018-09-18)
+
+
+### Features
+
+* **input-text:** added margin property ([d4115a2](https://github.com/CraveFood/farmblocks/commit/d4115a2)), closes [#542](https://github.com/CraveFood/farmblocks/issues/542)
+
+
+
+
 <a name="3.0.5"></a>
 ## [3.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.0.4...@crave/farmblocks-input-text@3.0.5) (2018-09-17)
 
