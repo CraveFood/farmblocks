@@ -226,4 +226,5 @@ storiesOf("Text Input", module)
     withInfo()(() => (
       <TextInput type="search" onChange={action("input changed")} />
     ))
-  );
+  )
+  .add("Custom margin of 50px", withInfo()(() => <TextInput margin="50px" />));
