@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.1.0"></a>
+# 5.1.0 (2018-09-18)
+
+
+### Features
+
+* **Button:** added boxShadow property ([5060936](https://github.com/CraveFood/farmblocks/commit/5060936))
+* **Button:** added padding property ([320c243](https://github.com/CraveFood/farmblocks/commit/320c243))
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@4.0.6...@crave/farmblocks-button@5.0.0) (2018-08-13)
 
