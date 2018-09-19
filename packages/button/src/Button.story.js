@@ -354,4 +354,20 @@ storiesOf("Button", module)
   .add(
     "Custom padding",
     withInfo()(() => <Button paddingX="48px">Custom padding X</Button>)
+  )
+  .add(
+    "Custom font-weight, text color and font-size",
+    withInfo()(() => (
+      <Button fontSize="14px" fontWeight="normal" textColor="purple">
+        Custom text properties
+      </Button>
+    ))
+  )
+  .add(
+    "Custom font-weight, text color and font-size - activated",
+    withInfo()(() => (
+      <Button fontSize="14px" fontWeight="normal" textColor="purple" activated>
+        Custom text properties
+      </Button>
+    ))
   );
