@@ -31,17 +31,20 @@ Output:
 
 ## Properties
 
-| propery         | type     | description                                    | required | default |
-| --------------- | -------- | ---------------------------------------------- | -------- | ------- |
-| triggerLabel    | string   | text to be used as children on Popover trigger | Yes      |         |
-| formTitle       | string   | title to be used on FormWrapper                |          |         |
-| formContent     | node     | children to be used on FormWrapper             |          |         |
-| formLoading     | bool     | loading to be used on FormWrapper              |          |         |
-| formSaveLabel   | string   | saveLabel to be used on FormWrapper            |          | Filter  |
-| onFormSaveClick | function | onSave to be used on FormWrapper               |          |         |
-| align           | string   | Popover align                                  |          |         |
-| dismissOnSave   | bool     | automatically dismiss Popover on save event    |          |         |
-| hasValue        | bool     | changes style of trigger popover               |          |         |
+| propery           | type     | description                                    | required | default                        |
+| ----------------- | -------- | ---------------------------------------------- | -------- | ------------------------------ |
+| triggerLabel      | string   | text to be used as children on Popover trigger | Yes      |                                |
+| triggerFontSize   | string   | font-size of Popover trigger                   |          | 14px                           |
+| triggerTextColor  | string   | text color of Popover trigger                  |          | #2f313a                        |
+| triggerFontWeight | string   |                                                | number   | font weight of Popover trigger |  | normal |
+| formTitle         | string   | title to be used on FormWrapper                |          |                                |
+| formContent       | node     | children to be used on FormWrapper             |          |                                |
+| formLoading       | bool     | loading to be used on FormWrapper              |          |                                |
+| formSaveLabel     | string   | saveLabel to be used on FormWrapper            |          | Filter                         |
+| onFormSaveClick   | function | onSave to be used on FormWrapper               |          |                                |
+| align             | string   | Popover align                                  |          |                                |
+| dismissOnSave     | bool     | automatically dismiss Popover on save event    |          |                                |
+| hasValue          | bool     | changes style of trigger popover               |          |                                |
 
 ## License
 
