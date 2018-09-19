@@ -95,6 +95,7 @@ const Wrapper = styled.div`
       height: ${ifSmall("30", "46")}px;
       padding: 0 ${ifSmall("8", "16")}px;
 
+      min-width: 0;
       border: 0;
       flex: 1;
       outline: none;
@@ -171,7 +172,6 @@ const Wrapper = styled.div`
 
   input[type="number"] {
     -moz-appearance: textfield;
-    min-width: 0; /* firefox */
   }
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
