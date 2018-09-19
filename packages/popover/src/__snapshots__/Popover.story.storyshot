@@ -285,3 +285,29 @@ exports[`Storyshots Popover Dismissable 1`] = `
   />
 </div>
 `;
+
+exports[`Storyshots Popover Nested popover 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+  >
+    <button>
+      hit me
+    </button>
+  </div>
+  <div
+    className="c1"
+  />
+</div>
+`;
