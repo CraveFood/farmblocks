@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@0.1.6...@crave/farmblocks-form-wrapper@0.1.7) (2018-09-19)
+
+
+### Bug Fixes
+
+* updated styled-components to 3.4.9 peer-dependency on all packages ([c648df4](https://github.com/CraveFood/farmblocks/commit/c648df4))
+
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@0.1.5...@crave/farmblocks-form-wrapper@0.1.6) (2018-09-18)
 

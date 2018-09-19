@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@2.0.1...@crave/farmblocks-carousel@2.0.2) (2018-09-19)
+
+
+### Bug Fixes
+
+* updated styled-components to 3.4.9 peer-dependency on all packages ([c648df4](https://github.com/CraveFood/farmblocks/commit/c648df4))
+
+
+
+
 <a name="2.0.1"></a>
 ## 2.0.1 (2018-09-18)
 

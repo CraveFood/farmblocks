@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.5"></a>
+## [0.6.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.6.4...@crave/farmblocks-card@0.6.5) (2018-09-19)
+
+
+### Bug Fixes
+
+* updated styled-components to 3.4.9 peer-dependency on all packages ([c648df4](https://github.com/CraveFood/farmblocks/commit/c648df4))
+
+
+
+
 <a name="0.6.4"></a>
 ## [0.6.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@0.6.3...@crave/farmblocks-card@0.6.4) (2018-09-18)
 

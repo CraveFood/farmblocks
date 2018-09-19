@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.20"></a>
+## [1.0.20](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@1.0.19...@crave/farmblocks-amount-selectors@1.0.20) (2018-09-19)
+
+
+### Bug Fixes
+
+* updated styled-components to 3.4.9 peer-dependency on all packages ([c648df4](https://github.com/CraveFood/farmblocks/commit/c648df4))
+
+
+
+
 <a name="1.0.19"></a>
 ## [1.0.19](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@1.0.18...@crave/farmblocks-amount-selectors@1.0.19) (2018-09-18)
 

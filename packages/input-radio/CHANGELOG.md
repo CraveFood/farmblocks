@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.1"></a>
+## 2.0.1 (2018-09-19)
+
+
+### Bug Fixes
+
+* updated styled-components to 3.4.9 peer-dependency on all packages ([c648df4](https://github.com/CraveFood/farmblocks/commit/c648df4))
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@1.0.0...@crave/farmblocks-input-radio@2.0.0) (2018-08-13)
 

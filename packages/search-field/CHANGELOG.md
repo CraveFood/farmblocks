@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.25"></a>
+## [1.1.25](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.24...@crave/farmblocks-search-field@1.1.25) (2018-09-19)
+
+
+### Bug Fixes
+
+* updated styled-components to 3.4.9 peer-dependency on all packages ([c648df4](https://github.com/CraveFood/farmblocks/commit/c648df4))
+
+
+
+
 <a name="1.1.24"></a>
 ## [1.1.24](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.23...@crave/farmblocks-search-field@1.1.24) (2018-09-18)
 
