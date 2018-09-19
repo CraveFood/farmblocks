@@ -68,4 +68,23 @@ storiesOf("Popover", module)
         padding="50px"
       />
     ))
+  )
+  .add(
+    "Nested popover",
+    withInfo()(() => (
+      <Popover
+        trigger={<button>hit me</button>}
+        content={dismiss => (
+          <div style={{ display: "flex" }}>
+            <button onClick={dismiss}>dismiss foo</button>
+            <Popover
+              trigger={<button>other popover</button>}
+              content={dismiss => (
+                <button onClick={dismiss}>dismiss bar</button>
+              )}
+            />
+          </div>
+        )}
+      />
+    ))
   );
