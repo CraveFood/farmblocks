@@ -105,4 +105,50 @@ describe("Popover", () => {
       expect(popoverInstance.state).toEqual({ isVisible: true });
     });
   });
+
+  describe("add/remove event listener", () => {
+    let addEventListenerMock, removeEventListenerMock;
+    beforeEach(() => {
+      addEventListenerMock = jest.spyOn(document, "addEventListener");
+      removeEventListenerMock = jest.spyOn(document, "removeEventListener");
+    });
+    afterEach(() => {
+      addEventListenerMock.mockRestore();
+      removeEventListenerMock.mockRestore();
+    });
+
+    it("should add eventListener on component did mount", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<div>trigger</div>}
+          content={() => <div>content</div>}
+        />
+      );
+
+      const { handleOuterClick } = wrapper.instance();
+
+      expect(addEventListenerMock).toBeCalledWith("click", handleOuterClick, {
+        capture: true
+      });
+    });
+
+    it("should remove eventListener on component will unmount", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<div>trigger</div>}
+          content={() => <div>content</div>}
+        />
+      );
+
+      const { handleOuterClick } = wrapper.instance();
+
+      wrapper.unmount();
+
+      expect(removeEventListenerMock).toBeCalledWith(
+        "click",
+        handleOuterClick,
+        { capture: true }
+      );
+    });
+  });
 });

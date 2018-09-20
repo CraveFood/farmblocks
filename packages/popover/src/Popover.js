@@ -14,11 +14,15 @@ class Popover extends React.Component {
   };
 
   componentDidMount() {
-    document.addEventListener("click", this.handleOuterClick);
+    document.addEventListener("click", this.handleOuterClick, {
+      capture: true
+    });
   }
 
   componentWillUnmount() {
-    document.removeEventListener("click", this.handleOuterClick);
+    document.removeEventListener("click", this.handleOuterClick, {
+      capture: true
+    });
   }
 
   handleOuterClick = event => {
