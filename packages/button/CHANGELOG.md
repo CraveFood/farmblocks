@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@5.1.1...@crave/farmblocks-button@5.2.0) (2018-09-20)
+
+
+### Features
+
+* **Button:** export colorTypes file ([4606956](https://github.com/CraveFood/farmblocks/commit/4606956)), closes [#555](https://github.com/CraveFood/farmblocks/issues/555)
+
+
+
+
 <a name="5.1.1"></a>
 ## [5.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@5.1.0...@crave/farmblocks-button@5.1.1) (2018-09-19)
 
