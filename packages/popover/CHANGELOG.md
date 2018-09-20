@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.8"></a>
+## [0.3.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.3.7...@crave/farmblocks-popover@0.3.8) (2018-09-20)
+
+
+### Bug Fixes
+
+* **Popover:** use capture=true on addEventListener ([ec0e2e9](https://github.com/CraveFood/farmblocks/commit/ec0e2e9)), closes [#558](https://github.com/CraveFood/farmblocks/issues/558)
+
+
+
+
 <a name="0.3.7"></a>
 ## [0.3.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.3.6...@crave/farmblocks-popover@0.3.7) (2018-09-19)
 
