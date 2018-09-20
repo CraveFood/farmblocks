@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.3.0"></a>
+# [5.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@5.2.0...@crave/farmblocks-button@5.3.0) (2018-09-20)
+
+
+### Features
+
+* **Button:** added fontSize, fontWeight and textColor properties ([c55335e](https://github.com/CraveFood/farmblocks/commit/c55335e)), closes [#550](https://github.com/CraveFood/farmblocks/issues/550)
+
+
+
+
 <a name="5.2.0"></a>
 # [5.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@5.1.1...@crave/farmblocks-button@5.2.0) (2018-09-20)
 
