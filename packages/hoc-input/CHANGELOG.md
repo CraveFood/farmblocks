@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.3"></a>
+## [4.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.2...@crave/farmblocks-hoc-input@4.1.3) (2018-09-20)
+
+
+### Bug Fixes
+
+* **hoc-input:** override browser default min-width ([2f365f4](https://github.com/CraveFood/farmblocks/commit/2f365f4)), closes [#554](https://github.com/CraveFood/farmblocks/issues/554)
+
+
+
+
 <a name="4.1.2"></a>
 ## [4.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.1...@crave/farmblocks-hoc-input@4.1.2) (2018-09-19)
 
