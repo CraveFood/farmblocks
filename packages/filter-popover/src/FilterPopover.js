@@ -2,6 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Button from "@crave/farmblocks-button";
 import Popover from "@crave/farmblocks-popover";
+import { colors } from "@crave/farmblocks-theme";
 import FormWrapper from "@crave/farmblocks-form-wrapper";
 
 const FilterPopover = props => {
@@ -15,6 +16,9 @@ const FilterPopover = props => {
           boxShadow="none"
           paddingX="8px"
           activated={props.hasValue}
+          textColor={props.triggerTextColor}
+          fontSize={props.triggerFontSize}
+          fontWeight={props.triggerFontWeight}
         >
           {props.triggerLabel}
 
@@ -44,11 +48,17 @@ const FilterPopover = props => {
 };
 
 FilterPopover.defaultProps = {
-  formSaveLabel: "Filter"
+  formSaveLabel: "Filter",
+  triggerFontSize: "14px",
+  triggerTextColor: colors.CARBON,
+  triggerFontWeight: "normal"
 };
 
 FilterPopover.propTypes = {
   triggerLabel: PropTypes.string.isRequired,
+  triggerFontSize: PropTypes.string,
+  triggerTextColor: PropTypes.string,
+  triggerFontWeight: PropTypes.string,
   formTitle: PropTypes.string,
   formContent: PropTypes.node,
   formLoading: PropTypes.bool,

@@ -29,7 +29,7 @@ const Button = styled.button`
   border-radius: 4px;
   box-shadow: ${props => props.boxShadow || "0 2px 2px 0 rgba(0, 0, 0, 0.16)"};
 
-  color: white;
+  color: ${({ textColor }) => (textColor ? textColor : "white")};
 
   line-height: ${lineHeight}px;
   font-size: 16px;
@@ -67,8 +67,12 @@ const Button = styled.button`
   width: ${props => props.fluid && "100%"};
 
   ${loadingStyle};
+
   ${typeStyle};
   ${paddingStyle};
+
+  font-size: ${({ fontSize }) => fontSize && fontSize};
+  font-weight: ${({ fontWeight }) => fontWeight && fontWeight};
 
   &:disabled,
   &:disabled .icon,
@@ -98,7 +102,7 @@ function neutralStyle(props) {
   `;
   return css`
     background-color: ${color};
-    color: ${textColor};
+    color: ${props.textColor || textColor};
     > .icon {
       color: ${iconColor};
     }
