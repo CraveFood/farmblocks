@@ -201,7 +201,6 @@ storiesOf("HOC formInput", module)
       </div>
     ))
   )
-
   .add(
     "with prefix and suffix",
     withInfo()(() => (
@@ -236,6 +235,17 @@ storiesOf("HOC formInput", module)
           label="Small"
           fontSize={fontSizes.SMALL}
         />
+      </div>
+    ))
+  )
+  .add(
+    "small container",
+    withInfo()(() => (
+      <div style={{ width: 150 }}>
+        <EnhancedInput type="text" label="Default" />
+        <EnhancedInput type="text" prefix="$" label="Prefix" />
+        <EnhancedInput type="text" suffix="CS" label="Suffix" />
+        <EnhancedInput type="text" prefix="$" suffix="CS" label="Both" />
       </div>
     ))
   );
