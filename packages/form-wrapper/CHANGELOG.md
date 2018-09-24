@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.11"></a>
+## [0.1.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@0.1.10...@crave/farmblocks-form-wrapper@0.1.11) (2018-09-24)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-form-wrapper
+
 <a name="0.1.10"></a>
 ## [0.1.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@0.1.9...@crave/farmblocks-form-wrapper@0.1.10) (2018-09-20)
 
