@@ -2,7 +2,9 @@ import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import { CENTER } from "../constants/alignments";
 
-const Container = styled.div`position: relative;`;
+const Container = styled.div`
+  position: relative;
+`;
 
 const centerAlignment = css`
   left: 50%;
@@ -72,7 +74,7 @@ const StyledTooltip = styled.div`
 
   position: absolute;
   z-index: ${props => props.zIndex};
-  top: 15px;
+  top: ${props => props.top};
   padding: ${props => props.padding || "8px"};
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);

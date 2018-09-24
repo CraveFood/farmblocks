@@ -278,6 +278,78 @@ exports[`Storyshots Tooltip custom padding 1`] = `
 </div>
 `;
 
+exports[`Storyshots Tooltip custom top 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  position: absolute;
+  z-index: 1000;
+  top: 30vh;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c1:after,
+.c1:before {
+  bottom: 100%;
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+<div
+  style={
+    Object {
+      "border": "1px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+    >
+      Left aligned with custom top
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Tooltip isVisible false 1`] = `
 .c0 {
   position: relative;

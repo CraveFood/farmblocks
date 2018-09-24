@@ -60,13 +60,15 @@ Tooltip.propTypes = {
   zIndex: PropTypes.number,
   bondariesSelector: PropTypes.string,
   hideArrow: PropTypes.bool,
-  padding: PropTypes.string
+  padding: PropTypes.string,
+  top: PropTypes.string
 };
 
 Tooltip.defaultProps = {
   isVisible: true,
   align: alignments.LEFT,
-  zIndex: 1000
+  zIndex: 1000,
+  top: "15px"
 };
 
 export default Tooltip;
