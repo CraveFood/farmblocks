@@ -111,4 +111,9 @@ storiesOf("Tooltip", module)
         padding="30px"
       />
     </div>
+  ))
+  .add("custom top", () => (
+    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+      <Tooltip isVisible text="Left aligned with custom top" top="30vh" />
+    </div>
   ));
