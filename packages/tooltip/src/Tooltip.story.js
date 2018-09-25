@@ -174,4 +174,16 @@ storiesOf("Tooltip", module)
         <Tooltip isVisible text="Left aligned with custom top" top="30vh" />
       </div>
     ))
+  )
+  .add(
+    "with content overflow hidden",
+    withInfo()(() => (
+      <div
+        style={{ position: "relative", width: "250px", border: "1px solid" }}
+      >
+        <Tooltip isVisible padding="0" overflow="hidden">
+          <div style={{ background: "aliceblue" }}>It should not overflow</div>
+        </Tooltip>
+      </div>
+    ))
   );
