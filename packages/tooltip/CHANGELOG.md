@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.9.0...@crave/farmblocks-tooltip@0.10.0) (2018-09-25)
+
+
+### Features
+
+* **Tooltip:** added overflow property ([01c3eab](https://github.com/CraveFood/farmblocks/commit/01c3eab)), closes [#564](https://github.com/CraveFood/farmblocks/issues/564)
+
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.8.2...@crave/farmblocks-tooltip@0.9.0) (2018-09-24)
 
