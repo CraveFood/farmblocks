@@ -33,6 +33,7 @@ npm install @crave/farmblocks-popover
 | align    | The popover alignment                                              | oneOf(['left', 'right', 'center', 'auto']) |          | left    |
 | zIndex   | zIndex of popover                                                  | number                                     |          |         |
 | padding  | padding of popover contents                                        | string                                     |          | 4px     |
+| overflow | overflow of popover contents                                       | string                                     |          |         |
 
 ## License
 

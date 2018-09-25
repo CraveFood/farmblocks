@@ -52,6 +52,7 @@ class Popover extends React.Component {
           align={this.props.align}
           zIndex={this.props.zIndex}
           padding={this.props.padding}
+          overflow={this.props.overflow}
         >
           {this.state.isVisible && this.props.content(this.hide)}
         </Tooltip>
@@ -64,7 +65,8 @@ class Popover extends React.Component {
     content: PropTypes.func.isRequired,
     align: PropTypes.oneOf(values(alignments)),
     zIndex: PropTypes.number,
-    padding: PropTypes.string
+    padding: PropTypes.string,
+    overflow: PropTypes.string
   };
 }
 
