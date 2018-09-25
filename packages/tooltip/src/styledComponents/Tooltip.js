@@ -88,6 +88,8 @@ const StyledTooltip = styled.div`
   ${alignX(0)};
 
   ${arrow};
+
+  overflow: ${props => props.overflow};
 `;
 
 export { Container, StyledTooltip };

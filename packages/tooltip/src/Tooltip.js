@@ -61,7 +61,8 @@ Tooltip.propTypes = {
   bondariesSelector: PropTypes.string,
   hideArrow: PropTypes.bool,
   padding: PropTypes.string,
-  top: PropTypes.string
+  top: PropTypes.string,
+  overflow: PropTypes.string
 };
 
 Tooltip.defaultProps = {
