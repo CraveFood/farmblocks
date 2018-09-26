@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.3.3"></a>
+## [5.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@5.3.2...@crave/farmblocks-button@5.3.3) (2018-09-26)
+
+
+### Bug Fixes
+
+* **Button:** fontWeight proptype notation ([bd4aea9](https://github.com/CraveFood/farmblocks/commit/bd4aea9)), closes [#560](https://github.com/CraveFood/farmblocks/issues/560)
+
+
+
+
 <a name="5.3.2"></a>
 ## [5.3.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@5.3.1...@crave/farmblocks-button@5.3.2) (2018-09-25)
 

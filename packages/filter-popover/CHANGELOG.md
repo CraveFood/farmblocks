@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@0.3.4...@crave/farmblocks-filter-popover@0.4.0) (2018-09-26)
+
+
+### Features
+
+* **FilterPopover:** added cancel label and on cancel handler ([de49df4](https://github.com/CraveFood/farmblocks/commit/de49df4)), closes [#567](https://github.com/CraveFood/farmblocks/issues/567)
+
+
+
+
 <a name="0.3.4"></a>
 ## [0.3.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@0.3.3...@crave/farmblocks-filter-popover@0.3.4) (2018-09-25)
 
