@@ -72,7 +72,7 @@ Button.propTypes = {
   boxShadow: PropTypes.string,
   paddingX: PropTypes.string,
   fontSize: PropTypes.string,
-  fontWeight: PropTypes.oneOf([PropTypes.string, PropTypes.number]),
+  fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   textColor: PropTypes.string,
   ...disabledTooltipProps
   //... and all properties accepted by the html button

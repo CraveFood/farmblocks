@@ -31,12 +31,16 @@ const FilterPopover = props => {
       }
       content={dismiss => (
         <FormWrapper
-          onCancel={dismiss}
+          onCancel={e => {
+            dismiss();
+            props.onFormCancelClick && props.onFormCancelClick(e);
+          }}
           onSave={e => {
             props.dismissOnSave && dismiss();
             props.onFormSaveClick(e, dismiss);
           }}
           saveLabel={props.formSaveLabel}
+          cancelLabel={props.formCancelLabel}
           title={props.formTitle}
           loading={props.formLoading}
         >
@@ -63,7 +67,9 @@ FilterPopover.propTypes = {
   formContent: PropTypes.node,
   formLoading: PropTypes.bool,
   formSaveLabel: PropTypes.string,
+  formCancelLabel: PropTypes.string,
   onFormSaveClick: PropTypes.func,
+  onFormCancelClick: PropTypes.func,
   align: PropTypes.string,
   dismissOnSave: PropTypes.bool,
   hasValue: PropTypes.bool
