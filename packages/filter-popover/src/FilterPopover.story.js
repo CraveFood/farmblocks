@@ -38,4 +38,23 @@ storiesOf("Filter Popover", module)
         }
       />
     ))
+  )
+  .add(
+    "With value set and custom Cancel label and handler",
+    withInfo()(() => (
+      <FilterPopover
+        hasValue
+        triggerLabel="Filter"
+        formTitle="Form Title"
+        onFormSaveClick={action("onActionButtonClick")}
+        formCancelLabel="Custom label"
+        onFormCancelClick={action("onFormCancelClick")}
+        formContent={
+          <div>
+            <TextInput label="Product" value="Apple" name="product" />
+            <TextInput label="Owner" />
+          </div>
+        }
+      />
+    ))
   );
