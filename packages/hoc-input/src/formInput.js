@@ -35,7 +35,8 @@ export const formInputProps = {
   moreInfoContent: PropTypes.node,
   moreInfoAlign: PropTypes.oneOf(values(alignments)),
   prefix: PropTypes.string,
-  suffix: PropTypes.string
+  suffix: PropTypes.string,
+  autoControlFocusedStyle: PropTypes.bool
 };
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
@@ -62,6 +63,7 @@ const formInput = WrappedComponent => {
         disableManualReplace,
         moreInfoContent,
         moreInfoAlign,
+        autoControlFocusedStyle,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
@@ -181,6 +183,13 @@ const formInput = WrappedComponent => {
         this.inputRef && this.inputRef.blur();
       }
 
+      if (
+        !this.props.autoControlFocusedStyle &&
+        this.props.focused !== prevProps.focused
+      ) {
+        this.setState({ focused: this.props.focused });
+      }
+
       const nextValue = getValueFromProps(this.props);
       const prevValue = getValueFromProps(prevProps);
       if (nextValue !== prevValue) {
@@ -224,13 +233,21 @@ const formInput = WrappedComponent => {
     };
 
     onFocus = event => {
+      this.props.onFocus(event);
+
+      if (!this.props.autoControlFocusedStyle) {
+        return;
+      }
       this.setState({ focused: true });
-      return this.props.onFocus(event);
     };
 
     onBlur = event => {
+      this.props.onBlur(event);
+
+      if (!this.props.autoControlFocusedStyle) {
+        return;
+      }
       this.setState({ focused: false });
-      return this.props.onBlur(event);
     };
 
     static displayName = wrapDisplayName(WrappedComponent, "formInput");
@@ -252,7 +269,8 @@ const formInput = WrappedComponent => {
       refName: "ref",
       clearable: false,
       clearIcon: "wg-close-int",
-      moreInfoAlign: alignments.LEFT
+      moreInfoAlign: alignments.LEFT,
+      autoControlFocusedStyle: true
     };
   };
 };
