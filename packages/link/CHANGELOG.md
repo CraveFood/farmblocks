@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.4"></a>
+## [3.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@3.1.3...@crave/farmblocks-link@3.1.4) (2018-09-27)
+
+
+### Bug Fixes
+
+* **Link:** pass icons as children of the link ([609d0c5](https://github.com/CraveFood/farmblocks/commit/609d0c5))
+
+
+
+
 <a name="3.1.3"></a>
 ## [3.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@3.1.2...@crave/farmblocks-link@3.1.3) (2018-09-25)
 

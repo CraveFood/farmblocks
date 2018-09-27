@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.6"></a>
+## [4.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.5...@crave/farmblocks-hoc-input@4.1.6) (2018-09-27)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-hoc-input
+
 <a name="4.1.5"></a>
 ## [4.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.4...@crave/farmblocks-hoc-input@4.1.5) (2018-09-25)
 
