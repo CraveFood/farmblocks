@@ -11,11 +11,11 @@ const LinkContainer = styled.div`
 
   position: relative;
 
-  > i.margin-left {
+  i.margin-left {
     margin-left: 8px;
   }
 
-  > i.margin-right {
+  i.margin-right {
     margin-right: 8px;
   }
 
@@ -39,11 +39,16 @@ function textDecoration({ type }) {
       : "underline";
 
   return css`
-    & > a {
+    a {
       text-decoration: none;
 
       &:hover {
         text-decoration: ${underline};
+
+        i {
+          display: inline-block;
+          text-decoration: none;
+        }
       }
     }
   `;

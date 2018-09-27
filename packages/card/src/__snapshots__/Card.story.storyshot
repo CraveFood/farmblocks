@@ -338,20 +338,26 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
   color: #59636f;
 }
 
-.c8 > i.margin-left {
+.c8 i.margin-left {
   margin-left: 8px;
 }
 
-.c8 > i.margin-right {
+.c8 i.margin-right {
   margin-right: 8px;
 }
 
-.c8 > a {
+.c8 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 > a:hover {
+.c8 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

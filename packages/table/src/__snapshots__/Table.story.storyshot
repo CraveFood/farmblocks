@@ -32,22 +32,28 @@ exports[`Storyshots Table/Basic Clickable column titles 1`] = `
   color: #2f313a;
 }
 
-.c2 > i.margin-left {
+.c2 i.margin-left {
   margin-left: 8px;
 }
 
-.c2 > i.margin-right {
+.c2 i.margin-right {
   margin-right: 8px;
 }
 
-.c2 > a {
+.c2 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 > a:hover {
+.c2 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c2 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c2 > a {
@@ -5212,22 +5218,28 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   color: #3498db;
 }
 
-.c9 > i.margin-left {
+.c9 i.margin-left {
   margin-left: 8px;
 }
 
-.c9 > i.margin-right {
+.c9 i.margin-right {
   margin-right: 8px;
 }
 
-.c9 > a {
+.c9 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 > a:hover {
+.c9 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c9 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c9 > a {
@@ -5251,22 +5263,28 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   color: #2f313a;
 }
 
-.c4 > i.margin-left {
+.c4 i.margin-left {
   margin-left: 8px;
 }
 
-.c4 > i.margin-right {
+.c4 i.margin-right {
   margin-right: 8px;
 }
 
-.c4 > a {
+.c4 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4 > a:hover {
+.c4 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c4 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c4 > a {
@@ -5689,12 +5707,12 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
               size={16}
               type="#3498db"
             >
-              <i
-                className="wg-place margin-right }"
-              />
               <a
                 href="http://example.com"
               >
+                <i
+                  className="wg-place margin-right }"
+                />
                 7 Carroll Avenue, Newport, RI 02840
               </a>
             </div>
@@ -5884,12 +5902,12 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
               size={16}
               type="#3498db"
             >
-              <i
-                className="wg-place margin-right }"
-              />
               <a
                 href="http://example.com"
               >
+                <i
+                  className="wg-place margin-right }"
+                />
                 7 Carroll Avenue, Newport, RI 02840
               </a>
             </div>
@@ -6038,22 +6056,28 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
   color: #3498db;
 }
 
-.c7 > i.margin-left {
+.c7 i.margin-left {
   margin-left: 8px;
 }
 
-.c7 > i.margin-right {
+.c7 i.margin-right {
   margin-right: 8px;
 }
 
-.c7 > a {
+.c7 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 > a:hover {
+.c7 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c7 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c7 > a {
@@ -6372,12 +6396,12 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
               size={16}
               type="#3498db"
             >
-              <i
-                className="wg-place margin-right }"
-              />
               <a
                 href="http://example.com"
               >
+                <i
+                  className="wg-place margin-right }"
+                />
                 7 Carroll Avenue, Newport, RI 02840
               </a>
             </div>
@@ -6483,12 +6507,12 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
               size={16}
               type="#3498db"
             >
-              <i
-                className="wg-place margin-right }"
-              />
               <a
                 href="http://example.com"
               >
+                <i
+                  className="wg-place margin-right }"
+                />
                 7 Carroll Avenue, Newport, RI 02840
               </a>
             </div>

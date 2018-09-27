@@ -14,22 +14,28 @@ exports[`Storyshots Link/Normal Default - left aligned 1`] = `
   color: #2f313a;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 > a {
@@ -68,22 +74,28 @@ exports[`Storyshots Link/Normal disabled 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 > a {
@@ -122,22 +134,28 @@ exports[`Storyshots Link/Normal external 1`] = `
   color: #2f313a;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 > a {
@@ -158,10 +176,10 @@ exports[`Storyshots Link/Normal external 1`] = `
     href="#"
   >
     Awesome Link
+    <i
+      className="wg-external-link margin-left"
+    />
   </a>
-  <i
-    className="wg-external-link margin-left"
-  />
 </div>
 `;
 
@@ -179,22 +197,28 @@ exports[`Storyshots Link/Normal right aligned 1`] = `
   color: #2f313a;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 > a {
@@ -242,22 +266,28 @@ exports[`Storyshots Link/Normal with left icon 1`] = `
   color: #2f313a;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 > a {
@@ -274,12 +304,12 @@ exports[`Storyshots Link/Normal with left icon 1`] = `
   size={16}
   type="#2f313a"
 >
-  <i
-    className="wg-place margin-right }"
-  />
   <a
     href="#"
   >
+    <i
+      className="wg-place margin-right }"
+    />
     Awesome Link
   </a>
 </div>
@@ -299,22 +329,28 @@ exports[`Storyshots Link/Normal with right icon 1`] = `
   color: #2f313a;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0 > a {
@@ -335,9 +371,9 @@ exports[`Storyshots Link/Normal with right icon 1`] = `
     href="#"
   >
     Awesome Link
+    <i
+      className="wg-place margin-left }"
+    />
   </a>
-  <i
-    className="wg-place margin-left }"
-  />
 </div>
 `;
