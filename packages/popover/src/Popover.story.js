@@ -1,5 +1,5 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, action } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import Link from "@crave/farmblocks-link";
 import Text from "@crave/farmblocks-text";
@@ -13,6 +13,7 @@ storiesOf("Popover", module)
       <Popover
         trigger={<Link>Trigger</Link>}
         content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
       />
     ))
   )
@@ -24,6 +25,7 @@ storiesOf("Popover", module)
           trigger={<button>Trigger</button>}
           content={() => <Text>Popover content</Text>}
           align="right"
+          onOutsideClick={action("onOutsideClick")}
         />
       </div>
     ))
@@ -36,6 +38,7 @@ storiesOf("Popover", module)
           trigger={<Link>Trigger</Link>}
           content={() => <Text>Centered Popover</Text>}
           align="center"
+          onOutsideClick={action("onOutsideClick")}
         />
       </div>
     ))
@@ -45,6 +48,7 @@ storiesOf("Popover", module)
     withInfo()(() => (
       <Popover
         trigger={<Link>Trigger</Link>}
+        onOutsideClick={action("onOutsideClick")}
         content={dismiss => (
           <div>
             <Text>Popover content</Text>
@@ -59,6 +63,7 @@ storiesOf("Popover", module)
     withInfo()(() => (
       <Popover
         trigger={<button>Trigger</button>}
+        onOutsideClick={action("onOutsideClick")}
         content={dismiss => (
           <div>
             <Text>Popover content</Text>
@@ -74,6 +79,7 @@ storiesOf("Popover", module)
     withInfo()(() => (
       <Popover
         trigger={<button>hit me</button>}
+        onOutsideClick={action("onOutsideClick")}
         content={dismiss => (
           <div style={{ display: "flex" }}>
             <button onClick={dismiss}>dismiss foo</button>
