@@ -27,14 +27,16 @@ const Link = props => {
     className
   };
 
-  const componentType = linkProps.href && !disabled ? "a" : "span";
+  const LinkComponent = linkProps.href && !disabled ? "a" : "span";
 
   return (
     <StyledLink {...containerProps}>
-      {leftIcon && <i className={`${leftIcon} margin-right }`} />}
-      {React.createElement(componentType, { ...linkProps }, children)}
-      {rightIcon && <i className={`${rightIcon} margin-left }`} />}
-      {external && <i className="wg-external-link margin-left" />}
+      <LinkComponent {...linkProps}>
+        {leftIcon && <i className={`${leftIcon} margin-right }`} />}
+        {children}
+        {rightIcon && <i className={`${rightIcon} margin-left }`} />}
+        {external && <i className="wg-external-link margin-left" />}
+      </LinkComponent>
     </StyledLink>
   );
 };
