@@ -14,20 +14,26 @@ exports[`Storyshots Link/Neutral Default - left aligned 1`] = `
   color: #59636f;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -68,20 +74,26 @@ exports[`Storyshots Link/Neutral disabled 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -122,20 +134,26 @@ exports[`Storyshots Link/Neutral external 1`] = `
   color: #59636f;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -158,10 +176,10 @@ exports[`Storyshots Link/Neutral external 1`] = `
     href="#"
   >
     Awesome Link
+    <i
+      className="wg-external-link margin-left"
+    />
   </a>
-  <i
-    className="wg-external-link margin-left"
-  />
 </div>
 `;
 
@@ -179,20 +197,26 @@ exports[`Storyshots Link/Neutral right aligned 1`] = `
   color: #59636f;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -242,20 +266,26 @@ exports[`Storyshots Link/Neutral with left icon 1`] = `
   color: #59636f;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -274,12 +304,12 @@ exports[`Storyshots Link/Neutral with left icon 1`] = `
   size={16}
   type="#59636f"
 >
-  <i
-    className="wg-place margin-right }"
-  />
   <a
     href="#"
   >
+    <i
+      className="wg-place margin-right }"
+    />
     Awesome Link
   </a>
 </div>
@@ -299,20 +329,26 @@ exports[`Storyshots Link/Neutral with right icon 1`] = `
   color: #59636f;
 }
 
-.c0 > i.margin-left {
+.c0 i.margin-left {
   margin-left: 8px;
 }
 
-.c0 > i.margin-right {
+.c0 i.margin-right {
   margin-right: 8px;
 }
 
-.c0 > a {
+.c0 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c0 > a:hover {
+.c0 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover i {
+  display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -335,9 +371,9 @@ exports[`Storyshots Link/Neutral with right icon 1`] = `
     href="#"
   >
     Awesome Link
+    <i
+      className="wg-place margin-left }"
+    />
   </a>
-  <i
-    className="wg-place margin-left }"
-  />
 </div>
 `;
