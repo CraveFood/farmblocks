@@ -31,6 +31,7 @@ class Popover extends React.Component {
     }
 
     this.hide();
+    this.props.onOutsideClick && this.props.onOutsideClick(event);
   };
 
   toggle = () => {
@@ -66,7 +67,8 @@ class Popover extends React.Component {
     align: PropTypes.oneOf(values(alignments)),
     zIndex: PropTypes.number,
     padding: PropTypes.string,
-    overflow: PropTypes.string
+    overflow: PropTypes.string,
+    onOutsideClick: PropTypes.func
   };
 }
 

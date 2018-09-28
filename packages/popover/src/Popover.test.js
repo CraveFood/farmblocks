@@ -48,7 +48,7 @@ describe("Popover", () => {
   describe("handleOuterClick", () => {
     const originalEventListener = document.addEventListener;
 
-    let wrapper, popoverInstance, map;
+    let wrapper, popoverInstance, map, onOutsideClickSpy;
 
     class PopoverComponent extends React.Component {
       render() {
@@ -60,6 +60,7 @@ describe("Popover", () => {
               content={() => (
                 <span ref={node => (this.inner = node)}>content</span>
               )}
+              {...this.props}
             />
           </div>
         );
@@ -72,6 +73,8 @@ describe("Popover", () => {
         map[event] = cb;
       });
 
+      onOutsideClickSpy = jest.fn();
+
       wrapper = mount(<PopoverComponent />);
 
       // open popover
@@ -81,6 +84,7 @@ describe("Popover", () => {
 
     afterEach(() => {
       document.addEventListener = originalEventListener;
+      onOutsideClickSpy.mockRestore();
     });
 
     test("should dismiss popover on outer click", () => {
@@ -92,6 +96,25 @@ describe("Popover", () => {
         target: wrapper.instance().outer
       });
       expect(popoverInstance.state).toEqual({ isVisible: false });
+    });
+
+    test("should dismiss popover on outer click and call callback function", () => {
+      wrapper = mount(<PopoverComponent onOutsideClick={onOutsideClickSpy} />);
+
+      // open popover
+      popoverInstance = wrapper.find(Popover).instance();
+      wrapper.find("#trigger").simulate("click");
+
+      // makes sure that popover is open
+      expect(popoverInstance.state).toEqual({ isVisible: true });
+
+      // simulates click outside
+      const event = {
+        target: wrapper.instance().outer
+      };
+      map.click(event);
+      expect(popoverInstance.state).toEqual({ isVisible: false });
+      expect(onOutsideClickSpy).toBeCalledWith(event);
     });
 
     test("should do nothing on inner click", () => {

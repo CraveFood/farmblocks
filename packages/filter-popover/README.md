@@ -31,22 +31,23 @@ Output:
 
 ## Properties
 
-| propery           | type     | description                                    | required | default |
-| ----------------- | -------- | ---------------------------------------------- | -------- | ------- |
-| triggerLabel      | string   | text to be used as children on Popover trigger | Yes      |         |
-| triggerFontSize   | string   | font-size of Popover trigger                   |          | 14px    |
-| triggerTextColor  | string   | text color of Popover trigger                  |          | #2f313a |
-| triggerFontWeight | string   | font weight of Popover trigger                 | number   | string  | normal |
-| formTitle         | string   | title to be used on FormWrapper                |          |         |
-| formContent       | node     | children to be used on FormWrapper             |          |         |
-| formLoading       | bool     | loading to be used on FormWrapper              |          |         |
-| formSaveLabel     | string   | saveLabel to be used on FormWrapper            |          | Filter  |
-| formCancelLabel   | string   | cancelLabel to be used on FormWrapper          |          | Cancel  |
-| onFormSaveClick   | function | onSave to be used on FormWrapper               |          |         |
-| onFormCancelClick | function | function to be called on click on cancel link  |          |         |
-| align             | string   | Popover align                                  |          |         |
-| dismissOnSave     | bool     | automatically dismiss Popover on save event    |          |         |
-| hasValue          | bool     | changes style of trigger popover               |          |         |
+| propery           | type             | description                                    | required | default |
+| ----------------- | ---------------- | ---------------------------------------------- | -------- | ------- |
+| triggerLabel      | string           | text to be used as children on Popover trigger | Yes      |         |
+| triggerFontSize   | string           | font-size of Popover trigger                   |          | 14px    |
+| triggerTextColor  | string           | text color of Popover trigger                  |          | #2f313a |
+| triggerFontWeight | number or string | font weight of Popover trigger                 |          | normal  |
+| formTitle         | string           | title to be used on FormWrapper                |          |         |
+| formContent       | node             | children to be used on FormWrapper             |          |         |
+| formLoading       | bool             | loading to be used on FormWrapper              |          |         |
+| formSaveLabel     | string           | saveLabel to be used on FormWrapper            |          | Filter  |
+| formCancelLabel   | string           | cancelLabel to be used on FormWrapper          |          | Cancel  |
+| onFormSaveClick   | function         | onSave to be used on FormWrapper               |          |         |
+| onFormCancelClick | function         | function to be called on click on cancel link  |          |         |
+| align             | string           | Popover align                                  |          |         |
+| dismissOnSave     | bool             | automatically dismiss Popover on save event    |          |         |
+| hasValue          | bool             | changes style of trigger popover               |          |         |
+| onOutsideClick    | function         | function to be called on outside click         |          |         |
 
 ## License
 
