@@ -248,4 +248,27 @@ storiesOf("HOC formInput", module)
         <EnhancedInput type="text" prefix="$" suffix="CS" label="Both" />
       </div>
     ))
+  )
+  .add(
+    "autoControlFocusedStyle = false",
+    withInfo()(() => (
+      <div>
+        <EnhancedInput
+          onFocus={action("onFocus - always focused")}
+          onBlur={action("onBlur - always focused")}
+          label="Always focused"
+          type="text"
+          focused
+          autoControlFocusedStyle={false}
+        />
+
+        <EnhancedInput
+          onFocus={action("onFocus - never focused")}
+          onBlur={action("onBlur - never focused")}
+          label="Never focused"
+          type="text"
+          autoControlFocusedStyle={false}
+        />
+      </div>
+    ))
   );

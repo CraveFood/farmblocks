@@ -49,6 +49,17 @@ describe("formInput", function() {
       component.setProps({ input: { value: newValue } });
       expect(setStateSpy).toHaveBeenCalledWith({ value: newValue });
     });
+
+    test("changing the focused property with autoControlFocusedStyle = false should update state", () => {
+      component = mount(<EnhancedInput autoControlFocusedStyle={false} />);
+      expect(component.state().focused).toBe(false);
+
+      component.setProps({ focused: true });
+      expect(component.state().focused).toBe(true);
+
+      component.setProps({ focused: false });
+      expect(component.state().focused).toBe(false);
+    });
   });
 
   describe("(with value focused)", () => {
@@ -103,53 +114,115 @@ describe("formInput", function() {
     expect(onChangeMock).toBeCalled();
   });
 
-  test("onFocus property is called after input gains focus", function() {
-    const onFocusMock = jest.fn();
-    const component = mount(<EnhancedInput onFocus={onFocusMock} />);
-    component.find("input").simulate("focus");
-    expect(onFocusMock).toBeCalled();
-  });
-  test("onFocus event change focused", function() {
-    const component = mount(<EnhancedInput />);
-    component.find("input").simulate("focus");
-    const newState = component.state();
-    expect(newState.focused).toBe(true);
-  });
+  describe("onFocus and onBlur", () => {
+    let onFocusMock, onBlurMock;
 
-  test("onBlur property is called after input looses focus", function() {
-    const onBlurMock = jest.fn();
-    const component = mount(<EnhancedInput onBlur={onBlurMock} />);
-    component.find("input").simulate("blur");
-    expect(onBlurMock).toBeCalled();
-  });
+    beforeEach(() => {
+      onFocusMock = jest.fn();
+      onBlurMock = jest.fn();
+    });
 
-  test("onBlur event change focused", function() {
-    const component = mount(<EnhancedInput />);
-    component.find("input").simulate("blur");
-    const newState = component.state();
-    expect(newState.focused).toBe(false);
-  });
+    afterEach(() => {
+      onFocusMock.mockRestore();
+      onBlurMock.mockRestore();
+    });
 
-  test("default onFocus function returns null", function() {
-    const component = renderer.create(<EnhancedInput />);
-    const tree = component.toTree();
-    expect(tree.props.onFocus()).toBeNull();
-  });
+    test("default onFocus function returns null", function() {
+      const component = renderer.create(<EnhancedInput />);
 
-  test("default onBlur function returns null", function() {
-    const component = renderer.create(<EnhancedInput />);
-    const tree = component.toTree();
-    expect(tree.props.onBlur()).toBeNull();
-  });
+      const tree = component.toTree();
 
-  test("get focus on wrapper click", function() {
-    const focusMock = jest.fn();
-    const component = mount(<EnhancedInput />);
-    const wrapper = component.find(Wrapper);
-    const input = component.find("input").instance();
-    input.focus = focusMock;
-    wrapper.simulate("click");
-    expect(focusMock).toHaveBeenCalledTimes(1);
+      expect(tree.props.onFocus()).toBeNull();
+    });
+
+    test("default onBlur function returns null", function() {
+      const component = renderer.create(<EnhancedInput />);
+
+      const tree = component.toTree();
+
+      expect(tree.props.onBlur()).toBeNull();
+    });
+
+    describe("autoControlFocusedStyle = true", () => {
+      test("onFocus property is called after input gains focus", function() {
+        const component = mount(<EnhancedInput onFocus={onFocusMock} />);
+
+        expect(component.state().focused).toBe(false);
+
+        component.find("input").simulate("focus");
+
+        expect(onFocusMock).toBeCalled();
+        expect(component.state().focused).toBe(true);
+      });
+
+      test("onFocus event change focused", function() {
+        const component = mount(<EnhancedInput />);
+
+        component.find("input").simulate("focus");
+
+        expect(component.state().focused).toBe(true);
+      });
+
+      test("onBlur property is called after input looses focus", function() {
+        const component = mount(<EnhancedInput onBlur={onBlurMock} focused />);
+
+        expect(component.state().focused).toBe(true);
+
+        component.find("input").simulate("blur");
+
+        expect(onBlurMock).toBeCalled();
+        expect(component.state().focused).toBe(false);
+      });
+
+      test("onBlur event change focused", function() {
+        const component = mount(<EnhancedInput />);
+
+        component.find("input").simulate("blur");
+
+        expect(component.state().focused).toBe(false);
+      });
+
+      test("get focus on wrapper click", function() {
+        const component = mount(<EnhancedInput />);
+
+        const wrapper = component.find(Wrapper);
+        const input = component.find("input").instance();
+
+        input.focus = onFocusMock;
+
+        wrapper.simulate("click");
+        expect(onFocusMock).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe("autoControlFocusedStyle = false", () => {
+      test("onFocus should be called and focused state should remain false", function() {
+        const component = mount(
+          <EnhancedInput
+            onFocus={onFocusMock}
+            autoControlFocusedStyle={false}
+          />
+        );
+        component.find("input").simulate("focus");
+
+        expect(onFocusMock).toBeCalled();
+        expect(component.state().focused).toBe(false);
+      });
+
+      test("onBlur should be called and focused state should remain true", function() {
+        const component = mount(
+          <EnhancedInput
+            onBlur={onBlurMock}
+            focused
+            autoControlFocusedStyle={false}
+          />
+        );
+        component.find("input").simulate("blur");
+
+        expect(onBlurMock).toBeCalled();
+        expect(component.state().focused).toBe(true);
+      });
+    });
   });
 
   test("no value when clear button is clicked", function() {
