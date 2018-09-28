@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.6...@crave/farmblocks-hoc-input@4.2.0) (2018-09-28)
+
+
+### Features
+
+* **formInput:** added autoControlFocusedStyle property ([4a53a6b](https://github.com/CraveFood/farmblocks/commit/4a53a6b)), closes [#573](https://github.com/CraveFood/farmblocks/issues/573)
+
+
+
+
 <a name="4.1.6"></a>
 ## [4.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.5...@crave/farmblocks-hoc-input@4.1.6) (2018-09-27)
 
