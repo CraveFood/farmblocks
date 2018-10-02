@@ -14,7 +14,18 @@ const EnhancedInput = compose(withMessages, protectedValue, formInput);
 const RegularInput = EnhancedInput("input");
 const MaskedInput = EnhancedInput(ReactInputMask);
 
-const Container = styled.div`
+export const commonPropTypes = {
+  ...formInputProps,
+  ...withMessagesProps,
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
+  required: PropTypes.bool,
+
+  margin: PropTypes.string
+  // and any other properties to forward to the html input element...
+};
+
+export const Container = styled.div`
   font-family: Lato, sans-serif;
   margin: ${({ margin }) => margin};
 `;
@@ -30,16 +41,9 @@ const TextInput = ({ margin, ...props }) => {
 };
 
 TextInput.propTypes = {
-  ...formInputProps,
-  ...protectedValueProps,
-  ...withMessagesProps,
-
-  type: PropTypes.string,
-  placeholder: PropTypes.string,
-  required: PropTypes.bool,
   mask: PropTypes.string,
-  margin: PropTypes.string
-  // and any other properties to forward to the html input element...
+  ...protectedValueProps,
+  ...commonPropTypes
 };
 
 TextInput.defaultProps = {
