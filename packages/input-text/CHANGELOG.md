@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.1.11...@crave/farmblocks-input-text@3.2.0) (2018-10-03)
+
+
+### Features
+
+* **TextAreaInput:** created component on input-text package ([968ff4c](https://github.com/CraveFood/farmblocks/commit/968ff4c)), closes [#576](https://github.com/CraveFood/farmblocks/issues/576)
+
+
+
+
 <a name="3.1.11"></a>
 ## [3.1.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.1.10...@crave/farmblocks-input-text@3.1.11) (2018-09-28)
 

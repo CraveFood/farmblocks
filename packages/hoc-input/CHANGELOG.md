@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.2.0...@crave/farmblocks-hoc-input@4.3.0) (2018-10-03)
+
+
+### Features
+
+* **formInput:** fixed styles for textarea tag ([eacecd9](https://github.com/CraveFood/farmblocks/commit/eacecd9)), closes [#576](https://github.com/CraveFood/farmblocks/issues/576)
+
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@4.1.6...@crave/farmblocks-hoc-input@4.2.0) (2018-09-28)
 
