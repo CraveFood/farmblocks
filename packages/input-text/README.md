@@ -13,7 +13,7 @@ npm install @crave/farmblocks-input-text
 ```javascript
 import React, { Component } from "react";
 import { render } from "react-dom";
-import TextInput from "@crave/farmblocks-input-text";
+import TextInput, { TextAreaInput } from "@crave/farmblocks-input-text";
 
 const root = document.createElement("div");
 document.body.appendChild(root);
@@ -27,6 +27,7 @@ render(
       type="number"
       placeholder="enter a number"
     />
+    <TextAreaInput label="Text area input" rows="4" />
   </div>,
   root
 );

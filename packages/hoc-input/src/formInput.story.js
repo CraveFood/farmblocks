@@ -8,6 +8,7 @@ import { alignments } from "@crave/farmblocks-tooltip";
 import formInput from ".";
 
 const EnhancedInput = formInput(props => React.createElement("input", props));
+const TextArea = formInput("textArea");
 
 storiesOf("HOC formInput", module)
   .add("html text input", withInfo()(() => <EnhancedInput type="text" />))
@@ -271,4 +272,5 @@ storiesOf("HOC formInput", module)
         />
       </div>
     ))
-  );
+  )
+  .add("html textarea", withInfo()(() => <TextArea rows="4" />));

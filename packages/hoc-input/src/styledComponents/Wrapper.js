@@ -92,9 +92,16 @@ const Wrapper = styled.div`
     }
 
     input {
-      height: ${ifSmall("30", "46")}px;
       padding: 0 ${ifSmall("8", "16")}px;
+      height: ${ifSmall("30", "46")}px;
+    }
 
+    textarea {
+      padding: 16px;
+    }
+
+    input,
+    textarea {
       min-width: 0;
       border: 0;
       flex: 1;

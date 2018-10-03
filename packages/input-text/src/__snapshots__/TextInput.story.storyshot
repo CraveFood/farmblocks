@@ -53,8 +53,16 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -67,38 +75,46 @@ exports[`Storyshots Text Input Built-in constraint validation 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -611,8 +627,16 @@ exports[`Storyshots Text Input Custom margin of 50px 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -625,38 +649,46 @@ exports[`Storyshots Text Input Custom margin of 50px 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -848,8 +880,16 @@ exports[`Storyshots Text Input Default 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -862,38 +902,46 @@ exports[`Storyshots Text Input Default 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -1095,8 +1143,16 @@ exports[`Storyshots Text Input Disabled 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1109,38 +1165,46 @@ exports[`Storyshots Text Input Disabled 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: default;
 }
 
@@ -1342,8 +1406,16 @@ exports[`Storyshots Text Input Focused 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1356,38 +1428,46 @@ exports[`Storyshots Text Input Focused 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -1598,8 +1678,16 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1612,38 +1700,46 @@ exports[`Storyshots Text Input Invalid with custom text 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -1911,8 +2007,16 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1925,38 +2029,46 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -2310,8 +2422,16 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2324,38 +2444,46 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -2487,8 +2615,16 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2501,38 +2637,46 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -2787,8 +2931,16 @@ exports[`Storyshots Text Input Required field 1`] = `
 }
 
 .c4 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c4 .input textarea {
+  padding: 16px;
+}
+
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2801,38 +2953,46 @@ exports[`Storyshots Text Input Required field 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -2964,8 +3124,16 @@ exports[`Storyshots Text Input Required field 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2978,38 +3146,46 @@ exports[`Storyshots Text Input Required field 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: default;
 }
 
@@ -3315,8 +3491,16 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
 }
 
 .c4 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c4 .input textarea {
+  padding: 16px;
+}
+
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3329,38 +3513,46 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -3492,8 +3684,16 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3506,38 +3706,46 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: default;
 }
 
@@ -3833,8 +4041,16 @@ exports[`Storyshots Text Input Search 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3847,38 +4063,46 @@ exports[`Storyshots Text Input Search 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -4088,8 +4312,16 @@ exports[`Storyshots Text Input With a protected value 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4102,38 +4334,46 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -4265,8 +4505,16 @@ exports[`Storyshots Text Input With a protected value 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4279,38 +4527,46 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -4565,8 +4821,16 @@ exports[`Storyshots Text Input With change handler 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4579,38 +4843,46 @@ exports[`Storyshots Text Input With change handler 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -4822,8 +5094,16 @@ exports[`Storyshots Text Input With label 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4836,38 +5116,46 @@ exports[`Storyshots Text Input With label 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -5078,8 +5366,16 @@ exports[`Storyshots Text Input With placeholder 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5092,38 +5388,46 @@ exports[`Storyshots Text Input With placeholder 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -5335,8 +5639,16 @@ exports[`Storyshots Text Input With value 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5349,38 +5661,46 @@ exports[`Storyshots Text Input With value 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -5592,8 +5912,16 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5606,38 +5934,46 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -5769,8 +6105,16 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5783,38 +6127,46 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: default;
 }
 
@@ -6057,8 +6409,16 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
 }
 
 .c2 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6071,38 +6431,46 @@ exports[`Storyshots Text Input with onMouseOver and onMouseLeave handlers 1`] = 
   background: none;
 }
 
-.c2 .input input::-webkit-input-placeholder {
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::-moz-placeholder {
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input:-ms-input-placeholder {
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input::placeholder {
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .input input[type="search"] {
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c2 .input input[type="search"]::-webkit-search-cancel-button {
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c2 .input input[type="search"]::-ms-clear {
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c2 .input input[role="combobox"] {
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
   cursor: default;
 }
 

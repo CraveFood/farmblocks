@@ -132,8 +132,16 @@ exports[`Storyshots Amount selectors Default 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -146,38 +154,46 @@ exports[`Storyshots Amount selectors Default 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -559,8 +575,16 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -573,38 +597,46 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -986,8 +1018,16 @@ exports[`Storyshots Amount selectors Small size 1`] = `
 }
 
 .c5 .input input {
-  height: 30px;
   padding: 0 8px;
+  height: 30px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1000,38 +1040,46 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -1413,8 +1461,16 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1427,38 +1483,46 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -1835,8 +1899,16 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1849,38 +1921,46 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -2257,8 +2337,16 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2271,38 +2359,46 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -2679,8 +2775,16 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2693,38 +2797,46 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -3106,8 +3218,16 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3120,38 +3240,46 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -3533,8 +3661,16 @@ exports[`Storyshots Amount selectors With value set 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3547,38 +3683,46 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
@@ -3955,8 +4099,16 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
 }
 
 .c5 .input input {
-  height: 46px;
   padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3969,38 +4121,46 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
