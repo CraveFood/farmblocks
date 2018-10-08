@@ -145,9 +145,11 @@ describe("SearchField", () => {
       const oldState = component.state();
       component.setProps(props);
 
-      expect(component.state()).not.toEqual(oldState);
-      expect(component.state("selectedItem")).toEqual(item);
-      expect(component.state("inputValue")).toBe(item.label);
+      expect(component.state()).toEqual({
+        ...oldState,
+        selectedItem: item,
+        inputValue: item.label
+      });
     });
 
     test("should remove previous selected if value changes to null", () => {
@@ -159,9 +161,7 @@ describe("SearchField", () => {
       component.setProps(props);
       const newState = component.state();
 
-      expect(newState).not.toEqual(oldState);
-      expect(newState.selectedItem).toEqual(null);
-      expect(newState.inputValue).toEqual("");
+      expect(newState).toEqual({ ...oldState, selectedItem: null });
     });
 
     test("should remove previous selected if value changes to something not on the list", () => {
@@ -173,9 +173,7 @@ describe("SearchField", () => {
       component.setProps(props);
       const newState = component.state();
 
-      expect(newState).not.toEqual(oldState);
-      expect(newState.selectedItem).toEqual(null);
-      expect(newState.inputValue).toEqual("");
+      expect(newState).toEqual({ ...oldState, selectedItem: null });
     });
 
     test("should return new state if items changes", () => {
@@ -185,8 +183,7 @@ describe("SearchField", () => {
       const oldState = component.state();
       component.setProps(props);
 
-      expect(component.state()).not.toEqual(oldState);
-      expect(component.state("items")).toEqual([item]);
+      expect(component.state()).toEqual({ ...oldState, items: [item] });
     });
 
     test("should return new inputValue if items changes but value does not", () => {
@@ -200,9 +197,12 @@ describe("SearchField", () => {
 
       component.setProps(props);
 
-      expect(component.state()).not.toEqual(oldState);
-      expect(component.state("items")).toEqual([newItem]);
-      expect(component.state("inputValue")).toEqual(newItem.label);
+      expect(component.state()).toEqual({
+        ...oldState,
+        items: [newItem],
+        inputValue: newItem.label,
+        selectedItem: newItem
+      });
     });
 
     test("should not change state if the props are the same", () => {

@@ -23,7 +23,7 @@ class SearchField extends React.Component {
 
   setValueFromProps = () => {
     const { value, items } = this.props;
-    const emptyState = { inputValue: "", selectedItem: null };
+    const emptyState = { selectedItem: null };
 
     if (!value) {
       return this.setState(emptyState);
@@ -120,7 +120,9 @@ class SearchField extends React.Component {
     }
   };
 
-  onFocus = () => this.setState({ focused: true, highlightedIndex: -1 });
+  onFocus = () => {
+    this.setState({ focused: true, highlightedIndex: -1 });
+  };
 
   onSearchChange = event => {
     const { value } = event.target;
@@ -219,6 +221,7 @@ class SearchField extends React.Component {
           onFocus={this.onFocus}
           onChange={this.onSearchChange}
           onBlur={this.onBlur}
+          focused={this.state.focused}
         />
         {focused &&
           ((this.state.items && this.state.items.length) || footer) &&
