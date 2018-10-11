@@ -60,12 +60,6 @@ storiesOf("Search Field/Menu (Private)", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
   .add("Default", withInfo()(() => <Menu items={items} />))
   .add(
-    "onMenuMouseDown",
-    withInfo()(() => (
-      <Menu onMenuMouseDown={action("onMenuMouseDown")} items={items} />
-    ))
-  )
-  .add(
     "onItemClick",
     withInfo()(() => <Menu onItemClick={action("onItemClick")} items={items} />)
   )
