@@ -90,6 +90,7 @@ Other properties:
 * `clickable`, a flag to make the column title clickeable
 * `width`, to manually set the column width
 * `align`, any valid CSS `text-align` value. Default: `"left"`
+* `whiteSpace`, any valid CSS `white-space` value. Default: `"normal"`
 * `fontType`, one of the available font types in farmblocks-theme, will work
   only for `text` columns, not `customCell`
 

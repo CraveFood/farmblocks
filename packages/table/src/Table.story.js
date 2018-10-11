@@ -163,6 +163,29 @@ storiesOf("Table/Basic", module)
     ))
   )
   .add(
+    "Custom white-space",
+    withInfo()(() => (
+      <Table data={fruits} width="500px">
+        <Column title="Fruit" text={row => row.name} />
+        <Column
+          title="Normal"
+          text={() =>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis felis non ultrices placerat. Donec."
+          }
+          width="30%"
+        />
+        <Column
+          title="No Wrap"
+          text={() =>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+          whiteSpace="nowrap"
+          width="30%"
+        />
+      </Table>
+    ))
+  )
+  .add(
     "With row click listener",
     withInfo()(() => (
       <Table data={fruits} onRowClick={action("onRowClick")}>

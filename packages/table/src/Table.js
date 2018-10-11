@@ -275,8 +275,8 @@ class Table extends React.Component {
   };
 
   _renderColumnTitle = (columnIndex, columnProps = {}) => {
-    const { width, align } = columnProps;
-    const cellProps = { width, align, className: "cell" };
+    const { width, align, whiteSpace } = columnProps;
+    const cellProps = { width, align, whiteSpace, className: "cell" };
     const headerCell = content => (
       <HeaderCell {...cellProps}>{content}</HeaderCell>
     );
@@ -312,10 +312,11 @@ class Table extends React.Component {
   };
 
   _renderColumnCell = (row, rowIndex, props) => {
-    const { width, align, selected, grouped, columnIndex } = props;
+    const { width, align, whiteSpace, selected, grouped, columnIndex } = props;
     const cellProps = {
       width,
       align,
+      whiteSpace,
       className: `cell ${grouped && columnIndex === 0 ? "corner-icon" : ""}`,
       selected,
       grouped

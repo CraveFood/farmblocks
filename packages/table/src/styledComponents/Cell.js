@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import { transparentize } from "polished";
 
-const textAlign = props => props.align || "left";
-
 const selectedBg = transparentize(0.94, colors.INDIGO_MILK_CAP);
 
 const cellBg = props => {
@@ -14,9 +12,10 @@ const cellBg = props => {
 };
 
 export const HeaderCell = styled.th`
-  text-align: ${textAlign};
+  text-align: ${props => props.align};
   background-color: ${colors.SUGAR};
   height: 40px !important;
+  white-space: ${props => props.whiteSpace};
   & .link {
     /* @TODO why aren't links display inline by default?? :) */
     display: inline-block;
@@ -29,6 +28,7 @@ export const HeaderCell = styled.th`
   }
 `;
 export const BodyCell = styled.td`
-  text-align: ${textAlign};
+  text-align: ${props => props.align};
   background-color: ${cellBg};
+  white-space: ${props => props.whiteSpace};
 `;
