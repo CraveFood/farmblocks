@@ -147,6 +147,12 @@ storiesOf("Table/Basic", module)
       <Table data={fruits}>
         <Column title="Fruit" text={row => row.name} />
         <Column
+          title="Type"
+          text={() => "Organic"}
+          align="center"
+          width="30%"
+        />
+        <Column
           fontType={fontTypes.FEATURED}
           title="Price"
           align="right"

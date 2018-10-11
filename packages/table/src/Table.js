@@ -243,7 +243,7 @@ class Table extends React.Component {
   _renderSelectAllButton = () => {
     const dataLength = Object.keys(this.state.rowsMap).length;
     return (
-      <HeaderCell className="cell">
+      <HeaderCell className="cell" align="left">
         <div className="checkbox">
           <Checkbox
             checked={this.state.selectedRows.length === dataLength}
@@ -258,7 +258,7 @@ class Table extends React.Component {
 
   _renderSelectRowButton = (rowKey, rowProps, disabled) => {
     return (
-      <BodyCell className="cell checkbox" {...rowProps}>
+      <BodyCell className="cell checkbox" align="left" {...rowProps}>
         <div className="checkbox">
           <Checkbox
             key={rowKey}

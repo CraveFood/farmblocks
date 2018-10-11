@@ -11,7 +11,7 @@ Column.propTypes = {
   customCell: PropTypes.func,
   clickable: PropTypes.bool,
   width: PropTypes.string,
-  align: PropTypes.oneOf(["left", "right"]),
+  align: PropTypes.string,
   fontType: PropTypes.oneOf(values(fontTypes))
 };
 
