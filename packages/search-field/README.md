@@ -59,6 +59,9 @@ edit symbol, and that the class name to include that icon is `.wg-edit`.
 | onScrollReachEnd | Function to handle the end of the scroll. Usefull for pagination                    | onScrollReachEnd()                                                 |          | () => false |
 | onChange         | Function to handle selection of an item                                             | onChange(value: string)                                            |          | () => false |
 
+Note: to listen to clicks on items or footer, use `onMouseDown` event over
+`onClick`.
+
 ## License
 
 MIT
