@@ -30,15 +30,26 @@ class Popover extends React.Component {
       return;
     }
 
-    this.hide();
-    this.props.onOutsideClick && this.props.onOutsideClick(event);
+    if (this.state.isVisible) {
+      this.hide();
+      this.props.onOutsideClick && this.props.onOutsideClick(event);
+    }
   };
 
-  toggle = () => {
-    this.setState(prevState => ({ isVisible: !prevState.isVisible }));
-  };
+  toggle = () =>
+    this.setState(prevState => {
+      const { onOpen, onClose } = this.props;
+      const isVisible = !prevState.isVisible;
 
-  hide = () => this.setState({ isVisible: false });
+      isVisible ? onOpen && onOpen() : onClose && onClose();
+
+      return { isVisible };
+    });
+
+  hide = () => {
+    this.setState({ isVisible: false });
+    this.props.onClose && this.props.onClose();
+  };
 
   render() {
     return (
@@ -68,7 +79,9 @@ class Popover extends React.Component {
     zIndex: PropTypes.number,
     padding: PropTypes.string,
     overflow: PropTypes.string,
-    onOutsideClick: PropTypes.func
+    onOutsideClick: PropTypes.func,
+    onOpen: PropTypes.func,
+    onClose: PropTypes.func
   };
 }
 

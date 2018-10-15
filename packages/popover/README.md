@@ -26,14 +26,18 @@ npm install @crave/farmblocks-popover
 
 ## API
 
-| Property | Description                                                        | Type                                       | Required | Default |
-| -------- | ------------------------------------------------------------------ | ------------------------------------------ | -------- | ------- |
-| trigger  | A component that will be popover's trigger                         | node                                       | Yes      |         |
-| content  | A render function with the contents to be displayed on the popover | function => node                           | Yes      |         |
-| align    | The popover alignment                                              | oneOf(['left', 'right', 'center', 'auto']) |          | left    |
-| zIndex   | zIndex of popover                                                  | number                                     |          |         |
-| padding  | padding of popover contents                                        | string                                     |          | 4px     |
-| overflow | overflow of popover contents                                       | string                                     |          |         |
+| Property     | Description                                                                                                      | Type                                       | Required | Default |
+| ------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------- | ------- |
+| trigger      | A node that will be popover's trigger. Can also be a function that receives `isVisible` state and returns a node | node or func => node                       | Yes      |         |
+| content      | A render function with the contents to be displayed on the popover                                               | func => node                               | Yes      |         |
+| align        | The popover alignment                                                                                            | oneOf(['left', 'right', 'center', 'auto']) |          | left    |
+| zIndex       | zIndex of popover                                                                                                | number                                     |          |         |
+| padding      | padding of popover contents                                                                                      | string                                     |          | 4px     |
+| overflow     | overflow of popover contents                                                                                     | string                                     |          |         |
+| triggerWidth | A CSS value for the trigger container width                                                                      | string                                     |          | auto    |
+| onOpen       | called when the popover opens                                                                                    | func                                       |          |         |
+| onClose      | called when the popover closes                                                                                   | func                                       |          |         |
+| hideArrow    | changes the visibility of the tooltip arrow                                                                      | bool                                       |          | true    |
 
 ## License
 
