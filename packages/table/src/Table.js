@@ -243,7 +243,7 @@ class Table extends React.Component {
   _renderSelectAllButton = () => {
     const dataLength = Object.keys(this.state.rowsMap).length;
     return (
-      <HeaderCell className="cell">
+      <HeaderCell className="cell" align="left">
         <div className="checkbox">
           <Checkbox
             checked={this.state.selectedRows.length === dataLength}
@@ -258,7 +258,7 @@ class Table extends React.Component {
 
   _renderSelectRowButton = (rowKey, rowProps, disabled) => {
     return (
-      <BodyCell className="cell checkbox" {...rowProps}>
+      <BodyCell className="cell checkbox" align="left" {...rowProps}>
         <div className="checkbox">
           <Checkbox
             key={rowKey}
@@ -275,8 +275,8 @@ class Table extends React.Component {
   };
 
   _renderColumnTitle = (columnIndex, columnProps = {}) => {
-    const { width, align } = columnProps;
-    const cellProps = { width, align, className: "cell" };
+    const { width, align, whiteSpace } = columnProps;
+    const cellProps = { width, align, whiteSpace, className: "cell" };
     const headerCell = content => (
       <HeaderCell {...cellProps}>{content}</HeaderCell>
     );
@@ -312,10 +312,11 @@ class Table extends React.Component {
   };
 
   _renderColumnCell = (row, rowIndex, props) => {
-    const { width, align, selected, grouped, columnIndex } = props;
+    const { width, align, whiteSpace, selected, grouped, columnIndex } = props;
     const cellProps = {
       width,
       align,
+      whiteSpace,
       className: `cell ${grouped && columnIndex === 0 ? "corner-icon" : ""}`,
       selected,
       grouped

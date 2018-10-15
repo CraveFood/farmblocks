@@ -147,11 +147,40 @@ storiesOf("Table/Basic", module)
       <Table data={fruits}>
         <Column title="Fruit" text={row => row.name} />
         <Column
+          title="Type"
+          text={() => "Organic"}
+          align="center"
+          width="30%"
+        />
+        <Column
           fontType={fontTypes.FEATURED}
           title="Price"
           align="right"
           width="300px"
           text={row => row.price}
+        />
+      </Table>
+    ))
+  )
+  .add(
+    "Custom white-space",
+    withInfo()(() => (
+      <Table data={fruits} width="500px">
+        <Column title="Fruit" text={row => row.name} />
+        <Column
+          title="Normal"
+          text={() =>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis felis non ultrices placerat. Donec."
+          }
+          width="30%"
+        />
+        <Column
+          title="No Wrap"
+          text={() =>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+          whiteSpace="nowrap"
+          width="30%"
         />
       </Table>
     ))

@@ -11,8 +11,14 @@ Column.propTypes = {
   customCell: PropTypes.func,
   clickable: PropTypes.bool,
   width: PropTypes.string,
-  align: PropTypes.oneOf(["left", "right"]),
-  fontType: PropTypes.oneOf(values(fontTypes))
+  align: PropTypes.string,
+  fontType: PropTypes.oneOf(values(fontTypes)),
+  whiteSpace: PropTypes.string
+};
+
+Column.defaultProps = {
+  align: "left",
+  whiteSpace: "normal"
 };
 
 export default Column;

@@ -17,7 +17,7 @@ const Table = styled.table`
     box-sizing: border-box;
     height: ${props => props.rowHeight};
     border-bottom: ${border};
-    padding-left: 16px;
+    padding: 16px 0 16px 16px;
 
     &:last-child {
       padding-right: 16px;
