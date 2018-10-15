@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.35...@crave/farmblocks-search-field@2.0.0) (2018-10-15)
+
+
+### Code Refactoring
+
+* **SearchField:** removed onMenuMouseDown from props ([a3a5283](https://github.com/CraveFood/farmblocks/commit/a3a5283)), closes [#583](https://github.com/CraveFood/farmblocks/issues/583)
+
+
+### BREAKING CHANGES
+
+* **SearchField:** this property is no longer passed as onMouseDown to MenuWrapper
+
+
+
+
 <a name="1.1.35"></a>
 ## [1.1.35](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@1.1.34...@crave/farmblocks-search-field@1.1.35) (2018-10-08)
 
