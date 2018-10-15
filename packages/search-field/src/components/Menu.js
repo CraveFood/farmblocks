@@ -21,7 +21,6 @@ export const menuPropTypes = {
     })
   ),
   onItemClick: PropTypes.func,
-  onMenuMouseDown: PropTypes.func,
   highlightedIndex: PropTypes.number,
   footer: PropTypes.node
 };
@@ -43,7 +42,6 @@ const MenuWrapper = styled(DropdownMenuWrapper)`
 `;
 
 const Menu = ({
-  onMenuMouseDown,
   maxMenuHeight,
   onScrollReachEnd,
   innerRef,
@@ -56,7 +54,7 @@ const Menu = ({
     return null;
   }
   return (
-    <MenuWrapper onMouseDown={onMenuMouseDown}>
+    <MenuWrapper>
       <ScrollBox
         maxHeight={maxMenuHeight}
         onReachEnd={onScrollReachEnd}
