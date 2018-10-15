@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.3.11...@crave/farmblocks-table@2.4.0) (2018-10-15)
+
+
+### Bug Fixes
+
+* **Table.Column:** set propType of align to any string ([c703195](https://github.com/CraveFood/farmblocks/commit/c703195))
+
+
+### Features
+
+* **Table:** add top and bottom padding for cells ([6a45b5d](https://github.com/CraveFood/farmblocks/commit/6a45b5d))
+* **Table.Column:** add whiteSpace prop ([bbc6961](https://github.com/CraveFood/farmblocks/commit/bbc6961))
+
+
+
+
 <a name="2.3.11"></a>
 ## [2.3.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@2.3.10...@crave/farmblocks-table@2.3.11) (2018-09-27)
 
