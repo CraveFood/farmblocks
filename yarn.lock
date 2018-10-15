@@ -18,6 +18,12 @@
     source-map "^0.5.0"
     trim-right "^1.0.1"
 
+"@babel/helper-annotate-as-pure@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.0.0.tgz#323d39dd0b50e10c7c06ca7d7638e6864d8c5c32"
+  dependencies:
+    "@babel/types" "^7.0.0"
+
 "@babel/helper-function-name@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.0.0.tgz#a68cc8d04420ccc663dd258f9cc41b8261efa2d4"
@@ -89,6 +95,26 @@
     esutils "^2.0.2"
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
+
+"@crave/farmblocks-dev-scaffold@^0.3.0":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@crave/farmblocks-dev-scaffold/-/farmblocks-dev-scaffold-0.3.4.tgz#857bdc4ef87177ca6cc31bd599f9690b83c2ec97"
+  dependencies:
+    inquirer "^6.0.0"
+    prettier "^1.13.4"
+    shelljs "^0.8.2"
+    slug "^0.9.1"
+    uppercamelcase "^3.0.0"
+
+"@emotion/is-prop-valid@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.6.8.tgz#68ad02831da41213a2089d2cab4e8ac8b30cbd85"
+  dependencies:
+    "@emotion/memoize" "^0.6.6"
+
+"@emotion/memoize@^0.6.6":
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.6.6.tgz#004b98298d04c7ca3b4f50ca2035d4f60d2eed1b"
 
 "@semantic-release/commit-analyzer@^2.0.0":
   version "2.0.0"
@@ -1079,6 +1105,13 @@ babel-plugin-react-docgen@^1.9.0:
     lodash "^4.17.0"
     react-docgen "^3.0.0-beta11"
 
+"babel-plugin-styled-components@>= 1":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.8.0.tgz#9dd054c8e86825203449a852a5746f29f2dab857"
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
+    lodash "^4.17.10"
+
 babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -1887,13 +1920,6 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-buffer@^5.0.3:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/buffer/-/buffer-5.2.1.tgz#dd57fa0f109ac59c602479044dca7b8b3d0b71d6"
-  dependencies:
-    base64-js "^1.0.2"
-    ieee754 "^1.1.4"
-
 builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -2035,10 +2061,6 @@ center-align@^0.1.1:
   dependencies:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
-
-chain-function@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/chain-function/-/chain-function-1.0.1.tgz#c63045e5b4b663fb86f1c6e186adaf1de402a1cc"
 
 chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.3:
   version "1.1.3"
@@ -2766,9 +2788,9 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
-css-to-react-native@^2.0.3:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.2.1.tgz#7f3f4c95de65501b8720c87bf0caf1f39073b88e"
+css-to-react-native@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-2.2.2.tgz#c077d0f7bf3e6c915a539e7325821c9dd01f9965"
   dependencies:
     css-color-keywords "^1.0.0"
     fbjs "^0.8.5"
@@ -3148,13 +3170,9 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
-dom-helpers@^3.2.0, dom-helpers@^3.3.1:
+dom-helpers@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.3.1.tgz#fc1a4e15ffdf60ddde03a480a9c0fece821dd4a6"
-
-dom-scroll-into-view@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/dom-scroll-into-view/-/dom-scroll-into-view-1.0.1.tgz#32abb92f0d8feca6215162aef43e4b449ab8d99c"
 
 dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
@@ -3978,7 +3996,7 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-fbjs@^0.8.1, fbjs@^0.8.12, fbjs@^0.8.16, fbjs@^0.8.4, fbjs@^0.8.5, fbjs@^0.8.9:
+fbjs@^0.8.1, fbjs@^0.8.12, fbjs@^0.8.4, fbjs@^0.8.5, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   dependencies:
@@ -4136,10 +4154,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
-
-focus-group@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/focus-group/-/focus-group-0.3.1.tgz#e0f32ed86b0dabdd6ffcebdf898ecb32e47fedce"
 
 for-in@^0.1.3:
   version "0.1.8"
@@ -4669,7 +4683,7 @@ hoist-non-react-statics@1.x.x, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
-hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
+hoist-non-react-statics@^2.3.1:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
 
@@ -6262,7 +6276,7 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   dependencies:
@@ -6375,6 +6389,10 @@ mem@^1.1.0:
   resolved "https://registry.yarnpkg.com/mem/-/mem-1.1.0.tgz#5edd52b485ca1d900fe64895505399a0dfa45f76"
   dependencies:
     mimic-fn "^1.0.0"
+
+memoize-one@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.0.2.tgz#3fb8db695aa14ab9c0f1644e1585a8806adc1aee"
 
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
@@ -7336,12 +7354,6 @@ pngjs@^3.0.0, pngjs@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.3.3.tgz#85173703bde3edac8998757b96e5821d0966a21b"
 
-polished@^2.0.3:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-2.2.0.tgz#5ca7e178cc5352bd7fd1efc45342f7c6d59cc982"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -7692,7 +7704,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -7906,27 +7918,6 @@ react-addons-create-fragment@^15.5.3:
     loose-envify "^1.3.1"
     object-assign "^4.1.0"
 
-react-addons-css-transition-group@^15.6.2:
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/react-addons-css-transition-group/-/react-addons-css-transition-group-15.6.2.tgz#9e4376bcf40b5217d14ec68553081cee4b08a6d6"
-  dependencies:
-    react-transition-group "^1.2.0"
-
-react-aria-menubutton@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/react-aria-menubutton/-/react-aria-menubutton-6.0.1.tgz#2faeb32e8e0b2a8eb8d55b5515ba65edcc545acf"
-  dependencies:
-    focus-group "^0.3.1"
-    prop-types "^15.6.0"
-    teeny-tap "^0.2.0"
-
-react-autocomplete@^1.7.2:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/react-autocomplete/-/react-autocomplete-1.8.1.tgz#ebbbc400006aa91ad538b2d14727b9e7e5d06310"
-  dependencies:
-    dom-scroll-into-view "1.0.1"
-    prop-types "^15.5.10"
-
 react-dev-utils@^5.0.0:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.2.tgz#7bb68d2c4f6ffe7ed1184c5b0124fcad692774d2"
@@ -8000,13 +7991,6 @@ react-icons@^2.2.7:
   dependencies:
     react-icon-base "2.1.0"
 
-react-input-mask@^2.0.2:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/react-input-mask/-/react-input-mask-2.0.4.tgz#9ade5cf8196f4a856dbf010820fe75a795f3eb14"
-  dependencies:
-    invariant "^2.2.4"
-    warning "^4.0.2"
-
 react-inspector@^2.2.2:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-2.3.0.tgz#fc9c1d38ab687fc0d190dcaf133ae40158968fc8"
@@ -8055,31 +8039,12 @@ react-test-renderer@^16.0.0-0, react-test-renderer@^16.4.0:
     react-is "^16.5.0"
     schedule "^0.3.0"
 
-react-transition-group@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
-  dependencies:
-    chain-function "^1.0.0"
-    dom-helpers "^3.2.0"
-    loose-envify "^1.3.1"
-    prop-types "^15.5.6"
-    warning "^3.0.0"
-
 react-transition-group@^2.0.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.4.0.tgz#1d9391fabfd82e016f26fabd1eec329dbd922b5a"
   dependencies:
     dom-helpers "^3.3.1"
     loose-envify "^1.3.1"
-    prop-types "^15.6.2"
-    react-lifecycles-compat "^3.0.4"
-
-react-transition-group@^2.4.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.5.0.tgz#70bca0e3546102c4dc5cf3f5f57f73447cce6874"
-  dependencies:
-    dom-helpers "^3.3.1"
-    loose-envify "^1.4.0"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
@@ -9370,19 +9335,18 @@ style-loader@^0.20.3:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-styled-components@^3.4.9:
-  version "3.4.9"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.4.9.tgz#519abeb351b37be5b7de6a15ff9e4efeb9d772da"
+styled-components@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-4.0.0.tgz#bd37d79408246302051cd63f52a3539f70aa3197"
   dependencies:
-    buffer "^5.0.3"
-    css-to-react-native "^2.0.3"
-    fbjs "^0.8.16"
-    hoist-non-react-statics "^2.5.0"
+    "@emotion/is-prop-valid" "^0.6.8"
+    babel-plugin-styled-components ">= 1"
+    css-to-react-native "^2.2.2"
+    memoize-one "^4.0.0"
     prop-types "^15.5.4"
     react-is "^16.3.1"
     stylis "^3.5.0"
     stylis-rule-sheet "^0.0.10"
-    supports-color "^3.2.3"
 
 stylis-rule-sheet@^0.0.10:
   version "0.0.10"
@@ -9470,10 +9434,6 @@ tar@^4:
     mkdirp "^0.5.0"
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
-
-teeny-tap@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/teeny-tap/-/teeny-tap-0.2.0.tgz#167e645182d06ac222d62bb2ab67947a70a58a68"
 
 temp-dir@^1.0.0:
   version "1.0.0"
@@ -9970,12 +9930,6 @@ walker@~1.0.5:
 warning@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
-  dependencies:
-    loose-envify "^1.0.0"
-
-warning@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.2.tgz#aa6876480872116fa3e11d434b0d0d8d91e44607"
   dependencies:
     loose-envify "^1.0.0"
 
