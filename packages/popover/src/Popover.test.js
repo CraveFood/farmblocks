@@ -117,6 +117,20 @@ describe("Popover", () => {
       expect(onOutsideClickSpy).toBeCalledWith(event);
     });
 
+    test("should NOT call callback function when the popover is closed", () => {
+      wrapper = mount(<PopoverComponent onOutsideClick={onOutsideClickSpy} />);
+
+      // return to closed state
+      popoverInstance.setState({ isVisible: false });
+
+      // simulates click outside
+      const event = {
+        target: wrapper.instance().outer
+      };
+      map.click(event);
+      expect(onOutsideClickSpy).not.toBeCalled();
+    });
+
     test("should do nothing on inner click", () => {
       // makes sure that popover is open
       expect(popoverInstance.state).toEqual({ isVisible: true });
@@ -172,6 +186,109 @@ describe("Popover", () => {
         handleOuterClick,
         { capture: true }
       );
+    });
+  });
+
+  describe("onOpen", () => {
+    let onOpenSpy;
+
+    beforeEach(() => {
+      onOpenSpy = jest.fn();
+    });
+    afterEach(() => {
+      onOpenSpy.mockReset();
+    });
+
+    it("should run on trigger click from closed state", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <div>content</div>}
+          onOpen={onOpenSpy}
+        />
+      );
+
+      wrapper.find("#trigger").simulate("click");
+      expect(onOpenSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it("should NOT run on trigger click from open state", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <div>content</div>}
+          onOpen={onOpenSpy}
+        />
+      );
+
+      wrapper.setState({ isVisible: true });
+      wrapper.find("#trigger").simulate("click");
+      expect(onOpenSpy).not.toHaveBeenCalled();
+    });
+
+    it("should be optional", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <div>content</div>}
+        />
+      );
+
+      expect(() => {
+        wrapper.find("#trigger").simulate("click");
+      }).not.toThrowError();
+    });
+  });
+
+  describe("onClose", () => {
+    let onCloseSpy;
+
+    beforeEach(() => {
+      onCloseSpy = jest.fn();
+    });
+    afterEach(() => {
+      onCloseSpy.mockReset();
+    });
+
+    it("should run on trigger click from open state", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <div>content</div>}
+          onClose={onCloseSpy}
+        />
+      );
+
+      wrapper.setState({ isVisible: true });
+      wrapper.find("#trigger").simulate("click");
+      expect(onCloseSpy).toHaveBeenCalledTimes(1);
+    });
+
+    it("should NOT run on trigger click from closed state", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <div>content</div>}
+          onClose={onCloseSpy}
+        />
+      );
+
+      wrapper.find("#trigger").simulate("click");
+      expect(onCloseSpy).not.toHaveBeenCalled();
+    });
+
+    it("should be optional", () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <div>content</div>}
+        />
+      );
+
+      wrapper.setState({ isVisible: true });
+      expect(() => {
+        wrapper.find("#trigger").simulate("click");
+      }).not.toThrowError();
     });
   });
 });
