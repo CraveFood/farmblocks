@@ -59,6 +59,23 @@ storiesOf("Popover", module)
     ))
   )
   .add(
+    "onOpen/onClose",
+    withInfo()(() => (
+      <Popover
+        trigger={<Link>Trigger</Link>}
+        onOutsideClick={action("onOutsideClick")}
+        onOpen={action("onOpen")}
+        onClose={action("onClose")}
+        content={dismiss => (
+          <div>
+            <Text>Popover content</Text>
+            <button onClick={dismiss}>Dismiss</button>
+          </div>
+        )}
+      />
+    ))
+  )
+  .add(
     "Custom padding",
     withInfo()(() => (
       <Popover
