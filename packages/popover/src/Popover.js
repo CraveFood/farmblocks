@@ -66,7 +66,7 @@ class Popover extends React.Component {
 
         <Tooltip
           isVisible={isVisible}
-          hideArrow
+          hideArrow={!this.props.showTooltipArrow}
           align={this.props.align}
           zIndex={this.props.zIndex}
           padding={this.props.padding}
@@ -88,11 +88,13 @@ class Popover extends React.Component {
     triggerWidth: PropTypes.string,
     onOutsideClick: PropTypes.func,
     onOpen: PropTypes.func,
-    onClose: PropTypes.func
+    onClose: PropTypes.func,
+    showTooltipArrow: PropTypes.bool
   };
 
   static defaultProps = {
-    triggerWidth: "auto"
+    triggerWidth: "auto",
+    showTooltipArrow: false
   };
 }
 

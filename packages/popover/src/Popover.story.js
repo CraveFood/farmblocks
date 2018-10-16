@@ -143,4 +143,15 @@ storiesOf("Popover", module)
         onOutsideClick={action("onOutsideClick")}
       />
     ))
+  )
+  .add(
+    "w/ Tooltip arrow",
+    withInfo()(() => (
+      <Popover
+        showTooltipArrow
+        trigger={<Link>Trigger</Link>}
+        content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
+      />
+    ))
   );
