@@ -15,6 +15,26 @@ storiesOf("Tag", module)
     ))
   )
   .add(
+    "With icon",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag text="Tag with icon" icon="wg-order" />
+      </div>
+    ))
+  )
+  .add(
+    "Removable with icon",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag
+          text="Tag with icon"
+          icon="wg-order"
+          onRemove={action("onRemove")}
+        />
+      </div>
+    ))
+  )
+  .add(
     "Removable",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
