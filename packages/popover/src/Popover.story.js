@@ -110,4 +110,16 @@ storiesOf("Popover", module)
         )}
       />
     ))
+  )
+  .add(
+    "trigger as function",
+    withInfo()(() => (
+      <Popover
+        trigger={isVisible => (
+          <Link>{`This Popover is ${isVisible ? "open" : "closed"}`}</Link>
+        )}
+        content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
+      />
+    ))
   );

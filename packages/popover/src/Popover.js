@@ -52,14 +52,16 @@ class Popover extends React.Component {
   };
 
   render() {
+    const { trigger } = this.props;
+    const { isVisible } = this.state;
     return (
       <Container innerRef={popover => (this.popover = popover)}>
         <div id="trigger" onClick={this.toggle}>
-          {this.props.trigger}
+          {typeof trigger === "function" ? trigger(isVisible) : trigger}
         </div>
 
         <Tooltip
-          isVisible={this.state.isVisible}
+          isVisible={isVisible}
           hideArrow
           align={this.props.align}
           zIndex={this.props.zIndex}
@@ -73,7 +75,7 @@ class Popover extends React.Component {
   }
 
   static propTypes = {
-    trigger: PropTypes.node.isRequired,
+    trigger: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
     content: PropTypes.func.isRequired,
     align: PropTypes.oneOf(values(alignments)),
     zIndex: PropTypes.number,

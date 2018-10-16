@@ -291,4 +291,45 @@ describe("Popover", () => {
       }).not.toThrowError();
     });
   });
+
+  describe("trigger", () => {
+    const trigger = <span>trigger</span>;
+    const content = () => <div>content</div>;
+    let renderTriggerSpy;
+
+    beforeEach(() => {
+      renderTriggerSpy = jest.fn().mockReturnValue(trigger);
+    });
+
+    afterEach(() => {
+      renderTriggerSpy.mockReset();
+    });
+
+    it("should render the given node", () => {
+      const wrapper = shallow(<Popover trigger={trigger} content={content} />);
+      expect(wrapper.containsMatchingElement(trigger)).toEqual(true);
+    });
+
+    it("should pass isVisible to the given function", () => {
+      const wrapper = shallow(
+        <Popover trigger={renderTriggerSpy} content={content} />
+      );
+
+      renderTriggerSpy.mockClear();
+      wrapper.setState({ isVisible: true });
+      expect(renderTriggerSpy).toHaveBeenCalledWith(true);
+
+      renderTriggerSpy.mockClear();
+      wrapper.setState({ isVisible: false });
+      expect(renderTriggerSpy).toHaveBeenCalledWith(false);
+    });
+
+    it("should render the returned value", () => {
+      const expectedResult = () => <div>Expected Result</div>;
+      const wrapper = shallow(
+        <Popover trigger={() => expectedResult} content={content} />
+      );
+      expect(wrapper.containsMatchingElement(expectedResult)).toEqual(true);
+    });
+  });
 });
