@@ -112,7 +112,7 @@ exports[`Storyshots Button Children content with Icons 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 10,
@@ -1187,7 +1187,7 @@ exports[`Storyshots Button Default with Icon 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 10,
@@ -1689,7 +1689,7 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 0,
@@ -1822,7 +1822,7 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 0,
@@ -1950,7 +1950,7 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 0,
@@ -2072,7 +2072,7 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
       type="PRIMARY"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 0,
@@ -2084,6 +2084,156 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
         />
       </div>
     </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button Loading with left and right icons 1`] = `
+.c0 {
+  display: inline-block;
+}
+
+.c0 .hitWrapper {
+  position: relative;
+}
+
+.c0 .hitWrapper .hit {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c1 .icon {
+  color: rgba(255,255,255,0.56);
+}
+
+.c1 .icon i {
+  vertical-align: text-bottom;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon.left-icon {
+  -webkit-animation: spin 1.1s infinite linear;
+  animation: spin 1.1s infinite linear;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="hitWrapper"
+  >
+    <button
+      className="c1"
+      disabled={true}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      Label
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <div
+      className="hit"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    />
   </div>
 </div>
 `;
@@ -2668,7 +2818,7 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 10,
@@ -3006,7 +3156,7 @@ exports[`Storyshots Button Off Neutral Button Loading 1`] = `
   color: white;
 }
 
-.c1 > .icon {
+.c1 > .icon.left-icon {
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
@@ -3055,7 +3205,7 @@ exports[`Storyshots Button Off Neutral Button Loading 1`] = `
         type="OFF_NEUTRAL"
       >
         <div
-          className="icon"
+          className="icon left-icon"
           style={
             Object {
               "marginRight": 10,
@@ -3270,7 +3420,7 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         type="NEUTRAL"
       >
         <div
-          className="icon"
+          className="icon left-icon"
           style={
             Object {
               "marginRight": 0,
@@ -3299,7 +3449,7 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         type="NEUTRAL"
       >
         <div
-          className="icon"
+          className="icon left-icon"
           style={
             Object {
               "marginRight": 0,
@@ -3328,7 +3478,7 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         type="NEUTRAL"
       >
         <div
-          className="icon"
+          className="icon left-icon"
           style={
             Object {
               "marginRight": 0,
@@ -3357,7 +3507,7 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         type="NEUTRAL"
       >
         <div
-          className="icon"
+          className="icon left-icon"
           style={
             Object {
               "marginRight": 0,
@@ -3794,7 +3944,7 @@ exports[`Storyshots Button Saving Status 1`] = `
   color: white;
 }
 
-.c1 > .icon {
+.c1 > .icon.left-icon {
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
@@ -3841,7 +3991,7 @@ exports[`Storyshots Button Saving Status 1`] = `
       type="NEUTRAL"
     >
       <div
-        className="icon"
+        className="icon left-icon"
         style={
           Object {
             "marginRight": 10,
@@ -4101,7 +4251,7 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
         type="SECONDARY"
       >
         <div
-          className="icon"
+          className="icon left-icon"
           style={
             Object {
               "marginRight": 10,
