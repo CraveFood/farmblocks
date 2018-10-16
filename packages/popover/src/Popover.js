@@ -6,6 +6,7 @@ import Tooltip, { alignments } from "@crave/farmblocks-tooltip";
 
 const Container = styled.div`
   display: inline-block;
+  width: ${props => props.width};
 `;
 
 class Popover extends React.Component {
@@ -55,7 +56,10 @@ class Popover extends React.Component {
     const { trigger } = this.props;
     const { isVisible } = this.state;
     return (
-      <Container innerRef={popover => (this.popover = popover)}>
+      <Container
+        innerRef={popover => (this.popover = popover)}
+        width={this.props.triggerWidth}
+      >
         <div id="trigger" onClick={this.toggle}>
           {typeof trigger === "function" ? trigger(isVisible) : trigger}
         </div>
@@ -81,9 +85,14 @@ class Popover extends React.Component {
     zIndex: PropTypes.number,
     padding: PropTypes.string,
     overflow: PropTypes.string,
+    triggerWidth: PropTypes.string,
     onOutsideClick: PropTypes.func,
     onOpen: PropTypes.func,
     onClose: PropTypes.func
+  };
+
+  static defaultProps = {
+    triggerWidth: "auto"
   };
 }
 

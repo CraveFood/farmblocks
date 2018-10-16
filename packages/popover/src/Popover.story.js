@@ -122,4 +122,25 @@ storiesOf("Popover", module)
         onOutsideClick={action("onOutsideClick")}
       />
     ))
+  )
+  .add(
+    "custom triggerWidth",
+    withInfo()(() => (
+      <Popover
+        triggerWidth="300px"
+        trigger={
+          <div
+            style={{
+              background: "AliceBlue",
+              padding: 20,
+              textAlign: "center"
+            }}
+          >
+            Trigger
+          </div>
+        }
+        content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
+      />
+    ))
   );
