@@ -39,7 +39,7 @@ const Button = props => {
       {...buttonProps}
     >
       {showIcon && (
-        <div className="icon" style={{ marginRight: marginOffset }}>
+        <div className="icon left-icon" style={{ marginRight: marginOffset }}>
           <i className={iconName} />
         </div>
       )}
