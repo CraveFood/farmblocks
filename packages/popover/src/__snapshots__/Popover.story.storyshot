@@ -7,6 +7,7 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
 
 .c0 {
   display: inline-block;
+  width: auto;
 }
 
 <div
@@ -19,6 +20,7 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
 >
   <div
     className="c0"
+    width="auto"
   >
     <div
       id="trigger"
@@ -87,6 +89,7 @@ exports[`Storyshots Popover Center aligned 1`] = `
 
 .c0 {
   display: inline-block;
+  width: auto;
 }
 
 <div
@@ -99,6 +102,7 @@ exports[`Storyshots Popover Center aligned 1`] = `
 >
   <div
     className="c0"
+    width="auto"
   >
     <div
       id="trigger"
@@ -129,10 +133,12 @@ exports[`Storyshots Popover Custom padding 1`] = `
 
 .c0 {
   display: inline-block;
+  width: auto;
 }
 
 <div
   className="c0"
+  width="auto"
 >
   <div
     id="trigger"
@@ -200,10 +206,12 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
 
 .c0 {
   display: inline-block;
+  width: auto;
 }
 
 <div
   className="c0"
+  width="auto"
 >
   <div
     id="trigger"
@@ -278,10 +286,12 @@ exports[`Storyshots Popover Dismissable 1`] = `
 
 .c0 {
   display: inline-block;
+  width: auto;
 }
 
 <div
   className="c0"
+  width="auto"
 >
   <div
     id="trigger"
@@ -311,10 +321,12 @@ exports[`Storyshots Popover Nested popover 1`] = `
 
 .c0 {
   display: inline-block;
+  width: auto;
 }
 
 <div
   className="c0"
+  width="auto"
 >
   <div
     id="trigger"
@@ -326,6 +338,282 @@ exports[`Storyshots Popover Nested popover 1`] = `
   </div>
   <div
     className="c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Popover custom triggerWidth 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c0 {
+  display: inline-block;
+  width: 300px;
+}
+
+<div
+  className="c0"
+  width="300px"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+  >
+    <div
+      style={
+        Object {
+          "background": "AliceBlue",
+          "padding": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      Trigger
+    </div>
+  </div>
+  <div
+    className="c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Popover onOpen/onClose 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c1 i.margin-left {
+  margin-left: 8px;
+}
+
+.c1 i.margin-right {
+  margin-right: 8px;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 > a {
+  color: inherit;
+}
+
+.c1:hover {
+  color: #2980b9;
+}
+
+.c0 {
+  display: inline-block;
+  width: auto;
+}
+
+<div
+  className="c0"
+  width="auto"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+  >
+    <div
+      className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
+    >
+      <span>
+        Trigger
+      </span>
+    </div>
+  </div>
+  <div
+    className="c2"
+  />
+</div>
+`;
+
+exports[`Storyshots Popover trigger as function 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c1 i.margin-left {
+  margin-left: 8px;
+}
+
+.c1 i.margin-right {
+  margin-right: 8px;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 > a {
+  color: inherit;
+}
+
+.c1:hover {
+  color: #2980b9;
+}
+
+.c0 {
+  display: inline-block;
+  width: auto;
+}
+
+<div
+  className="c0"
+  width="auto"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+  >
+    <div
+      className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
+    >
+      <span>
+        This Popover is closed
+      </span>
+    </div>
+  </div>
+  <div
+    className="c2"
+  />
+</div>
+`;
+
+exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c1 i.margin-left {
+  margin-left: 8px;
+}
+
+.c1 i.margin-right {
+  margin-right: 8px;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 > a {
+  color: inherit;
+}
+
+.c1:hover {
+  color: #2980b9;
+}
+
+.c0 {
+  display: inline-block;
+  width: auto;
+}
+
+<div
+  className="c0"
+  width="auto"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+  >
+    <div
+      className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
+    >
+      <span>
+        Trigger
+      </span>
+    </div>
+  </div>
+  <div
+    className="c2"
   />
 </div>
 `;

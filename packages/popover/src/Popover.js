@@ -6,6 +6,7 @@ import Tooltip, { alignments } from "@crave/farmblocks-tooltip";
 
 const Container = styled.div`
   display: inline-block;
+  width: ${props => props.width};
 `;
 
 class Popover extends React.Component {
@@ -30,26 +31,42 @@ class Popover extends React.Component {
       return;
     }
 
-    this.hide();
-    this.props.onOutsideClick && this.props.onOutsideClick(event);
+    if (this.state.isVisible) {
+      this.hide();
+      this.props.onOutsideClick && this.props.onOutsideClick(event);
+    }
   };
 
-  toggle = () => {
-    this.setState(prevState => ({ isVisible: !prevState.isVisible }));
-  };
+  toggle = () =>
+    this.setState(prevState => {
+      const { onOpen, onClose } = this.props;
+      const isVisible = !prevState.isVisible;
 
-  hide = () => this.setState({ isVisible: false });
+      isVisible ? onOpen && onOpen() : onClose && onClose();
+
+      return { isVisible };
+    });
+
+  hide = () => {
+    this.setState({ isVisible: false });
+    this.props.onClose && this.props.onClose();
+  };
 
   render() {
+    const { trigger } = this.props;
+    const { isVisible } = this.state;
     return (
-      <Container innerRef={popover => (this.popover = popover)}>
+      <Container
+        innerRef={popover => (this.popover = popover)}
+        width={this.props.triggerWidth}
+      >
         <div id="trigger" onClick={this.toggle}>
-          {this.props.trigger}
+          {typeof trigger === "function" ? trigger(isVisible) : trigger}
         </div>
 
         <Tooltip
-          isVisible={this.state.isVisible}
-          hideArrow
+          isVisible={isVisible}
+          hideArrow={!this.props.showTooltipArrow}
           align={this.props.align}
           zIndex={this.props.zIndex}
           padding={this.props.padding}
@@ -62,13 +79,22 @@ class Popover extends React.Component {
   }
 
   static propTypes = {
-    trigger: PropTypes.node.isRequired,
+    trigger: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
     content: PropTypes.func.isRequired,
     align: PropTypes.oneOf(values(alignments)),
     zIndex: PropTypes.number,
     padding: PropTypes.string,
     overflow: PropTypes.string,
-    onOutsideClick: PropTypes.func
+    triggerWidth: PropTypes.string,
+    onOutsideClick: PropTypes.func,
+    onOpen: PropTypes.func,
+    onClose: PropTypes.func,
+    showTooltipArrow: PropTypes.bool
+  };
+
+  static defaultProps = {
+    triggerWidth: "auto",
+    showTooltipArrow: false
   };
 }
 

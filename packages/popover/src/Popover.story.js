@@ -59,6 +59,23 @@ storiesOf("Popover", module)
     ))
   )
   .add(
+    "onOpen/onClose",
+    withInfo()(() => (
+      <Popover
+        trigger={<Link>Trigger</Link>}
+        onOutsideClick={action("onOutsideClick")}
+        onOpen={action("onOpen")}
+        onClose={action("onClose")}
+        content={dismiss => (
+          <div>
+            <Text>Popover content</Text>
+            <button onClick={dismiss}>Dismiss</button>
+          </div>
+        )}
+      />
+    ))
+  )
+  .add(
     "Custom padding",
     withInfo()(() => (
       <Popover
@@ -91,6 +108,50 @@ storiesOf("Popover", module)
             />
           </div>
         )}
+      />
+    ))
+  )
+  .add(
+    "trigger as function",
+    withInfo()(() => (
+      <Popover
+        trigger={isVisible => (
+          <Link>{`This Popover is ${isVisible ? "open" : "closed"}`}</Link>
+        )}
+        content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
+      />
+    ))
+  )
+  .add(
+    "custom triggerWidth",
+    withInfo()(() => (
+      <Popover
+        triggerWidth="300px"
+        trigger={
+          <div
+            style={{
+              background: "AliceBlue",
+              padding: 20,
+              textAlign: "center"
+            }}
+          >
+            Trigger
+          </div>
+        }
+        content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
+      />
+    ))
+  )
+  .add(
+    "w/ Tooltip arrow",
+    withInfo()(() => (
+      <Popover
+        showTooltipArrow
+        trigger={<Link>Trigger</Link>}
+        content={() => <Text>Popover content</Text>}
+        onOutsideClick={action("onOutsideClick")}
       />
     ))
   );
