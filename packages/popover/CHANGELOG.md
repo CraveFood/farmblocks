@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.5.0...@crave/farmblocks-popover@0.6.0) (2018-10-17)
+
+
+### Features
+
+* **popover:** accept trigger as render prop ([5611180](https://github.com/CraveFood/farmblocks/commit/5611180))
+* **popover:** add onOpen and onCLose props ([505ea20](https://github.com/CraveFood/farmblocks/commit/505ea20)), closes [#588](https://github.com/CraveFood/farmblocks/issues/588)
+* **popover:** add triggerWidth prop ([f8eff89](https://github.com/CraveFood/farmblocks/commit/f8eff89))
+* **popover:** expose tooltip hideArrow prop ([8b28390](https://github.com/CraveFood/farmblocks/commit/8b28390))
+
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.4.1...@crave/farmblocks-popover@0.5.0) (2018-09-28)
 
