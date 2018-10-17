@@ -56,4 +56,19 @@ storiesOf("Form Wrapper", module)
         <Input label="Last Name" />
       </FormWrapper>
     ))
+  )
+  .add(
+    "in compact container",
+    withInfo()(() => (
+      <div style={{ display: "inline-block" }}>
+        <FormWrapper
+          onCancel={action("onCancel")}
+          onSave={action("onSave")}
+          title="Long Title That Should Not Touch The Cancel Button"
+        >
+          <Input label="First Name" />
+          <Input label="Last Name" />
+        </FormWrapper>
+      </div>
+    ))
   );

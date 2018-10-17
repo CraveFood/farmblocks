@@ -10,6 +10,7 @@ const Header = styled.div`
   display: flex;
   height: 48px;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid ${colors.GREY_16};
 
   .title {
@@ -17,7 +18,7 @@ const Header = styled.div`
   }
 
   .cancel {
-    margin-left: auto;
+    margin-left: 32px;
     margin-right: 16px;
   }
 `;
@@ -36,11 +37,9 @@ const FormWrapper = props => {
   return (
     <div>
       <Header>
-        {title && (
-          <Text title size={fontSizes.MEDIUM} className="title">
-            {title}
-          </Text>
-        )}
+        <Text title size={fontSizes.MEDIUM} className="title">
+          {title}
+        </Text>
         <Link
           type={linkTypes.NEUTRAL}
           onClick={props.onCancel}
