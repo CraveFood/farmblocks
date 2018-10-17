@@ -370,4 +370,10 @@ storiesOf("Button", module)
         Custom text properties
       </Button>
     ))
+  )
+  .add(
+    "Loading with left and right icons",
+    withInfo()(() => (
+      <Button text="Label" rightIcon="wg-small-arrow-bottom" loading />
+    ))
   );
