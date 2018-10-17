@@ -9,18 +9,21 @@ const typeStyles = {
   [tagTypes.SECONDARY]: css`
     background-color: ${colorConstants.INDIGO_MILK_CAP};
     color: white;
+
     &:hover {
       border-color: ${colorConstants.GREY_32};
       background-color: ${colorConstants.BLUE_CORN};
     }
-    &:hover .icon,
-    &:focus .icon {
+
+    &:hover .close-icon,
+    &:focus .close-icon {
       color: white;
     }
   `,
   [tagTypes.NEUTRAL]: css`
     background-color: ${colorConstants.SUGAR};
     color: ${colorConstants.OYSTER};
+
     &:hover {
       background-color: ${colorConstants.GREY_16};
     }
@@ -48,6 +51,10 @@ const StyledTag = styled.div`
   }
 
   .icon {
+    padding-right: 8px;
+  }
+
+  .close-icon {
     display: inline-flex;
     box-sizing: border-box;
     padding: 5px 8px 8px 8px;
@@ -57,8 +64,8 @@ const StyledTag = styled.div`
     pointer-events: auto;
   }
 
-  &:hover .icon,
-  &:focus .icon {
+  &:hover .close-icon,
+  &:focus .close-icon {
     padding-right: 7px;
     cursor: pointer;
   }
