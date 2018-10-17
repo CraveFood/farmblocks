@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.18"></a>
+## [0.1.18](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@0.1.17...@crave/farmblocks-form-wrapper@0.1.18) (2018-10-17)
+
+
+### Bug Fixes
+
+* **form-wrapper:** add space between title and cancel link ([351b835](https://github.com/CraveFood/farmblocks/commit/351b835)), closes [#596](https://github.com/CraveFood/farmblocks/issues/596)
+
+
+
+
 <a name="0.1.17"></a>
 ## [0.1.17](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@0.1.16...@crave/farmblocks-form-wrapper@0.1.17) (2018-10-17)
 
