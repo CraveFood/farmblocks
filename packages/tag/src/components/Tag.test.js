@@ -13,7 +13,7 @@ describe("Tag", function() {
     const wrapper = shallow(
       <Tag text="some text" value={value} onRemove={onRemoveMock} />
     );
-    wrapper.find(".icon").simulate("click");
+    wrapper.find(".close-icon").simulate("click");
 
     expect(onRemoveMock).toHaveBeenCalledWith(value);
   });
