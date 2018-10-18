@@ -20,7 +20,8 @@ Image.propTypes = {
   }),
   width: PropTypes.string,
   height: PropTypes.string,
-  fit: PropTypes.string
+  fit: PropTypes.string,
+  css: PropTypes.object
 };
 
 Image.defaultProps = {
