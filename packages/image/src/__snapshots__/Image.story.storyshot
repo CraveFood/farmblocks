@@ -128,6 +128,32 @@ exports[`Storyshots Image badge 1`] = `
 />
 `;
 
+exports[`Storyshots Image custom css 1`] = `
+.c0 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 300px;
+  min-height: 300px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-image: url(https://picsum.photos/512);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  border: dotted 5px red;
+}
+
+<div
+  className="c0"
+  size={300}
+  src="https://picsum.photos/512"
+/>
+`;
+
 exports[`Storyshots Image custom dimensions and border 1`] = `
 .c0 {
   background-origin: border-box;
