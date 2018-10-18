@@ -4867,15 +4867,66 @@ exports[`Storyshots Table/Custom Cells Borderless 1`] = `
 `;
 
 exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] = `
-.c9 {
-  display: inline-block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: inline-block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -5289,34 +5340,43 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         <div
           className="c9"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c10"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="PRIMARY"
           >
-            <button
-              className="c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="PRIMARY"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
+                }
+              }
+            >
+              <i
+                className="wg-check"
+              />
+            </div>
+            Accept (
+            0
+            )
+          </button>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
-                }
+                className="c13"
               >
-                <i
-                  className="wg-check"
-                />
+                This field is disabled.
               </div>
-              Accept (
-              0
-              )
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -5394,34 +5454,43 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         <div
           className="c9"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c10"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="PRIMARY"
           >
-            <button
-              className="c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="PRIMARY"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
+                }
+              }
+            >
+              <i
+                className="wg-check"
+              />
+            </div>
+            Accept (
+            1
+            )
+          </button>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
-                }
+                className="c13"
               >
-                <i
-                  className="wg-check"
-                />
+                This field is disabled.
               </div>
-              Accept (
-              1
-              )
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -5499,34 +5568,43 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         <div
           className="c9"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c10"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="PRIMARY"
           >
-            <button
-              className="c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="PRIMARY"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
+                }
+              }
+            >
+              <i
+                className="wg-check"
+              />
+            </div>
+            Accept (
+            2
+            )
+          </button>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
-                }
+                className="c13"
               >
-                <i
-                  className="wg-check"
-                />
+                This field is disabled.
               </div>
-              Accept (
-              2
-              )
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -5604,34 +5682,43 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         <div
           className="c9"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c10"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="PRIMARY"
           >
-            <button
-              className="c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="PRIMARY"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
+                }
+              }
+            >
+              <i
+                className="wg-check"
+              />
+            </div>
+            Accept (
+            3
+            )
+          </button>
+          <div
+            className="c11"
+          >
+            <div
+              className="c12"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
-                }
+                className="c13"
               >
-                <i
-                  className="wg-check"
-                />
+                This field is disabled.
               </div>
-              Accept (
-              3
-              )
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -5641,15 +5728,66 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
 `;
 
 exports[`Storyshots Table/Custom Cells Complete example 1`] = `
-.c16 {
-  display: inline-block;
-}
-
-.c16 .hitWrapper {
+.c18 {
   position: relative;
 }
 
-.c16 .hitWrapper .hit {
+.c19 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c20 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c20:after,
+.c20:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c20:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c20:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c16 {
+  position: relative;
+  display: inline-block;
+}
+
+.c16 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -5887,7 +6025,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   background-position: center;
 }
 
-.c18 {
+.c21 {
   background-origin: border-box;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -6371,32 +6509,41 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
           <div
             className="c16"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c17"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="c17"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Connect
+            </button>
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c20"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Connect
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -6543,7 +6690,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
             }
           >
             <div
-              className="c18"
+              className="c21"
               size={24}
               src="https://media.giphy.com/media/f8k6R32qjJGV2/giphy.gif"
             />
@@ -6566,32 +6713,41 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
           <div
             className="c16"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c17"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="c17"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Connect
+            </button>
+            <div
+              className="c18"
+            >
+              <div
+                className="c19"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c20"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Connect
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -7147,15 +7303,66 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
 `;
 
 exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
-.c9 {
-  display: inline-block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: inline-block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -7236,7 +7443,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   box-shadow: none;
 }
 
-.c12 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7269,49 +7476,49 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   padding: 0 16px;
 }
 
-.c12 .icon {
+.c15 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c12 .icon i {
+.c15 .icon i {
   vertical-align: text-bottom;
 }
 
-.c12:hover {
+.c15:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c15:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c15:hover .icon,
+.c15:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c15 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c15:hover,
+.c15:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c15:hover > .icon,
+.c15:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled :hover {
+.c15:disabled,
+.c15:disabled .icon,
+.c15:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c15:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -7343,13 +7550,13 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   font-weight: 600;
 }
 
-.c11 {
+.c14 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c11 *:focus {
+.c14 *:focus {
   outline: none;
 }
 
@@ -7663,32 +7870,41 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -7698,7 +7914,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -7713,30 +7929,39 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="MEDIUM"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="MEDIUM"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -7818,32 +8043,41 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -7853,7 +8087,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -7868,30 +8102,39 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="MEDIUM"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="MEDIUM"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -7973,32 +8216,41 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -8008,7 +8260,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -8023,30 +8275,39 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="MEDIUM"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="MEDIUM"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -8128,32 +8389,41 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -8163,7 +8433,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -8178,30 +8448,39 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="MEDIUM"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="MEDIUM"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -8214,15 +8493,66 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
 `;
 
 exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell example) 1`] = `
-.c9 {
-  display: inline-block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: inline-block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -8303,7 +8633,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   box-shadow: none;
 }
 
-.c12 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8336,49 +8666,49 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   padding: 0 8px;
 }
 
-.c12 .icon {
+.c15 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c12 .icon i {
+.c15 .icon i {
   vertical-align: text-bottom;
 }
 
-.c12:hover {
+.c15:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c15:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c15:hover .icon,
+.c15:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c15 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c15:hover,
+.c15:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c15:hover > .icon,
+.c15:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled :hover {
+.c15:disabled,
+.c15:disabled .icon,
+.c15:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c15:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -8410,13 +8740,13 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   font-weight: 600;
 }
 
-.c11 {
+.c14 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c11 *:focus {
+.c14 *:focus {
   outline: none;
 }
 
@@ -8730,32 +9060,41 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -8765,7 +9104,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -8780,30 +9119,39 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="SMALL"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="SMALL"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -8885,32 +9233,41 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -8920,7 +9277,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -8935,30 +9292,39 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="SMALL"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="SMALL"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -9040,32 +9406,41 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -9075,7 +9450,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -9090,30 +9465,39 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="SMALL"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="SMALL"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -9195,32 +9579,41 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
           <div
             className="c9"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c10"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="SECONDARY"
             >
-              <button
-                className="c10"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="SECONDARY"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 10,
+                  }
+                }
+              >
+                <i
+                  className="wg-order"
+                />
+              </div>
+              Message
+            </button>
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 10,
-                    }
-                  }
+                  className="c13"
                 >
-                  <i
-                    className="wg-order"
-                  />
+                  This field is disabled.
                 </div>
-                Message
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -9230,7 +9623,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c14"
         >
           <div>
             <span
@@ -9245,30 +9638,39 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               <div
                 className="c9"
               >
-                <div
-                  className="hitWrapper"
+                <button
+                  className="c15"
+                  disabled={false}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="SMALL"
+                  type="NEUTRAL"
                 >
-                  <button
+                  <div
+                    className="icon"
+                    style={
+                      Object {
+                        "marginLeft": 0,
+                      }
+                    }
+                  >
+                    <i
+                      className="wg-small-arrow-bottom"
+                    />
+                  </div>
+                </button>
+                <div
+                  className="c11"
+                >
+                  <div
                     className="c12"
-                    disabled={false}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="SMALL"
-                    type="NEUTRAL"
                   >
                     <div
-                      className="icon"
-                      style={
-                        Object {
-                          "marginLeft": 0,
-                        }
-                      }
+                      className="c13"
                     >
-                      <i
-                        className="wg-small-arrow-bottom"
-                      />
+                      This field is disabled.
                     </div>
-                  </button>
+                  </div>
                 </div>
               </div>
             </span>
@@ -9281,15 +9683,66 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
 `;
 
 exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`] = `
-.c8 {
-  display: inline-block;
-}
-
-.c8 .hitWrapper {
+.c10 {
   position: relative;
 }
 
-.c8 .hitWrapper .hit {
+.c11 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c12 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c12:after,
+.c12:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c12:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c12:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c8 {
+  position: relative;
+  display: inline-block;
+}
+
+.c8 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -9494,7 +9947,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   white-space: normal;
 }
 
-.c10 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -9505,7 +9958,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   background-color: white;
 }
 
-.c11 {
+.c14 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -9727,31 +10180,40 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         <div
           className="c8"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c9"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c9"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c10"
+          >
+            <div
+              className="c11"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c12"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -9761,7 +10223,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c10"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
@@ -9774,7 +10236,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c10"
+        className="cell  c13"
         selected={false}
       >
         <div
@@ -9786,7 +10248,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c14"
         selected={false}
       />
     </tr>
@@ -9795,7 +10257,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c10"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
@@ -9808,7 +10270,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c10"
+        className="cell  c13"
         selected={false}
       >
         <div
@@ -9820,7 +10282,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c14"
         selected={false}
       />
     </tr>
@@ -9829,7 +10291,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c10"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
@@ -9842,7 +10304,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c10"
+        className="cell  c13"
         selected={false}
       >
         <div
@@ -9854,7 +10316,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c14"
         selected={false}
       />
     </tr>
@@ -9863,15 +10325,66 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
 `;
 
 exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
-.c7 {
-  display: inline-block;
-}
-
-.c7 .hitWrapper {
+.c9 {
   position: relative;
 }
 
-.c7 .hitWrapper .hit {
+.c10 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c11 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c11:after,
+.c11:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c11:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c11:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c7 {
+  position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -10068,7 +10581,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -10079,7 +10592,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   background-color: white;
 }
 
-.c10 {
+.c13 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -10195,31 +10708,40 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -10229,7 +10751,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10241,7 +10763,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10253,7 +10775,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -10262,7 +10784,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10274,7 +10796,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10286,7 +10808,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -10366,31 +10888,40 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -10400,7 +10931,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10412,7 +10943,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10424,7 +10955,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -10433,7 +10964,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10445,7 +10976,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10457,7 +10988,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -10466,7 +10997,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10478,7 +11009,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10490,7 +11021,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -10499,15 +11030,66 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
 `;
 
 exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
-.c7 {
-  display: inline-block;
-}
-
-.c7 .hitWrapper {
+.c9 {
   position: relative;
 }
 
-.c7 .hitWrapper .hit {
+.c10 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c11 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c11:after,
+.c11:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c11:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c11:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c7 {
+  position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -10704,7 +11286,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -10715,7 +11297,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   background-color: white;
 }
 
-.c10 {
+.c13 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -10830,31 +11412,40 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -10864,7 +11455,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10876,7 +11467,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10888,7 +11479,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -10897,7 +11488,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -10909,7 +11500,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -10921,7 +11512,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11001,31 +11592,40 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -11035,7 +11635,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11047,7 +11647,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11059,7 +11659,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11068,7 +11668,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11080,7 +11680,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11092,7 +11692,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11101,7 +11701,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11113,7 +11713,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11125,7 +11725,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11134,15 +11734,66 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
 `;
 
 exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1`] = `
-.c7 {
-  display: inline-block;
-}
-
-.c7 .hitWrapper {
+.c9 {
   position: relative;
 }
 
-.c7 .hitWrapper .hit {
+.c10 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c11 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c11:after,
+.c11:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c11:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c11:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c7 {
+  position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -11339,7 +11990,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   white-space: normal;
 }
 
-.c9 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -11350,7 +12001,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   background-color: white;
 }
 
-.c10 {
+.c13 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -11465,31 +12116,40 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -11499,7 +12159,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11511,7 +12171,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11523,7 +12183,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11532,7 +12192,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11544,7 +12204,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11556,7 +12216,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11636,31 +12296,40 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -11670,7 +12339,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11682,7 +12351,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11694,7 +12363,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11703,7 +12372,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11715,7 +12384,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11727,7 +12396,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11736,7 +12405,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -11748,7 +12417,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -11760,7 +12429,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -11769,15 +12438,66 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
 `;
 
 exports[`Storyshots Table/Row Groups Expandable, Selectable with selection header 1`] = `
-.c11 {
-  display: inline-block;
-}
-
-.c11 .hitWrapper {
+.c13 {
   position: relative;
 }
 
-.c11 .hitWrapper .hit {
+.c14 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c15 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c15:after,
+.c15:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c15:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c15:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c11 {
+  position: relative;
+  display: inline-block;
+}
+
+.c11 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -12135,7 +12855,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c14 {
+.c17 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -12146,12 +12866,12 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c15 {
+.c18 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c13 {
+.c16 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -12365,31 +13085,40 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         <div
           className="c11"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c12"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c12"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c13"
+          >
+            <div
+              className="c14"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c15"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -12399,7 +13128,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -12433,7 +13162,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -12445,7 +13174,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -12457,7 +13186,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -12466,7 +13195,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -12500,7 +13229,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -12512,7 +13241,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -12524,7 +13253,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -12672,31 +13401,40 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         <div
           className="c11"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c12"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c12"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c13"
+          >
+            <div
+              className="c14"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c15"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -12706,7 +13444,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -12740,7 +13478,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -12752,7 +13490,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -12764,7 +13502,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -12773,7 +13511,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -12807,7 +13545,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -12819,7 +13557,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -12831,7 +13569,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -12840,7 +13578,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -12874,7 +13612,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -12886,7 +13624,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -12898,7 +13636,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -12907,15 +13645,66 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
 `;
 
 exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selectable row 1`] = `
-.c11 {
-  display: inline-block;
-}
-
-.c11 .hitWrapper {
+.c13 {
   position: relative;
 }
 
-.c11 .hitWrapper .hit {
+.c14 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c15 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c15:after,
+.c15:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c15:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c15:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c11 {
+  position: relative;
+  display: inline-block;
+}
+
+.c11 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -13273,7 +14062,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c14 {
+.c17 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -13284,12 +14073,12 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c15 {
+.c18 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c13 {
+.c16 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -13712,31 +14501,40 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         <div
           className="c11"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c12"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c12"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c13"
+          >
+            <div
+              className="c14"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c15"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -13746,7 +14544,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -13780,7 +14578,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -13792,7 +14590,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -13804,7 +14602,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -13813,7 +14611,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -13847,7 +14645,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -13859,7 +14657,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -13871,7 +14669,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -13880,7 +14678,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c16"
         selected={false}
       >
         <div
@@ -13914,7 +14712,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c17"
         selected={false}
       >
         <div
@@ -13926,7 +14724,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c17"
         selected={false}
       >
         <div
@@ -13938,7 +14736,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c18"
         selected={false}
       />
     </tr>
@@ -13947,15 +14745,66 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
 `;
 
 exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
-.c11 {
-  display: inline-block;
-}
-
-.c11 .hitWrapper {
+.c13 {
   position: relative;
 }
 
-.c11 .hitWrapper .hit {
+.c14 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c15 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c15:after,
+.c15:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c15:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c15:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c11 {
+  position: relative;
+  display: inline-block;
+}
+
+.c11 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -14313,7 +15162,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c14 {
+.c17 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -14324,12 +15173,12 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c15 {
+.c18 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c13 {
+.c16 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -14549,31 +15398,40 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           <div
             className="c11"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c12"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="NEUTRAL"
             >
-              <button
-                className="c12"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="NEUTRAL"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 0,
+                  }
+                }
+              >
+                <i
+                  className="wg-small-arrow-bottom"
+                />
+              </div>
+            </button>
+            <div
+              className="c13"
+            >
+              <div
+                className="c14"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 0,
-                    }
-                  }
+                  className="c15"
                 >
-                  <i
-                    className="wg-small-arrow-bottom"
-                  />
+                  This field is disabled.
                 </div>
-              </button>
+              </div>
             </div>
           </div>
         </td>
@@ -14583,7 +15441,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c16"
           selected={false}
         >
           <div
@@ -14617,7 +15475,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c17"
           selected={false}
         >
           <div
@@ -14629,7 +15487,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c17"
           selected={false}
         >
           <div
@@ -14641,7 +15499,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c18"
           selected={false}
         />
       </tr>
@@ -14650,7 +15508,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c16"
           selected={false}
         >
           <div
@@ -14684,7 +15542,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c17"
           selected={false}
         >
           <div
@@ -14696,7 +15554,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c17"
           selected={false}
         >
           <div
@@ -14708,7 +15566,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c18"
           selected={false}
         />
       </tr>
@@ -14856,31 +15714,40 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           <div
             className="c11"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c12"
+              disabled={false}
+              onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="NEUTRAL"
             >
-              <button
-                className="c12"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="NEUTRAL"
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 0,
+                  }
+                }
+              >
+                <i
+                  className="wg-small-arrow-bottom"
+                />
+              </div>
+            </button>
+            <div
+              className="c13"
+            >
+              <div
+                className="c14"
               >
                 <div
-                  className="icon left-icon"
-                  style={
-                    Object {
-                      "marginRight": 0,
-                    }
-                  }
+                  className="c15"
                 >
-                  <i
-                    className="wg-small-arrow-bottom"
-                  />
+                  This field is disabled.
                 </div>
-              </button>
+              </div>
             </div>
           </div>
         </td>
@@ -14890,7 +15757,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c16"
           selected={false}
         >
           <div
@@ -14924,7 +15791,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c17"
           selected={false}
         >
           <div
@@ -14936,7 +15803,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c17"
           selected={false}
         >
           <div
@@ -14948,7 +15815,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c18"
           selected={false}
         />
       </tr>
@@ -14957,7 +15824,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c16"
           selected={false}
         >
           <div
@@ -14991,7 +15858,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c17"
           selected={false}
         >
           <div
@@ -15003,7 +15870,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c17"
           selected={false}
         >
           <div
@@ -15015,7 +15882,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c18"
           selected={false}
         />
       </tr>
@@ -15024,7 +15891,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c16"
           selected={false}
         >
           <div
@@ -15058,7 +15925,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c17"
           selected={false}
         >
           <div
@@ -15070,7 +15937,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c17"
           selected={false}
         >
           <div
@@ -15082,7 +15949,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c18"
           selected={false}
         />
       </tr>
@@ -15505,15 +16372,66 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
 `;
 
 exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
-.c7 {
-  display: inline-block;
-}
-
-.c7 .hitWrapper {
+.c9 {
   position: relative;
 }
 
-.c7 .hitWrapper .hit {
+.c10 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c11 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c11:after,
+.c11:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c11:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c11:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c7 {
+  position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -15710,7 +16628,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -15721,7 +16639,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   background-color: white;
 }
 
-.c10 {
+.c13 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -15943,31 +16861,40 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         <div
           className="c7"
         >
-          <div
-            className="hitWrapper"
+          <button
+            className="c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="c8"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+          <div
+            className="c9"
+          >
+            <div
+              className="c10"
             >
               <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
-                }
+                className="c11"
               >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
+                This field is disabled.
               </div>
-            </button>
+            </div>
           </div>
         </div>
       </td>
@@ -15977,7 +16904,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -15989,7 +16916,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -16001,7 +16928,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -16010,7 +16937,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -16022,7 +16949,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -16034,7 +16961,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -16043,7 +16970,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c12"
         selected={false}
       >
         <div
@@ -16055,7 +16982,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c12"
         selected={false}
       >
         <div
@@ -16067,7 +16994,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c13"
         selected={false}
       />
     </tr>
@@ -16076,15 +17003,66 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
+.c4 {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c5 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c6 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c2 {
+  position: relative;
+  display: inline-block;
+}
+
+.c2 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -16180,13 +17158,13 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   font-weight: 600;
 }
 
-.c4 {
+.c7 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c4 *:focus {
+.c7 *:focus {
   outline: none;
 }
 
@@ -16288,20 +17266,29 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
     <div
       className="c2"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c3"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Clear
+      </button>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
         >
-          Clear
-        </button>
+          <div
+            className="c6"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -16309,7 +17296,7 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
     className="actions"
   >
     <div
-      className="c4"
+      className="c7"
     >
       <div>
         <span
@@ -16324,31 +17311,40 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
           <div
             className="c2"
           >
-            <div
-              className="hitWrapper"
+            <button
+              className="c3"
+              disabled={false}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="NEUTRAL"
             >
-              <button
-                className="c3"
-                disabled={false}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="SMALL"
-                type="NEUTRAL"
-              >
-                Options
-                <div
-                  className="icon"
-                  style={
-                    Object {
-                      "marginLeft": 10,
-                    }
+              Options
+              <div
+                className="icon"
+                style={
+                  Object {
+                    "marginLeft": 10,
                   }
+                }
+              >
+                <i
+                  className="wg-small-arrow-bottom"
+                />
+              </div>
+            </button>
+            <div
+              className="c4"
+            >
+              <div
+                className="c5"
+              >
+                <div
+                  className="c6"
                 >
-                  <i
-                    className="wg-small-arrow-bottom"
-                  />
+                  This field is disabled.
                 </div>
-              </button>
+              </div>
             </div>
           </div>
         </span>
@@ -16359,15 +17355,66 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
+.c4 {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c5 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c6 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c2 {
+  position: relative;
+  display: inline-block;
+}
+
+.c2 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -16561,20 +17608,29 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
     <div
       className="c2"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c3"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Clear
+      </button>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
         >
-          Clear
-        </button>
+          <div
+            className="c6"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -16690,15 +17746,66 @@ exports[`Storyshots Table/SelectionBar Default 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar One action button 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
+.c4 {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c5 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c6 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c2 {
+  position: relative;
+  display: inline-block;
+}
+
+.c2 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -16785,7 +17892,7 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   box-shadow: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16819,42 +17926,42 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   padding: 0 16px;
 }
 
-.c4 .icon {
+.c7 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c4 .icon i {
+.c7 .icon i {
   vertical-align: text-bottom;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c4:hover .icon,
-.c4:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c4:hover {
+.c7:hover {
   background-color: #dd3311;
 }
 
-.c4:focus {
+.c7:focus {
   background-color: #dd3311;
 }
 
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled :hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c4:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -16966,20 +18073,29 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
     <div
       className="c2"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c3"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Clear
+      </button>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
         >
-          Clear
-        </button>
+          <div
+            className="c6"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -16989,20 +18105,29 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
     <div
       className="c2"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c7"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="PRIMARY"
       >
-        <button
-          className="c4"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="PRIMARY"
+        Primary Action
+      </button>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
         >
-          Primary Action
-        </button>
+          <div
+            className="c6"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -17118,15 +18243,66 @@ exports[`Storyshots Table/SelectionBar One item selected 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
-.c2 {
-  display: inline-block;
-}
-
-.c2 .hitWrapper {
+.c4 {
   position: relative;
 }
 
-.c2 .hitWrapper .hit {
+.c5 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c6 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c2 {
+  position: relative;
+  display: inline-block;
+}
+
+.c2 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -17213,7 +18389,7 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17247,47 +18423,47 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   padding: 0 16px;
 }
 
-.c5 .icon {
+.c8 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5 .icon i {
+.c8 .icon i {
   vertical-align: text-bottom;
 }
 
-.c5:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c5:hover {
+.c8:hover {
   background-color: #dd3311;
 }
 
-.c5:focus {
+.c8:focus {
   background-color: #dd3311;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c8:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c4 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17321,42 +18497,42 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   padding: 0 16px;
 }
 
-.c4 .icon {
+.c7 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c4 .icon i {
+.c7 .icon i {
   vertical-align: text-bottom;
 }
 
-.c4:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c4:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c4:hover .icon,
-.c4:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c4:hover {
+.c7:hover {
   background-color: #2980b9;
 }
 
-.c4:focus {
+.c7:focus {
   background-color: #2980b9;
 }
 
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled :hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c4:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -17468,20 +18644,29 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
     <div
       className="c2"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c3"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c3"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Clear
+      </button>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
         >
-          Clear
-        </button>
+          <div
+            className="c6"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -17500,39 +18685,57 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
       <div
         className="c2"
       >
-        <div
-          className="hitWrapper"
+        <button
+          className="c7"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="SECONDARY"
         >
-          <button
-            className="c4"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="SECONDARY"
+          Secondary Action
+        </button>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
           >
-            Secondary Action
-          </button>
+            <div
+              className="c6"
+            >
+              This field is disabled.
+            </div>
+          </div>
         </div>
       </div>
       <div
         className="c2"
       >
-        <div
-          className="hitWrapper"
+        <button
+          className="c8"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="PRIMARY"
         >
-          <button
+          Primary Action
+        </button>
+        <div
+          className="c4"
+        >
+          <div
             className="c5"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="PRIMARY"
           >
-            Primary Action
-          </button>
+            <div
+              className="c6"
+            >
+              This field is disabled.
+            </div>
+          </div>
         </div>
       </div>
     </div>

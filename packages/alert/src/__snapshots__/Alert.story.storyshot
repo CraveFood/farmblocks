@@ -1,15 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Alert default 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -144,31 +195,40 @@ exports[`Storyshots Alert default 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -176,15 +236,66 @@ exports[`Storyshots Alert default 1`] = `
 `;
 
 exports[`Storyshots Alert default at bottom 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -319,31 +430,40 @@ exports[`Storyshots Alert default at bottom 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -403,15 +523,66 @@ exports[`Storyshots Alert non dismissable 1`] = `
 `;
 
 exports[`Storyshots Alert type attention 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -546,31 +717,40 @@ exports[`Storyshots Alert type attention 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -578,15 +758,66 @@ exports[`Storyshots Alert type attention 1`] = `
 `;
 
 exports[`Storyshots Alert type negative 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -721,31 +952,40 @@ exports[`Storyshots Alert type negative 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -753,15 +993,66 @@ exports[`Storyshots Alert type negative 1`] = `
 `;
 
 exports[`Storyshots Alert type news 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -896,31 +1187,40 @@ exports[`Storyshots Alert type news 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -928,15 +1228,66 @@ exports[`Storyshots Alert type news 1`] = `
 `;
 
 exports[`Storyshots Alert type positive 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1071,31 +1422,40 @@ exports[`Storyshots Alert type positive 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1103,15 +1463,66 @@ exports[`Storyshots Alert type positive 1`] = `
 `;
 
 exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1246,31 +1657,40 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
     <div
       className="c1"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
-            }
+            className="c5"
           >
-            <i
-              className="wg-close"
-            />
+            This field is disabled.
           </div>
-        </button>
+        </div>
       </div>
     </div>
   </div>
@@ -1278,15 +1698,66 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
 `;
 
 exports[`Storyshots Alert with custom z-index 1`] = `
-.c1 {
-  display: inline-block;
-}
-
-.c1 .hitWrapper {
+.c3 {
   position: relative;
 }
 
-.c1 .hitWrapper .hit {
+.c4 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c5 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c5:after,
+.c5:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c5:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c5:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1444,31 +1915,40 @@ exports[`Storyshots Alert with custom z-index 1`] = `
       <div
         className="c1"
       >
-        <div
-          className="hitWrapper"
+        <button
+          className="c2"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="SMALL"
+          type="OFF_NEUTRAL"
         >
-          <button
-            className="c2"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="OFF_NEUTRAL"
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
+              }
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
+        <div
+          className="c3"
+        >
+          <div
+            className="c4"
           >
             <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
-              }
+              className="c5"
             >
-              <i
-                className="wg-close"
-              />
+              This field is disabled.
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>

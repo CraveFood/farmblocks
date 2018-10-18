@@ -334,15 +334,66 @@ exports[`Storyshots EmptyState With image 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
+.c6 {
   position: relative;
 }
 
-.c4 .hitWrapper .hit {
+.c7 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c8 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c8:after,
+.c8:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c8:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c8:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c4 {
+  position: relative;
+  display: inline-block;
+}
+
+.c4 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -520,20 +571,29 @@ exports[`Storyshots EmptyState With one action 1`] = `
     <div
       className="c4"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c5"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        Primary Action
+      </button>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
         >
-          Primary Action
-        </button>
+          <div
+            className="c8"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -541,15 +601,66 @@ exports[`Storyshots EmptyState With one action 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action and info 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
+.c6 {
   position: relative;
 }
 
-.c4 .hitWrapper .hit {
+.c7 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c8 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c8:after,
+.c8:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c8:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c8:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c4 {
+  position: relative;
+  display: inline-block;
+}
+
+.c4 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -647,7 +758,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   text-align: center;
 }
 
-.c6 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -735,25 +846,34 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
     <div
       className="c4"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c5"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        Primary Action
+      </button>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
         >
-          Primary Action
-        </button>
+          <div
+            className="c8"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div
-    className="info c6"
+    className="info c9"
     size={14}
     type="#59636f"
   >
@@ -763,15 +883,66 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action, inside a container 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
+.c6 {
   position: relative;
 }
 
-.c4 .hitWrapper .hit {
+.c7 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c8 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c8:after,
+.c8:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c8:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c8:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c4 {
+  position: relative;
+  display: inline-block;
+}
+
+.c4 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -957,20 +1128,29 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
       <div
         className="c4"
       >
-        <div
-          className="hitWrapper"
+        <button
+          className="c5"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="MEDIUM"
+          type="SECONDARY"
         >
-          <button
-            className="c5"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="MEDIUM"
-            type="SECONDARY"
+          Primary Action
+        </button>
+        <div
+          className="c6"
+        >
+          <div
+            className="c7"
           >
-            Primary Action
-          </button>
+            <div
+              className="c8"
+            >
+              This field is disabled.
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -979,22 +1159,73 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 `;
 
 exports[`Storyshots EmptyState With two actions 1`] = `
-.c4 {
-  display: inline-block;
-}
-
-.c4 .hitWrapper {
+.c6 {
   position: relative;
 }
 
-.c4 .hitWrapper .hit {
+.c7 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c8 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c8:after,
+.c8:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c8:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c8:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c4 {
+  position: relative;
+  display: inline-block;
+}
+
+.c4 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c6 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1028,42 +1259,42 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   padding: 0 16px;
 }
 
-.c6 .icon {
+.c9 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c6 .icon i {
+.c9 .icon i {
   vertical-align: text-bottom;
 }
 
-.c6:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c6:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c6:hover .icon,
-.c6:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c6:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c6:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c6:disabled,
-.c6:disabled .icon,
-.c6:disabled :hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:disabled {
+.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1245,39 +1476,57 @@ exports[`Storyshots EmptyState With two actions 1`] = `
     <div
       className="c4"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c5"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
+        Secondary Action
+      </button>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
         >
-          Secondary Action
-        </button>
+          <div
+            className="c8"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
     <div
       className="c4"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c9"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c6"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        Primary Action
+      </button>
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
         >
-          Primary Action
-        </button>
+          <div
+            className="c8"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>

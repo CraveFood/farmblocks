@@ -1,15 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots HOC disabledTooltip disabled false and button events (click, mouseover) 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
+.c1 {
   position: relative;
 }
 
-.c0 .hitWrapper .hit {
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -19,31 +70,91 @@ exports[`Storyshots HOC disabledTooltip disabled false and button events (click,
 <div
   className="c0"
 >
-  <div
-    className="hitWrapper"
+  <button
+    disabled={false}
+    onClick={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
   >
-    <button
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
+    A Button with events
+  </button>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
     >
-      A Button with events
-    </button>
+      <div
+        className="c3"
+      >
+        This field is disabled.
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots HOC disabledTooltip disabled html button 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
+.c1 {
   position: relative;
 }
 
-.c0 .hitWrapper .hit {
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -54,34 +165,94 @@ exports[`Storyshots HOC disabledTooltip disabled html button 1`] = `
   className="c0"
 >
   <div
-    className="hitWrapper"
+    className="hitArea"
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+  />
+  <button
+    disabled={true}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
   >
-    <button
-      disabled={true}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    >
-      A disabled Button
-    </button>
+    A disabled Button
+  </button>
+  <div
+    className="c1"
+  >
     <div
-      className="hit"
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    />
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        This field is disabled.
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots HOC disabledTooltip disabled input 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
+.c1 {
   position: relative;
 }
 
-.c0 .hitWrapper .hit {
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -94,84 +265,10 @@ exports[`Storyshots HOC disabledTooltip disabled input 1`] = `
     className="c0"
   >
     <div
-      className="hitWrapper"
-    >
-      <input
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        type="text"
-      />
-      <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-    </div>
-  </div>
-  text after
-</div>
-`;
-
-exports[`Storyshots HOC disabledTooltip disabled input with custom Tooltip text 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="hitWrapper"
-  >
-    <input
-      disabled={true}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      type="checkbox"
-    />
-    <div
-      className="hit"
+      className="hitArea"
       onMouseLeave={[Function]}
       onMouseOver={[Function]}
     />
-  </div>
-</div>
-`;
-
-exports[`Storyshots HOC disabledTooltip disabled input with tooltip right aligned 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
-  position: relative;
-}
-
-.c0 .hitWrapper .hit {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="hitWrapper"
-  >
     <input
       disabled={true}
       onMouseLeave={[Function]}
@@ -179,24 +276,278 @@ exports[`Storyshots HOC disabledTooltip disabled input with tooltip right aligne
       type="text"
     />
     <div
-      className="hit"
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    />
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          This field is disabled.
+        </div>
+      </div>
+    </div>
+  </div>
+  text after
+</div>
+`;
+
+exports[`Storyshots HOC disabledTooltip disabled input with custom Tooltip text 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="hitArea"
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+  />
+  <input
+    disabled={true}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    type="checkbox"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        A custom tooltip text
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots HOC disabledTooltip disabled input with tooltip right aligned 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  right: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="hitArea"
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+  />
+  <input
+    disabled={true}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    type="text"
+  />
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        This field is disabled.
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots HOC disabledTooltip enhanced element with display block 1`] = `
-.c0 {
-  display: block;
-}
-
-.c0 .hitWrapper {
+.c1 {
   position: relative;
 }
 
-.c0 .hitWrapper .hit {
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: block;
+}
+
+.c0 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -209,19 +560,28 @@ exports[`Storyshots HOC disabledTooltip enhanced element with display block 1`] 
     className="c0"
   >
     <div
-      className="hitWrapper"
+      className="hitArea"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    />
+    <input
+      disabled={true}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      type="text"
+    />
+    <div
+      className="c1"
     >
-      <input
-        disabled={true}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        type="text"
-      />
       <div
-        className="hit"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
+        className="c2"
+      >
+        <div
+          className="c3"
+        >
+          This field is disabled.
+        </div>
+      </div>
     </div>
   </div>
   text after
@@ -229,15 +589,66 @@ exports[`Storyshots HOC disabledTooltip enhanced element with display block 1`] 
 `;
 
 exports[`Storyshots HOC disabledTooltip no tooltip 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c0 .hitWrapper {
+.c1 {
   position: relative;
 }
 
-.c0 .hitWrapper .hit {
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c3 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c0 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -247,21 +658,25 @@ exports[`Storyshots HOC disabledTooltip no tooltip 1`] = `
 <div
   className="c0"
 >
-  <div
-    className="hitWrapper"
+  <button
+    disabled={true}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
   >
-    <button
-      disabled={true}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    >
-      A disabled Button
-    </button>
+    A disabled Button
+  </button>
+  <div
+    className="c1"
+  >
     <div
-      className="hit"
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    />
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        This field is disabled.
+      </div>
+    </div>
   </div>
 </div>
 `;

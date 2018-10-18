@@ -160,15 +160,66 @@ exports[`Storyshots Footer custom font size 1`] = `
 `;
 
 exports[`Storyshots Footer with one action 1`] = `
-.c6 {
-  display: inline-block;
-}
-
-.c6 .hitWrapper {
+.c8 {
   position: relative;
 }
 
-.c6 .hitWrapper .hit {
+.c9 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c10 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c10:after,
+.c10:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c10:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c10:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c6 {
+  position: relative;
+  display: inline-block;
+}
+
+.c6 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -417,20 +468,29 @@ exports[`Storyshots Footer with one action 1`] = `
     <div
       className="c6"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c7"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c7"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Save
+      </button>
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
         >
-          Save
-        </button>
+          <div
+            className="c10"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -438,15 +498,66 @@ exports[`Storyshots Footer with one action 1`] = `
 `;
 
 exports[`Storyshots Footer with two actions 1`] = `
-.c6 {
-  display: inline-block;
-}
-
-.c6 .hitWrapper {
+.c8 {
   position: relative;
 }
 
-.c6 .hitWrapper .hit {
+.c9 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c10 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c10:after,
+.c10:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c10:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c10:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c6 {
+  position: relative;
+  display: inline-block;
+}
+
+.c6 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -533,7 +644,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   box-shadow: none;
 }
 
-.c8 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -567,42 +678,42 @@ exports[`Storyshots Footer with two actions 1`] = `
   padding: 0 16px;
 }
 
-.c8 .icon {
+.c11 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c8 .icon i {
+.c11 .icon i {
   vertical-align: text-bottom;
 }
 
-.c8:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c8:hover {
+.c11:hover {
   background-color: #dd3311;
 }
 
-.c8:focus {
+.c11:focus {
   background-color: #dd3311;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -769,39 +880,57 @@ exports[`Storyshots Footer with two actions 1`] = `
     <div
       className="c6"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c7"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="c7"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
+        Cancel
+      </button>
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
         >
-          Cancel
-        </button>
+          <div
+            className="c10"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
     <div
       className="c6"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="PRIMARY"
       >
-        <button
-          className="c8"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="PRIMARY"
+        Save
+      </button>
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
         >
-          Save
-        </button>
+          <div
+            className="c10"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -972,15 +1101,66 @@ exports[`Storyshots Footer without actions 1`] = `
 `;
 
 exports[`Storyshots Footer without image 1`] = `
-.c5 {
-  display: inline-block;
-}
-
-.c5 .hitWrapper {
+.c7 {
   position: relative;
 }
 
-.c5 .hitWrapper .hit {
+.c8 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c9 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c9:after,
+.c9:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c9:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c9:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c5 {
+  position: relative;
+  display: inline-block;
+}
+
+.c5 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1208,20 +1388,29 @@ exports[`Storyshots Footer without image 1`] = `
     <div
       className="c5"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c6"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c6"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Save
+      </button>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
         >
-          Save
-        </button>
+          <div
+            className="c9"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1229,15 +1418,66 @@ exports[`Storyshots Footer without image 1`] = `
 `;
 
 exports[`Storyshots Footer without link 1`] = `
-.c5 {
-  display: inline-block;
-}
-
-.c5 .hitWrapper {
+.c7 {
   position: relative;
 }
 
-.c5 .hitWrapper .hit {
+.c8 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c9 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c9:after,
+.c9:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c9:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c9:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c5 {
+  position: relative;
+  display: inline-block;
+}
+
+.c5 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1429,20 +1669,29 @@ exports[`Storyshots Footer without link 1`] = `
     <div
       className="c5"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c6"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="c6"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+        Save
+      </button>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
         >
-          Save
-        </button>
+          <div
+            className="c9"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
