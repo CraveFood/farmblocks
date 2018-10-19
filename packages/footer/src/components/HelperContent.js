@@ -1,11 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
 import Link from "@crave/farmblocks-link";
 
-import Container from "../styledComponents/HelperContent";
+const Container = styled.div`
+  font-family: Lato, sans-serif;
+
+  display: flex;
+
+  align-items: center;
+
+  > .text {
+    > :first-child {
+      margin-bottom: ${props => props.size === fontSizes.MEDIUM && "8px"};
+    }
+  }
+
+  > .image {
+    margin-right: 16px;
+  }
+`;
+
+Container.displayName = "HelperContentContainer";
 
 const HelperContent = props => {
   const renderLink = props.linkText && (props.linkHref || props.linkOnClick);
@@ -50,6 +69,6 @@ HelperContent.propTypes = {
 
 HelperContent.defaultProps = {
   size: fontSizes.MEDIUM
-}
+};
 
 export default HelperContent;

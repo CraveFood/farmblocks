@@ -1,50 +1,47 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button, { buttonSizes, buttonTypes } from "@crave/farmblocks-button";
-
-import Container from "../styledComponents/Footer";
+import styled from "styled-components";
+import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 import HelperContent from "./HelperContent";
 
-const Footer = props => {
-  const helper = (
-    <HelperContent
-      text={props.helpText}
-      linkText={props.helpLinkText}
-      linkHref={props.helpLinkHref}
-      imageSrc={props.helpImageSrc}
-      linkOnClick={props.onHelpLinkClick}
-      size={props.helpFontSize}
-    />
-  );
-  if (props.noAction) {
-    return helper;
-  }
+const Container = styled.div`
+  font-family: Lato, sans-serif;
 
+  background-color: ${colorConstants.SUGAR};
+
+  border-top: solid 1px ${colorConstants.GREY_16};
+
+  padding: 16px 24px;
+
+  display: flex;
+  justify-content: space-between;
+`;
+Container.displayName = "FooterContainer";
+
+const ActionsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  align: flex-end;
+
+  > * {
+    margin-left: 16px;
+  }
+`;
+
+const Footer = props => {
   return (
     <Container>
-      {helper}
+      <HelperContent
+        text={props.helpText}
+        linkText={props.helpLinkText}
+        linkHref={props.helpLinkHref}
+        imageSrc={props.helpImageSrc}
+        linkOnClick={props.onHelpLinkClick}
+        size={props.helpFontSize}
+      />
 
-      <div className="button-container">
-        {props.onSecondaryActionClick && (
-          <Button
-            size={buttonSizes.MEDIUM}
-            onClick={props.onSecondaryActionClick}
-            text={props.secondaryActionText}
-            loading={props.loadingSecondaryAction}
-          />
-        )}
-
-        {props.onPrimaryActionClick && (
-          <Button
-            size={buttonSizes.MEDIUM}
-            type={buttonTypes.SECONDARY}
-            onClick={props.onPrimaryActionClick}
-            text={props.primaryActionText}
-            loading={props.loadingPrimaryAction}
-          />
-        )}
-      </div>
+      <ActionsContainer>{props.actions}</ActionsContainer>
     </Container>
   );
 };
@@ -56,19 +53,7 @@ Footer.propTypes = {
   helpLinkHref: PropTypes.string,
   onHelpLinkClick: PropTypes.func,
   helpFontSize: PropTypes.number,
-  noAction: PropTypes.bool,
-  onSecondaryActionClick: PropTypes.func,
-  secondaryActionText: PropTypes.string,
-  loadingSecondaryAction: PropTypes.bool,
-  onPrimaryActionClick: PropTypes.func,
-  primaryActionText: PropTypes.string,
-  loadingPrimaryAction: PropTypes.bool
-};
-
-Footer.defaultProps = {
-  noAction: false,
-  loadingSecondaryAction: false,
-  loadingPrimaryAction: false
+  actions: PropTypes.arrayOf(PropTypes.node)
 };
 
 export default Footer;
