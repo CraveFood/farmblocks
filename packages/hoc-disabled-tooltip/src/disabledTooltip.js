@@ -1,9 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import wrapDisplayName from "recompose/wrapDisplayName";
-import Tooltip from "@crave/farmblocks-tooltip";
-
-import Wrapper from "./styledComponents/Wrapper";
+import withTooltip from "@crave/farmblocks-hoc-withtooltip";
 
 export const disabledTooltipProps = {
   displayBlock: PropTypes.bool,
@@ -18,52 +16,18 @@ export const disabledTooltipProps = {
 function disabledTooltip(wrappedComponentType) {
   const WrappedComponent = props =>
     React.createElement(wrappedComponentType, props);
+
+  const WrappedComponentWithTooltip = withTooltip(WrappedComponent);
   return class extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        showTooltip: false
-      };
-      this.onMouseOver = this.onMouseOver.bind(this);
-      this.onMouseLeave = this.onMouseLeave.bind(this);
-    }
-
-    onMouseOver(event) {
-      this.setState({ showTooltip: !this.props.noTooltip });
-      return this.props.onMouseOver(event);
-    }
-
-    onMouseLeave(event) {
-      this.setState({ showTooltip: false });
-      return this.props.onMouseLeave(event);
-    }
-
     render() {
-      const {
-        displayBlock,
-        noTooltip,
-        tooltipAlign,
-        tooltipText,
-        ...wrappedComponentProps
-      } = this.props;
-      const wrapperProps = { displayBlock };
-      const hitAreaProps = {
-        onMouseOver: this.onMouseOver,
-        onMouseLeave: this.onMouseLeave
-      };
+      const { noTooltip, tooltipText, ...wrappedComponentProps } = this.props;
+
       return (
-        <Wrapper {...wrapperProps}>
-          <div className="hitWrapper">
-            <WrappedComponent {...wrappedComponentProps} />
-            {this.props.disabled && <div className="hit" {...hitAreaProps} />}
-          </div>
-          {this.props.disabled &&
-            this.state.showTooltip && (
-              <div>
-                <Tooltip text={tooltipText} align={tooltipAlign} />
-              </div>
-            )}
-        </Wrapper>
+        <WrappedComponentWithTooltip
+          disableTooltip={!this.props.disabled || noTooltip}
+          tooltipContent={tooltipText}
+          {...wrappedComponentProps}
+        />
       );
     }
 
