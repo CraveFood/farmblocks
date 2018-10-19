@@ -43,6 +43,7 @@ const StyledImage = styled.div`
   background-image: url(${backgroundImage});
   background-size: ${backgroundSize};
   background-position: center;
+  ${props => props.css};
 `;
 
 export default StyledImage;

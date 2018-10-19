@@ -12,9 +12,11 @@ npm install @crave/farmblocks-image
 ```
 
 ## Spec
-See it on zeplin:
-Thumbnails: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df2fee4fbc85eccb17b1
-Badges: https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31bbc93198a853bbe2
+
+See it on zeplin: Thumbnails:
+https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df2fee4fbc85eccb17b1
+Badges:
+https://scene.zeplin.io/project/595a9cd3b401bf1876faab27/screen/59f0df31bbc93198a853bbe2
 
 ## Usage
 
@@ -25,46 +27,40 @@ import Image, { thumbnailSizes, badgeSizes } from "@crave/farmblocks-image";
 
 const root = document.createElement("div");
 
-const imageUrl = "https://openclipart.org/image/300px/svg_to_png/290343/1510649016.png&disposition=attachment";
+const imageUrl =
+  "https://openclipart.org/image/300px/svg_to_png/290343/1510649016.png&disposition=attachment";
 
-ReactDOM.render(
-  <Image
-    src={imageUrl}
-    size={badgeSizes.LARGE}
-    badge
-  />,
-  root
-);
+ReactDOM.render(<Image src={imageUrl} size={badgeSizes.LARGE} badge />, root);
 
 document.body.appendChild(root);
 ```
 
 ## API
 
-| Property | Description | Type |
-| ---------|-------------|------|
-| src | required, the URL of the image | string |
-| badge | make the image a circle | boolean |
-| size | if your image uses the same size in pixels for width and height, you can use this shorthand | number |
-| border | and object describing border properties: radius, width, color | {radius: string, width: string, color: string} |
-| width | the width of the image | string |
-| height | the height of the image | string |
-| fit | how should the image fit the size (same options that the background-scale css attribute) | string |
-
+| Property | Description                                                                                 | Type                                           |
+| -------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| src      | required, the URL of the image                                                              | string                                         |
+| badge    | make the image a circle                                                                     | boolean                                        |
+| size     | if your image uses the same size in pixels for width and height, you can use this shorthand | number                                         |
+| border   | and object describing border properties: radius, width, color                               | {radius: string, width: string, color: string} |
+| width    | the width of the image                                                                      | string                                         |
+| height   | the height of the image                                                                     | string                                         |
+| fit      | how should the image fit the size (same options that the background-scale css attribute)    | string                                         |
+| css      | custom css properties                                                                       | object                                         |
 
 ## Table of sizes
 
-| Type         | Value                | Size result         |
-| ------------ | -------------------- | ------------- |
-| badge - extra small | `badgeSizes.X_SMALL` | 16 px |
-| badge - small | `badgeSizes.SMALL` | 24 px |
-| badge - medium | `badgeSizes.MEDIUM` | 40 px |
-| badge - large | `badgeSizes.LARGE` | 56 px |
-| thumbnail - small | `thumbnailSizes.SMALL` | 40 px |
-| thumbnail - medium | `thumbnailSizes.MEDIUM` | 48 px |
-| thumbnail - large | `thumbnailSizes.LARGE` | 72 px |
-| thumbnail - extra large | `thumbnailSizes.X_LARGE` | 120 px |
-| thumbnail - huge | `thumbnailSizes.HUGE` | 240 px |
+| Type                    | Value                    | Size result |
+| ----------------------- | ------------------------ | ----------- |
+| badge - extra small     | `badgeSizes.X_SMALL`     | 16 px       |
+| badge - small           | `badgeSizes.SMALL`       | 24 px       |
+| badge - medium          | `badgeSizes.MEDIUM`      | 40 px       |
+| badge - large           | `badgeSizes.LARGE`       | 56 px       |
+| thumbnail - small       | `thumbnailSizes.SMALL`   | 40 px       |
+| thumbnail - medium      | `thumbnailSizes.MEDIUM`  | 48 px       |
+| thumbnail - large       | `thumbnailSizes.LARGE`   | 72 px       |
+| thumbnail - extra large | `thumbnailSizes.X_LARGE` | 120 px      |
+| thumbnail - huge        | `thumbnailSizes.HUGE`    | 240 px      |
 
 ## License
 

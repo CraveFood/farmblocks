@@ -115,4 +115,14 @@ storiesOf("Image", module)
         <Image src={imgSrc} fit={fitModes.CONTAIN} />
       </div>
     ))
+  )
+  .add(
+    "custom css",
+    withInfo()(() => (
+      <Image
+        src={imgSrc}
+        size={300}
+        css={{ opacity: 0.5, border: "dotted 5px red" }}
+      />
+    ))
   );
