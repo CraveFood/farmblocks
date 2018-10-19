@@ -60,7 +60,7 @@ const HelperContent = props => {
 
 HelperContent.propTypes = {
   imageSrc: PropTypes.string,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   linkText: PropTypes.string,
   linkHref: PropTypes.string,
   linkOnClick: PropTypes.func,

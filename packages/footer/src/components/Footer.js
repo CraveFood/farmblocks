@@ -48,7 +48,7 @@ const Footer = props => {
 
 Footer.propTypes = {
   helpImageSrc: PropTypes.string,
-  helpText: PropTypes.string.isRequired,
+  helpText: PropTypes.string,
   helpLinkText: PropTypes.string,
   helpLinkHref: PropTypes.string,
   onHelpLinkClick: PropTypes.func,
