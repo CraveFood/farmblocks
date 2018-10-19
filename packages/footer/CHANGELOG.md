@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.51...@crave/farmblocks-footer@2.0.0) (2018-10-19)
+
+
+### Features
+
+* **Footer:** added desired api ([bca14cb](https://github.com/CraveFood/farmblocks/commit/bca14cb)), closes [#602](https://github.com/CraveFood/farmblocks/issues/602)
+* **Footer:** make text property optional ([c609372](https://github.com/CraveFood/farmblocks/commit/c609372))
+* **Footer:** receive actions property instead of primary and secondary button properties ([85d767d](https://github.com/CraveFood/farmblocks/commit/85d767d)), closes [#602](https://github.com/CraveFood/farmblocks/issues/602)
+
+
+### BREAKING CHANGES
+
+* **Footer:** This component no longer receives the following properties: noAction, onSecondaryActionClick,
+secondaryActionText, loadingSecondaryAction, onPrimaryActionClick, primaryActionTet,
+loadingPrimaryAction. Those properties were replaced by actions. An array of dom nodes
+
+
+
+
 <a name="1.2.51"></a>
 ## [1.2.51](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@1.2.50...@crave/farmblocks-footer@1.2.51) (2018-10-19)
 
