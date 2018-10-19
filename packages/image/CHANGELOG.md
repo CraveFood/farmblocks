@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# 0.5.0 (2018-10-19)
+
+
+### Features
+
+* **Image:** add css property ([1ba7348](https://github.com/CraveFood/farmblocks/commit/1ba7348)), closes [#598](https://github.com/CraveFood/farmblocks/issues/598)
+
+
+
+
 <a name="0.4.5"></a>
 ## [0.4.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@0.4.4...@crave/farmblocks-image@0.4.5) (2018-09-19)
 
