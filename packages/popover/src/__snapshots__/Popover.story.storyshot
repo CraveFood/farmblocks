@@ -5,6 +5,13 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
   position: relative;
 }
 
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  right: 0;
+}
+
 .c0 {
   display: inline-block;
   width: auto;
@@ -32,7 +39,11 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
     </div>
     <div
       className="c1"
-    />
+    >
+      <div
+        className="c2"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -40,6 +51,16 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
 exports[`Storyshots Popover Center aligned 1`] = `
 .c2 {
   position: relative;
+}
+
+.c3 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .c1 {
@@ -121,7 +142,11 @@ exports[`Storyshots Popover Center aligned 1`] = `
     </div>
     <div
       className="c2"
-    />
+    >
+      <div
+        className="c3"
+      />
+    </div>
   </div>
 </div>
 `;
@@ -129,6 +154,13 @@ exports[`Storyshots Popover Center aligned 1`] = `
 exports[`Storyshots Popover Custom padding 1`] = `
 .c1 {
   position: relative;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
 }
 
 .c0 {
@@ -150,7 +182,11 @@ exports[`Storyshots Popover Custom padding 1`] = `
   </div>
   <div
     className="c1"
-  />
+  >
+    <div
+      className="c2"
+    />
+  </div>
 </div>
 `;
 
@@ -159,6 +195,13 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
   position: relative;
 }
 
+.c3 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -230,7 +273,11 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
   </div>
   <div
     className="c2"
-  />
+  >
+    <div
+      className="c3"
+    />
+  </div>
 </div>
 `;
 
@@ -239,6 +286,13 @@ exports[`Storyshots Popover Dismissable 1`] = `
   position: relative;
 }
 
+.c3 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -310,13 +364,24 @@ exports[`Storyshots Popover Dismissable 1`] = `
   </div>
   <div
     className="c2"
-  />
+  >
+    <div
+      className="c3"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Popover Nested popover 1`] = `
 .c1 {
   position: relative;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
 }
 
 .c0 {
@@ -338,13 +403,24 @@ exports[`Storyshots Popover Nested popover 1`] = `
   </div>
   <div
     className="c1"
-  />
+  >
+    <div
+      className="c2"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Popover custom triggerWidth 1`] = `
 .c1 {
   position: relative;
+}
+
+.c2 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
 }
 
 .c0 {
@@ -374,13 +450,24 @@ exports[`Storyshots Popover custom triggerWidth 1`] = `
   </div>
   <div
     className="c1"
-  />
+  >
+    <div
+      className="c2"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Popover onOpen/onClose 1`] = `
 .c2 {
   position: relative;
+}
+
+.c3 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
 }
 
 .c1 {
@@ -454,13 +541,24 @@ exports[`Storyshots Popover onOpen/onClose 1`] = `
   </div>
   <div
     className="c2"
-  />
+  >
+    <div
+      className="c3"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Popover trigger as function 1`] = `
 .c2 {
   position: relative;
+}
+
+.c3 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
 }
 
 .c1 {
@@ -534,13 +632,24 @@ exports[`Storyshots Popover trigger as function 1`] = `
   </div>
   <div
     className="c2"
-  />
+  >
+    <div
+      className="c3"
+    />
+  </div>
 </div>
 `;
 
 exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
 .c2 {
   position: relative;
+}
+
+.c3 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
 }
 
 .c1 {
@@ -614,6 +723,10 @@ exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
   </div>
   <div
     className="c2"
-  />
+  >
+    <div
+      className="c3"
+    />
+  </div>
 </div>
 `;
