@@ -78,7 +78,7 @@ const withTooltip = WrappedComponent => {
 
     static propTypes = {
       disableTooltip: PropTypes.bool,
-      tooltipContent: PropTypes.oneOfType(PropTypes.string, PropTypes.node),
+      tooltipContent: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
       align: PropTypes.oneOf(values(alignments)),
       zIndex: PropTypes.number,
       bondariesSelector: PropTypes.string,
