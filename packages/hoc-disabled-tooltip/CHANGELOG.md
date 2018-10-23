@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-disabled-tooltip@1.1.13...@crave/farmblocks-hoc-disabled-tooltip@1.2.0) (2018-10-23)
+
+
+### Features
+
+* **HOC-DisabledTooltip:** use withTooltip-HOC on DisabledTooltip-HOC ([dc93a54](https://github.com/CraveFood/farmblocks/commit/dc93a54))
+
+
+
+
 <a name="1.1.13"></a>
 ## [1.1.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-disabled-tooltip@1.1.12...@crave/farmblocks-hoc-disabled-tooltip@1.1.13) (2018-10-23)
 
