@@ -25,7 +25,7 @@ A text or children must be supplied, otherwise the tooltip won't be rendered.
 | hideArrow         | controls arrow visibility                                                                                                                                       | bool                                               | `false`  |
 | padding           | content padding                                                                                                                                                 | string                                             | `"8px"`  |
 | top               | distance from the top of the container to the tip                                                                                                               | string                                             | `"15px"` |
-| overflow          | overrides the default overflow property. Note that when overflow=hidden the arrow will be hidden as well                                                        | string                                             |          |
+| overflow          | overrides the default overflow property.                                                                                                                        | string                                             |          |
 
 ## License
 

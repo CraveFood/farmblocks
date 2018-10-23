@@ -2,10 +2,6 @@ import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import { CENTER } from "../constants/alignments";
 
-const Container = styled.div`
-  position: relative;
-`;
-
 const centerAlignment = css`
   left: 50%;
   transform: translateX(-50%);
@@ -20,6 +16,17 @@ const alignX = coordinate => ({ align }) => {
     ${align}: ${coordinate};
   `;
 };
+
+const PositionWrapper = styled.div`
+  position: relative;
+`;
+
+const Container = styled.div`
+  position: absolute;
+  z-index: ${props => props.zIndex};
+  top: ${props => props.top};
+  ${alignX(0)};
+`;
 
 const visibility = ({ isVisible }) => {
   if (isVisible) {
@@ -42,7 +49,6 @@ const arrow = ({ hideArrow }) => {
     css`
       &:after,
       &:before {
-        bottom: 100%;
         border: solid 1px rgba(0, 0, 0, 0.16);
         content: " ";
         height: 0;
@@ -52,6 +58,7 @@ const arrow = ({ hideArrow }) => {
       }
 
       &:before {
+        bottom: 100%;
         border-color: transparent;
         border-bottom-color: rgba(0, 0, 0, 0.16);
         border-width: 8px;
@@ -59,6 +66,7 @@ const arrow = ({ hideArrow }) => {
       }
 
       &:after {
+        bottom: calc(100% - 1px);
         border-color: transparent;
         border-bottom-color: #ffffff;
         border-width: 7px;
@@ -72,7 +80,6 @@ const StyledTooltip = styled.div`
   transition: visibility 0s linear 0.1s, opacity 0.1s linear;
   ${visibility};
 
-  position: absolute;
   z-index: ${props => props.zIndex};
   top: ${props => props.top};
   padding: ${props => props.padding || "8px"};
@@ -85,11 +92,9 @@ const StyledTooltip = styled.div`
 
   font-family: lato, sans-serif;
 
-  ${alignX(0)};
-
   ${arrow};
 
   overflow: ${props => props.overflow};
 `;
 
-export { Container, StyledTooltip };
+export { Container, StyledTooltip, PositionWrapper };
