@@ -1,15 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Form Wrapper Default 1`] = `
-.c9 {
-  display: block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -523,20 +574,29 @@ exports[`Storyshots Form Wrapper Default 1`] = `
     <div
       className="c9"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c10"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c10"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        Save
+      </button>
+      <div
+        className="c11"
+      >
+        <div
+          className="c12"
         >
-          Save
-        </button>
+          <div
+            className="c13"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -544,15 +604,66 @@ exports[`Storyshots Form Wrapper Default 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper With title 1`] = `
-.c9 {
-  display: block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1068,20 +1179,29 @@ exports[`Storyshots Form Wrapper With title 1`] = `
     <div
       className="c9"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c10"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c10"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        Save
+      </button>
+      <div
+        className="c11"
+      >
+        <div
+          className="c12"
         >
-          Save
-        </button>
+          <div
+            className="c13"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1089,15 +1209,66 @@ exports[`Storyshots Form Wrapper With title 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper extra content 1`] = `
-.c9 {
-  display: block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1613,20 +1784,29 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
     <div
       className="c9"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c10"
+        disabled={false}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c10"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        Save
+      </button>
+      <div
+        className="c11"
+      >
+        <div
+          className="c12"
         >
-          Save
-        </button>
+          <div
+            className="c13"
+          >
+            This field is disabled.
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1637,15 +1817,66 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper in compact container 1`] = `
-.c9 {
-  display: block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -2168,20 +2399,29 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
       <div
         className="c9"
       >
-        <div
-          className="hitWrapper"
+        <button
+          className="c10"
+          disabled={false}
+          onClick={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          size="MEDIUM"
+          type="SECONDARY"
         >
-          <button
-            className="c10"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="MEDIUM"
-            type="SECONDARY"
+          Save
+        </button>
+        <div
+          className="c11"
+        >
+          <div
+            className="c12"
           >
-            Save
-          </button>
+            <div
+              className="c13"
+            >
+              This field is disabled.
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -2190,15 +2430,66 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper loading 1`] = `
-.c9 {
-  display: block;
-}
-
-.c9 .hitWrapper {
+.c11 {
   position: relative;
 }
 
-.c9 .hitWrapper .hit {
+.c12 {
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  left: 0;
+}
+
+.c13 {
+  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+}
+
+.c13:after,
+.c13:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c13:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c13:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c9 {
+  position: relative;
+  display: block;
+}
+
+.c9 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
@@ -2719,37 +3010,41 @@ exports[`Storyshots Form Wrapper loading 1`] = `
     <div
       className="c9"
     >
-      <div
-        className="hitWrapper"
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="c10"
-          disabled={true}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-loading"
+          />
+        </div>
+        Save
+      </button>
+      <div
+        className="c11"
+      >
+        <div
+          className="c12"
         >
           <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 10,
-              }
-            }
+            className="c13"
           >
-            <i
-              className="wg-loading"
-            />
+            This field is disabled.
           </div>
-          Save
-        </button>
-        <div
-          className="hit"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
+        </div>
       </div>
     </div>
   </div>
