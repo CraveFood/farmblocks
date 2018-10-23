@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.10.0...@crave/farmblocks-tooltip@0.10.1) (2018-10-23)
+
+
+### Bug Fixes
+
+* **tooltip:** keep arrow visible when overflow is hidden ([e03549f](https://github.com/CraveFood/farmblocks/commit/e03549f)), closes [#605](https://github.com/CraveFood/farmblocks/issues/605)
+
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.9.0...@crave/farmblocks-tooltip@0.10.0) (2018-09-25)
 
