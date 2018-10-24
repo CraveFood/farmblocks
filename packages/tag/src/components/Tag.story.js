@@ -15,6 +15,26 @@ storiesOf("Tag", module)
     ))
   )
   .add(
+    "Empty tag",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag />
+      </div>
+    ))
+  )
+  .add(
+    "With children",
+    withInfo()(() => (
+      <div style={{ marginTop: "20px" }}>
+        <Tag>
+          <div style={{ width: "auto" }}>
+            <img src="https://picsum.photos/200" style={{ width: "8px" }} />
+          </div>
+        </Tag>
+      </div>
+    ))
+  )
+  .add(
     "With icon",
     withInfo()(() => (
       <div style={{ marginTop: "20px" }}>
