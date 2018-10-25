@@ -57,7 +57,7 @@ class Popover extends React.Component {
     const { isVisible } = this.state;
     return (
       <Container
-        innerRef={popover => (this.popover = popover)}
+        ref={popover => (this.popover = popover)}
         width={this.props.triggerWidth}
       >
         <div id="trigger" onClick={this.toggle}>

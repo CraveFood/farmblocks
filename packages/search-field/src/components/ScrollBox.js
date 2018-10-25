@@ -64,10 +64,7 @@ export default class ScrollBox extends React.Component {
   render() {
     const { children, maxHeight } = this.props;
     return (
-      <ScrollWrapper
-        style={{ maxHeight }}
-        innerRef={node => (this.wrapper = node)}
-      >
+      <ScrollWrapper style={{ maxHeight }} ref={node => (this.wrapper = node)}>
         {children}
       </ScrollWrapper>
     );

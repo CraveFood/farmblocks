@@ -39,7 +39,7 @@ const createCheckbox = ({ isSwitch }) =>
         : fontTypes.NORMAL;
 
       return (
-        <StyledLabel {...labelProps} innerRef={innerRef}>
+        <StyledLabel {...labelProps} ref={innerRef}>
           <input {...inputProps} type="checkbox" className="hiddenCheckbox" />
           <div className="centerVisibleCheckbox">
             <div className="visibleCheckbox">

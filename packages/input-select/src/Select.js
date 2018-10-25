@@ -111,7 +111,7 @@ class Select extends React.Component {
         readOnly={disableSearch}
         {...inputProps}
         {...rest}
-        innerRef={ref}
+        ref={ref}
         refName={refName}
         image={image}
       />
