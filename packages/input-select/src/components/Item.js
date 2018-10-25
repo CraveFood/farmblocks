@@ -11,18 +11,23 @@ const ItemImage = styled(Image)`
   margin-right: 8px;
 `;
 
-const Item = ({ selected, image, label }) => (
-  <ItemContainer>
-    {image ? (
-      <LabelContainer>
-        <ItemImage src={image} size={thumbnailSizes.SMALL} /> {label}
-      </LabelContainer>
-    ) : (
-      label
-    )}
-    {selected && <i className="icon wg-check" />}
-  </ItemContainer>
-);
+class Item extends React.Component {
+  render() {
+    const { selected, image, label } = this.props;
+    return (
+      <ItemContainer>
+        {image ? (
+          <LabelContainer>
+            <ItemImage src={image} size={thumbnailSizes.SMALL} /> {label}
+          </LabelContainer>
+        ) : (
+          label
+        )}
+        {selected && <i className="icon wg-check" />}
+      </ItemContainer>
+    );
+  }
+}
 
 Item.propTypes = {
   selected: PropTypes.bool,
