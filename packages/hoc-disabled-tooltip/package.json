@@ -1,14 +1,12 @@
 {
   "name": "@crave/farmblocks-hoc-disabled-tooltip",
   "version": "1.2.0",
-  "description": "A Higher Order Component that adds the behaviour of displaying a tooltip when a component is disabled (disabled property true)",
+  "description":
+    "A Higher Order Component that adds the behaviour of displaying a tooltip when a component is disabled (disabled property true)",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": [
-    "AUTHORS",
-    "lib"
-  ],
+  "files": ["AUTHORS", "lib"],
   "publishConfig": {
     "access": "public"
   },
@@ -24,10 +22,7 @@
     "url": "https://github.com/CraveFood/farmblocks/issues"
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
-  "keywords": [
-    "farmblocks",
-    "react"
-  ],
+  "keywords": ["farmblocks", "react"],
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
@@ -35,6 +30,6 @@
     "styled-components": "^3.4.9"
   },
   "dependencies": {
-    "@crave/farmblocks-tooltip": "^0.10.1"
+    "@crave/farmblocks-hoc-withtooltip": "^0.2.1"
   }
 }
