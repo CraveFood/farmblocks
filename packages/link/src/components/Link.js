@@ -16,6 +16,7 @@ const Link = props => {
     external,
     children,
     className,
+    onClick,
     ...linkProps
   } = props;
 
@@ -31,7 +32,7 @@ const Link = props => {
 
   return (
     <StyledLink {...containerProps}>
-      <LinkComponent {...linkProps}>
+      <LinkComponent onClick={disabled ? undefined : onClick} {...linkProps}>
         {leftIcon && <i className={`${leftIcon} margin-right }`} />}
         {children}
         {rightIcon && <i className={`${rightIcon} margin-left }`} />}

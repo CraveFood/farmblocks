@@ -184,6 +184,72 @@ exports[`Storyshots Link/Featured disabled link 1`] = `
 </div>
 `;
 
+exports[`Storyshots Link/Featured disabled link with onClick function 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: default;
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 i.margin-left {
+  margin-left: 8px;
+}
+
+.c0 i.margin-right {
+  margin-right: 8px;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 > a {
+  color: inherit;
+}
+
+.c0:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+<div
+  style={
+    Object {
+      "width": "500px",
+    }
+  }
+>
+  <div
+    className="c0"
+    disabled={true}
+    size={16}
+    type="#3498db"
+  >
+    <span>
+      Awesome disabled link
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Link/Featured external 1`] = `
 .c0 {
   font-family: Lato,sans-serif;

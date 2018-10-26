@@ -133,6 +133,16 @@ storiesOf("Link/Featured", module)
     ))
   )
   .add(
+    "disabled link with onClick function",
+    withInfo()(() => (
+      <div style={{ width: "500px" }}>
+        <Link disabled onClick={action("linkClicked")}>
+          Awesome disabled link
+        </Link>
+      </div>
+    ))
+  )
+  .add(
     "link with onClick function",
     withInfo()(() => (
       <div style={{ width: "500px" }}>
