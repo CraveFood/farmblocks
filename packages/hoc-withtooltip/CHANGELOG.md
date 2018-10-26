@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-withtooltip@0.2.1...@crave/farmblocks-hoc-withtooltip@0.2.2) (2018-10-26)
+
+
+### Bug Fixes
+
+* **hoc-disabled-tooltip:** change dependecy from tooltip to hoc-withtooltip ([64b91c2](https://github.com/CraveFood/farmblocks/commit/64b91c2))
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-withtooltip@0.2.0...@crave/farmblocks-hoc-withtooltip@0.2.1) (2018-10-24)
 

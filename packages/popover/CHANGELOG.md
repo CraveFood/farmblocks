@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.6.4"></a>
+## [0.6.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.6.3...@crave/farmblocks-popover@0.6.4) (2018-10-26)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-popover
+
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@0.6.2...@crave/farmblocks-popover@0.6.3) (2018-10-26)
 
