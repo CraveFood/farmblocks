@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Amount selectors Default 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -22,6 +11,26 @@ exports[`Storyshots Amount selectors Default 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -98,7 +107,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -108,7 +117,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -133,23 +142,23 @@ exports[`Storyshots Amount selectors Default 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -162,86 +171,86 @@ exports[`Storyshots Amount selectors Default 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -256,23 +265,23 @@ exports[`Storyshots Amount selectors Default 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -291,7 +300,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -299,18 +308,18 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -365,26 +374,19 @@ exports[`Storyshots Amount selectors Default 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -441,29 +443,11 @@ exports[`Storyshots Amount selectors Default 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors Disabled typing 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -474,6 +458,26 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -550,7 +554,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -560,7 +564,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -585,23 +589,23 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -614,86 +618,86 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -708,23 +712,23 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -743,7 +747,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -751,18 +755,18 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -817,26 +821,19 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -893,29 +890,11 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors Small size 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -926,6 +905,26 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -1002,7 +1001,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1012,7 +1011,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1037,23 +1036,23 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1066,86 +1065,86 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 8px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1160,23 +1159,23 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -1195,7 +1194,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1203,18 +1202,18 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -1269,26 +1268,19 @@ exports[`Storyshots Amount selectors Small size 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={14}
             onClick={[Function]}
@@ -1345,29 +1337,11 @@ exports[`Storyshots Amount selectors Small size 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -1378,6 +1352,26 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -1454,7 +1448,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1464,7 +1458,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1489,23 +1483,23 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1518,86 +1512,86 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1612,23 +1606,23 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -1647,7 +1641,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1655,18 +1649,18 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -1721,26 +1715,19 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -1797,29 +1784,11 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation (browser) 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -1830,6 +1799,26 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -1906,7 +1895,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1916,7 +1905,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1941,23 +1930,23 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1970,86 +1959,86 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2064,23 +2053,23 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2099,7 +2088,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2107,18 +2096,18 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2173,26 +2162,19 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -2249,29 +2231,11 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With a max value of 3 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -2282,6 +2246,26 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -2358,7 +2342,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2368,7 +2352,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2393,23 +2377,23 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2422,86 +2406,86 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2516,23 +2500,23 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2551,7 +2535,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2559,18 +2543,18 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2625,26 +2609,19 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -2701,29 +2678,11 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -2734,6 +2693,26 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -2810,7 +2789,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2820,7 +2799,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2845,23 +2824,23 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2874,86 +2853,86 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2968,23 +2947,23 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3003,7 +2982,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3011,18 +2990,18 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3077,26 +3056,19 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3153,29 +3125,11 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With onChange function 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -3186,6 +3140,26 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -3262,7 +3236,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3272,7 +3246,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3297,23 +3271,23 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3326,86 +3300,86 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3420,23 +3394,23 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3455,7 +3429,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3463,18 +3437,18 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3529,26 +3503,19 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3605,29 +3572,11 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With value set 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -3638,6 +3587,26 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -3714,7 +3683,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3724,7 +3693,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3749,23 +3718,23 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3778,86 +3747,86 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3872,23 +3841,23 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3907,7 +3876,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3915,18 +3884,18 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3981,26 +3950,19 @@ exports[`Storyshots Amount selectors With value set 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
   <div
     className="inputContainer"
   >
     <div
-      className="c5"
+      className="c3"
     >
       <div>
         <div
-          className="c6"
+          className="c4"
         >
           <div
-            className="c7"
+            className="c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -4057,29 +4019,11 @@ exports[`Storyshots Amount selectors With value set 1`] = `
         />
       </div>
     </button>
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      />
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With value set after mount 1`] = `
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
 .c1 {
   position: relative;
   display: inline-block;
@@ -4090,6 +4034,26 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c2 {
@@ -4166,7 +4130,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4176,7 +4140,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4201,23 +4165,23 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c5 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c5 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c5 .input textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c5 .input input,
+.c5 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4230,86 +4194,86 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c5 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c5 .input .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c5 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c5 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c5 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c5 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 .label {
+.c5 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4324,23 +4288,23 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   float: left;
 }
 
-.c7 .moreInfo {
+.c5 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c7 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -4359,7 +4323,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c4 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -4367,18 +4331,18 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   align-items: flex-end;
 }
 
-.c6 > :first-child {
+.c4 > :first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c6 .margin-button {
+.c4 .margin-button {
   margin: 0 8px;
 }
 
-.c5 {
+.c3 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -4434,26 +4398,19 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
           />
         </div>
       </button>
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        />
-      </div>
     </div>
     <div
       className="inputContainer"
     >
       <div
-        className="c5"
+        className="c3"
       >
         <div>
           <div
-            className="c6"
+            className="c4"
           >
             <div
-              className="c7"
+              className="c5"
               disabled={false}
               fontSize={16}
               onClick={[Function]}
@@ -4510,13 +4467,6 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
           />
         </div>
       </button>
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        />
-      </div>
     </div>
   </div>
   <button

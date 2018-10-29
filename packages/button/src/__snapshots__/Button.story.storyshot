@@ -1,60 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Button Children content with Icons 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -65,6 +11,26 @@ exports[`Storyshots Button Children content with Icons 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -185,77 +151,10 @@ exports[`Storyshots Button Children content with Icons 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Closed 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -266,6 +165,26 @@ exports[`Storyshots Button Closed 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -356,77 +275,10 @@ exports[`Storyshots Button Closed 1`] = `
   >
     Closed Button
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Custom Theme 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -437,6 +289,26 @@ exports[`Storyshots Button Custom Theme 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -527,77 +399,10 @@ exports[`Storyshots Button Custom Theme 1`] = `
   >
     🦄 My Beautiful Button
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Custom box-shadow 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -608,6 +413,26 @@ exports[`Storyshots Button Custom box-shadow 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -703,77 +528,10 @@ exports[`Storyshots Button Custom box-shadow 1`] = `
   >
     Custom box-shadow
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Custom font-weight, text color and font-size - activated 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -784,6 +542,26 @@ exports[`Storyshots Button Custom font-weight, text color and font-size - activa
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -889,77 +667,10 @@ exports[`Storyshots Button Custom font-weight, text color and font-size - activa
   >
     Custom text properties
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Custom font-weight, text color and font-size 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -970,6 +681,26 @@ exports[`Storyshots Button Custom font-weight, text color and font-size 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1069,77 +800,10 @@ exports[`Storyshots Button Custom font-weight, text color and font-size 1`] = `
   >
     Custom text properties
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Custom padding 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -1150,6 +814,26 @@ exports[`Storyshots Button Custom padding 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1245,77 +929,10 @@ exports[`Storyshots Button Custom padding 1`] = `
   >
     Custom padding X
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Default 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -1326,6 +943,26 @@ exports[`Storyshots Button Default 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1422,77 +1059,10 @@ exports[`Storyshots Button Default 1`] = `
   >
     Label
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Default medium 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -1503,6 +1073,26 @@ exports[`Storyshots Button Default medium 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1599,77 +1189,10 @@ exports[`Storyshots Button Default medium 1`] = `
   >
     Label
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Default with Icon 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -1680,6 +1203,26 @@ exports[`Storyshots Button Default with Icon 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1788,77 +1331,10 @@ exports[`Storyshots Button Default with Icon 1`] = `
     </div>
     Send Order
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Default with Right Icon 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -1869,6 +1345,26 @@ exports[`Storyshots Button Default with Right Icon 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1977,77 +1473,10 @@ exports[`Storyshots Button Default with Right Icon 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Disabled 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -2058,6 +1487,26 @@ exports[`Storyshots Button Disabled 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -2154,77 +1603,10 @@ exports[`Storyshots Button Disabled 1`] = `
   >
     Disabled Buton
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Disabled with tooltip 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -2235,6 +1617,26 @@ exports[`Storyshots Button Disabled with tooltip 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -2336,77 +1738,10 @@ exports[`Storyshots Button Disabled with tooltip 1`] = `
   >
     Disabled Buton
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This button is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Icon only (disabled) 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -2417,6 +1752,26 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -2529,77 +1884,10 @@ exports[`Storyshots Button Icon only (disabled) 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This button is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Icon only (neutral medium) 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -2610,6 +1898,26 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -2717,77 +2025,10 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Icon only (neutral) 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -2798,6 +2039,26 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -2905,77 +2166,10 @@ exports[`Storyshots Button Icon only (neutral) 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Icon only (primary) 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -2986,6 +2180,26 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -3087,77 +2301,10 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Loading with left and right icons 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -3168,6 +2315,26 @@ exports[`Storyshots Button Loading with left and right icons 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -3292,77 +2459,10 @@ exports[`Storyshots Button Loading with left and right icons 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Negative 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -3373,6 +2473,26 @@ exports[`Storyshots Button Negative 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -3463,77 +2583,10 @@ exports[`Storyshots Button Negative 1`] = `
   >
     Label
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Neutral 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -3544,6 +2597,26 @@ exports[`Storyshots Button Neutral 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -3640,77 +2713,10 @@ exports[`Storyshots Button Neutral 1`] = `
   >
     Neutral Button
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Neutral Activated 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -3721,6 +2727,26 @@ exports[`Storyshots Button Neutral Activated 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -3823,77 +2849,10 @@ exports[`Storyshots Button Neutral Activated 1`] = `
   >
     Neutral Button
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Neutral with Custom Theme 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -3904,6 +2863,26 @@ exports[`Storyshots Button Neutral with Custom Theme 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -4000,77 +2979,10 @@ exports[`Storyshots Button Neutral with Custom Theme 1`] = `
   >
     Neutral enough?
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Neutral with Icon 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -4081,6 +2993,26 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -4189,77 +3121,10 @@ exports[`Storyshots Button Neutral with Icon 1`] = `
     </div>
     Label
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Neutral with Righ  Icon 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -4270,6 +3135,26 @@ exports[`Storyshots Button Neutral with Righ  Icon 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -4378,77 +3263,10 @@ exports[`Storyshots Button Neutral with Righ  Icon 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Off Neutral Button 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -4459,6 +3277,26 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -4558,78 +3396,11 @@ exports[`Storyshots Button Off Neutral Button 1`] = `
     >
       Label
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Button Off Neutral Button Loading 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -4640,6 +3411,26 @@ exports[`Storyshots Button Off Neutral Button Loading 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -4756,78 +3547,11 @@ exports[`Storyshots Button Off Neutral Button Loading 1`] = `
       </div>
       Label
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -4840,7 +3564,27 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
   height: 100%;
 }
 
-.c5 {
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4873,49 +3617,49 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
   padding: 0 16px;
 }
 
-.c5 .icon {
+.c2 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c5 .icon i {
+.c2 .icon i {
   vertical-align: text-bottom;
 }
 
-.c5:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c5 > .icon {
+.c2 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:hover,
-.c5:focus {
+.c2:hover,
+.c2:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c5:hover > .icon,
-.c5:focus > .icon {
+.c2:hover > .icon,
+.c2:focus > .icon {
   color: #3498db;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled :hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -5025,19 +3769,6 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         />
       </div>
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
   <div
     className="c0"
@@ -5063,25 +3794,12 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         />
       </div>
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
   <div
     className="c0"
   >
     <button
-      className="c5"
+      className="c2"
       disabled={false}
       onMouseLeave={[Function]}
       onMouseOver={[Function]}
@@ -5101,25 +3819,12 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         />
       </div>
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
   <div
     className="c0"
   >
     <button
-      className="c5"
+      className="c2"
       disabled={false}
       onMouseLeave={[Function]}
       onMouseOver={[Function]}
@@ -5139,78 +3844,11 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
         />
       </div>
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Button Positive 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -5221,6 +3859,26 @@ exports[`Storyshots Button Positive 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -5311,77 +3969,10 @@ exports[`Storyshots Button Positive 1`] = `
   >
     Positive Button
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Primary 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -5392,6 +3983,26 @@ exports[`Storyshots Button Primary 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -5482,77 +4093,10 @@ exports[`Storyshots Button Primary 1`] = `
   >
     Label
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Right Icon only (neutral) 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -5563,6 +4107,26 @@ exports[`Storyshots Button Right Icon only (neutral) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -5670,77 +4234,10 @@ exports[`Storyshots Button Right Icon only (neutral) 1`] = `
       />
     </div>
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Saving Status 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -5751,6 +4248,26 @@ exports[`Storyshots Button Saving Status 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -5864,77 +4381,10 @@ exports[`Storyshots Button Saving Status 1`] = `
     </div>
     Saving…
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Button Secondary (fluid) 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: block;
@@ -5945,6 +4395,26 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -6045,78 +4515,11 @@ exports[`Storyshots Button Secondary (fluid) 1`] = `
     >
       Secondary Button
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: block;
@@ -6127,6 +4530,26 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -6239,78 +4662,11 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
       </div>
       Secondary Button
     </button>
-    <div
-      className="c2"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="c4"
-        >
-          This field is disabled.
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Button Secondary 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -6321,6 +4677,26 @@ exports[`Storyshots Button Secondary 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -6411,18 +4787,5 @@ exports[`Storyshots Button Secondary 1`] = `
   >
     Secondary Button
   </button>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        This field is disabled.
-      </div>
-    </div>
-  </div>
 </div>
 `;

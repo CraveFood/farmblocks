@@ -4867,60 +4867,6 @@ exports[`Storyshots Table/Custom Cells Borderless 1`] = `
 `;
 
 exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] = `
-.c11 {
-  position: relative;
-}
-
-.c12 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c13 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c13:after,
-.c13:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c13:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c13:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c9 {
   position: relative;
   display: inline-block;
@@ -4931,6 +4877,26 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c9 .appear-enter {
+  opacity: 0;
+}
+
+.c9 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c9 .appear-exit {
+  opacity: 1;
+}
+
+.c9 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c10 {
@@ -5365,19 +5331,6 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
             0
             )
           </button>
-          <div
-            className="c11"
-          >
-            <div
-              className="c12"
-            >
-              <div
-                className="c13"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -5479,19 +5432,6 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
             1
             )
           </button>
-          <div
-            className="c11"
-          >
-            <div
-              className="c12"
-            >
-              <div
-                className="c13"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -5593,19 +5533,6 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
             2
             )
           </button>
-          <div
-            className="c11"
-          >
-            <div
-              className="c12"
-            >
-              <div
-                className="c13"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -5707,19 +5634,6 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
             3
             )
           </button>
-          <div
-            className="c11"
-          >
-            <div
-              className="c12"
-            >
-              <div
-                className="c13"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -5728,60 +5642,6 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
 `;
 
 exports[`Storyshots Table/Custom Cells Complete example 1`] = `
-.c18 {
-  position: relative;
-}
-
-.c19 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c20 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c20:after,
-.c20:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c20:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c20:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c16 {
   position: relative;
   display: inline-block;
@@ -5792,6 +5652,26 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c16 .appear-enter {
+  opacity: 0;
+}
+
+.c16 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c16 .appear-exit {
+  opacity: 1;
+}
+
+.c16 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c17 {
@@ -6025,7 +5905,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   background-position: center;
 }
 
-.c21 {
+.c18 {
   background-origin: border-box;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -6532,19 +6412,6 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
               </div>
               Connect
             </button>
-            <div
-              className="c18"
-            >
-              <div
-                className="c19"
-              >
-                <div
-                  className="c20"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -6690,7 +6557,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
             }
           >
             <div
-              className="c21"
+              className="c18"
               size={24}
               src="https://media.giphy.com/media/f8k6R32qjJGV2/giphy.gif"
             />
@@ -6736,19 +6603,6 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
               </div>
               Connect
             </button>
-            <div
-              className="c18"
-            >
-              <div
-                className="c19"
-              >
-                <div
-                  className="c20"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -7303,60 +7157,6 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
 `;
 
 exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
-.c11 {
-  position: relative;
-}
-
-.c12 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c13 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c13:after,
-.c13:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c13:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c13:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c9 {
   position: relative;
   display: inline-block;
@@ -7367,6 +7167,26 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c9 .appear-enter {
+  opacity: 0;
+}
+
+.c9 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c9 .appear-exit {
+  opacity: 1;
+}
+
+.c9 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c10 {
@@ -7443,7 +7263,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   box-shadow: none;
 }
 
-.c15 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7476,49 +7296,49 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   padding: 0 16px;
 }
 
-.c15 .icon {
+.c12 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c15 .icon i {
+.c12 .icon i {
   vertical-align: text-bottom;
 }
 
-.c15:hover {
+.c12:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c15:focus {
+.c12:focus {
   box-shadow: none;
 }
 
-.c15:hover .icon,
-.c15:focus .icon {
+.c12:hover .icon,
+.c12:focus .icon {
   color: white;
 }
 
-.c15 > .icon {
+.c12 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c15:hover,
-.c15:focus {
+.c12:hover,
+.c12:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c15:hover > .icon,
-.c15:focus > .icon {
+.c12:hover > .icon,
+.c12:focus > .icon {
   color: #3498db;
 }
 
-.c15:disabled,
-.c15:disabled .icon,
-.c15:disabled :hover {
+.c12:disabled,
+.c12:disabled .icon,
+.c12:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c15:disabled {
+.c12:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -7550,13 +7370,13 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   font-weight: 600;
 }
 
-.c14 {
+.c11 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c14 *:focus {
+.c11 *:focus {
   outline: none;
 }
 
@@ -7893,19 +7713,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -7914,7 +7721,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -7930,7 +7737,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -7950,19 +7757,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -8066,19 +7860,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -8087,7 +7868,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -8103,7 +7884,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -8123,19 +7904,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -8239,19 +8007,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -8260,7 +8015,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -8276,7 +8031,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -8296,19 +8051,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -8412,19 +8154,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -8433,7 +8162,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -8449,7 +8178,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -8469,19 +8198,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -8493,60 +8209,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
 `;
 
 exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell example) 1`] = `
-.c11 {
-  position: relative;
-}
-
-.c12 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c13 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c13:after,
-.c13:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c13:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c13:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c9 {
   position: relative;
   display: inline-block;
@@ -8557,6 +8219,26 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c9 .appear-enter {
+  opacity: 0;
+}
+
+.c9 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c9 .appear-exit {
+  opacity: 1;
+}
+
+.c9 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c10 {
@@ -8633,7 +8315,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   box-shadow: none;
 }
 
-.c15 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8666,49 +8348,49 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   padding: 0 8px;
 }
 
-.c15 .icon {
+.c12 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c15 .icon i {
+.c12 .icon i {
   vertical-align: text-bottom;
 }
 
-.c15:hover {
+.c12:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c15:focus {
+.c12:focus {
   box-shadow: none;
 }
 
-.c15:hover .icon,
-.c15:focus .icon {
+.c12:hover .icon,
+.c12:focus .icon {
   color: white;
 }
 
-.c15 > .icon {
+.c12 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c15:hover,
-.c15:focus {
+.c12:hover,
+.c12:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c15:hover > .icon,
-.c15:focus > .icon {
+.c12:hover > .icon,
+.c12:focus > .icon {
   color: #3498db;
 }
 
-.c15:disabled,
-.c15:disabled .icon,
-.c15:disabled :hover {
+.c12:disabled,
+.c12:disabled .icon,
+.c12:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c15:disabled {
+.c12:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -8740,13 +8422,13 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   font-weight: 600;
 }
 
-.c14 {
+.c11 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c14 *:focus {
+.c11 *:focus {
   outline: none;
 }
 
@@ -9083,19 +8765,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -9104,7 +8773,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -9120,7 +8789,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -9140,19 +8809,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -9256,19 +8912,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -9277,7 +8920,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -9293,7 +8936,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -9313,19 +8956,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -9429,19 +9059,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -9450,7 +9067,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -9466,7 +9083,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -9486,19 +9103,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -9602,19 +9206,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               </div>
               Message
             </button>
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                <div
-                  className="c13"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </td>
@@ -9623,7 +9214,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c14"
+          className="c11"
         >
           <div>
             <span
@@ -9639,7 +9230,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                 className="c9"
               >
                 <button
-                  className="c15"
+                  className="c12"
                   disabled={false}
                   onMouseLeave={[Function]}
                   onMouseOver={[Function]}
@@ -9659,19 +9250,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
                     />
                   </div>
                 </button>
-                <div
-                  className="c11"
-                >
-                  <div
-                    className="c12"
-                  >
-                    <div
-                      className="c13"
-                    >
-                      This field is disabled.
-                    </div>
-                  </div>
-                </div>
               </div>
             </span>
           </div>
@@ -9683,60 +9261,6 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
 `;
 
 exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`] = `
-.c10 {
-  position: relative;
-}
-
-.c11 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c12 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c12:after,
-.c12:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c12:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c12:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c8 {
   position: relative;
   display: inline-block;
@@ -9747,6 +9271,26 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c8 .appear-enter {
+  opacity: 0;
+}
+
+.c8 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c8 .appear-exit {
+  opacity: 1;
+}
+
+.c8 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c9 {
@@ -9947,7 +9491,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   white-space: normal;
 }
 
-.c13 {
+.c10 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -9958,7 +9502,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   background-color: white;
 }
 
-.c14 {
+.c11 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -10202,19 +9746,6 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
               />
             </div>
           </button>
-          <div
-            className="c10"
-          >
-            <div
-              className="c11"
-            >
-              <div
-                className="c12"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -10223,7 +9754,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c13"
+        className="cell corner-icon c10"
         selected={false}
       >
         <div
@@ -10236,7 +9767,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c13"
+        className="cell  c10"
         selected={false}
       >
         <div
@@ -10248,7 +9779,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c14"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -10257,7 +9788,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c13"
+        className="cell corner-icon c10"
         selected={false}
       >
         <div
@@ -10270,7 +9801,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c13"
+        className="cell  c10"
         selected={false}
       >
         <div
@@ -10282,7 +9813,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c14"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -10291,7 +9822,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c13"
+        className="cell corner-icon c10"
         selected={false}
       >
         <div
@@ -10304,7 +9835,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c13"
+        className="cell  c10"
         selected={false}
       >
         <div
@@ -10316,7 +9847,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c14"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -10325,60 +9856,6 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
 `;
 
 exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
-.c9 {
-  position: relative;
-}
-
-.c10 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c11 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c11:after,
-.c11:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c11:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c11:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c7 {
   position: relative;
   display: inline-block;
@@ -10389,6 +9866,26 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c8 {
@@ -10581,7 +10078,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   white-space: normal;
 }
 
-.c12 {
+.c9 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -10592,7 +10089,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   background-color: white;
 }
 
-.c13 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -10730,19 +10227,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -10751,7 +10235,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -10763,7 +10247,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -10775,7 +10259,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -10784,7 +10268,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -10796,7 +10280,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -10808,7 +10292,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -10910,19 +10394,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -10931,7 +10402,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -10943,7 +10414,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -10955,7 +10426,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -10964,7 +10435,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -10976,7 +10447,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -10988,7 +10459,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -10997,7 +10468,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11009,7 +10480,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -11021,7 +10492,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11030,60 +10501,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
 `;
 
 exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
-.c9 {
-  position: relative;
-}
-
-.c10 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c11 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c11:after,
-.c11:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c11:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c11:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c7 {
   position: relative;
   display: inline-block;
@@ -11094,6 +10511,26 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c8 {
@@ -11286,7 +10723,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   white-space: normal;
 }
 
-.c12 {
+.c9 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -11297,7 +10734,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   background-color: white;
 }
 
-.c13 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -11434,19 +10871,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -11455,7 +10879,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11467,7 +10891,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -11479,7 +10903,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11488,7 +10912,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11500,7 +10924,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -11512,7 +10936,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11614,19 +11038,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -11635,7 +11046,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11647,7 +11058,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -11659,7 +11070,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11668,7 +11079,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11680,7 +11091,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -11692,7 +11103,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11701,7 +11112,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11713,7 +11124,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -11725,7 +11136,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11734,60 +11145,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
 `;
 
 exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1`] = `
-.c9 {
-  position: relative;
-}
-
-.c10 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c11 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c11:after,
-.c11:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c11:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c11:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c7 {
   position: relative;
   display: inline-block;
@@ -11798,6 +11155,26 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c8 {
@@ -11990,7 +11367,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   white-space: normal;
 }
 
-.c12 {
+.c9 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -12001,7 +11378,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   background-color: white;
 }
 
-.c13 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -12138,19 +11515,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -12159,7 +11523,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -12171,7 +11535,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -12183,7 +11547,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12192,7 +11556,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -12204,7 +11568,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -12216,7 +11580,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12318,19 +11682,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -12339,7 +11690,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -12351,7 +11702,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -12363,7 +11714,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12372,7 +11723,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -12384,7 +11735,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -12396,7 +11747,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12405,7 +11756,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -12417,7 +11768,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -12429,7 +11780,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12438,60 +11789,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
 `;
 
 exports[`Storyshots Table/Row Groups Expandable, Selectable with selection header 1`] = `
-.c13 {
-  position: relative;
-}
-
-.c14 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c15 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c15:after,
-.c15:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c15:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c15:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c11 {
   position: relative;
   display: inline-block;
@@ -12502,6 +11799,26 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c11 .appear-enter {
+  opacity: 0;
+}
+
+.c11 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c11 .appear-exit {
+  opacity: 1;
+}
+
+.c11 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c12 {
@@ -12855,7 +12172,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c17 {
+.c14 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -12866,12 +12183,12 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c18 {
+.c15 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c16 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -13107,19 +12424,6 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
               />
             </div>
           </button>
-          <div
-            className="c13"
-          >
-            <div
-              className="c14"
-            >
-              <div
-                className="c15"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -13128,7 +12432,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -13162,7 +12466,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -13174,7 +12478,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -13186,7 +12490,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -13195,7 +12499,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -13229,7 +12533,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -13241,7 +12545,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -13253,7 +12557,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -13423,19 +12727,6 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
               />
             </div>
           </button>
-          <div
-            className="c13"
-          >
-            <div
-              className="c14"
-            >
-              <div
-                className="c15"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -13444,7 +12735,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -13478,7 +12769,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -13490,7 +12781,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -13502,7 +12793,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -13511,7 +12802,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -13545,7 +12836,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -13557,7 +12848,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -13569,7 +12860,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -13578,7 +12869,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -13612,7 +12903,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -13624,7 +12915,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -13636,7 +12927,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -13645,60 +12936,6 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
 `;
 
 exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selectable row 1`] = `
-.c13 {
-  position: relative;
-}
-
-.c14 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c15 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c15:after,
-.c15:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c15:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c15:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c11 {
   position: relative;
   display: inline-block;
@@ -13709,6 +12946,26 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c11 .appear-enter {
+  opacity: 0;
+}
+
+.c11 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c11 .appear-exit {
+  opacity: 1;
+}
+
+.c11 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c12 {
@@ -14062,7 +13319,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c17 {
+.c14 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -14073,12 +13330,12 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c18 {
+.c15 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c16 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -14523,19 +13780,6 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
               />
             </div>
           </button>
-          <div
-            className="c13"
-          >
-            <div
-              className="c14"
-            >
-              <div
-                className="c15"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -14544,7 +13788,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -14578,7 +13822,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -14590,7 +13834,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -14602,7 +13846,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14611,7 +13855,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -14645,7 +13889,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -14657,7 +13901,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -14669,7 +13913,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14678,7 +13922,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c16"
+        className="cell checkbox c13"
         selected={false}
       >
         <div
@@ -14712,7 +13956,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c17"
+        className="cell corner-icon c14"
         selected={false}
       >
         <div
@@ -14724,7 +13968,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c17"
+        className="cell  c14"
         selected={false}
       >
         <div
@@ -14736,7 +13980,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c18"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14745,60 +13989,6 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
 `;
 
 exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
-.c13 {
-  position: relative;
-}
-
-.c14 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c15 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c15:after,
-.c15:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c15:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c15:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c11 {
   position: relative;
   display: inline-block;
@@ -14809,6 +13999,26 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c11 .appear-enter {
+  opacity: 0;
+}
+
+.c11 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c11 .appear-exit {
+  opacity: 1;
+}
+
+.c11 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c12 {
@@ -15162,7 +14372,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c17 {
+.c14 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -15173,12 +14383,12 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c18 {
+.c15 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c16 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -15420,19 +14630,6 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
                 />
               </div>
             </button>
-            <div
-              className="c13"
-            >
-              <div
-                className="c14"
-              >
-                <div
-                  className="c15"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </td>
       </tr>
@@ -15441,7 +14638,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c16"
+          className="cell checkbox c13"
           selected={false}
         >
           <div
@@ -15475,7 +14672,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c17"
+          className="cell corner-icon c14"
           selected={false}
         >
           <div
@@ -15487,7 +14684,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c17"
+          className="cell  c14"
           selected={false}
         >
           <div
@@ -15499,7 +14696,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c18"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -15508,7 +14705,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c16"
+          className="cell checkbox c13"
           selected={false}
         >
           <div
@@ -15542,7 +14739,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c17"
+          className="cell corner-icon c14"
           selected={false}
         >
           <div
@@ -15554,7 +14751,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c17"
+          className="cell  c14"
           selected={false}
         >
           <div
@@ -15566,7 +14763,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c18"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -15736,19 +14933,6 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
                 />
               </div>
             </button>
-            <div
-              className="c13"
-            >
-              <div
-                className="c14"
-              >
-                <div
-                  className="c15"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </td>
       </tr>
@@ -15757,7 +14941,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c16"
+          className="cell checkbox c13"
           selected={false}
         >
           <div
@@ -15791,7 +14975,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c17"
+          className="cell corner-icon c14"
           selected={false}
         >
           <div
@@ -15803,7 +14987,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c17"
+          className="cell  c14"
           selected={false}
         >
           <div
@@ -15815,7 +14999,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c18"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -15824,7 +15008,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c16"
+          className="cell checkbox c13"
           selected={false}
         >
           <div
@@ -15858,7 +15042,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c17"
+          className="cell corner-icon c14"
           selected={false}
         >
           <div
@@ -15870,7 +15054,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c17"
+          className="cell  c14"
           selected={false}
         >
           <div
@@ -15882,7 +15066,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c18"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -15891,7 +15075,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c16"
+          className="cell checkbox c13"
           selected={false}
         >
           <div
@@ -15925,7 +15109,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c17"
+          className="cell corner-icon c14"
           selected={false}
         >
           <div
@@ -15937,7 +15121,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c17"
+          className="cell  c14"
           selected={false}
         >
           <div
@@ -15949,7 +15133,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c18"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -16372,60 +15556,6 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
 `;
 
 exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
-.c9 {
-  position: relative;
-}
-
-.c10 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c11 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c11:after,
-.c11:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c11:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c11:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c7 {
   position: relative;
   display: inline-block;
@@ -16436,6 +15566,26 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c8 {
@@ -16628,7 +15778,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   white-space: normal;
 }
 
-.c12 {
+.c9 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -16639,7 +15789,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   background-color: white;
 }
 
-.c13 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -16883,19 +16033,6 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
               />
             </div>
           </button>
-          <div
-            className="c9"
-          >
-            <div
-              className="c10"
-            >
-              <div
-                className="c11"
-              >
-                This field is disabled.
-              </div>
-            </div>
-          </div>
         </div>
       </td>
     </tr>
@@ -16904,7 +16041,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -16916,7 +16053,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -16928,7 +16065,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -16937,7 +16074,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -16949,7 +16086,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -16961,7 +16098,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -16970,7 +16107,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c12"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -16982,7 +16119,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c12"
+        className="cell  c9"
         selected={false}
       >
         <div
@@ -16994,7 +16131,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c13"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -17003,60 +16140,6 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
-.c4 {
-  position: relative;
-}
-
-.c5 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c6 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c6:after,
-.c6:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c6:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c6:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c2 {
   position: relative;
   display: inline-block;
@@ -17067,6 +16150,26 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c2 .appear-enter {
+  opacity: 0;
+}
+
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c3 {
@@ -17158,13 +16261,13 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   font-weight: 600;
 }
 
-.c7 {
+.c4 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c7 *:focus {
+.c4 *:focus {
   outline: none;
 }
 
@@ -17277,26 +16380,13 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
       >
         Clear
       </button>
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div
     className="actions"
   >
     <div
-      className="c7"
+      className="c4"
     >
       <div>
         <span
@@ -17333,19 +16423,6 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
                 />
               </div>
             </button>
-            <div
-              className="c4"
-            >
-              <div
-                className="c5"
-              >
-                <div
-                  className="c6"
-                >
-                  This field is disabled.
-                </div>
-              </div>
-            </div>
           </div>
         </span>
       </div>
@@ -17355,60 +16432,6 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
-.c4 {
-  position: relative;
-}
-
-.c5 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c6 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c6:after,
-.c6:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c6:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c6:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c2 {
   position: relative;
   display: inline-block;
@@ -17419,6 +16442,26 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c2 .appear-enter {
+  opacity: 0;
+}
+
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c3 {
@@ -17619,19 +16662,6 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
       >
         Clear
       </button>
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -17746,60 +16776,6 @@ exports[`Storyshots Table/SelectionBar Default 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar One action button 1`] = `
-.c4 {
-  position: relative;
-}
-
-.c5 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c6 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c6:after,
-.c6:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c6:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c6:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c2 {
   position: relative;
   display: inline-block;
@@ -17810,6 +16786,26 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c2 .appear-enter {
+  opacity: 0;
+}
+
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c3 {
@@ -17892,7 +16888,7 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17926,42 +16922,42 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   padding: 0 16px;
 }
 
-.c7 .icon {
+.c4 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c7 .icon i {
+.c4 .icon i {
   vertical-align: text-bottom;
 }
 
-.c7:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c7:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c7:hover .icon,
-.c7:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c7:hover {
+.c4:hover {
   background-color: #dd3311;
 }
 
-.c7:focus {
+.c4:focus {
   background-color: #dd3311;
 }
 
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled :hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -18084,19 +17080,6 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
       >
         Clear
       </button>
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div
@@ -18106,7 +17089,7 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
       className="c2"
     >
       <button
-        className="c7"
+        className="c4"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -18116,19 +17099,6 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
       >
         Primary Action
       </button>
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -18243,60 +17213,6 @@ exports[`Storyshots Table/SelectionBar One item selected 1`] = `
 `;
 
 exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
-.c4 {
-  position: relative;
-}
-
-.c5 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c6 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c6:after,
-.c6:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c6:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c6:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c2 {
   position: relative;
   display: inline-block;
@@ -18307,6 +17223,26 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c2 .appear-enter {
+  opacity: 0;
+}
+
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c3 {
@@ -18389,7 +17325,7 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   box-shadow: none;
 }
 
-.c8 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18423,47 +17359,47 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   padding: 0 16px;
 }
 
-.c8 .icon {
+.c5 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c8 .icon i {
+.c5 .icon i {
   vertical-align: text-bottom;
 }
 
-.c8:hover {
+.c5:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c5:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c5:hover .icon,
+.c5:focus .icon {
   color: white;
 }
 
-.c8:hover {
+.c5:hover {
   background-color: #dd3311;
 }
 
-.c8:focus {
+.c5:focus {
   background-color: #dd3311;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled :hover {
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c5:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c7 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18497,42 +17433,42 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   padding: 0 16px;
 }
 
-.c7 .icon {
+.c4 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c7 .icon i {
+.c4 .icon i {
   vertical-align: text-bottom;
 }
 
-.c7:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c7:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c7:hover .icon,
-.c7:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c7:hover {
+.c4:hover {
   background-color: #2980b9;
 }
 
-.c7:focus {
+.c4:focus {
   background-color: #2980b9;
 }
 
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled :hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -18655,19 +17591,6 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
       >
         Clear
       </button>
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-        >
-          <div
-            className="c6"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div
@@ -18686,7 +17609,7 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
         className="c2"
       >
         <button
-          className="c7"
+          className="c4"
           disabled={false}
           onClick={[Function]}
           onMouseLeave={[Function]}
@@ -18696,25 +17619,12 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
         >
           Secondary Action
         </button>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <div
-              className="c6"
-            >
-              This field is disabled.
-            </div>
-          </div>
-        </div>
       </div>
       <div
         className="c2"
       >
         <button
-          className="c8"
+          className="c5"
           disabled={false}
           onClick={[Function]}
           onMouseLeave={[Function]}
@@ -18724,19 +17634,6 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
         >
           Primary Action
         </button>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <div
-              className="c6"
-            >
-              This field is disabled.
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

@@ -334,60 +334,6 @@ exports[`Storyshots EmptyState With image 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action 1`] = `
-.c6 {
-  position: relative;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c8 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c8:after,
-.c8:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c8:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c8:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c4 {
   position: relative;
   display: inline-block;
@@ -398,6 +344,26 @@ exports[`Storyshots EmptyState With one action 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c4 .appear-enter {
+  opacity: 0;
+}
+
+.c4 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c4 .appear-exit {
+  opacity: 1;
+}
+
+.c4 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c5 {
@@ -582,79 +548,12 @@ exports[`Storyshots EmptyState With one action 1`] = `
       >
         Primary Action
       </button>
-      <div
-        className="c6"
-      >
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots EmptyState With one action and info 1`] = `
-.c6 {
-  position: relative;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c8 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c8:after,
-.c8:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c8:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c8:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c4 {
   position: relative;
   display: inline-block;
@@ -665,6 +564,26 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c4 .appear-enter {
+  opacity: 0;
+}
+
+.c4 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c4 .appear-exit {
+  opacity: 1;
+}
+
+.c4 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c5 {
@@ -758,7 +677,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   text-align: center;
 }
 
-.c9 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -857,23 +776,10 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
       >
         Primary Action
       </button>
-      <div
-        className="c6"
-      >
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div
-    className="info c9"
+    className="info c6"
     size={14}
     type="#59636f"
   >
@@ -883,60 +789,6 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action, inside a container 1`] = `
-.c6 {
-  position: relative;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c8 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c8:after,
-.c8:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c8:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c8:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c4 {
   position: relative;
   display: inline-block;
@@ -947,6 +799,26 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c4 .appear-enter {
+  opacity: 0;
+}
+
+.c4 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c4 .appear-exit {
+  opacity: 1;
+}
+
+.c4 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 .c5 {
@@ -1139,19 +1011,6 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
         >
           Primary Action
         </button>
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-          >
-            <div
-              className="c8"
-            >
-              This field is disabled.
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -1159,60 +1018,6 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 `;
 
 exports[`Storyshots EmptyState With two actions 1`] = `
-.c6 {
-  position: relative;
-}
-
-.c7 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c8 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c8:after,
-.c8:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c8:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c8:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c4 {
   position: relative;
   display: inline-block;
@@ -1225,7 +1030,27 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   height: 100%;
 }
 
-.c9 {
+.c4 .appear-enter {
+  opacity: 0;
+}
+
+.c4 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c4 .appear-exit {
+  opacity: 1;
+}
+
+.c4 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1259,42 +1084,42 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   padding: 0 16px;
 }
 
-.c9 .icon {
+.c6 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c9 .icon i {
+.c6 .icon i {
   vertical-align: text-bottom;
 }
 
-.c9:hover {
+.c6:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c9:focus {
+.c6:focus {
   box-shadow: none;
 }
 
-.c9:hover .icon,
-.c9:focus .icon {
+.c6:hover .icon,
+.c6:focus .icon {
   color: white;
 }
 
-.c9:hover {
+.c6:hover {
   background-color: #2980b9;
 }
 
-.c9:focus {
+.c6:focus {
   background-color: #2980b9;
 }
 
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled :hover {
+.c6:disabled,
+.c6:disabled .icon,
+.c6:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:disabled {
+.c6:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1487,25 +1312,12 @@ exports[`Storyshots EmptyState With two actions 1`] = `
       >
         Secondary Action
       </button>
-      <div
-        className="c6"
-      >
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
     <div
       className="c4"
     >
       <button
-        className="c9"
+        className="c6"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1515,19 +1327,6 @@ exports[`Storyshots EmptyState With two actions 1`] = `
       >
         Primary Action
       </button>
-      <div
-        className="c6"
-      >
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            This field is disabled.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
