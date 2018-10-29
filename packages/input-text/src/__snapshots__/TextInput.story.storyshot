@@ -2573,7 +2573,7 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   align-items: center;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2581,9 +2581,10 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  display: block;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2608,23 +2609,23 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2637,86 +2638,86 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 .label {
+.c4 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2731,23 +2732,23 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   float: left;
 }
 
-.c5 .moreInfo {
+.c4 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2764,10 +2765,6 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 {
-  display: block;
 }
 
 .c4 .input {
@@ -2853,7 +2850,7 @@ exports[`Storyshots Text Input Protected value changing programatically every 3 
         </div>
       </div>
       <div
-        className="c4 c5"
+        className="c4"
       >
         <div
           className="input"
@@ -4463,7 +4460,7 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4471,9 +4468,10 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  display: block;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4498,23 +4496,23 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4527,86 +4525,86 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 .label {
+.c4 .label {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4621,23 +4619,23 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   float: left;
 }
 
-.c5 .moreInfo {
+.c4 .moreInfo {
   position: relative;
   top: -1px;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -4654,10 +4652,6 @@ exports[`Storyshots Text Input With a protected value 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 {
-  display: block;
 }
 
 .c4 .input {
@@ -4743,7 +4737,7 @@ exports[`Storyshots Text Input With a protected value 1`] = `
         </div>
       </div>
       <div
-        className="c4 c5"
+        className="c4"
       >
         <div
           className="input"
@@ -5870,199 +5864,6 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
   line-height: 1.14;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c5 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 .input input {
-  padding: 0 16px;
-  height: 46px;
-}
-
-.c5 .input textarea {
-  padding: 16px;
-}
-
-.c5 .input input,
-.c5 .input textarea {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
-  cursor: pointer;
-}
-
-.c5 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c5 .input .icon.left {
-  margin-left: 16px;
-}
-
-.c5 .input .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
-}
-
-.c5 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-  margin-right: 16px;
-}
-
-.c5 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c5 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c5 .input.dropdown {
-  cursor: pointer;
-}
-
-.c5 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-  float: left;
-}
-
-.c5 .moreInfo {
-  position: relative;
-  top: -1px;
-}
-
-.c5 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c5 .prefix,
-.c5 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6257,7 +6058,197 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: block;
+}
+
+.c4 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c4 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c4 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c4 .input textarea {
+  padding: 16px;
+}
+
+.c4 .input input,
+.c4 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c4 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c4 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c4 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c4 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c4 .input.dropdown {
+  cursor: pointer;
+}
+
+.c4 .label {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #2f313a;
+  float: left;
+}
+
+.c4 .moreInfo {
+  position: relative;
+  top: -1px;
+}
+
+.c4 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4 .prefix,
+.c4 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c4 .input {
@@ -6342,7 +6333,7 @@ exports[`Storyshots Text Input disabled protected value 1`] = `
         </div>
       </div>
       <div
-        className="c4 c5"
+        className="c4"
       >
         <div
           className="input"
