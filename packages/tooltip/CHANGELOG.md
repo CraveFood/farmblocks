@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.10.1...@crave/farmblocks-tooltip@1.0.0) (2018-10-29)
+
+
+### Bug Fixes
+
+* **styled-components:** use ref instead of innerRef ([be7658d](https://github.com/CraveFood/farmblocks/commit/be7658d))
+
+
+### Features
+
+* **package.json:** upgrade styled-components to v4 ([b5c195a](https://github.com/CraveFood/farmblocks/commit/b5c195a)), closes [#592](https://github.com/CraveFood/farmblocks/issues/592)
+* **update styled-components:** update peer dependency for all packages ([ae80edf](https://github.com/CraveFood/farmblocks/commit/ae80edf))
+
+
+### BREAKING CHANGES
+
+* **update styled-components:** Requires React ^v16.6.0
+
+
+
+
 <a name="0.10.1"></a>
 ## [0.10.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.10.0...@crave/farmblocks-tooltip@0.10.1) (2018-10-23)
 

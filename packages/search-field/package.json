@@ -1,11 +1,14 @@
 {
   "name": "@crave/farmblocks-search-field",
-  "version": "2.0.7",
+  "version": "3.0.0",
   "description": "Search input with results dropdown list",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "lib"],
+  "files": [
+    "AUTHORS",
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -21,25 +24,30 @@
     "url": "https://github.com/CraveFood/farmblocks/issues"
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
-  "keywords": ["farmblocks", "react", "search", "input"],
+  "keywords": [
+    "farmblocks",
+    "react",
+    "search",
+    "input"
+  ],
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.6.0",
     "styled-components": "^4.0.2"
   },
   "dependencies": {
-    "@crave/farmblocks-dropdown": "^0.8.14",
-    "@crave/farmblocks-hoc-disabled-tooltip": "^1.2.1",
-    "@crave/farmblocks-hoc-input": "^4.3.5",
-    "@crave/farmblocks-hoc-validation-messages": "^1.0.3",
-    "@crave/farmblocks-input-select": "^2.1.26",
-    "@crave/farmblocks-input-text": "^3.2.6",
+    "@crave/farmblocks-dropdown": "^1.0.0",
+    "@crave/farmblocks-hoc-disabled-tooltip": "^2.0.0",
+    "@crave/farmblocks-hoc-input": "^5.0.0",
+    "@crave/farmblocks-hoc-validation-messages": "^2.0.0",
+    "@crave/farmblocks-input-select": "^3.0.0",
+    "@crave/farmblocks-input-text": "^3.3.0",
     "@crave/farmblocks-theme": "^1.6.0",
     "lodash.debounce": "^4.0.8",
     "lodash.isequal": "^4.5.0"
   },
   "devDependencies": {
-    "@crave/farmblocks-link": "^3.1.8",
-    "@crave/farmblocks-text": "^2.0.1"
+    "@crave/farmblocks-link": "^4.0.0",
+    "@crave/farmblocks-text": "^3.0.0"
   }
 }

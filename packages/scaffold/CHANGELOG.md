@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# 1.0.0 (2018-10-29)
+
+
+### Features
+
+* **update styled-components:** update peer dependency for all packages ([ae80edf](https://github.com/CraveFood/farmblocks/commit/ae80edf))
+
+
+### BREAKING CHANGES
+
+* **update styled-components:** Requires React ^v16.6.0
+
+
+
+
 <a name="0.3.4"></a>
 ## 0.3.4 (2018-09-19)
 
