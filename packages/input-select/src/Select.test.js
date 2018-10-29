@@ -78,11 +78,8 @@ describe("Select input", () => {
       const highlighted = false;
       const itemWrapper = mount(renderItem(items[0], highlighted));
 
-      // Render text item
-      const itemInstance = itemWrapper.instance();
-
-      expect(itemInstance.props.highlighted).toBe(highlighted);
-      expect(itemInstance.props.selected).toBe(false);
+      expect(itemWrapper.props().highlighted).toBe(highlighted);
+      expect(itemWrapper.props().selected).toBe(false);
       expect(itemWrapper.text()).toBe(items[0].label);
     });
 
@@ -97,11 +94,8 @@ describe("Select input", () => {
       const highlighted = true;
       const itemWrapper = mount(renderItem(items[0], highlighted));
 
-      // Render text item
-      const itemInstance = itemWrapper.instance();
-
-      expect(itemInstance.props.highlighted).toBe(highlighted);
-      expect(itemInstance.props.selected).toBe(false);
+      expect(itemWrapper.props().highlighted).toBe(highlighted);
+      expect(itemWrapper.props().selected).toBe(false);
       expect(itemWrapper.text()).toBe(customRenderItem(items[0]));
     });
 
@@ -114,11 +108,8 @@ describe("Select input", () => {
       const highlighted = false;
       const itemWrapper = mount(renderItem(items[0], highlighted));
 
-      // Render text item
-      const itemInstance = itemWrapper.instance();
-
-      expect(itemInstance.props.highlighted).toBe(highlighted);
-      expect(itemInstance.props.selected).toBe(true);
+      expect(itemWrapper.props().highlighted).toBe(highlighted);
+      expect(itemWrapper.props().selected).toBe(true);
       expect(itemWrapper.text()).toBe(items[0].label);
     });
   });
@@ -134,19 +125,13 @@ describe("Select input", () => {
       wrapper = mount(
         <Select items={items} onChange={onChangeMock} value={0} />
       );
-
-      autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-
-      const { onMenuVisibilityChange } = autoCompleteWrapper.instance().props;
+      const { input, onMenuVisibilityChange } = wrapper.instance();
+      input.select = jest.fn();
 
       const isOpen = true;
       onMenuVisibilityChange(isOpen);
 
-      const input = autoCompleteWrapper.instance().refs.input;
-
-      const inputSelectionRange = input.selectionEnd - input.selectionStart;
-
-      expect(inputSelectionRange).toBe(input.value.length);
+      expect(input.select).toHaveBeenCalledTimes(1);
       expect(wrapper.state().isMenuOpen).toBe(isOpen);
     });
 
@@ -154,21 +139,13 @@ describe("Select input", () => {
       wrapper = mount(
         <Select items={items} onChange={onChangeMock} value={0} disableSearch />
       );
+      const { input, onMenuVisibilityChange } = wrapper.instance();
+      input.select = jest.fn();
 
-      autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-
-      const { onMenuVisibilityChange } = autoCompleteWrapper.instance().props;
-
-      const isOpen = false;
-
+      const isOpen = true;
       onMenuVisibilityChange(isOpen);
 
-      const input = autoCompleteWrapper.instance().refs.input;
-
-      const inputSelectionRange = input.selectionEnd - input.selectionStart;
-
-      expect(inputSelectionRange).toBe(0);
-      expect(inputSelectionRange).not.toBe(input.value.length);
+      expect(input.select).not.toHaveBeenCalled();
       expect(wrapper.state().isMenuOpen).toBe(isOpen);
     });
   });

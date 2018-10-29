@@ -1,5 +1,6 @@
-import { injectGlobal } from "styled-components";
-import { configure } from "@storybook/react";
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import { configure, addDecorator } from "@storybook/react";
 
 const req = require.context(
   "../",
@@ -11,9 +12,7 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
-configure(loadStories, module);
-
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
 
 @font-face {
   font-family: 'lato';
@@ -168,3 +167,16 @@ injectGlobal`
     -moz-osx-font-smoothing: grayscale;
   }
 `;
+
+function withGlobalStyle(storyFn) {
+  return (
+    <React.Fragment>
+      <GlobalStyle />
+      {storyFn()}
+    </React.Fragment>
+  );
+}
+
+addDecorator(withGlobalStyle);
+
+configure(loadStories, module);

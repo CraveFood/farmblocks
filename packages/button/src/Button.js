@@ -10,48 +10,50 @@ import StyledButton from "./styledComponents/Button";
 
 const EnhancedButton = disabledTooltip(StyledButton);
 
-const Button = props => {
-  const {
-    disabled,
-    icon,
-    rightIcon,
-    text,
-    children,
-    noTooltip,
-    ...buttonProps
-  } = props;
+class Button extends React.Component {
+  render() {
+    const {
+      disabled,
+      icon,
+      rightIcon,
+      text,
+      children,
+      noTooltip,
+      ...buttonProps
+    } = this.props;
 
-  // @FIXME revisit font icon assets on farmblocks
-  const iconName = buttonProps.loading ? "wg-loading" : icon;
+    // @FIXME revisit font icon assets on farmblocks
+    const iconName = buttonProps.loading ? "wg-loading" : icon;
 
-  const isDisabled = disabled || buttonProps.loading;
-  const showIcon = icon || buttonProps.loading;
-  const marginOffset = text || children ? 10 : 0;
-  const buttonContent = text || children;
-  const isIconOnly = buttonContent === undefined;
+    const isDisabled = disabled || buttonProps.loading;
+    const showIcon = icon || buttonProps.loading;
+    const marginOffset = text || children ? 10 : 0;
+    const buttonContent = text || children;
+    const isIconOnly = buttonContent === undefined;
 
-  return (
-    <EnhancedButton
-      disabled={isDisabled}
-      isIconOnly={isIconOnly}
-      displayBlock={buttonProps.fluid}
-      noTooltip={!buttonProps.tooltipText}
-      {...buttonProps}
-    >
-      {showIcon && (
-        <div className="icon left-icon" style={{ marginRight: marginOffset }}>
-          <i className={iconName} />
-        </div>
-      )}
-      {buttonContent}
-      {rightIcon && (
-        <div className="icon" style={{ marginLeft: marginOffset }}>
-          <i className={rightIcon} />
-        </div>
-      )}
-    </EnhancedButton>
-  );
-};
+    return (
+      <EnhancedButton
+        disabled={isDisabled}
+        isIconOnly={isIconOnly}
+        displayBlock={buttonProps.fluid}
+        noTooltip={!buttonProps.tooltipText}
+        {...buttonProps}
+      >
+        {showIcon && (
+          <div className="icon left-icon" style={{ marginRight: marginOffset }}>
+            <i className={iconName} />
+          </div>
+        )}
+        {buttonContent}
+        {rightIcon && (
+          <div className="icon" style={{ marginLeft: marginOffset }}>
+            <i className={rightIcon} />
+          </div>
+        )}
+      </EnhancedButton>
+    );
+  }
+}
 
 Button.defaultProps = {
   size: buttonSizes.SMALL,

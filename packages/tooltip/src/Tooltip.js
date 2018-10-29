@@ -53,7 +53,7 @@ class Tooltip extends React.Component {
             <StyledTooltip
               {...this.props}
               align={this.state.align}
-              innerRef={element => (this.tooltipRef = element)}
+              ref={element => (this.tooltipRef = element)}
             >
               {content}
             </StyledTooltip>

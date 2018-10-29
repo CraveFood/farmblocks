@@ -19,7 +19,7 @@ const Dropdown = props => (
           rightIcon="wg-small-arrow-bottom"
           text={props.text}
           size={props.size}
-          innerRef={props.innerRef}
+          ref={props.innerRef}
         />
       </AriaButtonWrapper>
 
