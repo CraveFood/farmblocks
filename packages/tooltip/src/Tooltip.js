@@ -4,8 +4,8 @@ import values from "object.values";
 
 import {
   Container,
-  StyledTooltip,
-  PositionWrapper
+  StyledTooltip
+  // PositionWrapper
 } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
 
@@ -42,24 +42,24 @@ class Tooltip extends React.Component {
     const content = this.props.children || this.props.text;
 
     return (
-      <PositionWrapper>
-        {/* 
-          We need this wrapper in order to keep the arrow
-          visible while the overflow is hidden.
-          Ref.: https://css-tricks.com/popping-hidden-overflow/
-        */}
-        <Container {...this.props} align={this.state.align}>
-          {content && (
-            <StyledTooltip
-              {...this.props}
-              align={this.state.align}
-              ref={element => (this.tooltipRef = element)}
-            >
-              {content}
-            </StyledTooltip>
-          )}
-        </Container>
-      </PositionWrapper>
+      // <PositionWrapper>
+      //   {/*
+      //     We need this wrapper in order to keep the arrow
+      //     visible while the overflow is hidden.
+      //     Ref.: https://css-tricks.com/popping-hidden-overflow/
+      //   */}
+      <Container {...this.props} align={this.state.align}>
+        {content && (
+          <StyledTooltip
+            {...this.props}
+            align={this.state.align}
+            ref={element => (this.tooltipRef = element)}
+          >
+            {content}
+          </StyledTooltip>
+        )}
+      </Container>
+      // </PositionWrapper>
     );
   }
 }

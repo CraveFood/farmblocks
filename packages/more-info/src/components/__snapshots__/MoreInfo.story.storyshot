@@ -2,10 +2,6 @@
 
 exports[`Storyshots More info Default 1`] = `
 .c2 {
-  position: relative;
-}
-
-.c3 {
   position: absolute;
   z-index: 1000;
   top: 15px;
@@ -15,7 +11,7 @@ exports[`Storyshots More info Default 1`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c3 {
   visibility: hidden;
   z-index: 1000;
   top: 15px;
@@ -29,8 +25,8 @@ exports[`Storyshots More info Default 1`] = `
   font-family: lato,sans-serif;
 }
 
-.c4:after,
-.c4:before {
+.c3:after,
+.c3:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -39,7 +35,7 @@ exports[`Storyshots More info Default 1`] = `
   pointer-events: none;
 }
 
-.c4:before {
+.c3:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -50,7 +46,7 @@ exports[`Storyshots More info Default 1`] = `
   transform: translateX(-50%);
 }
 
-.c4:after {
+.c3:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -109,20 +105,16 @@ exports[`Storyshots More info Default 1`] = `
           className="wg-question"
         />
         <div
-          className="c2"
+          className="tooltip c2"
         >
           <div
             className="tooltip c3"
           >
             <div
-              className="tooltip c4"
+              className="hit-area"
+              onMouseOut={[Function]}
             >
-              <div
-                className="hit-area"
-                onMouseOut={[Function]}
-              >
-                Tooltip with text
-              </div>
+              Tooltip with text
             </div>
           </div>
         </div>
@@ -134,17 +126,13 @@ exports[`Storyshots More info Default 1`] = `
 
 exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 .c2 {
-  position: relative;
-}
-
-.c3 {
   position: absolute;
   z-index: 1000;
   top: 15px;
   left: 0;
 }
 
-.c4 {
+.c3 {
   visibility: hidden;
   z-index: 1000;
   top: 15px;
@@ -158,8 +146,8 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
   font-family: lato,sans-serif;
 }
 
-.c4:after,
-.c4:before {
+.c3:after,
+.c3:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -168,7 +156,7 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
   pointer-events: none;
 }
 
-.c4:before {
+.c3:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -176,7 +164,7 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
   left: 7px;
 }
 
-.c4:after {
+.c3:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -235,20 +223,16 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
           className="wg-question"
         />
         <div
-          className="c2"
+          className="tooltip c2"
         >
           <div
             className="tooltip c3"
           >
             <div
-              className="tooltip c4"
+              className="hit-area"
+              onMouseOut={[Function]}
             >
-              <div
-                className="hit-area"
-                onMouseOut={[Function]}
-              >
-                Tooltip left aligned with text
-              </div>
+              Tooltip left aligned with text
             </div>
           </div>
         </div>
@@ -260,17 +244,13 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 
 exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 .c2 {
-  position: relative;
-}
-
-.c3 {
   position: absolute;
   z-index: 1000;
   top: 15px;
   right: 0;
 }
 
-.c4 {
+.c3 {
   visibility: hidden;
   z-index: 1000;
   top: 15px;
@@ -284,8 +264,8 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
   font-family: lato,sans-serif;
 }
 
-.c4:after,
-.c4:before {
+.c3:after,
+.c3:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -294,7 +274,7 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
   pointer-events: none;
 }
 
-.c4:before {
+.c3:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -302,7 +282,7 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
   right: 7px;
 }
 
-.c4:after {
+.c3:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -367,20 +347,16 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
           className="wg-question"
         />
         <div
-          className="c2"
+          className="tooltip c2"
         >
           <div
             className="tooltip c3"
           >
             <div
-              className="tooltip c4"
+              className="hit-area"
+              onMouseOut={[Function]}
             >
-              <div
-                className="hit-area"
-                onMouseOut={[Function]}
-              >
-                Awesome tooltip
-              </div>
+              Awesome tooltip
             </div>
           </div>
         </div>
@@ -392,10 +368,6 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 
 exports[`Storyshots More info with button 1`] = `
 .c2 {
-  position: relative;
-}
-
-.c3 {
   position: absolute;
   z-index: 1000;
   top: 15px;
@@ -405,7 +377,7 @@ exports[`Storyshots More info with button 1`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c3 {
   visibility: hidden;
   z-index: 1000;
   top: 15px;
@@ -419,8 +391,8 @@ exports[`Storyshots More info with button 1`] = `
   font-family: lato,sans-serif;
 }
 
-.c4:after,
-.c4:before {
+.c3:after,
+.c3:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -429,7 +401,7 @@ exports[`Storyshots More info with button 1`] = `
   pointer-events: none;
 }
 
-.c4:before {
+.c3:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -440,7 +412,7 @@ exports[`Storyshots More info with button 1`] = `
   transform: translateX(-50%);
 }
 
-.c4:after {
+.c3:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -451,39 +423,39 @@ exports[`Storyshots More info with button 1`] = `
   transform: translateX(-50%);
 }
 
-.c5 {
+.c4 {
   position: relative;
   display: inline-block;
 }
 
-.c5 .hitArea {
+.c4 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c5 .appear-enter {
+.c4 .appear-enter {
   opacity: 0;
 }
 
-.c5 .appear-enter-active {
+.c4 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c5 .appear-exit {
+.c4 .appear-exit {
   opacity: 1;
 }
 
-.c5 .appear-exit-active {
+.c4 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -516,49 +488,49 @@ exports[`Storyshots More info with button 1`] = `
   padding: 0 16px;
 }
 
-.c6 .icon {
+.c5 .icon {
   color: rgba(255,255,255,0.56);
 }
 
-.c6 .icon i {
+.c5 .icon i {
   vertical-align: text-bottom;
 }
 
-.c6:hover {
+.c5:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c6:focus {
+.c5:focus {
   box-shadow: none;
 }
 
-.c6:hover .icon,
-.c6:focus .icon {
+.c5:hover .icon,
+.c5:focus .icon {
   color: white;
 }
 
-.c6 > .icon {
+.c5 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c6:hover > .icon,
-.c6:focus > .icon {
+.c5:hover > .icon,
+.c5:focus > .icon {
   color: #3498db;
 }
 
-.c6:disabled,
-.c6:disabled .icon,
-.c6:disabled :hover {
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:disabled {
+.c5:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -611,33 +583,29 @@ exports[`Storyshots More info with button 1`] = `
           className="wg-question"
         />
         <div
-          className="c2"
+          className="tooltip c2"
         >
           <div
             className="tooltip c3"
           >
             <div
-              className="tooltip c4"
+              className="hit-area"
+              onMouseOut={[Function]}
             >
               <div
-                className="hit-area"
-                onMouseOut={[Function]}
+                className="c4"
               >
-                <div
+                <button
                   className="c5"
+                  disabled={false}
+                  onClick={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                  size="SMALL"
+                  type="NEUTRAL"
                 >
-                  <button
-                    className="c6"
-                    disabled={false}
-                    onClick={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseOver={[Function]}
-                    size="SMALL"
-                    type="NEUTRAL"
-                  >
-                    This is a Button
-                  </button>
-                </div>
+                  This is a Button
+                </button>
               </div>
             </div>
           </div>
@@ -650,10 +618,6 @@ exports[`Storyshots More info with button 1`] = `
 
 exports[`Storyshots More info with card 1`] = `
 .c2 {
-  position: relative;
-}
-
-.c3 {
   position: absolute;
   z-index: 1000;
   top: 15px;
@@ -663,7 +627,7 @@ exports[`Storyshots More info with card 1`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c3 {
   visibility: hidden;
   z-index: 1000;
   top: 15px;
@@ -677,8 +641,8 @@ exports[`Storyshots More info with card 1`] = `
   font-family: lato,sans-serif;
 }
 
-.c4:after,
-.c4:before {
+.c3:after,
+.c3:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -687,7 +651,7 @@ exports[`Storyshots More info with card 1`] = `
   pointer-events: none;
 }
 
-.c4:before {
+.c3:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -698,7 +662,7 @@ exports[`Storyshots More info with card 1`] = `
   transform: translateX(-50%);
 }
 
-.c4:after {
+.c3:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -718,7 +682,7 @@ exports[`Storyshots More info with card 1`] = `
   font-weight: 600;
 }
 
-.c5 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -768,25 +732,21 @@ exports[`Storyshots More info with card 1`] = `
           className="wg-question"
         />
         <div
-          className="c2"
+          className="tooltip c2"
         >
           <div
             className="tooltip c3"
           >
             <div
-              className="tooltip c4"
+              className="hit-area"
+              onMouseOut={[Function]}
             >
               <div
-                className="hit-area"
-                onMouseOut={[Function]}
+                className="c4"
+                overflow="hidden"
+                width="100%"
               >
-                <div
-                  className="c5"
-                  overflow="hidden"
-                  width="100%"
-                >
-                  This is a Card.
-                </div>
+                This is a Card.
               </div>
             </div>
           </div>
