@@ -1,60 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots HOC withTooltip Tag, tooltip with a card 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -112,17 +58,6 @@ exports[`Storyshots HOC withTooltip Tag, tooltip with a card 1`] = `
   color: white;
 }
 
-.c5 {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
 .c0 {
   position: relative;
   display: inline-block;
@@ -133,6 +68,26 @@ exports[`Storyshots HOC withTooltip Tag, tooltip with a card 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 <div
@@ -148,84 +103,11 @@ exports[`Storyshots HOC withTooltip Tag, tooltip with a card 1`] = `
     type="SECONDARY"
   >
     This a tag with tooltip
-  </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        <div
-          className="c5"
-          overflow="hidden"
-          width="100%"
-        >
-          This is a Card 
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots HOC withTooltip Tag, tooltip with text 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -295,6 +177,26 @@ exports[`Storyshots HOC withTooltip Tag, tooltip with text 1`] = `
   height: 100%;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
 <div
   className="c0"
 >
@@ -309,77 +211,10 @@ exports[`Storyshots HOC withTooltip Tag, tooltip with text 1`] = `
   >
     This a tag with tooltip
   </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        Tooltip custom text
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots HOC withTooltip Text, tooltip disabled 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -398,6 +233,26 @@ exports[`Storyshots HOC withTooltip Text, tooltip disabled 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 <div
@@ -410,77 +265,10 @@ exports[`Storyshots HOC withTooltip Text, tooltip disabled 1`] = `
   >
     Farmblocks-text
   </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        Tooltip custom text
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots HOC withTooltip Text, tooltip with text 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 0;
-}
-
-.c4 {
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  transition: visibility 0s linear 0.1s,opacity 0.1s linear;
-  visibility: hidden;
-  opacity: 0;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-}
-
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
-}
-
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -499,6 +287,26 @@ exports[`Storyshots HOC withTooltip Text, tooltip with text 1`] = `
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 
 <div
@@ -515,19 +323,6 @@ exports[`Storyshots HOC withTooltip Text, tooltip with text 1`] = `
     type="#2f313a"
   >
     Farmblocks-text
-  </div>
-  <div
-    className="c2"
-  >
-    <div
-      className="c3"
-    >
-      <div
-        className="c4"
-      >
-        Tooltip custom text
-      </div>
-    </div>
   </div>
 </div>
 `;

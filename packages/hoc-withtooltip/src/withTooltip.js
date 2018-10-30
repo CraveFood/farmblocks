@@ -4,6 +4,7 @@ import wrapDisplayName from "recompose/wrapDisplayName";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import values from "object.values";
+import { CSSTransition } from "react-transition-group";
 
 const Container = styled.div`
   position: relative;
@@ -14,6 +15,24 @@ const Container = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .appear-enter {
+    opacity: 0;
+  }
+
+  .appear-enter-active {
+    opacity: 1;
+    transition: opacity 100ms ease-in;
+  }
+
+  .appear-exit {
+    opacity: 1;
+  }
+
+  .appear-exit-active {
+    opacity: 0;
+    transition: opacity 100ms ease-in;
   }
 `;
 
@@ -57,19 +76,25 @@ const withTooltip = WrappedComponent => {
         <Container displayBlock={displayBlock}>
           {!disableTooltip && <div className="hitArea" {...mouseEvents} />}
           <WrappedComponent {...wrappedComponentProps} />
-
-          <Tooltip
-            isVisible={this.state.tooltipVisible && !disableTooltip}
-            align={tooltipAlign}
-            zIndex={zIndex}
-            bondariesSelector={bondariesSelector}
-            hideArrow={hideArrow}
-            padding={padding}
-            top={top}
-            overflow={overflow}
+          <CSSTransition
+            in={this.state.tooltipVisible && !disableTooltip}
+            mountOnEnter
+            unmountOnExit
+            timeout={100}
+            classNames="appear"
           >
-            {tooltipContent}
-          </Tooltip>
+            <Tooltip
+              align={tooltipAlign}
+              zIndex={zIndex}
+              bondariesSelector={bondariesSelector}
+              hideArrow={hideArrow}
+              padding={padding}
+              top={top}
+              overflow={overflow}
+            >
+              {tooltipContent}
+            </Tooltip>
+          </CSSTransition>
         </Container>
       );
     }

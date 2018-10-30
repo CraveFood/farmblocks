@@ -28,21 +28,6 @@ const Container = styled.div`
   ${alignX(0)};
 `;
 
-const visibility = ({ isVisible }) => {
-  if (isVisible) {
-    return css`
-      visibility: visible;
-      opacity: 1;
-      transition-delay: 0s;
-    `;
-  }
-
-  return css`
-    visibility: hidden;
-    opacity: 0;
-  `;
-};
-
 const arrow = ({ hideArrow }) => {
   return (
     !hideArrow &&
@@ -77,8 +62,7 @@ const arrow = ({ hideArrow }) => {
 };
 
 const StyledTooltip = styled.div`
-  transition: visibility 0s linear 0.1s, opacity 0.1s linear;
-  ${visibility};
+  visibility: ${props => (props.isVisible ? "visible" : "hidden")};
 
   z-index: ${props => props.zIndex};
   top: ${props => props.top};
