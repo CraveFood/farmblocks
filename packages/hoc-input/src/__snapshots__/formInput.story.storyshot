@@ -5609,17 +5609,8 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
 }
 
 .c5 {
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c6 {
   visibility: hidden;
+  position: absolute;
   z-index: 1000;
   top: 15px;
   padding: 8px;
@@ -5630,10 +5621,14 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   white-space: pre;
   color: #2f313a;
   font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.c6:after,
-.c6:before {
+.c5:after,
+.c5:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -5642,7 +5637,7 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   pointer-events: none;
 }
 
-.c6:before {
+.c5:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -5653,7 +5648,7 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   transform: translateX(-50%);
 }
 
-.c6:after {
+.c5:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -5941,20 +5936,16 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
             className="wg-question"
           />
           <div
-            className="c4"
+            className="tooltip c4"
           >
             <div
               className="tooltip c5"
             >
               <div
-                className="tooltip c6"
+                className="hit-area"
+                onMouseOut={[Function]}
               >
-                <div
-                  className="hit-area"
-                  onMouseOut={[Function]}
-                >
-                  this is a more info text
-                </div>
+                this is a more info text
               </div>
             </div>
           </div>
