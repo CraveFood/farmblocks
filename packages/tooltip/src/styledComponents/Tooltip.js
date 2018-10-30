@@ -2,6 +2,10 @@ import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import { CENTER } from "../constants/alignments";
 
+const Container = styled.div`
+  position: relative;
+`;
+
 const centerAlignment = css`
   left: 50%;
   transform: translateX(-50%);
@@ -16,17 +20,6 @@ const alignX = coordinate => ({ align }) => {
     ${align}: ${coordinate};
   `;
 };
-
-const PositionWrapper = styled.div`
-  position: relative;
-`;
-
-const Container = styled.div`
-  position: absolute;
-  z-index: ${props => props.zIndex};
-  top: ${props => props.top};
-  ${alignX(0)};
-`;
 
 const arrow = ({ hideArrow }) => {
   return (
@@ -64,6 +57,7 @@ const arrow = ({ hideArrow }) => {
 const StyledTooltip = styled.div`
   visibility: ${props => (props.isVisible ? "visible" : "hidden")};
 
+  position: absolute;
   z-index: ${props => props.zIndex};
   top: ${props => props.top};
   padding: ${props => props.padding || "8px"};
@@ -76,9 +70,11 @@ const StyledTooltip = styled.div`
 
   font-family: lato, sans-serif;
 
+  ${alignX(0)};
+
   ${arrow};
 
   overflow: ${props => props.overflow};
 `;
 
-export { Container, StyledTooltip, PositionWrapper };
+export { Container, StyledTooltip };
