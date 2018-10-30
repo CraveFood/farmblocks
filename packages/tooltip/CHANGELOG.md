@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.1.0...@crave/farmblocks-tooltip@1.1.1) (2018-10-30)
+
+
+### Bug Fixes
+
+* **Tooltip:** revert https://github.com/CraveFood/farmblocks/pull/606 ([b76a7dd](https://github.com/CraveFood/farmblocks/commit/b76a7dd))
+
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.0.0...@crave/farmblocks-tooltip@1.1.0) (2018-10-30)
 
