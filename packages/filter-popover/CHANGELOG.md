@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.0.0...@crave/farmblocks-filter-popover@1.0.1) (2018-10-30)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-filter-popover
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@0.5.10...@crave/farmblocks-filter-popover@1.0.0) (2018-10-29)
 

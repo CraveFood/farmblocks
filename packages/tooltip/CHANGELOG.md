@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.0.0...@crave/farmblocks-tooltip@1.1.0) (2018-10-30)
+
+
+### Features
+
+* **Tooltip:** remove display animation from tooltip ([9053ee9](https://github.com/CraveFood/farmblocks/commit/9053ee9))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@0.10.1...@crave/farmblocks-tooltip@1.0.0) (2018-10-29)
 

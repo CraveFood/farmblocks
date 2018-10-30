@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-withtooltip@1.0.0...@crave/farmblocks-hoc-withtooltip@1.0.1) (2018-10-30)
+
+
+### Bug Fixes
+
+* **HOC withtooltip:** mount tooltip only when conditions are met instead of setting its visibility ([7b103d9](https://github.com/CraveFood/farmblocks/commit/7b103d9))
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-withtooltip@0.2.2...@crave/farmblocks-hoc-withtooltip@1.0.0) (2018-10-29)
 
