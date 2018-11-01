@@ -1,10 +1,15 @@
 import React from "react";
+import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
 import Alert from ".";
 import { POSITIVE, NEWS, NEGATIVE, ATTENTION } from "./constants/alertTypes";
+
+const ExtendedAlert = styled(Alert)`
+  transform: rotate(5deg);
+`;
 
 storiesOf("Alert", module)
   .add(
@@ -103,5 +108,11 @@ storiesOf("Alert", module)
         text="Attention alert!"
         onDismiss={action("dismiss triggered")}
       />
+    ))
+  )
+  .add(
+    "extended style",
+    withInfo()(() => (
+      <ExtendedAlert text="Extended with 'transform: rotate(5deg)'" />
     ))
   );

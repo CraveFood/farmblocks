@@ -17,7 +17,8 @@ class Alert extends React.Component {
     onDismiss: PropTypes.func,
     visibleTime: PropTypes.number,
     zIndex: PropTypes.number,
-    bottomAligned: PropTypes.bool
+    bottomAligned: PropTypes.bool,
+    className: PropTypes.string
   };
 
   static defaultProps = {
@@ -29,20 +30,14 @@ class Alert extends React.Component {
     bottomAligned: false
   };
 
-  dismissHandler: Function;
+  state = {
+    isVisible: true
+  };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      isVisible: true
-    };
-    this.dismissHandler = this.dismissHandler.bind(this);
-  }
-
-  dismissHandler() {
+  dismissHandler = () => {
     this.setState({ isVisible: false });
     this.props.onDismiss();
-  }
+  };
 
   render() {
     if (!this.state.isVisible && this.props.autoRemove) {
@@ -53,10 +48,12 @@ class Alert extends React.Component {
       autoRemove,
       onDismiss,
       zIndex,
-      bottomAligned
+      bottomAligned,
+      className
     } = this.props;
     const alert = (
       <StyledAlert
+        className={className}
         type={this.props.type}
         zIndex={zIndex}
         bottomAligned={bottomAligned}
