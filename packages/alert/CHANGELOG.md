@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@4.0.2...@crave/farmblocks-alert@4.1.0) (2018-11-01)
+
+
+### Features
+
+* **alert:** pass className prop to styled-component so it can be extended ([37cb9c8](https://github.com/CraveFood/farmblocks/commit/37cb9c8)), closes [#622](https://github.com/CraveFood/farmblocks/issues/622)
+
+
+
+
 <a name="4.0.2"></a>
 ## [4.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@4.0.1...@crave/farmblocks-alert@4.0.2) (2018-10-30)
 
