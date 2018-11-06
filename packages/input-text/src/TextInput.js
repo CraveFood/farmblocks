@@ -9,7 +9,7 @@ import withMessages, {
 } from "@crave/farmblocks-hoc-validation-messages";
 
 import protectedValue, { protectedValueProps } from "./protectedValue";
-const EnhancedInput = compose(withMessages, protectedValue, formInput);
+export const EnhancedInput = compose(withMessages, protectedValue, formInput);
 
 const RegularInput = EnhancedInput("input");
 const MaskedInput = EnhancedInput(ReactInputMask);
