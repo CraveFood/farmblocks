@@ -9,7 +9,27 @@ import withMessages, {
 } from "@crave/farmblocks-hoc-validation-messages";
 
 import protectedValue, { protectedValueProps } from "./protectedValue";
-export const EnhancedInput = compose(withMessages, protectedValue, formInput);
+
+export const Container = styled.div`
+  font-family: Lato, sans-serif;
+  margin: ${({ margin }) => margin};
+`;
+
+export const withMargin = Comp => {
+  const Margin = ({ margin, ...props }) => (
+    <Container margin={margin}>
+      <Comp {...props} />
+    </Container>
+  );
+  return Margin;
+};
+
+export const EnhancedInput = compose(
+  withMargin,
+  withMessages,
+  protectedValue,
+  formInput
+);
 
 const RegularInput = EnhancedInput("input");
 const MaskedInput = EnhancedInput(ReactInputMask);
@@ -25,19 +45,10 @@ export const commonPropTypes = {
   // and any other properties to forward to the html input element...
 };
 
-export const Container = styled.div`
-  font-family: Lato, sans-serif;
-  margin: ${({ margin }) => margin};
-`;
-
-const TextInput = ({ margin, ...props }) => {
+const TextInput = props => {
   const Input = props.mask ? MaskedInput : RegularInput;
 
-  return (
-    <Container margin={margin}>
-      <Input {...props} />
-    </Container>
-  );
+  return <Input {...props} />;
 };
 
 TextInput.propTypes = {
