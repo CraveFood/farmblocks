@@ -16,9 +16,9 @@ EnhancedCurrencyInput.propTypes = {
   ...TextInput.propTypes
 };
 
-EnhancedCurrencyInput.deafaultProps = {
-  ...CurrencyInput.deafaultProps,
-  ...TextInput.deafaultProps
+EnhancedCurrencyInput.defaultProps = {
+  ...CurrencyInput.defaultProps,
+  ...TextInput.defaultProps
 };
 
 export default EnhancedCurrencyInput;
