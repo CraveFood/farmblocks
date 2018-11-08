@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.4.0"></a>
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.3.2...@crave/farmblocks-input-text@3.4.0) (2018-11-08)
+
+
+### Features
+
+* **input-text:** export EnhancedInput composition ([e34d920](https://github.com/CraveFood/farmblocks/commit/e34d920))
+* **input-text:** extract margin container to hoc for reusability ([754a7eb](https://github.com/CraveFood/farmblocks/commit/754a7eb))
+
+
+
+
 <a name="3.3.2"></a>
 ## [3.3.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.3.1...@crave/farmblocks-input-text@3.3.2) (2018-10-30)
 
