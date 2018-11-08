@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:chownr:20180731':
+    - node-pre-gyp > tar > chownr:
+        reason: None given
+        expires: '2019-02-07T15:41:52.702Z'
+    - '@crave/farmblocks-input-currency > react-currency-input > babel-cli > chokidar > fsevents > node-pre-gyp > tar > chownr':
+        reason: None given
+        expires: '2019-02-07T15:41:52.704Z'
+  'npm:content-type-parser:20170905':
+    - '@crave/farmblocks-input-currency > react-currency-input > jsdom > content-type-parser':
+        reason: None given
+        expires: '2019-02-07T15:41:52.704Z'
+patch: {}
