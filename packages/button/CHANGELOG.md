@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.0.2...@crave/farmblocks-button@6.1.0) (2018-11-08)
+
+
+### Features
+
+* **button:** spin only loading icon glyph instead of the whole <i> element ([20a4972](https://github.com/CraveFood/farmblocks/commit/20a4972)), closes [#633](https://github.com/CraveFood/farmblocks/issues/633)
+
+
+
+
 <a name="6.0.2"></a>
 ## [6.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.0.1...@crave/farmblocks-button@6.0.2) (2018-10-30)
 
