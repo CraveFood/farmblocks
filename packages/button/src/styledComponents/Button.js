@@ -140,7 +140,8 @@ function loadingStyle(props) {
   return (
     props.loading &&
     css`
-      > .icon.left-icon {
+      > .icon.left-icon i::before {
+        display: inline-block;
         animation: spin 1.1s infinite linear;
         @keyframes spin {
           0% {
