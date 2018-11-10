@@ -7,20 +7,9 @@ import MoreInfo from "./MoreInfo";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("More info", () => {
-  let addEventListenerMock, removeEventListenerMock, wrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(<MoreInfo icon="icon">Test</MoreInfo>);
-    addEventListenerMock = jest.spyOn(document, "addEventListener");
-    removeEventListenerMock = jest.spyOn(document, "removeEventListener");
-  });
-
-  afterEach(() => {
-    addEventListenerMock.mockRestore();
-    removeEventListenerMock.mockRestore();
-  });
-
   test("mouse over icon div should set tooltipVisible to true", () => {
+    const wrapper = shallow(<MoreInfo>Test</MoreInfo>);
+
     const iconDiv = wrapper.find("div.icon");
 
     expect(wrapper.state("tooltipVisible")).toBe(false);
@@ -31,6 +20,8 @@ describe("More info", () => {
   });
 
   test("hideTooltip() should set tooltipVisible to false", () => {
+    const wrapper = shallow(<MoreInfo>Test</MoreInfo>);
+
     wrapper.setState({ tooltipVisible: true });
 
     expect(wrapper.state("tooltipVisible")).toBe(true);

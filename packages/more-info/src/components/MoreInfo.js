@@ -11,20 +11,17 @@ class MoreInfo extends Component {
     tooltipVisible: false
   };
 
-  showTooltip = this.showTooltip.bind(this);
-  hideTooltip = this.hideTooltip.bind(this);
-
-  showTooltip() {
+  showTooltip = () => {
     this.setState({
       tooltipVisible: true
     });
-  }
+  };
 
-  hideTooltip() {
+  hideTooltip = () => {
     this.setState({
       tooltipVisible: false
     });
-  }
+  };
 
   render() {
     return (
