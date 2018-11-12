@@ -7,7 +7,7 @@ const align = props => {
     return null;
   }
   return css`
-    margin-${tooltipAlign}: -10px;
+    margin-${tooltipAlign}: -4px;
   `;
 };
 
