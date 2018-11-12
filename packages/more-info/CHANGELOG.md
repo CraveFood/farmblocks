@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.0.2...@crave/farmblocks-more-info@1.0.3) (2018-11-12)
+
+
+### Bug Fixes
+
+* **More Info:** adjust tooltip margin ([a6a6ab2](https://github.com/CraveFood/farmblocks/commit/a6a6ab2))
+
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.0.1...@crave/farmblocks-more-info@1.0.2) (2018-10-30)
 
