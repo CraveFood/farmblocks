@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.3"></a>
+## [4.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@4.0.2...@crave/farmblocks-link@4.0.3) (2018-11-21)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-link
+
 <a name="4.0.2"></a>
 ## [4.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@4.0.1...@crave/farmblocks-link@4.0.2) (2018-10-30)
 
