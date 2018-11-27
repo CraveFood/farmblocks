@@ -14,14 +14,6 @@ jest.mock("@storybook/addon-info", () => ({
   withInfo: () => fn => fn
 }));
 
-// react-currency-input uses ReactDOM.findDOMNode(), wich works fine in browser
-// but not in snapshots. Hence, we're mocking it with a simple input
-// Once the package is updated, we can remove this.
-//
-// eslint-disable-next-line import/first, no-unused-vars
-import CurrencyInput from "react-currency-input";
-jest.mock("react-currency-input", () => "input");
-
 initStoryshots({
   framework: "react",
   test: multiSnapshotWithOptions({})
