@@ -44,10 +44,9 @@ const Button = styled.button`
   cursor: pointer;
 
   .icon {
+    display: inline-flex;
     color: rgba(255, 255, 255, 0.56);
-    i {
-      vertical-align: text-bottom;
-    }
+    align-self: center;
   }
 
   &:hover {
