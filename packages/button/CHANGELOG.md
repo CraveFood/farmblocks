@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.1.2"></a>
+## [6.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.1.1...@crave/farmblocks-button@6.1.2) (2018-11-29)
+
+
+### Bug Fixes
+
+* **Button:** fix icon alignment ([e18d1da](https://github.com/CraveFood/farmblocks/commit/e18d1da))
+
+
+
+
 <a name="6.1.1"></a>
 ## [6.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.1.0...@crave/farmblocks-button@6.1.1) (2018-11-21)
 
