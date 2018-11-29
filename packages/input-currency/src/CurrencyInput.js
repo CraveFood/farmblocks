@@ -20,7 +20,8 @@ EnhancedCurrencyInput.defaultProps = {
   thousandSeparator: ",",
   decimalSeparator: ".",
   decimalScale: 2,
-  fixedDecimalScale: true
+  fixedDecimalScale: true,
+  allowNegative: false
 };
 
 export default EnhancedCurrencyInput;
