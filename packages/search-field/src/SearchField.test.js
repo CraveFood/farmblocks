@@ -78,7 +78,7 @@ describe("SearchField", () => {
       test("should call onChange with no item", () => {
         instance.onSearchChange(event);
 
-        expect(onChangeSpy).toHaveBeenCalledWith(undefined);
+        expect(onChangeSpy).toHaveBeenCalledWith(undefined, undefined);
       });
     });
   });
@@ -348,7 +348,7 @@ describe("SearchField", () => {
       component.setState({ highlightedIndex: index });
       component.instance().onKeyDown(event);
 
-      expect(onChangeMock).toHaveBeenCalledWith(value);
+      expect(onChangeMock).toHaveBeenCalledWith(value, items[0]);
     });
 
     test("should remove focus from the input on Enter key with highlighted item", () => {
@@ -436,7 +436,10 @@ describe("SearchField", () => {
       );
       component.instance().selectResult(index);
 
-      expect(onChangeSpy).toHaveBeenCalledWith(items[index].value);
+      expect(onChangeSpy).toHaveBeenCalledWith(
+        items[index].value,
+        items[index]
+      );
     });
 
     test("should NOT update inputValue state if couldn't find selected item", () => {
@@ -520,7 +523,7 @@ describe("SearchField", () => {
       test("should trigger onChange with no item", () => {
         getStateChange();
 
-        expect(onChangeSpy).toHaveBeenCalledWith("");
+        expect(onChangeSpy).toHaveBeenCalledWith(undefined, undefined);
       });
 
       test("should set focused state to false", () => {

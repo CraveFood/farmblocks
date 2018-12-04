@@ -134,9 +134,9 @@ class SearchField extends React.Component {
     this.setState({ inputValue: value });
   };
 
-  valueUpdated = (value, cb) => {
+  valueUpdated = (item, cb) => {
     const { onChange } = this.props;
-    onChange && onChange(value);
+    onChange && onChange(item && item.value, item);
     return cb && cb();
   };
 
@@ -145,8 +145,8 @@ class SearchField extends React.Component {
     const inputValue =
       selectedItem && selectedItem.label ? selectedItem.label : "";
     if (!selectedItem) {
-      this.props.onSearchChange(inputValue);
-      this.props.onChange(inputValue);
+      this.props.onSearchChange("");
+      this.valueUpdated();
     }
     return this.setState({ focused: false, highlightedIndex: -1, inputValue });
   };
@@ -158,7 +158,7 @@ class SearchField extends React.Component {
       selectedItem &&
       this.setState(
         { selectedItem, focused: false, inputValue: selectedItem.label },
-        () => this.valueUpdated(selectedItem.value, cb)
+        () => this.valueUpdated(selectedItem, cb)
       )
     );
   };

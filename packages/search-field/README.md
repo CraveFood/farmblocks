@@ -57,7 +57,7 @@ edit symbol, and that the class name to include that icon is `.wg-edit`.
 | debounceDelay    | Time in miliseconds to wait for new key presses before dispatching `onSearchChange` | number                                                             |          | 500         |
 | onSearchChange   | Function to handle changes in the search term                                       | onSearchChange(value: string)                                      |          | () => false |
 | onScrollReachEnd | Function to handle the end of the scroll. Usefull for pagination                    | onScrollReachEnd()                                                 |          | () => false |
-| onChange         | Function to handle selection of an item                                             | onChange(value: string)                                            |          | () => false |
+| onChange         | Function to handle selection of an item                                             | onChange(value: string, item: object)                              |          | () => false |
 
 Note: to listen to clicks on items or footer, use `onMouseDown` event over
 `onClick`.
