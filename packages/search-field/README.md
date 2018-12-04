@@ -58,6 +58,9 @@ edit symbol, and that the class name to include that icon is `.wg-edit`.
 | onSearchChange   | Function to handle changes in the search term                                       | onSearchChange(value: string)                                      |          | () => false |
 | onScrollReachEnd | Function to handle the end of the scroll. Usefull for pagination                    | onScrollReachEnd()                                                 |          | () => false |
 | onChange         | Function to handle selection of an item                                             | onChange(value: string, item: object)                              |          | () => false |
+| valueKey         | Custom key to be used as the item value key                                         | string                                                             |          | value       |
+| labelKey         | Custom key to be used as the item label key                                         | string                                                             |          | label       |
+| imageKey         | Custom key to be used as the item image key                                         | string                                                             |          | image       |
 
 Note: to listen to clicks on items or footer, use `onMouseDown` event over
 `onClick`.

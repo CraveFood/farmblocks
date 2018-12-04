@@ -124,6 +124,24 @@ storiesOf("Search Field", module)
     ))
   )
   .add(
+    "onSearchChange + onChange + custom keys",
+    withInfo()(() => (
+      <SearchField
+        onSearchChange={action("onSearchChange")}
+        onChange={action("onChange")}
+        items={items.map(x => ({
+          code: x.value,
+          name: x.label,
+          photo: x.image
+        }))}
+        valueKey="code"
+        labelKey="name"
+        imageKey="photo"
+        label="Fruits"
+      />
+    ))
+  )
+  .add(
     "onScrollReachEnd",
     withInfo()(() => (
       <SearchField

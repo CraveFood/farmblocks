@@ -5,7 +5,7 @@ import isEqual from "lodash.isequal";
 import Input from "@crave/farmblocks-input-text";
 
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
-import Menu from "./components/Menu";
+import Menu, { defaultKeyNames, keyNamesPropTypes } from "./components/Menu";
 
 class SearchField extends React.Component {
   state = {
@@ -22,17 +22,17 @@ class SearchField extends React.Component {
   );
 
   setValueFromProps = () => {
-    const { value, items } = this.props;
+    const { value, items, valueKey, labelKey } = this.props;
     const emptyState = { selectedItem: null };
 
     if (!value) {
       return this.setState(emptyState);
     }
 
-    const selectedItem = items && items.find(item => item.value === value);
+    const selectedItem = items && items.find(item => item[valueKey] === value);
     if (selectedItem) {
       return this.setState({
-        inputValue: selectedItem.label,
+        inputValue: selectedItem[labelKey],
         selectedItem
       });
     }
@@ -135,15 +135,17 @@ class SearchField extends React.Component {
   };
 
   valueUpdated = (item, cb) => {
-    const { onChange } = this.props;
-    onChange && onChange(item && item.value, item);
+    const { onChange, valueKey } = this.props;
+    onChange && onChange(item && item[valueKey], item);
     return cb && cb();
   };
 
   onBlur = () => {
     const { selectedItem } = this.state;
+    const { labelKey } = this.props;
+
     const inputValue =
-      selectedItem && selectedItem.label ? selectedItem.label : "";
+      selectedItem && selectedItem[labelKey] ? selectedItem[labelKey] : "";
     if (!selectedItem) {
       this.props.onSearchChange("");
       this.valueUpdated();
@@ -152,12 +154,12 @@ class SearchField extends React.Component {
   };
 
   selectResult = (index, cb) => {
-    const { items } = this.props;
+    const { items, labelKey } = this.props;
     const selectedItem = items && items[index];
     return (
       selectedItem &&
       this.setState(
-        { selectedItem, focused: false, inputValue: selectedItem.label },
+        { selectedItem, focused: false, inputValue: selectedItem[labelKey] },
         () => this.valueUpdated(selectedItem, cb)
       )
     );
@@ -197,6 +199,9 @@ class SearchField extends React.Component {
       footer,
       value,
       zIndex,
+      valueKey,
+      labelKey,
+      imageKey,
       ...inputProps
     } = this.props;
 
@@ -204,7 +209,10 @@ class SearchField extends React.Component {
       maxMenuHeight,
       items: this.state.items,
       onScrollReachEnd,
-      footer
+      footer,
+      valueKey,
+      labelKey,
+      imageKey
     };
 
     const { focused, selectedItem, inputValue } = this.state;
@@ -236,7 +244,8 @@ class SearchField extends React.Component {
     onChange: () => false,
     width: 200,
     maxMenuHeight: 353,
-    debounceDelay: 500
+    debounceDelay: 500,
+    ...defaultKeyNames
   };
 
   static propTypes = {
@@ -245,6 +254,7 @@ class SearchField extends React.Component {
     onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
+    ...keyNamesPropTypes,
     ...Menu.propTypes
   };
 }

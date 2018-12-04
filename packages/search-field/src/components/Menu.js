@@ -10,6 +10,18 @@ import { Item } from "@crave/farmblocks-input-select";
 
 import ScrollBox from "./ScrollBox";
 
+export const defaultKeyNames = {
+  valueKey: "value",
+  labelKey: "label",
+  imageKey: "image"
+};
+
+export const keyNamesPropTypes = {
+  valueKey: PropTypes.string,
+  labelKey: PropTypes.string,
+  imageKey: PropTypes.string
+};
+
 export const menuPropTypes = {
   maxMenuHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onScrollReachEnd: PropTypes.func,
@@ -25,13 +37,20 @@ export const menuPropTypes = {
   footer: PropTypes.node
 };
 
-const renderItem = (item, onClick, highlighted) => (
+const renderItem = (
+  item,
+  onClick,
+  highlighted,
+  valueKey,
+  labelKey,
+  imageKey
+) => (
   <DropdownItemWrapper
-    key={item.value}
+    key={item[valueKey]}
     highlighted={highlighted}
     onMouseDown={onClick}
   >
-    <Item label={item.label} image={item.image} />
+    <Item label={item[labelKey]} image={item[imageKey]} />
   </DropdownItemWrapper>
 );
 
@@ -48,7 +67,10 @@ const Menu = ({
   items,
   onItemClick,
   highlightedIndex,
-  footer
+  footer,
+  valueKey,
+  labelKey,
+  imageKey
 }) => {
   if (!footer && !items.length) {
     return null;
@@ -61,7 +83,14 @@ const Menu = ({
         ref={innerRef}
       >
         {items.map((item, index) =>
-          renderItem(item, onItemClick, index === highlightedIndex)
+          renderItem(
+            item,
+            onItemClick,
+            index === highlightedIndex,
+            valueKey,
+            labelKey,
+            imageKey
+          )
         )}
         <DropdownItemWrapper footer>{footer}</DropdownItemWrapper>
       </ScrollBox>
@@ -69,10 +98,12 @@ const Menu = ({
   );
 };
 Menu.defaultProps = {
-  items: []
+  items: [],
+  ...defaultKeyNames
 };
 Menu.propTypes = {
   ...menuPropTypes,
+  ...keyNamesPropTypes,
   innerRef: PropTypes.func
 };
 
