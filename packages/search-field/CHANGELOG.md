@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.0.7...@crave/farmblocks-search-field@3.1.0) (2018-12-05)
+
+
+### Features
+
+* **SearchField:** receive objects key names as properties ([8e61684](https://github.com/CraveFood/farmblocks/commit/8e61684)), closes [#644](https://github.com/CraveFood/farmblocks/issues/644)
+* **SearchField:** return full selected item on onChange event ([2de6537](https://github.com/CraveFood/farmblocks/commit/2de6537)), closes [#644](https://github.com/CraveFood/farmblocks/issues/644)
+
+
+
+
 <a name="3.0.7"></a>
 ## [3.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.0.6...@crave/farmblocks-search-field@3.0.7) (2018-11-29)
 
