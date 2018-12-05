@@ -64,6 +64,22 @@ storiesOf("Search Field/Menu (Private)", module)
     withInfo()(() => <Menu onItemClick={action("onItemClick")} items={items} />)
   )
   .add(
+    "with key names",
+    withInfo()(() => (
+      <Menu
+        onItemClick={action("onItemClick")}
+        items={items.map(x => ({
+          code: x.value,
+          name: x.label,
+          photo: x.image
+        }))}
+        valueKey="code"
+        labelKey="name"
+        imageKey="photo"
+      />
+    ))
+  )
+  .add(
     "with empty items",
     withInfo("This should render nothing")(() => <Menu items={[]} />)
   )
