@@ -78,6 +78,7 @@ storiesOf("Text/Default", module)
     "custom letter-spacing",
     withInfo()(() => <Text letterSpacing="3px">Awesome Text</Text>)
   )
+  .add("default light", withInfo()(() => <Text light>Awesome Text</Text>))
   .add(
     "empty text, filled after 3 seconds",
     withInfo()(() => {

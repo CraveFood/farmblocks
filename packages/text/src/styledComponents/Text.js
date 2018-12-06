@@ -12,21 +12,21 @@ const TextContainer = styled.div`
 
   text-align: ${props => props.align};
 
-  ${titleStyle};
   ${paragraphStyle};
 
   line-height: ${props => props.lineHeight};
+  font-weight: ${props => {
+    if (props.isTitle) {
+      return fontWeights.SEMIBOLD;
+    }
+
+    if (props.light) {
+      return fontWeights.LIGHT;
+    }
+  }};
 
   letter-spacing: ${props => props.letterSpacing};
 `;
-
-function titleStyle(props) {
-  if (props.isTitle) {
-    return css`
-      font-weight: ${fontWeights.SEMIBOLD};
-    `;
-  }
-}
 
 function paragraphStyle(props) {
   if (props.paragraph) {

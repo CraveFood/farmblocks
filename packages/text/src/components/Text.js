@@ -23,7 +23,8 @@ export default class Text extends React.Component {
     lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     paragraph: PropTypes.bool,
     title: PropTypes.bool,
-    letterSpacing: PropTypes.string
+    letterSpacing: PropTypes.string,
+    fontWeight: PropTypes.number
   };
 
   static defaultProps = {
