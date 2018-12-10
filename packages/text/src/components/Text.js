@@ -24,7 +24,7 @@ export default class Text extends React.Component {
     paragraph: PropTypes.bool,
     title: PropTypes.bool,
     letterSpacing: PropTypes.string,
-    fontWeight: PropTypes.number
+    light: PropTypes.bool
   };
 
   static defaultProps = {
