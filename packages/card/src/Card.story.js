@@ -48,10 +48,22 @@ storiesOf("Card", module)
     ))
   )
   .add(
-    "With overflow visible",
+    "With overflowing content",
     withInfo()(() => (
-      <Card overflow="visible">
-        <Button text="Hover me to show tooltip" disabled />
+      <Card>
+        <Button disabled tooltipText="Visible tooltip">
+          Hover me
+        </Button>
+      </Card>
+    ))
+  )
+  .add(
+    "With overflowing content hidden",
+    withInfo()(() => (
+      <Card overflow="hidden">
+        <Button disabled tooltipText="Overflowing tooltip not visible">
+          Hover me
+        </Button>
       </Card>
     ))
   );
