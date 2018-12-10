@@ -9,12 +9,12 @@ exports[`Storyshots Card Custom box shadow 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   width="100%"
 />
 `;
@@ -28,12 +28,12 @@ exports[`Storyshots Card Default 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   width="100%"
 />
 `;
@@ -47,12 +47,12 @@ exports[`Storyshots Card Floating 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   width="100%"
 />
 `;
@@ -119,12 +119,12 @@ exports[`Storyshots Card Floating with content (Empty State) and 560px width 1`]
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   width="560px"
 >
   <div
@@ -210,12 +210,12 @@ exports[`Storyshots Card Floating with content and 40px padding and 1136px width
   padding: 40px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   width="1136px"
 >
   <div
@@ -248,12 +248,12 @@ exports[`Storyshots Card Type Featured 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   type="FEATURED"
   width="100%"
 />
@@ -268,12 +268,12 @@ exports[`Storyshots Card Type Featured with 300px width 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   type="FEATURED"
   width="300px"
 />
@@ -288,12 +288,12 @@ exports[`Storyshots Card Type Neutral 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   type="NEUTRAL"
   width="100%"
 />
@@ -481,12 +481,12 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
   padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 <div
   className="c0"
-  overflow="hidden"
+  overflow="visible"
   width="1136px"
 >
   <div
@@ -550,7 +550,7 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
 </div>
 `;
 
-exports[`Storyshots Card With overflow visible 1`] = `
+exports[`Storyshots Card With overflowing content 1`] = `
 .c1 {
   position: relative;
   display: inline-block;
@@ -685,6 +685,11 @@ exports[`Storyshots Card With overflow visible 1`] = `
   <div
     className="c1"
   >
+    <div
+      className="hitArea"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    />
     <button
       className="c2"
       disabled={true}
@@ -693,7 +698,161 @@ exports[`Storyshots Card With overflow visible 1`] = `
       size="SMALL"
       type="NEUTRAL"
     >
-      Hover me to show tooltip
+      Hover me
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Card With overflowing content hidden 1`] = `
+.c1 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c2 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c2:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2:focus {
+  box-shadow: none;
+}
+
+.c2:hover .icon,
+.c2:focus .icon {
+  color: white;
+}
+
+.c2 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:hover,
+.c2:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c2:hover > .icon,
+.c2:focus > .icon {
+  color: #3498db;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled :hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c0 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+<div
+  className="c0"
+  overflow="hidden"
+  width="100%"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="hitArea"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    />
+    <button
+      className="c2"
+      disabled={true}
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Hover me
     </button>
   </div>
 </div>
