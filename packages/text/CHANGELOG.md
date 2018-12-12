@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.0.1...@crave/farmblocks-text@3.1.0) (2018-12-12)
+
+
+### Bug Fixes
+
+* **Text:** accept any string on type property ([6a8363d](https://github.com/CraveFood/farmblocks/commit/6a8363d))
+
+
+### Features
+
+* **Text:** add light property ([26c4947](https://github.com/CraveFood/farmblocks/commit/26c4947)), closes [#646](https://github.com/CraveFood/farmblocks/issues/646)
+
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.0.0...@crave/farmblocks-text@3.0.1) (2018-11-21)
 
