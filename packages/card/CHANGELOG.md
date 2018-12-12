@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@1.0.5...@crave/farmblocks-card@2.0.0) (2018-12-12)
+
+
+### Features
+
+* **Card:** changed default behavior of overflow property to "visible" ([a6a7857](https://github.com/CraveFood/farmblocks/commit/a6a7857)), closes [#650](https://github.com/CraveFood/farmblocks/issues/650)
+
+
+### BREAKING CHANGES
+
+* **Card:** Note that this property used to be hidden by default
+
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@1.0.4...@crave/farmblocks-card@1.0.5) (2018-11-29)
 
