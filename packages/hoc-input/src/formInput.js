@@ -2,11 +2,9 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import wrapDisplayName from "recompose/wrapDisplayName";
-import Text from "@crave/farmblocks-text";
 import Link from "@crave/farmblocks-link";
-import { fontSizes } from "@crave/farmblocks-theme";
-import MoreInfo from "@crave/farmblocks-more-info";
 import { alignments } from "@crave/farmblocks-tooltip";
+import Label from "@crave/farmblocks-label";
 import values from "object.values";
 
 import Wrapper from "./styledComponents/Wrapper";
@@ -79,7 +77,19 @@ const formInput = WrappedComponent => {
       return (
         <Wrapper {...wrapperProps} onClick={this.setInputFocus}>
           {this._renderInput(wrappedComponentProps)}
-          {this._renderLabel(label, moreInfoContent, moreInfoAlign)}
+
+          {label && (
+            <Label
+              moreInfoContent={moreInfoContent}
+              moreInfoAlign={moreInfoAlign}
+              focused={this.state.focused}
+              invalid={wrapperProps.invalid}
+              protected={covered}
+              disabled={wrapperProps.disabled}
+            >
+              {label}
+            </Label>
+          )}
         </Wrapper>
       );
     }
@@ -145,28 +155,6 @@ const formInput = WrappedComponent => {
         </div>
       );
     };
-
-    _renderLabel(label, moreInfoContent, moreInfoAlign) {
-      return (
-        label && (
-          <div>
-            <Text
-              title
-              className="label"
-              size={fontSizes.SMALL}
-              lineHeight={1.14}
-            >
-              {label}
-            </Text>
-            {moreInfoContent && (
-              <MoreInfo className="moreInfo" tooltipAlign={moreInfoAlign}>
-                {moreInfoContent}
-              </MoreInfo>
-            )}
-          </div>
-        )
-      );
-    }
 
     componentDidMount() {
       if (this.props.focused) {
