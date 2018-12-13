@@ -1,39 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Form Wrapper Default 1`] = `
-.c9 {
+.c10 {
   position: relative;
   display: block;
 }
 
-.c9 .hitArea {
+.c10 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c9 .appear-enter {
+.c10 .appear-enter {
   opacity: 0;
 }
 
-.c9 .appear-enter-active {
+.c10 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c9 .appear-exit {
+.c10 .appear-exit {
   opacity: 1;
 }
 
-.c9 .appear-exit-active {
+.c10 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,7 +68,7 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -79,55 +79,36 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled :hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  line-height: 1.14;
-  font-weight: 600;
 }
 
 .c2 {
@@ -173,6 +154,38 @@ exports[`Storyshots Form Wrapper Default 1`] = `
 
 .c2:hover {
   color: #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c7 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
 }
 
 .c6 {
@@ -318,26 +331,6 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   cursor: pointer;
 }
 
-.c6 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-  float: left;
-}
-
-.c6 .moreInfo {
-  position: relative;
-  top: -1px;
-}
-
 .c6 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -422,7 +415,7 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   padding: 16px 16px 0 16px;
 }
 
-.c8 {
+.c9 {
   padding: 16px;
   border-top: 1px solid rgba(0,0,0,0.16);
 }
@@ -482,7 +475,8 @@ exports[`Storyshots Form Wrapper Default 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -524,7 +518,8 @@ exports[`Storyshots Form Wrapper Default 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -538,13 +533,13 @@ exports[`Storyshots Form Wrapper Default 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c9"
   >
     <div
-      className="c9"
+      className="c10"
     >
       <button
-        className="c10"
+        className="c11"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -560,39 +555,39 @@ exports[`Storyshots Form Wrapper Default 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper With title 1`] = `
-.c9 {
+.c10 {
   position: relative;
   display: block;
 }
 
-.c9 .hitArea {
+.c10 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c9 .appear-enter {
+.c10 .appear-enter {
   opacity: 0;
 }
 
-.c9 .appear-enter-active {
+.c10 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c9 .appear-exit {
+.c10 .appear-exit {
   opacity: 1;
 }
 
-.c9 .appear-exit-active {
+.c10 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -627,7 +622,7 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -638,55 +633,36 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled :hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  line-height: 1.14;
-  font-weight: 600;
 }
 
 .c2 {
@@ -732,6 +708,38 @@ exports[`Storyshots Form Wrapper With title 1`] = `
 
 .c2:hover {
   color: #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c7 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
 }
 
 .c6 {
@@ -877,26 +885,6 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   cursor: pointer;
 }
 
-.c6 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-  float: left;
-}
-
-.c6 .moreInfo {
-  position: relative;
-  top: -1px;
-}
-
 .c6 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -981,7 +969,7 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   padding: 16px 16px 0 16px;
 }
 
-.c8 {
+.c9 {
   padding: 16px;
   border-top: 1px solid rgba(0,0,0,0.16);
 }
@@ -1043,7 +1031,8 @@ exports[`Storyshots Form Wrapper With title 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -1085,7 +1074,8 @@ exports[`Storyshots Form Wrapper With title 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -1099,13 +1089,13 @@ exports[`Storyshots Form Wrapper With title 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c9"
   >
     <div
-      className="c9"
+      className="c10"
     >
       <button
-        className="c10"
+        className="c11"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1121,39 +1111,39 @@ exports[`Storyshots Form Wrapper With title 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper extra content 1`] = `
-.c9 {
+.c10 {
   position: relative;
   display: block;
 }
 
-.c9 .hitArea {
+.c10 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c9 .appear-enter {
+.c10 .appear-enter {
   opacity: 0;
 }
 
-.c9 .appear-enter-active {
+.c10 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c9 .appear-exit {
+.c10 .appear-exit {
   opacity: 1;
 }
 
-.c9 .appear-exit-active {
+.c10 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1188,7 +1178,7 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1199,55 +1189,36 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled :hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  line-height: 1.14;
-  font-weight: 600;
 }
 
 .c2 {
@@ -1293,6 +1264,38 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 
 .c2:hover {
   color: #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c7 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
 }
 
 .c6 {
@@ -1438,26 +1441,6 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   cursor: pointer;
 }
 
-.c6 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-  float: left;
-}
-
-.c6 .moreInfo {
-  position: relative;
-  top: -1px;
-}
-
 .c6 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -1542,7 +1525,7 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   padding: 16px 16px 0 16px;
 }
 
-.c8 {
+.c9 {
   padding: 16px;
   border-top: 1px solid rgba(0,0,0,0.16);
 }
@@ -1604,7 +1587,8 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -1646,7 +1630,8 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -1660,13 +1645,13 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c9"
   >
     <div
-      className="c9"
+      className="c10"
     >
       <button
-        className="c10"
+        className="c11"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1685,39 +1670,39 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper in compact container 1`] = `
-.c9 {
+.c10 {
   position: relative;
   display: block;
 }
 
-.c9 .hitArea {
+.c10 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c9 .appear-enter {
+.c10 .appear-enter {
   opacity: 0;
 }
 
-.c9 .appear-enter-active {
+.c10 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c9 .appear-exit {
+.c10 .appear-exit {
   opacity: 1;
 }
 
-.c9 .appear-exit-active {
+.c10 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1752,7 +1737,7 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1763,55 +1748,36 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled :hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  line-height: 1.14;
-  font-weight: 600;
 }
 
 .c2 {
@@ -1857,6 +1823,38 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 
 .c2:hover {
   color: #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c7 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
 }
 
 .c6 {
@@ -2002,26 +2000,6 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   cursor: pointer;
 }
 
-.c6 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-  float: left;
-}
-
-.c6 .moreInfo {
-  position: relative;
-  top: -1px;
-}
-
 .c6 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -2106,7 +2084,7 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   padding: 16px 16px 0 16px;
 }
 
-.c8 {
+.c9 {
   padding: 16px;
   border-top: 1px solid rgba(0,0,0,0.16);
 }
@@ -2175,7 +2153,8 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
               </div>
               <div>
                 <div
-                  className="label c7"
+                  className="c7 c8"
+                  letterSpacing="2px"
                   size={14}
                   type="#2f313a"
                 >
@@ -2217,7 +2196,8 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
               </div>
               <div>
                 <div
-                  className="label c7"
+                  className="c7 c8"
+                  letterSpacing="2px"
                   size={14}
                   type="#2f313a"
                 >
@@ -2231,13 +2211,13 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
       </div>
     </div>
     <div
-      className="c8"
+      className="c9"
     >
       <div
-        className="c9"
+        className="c10"
       >
         <button
-          className="c10"
+          className="c11"
           disabled={false}
           onClick={[Function]}
           onMouseLeave={[Function]}
@@ -2254,39 +2234,39 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper loading 1`] = `
-.c9 {
+.c10 {
   position: relative;
   display: block;
 }
 
-.c9 .hitArea {
+.c10 .hitArea {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
 
-.c9 .appear-enter {
+.c10 .appear-enter {
   opacity: 0;
 }
 
-.c9 .appear-enter-active {
+.c10 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c9 .appear-exit {
+.c10 .appear-exit {
   opacity: 1;
 }
 
-.c9 .appear-exit-active {
+.c10 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2321,7 +2301,7 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2332,61 +2312,42 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c10 > .icon.left-icon i::before {
+.c11 > .icon.left-icon i::before {
   display: inline-block;
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c10:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled :hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled :hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  color: #2f313a;
-  text-align: left;
-  line-height: 1.14;
-  font-weight: 600;
 }
 
 .c2 {
@@ -2432,6 +2393,38 @@ exports[`Storyshots Form Wrapper loading 1`] = `
 
 .c2:hover {
   color: #3498db;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c7 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
 }
 
 .c6 {
@@ -2577,26 +2570,6 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   cursor: pointer;
 }
 
-.c6 .label {
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  line-height: 16px;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  color: #2f313a;
-  float: left;
-}
-
-.c6 .moreInfo {
-  position: relative;
-  top: -1px;
-}
-
 .c6 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -2681,7 +2654,7 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   padding: 16px 16px 0 16px;
 }
 
-.c8 {
+.c9 {
   padding: 16px;
   border-top: 1px solid rgba(0,0,0,0.16);
 }
@@ -2743,7 +2716,8 @@ exports[`Storyshots Form Wrapper loading 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -2785,7 +2759,8 @@ exports[`Storyshots Form Wrapper loading 1`] = `
             </div>
             <div>
               <div
-                className="label c7"
+                className="c7 c8"
+                letterSpacing="2px"
                 size={14}
                 type="#2f313a"
               >
@@ -2799,13 +2774,13 @@ exports[`Storyshots Form Wrapper loading 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c9"
   >
     <div
-      className="c9"
+      className="c10"
     >
       <button
-        className="c10"
+        className="c11"
         disabled={true}
         onClick={[Function]}
         onMouseLeave={[Function]}
