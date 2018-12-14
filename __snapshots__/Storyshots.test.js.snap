@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Label Default 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="#2f313a"
+  >
+    Default Label
+  </div>
+</div>
+`;
+
+exports[`Storyshots Label Disabled 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.32);
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="rgba(0, 0, 0, 0.32)"
+  >
+    Disabled Label
+  </div>
+</div>
+`;
+
+exports[`Storyshots Label Focused 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #3498db;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="#3498db"
+  >
+    Focused Label
+  </div>
+</div>
+`;
+
+exports[`Storyshots Label Invalid 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #dd3311;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="#dd3311"
+  >
+    Invalid Label
+  </div>
+</div>
+`;
+
+exports[`Storyshots Label Protected and disabled 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="#2f313a"
+  >
+    Protected Label
+  </div>
+</div>
+`;
+
+exports[`Storyshots Label With more info 1`] = `
+.c5 {
+  position: relative;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c3 .tooltip {
+  margin-left: -4px;
+}
+
+.c3 .icon {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.c3 .hit-area {
+  margin: -12px;
+  padding: 12px;
+  margin-top: -62px;
+  padding-top: 62px;
+}
+
+.c3 .icon:hover,
+.c3 .hovered {
+  color: #3498db;
+}
+
+.c3 .icon:hover {
+  color: #3498db;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+.c2 {
+  position: relative;
+  top: -1px;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="#2f313a"
+  >
+    Default Label
+  </div>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4"
+      size={16}
+      type="#59636f"
+    >
+      <div
+        className="icon"
+        onMouseOver={[Function]}
+      >
+        <i
+          className="wg-question"
+        />
+        <div
+          className="tooltip c5"
+        >
+          <div
+            className="tooltip c6"
+          >
+            <div
+              className="hit-area"
+              onMouseOut={[Function]}
+            >
+              More info content
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Label With more info right aligned 1`] = `
+.c5 {
+  position: relative;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  right: 0;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c3 .tooltip {
+  margin-right: -4px;
+}
+
+.c3 .icon {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.c3 .hit-area {
+  margin: -12px;
+  padding: 12px;
+  margin-top: -62px;
+  padding-top: 62px;
+}
+
+.c3 .icon:hover,
+.c3 .hovered {
+  color: #3498db;
+}
+
+.c3 .icon:hover {
+  color: #3498db;
+}
+
+.c0 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+.c2 {
+  position: relative;
+  top: -1px;
+}
+
+<div>
+  <div
+    className="c0 c1"
+    letterSpacing="2px"
+    size={14}
+    type="#2f313a"
+  >
+    Default Label
+  </div>
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4"
+      size={16}
+      type="#59636f"
+    >
+      <div
+        className="icon"
+        onMouseOver={[Function]}
+      >
+        <i
+          className="wg-question"
+        />
+        <div
+          className="tooltip c5"
+        >
+          <div
+            className="tooltip c6"
+          >
+            <div
+              className="hit-area"
+              onMouseOut={[Function]}
+            >
+              More info content
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

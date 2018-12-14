@@ -21,18 +21,6 @@ const inputBorderColor = props => {
 const placeholderColor = props => {
   return props.focused ? colors.GREY_16 : colors.GREY_32;
 };
-const labelColor = props => {
-  if (props.focused) {
-    return colors.INDIGO_MILK_CAP;
-  }
-  if (props.invalid) {
-    return colors.STRAWBERRY;
-  }
-  if (props.disabled && !props.protected) {
-    return colors.GREY_32;
-  }
-  return colors.CARBON;
-};
 
 const ifSmall = (smallValue, defaultValue) => props =>
   props.fontSize === fontSizes.SMALL ? smallValue : defaultValue;
@@ -160,21 +148,6 @@ const Wrapper = styled.div`
 
   .input.dropdown {
     cursor: ${customCursor};
-  }
-
-  .label {
-    order: 1;
-    line-height: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-    color: ${labelColor};
-    float: left;
-  }
-
-  .moreInfo {
-    position: relative;
-    top: -1px;
   }
 
   input[type="number"] {
