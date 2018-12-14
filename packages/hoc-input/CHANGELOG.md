@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.0.4...@crave/farmblocks-hoc-input@5.1.0) (2018-12-14)
+
+
+### Features
+
+* **formInput:** use farmblocks-label component ([28b6ee0](https://github.com/CraveFood/farmblocks/commit/28b6ee0)), closes [#658](https://github.com/CraveFood/farmblocks/issues/658)
+
+
+
+
 <a name="5.0.4"></a>
 ## [5.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.0.3...@crave/farmblocks-hoc-input@5.0.4) (2018-12-12)
 
