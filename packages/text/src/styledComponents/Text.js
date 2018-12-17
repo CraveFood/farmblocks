@@ -7,6 +7,7 @@ const TextContainer = styled.div`
   font-family: Lato, sans-serif;
   font-size: ${props => `${props.size}px`};
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   color: ${props => props.type};
 
