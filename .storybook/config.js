@@ -1,6 +1,7 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { configure, addDecorator } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
 
 const req = require.context(
   "../",
@@ -177,6 +178,7 @@ function withGlobalStyle(storyFn) {
   );
 }
 
+addDecorator(withInfo);
 addDecorator(withGlobalStyle);
 
 configure(loadStories, module);
