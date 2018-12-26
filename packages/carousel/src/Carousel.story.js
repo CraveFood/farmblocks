@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { action } from "@storybook/addon-actions";
 
 import Carousel from ".";
@@ -45,63 +44,43 @@ const imageSet = [
 ];
 
 storiesOf("Carousel", module)
-  .add(
-    "1 photo",
-    withInfo()(() => <Carousel imageSet={imageSet.slice(0, 1)} />)
-  )
-  .add(
-    "1 photo with onEnd",
-    withInfo()(() => (
-      <Carousel
-        onEnd={action("slideshow end")}
-        imageSet={imageSet.slice(0, 1)}
-      />
-    ))
-  )
-  .add(
-    "2 photos",
-    withInfo()(() => <Carousel imageSet={imageSet.slice(0, 2)} />)
-  )
-  .add("all photos", withInfo()(() => <Carousel imageSet={imageSet} />))
-  .add(
-    "no scale",
-    withInfo()(() => <Carousel imageSet={imageSet} scale={false} />)
-  )
-  .add(
-    "all photos with onChange and onEnd",
-    withInfo()(() => (
-      <Carousel
-        onChange={action("photo changed")}
-        onEnd={action("end")}
-        imageSet={imageSet}
-      />
-    ))
-  )
-  .add(
-    "partial custom config",
-    withInfo()(() => (
-      <Carousel
-        itemConfig={{
-          displayTime: 6.5,
-          transitionTime: 2.5
-        }}
-        imageSet={imageSet}
-      />
-    ))
-  )
-  .add(
-    "custom config",
-    withInfo()(() => (
-      <Carousel
-        itemConfig={{
-          width: 200,
-          height: 200,
-          margin: 2,
-          displayTime: 2,
-          transitionTime: 0.5,
-          border: { radius: "100%", width: "4px", color: "green" }
-        }}
-        imageSet={imageSet}
-      />
-    ))
-  );
+  .add("1 photo", () => <Carousel imageSet={imageSet.slice(0, 1)} />)
+
+  .add("1 photo with onEnd", () => (
+    <Carousel onEnd={action("slideshow end")} imageSet={imageSet.slice(0, 1)} />
+  ))
+
+  .add("2 photos", () => <Carousel imageSet={imageSet.slice(0, 2)} />)
+
+  .add("all photos", () => <Carousel imageSet={imageSet} />)
+  .add("no scale", () => <Carousel imageSet={imageSet} scale={false} />)
+
+  .add("all photos with onChange and onEnd", () => (
+    <Carousel
+      onChange={action("photo changed")}
+      onEnd={action("end")}
+      imageSet={imageSet}
+    />
+  ))
+  .add("partial custom config", () => (
+    <Carousel
+      itemConfig={{
+        displayTime: 6.5,
+        transitionTime: 2.5
+      }}
+      imageSet={imageSet}
+    />
+  ))
+  .add("custom config", () => (
+    <Carousel
+      itemConfig={{
+        width: 200,
+        height: 200,
+        margin: 2,
+        displayTime: 2,
+        transitionTime: 0.5,
+        border: { radius: "100%", width: "4px", color: "green" }
+      }}
+      imageSet={imageSet}
+    />
+  ));

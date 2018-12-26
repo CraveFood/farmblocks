@@ -11,7 +11,7 @@ import ${componentName} from ".";
 
 storiesOf("${fullName}", module).add(
   "Default",
-  withInfo()(() => <${componentName} />)
+  () => <${componentName} />)
 );
 `,
     { parser: "babylon" }

@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf, action } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import { colors } from "@crave/farmblocks-theme";
 import styled from "styled-components";
 import Text, { fontSizes } from "@crave/farmblocks-text";
@@ -58,32 +57,24 @@ const Footer = () => (
 
 storiesOf("Search Field/Menu (Private)", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
-  .add("Default", withInfo()(() => <Menu items={items} />))
-  .add(
-    "onItemClick",
-    withInfo()(() => <Menu onItemClick={action("onItemClick")} items={items} />)
-  )
-  .add(
-    "with key names",
-    withInfo()(() => (
-      <Menu
-        onItemClick={action("onItemClick")}
-        items={items.map(x => ({
-          code: x.value,
-          name: x.label,
-          photo: x.image
-        }))}
-        valueKey="code"
-        labelKey="name"
-        imageKey="photo"
-      />
-    ))
-  )
-  .add(
-    "with empty items",
-    withInfo("This should render nothing")(() => <Menu items={[]} />)
-  )
-  .add(
-    "footer only",
-    withInfo()(() => <Menu footer={<Footer />} items={[]} />)
-  );
+  .add("Default", () => <Menu items={items} />)
+  .add("onItemClick", () => (
+    <Menu onItemClick={action("onItemClick")} items={items} />
+  ))
+  .add("with key names", () => (
+    <Menu
+      onItemClick={action("onItemClick")}
+      items={items.map(x => ({
+        code: x.value,
+        name: x.label,
+        photo: x.image
+      }))}
+      valueKey="code"
+      labelKey="name"
+      imageKey="photo"
+    />
+  ))
+  .add("with empty items", () => <Menu items={[]} />, {
+    info: "This should render nothing"
+  })
+  .add("footer only", () => <Menu footer={<Footer />} items={[]} />);
