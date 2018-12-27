@@ -9,11 +9,6 @@ import { addSerializer } from "jest-specific-snapshot";
 // and https://github.com/storybooks/storybook/issues/887#issuecomment-357073807
 addSerializer(styleSheetSerializer);
 
-//mock withInfo to exclude info HTML from the snapshots
-jest.mock("@storybook/addon-info", () => ({
-  withInfo: () => fn => fn
-}));
-
 initStoryshots({
   framework: "react",
   test: multiSnapshotWithOptions({})

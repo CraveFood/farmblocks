@@ -178,7 +178,11 @@ function withGlobalStyle(storyFn) {
   );
 }
 
-addDecorator(withInfo);
+// avoid the withInfo decorator when generating snapshots/running tests
+if (process.env.NODE_ENV !== "test") {
+  addDecorator(withInfo);
+}
+
 addDecorator(withGlobalStyle);
 
 configure(loadStories, module);
