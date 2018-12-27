@@ -49,7 +49,7 @@ to {
   transform: rotate(360deg);
 }
 `;
-const Loading = styled.div`
+const StyledLoading = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +60,8 @@ const Loading = styled.div`
     animation: ${spin} 2s linear infinite;
   }
 `;
+
+const Loading = props => <StyledLoading {...props} />;
 
 storiesOf("Search Field", module)
   .add("Default", () => <SearchField label="Fruits" />)

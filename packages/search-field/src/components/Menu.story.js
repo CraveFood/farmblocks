@@ -8,7 +8,7 @@ import Link, { linkTypes } from "@crave/farmblocks-link";
 
 import Menu from "./Menu";
 
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   width: 400px;
 `;
 
@@ -19,7 +19,7 @@ const items = [
   { value: "3", label: "Pear", image }
 ];
 
-const FooterWrapper = styled.div`
+const StyledFooterWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 16px 8px;
@@ -39,6 +39,10 @@ const FooterWrapper = styled.div`
     display: block;
   }
 `;
+
+const Wrapper = props => <StyledWrapper {...props} />;
+
+const FooterWrapper = props => <StyledFooterWrapper {...props} />;
 
 const Footer = () => (
   <FooterWrapper>

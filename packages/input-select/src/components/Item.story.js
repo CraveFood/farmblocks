@@ -5,9 +5,11 @@ import styled from "styled-components";
 import Item from "./Item";
 
 const imgSrc = "https://picsum.photos/100";
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   width: 300px;
 `;
+
+const Wrapper = props => <StyledWrapper {...props} />;
 
 storiesOf("Select Input/Item", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)

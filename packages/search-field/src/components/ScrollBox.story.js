@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 import ScrollBox from "./ScrollBox";
 
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   width: 400px;
 `;
 
-const Content = styled.div`
+const StyledContent = styled.div`
   height: 5000px;
   background-image: linear-gradient(
     to right top,
@@ -20,6 +20,10 @@ const Content = styled.div`
     #a8eb12
   );
 `;
+
+const Wrapper = props => <StyledWrapper {...props} />;
+
+const Content = props => <StyledContent {...props} />;
 
 storiesOf("Search Field/ScrollBox (Private)", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)

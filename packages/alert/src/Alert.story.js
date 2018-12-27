@@ -6,9 +6,11 @@ import { action } from "@storybook/addon-actions";
 import Alert from ".";
 import { POSITIVE, NEWS, NEGATIVE, ATTENTION } from "./constants/alertTypes";
 
-const ExtendedAlert = styled(Alert)`
+const StyledAlert = styled(Alert)`
   transform: rotate(5deg);
 `;
+
+const ExtendedAlert = props => <StyledAlert {...props} />;
 
 storiesOf("Alert", module)
   .add("default", () => (
