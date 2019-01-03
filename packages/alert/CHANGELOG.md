@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.8"></a>
+## [4.1.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@4.1.7...@crave/farmblocks-alert@4.1.8) (2019-01-03)
+
+
+### Bug Fixes
+
+* **Storybook:** fix 'Failed prop type' warning when using styled-components in stories ([bfd8342](https://github.com/CraveFood/farmblocks/commit/bfd8342))
+
+
+
+
 <a name="4.1.7"></a>
 ## [4.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@4.1.6...@crave/farmblocks-alert@4.1.7) (2018-12-17)
 

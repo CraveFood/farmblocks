@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.11"></a>
+## [3.0.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.0.10...@crave/farmblocks-input-select@3.0.11) (2019-01-03)
+
+
+### Bug Fixes
+
+* **Storybook:** fix 'Failed prop type' warning when using styled-components in stories ([bfd8342](https://github.com/CraveFood/farmblocks/commit/bfd8342))
+
+
+
+
 <a name="3.0.10"></a>
 ## [3.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.0.9...@crave/farmblocks-input-select@3.0.10) (2018-12-17)
 

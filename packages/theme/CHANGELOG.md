@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.6.1"></a>
+## 1.6.1 (2019-01-03)
+
+
+
+
+**Note:** Version bump only for package @crave/farmblocks-theme
+
 <a name="1.6.0"></a>
 # 1.6.0 (2018-06-18)
 

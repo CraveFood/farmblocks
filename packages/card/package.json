@@ -1,18 +1,20 @@
 {
   "name": "@crave/farmblocks-card",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A styled card to put content inside.",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "lib"],
+  "files": [
+    "AUTHORS",
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build":
-      "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
   },
   "repository": {
     "type": "git",
@@ -22,16 +24,19 @@
     "url": "https://github.com/CraveFood/farmblocks/issues"
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
-  "keywords": ["farmblocks", "react"],
+  "keywords": [
+    "farmblocks",
+    "react"
+  ],
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.6.3",
     "styled-components": "^4.0.2"
   },
   "devDependencies": {
-    "@crave/farmblocks-empty-state": "^3.0.9"
+    "@crave/farmblocks-empty-state": "^3.0.10"
   },
   "dependencies": {
-    "@crave/farmblocks-theme": "^1.6.0"
+    "@crave/farmblocks-theme": "^1.6.1"
   }
 }

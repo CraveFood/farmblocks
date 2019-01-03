@@ -1,15 +1,18 @@
 {
   "name": "@crave/farmblocks-dev-scaffold",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper tool for creating a new farmblock component",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "lib", "bin"],
+  "files": [
+    "AUTHORS",
+    "lib",
+    "bin"
+  ],
   "scripts": {
     "clean": "rm -rf lib",
-    "build":
-      "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
   },
   "bin": {
     "create-component": "lib/create-component.js"
@@ -25,7 +28,10 @@
     "url": "https://github.com/CraveFood/farmblocks/issues"
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
-  "keywords": ["farmblocks", "react"],
+  "keywords": [
+    "farmblocks",
+    "react"
+  ],
   "dependencies": {
     "inquirer": "^6.0.0",
     "prettier": "^1.13.4",

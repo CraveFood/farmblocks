@@ -1,19 +1,24 @@
 {
   "name": "@crave/farmblocks-button",
-  "version": "6.1.6",
+  "version": "6.1.7",
   "description": "Button component",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "LICENSE", "README.md", "CHANGELOG.md", "lib"],
+  "files": [
+    "AUTHORS",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "test": "jest",
     "clean": "rm -rf lib",
-    "build":
-      "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'",
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'",
     "prestorybook": "cp -Rf ../../.storybook .",
     "storybook": "start-storybook -p 6006 -s .storybook/assets"
   },
@@ -26,13 +31,18 @@
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
   "dependencies": {
-    "@crave/farmblocks-hoc-disabled-tooltip": "^2.0.9",
-    "@crave/farmblocks-theme": "^1.6.0"
+    "@crave/farmblocks-hoc-disabled-tooltip": "^2.0.10",
+    "@crave/farmblocks-theme": "^1.6.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.6.3",
     "styled-components": "^4.0.2"
   },
-  "keywords": ["farmblocks", "button", "react", "component"]
+  "keywords": [
+    "farmblocks",
+    "button",
+    "react",
+    "component"
+  ]
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.7"></a>
+## [1.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.0.6...@crave/farmblocks-popover@1.0.7) (2019-01-03)
+
+
+### Bug Fixes
+
+* **Storybook:** use action function from [@storybook](https://github.com/storybook)/addon-actions ([d149d54](https://github.com/CraveFood/farmblocks/commit/d149d54))
+
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.0.5...@crave/farmblocks-popover@1.0.6) (2018-12-17)
 

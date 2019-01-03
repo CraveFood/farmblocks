@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.5"></a>
+## [3.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.1.4...@crave/farmblocks-search-field@3.1.5) (2019-01-03)
+
+
+### Bug Fixes
+
+* **Storybook:** fix 'Failed prop type' warning when using styled-components in stories ([bfd8342](https://github.com/CraveFood/farmblocks/commit/bfd8342))
+* **Storybook:** use action function from [@storybook](https://github.com/storybook)/addon-actions ([d149d54](https://github.com/CraveFood/farmblocks/commit/d149d54))
+
+
+
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.1.3...@crave/farmblocks-search-field@3.1.4) (2018-12-17)
 
