@@ -1,6 +1,6 @@
 import React from "react";
-import { storiesOf, action } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 import { colors } from "@crave/farmblocks-theme";
 import styled from "styled-components";
 import Text, { fontSizes } from "@crave/farmblocks-text";
@@ -8,7 +8,7 @@ import Link, { linkTypes } from "@crave/farmblocks-link";
 
 import Menu from "./Menu";
 
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   width: 400px;
 `;
 
@@ -19,7 +19,7 @@ const items = [
   { value: "3", label: "Pear", image }
 ];
 
-const FooterWrapper = styled.div`
+const StyledFooterWrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 16px 8px;
@@ -40,6 +40,10 @@ const FooterWrapper = styled.div`
   }
 `;
 
+const Wrapper = props => <StyledWrapper {...props} />;
+
+const FooterWrapper = props => <StyledFooterWrapper {...props} />;
+
 const Footer = () => (
   <FooterWrapper>
     <Text className="icon">
@@ -58,32 +62,24 @@ const Footer = () => (
 
 storiesOf("Search Field/Menu (Private)", module)
   .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
-  .add("Default", withInfo()(() => <Menu items={items} />))
-  .add(
-    "onItemClick",
-    withInfo()(() => <Menu onItemClick={action("onItemClick")} items={items} />)
-  )
-  .add(
-    "with key names",
-    withInfo()(() => (
-      <Menu
-        onItemClick={action("onItemClick")}
-        items={items.map(x => ({
-          code: x.value,
-          name: x.label,
-          photo: x.image
-        }))}
-        valueKey="code"
-        labelKey="name"
-        imageKey="photo"
-      />
-    ))
-  )
-  .add(
-    "with empty items",
-    withInfo("This should render nothing")(() => <Menu items={[]} />)
-  )
-  .add(
-    "footer only",
-    withInfo()(() => <Menu footer={<Footer />} items={[]} />)
-  );
+  .add("Default", () => <Menu items={items} />)
+  .add("onItemClick", () => (
+    <Menu onItemClick={action("onItemClick")} items={items} />
+  ))
+  .add("with key names", () => (
+    <Menu
+      onItemClick={action("onItemClick")}
+      items={items.map(x => ({
+        code: x.value,
+        name: x.label,
+        photo: x.image
+      }))}
+      valueKey="code"
+      labelKey="name"
+      imageKey="photo"
+    />
+  ))
+  .add("with empty items", () => <Menu items={[]} />, {
+    info: "This should render nothing"
+  })
+  .add("footer only", () => <Menu footer={<Footer />} items={[]} />);

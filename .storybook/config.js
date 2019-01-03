@@ -1,6 +1,7 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 import { configure, addDecorator } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
 
 const req = require.context(
   "../",
@@ -175,6 +176,11 @@ function withGlobalStyle(storyFn) {
       {storyFn()}
     </React.Fragment>
   );
+}
+
+// avoid the withInfo decorator when generating snapshots/running tests
+if (process.env.NODE_ENV !== "test") {
+  addDecorator(withInfo);
 }
 
 addDecorator(withGlobalStyle);

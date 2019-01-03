@@ -1,157 +1,125 @@
 import React from "react";
-import { storiesOf, action } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 import Link from "@crave/farmblocks-link";
 import Text from "@crave/farmblocks-text";
 
 import Popover from ".";
 
 storiesOf("Popover", module)
-  .add(
-    "Default - Link as a trigger",
-    withInfo()(() => (
-      <Popover
-        trigger={<Link>Trigger</Link>}
-        content={() => <Text>Popover content</Text>}
-        onOutsideClick={action("onOutsideClick")}
-      />
-    ))
-  )
-  .add(
-    "Button as a trigger - Right aligned",
-    withInfo()(() => (
-      <div style={{ width: 300, textAlign: "right" }}>
-        <Popover
-          trigger={<button>Trigger</button>}
-          content={() => <Text>Popover content</Text>}
-          align="right"
-          onOutsideClick={action("onOutsideClick")}
-        />
-      </div>
-    ))
-  )
-  .add(
-    "Center aligned",
-    withInfo()(() => (
-      <div style={{ width: 300, textAlign: "right" }}>
-        <Popover
-          trigger={<Link>Trigger</Link>}
-          content={() => <Text>Centered Popover</Text>}
-          align="center"
-          onOutsideClick={action("onOutsideClick")}
-        />
-      </div>
-    ))
-  )
-  .add(
-    "Dismissable",
-    withInfo()(() => (
-      <Popover
-        trigger={<Link>Trigger</Link>}
-        onOutsideClick={action("onOutsideClick")}
-        content={dismiss => (
-          <div>
-            <Text>Popover content</Text>
-            <button onClick={dismiss}>Dismiss</button>
-          </div>
-        )}
-      />
-    ))
-  )
-  .add(
-    "onOpen/onClose",
-    withInfo()(() => (
-      <Popover
-        trigger={<Link>Trigger</Link>}
-        onOutsideClick={action("onOutsideClick")}
-        onOpen={action("onOpen")}
-        onClose={action("onClose")}
-        content={dismiss => (
-          <div>
-            <Text>Popover content</Text>
-            <button onClick={dismiss}>Dismiss</button>
-          </div>
-        )}
-      />
-    ))
-  )
-  .add(
-    "Custom padding",
-    withInfo()(() => (
+  .add("Default - Link as a trigger", () => (
+    <Popover
+      trigger={<Link>Trigger</Link>}
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ))
+  .add("Button as a trigger - Right aligned", () => (
+    <div style={{ width: 300, textAlign: "right" }}>
       <Popover
         trigger={<button>Trigger</button>}
-        onOutsideClick={action("onOutsideClick")}
-        content={dismiss => (
-          <div>
-            <Text>Popover content</Text>
-            <button onClick={dismiss}>Dismiss</button>
-          </div>
-        )}
-        padding="50px"
-      />
-    ))
-  )
-  .add(
-    "Nested popover",
-    withInfo()(() => (
-      <Popover
-        trigger={<button>hit me</button>}
-        onOutsideClick={action("onOutsideClick")}
-        content={dismiss => (
-          <div style={{ display: "flex" }}>
-            <button onClick={dismiss}>dismiss foo</button>
-            <Popover
-              trigger={<button>other popover</button>}
-              content={dismiss => (
-                <button onClick={dismiss}>dismiss bar</button>
-              )}
-            />
-          </div>
-        )}
-      />
-    ))
-  )
-  .add(
-    "trigger as function",
-    withInfo()(() => (
-      <Popover
-        trigger={isVisible => (
-          <Link>{`This Popover is ${isVisible ? "open" : "closed"}`}</Link>
-        )}
         content={() => <Text>Popover content</Text>}
+        align="right"
         onOutsideClick={action("onOutsideClick")}
       />
-    ))
-  )
-  .add(
-    "custom triggerWidth",
-    withInfo()(() => (
+    </div>
+  ))
+  .add("Center aligned", () => (
+    <div style={{ width: 300, textAlign: "right" }}>
       <Popover
-        triggerWidth="300px"
-        trigger={
-          <div
-            style={{
-              background: "AliceBlue",
-              padding: 20,
-              textAlign: "center"
-            }}
-          >
-            Trigger
-          </div>
-        }
-        content={() => <Text>Popover content</Text>}
-        onOutsideClick={action("onOutsideClick")}
-      />
-    ))
-  )
-  .add(
-    "w/ Tooltip arrow",
-    withInfo()(() => (
-      <Popover
-        showTooltipArrow
         trigger={<Link>Trigger</Link>}
-        content={() => <Text>Popover content</Text>}
+        content={() => <Text>Centered Popover</Text>}
+        align="center"
         onOutsideClick={action("onOutsideClick")}
       />
-    ))
-  );
+    </div>
+  ))
+  .add("Dismissable", () => (
+    <Popover
+      trigger={<Link>Trigger</Link>}
+      onOutsideClick={action("onOutsideClick")}
+      content={dismiss => (
+        <div>
+          <Text>Popover content</Text>
+          <button onClick={dismiss}>Dismiss</button>
+        </div>
+      )}
+    />
+  ))
+  .add("onOpen/onClose", () => (
+    <Popover
+      trigger={<Link>Trigger</Link>}
+      onOutsideClick={action("onOutsideClick")}
+      onOpen={action("onOpen")}
+      onClose={action("onClose")}
+      content={dismiss => (
+        <div>
+          <Text>Popover content</Text>
+          <button onClick={dismiss}>Dismiss</button>
+        </div>
+      )}
+    />
+  ))
+  .add("Custom padding", () => (
+    <Popover
+      trigger={<button>Trigger</button>}
+      onOutsideClick={action("onOutsideClick")}
+      content={dismiss => (
+        <div>
+          <Text>Popover content</Text>
+          <button onClick={dismiss}>Dismiss</button>
+        </div>
+      )}
+      padding="50px"
+    />
+  ))
+  .add("Nested popover", () => (
+    <Popover
+      trigger={<button>hit me</button>}
+      onOutsideClick={action("onOutsideClick")}
+      content={dismiss => (
+        <div style={{ display: "flex" }}>
+          <button onClick={dismiss}>dismiss foo</button>
+          <Popover
+            trigger={<button>other popover</button>}
+            content={dismiss => <button onClick={dismiss}>dismiss bar</button>}
+          />
+        </div>
+      )}
+    />
+  ))
+  .add("trigger as function", () => (
+    <Popover
+      trigger={isVisible => (
+        <Link>{`This Popover is ${isVisible ? "open" : "closed"}`}</Link>
+      )}
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ))
+  .add("custom triggerWidth", () => (
+    <Popover
+      triggerWidth="300px"
+      trigger={
+        <div
+          style={{
+            background: "AliceBlue",
+            padding: 20,
+            textAlign: "center"
+          }}
+        >
+          Trigger
+        </div>
+      }
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ))
+  .add("w/ Tooltip arrow", () => (
+    <Popover
+      showTooltipArrow
+      trigger={<Link>Trigger</Link>}
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ));

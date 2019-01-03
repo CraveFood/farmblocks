@@ -1,6 +1,6 @@
 import React from "react";
-import { storiesOf, action } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 import styled, { keyframes } from "styled-components";
 
 import SearchField from ".";
@@ -49,7 +49,7 @@ to {
   transform: rotate(360deg);
 }
 `;
-const Loading = styled.div`
+const StyledLoading = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,107 +61,76 @@ const Loading = styled.div`
   }
 `;
 
+const Loading = props => <StyledLoading {...props} />;
+
 storiesOf("Search Field", module)
-  .add("Default", withInfo()(() => <SearchField label="Fruits" />))
-  .add(
-    "custom width",
-    withInfo()(() => <SearchField width="50%" label="Fruits" />)
-  )
-  .add(
-    "with items",
-    withInfo()(() => <SearchField items={items} label="Fruits" />)
-  )
-  .add(
-    "with validation message",
-    withInfo()(() => (
-      <SearchField
-        validationMessages={["One error", "Another error"]}
-        items={items}
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "with empty items array",
-    withInfo()(() => (
-      <SearchField
-        items={[]}
-        placeholder="Click here. Menu should not open"
-        width={600}
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "with selected item",
-    withInfo()(() => <SearchField value="2" items={items} label="Fruits" />)
-  )
-  .add(
-    "onSearchChange (debounced)",
-    withInfo()(() => (
-      <SearchField
-        onSearchChange={action("onSearchChange")}
-        items={items}
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "onChange",
-    withInfo()(() => (
-      <SearchField onChange={action("onChange")} items={items} label="Fruits" />
-    ))
-  )
-  .add(
-    "onSearchChange + onChange",
-    withInfo()(() => (
-      <SearchField
-        onSearchChange={action("onSearchChange")}
-        onChange={action("onChange")}
-        items={items}
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "onSearchChange + onChange + custom keys",
-    withInfo()(() => (
-      <SearchField
-        onSearchChange={action("onSearchChange")}
-        onChange={action("onChange")}
-        items={items.map(x => ({
-          code: x.value,
-          name: x.label,
-          photo: x.image
-        }))}
-        valueKey="code"
-        labelKey="name"
-        imageKey="photo"
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "onScrollReachEnd",
-    withInfo()(() => (
-      <SearchField
-        onScrollReachEnd={action("onScrollReachEnd")}
-        items={manyItems}
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "with footer",
-    withInfo()(() => (
-      <SearchField footer={<Footer />} items={items} label="Fruits" />
-    ))
-  )
+  .add("Default", () => <SearchField label="Fruits" />)
+  .add("custom width", () => <SearchField width="50%" label="Fruits" />)
+  .add("with items", () => <SearchField items={items} label="Fruits" />)
+  .add("with validation message", () => (
+    <SearchField
+      validationMessages={["One error", "Another error"]}
+      items={items}
+      label="Fruits"
+    />
+  ))
+  .add("with empty items array", () => (
+    <SearchField
+      items={[]}
+      placeholder="Click here. Menu should not open"
+      width={600}
+      label="Fruits"
+    />
+  ))
+  .add("with selected item", () => (
+    <SearchField value="2" items={items} label="Fruits" />
+  ))
+  .add("onSearchChange (debounced)", () => (
+    <SearchField
+      onSearchChange={action("onSearchChange")}
+      items={items}
+      label="Fruits"
+    />
+  ))
+  .add("onChange", () => (
+    <SearchField onChange={action("onChange")} items={items} label="Fruits" />
+  ))
+  .add("onSearchChange + onChange", () => (
+    <SearchField
+      onSearchChange={action("onSearchChange")}
+      onChange={action("onChange")}
+      items={items}
+      label="Fruits"
+    />
+  ))
+  .add("onSearchChange + onChange + custom keys", () => (
+    <SearchField
+      onSearchChange={action("onSearchChange")}
+      onChange={action("onChange")}
+      items={items.map(x => ({
+        code: x.value,
+        name: x.label,
+        photo: x.image
+      }))}
+      valueKey="code"
+      labelKey="name"
+      imageKey="photo"
+      label="Fruits"
+    />
+  ))
+  .add("onScrollReachEnd", () => (
+    <SearchField
+      onScrollReachEnd={action("onScrollReachEnd")}
+      items={manyItems}
+      label="Fruits"
+    />
+  ))
+  .add("with footer", () => (
+    <SearchField footer={<Footer />} items={items} label="Fruits" />
+  ))
   .add(
     "loading",
-    withInfo(`
-      \`footer\` can be used for multiple purposes. For example, to display a loading spinner
-    `)(() => (
+    () => (
       <SearchField
         footer={
           <Loading>
@@ -170,135 +139,123 @@ storiesOf("Search Field", module)
         }
         label="Fruits"
       />
-    ))
+    ),
+    {
+      info: `footer\` can be used for multiple purposes. For example, to display a loading spinner`
+    }
   )
-  .add("disabled", withInfo()(() => <SearchField disabled label="Fruits" />))
-  .add(
-    "custom debounce delay",
-    withInfo()(() => (
-      <SearchField
-        onSearchChange={action("onSearchChange")}
-        debounceDelay={3000}
-        placeholder="3s delay"
-        label="Fruits"
-      />
-    ))
-  )
-  .add(
-    "custom menu height",
-    withInfo()(() => (
-      <SearchField items={manyItems} maxMenuHeight={150} label="Fruits" />
-    ))
-  )
-  .add(
-    "Z-index",
-    withInfo()(() => (
-      <div>
-        <div
-          style={{
-            width: 200,
-            height: 400,
-            top: 150,
-            position: "absolute",
-            zIndex: 10,
-            background: "gray"
-          }}
-        >
-          Z-index: 10
-        </div>
-        <SearchField items={items} label="Fruits" zIndex={11} />
-        <div
-          style={{
-            width: 300,
-            height: 200,
-            top: 150,
-            left: 100,
-            position: "absolute",
-            zIndex: 12,
-            background: "blue"
-          }}
-        >
-          Z-index: 12
-        </div>
+  .add("disabled", () => <SearchField disabled label="Fruits" />)
+  .add("custom debounce delay", () => (
+    <SearchField
+      onSearchChange={action("onSearchChange")}
+      debounceDelay={3000}
+      placeholder="3s delay"
+      label="Fruits"
+    />
+  ))
+  .add("custom menu height", () => (
+    <SearchField items={manyItems} maxMenuHeight={150} label="Fruits" />
+  ))
+  .add("Z-index", () => (
+    <div>
+      <div
+        style={{
+          width: 200,
+          height: 400,
+          top: 150,
+          position: "absolute",
+          zIndex: 10,
+          background: "gray"
+        }}
+      >
+        Z-index: 10
       </div>
-    ))
-  )
-  .add(
-    "update items every 3 seconds",
-    withInfo()(() => {
-      const itemsA = items;
-      const itemsB = [{ value: "444", label: "Avocado", image }];
-      const valueA = "2";
-      const valueB = "444";
+      <SearchField items={items} label="Fruits" zIndex={11} />
+      <div
+        style={{
+          width: 300,
+          height: 200,
+          top: 150,
+          left: 100,
+          position: "absolute",
+          zIndex: 12,
+          background: "blue"
+        }}
+      >
+        Z-index: 12
+      </div>
+    </div>
+  ))
+  .add("update items every 3 seconds", () => {
+    const itemsA = items;
+    const itemsB = [{ value: "444", label: "Avocado", image }];
+    const valueA = "2";
+    const valueB = "444";
 
-      class Test extends React.Component {
-        state = {
-          items: [],
-          count: 0,
-          value: "2"
-        };
+    class Test extends React.Component {
+      state = {
+        items: [],
+        count: 0,
+        value: "2"
+      };
 
-        componentDidMount = () => {
-          this.interval = window.setInterval(() => {
-            const items = this.state.count % 2 ? itemsA : itemsB;
-            const value = this.state.count % 2 ? valueA : valueB;
-            this.setState({
-              items,
-              value,
-              count: this.state.count + 1
-            });
-          }, 3000);
-        };
-        componentWillUnmount = () => {
-          window.clearInterval(this.interval);
-        };
+      componentDidMount = () => {
+        this.interval = window.setInterval(() => {
+          const items = this.state.count % 2 ? itemsA : itemsB;
+          const value = this.state.count % 2 ? valueA : valueB;
+          this.setState({
+            items,
+            value,
+            count: this.state.count + 1
+          });
+        }, 3000);
+      };
+      componentWillUnmount = () => {
+        window.clearInterval(this.interval);
+      };
 
-        render() {
-          return (
+      render() {
+        return (
+          <SearchField
+            value={this.state.value}
+            items={this.state.items}
+            label="Fruits"
+          />
+        );
+      }
+    }
+
+    return <Test />;
+  })
+  .add("update items and keep value the same", () => {
+    const items = [{ value: 1, label: "Apple", image }];
+    const newItems = [{ value: 1, label: "A new Apple", image }];
+    class SearchTest extends React.Component {
+      state = {
+        items,
+        value: 1
+      };
+
+      changeItems = () => {
+        this.setState({
+          items: newItems
+        });
+      };
+
+      render() {
+        return (
+          <div>
             <SearchField
               value={this.state.value}
               items={this.state.items}
               label="Fruits"
             />
-          );
-        }
+            <br />
+            <button onClick={this.changeItems}>Change items</button>
+          </div>
+        );
       }
+    }
 
-      return <Test />;
-    })
-  )
-  .add(
-    "update items and keep value the same",
-    withInfo()(() => {
-      const items = [{ value: 1, label: "Apple", image }];
-      const newItems = [{ value: 1, label: "A new Apple", image }];
-      class SearchTest extends React.Component {
-        state = {
-          items,
-          value: 1
-        };
-
-        changeItems = () => {
-          this.setState({
-            items: newItems
-          });
-        };
-
-        render() {
-          return (
-            <div>
-              <SearchField
-                value={this.state.value}
-                items={this.state.items}
-                label="Fruits"
-              />
-              <br />
-              <button onClick={this.changeItems}>Change items</button>
-            </div>
-          );
-        }
-      }
-
-      return <SearchTest />;
-    })
-  );
+    return <SearchTest />;
+  });

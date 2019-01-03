@@ -1,20 +1,19 @@
 {
   "name": "@crave/farmblocks-hoc-input",
   "version": "5.1.1",
-  "description": "A High Order Component that adds behaviour of label support, different styles for focus and errors, and validation error messages.",
+  "description":
+    "A High Order Component that adds behaviour of label support, different styles for focus and errors, and validation error messages.",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": [
-    "AUTHORS",
-    "lib"
-  ],
+  "files": ["AUTHORS", "lib"],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'"
+    "build":
+      "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
   },
   "repository": {
     "type": "git",
@@ -24,10 +23,7 @@
     "url": "https://github.com/CraveFood/farmblocks/issues"
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
-  "keywords": [
-    "farmblocks",
-    "react"
-  ],
+  "keywords": ["farmblocks", "react"],
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.6.3",

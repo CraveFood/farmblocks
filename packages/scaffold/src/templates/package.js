@@ -29,7 +29,7 @@ const packageTemplate = ({
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "yarn clean && babel src -d lib --ignore '*.test.js,*.story.js'"
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
   },
   "repository": {
     "type": "git",
