@@ -22,7 +22,7 @@ class Alert extends React.Component {
   };
 
   static defaultProps = {
-    type: AlertTypes.POSITIVE,
+    type: AlertTypes.NEWS,
     dismissable: true,
     autoRemove: true,
     zIndex: DEFAULT_Z_INDEX,
