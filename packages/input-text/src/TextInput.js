@@ -21,6 +21,11 @@ export const withMargin = Comp => {
       <Comp {...props} />
     </Container>
   );
+
+  Margin.propTypes = {
+    margin: PropTypes.string
+  };
+
   return Margin;
 };
 
