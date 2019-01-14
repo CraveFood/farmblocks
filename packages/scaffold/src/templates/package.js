@@ -1,9 +1,9 @@
 const { format } = require("prettier");
 
 const peerDependencies = {
-  react: "^16.6.3",
+  react: "^16.7.0",
   "prop-types": "^15.6.0",
-  "styled-components": "^4.0.2"
+  "styled-components": "^4.1.3"
 };
 
 const packageTemplate = ({
