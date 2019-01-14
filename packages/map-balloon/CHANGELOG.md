@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@3.0.10...@crave/farmblocks-map-balloon@3.1.0) (2019-01-14)
+
+
+### Features
+
+* updated all dependencies to their latest versions ([908663c](https://github.com/CraveFood/farmblocks/commit/908663c)), closes [#667](https://github.com/CraveFood/farmblocks/issues/667)
+
+
+
+
+
 <a name="3.0.10"></a>
 ## [3.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@3.0.9...@crave/farmblocks-map-balloon@3.0.10) (2019-01-03)
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.1.7...@crave/farmblocks-button@6.2.0) (2019-01-14)
+
+
+### Features
+
+* updated all dependencies to their latest versions ([908663c](https://github.com/CraveFood/farmblocks/commit/908663c)), closes [#667](https://github.com/CraveFood/farmblocks/issues/667)
+
+
+
+
+
 <a name="6.1.7"></a>
 ## [6.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.1.6...@crave/farmblocks-button@6.1.7) (2019-01-03)
 

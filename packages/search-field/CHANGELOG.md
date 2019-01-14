@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.1.5...@crave/farmblocks-search-field@3.2.0) (2019-01-14)
+
+
+### Features
+
+* updated all dependencies to their latest versions ([908663c](https://github.com/CraveFood/farmblocks/commit/908663c)), closes [#667](https://github.com/CraveFood/farmblocks/issues/667)
+
+
+
+
+
 <a name="3.1.5"></a>
 ## [3.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.1.4...@crave/farmblocks-search-field@3.1.5) (2019-01-03)
 

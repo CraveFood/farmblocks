@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.1.4...@crave/farmblocks-tooltip@1.2.0) (2019-01-14)
+
+
+### Features
+
+* updated all dependencies to their latest versions ([908663c](https://github.com/CraveFood/farmblocks/commit/908663c)), closes [#667](https://github.com/CraveFood/farmblocks/issues/667)
+
+
+
+
+
 <a name="1.1.4"></a>
 ## [1.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.1.3...@crave/farmblocks-tooltip@1.1.4) (2019-01-03)
 

@@ -1,18 +1,20 @@
 {
   "name": "@crave/farmblocks-tags",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Tags",
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "lib"],
+  "files": [
+    "AUTHORS",
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build":
-      "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,9 @@
     "url": "https://github.com/CraveFood/farmblocks/issues"
   },
   "homepage": "https://github.com/CraveFood/farmblocks#readme",
-  "keywords": ["tag"],
+  "keywords": [
+    "tag"
+  ],
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.7.0",

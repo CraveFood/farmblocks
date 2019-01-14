@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.4.8...@crave/farmblocks-input-text@3.5.0) (2019-01-14)
+
+
+### Bug Fixes
+
+* **TextInput:** fix Margin proptypes ([c702ac7](https://github.com/CraveFood/farmblocks/commit/c702ac7))
+
+
+### Features
+
+* updated all dependencies to their latest versions ([908663c](https://github.com/CraveFood/farmblocks/commit/908663c)), closes [#667](https://github.com/CraveFood/farmblocks/issues/667)
+
+
+
+
+
 <a name="3.4.8"></a>
 ## [3.4.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.4.7...@crave/farmblocks-input-text@3.4.8) (2019-01-03)
 
