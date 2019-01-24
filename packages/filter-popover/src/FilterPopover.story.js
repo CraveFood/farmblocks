@@ -47,4 +47,41 @@ storiesOf("Filter Popover", module)
         </div>
       }
     />
+  ))
+  .add("zIndex", () => (
+    <>
+      <FilterPopover
+        zIndex={2}
+        triggerLabel="Filter"
+        formTitle="Form Title"
+        formContent={
+          <div>
+            <TextInput label="Product" />
+            <TextInput label="Owner" />
+          </div>
+        }
+      />
+      <div
+        style={{
+          height: 150,
+          background: "gainsboro",
+          zIndex: 1,
+          position: "relative",
+          opacity: 0.5
+        }}
+      >
+        Under
+      </div>
+      <div
+        style={{
+          height: 150,
+          background: "gainsboro",
+          zIndex: 3,
+          position: "relative",
+          opacity: 0.5
+        }}
+      >
+        Over
+      </div>
+    </>
   ));
