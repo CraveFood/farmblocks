@@ -10,6 +10,7 @@ const FilterPopover = props => {
     <Popover
       padding="0px"
       align={props.align}
+      zIndex={props.zIndex}
       trigger={
         <Button
           rightIcon="wg-small-arrow-bottom"
@@ -72,7 +73,8 @@ FilterPopover.propTypes = {
   onFormCancelClick: PropTypes.func,
   align: PropTypes.string,
   dismissOnSave: PropTypes.bool,
-  hasValue: PropTypes.bool
+  hasValue: PropTypes.bool,
+  zIndex: PropTypes.number
 };
 
 export default FilterPopover;
