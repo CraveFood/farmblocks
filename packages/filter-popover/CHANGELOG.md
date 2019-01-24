@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.1.0...@crave/farmblocks-filter-popover@1.2.0) (2019-01-24)
+
+
+### Features
+
+* **FilterPopover:** add zIndex prop ([b988284](https://github.com/CraveFood/farmblocks/commit/b988284)), closes [#672](https://github.com/CraveFood/farmblocks/issues/672)
+
+
+
+
+
 # [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.0.11...@crave/farmblocks-filter-popover@1.1.0) (2019-01-14)
 
 
