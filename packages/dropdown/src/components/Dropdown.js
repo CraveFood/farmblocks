@@ -28,6 +28,7 @@ const Dropdown = props => (
           align={props.align}
           zIndex={props.zIndex}
           width={props.width}
+          maxHeight={props.maxHeight}
         >
           <ul>{props.children}</ul>
         </DropdownMenuWrapper>
@@ -51,7 +52,8 @@ Dropdown.propTypes = {
   zIndex: PropTypes.number,
   size: PropTypes.oneOf(values(buttonSizes)),
   width: PropTypes.string,
-  innerRef: PropTypes.func
+  innerRef: PropTypes.func,
+  maxHeight: PropTypes.string
 };
 
 export default Dropdown;

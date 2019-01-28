@@ -112,4 +112,19 @@ storiesOf("Dropdown/Component", module)
       <DropdownItem value={2}>Apple</DropdownItem>
       <DropdownItem value={3} text="Strawberry" />
     </Dropdown>
+  ))
+  .add("With maxHeight", () => (
+    <Dropdown
+      text="Select fruit"
+      handleSelection={action("handleSelection")}
+      maxHeight="100px"
+    >
+      <DropdownItem value={1} text="Banana" />
+      <DropdownItem value={2}>Apple</DropdownItem>
+      <DropdownItem value={3} text="Strawberry" />
+      <DropdownItem value={4} text="Peach" />
+      <DropdownItem value={5} text="Pear" />
+      <DropdownItem value={6} text="Coconut" />
+      <DropdownItem value={7} text="Peanut" />
+    </Dropdown>
   ));
