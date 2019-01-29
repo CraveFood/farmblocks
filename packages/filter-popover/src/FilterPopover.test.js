@@ -21,7 +21,7 @@ describe("Filter Popover", () => {
     dismissMock.mockRestore();
   });
 
-  test("should call onFormSaveClick and leave popover open when clicking on Filter button", () => {
+  test("should call onFormSaveClick and leave popover open when clicking on Filter button", async () => {
     wrapper = mount(
       <FilterPopover
         triggerLabel="Filter"
@@ -32,16 +32,17 @@ describe("Filter Popover", () => {
     );
 
     // Open popover
-    wrapper.find("button").simulate("click");
+    await wrapper.find("button").simulate("click");
+    wrapper.update();
 
     const filterButton = wrapper.find('Button[type="SECONDARY"]');
-    filterButton.find("button").simulate("click");
+    await filterButton.find("button").simulate("click");
 
     expect(onFormSaveClickMock).toBeCalled();
     expect(wrapper.find("FormWrapper").length).toBe(1);
   });
 
-  test("should call onFormSaveClick and dismiss popover open when clicking on Filter button", () => {
+  test("should call onFormSaveClick and dismiss popover open when clicking on Filter button", async () => {
     wrapper = mount(
       <FilterPopover
         triggerLabel="Filter"
@@ -53,16 +54,17 @@ describe("Filter Popover", () => {
     );
 
     // Open popover
-    wrapper.find("button").simulate("click");
+    await wrapper.find("button").simulate("click");
+    wrapper.update();
 
     const filterButton = wrapper.find('Button[type="SECONDARY"]');
-    filterButton.find("button").simulate("click");
+    await filterButton.find("button").simulate("click");
 
     expect(onFormSaveClickMock).toBeCalled();
     expect(wrapper.find("FormWrapper").length).toBe(0);
   });
 
-  test("should call onFormCancelClick and dismiss popover open when clicking on cancel button", () => {
+  test("should call onFormCancelClick and dismiss popover open when clicking on cancel button", async () => {
     wrapper = mount(
       <FilterPopover
         triggerLabel="Filter"
@@ -75,11 +77,12 @@ describe("Filter Popover", () => {
     );
 
     // Open popover
-    wrapper.find("button").simulate("click");
+    await wrapper.find("button").simulate("click");
+    wrapper.update();
 
     const cancelLink = wrapper.find('Link[className="cancel"]');
 
-    cancelLink.find("span").simulate("click");
+    await cancelLink.find("span").simulate("click");
 
     expect(onFormCancelClickMock).toBeCalled();
     expect(wrapper.find("FormWrapper").length).toBe(0);
