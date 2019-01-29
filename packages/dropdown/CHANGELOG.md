@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@1.1.0...@crave/farmblocks-dropdown@1.2.0) (2019-01-29)
+
+
+### Features
+
+* **Dropdown:** add maxHeight property ([e3b9c0f](https://github.com/CraveFood/farmblocks/commit/e3b9c0f))
+
+
+
+
+
 # [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@1.0.10...@crave/farmblocks-dropdown@1.1.0) (2019-01-14)
 
 
