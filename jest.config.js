@@ -4,7 +4,7 @@ const coveragePathIgnorePatterns = [".story.js", "lib/*"];
 const completeConfig = {
   verbose: true,
   coveragePathIgnorePatterns,
-  setupTestFrameworkScriptFile: "<rootDir>/jest.testFramework.js",
+  setupFilesAfterEnv: ["<rootDir>/jest.testFramework.js"],
   setupFiles: ["./.storybook/jest/require.context.js"]
 };
 
