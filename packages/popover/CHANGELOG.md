@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.1.0...@crave/farmblocks-popover@1.2.0) (2019-02-05)
+
+
+### Features
+
+* **Popover:** add onBeforeOpen prop ([5458812](https://github.com/CraveFood/farmblocks/commit/5458812)), closes [#677](https://github.com/CraveFood/farmblocks/issues/677)
+
+
+
+
+
 # [1.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.0.7...@crave/farmblocks-popover@1.1.0) (2019-01-14)
 
 
