@@ -33,19 +33,23 @@ class Popover extends React.Component {
 
     if (this.state.isVisible) {
       this.hide();
-      this.props.onOutsideClick && this.props.onOutsideClick(event);
+      this.props.onOutsideClick?.(event);
     }
   };
 
-  toggle = () =>
-    this.setState(prevState => {
-      const { onOpen, onClose } = this.props;
-      const isVisible = !prevState.isVisible;
+  toggle = async () => {
+    const isVisible = !this.state.isVisible;
+    const { onOpen, onClose } = this.props;
 
-      isVisible ? onOpen && onOpen() : onClose && onClose();
+    try {
+      isVisible && (await this.props.onBeforeOpen?.());
+    } catch (e) {
+      return;
+    }
+    isVisible ? onOpen?.() : onClose?.();
 
-      return { isVisible };
-    });
+    this.setState({ isVisible });
+  };
 
   hide = () => {
     this.setState({ isVisible: false });
@@ -88,6 +92,7 @@ class Popover extends React.Component {
     triggerWidth: PropTypes.string,
     onOutsideClick: PropTypes.func,
     onOpen: PropTypes.func,
+    onBeforeOpen: PropTypes.func,
     onClose: PropTypes.func,
     showTooltipArrow: PropTypes.bool
   };

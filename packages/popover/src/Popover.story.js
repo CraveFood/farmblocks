@@ -122,4 +122,45 @@ storiesOf("Popover", module)
       content={() => <Text>Popover content</Text>}
       onOutsideClick={action("onOutsideClick")}
     />
-  ));
+  ))
+  .add("onBeforeOpen - 2s delay", () => (
+    <Popover
+      trigger={<Link>Trigger</Link>}
+      content={() => <Text>Popover content</Text>}
+      onBeforeOpen={() => {
+        action("onBeforeOpen")();
+        return new Promise(resolve => setTimeout(resolve, 2000));
+      }}
+      onOpen={action("onOpen")}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ))
+  .add("onBeforeOpen - prevent open", () => (
+    <Popover
+      trigger={<Link>Trigger</Link>}
+      content={() => <Text>Popover content</Text>}
+      onBeforeOpen={() => {
+        action("onBeforeOpen")();
+        return Promise.reject();
+      }}
+      onOpen={action("onOpen")}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ))
+  .add(
+    "onBeforeOpen - no promise",
+    () => (
+      <Popover
+        trigger={<Link>Trigger</Link>}
+        content={() => <Text>Popover content</Text>}
+        onOpen={action("onOpen")}
+        onBeforeOpen={action("onBeforeOpen")}
+        onOutsideClick={action("onOutsideClick")}
+      />
+    ),
+    {
+      info: `
+      if \`onBeforeOpen\` don't return a promise, the popover will open immediately
+      `
+    }
+  );

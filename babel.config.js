@@ -3,6 +3,8 @@ module.exports = api => {
   return {
     presets: ["@babel/preset-env", "@babel/preset-react"],
     plugins: [
+      // Stage 1 plugins
+      "@babel/plugin-proposal-optional-chaining",
       // Stage 2 plugins
       ["@babel/plugin-proposal-decorators", { legacy: true }],
       "@babel/plugin-proposal-function-sent",

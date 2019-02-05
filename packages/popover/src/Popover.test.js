@@ -7,7 +7,7 @@ import Popover from "./Popover";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Popover", () => {
-  test("should change visible state after click on trigger", () => {
+  test("should change visible state after click on trigger", async () => {
     const wrapper = shallow(
       <Popover
         trigger={<span>trigger</span>}
@@ -19,12 +19,12 @@ describe("Popover", () => {
     expect(wrapper.state()).toEqual({ isVisible: false });
 
     // click on trigger should change the state
-    wrapper.find("#trigger").simulate("click");
+    await wrapper.find("#trigger").simulate("click");
 
     expect(wrapper.state()).toEqual({ isVisible: true });
   });
 
-  test("should hide popover on dismiss content", () => {
+  test("should hide popover on dismiss content", async () => {
     const wrapper = shallow(
       <Popover
         trigger={<span>trigger</span>}
@@ -37,11 +37,11 @@ describe("Popover", () => {
     );
 
     // open dropdown
-    wrapper.find("#trigger").simulate("click");
+    await wrapper.find("#trigger").simulate("click");
     expect(wrapper.state()).toEqual({ isVisible: true });
 
     // click on dismiss button should close dropdown
-    wrapper.find("#dismiss").simulate("click");
+    await wrapper.find("#dismiss").simulate("click");
     expect(wrapper.state()).toEqual({ isVisible: false });
   });
 
@@ -67,7 +67,7 @@ describe("Popover", () => {
       }
     }
 
-    beforeEach(() => {
+    beforeEach(async () => {
       map = {};
       document.addEventListener = jest.fn((event, cb) => {
         map[event] = cb;
@@ -79,7 +79,7 @@ describe("Popover", () => {
 
       // open popover
       popoverInstance = wrapper.find(Popover).instance();
-      wrapper.find("#trigger").simulate("click");
+      await wrapper.find("#trigger").simulate("click");
     });
 
     afterEach(() => {
@@ -98,12 +98,12 @@ describe("Popover", () => {
       expect(popoverInstance.state).toEqual({ isVisible: false });
     });
 
-    test("should dismiss popover on outer click and call callback function", () => {
+    test("should dismiss popover on outer click and call callback function", async () => {
       wrapper = mount(<PopoverComponent onOutsideClick={onOutsideClickSpy} />);
 
       // open popover
       popoverInstance = wrapper.find(Popover).instance();
-      wrapper.find("#trigger").simulate("click");
+      await wrapper.find("#trigger").simulate("click");
 
       // makes sure that popover is open
       expect(popoverInstance.state).toEqual({ isVisible: true });
@@ -199,7 +199,7 @@ describe("Popover", () => {
       onOpenSpy.mockReset();
     });
 
-    it("should run on trigger click from closed state", () => {
+    it("should run on trigger click from closed state", async () => {
       const wrapper = shallow(
         <Popover
           trigger={<span>trigger</span>}
@@ -208,11 +208,11 @@ describe("Popover", () => {
         />
       );
 
-      wrapper.find("#trigger").simulate("click");
+      await wrapper.find("#trigger").simulate("click");
       expect(onOpenSpy).toHaveBeenCalledTimes(1);
     });
 
-    it("should NOT run on trigger click from open state", () => {
+    it("should NOT run on trigger click from open state", async () => {
       const wrapper = shallow(
         <Popover
           trigger={<span>trigger</span>}
@@ -222,7 +222,7 @@ describe("Popover", () => {
       );
 
       wrapper.setState({ isVisible: true });
-      wrapper.find("#trigger").simulate("click");
+      await wrapper.find("#trigger").simulate("click");
       expect(onOpenSpy).not.toHaveBeenCalled();
     });
 
@@ -234,8 +234,8 @@ describe("Popover", () => {
         />
       );
 
-      expect(() => {
-        wrapper.find("#trigger").simulate("click");
+      expect(async () => {
+        await wrapper.find("#trigger").simulate("click");
       }).not.toThrowError();
     });
   });
@@ -250,7 +250,7 @@ describe("Popover", () => {
       onCloseSpy.mockReset();
     });
 
-    it("should run on trigger click from open state", () => {
+    it("should run on trigger click from open state", async () => {
       const wrapper = shallow(
         <Popover
           trigger={<span>trigger</span>}
@@ -260,11 +260,11 @@ describe("Popover", () => {
       );
 
       wrapper.setState({ isVisible: true });
-      wrapper.find("#trigger").simulate("click");
+      await wrapper.find("#trigger").simulate("click");
       expect(onCloseSpy).toHaveBeenCalledTimes(1);
     });
 
-    it("should NOT run on trigger click from closed state", () => {
+    it("should NOT run on trigger click from closed state", async () => {
       const wrapper = shallow(
         <Popover
           trigger={<span>trigger</span>}
@@ -273,7 +273,7 @@ describe("Popover", () => {
         />
       );
 
-      wrapper.find("#trigger").simulate("click");
+      await wrapper.find("#trigger").simulate("click");
       expect(onCloseSpy).not.toHaveBeenCalled();
     });
 
@@ -286,8 +286,8 @@ describe("Popover", () => {
       );
 
       wrapper.setState({ isVisible: true });
-      expect(() => {
-        wrapper.find("#trigger").simulate("click");
+      expect(async () => {
+        await wrapper.find("#trigger").simulate("click");
       }).not.toThrowError();
     });
   });
@@ -330,6 +330,79 @@ describe("Popover", () => {
         <Popover trigger={() => expectedResult} content={content} />
       );
       expect(wrapper.containsMatchingElement(expectedResult)).toEqual(true);
+    });
+  });
+
+  describe("onBeforeOpen", () => {
+    let onOpenSpy;
+    beforeEach(() => {
+      onOpenSpy = jest.fn();
+    });
+    afterEach(() => {
+      onOpenSpy.mockReset();
+    });
+
+    it("should open popover if Promise resolves", async () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <span>content</span>}
+          onOpen={onOpenSpy}
+          onBeforeOpen={() => Promise.resolve()}
+        />
+      );
+
+      await wrapper.find("#trigger").simulate("click");
+      expect(onOpenSpy).toBeCalledTimes(1);
+    });
+
+    it("should NOT open popover if Promise rejects", async () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <span>content</span>}
+          onOpen={onOpenSpy}
+          onBeforeOpen={() => Promise.reject()}
+        />
+      );
+
+      await wrapper.find("#trigger").simulate("click");
+      expect(onOpenSpy).not.toBeCalled();
+    });
+
+    it("should wait for Promise to resolve before opening popover", async () => {
+      let resolvePromise;
+
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <span>content</span>}
+          onOpen={onOpenSpy}
+          onBeforeOpen={() =>
+            new Promise(resolve => (resolvePromise = resolve))
+          }
+        />
+      );
+
+      await wrapper.find("#trigger").simulate("click");
+      expect(onOpenSpy).toBeCalledTimes(0);
+
+      await resolvePromise();
+      expect(onOpenSpy).toBeCalledTimes(1);
+    });
+
+    it("should open popover immediately if given function don't return a Promise", async () => {
+      const wrapper = shallow(
+        <Popover
+          trigger={<span>trigger</span>}
+          content={() => <span>content</span>}
+          onOpen={onOpenSpy}
+          onBeforeOpen={() => "whatever"}
+        />
+      );
+
+      await wrapper.find("#trigger").simulate("click");
+      expect(onOpenSpy).toBeCalledTimes(1);
     });
   });
 });
