@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.2.2...@crave/farmblocks-filter-popover@1.3.0) (2019-02-18)
+
+
+### Features
+
+* **package.json:** update react and related packages ([b34fbee](https://github.com/CraveFood/farmblocks/commit/b34fbee)), closes [#693](https://github.com/CraveFood/farmblocks/issues/693)
+
+
+
+
+
 ## [1.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.2.1...@crave/farmblocks-filter-popover@1.2.2) (2019-02-13)
 
 **Note:** Version bump only for package @crave/farmblocks-filter-popover

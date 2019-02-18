@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@2.1.1...@crave/farmblocks-hoc-validation-messages@2.2.0) (2019-02-18)
+
+
+### Features
+
+* **package.json:** update react and related packages ([b34fbee](https://github.com/CraveFood/farmblocks/commit/b34fbee)), closes [#693](https://github.com/CraveFood/farmblocks/issues/693)
+
+
+
+
+
 ## [2.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@2.1.0...@crave/farmblocks-hoc-validation-messages@2.1.1) (2019-02-13)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-validation-messages

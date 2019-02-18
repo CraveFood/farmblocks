@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.2.2...@crave/farmblocks-search-field@3.3.0) (2019-02-18)
+
+
+### Features
+
+* **package.json:** update react and related packages ([b34fbee](https://github.com/CraveFood/farmblocks/commit/b34fbee)), closes [#693](https://github.com/CraveFood/farmblocks/issues/693)
+
+
+
+
+
 ## [3.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.2.1...@crave/farmblocks-search-field@3.2.2) (2019-02-13)
 
 **Note:** Version bump only for package @crave/farmblocks-search-field
