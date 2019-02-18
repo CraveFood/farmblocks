@@ -12,16 +12,16 @@
     "test": "jest",
     "snyk": "snyk test",
     "lint": "eslint -c .eslintrc.js --ignore-path .eslintignore",
-    "lint.test": "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
-    "coverage": "yarn test --runInBand --ci --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "lint.test":
+      "eslint -c .test.eslintrc.js  --ignore-path .test.eslintignore",
+    "coverage":
+      "yarn test --runInBand --ci --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
     "build-storybook": "build-storybook -s .storybook/assets -o docs",
     "create-component": "create-component"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
@@ -79,10 +79,10 @@
     "jest-styled-components": "^6.2.2",
     "lerna": "^3.10.5",
     "prettier": "^1.13.4",
-    "prop-types": "^15.7.1",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-test-renderer": "^16.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-test-renderer": "^16.8.2",
     "recompose": "^0.30.0",
     "snyk": "^1.122.0",
     "styled-components": "^4.1.3"
