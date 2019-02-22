@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.2.0...@crave/farmblocks-input-select@3.3.0) (2019-02-22)
+
+
+### Features
+
+* **README:**  Adds new property to component API ([92b559e](https://github.com/CraveFood/farmblocks/commit/92b559e))
+* **Select:** When Select has ID, add that in items too ([177f59f](https://github.com/CraveFood/farmblocks/commit/177f59f))
+* **Storybook:** Adds new property case to storybook documentation ([c1bca3b](https://github.com/CraveFood/farmblocks/commit/c1bca3b))
+
+
+
+
+
 # [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.1.2...@crave/farmblocks-input-select@3.2.0) (2019-02-18)
 
 
