@@ -29,6 +29,15 @@ storiesOf("Select Input", module)
       onChange={action("onChange")}
     />
   ))
+  .add("Default with id", () => (
+    <Select
+      placeholder="Select fruit"
+      id="select-fruit"
+      label="Fruit"
+      items={items}
+      onChange={action("onChange")}
+    />
+  ))
   .add("With value", () => (
     <Select
       placeholder="Select fruit"

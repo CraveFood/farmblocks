@@ -16,7 +16,11 @@ import Item from "./components/Item";
 import EmptyCard from "./components/EmptyCard";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 
-const EnhancedInput = compose(withMessages, formInput, withImage)("input");
+const EnhancedInput = compose(
+  withMessages,
+  formInput,
+  withImage
+)("input");
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
@@ -142,7 +146,12 @@ class Select extends React.Component {
         {this.props.renderItem ? (
           this.props.renderItem(item, selected)
         ) : (
-          <Item label={item.label} image={item.image} selected={selected} />
+          <Item
+            label={item.label}
+            id={this.props.id && `${this.props.id}-item-${item.label}`}
+            image={item.image}
+            selected={selected}
+          />
         )}
       </DropdownItemWrapper>
     );

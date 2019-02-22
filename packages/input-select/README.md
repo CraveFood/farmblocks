@@ -54,13 +54,14 @@ This code will render:
 | disableSearch    | Disables item search                                                                                                               | boolean                                                            |          | false       |
 | maxHeight        | Set a maximum height for the menu                                                                                                  | string                                                             |          |             |
 | fontSize         | One of the constants in `fontSizes` from `farmblocks-theme` package. For convenience, `fontSizes` is also exported on this package | number                                                             |          |             |
+| id               | DOM element Id attribute                                                                                                           | string                                                             |          |             |
 
 ## Subcomponent: Item
 
 This subcomponent is exported so it can reused by components that have similar
 visuals:
 
-* `@crave/farmblocks-search-field`
+- `@crave/farmblocks-search-field`
 
 ### Usage
 
@@ -77,10 +78,11 @@ const Component = () => (
 
 ### API
 
-| Property | Description                                  | Type   | Required | Default |
-| -------- | -------------------------------------------- | ------ | -------- | ------- |
-| label    | Text to display on Item                      | string | x        |         |
-| image    | Path for image to display on Item (optional) | string |          |         |
+| Property | Description                       | Type   | Required | Default |
+| -------- | --------------------------------- | ------ | -------- | ------- |
+| label    | Text to display on Item           | string | x        |         |
+| image    | Path for image to display on Item | string |          |         |
+| id       | DOM element Id attribute          | string |          |         |
 
 ## License
 

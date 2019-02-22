@@ -13,9 +13,9 @@ const ItemImage = styled(Image)`
 
 class Item extends React.Component {
   render() {
-    const { selected, image, label } = this.props;
+    const { selected, image, label, id } = this.props;
     return (
-      <ItemContainer>
+      <ItemContainer id={id}>
         {image ? (
           <LabelContainer>
             <ItemImage src={image} size={thumbnailSizes.SMALL} /> {label}
@@ -32,6 +32,7 @@ class Item extends React.Component {
 Item.propTypes = {
   selected: PropTypes.bool,
   image: PropTypes.string,
+  id: PropTypes.string,
   label: PropTypes.string.isRequired
 };
 
