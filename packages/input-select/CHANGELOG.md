@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.3.0...@crave/farmblocks-input-select@3.4.0) (2019-02-25)
+
+
+### Features
+
+* **Select:** Use value to compose Item id ([0647cee](https://github.com/CraveFood/farmblocks/commit/0647cee))
+
+
+
+
+
 # [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.2.0...@crave/farmblocks-input-select@3.3.0) (2019-02-22)
 
 
