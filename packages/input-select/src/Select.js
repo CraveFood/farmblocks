@@ -148,7 +148,7 @@ class Select extends React.Component {
         ) : (
           <Item
             label={item.label}
-            id={this.props.id && `${this.props.id}-item-${item.label}`}
+            id={this.props.id && `${this.props.id}-item-${item.value}`}
             image={item.image}
             selected={selected}
           />
