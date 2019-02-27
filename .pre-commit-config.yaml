@@ -1,12 +1,12 @@
 fail_fast: true
 repos:
--   repo: https://github.com/prettier/prettier
+  - repo: https://github.com/prettier/prettier
     # see https://github.com/prettier/prettier/issues/4637#issuecomment-396475333
-    sha: '1.12.1'
+    rev: "1.16.4"
     hooks:
       - id: prettier
 
--   repo: local
+  - repo: local
     hooks:
       - id: eslint-app
         name: eslint-app
@@ -16,7 +16,7 @@ repos:
           - "--ignore-path=.eslintignore"
         language: system
         files: '^(?!.*\.test).*\.js$'
-        exclude: '^docs'
+        exclude: "^docs"
 
       - id: eslint-test
         name: eslint-test
@@ -26,4 +26,3 @@ repos:
           - "--ignore-path=.test.eslintignore"
         language: system
         files: '\.test\.js$'
-
