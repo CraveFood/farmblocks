@@ -114,12 +114,11 @@ const formInput = WrappedComponent => {
         inputProps.type && inputProps.type.toLowerCase() === "search";
       const iconName = leftIcon || (isSearch && "wg-search");
 
-      const clearButton = (clearable || isSearch) &&
-        this.state.value && (
-          <Link className="clear" onClick={this.handleClearClick}>
-            <i className={clearIcon} />
-          </Link>
-        );
+      const clearButton = (clearable || isSearch) && this.state.value && (
+        <Link className="clear" onClick={this.handleClearClick}>
+          <i className={clearIcon} />
+        </Link>
+      );
 
       const isDropdown = inputProps.role === "combobox";
       const dropDownIcon = isDropdown && (

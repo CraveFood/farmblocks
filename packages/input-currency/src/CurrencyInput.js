@@ -2,16 +2,17 @@ import { compose } from "recompose";
 import ReactNumberFormat from "react-number-format";
 import TextInput, {
   EnhancedInput,
-  withMargin
+  withMargin,
 } from "@crave/farmblocks-input-text";
 
-const EnhancedCurrencyInput = compose(withMargin, EnhancedInput)(
-  ReactNumberFormat
-);
+const EnhancedCurrencyInput = compose(
+  withMargin,
+  EnhancedInput,
+)(ReactNumberFormat);
 
 EnhancedCurrencyInput.propTypes = {
   ...ReactNumberFormat.propTypes,
-  ...TextInput.propTypes
+  ...TextInput.propTypes,
 };
 
 EnhancedCurrencyInput.defaultProps = {
@@ -21,7 +22,7 @@ EnhancedCurrencyInput.defaultProps = {
   decimalSeparator: ".",
   decimalScale: 2,
   fixedDecimalScale: true,
-  allowNegative: false
+  allowNegative: false,
 };
 
 export default EnhancedCurrencyInput;

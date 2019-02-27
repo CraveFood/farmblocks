@@ -63,14 +63,18 @@ describe("Checkbox", function() {
     const blurMock = jest.fn();
     const component = mount(<Switch />);
     component.find("label").simulate("mouseUp", {});
-    component.find("input").simulate("change", { target: { blur: blurMock, checked: true } });
+    component
+      .find("input")
+      .simulate("change", { target: { blur: blurMock, checked: true } });
     expect(blurMock).toBeCalled();
   });
 
   test("After a mouse-initiated onChange on a Switch the clicked flag is cleared", function() {
     const component = mount(<Switch />);
     component.find("label").simulate("mouseUp", {});
-    component.find("input").simulate("change", { target: { blur: ()=>null, checked: true } });
+    component
+      .find("input")
+      .simulate("change", { target: { blur: () => null, checked: true } });
     const newState = component.state();
     expect(newState.clicked).toBe(false);
   });

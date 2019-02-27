@@ -153,34 +153,32 @@ export default WrappedComponent => {
             }}
           />
           {covered && !isEditing && this._renderCover()}
-          {covered &&
-            displayButtons &&
-            isEditing && (
-              <div>
-                <Button
-                  id="cancel-button"
-                  onClick={this.onCancel}
-                  size={buttonSizes.MEDIUM}
-                  className="margin-button"
-                >
-                  {cancelButtonText}
-                </Button>
-                <Button
-                  id="save-button"
-                  onClick={() => {
-                    this.onReplace(this.state.editedValue);
-                  }}
-                  onMouseDown={e => {
-                    // We do this in order to avoid onBlur event on input
-                    e.preventDefault();
-                  }}
-                  type={buttonTypes.SECONDARY}
-                  size={buttonSizes.MEDIUM}
-                >
-                  {saveButtonText}
-                </Button>
-              </div>
-            )}
+          {covered && displayButtons && isEditing && (
+            <div>
+              <Button
+                id="cancel-button"
+                onClick={this.onCancel}
+                size={buttonSizes.MEDIUM}
+                className="margin-button"
+              >
+                {cancelButtonText}
+              </Button>
+              <Button
+                id="save-button"
+                onClick={() => {
+                  this.onReplace(this.state.editedValue);
+                }}
+                onMouseDown={e => {
+                  // We do this in order to avoid onBlur event on input
+                  e.preventDefault();
+                }}
+                type={buttonTypes.SECONDARY}
+                size={buttonSizes.MEDIUM}
+              >
+                {saveButtonText}
+              </Button>
+            </div>
+          )}
         </Container>
       );
     }
