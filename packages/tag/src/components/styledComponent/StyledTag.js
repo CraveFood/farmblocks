@@ -27,7 +27,7 @@ const typeStyles = {
     &:hover {
       background-color: ${colorConstants.GREY_16};
     }
-  `
+  `,
 };
 
 const StyledTag = styled.div`

@@ -16,7 +16,13 @@ const Tag = props => {
       )}
       {text || children}
       {onRemove && (
-        <div className="close-icon" onClick={() => onRemove(value)}>
+        <div
+          role="button"
+          tabIndex="0"
+          className="close-icon"
+          onClick={() => onRemove(value)}
+          onKeyDown={() => onRemove(value)}
+        >
           <i className="wg-close" />
         </div>
       )}
@@ -25,16 +31,16 @@ const Tag = props => {
 };
 
 Tag.defaultProps = {
-  type: tagTypes.SECONDARY
+  type: tagTypes.SECONDARY,
 };
 
 Tag.propTypes = {
   text: PropTypes.string,
   onRemove: PropTypes.func,
-  value: PropTypes.any,
+  value: PropTypes.any, // eslint-disable-line react/forbid-prop-types
   type: PropTypes.oneOf(values(tagTypes)),
   icon: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default Tag;

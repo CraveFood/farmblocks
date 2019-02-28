@@ -1,6 +1,6 @@
 const tagTypes = {
   NEUTRAL: "NEUTRAL",
-  SECONDARY: "SECONDARY"
+  SECONDARY: "SECONDARY",
 };
 
 module.exports = tagTypes;

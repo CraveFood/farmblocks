@@ -11,7 +11,7 @@ describe("Tag", function() {
     const onRemoveMock = jest.fn();
     const value = { value: "some value" };
     const wrapper = shallow(
-      <Tag text="some text" value={value} onRemove={onRemoveMock} />
+      <Tag text="some text" value={value} onRemove={onRemoveMock} />,
     );
     wrapper.find(".close-icon").simulate("click");
 
