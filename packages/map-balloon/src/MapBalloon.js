@@ -31,7 +31,7 @@ const MapBalloon = ({
   imageTextSize,
   value,
   onPinClick,
-  onBalloonClick
+  onBalloonClick,
 }) => {
   const interactivePin = !!onPinClick;
   const interactiveBalloon = !!onBalloonClick;
@@ -101,9 +101,7 @@ const MapBalloon = ({
 
 export const requiredIfNoSingleImage = propType => (...args) => {
   const [props] = args;
-  return props["singleImage"]
-    ? propType(...args)
-    : propType.isRequired(...args);
+  return props.singleImage ? propType(...args) : propType.isRequired(...args);
 };
 
 MapBalloon.propTypes = {
@@ -125,7 +123,7 @@ MapBalloon.propTypes = {
   imageTextSize: PropTypes.number,
   onPinClick: PropTypes.func,
   onBalloonClick: PropTypes.func,
-  value: PropTypes.any
+  value: PropTypes.any, // eslint-disable-line
 };
 
 MapBalloon.defaultProps = {
@@ -140,7 +138,7 @@ MapBalloon.defaultProps = {
   pinSize: 40,
   balloonSize: 260,
   captionSize: fontSizes.LARGE,
-  imageTextSize: 28
+  imageTextSize: 28,
 };
 
 export default MapBalloon;

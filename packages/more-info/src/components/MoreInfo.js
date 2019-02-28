@@ -8,18 +8,18 @@ import StyledInfo from "../styledComponents/StyledInfo";
 
 class MoreInfo extends Component {
   state = {
-    tooltipVisible: false
+    tooltipVisible: false,
   };
 
   showTooltip = () => {
     this.setState({
-      tooltipVisible: true
+      tooltipVisible: true,
     });
   };
 
   hideTooltip = () => {
     this.setState({
-      tooltipVisible: false
+      tooltipVisible: false,
     });
   };
 
@@ -55,12 +55,12 @@ MoreInfo.propTypes = {
   icon: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
-  tooltipAlign: PropTypes.oneOf(["left", "right", "center"])
+  tooltipAlign: PropTypes.oneOf(["left", "right", "center"]),
 };
 
 MoreInfo.defaultProps = {
   tooltipAlign: "center",
-  icon: "wg-question"
+  icon: "wg-question",
 };
 
 export default MoreInfo;

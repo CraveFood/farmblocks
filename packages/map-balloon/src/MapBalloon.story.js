@@ -1,3 +1,5 @@
+/* eslint-disable react/no-multi-comp */
+
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
@@ -20,8 +22,8 @@ const DemoGrid = props => <StyledDemoGrid {...props} />;
 const imageSet = [
   {
     image: "https://picsum.photos/640/?random",
-    name: "Romaine Lettuce"
-  }
+    name: "Romaine Lettuce",
+  },
 ];
 
 storiesOf("Map Balloon", module)
@@ -49,12 +51,14 @@ storiesOf("Map Balloon", module)
   .add("Animated", () => {
     class AlternateOpen extends React.Component {
       state = { open: true };
+
       componentDidMount() {
         this.interval = window.setInterval(
           () => this.setState(prevState => ({ open: !prevState.open })),
-          2000
+          2000,
         );
       }
+
       componentWillUnmount = () => {
         window.clearInterval(this.interval);
       };
@@ -93,7 +97,7 @@ storiesOf("Map Balloon", module)
       <MapBalloon
         x={400}
         y={400}
-        singleImage={"https://picsum.photos/180/?random"}
+        singleImage="https://picsum.photos/180/?random"
       />
     </DemoGrid>
   ))
@@ -196,8 +200,10 @@ storiesOf("Map Balloon", module)
     () => {
       class ToggleOpen extends React.Component {
         state = { open: false };
+
         handlePinClick = () =>
           this.setState(prevState => ({ open: !prevState.open }));
+
         render() {
           return (
             <MapBalloon
@@ -223,6 +229,6 @@ storiesOf("Map Balloon", module)
       );
     },
     {
-      info: `MapBalloon is a stateless component, it won't open automatically on pin click. This story is just for animation tests.`
-    }
+      info: `MapBalloon is a stateless component, it won't open automatically on pin click. This story is just for animation tests.`,
+    },
   );

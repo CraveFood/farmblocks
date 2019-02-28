@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 Wrapper.propTypes = {
   x: PropTypes.number.isRequired,
   y: PropTypes.number.isRequired,
-  opacity: PropTypes.number
+  opacity: PropTypes.number,
 };
 
 export default Wrapper;
