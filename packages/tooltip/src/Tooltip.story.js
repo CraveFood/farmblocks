@@ -3,7 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Card from "@crave/farmblocks-card";
 
-import Tooltip, { alignments } from "./";
+import Tooltip, { alignments } from ".";
 
 storiesOf("Tooltip", module)
   .add("isVisible true - left aligned", () => (
@@ -43,7 +43,7 @@ storiesOf("Tooltip", module)
   ))
   .add("with card", () => (
     <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible={true}>
+      <Tooltip isVisible>
         <Card>this is a Card</Card>
       </Tooltip>
     </div>
@@ -58,7 +58,7 @@ storiesOf("Tooltip", module)
       style={{
         display: "flex",
         justifyContent: "space-between",
-        width: "100%"
+        width: "100%",
       }}
     >
       <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
@@ -81,7 +81,7 @@ storiesOf("Tooltip", module)
         border: "solid 1px orangered",
         display: "flex",
         justifyContent: "space-between",
-        width: "600px"
+        width: "600px",
       }}
       className="exampleContainer"
     >

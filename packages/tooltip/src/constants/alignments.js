@@ -7,5 +7,5 @@ export default {
   LEFT,
   CENTER,
   RIGHT,
-  AUTO
+  AUTO,
 };

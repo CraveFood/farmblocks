@@ -23,8 +23,9 @@ export const getAutoAlign = (tooltipRef, bondariesSelector) => {
 
 class Tooltip extends React.Component {
   state = {
-    align: this.props.align
+    align: this.props.align,
   };
+
   componentDidMount = () => {
     const { align: originalAlign, bondariesSelector } = this.props;
     const align =
@@ -43,7 +44,9 @@ class Tooltip extends React.Component {
           <StyledTooltip
             {...this.props}
             align={this.state.align}
-            ref={element => (this.tooltipRef = element)}
+            ref={element => {
+              this.tooltipRef = element;
+            }}
           >
             {content}
           </StyledTooltip>
@@ -63,14 +66,14 @@ Tooltip.propTypes = {
   hideArrow: PropTypes.bool,
   padding: PropTypes.string,
   top: PropTypes.string,
-  overflow: PropTypes.string
+  overflow: PropTypes.string,
 };
 
 Tooltip.defaultProps = {
   isVisible: true,
   align: alignments.LEFT,
   zIndex: 1000,
-  top: "15px"
+  top: "15px",
 };
 
 export default Tooltip;
