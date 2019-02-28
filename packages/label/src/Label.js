@@ -24,7 +24,6 @@ const TextLabel = styled(Text)`
   order: 1;
   text-transform: uppercase;
   margin-bottom: 8px;
-  color: ${labelColor};
   float: left;
 `;
 
@@ -56,7 +55,7 @@ const Label = ({ children, moreInfoAlign, moreInfoContent, ...props }) => {
 };
 
 Label.defaultProps = {
-  moreInfoAlign: alignments.LEFT
+  moreInfoAlign: alignments.LEFT,
 };
 
 Label.propTypes = {
@@ -66,7 +65,7 @@ Label.propTypes = {
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
   protected: PropTypes.bool,
-  invalid: PropTypes.bool
+  invalid: PropTypes.bool,
 };
 
 export default Label;

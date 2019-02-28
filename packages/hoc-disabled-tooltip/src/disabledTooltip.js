@@ -10,7 +10,7 @@ export const disabledTooltipProps = {
   tooltipAlign: PropTypes.oneOf(["left", "right"]),
   tooltipText: PropTypes.string,
   onMouseLeave: PropTypes.func,
-  onMouseOver: PropTypes.func
+  onMouseOver: PropTypes.func,
 };
 
 function disabledTooltip(wrappedComponentType) {
@@ -29,12 +29,12 @@ function disabledTooltip(wrappedComponentType) {
 
   Component.displayName = wrapDisplayName(
     wrappedComponentType,
-    "disabledTooltip"
+    "disabledTooltip",
   );
 
   Component.propTypes = {
     ...WrappedComponent.propTypes,
-    ...disabledTooltipProps
+    ...disabledTooltipProps,
   };
 
   Component.defaultProps = {
@@ -45,7 +45,7 @@ function disabledTooltip(wrappedComponentType) {
     onMouseOver: () => null,
     onMouseLeave: () => null,
     tooltipAlign: "left",
-    tooltipText: "This field is disabled."
+    tooltipText: "This field is disabled.",
   };
 
   return Component;

@@ -70,7 +70,7 @@ const FormWrapper = props => {
 
 FormWrapper.defaultProps = {
   cancelLabel: "Cancel",
-  saveLabel: "Save"
+  saveLabel: "Save",
 };
 
 FormWrapper.propTypes = {
@@ -81,7 +81,7 @@ FormWrapper.propTypes = {
   title: PropTypes.string,
   cancelLabel: PropTypes.string,
   saveLabel: PropTypes.string,
-  loading: PropTypes.bool
+  loading: PropTypes.bool,
 };
 
 export default FormWrapper;

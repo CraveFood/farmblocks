@@ -15,14 +15,14 @@ module.exports = api => {
       "@babel/plugin-syntax-dynamic-import",
       "@babel/plugin-syntax-import-meta",
       ["@babel/plugin-proposal-class-properties", { loose: false }],
-      "@babel/plugin-proposal-json-strings"
+      "@babel/plugin-proposal-json-strings",
     ],
     env: {
       test: {
-        plugins: ["babel-plugin-require-context-hook"]
-      }
+        plugins: ["babel-plugin-require-context-hook"],
+      },
     },
-    //allow imports from transpiled farmblocks packages
-    sourceType: "unambiguous"
+    // allow imports from transpiled farmblocks packages
+    sourceType: "unambiguous",
   };
 };
