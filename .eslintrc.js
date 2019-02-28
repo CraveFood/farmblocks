@@ -6,12 +6,12 @@ module.exports = {
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb",
-    "prettier" // Turns off all rules that are unnecessary or might conflict with Prettier.
+    "prettier", // Turns off all rules that are unnecessary or might conflict with Prettier.
   ],
   plugins: [
     "react",
     "babel",
-    "prettier" // Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
+    "prettier", // Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
   ],
   rules: {
     "prettier/prettier": "error", // Prettier rules must throw errors
@@ -24,20 +24,22 @@ module.exports = {
     "react/jsx-one-expression-per-line": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-wrap-multilines": "off",
-    "react/button-has-type": "off",
     "react/no-array-index-key": "warn",
     "react/forbid-prop-types": "warn",
     "react/no-did-update-set-state": "warn",
     "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
     "react/sort-comp": [
       "error",
-      { order: ["lifecycle", "everything-else", "render", "static-methods"] }
-    ]
+      { order: ["lifecycle", "everything-else", "render", "static-methods"] },
+    ],
   },
-  overrides: {
-    files: "**/*.{test,story,testFramework}.js",
-    rules: {
-      "import/no-extraneous-dependencies": "off"
-    }
-  }
+  overrides: [
+    {
+      files: "**/*.{test,story,testFramework}.js",
+      rules: {
+        "import/no-extraneous-dependencies": "off",
+        "react/button-has-type": "off",
+      },
+    },
+  ],
 };
