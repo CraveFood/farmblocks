@@ -7,38 +7,38 @@ import {
   POSITIVE,
   NEGATIVE,
   CLOSED,
-  OFF_NEUTRAL
+  OFF_NEUTRAL,
 } from "./buttonTypes";
 
 export default {
   [PRIMARY]: {
     color: colorConstants.RED_ORANGE,
-    hoverColor: colorConstants.STRAWBERRY
+    hoverColor: colorConstants.STRAWBERRY,
   },
   [NEUTRAL]: {
     textColor: colorConstants.OYSTER,
     iconColor: colorConstants.GREY_32,
     textHoverColor: colorConstants.INDIGO_MILK_CAP,
-    color: "#FFFFFF"
+    color: "#FFFFFF",
   },
   [SECONDARY]: {
     color: colorConstants.INDIGO_MILK_CAP,
-    hoverColor: colorConstants.BLUE_CORN
+    hoverColor: colorConstants.BLUE_CORN,
   },
   [POSITIVE]: {
     color: colorConstants.LETTUCE,
-    hoverColor: colorConstants.AVOCADO
+    hoverColor: colorConstants.AVOCADO,
   },
   [NEGATIVE]: {
     color: colorConstants.STRAWBERRY,
-    hoverColor: colorConstants.TOMATO
+    hoverColor: colorConstants.TOMATO,
   },
   [CLOSED]: {
     color: colorConstants.GRAPE,
-    hoverColor: colorConstants.EGGPLANT
+    hoverColor: colorConstants.EGGPLANT,
   },
   [OFF_NEUTRAL]: {
     color: colorConstants.GREY_16,
-    hoverColor: colorConstants.INDIGO_MILK_CAP
-  }
+    hoverColor: colorConstants.INDIGO_MILK_CAP,
+  },
 };

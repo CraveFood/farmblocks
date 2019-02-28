@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import disabledTooltip, {
-  disabledTooltipProps
+  disabledTooltipProps,
 } from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import buttonSizes from "./constants/buttonSizes";
@@ -10,7 +10,10 @@ import StyledButton from "./styledComponents/Button";
 
 const EnhancedButton = disabledTooltip(StyledButton);
 
-class Button extends React.Component {
+// We need a class component here because some components are passing
+// ref to Button
+// eslint-disable-next-line react/prefer-stateless-function
+export default class Button extends React.Component {
   render() {
     const {
       disabled,
@@ -53,31 +56,29 @@ class Button extends React.Component {
       </EnhancedButton>
     );
   }
+
+  static defaultProps = {
+    size: buttonSizes.SMALL,
+    type: buttonTypes.NEUTRAL,
+  };
+
+  static propTypes = {
+    activated: PropTypes.bool,
+    icon: PropTypes.string,
+    rightIcon: PropTypes.string,
+    onClick: PropTypes.func,
+    text: PropTypes.string,
+    children: PropTypes.node,
+    size: PropTypes.oneOf(Object.keys(buttonSizes)),
+    type: PropTypes.oneOf(Object.keys(buttonTypes)),
+    fluid: PropTypes.bool,
+    loading: PropTypes.bool,
+    boxShadow: PropTypes.string,
+    paddingX: PropTypes.string,
+    fontSize: PropTypes.string,
+    fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    textColor: PropTypes.string,
+    ...disabledTooltipProps,
+    // ... and all properties accepted by the html button
+  };
 }
-
-Button.defaultProps = {
-  size: buttonSizes.SMALL,
-  type: buttonTypes.NEUTRAL
-};
-
-Button.propTypes = {
-  activated: PropTypes.bool,
-  icon: PropTypes.string,
-  rightIcon: PropTypes.string,
-  onClick: PropTypes.func,
-  text: PropTypes.string,
-  children: PropTypes.node,
-  size: PropTypes.oneOf(Object.keys(buttonSizes)),
-  type: PropTypes.oneOf(Object.keys(buttonTypes)),
-  fluid: PropTypes.bool,
-  loading: PropTypes.bool,
-  boxShadow: PropTypes.string,
-  paddingX: PropTypes.string,
-  fontSize: PropTypes.string,
-  fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  textColor: PropTypes.string,
-  ...disabledTooltipProps
-  //... and all properties accepted by the html button
-};
-
-export default Button;

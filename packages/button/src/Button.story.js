@@ -58,7 +58,7 @@ storiesOf("Button", module)
       style={{
         backgroundColor: "rgba(0,0,0,0.32)",
         padding: "10px",
-        display: "inline-block"
+        display: "inline-block",
       }}
     >
       <Button
@@ -73,7 +73,7 @@ storiesOf("Button", module)
       style={{
         backgroundColor: "rgba(0,0,0,0.32)",
         padding: "10px",
-        display: "inline-block"
+        display: "inline-block",
       }}
     >
       <Button
@@ -216,8 +216,8 @@ storiesOf("Button", module)
       theme={{
         [buttonTypes.PRIMARY]: {
           color: "deeppink",
-          hoverColor: "blueviolet"
-        }
+          hoverColor: "blueviolet",
+        },
       }}
     >
       <Button
@@ -234,8 +234,8 @@ storiesOf("Button", module)
           textColor: "aqua",
           iconColor: "aqua",
           textHoverColor: "slateblue",
-          color: "chartreuse"
-        }
+          color: "chartreuse",
+        },
       }}
     >
       <Button

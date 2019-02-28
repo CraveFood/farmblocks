@@ -1,5 +1,5 @@
 const BUTTON_SIZES = {
   SMALL: "SMALL",
-  MEDIUM: "MEDIUM"
+  MEDIUM: "MEDIUM",
 };
 module.exports = BUTTON_SIZES;
