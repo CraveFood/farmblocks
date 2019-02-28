@@ -82,7 +82,9 @@ storiesOf("Popover", module)
           <button onClick={dismiss}>dismiss foo</button>
           <Popover
             trigger={<button>other popover</button>}
-            content={dismiss => <button onClick={dismiss}>dismiss bar</button>}
+            content={dismissSecond => (
+              <button onClick={dismissSecond}>dismiss bar</button>
+            )}
           />
         </div>
       )}
@@ -105,7 +107,7 @@ storiesOf("Popover", module)
           style={{
             background: "AliceBlue",
             padding: 20,
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           Trigger
@@ -161,6 +163,6 @@ storiesOf("Popover", module)
     {
       info: `
       if \`onBeforeOpen\` don't return a promise, the popover will open immediately
-      `
-    }
+      `,
+    },
   );

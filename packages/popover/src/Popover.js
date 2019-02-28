@@ -11,18 +11,18 @@ const Container = styled.div`
 
 class Popover extends React.Component {
   state = {
-    isVisible: false
+    isVisible: false,
   };
 
   componentDidMount() {
     document.addEventListener("click", this.handleOuterClick, {
-      capture: true
+      capture: true,
     });
   }
 
   componentWillUnmount() {
     document.removeEventListener("click", this.handleOuterClick, {
-      capture: true
+      capture: true,
     });
   }
 
@@ -38,22 +38,29 @@ class Popover extends React.Component {
   };
 
   toggle = async () => {
+    // eslint-disable-next-line react/no-access-state-in-setstate
     const isVisible = !this.state.isVisible;
     const { onOpen, onClose } = this.props;
 
     try {
+      // eslint-disable-next-line babel/no-unused-expressions
       isVisible && (await this.props.onBeforeOpen?.());
     } catch (e) {
       return;
     }
-    isVisible ? onOpen?.() : onClose?.();
+
+    if (isVisible) {
+      onOpen?.();
+    } else {
+      onClose?.();
+    }
 
     this.setState({ isVisible });
   };
 
   hide = () => {
     this.setState({ isVisible: false });
-    this.props.onClose && this.props.onClose();
+    this.props.onClose?.();
   };
 
   render() {
@@ -61,10 +68,18 @@ class Popover extends React.Component {
     const { isVisible } = this.state;
     return (
       <Container
-        ref={popover => (this.popover = popover)}
+        ref={popover => {
+          this.popover = popover;
+        }}
         width={this.props.triggerWidth}
       >
-        <div id="trigger" onClick={this.toggle}>
+        <div
+          role="button"
+          id="trigger"
+          onClick={this.toggle}
+          onKeyDown={this.toggle}
+          tabIndex="0"
+        >
           {typeof trigger === "function" ? trigger(isVisible) : trigger}
         </div>
 
@@ -94,12 +109,12 @@ class Popover extends React.Component {
     onOpen: PropTypes.func,
     onBeforeOpen: PropTypes.func,
     onClose: PropTypes.func,
-    showTooltipArrow: PropTypes.bool
+    showTooltipArrow: PropTypes.bool,
   };
 
   static defaultProps = {
     triggerWidth: "auto",
-    showTooltipArrow: false
+    showTooltipArrow: false,
   };
 }
 
