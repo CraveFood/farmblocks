@@ -14,9 +14,9 @@ describe("Dropdown", function() {
       <Dropdown width="150px">
         <DropdownItem value={1}>Option 1</DropdownItem>
         <DropdownItem value={2}>Option 2</DropdownItem>
-      </Dropdown>
+      </Dropdown>,
     );
-    let tree = component.toTree();
+    const tree = component.toTree();
 
     expect(tree.props.handleSelection()).toBeFalsy();
   });
@@ -28,7 +28,7 @@ describe("Dropdown", function() {
       <Dropdown handleSelection={handleSelectionMock}>
         <DropdownItem value={1}>Option 1</DropdownItem>
         <DropdownItem value={2}>Option 2</DropdownItem>
-      </Dropdown>
+      </Dropdown>,
     );
 
     // dropdown items should be hidden after mounting component
@@ -55,7 +55,7 @@ describe("Dropdown", function() {
       <Dropdown align={align} zIndex={zIndex}>
         <DropdownItem value={1}>Option 1</DropdownItem>
         <DropdownItem value={2}>Option 2</DropdownItem>
-      </Dropdown>
+      </Dropdown>,
     );
 
     // dropdown items should be hidden after mounting component

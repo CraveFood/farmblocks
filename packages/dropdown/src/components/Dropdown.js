@@ -5,7 +5,7 @@ import Button, { buttonSizes } from "@crave/farmblocks-button";
 import {
   Button as AriaButtonWrapper,
   Wrapper as AriaWrapper,
-  Menu
+  Menu,
 } from "react-aria-menubutton";
 
 import DropdownWrapper from "../styledComponents/DropdownWrapper";
@@ -41,7 +41,7 @@ Dropdown.defaultProps = {
   handleSelection: () => false,
   text: "",
   align: "left",
-  size: buttonSizes.MEDIUM
+  size: buttonSizes.MEDIUM,
 };
 
 Dropdown.propTypes = {
@@ -53,7 +53,7 @@ Dropdown.propTypes = {
   size: PropTypes.oneOf(values(buttonSizes)),
   width: PropTypes.string,
   innerRef: PropTypes.func,
-  maxHeight: PropTypes.string
+  maxHeight: PropTypes.string,
 };
 
 export default Dropdown;
