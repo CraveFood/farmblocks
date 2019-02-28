@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import { TextAreaInput } from "./";
+import { TextAreaInput } from ".";
 
 storiesOf("Text Area Input", module)
   .add("Default", () => <TextAreaInput rows="3" />)
