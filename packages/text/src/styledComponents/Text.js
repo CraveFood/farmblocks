@@ -3,6 +3,15 @@ import { fontWeights } from "@crave/farmblocks-theme";
 
 import paragraphLineHeights from "../constants/paragraphLineHeights";
 
+const paragraphStyle = props => {
+  return (
+    props.paragraph &&
+    css`
+      line-height: ${paragraphLineHeights[props.size]};
+    `
+  );
+};
+
 const TextContainer = styled.div`
   font-family: Lato, sans-serif;
   font-size: ${props => `${props.size}px`};
@@ -24,18 +33,12 @@ const TextContainer = styled.div`
     if (props.light) {
       return fontWeights.LIGHT;
     }
+
+    return "inherit";
   }};
 
   letter-spacing: ${props => props.letterSpacing};
 `;
-
-function paragraphStyle(props) {
-  if (props.paragraph) {
-    return css`
-      line-height: ${paragraphLineHeights[props.size]};
-    `;
-  }
-}
 
 TextContainer.displayName = "TextContainer";
 
