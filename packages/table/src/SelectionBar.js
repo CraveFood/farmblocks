@@ -6,7 +6,7 @@ import StyledBar from "./styledComponents/SelectionBar";
 
 const SelectionBar = props => {
   const { selectedRows, clearSelection, height, title, children } = props;
-  const clearButtonClick = clearFn => evt => clearFn();
+  const clearButtonClick = clearFn => () => clearFn();
 
   return (
     <StyledBar height={height}>
@@ -32,7 +32,7 @@ SelectionBar.defaultProps = {
   title: itemCount =>
     itemCount === 1 ? "1 Item selected" : `${itemCount} Items selected`,
   clearButtonLabel: "Clear",
-  height: "64px"
+  height: "64px",
 };
 
 SelectionBar.propTypes = {
@@ -41,7 +41,7 @@ SelectionBar.propTypes = {
   clearSelection: PropTypes.func,
   clearButtonLabel: PropTypes.string,
   height: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default SelectionBar;
