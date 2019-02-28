@@ -26,7 +26,7 @@ describe("Carousel", () => {
     const imageSet = [
       { image: "http://example.com/1.png", name: "1" },
       { image: "http://example.com/2.png", name: "2" },
-      { image: "http://example.com/3.png", name: "3" }
+      { image: "http://example.com/3.png", name: "3" },
     ];
     const component = renderer.create(<Carousel imageSet={imageSet} />);
     const state = component.getInstance().state;
@@ -42,7 +42,7 @@ describe("Carousel", () => {
     const imageSet = [
       { image: "http://example.com/1.png", name: "1" },
       { image: "http://example.com/2.png", name: "2" },
-      { image: "http://example.com/3.png", name: "3" }
+      { image: "http://example.com/3.png", name: "3" },
     ];
     const onEndMock = jest.fn();
     renderer.create(<Carousel imageSet={imageSet} onEnd={onEndMock} />);
@@ -69,7 +69,7 @@ describe("Carousel", () => {
     const imageSet = [
       { image: "http://example.com/1.png", name: "1" },
       { image: "http://example.com/2.png", name: "2" },
-      { image: "http://example.com/3.png", name: "3" }
+      { image: "http://example.com/3.png", name: "3" },
     ];
     const component = renderer.create(<Carousel imageSet={imageSet} />);
 
@@ -92,31 +92,31 @@ describe("Carousel", () => {
 
   describe("Receiving new props", () => {
     const imageSet = [{ image: "http://example.com/1.png", name: "1" }];
-    let component, setStateSpy, setIntervalSpy;
+    let component, setStateSpy, setIntervSpy;
 
     beforeEach(() => {
       component = mount(<Carousel imageSet={imageSet} />);
       setStateSpy = jest.spyOn(component.instance(), "setState");
-      setIntervalSpy = jest.spyOn(component.instance(), "setInterval");
+      setIntervSpy = jest.spyOn(component.instance(), "setInterval");
     });
 
     afterEach(() => {
       setStateSpy.mockClear();
-      setIntervalSpy.mockClear();
+      setIntervSpy.mockClear();
     });
 
     test("activeItem should be set to 0 when imageSet changes", () => {
       component.setProps({ imageSet: [] });
 
       expect(setStateSpy).toHaveBeenCalledWith({ activeItem: 0 });
-      expect(setIntervalSpy).toHaveBeenCalledTimes(1);
+      expect(setIntervSpy).toHaveBeenCalledTimes(1);
     });
 
     test("state should not change when imageSet doesn't change", () => {
       component.setProps({ imageSet });
 
       expect(setStateSpy).not.toHaveBeenCalled();
-      expect(setIntervalSpy).not.toHaveBeenCalled();
+      expect(setIntervSpy).not.toHaveBeenCalled();
     });
   });
 });

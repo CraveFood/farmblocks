@@ -67,7 +67,7 @@ storiesOf("Filter Popover", module)
           background: "gainsboro",
           zIndex: 1,
           position: "relative",
-          opacity: 0.5
+          opacity: 0.5,
         }}
       >
         Under
@@ -78,7 +78,7 @@ storiesOf("Filter Popover", module)
           background: "gainsboro",
           zIndex: 3,
           position: "relative",
-          opacity: 0.5
+          opacity: 0.5,
         }}
       >
         Over

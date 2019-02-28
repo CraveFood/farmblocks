@@ -7,40 +7,40 @@ import Carousel from ".";
 const imageSet = [
   {
     image: "https://picsum.photos/640/?image=1080",
-    name: "Organic Pepper"
+    name: "Organic Pepper",
   },
   {
     image: "https://picsum.photos/640/?image=824",
-    name: "Tomato"
+    name: "Tomato",
   },
   {
     image: "https://picsum.photos/640/?image=889",
-    name: "Grapefruit"
+    name: "Grapefruit",
   },
   {
     image: "https://picsum.photos/640/?image=674",
-    name: "Tomato"
+    name: "Tomato",
   },
   {
     image: "https://picsum.photos/640/?image=292",
-    name: "Tomato"
+    name: "Tomato",
   },
   {
     image: "https://picsum.photos/640/?image=517",
-    name: "Tomato"
+    name: "Tomato",
   },
   {
     image: "https://picsum.photos/640/?image=627",
-    name: "Tomato"
+    name: "Tomato",
   },
   {
     image: "https://picsum.photos/640/?image=75",
-    name: "Tomato"
+    name: "Tomato",
   },
   {
     image: "https://picsum.photos/640/?image=766",
-    name: "Romaine Lettuce"
-  }
+    name: "Romaine Lettuce",
+  },
 ];
 
 storiesOf("Carousel", module)
@@ -66,7 +66,7 @@ storiesOf("Carousel", module)
     <Carousel
       itemConfig={{
         displayTime: 6.5,
-        transitionTime: 2.5
+        transitionTime: 2.5,
       }}
       imageSet={imageSet}
     />
@@ -79,7 +79,7 @@ storiesOf("Carousel", module)
         margin: 2,
         displayTime: 2,
         transitionTime: 0.5,
-        border: { radius: "100%", width: "4px", color: "green" }
+        border: { radius: "100%", width: "4px", color: "green" },
       }}
       imageSet={imageSet}
     />
