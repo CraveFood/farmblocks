@@ -20,7 +20,7 @@ storiesOf("Footer", module)
       helpLinkText="Get support"
       onHelpLinkClick={action("onHelpLinkClick")}
       actions={[
-        <Button onClick={action("onSaveClick")} text="Save" key="save" />
+        <Button onClick={action("onSaveClick")} text="Save" key="save" />,
       ]}
       helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
@@ -43,7 +43,7 @@ storiesOf("Footer", module)
           type={buttonTypes.PRIMARY}
           key="save"
           size={buttonSizes.MEDIUM}
-        />
+        />,
       ]}
       helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
@@ -52,7 +52,7 @@ storiesOf("Footer", module)
     <Footer
       helpText="Have questions about account setup?"
       actions={[
-        <Button onClick={action("onSaveClick")} text="Save" key="save" />
+        <Button onClick={action("onSaveClick")} text="Save" key="save" />,
       ]}
       helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
@@ -63,7 +63,7 @@ storiesOf("Footer", module)
       helpLinkText="Get support"
       helpLinkHref="#"
       actions={[
-        <Button onClick={action("onSaveClick")} text="Save" key="save" />
+        <Button onClick={action("onSaveClick")} text="Save" key="save" />,
       ]}
     />
   ))

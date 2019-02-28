@@ -53,7 +53,7 @@ Footer.propTypes = {
   helpLinkHref: PropTypes.string,
   onHelpLinkClick: PropTypes.func,
   helpFontSize: PropTypes.number,
-  actions: PropTypes.arrayOf(PropTypes.node)
+  actions: PropTypes.arrayOf(PropTypes.node),
 };
 
 export default Footer;
