@@ -33,14 +33,22 @@ class MoreInfo extends Component {
           className={this.state.tooltipVisible && "hovered"}
         >
           {this.props.text}
-          <div className="icon" onMouseOver={this.showTooltip}>
+          <div
+            className="icon"
+            onMouseOver={this.showTooltip}
+            onFocus={this.showTooltip}
+          >
             <i className={this.props.icon} />
             <Tooltip
               className="tooltip"
               isVisible={this.state.tooltipVisible}
               align={this.props.tooltipAlign}
             >
-              <div className="hit-area" onMouseOut={this.hideTooltip}>
+              <div
+                className="hit-area"
+                onMouseOut={this.hideTooltip}
+                onBlur={this.hideTooltip}
+              >
                 {this.props.children}
               </div>
             </Tooltip>
@@ -52,7 +60,7 @@ class MoreInfo extends Component {
 }
 
 MoreInfo.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
   tooltipAlign: PropTypes.oneOf(["left", "right", "center"]),
