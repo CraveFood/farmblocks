@@ -29,7 +29,7 @@ const checkboxStyles = props =>
     border-radius: 4px;
 
     .checkmark {
-      visibility: ${props => (props.checked ? "visible" : "hidden")};
+      visibility: ${({ checked }) => (checked ? "visible" : "hidden")};
       display: flex;
       justify-content: center;
       width: 100%;
@@ -65,12 +65,14 @@ const switchStyles = props =>
       box-sizing: border-box;
       background: ${props.disabled ? colors.WHITE_32 : "white"};
       box-shadow: 0 0 2px 0 ${colors.GREY_16};
-      left: ${props => (props.checked ? "28px" : "4px")};
+      left: ${({ checked }) => (checked ? "28px" : "4px")};
     }
     background: ${switchBackground};
   `;
 
 const hoverStyles = props => {
+  /* eslint-disable consistent-return */
+
   if (props.disabled) {
     return;
   }
@@ -86,6 +88,7 @@ const hoverStyles = props => {
         }
       `;
     }
+
     return css`
       background: ${colors.SUGAR};
       border-color: ${colors.INDIGO_MILK_CAP};
@@ -107,6 +110,8 @@ const hoverStyles = props => {
     background-color: #ffffff;
     border-color: ${colors.INDIGO_MILK_CAP};
   `;
+
+  /* eslint-enable consistent-return */
 };
 
 const Label = styled.label`

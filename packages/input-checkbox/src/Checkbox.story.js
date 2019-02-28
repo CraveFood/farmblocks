@@ -26,10 +26,10 @@ const checkboxStories = (moduleTitle, Checkbox) =>
         />
         <Checkbox label="Checkbox Label 3" name="foo" />
         <div style={{ marginTop: 24 }}>
-          <label>
+          <div>
             Another field
             <input type="text" />
-          </label>
+          </div>
         </div>
       </fieldset>
     ));
