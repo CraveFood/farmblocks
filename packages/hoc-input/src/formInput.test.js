@@ -107,7 +107,7 @@ describe("formInput", function() {
   test("input.onChange property is called after input change", function() {
     const onChangeMock = jest.fn();
     const component = mount(
-      <EnhancedInput input={{ onChange: onChangeMock, value: "foo" }} />
+      <EnhancedInput input={{ onChange: onChangeMock, value: "foo" }} />,
     );
 
     component.find("input").simulate("change", { target: { value: "bar" } });
@@ -201,7 +201,7 @@ describe("formInput", function() {
           <EnhancedInput
             onFocus={onFocusMock}
             autoControlFocusedStyle={false}
-          />
+          />,
         );
         component.find("input").simulate("focus");
 
@@ -215,7 +215,7 @@ describe("formInput", function() {
             onBlur={onBlurMock}
             focused
             autoControlFocusedStyle={false}
-          />
+          />,
         );
         component.find("input").simulate("blur");
 
