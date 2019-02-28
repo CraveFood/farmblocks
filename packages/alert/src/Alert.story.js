@@ -39,7 +39,7 @@ storiesOf("Alert", module)
           height: 120,
           position: "absolute",
           zIndex: 10,
-          background: "gray"
+          background: "gray",
         }}
       />
       <div
@@ -48,7 +48,7 @@ storiesOf("Alert", module)
           height: 100,
           position: "absolute",
           zIndex: 12,
-          background: "rgba(0, 0, 0, 0.7)"
+          background: "rgba(0, 0, 0, 0.7)",
         }}
       />
       <Alert text="should display between the two" zIndex={11} />

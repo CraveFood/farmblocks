@@ -8,27 +8,27 @@ class BrieflyDisplay extends React.Component {
     time: PropTypes.number,
     autoRemove: PropTypes.bool,
     onTimeout: PropTypes.func,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
     time: DEFAULT_TIME,
     autoRemove: true,
-    onTimeout: () => null
+    onTimeout: () => null,
   };
 
   constructor(props) {
     super(props);
     this.state = {
       isVisible: true,
-      timeoutId: 0
+      timeoutId: 0,
     };
   }
 
   componentDidMount() {
     const timeoutId = window.setTimeout(() => {
       this.setState({
-        isVisible: false
+        isVisible: false,
       });
       this.props.onTimeout();
     }, this.props.time);
