@@ -35,6 +35,7 @@ storiesOf("HOC disabledTooltip", module)
     <EnhancedButton
       onClick={action("button clicked")}
       onMouseOver={action("mouse over")}
+      onFocus={action("mouse over")}
       onMouseLeave={action("mouse out")}
     >
       A Button with events
