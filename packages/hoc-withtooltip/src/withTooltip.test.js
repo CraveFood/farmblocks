@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from "react";
 import Adapter from "enzyme-adapter-react-16";
 import { mount, configure } from "enzyme";
@@ -48,7 +49,7 @@ describe("withTooltip", () => {
         disableTooltip
         onMouseOver={onMouseOverMock}
         onMouseLeave={onMouseLeaveMock}
-      />
+      />,
     );
 
     expect(wrapper.find(".hitArea").length).toBe(0);
