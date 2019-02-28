@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import {
   DropdownMenuWrapper,
-  DropdownItemWrapper
+  DropdownItemWrapper,
 } from "@crave/farmblocks-dropdown";
 import { Item } from "@crave/farmblocks-input-select";
 
@@ -13,13 +13,13 @@ import ScrollBox from "./ScrollBox";
 export const defaultKeyNames = {
   valueKey: "value",
   labelKey: "label",
-  imageKey: "image"
+  imageKey: "image",
 };
 
 export const keyNamesPropTypes = {
   valueKey: PropTypes.string,
   labelKey: PropTypes.string,
-  imageKey: PropTypes.string
+  imageKey: PropTypes.string,
 };
 
 export const menuPropTypes = {
@@ -29,12 +29,12 @@ export const menuPropTypes = {
     PropTypes.shape({
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       label: PropTypes.string,
-      image: PropTypes.string
-    })
+      image: PropTypes.string,
+    }),
   ),
   onItemClick: PropTypes.func,
   highlightedIndex: PropTypes.number,
-  footer: PropTypes.node
+  footer: PropTypes.node,
 };
 
 const renderItem = (
@@ -43,7 +43,7 @@ const renderItem = (
   highlighted,
   valueKey,
   labelKey,
-  imageKey
+  imageKey,
 ) => (
   <DropdownItemWrapper
     key={item[valueKey]}
@@ -70,7 +70,7 @@ const Menu = ({
   footer,
   valueKey,
   labelKey,
-  imageKey
+  imageKey,
 }) => {
   if (!footer && !items.length) {
     return null;
@@ -89,8 +89,8 @@ const Menu = ({
             index === highlightedIndex,
             valueKey,
             labelKey,
-            imageKey
-          )
+            imageKey,
+          ),
         )}
         <DropdownItemWrapper footer>{footer}</DropdownItemWrapper>
       </ScrollBox>
@@ -99,12 +99,12 @@ const Menu = ({
 };
 Menu.defaultProps = {
   items: [],
-  ...defaultKeyNames
+  ...defaultKeyNames,
 };
 Menu.propTypes = {
   ...menuPropTypes,
   ...keyNamesPropTypes,
-  innerRef: PropTypes.func
+  innerRef: PropTypes.func,
 };
 
 export default Menu;

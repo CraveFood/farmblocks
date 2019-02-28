@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 import React from "react";
 import PropTypes from "prop-types";
 import debounce from "lodash.debounce";
@@ -6,14 +7,15 @@ import ScrollWrapper from "../styledComponents/ScrollWrapper";
 
 export default class ScrollBox extends React.Component {
   state = {
-    atEnd: false
+    atEnd: false,
   };
 
   componentDidMount = () => {
-    this.wrapper && this.wrapper.addEventListener("scroll", this.onScroll);
+    this.wrapper?.addEventListener("scroll", this.onScroll);
   };
+
   componentWillUnmount = () => {
-    this.wrapper && this.wrapper.removeEventListener("scroll", this.onScroll);
+    this.wrapper?.removeEventListener("scroll", this.onScroll);
   };
 
   centerChildByIndex = index => {
@@ -64,19 +66,24 @@ export default class ScrollBox extends React.Component {
   render() {
     const { children, maxHeight } = this.props;
     return (
-      <ScrollWrapper style={{ maxHeight }} ref={node => (this.wrapper = node)}>
+      <ScrollWrapper
+        style={{ maxHeight }}
+        ref={node => {
+          this.wrapper = node;
+        }}
+      >
         {children}
       </ScrollWrapper>
     );
   }
 
   static defaultProps = {
-    onReachEnd: () => false
+    onReachEnd: () => false,
   };
 
   static propTypes = {
     children: PropTypes.node,
     maxHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    onReachEnd: PropTypes.func
+    onReachEnd: PropTypes.func,
   };
 }

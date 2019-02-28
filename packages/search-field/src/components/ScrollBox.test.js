@@ -23,7 +23,7 @@ describe("Search Fields / ScrollBox", () => {
     beforeEach(() => {
       ref = {
         addEventListener: addEventListenerSpy,
-        removeEventListener: removeEventListenerSpy
+        removeEventListener: removeEventListenerSpy,
       };
       instance.wrapper = ref;
     });
@@ -37,7 +37,7 @@ describe("Search Fields / ScrollBox", () => {
       expect(addEventListenerSpy).toHaveBeenCalledTimes(1);
       expect(addEventListenerSpy).toHaveBeenCalledWith(
         "scroll",
-        instance.onScroll
+        instance.onScroll,
       );
     });
 
@@ -47,7 +47,7 @@ describe("Search Fields / ScrollBox", () => {
       expect(removeEventListenerSpy).toHaveBeenCalledTimes(1);
       expect(removeEventListenerSpy).toHaveBeenCalledWith(
         "scroll",
-        instance.onScroll
+        instance.onScroll,
       );
     });
   });
@@ -58,13 +58,13 @@ describe("Search Fields / ScrollBox", () => {
       childNodes = [
         { offsetTop: 10, clientHeight: 100 },
         { offsetTop: 110, clientHeight: 100 },
-        { offsetTop: 210, clientHeight: 100 }
+        { offsetTop: 210, clientHeight: 100 },
       ];
       ref = {
         scrollTop: 0,
         offsetTop: 10,
         clientHeight: 200,
-        childNodes
+        childNodes,
       };
       instance.wrapper = ref;
     });
@@ -85,7 +85,7 @@ describe("Search Fields / ScrollBox", () => {
       const childIndex = 1;
       const contentHeight = childNodes.reduce(
         (acc, node) => acc + node.clientHeight,
-        0
+        0,
       );
 
       const expectedResult = (contentHeight - ref.clientHeight) / 2;
@@ -120,7 +120,7 @@ describe("Search Fields / ScrollBox", () => {
       ref = {
         scrollHeight: 300,
         scrollTop: 0,
-        clientHeight: 200
+        clientHeight: 200,
       };
       setStateSpy = jest.fn();
       instance.wrapper = ref;
