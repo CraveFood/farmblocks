@@ -4,34 +4,6 @@ import { fontWeights, fontTypes } from "@crave/farmblocks-theme";
 import hoverColors from "../constants/hoverColors";
 import linkTypes from "../constants/linkTypes";
 
-const LinkContainer = styled.div`
-  font-family: Lato, sans-serif;
-
-  display: inline-block;
-
-  position: relative;
-
-  i.margin-left {
-    margin-left: 8px;
-  }
-
-  i.margin-right {
-    margin-right: 8px;
-  }
-
-  font-size: ${props => props.size}px;
-  font-weight: ${fontWeights.SEMIBOLD};
-
-  line-height: ${props => props.lineHeight};
-
-  transition: all 0.3s ease;
-  cursor: ${props => (props.disabled ? "default" : "pointer")};
-
-  ${textDecoration};
-
-  ${colorStyle};
-`;
-
 function textDecoration({ type }) {
   const underline =
     type === linkTypes.NEUTRAL || type === linkTypes.WHITE
@@ -70,6 +42,34 @@ function colorStyle({ disabled, type }) {
     }
   `;
 }
+
+const LinkContainer = styled.div`
+  font-family: Lato, sans-serif;
+
+  display: inline-block;
+
+  position: relative;
+
+  i.margin-left {
+    margin-left: 8px;
+  }
+
+  i.margin-right {
+    margin-right: 8px;
+  }
+
+  font-size: ${props => props.size}px;
+  font-weight: ${fontWeights.SEMIBOLD};
+
+  line-height: ${props => props.lineHeight};
+
+  transition: all 0.3s ease;
+  cursor: ${props => (props.disabled ? "default" : "pointer")};
+
+  ${textDecoration};
+
+  ${colorStyle};
+`;
 
 LinkContainer.displayName = "LinkContainer";
 
