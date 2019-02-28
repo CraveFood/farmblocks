@@ -7,19 +7,7 @@ import Label from "./styledComponents/Label";
 
 class Radio extends React.Component {
   state = {
-    checked: this.props.checked
-  };
-
-  handleClick = event => {
-    const { disabled, onClick, onChange, value } = this.props;
-    const { checked } = this.state;
-    if (!disabled) {
-      this.setState({
-        checked: true
-      });
-      onClick && onClick(event);
-      !checked && onChange && onChange(value);
-    }
+    checked: this.props.checked,
   };
 
   componentDidUpdate(prevProps) {
@@ -28,6 +16,21 @@ class Radio extends React.Component {
       this.setState({ checked });
     }
   }
+
+  handleClick = event => {
+    const { disabled, value } = this.props;
+    const { checked } = this.state;
+    if (!disabled) {
+      this.setState({
+        checked: true,
+      });
+      this.props.onClick?.(event);
+
+      if (!checked) {
+        this.props.onChange?.(value);
+      }
+    }
+  };
 
   render() {
     const {
@@ -41,14 +44,14 @@ class Radio extends React.Component {
     const inputProps = {
       ...remainingProps,
       defaultChecked: checked,
-      onClick: this.handleClick
+      onClick: this.handleClick,
     };
 
-    const disabled = inputProps.disabled;
+    const { disabled } = inputProps;
 
     const labelProps = {
       checked,
-      disabled
+      disabled,
     };
 
     const fontColor = (disabled && fontTypes.SUBTLE) || fontTypes.NORMAL;
@@ -74,11 +77,11 @@ class Radio extends React.Component {
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
     onChange: PropTypes.func,
-    value: PropTypes.any
+    value: PropTypes.any,
   };
 
   static defaultProps = {
-    checked: false
+    checked: false,
   };
 }
 

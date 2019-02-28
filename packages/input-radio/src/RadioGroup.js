@@ -5,7 +5,7 @@ import Group from "./styledComponents/Group";
 
 class RadioGroup extends React.Component {
   state = {
-    value: this.props.defaultValue
+    value: this.props.defaultValue,
   };
 
   componentDidUpdate = prevProps => {
@@ -16,11 +16,10 @@ class RadioGroup extends React.Component {
   };
 
   handleChange = value => {
-    const { onChange } = this.props;
     this.setState({
-      value
+      value,
     });
-    onChange && onChange(value);
+    this.props.onChange?.(value);
   };
 
   render() {
@@ -34,11 +33,11 @@ class RadioGroup extends React.Component {
           const checked = child.props.value === value;
           const childProps = {
             checked,
-            disabled: child.props.disabled || disabled
+            disabled: child.props.disabled || disabled,
           };
           return React.cloneElement(child, {
             ...allChildrenProps,
-            ...childProps
+            ...childProps,
           });
         })}
       </Group>
@@ -50,7 +49,7 @@ class RadioGroup extends React.Component {
     name: PropTypes.string.isRequired,
     defaultValue: PropTypes.any,
     onChange: PropTypes.func,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
   };
 }
 
