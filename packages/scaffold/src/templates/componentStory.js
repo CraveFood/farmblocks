@@ -13,7 +13,7 @@ storiesOf("${fullName}", module).add(
   () => <${componentName} />)
 );
 `,
-    { parser: "babylon" }
+    { parser: "babylon" },
   );
 
 module.exports = storyTemplate;

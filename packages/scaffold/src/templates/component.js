@@ -11,7 +11,7 @@ const ${componentName} = props => {
  
 export default ${componentName}; 
 `,
-    { parser: "babylon" }
+    { parser: "babylon" },
   );
 
 module.exports = componentTemplate;
