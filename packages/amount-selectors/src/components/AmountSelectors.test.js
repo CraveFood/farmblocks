@@ -56,7 +56,7 @@ describe("Amount selectors", () => {
       const expectedMaxDisplayValue = "10.00";
       const expectedMinDisplayValue = "4.00";
       const component = mount(
-        <AmountSelectors max={maxValue} min={minValue} />
+        <AmountSelectors max={maxValue} min={minValue} />,
       );
       const input = component.find("input");
       input.simulate("change", { target: { value: bigVaalue } });
@@ -73,7 +73,7 @@ describe("Amount selectors", () => {
       const onChangeValue = 2;
 
       const component = shallow(
-        <AmountSelectors min={initialValue} value={initialValue} />
+        <AmountSelectors min={initialValue} value={initialValue} />,
       );
       const { onChange } = component.instance();
 
@@ -86,8 +86,8 @@ describe("Amount selectors", () => {
       const initialValue = 0;
       const event = {
         target: {
-          value: 1
-        }
+          value: 1,
+        },
       };
       const component = shallow(<AmountSelectors value={initialValue} />);
       const { onChange } = component.instance();
@@ -103,9 +103,9 @@ describe("Amount selectors", () => {
         target: {
           value: 1.2,
           validity: {
-            stepMismatch: true
-          }
-        }
+            stepMismatch: true,
+          },
+        },
       };
       const component = shallow(<AmountSelectors step={step} enforceStep />);
       component.instance().onChange(event);
@@ -118,9 +118,9 @@ describe("Amount selectors", () => {
           value: "aaa",
           validity: {
             stepMismatch: false,
-            badInput: true
-          }
-        }
+            badInput: true,
+          },
+        },
       };
       const component = shallow(<AmountSelectors />);
       component.instance().onChange(event);
@@ -132,7 +132,7 @@ describe("Amount selectors", () => {
     test("should update value when prop value is set after mount", () => {
       const onChange = jest.fn();
       const component = mount(
-        <AmountSelectors value={1} onChange={onChange} />
+        <AmountSelectors value={1} onChange={onChange} />,
       );
       const newValue = 2;
       component.setProps({ value: newValue });

@@ -10,12 +10,12 @@ import Wrapper from "../styledComponents/AmountSelector";
 
 const selectorSizeToButtonSize = {
   [selectorSizes.SMALL]: buttonSizes.SMALL,
-  [selectorSizes.MEDIUM]: buttonSizes.MEDIUM
+  [selectorSizes.MEDIUM]: buttonSizes.MEDIUM,
 };
 
 const selectorSizeToFontSize = {
   [selectorSizes.SMALL]: fontSizes.SMALL,
-  [selectorSizes.MEDIUM]: fontSizes.MEDIUM
+  [selectorSizes.MEDIUM]: fontSizes.MEDIUM,
 };
 
 class AmountSelectors extends React.Component {
@@ -30,11 +30,11 @@ class AmountSelectors extends React.Component {
       value: Number(displayValue),
       disableBoth: false,
       tooltipText: "",
-      displayValue
+      displayValue,
     };
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps) {
     if (prevProps.value !== this.props.value) {
       this.updateStateWithNewValue(this.props.value);
     }
@@ -85,7 +85,7 @@ class AmountSelectors extends React.Component {
     const parsedValue = parseFloat(value) || 0;
     const validValue = Math.min(
       this.props.max,
-      Math.max(this.props.min, parsedValue)
+      Math.max(this.props.min, parsedValue),
     );
 
     return Number(validValue.toFixed(2));
@@ -95,7 +95,7 @@ class AmountSelectors extends React.Component {
     const validValue = this.getValidValue(value);
     this.setState({
       value: validValue,
-      displayValue: validValue.toFixed(2)
+      displayValue: validValue.toFixed(2),
     });
 
     return validValue;
@@ -152,7 +152,7 @@ class AmountSelectors extends React.Component {
     enforceStep: PropTypes.bool,
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
-    size: PropTypes.oneOf(values(selectorSizes))
+    size: PropTypes.oneOf(values(selectorSizes)),
   };
 
   static defaultProps = {
@@ -162,7 +162,7 @@ class AmountSelectors extends React.Component {
     max: Number.MAX_VALUE,
     onChange: () => false,
     disableTyping: false,
-    size: selectorSizes.MEDIUM
+    size: selectorSizes.MEDIUM,
   };
 }
 

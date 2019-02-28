@@ -11,6 +11,7 @@ storiesOf("Amount selectors", module)
   .add("With value set after mount", () => {
     class MyStory extends React.Component {
       state = { value: 10 };
+
       render() {
         return (
           <div>
