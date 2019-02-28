@@ -10,7 +10,7 @@ storiesOf("Stepper", module).add("default", () => {
     "Add bank account",
     "Connect to purchasers",
     "Add products",
-    "Start selling"
+    "Start selling",
   ];
   const completedSteps = 2;
 
@@ -18,7 +18,7 @@ storiesOf("Stepper", module).add("default", () => {
     <div
       style={{
         width: "500px",
-        padding: "10px 20px"
+        padding: "10px 20px",
       }}
     >
       <Stepper

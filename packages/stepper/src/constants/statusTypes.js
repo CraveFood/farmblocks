@@ -1,5 +1,5 @@
 export default {
   CURRENT: "CURRENT",
   COMPLETED: "COMPLETED",
-  PENDING: "PENDING"
+  PENDING: "PENDING",
 };
