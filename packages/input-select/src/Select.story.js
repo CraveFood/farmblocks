@@ -8,14 +8,14 @@ import Select, { fontSizes } from ".";
 const items = [
   { value: "1", label: "Apple" },
   { value: "2", label: "Banana" },
-  { value: "3", label: "Pear" }
+  { value: "3", label: "Pear" },
 ];
 
 const moreItems = [
   ...items,
   { value: "4", label: "Strawberry" },
   { value: "5", label: "Peach" },
-  { value: "6", label: "Coconut" }
+  { value: "6", label: "Coconut" },
 ];
 
 const imgSrc = "https://picsum.photos/100";
@@ -67,7 +67,7 @@ storiesOf("Select Input", module)
           style={{
             flex: 1,
             display: "flex",
-            alignItems: "center"
+            alignItems: "center",
           }}
         >
           <span
@@ -75,7 +75,7 @@ storiesOf("Select Input", module)
               flex: 1,
               display: "flex",
               justifyContent: "space-between",
-              marginRight: 16
+              marginRight: 16,
             }}
           >
             {item.label}
@@ -111,7 +111,7 @@ storiesOf("Select Input", module)
       label="Fruit"
       items={items.map((item, index) => ({
         ...item,
-        image: `${imgSrc}?image=${index + 1080}`
+        image: `${imgSrc}?image=${index + 1080}`,
       }))}
       onChange={action("onChange")}
     />
@@ -122,7 +122,7 @@ storiesOf("Select Input", module)
       label="Fruit"
       items={items.map((item, index) => ({
         ...item,
-        image: `${imgSrc}?image=${index + 1080}`
+        image: `${imgSrc}?image=${index + 1080}`,
       }))}
       value={items[1].value}
       onChange={action("onChange")}
@@ -155,7 +155,7 @@ storiesOf("Select Input", module)
           top: 150,
           position: "absolute",
           zIndex: 10,
-          background: "gray"
+          background: "gray",
         }}
       >
         Z-index: 10
@@ -175,7 +175,7 @@ storiesOf("Select Input", module)
           left: 100,
           position: "absolute",
           zIndex: 12,
-          background: "blue"
+          background: "blue",
         }}
       >
         Z-index: 12
@@ -195,35 +195,35 @@ storiesOf("Select Input", module)
   .add("Receiving new value", () => {
     class SelectStory extends React.Component {
       state = {
-        itemValue: null
+        itemValue: null,
       };
 
       items = [
         {
           value: 0,
-          label: "zero"
+          label: "zero",
         },
         {
           value: 1,
-          label: "one"
-        }
+          label: "one",
+        },
       ];
 
       changeToOne = () => {
         this.setState({
-          itemValue: this.items[1].value
+          itemValue: this.items[1].value,
         });
       };
 
       changeToZero = () => {
         this.setState({
-          itemValue: this.items[0].value
+          itemValue: this.items[0].value,
         });
       };
 
       onSelectChange = value => {
         this.setState({
-          itemValue: value
+          itemValue: value,
         });
         action("onChange")(value);
       };

@@ -12,7 +12,7 @@ describe("Select input", () => {
   const items = [
     { value: "1", label: "Banana" },
     { value: "2", label: "Apple" },
-    { value: 0, label: "Coconut" }
+    { value: 0, label: "Coconut" },
   ];
 
   beforeEach(() => {
@@ -46,15 +46,15 @@ describe("Select input", () => {
   });
 
   describe("test renderMenu function", () => {
-    let autoCompleteWrapper;
+    let autoCompWrapper;
     let renderMenu;
     beforeEach(() => {
-      autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-      renderMenu = autoCompleteWrapper.instance().props.renderMenu;
+      autoCompWrapper = wrapper.find(ReactAutocomplete);
+      renderMenu = autoCompWrapper.instance().props.renderMenu;
     });
     test("should render items", () => {
       const menuWrapper = shallow(
-        renderMenu(items.map(x => <li key={x.value}>{x.label}</li>))
+        renderMenu(items.map(x => <li key={x.value}>{x.label}</li>)),
       );
 
       const ulWrapper = menuWrapper.find("ul");
@@ -72,8 +72,8 @@ describe("Select input", () => {
 
   describe("renderItem function", () => {
     test("render item label on item description", () => {
-      const autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-      const { renderItem } = autoCompleteWrapper.instance().props;
+      const autoCompWrapper = wrapper.find(ReactAutocomplete);
+      const { renderItem } = autoCompWrapper.instance().props;
 
       const highlighted = false;
       const itemWrapper = mount(renderItem(items[0], highlighted));
@@ -88,8 +88,8 @@ describe("Select input", () => {
 
       wrapper = mount(<Select items={items} renderItem={customRenderItem} />);
 
-      const autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-      const { renderItem } = autoCompleteWrapper.instance().props;
+      const autoCompWrapper = wrapper.find(ReactAutocomplete);
+      const { renderItem } = autoCompWrapper.instance().props;
 
       const highlighted = true;
       const itemWrapper = mount(renderItem(items[0], highlighted));
@@ -102,8 +102,8 @@ describe("Select input", () => {
     test("with selected item style", () => {
       wrapper = mount(<Select items={items} value={items[0].value} />);
 
-      const autoCompleteWrapper = wrapper.find(ReactAutocomplete);
-      const { renderItem } = autoCompleteWrapper.instance().props;
+      const autoCompWrapper = wrapper.find(ReactAutocomplete);
+      const { renderItem } = autoCompWrapper.instance().props;
 
       const highlighted = false;
       const itemWrapper = mount(renderItem(items[0], highlighted));
@@ -123,7 +123,7 @@ describe("Select input", () => {
   describe("onMenuVisibilityChange", () => {
     test("should update state and select text on input", () => {
       wrapper = mount(
-        <Select items={items} onChange={onChangeMock} value={0} />
+        <Select items={items} onChange={onChangeMock} value={0} />,
       );
       const { input, onMenuVisibilityChange } = wrapper.instance();
       input.select = jest.fn();
@@ -137,7 +137,12 @@ describe("Select input", () => {
 
     test("should update state and not select text on input", () => {
       wrapper = mount(
-        <Select items={items} onChange={onChangeMock} value={0} disableSearch />
+        <Select
+          items={items}
+          onChange={onChangeMock}
+          value={0}
+          disableSearch
+        />,
       );
       const { input, onMenuVisibilityChange } = wrapper.instance();
       input.select = jest.fn();
@@ -156,8 +161,8 @@ describe("Select input", () => {
 
       const event = {
         target: {
-          value: "Straw"
-        }
+          value: "Straw",
+        },
       };
       onChange(event);
       const state = wrapper.state();
@@ -170,8 +175,8 @@ describe("Select input", () => {
 
       const newEvent = {
         target: {
-          value: "Strawberry"
-        }
+          value: "Strawberry",
+        },
       };
       onChange(newEvent);
       const newState = wrapper.state();
@@ -228,7 +233,7 @@ describe("Select input", () => {
       const expectedState = {
         ...state,
         selectedLabel: item.label,
-        selectedValue: item.value
+        selectedValue: item.value,
       };
 
       expect(expectedState).toEqual(newState);
@@ -244,7 +249,7 @@ describe("Select input", () => {
       const expectedState = {
         ...state,
         selectedLabel: item.label,
-        selectedValue: item.value
+        selectedValue: item.value,
       };
 
       const newState = wrapper.state();
