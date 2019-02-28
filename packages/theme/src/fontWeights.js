@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   SEMIBOLD: "600",
-  LIGHT: "300"
+  LIGHT: "300",
 };
