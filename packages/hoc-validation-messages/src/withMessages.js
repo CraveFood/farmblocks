@@ -5,48 +5,44 @@ import Text from "@crave/farmblocks-text";
 import { fontSizes } from "@crave/farmblocks-theme";
 
 import MessageWrapper from "./styledComponents/MessageWrapper";
-import errorIconSrc from "./constants/errorIcon";
+import errorIcon from "./constants/errorIcon";
 
 export const withMessagesProps = {
   errorIconSrc: PropTypes.string,
   validationMessages: PropTypes.arrayOf(PropTypes.string),
-  onInvalid: PropTypes.func
+  onInvalid: PropTypes.func,
 };
 
 const withMessages = WrappedComponent => {
   return class ValidationMessages extends React.Component {
     state = {
-      messages: this.props.validationMessages
+      messages: this.props.validationMessages,
     };
-
-    onInvalid = this.onInvalid.bind(this);
-    onChange = this.onChange.bind(this);
-    hasPropsValidations = this.hasPropsValidations.bind(this);
 
     componentDidUpdate(prevProps) {
       if (prevProps.validationMessages !== this.props.validationMessages) {
         this.setState({
-          messages: this.props.validationMessages
+          messages: this.props.validationMessages,
         });
       }
     }
 
-    hasPropsValidations() {
+    hasPropsValidations = () => {
       return this.props.validationMessages.length !== 0;
-    }
+    };
 
-    onInvalid(event) {
+    onInvalid = event => {
       event.preventDefault();
       // use built-in browser validation message if available and if the validationErrors is not passed
       if (!this.hasPropsValidations() && event.target.validationMessage) {
         this.setState({
-          messages: [event.target.validationMessage]
+          messages: [event.target.validationMessage],
         });
       }
       return this.props.onInvalid(event);
-    }
+    };
 
-    onChange(event) {
+    onChange = event => {
       const isValid =
         event.target &&
         event.target.validity &&
@@ -54,12 +50,12 @@ const withMessages = WrappedComponent => {
 
       if (!this.hasPropsValidations() && isValid) {
         this.setState({
-          messages: []
+          messages: [],
         });
       }
 
-      this.props.onChange && this.props.onChange(event);
-    }
+      this.props.onChange?.(event);
+    };
 
     render() {
       const {
@@ -79,11 +75,11 @@ const withMessages = WrappedComponent => {
           />
 
           <div>
-            {this.state.messages.map((text, index) => (
-              <MessageWrapper key={`err-${index}`}>
+            {this.state.messages.map(text => (
+              <MessageWrapper key={`err-${text}`}>
                 <Image
                   className="icon"
-                  src={this.props.errorIconSrc}
+                  src={errorIconSrc}
                   badge
                   size={badgeSizes.SMALL}
                 />
@@ -102,13 +98,13 @@ const withMessages = WrappedComponent => {
 
     static propTypes = {
       ...WrappedComponent.propTypes,
-      ...withMessagesProps
+      ...withMessagesProps,
     };
 
     static defaultProps = {
-      errorIconSrc,
+      errorIconSrc: errorIcon,
       validationMessages: [],
-      onInvalid: () => null
+      onInvalid: () => null,
     };
   };
 };

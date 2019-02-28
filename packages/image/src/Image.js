@@ -16,7 +16,7 @@ Image.propTypes = {
   border: PropTypes.shape({
     radius: PropTypes.string,
     width: PropTypes.string,
-    color: PropTypes.string
+    color: PropTypes.string,
   }),
   width: PropTypes.string,
   height: PropTypes.string,
@@ -24,14 +24,14 @@ Image.propTypes = {
   css: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string,
-    PropTypes.array
-  ])
+    PropTypes.array,
+  ]),
 };
 
 Image.defaultProps = {
   badge: false,
   size: MEDIUM,
-  fit: COVER
+  fit: COVER,
 };
 
 export default Image;

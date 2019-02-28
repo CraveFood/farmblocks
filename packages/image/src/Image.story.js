@@ -19,7 +19,7 @@ storiesOf("Image", module)
       border={{
         radius: "16px",
         width: "4px",
-        color: "rgba(255, 255, 255, 0.56)"
+        color: "rgba(255, 255, 255, 0.56)",
       }}
     />
   ))
