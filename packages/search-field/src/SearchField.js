@@ -143,7 +143,7 @@ class SearchField extends React.Component {
 
   valueUpdated = (item, cb) => {
     const { valueKey } = this.props;
-    this.props?.onChange(item && item[valueKey], item);
+    this.props.onChange?.(item && item[valueKey], item);
     return cb && cb();
   };
 
