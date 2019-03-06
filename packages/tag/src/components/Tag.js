@@ -21,7 +21,11 @@ const Tag = props => {
           tabIndex="0"
           className="close-icon"
           onClick={() => onRemove(value)}
-          onKeyDown={() => onRemove(value)}
+          onKeyDown={event => {
+            if (event.key === "Enter" || event.key === " ") {
+              onRemove(value);
+            }
+          }}
         >
           <i className="wg-close" />
         </div>

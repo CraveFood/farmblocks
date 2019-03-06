@@ -7,8 +7,12 @@ import Tag from "./Tag";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Tag", function() {
+  let onRemoveMock;
+  beforeEach(() => {
+    onRemoveMock = jest.fn();
+  });
+
   test("should call onRemove when clicking on the icon", function() {
-    const onRemoveMock = jest.fn();
     const value = { value: "some value" };
     const wrapper = shallow(
       <Tag text="some text" value={value} onRemove={onRemoveMock} />,
@@ -16,5 +20,23 @@ describe("Tag", function() {
     wrapper.find(".close-icon").simulate("click");
 
     expect(onRemoveMock).toHaveBeenCalledWith(value);
+  });
+
+  test("should call onRemove by pressing Enter or Space keys", function() {
+    const value = { value: "some value" };
+    const wrapper = shallow(
+      <Tag text="some text" value={value} onRemove={onRemoveMock} />,
+    );
+
+    const onKeyDown = wrapper.find(".close-icon").prop("onKeyDown");
+
+    onKeyDown({ key: "" });
+    expect(onRemoveMock).toHaveBeenCalledTimes(0);
+
+    onKeyDown({ key: "Enter" });
+    expect(onRemoveMock).toHaveBeenCalledTimes(1);
+
+    onKeyDown({ key: " " });
+    expect(onRemoveMock).toHaveBeenCalledTimes(2);
   });
 });
