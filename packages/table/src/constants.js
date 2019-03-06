@@ -3,4 +3,4 @@ export const rowHeights = {
   MEDIUM: "80px",
 };
 
-export default rowHeights;
+export default { rowHeights };
