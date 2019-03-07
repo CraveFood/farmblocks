@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-withtooltip@1.2.0...@crave/farmblocks-hoc-withtooltip@1.2.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **withTooltip:** lint ([e81ae68](https://github.com/CraveFood/farmblocks/commit/e81ae68))
+
+
+
+
+
 # [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-withtooltip@1.1.1...@crave/farmblocks-hoc-withtooltip@1.2.0) (2019-02-18)
 
 

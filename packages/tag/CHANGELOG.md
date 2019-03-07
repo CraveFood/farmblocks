@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@1.2.0...@crave/farmblocks-tags@1.3.0) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Tag:** lint ([0ee9939](https://github.com/CraveFood/farmblocks/commit/0ee9939))
+
+
+### Features
+
+* **Tag:** call onRemove on onKeyDown only for enter and space keys ([aa07776](https://github.com/CraveFood/farmblocks/commit/aa07776))
+
+
+
+
+
 # [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@1.1.1...@crave/farmblocks-tags@1.2.0) (2019-02-18)
 
 

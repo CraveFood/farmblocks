@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.6.1...@crave/farmblocks-theme@1.6.2) (2019-03-07)
+
+
+### Bug Fixes
+
+* **theme:** lint ([ec53b0a](https://github.com/CraveFood/farmblocks/commit/ec53b0a))
+
+
+
+
+
 <a name="1.6.1"></a>
 ## 1.6.1 (2019-01-03)
 

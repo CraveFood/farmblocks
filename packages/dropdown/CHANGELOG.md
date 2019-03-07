@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@1.3.0...@crave/farmblocks-dropdown@1.3.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Dropdown:** lint ([ae6a988](https://github.com/CraveFood/farmblocks/commit/ae6a988))
+
+
+
+
+
 # [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@1.2.1...@crave/farmblocks-dropdown@1.3.0) (2019-02-18)
 
 

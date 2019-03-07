@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.2.0...@crave/farmblocks-stepper@2.2.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Stepper:** lint ([0c7231c](https://github.com/CraveFood/farmblocks/commit/0c7231c))
+
+
+
+
+
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.1.1...@crave/farmblocks-stepper@2.2.0) (2019-02-18)
 
 

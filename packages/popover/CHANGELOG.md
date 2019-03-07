@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.3.0...@crave/farmblocks-popover@1.3.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Popover:** lint ([919be8a](https://github.com/CraveFood/farmblocks/commit/919be8a))
+
+
+
+
+
 # [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.2.1...@crave/farmblocks-popover@1.3.0) (2019-02-18)
 
 

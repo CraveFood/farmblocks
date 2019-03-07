@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@2.2.0...@crave/farmblocks-card@2.2.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Card:** lint ([e3700df](https://github.com/CraveFood/farmblocks/commit/e3700df))
+
+
+
+
+
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@2.1.1...@crave/farmblocks-card@2.2.0) (2019-02-18)
 
 

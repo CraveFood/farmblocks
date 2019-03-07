@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.3.0...@crave/farmblocks-text@3.3.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **Text:** lint ([fdfbf07](https://github.com/CraveFood/farmblocks/commit/fdfbf07))
+
+
+
+
+
 # [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.2.1...@crave/farmblocks-text@3.3.0) (2019-02-18)
 
 
