@@ -7,19 +7,7 @@ import Button, { buttonSizes } from "@crave/farmblocks-button";
 import Container from "./styledComponents/Container";
 
 class EmptyState extends React.Component {
-  render() {
-    return (
-      <Container>
-        {this._renderThumbnail()}
-        {this._renderTitle()}
-        {this._renderDescription()}
-        {this._renderButtons()}
-        {this._renderInfo()}
-      </Container>
-    );
-  }
-
-  _renderThumbnail() {
+  renderThumbnail() {
     const { imageSrc, icon } = this.props;
 
     if (imageSrc) {
@@ -39,15 +27,19 @@ class EmptyState extends React.Component {
         </div>
       );
     }
+
+    return <noscript />;
   }
-  _renderTitle() {
+
+  renderTitle() {
     return (
       <Text title align="center" size={fontSizes.HUGE} type={fontTypes.NORMAL}>
         {this.props.title}
       </Text>
     );
   }
-  _renderDescription() {
+
+  renderDescription() {
     return (
       this.props.description && (
         <Text
@@ -61,7 +53,8 @@ class EmptyState extends React.Component {
       )
     );
   }
-  _renderInfo() {
+
+  renderInfo() {
     return (
       this.props.info && (
         <Text
@@ -75,7 +68,8 @@ class EmptyState extends React.Component {
       )
     );
   }
-  _renderButtons() {
+
+  renderButtons() {
     const { actions } = this.props;
     if (!actions || !actions.length) {
       return null;
@@ -93,6 +87,19 @@ class EmptyState extends React.Component {
       </div>
     );
   }
+
+  render() {
+    return (
+      <Container>
+        {this.renderThumbnail()}
+        {this.renderTitle()}
+        {this.renderDescription()}
+        {this.renderButtons()}
+        {this.renderInfo()}
+      </Container>
+    );
+  }
+
   static propTypes = {
     title: PropTypes.string.isRequired,
     imageSrc: PropTypes.string,
@@ -101,11 +108,11 @@ class EmptyState extends React.Component {
       PropTypes.shape({
         text: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
-        onClick: PropTypes.func.isRequired
-      })
+        onClick: PropTypes.func.isRequired,
+      }),
     ),
     info: PropTypes.string,
-    icon: PropTypes.string
+    icon: PropTypes.string,
   };
 }
 

@@ -1,4 +1,4 @@
 export default {
   LEFT: "left",
-  RIGHT: "right"
+  RIGHT: "right",
 };

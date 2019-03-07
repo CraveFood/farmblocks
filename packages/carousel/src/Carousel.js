@@ -15,31 +15,17 @@ const defaultConfig = {
   border: {
     radius: "16px",
     width: "4px",
-    color: "rgba(255, 255, 255, 0.56)"
-  }
+    color: "rgba(255, 255, 255, 0.56)",
+  },
 };
 
 class Carousel extends React.Component {
   state = {
-    activeItem: 0
-  };
-
-  nextItem = () => {
-    const activeItem = this.state.activeItem + 1;
-    if (activeItem === this.props.imageSet.length) {
-      this.clearInterval();
-      return this.props.onEnd();
-    }
-    this.props.onChange(activeItem);
-    this.setState({ activeItem });
+    activeItem: 0,
   };
 
   componentDidMount = () => {
     this.setInterval();
-  };
-
-  componentWillUnmount = () => {
-    this.clearInterval();
   };
 
   componentDidUpdate(prevProps) {
@@ -48,6 +34,21 @@ class Carousel extends React.Component {
       this.setInterval();
     }
   }
+
+  componentWillUnmount = () => {
+    this.clearInterval();
+  };
+
+  nextItem = () => {
+    const activeItem = this.state.activeItem + 1; // eslint-disable-line
+    if (activeItem === this.props.imageSet.length) {
+      this.clearInterval();
+      this.props.onEnd();
+      return;
+    }
+    this.props.onChange(activeItem);
+    this.setState({ activeItem });
+  };
 
   setInterval = () => {
     if (this.transitionId) {
@@ -101,7 +102,7 @@ class Carousel extends React.Component {
 
   static propTypes = {
     imageSet: PropTypes.arrayOf(
-      PropTypes.shape({ image: PropTypes.string, name: PropTypes.string })
+      PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
     ),
     onChange: PropTypes.func,
     onEnd: PropTypes.func,
@@ -116,16 +117,16 @@ class Carousel extends React.Component {
       border: PropTypes.shape({
         width: PropTypes.string,
         radius: PropTypes.string,
-        color: PropTypes.string
-      })
-    })
+        color: PropTypes.string,
+      }),
+    }),
   };
 
   static defaultProps = {
     itemConfig: defaultConfig,
     scale: true,
     onChange: () => null,
-    onEnd: () => null
+    onEnd: () => null,
   };
 }
 

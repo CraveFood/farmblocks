@@ -16,7 +16,7 @@ const image = "https://picsum.photos/100";
 const items = [
   { value: "1", label: "Apple", image },
   { value: "2", label: "Banana", image },
-  { value: "3", label: "Pear", image }
+  { value: "3", label: "Pear", image },
 ];
 
 const StyledFooterWrapper = styled.div`
@@ -72,7 +72,7 @@ storiesOf("Search Field/Menu (Private)", module)
       items={items.map(x => ({
         code: x.value,
         name: x.label,
-        photo: x.image
+        photo: x.image,
       }))}
       valueKey="code"
       labelKey="name"
@@ -80,6 +80,6 @@ storiesOf("Search Field/Menu (Private)", module)
     />
   ))
   .add("with empty items", () => <Menu items={[]} />, {
-    info: "This should render nothing"
+    info: "This should render nothing",
   })
   .add("footer only", () => <Menu footer={<Footer />} items={[]} />);

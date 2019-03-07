@@ -26,7 +26,7 @@ storiesOf("Dropdown/Component", module)
       style={{
         width: 150,
         display: "flex",
-        justifyContent: "flex-end"
+        justifyContent: "flex-end",
       }}
     >
       <Dropdown handleSelection={action("handleSelection")} align="right">
@@ -42,7 +42,7 @@ storiesOf("Dropdown/Component", module)
         width: 250,
         background: "aliceblue",
         display: "flex",
-        zIndex: 9
+        zIndex: 9,
       }}
     >
       <div style={{ marginRight: "10px" }}>z-index: 9</div>
@@ -59,7 +59,7 @@ storiesOf("Dropdown/Component", module)
           width: 75,
           height: 120,
           zIndex: 11,
-          background: "rgba(0, 0, 0, 0.5)"
+          background: "rgba(0, 0, 0, 0.5)",
         }}
       >
         z-index: 11

@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import withMessages from ".";
 
 const WithMessagesInput = withMessages(props =>
-  React.createElement("input", props)
+  React.createElement("input", props),
 );
 
 const WithMessagesDiv = withMessages(() => <div>I am a div</div>);

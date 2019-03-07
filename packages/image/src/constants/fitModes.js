@@ -1,6 +1,6 @@
 const fitModes = {
   COVER: "cover",
-  CONTAIN: "contain"
+  CONTAIN: "contain",
 };
 
 module.exports = fitModes;

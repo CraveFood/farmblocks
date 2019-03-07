@@ -15,7 +15,7 @@ const fruits = [
   { id: 0, name: "Apple", price: "$ 0.50" },
   { id: 1, name: "Banana", price: "$ 0.60" },
   { id: 2, name: "Cherry", price: "$ 9,999.99" },
-  { id: 3, name: "Coconut", price: "$ 2.30" }
+  { id: 3, name: "Coconut", price: "$ 2.30" },
 ];
 
 storiesOf("Table/Basic", module)
@@ -93,7 +93,7 @@ storiesOf("Table/Basic", module)
         text={row => row.price}
       />
       <Column
-        customTitle={(tableData, tableState) => (
+        customTitle={() => (
           <div
             style={{
               color: colors.GREY_16,
@@ -103,13 +103,13 @@ storiesOf("Table/Basic", module)
               width: 32,
               height: 24,
               lineHeight: "30px",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             <i className="wg-small-arrow-bottom" />
           </div>
         )}
-        text={row => <div />}
+        text={() => <div />}
       />
     </Table>
   ))
@@ -212,7 +212,7 @@ const farms = [
     created_date: "2017-07-23T12:00:00",
     type: "farm",
     status: "not_connected",
-    slug: "madeline-farm"
+    slug: "madeline-farm",
   },
   {
     name: "Farm Honey",
@@ -223,8 +223,8 @@ const farms = [
     created_date: "2017-07-23T12:00:00",
     type: "food_hub",
     status: "connected",
-    slug: "farm-honey"
-  }
+    slug: "farm-honey",
+  },
 ];
 
 const InfoCell = props => (
@@ -246,7 +246,7 @@ InfoCell.propTypes = {
   imageSrc: PropTypes.string,
   title: PropTypes.string,
   linkText: PropTypes.string,
-  linkSrc: PropTypes.string
+  linkSrc: PropTypes.string,
 };
 
 const ThumbnailCell = props => (
@@ -259,7 +259,7 @@ const ThumbnailCell = props => (
 );
 ThumbnailCell.propTypes = {
   imageSrc: PropTypes.string,
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 
 storiesOf("Table/Custom Cells", module)
@@ -294,7 +294,7 @@ storiesOf("Table/Custom Cells", module)
         text={row => row.price}
       />
       <Column
-        customCell={(row, rowIndex, selected) => (
+        customCell={row => (
           <Button
             type={buttonTypes.PRIMARY}
             icon="wg-check"
@@ -315,7 +315,7 @@ storiesOf("Table/Custom Cells", module)
         text={row => row.price}
       />
       <Column
-        customCell={(row, rowIndex, selected) => (
+        customCell={() => (
           <div>
             <Button
               size={buttonSizes.MEDIUM}
@@ -329,7 +329,7 @@ storiesOf("Table/Custom Cells", module)
         )}
       />
       <Column
-        customCell={(row, rowIndex, selected) => (
+        customCell={(row, rowIndex) => (
           <Dropdown
             zIndex={fruits.length - rowIndex}
             align="right"
@@ -352,7 +352,7 @@ storiesOf("Table/Custom Cells", module)
         text={row => row.price}
       />
       <Column
-        customCell={(row, rowIndex, selected) => (
+        customCell={() => (
           <div>
             <Button
               size={buttonSizes.SMALL}
@@ -366,7 +366,7 @@ storiesOf("Table/Custom Cells", module)
         )}
       />
       <Column
-        customCell={(row, rowIndex, selected) => (
+        customCell={(row, rowIndex) => (
           <Dropdown
             zIndex={fruits.length - rowIndex}
             size={buttonSizes.SMALL}
@@ -388,15 +388,15 @@ storiesOf("Table/Custom Cells", module)
     </Table>
   ))
   .add("Complete example", () => {
-    const formattedDateColumnCell = (rowData, rowIndex, selected) =>
+    const formattedDateColumnCell = rowData =>
       `${new Date(rowData.created_date).toDateString()}`;
     const thumbnails = {
       farm: "https://media.giphy.com/media/RrU8f9lImvJja/giphy.gif",
-      food_hub: "https://media.giphy.com/media/f8k6R32qjJGV2/giphy.gif"
+      food_hub: "https://media.giphy.com/media/f8k6R32qjJGV2/giphy.gif",
     };
     const accountTypes = {
       farm: "Farm",
-      food_hub: "Food Hub"
+      food_hub: "Food Hub",
     };
     return (
       <Table selectableRows data={farms} onTitleClick={action("title clicked")}>
@@ -435,7 +435,7 @@ storiesOf("Table/Custom Cells", module)
         <Column
           align="right"
           width="300px"
-          customCell={(row, rowIndex, selected) => (
+          customCell={() => (
             <div>
               <Button
                 size={buttonSizes.MEDIUM}
@@ -458,7 +458,7 @@ const orders = [
     orderDate: "20181206",
     itemQty: 1,
     totalLabel: "$ 5",
-    status: "accepted"
+    status: "accepted",
   },
   {
     name: "Farm Market 1",
@@ -470,23 +470,23 @@ const orders = [
         orderDate: "20181306",
         itemQty: 2,
         totalLabel: "$ 10",
-        status: "pending"
+        status: "pending",
       },
       {
         name: "Farm C",
         orderDate: "20181206",
         itemQty: 2,
         totalLabel: "$ 10",
-        status: "accepted"
-      }
-    ]
+        status: "accepted",
+      },
+    ],
   },
   {
     name: "Farm D",
     orderDate: "20181206",
     itemQty: 1,
     totalLabel: "$ 5",
-    status: "accepted"
+    status: "accepted",
   },
   {
     name: "Farm Market 2",
@@ -498,24 +498,24 @@ const orders = [
         orderDate: "20181306",
         itemQty: 2,
         totalLabel: "$ 10",
-        status: "pending"
+        status: "pending",
       },
       {
         name: "Farm F",
         orderDate: "20181206",
         itemQty: 2,
         totalLabel: "$ 5",
-        status: "accepted"
+        status: "accepted",
       },
       {
         name: "Farm G",
         orderDate: "20181206",
         itemQty: 2,
         totalLabel: "$ 5",
-        status: "canceled"
-      }
-    ]
-  }
+        status: "canceled",
+      },
+    ],
+  },
 ];
 
 storiesOf("Table/Row Groups", module)
@@ -633,7 +633,7 @@ storiesOf("Table/Row Groups", module)
       constructor() {
         super();
         this.state = {
-          data: orders
+          data: orders,
         };
       }
 
@@ -641,12 +641,15 @@ storiesOf("Table/Row Groups", module)
         return (
           <div>
             <button
+              type="button"
               onClick={() =>
-                this.setState({
-                  data: this.state.data.concat({
-                    name: `Foo ${new Date().getTime()}`,
-                    totalLabel: `$ ${Math.random()}`
-                  })
+                this.setState(prevState => {
+                  return {
+                    data: prevState.data.concat({
+                      name: `Foo ${new Date().getTime()}`,
+                      totalLabel: `$ ${Math.random()}`,
+                    }),
+                  };
                 })
               }
             >
@@ -740,9 +743,9 @@ storiesOf("Table/SelectionBar", module)
         align="right"
         width="150px"
       >
-        <DropdownItem value={"first"}>First Option</DropdownItem>
-        <DropdownItem value={"second"}>Second Option</DropdownItem>
-        <DropdownItem value={"third"}>Third Option</DropdownItem>
+        <DropdownItem value="first">First Option</DropdownItem>
+        <DropdownItem value="second">Second Option</DropdownItem>
+        <DropdownItem value="third">Third Option</DropdownItem>
       </Dropdown>
     </SelectionBar>
   ));

@@ -5,27 +5,6 @@ import { colors } from "@crave/farmblocks-theme";
 const pinSize = props => props.pinSize;
 const offset = props => pinSize(props) / 2;
 
-const Pin = styled.div`
-  font-size: ${pinSize}px;
-  text-align: center;
-  width: ${pinSize}px;
-
-  position: absolute;
-  bottom: 0;
-  left: -${offset}px;
-
-  color: ${props => props.pinColor};
-
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
-
-  ${props => (props.interactive ? interactiveStyle : "")};
-`;
-
-Pin.propTypes = {
-  interactive: PropTypes.bool,
-  animated: PropTypes.bool
-};
-
 const interactiveStyle = css`
   ${props =>
     props.animated
@@ -57,5 +36,26 @@ const interactiveStyle = css`
     background-color: ${props => props.pinHighlightColor || props.pinColor};
   }
 `;
+
+const Pin = styled.div`
+  font-size: ${pinSize}px;
+  text-align: center;
+  width: ${pinSize}px;
+
+  position: absolute;
+  bottom: 0;
+  left: -${offset}px;
+
+  color: ${props => props.pinColor};
+
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+
+  ${props => (props.interactive ? interactiveStyle : "")};
+`;
+
+Pin.propTypes = {
+  interactive: PropTypes.bool,
+  animated: PropTypes.bool,
+};
 
 export default Pin;

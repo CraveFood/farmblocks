@@ -10,7 +10,7 @@ export const disabledTooltipProps = {
   tooltipAlign: PropTypes.oneOf(["left", "right"]),
   tooltipText: PropTypes.string,
   onMouseLeave: PropTypes.func,
-  onMouseOver: PropTypes.func
+  onMouseOver: PropTypes.func,
 };
 
 function disabledTooltip(wrappedComponentType) {
@@ -18,39 +18,36 @@ function disabledTooltip(wrappedComponentType) {
     React.createElement(wrappedComponentType, props);
 
   const WrappedComponentWithTooltip = withTooltip(WrappedComponent);
-  return class extends React.Component {
-    render() {
-      const { noTooltip, tooltipText, ...wrappedComponentProps } = this.props;
 
-      return (
-        <WrappedComponentWithTooltip
-          disableTooltip={!this.props.disabled || noTooltip}
-          tooltipContent={tooltipText}
-          {...wrappedComponentProps}
-        />
-      );
-    }
+  const Component = ({ noTooltip, tooltipText, ...wrappedComponentProps }) => (
+    <WrappedComponentWithTooltip
+      disableTooltip={!wrappedComponentProps.disabled || noTooltip}
+      tooltipContent={tooltipText}
+      {...wrappedComponentProps}
+    />
+  );
 
-    static displayName = wrapDisplayName(
-      wrappedComponentType,
-      "disabledTooltip"
-    );
+  Component.displayName = wrapDisplayName(
+    wrappedComponentType,
+    "disabledTooltip",
+  );
 
-    static propTypes = {
-      ...WrappedComponent.propTypes,
-      ...disabledTooltipProps
-    };
-
-    static defaultProps = {
-      ...WrappedComponent.defaultProps,
-      displayBlock: false,
-      disabled: false,
-      noTooltip: false,
-      onMouseOver: () => null,
-      onMouseLeave: () => null,
-      tooltipAlign: "left",
-      tooltipText: "This field is disabled."
-    };
+  Component.propTypes = {
+    ...WrappedComponent.propTypes,
+    ...disabledTooltipProps,
   };
+
+  Component.defaultProps = {
+    ...WrappedComponent.defaultProps,
+    displayBlock: false,
+    disabled: false,
+    noTooltip: false,
+    onMouseOver: () => null,
+    onMouseLeave: () => null,
+    tooltipAlign: "left",
+    tooltipText: "This field is disabled.",
+  };
+
+  return Component;
 }
 export default disabledTooltip;

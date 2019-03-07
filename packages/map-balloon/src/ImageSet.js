@@ -8,17 +8,17 @@ import Gradient from "./styledComponents/Gradient";
 export const imageSetPropType = PropTypes.arrayOf(
   PropTypes.shape({
     name: PropTypes.string,
-    image: PropTypes.string.isRequired
-  })
+    image: PropTypes.string.isRequired,
+  }),
 );
 
-export const ImageSet = ({ set, fontSize }) => {
+const ImageSet = ({ set, fontSize }) => {
   const [{ name, image }] = set;
   return (
     <PhotoBox image={image}>
       {name && (
         <Gradient>
-          <Text title size={fontSize} type={"white"}>
+          <Text title size={fontSize} type="white">
             {name}
           </Text>
         </Gradient>
@@ -28,7 +28,7 @@ export const ImageSet = ({ set, fontSize }) => {
 };
 ImageSet.propTypes = {
   set: imageSetPropType.isRequired,
-  fontSize: PropTypes.number.isRequired
+  fontSize: PropTypes.number.isRequired,
 };
 
 export default ImageSet;

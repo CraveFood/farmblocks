@@ -17,7 +17,7 @@ DropdownItem.propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   text: PropTypes.string,
   footer: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default DropdownItem;

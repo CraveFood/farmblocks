@@ -9,7 +9,7 @@ describe("withMessages", () => {
   configure({ adapter: new Adapter() });
 
   const EnhancedInput = withMessages(props =>
-    React.createElement("input", props)
+    React.createElement("input", props),
   );
 
   describe("receiving new props", () => {
@@ -27,7 +27,7 @@ describe("withMessages", () => {
     test("passing the same validationMessages property should maintain the state", () => {
       const messages = ["Error message"];
       const component = shallow(
-        <EnhancedInput validationMessages={messages} />
+        <EnhancedInput validationMessages={messages} />,
       );
 
       component.setProps({ validationMessages: messages });
@@ -50,7 +50,7 @@ describe("withMessages", () => {
       const component = mount(<EnhancedInput onInvalid={onInvalidMock} />);
       component.find("input").simulate("invalid", {
         preventDefault: preventDefaultMock,
-        target: {}
+        target: {},
       });
       expect(preventDefaultMock).toBeCalled();
       expect(onInvalidMock).toBeCalled();
@@ -60,7 +60,7 @@ describe("withMessages", () => {
       const component = mount(<EnhancedInput />);
       component.find("input").simulate("invalid", {
         preventDefault: () => null,
-        target: { validationMessage: "bar" }
+        target: { validationMessage: "bar" },
       });
       const newState = component.state();
       expect(newState.messages).toEqual(["bar"]);
@@ -74,14 +74,14 @@ describe("withMessages", () => {
       // invalid event
       component.find("input").simulate("invalid", {
         preventDefault: () => null,
-        target: { validationMessage: "bar" }
+        target: { validationMessage: "bar" },
       });
       let state = component.state();
       expect(state.messages).toEqual(["bar"]);
 
       // onchange with valid event
       component.find("input").simulate("change", {
-        target: { value: "foo", validity: { valid: true } }
+        target: { value: "foo", validity: { valid: true } },
       });
 
       state = component.state();
@@ -94,7 +94,7 @@ describe("withMessages", () => {
 
       // onchange with valid event
       component.find("input").simulate("change", {
-        target: { value: "foo", validity: { valid: true } }
+        target: { value: "foo", validity: { valid: true } },
       });
 
       const state = component.state();
@@ -106,7 +106,7 @@ describe("withMessages", () => {
       const component = mount(<EnhancedInput onChange={onChangeMock} />);
 
       const event = {
-        target: { value: "foo", validity: { valid: true } }
+        target: { value: "foo", validity: { valid: true } },
       };
       component.find("input").simulate("change", event);
 

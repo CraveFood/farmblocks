@@ -12,7 +12,7 @@ describe("Popover", () => {
       <Popover
         trigger={<span>trigger</span>}
         content={() => <span>content</span>}
-      />
+      />,
     );
 
     // initial state
@@ -33,7 +33,7 @@ describe("Popover", () => {
             content
           </button>
         )}
-      />
+      />,
     );
 
     // open dropdown
@@ -93,7 +93,7 @@ describe("Popover", () => {
 
       // simulates click outside
       map.click({
-        target: wrapper.instance().outer
+        target: wrapper.instance().outer,
       });
       expect(popoverInstance.state).toEqual({ isVisible: false });
     });
@@ -110,7 +110,7 @@ describe("Popover", () => {
 
       // simulates click outside
       const event = {
-        target: wrapper.instance().outer
+        target: wrapper.instance().outer,
       };
       map.click(event);
       expect(popoverInstance.state).toEqual({ isVisible: false });
@@ -125,7 +125,7 @@ describe("Popover", () => {
 
       // simulates click outside
       const event = {
-        target: wrapper.instance().outer
+        target: wrapper.instance().outer,
       };
       map.click(event);
       expect(onOutsideClickSpy).not.toBeCalled();
@@ -137,7 +137,7 @@ describe("Popover", () => {
 
       // simulates click inside
       map.click({
-        target: wrapper.instance().inner
+        target: wrapper.instance().inner,
       });
       expect(popoverInstance.state).toEqual({ isVisible: true });
     });
@@ -159,13 +159,13 @@ describe("Popover", () => {
         <Popover
           trigger={<div>trigger</div>}
           content={() => <div>content</div>}
-        />
+        />,
       );
 
       const { handleOuterClick } = wrapper.instance();
 
       expect(addEventListenerMock).toBeCalledWith("click", handleOuterClick, {
-        capture: true
+        capture: true,
       });
     });
 
@@ -174,7 +174,7 @@ describe("Popover", () => {
         <Popover
           trigger={<div>trigger</div>}
           content={() => <div>content</div>}
-        />
+        />,
       );
 
       const { handleOuterClick } = wrapper.instance();
@@ -184,7 +184,7 @@ describe("Popover", () => {
       expect(removeEventListenerMock).toBeCalledWith(
         "click",
         handleOuterClick,
-        { capture: true }
+        { capture: true },
       );
     });
   });
@@ -205,7 +205,7 @@ describe("Popover", () => {
           trigger={<span>trigger</span>}
           content={() => <div>content</div>}
           onOpen={onOpenSpy}
-        />
+        />,
       );
 
       await wrapper.find("#trigger").simulate("click");
@@ -218,7 +218,7 @@ describe("Popover", () => {
           trigger={<span>trigger</span>}
           content={() => <div>content</div>}
           onOpen={onOpenSpy}
-        />
+        />,
       );
 
       wrapper.setState({ isVisible: true });
@@ -231,7 +231,7 @@ describe("Popover", () => {
         <Popover
           trigger={<span>trigger</span>}
           content={() => <div>content</div>}
-        />
+        />,
       );
 
       expect(async () => {
@@ -256,7 +256,7 @@ describe("Popover", () => {
           trigger={<span>trigger</span>}
           content={() => <div>content</div>}
           onClose={onCloseSpy}
-        />
+        />,
       );
 
       wrapper.setState({ isVisible: true });
@@ -270,7 +270,7 @@ describe("Popover", () => {
           trigger={<span>trigger</span>}
           content={() => <div>content</div>}
           onClose={onCloseSpy}
-        />
+        />,
       );
 
       await wrapper.find("#trigger").simulate("click");
@@ -282,7 +282,7 @@ describe("Popover", () => {
         <Popover
           trigger={<span>trigger</span>}
           content={() => <div>content</div>}
-        />
+        />,
       );
 
       wrapper.setState({ isVisible: true });
@@ -312,7 +312,7 @@ describe("Popover", () => {
 
     it("should pass isVisible to the given function", () => {
       const wrapper = shallow(
-        <Popover trigger={renderTriggerSpy} content={content} />
+        <Popover trigger={renderTriggerSpy} content={content} />,
       );
 
       renderTriggerSpy.mockClear();
@@ -327,7 +327,7 @@ describe("Popover", () => {
     it("should render the returned value", () => {
       const expectedResult = () => <div>Expected Result</div>;
       const wrapper = shallow(
-        <Popover trigger={() => expectedResult} content={content} />
+        <Popover trigger={() => expectedResult} content={content} />,
       );
       expect(wrapper.containsMatchingElement(expectedResult)).toEqual(true);
     });
@@ -349,7 +349,7 @@ describe("Popover", () => {
           content={() => <span>content</span>}
           onOpen={onOpenSpy}
           onBeforeOpen={() => Promise.resolve()}
-        />
+        />,
       );
 
       await wrapper.find("#trigger").simulate("click");
@@ -363,7 +363,7 @@ describe("Popover", () => {
           content={() => <span>content</span>}
           onOpen={onOpenSpy}
           onBeforeOpen={() => Promise.reject()}
-        />
+        />,
       );
 
       await wrapper.find("#trigger").simulate("click");
@@ -381,7 +381,7 @@ describe("Popover", () => {
           onBeforeOpen={() =>
             new Promise(resolve => (resolvePromise = resolve))
           }
-        />
+        />,
       );
 
       await wrapper.find("#trigger").simulate("click");
@@ -398,7 +398,7 @@ describe("Popover", () => {
           content={() => <span>content</span>}
           onOpen={onOpenSpy}
           onBeforeOpen={() => "whatever"}
-        />
+        />,
       );
 
       await wrapper.find("#trigger").simulate("click");

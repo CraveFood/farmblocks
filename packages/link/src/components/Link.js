@@ -25,7 +25,7 @@ const Link = props => {
     lineHeight,
     type,
     disabled,
-    className
+    className,
   };
 
   const LinkComponent = linkProps.href && !disabled ? "a" : "span";
@@ -52,8 +52,8 @@ Link.propTypes = {
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
-  className: PropTypes.string
-  //... and all properties of html <a>
+  className: PropTypes.string,
+  // ... and all properties of html <a>
 };
 
 Link.defaultProps = {
@@ -61,7 +61,7 @@ Link.defaultProps = {
   size: fontSizes.MEDIUM,
   lineHeight: 1,
   disabled: false,
-  external: false
+  external: false,
 };
 
 export default Link;

@@ -9,51 +9,8 @@ const createCheckbox = ({ isSwitch }) =>
   class Checkbox extends React.Component {
     state = {
       checked: this.props.checked,
-      clicked: false
+      clicked: false,
     };
-
-    render() {
-      const {
-        label,
-        checked,
-        onMouseUp,
-        onChange,
-        innerRef,
-        ...inputProps
-      } = this.props;
-
-      const checkedState = this.state.checked;
-      const labelProps = {
-        onMouseUp: this.onMouseUp,
-        switch: isSwitch,
-        checked: checkedState,
-        disabled: inputProps.disabled,
-        hasText: !!label
-      };
-
-      inputProps.defaultChecked = checkedState;
-      inputProps.onChange = this.onChange;
-
-      const fontColor = inputProps.disabled
-        ? fontTypes.SUBTLE
-        : fontTypes.NORMAL;
-
-      return (
-        <StyledLabel {...labelProps} ref={innerRef}>
-          <input {...inputProps} type="checkbox" className="hiddenCheckbox" />
-          <div className="centerVisibleCheckbox">
-            <div className="visibleCheckbox">
-              <div className={isSwitch ? "toggle" : "checkmark wg-check"} />
-            </div>
-            {label && (
-              <Text title={!isSwitch} type={fontColor} size={fontSizes.MEDIUM}>
-                {label}
-              </Text>
-            )}
-          </div>
-        </StyledLabel>
-      );
-    }
 
     componentDidUpdate(prevProps) {
       if (prevProps.checked !== this.props.checked) {
@@ -82,11 +39,62 @@ const createCheckbox = ({ isSwitch }) =>
       event.persist();
       this.setState(prevState => {
         const newCheckedState = !prevState.checked;
-        event.target.checked = newCheckedState;
-        this.props.onChange(event);
+        const changedEvent = {
+          ...event,
+          ...{
+            target: {
+              ...event.target,
+              checked: newCheckedState,
+            },
+          },
+        };
+        this.props.onChange(changedEvent);
         return { checked: !prevState.checked, clicked: false };
       });
     };
+
+    render() {
+      const {
+        label,
+        checked,
+        onMouseUp,
+        onChange,
+        innerRef,
+        ...inputProps
+      } = this.props;
+
+      const checkedState = this.state.checked;
+      const labelProps = {
+        onMouseUp: this.onMouseUp,
+        switch: isSwitch,
+        checked: checkedState,
+        disabled: inputProps.disabled,
+        hasText: !!label,
+      };
+
+      inputProps.defaultChecked = checkedState;
+      inputProps.onChange = this.onChange;
+
+      const fontColor = inputProps.disabled
+        ? fontTypes.SUBTLE
+        : fontTypes.NORMAL;
+
+      return (
+        <StyledLabel {...labelProps} ref={innerRef}>
+          <input {...inputProps} type="checkbox" className="hiddenCheckbox" />
+          <div className="centerVisibleCheckbox">
+            <div className="visibleCheckbox">
+              <div className={isSwitch ? "toggle" : "checkmark wg-check"} />
+            </div>
+            {label && (
+              <Text title={!isSwitch} type={fontColor} size={fontSizes.MEDIUM}>
+                {label}
+              </Text>
+            )}
+          </div>
+        </StyledLabel>
+      );
+    }
 
     static propTypes = {
       label: PropTypes.string,
@@ -94,12 +102,12 @@ const createCheckbox = ({ isSwitch }) =>
       onMouseUp: PropTypes.func,
       onChange: PropTypes.func,
       disabled: PropTypes.bool,
-      innerRef: PropTypes.func
+      innerRef: PropTypes.func,
     };
 
     static defaultProps = {
       onMouseUp: () => null,
-      onChange: () => null
+      onChange: () => null,
     };
   };
 

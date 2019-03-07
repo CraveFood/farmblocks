@@ -6,5 +6,5 @@ export default {
   [AlertTypes.NEWS]: colorConstants.INDIGO_MILK_CAP,
   [AlertTypes.POSITIVE]: colorConstants.LETTUCE,
   [AlertTypes.NEGATIVE]: colorConstants.STRAWBERRY,
-  [AlertTypes.ATTENTION]: colorConstants.CORN
+  [AlertTypes.ATTENTION]: colorConstants.CORN,
 };

@@ -33,7 +33,7 @@ const SingleImage = props => (
 SingleImage.propTypes = {
   src: PropTypes.string,
   borderRadius: PropTypes.string,
-  pinColor: PropTypes.string
+  pinColor: PropTypes.string,
 };
 
 export default SingleImage;

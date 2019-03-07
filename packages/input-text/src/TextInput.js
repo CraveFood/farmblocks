@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ReactInputMask from "react-input-mask";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import withMessages, {
-  withMessagesProps
+  withMessagesProps,
 } from "@crave/farmblocks-hoc-validation-messages";
 
 import protectedValue, { protectedValueProps } from "./protectedValue";
@@ -23,7 +23,7 @@ export const withMargin = Comp => {
   );
 
   Margin.propTypes = {
-    margin: PropTypes.string
+    margin: PropTypes.string,
   };
 
   return Margin;
@@ -33,7 +33,7 @@ export const EnhancedInput = compose(
   withMargin,
   withMessages,
   protectedValue,
-  formInput
+  formInput,
 );
 
 const RegularInput = EnhancedInput("input");
@@ -46,7 +46,7 @@ export const commonPropTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
 
-  margin: PropTypes.string
+  margin: PropTypes.string,
   // and any other properties to forward to the html input element...
 };
 
@@ -59,12 +59,12 @@ const TextInput = props => {
 TextInput.propTypes = {
   mask: PropTypes.string,
   ...protectedValueProps,
-  ...commonPropTypes
+  ...commonPropTypes,
 };
 
 TextInput.defaultProps = {
-  type: "text",
-  margin: "0 0 24px 0"
+  type: "text", // eslint-disable-line
+  margin: "0 0 24px 0", // eslint-disable-line
 };
 
 export default TextInput;

@@ -34,10 +34,12 @@ const FilterPopover = props => {
         <FormWrapper
           onCancel={e => {
             dismiss();
-            props.onFormCancelClick && props.onFormCancelClick(e);
+            props.onFormCancelClick?.(e);
           }}
           onSave={e => {
-            props.dismissOnSave && dismiss();
+            if (props.dismissOnSave) {
+              dismiss();
+            }
             props.onFormSaveClick(e, dismiss);
           }}
           saveLabel={props.formSaveLabel}
@@ -56,7 +58,7 @@ FilterPopover.defaultProps = {
   formSaveLabel: "Filter",
   triggerFontSize: "14px",
   triggerTextColor: colors.CARBON,
-  triggerFontWeight: "normal"
+  triggerFontWeight: "normal",
 };
 
 FilterPopover.propTypes = {
@@ -74,7 +76,7 @@ FilterPopover.propTypes = {
   align: PropTypes.string,
   dismissOnSave: PropTypes.bool,
   hasValue: PropTypes.bool,
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
 };
 
 export default FilterPopover;

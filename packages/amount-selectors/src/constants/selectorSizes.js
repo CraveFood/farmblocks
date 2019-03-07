@@ -1,4 +1,4 @@
 export default {
   SMALL: "SMALL",
-  MEDIUM: "MEDIUM"
+  MEDIUM: "MEDIUM",
 };

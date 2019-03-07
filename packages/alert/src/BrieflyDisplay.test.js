@@ -12,7 +12,7 @@ describe("BrieflyDisplay", function() {
     const component = renderer.create(
       <BrieflyDisplay time={10000}>
         <p>foo</p>
-      </BrieflyDisplay>
+      </BrieflyDisplay>,
     );
     const state = component.getInstance().state;
     const json = component.toJSON();
@@ -31,7 +31,7 @@ describe("BrieflyDisplay", function() {
     const alert = renderer.create(
       <BrieflyDisplay time={3000}>
         <p>foo</p>
-      </BrieflyDisplay>
+      </BrieflyDisplay>,
     );
     expect(clearTimeout.mock.calls.length).toBe(0);
     alert.unmount();

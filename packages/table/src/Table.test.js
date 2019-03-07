@@ -15,7 +15,7 @@ describe("Table", function() {
       const component = mount(
         <Table selectableRows data={dataFixture}>
           <Column title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       const selectAllButton = component.find("th input");
       selectAllButton.simulate("change", { target: { checked: true } });
@@ -27,7 +27,7 @@ describe("Table", function() {
       const component = mount(
         <Table selectableRows data={dataFixture}>
           <Column title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       component.setState({ selectedRows: [0, 1] });
       expect(component.state().selectedRows.length).toBe(dataFixture.length);
@@ -41,7 +41,7 @@ describe("Table", function() {
       const component = mount(
         <Table selectableRows data={dataFixture}>
           <Column title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       const firstRowCheckbox = component.find("td input").first();
       expect(component.state().selectedRows.length).toBe(0);
@@ -54,7 +54,7 @@ describe("Table", function() {
       const component = mount(
         <Table selectableRows data={dataFixture}>
           <Column title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       component.setState({ selectedRows: ["0,"] });
       const firstRowCheckbox = component.find("td input").first();
@@ -75,7 +75,7 @@ describe("Table", function() {
           selectionHeader={selectionHeaderRenderer}
         >
           <Column clickable title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       const firstRowCheckbox = component.find("td input").first();
       firstRowCheckbox.simulate("change", { target: { checked: true } });
@@ -96,7 +96,7 @@ describe("Table", function() {
           selectionHeader={selectionHeaderRenderer}
         >
           <Column clickable title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
 
       const newRow = { name: "New Row" };
@@ -120,7 +120,7 @@ describe("Table", function() {
           collapsed
         >
           <Column title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       const firstExpandButton = component.find("td Button").first();
 
@@ -143,7 +143,7 @@ describe("Table", function() {
       const component = mount(
         <Table data={dataFixture}>
           <Column clickable title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       const firstTitleLink = component.find("th Link").first();
 
@@ -164,7 +164,7 @@ describe("Table", function() {
       const component = mount(
         <Table data={dataFixture} onTitleClick={onTitleClickMock}>
           <Column clickable title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
       const firstTitleLink = component.find("th Link").first();
 
@@ -189,12 +189,12 @@ describe("Table", function() {
           onRowClick={onRowClickSpy}
         >
           <Column title="Name" text={row => row.name} />
-        </Table>
+        </Table>,
       );
 
       expandToggleClickedSpy = jest.spyOn(
         component.instance(),
-        "expandToggleClicked"
+        "expandToggleClicked",
       );
     });
 

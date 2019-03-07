@@ -7,19 +7,6 @@ import MoreInfo from "@crave/farmblocks-more-info";
 import { alignments } from "@crave/farmblocks-tooltip";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 
-const TextLabel = styled(Text)`
-  order: 1;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  color: ${labelColor};
-  float: left;
-`;
-
-const MoreInfoWrapper = styled(MoreInfo)`
-  position: relative;
-  top: -1px;
-`;
-
 const labelColor = props => {
   if (props.focused) {
     return colors.INDIGO_MILK_CAP;
@@ -32,6 +19,18 @@ const labelColor = props => {
   }
   return colors.CARBON;
 };
+
+const TextLabel = styled(Text)`
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+`;
+
+const MoreInfoWrapper = styled(MoreInfo)`
+  position: relative;
+  top: -1px;
+`;
 
 const Label = ({ children, moreInfoAlign, moreInfoContent, ...props }) => {
   return (
@@ -56,7 +55,7 @@ const Label = ({ children, moreInfoAlign, moreInfoContent, ...props }) => {
 };
 
 Label.defaultProps = {
-  moreInfoAlign: alignments.LEFT
+  moreInfoAlign: alignments.LEFT,
 };
 
 Label.propTypes = {
@@ -66,7 +65,7 @@ Label.propTypes = {
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
   protected: PropTypes.bool,
-  invalid: PropTypes.bool
+  invalid: PropTypes.bool,
 };
 
 export default Label;

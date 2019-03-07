@@ -18,6 +18,72 @@ const paddingStyle = ({ size, isIconOnly, paddingX }) => {
   `;
 };
 
+function neutralStyle(props) {
+  const { textColor, iconColor, textHoverColor, color } = props.theme[NEUTRAL];
+  const activatedNeutralStyle = css`
+    color: ${textHoverColor};
+    border-color: ${textHoverColor};
+    > .icon {
+      color: ${textHoverColor};
+    }
+  `;
+  return css`
+    background-color: ${color};
+    color: ${props.textColor || textColor};
+    > .icon {
+      color: ${iconColor};
+    }
+    ${({ activated }) => activated && activatedNeutralStyle};
+
+    &:hover,
+    &:focus {
+      ${activatedNeutralStyle};
+    }
+  `;
+}
+
+function typeStyle(props) {
+  const theme = { ...colorTypes, ...props.theme };
+  if (props.type === NEUTRAL) {
+    return neutralStyle({ ...props, theme });
+  }
+  const { color, hoverColor } = theme[props.type];
+
+  return css`
+    transition: background 0.3s ease;
+    background-color: ${color};
+
+    &:hover {
+      background-color: ${hoverColor};
+    }
+
+    &:focus {
+      background-color: ${hoverColor};
+    }
+  `;
+}
+
+function loadingStyle(props) {
+  return (
+    props.loading &&
+    css`
+      > .icon.left-icon i::before {
+        display: inline-block;
+        animation: spin 1.1s infinite linear;
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    `
+  );
+}
+
 const Button = styled.button`
   display: flex;
   align-items: flex-end;
@@ -29,7 +95,7 @@ const Button = styled.button`
   border-radius: 4px;
   box-shadow: ${props => props.boxShadow || "0 2px 2px 0 rgba(0, 0, 0, 0.16)"};
 
-  color: ${({ textColor }) => (textColor ? textColor : "white")};
+  color: ${({ textColor }) => textColor || "white"};
 
   line-height: ${lineHeight}px;
   font-size: 16px;
@@ -87,73 +153,7 @@ const Button = styled.button`
 
 Button.displayName = "StyledButton";
 Button.defaultProps = {
-  theme: {}
+  theme: {},
 };
-
-function neutralStyle(props) {
-  const { textColor, iconColor, textHoverColor, color } = props.theme[NEUTRAL];
-  const activatedNeutralStyle = css`
-    color: ${textHoverColor};
-    border-color: ${textHoverColor};
-    > .icon {
-      color: ${textHoverColor};
-    }
-  `;
-  return css`
-    background-color: ${color};
-    color: ${props.textColor || textColor};
-    > .icon {
-      color: ${iconColor};
-    }
-    ${props => props.activated && activatedNeutralStyle};
-
-    &:hover,
-    &:focus {
-      ${activatedNeutralStyle};
-    }
-  `;
-}
-
-function typeStyle(props) {
-  const theme = { ...colorTypes, ...props.theme };
-  if (props.type === NEUTRAL) {
-    return neutralStyle({ ...props, theme });
-  }
-  const { color, hoverColor } = theme[props.type];
-
-  return css`
-    transition: background 0.3s ease;
-    background-color: ${color};
-
-    &:hover {
-      background-color: ${hoverColor};
-    }
-
-    &:focus {
-      background-color: ${hoverColor};
-    }
-  `;
-}
-
-function loadingStyle(props) {
-  return (
-    props.loading &&
-    css`
-      > .icon.left-icon i::before {
-        display: inline-block;
-        animation: spin 1.1s infinite linear;
-        @keyframes spin {
-          0% {
-            transform: rotate(0deg);
-          }
-
-          100% {
-            transform: rotate(360deg);
-          }
-        }
-      }
-    `
-  );
-}
 
 export default Button;

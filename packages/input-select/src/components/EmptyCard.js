@@ -18,23 +18,19 @@ const CardWrapper = styled(Card)`
   }
 `;
 
-class EmptyCard extends React.Component {
-  render() {
-    return (
-      <CardWrapper type="NEUTRAL">
-        <Image src={helperSrc} badge size={badgeSizes.MEDIUM} />
-        <Text className="centered">{this.props.noResultsMessage}</Text>
-      </CardWrapper>
-    );
-  }
-}
+const EmptyCard = ({ noResultsMessage }) => (
+  <CardWrapper type="NEUTRAL">
+    <Image src={helperSrc} badge size={badgeSizes.MEDIUM} />
+    <Text className="centered">{noResultsMessage}</Text>
+  </CardWrapper>
+);
 
 EmptyCard.defaultProps = {
-  noResultsMessage: "No results found"
+  noResultsMessage: "No results found",
 };
 
 EmptyCard.propTypes = {
-  noResultsMessage: PropTypes.string
+  noResultsMessage: PropTypes.string,
 };
 
 CardWrapper.displayName = "EmptyCard";

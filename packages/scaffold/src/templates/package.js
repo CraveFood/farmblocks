@@ -3,13 +3,13 @@ const { format } = require("prettier");
 const peerDependencies = {
   react: "^16.8.2",
   "prop-types": "^15.7.2",
-  "styled-components": "^4.1.3"
+  "styled-components": "^4.1.3",
 };
 
 const packageTemplate = ({
   shortName,
   description,
-  keywords = ["farmblocks"]
+  keywords = ["farmblocks"],
 }) =>
   format(
     `
@@ -44,7 +44,7 @@ const packageTemplate = ({
   "dependencies": {}
 }
 `,
-    { parser: "json" }
+    { parser: "json" },
   );
 
 module.exports = packageTemplate;

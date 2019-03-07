@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { colors as colorConstants } from "@crave/farmblocks-theme";
 import badgeSizes from "../constants/badgeSizes";
 import thumbnailSizes from "../constants/thumbnailSizes";
-import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 const width = props => props.width || `${props.size}px`;
 const height = props => props.height || `${props.size}px`;

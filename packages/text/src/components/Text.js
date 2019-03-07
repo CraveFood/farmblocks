@@ -4,33 +4,30 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Container from "../styledComponents/Text";
 
-export default class Text extends React.Component {
-  render() {
-    const { children, title, ...props } = this.props;
-    return (
-      <Container isTitle={title} {...props}>
-        {children}
-      </Container>
-    );
-  }
+const Text = ({ children, title, ...props }) => (
+  <Container isTitle={title} {...props}>
+    {children}
+  </Container>
+);
 
-  static propTypes = {
-    children: PropTypes.node,
-    size: PropTypes.number,
-    type: PropTypes.string,
-    align: PropTypes.oneOf(["left", "center", "right", "justify"]),
-    lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    paragraph: PropTypes.bool,
-    title: PropTypes.bool,
-    letterSpacing: PropTypes.string,
-    light: PropTypes.bool
-  };
+Text.propTypes = {
+  children: PropTypes.node,
+  size: PropTypes.number,
+  type: PropTypes.string,
+  align: PropTypes.oneOf(["left", "center", "right", "justify"]),
+  lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  paragraph: PropTypes.bool,
+  title: PropTypes.bool,
+  letterSpacing: PropTypes.string,
+  light: PropTypes.bool,
+};
 
-  static defaultProps = {
-    size: fontSizes.LARGE,
-    type: fontTypes.NORMAL,
-    align: "left",
-    paragraph: false,
-    title: false
-  };
-}
+Text.defaultProps = {
+  size: fontSizes.LARGE,
+  type: fontTypes.NORMAL,
+  align: "left",
+  paragraph: false,
+  title: false,
+};
+
+export default Text;

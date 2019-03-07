@@ -5,7 +5,11 @@ import withMessages from "@crave/farmblocks-hoc-validation-messages";
 
 import { withMargin, commonPropTypes } from "./TextInput";
 
-const EnhancedInput = compose(withMargin, withMessages, formInput);
+const EnhancedInput = compose(
+  withMargin,
+  withMessages,
+  formInput,
+);
 
 const TextArea = EnhancedInput("textarea");
 
@@ -16,7 +20,7 @@ export const TextAreaInput = props => {
 TextAreaInput.propTypes = { ...commonPropTypes };
 
 TextAreaInput.defaultProps = {
-  margin: "0 0 24px 0"
+  margin: "0 0 24px 0",
 };
 
 export default TextAreaInput;

@@ -22,7 +22,7 @@ storiesOf("HOC formInput", module)
     <EnhancedInput
       input={{
         onChange: action("input.onChange"),
-        value: "input.value"
+        value: "input.value",
       }}
       label="Input Label"
       type="text"

@@ -19,7 +19,11 @@ storiesOf("Tag", module)
     <div style={{ marginTop: "20px" }}>
       <Tag>
         <div style={{ width: "auto" }}>
-          <img src="https://picsum.photos/200" style={{ width: "8px" }} />
+          <img
+            src="https://picsum.photos/200"
+            style={{ width: "8px" }}
+            alt="picsum"
+          />
         </div>
       </Tag>
     </div>

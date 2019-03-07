@@ -4,7 +4,7 @@ import { getAutoAlign } from "./Tooltip";
 const createDOMNodeMock = (right, parentRight) => ({
   getBoundingClientRect: jest.fn().mockReturnValue({ right }),
   closest:
-    parentRight && jest.fn().mockReturnValue(createDOMNodeMock(parentRight))
+    parentRight && jest.fn().mockReturnValue(createDOMNodeMock(parentRight)),
 });
 
 describe("Tooltip", () => {

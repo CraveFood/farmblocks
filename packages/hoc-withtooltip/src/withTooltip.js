@@ -39,7 +39,7 @@ const Container = styled.div`
 const withTooltip = WrappedComponent => {
   return class extends React.Component {
     state = {
-      tooltipVisible: false
+      tooltipVisible: false,
     };
 
     onMouseOver = event => {
@@ -69,7 +69,7 @@ const withTooltip = WrappedComponent => {
 
       const mouseEvents = {
         onMouseOver: this.onMouseOver,
-        onMouseLeave: this.onMouseLeave
+        onMouseLeave: this.onMouseLeave,
       };
 
       return (
@@ -113,11 +113,11 @@ const withTooltip = WrappedComponent => {
       overflow: PropTypes.string,
       onMouseLeave: PropTypes.func,
       onMouseOver: PropTypes.func,
-      ...WrappedComponent.propTypes
+      ...WrappedComponent.propTypes,
     };
 
     static defaultProps = {
-      ...WrappedComponent.defaultProps
+      ...WrappedComponent.defaultProps,
     };
   };
 };

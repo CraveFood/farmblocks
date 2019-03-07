@@ -10,7 +10,7 @@ describe("Table/SelectionBar", function() {
   test("Click on Clear button should call clear function", function() {
     const clearFunctionMock = jest.fn();
     const component = mount(
-      <SelectionBar clearSelection={clearFunctionMock} />
+      <SelectionBar clearSelection={clearFunctionMock} />,
     );
     const clearButton = component.find(".clear button");
     clearButton.simulate("click");

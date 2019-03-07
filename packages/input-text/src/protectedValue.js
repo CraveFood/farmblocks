@@ -51,7 +51,7 @@ export const protectedValueProps = {
   onKeyDown: PropTypes.func,
   cancelButtonText: PropTypes.string,
   saveButtonText: PropTypes.string,
-  disableManualReplace: PropTypes.bool
+  disableManualReplace: PropTypes.bool,
 };
 
 // HOC that covers a component with a dummy text field
@@ -61,13 +61,20 @@ export default WrappedComponent => {
     state = {
       isEditing: false,
       value: this.props.value,
-      editedValue: ""
+      editedValue: "",
+    };
+
+    componentDidUpdate = prevProps => {
+      if (this.props.value !== prevProps.value) {
+        this.setState({
+          value: this.props.value,
+        });
+      }
     };
 
     onUncover = () => {
-      const { onUncover } = this.props;
       this.setState({ isEditing: true, editedValue: "" });
-      onUncover && onUncover();
+      this.props.onUncover?.();
     };
 
     onCancel = () => {
@@ -80,22 +87,19 @@ export default WrappedComponent => {
       return this.props.onReplace && this.props.onReplace(value);
     };
 
-    componentDidUpdate = prevProps => {
-      if (this.props.value !== prevProps.value) {
-        this.setState({
-          value: this.props.value
-        });
-      }
-    };
-
-    _renderCover = () => {
+    renderCover = () => {
       return (
         <Cover>
           <div className="input">
             {this.state.value}
             {!this.props.disabled && (
               <div className="clear">
-                <a onClick={this.onUncover}>
+                <a
+                  role="link"
+                  tabIndex="0"
+                  onClick={this.onUncover}
+                  onKeyDown={this.onUncover}
+                >
                   <i className="wg-edit" />
                 </a>
               </div>
@@ -124,8 +128,6 @@ export default WrappedComponent => {
         onReplace,
         onKeyDown,
         onUncover,
-        onBlur,
-        onChange,
         cancelButtonText,
         saveButtonText,
         focused,
@@ -145,54 +147,54 @@ export default WrappedComponent => {
             onKeyDown={covered && displayButtons ? this.onKeyDown : onKeyDown}
             onChange={event => {
               this.setState({ editedValue: event.target.value });
-              onChange && onChange(event);
+              this.props.onChange?.(event);
             }}
             onBlur={event => {
-              covered && isEditing && this.onCancel();
-              onBlur && onBlur(event);
+              if (covered && isEditing) {
+                this.onCancel();
+              }
+              this.props.onBlur?.(event);
             }}
           />
-          {covered && !isEditing && this._renderCover()}
-          {covered &&
-            displayButtons &&
-            isEditing && (
-              <div>
-                <Button
-                  id="cancel-button"
-                  onClick={this.onCancel}
-                  size={buttonSizes.MEDIUM}
-                  className="margin-button"
-                >
-                  {cancelButtonText}
-                </Button>
-                <Button
-                  id="save-button"
-                  onClick={() => {
-                    this.onReplace(this.state.editedValue);
-                  }}
-                  onMouseDown={e => {
-                    // We do this in order to avoid onBlur event on input
-                    e.preventDefault();
-                  }}
-                  type={buttonTypes.SECONDARY}
-                  size={buttonSizes.MEDIUM}
-                >
-                  {saveButtonText}
-                </Button>
-              </div>
-            )}
+          {covered && !isEditing && this.renderCover()}
+          {covered && displayButtons && isEditing && (
+            <div>
+              <Button
+                id="cancel-button"
+                onClick={this.onCancel}
+                size={buttonSizes.MEDIUM}
+                className="margin-button"
+              >
+                {cancelButtonText}
+              </Button>
+              <Button
+                id="save-button"
+                onClick={() => {
+                  this.onReplace(this.state.editedValue);
+                }}
+                onMouseDown={e => {
+                  // We do this in order to avoid onBlur event on input
+                  e.preventDefault();
+                }}
+                type={buttonTypes.SECONDARY}
+                size={buttonSizes.MEDIUM}
+              >
+                {saveButtonText}
+              </Button>
+            </div>
+          )}
         </Container>
       );
     }
 
     static defaultProps = {
       cancelButtonText: "Cancel",
-      saveButtonText: "Save"
+      saveButtonText: "Save",
     };
 
     static propTypes = {
       ...protectedValueProps,
-      ...formInputProps
+      ...formInputProps,
     };
   };
 };

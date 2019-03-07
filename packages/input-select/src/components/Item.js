@@ -11,29 +11,24 @@ const ItemImage = styled(Image)`
   margin-right: 8px;
 `;
 
-class Item extends React.Component {
-  render() {
-    const { selected, image, label, id } = this.props;
-    return (
-      <ItemContainer id={id}>
-        {image ? (
-          <LabelContainer>
-            <ItemImage src={image} size={thumbnailSizes.SMALL} /> {label}
-          </LabelContainer>
-        ) : (
-          label
-        )}
-        {selected && <i className="icon wg-check" />}
-      </ItemContainer>
-    );
-  }
-}
+const Item = ({ selected, image, label, id }) => (
+  <ItemContainer id={id}>
+    {image ? (
+      <LabelContainer>
+        <ItemImage src={image} size={thumbnailSizes.SMALL} /> {label}
+      </LabelContainer>
+    ) : (
+      label
+    )}
+    {selected && <i className="icon wg-check" />}
+  </ItemContainer>
+);
 
 Item.propTypes = {
   selected: PropTypes.bool,
   image: PropTypes.string,
   id: PropTypes.string,
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
 };
 
 export default Item;

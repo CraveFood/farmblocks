@@ -2,10 +2,9 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
+import { fontSizes } from "@crave/farmblocks-theme";
 import Link from "./Link";
 import linkTypes from "../constants/linkTypes";
-
-import { fontSizes } from "@crave/farmblocks-theme";
 
 storiesOf("Link/Featured", module)
   .add("Default - left aligned, medium size", () => (

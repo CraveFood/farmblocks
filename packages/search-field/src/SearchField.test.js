@@ -49,7 +49,7 @@ describe("SearchField", () => {
       instance.onSearchChange(event);
 
       expect(instance.debouncedOnSearchChange).toHaveBeenCalledWith(
-        event.target.value
+        event.target.value,
       );
     });
 
@@ -60,7 +60,7 @@ describe("SearchField", () => {
         onChangeSpy = jest.fn();
         instance.props = {
           ...instance.props,
-          onChange: onChangeSpy
+          onChange: onChangeSpy,
         };
       });
       afterEach(() => {
@@ -90,7 +90,7 @@ describe("SearchField", () => {
       debounceDelay = 100;
       instance.props = {
         onSearchChange: onSearchChangeSpy,
-        debounceDelay
+        debounceDelay,
       };
       previousDebounce = { cancel: jest.fn() };
       instance.debouncedOnSearchChange = previousDebounce;
@@ -106,7 +106,7 @@ describe("SearchField", () => {
     test("should do nothing for unrelated props", () => {
       instance.componentDidUpdate({
         ...instance.props,
-        anotherProp: 1
+        anotherProp: 1,
       });
 
       expect(instance.debouncedOnSearchChange.cancel).not.toHaveBeenCalled();
@@ -116,7 +116,7 @@ describe("SearchField", () => {
     test("should cancel previous debounces", () => {
       instance.componentDidUpdate({
         ...instance.props,
-        debounceDelay: 1
+        debounceDelay: 1,
       });
 
       expect(previousDebounce.cancel).toHaveBeenCalledTimes(1);
@@ -125,7 +125,7 @@ describe("SearchField", () => {
     test("should create new debounce for onSearchChange updates", () => {
       const newProps = {
         ...instance.props,
-        onSearchChange: () => true
+        onSearchChange: () => true,
       };
       const prevProps = instance.props;
       instance.props = newProps;
@@ -134,7 +134,7 @@ describe("SearchField", () => {
       expect(debounce).toHaveBeenCalledTimes(2);
       expect(debounce).toHaveBeenCalledWith(
         newProps.onSearchChange,
-        debounceDelay
+        debounceDelay,
       );
     });
 
@@ -148,7 +148,7 @@ describe("SearchField", () => {
       expect(component.state()).toEqual({
         ...oldState,
         selectedItem: item,
-        inputValue: item.label
+        inputValue: item.label,
       });
     });
 
@@ -191,7 +191,7 @@ describe("SearchField", () => {
       const newItem = { value: "ab", label: "New AB" };
       const props = { items: [newItem] };
       const component = mount(
-        <SearchField items={[item]} value={item.value} />
+        <SearchField items={[item]} value={item.value} />,
       );
       const oldState = component.state();
 
@@ -201,7 +201,7 @@ describe("SearchField", () => {
         ...oldState,
         items: [newItem],
         inputValue: newItem.label,
-        selectedItem: newItem
+        selectedItem: newItem,
       });
     });
 
@@ -230,7 +230,7 @@ describe("SearchField", () => {
       instance.props.items = items;
       centerChildByIndexSpy = jest.fn();
       instance.scroller = {
-        centerChildByIndex: centerChildByIndexSpy
+        centerChildByIndex: centerChildByIndexSpy,
       };
       prevState = { highlightedIndex: 1 };
     });
@@ -254,7 +254,7 @@ describe("SearchField", () => {
 
       expect(stateChange).toHaveProperty(
         "highlightedIndex",
-        prevState.highlightedIndex + 1
+        prevState.highlightedIndex + 1,
       );
     });
 
@@ -263,7 +263,7 @@ describe("SearchField", () => {
 
       expect(stateChange).toHaveProperty(
         "highlightedIndex",
-        prevState.highlightedIndex - 1
+        prevState.highlightedIndex - 1,
       );
     });
 
@@ -301,9 +301,9 @@ describe("SearchField", () => {
       event = {
         key: "a",
         target: {
-          blur: onBlurSpy
+          blur: onBlurSpy,
         },
-        preventDefault: preventDefaultSpy
+        preventDefault: preventDefaultSpy,
       };
       onChangeSpy = jest.fn();
       instance.selectResult = onChangeSpy;
@@ -342,7 +342,7 @@ describe("SearchField", () => {
       const onChangeMock = jest.fn();
 
       const component = mount(
-        <SearchField items={items} onChange={onChangeMock} />
+        <SearchField items={items} onChange={onChangeMock} />,
       );
       event.key = "Enter";
       component.setState({ highlightedIndex: index });
@@ -406,13 +406,13 @@ describe("SearchField", () => {
       items = [
         { label: "A", value: "a" },
         { label: "B", value: "b" },
-        { label: "C", value: "c" }
+        { label: "C", value: "c" },
       ];
       onChangeSpy = jest.fn();
       instance.props = {
         ...instance.props,
         onChange: onChangeSpy,
-        items
+        items,
       };
     });
     afterEach(() => {
@@ -432,13 +432,13 @@ describe("SearchField", () => {
     test("should call onChange prop with selected item value", () => {
       const index = 1;
       const component = mount(
-        <SearchField onChange={onChangeSpy} items={items} />
+        <SearchField onChange={onChangeSpy} items={items} />,
       );
       component.instance().selectResult(index);
 
       expect(onChangeSpy).toHaveBeenCalledWith(
         items[index].value,
-        items[index]
+        items[index],
       );
     });
 
@@ -478,7 +478,7 @@ describe("SearchField", () => {
       instance.props = {
         ...instance.props,
         onSearchChange: onSearchChangeSpy,
-        onChange: onChangeSpy
+        onChange: onChangeSpy,
       };
     });
     afterEach(() => {
@@ -563,8 +563,8 @@ describe("SearchField", () => {
       event = { currentTarget };
       scroller = {
         wrapper: {
-          childNodes: [1, 2, currentTarget, 4]
-        }
+          childNodes: [1, 2, currentTarget, 4],
+        },
       };
       instance.scroller = scroller;
       onChangeSpy = jest.fn();
@@ -590,19 +590,19 @@ describe("SearchField", () => {
     let items, renderMenuSpy;
     beforeEach(() => {
       renderMenuSpy = jest.fn();
-      instance._renderMenu = renderMenuSpy;
+      instance.renderMenu = renderMenuSpy;
       items = [
         { label: "A", value: "a" },
         { label: "B", value: "b" },
-        { label: "C", value: "c" }
+        { label: "C", value: "c" },
       ];
       instance.state = {
         ...instance.state,
-        focused: true
+        focused: true,
       };
       instance.props = {
         ...instance.props,
-        items
+        items,
       };
     });
     afterEach(() => {
@@ -642,16 +642,16 @@ describe("SearchField", () => {
     });
   });
 
-  describe("_renderMenu", () => {
+  describe("renderMenu", () => {
     test("should return a Menu component", () => {
-      const result = instance._renderMenu();
+      const result = instance.renderMenu();
 
       expect(result).toHaveProperty("type", Menu);
     });
 
     test("should store scroller innerRef", () => {
       const node = {};
-      const menu = instance._renderMenu();
+      const menu = instance.renderMenu();
 
       menu.props.innerRef(node);
 

@@ -8,18 +8,18 @@ import StyledInfo from "../styledComponents/StyledInfo";
 
 class MoreInfo extends Component {
   state = {
-    tooltipVisible: false
+    tooltipVisible: false,
   };
 
   showTooltip = () => {
     this.setState({
-      tooltipVisible: true
+      tooltipVisible: true,
     });
   };
 
   hideTooltip = () => {
     this.setState({
-      tooltipVisible: false
+      tooltipVisible: false,
     });
   };
 
@@ -33,14 +33,22 @@ class MoreInfo extends Component {
           className={this.state.tooltipVisible && "hovered"}
         >
           {this.props.text}
-          <div className="icon" onMouseOver={this.showTooltip}>
+          <div
+            className="icon"
+            onMouseOver={this.showTooltip}
+            onFocus={this.showTooltip}
+          >
             <i className={this.props.icon} />
             <Tooltip
               className="tooltip"
               isVisible={this.state.tooltipVisible}
               align={this.props.tooltipAlign}
             >
-              <div className="hit-area" onMouseOut={this.hideTooltip}>
+              <div
+                className="hit-area"
+                onMouseOut={this.hideTooltip}
+                onBlur={this.hideTooltip}
+              >
                 {this.props.children}
               </div>
             </Tooltip>
@@ -52,15 +60,15 @@ class MoreInfo extends Component {
 }
 
 MoreInfo.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
-  tooltipAlign: PropTypes.oneOf(["left", "right", "center"])
+  tooltipAlign: PropTypes.oneOf(["left", "right", "center"]),
 };
 
 MoreInfo.defaultProps = {
   tooltipAlign: "center",
-  icon: "wg-question"
+  icon: "wg-question",
 };
 
 export default MoreInfo;

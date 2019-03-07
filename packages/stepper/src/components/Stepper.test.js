@@ -18,7 +18,7 @@ describe("Stepper", function() {
         steps={steps}
         completedSteps={completedSteps}
         onClick={onClickMock}
-      />
+      />,
     );
 
     wrapper.find("Step").simulate("click");
@@ -37,7 +37,7 @@ describe("Stepper", function() {
         steps={steps}
         completedSteps={completedSteps}
         onClick={onClickMock}
-      />
+      />,
     );
 
     const pendingStep = wrapper.find("Step").last();
@@ -58,7 +58,7 @@ describe("Stepper", function() {
         steps={steps}
         completedSteps={completedSteps}
         onClick={onClickMock}
-      />
+      />,
     );
 
     wrapper.find("Step").simulate("click");

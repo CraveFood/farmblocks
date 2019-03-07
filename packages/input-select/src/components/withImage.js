@@ -26,6 +26,6 @@ export default Input =>
 
     static propTypes = {
       image: PropTypes.string,
-      inputRef: PropTypes.func
+      inputRef: PropTypes.func,
     };
   };

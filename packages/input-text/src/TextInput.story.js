@@ -46,7 +46,7 @@ storiesOf("Text Input", module)
 
       componentDidMount() {
         this.interval = window.setInterval(() => {
-          this.setState({ count: this.state.count + 1 });
+          this.setState(state => ({ count: state.count + 1 }));
         }, 3000);
       }
 
@@ -89,6 +89,7 @@ storiesOf("Text Input", module)
   .add("with onMouseOver and onMouseLeave handlers", () => (
     <TextInput
       onMouseOver={action("input hovered")}
+      onFocus={action("input hovered")}
       onMouseLeave={action("input mouse leave")}
       disabled
       label="Field Label"
@@ -111,7 +112,7 @@ storiesOf("Text Input", module)
         "Your password needs to contain a plot",
         "Your password needs to contain a protagonist",
         "Your password needs to contain some character developtment",
-        "Your password needs to contain a twist end"
+        "Your password needs to contain a twist end",
       ]}
       value="invalid value"
       label="Field Label"

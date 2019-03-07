@@ -24,9 +24,9 @@ describe("MapBalloon", () => {
         imageSet: [
           {
             image: "https://picsum.photos/640/?random",
-            name: "Romaine Lettuce"
-          }
-        ]
+            name: "Romaine Lettuce",
+          },
+        ],
       };
     });
     afterEach(() => {
@@ -40,7 +40,7 @@ describe("MapBalloon", () => {
     describe("onPinClick", () => {
       test("should pass the value", () => {
         const wrapper = shallow(
-          <MapBalloon onPinClick={onPinClickSpy} {...commonProps} />
+          <MapBalloon onPinClick={onPinClickSpy} {...commonProps} />,
         );
         wrapper.find(Pin).simulate("click", event);
 
@@ -52,7 +52,7 @@ describe("MapBalloon", () => {
     describe("onBalloonClick", () => {
       test("should pass the value", () => {
         const wrapper = shallow(
-          <MapBalloon onBalloonClick={onBalloonClickSpy} {...commonProps} />
+          <MapBalloon onBalloonClick={onBalloonClickSpy} {...commonProps} />,
         );
         wrapper.find(Balloon).simulate("click", event);
 
@@ -66,7 +66,7 @@ describe("MapBalloon", () => {
     test("prop should be optional if singleImage exists", () => {
       const propTypeMock = jest.fn();
       const props = {
-        singleImage: "an image url"
+        singleImage: "an image url",
       };
       const args = [props, "another argument"];
       requiredIfNoSingleImage(propTypeMock)(...args);

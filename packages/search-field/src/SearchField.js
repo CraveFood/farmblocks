@@ -13,31 +13,7 @@ class SearchField extends React.Component {
     focused: false,
     inputValue: "",
     items: [],
-    selectedItem: null
-  };
-
-  debouncedOnSearchChange = debounce(
-    this.props.onSearchChange,
-    this.props.debounceDelay
-  );
-
-  setValueFromProps = () => {
-    const { value, items, valueKey, labelKey } = this.props;
-    const emptyState = { selectedItem: null };
-
-    if (!value) {
-      return this.setState(emptyState);
-    }
-
-    const selectedItem = items && items.find(item => item[valueKey] === value);
-    if (selectedItem) {
-      return this.setState({
-        inputValue: selectedItem[labelKey],
-        selectedItem
-      });
-    }
-
-    return this.setState(emptyState);
+    selectedItem: null,
   };
 
   componentDidMount = () => {
@@ -56,10 +32,11 @@ class SearchField extends React.Component {
       prevProps.debounceDelay !== this.props.debounceDelay ||
       prevProps.onSearchChange !== this.props.onSearchChange
     ) {
-      this.debouncedOnSearchChange && this.debouncedOnSearchChange.cancel();
+      this.debouncedOnSearchChange?.cancel();
+
       this.debouncedOnSearchChange = debounce(
         this.props.onSearchChange,
-        this.props.debounceDelay
+        this.props.debounceDelay,
       );
     }
 
@@ -77,18 +54,46 @@ class SearchField extends React.Component {
     this.debouncedOnSearchChange.cancel();
   };
 
+  debouncedOnSearchChange = debounce(
+    this.props.onSearchChange,
+    this.props.debounceDelay,
+  );
+
+  setValueFromProps = () => {
+    const { value, items, valueKey, labelKey } = this.props;
+    const emptyState = { selectedItem: null };
+
+    if (!value) {
+      return this.setState(emptyState);
+    }
+
+    const selectedItem = items && items.find(item => item[valueKey] === value);
+    if (selectedItem) {
+      return this.setState({
+        inputValue: selectedItem[labelKey],
+        selectedItem,
+      });
+    }
+
+    return this.setState(emptyState);
+  };
+
   changeHighlight = modifier => {
     this.setState(prevState => {
       const { items } = this.props;
       const highlightedIndex = items
         ? Math.max(
             Math.min(prevState.highlightedIndex + modifier, items.length - 1),
-            -1
+            -1,
           )
         : -1;
-      this.scroller && this.scroller.centerChildByIndex(highlightedIndex);
+
+      if (this.scroller) {
+        this.scroller.centerChildByIndex(highlightedIndex);
+      }
+
       return {
-        highlightedIndex
+        highlightedIndex,
       };
     });
   };
@@ -102,7 +107,7 @@ class SearchField extends React.Component {
         } else {
           this.selectResult(
             this.state.highlightedIndex,
-            () => target && target.blur && target.blur()
+            () => target && target.blur && target.blur(),
           );
         }
         break;
@@ -117,6 +122,8 @@ class SearchField extends React.Component {
         event.preventDefault();
         this.changeHighlight(1);
         break;
+
+      default:
     }
   };
 
@@ -135,8 +142,8 @@ class SearchField extends React.Component {
   };
 
   valueUpdated = (item, cb) => {
-    const { onChange, valueKey } = this.props;
-    onChange && onChange(item && item[valueKey], item);
+    const { valueKey } = this.props;
+    this.props.onChange?.(item && item[valueKey], item);
     return cb && cb();
   };
 
@@ -160,7 +167,7 @@ class SearchField extends React.Component {
       selectedItem &&
       this.setState(
         { selectedItem, focused: false, inputValue: selectedItem[labelKey] },
-        () => this.valueUpdated(selectedItem, cb)
+        () => this.valueUpdated(selectedItem, cb),
       )
     );
   };
@@ -174,13 +181,15 @@ class SearchField extends React.Component {
     this.selectResult(selectedIndex);
   };
 
-  _renderMenu = props => {
+  renderMenu = props => {
     const { highlightedIndex } = this.state;
 
     return (
       <Menu
         {...props}
-        innerRef={node => (this.scroller = node)}
+        innerRef={node => {
+          this.scroller = node;
+        }}
         onItemClick={this.onItemClick}
         highlightedIndex={highlightedIndex}
       />
@@ -212,7 +221,7 @@ class SearchField extends React.Component {
       footer,
       valueKey,
       labelKey,
-      imageKey
+      imageKey,
     };
 
     const { focused, selectedItem, inputValue } = this.state;
@@ -233,7 +242,7 @@ class SearchField extends React.Component {
         />
         {focused &&
           ((this.state.items && this.state.items.length) || footer) &&
-          this._renderMenu(menuProps)}
+          this.renderMenu(menuProps)}
       </DropdownWrapper>
     );
   }
@@ -245,7 +254,7 @@ class SearchField extends React.Component {
     width: 200,
     maxMenuHeight: 353,
     debounceDelay: 500,
-    ...defaultKeyNames
+    ...defaultKeyNames,
   };
 
   static propTypes = {
@@ -255,7 +264,7 @@ class SearchField extends React.Component {
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
     ...keyNamesPropTypes,
-    ...Menu.propTypes
+    ...Menu.propTypes,
   };
 }
 

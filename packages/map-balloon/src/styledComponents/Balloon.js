@@ -13,7 +13,7 @@ const alignStyles = {
   [alignments.RIGHT]: css`
     transform-origin: bottom right;
     right: -33px;
-  `
+  `,
 };
 
 const animation = css`
@@ -35,6 +35,23 @@ const animation = css`
   }
 `;
 
+const interactiveStyle = css`
+  cursor: pointer;
+
+  bottom: ${props => props.pinSize / 2 + 8}px;
+
+  .wg-small-arrow-right {
+    color: ${colors.GREY_16};
+  }
+
+  &:active {
+    transform: translateY(2px);
+
+    .wg-small-arrow-right {
+      color: ${colors.GREY_32};
+    }
+  }
+`;
 const Balloon = styled(Card)`
   ${props => props.animated && animation};
   position: absolute;
@@ -59,24 +76,6 @@ const Balloon = styled(Card)`
   }
 
   ${props => (props.interactive ? interactiveStyle : "")};
-`;
-
-const interactiveStyle = css`
-  cursor: pointer;
-
-  bottom: ${props => props.pinSize / 2 + 8}px;
-
-  .wg-small-arrow-right {
-    color: ${colors.GREY_16};
-  }
-
-  &:active {
-    transform: translateY(2px);
-
-    .wg-small-arrow-right {
-      color: ${colors.GREY_32};
-    }
-  }
 `;
 
 export const Caption = styled(Text)`

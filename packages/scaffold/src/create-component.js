@@ -16,31 +16,31 @@ const questions = [
     type: "input",
     name: "fullName",
     default: "My Component",
-    message: "Component’s name"
+    message: "Component’s name",
   },
   {
     type: "input",
     name: "shortName",
     default: ({ fullName }) => slug(fullName, { lower: true }),
-    message: "Component’s short name"
+    message: "Component’s short name",
   },
   {
     type: "input",
     name: "description",
-    message: "Enter a description"
+    message: "Enter a description",
   },
   {
     type: "input",
     name: "keywords",
     default: "farmblocks, react",
-    filter: value => value.split(",").map(value => value.trim()),
-    message: "Keywords"
+    filter: value => value.split(",").map(v => v.trim()),
+    message: "Keywords",
   },
   {
     type: "input",
     name: "inactiveAuthors",
-    message: "Type a pattern of AUTHORS to exclude"
-  }
+    message: "Type a pattern of AUTHORS to exclude",
+  },
 ];
 
 prompt(questions)
@@ -63,9 +63,11 @@ prompt(questions)
     ShellString(component).to(`${dirName}/src/${componentName}.js`);
     ShellString(story).to(`${dirName}/src/${componentName}.story.js`);
     cp(["AUTHORS", "LICENSE"], `${dirName}/.`);
-    inactiveAuthors &&
+
+    if (inactiveAuthors) {
       grep("-v", inactiveAuthors, `${dirName}/AUTHORS`).to(
-        `${dirName}/AUTHORS`
+        `${dirName}/AUTHORS`,
       );
+    }
   })
   .catch(console.error); // eslint-disable-line no-console

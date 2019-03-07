@@ -13,13 +13,13 @@ const imgSrc = "https://picsum.photos/200";
 const primaryAction = {
   text: "Primary Action",
   onClick: action("onPrimaryActionClick"),
-  type: buttonTypes.SECONDARY
+  type: buttonTypes.SECONDARY,
 };
 
 const secondaryAction = {
   text: "Secondary Action",
   onClick: action("onSecondaryActionClick"),
-  type: buttonTypes.NEUTRAL
+  type: buttonTypes.NEUTRAL,
 };
 
 storiesOf("EmptyState", module)

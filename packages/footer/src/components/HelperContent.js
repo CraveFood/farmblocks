@@ -64,11 +64,11 @@ HelperContent.propTypes = {
   linkText: PropTypes.string,
   linkHref: PropTypes.string,
   linkOnClick: PropTypes.func,
-  size: PropTypes.number
+  size: PropTypes.number,
 };
 
 HelperContent.defaultProps = {
-  size: fontSizes.MEDIUM
+  size: fontSizes.MEDIUM,
 };
 
 export default HelperContent;

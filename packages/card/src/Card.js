@@ -10,7 +10,7 @@ const Card = props => {
 Card.defaultProps = {
   width: "100%",
   padding: "16px",
-  overflow: "visible"
+  overflow: "visible",
 };
 
 Card.propTypes = {
@@ -20,6 +20,6 @@ Card.propTypes = {
   width: PropTypes.string,
   padding: PropTypes.string,
   overflow: PropTypes.string,
-  boxShadow: PropTypes.string
+  boxShadow: PropTypes.string,
 };
 export default Card;

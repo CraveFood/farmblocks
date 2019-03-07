@@ -1,3 +1,5 @@
+/* eslint-disable react/no-multi-comp, no-shadow */
+
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
@@ -9,7 +11,7 @@ const image = "https://picsum.photos/100";
 const items = [
   { value: "1", label: "Apple", image },
   { value: "2", label: "Banana", image },
-  { value: "3", label: "Pear", image }
+  { value: "3", label: "Pear", image },
 ];
 const manyItems = [
   ...items,
@@ -26,14 +28,14 @@ const manyItems = [
   { value: "14", label: "Papaya", image },
   { value: "15", label: "Watermelon", image },
   { value: "16", label: "Dragonfruit", image },
-  { value: "17", label: "Lychee", image }
+  { value: "17", label: "Lychee", image },
 ];
 
 const Footer = () => (
   <div
     style={{
       background: "limegreen",
-      padding: 16
+      padding: 16,
     }}
   >
     This is a footer
@@ -110,7 +112,7 @@ storiesOf("Search Field", module)
       items={items.map(x => ({
         code: x.value,
         name: x.label,
-        photo: x.image
+        photo: x.image,
       }))}
       valueKey="code"
       labelKey="name"
@@ -141,8 +143,8 @@ storiesOf("Search Field", module)
       />
     ),
     {
-      info: `footer\` can be used for multiple purposes. For example, to display a loading spinner`
-    }
+      info: `footer\` can be used for multiple purposes. For example, to display a loading spinner`,
+    },
   )
   .add("disabled", () => <SearchField disabled label="Fruits" />)
   .add("custom debounce delay", () => (
@@ -165,7 +167,7 @@ storiesOf("Search Field", module)
           top: 150,
           position: "absolute",
           zIndex: 10,
-          background: "gray"
+          background: "gray",
         }}
       >
         Z-index: 10
@@ -179,7 +181,7 @@ storiesOf("Search Field", module)
           left: 100,
           position: "absolute",
           zIndex: 12,
-          background: "blue"
+          background: "blue",
         }}
       >
         Z-index: 12
@@ -196,20 +198,22 @@ storiesOf("Search Field", module)
       state = {
         items: [],
         count: 0,
-        value: "2"
+        value: "2",
       };
 
       componentDidMount = () => {
         this.interval = window.setInterval(() => {
-          const items = this.state.count % 2 ? itemsA : itemsB;
-          const value = this.state.count % 2 ? valueA : valueB;
+          const { count } = this.state;
+          const newItems = count % 2 ? itemsA : itemsB;
+          const value = count % 2 ? valueA : valueB;
           this.setState({
-            items,
+            items: newItems,
             value,
-            count: this.state.count + 1
+            count: count + 1,
           });
         }, 3000);
       };
+
       componentWillUnmount = () => {
         window.clearInterval(this.interval);
       };
@@ -230,15 +234,16 @@ storiesOf("Search Field", module)
   .add("update items and keep value the same", () => {
     const items = [{ value: 1, label: "Apple", image }];
     const newItems = [{ value: 1, label: "A new Apple", image }];
+
     class SearchTest extends React.Component {
       state = {
         items,
-        value: 1
+        value: 1,
       };
 
       changeItems = () => {
         this.setState({
-          items: newItems
+          items: newItems,
         });
       };
 
@@ -251,7 +256,9 @@ storiesOf("Search Field", module)
               label="Fruits"
             />
             <br />
-            <button onClick={this.changeItems}>Change items</button>
+            <button type="button" onClick={this.changeItems}>
+              Change items
+            </button>
           </div>
         );
       }

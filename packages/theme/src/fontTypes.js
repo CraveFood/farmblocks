@@ -4,15 +4,15 @@ import {
   STRAWBERRY,
   INDIGO_MILK_CAP,
   GREY_32,
-  OYSTER
+  OYSTER,
 } from "./colors";
 
-module.exports = {
+export default {
   NORMAL: CARBON,
   NEUTRAL: OYSTER,
   POSITIVE: LETTUCE,
   NEGATIVE: STRAWBERRY,
   FEATURED: INDIGO_MILK_CAP,
   SUBTLE: GREY_32,
-  WHITE: "white"
+  WHITE: "white",
 };

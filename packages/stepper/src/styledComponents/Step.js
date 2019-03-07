@@ -4,6 +4,23 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 import colorTypes from "../constants/colorTypes";
 import statusTypes from "../constants/statusTypes";
 
+function colors({ status }) {
+  const { color, background, opacity, hover = {} } = colorTypes[status];
+
+  return css`
+    color: ${color};
+    background: ${background};
+    opacity: ${opacity};
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: ${hover.color};
+      border: ${hover.border};
+    }
+  `;
+}
+
 const StepContainer = styled.div`
   font-family: Lato, sans-serif;
   size: 18px;
@@ -30,23 +47,6 @@ const StepContainer = styled.div`
 
   ${colors};
 `;
-
-function colors({ status }) {
-  const { color, background, opacity, hover = {} } = colorTypes[status];
-
-  return css`
-    color: ${color};
-    background: ${background};
-    opacity: ${opacity};
-
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      color: ${hover.color};
-      border: ${hover.border};
-    }
-  `;
-}
 
 StepContainer.displayName = "StepContainer";
 

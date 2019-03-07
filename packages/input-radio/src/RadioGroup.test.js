@@ -19,7 +19,7 @@ describe("RadioGroup", function() {
         <RadioGroup name="radioExample" onChange={onChangeSpy}>
           <Radio value="first" label="First" />
           <Radio value="second" label="Second" />
-        </RadioGroup>
+        </RadioGroup>,
       );
       const childOnChange = component
         .find(Radio)
@@ -34,7 +34,7 @@ describe("RadioGroup", function() {
       const component = mount(
         <RadioGroup name="radioExample" defaultValue="oldValue">
           <Radio value="first" label="First" />
-        </RadioGroup>
+        </RadioGroup>,
       );
       const newValue = "newValue";
       component.setProps({ defaultValue: newValue });
@@ -45,7 +45,7 @@ describe("RadioGroup", function() {
       const component = mount(
         <RadioGroup name="radioExample" defaultValue={defaultValue}>
           <Radio value="first" label="First" />
-        </RadioGroup>
+        </RadioGroup>,
       );
       component.instance().setState = setStateSpy;
 
@@ -61,7 +61,7 @@ describe("RadioGroup", function() {
           onChange={onChangeSpy}
         >
           <Radio value="first" label="First" />
-        </RadioGroup>
+        </RadioGroup>,
       );
       const newValue = "newValue";
       component.setProps({ defaultValue: newValue });

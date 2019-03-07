@@ -23,7 +23,7 @@ export const formInputProps = {
   innerRef: PropTypes.func,
   input: PropTypes.shape({
     value: PropTypes.any,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
   }),
   readOnly: PropTypes.bool,
   refName: PropTypes.string,
@@ -34,7 +34,7 @@ export const formInputProps = {
   moreInfoAlign: PropTypes.oneOf(values(alignments)),
   prefix: PropTypes.string,
   suffix: PropTypes.string,
-  autoControlFocusedStyle: PropTypes.bool
+  autoControlFocusedStyle: PropTypes.bool,
 };
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
@@ -43,117 +43,7 @@ const formInput = WrappedComponent => {
   return class Input extends React.Component {
     state = {
       value: getValueFromProps(this.props),
-      focused: this.props.focused
-    };
-
-    render() {
-      const { value } = this.state;
-      const {
-        label,
-        focused,
-        onChange,
-        onFocus,
-        onBlur,
-        invalid,
-        input,
-        meta,
-        protected: covered,
-        disableManualReplace,
-        moreInfoContent,
-        moreInfoAlign,
-        autoControlFocusedStyle,
-        ...wrappedComponentProps
-      } = this.props;
-      const wrapperProps = {
-        protected: covered,
-        focused: this.state.focused,
-        invalid: invalid === "true",
-        filled: !!value || value === 0,
-        disabled: wrappedComponentProps.disabled,
-        type: wrappedComponentProps.type,
-        fontSize: wrappedComponentProps.fontSize
-      };
-
-      return (
-        <Wrapper {...wrapperProps} onClick={this.setInputFocus}>
-          {this._renderInput(wrappedComponentProps)}
-
-          {label && (
-            <Label
-              moreInfoContent={moreInfoContent}
-              moreInfoAlign={moreInfoAlign}
-              focused={this.state.focused}
-              invalid={wrapperProps.invalid}
-              protected={covered}
-              disabled={wrapperProps.disabled}
-            >
-              {label}
-            </Label>
-          )}
-        </Wrapper>
-      );
-    }
-
-    _renderInput = ({
-      innerRef,
-      refName,
-      clearable,
-      clearIcon,
-      leftIcon,
-      prefix,
-      suffix,
-      ...inputProps
-    }) => {
-      const handlers = {
-        onChange: this.onChange,
-        onFocus: this.onFocus,
-        onBlur: this.onBlur
-      };
-
-      const isSearch =
-        inputProps.type && inputProps.type.toLowerCase() === "search";
-      const iconName = leftIcon || (isSearch && "wg-search");
-
-      const clearButton = (clearable || isSearch) &&
-        this.state.value && (
-          <Link className="clear" onClick={this.handleClearClick}>
-            <i className={clearIcon} />
-          </Link>
-        );
-
-      const isDropdown = inputProps.role === "combobox";
-      const dropDownIcon = isDropdown && (
-        <div className="icon dropdown">
-          <i className="wg-small-arrow-bottom" />
-        </div>
-      );
-
-      return (
-        <div
-          className={classNames("input", { dropdown: isDropdown })}
-          ref={element => {
-            this.inputRef = element && element.querySelector("input");
-          }}
-          onMouseDown={this.preventBlurOfClearIcon}
-        >
-          {prefix && <div className="prefix">{prefix}</div>}
-          {iconName && (
-            <div className="icon left">
-              <i className={iconName} />
-            </div>
-          )}
-          <WrappedComponent
-            className="wrapped"
-            {...inputProps}
-            {...handlers}
-            {...{ [refName]: innerRef }}
-            value={this.state.value}
-          />
-          {clearButton}
-          {dropDownIcon}
-          {suffix && <div className="suffix">{suffix}</div>}
-        </div>
-      );
+      focused: this.props.focused,
     };
 
     componentDidMount() {
@@ -168,7 +58,7 @@ const formInput = WrappedComponent => {
       }
 
       if (!this.props.focused && prevProps.focused) {
-        this.inputRef && this.inputRef.blur();
+        this.inputRef?.blur();
       }
 
       if (
@@ -182,7 +72,7 @@ const formInput = WrappedComponent => {
       const prevValue = getValueFromProps(prevProps);
       if (nextValue !== prevValue) {
         this.setState({
-          value: nextValue
+          value: nextValue,
         });
       }
     };
@@ -200,17 +90,17 @@ const formInput = WrappedComponent => {
       this.props.onChange({
         type: "change",
         value: "",
-        target: { value: "" }
+        target: { value: "" },
       });
     };
 
     setInputFocus = () => {
-      this.inputRef && this.inputRef.focus();
+      this.inputRef?.focus();
     };
 
     onChange = event => {
       this.setState({
-        value: event.value || event.target.value
+        value: event.value || event.target.value,
       });
 
       if (this.props.input && this.props.input.onChange) {
@@ -238,11 +128,122 @@ const formInput = WrappedComponent => {
       this.setState({ focused: false });
     };
 
+    renderInput = ({
+      innerRef,
+      refName,
+      clearable,
+      clearIcon,
+      leftIcon,
+      prefix,
+      suffix,
+      ...inputProps
+    }) => {
+      const handlers = {
+        onChange: this.onChange,
+        onFocus: this.onFocus,
+        onBlur: this.onBlur,
+      };
+
+      const isSearch =
+        inputProps.type && inputProps.type.toLowerCase() === "search";
+      const iconName = leftIcon || (isSearch && "wg-search");
+
+      const clearButton = (clearable || isSearch) && this.state.value && (
+        <Link className="clear" onClick={this.handleClearClick}>
+          <i className={clearIcon} />
+        </Link>
+      );
+
+      const isDropdown = inputProps.role === "combobox";
+      const dropDownIcon = isDropdown && (
+        <div className="icon dropdown">
+          <i className="wg-small-arrow-bottom" />
+        </div>
+      );
+
+      return (
+        <div
+          role="button"
+          tabIndex="0"
+          className={classNames("input", { dropdown: isDropdown })}
+          ref={element => {
+            this.inputRef = element && element.querySelector("input");
+          }}
+          onMouseDown={this.preventBlurOfClearIcon}
+        >
+          {prefix && <div className="prefix">{prefix}</div>}
+          {iconName && (
+            <div className="icon left">
+              <i className={iconName} />
+            </div>
+          )}
+          <WrappedComponent
+            className="wrapped"
+            {...inputProps}
+            {...handlers}
+            {...{ [refName]: innerRef }}
+            value={this.state.value}
+          />
+          {clearButton}
+          {dropDownIcon}
+          {suffix && <div className="suffix">{suffix}</div>}
+        </div>
+      );
+    };
+
+    render() {
+      const { value } = this.state;
+      const {
+        label,
+        focused,
+        onChange,
+        onFocus,
+        onBlur,
+        invalid,
+        input,
+        meta,
+        protected: covered,
+        disableManualReplace,
+        moreInfoContent,
+        moreInfoAlign,
+        autoControlFocusedStyle,
+        ...wrappedComponentProps
+      } = this.props;
+      const wrapperProps = {
+        protected: covered,
+        focused: this.state.focused,
+        invalid: invalid === "true",
+        filled: !!value || value === 0,
+        disabled: wrappedComponentProps.disabled,
+        type: wrappedComponentProps.type,
+        fontSize: wrappedComponentProps.fontSize,
+      };
+
+      return (
+        <Wrapper {...wrapperProps} onClick={this.setInputFocus}>
+          {this.renderInput(wrappedComponentProps)}
+
+          {label && (
+            <Label
+              moreInfoContent={moreInfoContent}
+              moreInfoAlign={moreInfoAlign}
+              focused={this.state.focused}
+              invalid={wrapperProps.invalid}
+              protected={covered}
+              disabled={wrapperProps.disabled}
+            >
+              {label}
+            </Label>
+          )}
+        </Wrapper>
+      );
+    }
+
     static displayName = wrapDisplayName(WrappedComponent, "formInput");
 
     static propTypes = {
       ...WrappedComponent.propTypes,
-      ...formInputProps
+      ...formInputProps,
     };
 
     static defaultProps = {
@@ -258,7 +259,7 @@ const formInput = WrappedComponent => {
       clearable: false,
       clearIcon: "wg-close-int",
       moreInfoAlign: alignments.LEFT,
-      autoControlFocusedStyle: true
+      autoControlFocusedStyle: true,
     };
   };
 };

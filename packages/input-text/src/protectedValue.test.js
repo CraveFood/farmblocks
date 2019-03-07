@@ -7,7 +7,7 @@ import protectedValue from "./protectedValue";
 describe("TextInput > protectedValue", () => {
   configure({ adapter: new Adapter() });
 
-  const Input = props => <input />;
+  const Input = () => <input />;
   const EnhancedInput = protectedValue(Input);
 
   test("click on the pencil should uncover protected field", () => {
@@ -25,7 +25,11 @@ describe("TextInput > protectedValue", () => {
     const originalValue = "Foo";
     const onUncoverSpy = jest.fn();
     const component = mount(
-      <EnhancedInput onUncover={onUncoverSpy} value={originalValue} protected />
+      <EnhancedInput
+        onUncover={onUncoverSpy}
+        value={originalValue}
+        protected
+      />,
     );
     const editButton = component.find("a");
     editButton.simulate("click");
@@ -36,7 +40,7 @@ describe("TextInput > protectedValue", () => {
   test("the passed onKeyDown handler should be called after executing the internal component's onKeyDown", () => {
     const onKeyDownMock = jest.fn();
     const component = mount(
-      <EnhancedInput protected onKeyDown={onKeyDownMock} />
+      <EnhancedInput protected onKeyDown={onKeyDownMock} />,
     );
     const keyDownEvent = { keyCode: 64 };
     component.instance().onKeyDown(keyDownEvent);
@@ -48,21 +52,21 @@ describe("TextInput > protectedValue", () => {
     const newValue = "Bar";
     const onCancelMock = jest.fn();
     const component = mount(
-      <EnhancedInput value={originalValue} protected onCancel={onCancelMock} />
+      <EnhancedInput value={originalValue} protected onCancel={onCancelMock} />,
     );
     const editButton = component.find("a");
     const isCovered = () => component.find("InputCover").length === 1;
     editButton.simulate("click");
     const keyDownEvent = {
       key: "Escape",
-      target: { value: newValue }
+      target: { value: newValue },
     };
     component.instance().onKeyDown(keyDownEvent);
     component.update();
     const expectedState = {
       value: originalValue,
       isEditing: false,
-      editedValue: ""
+      editedValue: "",
     };
     expect(component.state()).toEqual(expectedState);
     expect(onCancelMock).toBeCalled();
@@ -78,21 +82,21 @@ describe("TextInput > protectedValue", () => {
         value={originalValue}
         protected
         onReplace={onReplaceMock}
-      />
+      />,
     );
     const editButton = component.find("a");
     const isCovered = () => component.find("InputCover").length === 1;
     editButton.simulate("click");
     const keyDownEvent = {
       key: "Enter",
-      target: { value: newValue }
+      target: { value: newValue },
     };
     component.instance().onKeyDown(keyDownEvent);
     component.update();
     const expectedState = {
       value: newValue,
       isEditing: false,
-      editedValue: ""
+      editedValue: "",
     };
     expect(component.state()).toEqual(expectedState);
     expect(onReplaceMock).toBeCalledWith(newValue);
@@ -108,13 +112,13 @@ describe("TextInput > protectedValue", () => {
         value={originalValue}
         protected
         onReplace={onReplaceMock}
-      />
+      />,
     );
     component.setProps({ value: newValue });
     const expectedState = {
       value: newValue,
       isEditing: false,
-      editedValue: ""
+      editedValue: "",
     };
     expect(component.state()).toEqual(expectedState);
     expect(onReplaceMock).not.toBeCalled();
@@ -131,7 +135,7 @@ describe("TextInput > protectedValue", () => {
           protected
           onCancel={onCancelMock}
           onBlur={onBlurMock}
-        />
+        />,
       );
 
       // set editing state
@@ -153,7 +157,7 @@ describe("TextInput > protectedValue", () => {
       const onCancelMock = jest.fn();
 
       const component = mount(
-        <EnhancedInput value="" protected onCancel={onCancelMock} />
+        <EnhancedInput value="" protected onCancel={onCancelMock} />,
       );
 
       component
@@ -168,7 +172,7 @@ describe("TextInput > protectedValue", () => {
   test("input onChange should update state with the edited value", () => {
     const onChangeMock = jest.fn();
     const component = mount(
-      <EnhancedInput value="" protected onChange={onChangeMock} />
+      <EnhancedInput value="" protected onChange={onChangeMock} />,
     );
 
     // set editing state
@@ -185,7 +189,7 @@ describe("TextInput > protectedValue", () => {
     const expectedState = {
       value: "",
       isEditing: true,
-      editedValue
+      editedValue,
     };
     expect(component.state()).toEqual(expectedState);
     expect(onChangeMock).toBeCalledWith(mockedEvent);
@@ -195,7 +199,7 @@ describe("TextInput > protectedValue", () => {
     const onCancelMock = jest.fn();
 
     const component = mount(
-      <EnhancedInput value="" protected onCancel={onCancelMock} />
+      <EnhancedInput value="" protected onCancel={onCancelMock} />,
     );
 
     // set editing state
@@ -215,7 +219,7 @@ describe("TextInput > protectedValue", () => {
       const onReplaceMock = jest.fn();
 
       const component = mount(
-        <EnhancedInput value="" protected onReplace={onReplaceMock} />
+        <EnhancedInput value="" protected onReplace={onReplaceMock} />,
       );
 
       // set editing state

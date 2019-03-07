@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import values from "object.values";
 import { fontTypes } from "@crave/farmblocks-text";
 
-const Column = props => null;
+const Column = () => null;
 
 Column.propTypes = {
   title: PropTypes.string,
@@ -13,12 +13,12 @@ Column.propTypes = {
   width: PropTypes.string,
   align: PropTypes.string,
   fontType: PropTypes.oneOf(values(fontTypes)),
-  whiteSpace: PropTypes.string
+  whiteSpace: PropTypes.string,
 };
 
 Column.defaultProps = {
   align: "left",
-  whiteSpace: "normal"
+  whiteSpace: "normal",
 };
 
 export default Column;

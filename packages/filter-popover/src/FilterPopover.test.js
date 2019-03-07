@@ -28,7 +28,7 @@ describe("Filter Popover", () => {
         formTitle="Form Title"
         onFormSaveClick={onFormSaveClickMock}
         formContent={<div />}
-      />
+      />,
     );
 
     // Open popover
@@ -50,7 +50,7 @@ describe("Filter Popover", () => {
         onFormSaveClick={onFormSaveClickMock}
         formContent={<div />}
         dismissOnSave
-      />
+      />,
     );
 
     // Open popover
@@ -73,7 +73,7 @@ describe("Filter Popover", () => {
         onFormCancelClick={onFormCancelClickMock}
         formContent={<div />}
         dismissOnSave
-      />
+      />,
     );
 
     // Open popover
