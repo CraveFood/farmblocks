@@ -5,14 +5,16 @@
   "author": "Crave Food Systems and AUTHORS",
   "license": "MIT",
   "main": "lib/index.js",
-  "files": ["AUTHORS", "lib"],
+  "files": [
+    "AUTHORS",
+    "lib"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build":
-      "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,7 @@
     "@crave/farmblocks-text": "^3.3.1",
     "@crave/farmblocks-theme": "^1.6.2",
     "object.values": "^1.1.0",
-    "polished": "^2.3.3",
+    "polished": "^3.0.3",
     "react-addons-css-transition-group": "^15.6.2"
   },
   "devDependencies": {
