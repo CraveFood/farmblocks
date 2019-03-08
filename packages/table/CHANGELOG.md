@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.2.1...@crave/farmblocks-table@3.3.0) (2019-03-08)
+
+
+### Features
+
+* **table:** update polished dependency ([09d636c](https://github.com/CraveFood/farmblocks/commit/09d636c))
+
+
+
+
+
 ## [3.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.2.0...@crave/farmblocks-table@3.2.1) (2019-03-07)
 
 
