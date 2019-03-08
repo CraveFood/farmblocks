@@ -1,14 +1,17 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Storybook</title><style>html, body {
+<!doctype html><html><head><meta charset="utf-8"><title>Storybook</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>html, body {
     overflow: hidden;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-  }</style><script>try {
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
     if (window.parent !== window) {
       window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__;
       window.__VUE_DEVTOOLS_GLOBAL_HOOK__ = window.parent.__VUE_DEVTOOLS_GLOBAL_HOOK__;
     }
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.warn('unable to connect to parent frame for connecting dev tools');
-  }</script></head><body><div id="root"></div><script src="/sb_dll/storybook_ui_dll.js"></script><script src="runtime~main.3aaa912fd37e258bb4b5.bundle.js"></script><script src="vendors~main.62a47f28b43454fcf0cb.bundle.js"></script><script src="main.c3d46b87d9dc4ba107b4.bundle.js"></script></body></html>
+  }</script></head><body><div id="root"></div><script src="runtime~main.3aaa912fd37e258bb4b5.bundle.js"></script><script src="vendors~main.fda9b1005c01b5927de6.bundle.js"></script><script src="main.fedd6d38f83b402dca28.bundle.js"></script></body></html>
