@@ -2,7 +2,7 @@
 sudo: false
 language: node_js
 node_js:
-  - '10'
+  - "10"
 cache:
   yarn: true
   directories:
@@ -42,6 +42,9 @@ after_success:
       snyk monitor || travis_terminate 1;
       lerna publish --yes || travis_terminate 1;
       yarn build-storybook || travis_terminate 1;
+      if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
+        yarn snapshot || travis_terminate 1;
+      fi
       git add docs;
       git commit -m "chore(docs): [ci skip] gallery update";
       git push origin "$BRANCH";
@@ -50,4 +53,3 @@ after_success:
     else
       lerna publish --canary --yes || travis_terminate 1;
     fi
-
