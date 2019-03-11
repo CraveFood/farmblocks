@@ -21,7 +21,7 @@ const DemoGrid = props => <StyledDemoGrid {...props} />;
 
 const imageSet = [
   {
-    image: "https://picsum.photos/640/?random",
+    image: "https://picsum.photos/640?image=0",
     name: "Romaine Lettuce",
   },
 ];
@@ -97,7 +97,7 @@ storiesOf("Map Balloon", module)
       <MapBalloon
         x={400}
         y={400}
-        singleImage="https://picsum.photos/180/?random"
+        singleImage="https://picsum.photos/180?image=0"
       />
     </DemoGrid>
   ))
@@ -121,7 +121,7 @@ storiesOf("Map Balloon", module)
         x={400}
         y={400}
         open
-        singleImage="https://picsum.photos/180/?random"
+        singleImage="https://picsum.photos/180?image=0"
         caption="Paloma Orchards"
         borderRadius="50%"
       />
@@ -160,7 +160,7 @@ storiesOf("Map Balloon", module)
         x={400}
         y={400}
         open
-        imageSet={[{ image: "https://picsum.photos/640/?random" }]}
+        imageSet={[{ image: "https://picsum.photos/640?image=0" }]}
         caption="Paloma Orchards"
       />
     </DemoGrid>
