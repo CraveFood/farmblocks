@@ -127,7 +127,10 @@ class Select extends React.Component {
   };
 
   renderItem = (item, highlighted) => {
-    const selected = this.state.selectedLabel === item.label;
+    const { selectedValue } = this.state;
+    const selected = Array.isArray(selectedValue)
+      ? selectedValue.includes(item.value)
+      : selectedValue === item.value;
     return (
       <DropdownItemWrapper
         key={item.value}
@@ -202,7 +205,13 @@ class Select extends React.Component {
         image: PropTypes.string,
       }),
     ),
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.arrayOf(
+        PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      ),
+    ]),
     width: PropTypes.string,
     onChange: PropTypes.func,
     renderItem: PropTypes.func,

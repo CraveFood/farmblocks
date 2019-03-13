@@ -288,4 +288,14 @@ storiesOf("Select Input", module)
       onChange={action("onChange")}
       width="500px"
     />
+  ))
+  .add("Multi with some selected", () => (
+    <Select
+      multi
+      placeholder="Select some fruits"
+      value={["1", "3", "4"]}
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+    />
   ));
