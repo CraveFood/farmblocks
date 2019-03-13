@@ -7,7 +7,9 @@ import Select from "./Select";
 
 describe("Select input", () => {
   configure({ adapter: new Adapter() });
-  let wrapper, autoCompleteWrapper, onChangeMock;
+  let wrapper;
+  let autoCompleteWrapper;
+  let onChangeMock;
 
   const items = [
     { value: "1", label: "Banana" },
@@ -203,6 +205,35 @@ describe("Select input", () => {
       expect(state.isSearching).toBe(false);
       expect(onChangeMock).toBeCalledWith(item.value);
       expect(onChangeMock).toHaveBeenCalledTimes(1);
+    });
+
+    describe("multi", () => {
+      let onChangeSpy;
+      beforeEach(() => {
+        onChangeSpy = jest.fn();
+      });
+      afterEach(() => {
+        onChangeSpy.mockReset();
+      });
+
+      test.each`
+        currentValue | itemValue | expectedValue
+        ${[0, 1]}    | ${0}      | ${[1]}
+        ${[0, 1]}    | ${1}      | ${[0]}
+        ${[0, 1]}    | ${2}      | ${[0, 1, 2]}
+        ${[]}        | ${2}      | ${[2]}
+        ${[1, 2]}    | ${0}      | ${[1, 2, 0]}
+      `(
+        "should call onChange with $expectedValues when value is $currentValue and passed argument is $itemValue",
+        ({ currentValue, itemValue, expectedValue }) => {
+          wrapper = shallow(
+            <Select multi value={currentValue} onChange={onChangeSpy} />,
+          );
+          wrapper.instance().onSelect("item label", { value: itemValue });
+
+          expect(onChangeSpy).toHaveBeenCalledWith(expectedValue);
+        },
+      );
     });
   });
 

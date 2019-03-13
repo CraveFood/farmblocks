@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import Image from "@crave/farmblocks-image";
@@ -19,6 +19,20 @@ const moreItems = [
 ];
 
 const imgSrc = "https://picsum.photos/100";
+
+const ValueState = () => {
+  const [value, setValue] = useState([]);
+  return (
+    <Select
+      multi
+      placeholder="Select some fruits"
+      items={moreItems}
+      onChange={setValue}
+      value={value}
+      width="500px"
+    />
+  );
+};
 
 storiesOf("Select Input", module)
   .add("Default", () => (
@@ -298,4 +312,5 @@ storiesOf("Select Input", module)
       onChange={action("onChange")}
       width="500px"
     />
-  ));
+  ))
+  .add("Multi with state", () => <ValueState />);

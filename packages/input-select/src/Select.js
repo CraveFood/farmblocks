@@ -2,6 +2,7 @@ import * as React from "react";
 import ReactAutocomplete from "react-autocomplete";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
+import xor from "lodash.xor";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
   DropdownMenuWrapper,
@@ -28,7 +29,10 @@ class Select extends React.Component {
     super(props);
 
     this.state = {
-      selectedValue: props.value,
+      selectedValue:
+        props.multi && !Array.isArray(props.value)
+          ? [props.value]
+          : props.value,
       selectedLabel: this.getSelectedLabel(props),
       isSearching: false,
       isMenuOpen: false,
@@ -66,8 +70,13 @@ class Select extends React.Component {
   };
 
   onSelect = (selectedLabel, item) => {
+    const { onChange } = this.props;
     this.setState({ selectedLabel, isSearching: false });
-    this.props.onChange(item.value);
+    if (this.props.multi) {
+      onChange(xor(this.state.selectedValue, [item.value]));
+      return;
+    }
+    onChange(item.value);
   };
 
   // eslint-disable-next-line consistent-return
@@ -90,6 +99,7 @@ class Select extends React.Component {
       items,
       zIndex,
       maxHeight,
+      multi,
       ...inputProps
     } = this.props;
 
@@ -198,6 +208,8 @@ class Select extends React.Component {
   };
 
   static propTypes = {
+    ...formInputProps,
+    ...withMessagesProps,
     items: PropTypes.arrayOf(
       PropTypes.shape({
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -220,8 +232,6 @@ class Select extends React.Component {
     zIndex: PropTypes.number,
     maxHeight: PropTypes.string,
     multi: PropTypes.bool,
-    ...formInputProps,
-    ...withMessagesProps,
   };
 }
 
