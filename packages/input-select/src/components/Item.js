@@ -2,25 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Image, { thumbnailSizes } from "@crave/farmblocks-image";
+import { Checkbox } from "@crave/farmblocks-input-checkbox";
 
 import ItemContainer from "../styledComponents/ItemContainer";
 import LabelContainer from "../styledComponents/LabelContainer";
 
 const ItemImage = styled(Image)`
-  margin: -6px;
-  margin-right: 8px;
+  margin: -6px 8px -6px 0;
+  &:first-child {
+    margin-left: -6px;
+  }
 `;
 
-const Item = ({ selected, image, label, id }) => (
+const Item = ({ selected, image, label, id, checkbox }) => (
   <ItemContainer id={id}>
-    {image ? (
-      <LabelContainer>
-        <ItemImage src={image} size={thumbnailSizes.SMALL} /> {label}
-      </LabelContainer>
-    ) : (
-      label
-    )}
-    {selected && <i className="icon wg-check" />}
+    <LabelContainer>
+      {checkbox && <Checkbox checked={selected} />}
+      {image && <ItemImage src={image} size={thumbnailSizes.SMALL} />}
+      {label}
+    </LabelContainer>
+    {!checkbox && selected && <i className="icon wg-check" />}
   </ItemContainer>
 );
 
@@ -29,6 +30,7 @@ Item.propTypes = {
   image: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string.isRequired,
+  checkbox: PropTypes.bool,
 };
 
 export default Item;

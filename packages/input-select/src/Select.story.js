@@ -267,4 +267,25 @@ storiesOf("Select Input", module)
       items={items}
       onChange={action("onChange")}
     />
+  ))
+  .add("Multi", () => (
+    <Select
+      multi
+      placeholder="Select some fruits"
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+    />
+  ))
+  .add("Multi + Images", () => (
+    <Select
+      multi
+      placeholder="Select some fruits"
+      items={moreItems.map((item, index) => ({
+        ...item,
+        image: `${imgSrc}?image=${index + 1000}`,
+      }))}
+      onChange={action("onChange")}
+      width="500px"
+    />
   ));

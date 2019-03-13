@@ -8,4 +8,7 @@ export default styled.div`
   & > input {
     width: 100%;
   }
+  & > label {
+    padding: 0 8px 0 0;
+  }
 `;

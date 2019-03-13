@@ -142,6 +142,7 @@ class Select extends React.Component {
             id={this.props.id && `${this.props.id}-item-${item.value}`}
             image={item.image}
             selected={selected}
+            checkbox={this.props.multi}
           />
         )}
       </DropdownItemWrapper>
@@ -209,6 +210,7 @@ class Select extends React.Component {
     disableSearch: PropTypes.bool,
     zIndex: PropTypes.number,
     maxHeight: PropTypes.string,
+    multi: PropTypes.bool,
     ...formInputProps,
     ...withMessagesProps,
   };

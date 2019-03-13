@@ -19,4 +19,12 @@ storiesOf("Select Input/Item", module)
   .add("selected text only", () => <Item label="Hello" selected />)
   .add("selected with image", () => (
     <Item label="Hello" image={imgSrc} selected />
+  ))
+  .add("with checkbox", () => <Item checkbox label="Hello" />)
+  .add("selected with checkbox", () => <Item selected checkbox label="Hello" />)
+  .add("with checkbox + image", () => (
+    <Item checkbox image={imgSrc} label="Hello" />
+  ))
+  .add("selected with checkbox + image", () => (
+    <Item selected checkbox image={imgSrc} label="Hello" />
   ));
