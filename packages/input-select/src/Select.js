@@ -11,17 +11,19 @@ import {
 import withMessages, {
   withMessagesProps,
 } from "@crave/farmblocks-hoc-validation-messages";
+import Tag from "@crave/farmblocks-tags";
 
 import withImage, { refName } from "./components/withImage";
 import Item from "./components/Item";
 import EmptyCard from "./components/EmptyCard";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
+import InputWithTags from "./components/InputWithTags";
 
 const EnhancedInput = compose(
   withMessages,
   formInput,
   withImage,
-)("input");
+)(InputWithTags);
 EnhancedInput.displayName = "EnhancedInput";
 
 class Select extends React.Component {
@@ -79,6 +81,8 @@ class Select extends React.Component {
     onChange(item.value);
   };
 
+  onRemoveTag = value => this.onSelect("", { value });
+
   // eslint-disable-next-line consistent-return
   getSelectedLabel = props => {
     const item =
@@ -119,7 +123,20 @@ class Select extends React.Component {
         innerRef={ref}
         refName={refName}
         image={image}
-      />
+      >
+        {multi &&
+          items.map(
+            item =>
+              this.state.selectedValue.includes(item.value) && (
+                <Tag
+                  key={item.value}
+                  value={item.value}
+                  text={item.label}
+                  onRemove={this.onRemoveTag}
+                />
+              ),
+          )}
+      </EnhancedInput>
     );
   };
 

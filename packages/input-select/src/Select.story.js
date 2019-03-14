@@ -20,17 +20,10 @@ const moreItems = [
 
 const imgSrc = "https://picsum.photos/100";
 
-const ValueState = () => {
+const ValueState = ({ children }) => {
   const [value, setValue] = useState([]);
-  return (
-    <Select
-      multi
-      placeholder="Select some fruits"
-      items={moreItems}
-      onChange={setValue}
-      value={value}
-      width="500px"
-    />
+  return React.Children.map(children, child =>
+    React.cloneElement(child, { value, onChange: setValue }),
   );
 };
 
@@ -313,4 +306,13 @@ storiesOf("Select Input", module)
       width="500px"
     />
   ))
-  .add("Multi with state", () => <ValueState />);
+  .add("Multi with state", () => (
+    <ValueState>
+      <Select
+        multi
+        placeholder="Select some fruits"
+        items={moreItems}
+        width="500px"
+      />
+    </ValueState>
+  ));
