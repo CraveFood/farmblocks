@@ -133,6 +133,7 @@ class Select extends React.Component {
                   value={item.value}
                   text={item.label}
                   onRemove={this.onRemoveTag}
+                  disabled={this.props.disabled}
                 />
               ),
           )}

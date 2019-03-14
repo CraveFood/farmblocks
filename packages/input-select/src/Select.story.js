@@ -316,6 +316,27 @@ storiesOf("Select Input", module)
       />
     </ValueState>
   ))
+  .add("Multi disabled", () => (
+    <Select
+      multi
+      disabled
+      placeholder="Select some fruits"
+      value={["1", "3", "4"]}
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+    />
+  ))
+  .add("Multi without search", () => (
+    <Select
+      multi
+      disableSearch
+      placeholder="Select some fruits"
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+    />
+  ))
   .add("Duplicated labels", () => (
     <Select
       placeholder="Select fruit"
