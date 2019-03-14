@@ -315,4 +315,13 @@ storiesOf("Select Input", module)
         width="500px"
       />
     </ValueState>
+  ))
+  .add("Duplicated labels", () => (
+    <Select
+      placeholder="Select fruit"
+      label="Fruit"
+      items={[...items, { ...items[0], value: "999" }]}
+      onChange={action("onChange")}
+      value="999"
+    />
   ));
