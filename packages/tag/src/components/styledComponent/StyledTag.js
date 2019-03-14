@@ -30,6 +30,14 @@ const typeStyles = {
   `,
 };
 
+const disabledStyles = {
+  [tagTypes.SECONDARY]: css`
+    background-color: ${colorConstants.GREY_32};
+    pointer-events: none;
+    padding: 6px 16px 8px;
+  `,
+};
+
 const StyledTag = styled.div`
   display: inline-flex;
   box-sizing: border-box;
@@ -71,6 +79,7 @@ const StyledTag = styled.div`
   }
 
   ${props => typeStyles[props.type]};
+  ${props => (props.disabled && disabledStyles[props.type]) || ""};
 `;
 
 export default StyledTag;

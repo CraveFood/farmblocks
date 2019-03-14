@@ -6,7 +6,7 @@ import StyledTag from "./styledComponent/StyledTag";
 import tagTypes from "../constants/tagTypes";
 
 const Tag = props => {
-  const { text, onRemove, value, icon, children } = props;
+  const { text, onRemove, value, icon, disabled, children } = props;
   return (
     <StyledTag {...props}>
       {icon && (
@@ -15,7 +15,7 @@ const Tag = props => {
         </div>
       )}
       {text || children}
-      {onRemove && (
+      {onRemove && !disabled && (
         <div
           role="button"
           tabIndex="0"
@@ -45,6 +45,7 @@ Tag.propTypes = {
   type: PropTypes.oneOf(values(tagTypes)),
   icon: PropTypes.string,
   children: PropTypes.node,
+  disabled: PropTypes.bool,
 };
 
 export default Tag;
