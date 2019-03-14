@@ -337,6 +337,16 @@ storiesOf("Select Input", module)
       width="500px"
     />
   ))
+  .add("Multi with errors", () => (
+    <Select
+      multi
+      placeholder="Select some fruits"
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+      validationMessages={["Select at least one option"]}
+    />
+  ))
   .add("Duplicated labels", () => (
     <Select
       placeholder="Select fruit"
