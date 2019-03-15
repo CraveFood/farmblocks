@@ -249,6 +249,64 @@ describe("Select input", () => {
     expect(instance.onSelect).toHaveBeenCalledWith("", expectedItem);
   });
 
+  describe("onKeyDown", () => {
+    let instance, autoCompleteOnKeyDownSpy, onRemoveTagSpy, onKeyDown;
+    beforeEach(() => {
+      wrapper = shallow(<Select multi />);
+      instance = wrapper.instance();
+      autoCompleteOnKeyDownSpy = jest.fn();
+      onRemoveTagSpy = jest.spyOn(instance, "onRemoveTag");
+      onKeyDown = instance.onKeyDown(autoCompleteOnKeyDownSpy);
+    });
+    afterEach(() => {
+      instance = null;
+      autoCompleteOnKeyDownSpy.mockReset();
+      onRemoveTagSpy.mockRestore();
+      onKeyDown = null;
+    });
+
+    test("should pass event to given function", () => {
+      const event = { key: "X" };
+      onKeyDown(event);
+
+      expect(autoCompleteOnKeyDownSpy).toHaveBeenCalledTimes(1);
+      expect(autoCompleteOnKeyDownSpy).toHaveBeenCalledWith(event);
+    });
+
+    test("should remove last tag on backspace in empty input", () => {
+      const tagValue = items[1].value;
+      wrapper.setProps({ value: ["lala", tagValue] });
+
+      onKeyDown({ key: "Backspace" });
+
+      expect(onRemoveTagSpy).toHaveBeenCalledTimes(1);
+      expect(onRemoveTagSpy).toHaveBeenCalledWith(tagValue);
+    });
+
+    test.each`
+      multi    | value    | input  | key            | calledTimes
+      ${false} | ${[]}    | ${""}  | ${"Backspace"} | ${0}
+      ${false} | ${[]}    | ${"a"} | ${"Backspace"} | ${0}
+      ${false} | ${["a"]} | ${""}  | ${"Backspace"} | ${0}
+      ${false} | ${["a"]} | ${"a"} | ${"Backspace"} | ${0}
+      ${true}  | ${[]}    | ${""}  | ${"Backspace"} | ${0}
+      ${true}  | ${[]}    | ${"a"} | ${"Backspace"} | ${0}
+      ${true}  | ${["a"]} | ${""}  | ${"Backspace"} | ${1}
+      ${true}  | ${["a"]} | ${"a"} | ${"Backspace"} | ${0}
+      ${true}  | ${["a"]} | ${""}  | ${"Enter"}     | ${0}
+    `(
+      'should remove tag $calledTimes time(s) on press $key when multi is $multi, value is $value and input is "$input".',
+      ({ multi, value, input, key, calledTimes }) => {
+        wrapper.setProps({ value, multi });
+        wrapper.setState({ selectedLabel: input });
+
+        onKeyDown({ key });
+
+        expect(onRemoveTagSpy).toHaveBeenCalledTimes(calledTimes);
+      },
+    );
+  });
+
   test("default onChange should return false", () => {
     wrapper = shallow(<Select items={items} />);
 

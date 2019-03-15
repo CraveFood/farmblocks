@@ -2,6 +2,8 @@ import * as React from "react";
 import ReactAutocomplete from "react-autocomplete";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
+import memoize from "memoize-one";
+import groupBy from "lodash.groupby";
 import xor from "lodash.xor";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
@@ -83,6 +85,19 @@ class Select extends React.Component {
 
   onRemoveTag = value => this.onSelect("", { value });
 
+  onKeyDown = autoCompleteOnKeyDown => event => {
+    const { value } = this.props;
+    if (
+      this.props.multi &&
+      event.key === "Backspace" &&
+      !this.state.selectedLabel
+    ) {
+      const lastTagValue = Array.isArray(value) && value.slice(-1)?.[0];
+      if (lastTagValue) this.onRemoveTag(lastTagValue);
+    }
+    autoCompleteOnKeyDown?.(event);
+  };
+
   // eslint-disable-next-line consistent-return
   getSelectedLabel = props => {
     const item =
@@ -92,6 +107,28 @@ class Select extends React.Component {
     if (item) {
       return item.label;
     }
+  };
+
+  normalizeItems = memoize(items => groupBy(items, "value"));
+
+  renderTags = () => {
+    if (!this.props.multi) return null;
+
+    const items = this.normalizeItems(this.props.items);
+    return this.props.value?.map(value => {
+      const item = items[value]?.[0];
+      if (!item) return null;
+
+      return (
+        <Tag
+          key={item.value}
+          value={item.value}
+          text={item.label}
+          onRemove={this.onRemoveTag}
+          disabled={this.props.disabled}
+        />
+      );
+    });
   };
 
   renderInput = autoCompleteProps => {
@@ -123,20 +160,9 @@ class Select extends React.Component {
         innerRef={ref}
         refName={refName}
         image={image}
+        onKeyDown={this.onKeyDown(rest.onKeyDown)}
       >
-        {multi &&
-          items.map(
-            item =>
-              this.state.selectedValue.includes(item.value) && (
-                <Tag
-                  key={item.value}
-                  value={item.value}
-                  text={item.label}
-                  onRemove={this.onRemoveTag}
-                  disabled={this.props.disabled}
-                />
-              ),
-          )}
+        {this.renderTags()}
       </EnhancedInput>
     );
   };
