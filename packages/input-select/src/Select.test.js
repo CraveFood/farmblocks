@@ -237,6 +237,18 @@ describe("Select input", () => {
     });
   });
 
+  test("onRemoveTag should pass the tag value to onSelect", () => {
+    const instance = wrapper.instance();
+
+    const value = "lalala";
+    const expectedItem = { value };
+    instance.onSelect = jest.fn();
+
+    instance.onRemoveTag(value);
+
+    expect(instance.onSelect).toHaveBeenCalledWith("", expectedItem);
+  });
+
   test("default onChange should return false", () => {
     wrapper = shallow(<Select items={items} />);
 
