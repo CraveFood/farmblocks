@@ -18,7 +18,7 @@
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
     "build-storybook": "build-storybook -s .storybook/assets -o docs",
     "create-component": "create-component",
-    "snapshot": "build-storybook && percy-storybook --widths=1280"
+    "snapshot": "build-storybook -s .storybook/assets && percy-storybook --widths=1280"
   },
   "workspaces": [
     "packages/*"
