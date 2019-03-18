@@ -46,7 +46,7 @@ This code will render:
 | Property         | Description                                                                                                                        | Type                                                               | Required | Default     |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------- | ----------- |
 | items            | Items to be rendered as options                                                                                                    | ArrayOf({ value: string, label: string, image: (optional)string }) | x        |             |
-| value            | Selected option                                                                                                                    | string                                                             |          |             |
+| value            | Selected option                                                                                                                    | string, number or array of those (for multi)                       |          |             |
 | width            | Width of the component                                                                                                             | string                                                             |          | 200px       |
 | onChange         | Function to handle selection of an item.                                                                                           | onChange(value:string)                                             |          | () => false |
 | renderItem       | Custom render item function                                                                                                        | renderItem(item): node                                             |          |             |
@@ -55,6 +55,7 @@ This code will render:
 | maxHeight        | Set a maximum height for the menu                                                                                                  | string                                                             |          |             |
 | fontSize         | One of the constants in `fontSizes` from `farmblocks-theme` package. For convenience, `fontSizes` is also exported on this package | number                                                             |          |             |
 | id               | DOM element Id attribute                                                                                                           | string                                                             |          |             |
+| multi            | Defines if multiple items can be selected                                                                                          | boolean                                                            |          | false       |
 
 ## Subcomponent: Item
 
