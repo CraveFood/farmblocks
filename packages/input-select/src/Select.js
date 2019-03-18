@@ -28,15 +28,15 @@ const EnhancedInput = compose(
 )(InputWithTags);
 EnhancedInput.displayName = "EnhancedInput";
 
+const getValues = ({ multi, value }) =>
+  multi && !Array.isArray(value) ? [value] : value;
+
 class Select extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedValue:
-        props.multi && !Array.isArray(props.value)
-          ? [props.value]
-          : props.value,
+      selectedValue: getValues(props),
       selectedLabel: this.getSelectedLabel(props),
       isSearching: false,
       isMenuOpen: false,
@@ -66,7 +66,7 @@ class Select extends React.Component {
   };
 
   onFilter = event => {
-    if (!this.state.isSearching) {
+    if (!this.state.isSearching && !this.props.multi) {
       this.props.onChange("");
     }
 
@@ -115,7 +115,7 @@ class Select extends React.Component {
     if (!this.props.multi) return null;
 
     const items = this.normalizeItems(this.props.items);
-    return this.props.value?.map(value => {
+    return getValues(this.props)?.map(value => {
       const item = items[value]?.[0];
       if (!item) return null;
 
