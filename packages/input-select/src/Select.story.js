@@ -19,13 +19,10 @@ const moreItems = [
 ];
 
 const imgSrc = "https://picsum.photos/100";
-
-const ValueState = ({ children }) => {
-  const [value, setValue] = useState([]);
-  return React.Children.map(children, child =>
-    React.cloneElement(child, { value, onChange: setValue }),
-  );
-};
+const addImage = (item, index) => ({
+  ...item,
+  image: `${imgSrc}?image=${index + 1000}`,
+});
 
 storiesOf("Select Input", module)
   .add("Default", () => (
@@ -116,10 +113,7 @@ storiesOf("Select Input", module)
     <Select
       placeholder="Select fruit"
       label="Fruit"
-      items={items.map((item, index) => ({
-        ...item,
-        image: `${imgSrc}?image=${index + 1080}`,
-      }))}
+      items={items.map(addImage)}
       onChange={action("onChange")}
     />
   ))
@@ -275,7 +269,25 @@ storiesOf("Select Input", module)
       onChange={action("onChange")}
     />
   ))
-  .add("Multi", () => (
+  .add("Duplicated labels", () => (
+    <Select
+      placeholder="Select fruit"
+      label="Fruit"
+      items={[...items, { ...items[0], value: "999" }]}
+      onChange={action("onChange")}
+      value="999"
+    />
+  ));
+
+const ValueState = ({ children }) => {
+  const [value, setValue] = useState([]);
+  return React.Children.map(children, child =>
+    React.cloneElement(child, { value, onChange: setValue }),
+  );
+};
+
+storiesOf("Select Input/Multi", module)
+  .add("Default", () => (
     <Select
       multi
       placeholder="Select some fruits"
@@ -284,19 +296,16 @@ storiesOf("Select Input", module)
       width="500px"
     />
   ))
-  .add("Multi + Images", () => (
+  .add("With images", () => (
     <Select
       multi
       placeholder="Select some fruits"
-      items={moreItems.map((item, index) => ({
-        ...item,
-        image: `${imgSrc}?image=${index + 1000}`,
-      }))}
+      items={moreItems.map(addImage)}
       onChange={action("onChange")}
       width="500px"
     />
   ))
-  .add("Multi with some selected", () => (
+  .add("With some selected", () => (
     <Select
       multi
       placeholder="Select some fruits"
@@ -306,7 +315,7 @@ storiesOf("Select Input", module)
       width="500px"
     />
   ))
-  .add("Multi with state", () => (
+  .add("With parent handling value", () => (
     <ValueState>
       <Select
         multi
@@ -316,7 +325,17 @@ storiesOf("Select Input", module)
       />
     </ValueState>
   ))
-  .add("Multi disabled", () => (
+  .add("With images + Parent handling value", () => (
+    <ValueState>
+      <Select
+        multi
+        placeholder="Select some fruits"
+        items={moreItems.map(addImage)}
+        width="500px"
+      />
+    </ValueState>
+  ))
+  .add("Disabled", () => (
     <Select
       multi
       disabled
@@ -327,7 +346,7 @@ storiesOf("Select Input", module)
       width="500px"
     />
   ))
-  .add("Multi without search", () => (
+  .add("Without search", () => (
     <Select
       multi
       disableSearch
@@ -337,7 +356,7 @@ storiesOf("Select Input", module)
       width="500px"
     />
   ))
-  .add("Multi with errors", () => (
+  .add("With errors", () => (
     <Select
       multi
       placeholder="Select some fruits"
@@ -345,14 +364,5 @@ storiesOf("Select Input", module)
       onChange={action("onChange")}
       width="500px"
       validationMessages={["Select at least one option"]}
-    />
-  ))
-  .add("Duplicated labels", () => (
-    <Select
-      placeholder="Select fruit"
-      label="Fruit"
-      items={[...items, { ...items[0], value: "999" }]}
-      onChange={action("onChange")}
-      value="999"
     />
   ));
