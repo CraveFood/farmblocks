@@ -224,7 +224,7 @@ describe("Select input", () => {
         ${[]}        | ${2}      | ${[2]}
         ${[1, 2]}    | ${0}      | ${[1, 2, 0]}
       `(
-        "should call onChange with $expectedValues when value is $currentValue and passed argument is $itemValue",
+        "should call onChange with $expectedValue when value is $currentValue and passed argument is $itemValue",
         ({ currentValue, itemValue, expectedValue }) => {
           wrapper = shallow(
             <Select multi value={currentValue} onChange={onChangeSpy} />,
