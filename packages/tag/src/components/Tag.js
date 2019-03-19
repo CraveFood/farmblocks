@@ -5,10 +5,17 @@ import values from "object.values";
 import StyledTag from "./styledComponent/StyledTag";
 import tagTypes from "../constants/tagTypes";
 
-const Tag = props => {
-  const { text, onRemove, value, icon, disabled, children } = props;
+const Tag = ({
+  text,
+  onRemove,
+  value,
+  icon,
+  disabled,
+  children,
+  ...wrapperProps
+}) => {
   return (
-    <StyledTag {...props}>
+    <StyledTag disabled={disabled} removable={!!onRemove} {...wrapperProps}>
       {icon && (
         <div className="icon">
           <i className={icon} />

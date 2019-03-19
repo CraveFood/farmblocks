@@ -3,7 +3,7 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 import tagTypes from "../../constants/tagTypes";
 
-const rightPadding = props => (props.onRemove ? "0px" : "8px");
+const rightPadding = props => (props.removable ? "0px" : "8px");
 
 const typeStyles = {
   [tagTypes.SECONDARY]: css`
