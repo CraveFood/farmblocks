@@ -1,12 +1,22 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import { configure, addDecorator } from "@storybook/react";
+import {
+  configure,
+  addDecorator,
+  getStorybook,
+  setAddon,
+} from "@storybook/react";
+import createPercyAddon from "@percy-io/percy-storybook";
+
 import { withInfo } from "@storybook/addon-info";
+
+const { percyAddon, serializeStories } = createPercyAddon();
+setAddon(percyAddon);
 
 const req = require.context(
   "../",
   true,
-  /^((?![\\/]node_modules).)*\.story\.js$/
+  /^((?![\\/]node_modules).)*\.story\.js$/,
 );
 
 function loadStories() {
@@ -186,3 +196,5 @@ if (process.env.NODE_ENV !== "test") {
 addDecorator(withGlobalStyle);
 
 configure(loadStories, module);
+
+serializeStories(getStorybook);

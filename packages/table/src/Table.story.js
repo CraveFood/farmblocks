@@ -391,8 +391,8 @@ storiesOf("Table/Custom Cells", module)
     const formattedDateColumnCell = rowData =>
       `${new Date(rowData.created_date).toDateString()}`;
     const thumbnails = {
-      farm: "https://media.giphy.com/media/RrU8f9lImvJja/giphy.gif",
-      food_hub: "https://media.giphy.com/media/f8k6R32qjJGV2/giphy.gif",
+      farm: "https://picsum.photos/100?image=42",
+      food_hub: "https://picsum.photos/100?image=13",
     };
     const accountTypes = {
       farm: "Farm",

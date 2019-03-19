@@ -17,7 +17,8 @@
     "commit": "git-cz",
     "storybook": "start-storybook -p 6006 -s .storybook/assets",
     "build-storybook": "build-storybook -s .storybook/assets -o docs",
-    "create-component": "create-component"
+    "create-component": "create-component",
+    "snapshot": "build-storybook -s .storybook/assets && percy-storybook --widths=1280"
   },
   "workspaces": [
     "packages/*"
@@ -57,6 +58,7 @@
     "@storybook/addon-storyshots": "^5.0.0",
     "@storybook/addons": "^5.0.0",
     "@storybook/react": "^5.0.0",
+    "@percy-io/percy-storybook": "^2.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.0",
     "babel-jest": "^24.3.1",
