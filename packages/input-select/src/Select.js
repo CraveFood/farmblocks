@@ -261,13 +261,16 @@ class Select extends React.Component {
         image: PropTypes.string,
       }),
     ),
-    value: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-      PropTypes.arrayOf(
-        PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      ),
-    ]),
+    value: (props, ...rest) => {
+      const valueTypes = PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ]);
+      return (props.multi ? PropTypes.arrayOf(valueTypes) : valueTypes)(
+        props,
+        ...rest,
+      );
+    },
     width: PropTypes.string,
     onChange: PropTypes.func,
     renderItem: PropTypes.func,
