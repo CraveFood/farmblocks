@@ -33,24 +33,10 @@ const createCheckbox = ({ isSwitch }) =>
         // the focus was gained with a tab keypress and not a click
         event.target.blur();
       }
-      // ignore the checked value from event.target.checked and
-      // overwrite it with the inverse of current checked state
-      // state.checked is our single source of truth
+
       event.persist();
-      this.setState(prevState => {
-        const newCheckedState = !prevState.checked;
-        const changedEvent = {
-          ...event,
-          ...{
-            target: {
-              ...event.target,
-              checked: newCheckedState,
-            },
-          },
-        };
-        this.props.onChange(changedEvent);
-        return { checked: !prevState.checked, clicked: false };
-      });
+      this.props.onChange(event);
+      this.setState({ checked: event.target.checked, clicked: false });
     };
 
     render() {
@@ -72,7 +58,7 @@ const createCheckbox = ({ isSwitch }) =>
         hasText: !!label,
       };
 
-      inputProps.defaultChecked = checkedState;
+      inputProps.checked = checkedState;
       inputProps.onChange = this.onChange;
 
       const fontColor = inputProps.disabled
