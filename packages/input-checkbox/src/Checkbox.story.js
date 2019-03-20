@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
@@ -8,6 +8,23 @@ const checkboxStories = (moduleTitle, Checkbox) =>
   storiesOf(moduleTitle, module)
     .add("Default", () => <Checkbox />)
     .add("checked", () => <Checkbox checked />)
+    .add("with state control", () => {
+      const WithState = () => {
+        const [checked, setChecked] = useState(false);
+
+        return (
+          <Checkbox
+            checked={checked}
+            onChange={e => {
+              setChecked(e.target.checked);
+              action("onChange")(e);
+            }}
+          />
+        );
+      };
+
+      return <WithState />;
+    })
     .add("with text label", () => <Checkbox label="Checkbox Label" />)
 
     .add("with onChange event", () => (

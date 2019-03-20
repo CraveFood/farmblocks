@@ -8,15 +8,8 @@ import StyledLabel from "./styledComponents/Checkbox";
 const createCheckbox = ({ isSwitch }) =>
   class Checkbox extends React.Component {
     state = {
-      checked: this.props.checked,
       clicked: false,
     };
-
-    componentDidUpdate(prevProps) {
-      if (prevProps.checked !== this.props.checked) {
-        this.setState({ checked: this.props.checked });
-      }
-    }
 
     onMouseUp = event => {
       if (isSwitch) {
@@ -36,7 +29,7 @@ const createCheckbox = ({ isSwitch }) =>
 
       event.persist();
       this.props.onChange(event);
-      this.setState({ checked: event.target.checked, clicked: false });
+      this.setState({ clicked: false });
     };
 
     render() {
@@ -49,16 +42,15 @@ const createCheckbox = ({ isSwitch }) =>
         ...inputProps
       } = this.props;
 
-      const checkedState = this.state.checked;
       const labelProps = {
         onMouseUp: this.onMouseUp,
         switch: isSwitch,
-        checked: checkedState,
+        checked,
         disabled: inputProps.disabled,
         hasText: !!label,
       };
 
-      inputProps.checked = checkedState;
+      inputProps.checked = checked;
       inputProps.onChange = this.onChange;
 
       const fontColor = inputProps.disabled
