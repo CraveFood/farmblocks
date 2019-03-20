@@ -112,8 +112,6 @@ class Select extends React.Component {
   normalizeItems = memoize(items => groupBy(items, "value"));
 
   renderTags = () => {
-    if (!this.props.multi) return null;
-
     const items = this.normalizeItems(this.props.items);
     return getValues(this.props)?.map(value => {
       const item = items[value]?.[0];
@@ -162,7 +160,7 @@ class Select extends React.Component {
         image={image}
         onKeyDown={this.onKeyDown(rest.onKeyDown)}
       >
-        {this.renderTags()}
+        {multi && this.renderTags()}
       </EnhancedInput>
     );
   };
