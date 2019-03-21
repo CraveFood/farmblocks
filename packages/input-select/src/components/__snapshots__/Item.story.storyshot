@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Select Input/Item selected text only 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -26,10 +42,335 @@ exports[`Storyshots Select Input/Item selected text only 1`] = `
   <div
     className="c1"
   >
-    Hello
+    <div
+      className="c2"
+    >
+      Hello
+    </div>
     <i
       className="icon wg-check"
     />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Item selected with checkbox + image 1`] = `
+.c5 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-image: url(https://picsum.photos/100);
+  background-size: cover;
+  background-position: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c3 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin-right: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.c3 .visibleCheckbox .checkmark {
+  visibility: visible;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3:hover .visibleCheckbox {
+  color: #3498db;
+  background-color: #ffffff;
+  border-color: #3498db;
+  border-width: 2px;
+}
+
+.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  margin: -6px 8px -6px 0;
+}
+
+.c4:first-child {
+  margin-left: -6px;
+}
+
+.c0 {
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        checked={true}
+        className="c3"
+        onMouseUp={[Function]}
+      >
+        <input
+          className="hiddenCheckbox"
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="centerVisibleCheckbox"
+        >
+          <div
+            className="visibleCheckbox"
+          >
+            <div
+              className="checkmark wg-check"
+            />
+          </div>
+        </div>
+      </label>
+      <div
+        className="c4 c5"
+        size={40}
+        src="https://picsum.photos/100"
+      />
+      Hello
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Item selected with checkbox 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c3 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin-right: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.c3 .visibleCheckbox .checkmark {
+  visibility: visible;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3:hover .visibleCheckbox {
+  color: #3498db;
+  background-color: #ffffff;
+  border-color: #3498db;
+  border-width: 2px;
+}
+
+.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        checked={true}
+        className="c3"
+        onMouseUp={[Function]}
+      >
+        <input
+          className="hiddenCheckbox"
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="centerVisibleCheckbox"
+        >
+          <div
+            className="visibleCheckbox"
+          >
+            <div
+              className="checkmark wg-check"
+            />
+          </div>
+        </div>
+      </label>
+      Hello
+    </div>
   </div>
 </div>
 `;
@@ -63,8 +404,8 @@ exports[`Storyshots Select Input/Item selected with image 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c1 {
@@ -83,8 +424,11 @@ exports[`Storyshots Select Input/Item selected with image 1`] = `
 }
 
 .c3 {
-  margin: -6px;
-  margin-right: 8px;
+  margin: -6px 8px -6px 0;
+}
+
+.c3:first-child {
+  margin-left: -6px;
 }
 
 .c0 {
@@ -105,7 +449,6 @@ exports[`Storyshots Select Input/Item selected with image 1`] = `
         size={40}
         src="https://picsum.photos/100"
       />
-       
       Hello
     </div>
     <i
@@ -116,6 +459,22 @@ exports[`Storyshots Select Input/Item selected with image 1`] = `
 `;
 
 exports[`Storyshots Select Input/Item text only 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -141,7 +500,324 @@ exports[`Storyshots Select Input/Item text only 1`] = `
   <div
     className="c1"
   >
-    Hello
+    <div
+      className="c2"
+    >
+      Hello
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Item with checkbox + image 1`] = `
+.c5 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  background-image: url(https://picsum.photos/100);
+  background-size: cover;
+  background-position: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c3 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin-right: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 4px;
+  color: #3498db;
+  background-color: #FFFFFF;
+  border-color: rgba(0,0,0,0.16);
+}
+
+.c3 .visibleCheckbox .checkmark {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3:hover .visibleCheckbox {
+  border-color: #3498db;
+  border-width: 2px;
+}
+
+.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  margin: -6px 8px -6px 0;
+}
+
+.c4:first-child {
+  margin-left: -6px;
+}
+
+.c0 {
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+        onMouseUp={[Function]}
+      >
+        <input
+          className="hiddenCheckbox"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="centerVisibleCheckbox"
+        >
+          <div
+            className="visibleCheckbox"
+          >
+            <div
+              className="checkmark wg-check"
+            />
+          </div>
+        </div>
+      </label>
+      <div
+        className="c4 c5"
+        size={40}
+        src="https://picsum.photos/100"
+      />
+      Hello
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Item with checkbox 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c3 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin-right: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 4px;
+  color: #3498db;
+  background-color: #FFFFFF;
+  border-color: rgba(0,0,0,0.16);
+}
+
+.c3 .visibleCheckbox .checkmark {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c3:hover .visibleCheckbox {
+  border-color: #3498db;
+  border-width: 2px;
+}
+
+.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  width: 300px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+        onMouseUp={[Function]}
+      >
+        <input
+          className="hiddenCheckbox"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <div
+          className="centerVisibleCheckbox"
+        >
+          <div
+            className="visibleCheckbox"
+          >
+            <div
+              className="checkmark wg-check"
+            />
+          </div>
+        </div>
+      </label>
+      Hello
+    </div>
   </div>
 </div>
 `;
@@ -175,8 +851,8 @@ exports[`Storyshots Select Input/Item with image 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c1 {
@@ -195,8 +871,11 @@ exports[`Storyshots Select Input/Item with image 1`] = `
 }
 
 .c3 {
-  margin: -6px;
-  margin-right: 8px;
+  margin: -6px 8px -6px 0;
+}
+
+.c3:first-child {
+  margin-left: -6px;
 }
 
 .c0 {
@@ -217,7 +896,6 @@ exports[`Storyshots Select Input/Item with image 1`] = `
         size={40}
         src="https://picsum.photos/100"
       />
-       
       Hello
     </div>
   </div>
@@ -225,6 +903,22 @@ exports[`Storyshots Select Input/Item with image 1`] = `
 `;
 
 exports[`Storyshots Select Input/Item withID 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -251,7 +945,11 @@ exports[`Storyshots Select Input/Item withID 1`] = `
     className="c1"
     id="Select-item-withId"
   >
-    Hello
+    <div
+      className="c2"
+    >
+      Hello
+    </div>
   </div>
 </div>
 `;

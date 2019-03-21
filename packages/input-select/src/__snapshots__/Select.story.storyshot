@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Select Input Custom items 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -210,8 +210,8 @@ exports[`Storyshots Select Input Custom items 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -223,6 +223,30 @@ exports[`Storyshots Select Input Custom items 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -248,24 +272,29 @@ exports[`Storyshots Select Input Custom items 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -277,7 +306,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -293,7 +322,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
 `;
 
 exports[`Storyshots Select Input Custom width 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -308,7 +337,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -502,8 +531,8 @@ exports[`Storyshots Select Input Custom width 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -515,6 +544,30 @@ exports[`Storyshots Select Input Custom width 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -540,24 +593,29 @@ exports[`Storyshots Select Input Custom width 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="400px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="400px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -569,7 +627,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -585,7 +643,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
 `;
 
 exports[`Storyshots Select Input Default 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -600,7 +658,7 @@ exports[`Storyshots Select Input Default 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -794,8 +852,8 @@ exports[`Storyshots Select Input Default 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -807,6 +865,30 @@ exports[`Storyshots Select Input Default 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -832,24 +914,29 @@ exports[`Storyshots Select Input Default 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -861,7 +948,7 @@ exports[`Storyshots Select Input Default 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -877,7 +964,7 @@ exports[`Storyshots Select Input Default 1`] = `
 `;
 
 exports[`Storyshots Select Input Default with id 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -892,7 +979,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1086,8 +1173,8 @@ exports[`Storyshots Select Input Default with id 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -1099,6 +1186,30 @@ exports[`Storyshots Select Input Default with id 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -1124,25 +1235,30 @@ exports[`Storyshots Select Input Default with id 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              id="select-fruit"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                id="select-fruit"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -1154,7 +1270,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -1170,7 +1286,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
 `;
 
 exports[`Storyshots Select Input Disabled 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1185,7 +1301,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1379,8 +1495,8 @@ exports[`Storyshots Select Input Disabled 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -1392,6 +1508,30 @@ exports[`Storyshots Select Input Disabled 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -1417,24 +1557,29 @@ exports[`Storyshots Select Input Disabled 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={true}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value="Banana"
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={true}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value="Banana"
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -1446,7 +1591,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="rgba(0, 0, 0, 0.32)"
@@ -1461,8 +1606,8 @@ exports[`Storyshots Select Input Disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots Select Input Empty items 1`] = `
-.c4 {
+exports[`Storyshots Select Input Duplicated labels 1`] = `
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1477,7 +1622,328 @@ exports[`Storyshots Select Input Empty items 1`] = `
   letter-spacing: 2px;
 }
 
+.c4 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="200px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value="Apple"
+                width="200px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            className="c4 c5"
+            letterSpacing="2px"
+            size={14}
+            type="#2f313a"
+          >
+            Fruit
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input Empty items 1`] = `
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1671,8 +2137,8 @@ exports[`Storyshots Select Input Empty items 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -1684,6 +2150,30 @@ exports[`Storyshots Select Input Empty items 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -1709,24 +2199,29 @@ exports[`Storyshots Select Input Empty items 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="400px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="400px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -1738,7 +2233,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -1754,7 +2249,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
 `;
 
 exports[`Storyshots Select Input Receiving new value 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1769,7 +2264,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -1963,8 +2458,8 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -1976,6 +2471,30 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div>
@@ -2002,25 +2521,30 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
             <div
               className="c2"
             >
-              <input
-                aria-autocomplete="list"
-                aria-expanded={false}
-                autoComplete="off"
-                className="wrapped"
-                disabled={false}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
-                onKeyDown={[Function]}
-                placeholder="Select fruit"
-                readOnly={true}
-                role="combobox"
-                type="text"
-                value=""
-                width="200px"
-              />
+              <div
+                className="c3"
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-expanded={false}
+                  autoComplete="off"
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Select fruit"
+                  readOnly={true}
+                  role="combobox"
+                  size="1"
+                  type="text"
+                  value=""
+                  width="200px"
+                />
+              </div>
             </div>
             <div
               className="icon dropdown"
@@ -2032,7 +2556,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
           </div>
           <div>
             <div
-              className="c3 c4"
+              className="c4 c5"
               letterSpacing="2px"
               size={14}
               type="#2f313a"
@@ -2059,7 +2583,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
 `;
 
 exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2074,7 +2598,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2268,8 +2792,8 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -2281,6 +2805,30 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -2306,25 +2854,30 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              readOnly={true}
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                readOnly={true}
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -2336,7 +2889,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -2352,7 +2905,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 `;
 
 exports[`Storyshots Select Input Small size 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2367,7 +2920,7 @@ exports[`Storyshots Select Input Small size 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2561,8 +3114,8 @@ exports[`Storyshots Select Input Small size 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -2574,6 +3127,30 @@ exports[`Storyshots Select Input Small size 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -2600,25 +3177,30 @@ exports[`Storyshots Select Input Small size 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              fontSize={14}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                fontSize={14}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -2630,7 +3212,7 @@ exports[`Storyshots Select Input Small size 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -2646,7 +3228,7 @@ exports[`Storyshots Select Input Small size 1`] = `
 `;
 
 exports[`Storyshots Select Input With Images 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2661,7 +3243,7 @@ exports[`Storyshots Select Input With Images 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -2855,8 +3437,8 @@ exports[`Storyshots Select Input With Images 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -2868,6 +3450,30 @@ exports[`Storyshots Select Input With Images 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -2893,24 +3499,29 @@ exports[`Storyshots Select Input With Images 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -2922,7 +3533,7 @@ exports[`Storyshots Select Input With Images 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -2938,7 +3549,7 @@ exports[`Storyshots Select Input With Images 1`] = `
 `;
 
 exports[`Storyshots Select Input With Selected Image 1`] = `
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -2953,7 +3564,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   letter-spacing: 2px;
 }
 
-.c5 {
+.c6 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3163,8 +3774,8 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c3 {
@@ -3181,6 +3792,30 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c5 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -3211,24 +3846,29 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
               size={24}
               src="https://picsum.photos/100?image=1081"
             />
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value="Banana"
-              width="200px"
-            />
+            <div
+              className="c5"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value="Banana"
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -3240,7 +3880,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
         </div>
         <div>
           <div
-            className="c5 c6"
+            className="c6 c7"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -3256,7 +3896,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 `;
 
 exports[`Storyshots Select Input With errors 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -3271,7 +3911,7 @@ exports[`Storyshots Select Input With errors 1`] = `
   letter-spacing: 2px;
 }
 
-.c7 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -3282,7 +3922,7 @@ exports[`Storyshots Select Input With errors 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3464,7 +4104,7 @@ exports[`Storyshots Select Input With errors 1`] = `
   align-items: center;
 }
 
-.c6 {
+.c7 {
   background-origin: border-box;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -3480,7 +4120,7 @@ exports[`Storyshots Select Input With errors 1`] = `
   background-position: center;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3488,7 +4128,7 @@ exports[`Storyshots Select Input With errors 1`] = `
   margin-top: 16px;
 }
 
-.c5 .icon {
+.c6 .icon {
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px;
@@ -3506,8 +4146,8 @@ exports[`Storyshots Select Input With errors 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -3519,6 +4159,30 @@ exports[`Storyshots Select Input With errors 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -3544,24 +4208,29 @@ exports[`Storyshots Select Input With errors 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -3573,7 +4242,7 @@ exports[`Storyshots Select Input With errors 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#dd3311"
@@ -3584,15 +4253,15 @@ exports[`Storyshots Select Input With errors 1`] = `
       </div>
       <div>
         <div
-          className="c5"
+          className="c6"
         >
           <div
-            className="icon c6"
+            className="icon c7"
             size={24}
             src="data:image/png;base64,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"
           />
           <div
-            className="c7"
+            className="c8"
             size={16}
             type="#2f313a"
           >
@@ -3606,7 +4275,7 @@ exports[`Storyshots Select Input With errors 1`] = `
 `;
 
 exports[`Storyshots Select Input With max height 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -3621,7 +4290,7 @@ exports[`Storyshots Select Input With max height 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -3815,8 +4484,8 @@ exports[`Storyshots Select Input With max height 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -3828,6 +4497,30 @@ exports[`Storyshots Select Input With max height 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -3853,24 +4546,29 @@ exports[`Storyshots Select Input With max height 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -3882,7 +4580,7 @@ exports[`Storyshots Select Input With max height 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -3898,11 +4596,11 @@ exports[`Storyshots Select Input With max height 1`] = `
 `;
 
 exports[`Storyshots Select Input With more info content 1`] = `
-.c8 {
+.c9 {
   position: relative;
 }
 
-.c9 {
+.c10 {
   visibility: hidden;
   position: absolute;
   z-index: 1000;
@@ -3918,8 +4616,8 @@ exports[`Storyshots Select Input With more info content 1`] = `
   left: 0;
 }
 
-.c9:after,
-.c9:before {
+.c10:after,
+.c10:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -3928,7 +4626,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
   pointer-events: none;
 }
 
-.c9:before {
+.c10:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -3936,7 +4634,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
   left: 7px;
 }
 
-.c9:after {
+.c10:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -3944,7 +4642,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
   left: 8px;
 }
 
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -3959,7 +4657,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
   letter-spacing: 2px;
 }
 
-.c7 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -3969,32 +4667,32 @@ exports[`Storyshots Select Input With more info content 1`] = `
   font-weight: 600;
 }
 
-.c6 .tooltip {
+.c7 .tooltip {
   margin-left: -4px;
 }
 
-.c6 .icon {
+.c7 .icon {
   display: inline-block;
   margin: 0 8px;
 }
 
-.c6 .hit-area {
+.c7 .hit-area {
   margin: -12px;
   padding: 12px;
   margin-top: -62px;
   padding-top: 62px;
 }
 
-.c6 .icon:hover,
-.c6 .hovered {
+.c7 .icon:hover,
+.c7 .hovered {
   color: #3498db;
 }
 
-.c6 .icon:hover {
+.c7 .icon:hover {
   color: #3498db;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4003,7 +4701,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
   float: left;
 }
 
-.c5 {
+.c6 {
   position: relative;
   top: -1px;
 }
@@ -4193,8 +4891,8 @@ exports[`Storyshots Select Input With more info content 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -4206,6 +4904,30 @@ exports[`Storyshots Select Input With more info content 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -4231,24 +4953,29 @@ exports[`Storyshots Select Input With more info content 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value=""
-              width="300px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="300px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -4260,7 +4987,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -4268,10 +4995,10 @@ exports[`Storyshots Select Input With more info content 1`] = `
             Regular label
           </div>
           <div
-            className="c5 c6"
+            className="c6 c7"
           >
             <div
-              className="c7"
+              className="c8"
               size={16}
               type="#59636f"
             >
@@ -4284,10 +5011,10 @@ exports[`Storyshots Select Input With more info content 1`] = `
                   className="wg-question"
                 />
                 <div
-                  className="tooltip c8"
+                  className="tooltip c9"
                 >
                   <div
-                    className="tooltip c9"
+                    className="tooltip c10"
                   >
                     <div
                       className="hit-area"
@@ -4310,7 +5037,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
 `;
 
 exports[`Storyshots Select Input With value 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -4325,7 +5052,7 @@ exports[`Storyshots Select Input With value 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4519,8 +5246,8 @@ exports[`Storyshots Select Input With value 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -4532,6 +5259,30 @@ exports[`Storyshots Select Input With value 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div
@@ -4557,24 +5308,29 @@ exports[`Storyshots Select Input With value 1`] = `
           <div
             className="c2"
           >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              type="text"
-              value="Banana"
-              width="200px"
-            />
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select fruit"
+                role="combobox"
+                size="1"
+                type="text"
+                value="Banana"
+                width="200px"
+              />
+            </div>
           </div>
           <div
             className="icon dropdown"
@@ -4586,7 +5342,7 @@ exports[`Storyshots Select Input With value 1`] = `
         </div>
         <div>
           <div
-            className="c3 c4"
+            className="c4 c5"
             letterSpacing="2px"
             size={14}
             type="#2f313a"
@@ -4602,7 +5358,7 @@ exports[`Storyshots Select Input With value 1`] = `
 `;
 
 exports[`Storyshots Select Input Z-index 1`] = `
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -4617,7 +5373,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
   letter-spacing: 2px;
 }
 
-.c3 {
+.c4 {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
@@ -4811,8 +5567,8 @@ exports[`Storyshots Select Input Z-index 1`] = `
   width: 100%;
 }
 
-.c2 > input {
-  width: 100%;
+.c2 > label {
+  padding: 0 8px 0 0;
 }
 
 .c0 {
@@ -4825,6 +5581,30 @@ exports[`Storyshots Select Input Z-index 1`] = `
 
 .c0 *:focus {
   outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
 }
 
 <div>
@@ -4865,24 +5645,29 @@ exports[`Storyshots Select Input Z-index 1`] = `
             <div
               className="c2"
             >
-              <input
-                aria-autocomplete="list"
-                aria-expanded={false}
-                autoComplete="off"
-                className="wrapped"
-                disabled={false}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
-                onKeyDown={[Function]}
-                placeholder="Z-index: 11"
-                role="combobox"
-                type="text"
-                value=""
-                width="200px"
-              />
+              <div
+                className="c3"
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-expanded={false}
+                  autoComplete="off"
+                  className="wrapped"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Z-index: 11"
+                  role="combobox"
+                  size="1"
+                  type="text"
+                  value=""
+                  width="200px"
+                />
+              </div>
             </div>
             <div
               className="icon dropdown"
@@ -4894,7 +5679,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
           </div>
           <div>
             <div
-              className="c3 c4"
+              className="c4 c5"
               letterSpacing="2px"
               size={14}
               type="#2f313a"
@@ -4921,6 +5706,2550 @@ exports[`Storyshots Select Input Z-index 1`] = `
     }
   >
     Z-index: 12
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi Default 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi Disabled 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: default;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: default;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.32);
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
+}
+
+.c4:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c4 .icon {
+  padding-right: 8px;
+}
+
+.c4 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c4:hover .close-icon,
+.c4:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c4:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c4:hover .close-icon,
+.c4:focus .close-icon {
+  color: white;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={true}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <div
+                className="c4"
+                disabled={true}
+                type="SECONDARY"
+              >
+                Apple
+              </div>
+              <div
+                className="c4"
+                disabled={true}
+                type="SECONDARY"
+              >
+                Pear
+              </div>
+              <div
+                className="c4"
+                disabled={true}
+                type="SECONDARY"
+              >
+                Strawberry
+              </div>
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={true}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi With errors 1`] = `
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  line-height: 24px;
+  font-weight: inherit;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: #dd3311;
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #dd3311;
+  color: white;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 24px;
+  min-height: 24px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+  background-position: center;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.c4 .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="c4"
+        >
+          <div
+            className="icon c5"
+            size={24}
+            src="data:image/png;base64,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"
+          />
+          <div
+            className="c6"
+            size={16}
+            type="#2f313a"
+          >
+            Select at least one option
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi With images 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi With some selected 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c4:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c4 .icon {
+  padding-right: 8px;
+}
+
+.c4 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c4:hover .close-icon,
+.c4:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c4:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c4:hover .close-icon,
+.c4:focus .close-icon {
+  color: white;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <div
+                className="c4"
+                type="SECONDARY"
+              >
+                Apple
+                <div
+                  className="close-icon"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="button"
+                  tabIndex="0"
+                >
+                  <i
+                    className="wg-close"
+                  />
+                </div>
+              </div>
+              <div
+                className="c4"
+                type="SECONDARY"
+              >
+                Pear
+                <div
+                  className="close-icon"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="button"
+                  tabIndex="0"
+                >
+                  <i
+                    className="wg-close"
+                  />
+                </div>
+              </div>
+              <div
+                className="c4"
+                type="SECONDARY"
+              >
+                Strawberry
+                <div
+                  className="close-icon"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="button"
+                  tabIndex="0"
+                >
+                  <i
+                    className="wg-close"
+                  />
+                </div>
+              </div>
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Select Input/Multi Without search 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 .input textarea {
+  padding: 16px;
+}
+
+.c1 .input input,
+.c1 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 .input input::-webkit-input-placeholder,
+.c1 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::-moz-placeholder,
+.c1 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input:-ms-input-placeholder,
+.c1 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input::placeholder,
+.c1 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .input input[type="search"],
+.c1 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 .input input[type="search"]::-webkit-search-cancel-button,
+.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 .input input[type="search"]::-ms-clear,
+.c1 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 .input input[role="combobox"],
+.c1 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c1 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c1 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c1 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div>
+      <div
+        className="c1"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <div
+            className="c2"
+          >
+            <div
+              className="c3"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                readOnly={true}
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </div>
+      </div>
+      <div />
+    </div>
   </div>
 </div>
 `;
