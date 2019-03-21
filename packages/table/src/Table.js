@@ -163,21 +163,18 @@ class Table extends React.Component {
     this.setState({ expandedRows });
   };
 
-  renderSelectAllButton = () => {
-    const dataLength = Object.keys(this.state.rowsMap).length;
-    return (
-      <HeaderCell className="cell" align="left">
-        <div className="checkbox">
-          <Checkbox
-            checked={this.state.selectedRows.length === dataLength}
-            onChange={event => {
-              this.selectAllToggle(event.target.checked, dataLength);
-            }}
-          />
-        </div>
-      </HeaderCell>
-    );
-  };
+  renderSelectAllButton = allChecked => (
+    <HeaderCell className="cell" align="left">
+      <div className="checkbox">
+        <Checkbox
+          checked={allChecked}
+          onChange={event => {
+            this.selectAllToggle(event.target.checked);
+          }}
+        />
+      </div>
+    </HeaderCell>
+  );
 
   renderSelectRowButton = (rowKey, rowProps, disabled) => {
     return (
@@ -328,9 +325,10 @@ class Table extends React.Component {
     const selectedData = Object.keys(this.state.rowsMap)
       .filter(key => this.state.selectedRows.includes(key))
       .map(key => this.state.rowsMap[key]);
+    const allChecked =
+      selectedData.length === Object.keys(this.state.rowsMap).length;
 
-    const clearFunction = () =>
-      this.selectAllToggle(false, this.state.selectedRows.length);
+    const clearFunction = () => this.selectAllToggle(false);
 
     return (
       <StyledTable {...tableProps}>
@@ -341,13 +339,13 @@ class Table extends React.Component {
             transitionLeaveTimeout={300}
           >
             {selectionHeaderVisible &&
-              selectionHeader(selectedData, clearFunction)}
+              selectionHeader(selectedData, clearFunction, allChecked)}
           </ReactCSSTransitionGroup>
         </caption>
 
         <thead>
           <tr>
-            {selectableRows && this.renderSelectAllButton()}
+            {selectableRows && this.renderSelectAllButton(allChecked)}
             {React.Children.map(
               children,
               (column, index) =>
