@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.4.2...@crave/farmblocks-input-select@3.5.0) (2019-03-21)
+
+
+### Bug Fixes
+
+* **Select:** keep tags visible while searching ([800910a](https://github.com/CraveFood/farmblocks/commit/800910a))
+* **Select:** value proptype should warn when it's not an array on multi ([b815790](https://github.com/CraveFood/farmblocks/commit/b815790))
+
+
+### Features
+
+* **Select:** accept value prop as an array ([ae1daa0](https://github.com/CraveFood/farmblocks/commit/ae1daa0))
+* **Select:** handle item selection on multi ([a4e9d7c](https://github.com/CraveFood/farmblocks/commit/a4e9d7c))
+* **Select:** pass disabled prop to tags ([ac58e16](https://github.com/CraveFood/farmblocks/commit/ac58e16))
+* **Select:** remove tags with Backspace key ([a1f37c5](https://github.com/CraveFood/farmblocks/commit/a1f37c5))
+* **Select:** render checkbox in items when select is multi ([d7c27bd](https://github.com/CraveFood/farmblocks/commit/d7c27bd))
+* **Select:** show tags for each selected item in multi ([c5609f0](https://github.com/CraveFood/farmblocks/commit/c5609f0))
+
+
+
+
+
 ## [3.4.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.4.1...@crave/farmblocks-input-select@3.4.2) (2019-03-08)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select

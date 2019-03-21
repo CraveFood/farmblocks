@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@1.3.1...@crave/farmblocks-tags@1.4.0) (2019-03-21)
+
+
+### Bug Fixes
+
+* **Tag:** fix warnings of onRemove prop in div ([70a59dc](https://github.com/CraveFood/farmblocks/commit/70a59dc))
+
+
+### Features
+
+* **Tag:** add disabled prop ([ae94983](https://github.com/CraveFood/farmblocks/commit/ae94983))
+
+
+
+
+
 ## [1.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@1.3.0...@crave/farmblocks-tags@1.3.1) (2019-03-08)
 
 **Note:** Version bump only for package @crave/farmblocks-tags
