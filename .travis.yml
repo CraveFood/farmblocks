@@ -51,6 +51,8 @@ after_success:
         source ./bin/github_get_release_id.sh;
         ./bin/github_publish_release.sh;
       else
-        lerna publish --canary --yes --preid "alpha-$BRANCH" || travis_terminate 1;
+        if [ $TRAVIS_EVENT_TYPE == "push" ]; then
+          lerna publish --canary --yes --preid "alpha-$BRANCH" || travis_terminate 1;
+        fi
       fi
     fi

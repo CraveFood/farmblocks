@@ -3,7 +3,7 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 import tagTypes from "../../constants/tagTypes";
 
-const rightPadding = props => (props.onRemove ? "0px" : "8px");
+const rightPadding = props => (props.removable ? "0px" : "8px");
 
 const typeStyles = {
   [tagTypes.SECONDARY]: css`
@@ -27,6 +27,14 @@ const typeStyles = {
     &:hover {
       background-color: ${colorConstants.GREY_16};
     }
+  `,
+};
+
+const disabledStyles = {
+  [tagTypes.SECONDARY]: css`
+    background-color: ${colorConstants.GREY_32};
+    pointer-events: none;
+    padding: 6px 16px 8px;
   `,
 };
 
@@ -71,6 +79,7 @@ const StyledTag = styled.div`
   }
 
   ${props => typeStyles[props.type]};
+  ${props => (props.disabled && disabledStyles[props.type]) || ""};
 `;
 
 export default StyledTag;

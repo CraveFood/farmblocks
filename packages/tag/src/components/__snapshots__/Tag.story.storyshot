@@ -74,6 +74,240 @@ exports[`Storyshots Tag Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Tag Disabled 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 8px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
+}
+
+.c0:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c0 .icon {
+  padding-right: 8px;
+}
+
+.c0 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c0:hover .close-icon,
+.c0:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .close-icon,
+.c0:focus .close-icon {
+  color: white;
+}
+
+<div
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="c0"
+    disabled={true}
+    type="SECONDARY"
+  >
+    THIS IS A TAG
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Disabled Size 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c1:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c1 .icon {
+  padding-right: 8px;
+}
+
+.c1 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c1:hover .close-icon,
+.c1:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c1:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c1:hover .close-icon,
+.c1:focus .close-icon {
+  color: white;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
+}
+
+.c0:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c0 .icon {
+  padding-right: 8px;
+}
+
+.c0 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c0:hover .close-icon,
+.c0:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .close-icon,
+.c0:focus .close-icon {
+  color: white;
+}
+
+<div
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "display": "flex",
+      "flexDirection": "column",
+      "marginTop": "20px",
+    }
+  }
+>
+  Those two should have the same width
+  <div
+    className="c0"
+    disabled={true}
+    type="SECONDARY"
+  >
+    THIS IS A TAG
+  </div>
+  <div
+    className="c1"
+    type="SECONDARY"
+  >
+    THIS IS A TAG
+    <div
+      className="close-icon"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Tag Empty tag 1`] = `
 .c0 {
   display: -webkit-inline-box;
@@ -147,6 +381,63 @@ exports[`Storyshots Tag Empty tag 1`] = `
 `;
 
 exports[`Storyshots Tag Multiple tags 1`] = `
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 8px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c4:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c4 .icon {
+  padding-right: 8px;
+}
+
+.c4 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c4:hover .close-icon,
+.c4:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c4:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c4:hover .close-icon,
+.c4:focus .close-icon {
+  color: white;
+}
+
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -165,6 +456,9 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   pointer-events: none;
   background-color: #3498db;
   color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
 }
 
 .c2:hover {
@@ -261,6 +555,66 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   color: white;
 }
 
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
+}
+
+.c3:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c3 .icon {
+  padding-right: 8px;
+}
+
+.c3 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c3:hover .close-icon,
+.c3:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c3:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c3:hover .close-icon,
+.c3:focus .close-icon {
+  color: white;
+}
+
 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -321,9 +675,7 @@ exports[`Storyshots Tag Multiple tags 1`] = `
 >
   <div
     className="c0"
-    onRemove={[Function]}
     type="SECONDARY"
-    value="18-08-16"
   >
     Aug 16, 2018
     <div
@@ -340,7 +692,6 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   </div>
   <div
     className="c0"
-    onRemove={[Function]}
     type="SECONDARY"
   >
     This is a long removable tag
@@ -364,6 +715,20 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   </div>
   <div
     className="c2"
+    disabled={true}
+    type="SECONDARY"
+  >
+    Disabled tag
+  </div>
+  <div
+    className="c3"
+    disabled={true}
+    type="SECONDARY"
+  >
+    Disabled removable
+  </div>
+  <div
+    className="c4"
     type="SECONDARY"
   >
     And that's an even bigger and wider not removable tag
@@ -500,7 +865,6 @@ exports[`Storyshots Tag Neutral removable 1`] = `
 >
   <div
     className="c0"
-    onRemove={[Function]}
     type="NEUTRAL"
   >
     You can remove this tag
@@ -586,7 +950,6 @@ exports[`Storyshots Tag Removable 1`] = `
 >
   <div
     className="c0"
-    onRemove={[Function]}
     type="SECONDARY"
   >
     You can remove this tag
@@ -601,6 +964,84 @@ exports[`Storyshots Tag Removable 1`] = `
         className="wg-close"
       />
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag Removable disabled 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 0px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
+}
+
+.c0:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c0 .icon {
+  padding-right: 8px;
+}
+
+.c0 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c0:hover .close-icon,
+.c0:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c0:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c0:hover .close-icon,
+.c0:focus .close-icon {
+  color: white;
+}
+
+<div
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="c0"
+    disabled={true}
+    type="SECONDARY"
+  >
+    You can remove this tag. NOT!
   </div>
 </div>
 `;
@@ -672,7 +1113,6 @@ exports[`Storyshots Tag Removable with icon 1`] = `
 >
   <div
     className="c0"
-    onRemove={[Function]}
     type="SECONDARY"
   >
     <div
@@ -765,9 +1205,7 @@ exports[`Storyshots Tag Removable with value 1`] = `
 >
   <div
     className="c0"
-    onRemove={[Function]}
     type="SECONDARY"
-    value="1"
   >
     Removable Tag #1
     <div

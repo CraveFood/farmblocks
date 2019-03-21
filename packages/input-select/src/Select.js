@@ -2,6 +2,9 @@ import * as React from "react";
 import ReactAutocomplete from "react-autocomplete";
 import PropTypes from "prop-types";
 import { compose } from "recompose";
+import memoize from "memoize-one";
+import groupBy from "lodash.groupby";
+import xor from "lodash.xor";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 import {
   DropdownMenuWrapper,
@@ -10,25 +13,30 @@ import {
 import withMessages, {
   withMessagesProps,
 } from "@crave/farmblocks-hoc-validation-messages";
+import Tag from "@crave/farmblocks-tags";
 
 import withImage, { refName } from "./components/withImage";
 import Item from "./components/Item";
 import EmptyCard from "./components/EmptyCard";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
+import InputWithTags from "./components/InputWithTags";
 
 const EnhancedInput = compose(
   withMessages,
   formInput,
   withImage,
-)("input");
+)(InputWithTags);
 EnhancedInput.displayName = "EnhancedInput";
+
+const getValues = ({ multi, value }) =>
+  multi && !Array.isArray(value) ? [value] : value;
 
 class Select extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedValue: props.value,
+      selectedValue: getValues(props),
       selectedLabel: this.getSelectedLabel(props),
       isSearching: false,
       isMenuOpen: false,
@@ -58,7 +66,7 @@ class Select extends React.Component {
   };
 
   onFilter = event => {
-    if (!this.state.isSearching) {
+    if (!this.state.isSearching && !this.props.multi) {
       this.props.onChange("");
     }
 
@@ -66,8 +74,28 @@ class Select extends React.Component {
   };
 
   onSelect = (selectedLabel, item) => {
+    const { onChange } = this.props;
     this.setState({ selectedLabel, isSearching: false });
-    this.props.onChange(item.value);
+    if (this.props.multi) {
+      onChange(xor(this.state.selectedValue, [item.value]));
+      return;
+    }
+    onChange(item.value);
+  };
+
+  onRemoveTag = value => this.onSelect("", { value });
+
+  onKeyDown = autoCompleteOnKeyDown => event => {
+    const { value } = this.props;
+    if (
+      this.props.multi &&
+      event.key === "Backspace" &&
+      !this.state.selectedLabel
+    ) {
+      const lastTagValue = Array.isArray(value) && value.slice(-1)?.[0];
+      if (lastTagValue) this.onRemoveTag(lastTagValue);
+    }
+    autoCompleteOnKeyDown?.(event);
   };
 
   // eslint-disable-next-line consistent-return
@@ -81,6 +109,26 @@ class Select extends React.Component {
     }
   };
 
+  normalizeItems = memoize(items => groupBy(items, "value"));
+
+  renderTags = () => {
+    const items = this.normalizeItems(this.props.items);
+    return getValues(this.props)?.map(value => {
+      const item = items[value]?.[0];
+      if (!item) return null;
+
+      return (
+        <Tag
+          key={item.value}
+          value={item.value}
+          text={item.label}
+          onRemove={this.onRemoveTag}
+          disabled={this.props.disabled}
+        />
+      );
+    });
+  };
+
   renderInput = autoCompleteProps => {
     const { ref, ...rest } = autoCompleteProps;
 
@@ -90,6 +138,7 @@ class Select extends React.Component {
       items,
       zIndex,
       maxHeight,
+      multi,
       ...inputProps
     } = this.props;
 
@@ -109,7 +158,10 @@ class Select extends React.Component {
         innerRef={ref}
         refName={refName}
         image={image}
-      />
+        onKeyDown={this.onKeyDown(rest.onKeyDown)}
+      >
+        {multi && this.renderTags()}
+      </EnhancedInput>
     );
   };
 
@@ -127,7 +179,10 @@ class Select extends React.Component {
   };
 
   renderItem = (item, highlighted) => {
-    const selected = this.state.selectedLabel === item.label;
+    const { selectedValue } = this.state;
+    const selected = Array.isArray(selectedValue)
+      ? selectedValue.includes(item.value)
+      : selectedValue === item.value;
     return (
       <DropdownItemWrapper
         key={item.value}
@@ -142,6 +197,7 @@ class Select extends React.Component {
             id={this.props.id && `${this.props.id}-item-${item.value}`}
             image={item.image}
             selected={selected}
+            checkbox={this.props.multi}
           />
         )}
       </DropdownItemWrapper>
@@ -194,6 +250,8 @@ class Select extends React.Component {
   };
 
   static propTypes = {
+    ...formInputProps,
+    ...withMessagesProps,
     items: PropTypes.arrayOf(
       PropTypes.shape({
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -201,7 +259,16 @@ class Select extends React.Component {
         image: PropTypes.string,
       }),
     ),
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    value: (props, ...rest) => {
+      const valueTypes = PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ]);
+      return (props.multi ? PropTypes.arrayOf(valueTypes) : valueTypes)(
+        props,
+        ...rest,
+      );
+    },
     width: PropTypes.string,
     onChange: PropTypes.func,
     renderItem: PropTypes.func,
@@ -209,8 +276,7 @@ class Select extends React.Component {
     disableSearch: PropTypes.bool,
     zIndex: PropTypes.number,
     maxHeight: PropTypes.string,
-    ...formInputProps,
-    ...withMessagesProps,
+    multi: PropTypes.bool,
   };
 }
 

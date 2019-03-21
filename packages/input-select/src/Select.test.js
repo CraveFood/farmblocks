@@ -7,7 +7,9 @@ import Select from "./Select";
 
 describe("Select input", () => {
   configure({ adapter: new Adapter() });
-  let wrapper, autoCompleteWrapper, onChangeMock;
+  let wrapper;
+  let autoCompleteWrapper;
+  let onChangeMock;
 
   const items = [
     { value: "1", label: "Banana" },
@@ -204,6 +206,105 @@ describe("Select input", () => {
       expect(onChangeMock).toBeCalledWith(item.value);
       expect(onChangeMock).toHaveBeenCalledTimes(1);
     });
+
+    describe("multi", () => {
+      let onChangeSpy;
+      beforeEach(() => {
+        onChangeSpy = jest.fn();
+      });
+      afterEach(() => {
+        onChangeSpy.mockReset();
+      });
+
+      test.each`
+        currentValue | itemValue | expectedValue
+        ${[0, 1]}    | ${0}      | ${[1]}
+        ${[0, 1]}    | ${1}      | ${[0]}
+        ${[0, 1]}    | ${2}      | ${[0, 1, 2]}
+        ${[]}        | ${2}      | ${[2]}
+        ${[1, 2]}    | ${0}      | ${[1, 2, 0]}
+      `(
+        "should call onChange with $expectedValue when value is $currentValue and passed argument is $itemValue",
+        ({ currentValue, itemValue, expectedValue }) => {
+          wrapper = shallow(
+            <Select multi value={currentValue} onChange={onChangeSpy} />,
+          );
+          wrapper.instance().onSelect("item label", { value: itemValue });
+
+          expect(onChangeSpy).toHaveBeenCalledWith(expectedValue);
+        },
+      );
+    });
+  });
+
+  test("onRemoveTag should pass the tag value to onSelect", () => {
+    const instance = wrapper.instance();
+
+    const value = "lalala";
+    const expectedItem = { value };
+    instance.onSelect = jest.fn();
+
+    instance.onRemoveTag(value);
+
+    expect(instance.onSelect).toHaveBeenCalledWith("", expectedItem);
+  });
+
+  describe("onKeyDown", () => {
+    let instance, autoCompleteOnKeyDownSpy, onRemoveTagSpy, onKeyDown;
+    beforeEach(() => {
+      wrapper = shallow(<Select multi />);
+      instance = wrapper.instance();
+      autoCompleteOnKeyDownSpy = jest.fn();
+      onRemoveTagSpy = jest.spyOn(instance, "onRemoveTag");
+      onKeyDown = instance.onKeyDown(autoCompleteOnKeyDownSpy);
+    });
+    afterEach(() => {
+      instance = null;
+      autoCompleteOnKeyDownSpy.mockReset();
+      onRemoveTagSpy.mockRestore();
+      onKeyDown = null;
+    });
+
+    test("should pass event to given function", () => {
+      const event = { key: "X" };
+      onKeyDown(event);
+
+      expect(autoCompleteOnKeyDownSpy).toHaveBeenCalledTimes(1);
+      expect(autoCompleteOnKeyDownSpy).toHaveBeenCalledWith(event);
+    });
+
+    test("should remove last tag on backspace in empty input", () => {
+      const tagValue = items[1].value;
+      wrapper.setProps({ value: ["lala", tagValue] });
+
+      onKeyDown({ key: "Backspace" });
+
+      expect(onRemoveTagSpy).toHaveBeenCalledTimes(1);
+      expect(onRemoveTagSpy).toHaveBeenCalledWith(tagValue);
+    });
+
+    test.each`
+      multi    | value    | input  | key            | calledTimes
+      ${false} | ${[]}    | ${""}  | ${"Backspace"} | ${0}
+      ${false} | ${[]}    | ${"a"} | ${"Backspace"} | ${0}
+      ${false} | ${["a"]} | ${""}  | ${"Backspace"} | ${0}
+      ${false} | ${["a"]} | ${"a"} | ${"Backspace"} | ${0}
+      ${true}  | ${[]}    | ${""}  | ${"Backspace"} | ${0}
+      ${true}  | ${[]}    | ${"a"} | ${"Backspace"} | ${0}
+      ${true}  | ${["a"]} | ${""}  | ${"Backspace"} | ${1}
+      ${true}  | ${["a"]} | ${"a"} | ${"Backspace"} | ${0}
+      ${true}  | ${["a"]} | ${""}  | ${"Enter"}     | ${0}
+    `(
+      'should remove tag $calledTimes time(s) on press $key when multi is $multi, value is $value and input is "$input".',
+      ({ multi, value, input, key, calledTimes }) => {
+        wrapper.setProps({ value, multi });
+        wrapper.setState({ selectedLabel: input });
+
+        onKeyDown({ key });
+
+        expect(onRemoveTagSpy).toHaveBeenCalledTimes(calledTimes);
+      },
+    );
   });
 
   test("default onChange should return false", () => {

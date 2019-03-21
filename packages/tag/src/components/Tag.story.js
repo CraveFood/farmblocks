@@ -28,6 +28,11 @@ storiesOf("Tag", module)
       </Tag>
     </div>
   ))
+  .add("Disabled", () => (
+    <div style={{ marginTop: "20px" }}>
+      <Tag disabled text="THIS IS A TAG" />
+    </div>
+  ))
   .add("With icon", () => (
     <div style={{ marginTop: "20px" }}>
       <Tag text="Tag with icon" icon="wg-order" />
@@ -41,6 +46,15 @@ storiesOf("Tag", module)
   .add("Removable", () => (
     <div style={{ marginTop: "20px" }}>
       <Tag text="You can remove this tag" onRemove={action("onRemove")} />
+    </div>
+  ))
+  .add("Removable disabled", () => (
+    <div style={{ marginTop: "20px" }}>
+      <Tag
+        disabled
+        text="You can remove this tag. NOT!"
+        onRemove={action("onRemove")}
+      />
     </div>
   ))
   .add("Removable with value", () => (
@@ -67,6 +81,22 @@ storiesOf("Tag", module)
       <Tag onRemove={action("onRemove")} text="Aug 16, 2018" value="18-08-16" />
       <Tag onRemove={action("onRemove")} text="This is a long removable tag" />
       <Tag text="Neutral tag" type={tagTypes.NEUTRAL} />
+      <Tag disabled text="Disabled tag" />
+      <Tag onRemove={action("onRemove")} disabled text="Disabled removable" />
       <Tag text="And that's an even bigger and wider not removable tag" />
+    </div>
+  ))
+  .add("Disabled Size", () => (
+    <div
+      style={{
+        marginTop: "20px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+      }}
+    >
+      Those two should have the same width
+      <Tag onRemove={action("onRemove")} disabled text="THIS IS A TAG" />
+      <Tag onRemove={action("onRemove")} text="THIS IS A TAG" />
     </div>
   ));
