@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@4.2.2...@crave/farmblocks-input-checkbox@5.0.0) (2019-03-21)
+
+
+### Bug Fixes
+
+* **Checkbox:** onChange event control ([019185f](https://github.com/CraveFood/farmblocks/commit/019185f)), closes [#741](https://github.com/CraveFood/farmblocks/issues/741)
+
+
+### Features
+
+* **Checkbox:** is now an uncontrolled component ([4863f3d](https://github.com/CraveFood/farmblocks/commit/4863f3d))
+
+
+### BREAKING CHANGES
+
+* **Checkbox:** It's not a controlled component anymore, so the checked value should be provided
+
+
+
+
+
 ## [4.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@4.2.1...@crave/farmblocks-input-checkbox@4.2.2) (2019-03-08)
 
 **Note:** Version bump only for package @crave/farmblocks-input-checkbox
