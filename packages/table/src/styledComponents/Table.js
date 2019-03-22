@@ -42,11 +42,15 @@ const Table = styled.table`
       left: 16px;
     }
 
-    /* @HACK checkbox component already have a left padding,
-     so we use negative margin to keep only the table padding */
     & .checkbox {
       height: 16px;
-      margin-left: -8px;
+
+      label {
+        /*  Increase the hit area of the checkbox
+            This is important for tables with onRowClick */
+        padding: 8px;
+        margin: -8px;
+      }
     }
   }
 
