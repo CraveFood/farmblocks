@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { colors } from "@crave/farmblocks-theme";
@@ -160,45 +160,54 @@ storiesOf("Table/Basic", module)
       />
     </Table>
   ))
-  .add("With selectable rows and a selection header", () => (
-    <Table
-      width="1000px"
-      data={fruits}
-      onRowClick={action("onRowClick")}
-      selectableRows
-      selectionHeader={(selectedRows, clearFunction) => (
-        <SelectionBar
-          selectedRows={selectedRows}
-          clearSelection={clearFunction}
-          title={count =>
-            count === 1 ? "1 fruit selected" : `${count} Fruits selected`
-          }
+  .add("With selectable rows and a selection header", () => {
+    const ItemsManager = () => {
+      const [items, setItems] = useState(fruits);
+
+      return (
+        <Table
+          width="1000px"
+          data={items}
+          onRowClick={action("onRowClick")}
+          selectableRows
+          selectionHeader={(selectedRows, clearFunction) => (
+            <SelectionBar
+              selectedRows={selectedRows}
+              clearSelection={clearFunction}
+              title={count =>
+                count === 1 ? "1 fruit selected" : `${count} Fruits selected`
+              }
+            >
+              <div
+                style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}
+              >
+                <Button
+                  type={buttonTypes.SECONDARY}
+                  onClick={() => setItems([...items, ...fruits])}
+                >
+                  Add Fruits
+                </Button>
+                <Button
+                  type={buttonTypes.PRIMARY}
+                  onClick={() => setItems(fruits)}
+                >
+                  Reset Fruits
+                </Button>
+              </div>
+            </SelectionBar>
+          )}
         >
-          <div style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}>
-            <Button
-              type={buttonTypes.SECONDARY}
-              onClick={() => action("secondary button clicked")(selectedRows)}
-            >
-              View Profile
-            </Button>
-            <Button
-              type={buttonTypes.PRIMARY}
-              onClick={() => action("primary button clicked")(selectedRows)}
-            >
-              Connect
-            </Button>
-          </div>
-        </SelectionBar>
-      )}
-    >
-      <Column title="Fruit" text={row => row.name} />
-      <Column
-        fontType={fontTypes.FEATURED}
-        title="Price"
-        text={row => row.price}
-      />
-    </Table>
-  ));
+          <Column title="Fruit" text={row => row.name} />
+          <Column
+            fontType={fontTypes.FEATURED}
+            title="Price"
+            text={row => row.price}
+          />
+        </Table>
+      );
+    };
+    return <ItemsManager />;
+  });
 
 const imgSrc = "https://picsum.photos/200";
 

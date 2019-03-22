@@ -19,16 +19,21 @@ class Table extends React.Component {
   state = {
     rowsMap: {},
     selectedRows: [],
+    selectedData: [],
     expandedRows: [],
+    allChecked: false,
   };
 
   componentDidMount() {
-    this.updateRowsMap();
+    this.setState({ rowsMap: this.mapRows() });
   }
 
   componentDidUpdate(oldProps) {
     if (oldProps.data.length !== this.props.data.length) {
-      this.updateRowsMap();
+      this.setState({ rowsMap: this.mapRows() });
+      if (this.state.allChecked) {
+        this.selectAllToggle(true);
+      }
     }
   }
 
@@ -56,7 +61,7 @@ class Table extends React.Component {
     }
   };
 
-  updateRowsMap() {
+  mapRows() {
     const { rowGroupKey } = this.props;
     const hasSubRows = row =>
       rowGroupKey && row[rowGroupKey] && row[rowGroupKey].length;
@@ -64,7 +69,7 @@ class Table extends React.Component {
     // iterate over all rows and sub-rows to create
     // a hash table of rows indexed by keys in the
     // format "<index>,<subIndex>"
-    const rowsMap = this.props.data.reduce((entries, row, index) => {
+    return this.props.data.reduce((entries, row, index) => {
       if (hasSubRows(row)) {
         const subRows = row[rowGroupKey].reduce(
           (subRowEntries, subRow, subIndex) => {
@@ -76,7 +81,6 @@ class Table extends React.Component {
       }
       return { ...entries, [getRowKey(index, "")]: row };
     }, {});
-    this.setState({ rowsMap });
   }
 
   renderRow = (row, index, subIndex = "", group = false, flattened = false) => {
@@ -268,22 +272,32 @@ class Table extends React.Component {
     return bodyCell(null);
   };
 
+  setSelectedRows = updater => {
+    this.setState(state => {
+      const selectedRows =
+        updater instanceof Function ? updater(state) : updater;
+      const selectedData = Object.keys(state.rowsMap)
+        .filter(key => selectedRows.includes(key))
+        .map(key => state.rowsMap[key]);
+      const allChecked =
+        selectedData.length === Object.keys(state.rowsMap).length;
+
+      return { selectedRows, selectedData, allChecked };
+    });
+  };
+
   selectAllToggle = checked => {
     if (checked) {
-      return this.setState(state => {
-        return { selectedRows: Object.keys(state.rowsMap) };
-      });
+      return this.setSelectedRows(state => Object.keys(state.rowsMap));
     }
-    return this.setState({ selectedRows: [] });
+    return this.setSelectedRows([]);
   };
 
   selectRowToggle = (key, checked) => {
-    return this.setState(state => {
-      const nextSelectedRows = checked
+    return this.setSelectedRows(state => {
+      return checked
         ? [...state.selectedRows, key]
         : state.selectedRows.filter(value => value !== key);
-
-      return { selectedRows: nextSelectedRows };
     });
   };
 
@@ -321,12 +335,7 @@ class Table extends React.Component {
       selectionHeaderVisible,
       borderless,
     };
-
-    const selectedData = Object.keys(this.state.rowsMap)
-      .filter(key => this.state.selectedRows.includes(key))
-      .map(key => this.state.rowsMap[key]);
-    const allChecked =
-      selectedData.length === Object.keys(this.state.rowsMap).length;
+    const { selectedData, allChecked } = this.state;
 
     const clearFunction = () => this.selectAllToggle(false);
 
