@@ -23,7 +23,7 @@ describe("Table", function() {
       expect(newState.selectedRows.length).toBe(dataFixture.length);
     });
 
-    test("Unchecking the Select All checkbox of a table should select all it's rows", function() {
+    test("Unchecking the Select All checkbox of a table should deselect all it's rows", function() {
       const component = mount(
         <Table selectableRows data={dataFixture}>
           <Column title="Name" text={row => row.name} />
@@ -107,6 +107,26 @@ describe("Table", function() {
       lastRowCheckbox.simulate("change", { target: { checked: true } });
       expect(selectionHeaderRenderer.mock.calls[0][0]).toEqual([newRow]);
     });
+
+    test("Table with selection header bar should send whether all rows are checked or not", () => {
+      const selectionHeaderRenderer = jest.fn();
+      const component = mount(
+        <Table
+          data={dataFixture}
+          selectableRows
+          selectionHeader={selectionHeaderRenderer}
+        >
+          <Column clickable title="Name" text={row => row.name} />
+        </Table>,
+      );
+
+      const selectAllButton = component.find("td input");
+      selectAllButton.first().simulate("change", { target: { checked: true } });
+      expect(selectionHeaderRenderer.mock.calls[0][2]).toEqual(false);
+
+      selectAllButton.last().simulate("change", { target: { checked: true } });
+      expect(selectionHeaderRenderer.mock.calls[1][2]).toEqual(true);
+    });
   });
 
   describe("Expandable Row Groups", () => {
@@ -176,7 +196,9 @@ describe("Table", function() {
   });
 
   describe("onRowClick", () => {
-    let component, onRowClickSpy, expandToggleClickedSpy;
+    let component;
+    let onRowClickSpy;
+    let expandToggleClickedSpy;
     beforeEach(() => {
       onRowClickSpy = jest.fn();
 
