@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.3.3...@crave/farmblocks-table@3.4.0) (2019-03-26)
+
+
+### Features
+
+* **Table:** check added rows when previous were all checked ([2b4810a](https://github.com/CraveFood/farmblocks/commit/2b4810a))
+* **Table:** increase row selection checkbox hit area ([90b5817](https://github.com/CraveFood/farmblocks/commit/90b5817))
+* **Table:** pass allChecked bool to selectionHeader rander prop ([a2a3925](https://github.com/CraveFood/farmblocks/commit/a2a3925))
+
+
+
+
+
 ## [3.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.3.2...@crave/farmblocks-table@3.3.3) (2019-03-21)
 
 **Note:** Version bump only for package @crave/farmblocks-table
