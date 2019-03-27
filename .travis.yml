@@ -15,7 +15,7 @@ before_install:
   - git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
   - git fetch --all
   - git checkout "$BRANCH"
-  - yarn global add greenkeeper-lockfile@1
+  - yarn global add greenkeeper-lockfile@2
 install:
   - |
     if [[ $BRANCH == *"greenkeeper"* ]]; then
