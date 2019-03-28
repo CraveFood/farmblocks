@@ -28,8 +28,13 @@ const EnhancedInput = compose(
 )(InputWithTags);
 EnhancedInput.displayName = "EnhancedInput";
 
-const getValues = ({ multi, value }) =>
-  multi && !Array.isArray(value) ? [value] : value;
+const getValues = ({ multi, value }) => {
+  if (!multi) return value;
+  if (Array.isArray(value)) return value;
+  if (value === undefined) return [];
+
+  return [value];
+};
 
 class Select extends React.Component {
   constructor(props) {
@@ -139,6 +144,7 @@ class Select extends React.Component {
       zIndex,
       maxHeight,
       multi,
+      placeholder,
       ...inputProps
     } = this.props;
 
@@ -150,9 +156,11 @@ class Select extends React.Component {
       item => item.label === autoCompleteProps.value,
     );
     const image = selectedItem && selectedItem.image;
+
     return (
       <EnhancedInput
         readOnly={disableSearch}
+        placeholder={getValues(this.props)?.length ? "" : placeholder}
         {...inputProps}
         {...rest}
         innerRef={ref}
