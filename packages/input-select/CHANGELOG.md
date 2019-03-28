@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.5.1...@crave/farmblocks-input-select@3.5.2) (2019-03-28)
+
+
+### Bug Fixes
+
+* **SelectInput:** clear placeholder for multi values ([8243734](https://github.com/CraveFood/farmblocks/commit/8243734)), closes [#754](https://github.com/CraveFood/farmblocks/issues/754)
+
+
+
+
+
 ## [3.5.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.5.0...@crave/farmblocks-input-select@3.5.1) (2019-03-25)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select
