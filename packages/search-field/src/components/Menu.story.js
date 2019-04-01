@@ -12,7 +12,7 @@ const StyledWrapper = styled.div`
   width: 400px;
 `;
 
-const image = "https://picsum.photos/100";
+const image = "https://picsum.photos/100?image=0";
 const items = [
   { value: "1", label: "Apple", image },
   { value: "2", label: "Banana", image },

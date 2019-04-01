@@ -8,7 +8,7 @@ import EmptyState from "./EmptyState";
 const twoLinesDescription =
   "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.";
 
-const imgSrc = "https://picsum.photos/200";
+const imgSrc = "https://picsum.photos/200?image=0";
 
 const primaryAction = {
   text: "Primary Action",

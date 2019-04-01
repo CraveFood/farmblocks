@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Item from "./Item";
 
-const imgSrc = "https://picsum.photos/100";
+const imgSrc = "https://picsum.photos/100?image=0";
 const StyledWrapper = styled.div`
   width: 300px;
 `;
