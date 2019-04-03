@@ -6,7 +6,7 @@ import badgeSizes from "./constants/badgeSizes";
 import fitModes from "./constants/fitModes";
 import Image from ".";
 
-const imgSrc = "https://picsum.photos/512";
+const imgSrc = "https://picsum.photos/512?image=0";
 
 storiesOf("Image", module)
   .add("default", () => <Image src={imgSrc} />)

@@ -10,7 +10,11 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe("MapBalloon", () => {
   describe("click events", () => {
-    let value, event, onPinClickSpy, onBalloonClickSpy, commonProps;
+    let value;
+    let event;
+    let onPinClickSpy;
+    let onBalloonClickSpy;
+    let commonProps;
     beforeEach(() => {
       value = "some Id";
       event = {};
@@ -23,7 +27,7 @@ describe("MapBalloon", () => {
         caption: "Paloma Orchards",
         imageSet: [
           {
-            image: "https://picsum.photos/640/?random",
+            image: "https://picsum.photos/640/?image=0",
             name: "Romaine Lettuce",
           },
         ],

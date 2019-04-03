@@ -209,7 +209,7 @@ storiesOf("Table/Basic", module)
     return <ItemsManager />;
   });
 
-const imgSrc = "https://picsum.photos/200";
+const imgSrc = "https://picsum.photos/200?image=0";
 
 const farms = [
   {

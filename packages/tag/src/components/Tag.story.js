@@ -20,7 +20,7 @@ storiesOf("Tag", module)
       <Tag>
         <div style={{ width: "auto" }}>
           <img
-            src="https://picsum.photos/200"
+            src="https://picsum.photos/200?image=0"
             style={{ width: "8px" }}
             alt="picsum"
           />
