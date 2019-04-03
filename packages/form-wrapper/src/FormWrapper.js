@@ -33,14 +33,15 @@ const Footer = styled.div`
 `;
 
 const FormWrapper = props => {
-  const { title, extraContent } = props;
+  const { title, extraContent, id } = props;
   return (
-    <div>
+    <div id={id}>
       <Header>
         <Text title size={fontSizes.MEDIUM} className="title">
           {title}
         </Text>
         <Link
+          id={`${id}-cancel`}
           type={linkTypes.NEUTRAL}
           onClick={props.onCancel}
           className="cancel"
@@ -53,6 +54,7 @@ const FormWrapper = props => {
 
       <Footer>
         <Button
+          id={`${id}-save`}
           fluid
           type={buttonTypes.SECONDARY}
           size={buttonSizes.MEDIUM}
@@ -63,7 +65,7 @@ const FormWrapper = props => {
         </Button>
       </Footer>
 
-      {extraContent && extraContent}
+      {extraContent}
     </div>
   );
 };
@@ -71,6 +73,7 @@ const FormWrapper = props => {
 FormWrapper.defaultProps = {
   cancelLabel: "Cancel",
   saveLabel: "Save",
+  id: "form-wrapper",
 };
 
 FormWrapper.propTypes = {
@@ -82,6 +85,7 @@ FormWrapper.propTypes = {
   cancelLabel: PropTypes.string,
   saveLabel: PropTypes.string,
   loading: PropTypes.bool,
+  id: PropTypes.string,
 };
 
 export default FormWrapper;
