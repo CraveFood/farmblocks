@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@1.2.4...@crave/farmblocks-form-wrapper@1.3.0) (2019-04-03)
+
+
+### Features
+
+* **FormWrapper:** add id to save and cancel actionables ([60f4732](https://github.com/CraveFood/farmblocks/commit/60f4732))
+
+
+
+
+
 ## [1.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@1.2.3...@crave/farmblocks-form-wrapper@1.2.4) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-form-wrapper
