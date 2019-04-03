@@ -55,4 +55,14 @@ storiesOf("Form Wrapper", module)
         <Input label="Last Name" />
       </FormWrapper>
     </div>
+  ))
+  .add("With id", () => (
+    <FormWrapper
+      id="an-id"
+      onCancel={action("onCancel")}
+      onSave={action("onSave")}
+    >
+      <Input label="First Name" />
+      <Input label="Last Name" />
+    </FormWrapper>
   ));
