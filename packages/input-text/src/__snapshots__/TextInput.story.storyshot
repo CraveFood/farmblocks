@@ -2328,6 +2328,276 @@ exports[`Storyshots Text Input Invalid with multiple errors 1`] = `
 </div>
 `;
 
+exports[`Storyshots Text Input Invalid without text 1`] = `
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.c3 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  float: left;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c2 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c2 .input textarea {
+  padding: 16px;
+}
+
+.c2 .input input,
+.c2 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c2 .input input::-webkit-input-placeholder,
+.c2 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .input input::-moz-placeholder,
+.c2 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .input input:-ms-input-placeholder,
+.c2 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .input input::placeholder,
+.c2 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .input input[type="search"],
+.c2 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c2 .input input[type="search"]::-webkit-search-cancel-button,
+.c2 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2 .input input[type="search"]::-ms-clear,
+.c2 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c2 .input input[role="combobox"],
+.c2 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c2 .input .icon {
+  color: #dd3311;
+  height: 16px;
+}
+
+.c2 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c2 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c2 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c2 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c2 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c2 .input.dropdown {
+  cursor: pointer;
+}
+
+.c2 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c2 input[type="number"]::-webkit-inner-spin-button,
+.c2 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2 .prefix,
+.c2 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #dd3311;
+  color: white;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c1 > :first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 .margin-button {
+  margin: 0 8px;
+}
+
+.c0 {
+  font-family: Lato,sans-serif;
+  margin: 0 0 24px 0;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input"
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex="0"
+        >
+          <input
+            className="wrapped"
+            disabled={false}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onInvalid={[Function]}
+            placeholder="Type in the formfield content…"
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            className="c3 c4"
+            letterSpacing="2px"
+            size={14}
+            type="#dd3311"
+          >
+            Field Label
+          </div>
+        </div>
+      </div>
+    </div>
+    <div />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Text Input Protected value changing programatically every 3 seconds 1`] = `
 .c4 {
   font-family: Lato,sans-serif;
