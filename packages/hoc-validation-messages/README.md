@@ -36,7 +36,7 @@ render(<App />, document.getElementById('root'));
 | validationMessages | array of strings | []          |          | the error messages to be rendered                                   |
 | onInvalid          | function         | () => false |          |                                                                     |
 | errorIconSrc       | string           |             |          | the url for a custom icon to be displayed before all error messages |
-| invalid            | boolean          | false       |          | true if there are any validationMessages                            |
+| invalid            | string           |             |          | `"true"` if there are any validationMessages                        |
 
 ## License
 
