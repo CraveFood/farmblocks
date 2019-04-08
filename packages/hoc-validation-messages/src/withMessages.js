@@ -71,7 +71,9 @@ const withMessages = WrappedComponent => {
             {...wrappedComponentProps}
             onInvalid={this.onInvalid}
             onChange={this.onChange}
-            invalid={this.state.messages.length > 0 ? "true" : undefined}
+            invalid={
+              this.state.messages.length > 0 ? "true" : this.props.invalid
+            }
           />
 
           <div>
