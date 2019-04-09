@@ -16,7 +16,7 @@ export const formInputProps = {
   fontSize: PropTypes.number,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
-  invalid: PropTypes.string,
+  invalid: PropTypes.bool,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
@@ -212,7 +212,7 @@ const formInput = WrappedComponent => {
       const wrapperProps = {
         protected: covered,
         focused: this.state.focused,
-        invalid: invalid === "true",
+        invalid,
         filled: !!value || value === 0,
         disabled: wrappedComponentProps.disabled,
         type: wrappedComponentProps.type,

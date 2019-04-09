@@ -98,7 +98,7 @@ storiesOf("Text Input", module)
   ))
   .add("Invalid without text", () => (
     <TextInput
-      invalid="true"
+      invalid
       placeholder="Type in the formfield content…"
       label="Field Label"
     />

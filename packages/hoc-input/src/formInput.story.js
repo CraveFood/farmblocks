@@ -45,7 +45,7 @@ storiesOf("HOC formInput", module)
     <EnhancedInput focused label="Input Label" type="text" />
   ))
   .add("invalid input", () => (
-    <EnhancedInput label="Input Label" type="text" invalid="true" />
+    <EnhancedInput label="Input Label" type="text" invalid />
   ))
   .add("html disabled input with label", () => (
     <div>
@@ -110,7 +110,7 @@ storiesOf("HOC formInput", module)
       <EnhancedInput type="text" prefix="$" label="Default" />
       <EnhancedInput type="text" prefix="$" label="Focused on Mount" focused />
       <EnhancedInput type="text" prefix="$" label="Disabled" disabled />
-      <EnhancedInput type="text" prefix="$" label="Invalid" invalid="true" />
+      <EnhancedInput type="text" prefix="$" label="Invalid" invalid />
       <EnhancedInput type="search" prefix="$" label="Search" />
       <EnhancedInput
         type="text"
@@ -125,7 +125,7 @@ storiesOf("HOC formInput", module)
       <EnhancedInput type="text" suffix="CS" label="Default" />
       <EnhancedInput type="text" suffix="CS" label="Focused on Mount" focused />
       <EnhancedInput type="text" suffix="CS" label="Disabled" disabled />
-      <EnhancedInput type="text" suffix="CS" label="Invalid" invalid="true" />
+      <EnhancedInput type="text" suffix="CS" label="Invalid" invalid />
       <EnhancedInput type="search" suffix="CS" label="Search" />
       <EnhancedInput
         type="text"
@@ -157,7 +157,7 @@ storiesOf("HOC formInput", module)
         prefix="$"
         suffix="CS"
         label="Invalid"
-        invalid="true"
+        invalid
       />
       <EnhancedInput type="search" prefix="$" suffix="CS" label="Search" />
       <EnhancedInput
