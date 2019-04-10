@@ -96,6 +96,13 @@ storiesOf("Text Input", module)
       placeholder="input value here"
     />
   ))
+  .add("Invalid without text", () => (
+    <TextInput
+      invalid
+      placeholder="Type in the formfield content…"
+      label="Field Label"
+    />
+  ))
   .add("Invalid with custom text", () => (
     <TextInput
       validationMessages={["You need to fill this field."]}
