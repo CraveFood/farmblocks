@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.3.4...@crave/farmblocks-hoc-input@5.3.5) (2019-04-10)
+
+
+### Bug Fixes
+
+* **hoc-input:** change invalid prop to boolean ([1ab0a24](https://github.com/CraveFood/farmblocks/commit/1ab0a24))
+
+
+
+
+
 ## [5.3.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.3.3...@crave/farmblocks-hoc-input@5.3.4) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input
