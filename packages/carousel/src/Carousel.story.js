@@ -83,4 +83,19 @@ storiesOf("Carousel", module)
       }}
       imageSet={imageSet}
     />
+  ))
+  .add("extended style", () => (
+    <Carousel
+      css="
+        background: lavender;
+        .image {
+          background-size: 50%;
+          background-repeat: repeat;
+        }
+        .itemLabel {
+          color: red;
+        }
+      "
+      imageSet={imageSet}
+    />
   ));
