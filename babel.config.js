@@ -16,6 +16,7 @@ module.exports = api => {
       "@babel/plugin-syntax-import-meta",
       ["@babel/plugin-proposal-class-properties", { loose: false }],
       "@babel/plugin-proposal-json-strings",
+      "babel-plugin-styled-components",
     ],
     env: {
       test: {
