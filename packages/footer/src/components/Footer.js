@@ -31,8 +31,9 @@ const ActionsContainer = styled.div`
 
 const Footer = props => {
   return (
-    <Container>
+    <Container className={props.className}>
       <HelperContent
+        className="helperContent"
         text={props.helpText}
         linkText={props.helpLinkText}
         linkHref={props.helpLinkHref}
@@ -41,7 +42,9 @@ const Footer = props => {
         size={props.helpFontSize}
       />
 
-      <ActionsContainer>{props.actions}</ActionsContainer>
+      <ActionsContainer className="actionsContainer">
+        {props.actions}
+      </ActionsContainer>
     </Container>
   );
 };
@@ -54,6 +57,7 @@ Footer.propTypes = {
   onHelpLinkClick: PropTypes.func,
   helpFontSize: PropTypes.number,
   actions: PropTypes.arrayOf(PropTypes.node),
+  className: PropTypes.string,
 };
 
 export default Footer;

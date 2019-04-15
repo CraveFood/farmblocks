@@ -75,4 +75,24 @@ storiesOf("Footer", module)
       helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       helpFontSize={12}
     />
+  ))
+  .add("extended style", () => (
+    <Footer
+      css="
+        border-color: orangered;
+        .image {
+          transform: rotate(-45deg);
+        }
+        .text {
+          text-shadow: 0 0 8px tomato;
+        }
+        .link {
+          border: solid 1px deeppink;
+        }
+      "
+      helpText="Have questions about account setup?"
+      helpLinkText="Get support"
+      onHelpLinkClick={action("onHelpLinkClick")}
+      helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+    />
   ));
