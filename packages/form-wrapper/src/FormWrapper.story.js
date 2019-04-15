@@ -65,4 +65,35 @@ storiesOf("Form Wrapper", module)
       <Input label="First Name" />
       <Input label="Last Name" />
     </FormWrapper>
+  ))
+  .add("extended style", () => (
+    <FormWrapper
+      css="
+        background: gainsboro;
+        .header {
+          border: solid 4px maroon;
+          .title {
+            font-family: fantasy;
+          }
+          .cancel {
+            transform: scaleX(-1);
+          }
+        }
+        .body {
+          margin: 40px;
+        }
+        .footer {
+          border: solid 4px mediumslateblue;
+          .save {
+            opacity: .3;
+          }
+        }
+      "
+      title="Title"
+      onCancel={action("onCancel")}
+      onSave={action("onSave")}
+    >
+      <Input label="First Name" />
+      <Input label="Last Name" />
+    </FormWrapper>
   ));

@@ -35,8 +35,8 @@ const Footer = styled.div`
 const FormWrapper = props => {
   const { title, extraContent, id } = props;
   return (
-    <div id={id}>
-      <Header>
+    <div className={props.className} id={id}>
+      <Header className="header">
         <Text title size={fontSizes.MEDIUM} className="title">
           {title}
         </Text>
@@ -50,10 +50,11 @@ const FormWrapper = props => {
         </Link>
       </Header>
 
-      <Body>{props.children}</Body>
+      <Body className="body">{props.children}</Body>
 
-      <Footer>
+      <Footer className="footer">
         <Button
+          className="save"
           id={`${id}-save`}
           fluid
           type={buttonTypes.SECONDARY}
@@ -86,6 +87,7 @@ FormWrapper.propTypes = {
   saveLabel: PropTypes.string,
   loading: PropTypes.bool,
   id: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default FormWrapper;
