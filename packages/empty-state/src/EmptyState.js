@@ -6,7 +6,7 @@ import Button, { buttonSizes } from "@crave/farmblocks-button";
 
 import Container from "./styledComponents/Container";
 
-class EmptyState extends React.Component {
+class EmptyState extends React.PureComponent {
   renderThumbnail() {
     const { imageSrc, icon } = this.props;
 
@@ -33,7 +33,13 @@ class EmptyState extends React.Component {
 
   renderTitle() {
     return (
-      <Text title align="center" size={fontSizes.HUGE} type={fontTypes.NORMAL}>
+      <Text
+        className="title"
+        title
+        align="center"
+        size={fontSizes.HUGE}
+        type={fontTypes.NORMAL}
+      >
         {this.props.title}
       </Text>
     );
@@ -90,7 +96,7 @@ class EmptyState extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container className={this.props.className}>
         {this.renderThumbnail()}
         {this.renderTitle()}
         {this.renderDescription()}
@@ -113,6 +119,7 @@ class EmptyState extends React.Component {
     ),
     info: PropTypes.string,
     icon: PropTypes.string,
+    className: PropTypes.string,
   };
 }
 
