@@ -271,4 +271,16 @@ storiesOf("Button", module)
   ))
   .add("Loading with left and right icons", () => (
     <Button text="Label" rightIcon="wg-small-arrow-bottom" loading />
+  ))
+  .add("extended style", () => (
+    <Button
+      css="
+        font-family: serif;
+        .left-icon {
+          font-size: 2em;
+        }
+      "
+      text="Label"
+      icon="wg-edit"
+    />
   ));
