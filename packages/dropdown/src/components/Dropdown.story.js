@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
@@ -127,4 +128,29 @@ storiesOf("Dropdown/Component", module)
       <DropdownItem value={6} text="Coconut" />
       <DropdownItem value={7} text="Peanut" />
     </Dropdown>
-  ));
+  ))
+  .add("extended style", () => {
+    const CustomItem = styled(DropdownItem)`
+      background-color: mintcream;
+      font-size: 1.5em;
+    `;
+    return (
+      <Dropdown
+        css="
+        padding: 10px;
+        .menuButton {
+          background: azure;
+          .icon {
+            text-shadow: 0 8px 4px orchid;
+          }
+        }
+      "
+        text="Select fruit"
+        handleSelection={action("handleSelection")}
+      >
+        <CustomItem value={1} text="Banana" />
+        <CustomItem value={2}>Apple</CustomItem>
+        <CustomItem value={3} text="Strawberry" />
+      </Dropdown>
+    );
+  });
