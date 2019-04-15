@@ -84,4 +84,26 @@ storiesOf("Filter Popover", module)
         Over
       </div>
     </>
+  ))
+  .add("extended style", () => (
+    <FilterPopover
+      css={`
+        background: lightcyan;
+        padding: 16px;
+        .trigger {
+          transform: rotate(0.5turn);
+        }
+        .formWrapper {
+          background: lavender;
+        }
+      `}
+      triggerLabel="Filter"
+      formTitle="Form Title"
+      formContent={
+        <div>
+          <TextInput label="Product" />
+          <TextInput label="Owner" />
+        </div>
+      }
+    />
   ));
