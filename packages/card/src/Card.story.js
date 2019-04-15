@@ -50,4 +50,14 @@ storiesOf("Card", module)
         Hover me
       </Button>
     </Card>
+  ))
+  .add("extended style", () => (
+    <Card
+      css="
+        border: solid 4px green;
+        border-radius: 32px;
+        height: 100px;
+        background: linear-gradient(to bottom, white 0%, lightskyblue 100%);
+      "
+    />
   ));
