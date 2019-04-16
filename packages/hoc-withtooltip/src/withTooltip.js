@@ -54,6 +54,7 @@ const withTooltip = WrappedComponent => {
 
     render() {
       const {
+        className,
         disableTooltip,
         tooltipContent,
         tooltipAlign,
@@ -73,9 +74,9 @@ const withTooltip = WrappedComponent => {
       };
 
       return (
-        <Container displayBlock={displayBlock}>
+        <Container className={className} displayBlock={displayBlock}>
           {!disableTooltip && <div className="hitArea" {...mouseEvents} />}
-          <WrappedComponent {...wrappedComponentProps} />
+          <WrappedComponent className="wrapped" {...wrappedComponentProps} />
           <CSSTransition
             in={this.state.tooltipVisible && !disableTooltip}
             mountOnEnter
@@ -84,6 +85,7 @@ const withTooltip = WrappedComponent => {
             classNames="appear"
           >
             <Tooltip
+              className="tooltip"
               align={tooltipAlign}
               zIndex={zIndex}
               bondariesSelector={bondariesSelector}
@@ -113,6 +115,7 @@ const withTooltip = WrappedComponent => {
       overflow: PropTypes.string,
       onMouseLeave: PropTypes.func,
       onMouseOver: PropTypes.func,
+      className: PropTypes.string,
       ...WrappedComponent.propTypes,
     };
 
