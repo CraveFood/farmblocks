@@ -15,10 +15,16 @@ const ItemImage = styled(Image)`
 `;
 
 const Item = ({ selected, image, label, id, checkbox }) => (
-  <ItemContainer id={id}>
-    <LabelContainer>
-      {checkbox && <Checkbox checked={selected} />}
-      {image && <ItemImage src={image} size={thumbnailSizes.SMALL} />}
+  <ItemContainer className="itemContainer" id={id}>
+    <LabelContainer className="labelContainer">
+      {checkbox && <Checkbox className="checkbox" checked={selected} />}
+      {image && (
+        <ItemImage
+          className="itemImage"
+          src={image}
+          size={thumbnailSizes.SMALL}
+        />
+      )}
       {label}
     </LabelContainer>
     {!checkbox && selected && <i className="icon wg-check" />}

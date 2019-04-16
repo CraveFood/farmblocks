@@ -124,6 +124,7 @@ class Select extends React.Component {
 
       return (
         <Tag
+          className="tag"
           key={item.value}
           value={item.value}
           text={item.label}
@@ -159,6 +160,7 @@ class Select extends React.Component {
 
     return (
       <EnhancedInput
+        className="input"
         readOnly={disableSearch}
         placeholder={getValues(this.props)?.length ? "" : placeholder}
         {...inputProps}
@@ -177,10 +179,12 @@ class Select extends React.Component {
     const { noResultsMessage, maxHeight } = this.props;
 
     if (!items || !items.length) {
-      return <EmptyCard noResultsMessage={noResultsMessage} />;
+      return (
+        <EmptyCard className="emptyCard" noResultsMessage={noResultsMessage} />
+      );
     }
     return (
-      <DropdownMenuWrapper maxHeight={maxHeight}>
+      <DropdownMenuWrapper className="dropdownMenu" maxHeight={maxHeight}>
         <ul>{items}</ul>
       </DropdownMenuWrapper>
     );
@@ -193,6 +197,7 @@ class Select extends React.Component {
       : selectedValue === item.value;
     return (
       <DropdownItemWrapper
+        className="itemWrapper"
         key={item.value}
         highlighted={highlighted}
         selected={selected}
@@ -201,6 +206,7 @@ class Select extends React.Component {
           this.props.renderItem(item, selected)
         ) : (
           <Item
+            className="item"
             label={item.label}
             id={this.props.id && `${this.props.id}-item-${item.value}`}
             image={item.image}
@@ -227,9 +233,9 @@ class Select extends React.Component {
   };
 
   render() {
-    const { width, zIndex, items } = this.props;
+    const { width, zIndex, items, className } = this.props;
     return (
-      <DropdownWrapper width={width} zIndex={zIndex}>
+      <DropdownWrapper className={className} width={width} zIndex={zIndex}>
         <ReactAutocomplete
           items={items}
           shouldItemRender={this.shouldItemRender}
@@ -285,6 +291,7 @@ class Select extends React.Component {
     zIndex: PropTypes.number,
     maxHeight: PropTypes.string,
     multi: PropTypes.bool,
+    className: PropTypes.string,
   };
 }
 

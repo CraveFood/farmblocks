@@ -18,10 +18,10 @@ const CardWrapper = styled(Card)`
   }
 `;
 
-const EmptyCard = ({ noResultsMessage }) => (
-  <CardWrapper type="NEUTRAL">
-    <Image src={helperSrc} badge size={badgeSizes.MEDIUM} />
-    <Text className="centered">{noResultsMessage}</Text>
+const EmptyCard = ({ noResultsMessage, className }) => (
+  <CardWrapper className={className} type="NEUTRAL">
+    <Image className="image" src={helperSrc} badge size={badgeSizes.MEDIUM} />
+    <Text className="text centered">{noResultsMessage}</Text>
   </CardWrapper>
 );
 
@@ -31,6 +31,7 @@ EmptyCard.defaultProps = {
 
 EmptyCard.propTypes = {
   noResultsMessage: PropTypes.string,
+  className: PropTypes.string,
 };
 
 CardWrapper.displayName = "EmptyCard";

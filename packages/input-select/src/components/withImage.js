@@ -17,8 +17,15 @@ export default Input =>
     render() {
       const { image, inputRef, ...props } = this.props;
       return (
-        <LabelContainer>
-          {image && <ItemImage src={image} size={badgeSizes.SMALL} badge />}
+        <LabelContainer className="labelContainer">
+          {image && (
+            <ItemImage
+              className="itemImage"
+              src={image}
+              size={badgeSizes.SMALL}
+              badge
+            />
+          )}
           <Input ref={inputRef} {...props} />
         </LabelContainer>
       );
