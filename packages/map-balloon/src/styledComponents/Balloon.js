@@ -52,7 +52,7 @@ const interactiveStyle = css`
     }
   }
 `;
-const Balloon = styled(Card)`
+const Balloon = styled(Card).attrs({ overflow: "hidden" })`
   ${props => props.animated && animation};
   position: absolute;
   bottom: ${props => props.pinSize + 8}px;
