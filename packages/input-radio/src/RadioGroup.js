@@ -28,7 +28,7 @@ class RadioGroup extends React.Component {
 
     const allChildrenProps = { name, onChange: this.handleChange };
     return (
-      <Group>
+      <Group className={this.props.className}>
         {React.Children.map(children, child => {
           const checked = child.props.value === value;
           const childProps = {
@@ -36,6 +36,9 @@ class RadioGroup extends React.Component {
             disabled: child.props.disabled || disabled,
           };
           return React.cloneElement(child, {
+            className: `radio val-${child.props.value} ${
+              checked ? "checked" : ""
+            } ${child.props.disabled ? "disabled" : ""}`,
             ...allChildrenProps,
             ...childProps,
           });
@@ -50,6 +53,7 @@ class RadioGroup extends React.Component {
     defaultValue: PropTypes.any,
     onChange: PropTypes.func,
     disabled: PropTypes.bool,
+    className: PropTypes.string,
   };
 }
 
