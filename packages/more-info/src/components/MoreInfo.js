@@ -30,7 +30,7 @@ class MoreInfo extends Component {
           title
           type={fontTypes.NEUTRAL}
           size={fontSizes.MEDIUM}
-          className={this.state.tooltipVisible && "hovered"}
+          className={`text ${this.state.tooltipVisible && "hovered"}`}
         >
           {this.props.text}
           <div
