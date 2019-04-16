@@ -32,22 +32,24 @@ const MapBalloon = ({
   value,
   onPinClick,
   onBalloonClick,
+  className,
 }) => {
   const interactivePin = !!onPinClick;
   const interactiveBalloon = !!onBalloonClick;
   const pinIconClass = interactivePin ? "wg-place" : "wg-location";
   return (
-    <Wrapper x={x} y={y} opacity={opacity}>
+    <Wrapper className={className} x={x} y={y} opacity={opacity}>
       {(singleImage && (
         <SingleImage
+          className="image single"
           src={singleImage}
           borderRadius={borderRadius}
           pinColor={pinColor}
         />
       )) || (
-        <div>
+        <>
           <Pin
-            className={`${pinIconClass} ${open ? "open" : ""}`}
+            className={`pin ${pinIconClass} ${open ? "open" : ""}`}
             pinColor={pinColor}
             pinHighlightColor={pinHighlightColor}
             pinSize={pinSize}
@@ -63,6 +65,7 @@ const MapBalloon = ({
             unmountOnExit
           >
             <Balloon
+              className="balloon"
               align={align}
               animated={animated}
               borderRadius={borderRadius}
@@ -73,7 +76,11 @@ const MapBalloon = ({
               }
               balloonSize={balloonSize}
             >
-              <ImageSet set={imageSet} fontSize={imageTextSize} />
+              <ImageSet
+                className="imageSet"
+                set={imageSet}
+                fontSize={imageTextSize}
+              />
 
               <Caption
                 title
@@ -87,13 +94,13 @@ const MapBalloon = ({
                     title
                     type={fontTypes.SUBTLE}
                     size={captionSize}
-                    className="wg-small-arrow-right"
+                    className="text wg-small-arrow-right"
                   />
                 ) : null}
               </Caption>
             </Balloon>
           </CSSTransition>
-        </div>
+        </>
       )}
     </Wrapper>
   );
@@ -124,6 +131,7 @@ MapBalloon.propTypes = {
   onPinClick: PropTypes.func,
   onBalloonClick: PropTypes.func,
   value: PropTypes.any, // eslint-disable-line
+  className: PropTypes.string,
 };
 
 MapBalloon.defaultProps = {

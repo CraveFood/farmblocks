@@ -12,13 +12,13 @@ export const imageSetPropType = PropTypes.arrayOf(
   }),
 );
 
-const ImageSet = ({ set, fontSize }) => {
+const ImageSet = ({ className, set, fontSize }) => {
   const [{ name, image }] = set;
   return (
-    <PhotoBox image={image}>
+    <PhotoBox className={className} image={image}>
       {name && (
-        <Gradient>
-          <Text title size={fontSize} type="white">
+        <Gradient className="gradient">
+          <Text className="text" title size={fontSize} type="white">
             {name}
           </Text>
         </Gradient>
@@ -29,6 +29,7 @@ const ImageSet = ({ set, fontSize }) => {
 ImageSet.propTypes = {
   set: imageSetPropType.isRequired,
   fontSize: PropTypes.number.isRequired,
+  className: PropTypes.string,
 };
 
 export default ImageSet;

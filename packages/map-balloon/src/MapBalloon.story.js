@@ -231,4 +231,35 @@ storiesOf("Map Balloon", module)
     {
       info: `MapBalloon is a stateless component, it won't open automatically on pin click. This story is just for animation tests.`,
     },
-  );
+  )
+  .add("extended style", () => (
+    <DemoGrid>
+      <MapBalloon
+        css="
+          .pin {
+            transform: rotate(180deg);
+          }
+          .caption {
+            border: solid 1px burlywood;
+          }
+          .imageSet {
+            .gradient {
+              background: linear-gradient(
+                180deg,
+                rgba(0, 255, 0, 0.2) 0%,
+                rgba(255, 0, 200, 0.48) 100%
+              );
+            }
+            .text {
+              color: lime;
+            }
+          }
+        "
+        x={400}
+        y={400}
+        open
+        imageSet={imageSet}
+        caption="Paloma Orchards"
+      />
+    </DemoGrid>
+  ));
