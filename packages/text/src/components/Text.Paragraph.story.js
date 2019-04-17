@@ -82,4 +82,22 @@ storiesOf("Text/Paragraph", module)
         {text}
       </Text>
     </div>
+  ))
+  .add("extended style", () => (
+    <div style={{ width: "300px" }}>
+      <Text
+        css="
+          font-family: cursive;
+          &::first-letter {
+            font-size: 3em;
+            color: gainsboro;
+            text-shadow: 0 0 6px black;
+            line-height: 1;
+          }
+        "
+        paragraph
+      >
+        {text}
+      </Text>
+    </div>
   ));

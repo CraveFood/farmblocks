@@ -60,4 +60,7 @@ storiesOf("Text/Default", module)
       }
     }
     return <TextSoon />;
-  });
+  })
+  .add("extended style", () => (
+    <Text css="font-style: italic;">Awesome Text</Text>
+  ));

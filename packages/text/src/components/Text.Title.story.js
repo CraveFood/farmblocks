@@ -84,4 +84,9 @@ storiesOf("Text/Title", module)
         Awesome Title
       </Text>
     </div>
+  ))
+  .add("extended style", () => (
+    <Text css="font-family: monospace; text-transform: uppercase;" title>
+      Awesome Title
+    </Text>
   ));
