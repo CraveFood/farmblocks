@@ -64,13 +64,14 @@ export default class ScrollBox extends React.Component {
   onScroll = debounce(this.checkScrollPosition, 300);
 
   render() {
-    const { children, maxHeight } = this.props;
+    const { children, maxHeight, ...remainingProps } = this.props;
     return (
       <ScrollWrapper
         style={{ maxHeight }}
         ref={node => {
           this.wrapper = node;
         }}
+        {...remainingProps}
       >
         {children}
       </ScrollWrapper>

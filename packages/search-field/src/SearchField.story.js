@@ -265,4 +265,40 @@ storiesOf("Search Field", module)
     }
 
     return <SearchTest />;
-  });
+  })
+  .add("extended style", () => (
+    <SearchField
+      css="
+        background: lightgray;
+        padding: 16px;
+        .input { border: inset 2px; border-radius: 0; box-shadow: none; }
+        .searchInput .clear {
+          color: tomato;
+        }
+        .scroll {
+          &::-webkit-scrollbar-track
+          {
+            background: darkgray;
+            border: inset 2px;
+          }
+          &::-webkit-scrollbar { width: 16px; }
+          &::-webkit-scrollbar-thumb
+          {
+            background: lightgray;
+            border: outset 2px;
+          }
+        }
+        .menu .itemWrapper {
+          background: silver;
+          color: black;
+          border: outset 2px;
+          &:hover {
+            background: navy;
+            color: white;
+          }
+        }
+      "
+      items={manyItems}
+      label="Fruits"
+    />
+  ));
