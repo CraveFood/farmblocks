@@ -5,13 +5,20 @@ import Button from "@crave/farmblocks-button";
 import StyledBar from "./styledComponents/SelectionBar";
 
 const SelectionBar = props => {
-  const { selectedRows, clearSelection, height, title, children } = props;
+  const {
+    className,
+    selectedRows,
+    clearSelection,
+    height,
+    title,
+    children,
+  } = props;
   const clearButtonClick = clearFn => () => clearFn();
 
   return (
-    <StyledBar height={height}>
+    <StyledBar className={className} height={height}>
       <div className="title">
-        <Text title size={fontSizes.LARGE}>
+        <Text className="text" title size={fontSizes.LARGE}>
           {title(selectedRows.length)}
         </Text>
       </div>
@@ -42,6 +49,7 @@ SelectionBar.propTypes = {
   clearButtonLabel: PropTypes.string,
   height: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 export default SelectionBar;

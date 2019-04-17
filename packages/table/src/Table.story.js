@@ -207,6 +207,74 @@ storiesOf("Table/Basic", module)
       );
     };
     return <ItemsManager />;
+  })
+  .add("extended style", () => {
+    const ItemsManager = () => {
+      const [items, setItems] = useState(fruits);
+
+      return (
+        <Table
+          css="
+            thead .text {
+              font-size: 2em;
+            }
+            .visibleCheckbox {
+              border-radius: 50%;
+            }
+            tbody .text {
+              font-family: serif;
+            }
+          "
+          width="1000px"
+          data={items}
+          onRowClick={action("onRowClick")}
+          selectableRows
+          selectionHeader={(selectedRows, clearFunction) => (
+            <SelectionBar
+              css="
+                .title .text {
+                  font-family: fantasy;
+                }
+                .actions {
+                  background: floralwhite;
+                  padding: 16px;
+                }
+              "
+              selectedRows={selectedRows}
+              clearSelection={clearFunction}
+              title={count =>
+                count === 1 ? "1 fruit selected" : `${count} Fruits selected`
+              }
+            >
+              <div
+                style={{ display: "grid", gridGap: 8, gridAutoFlow: "column" }}
+              >
+                <Button
+                  type={buttonTypes.SECONDARY}
+                  onClick={() => setItems([...items, ...fruits])}
+                >
+                  Add Fruits
+                </Button>
+                <Button
+                  type={buttonTypes.PRIMARY}
+                  onClick={() => setItems(fruits)}
+                >
+                  Reset Fruits
+                </Button>
+              </div>
+            </SelectionBar>
+          )}
+        >
+          <Column title="Fruit" text={row => row.name} />
+          <Column
+            fontType={fontTypes.FEATURED}
+            title="Price"
+            text={row => row.price}
+          />
+        </Table>
+      );
+    };
+    return <ItemsManager />;
   });
 
 const imgSrc = "https://picsum.photos/200?image=0";
