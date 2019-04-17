@@ -34,7 +34,7 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
       </button>
     </div>
     <div
-      className="c1"
+      className="tooltip c1"
     />
   </div>
 </div>
@@ -126,7 +126,7 @@ exports[`Storyshots Popover Center aligned 1`] = `
       </div>
     </div>
     <div
-      className="c2"
+      className="tooltip c2"
     />
   </div>
 </div>
@@ -158,7 +158,7 @@ exports[`Storyshots Popover Custom padding 1`] = `
     </button>
   </div>
   <div
-    className="c1"
+    className="tooltip c1"
   />
 </div>
 `;
@@ -241,7 +241,7 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -324,7 +324,7 @@ exports[`Storyshots Popover Dismissable 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -355,7 +355,7 @@ exports[`Storyshots Popover Nested popover 1`] = `
     </button>
   </div>
   <div
-    className="c1"
+    className="tooltip c1"
   />
 </div>
 `;
@@ -394,7 +394,99 @@ exports[`Storyshots Popover custom triggerWidth 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="tooltip c1"
+  />
+</div>
+`;
+
+exports[`Storyshots Popover extended style 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c2 i.margin-left {
+  margin-left: 8px;
+}
+
+.c2 i.margin-right {
+  margin-right: 8px;
+}
+
+.c2 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 > a {
+  color: inherit;
+}
+
+.c2:hover {
+  color: #2980b9;
+}
+
+.c1 {
+  display: inline-block;
+  width: auto;
+}
+
+.c0 {
+  border: solid 2px lightseagreen;
+  padding: 10px;
+}
+
+.c0 .tooltip {
+  background: cornsilk;
+}
+
+<div
+  className="c0 c1"
+  width="auto"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c2"
+      disabled={false}
+      size={16}
+      type="#3498db"
+    >
+      <span>
+        Trigger
+      </span>
+    </div>
+  </div>
+  <div
+    className="tooltip c3"
   />
 </div>
 `;
@@ -477,7 +569,7 @@ exports[`Storyshots Popover onBeforeOpen - 2s delay 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -560,7 +652,7 @@ exports[`Storyshots Popover onBeforeOpen - no promise 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -643,7 +735,7 @@ exports[`Storyshots Popover onBeforeOpen - prevent open 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -726,7 +818,7 @@ exports[`Storyshots Popover onOpen/onClose 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -809,7 +901,7 @@ exports[`Storyshots Popover trigger as function 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;
@@ -892,7 +984,7 @@ exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="tooltip c2"
   />
 </div>
 `;

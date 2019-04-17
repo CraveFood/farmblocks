@@ -95,7 +95,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
 >
   <label
     checked={false}
-    className="c1"
+    className="radio val-first   c1"
   >
     <input
       className="hiddenInput"
@@ -122,7 +122,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-second   c1"
   >
     <input
       className="hiddenInput"
@@ -149,7 +149,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-third   c1"
   >
     <input
       className="hiddenInput"
@@ -340,7 +340,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
 >
   <label
     checked={false}
-    className="c1"
+    className="radio val-first   c1"
     disabled={true}
   >
     <input
@@ -369,7 +369,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-second   c1"
     disabled={true}
   >
     <input
@@ -398,7 +398,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   </label>
   <label
     checked={true}
-    className="c3"
+    className="radio val-third checked  c3"
     disabled={true}
   >
     <input
@@ -419,6 +419,367 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
     </div>
     <div
       className="c2"
+      size={16}
+      type="rgba(0, 0, 0, 0.32)"
+    >
+      Third
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots RadioGroup extended style 1`] = `
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0,0,0,0.32);
+  text-align: left;
+  font-weight: 600;
+}
+
+.c2 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c2 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c2 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c2:hover .visibleInput,
+.c2 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c4 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c4 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c4 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c4 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c4:hover .visibleInput,
+.c4 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c4 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c5 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c5 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c5 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c5 .visibleInput {
+  color: rgba(0,0,0,0.16);
+  background: currentColor;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0 {
+  background: cornsilk;
+  padding: 16px;
+}
+
+.c0 .radio {
+  -webkit-transition: -webkit-transform .3s;
+  -webkit-transition: transform .3s;
+  transition: transform .3s;
+  background: antiquewhite;
+}
+
+.c0 .radio .checkedIndicator {
+  position: relative;
+  background: none;
+}
+
+.c0 .radio .checkedIndicator::after {
+  position: absolute;
+  bottom: -100%;
+  left: -20%;
+  font-size: 1.2em;
+  content: '👍';
+  text-shadow: 0 0 1px black;
+}
+
+.c0 .radio.checked {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.c0 .radio.disabled {
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+<div
+  className="c0 c1"
+>
+  <label
+    checked={false}
+    className="radio val-first   c2"
+  >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="first"
+    />
+    <div
+      className="visibleInput"
+    >
+      <div
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c3"
+      size={16}
+      type="#2f313a"
+    >
+      First
+    </div>
+  </label>
+  <label
+    checked={true}
+    className="radio val-second checked  c4"
+  >
+    <input
+      className="hiddenInput"
+      defaultChecked={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="second"
+    />
+    <div
+      className="visibleInput"
+    >
+      <div
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c3"
+      size={16}
+      type="#2f313a"
+    >
+      Second
+    </div>
+  </label>
+  <label
+    checked={false}
+    className="radio val-third  disabled c5"
+    disabled={true}
+  >
+    <input
+      className="hiddenInput"
+      defaultChecked={false}
+      disabled={true}
+      name="radioExample"
+      onClick={[Function]}
+      type="radio"
+      value="third"
+    />
+    <div
+      className="visibleInput"
+    >
+      <div
+        className="checkedIndicator"
+      />
+    </div>
+    <div
+      className="c6"
       size={16}
       type="rgba(0, 0, 0, 0.32)"
     >
@@ -523,7 +884,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
 >
   <label
     checked={false}
-    className="c1"
+    className="radio val-first   c1"
   >
     <input
       className="hiddenInput"
@@ -550,7 +911,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-second   c1"
   >
     <input
       className="hiddenInput"
@@ -577,7 +938,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-third   c1"
   >
     <input
       className="hiddenInput"
@@ -772,7 +1133,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
 >
   <label
     checked={false}
-    className="c1"
+    className="radio val-first   c1"
   >
     <input
       className="hiddenInput"
@@ -799,7 +1160,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   </label>
   <label
     checked={true}
-    className="c3"
+    className="radio val-second checked  c3"
   >
     <input
       className="hiddenInput"
@@ -826,7 +1187,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-third   c1"
   >
     <input
       className="hiddenInput"
@@ -1022,7 +1383,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
 >
   <label
     checked={false}
-    className="c1"
+    className="radio val-first   c1"
   >
     <input
       className="hiddenInput"
@@ -1049,7 +1410,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   </label>
   <label
     checked={false}
-    className="c1"
+    className="radio val-second   c1"
   >
     <input
       className="hiddenInput"
@@ -1076,7 +1437,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   </label>
   <label
     checked={false}
-    className="c3"
+    className="radio val-third  disabled c3"
     disabled={true}
   >
     <input

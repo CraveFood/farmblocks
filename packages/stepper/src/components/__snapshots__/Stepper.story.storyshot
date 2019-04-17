@@ -103,10 +103,10 @@ exports[`Storyshots Stepper default 1`] = `
 >
   <div>
     <div
-      className="c0"
+      className="stepContainer c0"
     >
       <div
-        className="c1"
+        className="step completed c1"
         onClick={[Function]}
       >
         <div
@@ -124,10 +124,10 @@ exports[`Storyshots Stepper default 1`] = `
       </div>
     </div>
     <div
-      className="c0"
+      className="stepContainer c0"
     >
       <div
-        className="c1"
+        className="step completed c1"
         onClick={[Function]}
       >
         <div
@@ -145,10 +145,10 @@ exports[`Storyshots Stepper default 1`] = `
       </div>
     </div>
     <div
-      className="c0"
+      className="stepContainer c0"
     >
       <div
-        className="c2"
+        className="step current c2"
         onClick={[Function]}
       >
         <div
@@ -173,10 +173,10 @@ exports[`Storyshots Stepper default 1`] = `
       </div>
     </div>
     <div
-      className="c0"
+      className="stepContainer c0"
     >
       <div
-        className="c3"
+        className="step pending c3"
         onClick={[Function]}
       >
         <div
@@ -201,10 +201,259 @@ exports[`Storyshots Stepper default 1`] = `
       </div>
     </div>
     <div
-      className="c0"
+      className="stepContainer c0"
     >
       <div
-        className="c3"
+        className="step pending c3"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-checker"
+          />
+        </div>
+        <div
+          className="description"
+        >
+          Start selling
+        </div>
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-small-arrow-right"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Stepper extended style 1`] = `
+.c4 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  color: #2f313a;
+  opacity: 0.24;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c4 .description {
+  padding: 0 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  cursor: pointer;
+  color: #2f313a;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c3 .description {
+  padding: 0 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3:hover {
+  color: #3498db;
+  border: solid 2px #3498db;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  size: 18px;
+  line-height: 1.33;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 16px 24px;
+  color: #2f313a;
+  color: white;
+  background: #2ecc71;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c2 .description {
+  padding: 0 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 {
+  margin-bottom: 16px;
+  height: 55px;
+}
+
+.c0 .step {
+  border: dashed 2px blueviolet;
+}
+
+.c0 .step.completed .description {
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.c0 .step.current {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+<div
+  style={
+    Object {
+      "padding": "10px 20px",
+      "width": "500px",
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="stepContainer c1"
+    >
+      <div
+        className="step completed c2"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-check"
+          />
+        </div>
+        <div
+          className="description"
+        >
+          Complete profile
+        </div>
+      </div>
+    </div>
+    <div
+      className="stepContainer c1"
+    >
+      <div
+        className="step completed c2"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-check"
+          />
+        </div>
+        <div
+          className="description"
+        >
+          Add bank account
+        </div>
+      </div>
+    </div>
+    <div
+      className="stepContainer c1"
+    >
+      <div
+        className="step current c3"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-checker"
+          />
+        </div>
+        <div
+          className="description"
+        >
+          Connect to purchasers
+        </div>
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-small-arrow-right"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="stepContainer c1"
+    >
+      <div
+        className="step pending c4"
+        onClick={[Function]}
+      >
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-checker"
+          />
+        </div>
+        <div
+          className="description"
+        >
+          Add products
+        </div>
+        <div
+          className="icon"
+        >
+          <i
+            className="wg-small-arrow-right"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="stepContainer c1"
+    >
+      <div
+        className="step pending c4"
         onClick={[Function]}
       >
         <div

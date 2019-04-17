@@ -334,6 +334,79 @@ exports[`Storyshots Tooltip custom top 1`] = `
 </div>
 `;
 
+exports[`Storyshots Tooltip extended style 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+}
+
+.c2:after,
+.c2:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c2:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c2:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  -webkit-text-decoration-line: underline overline;
+  text-decoration-line: underline overline;
+}
+
+<div
+  style={
+    Object {
+      "border": "1px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0 c1"
+  >
+    <div
+      className="c0 c2"
+    >
+      This is a left aligned tooltip
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Tooltip isVisible false 1`] = `
 .c0 {
   position: relative;
@@ -658,17 +731,6 @@ exports[`Storyshots Tooltip isVisible true - right aligned 1`] = `
 `;
 
 exports[`Storyshots Tooltip with card 1`] = `
-.c2 {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: visible;
-}
-
 .c0 {
   position: relative;
 }
@@ -713,6 +775,17 @@ exports[`Storyshots Tooltip with card 1`] = `
   border-bottom-color: #ffffff;
   border-width: 7px;
   left: 8px;
+}
+
+.c2 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
 }
 
 <div

@@ -92,7 +92,7 @@ exports[`Storyshots More info Default 1`] = `
     className="c0"
   >
     <div
-      className="c1"
+      className="text false c1"
       size={16}
       type="#59636f"
     >
@@ -213,7 +213,7 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
     className="c0"
   >
     <div
-      className="c1"
+      className="text false c1"
       size={16}
       type="#59636f"
     >
@@ -339,7 +339,7 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
     className="c0"
   >
     <div
-      className="c1"
+      className="text false c1"
       size={16}
       type="#59636f"
     >
@@ -363,6 +363,156 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
               onMouseOut={[Function]}
             >
               Awesome tooltip
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots More info extended style 1`] = `
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  top: 15px;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4:after,
+.c4:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c1 .icon {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.c1 .hit-area {
+  margin: -12px;
+  padding: 12px;
+  margin-top: -62px;
+  padding-top: 62px;
+}
+
+.c1 .icon:hover,
+.c1 .hovered {
+  color: #3498db;
+}
+
+.c1 .icon:hover {
+  color: #3498db;
+}
+
+.c0 .text {
+  font-family: serif;
+}
+
+.c0 .icon {
+  position: relative;
+}
+
+.c0 .icon i {
+  visibility: hidden;
+}
+
+.c0 .icon::after {
+  content: '🤔';
+  position: absolute;
+  top: 0;
+}
+
+.c0 .icon>.tooltip .tooltip {
+  width: 250px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+<div>
+  <div
+    className="c0 c1"
+  >
+    <div
+      className="text false c2"
+      size={16}
+      type="#59636f"
+    >
+      How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+      <div
+        className="icon"
+        onFocus={[Function]}
+        onMouseOver={[Function]}
+      >
+        <i
+          className="wg-question"
+        />
+        <div
+          className="tooltip c3"
+        >
+          <div
+            className="tooltip c4"
+          >
+            <div
+              className="hit-area"
+              onBlur={[Function]}
+              onMouseOut={[Function]}
+            >
+              A woodchuck would chuck no amount of wood since a woodchuck can’t chuck wood.
             </div>
           </div>
         </div>
@@ -534,7 +684,7 @@ exports[`Storyshots More info with button 1`] = `
 
 .c5:disabled,
 .c5:disabled .icon,
-.c5:disabled :hover {
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -579,7 +729,7 @@ exports[`Storyshots More info with button 1`] = `
     className="c0"
   >
     <div
-      className="c1"
+      className="text false c1"
       size={16}
       type="#59636f"
     >
@@ -607,7 +757,7 @@ exports[`Storyshots More info with button 1`] = `
                 className="c4"
               >
                 <button
-                  className="c5"
+                  className="wrapped c5"
                   disabled={false}
                   onClick={[Function]}
                   onMouseLeave={[Function]}
@@ -693,17 +843,6 @@ exports[`Storyshots More info with card 1`] = `
   font-weight: 600;
 }
 
-.c4 {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: visible;
-}
-
 .c0 .icon {
   display: inline-block;
   margin: 0 8px;
@@ -725,12 +864,23 @@ exports[`Storyshots More info with card 1`] = `
   color: #3498db;
 }
 
+.c4 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
 <div>
   <div
     className="c0"
   >
     <div
-      className="c1"
+      className="text false c1"
       size={16}
       type="#59636f"
     >
