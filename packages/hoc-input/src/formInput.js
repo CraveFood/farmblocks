@@ -162,9 +162,11 @@ const formInput = WrappedComponent => {
       );
 
       return (
+        // Although we use onMouseDown, this element don't need role=button
+        // as it just prevents the input blur on click in the clear icon.
+        // there's no functionality in keyboard navigation.
+        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <div
-          role="button"
-          tabIndex="0"
           className={classNames("input", { dropdown: isDropdown })}
           ref={element => {
             this.inputRef = element && element.querySelector("input");
