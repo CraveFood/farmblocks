@@ -39,4 +39,17 @@ storiesOf("Amount selectors", module)
     <AmountSelectors onChange={action("amount changed")} />
   ))
   .add("Disabled typing", () => <AmountSelectors disableTyping />)
-  .add("Small size", () => <AmountSelectors size={selectorSizes.SMALL} />);
+  .add("Small size", () => <AmountSelectors size={selectorSizes.SMALL} />)
+  .add("extended style", () => (
+    <AmountSelectors
+      css="
+        opacity: 0.8;
+        .input {
+          border-color: violet;
+        }
+        .increaseButton {
+          transform: scale(1.2);
+        }
+      "
+    />
+  ));

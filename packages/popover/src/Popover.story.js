@@ -165,4 +165,18 @@ storiesOf("Popover", module)
       if \`onBeforeOpen\` don't return a promise, the popover will open immediately
       `,
     },
-  );
+  )
+  .add("extended style", () => (
+    <Popover
+      css="
+        border: solid 2px lightseagreen;
+        padding: 10px;
+        .tooltip {
+          background: cornsilk;
+        }
+      "
+      trigger={<Link>Trigger</Link>}
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+    />
+  ));

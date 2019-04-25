@@ -365,4 +365,38 @@ storiesOf("Select Input/Multi", module)
       width="500px"
       validationMessages={["Select at least one option"]}
     />
+  ))
+  .add("extended style", () => (
+    <Select
+      css="
+        background: mintcream;
+        .tag {
+          background-color: darkmagenta;
+          .close-icon {
+            color: plum;
+            transform: scale(2);
+          }
+        }
+        .itemWrapper {
+          background-color: thistle;
+          .visibleCheckbox {
+            background-color: gold;
+          }
+        }
+        .emptyCard{
+          .image {
+            transform: skew(-45deg);
+          }
+          .text {
+            text-decoration: overline;
+          }
+        } 
+      "
+      multi
+      placeholder="Select some fruits"
+      value={["1", "3", "4"]}
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+    />
   ));

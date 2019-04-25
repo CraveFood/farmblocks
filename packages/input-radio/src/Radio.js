@@ -38,6 +38,7 @@ class Radio extends React.Component {
       onClick,
       onChange,
       checked: checkedProp,
+      className,
       ...remainingProps
     } = this.props;
     const { checked } = this.state;
@@ -50,6 +51,7 @@ class Radio extends React.Component {
     const { disabled } = inputProps;
 
     const labelProps = {
+      className,
       checked,
       disabled,
     };
@@ -78,6 +80,7 @@ class Radio extends React.Component {
     onClick: PropTypes.func,
     onChange: PropTypes.func,
     value: PropTypes.any,
+    className: PropTypes.string,
   };
 
   static defaultProps = {

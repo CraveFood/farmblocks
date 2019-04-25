@@ -123,7 +123,7 @@ exports[`Storyshots Footer custom font size 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="helperContent c1"
     size={12}
   >
     <div
@@ -131,18 +131,16 @@ exports[`Storyshots Footer custom font size 1`] = `
       size={40}
       src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
-    <div
-      className="text"
-    >
+    <div>
       <div
-        className="c3"
+        className="text c3"
         size={12}
         type="#2f313a"
       >
         Have questions about account setup?
       </div>
       <div
-        className="c4"
+        className="link c4"
         disabled={false}
         size={12}
         type="#59636f"
@@ -156,7 +154,188 @@ exports[`Storyshots Footer custom font size 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="actionsContainer c5"
+  />
+</div>
+`;
+
+exports[`Storyshots Footer extended style 1`] = `
+.c5 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #59636f;
+}
+
+.c5 i.margin-left {
+  margin-left: 8px;
+}
+
+.c5 i.margin-right {
+  margin-right: 8px;
+}
+
+.c5 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 a:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 > a {
+  color: inherit;
+}
+
+.c5:hover {
+  color: #3498db;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c3 {
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 2px rgba(0,0,0,0.16);
+  border-radius: 100%;
+  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .text {
+  margin-bottom: 8px;
+}
+
+.c2 > .image {
+  margin-right: 16px;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  background-color: #f6f8f9;
+  border-top: solid 1px rgba(0,0,0,0.16);
+  padding: 16px 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align: flex-end;
+}
+
+.c6 > * {
+  margin-left: 16px;
+}
+
+.c0 {
+  border-color: orangered;
+}
+
+.c0 .image {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.c0 .text {
+  text-shadow: 0 0 8px tomato;
+}
+
+.c0 .link {
+  border: solid 1px deeppink;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="helperContent c2"
+    size={16}
+  >
+    <div
+      className="image c3"
+      size={40}
+      src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
+    />
+    <div>
+      <div
+        className="text c4"
+        size={16}
+        type="#2f313a"
+      >
+        Have questions about account setup?
+      </div>
+      <div
+        className="link c5"
+        disabled={false}
+        size={16}
+        type="#59636f"
+      >
+        <span
+          onClick={[Function]}
+        >
+          Get support
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="actionsContainer c6"
   />
 </div>
 `;
@@ -268,7 +447,7 @@ exports[`Storyshots Footer with one action 1`] = `
 
 .c7:disabled,
 .c7:disabled .icon,
-.c7:disabled :hover {
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -360,7 +539,7 @@ exports[`Storyshots Footer with one action 1`] = `
   align-items: center;
 }
 
-.c1 > .text > :first-child {
+.c1 .text {
   margin-bottom: 8px;
 }
 
@@ -403,7 +582,7 @@ exports[`Storyshots Footer with one action 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="helperContent c1"
     size={16}
   >
     <div
@@ -411,18 +590,16 @@ exports[`Storyshots Footer with one action 1`] = `
       size={40}
       src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
-    <div
-      className="text"
-    >
+    <div>
       <div
-        className="c3"
+        className="text c3"
         size={16}
         type="#2f313a"
       >
         Have questions about account setup?
       </div>
       <div
-        className="c4"
+        className="link c4"
         disabled={false}
         size={16}
         type="#59636f"
@@ -436,13 +613,13 @@ exports[`Storyshots Footer with one action 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="actionsContainer c5"
   >
     <div
       className="c6"
     >
       <button
-        className="c7"
+        className="wrapped c7"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -564,7 +741,7 @@ exports[`Storyshots Footer with two actions 1`] = `
 
 .c7:disabled,
 .c7:disabled .icon,
-.c7:disabled :hover {
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -641,7 +818,7 @@ exports[`Storyshots Footer with two actions 1`] = `
 
 .c8:disabled,
 .c8:disabled .icon,
-.c8:disabled :hover {
+.c8:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -733,7 +910,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   align-items: center;
 }
 
-.c1 > .text > :first-child {
+.c1 .text {
   margin-bottom: 8px;
 }
 
@@ -776,7 +953,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="helperContent c1"
     size={16}
   >
     <div
@@ -784,18 +961,16 @@ exports[`Storyshots Footer with two actions 1`] = `
       size={40}
       src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
-    <div
-      className="text"
-    >
+    <div>
       <div
-        className="c3"
+        className="text c3"
         size={16}
         type="#2f313a"
       >
         Have questions about account setup?
       </div>
       <div
-        className="c4"
+        className="link c4"
         disabled={false}
         size={16}
         type="#59636f"
@@ -809,13 +984,13 @@ exports[`Storyshots Footer with two actions 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="actionsContainer c5"
   >
     <div
       className="c6"
     >
       <button
-        className="c7"
+        className="wrapped c7"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -830,7 +1005,7 @@ exports[`Storyshots Footer with two actions 1`] = `
       className="c6"
     >
       <button
-        className="c8"
+        className="wrapped c8"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -929,7 +1104,7 @@ exports[`Storyshots Footer without actions 1`] = `
   align-items: center;
 }
 
-.c1 > .text > :first-child {
+.c1 .text {
   margin-bottom: 8px;
 }
 
@@ -972,7 +1147,7 @@ exports[`Storyshots Footer without actions 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="helperContent c1"
     size={16}
   >
     <div
@@ -980,18 +1155,16 @@ exports[`Storyshots Footer without actions 1`] = `
       size={40}
       src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
-    <div
-      className="text"
-    >
+    <div>
       <div
-        className="c3"
+        className="text c3"
         size={16}
         type="#2f313a"
       >
         Have questions about account setup?
       </div>
       <div
-        className="c4"
+        className="link c4"
         disabled={false}
         size={16}
         type="#59636f"
@@ -1005,7 +1178,7 @@ exports[`Storyshots Footer without actions 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="actionsContainer c5"
   />
 </div>
 `;
@@ -1117,7 +1290,7 @@ exports[`Storyshots Footer without image 1`] = `
 
 .c6:disabled,
 .c6:disabled .icon,
-.c6:disabled :hover {
+.c6:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -1193,7 +1366,7 @@ exports[`Storyshots Footer without image 1`] = `
   align-items: center;
 }
 
-.c1 > .text > :first-child {
+.c1 .text {
   margin-bottom: 8px;
 }
 
@@ -1236,21 +1409,19 @@ exports[`Storyshots Footer without image 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="helperContent c1"
     size={16}
   >
-    <div
-      className="text"
-    >
+    <div>
       <div
-        className="c2"
+        className="text c2"
         size={16}
         type="#2f313a"
       >
         Have questions about account setup?
       </div>
       <div
-        className="c3"
+        className="link c3"
         disabled={false}
         size={16}
         type="#59636f"
@@ -1264,13 +1435,13 @@ exports[`Storyshots Footer without image 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="actionsContainer c4"
   >
     <div
       className="c5"
     >
       <button
-        className="c6"
+        className="wrapped c6"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1392,7 +1563,7 @@ exports[`Storyshots Footer without link 1`] = `
 
 .c6:disabled,
 .c6:disabled .icon,
-.c6:disabled :hover {
+.c6:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -1439,7 +1610,7 @@ exports[`Storyshots Footer without link 1`] = `
   align-items: center;
 }
 
-.c1 > .text > :first-child {
+.c1 .text {
   margin-bottom: 8px;
 }
 
@@ -1482,7 +1653,7 @@ exports[`Storyshots Footer without link 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="helperContent c1"
     size={16}
   >
     <div
@@ -1490,11 +1661,9 @@ exports[`Storyshots Footer without link 1`] = `
       size={40}
       src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
     />
-    <div
-      className="text"
-    >
+    <div>
       <div
-        className="c3"
+        className="text c3"
         size={16}
         type="#2f313a"
       >
@@ -1503,13 +1672,13 @@ exports[`Storyshots Footer without link 1`] = `
     </div>
   </div>
   <div
-    className="c4"
+    className="actionsContainer c4"
   >
     <div
       className="c5"
     >
       <button
-        className="c6"
+        className="wrapped c6"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}

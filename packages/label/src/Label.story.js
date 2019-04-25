@@ -20,4 +20,18 @@ storiesOf("Label", "module")
     <Label moreInfoContent="More info content" moreInfoAlign="right">
       Default Label
     </Label>
+  ))
+  .add("extended style", () => (
+    <Label
+      css="
+        border: dotted 4px sienna;
+        ::after {
+          display: block;
+          content: '';
+          clear: both;
+        }
+      "
+    >
+      Default Label
+    </Label>
   ));

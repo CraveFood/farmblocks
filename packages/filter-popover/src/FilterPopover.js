@@ -8,11 +8,13 @@ import FormWrapper from "@crave/farmblocks-form-wrapper";
 const FilterPopover = props => {
   return (
     <Popover
+      className={props.className}
       padding="0px"
       align={props.align}
       zIndex={props.zIndex}
       trigger={
         <Button
+          className="trigger"
           rightIcon="wg-small-arrow-bottom"
           boxShadow="none"
           paddingX="8px"
@@ -32,6 +34,7 @@ const FilterPopover = props => {
       }
       content={dismiss => (
         <FormWrapper
+          className="formWrapper"
           onCancel={e => {
             dismiss();
             props.onFormCancelClick?.(e);
@@ -77,6 +80,7 @@ FilterPopover.propTypes = {
   dismissOnSave: PropTypes.bool,
   hasValue: PropTypes.bool,
   zIndex: PropTypes.number,
+  className: PropTypes.string,
 };
 
 export default FilterPopover;

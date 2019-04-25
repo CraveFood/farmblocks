@@ -12,7 +12,7 @@ import DropdownWrapper from "../styledComponents/DropdownWrapper";
 import DropdownMenuWrapper from "../styledComponents/DropdownMenuWrapper";
 
 const Dropdown = props => (
-  <DropdownWrapper>
+  <DropdownWrapper className={props.className}>
     <AriaWrapper onSelection={props.handleSelection}>
       <AriaButtonWrapper>
         <Button
@@ -20,6 +20,7 @@ const Dropdown = props => (
           text={props.text}
           size={props.size}
           ref={props.innerRef}
+          className="menuButton"
         />
       </AriaButtonWrapper>
 
@@ -54,6 +55,7 @@ Dropdown.propTypes = {
   width: PropTypes.string,
   innerRef: PropTypes.func,
   maxHeight: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default Dropdown;

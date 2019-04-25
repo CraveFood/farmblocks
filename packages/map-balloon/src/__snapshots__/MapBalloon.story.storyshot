@@ -29,7 +29,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -143,7 +143,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,37 +174,35 @@ exports[`Storyshots Map Balloon Animated 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
-      />
-      <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={28}
+            type="white"
           >
-            <div
-              className="c7"
-              size={28}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
-        <div
-          className="caption c8 c9"
-          size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-        </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
       </div>
     </div>
   </div>
@@ -240,7 +238,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -330,7 +328,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -361,37 +359,35 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
-      />
-      <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={28}
+            type="white"
           >
-            <div
-              className="c7"
-              size={28}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
-        <div
-          className="caption c8 c9"
-          size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-        </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
       </div>
     </div>
   </div>
@@ -427,7 +423,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -517,7 +513,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -548,37 +544,35 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
-      />
-      <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={28}
+            type="white"
           >
-            <div
-              className="c7"
-              size={28}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
-        <div
-          className="caption c8 c9"
-          size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-        </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
       </div>
     </div>
   </div>
@@ -620,11 +614,9 @@ exports[`Storyshots Map Balloon Default 1`] = `
     x={400}
     y={400}
   >
-    <div>
-      <div
-        className="wg-location  c2"
-      />
-    </div>
+    <div
+      className="pin wg-location  c2"
+    />
   </div>
 </div>
 `;
@@ -687,12 +679,10 @@ exports[`Storyshots Map Balloon Interactive 1`] = `
     x={400}
     y={400}
   >
-    <div>
-      <div
-        className="wg-place  c2"
-        onClick={[Function]}
-      />
-    </div>
+    <div
+      className="pin wg-place  c2"
+      onClick={[Function]}
+    />
   </div>
 </div>
 `;
@@ -736,7 +726,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -865,7 +855,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -896,44 +886,42 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-place open c2"
+      onClick={[Function]}
+    />
+    <div
+      className="balloon c3 c4"
+      onClick={[Function]}
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-place open c2"
-        onClick={[Function]}
-      />
-      <div
-        className="c3 c4"
-        onClick={[Function]}
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={28}
+            type="white"
           >
-            <div
-              className="c7"
-              size={28}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
         <div
-          className="caption c8 c9"
+          className="text wg-small-arrow-right c10"
           size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-          <div
-            className="wg-small-arrow-right c10"
-            size={18}
-            type="rgba(0, 0, 0, 0.32)"
-          />
-        </div>
+          type="rgba(0, 0, 0, 0.32)"
+        />
       </div>
     </div>
   </div>
@@ -1001,12 +989,10 @@ exports[`Storyshots Map Balloon Interactive toggle 1`] = `
     x={400}
     y={400}
   >
-    <div>
-      <div
-        className="wg-place  c2"
-        onClick={[Function]}
-      />
-    </div>
+    <div
+      className="pin wg-place  c2"
+      onClick={[Function]}
+    />
   </div>
 </div>
 `;
@@ -1040,7 +1026,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -1130,7 +1116,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1161,37 +1147,35 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
-      />
-      <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={28}
+            type="white"
           >
-            <div
-              className="c7"
-              size={28}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
-        <div
-          className="caption c8 c9"
-          size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-        </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
       </div>
     </div>
   </div>
@@ -1227,7 +1211,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -1317,7 +1301,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1348,37 +1332,35 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
-      />
-      <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={28}
+            type="white"
           >
-            <div
-              className="c7"
-              size={28}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
-        <div
-          className="caption c8 c9"
-          size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-        </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
       </div>
     </div>
   </div>
@@ -1447,11 +1429,11 @@ exports[`Storyshots Map Balloon Single Image 1`] = `
   >
     <div>
       <div
-        className="c2"
+        className="image single c2"
         src="https://picsum.photos/180?image=0"
       />
       <div
-        className="c3 c4"
+        className="image single c3 c4"
         size={184}
         src="https://picsum.photos/180?image=0"
       />
@@ -1522,11 +1504,11 @@ exports[`Storyshots Map Balloon custom border radius 1`] = `
   >
     <div>
       <div
-        className="c2"
+        className="image single c2"
         src="https://picsum.photos/180?image=0"
       />
       <div
-        className="c3 c4"
+        className="image single c3 c4"
         size={184}
         src="https://picsum.photos/180?image=0"
       />
@@ -1564,7 +1546,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -1654,7 +1636,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
 .c6 {
   height: 147px;
   box-sizing: border-box;
-  background: linear-gradient( 180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100% );
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1685,37 +1667,238 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
-      />
-      <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="imageSet c5"
       >
         <div
-          className="c5"
+          className="gradient c6"
         >
           <div
-            className="c6"
+            className="text c7"
+            size={30}
+            type="white"
           >
-            <div
-              className="c7"
-              size={30}
-              type="white"
-            >
-              Romaine Lettuce
-            </div>
+            Romaine Lettuce
           </div>
         </div>
+      </div>
+      <div
+        className="caption c8 c9"
+        size={30}
+        type="#59636f"
+      >
+        Paloma Orchards
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Map Balloon extended style 1`] = `
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 28px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c5 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c2 {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  opacity: 1;
+}
+
+.c3 {
+  font-size: 40px;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  color: #f1c618;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+}
+
+.c4 {
+  position: absolute;
+  bottom: 48px;
+  left: -33px;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  height: 260px;
+  width: 260px;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c4 .caption {
+  margin: 16px 8px;
+}
+
+.c9 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url(https://picsum.photos/640?image=0);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c7 {
+  height: 147px;
+  box-sizing: border-box;
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.c0 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
+}
+
+.c1 .pin {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c1 .caption {
+  border: solid 1px burlywood;
+}
+
+.c1 .imageSet .gradient {
+  background: linear-gradient( 180deg, rgba(0,255,0,0.2) 0%, rgba(255,0,200,0.48) 100% );
+}
+
+.c1 .imageSet .text {
+  color: lime;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 c2"
+    opacity={1}
+    x={400}
+    y={400}
+  >
+    <div
+      className="pin wg-location open c3"
+    />
+    <div
+      className="balloon c4 c5"
+      overflow="hidden"
+      width="100%"
+    >
+      <div
+        className="imageSet c6"
+      >
         <div
-          className="caption c8 c9"
-          size={30}
-          type="#59636f"
+          className="gradient c7"
         >
-          Paloma Orchards
+          <div
+            className="text c8"
+            size={28}
+            type="white"
+          >
+            Romaine Lettuce
+          </div>
         </div>
+      </div>
+      <div
+        className="caption c9 c10"
+        size={18}
+        type="#59636f"
+      >
+        Paloma Orchards
       </div>
     </div>
   </div>
@@ -1741,7 +1924,7 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
   padding: 16px;
   box-sizing: border-box;
   border-radius: 4px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .c1 {
@@ -1844,25 +2027,23 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
     x={400}
     y={400}
   >
-    <div>
+    <div
+      className="pin wg-location open c2"
+    />
+    <div
+      className="balloon c3 c4"
+      overflow="hidden"
+      width="100%"
+    >
       <div
-        className="wg-location open c2"
+        className="imageSet c5"
       />
       <div
-        className="c3 c4"
-        overflow="visible"
-        width="100%"
+        className="caption c6 c7"
+        size={18}
+        type="#59636f"
       >
-        <div
-          className="c5"
-        />
-        <div
-          className="caption c6 c7"
-          size={18}
-          type="#59636f"
-        >
-          Paloma Orchards
-        </div>
+        Paloma Orchards
       </div>
     </div>
   </div>

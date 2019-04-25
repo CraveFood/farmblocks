@@ -438,66 +438,6 @@ exports[`Storyshots Tag Multiple tags 1`] = `
   color: white;
 }
 
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,0.16);
-  border-radius: 4px;
-  padding: 6px 8px 8px 8px;
-  height: 32px;
-  margin: 0 8px 8px 0;
-  font-size: 14px;
-  font-family: Lato;
-  font-weight: 600;
-  cursor: default;
-  pointer-events: none;
-  background-color: #3498db;
-  color: white;
-  background-color: rgba(0,0,0,0.32);
-  pointer-events: none;
-  padding: 6px 16px 8px;
-}
-
-.c2:hover {
-  border-width: 2px;
-  padding: 5px 0px 7px 7px;
-}
-
-.c2 .icon {
-  padding-right: 8px;
-}
-
-.c2 .close-icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  box-sizing: border-box;
-  padding: 5px 8px 8px 8px;
-  font-size: 8px;
-  color: rgba(0,0,0,0.32);
-  pointer-events: auto;
-}
-
-.c2:hover .close-icon,
-.c2:focus .close-icon {
-  padding-right: 7px;
-  cursor: pointer;
-}
-
-.c2:hover {
-  border-color: rgba(0,0,0,0.32);
-  background-color: #2980b9;
-}
-
-.c2:hover .close-icon,
-.c2:focus .close-icon {
-  color: white;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -612,6 +552,66 @@ exports[`Storyshots Tag Multiple tags 1`] = `
 
 .c3:hover .close-icon,
 .c3:focus .close-icon {
+  color: white;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 8px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+  background-color: rgba(0,0,0,0.32);
+  pointer-events: none;
+  padding: 6px 16px 8px;
+}
+
+.c2:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c2 .icon {
+  padding-right: 8px;
+}
+
+.c2 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c2:hover .close-icon,
+.c2:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c2:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c2:hover .close-icon,
+.c2:focus .close-icon {
   color: white;
 }
 
@@ -1390,6 +1390,87 @@ exports[`Storyshots Tag With icon 1`] = `
       />
     </div>
     Tag with icon
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tag extended style 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.16);
+  border-radius: 4px;
+  padding: 6px 8px 8px 8px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 600;
+  cursor: default;
+  pointer-events: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.c1:hover {
+  border-width: 2px;
+  padding: 5px 0px 7px 7px;
+}
+
+.c1 .icon {
+  padding-right: 8px;
+}
+
+.c1 .close-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  padding: 5px 8px 8px 8px;
+  font-size: 8px;
+  color: rgba(0,0,0,0.32);
+  pointer-events: auto;
+}
+
+.c1:hover .close-icon,
+.c1:focus .close-icon {
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.c1:hover {
+  border-color: rgba(0,0,0,0.32);
+  background-color: #2980b9;
+}
+
+.c1:hover .close-icon,
+.c1:focus .close-icon {
+  color: white;
+}
+
+.c0 {
+  background: chartreuse;
+  color: magenta;
+  border: inset 4px skyblue;
+  border-radius: 16px;
+}
+
+<div
+  style={
+    Object {
+      "marginTop": "20px",
+    }
+  }
+>
+  <div
+    className="c0 c1"
+    type="SECONDARY"
+  >
+    THIS IS A TAG
   </div>
 </div>
 `;

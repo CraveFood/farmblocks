@@ -228,7 +228,12 @@ class Table extends React.Component {
 
     if (columnProps.title) {
       return headerCell(
-        <Text title size={fontSizes.SMALL} align={columnProps.align}>
+        <Text
+          className="text"
+          title
+          size={fontSizes.SMALL}
+          align={columnProps.align}
+        >
           {columnProps.title}
         </Text>,
       );
@@ -264,7 +269,7 @@ class Table extends React.Component {
       const type = props.fontType ? props.fontType : fontTypes.NORMAL;
 
       return bodyCell(
-        <Text title={!props.light} {...textProps} type={type}>
+        <Text className="text" title={!props.light} {...textProps} type={type}>
           {text}
         </Text>,
       );
@@ -326,6 +331,7 @@ class Table extends React.Component {
       selectableRows,
       selectionHeader,
       borderless,
+      className,
     } = this.props;
     const emptySelection = this.state.selectedRows.length === 0;
     const selectionHeaderVisible = selectionHeader && !emptySelection;
@@ -334,6 +340,7 @@ class Table extends React.Component {
       rowHeight,
       selectionHeaderVisible,
       borderless,
+      className,
     };
     const { selectedData, allChecked } = this.state;
 
@@ -373,7 +380,6 @@ class Table extends React.Component {
             return this.renderRowGroup(row, index);
           }
 
-          // eslint-disable-line react/no-array-index-key
           return (
             <tbody key={index} className="body">
               {this.renderRow(row, index)}
@@ -400,6 +406,7 @@ Table.propTypes = {
   selectionHeader: PropTypes.func,
   borderless: PropTypes.bool,
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 Table.defaultProps = {

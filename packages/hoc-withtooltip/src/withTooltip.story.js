@@ -35,4 +35,21 @@ storiesOf("HOC withTooltip", module)
     <TextWithTooltip disableTooltip tooltipContent="Tooltip custom text">
       Farmblocks-text
     </TextWithTooltip>
+  ))
+
+  .add("extended style", () => (
+    <TagWithTooltip
+      css="
+        padding: 16px;
+        background: moccasin;
+        .wrapped {
+          background: yellowgreen;
+        }
+        .tooltip {
+          background: beige;
+        }
+      "
+      text="This a tag with tooltip"
+      tooltipContent="Tooltip custom text"
+    />
   ));

@@ -129,7 +129,7 @@ exports[`Storyshots Image badge 1`] = `
 `;
 
 exports[`Storyshots Image custom css 1`] = `
-.c0 {
+.c1 {
   background-origin: border-box;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -143,12 +143,15 @@ exports[`Storyshots Image custom css 1`] = `
   background-image: url(https://picsum.photos/512?image=0);
   background-size: cover;
   background-position: center;
+}
+
+.c0 {
   opacity: 0.5;
   border: dotted 5px red;
 }
 
 <div
-  className="c0"
+  className="c0 c1"
   size={300}
   src="https://picsum.photos/512?image=0"
 />

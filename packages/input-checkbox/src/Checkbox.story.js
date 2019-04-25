@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
@@ -49,7 +50,22 @@ const checkboxStories = (moduleTitle, Checkbox) =>
           </div>
         </div>
       </fieldset>
-    ));
+    ))
+    .add("extended style", () => {
+      // we can't use the styled-components' css prop here
+      // because it's converted at build time by the babel plugin
+      // while this `checkboxStories` generates the stories on the
+      // go for each given component
+      const StyledCheckbox = styled(Checkbox)`
+        .visibleCheckbox {
+          background: indigo;
+        }
+        .label {
+          font-family: monospace;
+        }
+      `;
+      return <StyledCheckbox label="Checkbox Label" />;
+    });
 
 checkboxStories("Checkbox/Checkbox Input", CheckboxComponent);
 checkboxStories("Checkbox/Switch Input", Switch);

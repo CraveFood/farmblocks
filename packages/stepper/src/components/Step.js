@@ -18,7 +18,11 @@ export default class Step extends React.Component {
     const isCompleted = status === statusTypes.COMPLETED;
 
     return (
-      <Container status={status} onClick={this.props.onClick}>
+      <Container
+        className={this.props.className}
+        status={status}
+        onClick={this.props.onClick}
+      >
         {this.renderIcon(isCompleted ? "wg-check" : "wg-checker")}
 
         <div className="description">{this.props.children}</div>
@@ -32,5 +36,6 @@ export default class Step extends React.Component {
     children: PropTypes.node.isRequired,
     status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
     onClick: PropTypes.func.isRequired,
+    className: PropTypes.string,
   };
 }

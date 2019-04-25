@@ -32,8 +32,9 @@ export default class Stepper extends React.Component {
     const steps = this.props.steps.map((value, index) => {
       const status = this.getStatus(index, this.props.completedSteps - 1);
       return (
-        <Container key={index}>
+        <Container className="stepContainer" key={index}>
           <Step
+            className={`step ${status.toLowerCase()}`}
             status={status}
             onClick={() => this.onClick(status, index, value)}
           >
@@ -43,13 +44,14 @@ export default class Stepper extends React.Component {
       );
     });
 
-    return <div>{steps}</div>;
+    return <div className={this.props.className}>{steps}</div>;
   }
 
   static propTypes = {
     steps: PropTypes.arrayOf(PropTypes.string),
     completedSteps: PropTypes.number,
     onClick: PropTypes.func.isRequired,
+    className: PropTypes.string,
   };
 
   static defaultProps = {

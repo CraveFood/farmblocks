@@ -39,6 +39,7 @@ const createCheckbox = ({ isSwitch }) =>
         onMouseUp,
         onChange,
         innerRef,
+        className,
         ...inputProps
       } = this.props;
 
@@ -48,6 +49,7 @@ const createCheckbox = ({ isSwitch }) =>
         checked,
         disabled: inputProps.disabled,
         hasText: !!label,
+        className,
       };
 
       inputProps.checked = checked;
@@ -65,7 +67,12 @@ const createCheckbox = ({ isSwitch }) =>
               <div className={isSwitch ? "toggle" : "checkmark wg-check"} />
             </div>
             {label && (
-              <Text title={!isSwitch} type={fontColor} size={fontSizes.MEDIUM}>
+              <Text
+                className="label"
+                title={!isSwitch}
+                type={fontColor}
+                size={fontSizes.MEDIUM}
+              >
                 {label}
               </Text>
             )}
@@ -81,6 +88,7 @@ const createCheckbox = ({ isSwitch }) =>
       onChange: PropTypes.func,
       disabled: PropTypes.bool,
       innerRef: PropTypes.func,
+      className: PropTypes.string,
     };
 
     static defaultProps = {

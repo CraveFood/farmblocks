@@ -35,6 +35,7 @@ export const formInputProps = {
   prefix: PropTypes.string,
   suffix: PropTypes.string,
   autoControlFocusedStyle: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
@@ -209,6 +210,7 @@ const formInput = WrappedComponent => {
         moreInfoContent,
         moreInfoAlign,
         autoControlFocusedStyle,
+        className,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
@@ -219,6 +221,7 @@ const formInput = WrappedComponent => {
         disabled: wrappedComponentProps.disabled,
         type: wrappedComponentProps.type,
         fontSize: wrappedComponentProps.fontSize,
+        className,
       };
 
       return (
@@ -227,6 +230,7 @@ const formInput = WrappedComponent => {
 
           {label && (
             <Label
+              className="label"
               moreInfoContent={moreInfoContent}
               moreInfoAlign={moreInfoAlign}
               focused={this.state.focused}

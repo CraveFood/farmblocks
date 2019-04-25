@@ -76,6 +76,7 @@ class Carousel extends React.Component {
         activeItem={this.state.activeItem}
         itemConfig={configProps}
         shouldScale={this.props.scale}
+        className={this.props.className}
       >
         <ul>
           {imageSet.map((item, index) => {
@@ -89,7 +90,12 @@ class Carousel extends React.Component {
                   width="100%"
                   height="100%"
                 />
-                <Text size={configProps.fontSize} align="center" title>
+                <Text
+                  className="itemLabel"
+                  size={configProps.fontSize}
+                  align="center"
+                  title
+                >
                   {item.name}
                 </Text>
               </li>
@@ -120,6 +126,7 @@ class Carousel extends React.Component {
         color: PropTypes.string,
       }),
     }),
+    className: PropTypes.string,
   };
 
   static defaultProps = {

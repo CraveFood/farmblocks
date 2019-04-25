@@ -187,6 +187,7 @@ class SearchField extends React.Component {
     return (
       <Menu
         {...props}
+        className="menu"
         innerRef={node => {
           this.scroller = node;
         }}
@@ -211,6 +212,7 @@ class SearchField extends React.Component {
       valueKey,
       labelKey,
       imageKey,
+      className,
       ...inputProps
     } = this.props;
 
@@ -225,11 +227,16 @@ class SearchField extends React.Component {
     };
 
     const { focused, selectedItem, inputValue } = this.state;
-
     return (
-      <DropdownWrapper style={{ width, zIndex }}>
+      <DropdownWrapper
+        className={`${className} ${selectedItem ? "protected" : ""} ${
+          inputProps.disabled ? "disabled" : ""
+        }`}
+        style={{ width, zIndex }}
+      >
         <Input
           {...inputProps}
+          className="searchInput"
           type="search"
           protected={!!selectedItem}
           disableManualReplace
@@ -263,6 +270,7 @@ class SearchField extends React.Component {
     onSearchChange: PropTypes.func,
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
+    className: PropTypes.string,
     ...keyNamesPropTypes,
     ...Menu.propTypes,
   };

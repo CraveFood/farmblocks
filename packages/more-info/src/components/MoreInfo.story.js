@@ -37,4 +37,34 @@ storiesOf("More info", module)
         <Button onClick={action("button clicked")}>This is a Button</Button>
       </MoreInfo>
     </div>
+  ))
+  .add("extended style", () => (
+    <div>
+      <MoreInfo
+        css="
+        .text {
+          font-family: serif;
+        }
+        .icon {
+          position: relative;
+          i {visibility: hidden;}
+          &::after {
+            content: '🤔';
+            position: absolute;
+            top: 0;
+          }
+          &>.tooltip .tooltip {
+            width: 250px;
+            white-space: pre-line;
+            text-align: center;
+
+          }
+        }
+      "
+        text="How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
+      >
+        A woodchuck would chuck no amount of wood since a woodchuck can’t chuck
+        wood.
+      </MoreInfo>
+    </div>
   ));

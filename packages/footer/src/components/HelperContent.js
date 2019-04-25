@@ -13,10 +13,8 @@ const Container = styled.div`
 
   align-items: center;
 
-  > .text {
-    > :first-child {
-      margin-bottom: ${props => props.size === fontSizes.MEDIUM && "8px"};
-    }
+  .text {
+    margin-bottom: ${props => props.size === fontSizes.MEDIUM && "8px"};
   }
 
   > .image {
@@ -30,7 +28,7 @@ const HelperContent = props => {
   const renderLink = props.linkText && (props.linkHref || props.linkOnClick);
 
   return (
-    <Container size={props.size}>
+    <Container className={props.className} size={props.size}>
       {props.imageSrc && (
         <Image
           src={props.imageSrc}
@@ -40,11 +38,14 @@ const HelperContent = props => {
         />
       )}
 
-      <div className="text">
-        <Text size={props.size}>{props.text}</Text>
+      <div>
+        <Text className="text" size={props.size}>
+          {props.text}
+        </Text>
 
         {renderLink && (
           <Link
+            className="link"
             onClick={props.linkOnClick}
             href={props.linkHref}
             type={fontTypes.NEUTRAL}
@@ -65,6 +66,7 @@ HelperContent.propTypes = {
   linkHref: PropTypes.string,
   linkOnClick: PropTypes.func,
   size: PropTypes.number,
+  className: PropTypes.string,
 };
 
 HelperContent.defaultProps = {

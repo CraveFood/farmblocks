@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import TagsWrapper from "../styledComponents/TagsWrapper";
 
 const InputWithTags = React.forwardRef(({ children, ...props }, ref) => (
-  <TagsWrapper>
+  <TagsWrapper className="tagsWrapper">
     {children}
     <input {...props} size="1" ref={ref} />
   </TagsWrapper>

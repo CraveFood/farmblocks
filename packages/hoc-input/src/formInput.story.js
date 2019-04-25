@@ -197,4 +197,24 @@ storiesOf("HOC formInput", module)
       />
     </div>
   ))
-  .add("html textarea", () => <TextArea rows="4" />);
+  .add("html textarea", () => <TextArea rows="4" />)
+  .add("extended style", () => (
+    <EnhancedInput
+      css="
+        background: ivory;
+        padding: 10px;
+        .label {
+          background: mistyrose;
+          .labelText {
+            font-family: fantasy;
+          }
+        }
+        .wrapped {
+          text-align: right;
+        }
+      "
+      type="text"
+      value="aligned right"
+      label="Input Label"
+    />
+  ));

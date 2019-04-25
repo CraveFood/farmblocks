@@ -82,4 +82,28 @@ storiesOf("EmptyState", module)
       title="Empty State Title"
       description={twoLinesDescription}
     />
+  ))
+  .add("extended style", () => (
+    <EmptyState
+      css="
+        border: solid 3px lightsalmon;
+        .icon {
+          font-size: 16px;
+          color: olive;
+        }
+        .title {
+          font-family: fantasy;
+        }
+        .description {
+          font-family: serif;
+        }
+        .info {
+          font-family: monospace;
+        }
+      "
+      icon="wg-order"
+      title="Empty State Title"
+      description={twoLinesDescription}
+      info={twoLinesDescription}
+    />
   ));

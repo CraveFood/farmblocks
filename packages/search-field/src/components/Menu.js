@@ -35,6 +35,7 @@ export const menuPropTypes = {
   onItemClick: PropTypes.func,
   highlightedIndex: PropTypes.number,
   footer: PropTypes.node,
+  className: PropTypes.string,
 };
 
 const renderItem = (
@@ -46,11 +47,12 @@ const renderItem = (
   imageKey,
 ) => (
   <DropdownItemWrapper
+    className="itemWrapper"
     key={item[valueKey]}
     highlighted={highlighted}
     onMouseDown={onClick}
   >
-    <Item label={item[labelKey]} image={item[imageKey]} />
+    <Item className="item" label={item[labelKey]} image={item[imageKey]} />
   </DropdownItemWrapper>
 );
 
@@ -61,6 +63,7 @@ const MenuWrapper = styled(DropdownMenuWrapper)`
 `;
 
 const Menu = ({
+  className,
   maxMenuHeight,
   onScrollReachEnd,
   innerRef,
@@ -76,8 +79,9 @@ const Menu = ({
     return null;
   }
   return (
-    <MenuWrapper>
+    <MenuWrapper className={className}>
       <ScrollBox
+        className="scroll"
         maxHeight={maxMenuHeight}
         onReachEnd={onScrollReachEnd}
         ref={innerRef}
@@ -92,7 +96,9 @@ const Menu = ({
             imageKey,
           ),
         )}
-        <DropdownItemWrapper footer>{footer}</DropdownItemWrapper>
+        <DropdownItemWrapper className="itemWrapper footer" footer>
+          {footer}
+        </DropdownItemWrapper>
       </ScrollBox>
     </MenuWrapper>
   );
@@ -105,6 +111,7 @@ Menu.propTypes = {
   ...menuPropTypes,
   ...keyNamesPropTypes,
   innerRef: PropTypes.func,
+  className: PropTypes.string,
 };
 
 export default Menu;

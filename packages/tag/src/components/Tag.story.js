@@ -99,4 +99,17 @@ storiesOf("Tag", module)
       <Tag onRemove={action("onRemove")} disabled text="THIS IS A TAG" />
       <Tag onRemove={action("onRemove")} text="THIS IS A TAG" />
     </div>
+  ))
+  .add("extended style", () => (
+    <div style={{ marginTop: "20px" }}>
+      <Tag
+        css="
+          background: chartreuse;
+          color: magenta;
+          border: inset 4px skyblue;
+          border-radius: 16px;
+        "
+        text="THIS IS A TAG"
+      />
+    </div>
   ));

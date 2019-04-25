@@ -103,7 +103,7 @@ class AmountSelectors extends React.Component {
 
   render() {
     return (
-      <Wrapper size={this.props.size}>
+      <Wrapper size={this.props.size} className={this.props.className}>
         <Button
           className="decreaseButton"
           type={buttonTypes.SECONDARY}
@@ -117,6 +117,7 @@ class AmountSelectors extends React.Component {
         />
         <div className="inputContainer">
           <InputText
+            className="inputComponent"
             type="number"
             min={this.props.min}
             max={this.props.max}
@@ -153,6 +154,7 @@ class AmountSelectors extends React.Component {
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
     size: PropTypes.oneOf(values(selectorSizes)),
+    className: PropTypes.string,
   };
 
   static defaultProps = {

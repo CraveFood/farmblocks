@@ -68,6 +68,7 @@ class Popover extends React.Component {
     const { isVisible } = this.state;
     return (
       <Container
+        className={this.props.className}
         ref={popover => {
           this.popover = popover;
         }}
@@ -84,6 +85,7 @@ class Popover extends React.Component {
         </div>
 
         <Tooltip
+          className="tooltip"
           isVisible={isVisible}
           hideArrow={!this.props.showTooltipArrow}
           align={this.props.align}
@@ -110,6 +112,7 @@ class Popover extends React.Component {
     onBeforeOpen: PropTypes.func,
     onClose: PropTypes.func,
     showTooltipArrow: PropTypes.bool,
+    className: PropTypes.string,
   };
 
   static defaultProps = {

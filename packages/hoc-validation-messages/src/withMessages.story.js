@@ -7,7 +7,7 @@ const WithMessagesInput = withMessages(props =>
   React.createElement("input", props),
 );
 
-const WithMessagesDiv = withMessages(() => <div>I am a div</div>);
+const WithMessagesDiv = withMessages(props => <div {...props}>I am a div</div>);
 
 storiesOf("HOC withMessages", module)
   .add("Input", () => (
@@ -31,4 +31,27 @@ storiesOf("HOC withMessages", module)
 
       <input type="submit" />
     </form>
+  ))
+  .add("extended style", () => (
+    <WithMessagesDiv
+      css="
+        .wrapped {
+          background: oldlace;
+        }
+        .messagesContainer {
+          background: honeydew;
+          padding: 16px;
+          .messageWrapper {
+            border: solid 1px cornflowerblue;
+            .icon {
+              transform: scale(2)
+            }
+            .text {
+              text-decoration: line-through;
+            }
+          }
+        }
+      "
+      validationMessages={["Not cool, man"]}
+    />
   ));

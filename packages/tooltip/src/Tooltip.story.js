@@ -123,4 +123,15 @@ storiesOf("Tooltip", module)
         <div style={{ background: "aliceblue" }}>It should not overflow</div>
       </Tooltip>
     </div>
+  ))
+  .add("extended style", () => (
+    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+      <Tooltip
+        css="
+          text-decoration-line: underline overline;
+        "
+        isVisible
+        text="This is a left aligned tooltip"
+      />
+    </div>
   ));

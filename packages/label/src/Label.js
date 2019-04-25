@@ -32,10 +32,17 @@ const MoreInfoWrapper = styled(MoreInfo)`
   top: -1px;
 `;
 
-const Label = ({ children, moreInfoAlign, moreInfoContent, ...props }) => {
+const Label = ({
+  className,
+  children,
+  moreInfoAlign,
+  moreInfoContent,
+  ...props
+}) => {
   return (
-    <div>
+    <div className={className}>
       <TextLabel
+        className="labelText"
         title
         size={fontSizes.SMALL}
         lineHeight="16px"
@@ -46,7 +53,7 @@ const Label = ({ children, moreInfoAlign, moreInfoContent, ...props }) => {
       </TextLabel>
 
       {moreInfoContent && (
-        <MoreInfoWrapper tooltipAlign={moreInfoAlign}>
+        <MoreInfoWrapper className="moreInfo" tooltipAlign={moreInfoAlign}>
           {moreInfoContent}
         </MoreInfoWrapper>
       )}
@@ -66,6 +73,7 @@ Label.propTypes = {
   disabled: PropTypes.bool,
   protected: PropTypes.bool,
   invalid: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 export default Label;

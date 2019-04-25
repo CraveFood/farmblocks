@@ -62,7 +62,7 @@ exports[`Storyshots EmptyState Default 1`] = `
 >
   <noscript />
   <div
-    className="c1"
+    className="title c1"
     size={24}
     type="#2f313a"
   >
@@ -148,7 +148,7 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
   >
     <noscript />
     <div
-      className="c1"
+      className="title c1"
       size={24}
       type="#2f313a"
     >
@@ -233,7 +233,7 @@ exports[`Storyshots EmptyState With icon 1`] = `
     />
   </div>
   <div
-    className="c1"
+    className="title c1"
     size={24}
     type="#2f313a"
   >
@@ -331,7 +331,7 @@ exports[`Storyshots EmptyState With image 1`] = `
     src="https://picsum.photos/200?image=0"
   />
   <div
-    className="c2"
+    className="title c2"
     size={24}
     type="#2f313a"
   >
@@ -448,7 +448,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
 
 .c5:disabled,
 .c5:disabled .icon,
-.c5:disabled :hover {
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -538,7 +538,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
     src="https://picsum.photos/200?image=0"
   />
   <div
-    className="c2"
+    className="title c2"
     size={24}
     type="#2f313a"
   >
@@ -558,7 +558,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
       className="c4"
     >
       <button
-        className="c5"
+        className="wrapped c5"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -674,7 +674,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 
 .c5:disabled,
 .c5:disabled .icon,
-.c5:disabled :hover {
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -774,7 +774,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
     src="https://picsum.photos/200?image=0"
   />
   <div
-    className="c2"
+    className="title c2"
     size={24}
     type="#2f313a"
   >
@@ -794,7 +794,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
       className="c4"
     >
       <button
-        className="c5"
+        className="wrapped c5"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -917,7 +917,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 
 .c5:disabled,
 .c5:disabled .icon,
-.c5:disabled :hover {
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -1015,7 +1015,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
       src="https://picsum.photos/200?image=0"
     />
     <div
-      className="c2"
+      className="title c2"
       size={24}
       type="#2f313a"
     >
@@ -1035,7 +1035,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
         className="c4"
       >
         <button
-          className="c5"
+          className="wrapped c5"
           disabled={false}
           onClick={[Function]}
           onMouseLeave={[Function]}
@@ -1152,7 +1152,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
 
 .c6:disabled,
 .c6:disabled .icon,
-.c6:disabled :hover {
+.c6:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -1235,7 +1235,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
 
 .c5:disabled,
 .c5:disabled .icon,
-.c5:disabled :hover {
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -1325,7 +1325,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
     src="https://picsum.photos/200?image=0"
   />
   <div
-    className="c2"
+    className="title c2"
     size={24}
     type="#2f313a"
   >
@@ -1345,7 +1345,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
       className="c4"
     >
       <button
-        className="c5"
+        className="wrapped c5"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1360,7 +1360,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
       className="c4"
     >
       <button
-        className="c6"
+        className="wrapped c6"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1371,6 +1371,128 @@ exports[`Storyshots EmptyState With two actions 1`] = `
         Primary Action
       </button>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots EmptyState extended style 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: center;
+  font-weight: inherit;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: center;
+  font-weight: inherit;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 > .thumbnail {
+  margin-bottom: 24px;
+}
+
+.c1 > .description,
+.c1 > .info {
+  margin-top: 16px;
+}
+
+.c1 > .buttons {
+  margin-top: 24px;
+}
+
+.c1 > .buttons > * {
+  margin: 0 8px;
+}
+
+.c1 .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 {
+  border: solid 3px lightsalmon;
+}
+
+.c0 .icon {
+  font-size: 16px;
+  color: olive;
+}
+
+.c0 .title {
+  font-family: fantasy;
+}
+
+.c0 .description {
+  font-family: serif;
+}
+
+.c0 .info {
+  font-family: monospace;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="icon"
+  >
+    <i
+      className="wg-order"
+    />
+  </div>
+  <div
+    className="title c2"
+    size={24}
+    type="#2f313a"
+  >
+    Empty State Title
+  </div>
+  <div
+    className="description c3"
+    size={18}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+  <div
+    className="info c4"
+    size={14}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
   </div>
 </div>
 `;

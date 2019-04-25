@@ -135,7 +135,7 @@ exports[`Storyshots Card Floating with content (Empty State) and 560px width 1`]
   >
     <noscript />
     <div
-      className="c2"
+      className="title c2"
       size={24}
       type="#2f313a"
     >
@@ -230,7 +230,7 @@ exports[`Storyshots Card Floating with content and 40px padding and 1136px width
   >
     <noscript />
     <div
-      className="c2"
+      className="title c2"
       size={24}
       type="#2f313a"
     >
@@ -447,7 +447,7 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
   align-items: center;
 }
 
-.c5 > .text > :first-child {
+.c5 .text {
   margin-bottom: 8px;
 }
 
@@ -507,7 +507,7 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
   >
     <noscript />
     <div
-      className="c2"
+      className="title c2"
       size={24}
       type="#2f313a"
     >
@@ -525,7 +525,7 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
     className="c4"
   >
     <div
-      className="c5"
+      className="helperContent c5"
       size={16}
     >
       <div
@@ -533,18 +533,16 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
         size={40}
         src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"
       />
-      <div
-        className="text"
-      >
+      <div>
         <div
-          className="c7"
+          className="text c7"
           size={16}
           type="#2f313a"
         >
           Have questions about account setup?
         </div>
         <div
-          className="c8"
+          className="link c8"
           disabled={false}
           size={16}
           type="#59636f"
@@ -558,7 +556,7 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
       </div>
     </div>
     <div
-      className="c9"
+      className="actionsContainer c9"
     />
   </div>
 </div>
@@ -671,7 +669,7 @@ exports[`Storyshots Card With overflowing content 1`] = `
 
 .c2:disabled,
 .c2:disabled .icon,
-.c2:disabled :hover {
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -705,7 +703,7 @@ exports[`Storyshots Card With overflowing content 1`] = `
       onMouseOver={[Function]}
     />
     <button
-      className="c2"
+      className="wrapped c2"
       disabled={true}
       onMouseLeave={[Function]}
       onMouseOver={[Function]}
@@ -825,7 +823,7 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
 
 .c2:disabled,
 .c2:disabled .icon,
-.c2:disabled :hover {
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
@@ -859,7 +857,7 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
       onMouseOver={[Function]}
     />
     <button
-      className="c2"
+      className="wrapped c2"
       disabled={true}
       onMouseLeave={[Function]}
       onMouseOver={[Function]}
@@ -870,4 +868,30 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
     </button>
   </div>
 </div>
+`;
+
+exports[`Storyshots Card extended style 1`] = `
+.c1 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.c0 {
+  border: solid 4px green;
+  border-radius: 32px;
+  height: 100px;
+  background: linear-gradient(to bottom,white 0%,lightskyblue 100%);
+}
+
+<div
+  className="c0 c1"
+  overflow="visible"
+  width="100%"
+/>
 `;

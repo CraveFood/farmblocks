@@ -62,21 +62,23 @@ const withMessages = WrappedComponent => {
         validationMessages,
         errorIconSrc,
         onInvalid,
+        className,
         ...wrappedComponentProps
       } = this.props;
 
       return (
-        <div>
+        <div className={className}>
           <WrappedComponent
             {...wrappedComponentProps}
+            className="wrapped"
             onInvalid={this.onInvalid}
             onChange={this.onChange}
             invalid={this.state.messages.length > 0 || this.props.invalid}
           />
 
-          <div>
+          <div className="messagesContainer">
             {this.state.messages.map(text => (
-              <MessageWrapper key={`err-${text}`}>
+              <MessageWrapper className="messageWrapper" key={`err-${text}`}>
                 <Image
                   className="icon"
                   src={errorIconSrc}
@@ -84,6 +86,7 @@ const withMessages = WrappedComponent => {
                   size={badgeSizes.SMALL}
                 />
                 <Text
+                  className="text"
                   lineHeight={`${badgeSizes.SMALL}px`}
                   size={fontSizes.MEDIUM}
                 >
@@ -99,13 +102,17 @@ const withMessages = WrappedComponent => {
     static propTypes = {
       ...WrappedComponent.propTypes,
       ...withMessagesProps,
+      className: PropTypes.string,
     };
 
+    /* eslint-disable react/default-props-match-prop-types */
+    // false negative. The linter don't follow the spread of `withMessagesProp`
     static defaultProps = {
       errorIconSrc: errorIcon,
       validationMessages: [],
       onInvalid: () => null,
     };
+    /* eslint-enable react/default-props-match-prop-types */
   };
 };
 
