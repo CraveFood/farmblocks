@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.2.4...@crave/farmblocks-more-info@1.3.0) (2019-04-25)
+
+
+### Features
+
+* **more-info:** make it extendable by styled() ([feaed03](https://github.com/CraveFood/farmblocks/commit/feaed03))
+
+
+
+
+
 ## [1.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.2.3...@crave/farmblocks-more-info@1.2.4) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-more-info

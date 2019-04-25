@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@0.4.4...@crave/farmblocks-label@0.5.0) (2019-04-25)
+
+
+### Features
+
+* **label:** make it extendable by styled() ([ae5e50d](https://github.com/CraveFood/farmblocks/commit/ae5e50d))
+
+
+
+
+
 ## [0.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@0.4.3...@crave/farmblocks-label@0.4.4) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-label

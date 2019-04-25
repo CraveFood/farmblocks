@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@2.2.4...@crave/farmblocks-footer@2.3.0) (2019-04-25)
+
+
+### Features
+
+* **footer:** make it extendable by styled() ([628e71f](https://github.com/CraveFood/farmblocks/commit/628e71f))
+
+
+
+
+
 ## [2.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@2.2.3...@crave/farmblocks-footer@2.2.4) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-footer

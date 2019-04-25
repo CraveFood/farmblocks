@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@2.2.4...@crave/farmblocks-hoc-validation-messages@2.3.0) (2019-04-25)
+
+
+### Features
+
+* **hoc-validation-messages:** make it extendable by styled() ([9c5d860](https://github.com/CraveFood/farmblocks/commit/9c5d860))
+
+
+
+
+
 ## [2.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-validation-messages@2.2.3...@crave/farmblocks-hoc-validation-messages@2.2.4) (2019-04-10)
 
 

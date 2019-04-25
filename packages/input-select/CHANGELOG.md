@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.5.5...@crave/farmblocks-input-select@3.6.0) (2019-04-25)
+
+
+### Features
+
+* **input-select:** make it extendable by styled() ([c348e56](https://github.com/CraveFood/farmblocks/commit/c348e56))
+
+
+
+
+
 ## [3.5.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.5.4...@crave/farmblocks-input-select@3.5.5) (2019-04-24)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select

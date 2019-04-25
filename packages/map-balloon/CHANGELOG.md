@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@3.2.5...@crave/farmblocks-map-balloon@3.3.0) (2019-04-25)
+
+
+### Bug Fixes
+
+* **map-balloon:** balloon radius not clipping the image ([2067a7b](https://github.com/CraveFood/farmblocks/commit/2067a7b))
+
+
+### Features
+
+* **map-balloon:** make it extendable by styled() ([bdc6c91](https://github.com/CraveFood/farmblocks/commit/bdc6c91))
+
+
+
+
+
 ## [3.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@3.2.4...@crave/farmblocks-map-balloon@3.2.5) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-map-balloon

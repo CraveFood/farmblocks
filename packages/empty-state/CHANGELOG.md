@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.2.4...@crave/farmblocks-empty-state@3.3.0) (2019-04-25)
+
+
+### Features
+
+* **empty-state:** make it extendable by styled() ([88bdc11](https://github.com/CraveFood/farmblocks/commit/88bdc11))
+
+
+
+
+
 ## [3.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.2.3...@crave/farmblocks-empty-state@3.2.4) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-empty-state

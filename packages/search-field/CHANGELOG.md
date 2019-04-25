@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.3.10...@crave/farmblocks-search-field@3.4.0) (2019-04-25)
+
+
+### Features
+
+* **search-field:** make it extendable by styled() ([dc8386b](https://github.com/CraveFood/farmblocks/commit/dc8386b))
+
+
+
+
+
 ## [3.3.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.3.9...@crave/farmblocks-search-field@3.3.10) (2019-04-24)
 
 **Note:** Version bump only for package @crave/farmblocks-search-field

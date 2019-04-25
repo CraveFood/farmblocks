@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.4.1...@crave/farmblocks-table@3.5.0) (2019-04-25)
+
+
+### Features
+
+* **table:** make it extendable by styled() ([493000f](https://github.com/CraveFood/farmblocks/commit/493000f))
+
+
+
+
+
 ## [3.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.4.0...@crave/farmblocks-table@3.4.1) (2019-04-03)
 
 **Note:** Version bump only for package @crave/farmblocks-table

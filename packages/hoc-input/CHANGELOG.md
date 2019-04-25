@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.3.6...@crave/farmblocks-hoc-input@5.4.0) (2019-04-25)
+
+
+### Features
+
+* **hoc-input:** make it extendable by styled() ([ffa85c4](https://github.com/CraveFood/farmblocks/commit/ffa85c4))
+
+
+
+
+
 ## [5.3.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.3.5...@crave/farmblocks-hoc-input@5.3.6) (2019-04-24)
 
 
