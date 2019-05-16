@@ -252,10 +252,26 @@ class Table extends React.Component {
       selected,
       grouped,
     };
-    const bodyCell = content => <BodyCell {...cellProps}>{content}</BodyCell>;
+    const mutable = {};
+    const bodyCell = content => {
+      return (
+        content && (
+          <BodyCell {...cellProps} {...mutable.injectedProps}>
+            {content}
+          </BodyCell>
+        )
+      );
+    };
     if (props.customCell) {
       return bodyCell(
-        props.customCell(row, rowIndex, cellProps.selected, grouped),
+        props.customCell(row, {
+          rowIndex,
+          selected: cellProps.selected,
+          grouped,
+          addProps: addedProps => {
+            mutable.injectedProps = addedProps;
+          },
+        }),
       );
     }
 
