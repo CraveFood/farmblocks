@@ -1892,10 +1892,6 @@ exports[`Storyshots Table/Basic Empty column 1`] = `
           Apple
         </div>
       </td>
-      <td
-        className="cell  c3"
-        selected={false}
-      />
     </tr>
   </tbody>
   <tbody
@@ -1917,10 +1913,6 @@ exports[`Storyshots Table/Basic Empty column 1`] = `
           Banana
         </div>
       </td>
-      <td
-        className="cell  c3"
-        selected={false}
-      />
     </tr>
   </tbody>
   <tbody
@@ -1942,10 +1934,6 @@ exports[`Storyshots Table/Basic Empty column 1`] = `
           Cherry
         </div>
       </td>
-      <td
-        className="cell  c3"
-        selected={false}
-      />
     </tr>
   </tbody>
   <tbody
@@ -1967,10 +1955,6 @@ exports[`Storyshots Table/Basic Empty column 1`] = `
           Coconut
         </div>
       </td>
-      <td
-        className="cell  c3"
-        selected={false}
-      />
     </tr>
   </tbody>
 </table>
@@ -5120,10 +5104,6 @@ exports[`Storyshots Table/Basic null Table chidren 1`] = `
       <td
         className="cell  c3"
         selected={false}
-      />
-      <td
-        className="cell  c3"
-        selected={false}
       >
         <div
           className="text c4"
@@ -5154,10 +5134,6 @@ exports[`Storyshots Table/Basic null Table chidren 1`] = `
           Banana
         </div>
       </td>
-      <td
-        className="cell  c3"
-        selected={false}
-      />
       <td
         className="cell  c3"
         selected={false}
@@ -5194,10 +5170,6 @@ exports[`Storyshots Table/Basic null Table chidren 1`] = `
       <td
         className="cell  c3"
         selected={false}
-      />
-      <td
-        className="cell  c3"
-        selected={false}
       >
         <div
           className="text c4"
@@ -5228,10 +5200,6 @@ exports[`Storyshots Table/Basic null Table chidren 1`] = `
           Coconut
         </div>
       </td>
-      <td
-        className="cell  c3"
-        selected={false}
-      />
       <td
         className="cell  c3"
         selected={false}
@@ -9958,6 +9926,288 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               </div>
             </span>
           </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Custom Cells With colspan 1`] = `
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  border-collapse: collapse;
+  border: 1px solid rgba(0,0,0,0.16);
+  padding: 8px 16px;
+}
+
+.c0 .cell {
+  box-sizing: border-box;
+  height: 80px;
+  border-bottom: 1px solid rgba(0,0,0,0.16);
+  padding: 16px 0 16px 16px;
+}
+
+.c0 .cell:last-child {
+  padding-right: 16px;
+}
+
+.c0 .cell.corner-icon {
+  position: relative;
+  padding-left: 40px;
+}
+
+.c0 .cell.corner-icon:before {
+  content: "";
+  float: left;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #3498db;
+  border-bottom: 2px solid #3498db;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 16px;
+}
+
+.c0 .cell .checkbox {
+  height: 16px;
+}
+
+.c0 .cell .checkbox label {
+  padding: 8px;
+  margin: -8px;
+}
+
+.c0 tbody.collapsed tr.grouped {
+  display: none;
+}
+
+.c0 tbody tr:hover .cell {
+  background: #e9ebec;
+}
+
+.c0 tbody tr.clickable {
+  cursor: pointer;
+}
+
+.c1 {
+  text-align: left;
+  background-color: #f6f8f9;
+  height: 40px !important;
+  white-space: normal;
+}
+
+.c1 .link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c1 .icon {
+  color: rgba(0,0,0,0.16);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.c3 {
+  text-align: left;
+  background-color: white;
+  white-space: normal;
+}
+
+<table
+  className="c0"
+  width="600px"
+>
+  <caption>
+    <span />
+  </caption>
+  <thead>
+    <tr>
+      <th
+        className="cell c1"
+      >
+        <div
+          className="text c2"
+          size={14}
+          type="#2f313a"
+        >
+          Merged
+        </div>
+      </th>
+      <th
+        className="cell c1"
+      >
+        <div
+          className="text c2"
+          size={14}
+          type="#2f313a"
+        >
+          Description
+        </div>
+      </th>
+      <th
+        className="cell c1"
+      >
+        <div
+          className="text c2"
+          size={14}
+          type="#2f313a"
+        >
+          Number
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="body"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="text c4"
+          size={16}
+          type="#2f313a"
+        >
+          No
+        </div>
+      </td>
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="c5"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam urna, commodo in efficitur sit amet, convallis ac risus. Pellentesque commodo justo id egestas fermentum. Sed dui felis, feugiat et laoreet sed, condimentum sed lorem.
+        </div>
+      </td>
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="c5"
+          size={18}
+          type="#2f313a"
+        >
+          1234567890
+        </div>
+      </td>
+    </tr>
+  </tbody>
+  <tbody
+    className="body"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="text c4"
+          size={16}
+          type="#2f313a"
+        >
+          Yes
+        </div>
+      </td>
+      <td
+        className="cell  c3"
+        colSpan={2}
+        selected={false}
+      >
+        <div
+          className="c5"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam urna, commodo in efficitur sit amet, convallis ac risus. Pellentesque commodo justo id egestas fermentum. Sed dui felis, feugiat et laoreet sed, condimentum sed lorem.
+        </div>
+      </td>
+    </tr>
+  </tbody>
+  <tbody
+    className="body"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="text c4"
+          size={16}
+          type="#2f313a"
+        >
+          No
+        </div>
+      </td>
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="c5"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam urna, commodo in efficitur sit amet, convallis ac risus. Pellentesque commodo justo id egestas fermentum. Sed dui felis, feugiat et laoreet sed, condimentum sed lorem.
+        </div>
+      </td>
+      <td
+        className="cell  c3"
+        selected={false}
+      >
+        <div
+          className="c5"
+          size={18}
+          type="#2f313a"
+        >
+          0987654321
         </div>
       </td>
     </tr>
