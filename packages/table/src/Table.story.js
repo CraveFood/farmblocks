@@ -406,7 +406,7 @@ storiesOf("Table/Custom Cells", module)
         )}
       />
       <Column
-        customCell={(row, rowIndex) => (
+        customCell={(_row, { rowIndex }) => (
           <Dropdown
             zIndex={fruits.length - rowIndex}
             align="right"
@@ -443,7 +443,7 @@ storiesOf("Table/Custom Cells", module)
         )}
       />
       <Column
-        customCell={(row, rowIndex) => (
+        customCell={(_row, { rowIndex }) => (
           <Dropdown
             zIndex={fruits.length - rowIndex}
             size={buttonSizes.SMALL}
@@ -524,6 +524,43 @@ storiesOf("Table/Custom Cells", module)
               </Button>
             </div>
           )}
+        />
+      </Table>
+    );
+  })
+  .add("With colspan", () => {
+    const description =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam urna, commodo in efficitur sit amet, convallis ac risus. Pellentesque commodo justo id egestas fermentum. Sed dui felis, feugiat et laoreet sed, condimentum sed lorem.";
+    const data = [
+      {
+        description,
+        number: "1234567890",
+        merged: false,
+      },
+      {
+        description,
+        number: "11111111111",
+        merged: true,
+      },
+      {
+        description,
+        number: "0987654321",
+        merged: false,
+      },
+    ];
+    return (
+      <Table data={data} width="600px">
+        <Column title="Merged" text={row => (row.merged ? "Yes" : "No")} />
+        <Column
+          title="Description"
+          customCell={(row, { addProps }) => {
+            if (row.merged) addProps({ colSpan: 2 });
+            return <Text>{row.description}</Text>;
+          }}
+        />
+        <Column
+          title="Number"
+          customCell={row => (row.merged ? null : <Text>{row.number}</Text>)}
         />
       </Table>
     );
@@ -656,7 +693,7 @@ storiesOf("Table/Row Groups", module)
       >
         <Column
           title="Name"
-          customCell={(row, _index, _selected, grouped) => (
+          customCell={(row, { grouped }) => (
             <Text>
               {row.name}
               {grouped && " (grouped)"}
