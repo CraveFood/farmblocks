@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.5.0...@crave/farmblocks-table@4.0.0) (2019-05-17)
+
+
+### Features
+
+* **Table:** allow injection of props in Columns with customCell ([fed15d2](https://github.com/CraveFood/farmblocks/commit/fed15d2))
+
+
+### BREAKING CHANGES
+
+* **Table:** - customCell now sends a single object with the extra params instead of multiple params
+  Previous usage: customCell={(row, rowIndex, selected, grouped) => ...
+  New usage: customCell={(row, {rowIndex, selected, grouped}) => ...
+- If the customCell function return a falsy value, the cell won't be
+rendered at all instead of rendering an empty cell as before
+
+
+
+
+
 # [3.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@3.4.1...@crave/farmblocks-table@3.5.0) (2019-04-25)
 
 
