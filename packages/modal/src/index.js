@@ -1,1 +1,1 @@
-export { default } from "./Modal";
+export { Modal, useModal, ModalFactory } from "./Modal";
