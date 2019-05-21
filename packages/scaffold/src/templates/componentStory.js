@@ -10,10 +10,10 @@ import ${componentName} from ".";
 
 storiesOf("${fullName}", module).add(
   "Default",
-  () => <${componentName} />)
+  () => <${componentName} />
 );
 `,
-    { parser: "babylon" },
+    { parser: "babel" },
   );
 
 module.exports = storyTemplate;
