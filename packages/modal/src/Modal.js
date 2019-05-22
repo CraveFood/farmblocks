@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
@@ -33,8 +33,20 @@ const ContentWrapper = styled.div`
   -webkit-overflow-scrolling: touch;
 `;
 
-export const Modal = ({ isOpen, children }) => {
+export const Modal = ({ isOpen, parentNode, children }) => {
   if (!isOpen) return null;
+
+  useEffect(() => {
+    const originalOverflow = parentNode.style?.overflow;
+
+    // eslint-disable-next-line no-param-reassign
+    parentNode.style.overflow = "hidden";
+
+    return () => {
+      // eslint-disable-next-line no-param-reassign
+      parentNode.style.overflow = originalOverflow;
+    };
+  }, [isOpen]);
 
   return ReactDOM.createPortal(
     <Overlay className="overlay">
@@ -42,8 +54,11 @@ export const Modal = ({ isOpen, children }) => {
         <ContentWrapper className="content">{children}</ContentWrapper>
       </ConstrainedCard>
     </Overlay>,
-    document.body,
+    parentNode,
   );
+};
+Modal.defaultProps = {
+  parentNode: document.body,
 };
 
 export const useModal = () => {
