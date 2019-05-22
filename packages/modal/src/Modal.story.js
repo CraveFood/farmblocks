@@ -1,7 +1,23 @@
 import React from "react";
+import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 
 import { Modal, useModal, ModalFactory } from ".";
+import lipsum from "./lipsum";
+
+const TallComponent = styled.div`
+  height: 9000px;
+  background: linear-gradient(to bottom, #3f5efb, #fc466b);
+  color: white;
+  &:before {
+    content: "This will create a scrollbar";
+    display: block;
+  }
+`;
+
+const PreLine = styled.p`
+  white-space: pre-line;
+`;
 
 storiesOf("Modal", module)
   .add("Default", () => (
@@ -56,5 +72,13 @@ storiesOf("Modal", module)
           </>
         )}
       </ModalFactory>
+    </>
+  ))
+  .add("Extensive Content", () => (
+    <>
+      <TallComponent />
+      <Modal isOpen>
+        <PreLine>{lipsum}</PreLine>
+      </Modal>
     </>
   ));

@@ -14,16 +14,33 @@ const Overlay = styled.div`
   bottom: 0;
   left: 0;
   background: ${colors.GREY_32};
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`;
+
+const ConstrainedCard = styled(Card)`
+  margin: 0 auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+`;
+
+const ContentWrapper = styled.div`
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 export const Modal = ({ isOpen, children }) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
-    <Overlay>
-      <Card width="600px" css="margin: 20px auto;">
-        {children}
-      </Card>
+    <Overlay className="overlay">
+      <ConstrainedCard floating className="card">
+        <ContentWrapper className="content">{children}</ContentWrapper>
+      </ConstrainedCard>
     </Overlay>,
     document.body,
   );
