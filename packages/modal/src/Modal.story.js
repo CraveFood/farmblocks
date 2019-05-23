@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 
 import { Modal, useModal, ModalFactory } from ".";
 import lipsum from "./lipsum";
@@ -77,7 +78,7 @@ storiesOf("Modal", module)
   .add("Extensive Content", () => (
     <>
       <TallComponent />
-      <Modal isOpen>
+      <Modal isOpen onRequestClose={action("onRequestClose")}>
         <PreLine>{lipsum}</PreLine>
       </Modal>
     </>

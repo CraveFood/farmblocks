@@ -33,8 +33,21 @@ const ContentWrapper = styled.div`
   -webkit-overflow-scrolling: touch;
 `;
 
-export const Modal = ({ isOpen, parentNode, children }) => {
+export const Modal = ({
+  isOpen,
+  parentNode,
+  shouldCloseOnOverlayClick,
+  shouldCloseOnEsc,
+  onRequestClose,
+  children,
+}) => {
   if (!isOpen) return null;
+
+  const handleKeyDown = event => {
+    if (shouldCloseOnEsc && event.key === "Escape") {
+      onRequestClose?.(event);
+    }
+  };
 
   useEffect(() => {
     const originalOverflow = parentNode.style?.overflow;
@@ -42,14 +55,21 @@ export const Modal = ({ isOpen, parentNode, children }) => {
     // eslint-disable-next-line no-param-reassign
     parentNode.style.overflow = "hidden";
 
+    parentNode.addEventListener("keydown", handleKeyDown);
+
     return () => {
       // eslint-disable-next-line no-param-reassign
       parentNode.style.overflow = originalOverflow;
+
+      parentNode.removeEventListener("keydown", handleKeyDown);
     };
   }, [isOpen]);
 
   return ReactDOM.createPortal(
-    <Overlay className="overlay">
+    <Overlay
+      className="overlay"
+      onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
+    >
       <ConstrainedCard floating className="card">
         <ContentWrapper className="content">{children}</ContentWrapper>
       </ConstrainedCard>
@@ -59,16 +79,27 @@ export const Modal = ({ isOpen, parentNode, children }) => {
 };
 Modal.defaultProps = {
   parentNode: document.body,
+  shouldCloseOnOverlayClick: true,
+  shouldCloseOnEsc: true,
 };
 
 export const useModal = () => {
   const [isOpen, setOpen] = useState(false);
-  const Comp = props => <Modal isOpen={isOpen} {...props} />;
   const actions = {
     open: () => setOpen(true),
     close: () => setOpen(false),
     toggle: () => setOpen(open => !open),
   };
+  const Comp = ({ onRequestClose, ...props }) => (
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={(...args) => {
+        actions.close();
+        onRequestClose?.(...args);
+      }}
+      {...props}
+    />
+  );
 
   return [Comp, actions];
 };
