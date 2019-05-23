@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
-import { Modal, useModal, ModalFactory } from ".";
+import Modal, { useModal, ModalFactory } from ".";
 import lipsum from "./lipsum";
 
 const TallComponent = styled.div`
