@@ -1,8 +1,14 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
+import Link from "@crave/farmblocks-link";
 
-import { Overlay, ConstrainedCard, ContentWrapper } from "./Modal.styled";
+import {
+  Overlay,
+  ConstrainedCard,
+  ContentWrapper,
+  Header,
+} from "./Modal.styled";
 
 const Modal = ({
   isOpen,
@@ -10,6 +16,7 @@ const Modal = ({
   shouldCloseOnOverlayClick,
   shouldCloseOnEsc,
   onRequestClose,
+  showCloseButton,
   children,
 }) => {
   if (!isOpen) return null;
@@ -42,6 +49,15 @@ const Modal = ({
       onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
     >
       <ConstrainedCard floating className="card">
+        {showCloseButton && (
+          <Header className="header">
+            <Link
+              className="close"
+              rightIcon="wg-close-int"
+              onClick={onRequestClose}
+            />
+          </Header>
+        )}
         <ContentWrapper className="content">{children}</ContentWrapper>
       </ConstrainedCard>
     </Overlay>,
@@ -53,12 +69,14 @@ Modal.defaultProps = {
   parentNode: document.body,
   shouldCloseOnOverlayClick: true,
   shouldCloseOnEsc: true,
+  showCloseButton: true,
 };
 Modal.propTypes = {
   isOpen: PropTypes.bool,
   parentNode: PropTypes.instanceOf(HTMLElement),
   shouldCloseOnOverlayClick: PropTypes.bool,
   shouldCloseOnEsc: PropTypes.bool,
+  showCloseButton: PropTypes.bool,
   onRequestClose: PropTypes.func,
   children: PropTypes.node,
 };

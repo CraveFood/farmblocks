@@ -19,10 +19,28 @@ export const ConstrainedCard = styled(Card)`
   max-height: 100%;
   width: auto;
   max-width: 100%;
+  min-width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ContentWrapper = styled.div`
-  height: 100%;
+  flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+
+  .close {
+    font-size: 32px;
+    color: ${colors.GREY_16};
+    &:hover {
+      color: ${colors.GREY_32};
+    }
+  }
 `;
