@@ -32,7 +32,7 @@ storiesOf("Modal", module)
       const [SecondModal, { toggle: toggleSecond }] = useModal();
 
       return (
-        <>
+        <div>
           <button onClick={openFirst}>Open 1st</button>
           <FirstModal>
             Hi, this is the first modal.{" "}
@@ -44,13 +44,13 @@ storiesOf("Modal", module)
             {`And I'm the second one.`}
             <button onClick={toggleSecond}>close</button>
           </SecondModal>
-        </>
+        </div>
       );
     };
     return <Example />;
   })
   .add("ModalFactory", () => (
-    <>
+    <div>
       <ModalFactory>
         {(FirstModal, { open, close }) => (
           <>
@@ -73,13 +73,13 @@ storiesOf("Modal", module)
           </>
         )}
       </ModalFactory>
-    </>
+    </div>
   ))
   .add("Extensive Content", () => (
-    <>
+    <div>
       <TallComponent />
       <Modal isOpen onRequestClose={action("onRequestClose")}>
         <PreLine>{lipsum}</PreLine>
       </Modal>
-    </>
+    </div>
   ));

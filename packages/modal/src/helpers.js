@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import Modal from "./Modal";
 
@@ -25,3 +26,6 @@ export const useModal = () => {
 };
 
 export const ModalFactory = ({ children }) => children(...useModal());
+ModalFactory.propTypes = {
+  children: PropTypes.func.isRequired,
+};
