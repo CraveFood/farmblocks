@@ -1,31 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
-
-import Modal from "./Modal";
 
 export const useModal = () => {
   const [isOpen, setOpen] = useState(false);
   const actions = {
     open: () => setOpen(true),
     close: () => setOpen(false),
-    toggle: () => setOpen(open => !open),
+    toggle: () => setOpen(val => !val),
   };
-  const Comp = ({ onRequestClose, ...props }) => (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={(...args) => {
-        actions.close();
-        onRequestClose?.(...args);
-      }}
-      {...props}
-    />
-  );
-  Comp.propTypes = Modal.propTypes;
+  const props = { isOpen, onRequestClose: actions.close };
 
-  return [Comp, actions];
+  return [props, actions];
 };
 
-export const ModalFactory = ({ children }) => children(...useModal());
-ModalFactory.propTypes = {
+export const ModalManager = ({ children }) => children(...useModal());
+ModalManager.propTypes = {
   children: PropTypes.func.isRequired,
 };

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 
-import Modal, { useModal, ModalFactory } from ".";
+import Modal, { useModal, ModalManager } from ".";
 import lipsum from "./lipsum";
 
 const TallComponent = styled.div`
@@ -28,51 +28,51 @@ storiesOf("Modal", module)
   ))
   .add("useModal", () => {
     const Example = () => {
-      const [FirstModal, { open: openFirst, close: closeFirst }] = useModal();
-      const [SecondModal, { toggle: toggleSecond }] = useModal();
+      const [firstModal, { open: openFirst, close: closeFirst }] = useModal();
+      const [secondModal, { toggle: toggleSecond }] = useModal();
 
       return (
         <div>
           <button onClick={openFirst}>Open 1st</button>
-          <FirstModal>
+          <Modal {...firstModal}>
             Hi, this is the first modal.{" "}
             <button onClick={closeFirst}>close</button>
-          </FirstModal>
+          </Modal>
 
           <button onClick={toggleSecond}>Open 2nd</button>
-          <SecondModal>
+          <Modal {...secondModal}>
             {`And I'm the second one.`}
             <button onClick={toggleSecond}>close</button>
-          </SecondModal>
+          </Modal>
         </div>
       );
     };
     return <Example />;
   })
-  .add("ModalFactory", () => (
+  .add("ModalManager", () => (
     <div>
-      <ModalFactory>
-        {(FirstModal, { open, close }) => (
+      <ModalManager>
+        {(firstModal, { open, close }) => (
           <>
             <button onClick={open}>Open 1st</button>
-            <FirstModal>
+            <Modal {...firstModal}>
               Hi, this is the first modal.{" "}
               <button onClick={close}>close</button>
-            </FirstModal>
+            </Modal>
           </>
         )}
-      </ModalFactory>
+      </ModalManager>
 
-      <ModalFactory>
-        {(SecondModal, { open, close }) => (
+      <ModalManager>
+        {(secondModal, { open, close }) => (
           <>
             <button onClick={open}>Open 2nd</button>
-            <SecondModal>
+            <Modal {...secondModal}>
               {`And I'm the second one.`} <button onClick={close}>close</button>
-            </SecondModal>
+            </Modal>
           </>
         )}
-      </ModalFactory>
+      </ModalManager>
     </div>
   ))
   .add("Extensive Content", () => (

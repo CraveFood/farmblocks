@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { animated } from "react-spring";
 import { colors } from "@crave/farmblocks-theme";
 import Card from "@crave/farmblocks-card";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(animated.div)`
   position: fixed;
   top: 0;
   right: 0;
@@ -12,6 +13,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 `;
 
 export const Overlay = styled.div`
