@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Link from "@crave/farmblocks-link";
 
 import {
+  Wrapper,
   Overlay,
   ConstrainedCard,
   ContentWrapper,
@@ -44,10 +45,11 @@ const Modal = ({
   }, [isOpen]);
 
   return ReactDOM.createPortal(
-    <Overlay
-      className="overlay"
-      onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
-    >
+    <Wrapper>
+      <Overlay
+        className="overlay"
+        onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
+      />
       <ConstrainedCard floating className="card">
         {showCloseButton && (
           <Header className="header">
@@ -60,7 +62,7 @@ const Modal = ({
         )}
         <ContentWrapper className="content">{children}</ContentWrapper>
       </ConstrainedCard>
-    </Overlay>,
+    </Wrapper>,
     parentNode,
   );
 };
