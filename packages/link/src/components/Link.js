@@ -43,7 +43,7 @@ const Link = props => {
 };
 
 Link.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   type: PropTypes.string,
   leftIcon: PropTypes.string,
   rightIcon: PropTypes.string,
