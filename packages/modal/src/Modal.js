@@ -20,6 +20,8 @@ const Modal = ({
   onRequestClose,
   showCloseButton,
   children,
+  cardProps,
+  closeProps,
 }) => {
   const handleKeyDown = event => {
     if (shouldCloseOnEsc && event.key === "Escape") {
@@ -65,13 +67,14 @@ const Modal = ({
               ({ item: slideItem, key: slideKey, props: slideStyle }) =>
                 slideItem && (
                   <animated.div key={slideKey} style={slideStyle}>
-                    <ConstrainedCard floating className="card">
+                    <ConstrainedCard floating className="card" {...cardProps}>
                       {showCloseButton && (
                         <Header className="header">
                           <Link
                             className="close"
                             rightIcon="wg-close-int"
                             onClick={onRequestClose}
+                            {...closeProps}
                           />
                         </Header>
                       )}
@@ -103,6 +106,8 @@ Modal.propTypes = {
   showCloseButton: PropTypes.bool,
   onRequestClose: PropTypes.func,
   children: PropTypes.node,
+  cardProps: PropTypes.shape(ConstrainedCard.propTypes),
+  closeProps: PropTypes.shape(Link.propTypes),
 };
 
 export default Modal;

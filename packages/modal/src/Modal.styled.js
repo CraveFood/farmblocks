@@ -27,7 +27,6 @@ export const Overlay = styled.div`
 
 export const ConstrainedCard = styled(Card)`
   max-height: 100%;
-  width: auto;
   max-width: 100%;
   min-width: 200px;
   position: relative;

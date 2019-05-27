@@ -82,4 +82,14 @@ storiesOf("Modal", module)
         <PreLine>{lipsum}</PreLine>
       </Modal>
     </div>
+  ))
+  .add("with fixed width", () => (
+    <Modal isOpen cardProps={{ width: "400px", floating: false }}>
+      <PreLine>{lipsum}</PreLine>
+    </Modal>
+  ))
+  .add("with custom close icon", () => (
+    <Modal isOpen closeProps={{ rightIcon: "wg-close" }}>
+      Hello
+    </Modal>
   ));
