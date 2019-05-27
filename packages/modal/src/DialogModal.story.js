@@ -3,7 +3,7 @@ import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import { buttonTypes } from "@crave/farmblocks-button";
 
-import DialogModal from "./DialogModal";
+import { DialogModal, useModal } from ".";
 
 const primaryAction = {
   text: "Primary Action",
@@ -38,4 +38,43 @@ storiesOf("Modal/DialogModal", module)
       isOpen
       onRequestClose={action("onRequestClose")}
     />
-  ));
+  ))
+  .add("With state", () => {
+    const Example = () => {
+      const [modalProps, { open, close }] = useModal();
+      const cancel = () => {
+        action("Cancelled")();
+        close();
+      };
+      const confirm = () => {
+        action("Done")();
+        close();
+      };
+
+      return (
+        <div>
+          <button onClick={open}>Do Something</button>
+          <DialogModal
+            {...modalProps}
+            icon="wg-question"
+            title="Do the thing?"
+            description="Once it's done, there's no way back."
+            actions={[
+              {
+                text: "Don't do",
+                onClick: cancel,
+                type: buttonTypes.NEUTRAL,
+              },
+              {
+                text: "Do it!",
+                onClick: confirm,
+                type: buttonTypes.PRIMARY,
+              },
+            ]}
+            onRequestClose={cancel}
+          />
+        </div>
+      );
+    };
+    return <Example />;
+  });
