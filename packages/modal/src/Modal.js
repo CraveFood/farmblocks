@@ -22,6 +22,7 @@ const Modal = ({
   children,
   cardProps,
   closeProps,
+  className,
 }) => {
   const handleKeyDown = event => {
     if (shouldCloseOnEsc && event.key === "Escape") {
@@ -32,12 +33,14 @@ const Modal = ({
   // eslint-disable-next-line consistent-return
   useEffect(() => {
     if (isOpen) {
+      const originalOverflow = parentNode.style?.overflow;
+
       // eslint-disable-next-line no-param-reassign
       parentNode.style.overflow = "hidden";
       parentNode.addEventListener("keydown", handleKeyDown);
       return () => {
         // eslint-disable-next-line no-param-reassign
-        parentNode.style.overflow = "";
+        parentNode.style.overflow = originalOverflow || "";
         parentNode.removeEventListener("keydown", handleKeyDown);
       };
     }
@@ -59,8 +62,9 @@ const Modal = ({
     fade.map(
       ({ item: fadeItem, key: fadeKey, props: fadeStyle }) =>
         fadeItem && (
-          <Wrapper key={fadeKey} style={fadeStyle}>
+          <Wrapper className={className} key={fadeKey} style={fadeStyle}>
             <Overlay
+              data-testid="modal-overlay"
               className="overlay"
               onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
             />
@@ -75,6 +79,7 @@ const Modal = ({
                             className="close"
                             rightIcon="wg-close-int"
                             onClick={onRequestClose}
+                            data-testid="modal-close-button"
                             {...closeProps}
                           />
                         </Header>
@@ -109,6 +114,7 @@ Modal.propTypes = {
   children: PropTypes.node,
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
   closeProps: PropTypes.shape(Link.propTypes),
+  className: PropTypes.string,
 };
 
 export default Modal;
