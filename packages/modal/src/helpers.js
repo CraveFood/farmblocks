@@ -13,7 +13,8 @@ export const useModal = () => {
   return [props, actions];
 };
 
-export const ModalManager = ({ children }) => children(...useModal());
+export const ModalManager = ({ children }) => children(...useModal()) || null;
+
 ModalManager.propTypes = {
   children: PropTypes.func.isRequired,
 };
