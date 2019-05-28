@@ -29,17 +29,18 @@ const Modal = ({
     }
   };
 
+  // eslint-disable-next-line consistent-return
   useEffect(() => {
     if (isOpen) {
       // eslint-disable-next-line no-param-reassign
       parentNode.style.overflow = "hidden";
       parentNode.addEventListener("keydown", handleKeyDown);
-      return;
+      return () => {
+        // eslint-disable-next-line no-param-reassign
+        parentNode.style.overflow = "";
+        parentNode.removeEventListener("keydown", handleKeyDown);
+      };
     }
-
-    // eslint-disable-next-line no-param-reassign
-    parentNode.style.overflow = "";
-    parentNode.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
   const fade = useTransition(isOpen, null, {
