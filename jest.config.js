@@ -8,12 +8,15 @@ const basicConfig = {
     // ⬆️ for async/await tests to work in jest 22
     // Ref.: https://github.com/facebook/jest/issues/5698
   ],
+  setupFilesAfterEnv: [
+    "react-testing-library/cleanup-after-each",
+    "<rootDir>/jest.testFramework.js",
+  ],
 };
 
 const completeConfig = {
   ...basicConfig,
   verbose: true,
-  setupFilesAfterEnv: ["<rootDir>/jest.testFramework.js"],
 };
 
 const fastConfig = {
