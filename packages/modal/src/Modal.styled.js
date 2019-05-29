@@ -4,7 +4,6 @@ import { colors } from "@crave/farmblocks-theme";
 import Card from "@crave/farmblocks-card";
 
 export const Wrapper = styled(animated.div)`
-  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -14,6 +13,7 @@ export const Wrapper = styled(animated.div)`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
 `;
 
 export const Overlay = styled.div`

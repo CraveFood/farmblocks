@@ -24,6 +24,8 @@ const Modal = ({
   closeProps,
   className,
 }) => {
+  if (!parentNode) return null;
+
   const handleKeyDown = event => {
     if (shouldCloseOnEsc && event.key === "Escape") {
       onRequestClose?.(event);
@@ -47,7 +49,11 @@ const Modal = ({
   }, [isOpen]);
 
   const fade = useTransition(isOpen, null, {
-    from: { opacity: 0 },
+    from: {
+      opacity: 0,
+      position:
+        parentNode === Modal.defaultProps.parentNode ? "fixed" : "absolute",
+    },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
   });
