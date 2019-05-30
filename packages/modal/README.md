@@ -49,6 +49,10 @@ This code will render:
 
   > Whether the modal is visible or not.
 
+- **verticalAlign** (`"flex-start"` | `"center"` | `"flex-end"`) = `"flex-start"`
+
+  > Vertical position of the modal at the viewport
+
 - **parentNode** (_HTMLElement_) = `document.body`
 
   > Element in which the modal should be attached.

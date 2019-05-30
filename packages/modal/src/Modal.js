@@ -23,6 +23,7 @@ const Modal = ({
   cardProps,
   closeProps,
   className,
+  verticalAlign,
 }) => {
   if (!parentNode) return null;
 
@@ -53,6 +54,7 @@ const Modal = ({
       opacity: 0,
       position:
         parentNode === Modal.defaultProps.parentNode ? "fixed" : "absolute",
+      justifyContent: verticalAlign,
     },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
@@ -109,6 +111,7 @@ Modal.defaultProps = {
   shouldCloseOnOverlayClick: true,
   shouldCloseOnEsc: true,
   showCloseButton: true,
+  verticalAlign: "flex-start",
 };
 Modal.propTypes = {
   isOpen: PropTypes.bool,
@@ -121,6 +124,7 @@ Modal.propTypes = {
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
   closeProps: PropTypes.shape(Link.propTypes),
   className: PropTypes.string,
+  verticalAlign: PropTypes.oneOf(["flex-start", "center", "flex-end"]),
 };
 
 export default Modal;

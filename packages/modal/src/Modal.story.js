@@ -16,6 +16,11 @@ storiesOf("Modal", module)
       <p>Hello</p>
     </Modal>
   ))
+  .add("Center aligned", () => (
+    <Modal isOpen verticalAlign="center">
+      <p>Hello</p>
+    </Modal>
+  ))
   .add("Extensive Content", () => (
     <Modal isOpen onRequestClose={action("onRequestClose")}>
       <PreLine>{lipsum}</PreLine>
