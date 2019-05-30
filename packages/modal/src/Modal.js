@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { useTransition, animated } from "react-spring";
@@ -11,6 +11,7 @@ import {
   ContentWrapper,
   Header,
 } from "./Modal.styled";
+import { useESCKey, useScrollLock } from "./Modal.hooks";
 
 const Modal = ({
   isOpen,
@@ -27,27 +28,15 @@ const Modal = ({
 }) => {
   if (!parentNode) return null;
 
-  const handleKeyDown = event => {
-    if (shouldCloseOnEsc && event.key === "Escape") {
-      onRequestClose?.(event);
-    }
-  };
-
-  // eslint-disable-next-line consistent-return
-  useEffect(() => {
-    if (isOpen) {
-      const originalOverflow = parentNode.style?.overflow;
-
-      // eslint-disable-next-line no-param-reassign
-      parentNode.style.overflow = "hidden";
-      parentNode.addEventListener("keydown", handleKeyDown);
-      return () => {
-        // eslint-disable-next-line no-param-reassign
-        parentNode.style.overflow = originalOverflow || "";
-        parentNode.removeEventListener("keydown", handleKeyDown);
-      };
-    }
-  }, [isOpen]);
+  useESCKey({
+    condition: shouldCloseOnEsc && isOpen,
+    element: parentNode,
+    listener: onRequestClose,
+  });
+  useScrollLock({
+    condition: isOpen,
+    element: parentNode,
+  });
 
   const fade = useTransition(isOpen, null, {
     from: {
