@@ -12,7 +12,11 @@ const PreLine = styled.p`
 
 storiesOf("Modal", module)
   .add("Default", () => (
-    <Modal isOpen>
+    <Modal
+      isOpen
+      onOpen={action("onOpen")}
+      onRequestClose={action("onRequestClose")}
+    >
       <p>Hello</p>
     </Modal>
   ))
@@ -22,7 +26,7 @@ storiesOf("Modal", module)
     </Modal>
   ))
   .add("Extensive Content", () => (
-    <Modal isOpen onRequestClose={action("onRequestClose")}>
+    <Modal isOpen>
       <PreLine>{lipsum}</PreLine>
     </Modal>
   ))

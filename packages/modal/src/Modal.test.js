@@ -133,4 +133,49 @@ describe("Modal", () => {
       expect(document.body.style.overflow).toEqual(originalOverflow);
     });
   });
+
+  describe("onOpen/onClose", () => {
+    let onOpenSpy, onCloseSpy;
+    beforeEach(() => {
+      onOpenSpy = jest.fn();
+      onCloseSpy = jest.fn();
+    });
+    afterEach(() => {
+      onOpenSpy.mockReset();
+      onCloseSpy.mockReset();
+    });
+
+    it("should call the proper function when isOpen changes", () => {
+      const { rerender } = render(
+        <Modal onOpen={onOpenSpy} onClose={onCloseSpy} />,
+      );
+
+      expect(onOpenSpy).not.toHaveBeenCalled();
+      expect(onCloseSpy).not.toHaveBeenCalled();
+
+      rerender(<Modal isOpen onOpen={onOpenSpy} onClose={onCloseSpy} />);
+      expect(onOpenSpy).toHaveBeenCalledTimes(1);
+      expect(onCloseSpy).not.toHaveBeenCalled();
+
+      rerender(<Modal isOpen onOpen={onOpenSpy} onClose={onCloseSpy} />);
+      expect(onOpenSpy).toHaveBeenCalledTimes(1);
+      expect(onCloseSpy).not.toHaveBeenCalled();
+
+      rerender(<Modal onOpen={onOpenSpy} onClose={onCloseSpy} />);
+      expect(onOpenSpy).toHaveBeenCalledTimes(1);
+      expect(onCloseSpy).toHaveBeenCalledTimes(1);
+
+      rerender(<Modal onOpen={onOpenSpy} onClose={onCloseSpy} />);
+      expect(onOpenSpy).toHaveBeenCalledTimes(1);
+      expect(onCloseSpy).toHaveBeenCalledTimes(1);
+
+      rerender(<Modal isOpen onOpen={onOpenSpy} onClose={onCloseSpy} />);
+      expect(onOpenSpy).toHaveBeenCalledTimes(2);
+      expect(onCloseSpy).toHaveBeenCalledTimes(1);
+
+      rerender(<Modal onOpen={onOpenSpy} onClose={onCloseSpy} />);
+      expect(onOpenSpy).toHaveBeenCalledTimes(2);
+      expect(onCloseSpy).toHaveBeenCalledTimes(2);
+    });
+  });
 });

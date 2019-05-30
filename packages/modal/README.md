@@ -75,6 +75,14 @@ This code will render:
   > Function to call when the overlay or close button are clicked, or the ESC key is pressed.  
   > It passes either a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent) or a [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) depending on the action.
 
+- **onOpen** (_Function_)
+
+  > Function to call when the modal opens.
+
+- **onClose** (_Function_)
+
+  > Function to call when the modal closes.
+
 - **cardProps** (_Object_)
 
   > Props to be passed to the [Card](https://www.npmjs.com/package/@crave/farmblocks-card) component that wraps the modal.

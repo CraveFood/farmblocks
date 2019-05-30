@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign, consistent-return */
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export const useESCKey = ({ condition, element, listener }) =>
   useEffect(() => {
@@ -28,3 +28,12 @@ export const useScrollLock = ({ condition, element }) =>
       };
     }
   }, [condition]);
+
+export const useChangeCallback = ({ currentValue, initialValue, onChange }) => {
+  const lastValue = useRef(initialValue);
+
+  useEffect(() => {
+    if (currentValue !== lastValue.current) onChange?.();
+    lastValue.current = currentValue;
+  }, [currentValue]);
+};

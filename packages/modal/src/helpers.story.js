@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 
 import Modal, { useModal, ModalManager } from ".";
 
@@ -23,14 +24,22 @@ storiesOf("Modal/helpers", module)
       return (
         <div>
           <button onClick={openFirst}>Open 1st</button>
-          <Modal {...firstModal}>
+          <Modal
+            {...firstModal}
+            onOpen={action("First Modal opened")}
+            onClose={action("First Modal closed")}
+          >
             Hi, this is the first modal.
             <hr />
             <button onClick={closeFirst}>close</button>
           </Modal>
 
           <button onClick={toggleSecond}>Open 2nd</button>
-          <Modal {...secondModal}>
+          <Modal
+            {...secondModal}
+            onOpen={action("Second Modal opened")}
+            onClose={action("Second Modal closed")}
+          >
             {`And I'm the second one.`}
             <hr />
             <button onClick={toggleSecond}>close</button>
@@ -46,7 +55,11 @@ storiesOf("Modal/helpers", module)
         {(firstModal, { open, close }) => (
           <>
             <button onClick={open}>Open 1st</button>
-            <Modal {...firstModal}>
+            <Modal
+              {...firstModal}
+              onOpen={action("First Modal opened")}
+              onClose={action("First Modal closed")}
+            >
               Hi, this is the first modal.
               <hr />
               <button onClick={close}>close</button>
@@ -59,7 +72,11 @@ storiesOf("Modal/helpers", module)
         {(secondModal, { open, close }) => (
           <>
             <button onClick={open}>Open 2nd</button>
-            <Modal {...secondModal}>
+            <Modal
+              {...secondModal}
+              onOpen={action("Second Modal opened")}
+              onClose={action("Second Modal closed")}
+            >
               {`And I'm the second one.`}
               <hr />
               <button onClick={close}>close</button>

@@ -11,7 +11,7 @@ import {
   ContentWrapper,
   Header,
 } from "./Modal.styled";
-import { useESCKey, useScrollLock } from "./Modal.hooks";
+import { useESCKey, useScrollLock, useChangeCallback } from "./Modal.hooks";
 
 const Modal = ({
   isOpen,
@@ -19,6 +19,8 @@ const Modal = ({
   shouldCloseOnOverlayClick,
   shouldCloseOnEsc,
   onRequestClose,
+  onOpen,
+  onClose,
   showCloseButton,
   children,
   cardProps,
@@ -37,6 +39,11 @@ const Modal = ({
     condition: isOpen,
     element: parentNode,
   });
+  useChangeCallback({
+    initialValue: Modal.defaultProps.isOpen,
+    currentValue: isOpen,
+    onChange: isOpen ? onOpen : onClose,
+  });
 
   const fade = useTransition(isOpen, null, {
     from: {
@@ -47,6 +54,7 @@ const Modal = ({
     },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
+    unique: true,
   });
   const slide = useTransition(isOpen, null, {
     from: { transform: "translate3D(0, 50px, 0)", maxHeight: "100%" },
@@ -109,6 +117,8 @@ Modal.propTypes = {
   shouldCloseOnEsc: PropTypes.bool,
   showCloseButton: PropTypes.bool,
   onRequestClose: PropTypes.func,
+  onOpen: PropTypes.func,
+  onClose: PropTypes.func,
   children: PropTypes.node,
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
   closeProps: PropTypes.shape(Link.propTypes),
