@@ -21,7 +21,7 @@ const Modal = ({
   onRequestClose,
   onOpen,
   onClose,
-  showCloseButton,
+  showCloseIcon,
   children,
   cardProps,
   closeProps,
@@ -78,13 +78,13 @@ const Modal = ({
                 slideItem && (
                   <animated.div key={slideKey} style={slideStyle}>
                     <ConstrainedCard floating className="card" {...cardProps}>
-                      {showCloseButton && (
+                      {showCloseIcon && (
                         <Header className="header">
                           <Link
                             className="close"
                             rightIcon="wg-close-int"
                             onClick={onRequestClose}
-                            data-testid="modal-close-button"
+                            data-testid="modal-close-icon"
                             {...closeProps}
                           />
                         </Header>
@@ -107,7 +107,7 @@ Modal.defaultProps = {
   parentNode: document.body,
   shouldCloseOnOverlayClick: true,
   shouldCloseOnEsc: true,
-  showCloseButton: true,
+  showCloseIcon: true,
   verticalAlign: "flex-start",
 };
 Modal.propTypes = {
@@ -115,7 +115,7 @@ Modal.propTypes = {
   parentNode: PropTypes.instanceOf(HTMLElement),
   shouldCloseOnOverlayClick: PropTypes.bool,
   shouldCloseOnEsc: PropTypes.bool,
-  showCloseButton: PropTypes.bool,
+  showCloseIcon: PropTypes.bool,
   onRequestClose: PropTypes.func,
   onOpen: PropTypes.func,
   onClose: PropTypes.func,

@@ -9,7 +9,7 @@ const modalPropKeys = [...Object.keys(Modal.propTypes), "className"];
 
 const DialogModal = props => (
   <Modal
-    showCloseButton={false}
+    showCloseIcon={false}
     {...pick(props, modalPropKeys)}
     cardProps={{ width: "560px", padding: "32px 56px", ...props.cardProps }}
   >

@@ -66,13 +66,13 @@ This code will render:
 
   > Whether `onRequestClose` should be called or not when the ESC key is pressed.
 
-- **showCloseButton** (_Boolean_) = `true`
+- **showCloseIcon** (_Boolean_) = `true`
 
-  > Whether the close button should be visible or not.
+  > Whether the close icon should be visible or not.
 
 - **onRequestClose** (_Function_)
 
-  > Function to call when the overlay or close button are clicked, or the ESC key is pressed.  
+  > Function to call when the overlay or close icon are clicked, or the ESC key is pressed.  
   > It passes either a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent) or a [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) depending on the action.
 
 - **onOpen** (_Function_)
@@ -89,13 +89,13 @@ This code will render:
 
 - **closeProps** (_Object_)
 
-  > Props to be passed to the [Link](https://www.npmjs.com/package/@crave/farmblocks-link) component used for the close button.
+  > Props to be passed to the [Link](https://www.npmjs.com/package/@crave/farmblocks-link) component used for the close icon.
 
 ## Helpers
 
 ### useModal
 
-The Modal component is stateless. So the visibility is controlled exclusively by the `isOpen` prop, and the close actions (close button, overlay click and ESC key) won't change it automatically.
+The Modal component is stateless. So the visibility is controlled exclusively by the `isOpen` prop, and the close actions (close icon, overlay click and ESC key) won't change it automatically.
 You need to create a function for `onRequestClose` that will handle the state and change the `isOpen` prop accordingly.
 
 The `useModal` hook helps to manage the state for the component. It will return 2 objects:

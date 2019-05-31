@@ -33,14 +33,14 @@ describe("Modal", () => {
       onRequestCloseSpy.mockReset();
     });
 
-    it("should trigger on close button click", () => {
+    it("should trigger on close icon click", () => {
       const { getByTestId } = render(
         <Modal onRequestClose={onRequestCloseSpy} isOpen />,
       );
 
       expect(onRequestCloseSpy).not.toHaveBeenCalled();
 
-      fireEvent.click(getByTestId("modal-close-button"));
+      fireEvent.click(getByTestId("modal-close-icon"));
       expect(onRequestCloseSpy).toHaveBeenCalledTimes(1);
     });
 
