@@ -30,6 +30,7 @@ storiesOf("Link/Featured", module)
       Awesome Link
     </Link>
   ))
+  .add("icon only", () => <Link href="#" leftIcon="wg-place" />)
   .add("external, mini size", () => (
     <Link href="#" size={fontSizes.SMALL} external lineHeight={1.14}>
       Awesome Link

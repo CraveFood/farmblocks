@@ -1,3 +1,4 @@
+import ReactDOM from "react-dom";
 import initStoryshots, {
   multiSnapshotWithOptions,
 } from "@storybook/addon-storyshots";
@@ -8,6 +9,8 @@ import { addSerializer } from "jest-specific-snapshot";
 // see https://github.com/storybooks/storybook/issues/887#issuecomment-356577444
 // and https://github.com/storybooks/storybook/issues/887#issuecomment-357073807
 addSerializer(styleSheetSerializer);
+
+jest.spyOn(ReactDOM, "createPortal").mockImplementation(node => node);
 
 initStoryshots({
   framework: "react",

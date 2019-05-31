@@ -518,6 +518,68 @@ exports[`Storyshots Link/Featured external, white color 1`] = `
 </div>
 `;
 
+exports[`Storyshots Link/Featured icon only 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c0 i.margin-left {
+  margin-left: 8px;
+}
+
+.c0 i.margin-right {
+  margin-right: 8px;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 > a {
+  color: inherit;
+}
+
+.c0:hover {
+  color: #2980b9;
+}
+
+<div
+  className="c0"
+  disabled={false}
+  size={16}
+  type="#3498db"
+>
+  <a
+    href="#"
+  >
+    <i
+      className="wg-place margin-right }"
+    />
+  </a>
+</div>
+`;
+
 exports[`Storyshots Link/Featured link with onClick function 1`] = `
 .c0 {
   font-family: Lato,sans-serif;
