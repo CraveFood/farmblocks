@@ -106,4 +106,12 @@ storiesOf("EmptyState", module)
       description={twoLinesDescription}
       info={twoLinesDescription}
     />
+  ))
+  .add("With loading action", () => (
+    <EmptyState
+      icon="wg-alert"
+      title="Empty State Title"
+      description={twoLinesDescription}
+      actions={[{ ...primaryAction, loading: true }]}
+    />
   ));
