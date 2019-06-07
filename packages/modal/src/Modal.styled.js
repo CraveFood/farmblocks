@@ -24,6 +24,11 @@ export const Overlay = styled.div`
   background: ${colors.GREY_32};
 `;
 
+export const CardWrapper = styled(animated.div)`
+  max-width: 100%;
+  max-height: 100%;
+`;
+
 export const ConstrainedCard = styled(Card)`
   max-height: 100%;
   max-width: 100%;

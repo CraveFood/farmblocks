@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-import { useTransition, animated } from "react-spring";
+import { useTransition } from "react-spring";
 import Link from "@crave/farmblocks-link";
 
 import {
   Wrapper,
   Overlay,
+  CardWrapper,
   ConstrainedCard,
   ContentWrapper,
   Header,
@@ -57,7 +58,7 @@ const Modal = ({
     unique: true,
   });
   const slide = useTransition(isOpen, null, {
-    from: { transform: "translate3D(0, 50px, 0)", maxHeight: "100%" },
+    from: { transform: "translate3D(0, 50px, 0)" },
     enter: { transform: "translate3D(0, 0px, 0)" },
     leave: { transform: "translate3D(0, -100px, 0)" },
     unique: true,
@@ -76,7 +77,7 @@ const Modal = ({
             {slide.map(
               ({ item: slideItem, key: slideKey, props: slideStyle }) =>
                 slideItem && (
-                  <animated.div key={slideKey} style={slideStyle}>
+                  <CardWrapper key={slideKey} style={slideStyle}>
                     <ConstrainedCard floating className="card" {...cardProps}>
                       {showCloseIcon && (
                         <Header className="header">
@@ -93,7 +94,7 @@ const Modal = ({
                         {children}
                       </ContentWrapper>
                     </ConstrainedCard>
-                  </animated.div>
+                  </CardWrapper>
                 ),
             )}
           </Wrapper>
