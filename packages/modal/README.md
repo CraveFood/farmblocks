@@ -122,6 +122,16 @@ const Example = () => {
 };
 ```
 
+Optionally, it can receive an options object:
+
+```js
+const [props, actions] = useModal({ openAtMount: true });
+```
+
+- **openAtMount** (_Boolean_) = `false`
+
+  > The initial state for the `isOpen` prop.
+
 ### ModalManager
 
 A class component version of `useModal`. It expects a function as the `children` prop and passes the hook results as arguments.

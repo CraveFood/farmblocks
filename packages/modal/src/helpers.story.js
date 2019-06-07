@@ -49,6 +49,18 @@ storiesOf("Modal/helpers", module)
     };
     return <Example />;
   })
+  .add("useModal open at mount", () => {
+    const Example = () => {
+      const [modalProps, { open }] = useModal({ openAtMount: true });
+      return (
+        <div>
+          <button onClick={open}>Open modal</button>
+          <Modal {...modalProps}>This modal starts open.</Modal>
+        </div>
+      );
+    };
+    return <Example />;
+  })
   .add("ModalManager", () => (
     <div>
       <ModalManager>
@@ -81,6 +93,18 @@ storiesOf("Modal/helpers", module)
               <hr />
               <button onClick={close}>close</button>
             </Modal>
+          </>
+        )}
+      </ModalManager>
+    </div>
+  ))
+  .add("ModalManager open at mount", () => (
+    <div>
+      <ModalManager openAtMount>
+        {(props, { open }) => (
+          <>
+            <button onClick={open}>Open modal</button>
+            <Modal {...props}>This modal starts open.</Modal>
           </>
         )}
       </ModalManager>
