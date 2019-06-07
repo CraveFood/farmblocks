@@ -15,6 +15,205 @@ exports[`Storyshots Modal/helpers ModalManager 1`] = `
 </div>
 `;
 
+exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
+.c6 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c6 i.margin-left {
+  margin-left: 8px;
+}
+
+.c6 i.margin-right {
+  margin-right: 8px;
+}
+
+.c6 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 > a {
+  color: inherit;
+}
+
+.c6:hover {
+  color: #2980b9;
+}
+
+.c4 {
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.c0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.32);
+}
+
+.c2 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.c3 {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.c5 .close {
+  font-size: 32px;
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 .close:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+    style={
+      Object {
+        "justifyContent": "flex-start",
+        "opacity": 0,
+        "position": "fixed",
+        "zIndex": 1500,
+      }
+    }
+  >
+    <div
+      className="overlay c1"
+      data-testid="modal-overlay"
+      onClick={[Function]}
+    />
+    <div
+      className="c2"
+      style={
+        Object {
+          "transform": "translate3D(0, -50px, 0)",
+        }
+      }
+    >
+      <div
+        className="card c3 c4"
+        overflow="visible"
+        width="100%"
+      >
+        <div
+          className="header c5"
+        >
+          <div
+            className="close c6"
+            disabled={false}
+            size={16}
+            type="#3498db"
+          >
+            <span
+              data-testid="modal-close-icon"
+              onClick={[Function]}
+            >
+              <i
+                className="wg-close-int margin-left }"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          className="content c7"
+        >
+          This modal starts open.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Modal/helpers Scroll lock 1`] = `
 .c0 {
   height: 9000px;
@@ -77,5 +276,204 @@ exports[`Storyshots Modal/helpers useModal 1`] = `
   >
     Open 2nd
   </button>
+</div>
+`;
+
+exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
+.c6 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c6 i.margin-left {
+  margin-left: 8px;
+}
+
+.c6 i.margin-right {
+  margin-right: 8px;
+}
+
+.c6 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6 > a {
+  color: inherit;
+}
+
+.c6:hover {
+  color: #2980b9;
+}
+
+.c4 {
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.c0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.32);
+}
+
+.c2 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.c3 {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.c5 .close {
+  font-size: 32px;
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 .close:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Open modal
+  </button>
+  <div
+    className="c0"
+    style={
+      Object {
+        "justifyContent": "flex-start",
+        "opacity": 0,
+        "position": "fixed",
+        "zIndex": 1500,
+      }
+    }
+  >
+    <div
+      className="overlay c1"
+      data-testid="modal-overlay"
+      onClick={[Function]}
+    />
+    <div
+      className="c2"
+      style={
+        Object {
+          "transform": "translate3D(0, -50px, 0)",
+        }
+      }
+    >
+      <div
+        className="card c3 c4"
+        overflow="visible"
+        width="100%"
+      >
+        <div
+          className="header c5"
+        >
+          <div
+            className="close c6"
+            disabled={false}
+            size={16}
+            type="#3498db"
+          >
+            <span
+              data-testid="modal-close-icon"
+              onClick={[Function]}
+            >
+              <i
+                className="wg-close-int margin-left }"
+              />
+            </span>
+          </div>
+        </div>
+        <div
+          className="content c7"
+        >
+          This modal starts open.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

@@ -52,7 +52,7 @@ exports[`Storyshots EmptyState Default 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -130,7 +130,7 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -217,7 +217,7 @@ exports[`Storyshots EmptyState With icon 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -317,7 +317,7 @@ exports[`Storyshots EmptyState With image 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -343,6 +343,236 @@ exports[`Storyshots EmptyState With image 1`] = `
     type="#59636f"
   >
     Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+</div>
+`;
+
+exports[`Storyshots EmptyState With loading action 1`] = `
+.c3 {
+  position: relative;
+  display: inline-block;
+}
+
+.c3 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c4 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c4:focus {
+  box-shadow: none;
+}
+
+.c4:hover .icon,
+.c4:focus .icon {
+  color: white;
+}
+
+.c4 > .icon.left-icon i::before {
+  display: inline-block;
+  -webkit-animation: spin 1.1s infinite linear;
+  animation: spin 1.1s infinite linear;
+}
+
+.c4:hover {
+  background-color: #2980b9;
+}
+
+.c4:focus {
+  background-color: #2980b9;
+}
+
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: center;
+  font-weight: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > .thumbnail {
+  margin-bottom: 24px;
+}
+
+.c0 > .description,
+.c0 > .info {
+  margin-top: 16px;
+}
+
+.c0 > .buttons {
+  margin-top: 24px;
+}
+
+.c0 > .buttons > * {
+  margin: 0 8px;
+}
+
+.c0 > .icon {
+  font-size: 72px;
+  color: rgba(0,0,0,0.32);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="icon"
+  >
+    <i
+      className="wg-alert"
+    />
+  </div>
+  <div
+    className="title c1"
+    size={24}
+    type="#2f313a"
+  >
+    Empty State Title
+  </div>
+  <div
+    className="description c2"
+    size={18}
+    type="#59636f"
+  >
+    Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
+  </div>
+  <div
+    className="buttons"
+  >
+    <div
+      className="c3"
+    >
+      <button
+        className="wrapped c4"
+        disabled={true}
+        onClick={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-loading"
+          />
+        </div>
+        Primary Action
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -524,7 +754,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -760,7 +990,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -993,7 +1223,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -1311,7 +1541,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   margin: 0 8px;
 }
 
-.c0 .icon {
+.c0 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
@@ -1437,7 +1667,7 @@ exports[`Storyshots EmptyState extended style 1`] = `
   margin: 0 8px;
 }
 
-.c1 .icon {
+.c1 > .icon {
   font-size: 72px;
   color: rgba(0,0,0,0.32);
 }
