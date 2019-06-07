@@ -28,6 +28,7 @@ const Modal = ({
   closeProps,
   className,
   verticalAlign,
+  zIndex,
 }) => {
   if (!parentNode) return null;
 
@@ -52,6 +53,7 @@ const Modal = ({
       position:
         parentNode === Modal.defaultProps.parentNode ? "fixed" : "absolute",
       justifyContent: verticalAlign,
+      zIndex,
     },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
@@ -110,6 +112,7 @@ Modal.defaultProps = {
   shouldCloseOnEsc: true,
   showCloseIcon: true,
   verticalAlign: "flex-start",
+  zIndex: 1500,
 };
 Modal.propTypes = {
   isOpen: PropTypes.bool,
@@ -125,6 +128,7 @@ Modal.propTypes = {
   closeProps: PropTypes.shape(Link.propTypes),
   className: PropTypes.string,
   verticalAlign: PropTypes.oneOf(["flex-start", "center", "flex-end"]),
+  zIndex: PropTypes.number,
 };
 
 export default Modal;

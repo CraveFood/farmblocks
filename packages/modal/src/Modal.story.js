@@ -77,4 +77,34 @@ storiesOf("Modal", module)
       );
     };
     return <Example />;
-  });
+  })
+  .add(
+    "With zIndex",
+    () => (
+      <>
+        <div style={{ width: 300, height: 100, background: "yellow" }}>
+          Behind
+        </div>
+        <Modal isOpen zIndex={2}>
+          <PreLine>{lipsum}</PreLine>
+        </Modal>
+        <div
+          style={{
+            zIndex: 3,
+            position: "fixed",
+            top: 0,
+            right: 0,
+            width: 300,
+            height: 100,
+            background: "yellow",
+          }}
+        >
+          Above
+        </div>
+      </>
+    ),
+    // The info addon wraps the content in a div with z-index: 0;
+    // This usually don't affect the stories but it's a problem
+    // for this one because the modal is rendered with a portal.
+    { info: { disable: true } },
+  );
