@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
+import { getScrollWidth } from "./utils";
+
 export const useESCKey = ({ condition, element, listener }) =>
   useEffect(() => {
     if (condition) {
@@ -19,12 +21,16 @@ export const useESCKey = ({ condition, element, listener }) =>
 export const useScrollLock = ({ condition, element }) =>
   useEffect(() => {
     if (condition) {
-      const originalOverflow = element.style?.overflow;
+      const originalStyle = element.style.cssText;
 
-      element.style.overflow = "hidden";
+      element.style.cssText = `
+        ${originalStyle}
+        overflow: hidden;
+        padding-right: ${getScrollWidth()}px;
+      `;
 
       return () => {
-        element.style.overflow = originalOverflow || "";
+        element.style.cssText = originalStyle;
       };
     }
   }, [condition]);

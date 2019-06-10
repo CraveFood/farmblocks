@@ -2,8 +2,16 @@ import React from "react";
 import { render, fireEvent } from "react-testing-library";
 
 import Modal from "./Modal";
+import { getScrollWidth } from "./utils";
+
+jest.mock("./utils");
 
 describe("Modal", () => {
+  afterEach(() => {
+    document.body.style.cssText = null;
+    getScrollWidth.mockReset();
+  });
+
   describe("render", () => {
     it("should render the content when isOpen", () => {
       const { rerender } = render(<Modal className="myModal" />);
@@ -132,10 +140,31 @@ describe("Modal", () => {
       unmount();
       expect(document.body.style.overflow).toEqual(originalOverflow);
     });
+
+    it("should add a padding to offset the scrollbar size while it gets hidden", () => {
+      getScrollWidth.mockReturnValueOnce(50);
+      expect(document.body.style.paddingRight).toEqual("");
+
+      render(<Modal className="myModal" isOpen />);
+      expect(document.body.style.paddingRight).toEqual("50px");
+    });
+
+    it("should roll back original padding on unmount", () => {
+      const originalPadding = "500vw";
+      document.body.style.paddingRight = originalPadding;
+
+      const { unmount } = render(<Modal className="myModal" isOpen />);
+      expect(document.body.style.paddingRight).not.toEqual(originalPadding);
+
+      unmount();
+      expect(document.body.style.paddingRight).toEqual(originalPadding);
+      document.body.style.paddingRight = null;
+    });
   });
 
   describe("onOpen/onClose", () => {
-    let onOpenSpy, onCloseSpy;
+    let onOpenSpy;
+    let onCloseSpy;
     beforeEach(() => {
       onOpenSpy = jest.fn();
       onCloseSpy = jest.fn();
