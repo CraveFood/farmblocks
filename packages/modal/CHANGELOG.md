@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@0.2.0...@crave/farmblocks-modal@0.3.0) (2019-06-11)
+
+
+### Bug Fixes
+
+* **modal:** scroll lock causing document.body resize when scrollbar gets hidden ([2bc3c7e](https://github.com/CraveFood/farmblocks/commit/2bc3c7e))
+
+
+### Features
+
+* **modal:** add 'openAtMount' option to 'useModal' helper ([736fd12](https://github.com/CraveFood/farmblocks/commit/736fd12))
+* **modal:** add zIndex prop ([486db71](https://github.com/CraveFood/farmblocks/commit/486db71))
+* **modal:** set max-width ([d26ca7a](https://github.com/CraveFood/farmblocks/commit/d26ca7a))
+* **modal:** swap transition direction ([d3f4a11](https://github.com/CraveFood/farmblocks/commit/d3f4a11))
+
+
+
+
+
 # 0.2.0 (2019-05-31)
 
 

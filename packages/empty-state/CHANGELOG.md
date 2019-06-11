@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.3.0...@crave/farmblocks-empty-state@3.3.1) (2019-06-11)
+
+
+### Bug Fixes
+
+* **empty-state:** icon style affecting buttons icons ([d53354d](https://github.com/CraveFood/farmblocks/commit/d53354d))
+
+
+
+
+
 # [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.2.4...@crave/farmblocks-empty-state@3.3.0) (2019-04-25)
 
 
