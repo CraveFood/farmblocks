@@ -23,7 +23,7 @@ const Container = styled.div`
     }
   }
 
-  .icon {
+  > .icon {
     font-size: 72px;
     color: ${fontTypes.SUBTLE};
   }

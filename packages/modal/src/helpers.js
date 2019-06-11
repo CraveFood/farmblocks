@@ -1,8 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-export const useModal = () => {
-  const [isOpen, setOpen] = useState(false);
+export const useModal = ({ openAtMount = false } = {}) => {
+  const [isOpen, setOpen] = useState(openAtMount);
   const actions = {
     open: () => setOpen(true),
     close: () => setOpen(false),
@@ -13,7 +13,8 @@ export const useModal = () => {
   return [props, actions];
 };
 
-export const ModalManager = ({ children }) => children(...useModal()) || null;
+export const ModalManager = ({ children, ...options }) =>
+  children(...useModal(options)) || null;
 
 ModalManager.propTypes = {
   children: PropTypes.func.isRequired,

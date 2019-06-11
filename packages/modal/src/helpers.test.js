@@ -6,7 +6,9 @@ import { useModal, ModalManager } from "./helpers";
 
 describe("Modal helpers", () => {
   describe("useModal", () => {
-    let result, props, actions;
+    let result;
+    let props;
+    let actions;
     beforeEach(() => {
       ({ result } = renderHook(() => useModal()));
       [props, actions] = result.current;
@@ -25,6 +27,13 @@ describe("Modal helpers", () => {
       expect(actions.close).toBeInstanceOf(Function);
       expect(actions).toHaveProperty("toggle");
       expect(actions.toggle).toBeInstanceOf(Function);
+    });
+
+    it("should receive the initial state of isOpen", () => {
+      ({ result } = renderHook(() => useModal({ openAtMount: true })));
+      [props] = result.current;
+
+      expect(props).toHaveProperty("isOpen", true);
     });
 
     describe("actions", () => {
@@ -111,8 +120,15 @@ describe("Modal helpers", () => {
   });
 
   describe("ModalManager", () => {
+    let childrenSpy;
+    beforeEach(() => {
+      childrenSpy = jest.fn();
+    });
+    afterEach(() => {
+      childrenSpy.mockReset();
+    });
+
     it("should pass to children the results of useModal", () => {
-      const childrenSpy = jest.fn();
       render(<ModalManager>{childrenSpy}</ModalManager>);
       const result = childrenSpy.mock.calls[0];
 
@@ -127,6 +143,13 @@ describe("Modal helpers", () => {
           toggle: expect.any(Function),
         },
       ]);
+    });
+
+    it("should pass the props as options to useModal", () => {
+      render(<ModalManager openAtMount>{childrenSpy}</ModalManager>);
+      const [modalProps] = childrenSpy.mock.calls[0];
+
+      expect(modalProps).toHaveProperty("isOpen", true);
     });
   });
 });

@@ -91,6 +91,10 @@ This code will render:
 
   > Props to be passed to the [Link](https://www.npmjs.com/package/@crave/farmblocks-link) component used for the close icon.
 
+- **zIndex** (_Number_) = `1500`
+
+  > Value for the `z-index` [CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index).
+
 ## Helpers
 
 ### useModal
@@ -121,6 +125,16 @@ const Example = () => {
   );
 };
 ```
+
+Optionally, it can receive an options object:
+
+```js
+const [props, actions] = useModal({ openAtMount: true });
+```
+
+- **openAtMount** (_Boolean_) = `false`
+
+  > The initial state for the `isOpen` prop.
 
 ### ModalManager
 
