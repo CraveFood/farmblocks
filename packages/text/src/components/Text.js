@@ -20,6 +20,7 @@ Text.propTypes = {
   title: PropTypes.bool,
   letterSpacing: PropTypes.string,
   light: PropTypes.bool,
+  truncate: PropTypes.bool,
 };
 
 Text.defaultProps = {
