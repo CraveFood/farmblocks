@@ -38,6 +38,13 @@ const TextContainer = styled.div`
   }};
 
   letter-spacing: ${props => props.letterSpacing};
+
+  ${({ truncate }) =>
+    truncate &&
+    ` white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      `};
 `;
 
 TextContainer.displayName = "TextContainer";
