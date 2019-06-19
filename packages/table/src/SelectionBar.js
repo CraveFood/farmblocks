@@ -18,7 +18,7 @@ const SelectionBar = props => {
   return (
     <StyledBar className={className} height={height}>
       <div className="title">
-        <Text className="text" title size={fontSizes.LARGE}>
+        <Text className="text" fontWeight="title" size={fontSizes.LARGE}>
           {title(selectedRows.length)}
         </Text>
       </div>

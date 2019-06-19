@@ -65,7 +65,7 @@ class Radio extends React.Component {
           <div className="checkedIndicator" />
         </div>
         {label && (
-          <Text title type={fontColor} size={fontSizes.MEDIUM}>
+          <Text fontWeight="title" type={fontColor} size={fontSizes.MEDIUM}>
             {label}
           </Text>
         )}

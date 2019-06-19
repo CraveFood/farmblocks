@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 import {
   configure,
   addDecorator,
@@ -179,11 +179,18 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const theme = {
+  fontWeights: {
+    title: 600,
+    light: 300,
+  },
+};
+
 function withGlobalStyle(storyFn) {
   return (
     <React.Fragment>
       <GlobalStyle />
-      {storyFn()}
+      <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
     </React.Fragment>
   );
 }

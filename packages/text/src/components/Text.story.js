@@ -47,6 +47,7 @@ storiesOf("Text/Default", module)
   .add("custom letter-spacing", () => (
     <Text letterSpacing="3px">Awesome Text</Text>
   ))
+  .add("uppercase", () => <Text upper>Awesome Text</Text>)
   .add("font weight theme light", () => (
     <Text fontWeight="light">Awesome Text</Text>
   ))
