@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { fontWeights } from "@crave/farmblocks-theme";
 
 import paragraphLineHeights from "../constants/paragraphLineHeights";
 
@@ -25,19 +24,12 @@ const TextContainer = styled.div`
   ${paragraphStyle};
 
   line-height: ${props => props.lineHeight};
-  font-weight: ${props => {
-    if (props.isTitle) {
-      return fontWeights.SEMIBOLD;
-    }
-
-    if (props.light) {
-      return fontWeights.LIGHT;
-    }
-
-    return "inherit";
-  }};
+  font-weight: ${({ theme, fontWeight }) =>
+    theme?.fontWeights?.[fontWeight] || fontWeight};
 
   letter-spacing: ${props => props.letterSpacing};
+
+  ${({ upper }) => upper && "text-transform: uppercase"}
 
   ${({ truncate }) =>
     truncate &&

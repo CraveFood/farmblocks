@@ -4,11 +4,7 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Container from "../styledComponents/Text";
 
-const Text = ({ children, title, ...props }) => (
-  <Container isTitle={title} {...props}>
-    {children}
-  </Container>
-);
+const Text = props => <Container {...props} />;
 
 Text.propTypes = {
   children: PropTypes.node,
@@ -16,11 +12,11 @@ Text.propTypes = {
   type: PropTypes.string,
   align: PropTypes.oneOf(["left", "center", "right", "justify"]),
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  fontWeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   paragraph: PropTypes.bool,
-  title: PropTypes.bool,
   letterSpacing: PropTypes.string,
-  light: PropTypes.bool,
   truncate: PropTypes.bool,
+  upper: PropTypes.bool,
 };
 
 Text.defaultProps = {
@@ -28,7 +24,7 @@ Text.defaultProps = {
   type: fontTypes.NORMAL,
   align: "left",
   paragraph: false,
-  title: false,
+  fontWeight: "inherit",
 };
 
 export default Text;

@@ -47,7 +47,15 @@ storiesOf("Text/Default", module)
   .add("custom letter-spacing", () => (
     <Text letterSpacing="3px">Awesome Text</Text>
   ))
-  .add("default light", () => <Text light>Awesome Text</Text>)
+  .add("font weight theme light", () => (
+    <Text fontWeight="light">Awesome Text</Text>
+  ))
+  .add("font weight theme title", () => (
+    <Text fontWeight="title">Awesome Text</Text>
+  ))
+  .add("font weight out of theme", () => (
+    <Text fontWeight={800}>Awesome Text</Text>
+  ))
   .add("extended style", () => (
     <Text css="font-style: italic;">Awesome Text</Text>
   ));
