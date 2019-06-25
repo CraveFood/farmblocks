@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.3.3...@crave/farmblocks-text@3.4.0) (2019-06-25)
+
+
+### Features
+
+* **Text:** Add font weight and upper properties ([0edf6cf](https://github.com/CraveFood/farmblocks/commit/0edf6cf))
+* **Text:** Add truncate proptype ([4db0522](https://github.com/CraveFood/farmblocks/commit/4db0522))
+* **Text/fontWeight:** Apply new Text props ([3c69ac7](https://github.com/CraveFood/farmblocks/commit/3c69ac7))
+* **Text/story:** Add  new truncate property to Text story ([fb186b5](https://github.com/CraveFood/farmblocks/commit/fb186b5))
+* **Text/styled:** Add truncate style based on boolean prop ([7e0ca11](https://github.com/CraveFood/farmblocks/commit/7e0ca11))
+
+
+
+
+
 ## [3.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.3.2...@crave/farmblocks-text@3.3.3) (2019-04-25)
 
 **Note:** Version bump only for package @crave/farmblocks-text

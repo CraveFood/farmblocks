@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.3.0...@crave/farmblocks-input-radio@3.4.0) (2019-06-25)
+
+
+### Features
+
+* **Text/fontWeight:** Apply new Text props ([3c69ac7](https://github.com/CraveFood/farmblocks/commit/3c69ac7))
+
+
+
+
+
 # [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.2.2...@crave/farmblocks-input-radio@3.3.0) (2019-04-25)
 
 

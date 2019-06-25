@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@3.3.1...@crave/farmblocks-map-balloon@3.4.0) (2019-06-25)
+
+
+### Features
+
+* **Text/fontWeight:** Apply new Text props ([3c69ac7](https://github.com/CraveFood/farmblocks/commit/3c69ac7))
+
+
+
+
+
 ## [3.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@3.3.0...@crave/farmblocks-map-balloon@3.3.1) (2019-06-11)
 
 **Note:** Version bump only for package @crave/farmblocks-map-balloon
