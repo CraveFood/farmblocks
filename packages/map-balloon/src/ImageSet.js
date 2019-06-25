@@ -18,7 +18,12 @@ const ImageSet = ({ className, set, fontSize }) => {
     <PhotoBox className={className} image={image}>
       {name && (
         <Gradient className="gradient">
-          <Text className="text" title size={fontSize} type="white">
+          <Text
+            className="text"
+            fontWeight="title"
+            size={fontSize}
+            type="white"
+          >
             {name}
           </Text>
         </Gradient>

@@ -32,6 +32,11 @@ storiesOf("Text/Default", module)
       <Text type={fontTypes.WHITE}>Awesome Text</Text>
     </div>
   ))
+  .add("with string truncate", () => (
+    <div style={{ width: "200px" }}>
+      <Text truncate>TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO BIG</Text>
+    </div>
+  ))
   .add("custom line height", () => (
     <div style={{ height: 100, backgroundColor: "lightblue" }}>
       <Text lineHeight="100px" type={fontTypes.SUBTLE}>
@@ -42,25 +47,16 @@ storiesOf("Text/Default", module)
   .add("custom letter-spacing", () => (
     <Text letterSpacing="3px">Awesome Text</Text>
   ))
-  .add("default light", () => <Text light>Awesome Text</Text>)
-  .add("empty text, filled after 3 seconds", () => {
-    class TextSoon extends React.Component {
-      state = {};
-
-      componentDidMount() {
-        window.setTimeout(
-          () => this.setState({ text: "Translated text" }),
-          3000,
-        );
-      }
-
-      render() {
-        const { text } = this.state;
-        return text ? <Text>{text}</Text> : <Text />;
-      }
-    }
-    return <TextSoon />;
-  })
+  .add("uppercase", () => <Text upper>Awesome Text</Text>)
+  .add("font weight theme light", () => (
+    <Text fontWeight="light">Awesome Text</Text>
+  ))
+  .add("font weight theme title", () => (
+    <Text fontWeight="title">Awesome Text</Text>
+  ))
+  .add("font weight out of theme", () => (
+    <Text fontWeight={800}>Awesome Text</Text>
+  ))
   .add("extended style", () => (
     <Text css="font-style: italic;">Awesome Text</Text>
   ));

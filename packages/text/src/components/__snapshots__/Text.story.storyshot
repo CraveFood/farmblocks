@@ -13,6 +13,7 @@ exports[`Storyshots Text/Default FEATURED type 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#3498db"
 >
@@ -33,6 +34,7 @@ exports[`Storyshots Text/Default HUGE size 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={24}
   type="#2f313a"
 >
@@ -53,6 +55,7 @@ exports[`Storyshots Text/Default LARGE size 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#2f313a"
 >
@@ -73,6 +76,7 @@ exports[`Storyshots Text/Default MEDIUM size 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={16}
   type="#2f313a"
 >
@@ -93,6 +97,7 @@ exports[`Storyshots Text/Default NEGATIVE type 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#dd3311"
 >
@@ -113,6 +118,7 @@ exports[`Storyshots Text/Default NEUTRAL type 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#59636f"
 >
@@ -133,6 +139,7 @@ exports[`Storyshots Text/Default POSITIVE type 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#2ecc71"
 >
@@ -153,6 +160,7 @@ exports[`Storyshots Text/Default SMALL size 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={14}
   type="#2f313a"
 >
@@ -173,6 +181,7 @@ exports[`Storyshots Text/Default SUBTLE type 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="rgba(0, 0, 0, 0.32)"
 >
@@ -200,6 +209,7 @@ exports[`Storyshots Text/Default WHITE type 1`] = `
 >
   <div
     className="c0"
+    fontWeight="inherit"
     size={18}
     type="white"
   >
@@ -221,6 +231,7 @@ exports[`Storyshots Text/Default X_LARGE size 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={20}
   type="#2f313a"
 >
@@ -241,6 +252,7 @@ exports[`Storyshots Text/Default centered 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#2f313a"
 >
@@ -265,6 +277,7 @@ exports[`Storyshots Text/Default custom letter-spacing 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   letterSpacing="3px"
   size={18}
   type="#2f313a"
@@ -295,6 +308,7 @@ exports[`Storyshots Text/Default custom line height 1`] = `
 >
   <div
     className="c0"
+    fontWeight="inherit"
     size={18}
     type="rgba(0, 0, 0, 0.32)"
   >
@@ -316,49 +330,12 @@ exports[`Storyshots Text/Default default - LARGE size, NORMAL type, left aligned
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#2f313a"
 >
   Awesome Text
 </div>
-`;
-
-exports[`Storyshots Text/Default default light 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 300;
-}
-
-<div
-  className="c0"
-  size={18}
-  type="#2f313a"
->
-  Awesome Text
-</div>
-`;
-
-exports[`Storyshots Text/Default empty text, filled after 3 seconds 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-<div
-  className="c0"
-  size={18}
-  type="#2f313a"
-/>
 `;
 
 exports[`Storyshots Text/Default extended style 1`] = `
@@ -378,6 +355,70 @@ exports[`Storyshots Text/Default extended style 1`] = `
 
 <div
   className="c0 c1"
+  fontWeight="inherit"
+  size={18}
+  type="#2f313a"
+>
+  Awesome Text
+</div>
+`;
+
+exports[`Storyshots Text/Default font weight out of theme 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 800;
+}
+
+<div
+  className="c0"
+  fontWeight={800}
+  size={18}
+  type="#2f313a"
+>
+  Awesome Text
+</div>
+`;
+
+exports[`Storyshots Text/Default font weight theme light 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 300;
+}
+
+<div
+  className="c0"
+  fontWeight="light"
+  size={18}
+  type="#2f313a"
+>
+  Awesome Text
+</div>
+`;
+
+exports[`Storyshots Text/Default font weight theme title 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+<div
+  className="c0"
+  fontWeight="title"
   size={18}
   type="#2f313a"
 >
@@ -398,6 +439,7 @@ exports[`Storyshots Text/Default justified 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#2f313a"
 >
@@ -418,9 +460,64 @@ exports[`Storyshots Text/Default right aligned 1`] = `
 
 <div
   className="c0"
+  fontWeight="inherit"
   size={18}
   type="#2f313a"
 >
   Awesome Text
+</div>
+`;
+
+exports[`Storyshots Text/Default uppercase 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+<div
+  className="c0"
+  fontWeight="inherit"
+  size={18}
+  type="#2f313a"
+>
+  Awesome Text
+</div>
+`;
+
+exports[`Storyshots Text/Default with string truncate 1`] = `
+.c0 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<div
+  style={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  <div
+    className="c0"
+    fontWeight="inherit"
+    size={18}
+    type="#2f313a"
+  >
+    TOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO BIG
+  </div>
 </div>
 `;

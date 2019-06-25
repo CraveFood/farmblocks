@@ -27,8 +27,8 @@ storiesOf("Table/Basic", module)
   ))
   .add("Light column", () => (
     <Table data={fruits}>
-      <Column title="Fruit" text={row => row.name} light />
-      <Column title="Price" text={row => row.price} light />
+      <Column title="Fruit" text={row => row.name} fontWeight="light" />
+      <Column title="Price" text={row => row.price} fontWeight="light" />
     </Table>
   ))
   .add("Empty column", () => (
@@ -309,7 +309,7 @@ const InfoCell = props => (
     <Image src={props.imageSrc} />
     <div style={{ marginLeft: 8 }}>
       <div style={{ marginBottom: 8 }}>
-        <Text title size={fontSizes.MEDIUM}>
+        <Text fontWeight="title" size={fontSizes.MEDIUM}>
           {props.title}
         </Text>
       </div>

@@ -37,7 +37,7 @@ const FormWrapper = props => {
   return (
     <div className={props.className} id={id}>
       <Header className="header">
-        <Text title size={fontSizes.MEDIUM} className="title">
+        <Text fontWeight="title" size={fontSizes.MEDIUM} className="title">
           {title}
         </Text>
         <Link
