@@ -32,7 +32,7 @@ export default class Stepper extends React.Component {
     const steps = this.props.steps.map((value, index) => {
       const status = this.getStatus(index, this.props.completedSteps - 1);
       return (
-        <Container className="stepContainer" key={index}>
+        <Container className="stepContainer" key={value}>
           <Step
             className={`step ${status.toLowerCase()}`}
             status={status}

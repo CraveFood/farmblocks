@@ -3,7 +3,7 @@ import EmptyState from "@crave/farmblocks-empty-state";
 import pick from "lodash.pick";
 import omit from "lodash.omit";
 
-import Modal from ".";
+import Modal from "./Modal";
 
 const modalPropKeys = [...Object.keys(Modal.propTypes), "className"];
 
