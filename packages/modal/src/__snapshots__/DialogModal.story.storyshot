@@ -117,7 +117,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c8 {
@@ -277,9 +277,8 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
           </div>
           <div
             className="title c7"
-            fontWeight="inherit"
+            fontWeight="title"
             size={24}
-            title={true}
             type="#2f313a"
           >
             Dialog Modal Title
@@ -300,6 +299,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
             >
               <button
                 className="wrapped c10"
+                data-testid="empty-state-button-Primary Action"
                 disabled={false}
                 onClick={[Function]}
                 onMouseLeave={[Function]}
@@ -518,7 +518,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c9 {
@@ -692,9 +692,8 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
           />
           <div
             className="title c8"
-            fontWeight="inherit"
+            fontWeight="title"
             size={24}
-            title={true}
             type="#2f313a"
           >
             Dialog Modal Title
@@ -715,6 +714,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
             >
               <button
                 className="wrapped c11"
+                data-testid="empty-state-button-Secondary Action"
                 disabled={false}
                 onClick={[Function]}
                 onMouseLeave={[Function]}
@@ -730,6 +730,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
             >
               <button
                 className="wrapped c12"
+                data-testid="empty-state-button-Primary Action"
                 disabled={false}
                 onClick={[Function]}
                 onMouseLeave={[Function]}
