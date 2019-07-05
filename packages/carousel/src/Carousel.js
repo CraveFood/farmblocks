@@ -94,7 +94,7 @@ class Carousel extends React.Component {
                   className="itemLabel"
                   size={configProps.fontSize}
                   align="center"
-                  title
+                  fontWeight="title"
                 >
                   {item.name}
                 </Text>

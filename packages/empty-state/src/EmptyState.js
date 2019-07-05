@@ -35,7 +35,7 @@ class EmptyState extends React.PureComponent {
     return (
       <Text
         className="title"
-        title
+        fontWeight="title"
         align="center"
         size={fontSizes.HUGE}
         type={fontTypes.NORMAL}

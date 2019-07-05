@@ -22,7 +22,6 @@ const labelColor = props => {
 
 const TextLabel = styled(Text)`
   order: 1;
-  text-transform: uppercase;
   margin-bottom: 8px;
   float: left;
 `;
@@ -43,10 +42,11 @@ const Label = ({
     <div className={className}>
       <TextLabel
         className="labelText"
-        title
+        fontWeight="title"
         size={fontSizes.SMALL}
         lineHeight="16px"
         letterSpacing="2px"
+        upper
         type={labelColor(props)}
       >
         {children}

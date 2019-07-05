@@ -91,7 +91,7 @@ const MapBalloon = ({
                 {caption}
                 {interactiveBalloon ? (
                   <Text
-                    title
+                    fontWeight="title"
                     type={fontTypes.SUBTLE}
                     size={captionSize}
                     className="text wg-small-arrow-right"

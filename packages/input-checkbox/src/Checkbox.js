@@ -69,7 +69,7 @@ const createCheckbox = ({ isSwitch }) =>
             {label && (
               <Text
                 className="label"
-                title={!isSwitch}
+                fontWeight={isSwitch ? "normal" : "title"}
                 type={fontColor}
                 size={fontSizes.MEDIUM}
               >

@@ -27,7 +27,7 @@ class MoreInfo extends Component {
     return (
       <StyledInfo {...this.props}>
         <Text
-          title
+          fontWeight="title"
           type={fontTypes.NEUTRAL}
           size={fontSizes.MEDIUM}
           className={`text ${this.state.tooltipVisible && "hovered"}`}
