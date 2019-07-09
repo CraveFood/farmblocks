@@ -22,14 +22,15 @@ export default class Button extends React.Component {
       text,
       children,
       noTooltip,
+      loading,
       ...buttonProps
     } = this.props;
 
     // @FIXME revisit font icon assets on farmblocks
-    const iconName = buttonProps.loading ? "wg-loading" : icon;
+    const iconName = loading ? "wg-loading" : icon;
 
-    const isDisabled = disabled || buttonProps.loading;
-    const showIcon = icon || buttonProps.loading;
+    const isDisabled = disabled || loading;
+    const showIcon = icon || loading;
     const marginOffset = text || children ? 10 : 0;
     const buttonContent = text || children;
     const isIconOnly = buttonContent === undefined;
@@ -40,6 +41,7 @@ export default class Button extends React.Component {
         isIconOnly={isIconOnly}
         displayBlock={buttonProps.fluid}
         noTooltip={!buttonProps.tooltipText}
+        isLoading={loading}
         {...buttonProps}
       >
         {showIcon && (

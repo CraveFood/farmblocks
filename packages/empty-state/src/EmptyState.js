@@ -35,7 +35,7 @@ class EmptyState extends React.PureComponent {
     return (
       <Text
         className="title"
-        title
+        fontWeight="title"
         align="center"
         size={fontSizes.HUGE}
         type={fontTypes.NORMAL}
@@ -83,9 +83,10 @@ class EmptyState extends React.PureComponent {
 
     return (
       <div className="buttons">
-        {actions.map((buttonProps, index) => (
+        {actions.map(buttonProps => (
           <Button
-            key={`empty-state-button-${index}`}
+            key={`empty-state-button-${buttonProps.text}`}
+            data-testid={`empty-state-button-${buttonProps.text}`}
             size={buttonSizes.MEDIUM}
             {...buttonProps}
           />

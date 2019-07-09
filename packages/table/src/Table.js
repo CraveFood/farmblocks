@@ -230,7 +230,7 @@ class Table extends React.Component {
       return headerCell(
         <Text
           className="text"
-          title
+          fontWeight="title"
           size={fontSizes.SMALL}
           align={columnProps.align}
         >
@@ -285,7 +285,12 @@ class Table extends React.Component {
       const type = props.fontType ? props.fontType : fontTypes.NORMAL;
 
       return bodyCell(
-        <Text className="text" title={!props.light} {...textProps} type={type}>
+        <Text
+          className="text"
+          fontWeight={props.light ? "normal" : "title"}
+          {...textProps}
+          type={type}
+        >
           {text}
         </Text>,
       );

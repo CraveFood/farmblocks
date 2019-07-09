@@ -9,7 +9,7 @@ const basicConfig = {
     // Ref.: https://github.com/facebook/jest/issues/5698
   ],
   setupFilesAfterEnv: [
-    "react-testing-library/cleanup-after-each",
+    "@testing-library/react/cleanup-after-each",
     "<rootDir>/jest.testFramework.js",
   ],
 };

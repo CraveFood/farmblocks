@@ -65,7 +65,7 @@ function typeStyle(props) {
 
 function loadingStyle(props) {
   return (
-    props.loading &&
+    props.isLoading &&
     css`
       > .icon.left-icon i::before {
         display: inline-block;

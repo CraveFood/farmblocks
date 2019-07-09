@@ -1,6 +1,6 @@
 import React from "react";
-import { render } from "react-testing-library";
-import { renderHook, act as hookAct } from "react-hooks-testing-library";
+import { render } from "@testing-library/react";
+import { renderHook, act as hookAct } from "@testing-library/react-hooks";
 
 import { useModal, ModalManager } from "./helpers";
 

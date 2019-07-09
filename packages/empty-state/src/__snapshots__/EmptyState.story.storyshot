@@ -8,7 +8,7 @@ exports[`Storyshots EmptyState Default 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c2 {
@@ -63,9 +63,8 @@ exports[`Storyshots EmptyState Default 1`] = `
   <noscript />
   <div
     className="title c1"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -89,7 +88,7 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c2 {
@@ -152,9 +151,8 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
     <noscript />
     <div
       className="title c1"
-      fontWeight="inherit"
+      fontWeight="title"
       size={24}
-      title={true}
       type="#2f313a"
     >
       Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
@@ -179,7 +177,7 @@ exports[`Storyshots EmptyState With icon 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c2 {
@@ -240,9 +238,8 @@ exports[`Storyshots EmptyState With icon 1`] = `
   </div>
   <div
     className="title c1"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -266,7 +263,7 @@ exports[`Storyshots EmptyState With image 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c3 {
@@ -341,9 +338,8 @@ exports[`Storyshots EmptyState With image 1`] = `
   />
   <div
     className="title c2"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -482,7 +478,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c2 {
@@ -543,9 +539,8 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   </div>
   <div
     className="title c1"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -566,6 +561,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
     >
       <button
         className="wrapped c4"
+        data-testid="empty-state-button-Primary Action"
         disabled={true}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -709,7 +705,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c3 {
@@ -784,9 +780,8 @@ exports[`Storyshots EmptyState With one action 1`] = `
   />
   <div
     className="title c2"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -807,6 +802,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
     >
       <button
         className="wrapped c5"
+        data-testid="empty-state-button-Primary Action"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -938,7 +934,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c3 {
@@ -1023,9 +1019,8 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   />
   <div
     className="title c2"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -1046,6 +1041,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
     >
       <button
         className="wrapped c5"
+        data-testid="empty-state-button-Primary Action"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1185,7 +1181,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c3 {
@@ -1268,9 +1264,8 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
     />
     <div
       className="title c2"
-      fontWeight="inherit"
+      fontWeight="title"
       size={24}
-      title={true}
       type="#2f313a"
     >
       Empty State Title
@@ -1291,6 +1286,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
       >
         <button
           className="wrapped c5"
+          data-testid="empty-state-button-Primary Action"
           disabled={false}
           onClick={[Function]}
           onMouseLeave={[Function]}
@@ -1506,7 +1502,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c3 {
@@ -1581,9 +1577,8 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   />
   <div
     className="title c2"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
@@ -1604,6 +1599,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
     >
       <button
         className="wrapped c5"
+        data-testid="empty-state-button-Secondary Action"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1619,6 +1615,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
     >
       <button
         className="wrapped c6"
+        data-testid="empty-state-button-Primary Action"
         disabled={false}
         onClick={[Function]}
         onMouseLeave={[Function]}
@@ -1641,7 +1638,7 @@ exports[`Storyshots EmptyState extended style 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: center;
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 .c3 {
@@ -1733,9 +1730,8 @@ exports[`Storyshots EmptyState extended style 1`] = `
   </div>
   <div
     className="title c2"
-    fontWeight="inherit"
+    fontWeight="title"
     size={24}
-    title={true}
     type="#2f313a"
   >
     Empty State Title
