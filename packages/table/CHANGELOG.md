@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.1.0...@crave/farmblocks-table@4.1.1) (2019-07-09)
+
+
+### Bug Fixes
+
+* use fontWeight instead of title property on Text ([e87f9da](https://github.com/CraveFood/farmblocks/commit/e87f9da))
+
+
+
+
+
 # [4.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.0.2...@crave/farmblocks-table@4.1.0) (2019-06-25)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.3.2...@crave/farmblocks-more-info@1.3.3) (2019-07-09)
+
+
+### Bug Fixes
+
+* use fontWeight instead of title property on Text ([e87f9da](https://github.com/CraveFood/farmblocks/commit/e87f9da))
+
+
+
+
+
 ## [1.3.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.3.1...@crave/farmblocks-more-info@1.3.2) (2019-06-25)
 
 **Note:** Version bump only for package @crave/farmblocks-more-info

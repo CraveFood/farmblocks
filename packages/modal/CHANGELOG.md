@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@0.3.1...@crave/farmblocks-modal@1.0.0) (2019-07-09)
+
+
+### Bug Fixes
+
+* **lint:** cycle dependency on modal and some array indexes used as key ([b5ecaf8](https://github.com/CraveFood/farmblocks/commit/b5ecaf8))
+
+
+### chore
+
+* **Modal:** move react-spring to peer dependencies ([c67f758](https://github.com/CraveFood/farmblocks/commit/c67f758))
+
+
+### BREAKING CHANGES
+
+* **Modal:** react-spring is not a direct dependency anymore
+
+
+
+
+
 ## [0.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@0.3.0...@crave/farmblocks-modal@0.3.1) (2019-06-25)
 
 **Note:** Version bump only for package @crave/farmblocks-modal

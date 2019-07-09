@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.3.0...@crave/farmblocks-stepper@2.3.1) (2019-07-09)
+
+
+### Bug Fixes
+
+* **lint:** cycle dependency on modal and some array indexes used as key ([b5ecaf8](https://github.com/CraveFood/farmblocks/commit/b5ecaf8))
+
+
+
+
+
 # [2.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.2.2...@crave/farmblocks-stepper@2.3.0) (2019-04-25)
 
 
