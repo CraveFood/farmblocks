@@ -12,6 +12,9 @@ const basicConfig = {
     "@testing-library/react/cleanup-after-each",
     "<rootDir>/jest.testFramework.js",
   ],
+  moduleNameMapper: {
+    "\\.(css|jpg|png)$": "<rootDir>/empty-module.js",
+  },
 };
 
 const completeConfig = {
