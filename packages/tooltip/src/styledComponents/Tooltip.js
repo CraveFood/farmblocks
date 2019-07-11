@@ -21,37 +21,54 @@ const alignX = coordinate => ({ align }) => {
   `;
 };
 
-const arrow = ({ hideArrow }) => {
-  return (
-    !hideArrow &&
-    css`
-      &:after,
-      &:before {
-        border: solid 1px rgba(0, 0, 0, 0.16);
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-      }
+const positionStyle = ({ position, offset }) => {
+  if (position === "bottom") {
+    return css`
+      top: ${offset};
+    `;
+  }
 
-      &:before {
-        bottom: 100%;
-        border-color: transparent;
-        border-bottom-color: rgba(0, 0, 0, 0.16);
-        border-width: 8px;
-        ${alignX("7px")};
-      }
+  if (position === "top") {
+    return css`
+      bottom: ${offset};
+    `;
+  }
 
-      &:after {
-        bottom: calc(100% - 1px);
-        border-color: transparent;
-        border-bottom-color: #ffffff;
-        border-width: 7px;
-        ${alignX("8px")};
-      }
-    `
-  );
+  return css`
+    top: ${offset};
+  `;
+};
+
+const arrow = ({ hideArrow, position }) => {
+  if (hideArrow) return css``;
+
+  return css`
+    &:after,
+    &:before {
+      border: solid 1px rgba(0, 0, 0, 0.16);
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:before {
+      ${position}: 100%;
+      border-color: transparent;
+      border-${position}-color: rgba(0, 0, 0, 0.16);
+      border-width: 8px;
+      ${alignX("7px")};
+    }
+
+    &:after {
+      ${position}: calc(100% - 1px);
+      border-color: transparent;
+      border-${position}-color: #ffffff;
+      border-width: 7px;
+      ${alignX("8px")};
+    }
+  `;
 };
 
 const StyledTooltip = styled.div`
@@ -59,7 +76,6 @@ const StyledTooltip = styled.div`
 
   position: absolute;
   z-index: ${props => props.zIndex};
-  top: ${props => props.top};
   padding: ${props => props.padding || "8px"};
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
@@ -73,6 +89,7 @@ const StyledTooltip = styled.div`
   ${alignX(0)};
 
   ${arrow};
+  ${positionStyle};
 
   overflow: ${props => props.overflow};
 `;

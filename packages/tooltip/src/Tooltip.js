@@ -4,6 +4,7 @@ import values from "object.values";
 
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
+import position from "./constants/position";
 
 export const getAutoAlign = (tooltipRef, bondariesSelector) => {
   if (tooltipRef) {
@@ -61,11 +62,12 @@ Tooltip.propTypes = {
   children: PropTypes.node,
   isVisible: PropTypes.bool,
   align: PropTypes.oneOf(values(alignments)),
+  position: PropTypes.oneOf(values(position)),
   zIndex: PropTypes.number,
   bondariesSelector: PropTypes.string,
   hideArrow: PropTypes.bool,
   padding: PropTypes.string,
-  top: PropTypes.string,
+  offset: PropTypes.string,
   overflow: PropTypes.string,
 };
 
@@ -73,7 +75,8 @@ Tooltip.defaultProps = {
   isVisible: true,
   align: alignments.LEFT,
   zIndex: 1000,
-  top: "15px",
+  offset: "15px",
+  position: position.BOTTOM,
 };
 
 export default Tooltip;

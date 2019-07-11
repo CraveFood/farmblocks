@@ -5,53 +5,67 @@ import Card from "@crave/farmblocks-card";
 
 import Tooltip, { alignments } from ".";
 
+// eslint-disable-next-line react/prop-types
+const Container = ({ children, style }) => (
+  <div
+    style={{
+      position: "relative",
+      width: "250px",
+      border: "3px solid",
+      ...style,
+    }}
+  >
+    {children}
+  </div>
+);
+
 storiesOf("Tooltip", module)
   .add("isVisible true - left aligned", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip isVisible text="This is a left aligned tooltip" />
-    </div>
+    </Container>
   ))
   .add("isVisible true - right aligned", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip
         isVisible
         text="This is a right aligned tooltip"
         align={alignments.RIGHT}
       />
-    </div>
+    </Container>
   ))
   .add("isVisible true - center aligned", () => (
-    <div style={{ position: "relative", width: "350px", border: "1px solid" }}>
+    <Container>
       <Tooltip
         isVisible
         text="This is a center aligned tooltip"
         align={alignments.CENTER}
       />
-    </div>
+    </Container>
   ))
   .add("isVisible true - hideArrow", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip isVisible hideArrow>
         This is a left aligned tooltip without arrow
       </Tooltip>
-    </div>
+    </Container>
   ))
   .add("isVisible false", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px" }}>
+    <Container>
       <Tooltip isVisible={false} text="Hey yo" />
-    </div>
+    </Container>
   ))
   .add("with card", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip isVisible>
         <Card>this is a Card</Card>
       </Tooltip>
-    </div>
+    </Container>
   ))
   .add("without content", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip />
-    </div>
+    </Container>
   ))
   .add("auto aligned", () => (
     <div
@@ -61,18 +75,18 @@ storiesOf("Tooltip", module)
         width: "100%",
       }}
     >
-      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
+      <Container style={{ width: "50px" }}>
         <Tooltip
           align={alignments.AUTO}
           text="This is an auto aligned tooltip"
         />
-      </div>
-      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
+      </Container>
+      <Container style={{ width: "50px" }}>
         <Tooltip
           align={alignments.AUTO}
           text="This is an auto aligned tooltip"
         />
-      </div>
+      </Container>
     </div>
   ))
   .add("auto aligned (with bondaries)", () => (
@@ -104,28 +118,28 @@ storiesOf("Tooltip", module)
     </div>
   ))
   .add("custom padding", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip
         isVisible
         text="Left aligned with custom padding"
         padding="30px"
       />
-    </div>
+    </Container>
   ))
-  .add("custom top", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible text="Left aligned with custom top" top="30vh" />
-    </div>
+  .add("custom offset", () => (
+    <Container>
+      <Tooltip isVisible text="Left aligned with custom top" offset="30vh" />
+    </Container>
   ))
   .add("with content overflow hidden", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip isVisible padding="0" overflow="hidden">
         <div style={{ background: "aliceblue" }}>It should not overflow</div>
       </Tooltip>
-    </div>
+    </Container>
   ))
   .add("extended style", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
+    <Container>
       <Tooltip
         css="
           text-decoration-line: underline overline;
@@ -133,5 +147,68 @@ storiesOf("Tooltip", module)
         isVisible
         text="This is a left aligned tooltip"
       />
-    </div>
-  ));
+    </Container>
+  ))
+  .add("Top positioned", () => {
+    const marginStyle = {
+      margin: "40px",
+    };
+    return (
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
+        <div style={{ display: "flex" }}>
+          <Container style={marginStyle}>
+            <Tooltip isVisible text="Top left aligned" position="top" />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top center aligned"
+              position="top"
+              align={alignments.CENTER}
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top right aligned"
+              position="top"
+              align={alignments.RIGHT}
+            />
+          </Container>
+        </div>
+
+        <div style={{ display: "flex" }}>
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top left aligned without arrow"
+              position="top"
+              hideArrow
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top center aligned without arrow"
+              position="top"
+              hideArrow
+              align={alignments.CENTER}
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top right aligned without arrow"
+              position="top"
+              hideArrow
+              align={alignments.RIGHT}
+            />
+          </Container>
+        </div>
+      </div>
+    );
+  });
