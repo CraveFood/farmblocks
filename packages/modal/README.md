@@ -41,7 +41,7 @@ render(<App />, document.getElementById("root"));
 
 This code will render:
 
-![Modal example](https://user-images.githubusercontent.com/1459283/58510879-07482680-8170-11e9-9e20-c788f151f914.png)
+![Modal example](https://user-images.githubusercontent.com/32174637/61081330-4e773780-a3fd-11e9-8ccc-de4b3be6c437.png)
 
 ## API
 
@@ -66,9 +66,9 @@ This code will render:
 
   > Whether `onRequestClose` should be called or not when the ESC key is pressed.
 
-- **showCloseIcon** (_Boolean_) = `true`
+- **showCloseButton** (_Boolean_) = `true`
 
-  > Whether the close icon should be visible or not.
+  > Whether the close button should be visible or not.
 
 - **onRequestClose** (_Function_)
 
@@ -87,13 +87,29 @@ This code will render:
 
   > Props to be passed to the [Card](https://www.npmjs.com/package/@crave/farmblocks-card) component that wraps the modal.
 
-- **closeProps** (_Object_)
+- **closeButtonProps** (_Object_)
 
-  > Props to be passed to the [Link](https://www.npmjs.com/package/@crave/farmblocks-link) component used for the close icon.
+  > Props to be passed to the [Button](https://www.npmjs.com/package/@crave/farmblocks-button) component used for the close button.
 
 - **zIndex** (_Number_) = `1500`
 
   > Value for the `z-index` [CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index).
+
+- **header** (_Node_)
+
+  > Node for the header section, if **showCloseButton** is _true_ will add an offset space in case of header is not provided
+
+- **headerProps** (_Object_)
+
+  > Properties passed to the header section
+
+- **footer** (_Node_)
+
+  > Node for the footer section
+
+- **footerProps** (_Object_)
+
+  > Properties passed to the footer section
 
 ## Helpers
 
@@ -116,10 +132,8 @@ const Example = () => {
   return (
     <>
       <button onClick={open}>Open Modal</button>
-      <Modal {...myModalProps}>
+      <Modal footer={<button onClick={close}>Close</button>} {...myModalProps}>
         This is the a modal.
-        <hr />
-        <button onClick={close}>Close</button>
       </Modal>
     </>
   );
