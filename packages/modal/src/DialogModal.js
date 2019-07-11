@@ -9,9 +9,9 @@ const modalPropKeys = [...Object.keys(Modal.propTypes), "className"];
 
 const DialogModal = props => (
   <Modal
-    showCloseIcon={false}
+    showCloseButton={false}
     {...pick(props, modalPropKeys)}
-    cardProps={{ width: "560px", padding: "32px 56px", ...props.cardProps }}
+    cardProps={{ width: "560px", padding: "16px 40px", ...props.cardProps }}
   >
     <EmptyState className="empty-state" {...omit(props, modalPropKeys)} />
   </Modal>
