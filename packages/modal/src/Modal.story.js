@@ -1,13 +1,20 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
+import Button, { buttonTypes } from "@crave/farmblocks-button";
 import { action } from "@storybook/addon-actions";
 
 import Modal from ".";
 import lipsum from "./lipsum";
 
-const PreLine = styled.p`
+const PreLine = styled.span`
   white-space: pre-line;
+`;
+
+const Header = styled.div`
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Lucida Console", Monaco, monospace;
 `;
 
 storiesOf("Modal", module)
@@ -17,12 +24,22 @@ storiesOf("Modal", module)
       onOpen={action("onOpen")}
       onRequestClose={action("onRequestClose")}
     >
-      <p>Hello</p>
+      Default
     </Modal>
   ))
   .add("Center aligned", () => (
     <Modal isOpen verticalAlign="center">
-      <p>Hello</p>
+      Center aligned
+    </Modal>
+  ))
+  .add("With header", () => (
+    <Modal isOpen header={<strong>Hello</strong>}>
+      With header
+    </Modal>
+  ))
+  .add("Without close button", () => (
+    <Modal isOpen showCloseButton={false}>
+      Hello
     </Modal>
   ))
   .add("Extensive Content", () => (
@@ -35,8 +52,49 @@ storiesOf("Modal", module)
       <PreLine>{lipsum}</PreLine>
     </Modal>
   ))
-  .add("With custom close icon", () => (
-    <Modal isOpen closeProps={{ rightIcon: "wg-close" }}>
+  .add("With cardProps and header", () => {
+    return (
+      <Modal
+        isOpen
+        header={<Header>HEADER</Header>}
+        cardProps={{ width: "400px", floating: false }}
+      >
+        <PreLine>{lipsum}</PreLine>
+      </Modal>
+    );
+  })
+  .add("With cardProps, header and footer", () => {
+    return (
+      <Modal
+        isOpen
+        header={<Header>HEADER</Header>}
+        footer={
+          <div
+            style={{
+              width: "100%",
+              justifyContent: "flex-end",
+              display: "flex",
+            }}
+          >
+            <Button text="Action Button" type={buttonTypes.PRIMARY} />
+          </div>
+        }
+        cardProps={{ width: "400px", floating: false }}
+      >
+        <PreLine>{lipsum}</PreLine>
+      </Modal>
+    );
+  })
+  .add("With custom close button props", () => (
+    <Modal
+      isOpen
+      closeButtonProps={{ icon: "wg-close-int", type: buttonTypes.NEGATIVE }}
+    >
+      Hello
+    </Modal>
+  ))
+  .add("With custom header props", () => (
+    <Modal isOpen headerProps={{ style: { background: "black" } }}>
       Hello
     </Modal>
   ))
