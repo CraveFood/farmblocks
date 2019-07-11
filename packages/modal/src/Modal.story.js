@@ -33,13 +33,39 @@ storiesOf("Modal", module)
     </Modal>
   ))
   .add("With header", () => (
-    <Modal isOpen header={<strong>Hello</strong>}>
-      With header
+    <Modal isOpen header="Header as a node string">
+      Content
     </Modal>
   ))
-  .add("Without close button", () => (
+  .add("With ModalTitle header", () => (
+    <Modal isOpen header={<ModalTitle>Header with ModalTitle</ModalTitle>}>
+      Content
+    </Modal>
+  ))
+  .add("With ModalTitle header and without close button", () => (
+    <Modal
+      isOpen
+      showCloseButton={false}
+      header={<ModalTitle>Header with ModalTitle</ModalTitle>}
+    >
+      Content
+    </Modal>
+  ))
+  .add("With footer", () => (
+    <Modal
+      isOpen
+      footer={
+        <div style={{ width: "100%" }}>
+          <Button fluid text="Action Button" type={buttonTypes.PRIMARY} />
+        </div>
+      }
+    >
+      With footer
+    </Modal>
+  ))
+  .add("Without close button and without header", () => (
     <Modal isOpen showCloseButton={false}>
-      Hello
+      Content
     </Modal>
   ))
   .add("Extensive Content", () => (
@@ -52,7 +78,7 @@ storiesOf("Modal", module)
       <PreLine>{lipsum}</PreLine>
     </Modal>
   ))
-  .add("With cardProps and header", () => {
+  .add("With cardProps and custom header", () => {
     return (
       <Modal
         isOpen
@@ -67,7 +93,7 @@ storiesOf("Modal", module)
     return (
       <Modal
         isOpen
-        header={<Header>HEADER</Header>}
+        header={<ModalTitle>HEADER</ModalTitle>}
         footer={
           <div
             style={{
@@ -90,12 +116,19 @@ storiesOf("Modal", module)
       isOpen
       closeButtonProps={{ icon: "wg-close-int", type: buttonTypes.NEGATIVE }}
     >
-      Hello
+      Content
     </Modal>
   ))
-  .add("With custom header props", () => (
-    <Modal isOpen headerProps={{ style: { background: "black" } }}>
-      Hello
+  .add("With custom header style", () => (
+    <Modal
+      isOpen
+      css={`
+        .header {
+          background: black;
+        }
+      `}
+    >
+      Content
     </Modal>
   ))
   .add("With custom parentNode", () => {
@@ -119,7 +152,7 @@ storiesOf("Modal", module)
             isOpen={isOpen}
             onRequestClose={() => setIsOpen(false)}
           >
-            Hello.
+            Content
           </Modal>
 
           {/*
