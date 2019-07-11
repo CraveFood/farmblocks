@@ -20,36 +20,127 @@ const Container = ({ children, style }) => (
 );
 
 storiesOf("Tooltip", module)
-  .add("isVisible true - left aligned", () => (
-    <Container>
-      <Tooltip isVisible text="This is a left aligned tooltip" />
-    </Container>
-  ))
-  .add("isVisible true - right aligned", () => (
-    <Container>
-      <Tooltip
-        isVisible
-        text="This is a right aligned tooltip"
-        align={alignments.RIGHT}
-      />
-    </Container>
-  ))
-  .add("isVisible true - center aligned", () => (
-    <Container>
-      <Tooltip
-        isVisible
-        text="This is a center aligned tooltip"
-        align={alignments.CENTER}
-      />
-    </Container>
-  ))
-  .add("isVisible true - hideArrow", () => (
-    <Container>
-      <Tooltip isVisible hideArrow>
-        This is a left aligned tooltip without arrow
-      </Tooltip>
-    </Container>
-  ))
+  .add("Bottom positioned", () => {
+    const marginStyle = {
+      margin: "40px",
+    };
+    return (
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
+        <div style={{ display: "flex" }}>
+          <Container style={marginStyle}>
+            <Tooltip isVisible text="Bottom left aligned" />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Bottom center aligned"
+              align={alignments.CENTER}
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Bottom right aligned"
+              align={alignments.RIGHT}
+            />
+          </Container>
+        </div>
+
+        <div style={{ display: "flex" }}>
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Bottom left aligned without arrow"
+              hideArrow
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Bottom center aligned without arrow"
+              hideArrow
+              align={alignments.CENTER}
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Bottom right aligned without arrow"
+              hideArrow
+              align={alignments.RIGHT}
+            />
+          </Container>
+        </div>
+      </div>
+    );
+  })
+  .add("Top positioned", () => {
+    const marginStyle = {
+      margin: "40px",
+    };
+    return (
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
+        <div style={{ display: "flex" }}>
+          <Container style={marginStyle}>
+            <Tooltip isVisible text="Top left aligned" position="top" />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top center aligned"
+              position="top"
+              align={alignments.CENTER}
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top right aligned"
+              position="top"
+              align={alignments.RIGHT}
+            />
+          </Container>
+        </div>
+
+        <div style={{ display: "flex" }}>
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top left aligned without arrow"
+              position="top"
+              hideArrow
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top center aligned without arrow"
+              position="top"
+              hideArrow
+              align={alignments.CENTER}
+            />
+          </Container>
+
+          <Container style={marginStyle}>
+            <Tooltip
+              isVisible
+              text="Top right aligned without arrow"
+              position="top"
+              hideArrow
+              align={alignments.RIGHT}
+            />
+          </Container>
+        </div>
+      </div>
+    );
+  })
   .add("isVisible false", () => (
     <Container>
       <Tooltip isVisible={false} text="Hey yo" />
@@ -148,67 +239,4 @@ storiesOf("Tooltip", module)
         text="This is a left aligned tooltip"
       />
     </Container>
-  ))
-  .add("Top positioned", () => {
-    const marginStyle = {
-      margin: "40px",
-    };
-    return (
-      <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
-        <div style={{ display: "flex" }}>
-          <Container style={marginStyle}>
-            <Tooltip isVisible text="Top left aligned" position="top" />
-          </Container>
-
-          <Container style={marginStyle}>
-            <Tooltip
-              isVisible
-              text="Top center aligned"
-              position="top"
-              align={alignments.CENTER}
-            />
-          </Container>
-
-          <Container style={marginStyle}>
-            <Tooltip
-              isVisible
-              text="Top right aligned"
-              position="top"
-              align={alignments.RIGHT}
-            />
-          </Container>
-        </div>
-
-        <div style={{ display: "flex" }}>
-          <Container style={marginStyle}>
-            <Tooltip
-              isVisible
-              text="Top left aligned without arrow"
-              position="top"
-              hideArrow
-            />
-          </Container>
-
-          <Container style={marginStyle}>
-            <Tooltip
-              isVisible
-              text="Top center aligned without arrow"
-              position="top"
-              hideArrow
-              align={alignments.CENTER}
-            />
-          </Container>
-
-          <Container style={marginStyle}>
-            <Tooltip
-              isVisible
-              text="Top right aligned without arrow"
-              position="top"
-              hideArrow
-              align={alignments.RIGHT}
-            />
-          </Container>
-        </div>
-      </div>
-    );
-  });
+  ));
