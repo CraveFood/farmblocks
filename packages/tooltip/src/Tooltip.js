@@ -1,83 +1,46 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import values from "object.values";
 
 import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
 import positions from "./constants/positions";
+import useAutoAlign from "./useAutoAlign";
 
-export const getAutoAlign = (tooltipRef, boundariesSelector) => {
-  const alignedData = {
-    align: alignments.LEFT,
-    position: positions.BOTTOM,
-  };
-  if (tooltipRef) {
-    const { right, y } = tooltipRef.getBoundingClientRect();
+const Tooltip = ({
+  children,
+  text,
+  align: originalAlign,
+  position: originalPosition,
+  boundariesSelector,
+  ...props
+}) => {
+  const content = children || text;
 
-    const boundariesNode =
-      boundariesSelector && tooltipRef.closest(boundariesSelector);
+  const tooltipRef = useRef(null);
 
-    const maxRight =
-      (boundariesNode && boundariesNode.getBoundingClientRect().right) ||
-      window.innerWidth;
+  const { align, position } = useAutoAlign({
+    originalAlign,
+    originalPosition,
+    boundariesSelector,
+    tooltipRef,
+  });
 
-    const maxHeight =
-      (boundariesNode && boundariesNode.getBoundingClientRect().y) ||
-      window.innerHeight;
-
-    if (right >= maxRight) alignedData.align = alignments.RIGHT;
-    if (y >= maxHeight) alignedData.position = positions.TOP;
-
-    return alignedData;
-  }
-  return alignedData;
+  return (
+    <Container {...props}>
+      {content && (
+        <StyledTooltip
+          {...props}
+          align={align}
+          position={position}
+          ref={tooltipRef}
+        >
+          {content}
+        </StyledTooltip>
+      )}
+    </Container>
+  );
 };
-
-class Tooltip extends React.Component {
-  state = {
-    align: this.props.align,
-  };
-
-  componentDidMount = () => {
-    const {
-      align: originalAlign,
-      position: originalPosition,
-      boundariesSelector,
-    } = this.props;
-
-    const alignedData = getAutoAlign(this.tooltipRef, boundariesSelector);
-    const align =
-      originalAlign === alignments.AUTO ? alignedData.align : originalAlign;
-
-    const position =
-      originalPosition === positions.AUTO
-        ? alignedData.position
-        : originalPosition;
-
-    this.setState({ align, position });
-  };
-
-  render() {
-    const content = this.props.children || this.props.text;
-
-    return (
-      <Container {...this.props}>
-        {content && (
-          <StyledTooltip
-            {...this.props}
-            align={this.state.align}
-            position={this.state.position}
-            ref={element => {
-              this.tooltipRef = element;
-            }}
-          >
-            {content}
-          </StyledTooltip>
-        )}
-      </Container>
-    );
-  }
-}
 
 Tooltip.propTypes = {
   text: PropTypes.string,
