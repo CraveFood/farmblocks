@@ -6,7 +6,7 @@ import { Container, StyledTooltip } from "./styledComponents/Tooltip";
 import alignments from "./constants/alignments";
 import positions from "./constants/positions";
 
-export const getAutoAlign = (tooltipRef, bondariesSelector) => {
+export const getAutoAlign = (tooltipRef, boundariesSelector) => {
   const alignedData = {
     align: alignments.LEFT,
     position: positions.BOTTOM,
@@ -14,15 +14,15 @@ export const getAutoAlign = (tooltipRef, bondariesSelector) => {
   if (tooltipRef) {
     const { right, y } = tooltipRef.getBoundingClientRect();
 
-    const bondariesNode =
-      bondariesSelector && tooltipRef.closest(bondariesSelector);
+    const boundariesNode =
+      boundariesSelector && tooltipRef.closest(boundariesSelector);
 
     const maxRight =
-      (bondariesNode && bondariesNode.getBoundingClientRect().right) ||
+      (boundariesNode && boundariesNode.getBoundingClientRect().right) ||
       window.innerWidth;
 
     const maxHeight =
-      (bondariesNode && bondariesNode.getBoundingClientRect().y) ||
+      (boundariesNode && boundariesNode.getBoundingClientRect().y) ||
       window.innerHeight;
 
     if (right >= maxRight) alignedData.align = alignments.RIGHT;
@@ -42,10 +42,10 @@ class Tooltip extends React.Component {
     const {
       align: originalAlign,
       position: originalPosition,
-      bondariesSelector,
+      boundariesSelector,
     } = this.props;
 
-    const alignedData = getAutoAlign(this.tooltipRef, bondariesSelector);
+    const alignedData = getAutoAlign(this.tooltipRef, boundariesSelector);
     const align =
       originalAlign === alignments.AUTO ? alignedData.align : originalAlign;
 
@@ -86,7 +86,7 @@ Tooltip.propTypes = {
   align: PropTypes.oneOf(values(alignments)),
   position: PropTypes.oneOf(values(positions)),
   zIndex: PropTypes.number,
-  bondariesSelector: PropTypes.string,
+  boundariesSelector: PropTypes.string,
   hideArrow: PropTypes.bool,
   padding: PropTypes.string,
   offset: PropTypes.string,

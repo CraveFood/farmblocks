@@ -219,7 +219,7 @@ storiesOf("Tooltip", module)
             <Tooltip
               align={alignments.AUTO}
               text="Auto aligned tooltip"
-              bondariesSelector=".exampleContainer"
+              boundariesSelector=".exampleContainer"
             />
           </Container>
 
@@ -227,7 +227,7 @@ storiesOf("Tooltip", module)
             <Tooltip
               align={alignments.AUTO}
               text="Auto aligned tooltip"
-              bondariesSelector=".exampleContainer"
+              boundariesSelector=".exampleContainer"
             />
           </Container>
         </BoundaryContainer>
@@ -241,7 +241,7 @@ storiesOf("Tooltip", module)
               align={alignments.AUTO}
               position={positions.AUTO}
               text="Auto aligned/positioned tooltip"
-              bondariesSelector=".exampleContainer"
+              boundariesSelector=".exampleContainer"
             />
           </Container>
 
@@ -250,7 +250,7 @@ storiesOf("Tooltip", module)
               align={alignments.AUTO}
               position={positions.AUTO}
               text="Auto aligned/positioned tooltip"
-              bondariesSelector=".exampleContainer"
+              boundariesSelector=".exampleContainer"
             />
           </Container>
         </BoundaryContainer>
