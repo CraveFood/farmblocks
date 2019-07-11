@@ -16,49 +16,119 @@ exports[`Storyshots Modal/helpers ModalManager 1`] = `
 `;
 
 exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
-.c6 {
-  font-family: Lato,sans-serif;
-  display: inline-block;
+.c7 {
   position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
   font-size: 16px;
+  font-family: lato,sans-serif;
   font-weight: 600;
-  line-height: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
   cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 8px;
+}
+
+.c8 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:hover,
+.c8:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c6 i.margin-left {
-  margin-left: 8px;
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
 }
 
-.c6 i.margin-right {
-  margin-right: 8px;
-}
-
-.c6 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 a:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6 a:hover i {
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 > a {
-  color: inherit;
-}
-
-.c6:hover {
-  color: #2980b9;
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
 }
 
 .c4 {
@@ -66,7 +136,7 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 16px;
+  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
@@ -118,14 +188,21 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  border: none;
+  overflow: hidden;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  padding: 16px;
+}
+
+.c6 {
+  overflow: auto;
 }
 
 .c5 {
@@ -133,20 +210,13 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-bottom: 16px;
+  padding: 16px;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
 }
 
-.c5 .close {
-  font-size: 32px;
-  color: rgba(0,0,0,0.16);
-}
-
-.c5 .close:hover {
-  color: rgba(0,0,0,0.32);
+.c5 .closeButton {
+  margin-left: auto;
+  padding-left: 16px;
 }
 
 <div>
@@ -187,24 +257,39 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
         <div
           className="header c5"
         >
+          <header
+            className="c6"
+          />
           <div
-            className="close c6"
-            disabled={false}
-            size={16}
-            type="#3498db"
+            className="closeButton c7"
           >
-            <span
+            <button
+              className="wrapped c8"
               data-testid="modal-close-icon"
+              disabled={false}
               onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="NEUTRAL"
             >
-              <i
-                className="wg-close-int margin-left }"
-              />
-            </span>
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 0,
+                  }
+                }
+              >
+                <i
+                  className="wg-close"
+                />
+              </div>
+            </button>
           </div>
         </div>
         <div
-          className="content c7"
+          className="content c9"
         >
           This modal starts open.
         </div>
@@ -280,49 +365,119 @@ exports[`Storyshots Modal/helpers useModal 1`] = `
 `;
 
 exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
-.c6 {
-  font-family: Lato,sans-serif;
-  display: inline-block;
+.c7 {
   position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
   font-size: 16px;
+  font-family: lato,sans-serif;
   font-weight: 600;
-  line-height: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
   cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 8px;
+}
+
+.c8 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:hover,
+.c8:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c6 i.margin-left {
-  margin-left: 8px;
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
 }
 
-.c6 i.margin-right {
-  margin-right: 8px;
-}
-
-.c6 a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 a:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6 a:hover i {
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 > a {
-  color: inherit;
-}
-
-.c6:hover {
-  color: #2980b9;
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
 }
 
 .c4 {
@@ -330,7 +485,7 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 16px;
+  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
@@ -382,14 +537,21 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  border: none;
+  overflow: hidden;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  padding: 16px;
+}
+
+.c6 {
+  overflow: auto;
 }
 
 .c5 {
@@ -397,20 +559,13 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-bottom: 16px;
+  padding: 16px;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
 }
 
-.c5 .close {
-  font-size: 32px;
-  color: rgba(0,0,0,0.16);
-}
-
-.c5 .close:hover {
-  color: rgba(0,0,0,0.32);
+.c5 .closeButton {
+  margin-left: auto;
+  padding-left: 16px;
 }
 
 <div>
@@ -451,24 +606,39 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
         <div
           className="header c5"
         >
+          <header
+            className="c6"
+          />
           <div
-            className="close c6"
-            disabled={false}
-            size={16}
-            type="#3498db"
+            className="closeButton c7"
           >
-            <span
+            <button
+              className="wrapped c8"
               data-testid="modal-close-icon"
+              disabled={false}
               onClick={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              size="SMALL"
+              type="NEUTRAL"
             >
-              <i
-                className="wg-close-int margin-left }"
-              />
-            </span>
+              <div
+                className="icon left-icon"
+                style={
+                  Object {
+                    "marginRight": 0,
+                  }
+                }
+              >
+                <i
+                  className="wg-close"
+                />
+              </div>
+            </button>
           </div>
         </div>
         <div
-          className="content c7"
+          className="content c9"
         >
           This modal starts open.
         </div>
