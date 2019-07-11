@@ -32,6 +32,8 @@ const Modal = ({
   zIndex,
   header,
   headerProps,
+  footer,
+  footerProps,
 }) => {
   if (!parentNode) return null;
 
@@ -86,7 +88,7 @@ const Modal = ({
                     <ConstrainedCard
                       floating
                       className="card"
-                      padding={0}
+                      padding="0"
                       {...cardProps}
                     >
                       {(header || showCloseButton) && (
@@ -108,6 +110,11 @@ const Modal = ({
                       <ContentWrapper className="content">
                         {children}
                       </ContentWrapper>
+                      {footer && (
+                        <Section className="footer" {...footerProps}>
+                          {footer}
+                        </Section>
+                      )}
                     </ConstrainedCard>
                   </CardWrapper>
                 ),
@@ -126,7 +133,6 @@ Modal.defaultProps = {
   showCloseButton: true,
   verticalAlign: "flex-start",
   zIndex: 1500,
-  showHeader: true,
 };
 Modal.propTypes = {
   isOpen: PropTypes.bool,
@@ -140,6 +146,8 @@ Modal.propTypes = {
   children: PropTypes.node,
   header: PropTypes.node,
   headerProps: PropTypes.object,
+  footer: PropTypes.node,
+  footerProps: PropTypes.object,
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
   closeButtonProps: PropTypes.shape(Button.propTypes),
   className: PropTypes.string,
