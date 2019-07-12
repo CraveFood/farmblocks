@@ -1,59 +1,64 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import buttonTypes from "./constants/buttonTypes";
 import buttonSizes from "./constants/buttonSizes";
 
 import Button from "./index";
 
-storiesOf("Button", module)
-  .add("Default", () => (
-    <Button onClick={action("buttonClicked")} text="Label" />
-  ))
-  .add("Primary", () => (
+const Container = styled.div`
+  display: flex;
+  > * {
+    margin-right: 16px;
+  }
+
+  .section {
+    > * {
+      margin-top: 16px;
+    }
+  }
+`;
+
+const getStories = props => (
+  <div className="section">
+    <Button onClick={action("buttonClicked")} text="Default" {...props} />
     <Button
       type={buttonTypes.PRIMARY}
       onClick={action("buttonClicked")}
-      text="Label"
+      text="Primary"
+      {...props}
     />
-  ))
-  .add("Neutral", () => (
     <Button
       type={buttonTypes.NEUTRAL}
       onClick={action("buttonClicked")}
-      text="Neutral Button"
+      text="Neutral"
+      {...props}
     />
-  ))
-  .add("Secondary", () => (
     <Button
       type={buttonTypes.SECONDARY}
       onClick={action("buttonClicked")}
-      text="Secondary Button"
+      text="Secondary"
+      {...props}
     />
-  ))
-  .add("Negative", () => (
     <Button
       type={buttonTypes.NEGATIVE}
       onClick={action("buttonClicked")}
-      text="Label"
+      text="Negative"
+      {...props}
     />
-  ))
-  .add("Closed", () => (
     <Button
       type={buttonTypes.CLOSED}
       onClick={action("buttonClicked")}
-      text="Closed Button"
+      text="Closed"
+      {...props}
     />
-  ))
-  .add("Positive", () => (
     <Button
       type={buttonTypes.POSITIVE}
       onClick={action("buttonClicked")}
-      text="Positive Button"
+      text="Positive"
+      {...props}
     />
-  ))
-  .add("Off Neutral Button", () => (
     <div
       style={{
         backgroundColor: "rgba(0,0,0,0.32)",
@@ -64,123 +69,40 @@ storiesOf("Button", module)
       <Button
         type={buttonTypes.OFF_NEUTRAL}
         onClick={action("buttonClicked")}
-        text="Label"
+        text="Off neutral"
+        {...props}
       />
     </div>
+    <Button loading text="loading" {...props} />
+    <Button disabled text="Disabled" {...props} />
+  </div>
+);
+
+storiesOf("Button", module)
+  .add("Small", () => (
+    <Container>
+      {getStories({})}
+      {getStories({ icon: "wg-order" })}
+      {getStories({ icon: "wg-order", rightIcon: "wg-small-arrow-bottom" })}
+      {getStories({ rightIcon: "wg-small-arrow-bottom" })}
+      {getStories({ text: "", icon: "wg-order" })}
+    </Container>
   ))
-  .add("Off Neutral Button Loading", () => (
-    <div
-      style={{
-        backgroundColor: "rgba(0,0,0,0.32)",
-        padding: "10px",
-        display: "inline-block",
-      }}
-    >
-      <Button
-        type={buttonTypes.OFF_NEUTRAL}
-        onClick={action("buttonClicked")}
-        text="Label"
-        loading
-      />
-    </div>
-  ))
-  .add("Default medium", () => (
-    <Button
-      size={buttonSizes.MEDIUM}
-      onClick={action("buttonClicked")}
-      text="Label"
-    />
-  ))
-  .add("Default with Icon", () => (
-    <Button
-      onClick={action("buttonClicked")}
-      icon="wg-order"
-      text="Send Order"
-    />
-  ))
-  .add("Default with Right Icon", () => (
-    <Button
-      onClick={action("buttonClicked")}
-      rightIcon="wg-small-arrow-bottom"
-      text="Send Order"
-    />
-  ))
-  .add("Neutral with Icon", () => (
-    <Button
-      type={buttonTypes.NEUTRAL}
-      onClick={action("buttonClicked")}
-      icon="wg-order"
-      text="Label"
-    />
-  ))
-  .add("Neutral with Righ  Icon", () => (
-    <Button
-      type={buttonTypes.NEUTRAL}
-      onClick={action("buttonClicked")}
-      rightIcon="wg-small-arrow-bottom"
-      text="Label"
-    />
-  ))
-  .add("Disabled", () => (
-    <Button disabled onClick={action("buttonClicked")} text="Disabled Buton" />
-  ))
-  .add("Disabled with tooltip", () => (
-    <Button
-      disabled
-      onClick={action("buttonClicked")}
-      tooltipText="This button is disabled."
-      text="Disabled Buton"
-    />
-  ))
-  .add("Saving Status", () => (
-    <Button onClick={action("buttonClicked")} text="Saving…" loading />
-  ))
-  .add("Icon only (neutral)", () => (
-    <Button
-      type={buttonTypes.NEUTRAL}
-      onClick={action("buttonClicked")}
-      icon="wg-edit"
-    />
-  ))
-  .add("Icon only (primary)", () => (
-    <Button
-      type={buttonTypes.PRIMARY}
-      onClick={action("buttonClicked")}
-      icon="wg-edit"
-    />
-  ))
-  .add("Icon only (disabled)", () => (
-    <Button
-      disabled
-      onClick={action("buttonClicked")}
-      icon="wg-edit"
-      tooltipText="This button is disabled."
-    />
-  ))
-  .add("Icon only (neutral medium)", () => (
-    <Button
-      type={buttonTypes.NEUTRAL}
-      size={buttonSizes.MEDIUM}
-      onClick={action("buttonClicked")}
-      icon="wg-edit"
-    />
-  ))
-  .add("Right Icon only (neutral)", () => (
-    <Button
-      type={buttonTypes.NEUTRAL}
-      onClick={action("buttonClicked")}
-      rightIcon="wg-small-arrow-bottom"
-    />
-  ))
-  .add("Children content with Icons", () => (
-    <Button
-      type={buttonTypes.NEUTRAL}
-      onClick={action("buttonClicked")}
-      icon="wg-small-arrow-bottom"
-      rightIcon="wg-small-arrow-bottom"
-    >
-      ,_____,
-    </Button>
+  .add("Medium", () => (
+    <Container>
+      {getStories({ size: buttonSizes.MEDIUM })}
+      {getStories({ size: buttonSizes.MEDIUM, icon: "wg-order" })}
+      {getStories({
+        size: buttonSizes.MEDIUM,
+        icon: "wg-order",
+        rightIcon: "wg-small-arrow-bottom",
+      })}
+      {getStories({
+        size: buttonSizes.MEDIUM,
+        rightIcon: "wg-small-arrow-bottom",
+      })}
+      {getStories({ size: buttonSizes.MEDIUM, text: "", icon: "wg-order" })}
+    </Container>
   ))
   .add("Secondary (fluid)", () => (
     <div style={{ width: 400, height: 400, background: "rgba(0, 0, 0, 0.32)" }}>
@@ -188,7 +110,7 @@ storiesOf("Button", module)
         type={buttonTypes.SECONDARY}
         fluid
         onClick={action("buttonClicked")}
-        text="Secondary Button"
+        text="Secondary"
       />
     </div>
   ))
@@ -268,9 +190,6 @@ storiesOf("Button", module)
     <Button fontSize="14px" fontWeight="normal" textColor="purple" activated>
       Custom text properties
     </Button>
-  ))
-  .add("Loading with left and right icons", () => (
-    <Button text="Label" rightIcon="wg-small-arrow-bottom" loading />
   ))
   .add("extended style", () => (
     <Button
