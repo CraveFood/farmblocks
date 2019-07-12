@@ -1,14 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import disabledTooltip, {
-  disabledTooltipProps,
-} from "@crave/farmblocks-hoc-disabled-tooltip";
 
 import buttonSizes from "./constants/buttonSizes";
 import buttonTypes from "./constants/buttonTypes";
 import StyledButton from "./styledComponents/Button";
-
-const EnhancedButton = disabledTooltip(StyledButton);
 
 // We need a class component here because some components are passing
 // ref to Button
@@ -21,7 +16,6 @@ export default class Button extends React.Component {
       rightIcon,
       text,
       children,
-      noTooltip,
       loading,
       ...buttonProps
     } = this.props;
@@ -36,11 +30,10 @@ export default class Button extends React.Component {
     const isIconOnly = buttonContent === undefined;
 
     return (
-      <EnhancedButton
+      <StyledButton
         disabled={isDisabled}
         isIconOnly={isIconOnly}
         displayBlock={buttonProps.fluid}
-        noTooltip={!buttonProps.tooltipText}
         isLoading={loading}
         {...buttonProps}
       >
@@ -55,7 +48,7 @@ export default class Button extends React.Component {
             <i className={rightIcon} />
           </div>
         )}
-      </EnhancedButton>
+      </StyledButton>
     );
   }
 
@@ -75,12 +68,12 @@ export default class Button extends React.Component {
     type: PropTypes.oneOf(Object.keys(buttonTypes)),
     fluid: PropTypes.bool,
     loading: PropTypes.bool,
+    disabled: PropTypes.bool,
     boxShadow: PropTypes.string,
     paddingX: PropTypes.string,
     fontSize: PropTypes.string,
     fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     textColor: PropTypes.string,
-    ...disabledTooltipProps,
     // ... and all properties accepted by the html button
   };
 }
