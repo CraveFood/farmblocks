@@ -8,6 +8,11 @@ import Button from "@crave/farmblocks-button";
 
 import StyledTable from "./styledComponents/Table";
 import { HeaderCell, BodyCell } from "./styledComponents/Cell";
+import {
+  ChildRow,
+  ChildCell,
+  IndentedChildCell,
+} from "./styledComponents/ChildRow";
 import { rowHeights } from "./constants";
 
 const CHECKBOX = "checkbox";
@@ -121,7 +126,11 @@ class Table extends React.Component {
   };
 
   renderRowGroup = (row, index) => {
-    const { rowGroupKey, flatGroupCondition } = this.props;
+    const {
+      rowGroupKey,
+      flatGroupCondition,
+      renderExtraChildRows,
+    } = this.props;
     const { [rowGroupKey]: childRows } = row;
     const shouldUngroup = !!(flatGroupCondition && flatGroupCondition(row));
     const rowKey = getRowKey(index, "");
@@ -137,6 +146,14 @@ class Table extends React.Component {
         {childRows.map((childRow, subindex) =>
           this.renderRow(childRow, index, subindex, false, shouldUngroup),
         )}
+
+        {renderExtraChildRows &&
+          renderExtraChildRows({
+            rowData: row,
+            ChildRow,
+            ChildCell,
+            IndentedChildCell,
+          })}
       </tbody>
     );
   };
@@ -428,6 +445,7 @@ Table.propTypes = {
   borderless: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
+  renderExtraChildRows: PropTypes.func,
 };
 
 Table.defaultProps = {
