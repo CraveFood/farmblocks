@@ -1,9 +1,8 @@
 import * as React from "react";
-import Tooltip, { alignments } from "@crave/farmblocks-tooltip";
+import Tooltip from "@crave/farmblocks-tooltip";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import values from "object.values";
 import { CSSTransition } from "react-transition-group";
 
 const Container = styled.div`
@@ -57,14 +56,8 @@ const withTooltip = WrappedComponent => {
         className,
         disableTooltip,
         tooltipContent,
-        tooltipAlign,
-        zIndex,
-        bondariesSelector,
-        hideArrow,
-        padding,
-        top,
-        overflow,
         displayBlock,
+        tooltipProps,
         ...wrappedComponentProps
       } = this.props;
 
@@ -84,16 +77,7 @@ const withTooltip = WrappedComponent => {
             timeout={100}
             classNames="appear"
           >
-            <Tooltip
-              className="tooltip"
-              align={tooltipAlign}
-              zIndex={zIndex}
-              bondariesSelector={bondariesSelector}
-              hideArrow={hideArrow}
-              padding={padding}
-              top={top}
-              overflow={overflow}
-            >
+            <Tooltip className="tooltip" {...tooltipProps}>
               {tooltipContent}
             </Tooltip>
           </CSSTransition>
@@ -106,13 +90,8 @@ const withTooltip = WrappedComponent => {
     static propTypes = {
       disableTooltip: PropTypes.bool,
       tooltipContent: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-      align: PropTypes.oneOf(values(alignments)),
-      zIndex: PropTypes.number,
-      bondariesSelector: PropTypes.string,
-      hideArrow: PropTypes.bool,
-      padding: PropTypes.string,
-      top: PropTypes.string,
-      overflow: PropTypes.string,
+      // eslint-disable-next-line react/forbid-prop-types
+      tooltipProps: PropTypes.object,
       onMouseLeave: PropTypes.func,
       onMouseOver: PropTypes.func,
       className: PropTypes.string,

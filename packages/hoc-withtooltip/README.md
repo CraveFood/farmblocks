@@ -30,19 +30,13 @@ render(<App />, document.getElementById('root'));
 
 ## API
 
-| Property          | Type                                                       | Default | Description                                                                                                                                                     |
-| ----------------- | ---------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| disableTooltip    | boolean                                                    | `false` | disables tooltip rendering                                                                                                                                      |
-| tooltipContent    | string or PropTypes.node                                   |         | content to be rendered inside the tooltip. If empty, the tooltip will not be rendered                                                                           |
-| align             | string, one of `"left"`, `"right"`, `"center"` or `"auto"` | `left`  | controls tooltip alignment                                                                                                                                      |
-| zIndex            | number                                                     | `1000`  | z-index value                                                                                                                                                   |
-| bondariesSelector | string                                                     |         | (only for `align="auto"`) A CSS selector for a container which will define the limits for the tooltip. If not defined, the limit will be the browser's viewport |
-| hideArrow         | boolean                                                    | `false` | controls arrow visibility                                                                                                                                       |
-| padding           | string                                                     | `8px`   | content padding                                                                                                                                                 |
-| top               | string                                                     | `15px`  | distance from the top of the container to the tip                                                                                                               |
-| overflow          | string                                                     |         | overrides the default overflow property.                                                                                                                        |
-| onMouseOver       | function                                                   |         | function to be run when the mouse enters the trigger component                                                                                                  |
-| onMouseLeave      | function                                                   |         | function to be run when the mouse leaves the trigger component                                                                                                  |
+| Property       | Type                     | Default | Description                                                                           |
+| -------------- | ------------------------ | ------- | ------------------------------------------------------------------------------------- |
+| disableTooltip | boolean                  | `false` | disables tooltip rendering                                                            |
+| tooltipContent | string or PropTypes.node |         | content to be rendered inside the tooltip. If empty, the tooltip will not be rendered |
+| tooltipProps   | object                   |         | props to be passed to Tooltip component                                               |
+| onMouseOver    | function                 |         | function to be run when the mouse enters the trigger component                        |
+| onMouseLeave   | function                 |         | function to be run when the mouse leaves the trigger component                        |
 
 ## License
 

@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Tag from "@crave/farmblocks-tags";
 import Card from "@crave/farmblocks-card";
+import { positions } from "@crave/farmblocks-tooltip";
 import Text from "@crave/farmblocks-text";
 
 import withTooltip from ".";
@@ -17,26 +18,32 @@ storiesOf("HOC withTooltip", module)
       tooltipContent={<Card>This is a Card </Card>}
     />
   ))
-
   .add("Tag, tooltip with text", () => (
     <TagWithTooltip
       text="This a tag with tooltip"
       tooltipContent="Tooltip custom text"
     />
   ))
-
   .add("Text, tooltip with text", () => (
     <TextWithTooltip tooltipContent="Tooltip custom text">
       Farmblocks-text
     </TextWithTooltip>
   ))
-
+  .add("Text, tooltip with text on top", () => (
+    <div style={{ marginTop: 60 }}>
+      <TextWithTooltip
+        tooltipContent="Tooltip custom text"
+        tooltipProps={{ position: positions.TOP }}
+      >
+        This a text with tooltip
+      </TextWithTooltip>
+    </div>
+  ))
   .add("Text, tooltip disabled", () => (
     <TextWithTooltip disableTooltip tooltipContent="Tooltip custom text">
       Farmblocks-text
     </TextWithTooltip>
   ))
-
   .add("extended style", () => (
     <TagWithTooltip
       css="
