@@ -2,6 +2,8 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import Card from "@crave/farmblocks-card";
+import Button, { buttonTypes } from "@crave/farmblocks-button";
+import Link from "@crave/farmblocks-link";
 
 import Tooltip, { alignments, positions } from ".";
 
@@ -26,54 +28,66 @@ storiesOf("Tooltip", module)
     };
     return (
       <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
-        <div style={{ display: "flex" }}>
-          <Container style={marginStyle}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={marginStyle}>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip isVisible text="Bottom left aligned" />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
               isVisible
               text="Bottom center aligned"
               align={alignments.CENTER}
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
               isVisible
               text="Bottom right aligned"
               align={alignments.RIGHT}
             />
-          </Container>
+          </div>
         </div>
 
-        <div style={{ display: "flex" }}>
-          <Container style={marginStyle}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: 80,
+          }}
+        >
+          <div style={marginStyle}>
+            <Link>Trigger Ref</Link>
             <Tooltip
               isVisible
               text="Bottom left aligned without arrow"
               hideArrow
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Link>Trigger Ref</Link>
             <Tooltip
               isVisible
               text="Bottom center aligned without arrow"
               hideArrow
               align={alignments.CENTER}
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Link>Trigger Ref</Link>
             <Tooltip
               isVisible
               text="Bottom right aligned without arrow"
               hideArrow
               align={alignments.RIGHT}
             />
-          </Container>
+          </div>
         </div>
       </div>
     );
@@ -81,48 +95,61 @@ storiesOf("Tooltip", module)
   .add("Top positioned", () => {
     const marginStyle = {
       margin: "40px",
+      border: "none",
     };
     return (
       <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
-        <div style={{ display: "flex" }}>
-          <Container style={marginStyle}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={marginStyle}>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
               isVisible
               text="Top left aligned"
               position={positions.TOP}
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+
             <Tooltip
               isVisible
               text="Top center aligned"
               position={positions.TOP}
               align={alignments.CENTER}
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
               isVisible
               text="Top right aligned"
               position={positions.TOP}
               align={alignments.RIGHT}
             />
-          </Container>
+          </div>
         </div>
 
-        <div style={{ display: "flex" }}>
-          <Container style={marginStyle}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: 80,
+          }}
+        >
+          <div style={marginStyle}>
+            <Link>Trigger Ref</Link>
             <Tooltip
               isVisible
               text="Top left aligned without arrow"
               position={positions.TOP}
               hideArrow
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Link>Trigger Ref</Link>
             <Tooltip
               isVisible
               text="Top center aligned without arrow"
@@ -130,9 +157,10 @@ storiesOf("Tooltip", module)
               hideArrow
               align={alignments.CENTER}
             />
-          </Container>
+          </div>
 
-          <Container style={marginStyle}>
+          <div style={marginStyle}>
+            <Link>Trigger Ref</Link>
             <Tooltip
               isVisible
               text="Top right aligned without arrow"
@@ -140,7 +168,7 @@ storiesOf("Tooltip", module)
               hideArrow
               align={alignments.RIGHT}
             />
-          </Container>
+          </div>
         </div>
       </div>
     );
@@ -154,20 +182,22 @@ storiesOf("Tooltip", module)
           width: "100%",
         }}
       >
-        <Container style={{ width: "50px" }}>
+        <div>
+          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
           <Tooltip
             align={alignments.AUTO}
             position={positions.AUTO}
             text="Auto aligned/positioned tooltip"
           />
-        </Container>
-        <Container style={{ width: "50px" }}>
+        </div>
+        <div>
+          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
           <Tooltip
             align={alignments.AUTO}
             position={positions.AUTO}
             text="Auto aligned/positioned tooltip"
           />
-        </Container>
+        </div>
       </div>
 
       <div
@@ -179,20 +209,24 @@ storiesOf("Tooltip", module)
           bottom: 0,
         }}
       >
-        <Container style={{ width: "50px" }}>
+        <div>
+          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+
           <Tooltip
             align={alignments.AUTO}
             position={positions.AUTO}
             text="Auto aligned/positioned tooltip"
           />
-        </Container>
-        <Container style={{ width: "50px" }}>
+        </div>
+        <div>
+          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+
           <Tooltip
             align={alignments.AUTO}
             position={positions.AUTO}
             text="Auto aligned/positioned tooltip"
           />
-        </Container>
+        </div>
       </div>
     </div>
   ))
@@ -215,44 +249,50 @@ storiesOf("Tooltip", module)
     return (
       <div>
         <BoundaryContainer className="exampleContainer">
-          <Container style={{ width: 50 }}>
+          <div>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
               align={alignments.AUTO}
               text="Auto aligned tooltip"
               boundariesSelector=".exampleContainer"
             />
-          </Container>
+          </div>
 
-          <Container style={{ width: 50 }}>
+          <div>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
               align={alignments.AUTO}
               text="Auto aligned tooltip"
               boundariesSelector=".exampleContainer"
             />
-          </Container>
+          </div>
         </BoundaryContainer>
 
         <BoundaryContainer
           style={{ marginTop: 200 }}
           className="exampleContainer"
         >
-          <Container style={{ width: 50 }}>
-            <Tooltip
-              align={alignments.AUTO}
-              position={positions.AUTO}
-              text="Auto aligned/positioned tooltip"
-              boundariesSelector=".exampleContainer"
-            />
-          </Container>
+          <div>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
 
-          <Container style={{ width: 50 }}>
             <Tooltip
               align={alignments.AUTO}
               position={positions.AUTO}
               text="Auto aligned/positioned tooltip"
               boundariesSelector=".exampleContainer"
             />
-          </Container>
+          </div>
+
+          <div>
+            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+
+            <Tooltip
+              align={alignments.AUTO}
+              position={positions.AUTO}
+              text="Auto aligned/positioned tooltip"
+              boundariesSelector=".exampleContainer"
+            />
+          </div>
         </BoundaryContainer>
       </div>
     );

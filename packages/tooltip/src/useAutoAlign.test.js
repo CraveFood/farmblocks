@@ -17,6 +17,32 @@ describe("useAutoAlign", () => {
       position: originalPosition,
     });
   });
+  it("should return the trigger height when available", () => {
+    const originalAlign = RIGHT;
+    const originalPosition = TOP;
+    const { result } = renderHook(() =>
+      useAutoAlign({
+        originalAlign,
+        originalPosition,
+        tooltipRef: {
+          current: {
+            getBoundingClientRect: () => ({}),
+            parentElement: {
+              previousElementSibling: {
+                getBoundingClientRect: () => ({ height: 100 }),
+              },
+            },
+          },
+        },
+      }),
+    );
+
+    expect(result.current).toEqual({
+      align: originalAlign,
+      position: originalPosition,
+      triggerHeight: 100,
+    });
+  });
 
   describe("Auto align", () => {
     it("should return default align and position for auto aligned when no tooltipRef is given ", () => {

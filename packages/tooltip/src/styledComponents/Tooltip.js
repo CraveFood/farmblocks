@@ -21,7 +21,7 @@ const alignX = coordinate => ({ align }) => {
   `;
 };
 
-const positionStyle = ({ position, offset }) => {
+const positionStyle = ({ position, offset, triggerHeight }) => {
   if (position === "bottom") {
     return css`
       top: ${offset};
@@ -30,7 +30,7 @@ const positionStyle = ({ position, offset }) => {
 
   if (position === "top") {
     return css`
-      bottom: ${offset};
+      bottom: ${triggerHeight + Number.parseInt(offset, 10)}px;
     `;
   }
 
