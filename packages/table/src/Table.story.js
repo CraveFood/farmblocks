@@ -655,13 +655,12 @@ storiesOf("Table/Row Groups", module)
           IndentedChildCell,
         }) => (
           <ChildRow>
-            <IndentedChildCell>
+            <IndentedChildCell colSpan="2">
               <Text>Extra row for {rowData.name}</Text>
             </IndentedChildCell>
             <ChildCell>
               <Text>X</Text>
             </ChildCell>
-            <ChildCell />
           </ChildRow>
         )}
       >

@@ -2,21 +2,26 @@ import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const border = `1px solid ${colors.GREY_16}`;
+const borderTop = props =>
+  props.selectionHeaderVisible &&
+  css`
+    border-top: none;
+  `;
 
 const Table = styled.table`
-  border-collapse: collapse;
+  border-spacing: 0;
   border: ${props => !props.borderless && border};
-  padding: 8px 16px;
+  border-top: none;
 
-  ${props =>
-    props.selectionHeaderVisible &&
-    css`
-      border-top: none;
-    `};
+  ${borderTop};
+  thead .cell {
+    ${borderTop};
+  }
+
   .cell {
     box-sizing: border-box;
     height: ${props => props.rowHeight};
-    border-bottom: ${border};
+    border-top: ${border};
     padding: 16px 0 16px 16px;
 
     &:last-child {
@@ -58,8 +63,16 @@ const Table = styled.table`
     display: none;
   }
 
-  tbody tr:hover {
-    & .cell {
+  .grouped > .cell {
+    border-top: none;
+  }
+
+  tbody:hover {
+    .cell {
+      background: ${colors.SUGAR};
+    }
+
+    .grouped > .cell {
       background: ${colors.DEMERARA_SUGAR};
     }
   }
