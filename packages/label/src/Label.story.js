@@ -1,5 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 
 import Label from ".";
 
@@ -17,7 +18,10 @@ storiesOf("Label", "module")
     <Label moreInfoContent="More info content">Default Label</Label>
   ))
   .add("With more info right aligned", () => (
-    <Label moreInfoContent="More info content" moreInfoAlign="right">
+    <Label
+      moreInfoContent="More info content"
+      moreInfoTooltipProps={{ positionX: POSITIONS.X.RIGHT }}
+    >
       Default Label
     </Label>
   ))

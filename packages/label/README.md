@@ -36,15 +36,15 @@ The code above will render:
 
 ## Api
 
-| Property        | Description                                                                                                                                                                                           | Type   | Default |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------- |
-| children        | Content that will be rendered inside a farmblocks-text component                                                                                                                                      | node   |         |
-| focused         | Sets INDIGO_MILK_CAP color                                                                                                                                                                            | bool   | false   |
-| invalid         | Sets STRAWBERRY color                                                                                                                                                                                 | bool   | false   |
-| disabled        | Sets GREY_32 color                                                                                                                                                                                    | bool   | false   |
-| protected       | When this property is set to `true` along with `disabled`, the default color is used (CARBON)                                                                                                         | bool   | false   |
-| moreInfoContent | Content to display in a MoreInfo in the label                                                                                                                                                         | node   |         |
-| moreInfoAlign   | Alignment for the MoreInfo content. Use one of the [alignments](https://github.com/CraveFood/farmblocks/blob/master/packages/tooltip/src/constants/alignments.js) constants from `farmblocks-tooltip` | string | left    |
+| Property             | Description                                                                                   | Type   | Default |
+| -------------------- | --------------------------------------------------------------------------------------------- | ------ | ------- |
+| children             | Content that will be rendered inside a farmblocks-text component                              | node   |         |
+| focused              | Sets INDIGO_MILK_CAP color                                                                    | bool   | false   |
+| invalid              | Sets STRAWBERRY color                                                                         | bool   | false   |
+| disabled             | Sets GREY_32 color                                                                            | bool   | false   |
+| protected            | When this property is set to `true` along with `disabled`, the default color is used (CARBON) | bool   | false   |
+| moreInfoContent      | Content to display in a MoreInfo in the label                                                 | node   |         |
+| moreInfoTooltipProps | props to be passed to Tooltip component                                                       | object |         |
 
 ## License
 
