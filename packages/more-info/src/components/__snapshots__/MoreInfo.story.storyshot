@@ -3,57 +3,35 @@
 exports[`Storyshots More info Default 1`] = `
 .c2 {
   position: relative;
+  display: inline-block;
 }
 
-.c3 {
-  visibility: hidden;
+.c2 .hit-area {
   position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.c3:after,
-.c3:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+.c2 .appear-enter {
+  opacity: 0;
 }
 
-.c3:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c3:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -69,21 +47,11 @@ exports[`Storyshots More info Default 1`] = `
 .c0 .icon {
   display: inline-block;
   margin: 0 8px;
-}
-
-.c0 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
+  cursor: pointer;
 }
 
 .c0 .icon:hover,
 .c0 .hovered {
-  color: #3498db;
-}
-
-.c0 .icon:hover {
   color: #3498db;
 }
 
@@ -92,35 +60,23 @@ exports[`Storyshots More info Default 1`] = `
     className="c0"
   >
     <div
-      className="text false c1"
+      className="text  c1"
       fontWeight="title"
       size={16}
       type="#59636f"
     >
       Mouse over the icon for more info
       <div
-        className="icon"
-        onFocus={[Function]}
-        onMouseOver={[Function]}
+        className="icon c2"
       >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
         <i
           className="wg-question"
         />
-        <div
-          className="tooltip c2"
-        >
-          <div
-            className="tooltip c3"
-          >
-            <div
-              className="hit-area"
-              onBlur={[Function]}
-              onMouseOut={[Function]}
-            >
-              Tooltip with text
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -130,48 +86,35 @@ exports[`Storyshots More info Default 1`] = `
 exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 .c2 {
   position: relative;
+  display: inline-block;
 }
 
-.c3 {
-  visibility: hidden;
+.c2 .hit-area {
   position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.c3:after,
-.c3:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+.c2 .appear-enter {
+  opacity: 0;
 }
 
-.c3:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c3:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -191,21 +134,11 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 .c0 .icon {
   display: inline-block;
   margin: 0 8px;
-}
-
-.c0 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
+  cursor: pointer;
 }
 
 .c0 .icon:hover,
 .c0 .hovered {
-  color: #3498db;
-}
-
-.c0 .icon:hover {
   color: #3498db;
 }
 
@@ -214,34 +147,22 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
     className="c0"
   >
     <div
-      className="text false c1"
+      className="text  c1"
       fontWeight="title"
       size={16}
       type="#59636f"
     >
       <div
-        className="icon"
-        onFocus={[Function]}
-        onMouseOver={[Function]}
+        className="icon c2"
       >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
         <i
           className="wg-question"
         />
-        <div
-          className="tooltip c2"
-        >
-          <div
-            className="tooltip c3"
-          >
-            <div
-              className="hit-area"
-              onBlur={[Function]}
-              onMouseOut={[Function]}
-            >
-              Tooltip left aligned with text
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -251,48 +172,35 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 .c2 {
   position: relative;
+  display: inline-block;
 }
 
-.c3 {
-  visibility: hidden;
+.c2 .hit-area {
   position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.c3:after,
-.c3:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+.c2 .appear-enter {
+  opacity: 0;
 }
 
-.c3:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  right: 7px;
+.c2 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c3:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  right: 8px;
+.c2 .appear-exit {
+  opacity: 1;
+}
+
+.c2 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c1 {
@@ -306,27 +214,17 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 }
 
 .c0 .tooltip {
-  margin-right: -4px;
+  margin-left: -4px;
 }
 
 .c0 .icon {
   display: inline-block;
   margin: 0 8px;
-}
-
-.c0 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
+  cursor: pointer;
 }
 
 .c0 .icon:hover,
 .c0 .hovered {
-  color: #3498db;
-}
-
-.c0 .icon:hover {
   color: #3498db;
 }
 
@@ -341,34 +239,22 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
     className="c0"
   >
     <div
-      className="text false c1"
+      className="text  c1"
       fontWeight="title"
       size={16}
       type="#59636f"
     >
       <div
-        className="icon"
-        onFocus={[Function]}
-        onMouseOver={[Function]}
+        className="icon c2"
       >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
         <i
           className="wg-question"
         />
-        <div
-          className="tooltip c2"
-        >
-          <div
-            className="tooltip c3"
-          >
-            <div
-              className="hit-area"
-              onBlur={[Function]}
-              onMouseOut={[Function]}
-            >
-              Awesome tooltip
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -378,57 +264,35 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 exports[`Storyshots More info extended style 1`] = `
 .c3 {
   position: relative;
+  display: inline-block;
 }
 
-.c4 {
-  visibility: hidden;
+.c3 .hit-area {
   position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.c4:after,
-.c4:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+.c3 .appear-enter {
+  opacity: 0;
 }
 
-.c4:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c4:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c2 {
@@ -444,21 +308,11 @@ exports[`Storyshots More info extended style 1`] = `
 .c1 .icon {
   display: inline-block;
   margin: 0 8px;
-}
-
-.c1 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
+  cursor: pointer;
 }
 
 .c1 .icon:hover,
 .c1 .hovered {
-  color: #3498db;
-}
-
-.c1 .icon:hover {
   color: #3498db;
 }
 
@@ -474,13 +328,17 @@ exports[`Storyshots More info extended style 1`] = `
   visibility: hidden;
 }
 
-.c0 .icon::after {
+.c0 .icon .hit-area {
+  z-index: 1;
+}
+
+.c0 .icon::before {
   content: '🤔';
   position: absolute;
   top: 0;
 }
 
-.c0 .icon>.tooltip .tooltip {
+.c0 .icon.tooltip {
   width: 250px;
   white-space: pre-line;
   text-align: center;
@@ -491,435 +349,23 @@ exports[`Storyshots More info extended style 1`] = `
     className="c0 c1"
   >
     <div
-      className="text false c2"
+      className="text  c2"
       fontWeight="title"
       size={16}
       type="#59636f"
     >
       How much wood could a woodchuck chuck if a woodchuck could chuck wood?
       <div
-        className="icon"
-        onFocus={[Function]}
-        onMouseOver={[Function]}
+        className="icon c3"
       >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
         <i
           className="wg-question"
         />
-        <div
-          className="tooltip c3"
-        >
-          <div
-            className="tooltip c4"
-          >
-            <div
-              className="hit-area"
-              onBlur={[Function]}
-              onMouseOut={[Function]}
-            >
-              A woodchuck would chuck no amount of wood since a woodchuck can’t chuck wood.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots More info with button 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c3:after,
-.c3:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c3:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c3:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c5 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:hover,
-.c5:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c5:hover > .icon,
-.c5:focus > .icon {
-  color: #3498db;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 .icon {
-  display: inline-block;
-  margin: 0 8px;
-}
-
-.c0 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
-}
-
-.c0 .icon:hover,
-.c0 .hovered {
-  color: #3498db;
-}
-
-.c0 .icon:hover {
-  color: #3498db;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <div
-      className="text false c1"
-      fontWeight="title"
-      size={16}
-      type="#59636f"
-    >
-      Mouse over the icon for more info
-      <div
-        className="icon"
-        onFocus={[Function]}
-        onMouseOver={[Function]}
-      >
-        <i
-          className="wg-question"
-        />
-        <div
-          className="tooltip c2"
-        >
-          <div
-            className="tooltip c3"
-          >
-            <div
-              className="hit-area"
-              onBlur={[Function]}
-              onMouseOut={[Function]}
-            >
-              <div
-                className="c4"
-              >
-                <button
-                  className="wrapped c5"
-                  disabled={false}
-                  onClick={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="SMALL"
-                  type="NEUTRAL"
-                >
-                  This is a Button
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots More info with card 1`] = `
-.c2 {
-  position: relative;
-}
-
-.c3 {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c3:after,
-.c3:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-
-.c3:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c3:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 .icon {
-  display: inline-block;
-  margin: 0 8px;
-}
-
-.c0 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
-}
-
-.c0 .icon:hover,
-.c0 .hovered {
-  color: #3498db;
-}
-
-.c0 .icon:hover {
-  color: #3498db;
-}
-
-.c4 {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: visible;
-}
-
-<div>
-  <div
-    className="c0"
-  >
-    <div
-      className="text false c1"
-      fontWeight="title"
-      size={16}
-      type="#59636f"
-    >
-      Mouse over the icon for more info
-      <div
-        className="icon"
-        onFocus={[Function]}
-        onMouseOver={[Function]}
-      >
-        <i
-          className="wg-question"
-        />
-        <div
-          className="tooltip c2"
-        >
-          <div
-            className="tooltip c3"
-          >
-            <div
-              className="hit-area"
-              onBlur={[Function]}
-              onMouseOut={[Function]}
-            >
-              <div
-                className="c4"
-                overflow="visible"
-                width="100%"
-              >
-                This is a Card.
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>

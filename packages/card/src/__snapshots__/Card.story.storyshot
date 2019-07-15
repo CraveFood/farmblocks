@@ -570,119 +570,58 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
 `;
 
 exports[`Storyshots Card With overflowing content 1`] = `
-.c1 {
+.c3 {
   position: relative;
   display: inline-block;
 }
 
-.c1 .hitArea {
+.c3 .hit-area {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
-.c1 .appear-enter {
+.c3 .appear-enter {
   opacity: 0;
 }
 
-.c1 .appear-enter-active {
+.c3 .appear-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c1 .appear-exit {
+.c3 .appear-exit {
   opacity: 1;
 }
 
-.c1 .appear-exit-active {
+.c3 .appear-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
+  font-family: Lato,sans-serif;
   font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #59636f;
-  padding: 0 16px;
+  text-align: left;
+  font-weight: 600;
 }
 
-.c2 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+.c1 .icon {
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
 }
 
-.c2:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c2:focus {
-  box-shadow: none;
-}
-
-.c2:hover .icon,
-.c2:focus .icon {
-  color: white;
-}
-
-.c2 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:hover,
-.c2:focus {
+.c1 .icon:hover,
+.c1 .hovered {
   color: #3498db;
-  border-color: #3498db;
-}
-
-.c2:hover > .icon,
-.c2:focus > .icon {
-  color: #3498db;
-}
-
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:disabled {
-  background-color: #ccc;
-  box-shadow: none;
 }
 
 .c0 {
@@ -705,138 +644,82 @@ exports[`Storyshots Card With overflowing content 1`] = `
     className="c1"
   >
     <div
-      className="hitArea"
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    />
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="NEUTRAL"
+      className="text  c2"
+      fontWeight="title"
+      size={16}
+      type="#59636f"
     >
-      Hover me
-    </button>
+      Visible tooltip
+      <div
+        className="icon c3"
+      >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <i
+          className="wg-question"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Card With overflowing content hidden 1`] = `
-.c1 {
+.c3 {
   position: relative;
   display: inline-block;
 }
 
-.c1 .hitArea {
+.c3 .hit-area {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
-.c1 .appear-enter {
+.c3 .appear-enter {
   opacity: 0;
 }
 
-.c1 .appear-enter-active {
+.c3 .appear-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c1 .appear-exit {
+.c3 .appear-exit {
   opacity: 1;
 }
 
-.c1 .appear-exit-active {
+.c3 .appear-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
+  font-family: Lato,sans-serif;
   font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: #59636f;
-  padding: 0 16px;
+  text-align: left;
+  font-weight: 600;
 }
 
-.c2 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
+.c1 .icon {
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
 }
 
-.c2:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c2:focus {
-  box-shadow: none;
-}
-
-.c2:hover .icon,
-.c2:focus .icon {
-  color: white;
-}
-
-.c2 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:hover,
-.c2:focus {
+.c1 .icon:hover,
+.c1 .hovered {
   color: #3498db;
-  border-color: #3498db;
-}
-
-.c2:hover > .icon,
-.c2:focus > .icon {
-  color: #3498db;
-}
-
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:disabled {
-  background-color: #ccc;
-  box-shadow: none;
 }
 
 .c0 {
@@ -859,20 +742,25 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
     className="c1"
   >
     <div
-      className="hitArea"
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-    />
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="NEUTRAL"
+      className="text  c2"
+      fontWeight="title"
+      size={16}
+      type="#59636f"
     >
-      Hover me
-    </button>
+      Overflowing tooltip not visible
+      <div
+        className="icon c3"
+      >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <i
+          className="wg-question"
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;

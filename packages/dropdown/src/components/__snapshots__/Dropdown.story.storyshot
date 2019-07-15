@@ -2,38 +2,6 @@
 
 exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -66,7 +34,7 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -77,41 +45,41 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -139,32 +107,25 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -172,38 +133,6 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
 
 exports[`Storyshots Dropdown/Component Icon only 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,7 +165,7 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -247,41 +176,41 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -309,31 +238,24 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 0,
-              }
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 0,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -341,38 +263,6 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
 
 exports[`Storyshots Dropdown/Component Right aligned 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -405,7 +295,7 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -416,41 +306,41 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -487,31 +377,24 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
         role="button"
         tabIndex="0"
       >
-        <div
+        <button
           className="menuButton c1"
+          size="MEDIUM"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c2"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="MEDIUM"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon"
-              style={
-                Object {
-                  "marginLeft": 0,
-                }
+          <div
+            className="icon"
+            style={
+              Object {
+                "marginLeft": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </span>
     </div>
   </div>
@@ -520,38 +403,6 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
 
 exports[`Storyshots Dropdown/Component Small size 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -584,7 +435,7 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -595,41 +446,41 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -657,32 +508,25 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="SMALL"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -690,38 +534,6 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
 
 exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -754,7 +566,7 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -765,41 +577,41 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -827,32 +639,25 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -860,38 +665,6 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
 
 exports[`Storyshots Dropdown/Component With ref 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -924,7 +697,7 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -935,41 +708,41 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -997,32 +770,25 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -1030,38 +796,6 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
 
 exports[`Storyshots Dropdown/Component With selected item 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1094,7 +828,7 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1105,41 +839,41 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1167,32 +901,25 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -1200,38 +927,6 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
 
 exports[`Storyshots Dropdown/Component With text 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1264,7 +959,7 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1275,41 +970,41 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1337,32 +1032,25 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c1"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>
@@ -1370,38 +1058,6 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
 
 exports[`Storyshots Dropdown/Component With z-index 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1434,7 +1090,7 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1445,41 +1101,41 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1526,31 +1182,24 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
         role="button"
         tabIndex="0"
       >
-        <div
+        <button
           className="menuButton c1"
+          size="MEDIUM"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c2"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="MEDIUM"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon"
-              style={
-                Object {
-                  "marginLeft": 0,
-                }
+          <div
+            className="icon"
+            style={
+              Object {
+                "marginLeft": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </span>
     </div>
   </div>
@@ -1572,38 +1221,6 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
 
 exports[`Storyshots Dropdown/Component extended style 1`] = `
 .c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1636,7 +1253,7 @@ exports[`Storyshots Dropdown/Component extended style 1`] = `
   padding: 0 16px;
 }
 
-.c3 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1647,41 +1264,41 @@ exports[`Storyshots Dropdown/Component extended style 1`] = `
   align-self: center;
 }
 
-.c3:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c3 > .icon {
+.c2 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c3:hover > .icon,
-.c3:focus > .icon {
+.c2:hover > .icon,
+.c2:focus > .icon {
   color: #3498db;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1721,32 +1338,25 @@ exports[`Storyshots Dropdown/Component extended style 1`] = `
       role="button"
       tabIndex="0"
     >
-      <div
+      <button
         className="menuButton c2"
+        size="MEDIUM"
+        type="NEUTRAL"
       >
-        <button
-          className="wrapped c3"
-          disabled={false}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="NEUTRAL"
-        >
-          Select fruit
-          <div
-            className="icon"
-            style={
-              Object {
-                "marginLeft": 10,
-              }
+        Select fruit
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
             }
-          >
-            <i
-              className="wg-small-arrow-bottom"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
     </span>
   </div>
 </div>

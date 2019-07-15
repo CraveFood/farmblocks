@@ -2,38 +2,6 @@
 
 exports[`Storyshots Form Wrapper Default 1`] = `
 .c10 {
-  position: relative;
-  display: block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,7 +36,7 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -79,34 +47,34 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c11:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -551,60 +519,21 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   <div
     className="footer c9"
   >
-    <div
+    <button
       className="save c10"
+      id="form-wrapper-save"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c11"
-        disabled={false}
-        id="form-wrapper-save"
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Form Wrapper With id 1`] = `
 .c10 {
-  position: relative;
-  display: block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -639,7 +568,7 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -650,34 +579,34 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c11:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1122,60 +1051,21 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   <div
     className="footer c9"
   >
-    <div
+    <button
       className="save c10"
+      id="an-id-save"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c11"
-        disabled={false}
-        id="an-id-save"
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Form Wrapper With title 1`] = `
 .c10 {
-  position: relative;
-  display: block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1210,7 +1100,7 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1221,34 +1111,34 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c11:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1695,60 +1585,21 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   <div
     className="footer c9"
   >
-    <div
+    <button
       className="save c10"
+      id="form-wrapper-save"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c11"
-        disabled={false}
-        id="form-wrapper-save"
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Form Wrapper extended style 1`] = `
 .c11 {
-  position: relative;
-  display: block;
-}
-
-.c11 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c11 .appear-enter {
-  opacity: 0;
-}
-
-.c11 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 .appear-exit {
-  opacity: 1;
-}
-
-.c11 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1783,7 +1634,7 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   padding: 0 16px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1794,34 +1645,34 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c12:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -2299,60 +2150,21 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   <div
     className="footer c10"
   >
-    <div
+    <button
       className="save c11"
+      id="form-wrapper-save"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c12"
-        disabled={false}
-        id="form-wrapper-save"
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Form Wrapper extra content 1`] = `
 .c10 {
-  position: relative;
-  display: block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2387,7 +2199,7 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2398,34 +2210,34 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c11:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -2872,22 +2684,15 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   <div
     className="footer c9"
   >
-    <div
+    <button
       className="save c10"
+      id="form-wrapper-save"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c11"
-        disabled={false}
-        id="form-wrapper-save"
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
   <div>
     Extra content renders after save button
@@ -2897,38 +2702,6 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 
 exports[`Storyshots Form Wrapper in compact container 1`] = `
 .c10 {
-  position: relative;
-  display: block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2963,7 +2736,7 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2974,34 +2747,34 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c11:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -3455,22 +3228,15 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
     <div
       className="footer c9"
     >
-      <div
+      <button
         className="save c10"
+        id="form-wrapper-save"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="wrapped c11"
-          disabled={false}
-          id="form-wrapper-save"
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
-        >
-          Save
-        </button>
-      </div>
+        Save
+      </button>
     </div>
   </div>
 </div>
@@ -3478,38 +3244,6 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 
 exports[`Storyshots Form Wrapper loading 1`] = `
 .c10 {
-  position: relative;
-  display: block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3544,7 +3278,7 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3555,40 +3289,40 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11 > .icon.left-icon i::before {
+.c10 > .icon.left-icon i::before {
   display: inline-block;
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c11:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -4035,34 +3769,28 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   <div
     className="footer c9"
   >
-    <div
+    <button
       className="save c10"
+      disabled={true}
+      id="form-wrapper-save"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c11"
-        disabled={true}
-        id="form-wrapper-save"
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 10,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
           }
-        >
-          <i
-            className="wg-loading"
-          />
-        </div>
-        Save
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      Save
+    </button>
   </div>
 </div>
 `;

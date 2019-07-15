@@ -2,38 +2,6 @@
 
 exports[`Storyshots Amount selectors Default 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +35,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -78,39 +46,39 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,7 +88,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -145,23 +113,23 @@ exports[`Storyshots Amount selectors Default 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -174,97 +142,97 @@ exports[`Storyshots Amount selectors Default 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -283,7 +251,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -291,18 +259,18 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -332,46 +300,40 @@ exports[`Storyshots Amount selectors Default 1`] = `
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -405,69 +367,30 @@ exports[`Storyshots Amount selectors Default 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors Disabled typing 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -501,7 +424,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -512,39 +435,39 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -554,7 +477,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -579,23 +502,23 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -608,97 +531,97 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -717,7 +640,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -725,18 +648,18 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -766,46 +689,40 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -839,69 +756,30 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors Small size 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -935,7 +813,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -946,39 +824,39 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -988,7 +866,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1013,23 +891,23 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1042,97 +920,97 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 8px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -1151,7 +1029,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1159,18 +1037,18 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -1200,46 +1078,40 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   className="c0"
   size="SMALL"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    disabled={true}
+    onClick={[Function]}
+    size="SMALL"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={14}
             onClick={[Function]}
@@ -1273,69 +1145,30 @@ exports[`Storyshots Amount selectors Small size 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="SMALL"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1369,7 +1202,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1380,39 +1213,39 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1422,7 +1255,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1447,23 +1280,23 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1476,97 +1309,97 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -1585,7 +1418,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1593,18 +1426,18 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -1634,46 +1467,39 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -1707,69 +1533,30 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation (browser) 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1803,7 +1590,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1814,39 +1601,39 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1856,7 +1643,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1881,23 +1668,23 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1910,97 +1697,97 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2019,7 +1806,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2027,18 +1814,18 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2068,46 +1855,39 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -2141,69 +1921,30 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With a max value of 3 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2237,7 +1978,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2248,39 +1989,39 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2290,7 +2031,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2315,23 +2056,23 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2344,97 +2085,97 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2453,7 +2194,7 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2461,18 +2202,18 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2502,46 +2243,39 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -2575,69 +2309,30 @@ exports[`Storyshots Amount selectors With a max value of 3 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2671,7 +2366,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2682,39 +2377,39 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2724,7 +2419,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2749,23 +2444,23 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2778,97 +2473,97 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2887,7 +2582,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2895,18 +2590,18 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2936,46 +2631,39 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3009,69 +2697,31 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With onChange function 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3105,7 +2755,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3116,39 +2766,39 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3158,7 +2808,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3183,23 +2833,23 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3212,97 +2862,97 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3321,7 +2971,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3329,18 +2979,18 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3370,46 +3020,40 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3443,69 +3087,30 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
 exports[`Storyshots Amount selectors With value set 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3539,7 +3144,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3550,39 +3155,39 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #2980b9;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #2980b9;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3592,7 +3197,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c4 .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3617,23 +3222,23 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c4 .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c4 .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c4 .input textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c4 .input input,
+.c4 .input textarea {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3646,97 +3251,97 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c4 .input .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c4 .input .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c4 .input .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c4 .input .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c4 .input .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c4 .input .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c4 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c4 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c4 .prefix,
+.c4 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3755,7 +3360,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3763,18 +3368,18 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c3 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .margin-button {
+.c3 .margin-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c2 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3804,46 +3409,39 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   className="c0"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c2"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
-            className="wrapped c5"
+            className="wrapped c4"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3877,15 +3475,398 @@ exports[`Storyshots Amount selectors With value set 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
+  >
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With value set after mount 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c1 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #2980b9;
+}
+
+.c1:focus {
+  background-color: #2980b9;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c4 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c4 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c4 .input textarea {
+  padding: 16px;
+}
+
+.c4 .input input,
+.c4 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c4 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c4 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c4 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c4 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c4 .input.dropdown {
+  cursor: pointer;
+}
+
+.c4 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4 .prefix,
+.c4 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c3 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 .margin-button {
+  margin: 0 8px;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+<div>
+  <div
+    className="c0"
+    size="MEDIUM"
   >
     <button
-      className="wrapped c2"
-      disabled={false}
+      className="decreaseButton c1"
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-minus"
+        />
+      </div>
+    </button>
+    <div
+      className="inputContainer"
+    >
+      <div
+        className="c2"
+      >
+        <div
+          className="inputComponent"
+        >
+          <div
+            className="c3"
+          >
+            <div
+              className="wrapped c4"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+                onMouseDown={[Function]}
+              >
+                <input
+                  className="wrapped"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={0}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  readOnly={false}
+                  step={1}
+                  type="number"
+                  value="10.00"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="messagesContainer"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      className="increaseButton c1"
+      onClick={[Function]}
       size="MEDIUM"
       type="SECONDARY"
     >
@@ -3903,42 +3884,15 @@ exports[`Storyshots Amount selectors With value set 1`] = `
       </div>
     </button>
   </div>
+  <button
+    onClick={[Function]}
+  >
+    Set Value
+  </button>
 </div>
 `;
 
-exports[`Storyshots Amount selectors With value set after mount 1`] = `
-.c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
+exports[`Storyshots Amount selectors extended style 1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4209,447 +4163,6 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
 }
 
 .c3 {
-  font-family: Lato,sans-serif;
-  margin: 0 0 24px 0;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 48px;
-}
-
-.c0 .inputContainer {
-  width: 70px;
-  margin: 0 8px;
-}
-
-.c0 .inputContainer input {
-  text-align: center;
-}
-
-.c0 .inputContainer input:invalid {
-  box-shadow: none;
-}
-
-<div>
-  <div
-    className="c0"
-    size="MEDIUM"
-  >
-    <div
-      className="decreaseButton c1"
-    >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
-          }
-        >
-          <i
-            className="wg-minus"
-          />
-        </div>
-      </button>
-    </div>
-    <div
-      className="inputContainer"
-    >
-      <div
-        className="c3"
-      >
-        <div
-          className="inputComponent"
-        >
-          <div
-            className="c4"
-          >
-            <div
-              className="wrapped c5"
-              disabled={false}
-              fontSize={16}
-              onClick={[Function]}
-              type="number"
-            >
-              <div
-                className="input"
-                onMouseDown={[Function]}
-              >
-                <input
-                  className="wrapped"
-                  disabled={false}
-                  fontSize={16}
-                  max={1.7976931348623157e+308}
-                  min={0}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onInvalid={[Function]}
-                  readOnly={false}
-                  step={1}
-                  type="number"
-                  value="10.00"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            className="messagesContainer"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="increaseButton c1"
-    >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
-          }
-        >
-          <i
-            className="wg-add"
-          />
-        </div>
-      </button>
-    </div>
-  </div>
-  <button
-    onClick={[Function]}
-  >
-    Set Value
-  </button>
-</div>
-`;
-
-exports[`Storyshots Amount selectors extended style 1`] = `
-.c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c3 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c3:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c3:focus {
-  box-shadow: none;
-}
-
-.c3:hover .icon,
-.c3:focus .icon {
-  color: white;
-}
-
-.c3:hover {
-  background-color: #2980b9;
-}
-
-.c3:focus {
-  background-color: #2980b9;
-}
-
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c6 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c6 .input input {
-  padding: 0 16px;
-  height: 46px;
-}
-
-.c6 .input textarea {
-  padding: 16px;
-}
-
-.c6 .input input,
-.c6 .input textarea {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c6 .input input::-webkit-input-placeholder,
-.c6 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 .input input::-moz-placeholder,
-.c6 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 .input input:-ms-input-placeholder,
-.c6 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 .input input::placeholder,
-.c6 .input textarea::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 .input input[type="search"],
-.c6 .input textarea[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c6 .input input[type="search"]::-webkit-search-cancel-button,
-.c6 .input textarea[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c6 .input input[type="search"]::-ms-clear,
-.c6 .input textarea[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c6 .input input[role="combobox"],
-.c6 .input textarea[role="combobox"] {
-  cursor: pointer;
-}
-
-.c6 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c6 .input .icon.left {
-  margin-left: 16px;
-}
-
-.c6 .input .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
-}
-
-.c6 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-  margin-right: 16px;
-}
-
-.c6 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c6 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c6 .input.dropdown {
-  cursor: pointer;
-}
-
-.c6 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c6 .prefix,
-.c6 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  position: relative;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c5 >:first-child {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c5 .margin-button {
-  margin: 0 8px;
-}
-
-.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -4693,46 +4206,40 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   className="c0 c1"
   size="MEDIUM"
 >
-  <div
+  <button
     className="decreaseButton c2"
+    disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c3"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
   <div
     className="inputContainer"
   >
     <div
-      className="c4"
+      className="c3"
     >
       <div
         className="inputComponent"
       >
         <div
-          className="c5"
+          className="c4"
         >
           <div
-            className="wrapped c6"
+            className="wrapped c5"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -4766,31 +4273,24 @@ exports[`Storyshots Amount selectors extended style 1`] = `
       </div>
     </div>
   </div>
-  <div
+  <button
     className="increaseButton c2"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
   >
-    <button
-      className="wrapped c3"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;

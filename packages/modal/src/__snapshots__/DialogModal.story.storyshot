@@ -2,38 +2,6 @@
 
 exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
 .c9 {
-  position: relative;
-  display: inline-block;
-}
-
-.c9 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c9 .appear-enter {
-  opacity: 0;
-}
-
-.c9 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 .appear-exit {
-  opacity: 1;
-}
-
-.c9 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +35,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c9 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -78,34 +46,34 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled:hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -297,22 +265,15 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
           <div
             className="buttons"
           >
-            <div
+            <button
               className="c9"
+              data-testid="empty-state-button-Primary Action"
+              onClick={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="wrapped c10"
-                data-testid="empty-state-button-Primary Action"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
-              >
-                Primary Action
-              </button>
-            </div>
+              Primary Action
+            </button>
           </div>
         </div>
       </div>
@@ -322,39 +283,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
 `;
 
 exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
-.c10 {
-  position: relative;
-  display: inline-block;
-}
-
-.c10 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 .appear-enter {
-  opacity: 0;
-}
-
-.c10 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 .appear-exit {
-  opacity: 1;
-}
-
-.c10 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c12 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -388,7 +317,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   padding: 0 16px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -399,39 +328,39 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12:hover {
+.c11:hover {
   background-color: #2980b9;
 }
 
-.c12:focus {
+.c11:focus {
   background-color: #2980b9;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c11 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -464,7 +393,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   padding: 0 16px;
 }
 
-.c11 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -475,41 +404,41 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   align-self: center;
 }
 
-.c11:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c11:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c11:hover .icon,
-.c11:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c11 > .icon {
+.c10 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:hover,
-.c11:focus {
+.c10:hover,
+.c10:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c11:hover > .icon,
-.c11:focus > .icon {
+.c10:hover > .icon,
+.c10:focus > .icon {
   color: #3498db;
 }
 
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -715,38 +644,24 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
           <div
             className="buttons"
           >
-            <div
+            <button
               className="c10"
+              data-testid="empty-state-button-Secondary Action"
+              onClick={[Function]}
+              size="MEDIUM"
+              type="NEUTRAL"
             >
-              <button
-                className="wrapped c11"
-                data-testid="empty-state-button-Secondary Action"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="NEUTRAL"
-              >
-                Secondary Action
-              </button>
-            </div>
-            <div
-              className="c10"
+              Secondary Action
+            </button>
+            <button
+              className="c11"
+              data-testid="empty-state-button-Primary Action"
+              onClick={[Function]}
+              size="MEDIUM"
+              type="SECONDARY"
             >
-              <button
-                className="wrapped c12"
-                data-testid="empty-state-button-Primary Action"
-                disabled={false}
-                onClick={[Function]}
-                onMouseLeave={[Function]}
-                onMouseOver={[Function]}
-                size="MEDIUM"
-                type="SECONDARY"
-              >
-                Primary Action
-              </button>
-            </div>
+              Primary Action
+            </button>
           </div>
         </div>
       </div>

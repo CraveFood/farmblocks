@@ -344,38 +344,6 @@ exports[`Storyshots Footer extended style 1`] = `
 
 exports[`Storyshots Footer with one action 1`] = `
 .c6 {
-  position: relative;
-  display: inline-block;
-}
-
-.c6 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c6 .appear-enter {
-  opacity: 0;
-}
-
-.c6 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c6 .appear-exit {
-  opacity: 1;
-}
-
-.c6 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -408,7 +376,7 @@ exports[`Storyshots Footer with one action 1`] = `
   padding: 0 16px;
 }
 
-.c7 .icon {
+.c6 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -419,41 +387,41 @@ exports[`Storyshots Footer with one action 1`] = `
   align-self: center;
 }
 
-.c7:hover {
+.c6:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c7:focus {
+.c6:focus {
   box-shadow: none;
 }
 
-.c7:hover .icon,
-.c7:focus .icon {
+.c6:hover .icon,
+.c6:focus .icon {
   color: white;
 }
 
-.c7 > .icon {
+.c6 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:hover,
-.c7:focus {
+.c6:hover,
+.c6:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c7:hover > .icon,
-.c7:focus > .icon {
+.c6:hover > .icon,
+.c6:focus > .icon {
   color: #3498db;
 }
 
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
+.c6:disabled,
+.c6:disabled .icon,
+.c6:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:disabled {
+.c6:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -618,59 +586,20 @@ exports[`Storyshots Footer with one action 1`] = `
   <div
     className="actionsContainer c5"
   >
-    <div
+    <button
       className="c6"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c7"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Footer with two actions 1`] = `
 .c6 {
-  position: relative;
-  display: inline-block;
-}
-
-.c6 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c6 .appear-enter {
-  opacity: 0;
-}
-
-.c6 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c6 .appear-exit {
-  opacity: 1;
-}
-
-.c6 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -703,7 +632,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   padding: 0 16px;
 }
 
-.c7 .icon {
+.c6 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -714,46 +643,46 @@ exports[`Storyshots Footer with two actions 1`] = `
   align-self: center;
 }
 
-.c7:hover {
+.c6:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c7:focus {
+.c6:focus {
   box-shadow: none;
 }
 
-.c7:hover .icon,
-.c7:focus .icon {
+.c6:hover .icon,
+.c6:focus .icon {
   color: white;
 }
 
-.c7 > .icon {
+.c6 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:hover,
-.c7:focus {
+.c6:hover,
+.c6:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c7:hover > .icon,
-.c7:focus > .icon {
+.c6:hover > .icon,
+.c6:focus > .icon {
   color: #3498db;
 }
 
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
+.c6:disabled,
+.c6:disabled .icon,
+.c6:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c7:disabled {
+.c6:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c8 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -787,7 +716,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   padding: 0 16px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -798,34 +727,34 @@ exports[`Storyshots Footer with two actions 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8:hover {
+.c7:hover {
   background-color: #dd3311;
 }
 
-.c8:focus {
+.c7:focus {
   background-color: #dd3311;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -990,36 +919,22 @@ exports[`Storyshots Footer with two actions 1`] = `
   <div
     className="actionsContainer c5"
   >
-    <div
+    <button
       className="c6"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c7"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="NEUTRAL"
-      >
-        Cancel
-      </button>
-    </div>
-    <div
-      className="c6"
+      Cancel
+    </button>
+    <button
+      className="c7"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
     >
-      <button
-        className="wrapped c8"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="PRIMARY"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
@@ -1190,38 +1105,6 @@ exports[`Storyshots Footer without actions 1`] = `
 
 exports[`Storyshots Footer without image 1`] = `
 .c5 {
-  position: relative;
-  display: inline-block;
-}
-
-.c5 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 .appear-enter {
-  opacity: 0;
-}
-
-.c5 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c5 .appear-exit {
-  opacity: 1;
-}
-
-.c5 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1254,7 +1137,7 @@ exports[`Storyshots Footer without image 1`] = `
   padding: 0 16px;
 }
 
-.c6 .icon {
+.c5 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1265,41 +1148,41 @@ exports[`Storyshots Footer without image 1`] = `
   align-self: center;
 }
 
-.c6:hover {
+.c5:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c6:focus {
+.c5:focus {
   box-shadow: none;
 }
 
-.c6:hover .icon,
-.c6:focus .icon {
+.c5:hover .icon,
+.c5:focus .icon {
   color: white;
 }
 
-.c6 > .icon {
+.c5 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c6:hover > .icon,
-.c6:focus > .icon {
+.c5:hover > .icon,
+.c5:focus > .icon {
   color: #3498db;
 }
 
-.c6:disabled,
-.c6:disabled .icon,
-.c6:disabled:hover {
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:disabled {
+.c5:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1443,59 +1326,20 @@ exports[`Storyshots Footer without image 1`] = `
   <div
     className="actionsContainer c4"
   >
-    <div
+    <button
       className="c5"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c6"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Footer without link 1`] = `
 .c5 {
-  position: relative;
-  display: inline-block;
-}
-
-.c5 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 .appear-enter {
-  opacity: 0;
-}
-
-.c5 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c5 .appear-exit {
-  opacity: 1;
-}
-
-.c5 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1528,7 +1372,7 @@ exports[`Storyshots Footer without link 1`] = `
   padding: 0 16px;
 }
 
-.c6 .icon {
+.c5 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1539,41 +1383,41 @@ exports[`Storyshots Footer without link 1`] = `
   align-self: center;
 }
 
-.c6:hover {
+.c5:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c6:focus {
+.c5:focus {
   box-shadow: none;
 }
 
-.c6:hover .icon,
-.c6:focus .icon {
+.c5:hover .icon,
+.c5:focus .icon {
   color: white;
 }
 
-.c6 > .icon {
+.c5 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c6:hover > .icon,
-.c6:focus > .icon {
+.c5:hover > .icon,
+.c5:focus > .icon {
   color: #3498db;
 }
 
-.c6:disabled,
-.c6:disabled .icon,
-.c6:disabled:hover {
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:disabled {
+.c5:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1681,21 +1525,14 @@ exports[`Storyshots Footer without link 1`] = `
   <div
     className="actionsContainer c4"
   >
-    <div
+    <button
       className="c5"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c6"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Save
-      </button>
-    </div>
+      Save
+    </button>
   </div>
 </div>
 `;

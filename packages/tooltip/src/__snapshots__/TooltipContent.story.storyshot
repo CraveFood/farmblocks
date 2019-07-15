@@ -1,0 +1,2012 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c0:focus {
+  box-shadow: none;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0:hover {
+  background-color: #2980b9;
+}
+
+.c0:focus {
+  background-color: #2980b9;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c5 i.margin-left {
+  margin-left: 8px;
+}
+
+.c5 i.margin-right {
+  margin-right: 8px;
+}
+
+.c5 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 > a {
+  color: inherit;
+}
+
+.c5:hover {
+  color: #2980b9;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+}
+
+.c2:after,
+.c2:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c2:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c2:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 15px;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c3:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  right: 0;
+  top: 15px;
+}
+
+.c4:after,
+.c4:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+}
+
+.c7 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 15px;
+}
+
+.c8 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  right: 0;
+  top: 15px;
+}
+
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "marginTop": 60,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "40px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c2"
+          offset="15px"
+        >
+          Bottom left aligned
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "40px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c3"
+          offset="15px"
+        >
+          Bottom center aligned
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "40px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c4"
+          offset="15px"
+        >
+          Bottom right aligned
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+        "marginTop": 80,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "40px",
+        }
+      }
+    >
+      <div
+        className="c5"
+        disabled={false}
+        size={16}
+        type="#3498db"
+      >
+        <span>
+          Trigger Ref
+        </span>
+      </div>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c6"
+          offset="15px"
+        >
+          Bottom left aligned without arrow
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "40px",
+        }
+      }
+    >
+      <div
+        className="c5"
+        disabled={false}
+        size={16}
+        type="#3498db"
+      >
+        <span>
+          Trigger Ref
+        </span>
+      </div>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c7"
+          offset="15px"
+        >
+          Bottom center aligned without arrow
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "margin": "40px",
+        }
+      }
+    >
+      <div
+        className="c5"
+        disabled={false}
+        size={16}
+        type="#3498db"
+      >
+        <span>
+          Trigger Ref
+        </span>
+      </div>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c8"
+          offset="15px"
+        >
+          Bottom right aligned without arrow
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c0:focus {
+  box-shadow: none;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0:hover {
+  background-color: #2980b9;
+}
+
+.c0:focus {
+  background-color: #2980b9;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c5 i.margin-left {
+  margin-left: 8px;
+}
+
+.c5 i.margin-right {
+  margin-right: 8px;
+}
+
+.c5 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 > a {
+  color: inherit;
+}
+
+.c5:hover {
+  color: #2980b9;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  bottom: NaNpx;
+}
+
+.c2:after,
+.c2:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c2:before {
+  top: 100%;
+  border-color: transparent;
+  border-top-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c2:after {
+  top: calc(100% - 1px);
+  border-color: transparent;
+  border-top-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: NaNpx;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  top: 100%;
+  border-color: transparent;
+  border-top-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c3:after {
+  top: calc(100% - 1px);
+  border-color: transparent;
+  border-top-color: #ffffff;
+  border-width: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  right: 0;
+  bottom: NaNpx;
+}
+
+.c4:after,
+.c4:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c4:before {
+  top: 100%;
+  border-color: transparent;
+  border-top-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  right: 7px;
+}
+
+.c4:after {
+  top: calc(100% - 1px);
+  border-color: transparent;
+  border-top-color: #ffffff;
+  border-width: 7px;
+  right: 8px;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  bottom: NaNpx;
+}
+
+.c7 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: NaNpx;
+}
+
+.c8 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  right: 0;
+  bottom: NaNpx;
+}
+
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "marginTop": 60,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "none",
+          "margin": "40px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c2"
+          offset="15px"
+        >
+          Top left aligned
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "none",
+          "margin": "40px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c3"
+          offset="15px"
+        >
+          Top center aligned
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "none",
+          "margin": "40px",
+        }
+      }
+    >
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c4"
+          offset="15px"
+        >
+          Top right aligned
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+        "marginTop": 80,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "none",
+          "margin": "40px",
+        }
+      }
+    >
+      <div
+        className="c5"
+        disabled={false}
+        size={16}
+        type="#3498db"
+      >
+        <span>
+          Trigger Ref
+        </span>
+      </div>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c6"
+          offset="15px"
+        >
+          Top left aligned without arrow
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "none",
+          "margin": "40px",
+        }
+      }
+    >
+      <div
+        className="c5"
+        disabled={false}
+        size={16}
+        type="#3498db"
+      >
+        <span>
+          Trigger Ref
+        </span>
+      </div>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c7"
+          offset="15px"
+        >
+          Top center aligned without arrow
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "none",
+          "margin": "40px",
+        }
+      }
+    >
+      <div
+        className="c5"
+        disabled={false}
+        size={16}
+        type="#3498db"
+      >
+        <span>
+          Trigger Ref
+        </span>
+      </div>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c8"
+          offset="15px"
+        >
+          Top right aligned without arrow
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned (with boundaries) 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c0:focus {
+  box-shadow: none;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0:hover {
+  background-color: #2980b9;
+}
+
+.c0:focus {
+  background-color: #2980b9;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  auto: 0;
+  top: 15px;
+}
+
+.c3:after,
+.c3:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c3:before {
+  auto: 100%;
+  border-color: transparent;
+  border-auto-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  auto: 7px;
+}
+
+.c3:after {
+  auto: calc(100% - 1px);
+  border-color: transparent;
+  border-auto-color: #ffffff;
+  border-width: 7px;
+  auto: 8px;
+}
+
+.c2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  auto: 0;
+  top: 15px;
+}
+
+.c2:after,
+.c2:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c2:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  auto: 7px;
+}
+
+.c2:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  auto: 8px;
+}
+
+<div>
+  <div
+    className="exampleContainer"
+    style={
+      Object {
+        "border": "solid 1px orangered",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": 300,
+        "justifyContent": "space-between",
+        "margin": 60,
+        "width": 600,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <div>
+        <button
+          className="c0"
+          size="SMALL"
+          type="SECONDARY"
+        >
+          Trigger Ref
+        </button>
+        <div
+          className="c1"
+          offset="15px"
+        >
+          <div
+            className="c2"
+            offset="15px"
+          >
+            Auto aligned tooltip
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          className="c0"
+          size="SMALL"
+          type="SECONDARY"
+        >
+          Trigger Ref
+        </button>
+        <div
+          className="c1"
+          offset="15px"
+        >
+          <div
+            className="c2"
+            offset="15px"
+          >
+            Auto aligned tooltip
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <div>
+        <button
+          className="c0"
+          size="SMALL"
+          type="SECONDARY"
+        >
+          Trigger Ref
+        </button>
+        <div
+          className="c1"
+          offset="15px"
+        >
+          <div
+            className="c3"
+            offset="15px"
+          >
+            Auto aligned/positioned tooltip
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          className="c0"
+          size="SMALL"
+          type="SECONDARY"
+        >
+          Trigger Ref
+        </button>
+        <div
+          className="c1"
+          offset="15px"
+        >
+          <div
+            className="c3"
+            offset="15px"
+          >
+            Auto aligned/positioned tooltip
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c0:focus {
+  box-shadow: none;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0:hover {
+  background-color: #2980b9;
+}
+
+.c0:focus {
+  background-color: #2980b9;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  auto: 0;
+  top: 15px;
+}
+
+.c2:after,
+.c2:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c2:before {
+  auto: 100%;
+  border-color: transparent;
+  border-auto-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  auto: 7px;
+}
+
+.c2:after {
+  auto: calc(100% - 1px);
+  border-color: transparent;
+  border-auto-color: #ffffff;
+  border-width: 7px;
+  auto: 8px;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+        "width": "100%",
+      }
+    }
+  >
+    <div>
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c2"
+          offset="15px"
+        >
+          Auto aligned/positioned tooltip
+        </div>
+      </div>
+    </div>
+    <div>
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c2"
+          offset="15px"
+        >
+          Auto aligned/positioned tooltip
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "bottom": 0,
+        "display": "flex",
+        "justifyContent": "space-between",
+        "position": "fixed",
+        "width": "100%",
+      }
+    }
+  >
+    <div>
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c2"
+          offset="15px"
+        >
+          Auto aligned/positioned tooltip
+        </div>
+      </div>
+    </div>
+    <div>
+      <button
+        className="c0"
+        size="SMALL"
+        type="SECONDARY"
+      >
+        Trigger Ref
+      </button>
+      <div
+        className="c1"
+        offset="15px"
+      >
+        <div
+          className="c2"
+          offset="15px"
+        >
+          Auto aligned/positioned tooltip
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent custom offset 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 30vh;
+}
+
+.c1:after,
+.c1:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+    offset="30vh"
+  >
+    <div
+      className="c1"
+      offset="30vh"
+    >
+      Left aligned with custom top
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent custom padding 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+}
+
+.c1:after,
+.c1:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+    offset="15px"
+  >
+    <div
+      className="c1"
+      offset="15px"
+    >
+      Left aligned with custom padding
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent extended style 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+}
+
+.c2:after,
+.c2:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c2:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c2:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c0 {
+  -webkit-text-decoration-line: underline overline;
+  text-decoration-line: underline overline;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0 c1"
+    offset="15px"
+  >
+    <div
+      className="c0 c2"
+      offset="15px"
+    >
+      This is a left aligned tooltip
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent isVisible false 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+}
+
+.c1:after,
+.c1:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+    offset="15px"
+  >
+    <div
+      className="c1"
+      offset="15px"
+    >
+      Hey yo
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent with card 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+}
+
+.c1:after,
+.c1:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+.c2 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+    offset="15px"
+  >
+    <div
+      className="c1"
+      offset="15px"
+    >
+      <div
+        className="c2"
+        overflow="visible"
+        width="100%"
+      >
+        this is a Card
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent with content overflow hidden 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1000;
+  padding: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 0;
+  top: 15px;
+  overflow: hidden;
+}
+
+.c1:after,
+.c1:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c1:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 7px;
+}
+
+.c1:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 8px;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+    offset="15px"
+    overflow="hidden"
+  >
+    <div
+      className="c1"
+      offset="15px"
+      overflow="hidden"
+    >
+      <div
+        style={
+          Object {
+            "background": "aliceblue",
+          }
+        }
+      >
+        It should not overflow
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tooltip/TooltipContent without content 1`] = `
+.c0 {
+  position: relative;
+}
+
+<div
+  style={
+    Object {
+      "border": "3px solid",
+      "position": "relative",
+      "width": "250px",
+    }
+  }
+>
+  <div
+    className="c0"
+    offset="15px"
+  />
+</div>
+`;
