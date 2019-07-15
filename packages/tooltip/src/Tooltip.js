@@ -19,7 +19,7 @@ const Tooltip = ({
 
   const tooltipRef = useRef(null);
 
-  const { align, position, triggerHeight } = useAutoAlign({
+  const { align, position, triggerHeight, ready } = useAutoAlign({
     originalAlign,
     originalPosition,
     boundariesSelector,
@@ -32,6 +32,7 @@ const Tooltip = ({
       {content && (
         <StyledTooltip
           {...props}
+          isVisible={ready}
           align={align}
           position={position}
           ref={tooltipRef}

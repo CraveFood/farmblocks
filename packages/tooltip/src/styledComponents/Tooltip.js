@@ -72,7 +72,7 @@ const arrow = ({ hideArrow, position }) => {
 };
 
 const StyledTooltip = styled.div`
-  visibility: ${props => (props.isVisible ? "visible" : "hidden")};
+  visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
 
   position: absolute;
   z-index: ${props => props.zIndex};

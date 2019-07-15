@@ -15,15 +15,18 @@ describe("useAutoAlign", () => {
     expect(result.current).toEqual({
       align: originalAlign,
       position: originalPosition,
+      ready: false,
+      triggerHeight: undefined,
     });
   });
-  it("should return the trigger height when available", () => {
+  it("should return the trigger height when available and isVisible", () => {
     const originalAlign = RIGHT;
     const originalPosition = TOP;
     const { result } = renderHook(() =>
       useAutoAlign({
         originalAlign,
         originalPosition,
+        isVisible: true,
         tooltipRef: {
           current: {
             getBoundingClientRect: () => ({}),
@@ -40,6 +43,7 @@ describe("useAutoAlign", () => {
     expect(result.current).toEqual({
       align: originalAlign,
       position: originalPosition,
+      ready: true,
       triggerHeight: 100,
     });
   });
@@ -51,12 +55,15 @@ describe("useAutoAlign", () => {
           originalAlign: AUTO,
           originalPosition: AUTO,
           tooltipRef: {},
+          isVisible: true,
         }),
       );
 
       expect(result.current).toEqual({
         align: LEFT,
         position: BOTTOM,
+        ready: true,
+        triggerHeight: undefined,
       });
     });
 
@@ -80,9 +87,15 @@ describe("useAutoAlign", () => {
             originalPosition: AUTO,
             tooltipRef,
             boundariesSelector,
+            isVisible: true,
           }),
         );
-        expect(result.current).toEqual({ align: RIGHT, position: TOP });
+        expect(result.current).toEqual({
+          align: RIGHT,
+          position: TOP,
+          ready: true,
+          triggerHeight: undefined,
+        });
       });
       it("should return LEFT and BOTTOM when tooltip is inside boundaries", () => {
         const container = {
@@ -103,9 +116,15 @@ describe("useAutoAlign", () => {
             originalPosition: AUTO,
             tooltipRef,
             boundariesSelector,
+            isVisible: true,
           }),
         );
-        expect(result.current).toEqual({ align: LEFT, position: BOTTOM });
+        expect(result.current).toEqual({
+          align: LEFT,
+          position: BOTTOM,
+          ready: true,
+          triggerHeight: undefined,
+        });
       });
     });
 
@@ -133,9 +152,15 @@ describe("useAutoAlign", () => {
             originalAlign: AUTO,
             originalPosition: AUTO,
             tooltipRef,
+            isVisible: true,
           }),
         );
-        expect(result.current).toEqual({ align: LEFT, position: BOTTOM });
+        expect(result.current).toEqual({
+          align: LEFT,
+          position: BOTTOM,
+          ready: true,
+          triggerHeight: undefined,
+        });
       });
 
       it("should return LEFT and BOTTOM if tooltip is outside the viewport", () => {
@@ -151,9 +176,15 @@ describe("useAutoAlign", () => {
             originalAlign: AUTO,
             originalPosition: AUTO,
             tooltipRef,
+            isVisible: true,
           }),
         );
-        expect(result.current).toEqual({ align: RIGHT, position: TOP });
+        expect(result.current).toEqual({
+          align: RIGHT,
+          position: TOP,
+          ready: true,
+          triggerHeight: undefined,
+        });
       });
     });
   });

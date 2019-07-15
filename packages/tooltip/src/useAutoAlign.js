@@ -9,12 +9,15 @@ const useAutoAlign = ({
   tooltipRef,
   isVisible,
 }) => {
+  const [ready, setReady] = useState(false);
   const [align, setAlign] = useState(originalAlign);
   const [position, setPosition] = useState(originalPosition);
   const [triggerHeight, setTriggerHeight] = useState();
 
   useEffect(() => {
-    if (isVisible) {
+    if (!isVisible) {
+      setReady(false);
+    } else {
       // eslint-disable-next-line no-use-before-define
       const alignedData = getAutoAlign(tooltipRef, boundariesSelector);
 
@@ -22,7 +25,7 @@ const useAutoAlign = ({
       if (originalPosition === positions.AUTO)
         setPosition(alignedData.position);
 
-      if (tooltipRef?.current) {
+      if (tooltipRef?.current && !triggerHeight) {
         // the tooltip trigger is always the container's previous sibling
         const trigger =
           tooltipRef.current.parentElement?.previousElementSibling;
@@ -31,10 +34,11 @@ const useAutoAlign = ({
           setTriggerHeight(trigger.getBoundingClientRect()?.height);
         }
       }
+      setReady(true);
     }
   }, [isVisible]);
 
-  return { align, position, triggerHeight };
+  return { align, position, triggerHeight, ready };
 };
 
 export function getAutoAlign(tooltipRef, boundariesSelector) {
