@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import Button, { buttonTypes } from "@crave/farmblocks-button";
 import { action } from "@storybook/addon-actions";
 
-import Modal from ".";
+import Modal, { ModalTitle } from ".";
 import lipsum from "./lipsum";
 
 const PreLine = styled.span`
@@ -49,6 +49,11 @@ storiesOf("Modal", module)
       header={<ModalTitle>Header with ModalTitle</ModalTitle>}
     >
       Content
+    </Modal>
+  ))
+  .add("With ModalTitle header", () => (
+    <Modal isOpen header={<ModalTitle>Header with ModalTitle</ModalTitle>}>
+      With header
     </Modal>
   ))
   .add("With footer", () => (

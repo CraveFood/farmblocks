@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { useTransition } from "react-spring";
 import Button, { buttonSizes } from "@crave/farmblocks-button";
+import Text, { fontSizes } from "@crave/farmblocks-text";
 
 import {
   Wrapper,
@@ -125,6 +126,7 @@ const Modal = ({
     parentNode,
   );
 };
+
 Modal.defaultProps = {
   isOpen: false,
   parentNode: document.body,
@@ -134,6 +136,7 @@ Modal.defaultProps = {
   verticalAlign: "flex-start",
   zIndex: 1500,
 };
+
 Modal.propTypes = {
   isOpen: PropTypes.bool,
   parentNode: PropTypes.instanceOf(HTMLElement),
@@ -154,5 +157,9 @@ Modal.propTypes = {
   verticalAlign: PropTypes.oneOf(["flex-start", "center", "flex-end"]),
   zIndex: PropTypes.number,
 };
+
+export const ModalTitle = props => (
+  <Text fontWeight="title" size={fontSizes.HUGE} {...props} />
+);
 
 export default Modal;

@@ -169,7 +169,7 @@ const Example = () => (
 );
 ```
 
-## Extended Components
+## Extra Components
 
 ### DialogModal
 
@@ -202,6 +202,22 @@ const Example = () => (
 ```
 
 ![image](https://user-images.githubusercontent.com/1459283/58564521-7884e980-8203-11e9-8b2f-eb544506e646.png)
+
+### ModalTitle
+
+Component to use on **header** prop, is a [Text](https://www.npmjs.com/package/@crave/farmblocks-text) with `font-weight: 600` and `font-size: 24px` as default, and accepts all the Text properties.
+
+```jsx
+import { DialogModal } from "@crave/farmblocks-modal";
+
+const Example = () => (
+  <Modal isOpen header={<ModalTitle>Header</ModalTitle>}>
+    Modal using <strong>ModalTitle</strong> on header
+  </Modal>
+);
+```
+
+![image](https://user-images.githubusercontent.com/32174637/61314892-03ca3680-a7d4-11e9-8387-b7985d32c351.png)
 
 ## License
 
