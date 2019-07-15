@@ -1,8 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import values from "object.values";
-import Tooltip, { alignments } from "@crave/farmblocks-tooltip";
+import Tooltip from "@crave/farmblocks-tooltip";
 
 const Container = styled.div`
   display: inline-block;
@@ -87,13 +86,10 @@ class Popover extends React.Component {
         <Tooltip
           className="tooltip"
           isVisible={isVisible}
-          hideArrow={!this.props.showTooltipArrow}
-          align={this.props.align}
-          zIndex={this.props.zIndex}
-          padding={this.props.padding}
-          overflow={this.props.overflow}
+          hideArrow
+          {...this.props.tooltipProps}
         >
-          {this.state.isVisible && this.props.content(this.hide)}
+          {isVisible && this.props.content(this.hide)}
         </Tooltip>
       </Container>
     );
@@ -102,22 +98,18 @@ class Popover extends React.Component {
   static propTypes = {
     trigger: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
     content: PropTypes.func.isRequired,
-    align: PropTypes.oneOf(values(alignments)),
-    zIndex: PropTypes.number,
-    padding: PropTypes.string,
-    overflow: PropTypes.string,
+    // eslint-disable-next-line react/forbid-prop-types
+    tooltipProps: PropTypes.object,
     triggerWidth: PropTypes.string,
     onOutsideClick: PropTypes.func,
     onOpen: PropTypes.func,
     onBeforeOpen: PropTypes.func,
     onClose: PropTypes.func,
-    showTooltipArrow: PropTypes.bool,
     className: PropTypes.string,
   };
 
   static defaultProps = {
     triggerWidth: "auto",
-    showTooltipArrow: false,
   };
 }
 

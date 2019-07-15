@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import Link from "@crave/farmblocks-link";
 import Text from "@crave/farmblocks-text";
+import { positions } from "@crave/farmblocks-tooltip";
 
 import Popover from ".";
 
@@ -19,7 +20,7 @@ storiesOf("Popover", module)
       <Popover
         trigger={<button>Trigger</button>}
         content={() => <Text>Popover content</Text>}
-        align="right"
+        tooltipProps={{ align: "right" }}
         onOutsideClick={action("onOutsideClick")}
       />
     </div>
@@ -29,7 +30,7 @@ storiesOf("Popover", module)
       <Popover
         trigger={<Link>Trigger</Link>}
         content={() => <Text>Centered Popover</Text>}
-        align="center"
+        tooltipProps={{ align: "center" }}
         onOutsideClick={action("onOutsideClick")}
       />
     </div>
@@ -70,7 +71,7 @@ storiesOf("Popover", module)
           <button onClick={dismiss}>Dismiss</button>
         </div>
       )}
-      padding="50px"
+      tooltipProps={{ padding: "50px" }}
     />
   ))
   .add("Nested popover", () => (
@@ -120,6 +121,7 @@ storiesOf("Popover", module)
   .add("w/ Tooltip arrow", () => (
     <Popover
       showTooltipArrow
+      tooltipProps={{ hideArrow: false }}
       trigger={<Link>Trigger</Link>}
       content={() => <Text>Popover content</Text>}
       onOutsideClick={action("onOutsideClick")}
@@ -178,5 +180,14 @@ storiesOf("Popover", module)
       trigger={<Link>Trigger</Link>}
       content={() => <Text>Popover content</Text>}
       onOutsideClick={action("onOutsideClick")}
+    />
+  ))
+  .add("Tooltip positioned on top", () => (
+    <Popover
+      css="margin: 100px 0"
+      trigger={<Link>Trigger</Link>}
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+      tooltipProps={{ position: positions.TOP }}
     />
   ));
