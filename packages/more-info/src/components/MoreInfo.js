@@ -1,74 +1,54 @@
-import React, { Component } from "react";
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Tooltip from "@crave/farmblocks-tooltip";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
+import withTooltip from "@crave/farmblocks-hoc-withtooltip";
 
 import StyledInfo from "../styledComponents/StyledInfo";
 
-class MoreInfo extends Component {
-  state = {
-    tooltipVisible: false,
-  };
+const DivWithTooltip = withTooltip("div");
 
-  showTooltip = () => {
-    this.setState({
-      tooltipVisible: true,
-    });
-  };
+const MoreInfo = ({ icon, children, text, tooltipProps, ...props }) => {
+  const [tooltipVisible, setTooltipVisible] = useState(false);
 
-  hideTooltip = () => {
-    this.setState({
-      tooltipVisible: false,
-    });
-  };
-
-  render() {
-    return (
-      <StyledInfo {...this.props}>
-        <Text
-          fontWeight="title"
-          type={fontTypes.NEUTRAL}
-          size={fontSizes.MEDIUM}
-          className={`text ${this.state.tooltipVisible && "hovered"}`}
+  return (
+    <StyledInfo {...props} tooltipProps={tooltipProps}>
+      <Text
+        fontWeight="title"
+        type={fontTypes.NEUTRAL}
+        size={fontSizes.MEDIUM}
+        className={`text ${tooltipVisible ? "hovered" : ""}`}
+      >
+        {text}
+        <DivWithTooltip
+          tooltipContent={children}
+          tooltipProps={tooltipProps}
+          className="icon"
+          onMouseOver={() => setTooltipVisible(true)}
+          onMouseLeave={() => setTooltipVisible(false)}
         >
-          {this.props.text}
-          <div
-            className="icon"
-            onMouseOver={this.showTooltip}
-            onFocus={this.showTooltip}
-          >
-            <i className={this.props.icon} />
-            <Tooltip
-              className="tooltip"
-              isVisible={this.state.tooltipVisible}
-              align={this.props.tooltipAlign}
-            >
-              <div
-                className="hit-area"
-                onMouseOut={this.hideTooltip}
-                onBlur={this.hideTooltip}
-              >
-                {this.props.children}
-              </div>
-            </Tooltip>
-          </div>
-        </Text>
-      </StyledInfo>
-    );
-  }
-}
+          <i className={icon} />
+        </DivWithTooltip>
+      </Text>
+    </StyledInfo>
+  );
+};
 
 MoreInfo.propTypes = {
   icon: PropTypes.string,
   children: PropTypes.node.isRequired,
   text: PropTypes.string,
-  tooltipAlign: PropTypes.oneOf(["left", "right", "center"]),
+  // eslint-disable-next-line react/forbid-prop-types
+  tooltipProps: PropTypes.object,
 };
 
 MoreInfo.defaultProps = {
-  tooltipAlign: "center",
   icon: "wg-question",
+  tooltipProps: {
+    positionX: POSITIONS.X.CENTER,
+  },
 };
 
 export default MoreInfo;
