@@ -1,69 +1,97 @@
-import React, { useRef } from "react";
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import values from "object.values";
+import styled from "styled-components";
+import { CSSTransition } from "react-transition-group";
 
-import { Container, StyledTooltip } from "./styledComponents/Tooltip";
-import POSITIONS from "./constants/positions";
-import useAutoAlign from "./useAutoAlign";
+import TooltipContent from "./TooltipContent";
 
-const Tooltip = ({
-  children,
-  text,
-  positionX: originalPositionX,
-  positionY: originalPositionY,
-  boundariesSelector,
-  ...props
-}) => {
-  const content = children || text;
+const Container = styled.div`
+  position: relative;
+  display: ${props => (props.displayBlock ? "block" : "inline-block")};
 
-  const tooltipRef = useRef(null);
+  .hit-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
 
-  const { positionX, positionY, triggerHeight, ready } = useAutoAlign({
-    originalPositionX,
-    originalPositionY,
-    boundariesSelector,
-    tooltipRef,
-    isVisible: props.isVisible,
-  });
+  .appear-enter {
+    opacity: 0;
+  }
+
+  .appear-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+
+  .appear-exit {
+    opacity: 1;
+  }
+
+  .appear-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
+`;
+
+const Tooltip = props => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const {
+    className,
+    disableTooltip,
+    displayBlock,
+    trigger,
+    content,
+    onMouseOver,
+    onMouseLeave,
+    ...tooltipProps
+  } = props;
 
   return (
-    <Container {...props}>
-      {content && (
-        <StyledTooltip
-          {...props}
-          isVisible={ready}
-          positionX={positionX}
-          positionY={positionY}
-          ref={tooltipRef}
-          triggerHeight={triggerHeight}
-        >
-          {content}
-        </StyledTooltip>
+    <Container className={className} displayBlock={displayBlock}>
+      {!disableTooltip && (
+        <div
+          className="hit-area"
+          onMouseOver={e => {
+            setIsVisible(true);
+            onMouseOver?.(e);
+          }}
+          onMouseLeave={e => {
+            setIsVisible(false);
+            onMouseLeave?.(e);
+          }}
+        />
       )}
+      {trigger}
+      <CSSTransition
+        in={isVisible}
+        mountOnEnter
+        unmountOnExit
+        timeout={200}
+        classNames="appear"
+      >
+        <TooltipContent className="tooltip" {...tooltipProps}>
+          {content}
+        </TooltipContent>
+      </CSSTransition>
     </Container>
   );
 };
 
 Tooltip.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-  isVisible: PropTypes.bool,
-  positionX: PropTypes.oneOf(values(POSITIONS.X)),
-  positionY: PropTypes.oneOf(values(POSITIONS.Y)),
-  zIndex: PropTypes.number,
-  boundariesSelector: PropTypes.string,
-  hideArrow: PropTypes.bool,
-  padding: PropTypes.string,
-  offset: PropTypes.string,
-  overflow: PropTypes.string,
-};
-
-Tooltip.defaultProps = {
-  isVisible: true,
-  positionX: POSITIONS.X.LEFT,
-  zIndex: 1000,
-  offset: "15px",
-  positionY: POSITIONS.Y.BOTTOM,
+  disableTooltip: PropTypes.bool,
+  displayBlock: PropTypes.bool,
+  trigger: PropTypes.node,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  // eslint-disable-next-line react/forbid-prop-types
+  tooltipProps: PropTypes.object,
+  onMouseLeave: PropTypes.func,
+  onMouseOver: PropTypes.func,
+  className: PropTypes.string,
 };
 
 export default Tooltip;
