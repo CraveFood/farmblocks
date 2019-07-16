@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import Link from "@crave/farmblocks-link";
 import Text from "@crave/farmblocks-text";
-import { positions } from "@crave/farmblocks-tooltip";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 
 import Popover from ".";
 
@@ -20,7 +20,7 @@ storiesOf("Popover", module)
       <Popover
         trigger={<button>Trigger</button>}
         content={() => <Text>Popover content</Text>}
-        tooltipProps={{ align: "right" }}
+        tooltipProps={{ positionX: POSITIONS.X.RIGHT }}
         onOutsideClick={action("onOutsideClick")}
       />
     </div>
@@ -30,7 +30,7 @@ storiesOf("Popover", module)
       <Popover
         trigger={<Link>Trigger</Link>}
         content={() => <Text>Centered Popover</Text>}
-        tooltipProps={{ align: "center" }}
+        tooltipProps={{ positionX: POSITIONS.X.CENTER }}
         onOutsideClick={action("onOutsideClick")}
       />
     </div>
@@ -188,6 +188,6 @@ storiesOf("Popover", module)
       trigger={<Link>Trigger</Link>}
       content={() => <Text>Popover content</Text>}
       onOutsideClick={action("onOutsideClick")}
-      tooltipProps={{ position: positions.TOP }}
+      tooltipProps={{ positionY: POSITIONS.Y.TOP }}
     />
   ));

@@ -1,11 +1,30 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Tooltip from "@crave/farmblocks-tooltip";
+import { CSSTransition } from "react-transition-group";
+import { TooltipContent } from "@crave/farmblocks-tooltip";
 
 const Container = styled.div`
   display: inline-block;
   width: ${props => props.width};
+
+  .appear-enter {
+    opacity: 0;
+  }
+
+  .appear-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+
+  .appear-exit {
+    opacity: 1;
+  }
+
+  .appear-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
 `;
 
 class Popover extends React.Component {
@@ -83,14 +102,22 @@ class Popover extends React.Component {
           {typeof trigger === "function" ? trigger(isVisible) : trigger}
         </div>
 
-        <Tooltip
-          className="tooltip"
-          isVisible={isVisible}
-          hideArrow
-          {...this.props.tooltipProps}
+        <CSSTransition
+          in={isVisible}
+          mountOnEnter
+          unmountOnExit
+          timeout={200}
+          classNames="appear"
         >
-          {isVisible && this.props.content(this.hide)}
-        </Tooltip>
+          <TooltipContent
+            className="tooltip"
+            isVisible
+            hideArrow
+            {...this.props.tooltipProps}
+          >
+            {this.props.content(this.hide)}
+          </TooltipContent>
+        </CSSTransition>
       </Container>
     );
   }
