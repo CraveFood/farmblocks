@@ -68,7 +68,7 @@ This code will render:
 
 - **showCloseButton** (_Boolean_) = `true`
 
-  > Whether the close button should be visible or not.
+  > Whether the close button should be visible or not. When visible, it will be rendered inside the `header` section whether there's a header or not.
 
 - **onRequestClose** (_Function_)
 
