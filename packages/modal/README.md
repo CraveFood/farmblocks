@@ -97,7 +97,7 @@ This code will render:
 
 - **header** (_Node_)
 
-  > Node for the header section, if **showCloseButton** is _true_ will add an offset space in case of header is not provided
+  > Node for the header section
 
 - **headerProps** (_Object_)
 
