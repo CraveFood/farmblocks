@@ -1,31 +1,30 @@
 import { renderHook } from "@testing-library/react-hooks";
 
-import { LEFT, RIGHT, AUTO } from "./constants/alignments";
-import { TOP, BOTTOM } from "./constants/positions";
+import { LEFT, RIGHT, AUTO, TOP, BOTTOM } from "./constants/positions";
 import useAutoAlign from "./useAutoAlign";
 
 describe("useAutoAlign", () => {
   it("should return the given align and position when they are not set to auto", () => {
-    const originalAlign = RIGHT;
-    const originalPosition = TOP;
+    const originalPositionX = RIGHT;
+    const originalPositionY = TOP;
     const { result } = renderHook(() =>
-      useAutoAlign({ originalAlign, originalPosition, tooltipRef: {} }),
+      useAutoAlign({ originalPositionX, originalPositionY, tooltipRef: {} }),
     );
 
     expect(result.current).toEqual({
-      align: originalAlign,
-      position: originalPosition,
+      positionX: originalPositionX,
+      positionY: originalPositionY,
       ready: false,
       triggerHeight: undefined,
     });
   });
   it("should return the trigger height when available and isVisible", () => {
-    const originalAlign = RIGHT;
-    const originalPosition = TOP;
+    const originalPositionX = RIGHT;
+    const originalPositionY = TOP;
     const { result } = renderHook(() =>
       useAutoAlign({
-        originalAlign,
-        originalPosition,
+        originalPositionX,
+        originalPositionY,
         isVisible: true,
         tooltipRef: {
           current: {
@@ -41,8 +40,8 @@ describe("useAutoAlign", () => {
     );
 
     expect(result.current).toEqual({
-      align: originalAlign,
-      position: originalPosition,
+      positionX: originalPositionX,
+      positionY: originalPositionY,
       ready: true,
       triggerHeight: 100,
     });
@@ -52,16 +51,16 @@ describe("useAutoAlign", () => {
     it("should return default align and position for auto aligned when no tooltipRef is given ", () => {
       const { result } = renderHook(() =>
         useAutoAlign({
-          originalAlign: AUTO,
-          originalPosition: AUTO,
+          originalPositionX: AUTO,
+          originalPositionY: AUTO,
           tooltipRef: {},
           isVisible: true,
         }),
       );
 
       expect(result.current).toEqual({
-        align: LEFT,
-        position: BOTTOM,
+        positionX: LEFT,
+        positionY: BOTTOM,
         ready: true,
         triggerHeight: undefined,
       });
@@ -70,7 +69,7 @@ describe("useAutoAlign", () => {
     describe("with boundariesSelector", () => {
       it("should return RIGHT and TOP when tooltip is outside boundaries", () => {
         const container = {
-          getBoundingClientRect: () => ({ right: 90, y: 40 }),
+          getBoundingClientRect: () => ({ right: 90, height: 40 }),
         };
 
         const tooltipRef = {
@@ -83,16 +82,16 @@ describe("useAutoAlign", () => {
 
         const { result } = renderHook(() =>
           useAutoAlign({
-            originalAlign: AUTO,
-            originalPosition: AUTO,
+            originalPositionX: AUTO,
+            originalPositionY: AUTO,
             tooltipRef,
             boundariesSelector,
             isVisible: true,
           }),
         );
         expect(result.current).toEqual({
-          align: RIGHT,
-          position: TOP,
+          positionX: RIGHT,
+          positionY: TOP,
           ready: true,
           triggerHeight: undefined,
         });
@@ -112,16 +111,16 @@ describe("useAutoAlign", () => {
 
         const { result } = renderHook(() =>
           useAutoAlign({
-            originalAlign: AUTO,
-            originalPosition: AUTO,
+            originalPositionX: AUTO,
+            originalPositionY: AUTO,
             tooltipRef,
             boundariesSelector,
             isVisible: true,
           }),
         );
         expect(result.current).toEqual({
-          align: LEFT,
-          position: BOTTOM,
+          positionX: LEFT,
+          positionY: BOTTOM,
           ready: true,
           triggerHeight: undefined,
         });
@@ -149,15 +148,15 @@ describe("useAutoAlign", () => {
 
         const { result } = renderHook(() =>
           useAutoAlign({
-            originalAlign: AUTO,
-            originalPosition: AUTO,
+            originalPositionX: AUTO,
+            originalPositionY: AUTO,
             tooltipRef,
             isVisible: true,
           }),
         );
         expect(result.current).toEqual({
-          align: LEFT,
-          position: BOTTOM,
+          positionX: LEFT,
+          positionY: BOTTOM,
           ready: true,
           triggerHeight: undefined,
         });
@@ -173,15 +172,15 @@ describe("useAutoAlign", () => {
 
         const { result } = renderHook(() =>
           useAutoAlign({
-            originalAlign: AUTO,
-            originalPosition: AUTO,
+            originalPositionX: AUTO,
+            originalPositionY: AUTO,
             tooltipRef,
             isVisible: true,
           }),
         );
         expect(result.current).toEqual({
-          align: RIGHT,
-          position: TOP,
+          positionX: RIGHT,
+          positionY: TOP,
           ready: true,
           triggerHeight: undefined,
         });

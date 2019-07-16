@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
-import { CENTER } from "../constants/alignments";
+import { TOP, BOTTOM, CENTER } from "../constants/positions";
 
 const Container = styled.div`
   position: relative;
@@ -11,24 +11,24 @@ const centerAlignment = css`
   transform: translateX(-50%);
 `;
 
-const alignX = coordinate => ({ align }) => {
-  if (align === CENTER) {
+const positionXStyle = coordinate => ({ positionX }) => {
+  if (positionX === CENTER) {
     return centerAlignment;
   }
 
   return css`
-    ${align}: ${coordinate};
+    ${positionX}: ${coordinate};
   `;
 };
 
-const positionStyle = ({ position, offset, triggerHeight }) => {
-  if (position === "bottom") {
+const positionYStyle = ({ positionY, offset, triggerHeight }) => {
+  if (positionY === BOTTOM) {
     return css`
       top: ${offset};
     `;
   }
 
-  if (position === "top") {
+  if (positionY === TOP) {
     return css`
       bottom: ${triggerHeight + Number.parseInt(offset, 10)}px;
     `;
@@ -39,7 +39,7 @@ const positionStyle = ({ position, offset, triggerHeight }) => {
   `;
 };
 
-const arrow = ({ hideArrow, position }) => {
+const arrow = ({ hideArrow, positionY }) => {
   if (hideArrow) return css``;
 
   return css`
@@ -54,19 +54,19 @@ const arrow = ({ hideArrow, position }) => {
     }
 
     &:before {
-      ${position}: 100%;
+      ${positionY}: 100%;
       border-color: transparent;
-      border-${position}-color: rgba(0, 0, 0, 0.16);
+      border-${positionY}-color: rgba(0, 0, 0, 0.16);
       border-width: 8px;
-      ${alignX("7px")};
+      ${positionXStyle("7px")};
     }
 
     &:after {
-      ${position}: calc(100% - 1px);
+      ${positionY}: calc(100% - 1px);
       border-color: transparent;
-      border-${position}-color: #ffffff;
+      border-${positionY}-color: #ffffff;
       border-width: 7px;
-      ${alignX("8px")};
+      ${positionXStyle("8px")};
     }
   `;
 };
@@ -86,10 +86,10 @@ const StyledTooltip = styled.div`
 
   font-family: lato, sans-serif;
 
-  ${alignX(0)};
+  ${positionXStyle(0)};
 
   ${arrow};
-  ${positionStyle};
+  ${positionYStyle};
 
   overflow: ${props => props.overflow};
 `;

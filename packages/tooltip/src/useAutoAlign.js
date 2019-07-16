@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
-import alignments from "./constants/alignments";
-import positions from "./constants/positions";
+import POSITIONS, { AUTO } from "./constants/positions";
 
 const useAutoAlign = ({
-  originalAlign,
-  originalPosition,
+  originalPositionX,
+  originalPositionY,
   boundariesSelector,
   tooltipRef,
   isVisible,
 }) => {
   const [ready, setReady] = useState(false);
-  const [align, setAlign] = useState(originalAlign);
-  const [position, setPosition] = useState(originalPosition);
+  const [positionX, setPositionX] = useState(originalPositionX);
+  const [positionY, setPositionY] = useState(originalPositionY);
   const [triggerHeight, setTriggerHeight] = useState();
 
   useEffect(() => {
@@ -19,11 +18,10 @@ const useAutoAlign = ({
       setReady(false);
     } else {
       // eslint-disable-next-line no-use-before-define
-      const alignedData = getAutoAlign(tooltipRef, boundariesSelector);
+      const positionData = getPositionData(tooltipRef, boundariesSelector);
 
-      if (originalAlign === alignments.AUTO) setAlign(alignedData.align);
-      if (originalPosition === positions.AUTO)
-        setPosition(alignedData.position);
+      if (originalPositionX === AUTO) setPositionX(positionData.x);
+      if (originalPositionY === AUTO) setPositionY(positionData.y);
 
       if (tooltipRef?.current && !triggerHeight) {
         // the tooltip trigger is always the container's previous sibling
@@ -38,13 +36,13 @@ const useAutoAlign = ({
     }
   }, [isVisible]);
 
-  return { align, position, triggerHeight, ready };
+  return { positionX, positionY, triggerHeight, ready };
 };
 
-export function getAutoAlign(tooltipRef, boundariesSelector) {
-  const alignedData = {
-    align: alignments.LEFT,
-    position: positions.BOTTOM,
+export function getPositionData(tooltipRef, boundariesSelector) {
+  const positionData = {
+    x: POSITIONS.X.LEFT,
+    y: POSITIONS.Y.BOTTOM,
   };
 
   if (tooltipRef.current) {
@@ -55,14 +53,14 @@ export function getAutoAlign(tooltipRef, boundariesSelector) {
     const maxRight =
       boundariesNode?.getBoundingClientRect().right || window.innerWidth;
     const maxHeight =
-      boundariesNode?.getBoundingClientRect().y || window.innerHeight;
+      boundariesNode?.getBoundingClientRect().height || window.innerHeight;
 
-    if (right >= maxRight) alignedData.align = alignments.RIGHT;
-    if (y >= maxHeight) alignedData.position = positions.TOP;
+    if (right >= maxRight) positionData.x = POSITIONS.X.RIGHT;
+    if (y >= maxHeight) positionData.y = POSITIONS.Y.TOP;
 
-    return { ...alignedData, height };
+    return { ...positionData, height };
   }
-  return alignedData;
+  return positionData;
 }
 
 export default useAutoAlign;

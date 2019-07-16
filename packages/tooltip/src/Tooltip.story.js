@@ -5,7 +5,7 @@ import Card from "@crave/farmblocks-card";
 import Button, { buttonTypes } from "@crave/farmblocks-button";
 import Link from "@crave/farmblocks-link";
 
-import Tooltip, { alignments, positions } from ".";
+import Tooltip, { POSITIONS } from ".";
 
 // eslint-disable-next-line react/prop-types
 const Container = ({ children, style }) => (
@@ -39,7 +39,7 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Bottom center aligned"
-              align={alignments.CENTER}
+              positionX={POSITIONS.X.CENTER}
             />
           </div>
 
@@ -48,7 +48,7 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Bottom right aligned"
-              align={alignments.RIGHT}
+              positionX={POSITIONS.X.RIGHT}
             />
           </div>
         </div>
@@ -75,7 +75,7 @@ storiesOf("Tooltip", module)
               isVisible
               text="Bottom center aligned without arrow"
               hideArrow
-              align={alignments.CENTER}
+              positionX={POSITIONS.X.CENTER}
             />
           </div>
 
@@ -85,7 +85,7 @@ storiesOf("Tooltip", module)
               isVisible
               text="Bottom right aligned without arrow"
               hideArrow
-              align={alignments.RIGHT}
+              positionX={POSITIONS.X.RIGHT}
             />
           </div>
         </div>
@@ -105,7 +105,7 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Top left aligned"
-              position={positions.TOP}
+              positionY={POSITIONS.Y.TOP}
             />
           </div>
 
@@ -115,8 +115,8 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Top center aligned"
-              position={positions.TOP}
-              align={alignments.CENTER}
+              positionY={POSITIONS.Y.TOP}
+              positionX={POSITIONS.X.CENTER}
             />
           </div>
 
@@ -125,8 +125,8 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Top right aligned"
-              position={positions.TOP}
-              align={alignments.RIGHT}
+              positionY={POSITIONS.Y.TOP}
+              positionX={POSITIONS.X.RIGHT}
             />
           </div>
         </div>
@@ -143,7 +143,7 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Top left aligned without arrow"
-              position={positions.TOP}
+              positionY={POSITIONS.Y.TOP}
               hideArrow
             />
           </div>
@@ -153,9 +153,9 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Top center aligned without arrow"
-              position={positions.TOP}
+              positionY={POSITIONS.Y.TOP}
               hideArrow
-              align={alignments.CENTER}
+              positionX={POSITIONS.X.CENTER}
             />
           </div>
 
@@ -164,9 +164,9 @@ storiesOf("Tooltip", module)
             <Tooltip
               isVisible
               text="Top right aligned without arrow"
-              position={positions.TOP}
+              positionY={POSITIONS.Y.TOP}
               hideArrow
-              align={alignments.RIGHT}
+              positionX={POSITIONS.X.RIGHT}
             />
           </div>
         </div>
@@ -185,16 +185,16 @@ storiesOf("Tooltip", module)
         <div>
           <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
           <Tooltip
-            align={alignments.AUTO}
-            position={positions.AUTO}
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
             text="Auto aligned/positioned tooltip"
           />
         </div>
         <div>
           <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
           <Tooltip
-            align={alignments.AUTO}
-            position={positions.AUTO}
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
             text="Auto aligned/positioned tooltip"
           />
         </div>
@@ -213,8 +213,8 @@ storiesOf("Tooltip", module)
           <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
 
           <Tooltip
-            align={alignments.AUTO}
-            position={positions.AUTO}
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
             text="Auto aligned/positioned tooltip"
           />
         </div>
@@ -222,8 +222,8 @@ storiesOf("Tooltip", module)
           <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
 
           <Tooltip
-            align={alignments.AUTO}
-            position={positions.AUTO}
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
             text="Auto aligned/positioned tooltip"
           />
         </div>
@@ -252,7 +252,7 @@ storiesOf("Tooltip", module)
           <div>
             <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
-              align={alignments.AUTO}
+              positionX={POSITIONS.X.AUTO}
               text="Auto aligned tooltip"
               boundariesSelector=".exampleContainer"
             />
@@ -261,7 +261,7 @@ storiesOf("Tooltip", module)
           <div>
             <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
             <Tooltip
-              align={alignments.AUTO}
+              positionX={POSITIONS.X.AUTO}
               text="Auto aligned tooltip"
               boundariesSelector=".exampleContainer"
             />
@@ -276,8 +276,8 @@ storiesOf("Tooltip", module)
             <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
 
             <Tooltip
-              align={alignments.AUTO}
-              position={positions.AUTO}
+              positionX={POSITIONS.X.AUTO}
+              positionY={POSITIONS.Y.AUTO}
               text="Auto aligned/positioned tooltip"
               boundariesSelector=".exampleContainer"
             />
@@ -287,8 +287,8 @@ storiesOf("Tooltip", module)
             <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
 
             <Tooltip
-              align={alignments.AUTO}
-              position={positions.AUTO}
+              positionX={POSITIONS.X.AUTO}
+              positionY={POSITIONS.Y.AUTO}
               text="Auto aligned/positioned tooltip"
               boundariesSelector=".exampleContainer"
             />

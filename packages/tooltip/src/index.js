@@ -1,3 +1,2 @@
 export { default } from "./Tooltip";
-export { default as alignments } from "./constants/alignments";
-export { default as positions } from "./constants/positions";
+export { default as POSITIONS } from "./constants/positions";
