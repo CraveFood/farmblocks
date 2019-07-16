@@ -15,12 +15,12 @@ describe("More info", () => {
       <MoreInfo text={moreInfoText}>{tooltipText}</MoreInfo>,
     );
 
-    // Initial state, tooltip is no visible and text doesn't have the class "hovered"
+    // Initial state, tooltip is not visible and text doesn't have the class "hovered"
     expect(queryByText(tooltipText)).not.toBeInTheDocument();
     expect(queryByText(moreInfoText)).not.toHaveClass("hovered");
 
     // On mouve over, Tooltip is visible and text has the class "hovered"
-    const hitArea = container.querySelector('[class="hitArea"]');
+    const hitArea = container.querySelector('[class="hit-area"]');
     fireEvent.mouseOver(hitArea);
     expect(queryByText(tooltipText)).toBeInTheDocument();
     expect(queryByText(moreInfoText)).toHaveClass("hovered");

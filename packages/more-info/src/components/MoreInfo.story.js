@@ -36,10 +36,10 @@ storiesOf("More info", module)
         .icon {
           position: relative;
           i {visibility: hidden;}
-          .hitArea {
+          .hit-area {
             z-index: 1;
           }
-          &::after {
+          &::before {
             content: '🤔';
             position: absolute;
             top: 0;
