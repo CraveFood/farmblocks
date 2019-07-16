@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
+import { transparentize } from "polished";
 import { colors } from "@crave/farmblocks-theme";
+
+const hoverBgColor = transparentize(0.94, colors.INDIGO_MILK_CAP);
+const hoverChildBgColor = transparentize(0.9, colors.BLUE_CORN);
 
 const border = `1px solid ${colors.GREY_16}`;
 const borderTop = props =>
@@ -69,11 +73,11 @@ const Table = styled.table`
 
   tbody:hover {
     .cell {
-      background: ${colors.SUGAR};
+      background: ${hoverBgColor};
     }
 
     .grouped > .cell {
-      background: ${colors.DEMERARA_SUGAR};
+      background: ${hoverChildBgColor};
     }
   }
 

@@ -304,7 +304,7 @@ class Table extends React.Component {
       return bodyCell(
         <Text
           className="text"
-          fontWeight={props.light ? "normal" : "title"}
+          fontWeight={props.light || grouped ? "normal" : "title"}
           {...textProps}
           type={type}
         >
