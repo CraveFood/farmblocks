@@ -1,22 +1,36 @@
 import styled, { css } from "styled-components";
+import { transparentize } from "polished";
 import { colors } from "@crave/farmblocks-theme";
 
-const border = `1px solid ${colors.GREY_16}`;
+const hoverBgColor = transparentize(0.94, colors.INDIGO_MILK_CAP);
+const hoverChildBgColor = transparentize(0.9, colors.BLUE_CORN);
+
+// Equivalent to GREY_16 over white
+// Semi-transparent borders don't work well with colSpan
+const borderColor = "#d3dadc";
+
+const border = `1px solid ${borderColor}`;
+const borderTop = props =>
+  props.selectionHeaderVisible &&
+  css`
+    border-top: none;
+  `;
 
 const Table = styled.table`
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   border: ${props => !props.borderless && border};
-  padding: 8px 16px;
+  border-top: none;
 
-  ${props =>
-    props.selectionHeaderVisible &&
-    css`
-      border-top: none;
-    `};
+  ${borderTop};
+  thead .cell {
+    ${borderTop};
+  }
+
   .cell {
     box-sizing: border-box;
     height: ${props => props.rowHeight};
-    border-bottom: ${border};
+    border-top: ${border};
     padding: 16px 0 16px 16px;
 
     &:last-child {
@@ -58,9 +72,19 @@ const Table = styled.table`
     display: none;
   }
 
-  tbody tr:hover {
-    & .cell {
-      background: ${colors.DEMERARA_SUGAR};
+  .grouped > .cell {
+    border-top: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  tbody:hover {
+    .cell {
+      background: ${hoverBgColor};
+    }
+
+    .grouped > .cell {
+      background: ${hoverChildBgColor};
     }
   }
 

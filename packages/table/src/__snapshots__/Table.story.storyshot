@@ -67,15 +67,16 @@ exports[`Storyshots Table/Basic Clickable column titles 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -114,8 +115,18 @@ exports[`Storyshots Table/Basic Clickable column titles 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -407,15 +418,16 @@ exports[`Storyshots Table/Basic Custom align and width 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -454,8 +466,18 @@ exports[`Storyshots Table/Basic Custom align and width 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -817,15 +839,16 @@ exports[`Storyshots Table/Basic Custom column header 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -864,8 +887,18 @@ exports[`Storyshots Table/Basic Custom column header 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -1169,15 +1202,16 @@ exports[`Storyshots Table/Basic Custom white-space 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -1216,8 +1250,18 @@ exports[`Storyshots Table/Basic Custom white-space 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -1546,15 +1590,16 @@ exports[`Storyshots Table/Basic Default sizes 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -1593,8 +1638,18 @@ exports[`Storyshots Table/Basic Default sizes 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -1824,15 +1879,16 @@ exports[`Storyshots Table/Basic Empty column 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -1871,8 +1927,18 @@ exports[`Storyshots Table/Basic Empty column 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -2060,15 +2126,16 @@ exports[`Storyshots Table/Basic Featured column 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -2107,8 +2174,18 @@ exports[`Storyshots Table/Basic Featured column 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -2338,15 +2415,16 @@ exports[`Storyshots Table/Basic Light column 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -2385,8 +2463,18 @@ exports[`Storyshots Table/Basic Light column 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -2626,15 +2714,16 @@ exports[`Storyshots Table/Basic Small row heights 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 64px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -2673,8 +2762,18 @@ exports[`Storyshots Table/Basic Small row heights 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -2904,15 +3003,16 @@ exports[`Storyshots Table/Basic Table with width set 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -2951,8 +3051,18 @@ exports[`Storyshots Table/Basic Table with width set 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -3183,15 +3293,16 @@ exports[`Storyshots Table/Basic With row click listener 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -3230,8 +3341,18 @@ exports[`Storyshots Table/Basic With row click listener 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -3541,15 +3662,16 @@ exports[`Storyshots Table/Basic With selectable rows 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -3588,8 +3710,18 @@ exports[`Storyshots Table/Basic With selectable rows 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -4088,15 +4220,16 @@ exports[`Storyshots Table/Basic With selectable rows and a selection header 1`] 
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -4135,8 +4268,18 @@ exports[`Storyshots Table/Basic With selectable rows and a selection header 1`] 
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -4636,15 +4779,16 @@ exports[`Storyshots Table/Basic extended style 1`] = `
 }
 
 .c1 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c1 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -4683,8 +4827,18 @@ exports[`Storyshots Table/Basic extended style 1`] = `
   display: none;
 }
 
-.c1 tbody tr:hover .cell {
-  background: #e9ebec;
+.c1 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c1 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c1 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c1 tbody tr.clickable {
@@ -5116,15 +5270,16 @@ exports[`Storyshots Table/Basic null Table chidren 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -5163,8 +5318,18 @@ exports[`Storyshots Table/Basic null Table chidren 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -5397,14 +5562,15 @@ exports[`Storyshots Table/Custom Cells Borderless 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -5443,8 +5609,18 @@ exports[`Storyshots Table/Custom Cells Borderless 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -5863,15 +6039,16 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -5910,8 +6087,18 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -6806,15 +6993,16 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -6853,8 +7041,18 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -7602,15 +7800,16 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -7649,8 +7848,18 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -8301,15 +8510,16 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -8348,8 +8558,18 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -9376,15 +9596,16 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 64px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -9423,8 +9644,18 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -10179,15 +10410,16 @@ exports[`Storyshots Table/Custom Cells With colspan 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -10226,8 +10458,18 @@ exports[`Storyshots Table/Custom Cells With colspan 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -10576,6 +10818,16 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   font-weight: inherit;
 }
 
+.c11 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
 .c2 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -10587,15 +10839,16 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -10634,8 +10887,18 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -10693,7 +10956,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   background-color: white;
 }
 
-.c11 {
+.c12 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -10975,8 +11238,8 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         selected={false}
       >
         <div
-          className="text c6"
-          fontWeight="title"
+          className="text c11"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -10984,7 +11247,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c12"
         selected={false}
       />
     </tr>
@@ -11011,8 +11274,8 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         selected={false}
       >
         <div
-          className="text c6"
-          fontWeight="title"
+          className="text c11"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11020,7 +11283,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c12"
         selected={false}
       />
     </tr>
@@ -11047,8 +11310,8 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         selected={false}
       >
         <div
-          className="text c6"
-          fontWeight="title"
+          className="text c11"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11056,7 +11319,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c12"
         selected={false}
       />
     </tr>
@@ -11190,6 +11453,16 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   font-weight: 600;
 }
 
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
 .c2 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -11201,15 +11474,16 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -11248,8 +11522,18 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -11307,7 +11591,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   background-color: white;
 }
 
-.c10 {
+.c11 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -11463,8 +11747,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11476,8 +11760,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11485,7 +11769,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11498,8 +11782,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11511,8 +11795,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11520,7 +11804,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11638,8 +11922,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11651,8 +11935,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11660,7 +11944,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11673,8 +11957,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11686,8 +11970,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11695,7 +11979,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11708,8 +11992,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11721,8 +12005,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -11730,7 +12014,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11864,6 +12148,16 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   font-weight: 600;
 }
 
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
 .c2 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -11875,15 +12169,16 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -11922,8 +12217,18 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -11981,7 +12286,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   background-color: white;
 }
 
-.c10 {
+.c11 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -12136,8 +12441,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12149,8 +12454,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12158,7 +12463,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12171,8 +12476,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12184,8 +12489,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12193,7 +12498,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12311,8 +12616,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12324,8 +12629,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12333,7 +12638,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12346,8 +12651,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12359,8 +12664,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12368,7 +12673,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12381,8 +12686,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12394,8 +12699,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12403,7 +12708,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12537,6 +12842,16 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   font-weight: 600;
 }
 
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
 .c2 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -12548,15 +12863,16 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -12595,8 +12911,18 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -12654,7 +12980,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   background-color: white;
 }
 
-.c10 {
+.c11 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -12809,8 +13135,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12822,8 +13148,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12831,7 +13157,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12844,8 +13170,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12857,8 +13183,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12866,7 +13192,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -12984,8 +13310,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -12997,8 +13323,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13006,7 +13332,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -13019,8 +13345,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13032,8 +13358,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13041,7 +13367,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -13054,8 +13380,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13067,8 +13393,8 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13076,7 +13402,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -13208,6 +13534,16 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   color: #2f313a;
   text-align: left;
   font-weight: 600;
+}
+
+.c15 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
 }
 
 .c4 {
@@ -13360,15 +13696,16 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 64px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -13407,8 +13744,18 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -13488,7 +13835,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c15 {
+.c16 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -13781,8 +14128,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13794,8 +14141,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13803,7 +14150,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -13850,8 +14197,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13863,8 +14210,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -13872,7 +14219,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -14092,8 +14439,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -14105,8 +14452,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -14114,7 +14461,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -14161,8 +14508,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -14174,8 +14521,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -14183,7 +14530,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -14230,8 +14577,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -14243,8 +14590,8 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -14252,7 +14599,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -14384,6 +14731,16 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   color: #2f313a;
   text-align: left;
   font-weight: 600;
+}
+
+.c15 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
 }
 
 .c4 {
@@ -14536,15 +14893,16 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 64px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -14583,8 +14941,18 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -14664,7 +15032,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c15 {
+.c16 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -15172,8 +15540,8 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -15185,8 +15553,8 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -15194,7 +15562,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -15241,8 +15609,8 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -15254,8 +15622,8 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -15263,7 +15631,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -15310,8 +15678,8 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -15323,8 +15691,8 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         selected={false}
       >
         <div
-          className="text c8"
-          fontWeight="title"
+          className="text c15"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -15332,7 +15700,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c15"
+        className="cell c16"
         selected={false}
       />
     </tr>
@@ -15464,6 +15832,16 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   color: #2f313a;
   text-align: left;
   font-weight: 600;
+}
+
+.c15 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
 }
 
 .c4 {
@@ -15616,15 +15994,16 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 64px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -15663,8 +16042,18 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -15744,7 +16133,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c15 {
+.c16 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -16044,8 +16433,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16057,8 +16446,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16066,7 +16455,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c16"
           selected={false}
         />
       </tr>
@@ -16113,8 +16502,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16126,8 +16515,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16135,7 +16524,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c16"
           selected={false}
         />
       </tr>
@@ -16355,8 +16744,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16368,8 +16757,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16377,7 +16766,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c16"
           selected={false}
         />
       </tr>
@@ -16424,8 +16813,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16437,8 +16826,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16446,7 +16835,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c16"
           selected={false}
         />
       </tr>
@@ -16493,8 +16882,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16506,8 +16895,8 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           selected={false}
         >
           <div
-            className="text c8"
-            fontWeight="title"
+            className="text c15"
+            fontWeight="normal"
             size={16}
             type="#2f313a"
           >
@@ -16515,7 +16904,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c15"
+          className="cell c16"
           selected={false}
         />
       </tr>
@@ -16524,8 +16913,123 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
 </div>
 `;
 
-exports[`Storyshots Table/Row Groups With row groups 1`] = `
-.c4 {
+exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
+.c7 {
+  position: relative;
+  display: inline-block;
+}
+
+.c7 .hitArea {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 .appear-enter {
+  opacity: 0;
+}
+
+.c7 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c7 .appear-exit {
+  opacity: 1;
+}
+
+.c7 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 8px;
+}
+
+.c8 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:hover,
+.c8:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c8:hover > .icon,
+.c8:focus > .icon {
+  color: #3498db;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -16533,6 +17037,26 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
   color: #2f313a;
   text-align: left;
   font-weight: 600;
+}
+
+.c13 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
 }
 
 .c2 {
@@ -16546,15 +17070,16 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
-  height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  height: 32px;
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -16593,8 +17118,665 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
+}
+
+.c0 tbody tr.clickable {
+  cursor: pointer;
+}
+
+.c1 {
+  text-align: left;
+  background-color: #f6f8f9;
+  height: 40px !important;
+  white-space: normal;
+}
+
+.c1 .link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c1 .icon {
+  color: rgba(0,0,0,0.16);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.c3 {
+  background-color: #f6f8f9;
+  height: 40px !important;
+}
+
+.c3 .link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c3 .icon {
+  color: rgba(0,0,0,0.16);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.c4 {
+  text-align: left;
+  background-color: white;
+  white-space: normal;
+}
+
+.c9 {
+  text-align: left;
+  background-color: #f6f8f9;
+  white-space: normal;
+}
+
+.c6 {
+  text-align: right;
+  background-color: white;
+}
+
+.c11 {
+  text-align: right;
+  background-color: #f6f8f9;
+}
+
+.c14 {
+  background-color: #f6f8f9;
+}
+
+.c12 {
+  background-color: #f6f8f9;
+}
+
+<table
+  className="c0"
+>
+  <caption>
+    <span />
+  </caption>
+  <thead>
+    <tr>
+      <th
+        className="cell c1"
+      >
+        <div
+          className="text c2"
+          fontWeight="title"
+          size={14}
+          type="#2f313a"
+        >
+          Name
+        </div>
+      </th>
+      <th
+        className="cell c1"
+      >
+        <div
+          className="text c2"
+          fontWeight="title"
+          size={14}
+          type="#2f313a"
+        >
+          Price
+        </div>
+      </th>
+      <th
+        className="cell c3"
+      />
+    </tr>
+  </thead>
+  <tbody
+    className="body"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          Farm A
+        </div>
+      </td>
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          $ 5
+        </div>
+      </td>
+      <td
+        className="cell c6"
+        selected={false}
+      />
+    </tr>
+  </tbody>
+  <tbody
+    className="body collapsed"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          Farm Market 1
+        </div>
+      </td>
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          $ 20
+        </div>
+      </td>
+      <td
+        className="cell c6"
+        selected={false}
+      >
+        <div
+          className="c7"
+        >
+          <button
+            className="wrapped c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
+          >
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="row grouped "
+      onClick={[Function]}
+    >
+      <td
+        className="cell corner-icon c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          Farm B
+        </div>
+      </td>
+      <td
+        className="cell  c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          $ 10
+        </div>
+      </td>
+      <td
+        className="cell c11"
+        selected={false}
+      />
+    </tr>
+    <tr
+      className="row grouped "
+      onClick={[Function]}
+    >
+      <td
+        className="cell corner-icon c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          Farm C
+        </div>
+      </td>
+      <td
+        className="cell  c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          $ 10
+        </div>
+      </td>
+      <td
+        className="cell c11"
+        selected={false}
+      />
+    </tr>
+    <tr
+      className="row grouped  "
+    >
+      <td
+        className="corner-icon cell  c12"
+        colSpan="2"
+      >
+        <div
+          className="c13"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Extra row for 
+          Farm Market 1
+        </div>
+      </td>
+      <td
+        className="cell  c14"
+      >
+        <div
+          className="c13"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          X
+        </div>
+      </td>
+    </tr>
+  </tbody>
+  <tbody
+    className="body"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          Farm D
+        </div>
+      </td>
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          $ 5
+        </div>
+      </td>
+      <td
+        className="cell c6"
+        selected={false}
+      />
+    </tr>
+  </tbody>
+  <tbody
+    className="body collapsed"
+  >
+    <tr
+      className="row  "
+      onClick={[Function]}
+    >
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          Farm Market 2
+        </div>
+      </td>
+      <td
+        className="cell  c4"
+        selected={false}
+      >
+        <div
+          className="text c5"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          $ 15
+        </div>
+      </td>
+      <td
+        className="cell c6"
+        selected={false}
+      >
+        <div
+          className="c7"
+        >
+          <button
+            className="wrapped c8"
+            disabled={false}
+            onClick={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
+          >
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
+                }
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
+        </div>
+      </td>
+    </tr>
+    <tr
+      className="row grouped "
+      onClick={[Function]}
+    >
+      <td
+        className="cell corner-icon c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          Farm E
+        </div>
+      </td>
+      <td
+        className="cell  c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          $ 10
+        </div>
+      </td>
+      <td
+        className="cell c11"
+        selected={false}
+      />
+    </tr>
+    <tr
+      className="row grouped "
+      onClick={[Function]}
+    >
+      <td
+        className="cell corner-icon c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          Farm F
+        </div>
+      </td>
+      <td
+        className="cell  c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          $ 5
+        </div>
+      </td>
+      <td
+        className="cell c11"
+        selected={false}
+      />
+    </tr>
+    <tr
+      className="row grouped "
+      onClick={[Function]}
+    >
+      <td
+        className="cell corner-icon c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          Farm G
+        </div>
+      </td>
+      <td
+        className="cell  c9"
+        selected={false}
+      >
+        <div
+          className="text c10"
+          fontWeight="normal"
+          size={16}
+          type="#2f313a"
+        >
+          $ 5
+        </div>
+      </td>
+      <td
+        className="cell c11"
+        selected={false}
+      />
+    </tr>
+    <tr
+      className="row grouped  "
+    >
+      <td
+        className="corner-icon cell  c12"
+        colSpan="2"
+      >
+        <div
+          className="c13"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Extra row for 
+          Farm Market 2
+        </div>
+      </td>
+      <td
+        className="cell  c14"
+      >
+        <div
+          className="c13"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          X
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Table/Row Groups With row groups 1`] = `
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
+}
+
+.c0 .cell {
+  box-sizing: border-box;
+  height: 80px;
+  border-top: 1px solid #d3dadc;
+  padding: 16px 0 16px 16px;
+}
+
+.c0 .cell:last-child {
+  padding-right: 16px;
+}
+
+.c0 .cell.corner-icon {
+  position: relative;
+  padding-left: 40px;
+}
+
+.c0 .cell.corner-icon:before {
+  content: "";
+  float: left;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #3498db;
+  border-bottom: 2px solid #3498db;
+  position: absolute;
+  top: calc(50% - 3px);
+  left: 16px;
+}
+
+.c0 .cell .checkbox {
+  height: 16px;
+}
+
+.c0 .cell .checkbox label {
+  padding: 8px;
+  margin: -8px;
+}
+
+.c0 tbody.collapsed tr.grouped {
+  display: none;
+}
+
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -16743,8 +17925,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16756,8 +17938,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16774,8 +17956,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16787,8 +17969,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16875,8 +18057,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16888,8 +18070,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16906,8 +18088,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16919,8 +18101,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16937,8 +18119,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -16950,8 +18132,8 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
         selected={false}
       >
         <div
-          className="text c4"
-          fontWeight="title"
+          className="text c6"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17089,6 +18271,16 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   font-weight: 600;
 }
 
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
 .c2 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -17100,15 +18292,16 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
 }
 
 .c0 {
-  border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 8px 16px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #d3dadc;
+  border-top: none;
 }
 
 .c0 .cell {
   box-sizing: border-box;
   height: 80px;
-  border-bottom: 1px solid rgba(0,0,0,0.16);
+  border-top: 1px solid #d3dadc;
   padding: 16px 0 16px 16px;
 }
 
@@ -17147,8 +18340,18 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   display: none;
 }
 
-.c0 tbody tr:hover .cell {
-  background: #e9ebec;
+.c0 .grouped > .cell {
+  border-top: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.c0 tbody:hover .cell {
+  background: rgba(52,152,219,0.06);
+}
+
+.c0 tbody:hover .grouped > .cell {
+  background: rgba(41,128,185,0.1);
 }
 
 .c0 tbody tr.clickable {
@@ -17206,7 +18409,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   background-color: white;
 }
 
-.c10 {
+.c11 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -17474,8 +18677,8 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17487,8 +18690,8 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17496,7 +18699,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -17509,8 +18712,8 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17522,8 +18725,8 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17531,7 +18734,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -17544,8 +18747,8 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17557,8 +18760,8 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         selected={false}
       >
         <div
-          className="text c5"
-          fontWeight="title"
+          className="text c10"
+          fontWeight="normal"
           size={16}
           type="#2f313a"
         >
@@ -17566,7 +18769,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c10"
+        className="cell c11"
         selected={false}
       />
     </tr>

@@ -51,11 +51,6 @@ storiesOf("Modal", module)
       Content
     </Modal>
   ))
-  .add("With ModalTitle header", () => (
-    <Modal isOpen header={<ModalTitle>Header with ModalTitle</ModalTitle>}>
-      With header
-    </Modal>
-  ))
   .add("With footer", () => (
     <Modal
       isOpen

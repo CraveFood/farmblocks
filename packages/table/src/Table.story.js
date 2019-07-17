@@ -641,6 +641,34 @@ storiesOf("Table/Row Groups", module)
       </Table>
     );
   })
+  .add("With extra child rows", () => {
+    return (
+      <Table
+        data={orders}
+        rowHeight="32px"
+        rowGroupKey="suborders"
+        collapsed
+        renderExtraChildRows={({
+          rowData,
+          ChildRow,
+          ChildCell,
+          IndentedChildCell,
+        }) => (
+          <ChildRow>
+            <IndentedChildCell colSpan="2">
+              <Text>Extra row for {rowData.name}</Text>
+            </IndentedChildCell>
+            <ChildCell>
+              <Text>X</Text>
+            </ChildCell>
+          </ChildRow>
+        )}
+      >
+        <Column title="Name" text={row => row.name} />
+        <Column title="Price" text={row => row.totalLabel} />
+      </Table>
+    );
+  })
   .add("Expandable Groups", () => {
     return (
       <Table data={orders} collapsed rowGroupKey="suborders">

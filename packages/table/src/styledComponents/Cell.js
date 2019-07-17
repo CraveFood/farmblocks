@@ -1,13 +1,7 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
-import { transparentize } from "polished";
-
-const selectedBg = transparentize(0.94, colors.INDIGO_MILK_CAP);
 
 const cellBg = props => {
-  if (props.selected) {
-    return `${selectedBg} !important`;
-  }
   return props.grouped ? colors.SUGAR : "white";
 };
 
