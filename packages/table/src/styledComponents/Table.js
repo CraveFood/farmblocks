@@ -5,7 +5,11 @@ import { colors } from "@crave/farmblocks-theme";
 const hoverBgColor = transparentize(0.94, colors.INDIGO_MILK_CAP);
 const hoverChildBgColor = transparentize(0.9, colors.BLUE_CORN);
 
-const border = `1px solid ${colors.GREY_16}`;
+// Equivalent to GREY_16 over white
+// Semi-transparent borders don't work well with colSpan
+const borderColor = "#d3dadc";
+
+const border = `1px solid ${borderColor}`;
 const borderTop = props =>
   props.selectionHeaderVisible &&
   css`
@@ -13,6 +17,7 @@ const borderTop = props =>
   `;
 
 const Table = styled.table`
+  border-collapse: separate;
   border-spacing: 0;
   border: ${props => !props.borderless && border};
   border-top: none;
@@ -69,6 +74,8 @@ const Table = styled.table`
 
   .grouped > .cell {
     border-top: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   tbody:hover {
