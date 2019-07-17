@@ -1,13 +1,20 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
+import Button, { buttonTypes } from "@crave/farmblocks-button";
 import { action } from "@storybook/addon-actions";
 
-import Modal from ".";
+import Modal, { ModalTitle } from ".";
 import lipsum from "./lipsum";
 
-const PreLine = styled.p`
+const PreLine = styled.span`
   white-space: pre-line;
+`;
+
+const Header = styled.div`
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Lucida Console", Monaco, monospace;
 `;
 
 storiesOf("Modal", module)
@@ -17,12 +24,53 @@ storiesOf("Modal", module)
       onOpen={action("onOpen")}
       onRequestClose={action("onRequestClose")}
     >
-      <p>Hello</p>
+      Default
     </Modal>
   ))
   .add("Center aligned", () => (
     <Modal isOpen verticalAlign="center">
-      <p>Hello</p>
+      Center aligned
+    </Modal>
+  ))
+  .add("With header", () => (
+    <Modal isOpen header="Header as a node string">
+      Content
+    </Modal>
+  ))
+  .add("With ModalTitle header", () => (
+    <Modal isOpen header={<ModalTitle>Header with ModalTitle</ModalTitle>}>
+      Content
+    </Modal>
+  ))
+  .add("With ModalTitle header and without close button", () => (
+    <Modal
+      isOpen
+      showCloseButton={false}
+      header={<ModalTitle>Header with ModalTitle</ModalTitle>}
+    >
+      Content
+    </Modal>
+  ))
+  .add("With ModalTitle header", () => (
+    <Modal isOpen header={<ModalTitle>Header with ModalTitle</ModalTitle>}>
+      With header
+    </Modal>
+  ))
+  .add("With footer", () => (
+    <Modal
+      isOpen
+      footer={
+        <div style={{ width: "100%" }}>
+          <Button fluid text="Action Button" type={buttonTypes.PRIMARY} />
+        </div>
+      }
+    >
+      With footer
+    </Modal>
+  ))
+  .add("Without close button and without header", () => (
+    <Modal isOpen showCloseButton={false}>
+      Content
     </Modal>
   ))
   .add("Extensive Content", () => (
@@ -35,9 +83,57 @@ storiesOf("Modal", module)
       <PreLine>{lipsum}</PreLine>
     </Modal>
   ))
-  .add("With custom close icon", () => (
-    <Modal isOpen closeProps={{ rightIcon: "wg-close" }}>
-      Hello
+  .add("With cardProps and custom header", () => {
+    return (
+      <Modal
+        isOpen
+        header={<Header>HEADER</Header>}
+        cardProps={{ width: "400px", floating: false }}
+      >
+        <PreLine>{lipsum}</PreLine>
+      </Modal>
+    );
+  })
+  .add("With cardProps, header and footer", () => {
+    return (
+      <Modal
+        isOpen
+        header={<ModalTitle>HEADER</ModalTitle>}
+        footer={
+          <div
+            style={{
+              width: "100%",
+              justifyContent: "flex-end",
+              display: "flex",
+            }}
+          >
+            <Button text="Action Button" type={buttonTypes.PRIMARY} />
+          </div>
+        }
+        cardProps={{ width: "400px", floating: false }}
+      >
+        <PreLine>{lipsum}</PreLine>
+      </Modal>
+    );
+  })
+  .add("With custom close button props", () => (
+    <Modal
+      isOpen
+      closeButtonProps={{ icon: "wg-close-int", type: buttonTypes.NEGATIVE }}
+    >
+      Content
+    </Modal>
+  ))
+  .add("With custom header style", () => (
+    <Modal
+      isOpen
+      css={`
+        .header {
+          background: black;
+        }
+      `}
+    >
+      Content
     </Modal>
   ))
   .add("With custom parentNode", () => {
@@ -61,7 +157,7 @@ storiesOf("Modal", module)
             isOpen={isOpen}
             onRequestClose={() => setIsOpen(false)}
           >
-            Hello.
+            Content
           </Modal>
 
           {/*

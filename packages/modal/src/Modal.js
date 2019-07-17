@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { useTransition } from "react-spring";
-import Link from "@crave/farmblocks-link";
+import Button, { buttonSizes } from "@crave/farmblocks-button";
+import Text, { fontSizes } from "@crave/farmblocks-text";
 
 import {
   Wrapper,
@@ -10,7 +11,8 @@ import {
   CardWrapper,
   ConstrainedCard,
   ContentWrapper,
-  Header,
+  Section,
+  HeaderWrapper,
 } from "./Modal.styled";
 import { useESCKey, useScrollLock, useChangeCallback } from "./Modal.hooks";
 
@@ -22,13 +24,17 @@ const Modal = ({
   onRequestClose,
   onOpen,
   onClose,
-  showCloseIcon,
+  showCloseButton,
   children,
   cardProps,
-  closeProps,
+  closeButtonProps,
   className,
   verticalAlign,
   zIndex,
+  header,
+  headerProps,
+  footer,
+  footerProps,
 }) => {
   if (!parentNode) return null;
 
@@ -80,21 +86,36 @@ const Modal = ({
               ({ item: slideItem, key: slideKey, props: slideStyle }) =>
                 slideItem && (
                   <CardWrapper key={slideKey} style={slideStyle}>
-                    <ConstrainedCard floating className="card" {...cardProps}>
-                      {showCloseIcon && (
-                        <Header className="header">
-                          <Link
-                            className="close"
-                            rightIcon="wg-close-int"
-                            onClick={onRequestClose}
-                            data-testid="modal-close-icon"
-                            {...closeProps}
-                          />
-                        </Header>
+                    <ConstrainedCard
+                      floating
+                      className="card"
+                      padding="0"
+                      {...cardProps}
+                    >
+                      {(header || showCloseButton) && (
+                        <Section className="header" header {...headerProps}>
+                          <HeaderWrapper>{header}</HeaderWrapper>
+                          {showCloseButton && (
+                            <Button
+                              className="closeButton"
+                              icon="wg-close"
+                              size={buttonSizes.SMALL}
+                              onClick={onRequestClose}
+                              data-testid="modal-close-icon"
+                              {...closeButtonProps}
+                            />
+                          )}
+                        </Section>
                       )}
+
                       <ContentWrapper className="content">
                         {children}
                       </ContentWrapper>
+                      {footer && (
+                        <Section className="footer" {...footerProps}>
+                          {footer}
+                        </Section>
+                      )}
                     </ConstrainedCard>
                   </CardWrapper>
                 ),
@@ -105,30 +126,40 @@ const Modal = ({
     parentNode,
   );
 };
+
 Modal.defaultProps = {
   isOpen: false,
   parentNode: document.body,
   shouldCloseOnOverlayClick: true,
   shouldCloseOnEsc: true,
-  showCloseIcon: true,
+  showCloseButton: true,
   verticalAlign: "flex-start",
   zIndex: 1500,
 };
+
 Modal.propTypes = {
   isOpen: PropTypes.bool,
   parentNode: PropTypes.instanceOf(HTMLElement),
   shouldCloseOnOverlayClick: PropTypes.bool,
   shouldCloseOnEsc: PropTypes.bool,
-  showCloseIcon: PropTypes.bool,
+  showCloseButton: PropTypes.bool,
   onRequestClose: PropTypes.func,
   onOpen: PropTypes.func,
   onClose: PropTypes.func,
   children: PropTypes.node,
+  header: PropTypes.node,
+  headerProps: PropTypes.object,
+  footer: PropTypes.node,
+  footerProps: PropTypes.object,
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
-  closeProps: PropTypes.shape(Link.propTypes),
+  closeButtonProps: PropTypes.shape(Button.propTypes),
   className: PropTypes.string,
   verticalAlign: PropTypes.oneOf(["flex-start", "center", "flex-end"]),
   zIndex: PropTypes.number,
 };
+
+export const ModalTitle = props => (
+  <Text fontWeight="title" size={fontSizes.HUGE} {...props} />
+);
 
 export default Modal;

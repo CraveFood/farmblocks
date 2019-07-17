@@ -28,10 +28,9 @@ storiesOf("Modal/helpers", module)
             {...firstModal}
             onOpen={action("First Modal opened")}
             onClose={action("First Modal closed")}
+            footer={<button onClick={closeFirst}>close</button>}
           >
             Hi, this is the first modal.
-            <hr />
-            <button onClick={closeFirst}>close</button>
           </Modal>
 
           <button onClick={toggleSecond}>Open 2nd</button>
@@ -39,10 +38,9 @@ storiesOf("Modal/helpers", module)
             {...secondModal}
             onOpen={action("Second Modal opened")}
             onClose={action("Second Modal closed")}
+            footer={<button onClick={toggleSecond}>close</button>}
           >
             {`And I'm the second one.`}
-            <hr />
-            <button onClick={toggleSecond}>close</button>
           </Modal>
         </div>
       );
@@ -71,10 +69,9 @@ storiesOf("Modal/helpers", module)
               {...firstModal}
               onOpen={action("First Modal opened")}
               onClose={action("First Modal closed")}
+              footer={<button onClick={close}>close</button>}
             >
               Hi, this is the first modal.
-              <hr />
-              <button onClick={close}>close</button>
             </Modal>
           </>
         )}
@@ -88,10 +85,9 @@ storiesOf("Modal/helpers", module)
               {...secondModal}
               onOpen={action("Second Modal opened")}
               onClose={action("Second Modal closed")}
+              footer={<button onClick={close}>close</button>}
             >
               {`And I'm the second one.`}
-              <hr />
-              <button onClick={close}>close</button>
             </Modal>
           </>
         )}

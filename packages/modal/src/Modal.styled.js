@@ -36,24 +36,30 @@ export const ConstrainedCard = styled(Card)`
   position: relative;
   display: flex;
   flex-direction: column;
+  border: none;
+  overflow: hidden;
 `;
 
 export const ContentWrapper = styled.div`
   flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  padding: 16px;
 `;
 
-export const Header = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 16px;
+export const HeaderWrapper = styled.header`
+  overflow: auto;
+`;
 
-  .close {
-    font-size: 32px;
-    color: ${colors.GREY_16};
-    &:hover {
-      color: ${colors.GREY_32};
-    }
+export const Section = styled.div`
+  display: flex;
+  padding: 16px;
+  ${({ children, header }) =>
+    children &&
+    `border-${header ? "bottom" : "top"}: solid 1px ${colors.GREY_16}`};
+
+  .closeButton {
+    margin-left: auto;
+    padding-left: 16px;
   }
 `;
