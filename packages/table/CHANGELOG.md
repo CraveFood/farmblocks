@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.1.1...@crave/farmblocks-table@4.2.0) (2019-07-17)
+
+
+### Bug Fixes
+
+* **Table:** overlaping borders when using colSpan ([880c75d](https://github.com/CraveFood/farmblocks/commit/880c75d))
+* **Table:** transparent border not working with colspan ([3a9ed0f](https://github.com/CraveFood/farmblocks/commit/3a9ed0f))
+
+
+### Features
+
+* **Table:** add renderExtraChildRows prop ([a9127de](https://github.com/CraveFood/farmblocks/commit/a9127de)), closes [#834](https://github.com/CraveFood/farmblocks/issues/834)
+* **Table:** change hover highlight color ([d95e5fa](https://github.com/CraveFood/farmblocks/commit/d95e5fa))
+
+
+
+
+
 ## [4.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.1.0...@crave/farmblocks-table@4.1.1) (2019-07-09)
 
 
