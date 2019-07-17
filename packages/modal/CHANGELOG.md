@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@1.0.0...@crave/farmblocks-modal@2.0.0) (2019-07-17)
+
+
+### Features
+
+* **Modal:** Add footer section that will be used primarily to actions ([382cb7c](https://github.com/CraveFood/farmblocks/commit/382cb7c))
+* **Modal:** Add header prop element and replace close icon to close button ([3346470](https://github.com/CraveFood/farmblocks/commit/3346470)), closes [#824](https://github.com/CraveFood/farmblocks/issues/824)
+* **Modal:** Add stories to the  new modal api changes ([399fe88](https://github.com/CraveFood/farmblocks/commit/399fe88))
+* **Modal.styled:** Add Section component and set close button to absolute position ([ac3d16f](https://github.com/CraveFood/farmblocks/commit/ac3d16f))
+* **README/Modal:** Update readme properties API ([66f1b49](https://github.com/CraveFood/farmblocks/commit/66f1b49))
+* **stories:** Apply Modal footer to stories ([c4b1286](https://github.com/CraveFood/farmblocks/commit/c4b1286))
+
+
+### BREAKING CHANGES
+
+* **Modal:** prop changes => showCloseIcon to showCloseButton, closeProps to closeButtonProps, card padding and
+border styles are disabled and for default overflow is setted to hidden.
+
+
+
+
+
 # [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@0.3.1...@crave/farmblocks-modal@1.0.0) (2019-07-09)
 
 
