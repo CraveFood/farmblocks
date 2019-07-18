@@ -51,7 +51,7 @@ storiesOf("Filter Popover", module)
   .add("zIndex", () => (
     <>
       <FilterPopover
-        zIndex={2}
+        tooltipProps={{ zIndex: 2 }}
         triggerLabel="Filter"
         formTitle="Form Title"
         formContent={

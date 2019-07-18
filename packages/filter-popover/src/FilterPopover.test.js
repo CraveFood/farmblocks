@@ -1,90 +1,99 @@
 import React from "react";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import {
+  render,
+  fireEvent,
+  waitForElementToBeRemoved,
+  wait,
+} from "@testing-library/react";
 
 import FilterPopover from "./FilterPopover";
 
-Enzyme.configure({ adapter: new Adapter() });
-
 describe("Filter Popover", () => {
-  let onFormSaveClickMock, onFormCancelClickMock, dismissMock, wrapper;
+  let onFormSaveClickMock, onFormCancelClickMock;
 
   beforeEach(() => {
     onFormSaveClickMock = jest.fn();
     onFormCancelClickMock = jest.fn();
-    dismissMock = jest.fn();
   });
 
   afterEach(() => {
-    onFormSaveClickMock.mockRestore();
-    onFormCancelClickMock.mockRestore();
-    dismissMock.mockRestore();
+    jest.restoreAllMocks();
   });
 
   test("should call onFormSaveClick and leave popover open when clicking on Filter button", async () => {
-    wrapper = mount(
+    const { queryByText } = render(
       <FilterPopover
-        triggerLabel="Filter"
+        triggerLabel="Trigger"
         formTitle="Form Title"
         onFormSaveClick={onFormSaveClickMock}
-        formContent={<div />}
+        formContent={<div>Form content</div>}
       />,
     );
 
-    // Open popover
-    await wrapper.find("button").simulate("click");
-    wrapper.update();
+    expect(queryByText("Form content")).not.toBeInTheDocument();
 
-    const filterButton = wrapper.find('Button[type="SECONDARY"]');
-    await filterButton.find("button").simulate("click");
+    // open popover
+    fireEvent.click(queryByText("Trigger"));
+    await wait(() => {});
+
+    // click on Filter button
+    fireEvent.click(queryByText("Filter"));
+    await wait(() => {});
 
     expect(onFormSaveClickMock).toBeCalled();
-    expect(wrapper.find("FormWrapper").length).toBe(1);
+    expect(queryByText("Form content")).toBeInTheDocument();
   });
 
   test("should call onFormSaveClick and dismiss popover open when clicking on Filter button", async () => {
-    wrapper = mount(
+    const { queryByText } = render(
       <FilterPopover
-        triggerLabel="Filter"
+        triggerLabel="Trigger"
         formTitle="Form Title"
         onFormSaveClick={onFormSaveClickMock}
-        formContent={<div />}
+        formContent={<div>Form content</div>}
         dismissOnSave
       />,
     );
 
-    // Open popover
-    await wrapper.find("button").simulate("click");
-    wrapper.update();
+    expect(queryByText("Form content")).not.toBeInTheDocument();
 
-    const filterButton = wrapper.find('Button[type="SECONDARY"]');
-    await filterButton.find("button").simulate("click");
+    // open popover
+    fireEvent.click(queryByText("Trigger"));
+    await wait(() => {});
+
+    // click on Filter button
+    fireEvent.click(queryByText("Filter"));
+
+    await waitForElementToBeRemoved(() => queryByText("Form content"));
 
     expect(onFormSaveClickMock).toBeCalled();
-    expect(wrapper.find("FormWrapper").length).toBe(0);
+    expect(queryByText("Form content")).not.toBeInTheDocument();
   });
 
   test("should call onFormCancelClick and dismiss popover open when clicking on cancel button", async () => {
-    wrapper = mount(
+    const { queryByText } = render(
       <FilterPopover
-        triggerLabel="Filter"
+        triggerLabel="Trigger"
         formTitle="Form Title"
         onFormSaveClick={onFormSaveClickMock}
         onFormCancelClick={onFormCancelClickMock}
-        formContent={<div />}
+        formContent={<div>Form content</div>}
         dismissOnSave
       />,
     );
 
+    expect(queryByText("Form content")).not.toBeInTheDocument();
+
     // Open popover
-    await wrapper.find("button").simulate("click");
-    wrapper.update();
+    fireEvent.click(queryByText("Trigger"));
+    await wait(() => {});
 
-    const cancelLink = wrapper.find('Link[className="cancel"]');
+    // click on Filter button
+    fireEvent.click(queryByText("Cancel"));
 
-    await cancelLink.find("span").simulate("click");
+    await waitForElementToBeRemoved(() => queryByText("Form content"));
 
     expect(onFormCancelClickMock).toBeCalled();
-    expect(wrapper.find("FormWrapper").length).toBe(0);
+    expect(queryByText("Form content")).not.toBeInTheDocument();
   });
 });

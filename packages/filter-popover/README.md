@@ -44,7 +44,7 @@ Output:
 | formCancelLabel   | string           | cancelLabel to be used on FormWrapper          |          | Cancel  |
 | onFormSaveClick   | function         | onSave to be used on FormWrapper               |          |         |
 | onFormCancelClick | function         | function to be called on click on cancel link  |          |         |
-| align             | string           | Popover align                                  |          |         |
+| tooltipProps      | object           | props to be passed to tooltip                  |          |         |
 | dismissOnSave     | bool             | automatically dismiss Popover on save event    |          |         |
 | hasValue          | bool             | changes style of trigger popover               |          |         |
 | onOutsideClick    | function         | function to be called on outside click         |          |         |
