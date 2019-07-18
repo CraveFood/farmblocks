@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.3.8...@crave/farmblocks-button@7.0.0) (2019-07-18)
+
+
+### Features
+
+* **Button:** remove disabledTooltip hoc ([6daa986](https://github.com/CraveFood/farmblocks/commit/6daa986))
+
+
+### BREAKING CHANGES
+
+* **Button:** disabledTooltip hoc has been removed from this component
+
+
+
+
+
 ## [6.3.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@6.3.7...@crave/farmblocks-button@6.3.8) (2019-07-09)
 
 

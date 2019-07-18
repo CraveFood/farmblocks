@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.3.3...@crave/farmblocks-more-info@2.0.0) (2019-07-18)
+
+
+### Features
+
+* **MoreInfo:** receive tooltipProps and pass it to Tooltip ([d8b47f7](https://github.com/CraveFood/farmblocks/commit/d8b47f7))
+
+
+### BREAKING CHANGES
+
+* **MoreInfo:** this component no longer works with tooltipAlign; use tooltipProps instead
+
+
+
+
+
 ## [1.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@1.3.2...@crave/farmblocks-more-info@1.3.3) (2019-07-09)
 
 

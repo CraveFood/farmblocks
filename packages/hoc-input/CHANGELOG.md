@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.4.4...@crave/farmblocks-hoc-input@6.0.0) (2019-07-18)
+
+
+### Features
+
+* **formInput:** receive moreInfoTooltipProps and pass it to MoreInfo ([298e360](https://github.com/CraveFood/farmblocks/commit/298e360))
+
+
+### BREAKING CHANGES
+
+* **formInput:** the property moreInfoAlign no longer works; use moreInfoTooltipProps instead
+
+
+
+
+
 ## [5.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@5.4.3...@crave/farmblocks-hoc-input@5.4.4) (2019-07-09)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input

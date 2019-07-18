@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@0.5.3...@crave/farmblocks-label@1.0.0) (2019-07-18)
+
+
+### Features
+
+* **Label:** receive moreInfoTooltipProps and pass it to MoreInfo ([6d1752f](https://github.com/CraveFood/farmblocks/commit/6d1752f))
+
+
+### BREAKING CHANGES
+
+* **Label:** this component no longer works with moreInfoAlign; use moreInfoTooltipProps instead
+
+
+
+
+
 ## [0.5.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@0.5.2...@crave/farmblocks-label@0.5.3) (2019-07-09)
 
 

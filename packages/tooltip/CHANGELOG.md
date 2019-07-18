@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.3.8...@crave/farmblocks-tooltip@2.0.0) (2019-07-18)
+
+
+### Bug Fixes
+
+* **Tooltip:** change visibility only after it's ready ([77e12da](https://github.com/CraveFood/farmblocks/commit/77e12da))
+* **Tooltip:** consider trigger height when tooltip is positioned on top ([477fede](https://github.com/CraveFood/farmblocks/commit/477fede))
+
+
+### Code Refactoring
+
+* **Tooltip:** fix typo: bondariesSelector to boundariesSelector ([446b136](https://github.com/CraveFood/farmblocks/commit/446b136))
+
+
+### Features
+
+* **Tooltip:** add position property ([8371c8e](https://github.com/CraveFood/farmblocks/commit/8371c8e)), closes [#833](https://github.com/CraveFood/farmblocks/issues/833)
+* **Tooltip:** auto position to the top or bottom ([906350c](https://github.com/CraveFood/farmblocks/commit/906350c))
+* **Tooltip:** rename align and position props to positionX and positionY ([8f4f619](https://github.com/CraveFood/farmblocks/commit/8f4f619))
+* **Tooltip:** transform component into a functional Tooltip ([36f0893](https://github.com/CraveFood/farmblocks/commit/36f0893))
+
+
+### BREAKING CHANGES
+
+* **Tooltip:** the previous default exported component is exported now as TooltipContent
+* **Tooltip:** alignments file has been renamed to POSITIONS
+* **Tooltip:** the property bondariesSelector has been renamed to boundariesSelector
+* **Tooltip:** "top" property has been renamed to "offset"
+
+
+
+
+
 ## [1.3.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@1.3.7...@crave/farmblocks-tooltip@1.3.8) (2019-07-09)
 
 **Note:** Version bump only for package @crave/farmblocks-tooltip

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.4.4...@crave/farmblocks-filter-popover@2.0.0) (2019-07-18)
+
+
+### Features
+
+* **FilterPopover:** receive tooltipProps and pass it to Popover ([9540a6e](https://github.com/CraveFood/farmblocks/commit/9540a6e))
+
+
+### BREAKING CHANGES
+
+* **FilterPopover:** this package no longer works with align and zIndex; use tooltipProps instead
+
+
+
+
+
 ## [1.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@1.4.3...@crave/farmblocks-filter-popover@1.4.4) (2019-07-09)
 
 **Note:** Version bump only for package @crave/farmblocks-filter-popover

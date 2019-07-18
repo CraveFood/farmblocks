@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.4.4...@crave/farmblocks-popover@2.0.0) (2019-07-18)
+
+
+### Features
+
+* **Popover:** receive tooltipProps and pass it to Tooltip ([3db5fdd](https://github.com/CraveFood/farmblocks/commit/3db5fdd))
+
+
+### BREAKING CHANGES
+
+* **Popover:** this component no longer works with the following properties: showTooltipArrow, align, zIndex,
+padding and overflow; use tooltipProps instead
+
+
+
+
+
 ## [1.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@1.4.3...@crave/farmblocks-popover@1.4.4) (2019-07-09)
 
 **Note:** Version bump only for package @crave/farmblocks-popover
