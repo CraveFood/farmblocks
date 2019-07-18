@@ -1,137 +1,252 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import Card from "@crave/farmblocks-card";
+import Button, { buttonTypes } from "@crave/farmblocks-button";
+import Text from "@crave/farmblocks-text";
 
-import Tooltip, { alignments } from ".";
+import Tooltip, { POSITIONS } from ".";
 
-storiesOf("Tooltip", module)
-  .add("isVisible true - left aligned", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible text="This is a left aligned tooltip" />
-    </div>
-  ))
-  .add("isVisible true - right aligned", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip
-        isVisible
-        text="This is a right aligned tooltip"
-        align={alignments.RIGHT}
-      />
-    </div>
-  ))
-  .add("isVisible true - center aligned", () => (
-    <div style={{ position: "relative", width: "350px", border: "1px solid" }}>
-      <Tooltip
-        isVisible
-        text="This is a center aligned tooltip"
-        align={alignments.CENTER}
-      />
-    </div>
-  ))
-  .add("isVisible true - hideArrow", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible hideArrow>
-        This is a left aligned tooltip without arrow
-      </Tooltip>
-    </div>
-  ))
-  .add("isVisible false", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px" }}>
-      <Tooltip isVisible={false} text="Hey yo" />
-    </div>
-  ))
-  .add("with card", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible>
-        <Card>this is a Card</Card>
-      </Tooltip>
-    </div>
-  ))
-  .add("without content", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip />
-    </div>
-  ))
-  .add("auto aligned", () => (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        width: "100%",
-      }}
-    >
-      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
+storiesOf("Tooltip/Tooltip", module)
+  .add("Bottom positioned", () => {
+    const marginStyle = {
+      margin: "40px",
+    };
+    return (
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              content="Bottom left aligned"
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              content={<div>Bottom left aligned</div>}
+              positionX={POSITIONS.X.CENTER}
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              content={<div>Bottom right aligned</div>}
+              positionX={POSITIONS.X.RIGHT}
+            />
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: 80,
+          }}
+        >
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Text>Hover me</Text>}
+              content="Bottom left aligned without arrow"
+              hideArrow
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Text>Hover me</Text>}
+              content="Bottom center aligned without arrow"
+              hideArrow
+              positionX={POSITIONS.X.CENTER}
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Text>Hover me</Text>}
+              content="Bottom right aligned without arrow"
+              hideArrow
+              positionX={POSITIONS.X.RIGHT}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("Top positioned", () => {
+    const marginStyle = {
+      margin: "40px",
+      border: "none",
+    };
+    return (
+      <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              content="Top left aligned"
+              positionY={POSITIONS.Y.TOP}
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              content={<div>Top left aligned</div>}
+              positionX={POSITIONS.X.CENTER}
+              positionY={POSITIONS.Y.TOP}
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              content={<div>Top right aligned</div>}
+              positionX={POSITIONS.X.RIGHT}
+              positionY={POSITIONS.Y.TOP}
+            />
+          </div>
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: 80,
+          }}
+        >
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Text>Hover me</Text>}
+              content="Top left aligned without arrow"
+              hideArrow
+              positionY={POSITIONS.Y.TOP}
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Text>Hover me</Text>}
+              content="Top center aligned without arrow"
+              hideArrow
+              positionX={POSITIONS.X.CENTER}
+            />
+          </div>
+
+          <div style={marginStyle}>
+            <Tooltip
+              trigger={<Text>Hover me</Text>}
+              content="Top right aligned without arrow"
+              hideArrow
+              positionX={POSITIONS.X.RIGHT}
+              positionY={POSITIONS.Y.TOP}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  })
+  .add("auto aligned/positioned", () => (
+    <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+      >
         <Tooltip
-          align={alignments.AUTO}
-          text="This is an auto aligned tooltip"
+          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          content="Auto aligned/positioned tooltip"
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
+        />
+        <Tooltip
+          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          content="Auto aligned/positioned tooltip"
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
         />
       </div>
-      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+          position: "fixed",
+          bottom: 0,
+        }}
+      >
         <Tooltip
-          align={alignments.AUTO}
-          text="This is an auto aligned tooltip"
+          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          content="Auto aligned/positioned tooltip"
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
+        />
+        <Tooltip
+          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          content="Auto aligned/positioned tooltip"
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
         />
       </div>
     </div>
   ))
-  .add("auto aligned (with bondaries)", () => (
-    <div
-      style={{
-        border: "solid 1px orangered",
-        display: "flex",
-        justifyContent: "space-between",
-        width: "600px",
-      }}
-      className="exampleContainer"
-    >
-      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
-        Child
-        <Tooltip
-          align={alignments.AUTO}
-          text="This is an auto aligned tooltip"
-          bondariesSelector=".exampleContainer"
-        />
+  .add("auto aligned/positioned (with boundaries)", () => {
+    // eslint-disable-next-line react/prop-types
+    const BoundaryContainer = ({ children, ...props }) => (
+      <div
+        style={{
+          border: "solid 1px orangered",
+          height: 300,
+          width: 600,
+          margin: 60,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+        {...props}
+      >
+        {children}
       </div>
-      <div style={{ position: "relative", width: "50px", border: "1px solid" }}>
-        Child
-        <Tooltip
-          align={alignments.AUTO}
-          text="This is an auto aligned tooltip"
-          bondariesSelector=".exampleContainer"
-        />
-      </div>
-    </div>
-  ))
-  .add("custom padding", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip
-        isVisible
-        text="Left aligned with custom padding"
-        padding="30px"
-      />
-    </div>
-  ))
-  .add("custom top", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible text="Left aligned with custom top" top="30vh" />
-    </div>
-  ))
-  .add("with content overflow hidden", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip isVisible padding="0" overflow="hidden">
-        <div style={{ background: "aliceblue" }}>It should not overflow</div>
-      </Tooltip>
-    </div>
-  ))
-  .add("extended style", () => (
-    <div style={{ position: "relative", width: "250px", border: "1px solid" }}>
-      <Tooltip
-        css="
-          text-decoration-line: underline overline;
-        "
-        isVisible
-        text="This is a left aligned tooltip"
-      />
-    </div>
-  ));
+    );
+    return (
+      <BoundaryContainer className="exampleContainer">
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <Tooltip
+            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+            content="Auto aligned/positioned tooltip"
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
+            boundariesSelector=".exampleContainer"
+          />
+          <Tooltip
+            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+            content="Auto aligned/positioned tooltip"
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
+            boundariesSelector=".exampleContainer"
+          />
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <Tooltip
+            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+            content="Auto aligned/positioned tooltip"
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
+            boundariesSelector=".exampleContainer"
+          />
+          <Tooltip
+            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+            content="Auto aligned/positioned tooltip"
+            positionX={POSITIONS.X.AUTO}
+            positionY={POSITIONS.Y.AUTO}
+            boundariesSelector=".exampleContainer"
+          />
+        </div>
+      </BoundaryContainer>
+    );
+  });

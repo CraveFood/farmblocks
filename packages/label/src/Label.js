@@ -1,10 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import values from "object.values";
 import Text from "@crave/farmblocks-text";
 import MoreInfo from "@crave/farmblocks-more-info";
-import { alignments } from "@crave/farmblocks-tooltip";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 
 const labelColor = props => {
@@ -34,7 +33,7 @@ const MoreInfoWrapper = styled(MoreInfo)`
 const Label = ({
   className,
   children,
-  moreInfoAlign,
+  moreInfoTooltipProps,
   moreInfoContent,
   ...props
 }) => {
@@ -53,7 +52,13 @@ const Label = ({
       </TextLabel>
 
       {moreInfoContent && (
-        <MoreInfoWrapper className="moreInfo" tooltipAlign={moreInfoAlign}>
+        <MoreInfoWrapper
+          className="moreInfo"
+          tooltipProps={{
+            positionX: POSITIONS.X.LEFT,
+            ...moreInfoTooltipProps,
+          }}
+        >
           {moreInfoContent}
         </MoreInfoWrapper>
       )}
@@ -61,13 +66,10 @@ const Label = ({
   );
 };
 
-Label.defaultProps = {
-  moreInfoAlign: alignments.LEFT,
-};
-
 Label.propTypes = {
   children: PropTypes.node,
-  moreInfoAlign: PropTypes.oneOf(values(alignments)),
+  // eslint-disable-next-line react/forbid-prop-types
+  moreInfoTooltipProps: PropTypes.object,
   moreInfoContent: PropTypes.node,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,

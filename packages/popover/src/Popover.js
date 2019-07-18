@@ -1,12 +1,30 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import values from "object.values";
-import Tooltip, { alignments } from "@crave/farmblocks-tooltip";
+import { CSSTransition } from "react-transition-group";
+import { TooltipContent } from "@crave/farmblocks-tooltip";
 
 const Container = styled.div`
   display: inline-block;
   width: ${props => props.width};
+
+  .appear-enter {
+    opacity: 0;
+  }
+
+  .appear-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+
+  .appear-exit {
+    opacity: 1;
+  }
+
+  .appear-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
 `;
 
 class Popover extends React.Component {
@@ -84,17 +102,22 @@ class Popover extends React.Component {
           {typeof trigger === "function" ? trigger(isVisible) : trigger}
         </div>
 
-        <Tooltip
-          className="tooltip"
-          isVisible={isVisible}
-          hideArrow={!this.props.showTooltipArrow}
-          align={this.props.align}
-          zIndex={this.props.zIndex}
-          padding={this.props.padding}
-          overflow={this.props.overflow}
+        <CSSTransition
+          in={isVisible}
+          mountOnEnter
+          unmountOnExit
+          timeout={200}
+          classNames="appear"
         >
-          {this.state.isVisible && this.props.content(this.hide)}
-        </Tooltip>
+          <TooltipContent
+            className="tooltip"
+            isVisible
+            hideArrow
+            {...this.props.tooltipProps}
+          >
+            {this.props.content(this.hide)}
+          </TooltipContent>
+        </CSSTransition>
       </Container>
     );
   }
@@ -102,22 +125,18 @@ class Popover extends React.Component {
   static propTypes = {
     trigger: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
     content: PropTypes.func.isRequired,
-    align: PropTypes.oneOf(values(alignments)),
-    zIndex: PropTypes.number,
-    padding: PropTypes.string,
-    overflow: PropTypes.string,
+    // eslint-disable-next-line react/forbid-prop-types
+    tooltipProps: PropTypes.object,
     triggerWidth: PropTypes.string,
     onOutsideClick: PropTypes.func,
     onOpen: PropTypes.func,
     onBeforeOpen: PropTypes.func,
     onClose: PropTypes.func,
-    showTooltipArrow: PropTypes.bool,
     className: PropTypes.string,
   };
 
   static defaultProps = {
     triggerWidth: "auto",
-    showTooltipArrow: false,
   };
 }
 

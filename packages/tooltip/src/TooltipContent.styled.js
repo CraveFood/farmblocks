@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
-import { TOP, BOTTOM, CENTER } from "../constants/positions";
+import { TOP, BOTTOM, CENTER } from "./constants/positions";
 
 const Container = styled.div`
   position: relative;

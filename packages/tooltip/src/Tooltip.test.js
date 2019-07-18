@@ -1,51 +1,44 @@
-import { LEFT, RIGHT } from "./constants/alignments";
-import { getAutoAlign } from "./Tooltip";
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 
-const createDOMNodeMock = (right, parentRight) => ({
-  getBoundingClientRect: jest.fn().mockReturnValue({ right }),
-  closest:
-    parentRight && jest.fn().mockReturnValue(createDOMNodeMock(parentRight)),
-});
+import React from "react";
+import {
+  render,
+  fireEvent,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
+
+import Tooltip from "./Tooltip";
 
 describe("Tooltip", () => {
-  describe("getAutoAlign", () => {
-    it("should return LEFT if no tooltipRef is given", () => {
-      expect(getAutoAlign()).toBe(LEFT);
-    });
-    describe("with bondariesSelector", () => {
-      it("should search for the closest parent that matches the bondariesSelector", () => {
-        const tooltipRef = createDOMNodeMock(250, 500);
-        const selector = ".myContainer";
-        getAutoAlign(tooltipRef, selector);
-        expect(tooltipRef.closest).toHaveBeenCalledTimes(1);
-        expect(tooltipRef.closest).toHaveBeenCalledWith(selector);
-      });
-      it("should return LEFT if tooltip is inside the bondaries", () => {
-        const tooltipRef = createDOMNodeMock(250, 500);
-        expect(getAutoAlign(tooltipRef, ".aSelector")).toBe(LEFT);
-      });
-      it("should return RIGHT if tooltip right border exceeds the bondaries width", () => {
-        const tooltipRef = createDOMNodeMock(750, 500);
-        expect(getAutoAlign(tooltipRef, ".aSelector")).toBe(RIGHT);
-      });
-    });
-    describe("without bondariesSelector", () => {
-      let originalWindowWidth;
-      beforeEach(() => {
-        originalWindowWidth = window.innerWidth;
-        window.innerWidth = 1000;
-      });
-      afterEach(() => {
-        window.innerWidth = originalWindowWidth;
-      });
-      it("should return LEFT if tooltip is inside the viewport", () => {
-        const tooltipRef = createDOMNodeMock(500);
-        expect(getAutoAlign(tooltipRef)).toBe(LEFT);
-      });
-      it("should return RIGHT if tooltip right border exceeds the viewport width", () => {
-        const tooltipRef = createDOMNodeMock(1500);
-        expect(getAutoAlign(tooltipRef)).toBe(RIGHT);
-      });
-    });
+  test("Tooltip visibility on mouseOver and mouseLeave", async () => {
+    const onMouseOver = jest.fn();
+    const onMouseLeave = jest.fn();
+    const triggerText = "HoverMe";
+    const tooltipContent = "More Info";
+    const { container, queryByText } = render(
+      <Tooltip
+        trigger={<div>{triggerText}</div>}
+        content={tooltipContent}
+        onMouseOver={onMouseOver}
+        onMouseLeave={onMouseLeave}
+      />,
+    );
+
+    // Initial state, tooltip is not visible
+    expect(queryByText(tooltipContent)).not.toBeInTheDocument();
+
+    // On mouve over, Tooltip is visible and onMouseOver is called
+    const hitArea = container.querySelector('[class="hit-area"]');
+    fireEvent.mouseOver(hitArea);
+    expect(queryByText(tooltipContent)).toBeInTheDocument();
+    expect(onMouseOver).toBeCalledTimes(1);
+    expect(onMouseLeave).toBeCalledTimes(0);
+
+    // On mouse leave, tooltip is not visible and onMouseLeave is called
+    fireEvent.mouseLeave(hitArea);
+    await waitForElementToBeRemoved(() => queryByText(tooltipContent));
+    expect(queryByText(tooltipContent)).not.toBeInTheDocument();
+    expect(onMouseOver).toBeCalledTimes(1);
+    expect(onMouseLeave).toBeCalledTimes(1);
   });
 });

@@ -1,79 +1,97 @@
-import * as React from "react";
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import values from "object.values";
+import styled from "styled-components";
+import { CSSTransition } from "react-transition-group";
 
-import { Container, StyledTooltip } from "./styledComponents/Tooltip";
-import alignments from "./constants/alignments";
+import TooltipContent from "./TooltipContent";
 
-export const getAutoAlign = (tooltipRef, bondariesSelector) => {
-  if (tooltipRef) {
-    const { right } = tooltipRef.getBoundingClientRect();
+const Container = styled.div`
+  position: relative;
+  display: ${props => (props.displayBlock ? "block" : "inline-block")};
 
-    const bondariesNode =
-      bondariesSelector && tooltipRef.closest(bondariesSelector);
-
-    const maxRight =
-      (bondariesNode && bondariesNode.getBoundingClientRect().right) ||
-      window.innerWidth;
-
-    if (right >= maxRight) return alignments.RIGHT;
+  .hit-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
   }
-  return alignments.LEFT;
+
+  .appear-enter {
+    opacity: 0;
+  }
+
+  .appear-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+  }
+
+  .appear-exit {
+    opacity: 1;
+  }
+
+  .appear-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+  }
+`;
+
+const Tooltip = props => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const {
+    className,
+    disableTooltip,
+    displayBlock,
+    trigger,
+    content,
+    onMouseOver,
+    onMouseLeave,
+    ...tooltipProps
+  } = props;
+
+  return (
+    <Container className={className} displayBlock={displayBlock}>
+      {!disableTooltip && (
+        <div
+          className="hit-area"
+          onMouseOver={e => {
+            setIsVisible(true);
+            onMouseOver?.(e);
+          }}
+          onMouseLeave={e => {
+            setIsVisible(false);
+            onMouseLeave?.(e);
+          }}
+        />
+      )}
+      {trigger}
+      <CSSTransition
+        in={isVisible}
+        mountOnEnter
+        unmountOnExit
+        timeout={200}
+        classNames="appear"
+      >
+        <TooltipContent className="tooltip" {...tooltipProps}>
+          {content}
+        </TooltipContent>
+      </CSSTransition>
+    </Container>
+  );
 };
-
-class Tooltip extends React.Component {
-  state = {
-    align: this.props.align,
-  };
-
-  componentDidMount = () => {
-    const { align: originalAlign, bondariesSelector } = this.props;
-    const align =
-      originalAlign === alignments.AUTO
-        ? getAutoAlign(this.tooltipRef, bondariesSelector)
-        : originalAlign;
-    this.setState({ align });
-  };
-
-  render() {
-    const content = this.props.children || this.props.text;
-
-    return (
-      <Container {...this.props} align={this.state.align}>
-        {content && (
-          <StyledTooltip
-            {...this.props}
-            align={this.state.align}
-            ref={element => {
-              this.tooltipRef = element;
-            }}
-          >
-            {content}
-          </StyledTooltip>
-        )}
-      </Container>
-    );
-  }
-}
 
 Tooltip.propTypes = {
-  text: PropTypes.string,
-  children: PropTypes.node,
-  isVisible: PropTypes.bool,
-  align: PropTypes.oneOf(values(alignments)),
-  zIndex: PropTypes.number,
-  bondariesSelector: PropTypes.string,
-  hideArrow: PropTypes.bool,
-  padding: PropTypes.string,
-  top: PropTypes.string,
-  overflow: PropTypes.string,
-};
-
-Tooltip.defaultProps = {
-  isVisible: true,
-  align: alignments.LEFT,
-  zIndex: 1000,
-  top: "15px",
+  disableTooltip: PropTypes.bool,
+  displayBlock: PropTypes.bool,
+  trigger: PropTypes.node,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  // eslint-disable-next-line react/forbid-prop-types
+  tooltipProps: PropTypes.object,
+  onMouseLeave: PropTypes.func,
+  onMouseOver: PropTypes.func,
+  className: PropTypes.string,
 };
 
 export default Tooltip;

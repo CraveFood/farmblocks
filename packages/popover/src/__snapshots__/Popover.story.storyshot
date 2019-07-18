@@ -1,13 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   display: inline-block;
   width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 <div
@@ -33,18 +49,11 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
         Trigger
       </button>
     </div>
-    <div
-      className="tooltip c1"
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots Popover Center aligned 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -93,6 +102,26 @@ exports[`Storyshots Popover Center aligned 1`] = `
 .c0 {
   display: inline-block;
   width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 <div
@@ -125,21 +154,34 @@ exports[`Storyshots Popover Center aligned 1`] = `
         </span>
       </div>
     </div>
-    <div
-      className="tooltip c2"
-    />
   </div>
 </div>
 `;
 
 exports[`Storyshots Popover Custom padding 1`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   display: inline-block;
   width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 <div
@@ -157,17 +199,10 @@ exports[`Storyshots Popover Custom padding 1`] = `
       Trigger
     </button>
   </div>
-  <div
-    className="tooltip c1"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover Default - Link as a trigger 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -218,6 +253,26 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
   width: auto;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 <div
   className="c0"
   width="auto"
@@ -240,17 +295,10 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover Dismissable 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -301,6 +349,26 @@ exports[`Storyshots Popover Dismissable 1`] = `
   width: auto;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 <div
   className="c0"
   width="auto"
@@ -323,20 +391,33 @@ exports[`Storyshots Popover Dismissable 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover Nested popover 1`] = `
-.c1 {
-  position: relative;
-}
-
 .c0 {
   display: inline-block;
   width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 <div
@@ -354,56 +435,10 @@ exports[`Storyshots Popover Nested popover 1`] = `
       hit me
     </button>
   </div>
-  <div
-    className="tooltip c1"
-  />
 </div>
 `;
 
-exports[`Storyshots Popover custom triggerWidth 1`] = `
-.c1 {
-  position: relative;
-}
-
-.c0 {
-  display: inline-block;
-  width: 300px;
-}
-
-<div
-  className="c0"
-  width="300px"
->
-  <div
-    id="trigger"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    <div
-      style={
-        Object {
-          "background": "AliceBlue",
-          "padding": 20,
-          "textAlign": "center",
-        }
-      }
-    >
-      Trigger
-    </div>
-  </div>
-  <div
-    className="tooltip c1"
-  />
-</div>
-`;
-
-exports[`Storyshots Popover extended style 1`] = `
-.c3 {
-  position: relative;
-}
-
+exports[`Storyshots Popover Tooltip positioned on top 1`] = `
 .c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -454,6 +489,178 @@ exports[`Storyshots Popover extended style 1`] = `
   width: auto;
 }
 
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c0 {
+  margin: 100px 0;
+}
+
+<div
+  className="c0 c1"
+  width="auto"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c2"
+      disabled={false}
+      size={16}
+      type="#3498db"
+    >
+      <span>
+        Trigger
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Popover custom triggerWidth 1`] = `
+.c0 {
+  display: inline-block;
+  width: 300px;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+<div
+  className="c0"
+  width="300px"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      style={
+        Object {
+          "background": "AliceBlue",
+          "padding": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      Trigger
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Popover extended style 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c2 i.margin-left {
+  margin-left: 8px;
+}
+
+.c2 i.margin-right {
+  margin-right: 8px;
+}
+
+.c2 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 > a {
+  color: inherit;
+}
+
+.c2:hover {
+  color: #2980b9;
+}
+
+.c1 {
+  display: inline-block;
+  width: auto;
+}
+
+.c1 .appear-enter {
+  opacity: 0;
+}
+
+.c1 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c1 .appear-exit {
+  opacity: 1;
+}
+
+.c1 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 .c0 {
   border: solid 2px lightseagreen;
   padding: 10px;
@@ -485,17 +692,10 @@ exports[`Storyshots Popover extended style 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c3"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover onBeforeOpen - 2s delay 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -546,6 +746,26 @@ exports[`Storyshots Popover onBeforeOpen - 2s delay 1`] = `
   width: auto;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 <div
   className="c0"
   width="auto"
@@ -568,17 +788,10 @@ exports[`Storyshots Popover onBeforeOpen - 2s delay 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover onBeforeOpen - no promise 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -629,6 +842,26 @@ exports[`Storyshots Popover onBeforeOpen - no promise 1`] = `
   width: auto;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 <div
   className="c0"
   width="auto"
@@ -651,17 +884,10 @@ exports[`Storyshots Popover onBeforeOpen - no promise 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover onBeforeOpen - prevent open 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -712,6 +938,26 @@ exports[`Storyshots Popover onBeforeOpen - prevent open 1`] = `
   width: auto;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 <div
   className="c0"
   width="auto"
@@ -734,17 +980,10 @@ exports[`Storyshots Popover onBeforeOpen - prevent open 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover onOpen/onClose 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -793,6 +1032,26 @@ exports[`Storyshots Popover onOpen/onClose 1`] = `
 .c0 {
   display: inline-block;
   width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 <div
@@ -817,17 +1076,10 @@ exports[`Storyshots Popover onOpen/onClose 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover trigger as function 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -876,6 +1128,26 @@ exports[`Storyshots Popover trigger as function 1`] = `
 .c0 {
   display: inline-block;
   width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 <div
@@ -900,17 +1172,10 @@ exports[`Storyshots Popover trigger as function 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;
 
 exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
-.c2 {
-  position: relative;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -961,6 +1226,26 @@ exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
   width: auto;
 }
 
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
 <div
   className="c0"
   width="auto"
@@ -983,8 +1268,5 @@ exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
       </span>
     </div>
   </div>
-  <div
-    className="tooltip c2"
-  />
 </div>
 `;

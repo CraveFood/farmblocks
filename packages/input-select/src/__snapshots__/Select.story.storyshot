@@ -4669,48 +4669,45 @@ exports[`Storyshots Select Input With max height 1`] = `
 exports[`Storyshots Select Input With more info content 1`] = `
 .c9 {
   position: relative;
+  display: inline-block;
 }
 
-.c10 {
-  visibility: hidden;
+.c9 .hit-area {
   position: absolute;
-  z-index: 1000;
-  top: 15px;
-  padding: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  white-space: pre;
-  color: #2f313a;
-  font-family: lato,sans-serif;
-  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.c10:after,
-.c10:before {
-  border: solid 1px rgba(0,0,0,0.16);
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+.c9 .appear-enter {
+  opacity: 0;
 }
 
-.c10:before {
-  bottom: 100%;
-  border-color: transparent;
-  border-bottom-color: rgba(0,0,0,0.16);
-  border-width: 8px;
-  left: 7px;
+.c9 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
-.c10:after {
-  bottom: calc(100% - 1px);
-  border-color: transparent;
-  border-bottom-color: #ffffff;
-  border-width: 7px;
-  left: 8px;
+.c9 .appear-exit {
+  opacity: 1;
+}
+
+.c9 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: left;
+  font-weight: 600;
 }
 
 .c5 {
@@ -4729,16 +4726,6 @@ exports[`Storyshots Select Input With more info content 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: 600;
-}
-
 .c7 .tooltip {
   margin-left: -4px;
 }
@@ -4746,21 +4733,11 @@ exports[`Storyshots Select Input With more info content 1`] = `
 .c7 .icon {
   display: inline-block;
   margin: 0 8px;
-}
-
-.c7 .hit-area {
-  margin: -12px;
-  padding: 12px;
-  margin-top: -62px;
-  padding-top: 62px;
+  cursor: pointer;
 }
 
 .c7 .icon:hover,
 .c7 .hovered {
-  color: #3498db;
-}
-
-.c7 .icon:hover {
   color: #3498db;
 }
 
@@ -5072,34 +5049,22 @@ exports[`Storyshots Select Input With more info content 1`] = `
             className="moreInfo c6 c7"
           >
             <div
-              className="text false c8"
+              className="text  c8"
               fontWeight="title"
               size={16}
               type="#59636f"
             >
               <div
-                className="icon"
-                onFocus={[Function]}
-                onMouseOver={[Function]}
+                className="icon c9"
               >
+                <div
+                  className="hit-area"
+                  onMouseLeave={[Function]}
+                  onMouseOver={[Function]}
+                />
                 <i
                   className="wg-question"
                 />
-                <div
-                  className="tooltip c9"
-                >
-                  <div
-                    className="tooltip c10"
-                  >
-                    <div
-                      className="hit-area"
-                      onBlur={[Function]}
-                      onMouseOut={[Function]}
-                    >
-                      More info text
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { fontSizes } from "@crave/farmblocks-theme";
-import { alignments } from "@crave/farmblocks-tooltip";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 
 import formInput from ".";
 
@@ -101,7 +101,7 @@ storiesOf("HOC formInput", module)
       onChange={action("change event")}
       label="this is a regular label"
       moreInfoContent="this is a more info text"
-      moreInfoAlign={alignments.CENTER}
+      moreInfoTooltipProps={{ positionX: POSITIONS.X.CENTER }}
       type="text"
     />
   ))

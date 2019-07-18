@@ -5830,38 +5830,6 @@ exports[`Storyshots Table/Custom Cells Borderless 1`] = `
 
 exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] = `
 .c9 {
-  position: relative;
-  display: inline-block;
-}
-
-.c9 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c9 .appear-enter {
-  opacity: 0;
-}
-
-.c9 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 .appear-exit {
-  opacity: 1;
-}
-
-.c9 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5895,7 +5863,7 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c9 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -5906,34 +5874,34 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
   align-self: center;
 }
 
-.c10:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c9:hover {
   background-color: #dd3311;
 }
 
-.c10:focus {
+.c9:focus {
   background-color: #dd3311;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled:hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -6290,35 +6258,28 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         className="cell  c6"
         selected={false}
       >
-        <div
+        <button
           className="c9"
+          onClick={[Function]}
+          size="SMALL"
+          type="PRIMARY"
         >
-          <button
-            className="wrapped c10"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="PRIMARY"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 10,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 10,
               }
-            >
-              <i
-                className="wg-check"
-              />
-            </div>
-            Accept (
-            0
-            )
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-check"
+            />
+          </div>
+          Accept (
+          0
+          )
+        </button>
       </td>
     </tr>
   </tbody>
@@ -6393,35 +6354,28 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         className="cell  c6"
         selected={false}
       >
-        <div
+        <button
           className="c9"
+          onClick={[Function]}
+          size="SMALL"
+          type="PRIMARY"
         >
-          <button
-            className="wrapped c10"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="PRIMARY"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 10,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 10,
               }
-            >
-              <i
-                className="wg-check"
-              />
-            </div>
-            Accept (
-            1
-            )
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-check"
+            />
+          </div>
+          Accept (
+          1
+          )
+        </button>
       </td>
     </tr>
   </tbody>
@@ -6496,35 +6450,28 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         className="cell  c6"
         selected={false}
       >
-        <div
+        <button
           className="c9"
+          onClick={[Function]}
+          size="SMALL"
+          type="PRIMARY"
         >
-          <button
-            className="wrapped c10"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="PRIMARY"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 10,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 10,
               }
-            >
-              <i
-                className="wg-check"
-              />
-            </div>
-            Accept (
-            2
-            )
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-check"
+            />
+          </div>
+          Accept (
+          2
+          )
+        </button>
       </td>
     </tr>
   </tbody>
@@ -6599,35 +6546,28 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
         className="cell  c6"
         selected={false}
       >
-        <div
+        <button
           className="c9"
+          onClick={[Function]}
+          size="SMALL"
+          type="PRIMARY"
         >
-          <button
-            className="wrapped c10"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="PRIMARY"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 10,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 10,
               }
-            >
-              <i
-                className="wg-check"
-              />
-            </div>
-            Accept (
-            3
-            )
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-check"
+            />
+          </div>
+          Accept (
+          3
+          )
+        </button>
       </td>
     </tr>
   </tbody>
@@ -6636,38 +6576,6 @@ exports[`Storyshots Table/Custom Cells Button Column (custom cell example) 1`] =
 
 exports[`Storyshots Table/Custom Cells Complete example 1`] = `
 .c16 {
-  position: relative;
-  display: inline-block;
-}
-
-.c16 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c16 .appear-enter {
-  opacity: 0;
-}
-
-.c16 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c16 .appear-exit {
-  opacity: 1;
-}
-
-.c16 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6701,7 +6609,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   padding: 0 16px;
 }
 
-.c17 .icon {
+.c16 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6712,34 +6620,34 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   align-self: center;
 }
 
-.c17:hover {
+.c16:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c17:focus {
+.c16:focus {
   box-shadow: none;
 }
 
-.c17:hover .icon,
-.c17:focus .icon {
+.c16:hover .icon,
+.c16:focus .icon {
   color: white;
 }
 
-.c17:hover {
+.c16:hover {
   background-color: #2980b9;
 }
 
-.c17:focus {
+.c16:focus {
   background-color: #2980b9;
 }
 
-.c17:disabled,
-.c17:disabled .icon,
-.c17:disabled:hover {
+.c16:disabled,
+.c16:disabled .icon,
+.c16:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c17:disabled {
+.c16:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -6834,22 +6742,22 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   color: #2980b9;
 }
 
-.c10 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
 .c12 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
   text-align: left;
   font-weight: 600;
 }
@@ -6906,7 +6814,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   background-position: center;
 }
 
-.c18 {
+.c17 {
   background-origin: border-box;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -7408,33 +7316,26 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
         width="300px"
       >
         <div>
-          <div
+          <button
             className="c16"
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c17"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Connect
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Connect
+          </button>
         </div>
       </td>
     </tr>
@@ -7582,7 +7483,7 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
             }
           >
             <div
-              className="c18"
+              className="c17"
               size={24}
               src="https://picsum.photos/100?image=13"
             />
@@ -7603,33 +7504,26 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
         width="300px"
       >
         <div>
-          <div
+          <button
             className="c16"
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c17"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Connect
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Connect
+          </button>
         </div>
       </td>
     </tr>
@@ -7683,22 +7577,22 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
   color: #2980b9;
 }
 
-.c8 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-}
-
 .c10 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #59636f;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
   text-align: left;
   font-weight: 600;
 }
@@ -8208,38 +8102,6 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
 
 exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
 .c9 {
-  position: relative;
-  display: inline-block;
-}
-
-.c9 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c9 .appear-enter {
-  opacity: 0;
-}
-
-.c9 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 .appear-exit {
-  opacity: 1;
-}
-
-.c9 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8273,7 +8135,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c9 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8284,39 +8146,39 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   align-self: center;
 }
 
-.c10:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled:hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c12 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8349,7 +8211,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   padding: 0 16px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -8360,41 +8222,41 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c11 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c11:hover,
+.c11:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c11:hover > .icon,
+.c11:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -8429,13 +8291,13 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
   font-weight: 600;
 }
 
-.c11 {
+.c10 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c11 *:focus {
+.c10 *:focus {
   outline: none;
 }
 
@@ -8765,33 +8627,26 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -8799,7 +8654,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -8811,31 +8666,24 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="MEDIUM"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="MEDIUM"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -8914,33 +8762,26 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -8948,7 +8789,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -8960,31 +8801,24 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="MEDIUM"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="MEDIUM"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -9063,33 +8897,26 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -9097,7 +8924,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -9109,31 +8936,24 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="MEDIUM"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="MEDIUM"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -9212,33 +9032,26 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="MEDIUM"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -9246,7 +9059,7 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -9258,31 +9071,24 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="MEDIUM"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="MEDIUM"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -9294,38 +9100,6 @@ exports[`Storyshots Table/Custom Cells Menu Column (custom cell example) 1`] = `
 
 exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell example) 1`] = `
 .c9 {
-  position: relative;
-  display: inline-block;
-}
-
-.c9 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c9 .appear-enter {
-  opacity: 0;
-}
-
-.c9 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 .appear-exit {
-  opacity: 1;
-}
-
-.c9 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9359,7 +9133,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   padding: 0 16px;
 }
 
-.c10 .icon {
+.c9 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9370,39 +9144,39 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   align-self: center;
 }
 
-.c10:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c10:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c10:hover .icon,
-.c10:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c10:hover {
+.c9:hover {
   background-color: #2980b9;
 }
 
-.c10:focus {
+.c9:focus {
   background-color: #2980b9;
 }
 
-.c10:disabled,
-.c10:disabled .icon,
-.c10:disabled:hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c10:disabled {
+.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c12 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9435,7 +9209,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   padding: 0 8px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -9446,41 +9220,41 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c11 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c11:hover,
+.c11:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c11:hover > .icon,
+.c11:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -9515,13 +9289,13 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
   font-weight: 600;
 }
 
-.c11 {
+.c10 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c11 *:focus {
+.c10 *:focus {
   outline: none;
 }
 
@@ -9851,33 +9625,26 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="SMALL"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -9885,7 +9652,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -9897,31 +9664,24 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="SMALL"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="SMALL"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -10000,33 +9760,26 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="SMALL"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -10034,7 +9787,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -10046,31 +9799,24 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="SMALL"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="SMALL"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -10149,33 +9895,26 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="SMALL"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -10183,7 +9922,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -10195,31 +9934,24 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="SMALL"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="SMALL"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -10298,33 +10030,26 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div>
-          <div
+          <button
             className="c9"
+            onClick={[Function]}
+            size="SMALL"
+            type="SECONDARY"
           >
-            <button
-              className="wrapped c10"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="SECONDARY"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 10,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 10,
                 }
-              >
-                <i
-                  className="wg-order"
-                />
-              </div>
-              Message
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-order"
+              />
+            </div>
+            Message
+          </button>
         </div>
       </td>
       <td
@@ -10332,7 +10057,7 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
         selected={false}
       >
         <div
-          className="c11"
+          className="c10"
         >
           <div>
             <span
@@ -10344,31 +10069,24 @@ exports[`Storyshots Table/Custom Cells Small with Menu Column (custom cell examp
               role="button"
               tabIndex="0"
             >
-              <div
-                className="menuButton c9"
+              <button
+                className="menuButton c11"
+                size="SMALL"
+                type="NEUTRAL"
               >
-                <button
-                  className="wrapped c12"
-                  disabled={false}
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                  size="SMALL"
-                  type="NEUTRAL"
-                >
-                  <div
-                    className="icon"
-                    style={
-                      Object {
-                        "marginLeft": 0,
-                      }
+                <div
+                  className="icon"
+                  style={
+                    Object {
+                      "marginLeft": 0,
                     }
-                  >
-                    <i
-                      className="wg-small-arrow-bottom"
-                    />
-                  </div>
-                </button>
-              </div>
+                  }
+                >
+                  <i
+                    className="wg-small-arrow-bottom"
+                  />
+                </div>
+              </button>
             </span>
           </div>
         </div>
@@ -10684,38 +10402,6 @@ exports[`Storyshots Table/Custom Cells With colspan 1`] = `
 
 exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`] = `
 .c8 {
-  position: relative;
-  display: inline-block;
-}
-
-.c8 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c8 .appear-enter {
-  opacity: 0;
-}
-
-.c8 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 .appear-exit {
-  opacity: 1;
-}
-
-.c8 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10748,7 +10434,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   padding: 0 8px;
 }
 
-.c9 .icon {
+.c8 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -10759,41 +10445,41 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   align-self: center;
 }
 
-.c9:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c9:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c9:hover .icon,
-.c9:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c9 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c9:hover > .icon,
-.c9:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:disabled {
+.c8:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -10808,6 +10494,16 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   font-weight: 600;
 }
 
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
 .c5 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -10816,16 +10512,6 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   color: #2f313a;
   text-align: left;
   font-weight: inherit;
-}
-
-.c11 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: normal;
 }
 
 .c2 {
@@ -10945,7 +10631,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   white-space: normal;
 }
 
-.c10 {
+.c9 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -10956,7 +10642,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
   background-color: white;
 }
 
-.c12 {
+.c11 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -11187,32 +10873,25 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         className="cell c7"
         selected={false}
       >
-        <div
+        <button
           className="c8"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c9"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -11220,7 +10899,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c10"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11234,11 +10913,11 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c10"
+        className="cell  c9"
         selected={false}
       >
         <div
-          className="text c11"
+          className="text c10"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11247,7 +10926,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c12"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11256,7 +10935,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c10"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11270,11 +10949,11 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c10"
+        className="cell  c9"
         selected={false}
       >
         <div
-          className="text c11"
+          className="text c10"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11283,7 +10962,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c12"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11292,7 +10971,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c10"
+        className="cell corner-icon c9"
         selected={false}
       >
         <div
@@ -11306,11 +10985,11 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell  c10"
+        className="cell  c9"
         selected={false}
       >
         <div
-          className="text c11"
+          className="text c10"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11319,7 +10998,7 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
         </div>
       </td>
       <td
-        className="cell c12"
+        className="cell c11"
         selected={false}
       />
     </tr>
@@ -11329,38 +11008,6 @@ exports[`Storyshots Table/Row Groups Custom cells with some groups flattened 1`]
 
 exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11393,7 +11040,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -11404,41 +11051,41 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -11453,7 +11100,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   font-weight: 600;
 }
 
-.c10 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -11580,7 +11227,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c8 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -11591,7 +11238,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
   background-color: white;
 }
 
-.c11 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -11710,32 +11357,25 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -11743,11 +11383,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11756,11 +11396,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11769,7 +11409,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11778,11 +11418,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11791,11 +11431,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11804,7 +11444,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11885,32 +11525,25 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -11918,11 +11551,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11931,11 +11564,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11944,7 +11577,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11953,11 +11586,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11966,11 +11599,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -11979,7 +11612,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -11988,11 +11621,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12001,11 +11634,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12014,7 +11647,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12024,38 +11657,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups - Wide table 1`] = `
 
 exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12088,7 +11689,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12099,41 +11700,41 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -12148,7 +11749,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   font-weight: 600;
 }
 
-.c10 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -12275,7 +11876,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c8 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -12286,7 +11887,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
   background-color: white;
 }
 
-.c11 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -12404,32 +12005,25 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -12437,11 +12031,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12450,11 +12044,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12463,7 +12057,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12472,11 +12066,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12485,11 +12079,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12498,7 +12092,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12579,32 +12173,25 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -12612,11 +12199,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12625,11 +12212,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12638,7 +12225,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12647,11 +12234,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12660,11 +12247,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12673,7 +12260,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12682,11 +12269,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12695,11 +12282,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -12708,7 +12295,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -12718,38 +12305,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups 1`] = `
 
 exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12782,7 +12337,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -12793,41 +12348,41 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -12842,7 +12397,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   font-weight: 600;
 }
 
-.c10 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -12969,7 +12524,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   white-space: normal;
 }
 
-.c9 {
+.c8 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -12980,7 +12535,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
   background-color: white;
 }
 
-.c11 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -13098,32 +12653,25 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -13131,11 +12679,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13144,11 +12692,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13157,7 +12705,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -13166,11 +12714,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13179,11 +12727,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13192,7 +12740,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -13273,32 +12821,25 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -13306,11 +12847,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13319,11 +12860,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13332,7 +12873,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -13341,11 +12882,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13354,11 +12895,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13367,7 +12908,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -13376,11 +12917,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13389,11 +12930,11 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -13402,7 +12943,7 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -13412,38 +12953,6 @@ exports[`Storyshots Table/Row Groups Expandable Groups with row click listener 1
 
 exports[`Storyshots Table/Row Groups Expandable, Selectable with selection header 1`] = `
 .c11 {
-  position: relative;
-  display: inline-block;
-}
-
-.c11 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c11 .appear-enter {
-  opacity: 0;
-}
-
-.c11 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 .appear-exit {
-  opacity: 1;
-}
-
-.c11 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13476,7 +12985,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   padding: 0 8px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -13487,41 +12996,41 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c11 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c11:hover,
+.c11:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c11:hover > .icon,
+.c11:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -13536,7 +13045,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   font-weight: 600;
 }
 
-.c15 {
+.c14 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -13824,7 +13333,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c14 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -13835,12 +13344,12 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
   background-color: white;
 }
 
-.c16 {
+.c15 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c13 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -14057,32 +13566,25 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         className="cell c9"
         selected={false}
       >
-        <div
+        <button
           className="c11"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c12"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -14090,7 +13592,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -14124,11 +13626,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14137,11 +13639,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14150,7 +13652,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14159,7 +13661,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -14193,11 +13695,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14206,11 +13708,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14219,7 +13721,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14368,32 +13870,25 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         className="cell c9"
         selected={false}
       >
-        <div
+        <button
           className="c11"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c12"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -14401,7 +13896,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -14435,11 +13930,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14448,11 +13943,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14461,7 +13956,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14470,7 +13965,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -14504,11 +13999,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14517,11 +14012,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14530,7 +14025,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14539,7 +14034,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -14573,11 +14068,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14586,11 +14081,11 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -14599,7 +14094,7 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -14609,38 +14104,6 @@ exports[`Storyshots Table/Row Groups Expandable, Selectable with selection heade
 
 exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selectable row 1`] = `
 .c11 {
-  position: relative;
-  display: inline-block;
-}
-
-.c11 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c11 .appear-enter {
-  opacity: 0;
-}
-
-.c11 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 .appear-exit {
-  opacity: 1;
-}
-
-.c11 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14673,7 +14136,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   padding: 0 8px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -14684,41 +14147,41 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c11 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c11:hover,
+.c11:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c11:hover > .icon,
+.c11:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -14733,7 +14196,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   font-weight: 600;
 }
 
-.c15 {
+.c14 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -15021,7 +14484,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c14 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -15032,12 +14495,12 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
   background-color: white;
 }
 
-.c16 {
+.c15 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c13 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -15469,32 +14932,25 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         className="cell c9"
         selected={false}
       >
-        <div
+        <button
           className="c11"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c12"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -15502,7 +14958,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -15536,11 +14992,11 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -15549,11 +15005,11 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -15562,7 +15018,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -15571,7 +15027,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -15605,11 +15061,11 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -15618,11 +15074,11 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -15631,7 +15087,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -15640,7 +15096,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
       onClick={[Function]}
     >
       <td
-        className="cell checkbox c13"
+        className="cell checkbox c12"
         selected={false}
       >
         <div
@@ -15674,11 +15130,11 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell corner-icon c14"
+        className="cell corner-icon c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -15687,11 +15143,11 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
         selected={false}
       >
         <div
-          className="text c15"
+          className="text c14"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -15700,7 +15156,7 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
         </div>
       </td>
       <td
-        className="cell c16"
+        className="cell c15"
         selected={false}
       />
     </tr>
@@ -15710,38 +15166,6 @@ exports[`Storyshots Table/Row Groups Small height, Expandable Groups and Selecta
 
 exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
 .c11 {
-  position: relative;
-  display: inline-block;
-}
-
-.c11 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c11 .appear-enter {
-  opacity: 0;
-}
-
-.c11 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 .appear-exit {
-  opacity: 1;
-}
-
-.c11 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15774,7 +15198,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   padding: 0 8px;
 }
 
-.c12 .icon {
+.c11 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -15785,41 +15209,41 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   align-self: center;
 }
 
-.c12:hover {
+.c11:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c11:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c11:hover .icon,
+.c11:focus .icon {
   color: white;
 }
 
-.c12 > .icon {
+.c11 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:hover,
-.c12:focus {
+.c11:hover,
+.c11:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c12:hover > .icon,
-.c12:focus > .icon {
+.c11:hover > .icon,
+.c11:focus > .icon {
   color: #3498db;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -15834,7 +15258,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   font-weight: 600;
 }
 
-.c15 {
+.c14 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -16122,7 +15546,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c14 {
+.c13 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -16133,12 +15557,12 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
   background-color: white;
 }
 
-.c16 {
+.c15 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c13 {
+.c12 {
   text-align: left;
   background-color: #f6f8f9;
 }
@@ -16362,32 +15786,25 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           className="cell c9"
           selected={false}
         >
-          <div
+          <button
             className="c11"
+            onClick={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="wrapped c12"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
                 }
-              >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
-              </div>
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
         </td>
       </tr>
       <tr
@@ -16395,7 +15812,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c12"
           selected={false}
         >
           <div
@@ -16429,11 +15846,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16442,11 +15859,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16455,7 +15872,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c16"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -16464,7 +15881,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c12"
           selected={false}
         >
           <div
@@ -16498,11 +15915,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16511,11 +15928,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16524,7 +15941,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c16"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -16673,32 +16090,25 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           className="cell c9"
           selected={false}
         >
-          <div
+          <button
             className="c11"
+            onClick={[Function]}
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="wrapped c12"
-              disabled={false}
-              onClick={[Function]}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
                 }
-              >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
-              </div>
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
         </td>
       </tr>
       <tr
@@ -16706,7 +16116,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c12"
           selected={false}
         >
           <div
@@ -16740,11 +16150,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16753,11 +16163,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16766,7 +16176,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c16"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -16775,7 +16185,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c12"
           selected={false}
         >
           <div
@@ -16809,11 +16219,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16822,11 +16232,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16835,7 +16245,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c16"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -16844,7 +16254,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
         onClick={[Function]}
       >
         <td
-          className="cell checkbox c13"
+          className="cell checkbox c12"
           selected={false}
         >
           <div
@@ -16878,11 +16288,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell corner-icon c14"
+          className="cell corner-icon c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16891,11 +16301,11 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell  c14"
+          className="cell  c13"
           selected={false}
         >
           <div
-            className="text c15"
+            className="text c14"
             fontWeight="normal"
             size={16}
             type="#2f313a"
@@ -16904,7 +16314,7 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
           </div>
         </td>
         <td
-          className="cell c16"
+          className="cell c15"
           selected={false}
         />
       </tr>
@@ -16915,38 +16325,6 @@ exports[`Storyshots Table/Row Groups Table data updated after mount 1`] = `
 
 exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16979,7 +16357,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -16990,41 +16368,41 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -17039,17 +16417,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
   font-weight: 600;
 }
 
-.c13 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c10 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -17057,6 +16425,16 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
   color: #2f313a;
   text-align: left;
   font-weight: normal;
+}
+
+.c12 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
 }
 
 .c2 {
@@ -17176,7 +16554,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c8 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -17187,16 +16565,16 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
   background-color: white;
 }
 
-.c11 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
 
-.c14 {
+.c13 {
   background-color: #f6f8f9;
 }
 
-.c12 {
+.c11 {
   background-color: #f6f8f9;
 }
 
@@ -17313,32 +16691,25 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -17346,11 +16717,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17359,11 +16730,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17372,7 +16743,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -17381,11 +16752,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17394,11 +16765,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17407,7 +16778,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -17415,11 +16786,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       className="row grouped  "
     >
       <td
-        className="corner-icon cell  c12"
+        className="corner-icon cell  c11"
         colSpan="2"
       >
         <div
-          className="c13"
+          className="c12"
           fontWeight="inherit"
           size={18}
           type="#2f313a"
@@ -17429,10 +16800,10 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
       >
         <div
-          className="c13"
+          className="c12"
           fontWeight="inherit"
           size={18}
           type="#2f313a"
@@ -17518,32 +16889,25 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -17551,11 +16915,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17564,11 +16928,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17577,7 +16941,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -17586,11 +16950,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17599,11 +16963,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17612,7 +16976,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -17621,11 +16985,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17634,11 +16998,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -17647,7 +17011,7 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -17655,11 +17019,11 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
       className="row grouped  "
     >
       <td
-        className="corner-icon cell  c12"
+        className="corner-icon cell  c11"
         colSpan="2"
       >
         <div
-          className="c13"
+          className="c12"
           fontWeight="inherit"
           size={18}
           type="#2f313a"
@@ -17669,10 +17033,10 @@ exports[`Storyshots Table/Row Groups With extra child rows 1`] = `
         </div>
       </td>
       <td
-        className="cell  c14"
+        className="cell  c13"
       >
         <div
-          className="c13"
+          className="c12"
           fontWeight="inherit"
           size={18}
           type="#2f313a"
@@ -18147,38 +17511,6 @@ exports[`Storyshots Table/Row Groups With row groups 1`] = `
 
 exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18211,7 +17543,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -18222,41 +17554,41 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -18271,7 +17603,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   font-weight: 600;
 }
 
-.c10 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -18398,7 +17730,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   white-space: normal;
 }
 
-.c9 {
+.c8 {
   text-align: left;
   background-color: #f6f8f9;
   white-space: normal;
@@ -18409,7 +17741,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
   background-color: white;
 }
 
-.c11 {
+.c10 {
   text-align: right;
   background-color: #f6f8f9;
 }
@@ -18640,32 +17972,25 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         className="cell c6"
         selected={false}
       >
-        <div
+        <button
           className="c7"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-small-arrow-bottom"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-small-arrow-bottom"
+            />
+          </div>
+        </button>
       </td>
     </tr>
     <tr
@@ -18673,11 +17998,11 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -18686,11 +18011,11 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -18699,7 +18024,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -18708,11 +18033,11 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -18721,11 +18046,11 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -18734,7 +18059,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -18743,11 +18068,11 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
       onClick={[Function]}
     >
       <td
-        className="cell corner-icon c9"
+        className="cell corner-icon c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -18756,11 +18081,11 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell  c9"
+        className="cell  c8"
         selected={false}
       >
         <div
-          className="text c10"
+          className="text c9"
           fontWeight="normal"
           size={16}
           type="#2f313a"
@@ -18769,7 +18094,7 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
         </div>
       </td>
       <td
-        className="cell c11"
+        className="cell c10"
         selected={false}
       />
     </tr>
@@ -18779,38 +18104,6 @@ exports[`Storyshots Table/Row Groups With some groups flattened 1`] = `
 
 exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
 .c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18843,7 +18136,7 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   padding: 0 16px;
 }
 
-.c3 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -18854,41 +18147,41 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   align-self: center;
 }
 
-.c3:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c3 > .icon {
+.c2 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c3:hover > .icon,
-.c3:focus > .icon {
+.c2:hover > .icon,
+.c2:focus > .icon {
   color: #3498db;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -18903,13 +18196,13 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   font-weight: 600;
 }
 
-.c4 {
+.c3 {
   font-family: lato,sans-serif;
   display: inline-block;
   position: relative;
 }
 
-.c4 *:focus {
+.c3 *:focus {
   outline: none;
 }
 
@@ -19009,27 +18302,20 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
   <div
     className="clear"
   >
-    <div
+    <button
       className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c3"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Clear
-      </button>
-    </div>
+      Clear
+    </button>
   </div>
   <div
     className="actions"
   >
     <div
-      className="c4"
+      className="c3"
     >
       <div>
         <span
@@ -19041,32 +18327,25 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
           role="button"
           tabIndex="0"
         >
-          <div
+          <button
             className="menuButton c2"
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="wrapped c3"
-              disabled={false}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
-            >
-              Options
-              <div
-                className="icon"
-                style={
-                  Object {
-                    "marginLeft": 10,
-                  }
+            Options
+            <div
+              className="icon"
+              style={
+                Object {
+                  "marginLeft": 10,
                 }
-              >
-                <i
-                  className="wg-small-arrow-bottom"
-                />
-              </div>
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-small-arrow-bottom"
+              />
+            </div>
+          </button>
         </span>
       </div>
     </div>
@@ -19076,38 +18355,6 @@ exports[`Storyshots Table/SelectionBar Actions dropdown 1`] = `
 
 exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
 .c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19140,7 +18387,7 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
   padding: 0 16px;
 }
 
-.c3 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -19151,41 +18398,41 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
   align-self: center;
 }
 
-.c3:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c3 > .icon {
+.c2 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c3:hover > .icon,
-.c3:focus > .icon {
+.c2:hover > .icon,
+.c2:focus > .icon {
   color: #3498db;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -19296,21 +18543,14 @@ exports[`Storyshots Table/SelectionBar Clear Button 1`] = `
   <div
     className="clear"
   >
-    <div
+    <button
       className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c3"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Clear
-      </button>
-    </div>
+      Clear
+    </button>
   </div>
 </div>
 `;
@@ -19427,38 +18667,6 @@ exports[`Storyshots Table/SelectionBar Default 1`] = `
 
 exports[`Storyshots Table/SelectionBar One action button 1`] = `
 .c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19491,7 +18699,7 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   padding: 0 16px;
 }
 
-.c3 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -19502,46 +18710,46 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   align-self: center;
 }
 
-.c3:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c3 > .icon {
+.c2 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c3:hover > .icon,
-.c3:focus > .icon {
+.c2:hover > .icon,
+.c2:focus > .icon {
   color: #3498db;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19575,7 +18783,7 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   padding: 0 16px;
 }
 
-.c4 .icon {
+.c3 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -19586,34 +18794,34 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   align-self: center;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c4:focus {
+.c3:focus {
   box-shadow: none;
 }
 
-.c4:hover .icon,
-.c4:focus .icon {
+.c3:hover .icon,
+.c3:focus .icon {
   color: white;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: #dd3311;
 }
 
-.c4:focus {
+.c3:focus {
   background-color: #dd3311;
 }
 
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled:hover {
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c4:disabled {
+.c3:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -19724,40 +18932,26 @@ exports[`Storyshots Table/SelectionBar One action button 1`] = `
   <div
     className="clear"
   >
-    <div
+    <button
       className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c3"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Clear
-      </button>
-    </div>
+      Clear
+    </button>
   </div>
   <div
     className="actions"
   >
-    <div
-      className="c2"
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
     >
-      <button
-        className="wrapped c4"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="PRIMARY"
-      >
-        Primary Action
-      </button>
-    </div>
+      Primary Action
+    </button>
   </div>
 </div>
 `;
@@ -19874,38 +19068,6 @@ exports[`Storyshots Table/SelectionBar One item selected 1`] = `
 
 exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
 .c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19938,7 +19100,7 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   padding: 0 16px;
 }
 
-.c3 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -19949,118 +19111,41 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   align-self: center;
 }
 
-.c3:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c3 > .icon {
+.c2 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c3:hover > .icon,
-.c3:focus > .icon {
+.c2:hover > .icon,
+.c2:focus > .icon {
   color: #3498db;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #ff4411;
-  padding: 0 16px;
-}
-
-.c5 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5:hover {
-  background-color: #dd3311;
-}
-
-.c5:focus {
-  background-color: #dd3311;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -20095,7 +19180,7 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   cursor: pointer;
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #ff4411;
   padding: 0 16px;
 }
 
@@ -20124,11 +19209,11 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
 }
 
 .c4:hover {
-  background-color: #2980b9;
+  background-color: #dd3311;
 }
 
 .c4:focus {
-  background-color: #2980b9;
+  background-color: #dd3311;
 }
 
 .c4:disabled,
@@ -20138,6 +19223,83 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
 }
 
 .c4:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c3 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c3:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover .icon,
+.c3:focus .icon {
+  color: white;
+}
+
+.c3:hover {
+  background-color: #2980b9;
+}
+
+.c3:focus {
+  background-color: #2980b9;
+}
+
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -20248,21 +19410,14 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
   <div
     className="clear"
   >
-    <div
+    <button
       className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c3"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="NEUTRAL"
-      >
-        Clear
-      </button>
-    </div>
+      Clear
+    </button>
   </div>
   <div
     className="actions"
@@ -20276,36 +19431,22 @@ exports[`Storyshots Table/SelectionBar Two action buttons 1`] = `
         }
       }
     >
-      <div
-        className="c2"
+      <button
+        className="c3"
+        onClick={[Function]}
+        size="SMALL"
+        type="SECONDARY"
       >
-        <button
-          className="wrapped c4"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="SECONDARY"
-        >
-          Secondary Action
-        </button>
-      </div>
-      <div
-        className="c2"
+        Secondary Action
+      </button>
+      <button
+        className="c4"
+        onClick={[Function]}
+        size="SMALL"
+        type="PRIMARY"
       >
-        <button
-          className="wrapped c5"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="PRIMARY"
-        >
-          Primary Action
-        </button>
-      </div>
+        Primary Action
+      </button>
     </div>
   </div>
 </div>

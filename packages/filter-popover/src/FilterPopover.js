@@ -9,9 +9,10 @@ const FilterPopover = props => {
   return (
     <Popover
       className={props.className}
-      padding="0px"
-      align={props.align}
-      zIndex={props.zIndex}
+      tooltipProps={{
+        padding: "0px",
+        ...props.tooltipProps,
+      }}
       trigger={
         <Button
           className="trigger"
@@ -76,10 +77,10 @@ FilterPopover.propTypes = {
   formCancelLabel: PropTypes.string,
   onFormSaveClick: PropTypes.func,
   onFormCancelClick: PropTypes.func,
-  align: PropTypes.string,
+  // eslint-disable-next-line react/forbid-prop-types
+  tooltipProps: PropTypes.object,
   dismissOnSave: PropTypes.bool,
   hasValue: PropTypes.bool,
-  zIndex: PropTypes.number,
   className: PropTypes.string,
 };
 

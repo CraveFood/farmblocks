@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import EmptyState from "@crave/farmblocks-empty-state";
 import Footer from "@crave/farmblocks-footer";
-import Button from "@crave/farmblocks-button";
+import MoreInfo from "@crave/farmblocks-more-info";
 
 import Card, { cardTypes } from ".";
 
@@ -39,16 +39,12 @@ storiesOf("Card", module)
   ))
   .add("With overflowing content", () => (
     <Card>
-      <Button disabled tooltipText="Visible tooltip">
-        Hover me
-      </Button>
+      <MoreInfo text="Visible tooltip">Hover me</MoreInfo>
     </Card>
   ))
   .add("With overflowing content hidden", () => (
     <Card overflow="hidden">
-      <Button disabled tooltipText="Overflowing tooltip not visible">
-        Hover me
-      </Button>
+      <MoreInfo text="Overflowing tooltip not visible">Hover me</MoreInfo>
     </Card>
   ))
   .add("extended style", () => (

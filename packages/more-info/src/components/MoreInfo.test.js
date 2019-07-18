@@ -1,35 +1,34 @@
 import React from "react";
-import Enzyme, { shallow } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import {
+  render,
+  fireEvent,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
 
 import MoreInfo from "./MoreInfo";
 
-Enzyme.configure({ adapter: new Adapter() });
-
 describe("More info", () => {
-  test("mouse over icon div should set tooltipVisible to true", () => {
-    const wrapper = shallow(<MoreInfo>Test</MoreInfo>);
+  test("Tooltip visibility on mouseOver and mouseLeave", async () => {
+    const tooltipText = "Tooltip content";
+    const moreInfoText = "More Info";
+    const { container, queryByText } = render(
+      <MoreInfo text={moreInfoText}>{tooltipText}</MoreInfo>,
+    );
 
-    const iconDiv = wrapper.find("div.icon");
+    // Initial state, tooltip is not visible and text doesn't have the class "hovered"
+    expect(queryByText(tooltipText)).not.toBeInTheDocument();
+    expect(queryByText(moreInfoText)).not.toHaveClass("hovered");
 
-    expect(wrapper.state("tooltipVisible")).toBe(false);
+    // On mouve over, Tooltip is visible and text has the class "hovered"
+    const hitArea = container.querySelector('[class="hit-area"]');
+    fireEvent.mouseOver(hitArea);
+    expect(queryByText(tooltipText)).toBeInTheDocument();
+    expect(queryByText(moreInfoText)).toHaveClass("hovered");
 
-    iconDiv.simulate("mouseover", {});
-
-    expect(wrapper.state("tooltipVisible")).toBe(true);
-  });
-
-  test("hideTooltip() should set tooltipVisible to false", () => {
-    const wrapper = shallow(<MoreInfo>Test</MoreInfo>);
-
-    wrapper.setState({ tooltipVisible: true });
-
-    expect(wrapper.state("tooltipVisible")).toBe(true);
-
-    const hitArea = wrapper.find("div.hit-area");
-
-    hitArea.simulate("mouseout", {});
-
-    expect(wrapper.state("tooltipVisible")).toBe(false);
+    // On mouse leave, go back to initial state,
+    fireEvent.mouseLeave(hitArea);
+    await waitForElementToBeRemoved(() => queryByText(tooltipText));
+    expect(queryByText(tooltipText)).not.toBeInTheDocument();
+    expect(queryByText(moreInfoText)).not.toHaveClass("hovered");
   });
 });

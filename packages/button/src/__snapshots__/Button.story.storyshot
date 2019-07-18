@@ -1,323 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Button Children content with Icons 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 10,
-        }
-      }
-    >
-      <i
-        className="wg-small-arrow-bottom"
-      />
-    </div>
-    ,_____,
-    <div
-      className="icon"
-      style={
-        Object {
-          "marginLeft": 10,
-        }
-      }
-    >
-      <i
-        className="wg-small-arrow-bottom"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Closed 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #9b59b6;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #8e44ad;
-}
-
-.c1:focus {
-  background-color: #8e44ad;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="CLOSED"
-  >
-    Closed Button
-  </button>
-</div>
-`;
-
 exports[`Storyshots Button Custom Theme 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -351,7 +35,7 @@ exports[`Storyshots Button Custom Theme 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -362,89 +46,50 @@ exports[`Storyshots Button Custom Theme 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1:hover {
+.c0:hover {
   background-color: blueviolet;
 }
 
-.c1:focus {
+.c0:focus {
   background-color: blueviolet;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  onClick={[Function]}
+  size="SMALL"
+  type="PRIMARY"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="PRIMARY"
-  >
-    🦄 My Beautiful Button
-  </button>
-</div>
+  🦄 My Beautiful Button
+</button>
 `;
 
 exports[`Storyshots Button Custom box-shadow 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -477,7 +122,7 @@ exports[`Storyshots Button Custom box-shadow 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -488,95 +133,56 @@ exports[`Storyshots Button Custom box-shadow 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: none;
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c0:hover > .icon,
+.c0:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Custom box-shadow
-  </button>
-</div>
+  Custom box-shadow
+</button>
 `;
 
 exports[`Storyshots Button Custom font-weight, text color and font-size - activated 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -613,7 +219,7 @@ exports[`Storyshots Button Custom font-weight, text color and font-size - activa
   font-weight: normal;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -624,101 +230,62 @@ exports[`Storyshots Button Custom font-weight, text color and font-size - activa
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: #3498db;
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c0:hover > .icon,
+.c0:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  fontSize="14px"
+  fontWeight="normal"
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    fontSize="14px"
-    fontWeight="normal"
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Custom text properties
-  </button>
-</div>
+  Custom text properties
+</button>
 `;
 
 exports[`Storyshots Button Custom font-weight, text color and font-size 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -753,7 +320,7 @@ exports[`Storyshots Button Custom font-weight, text color and font-size 1`] = `
   font-weight: normal;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -764,97 +331,58 @@ exports[`Storyshots Button Custom font-weight, text color and font-size 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c0:hover > .icon,
+.c0:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  fontSize="14px"
+  fontWeight="normal"
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    fontSize="14px"
-    fontWeight="normal"
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Custom text properties
-  </button>
-</div>
+  Custom text properties
+</button>
 `;
 
 exports[`Storyshots Button Custom padding 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -887,7 +415,7 @@ exports[`Storyshots Button Custom padding 1`] = `
   padding: 0 48px;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -898,95 +426,56 @@ exports[`Storyshots Button Custom padding 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c0:hover > .icon,
+.c0:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Custom padding X
-  </button>
-</div>
+  Custom padding X
+</button>
 `;
 
-exports[`Storyshots Button Default 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
+exports[`Storyshots Button Medium 1`] = `
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -999,13 +488,13 @@ exports[`Storyshots Button Default 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  height: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   color: white;
-  line-height: 30px;
+  line-height: 46px;
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -1014,12 +503,13 @@ exports[`Storyshots Button Default 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c3 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1030,93 +520,36 @@ exports[`Storyshots Button Default 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c3:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c3:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c3:hover .icon,
+.c3:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c3:hover {
+  background-color: #2980b9;
+}
+
+.c3:focus {
+  background-color: #2980b9;
+}
+
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
+.c3:disabled {
   background-color: #ccc;
   box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Label
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Default medium 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
 }
 
 .c1 {
@@ -1202,767 +635,7 @@ exports[`Storyshots Button Default medium 1`] = `
   box-shadow: none;
 }
 
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="MEDIUM"
-    type="NEUTRAL"
-  >
-    Label
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Default with Icon 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 10,
-        }
-      }
-    >
-      <i
-        className="wg-order"
-      />
-    </div>
-    Send Order
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Default with Right Icon 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Send Order
-    <div
-      className="icon"
-      style={
-        Object {
-          "marginLeft": 10,
-        }
-      }
-    >
-      <i
-        className="wg-small-arrow-bottom"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Disabled 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={true}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Disabled Buton
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Disabled with tooltip 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="hitArea"
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-  />
-  <button
-    className="wrapped c1"
-    disabled={true}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Disabled Buton
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Icon only (disabled) 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 8px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="hitArea"
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-  />
-  <button
-    className="wrapped c1"
-    disabled={true}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <i
-        className="wg-edit"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Icon only (neutral medium) 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1982,294 +655,6 @@ exports[`Storyshots Button Icon only (neutral medium) 1`] = `
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   color: white;
   line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="MEDIUM"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <i
-        className="wg-edit"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Icon only (neutral) 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 8px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <i
-        className="wg-edit"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Icon only (primary) 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -2281,147 +666,10 @@ exports[`Storyshots Button Icon only (primary) 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: #ff4411;
-  padding: 0 8px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #dd3311;
-}
-
-.c1:focus {
-  background-color: #dd3311;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="PRIMARY"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <i
-        className="wg-edit"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Loading with left and right icons 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2432,125 +680,39 @@ exports[`Storyshots Button Loading with left and right icons 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c1 > .icon.left-icon i::before {
-  display: inline-block;
-  -webkit-animation: spin 1.1s infinite linear;
-  animation: spin 1.1s infinite linear;
+.c2:hover {
+  background-color: #dd3311;
 }
 
-.c1 > .icon {
+.c2:focus {
+  background-color: #dd3311;
+}
+
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={true}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 10,
-        }
-      }
-    >
-      <i
-        className="wg-loading"
-      />
-    </div>
-    Label
-    <div
-      className="icon"
-      style={
-        Object {
-          "marginLeft": 10,
-        }
-      }
-    >
-      <i
-        className="wg-small-arrow-bottom"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Negative 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2563,13 +725,13 @@ exports[`Storyshots Button Negative 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  height: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   color: white;
-  line-height: 30px;
+  line-height: 46px;
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -2584,7 +746,7 @@ exports[`Storyshots Button Negative 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c4 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2595,89 +757,39 @@ exports[`Storyshots Button Negative 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c1:hover {
+.c4:hover {
   background-color: #bc2b0e;
 }
 
-.c1:focus {
+.c4:focus {
   background-color: #bc2b0e;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEGATIVE"
-  >
-    Label
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Neutral 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2690,13 +802,244 @@ exports[`Storyshots Button Neutral 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  height: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   color: white;
-  line-height: 30px;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #9b59b6;
+  padding: 0 16px;
+}
+
+.c5 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c5:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c5:focus {
+  box-shadow: none;
+}
+
+.c5:hover .icon,
+.c5:focus .icon {
+  color: white;
+}
+
+.c5:hover {
+  background-color: #8e44ad;
+}
+
+.c5:focus {
+  background-color: #8e44ad;
+}
+
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #2ecc71;
+  padding: 0 16px;
+}
+
+.c6 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c6:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c6:focus {
+  box-shadow: none;
+}
+
+.c6:hover .icon,
+.c6:focus .icon {
+  color: white;
+}
+
+.c6:hover {
+  background-color: #27ae60;
+}
+
+.c6:focus {
+  background-color: #27ae60;
+}
+
+.c6:disabled,
+.c6:disabled .icon,
+.c6:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 0 16px;
+}
+
+.c7 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c7:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c7:focus {
+  box-shadow: none;
+}
+
+.c7:hover .icon,
+.c7:focus .icon {
+  color: white;
+}
+
+.c7:hover {
+  background-color: #3498db;
+}
+
+.c7:focus {
+  background-color: #3498db;
+}
+
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -2710,7 +1053,7 @@ exports[`Storyshots Button Neutral 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c8 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2721,96 +1064,1158 @@ exports[`Storyshots Button Neutral 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c8 > .icon.left-icon i::before {
+  display: inline-block;
+  -webkit-animation: spin 1.1s infinite linear;
+  animation: spin 1.1s infinite linear;
+}
+
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c8:disabled {
   background-color: #ccc;
   box-shadow: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 > * {
+  margin-right: 16px;
+}
+
+.c0 .section > * {
+  margin-top: 16px;
 }
 
 <div
   className="c0"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
+  <div
+    className="section"
   >
-    Neutral Button
-  </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      Default
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
+    >
+      Primary
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      Neutral
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
+    >
+      Secondary
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEGATIVE"
+    >
+      Negative
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="CLOSED"
+    >
+      Closed
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="POSITIVE"
+    >
+      Positive
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="OFF_NEUTRAL"
+      >
+        Off neutral
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      Disabled
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Default
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Primary
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Neutral
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Secondary
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEGATIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Negative
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="CLOSED"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Closed
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="POSITIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Positive
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="OFF_NEUTRAL"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-order"
+          />
+        </div>
+        Off neutral
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Disabled
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Default
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Primary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Neutral
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Secondary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEGATIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Negative
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="CLOSED"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Closed
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="POSITIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Positive
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="OFF_NEUTRAL"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-order"
+          />
+        </div>
+        Off neutral
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Disabled
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      Default
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
+    >
+      Primary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      Neutral
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
+    >
+      Secondary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEGATIVE"
+    >
+      Negative
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="CLOSED"
+    >
+      Closed
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="POSITIVE"
+    >
+      Positive
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="OFF_NEUTRAL"
+      >
+        Off neutral
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      Disabled
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEGATIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="CLOSED"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="POSITIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="OFF_NEUTRAL"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-order"
+          />
+        </div>
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Button Neutral Activated 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2845,7 +2250,7 @@ exports[`Storyshots Button Neutral Activated 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2856,100 +2261,61 @@ exports[`Storyshots Button Neutral Activated 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: #3498db;
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c0:hover > .icon,
+.c0:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  onClick={[Function]}
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Neutral Button
-  </button>
-</div>
+  Neutral Button
+</button>
 `;
 
 exports[`Storyshots Button Neutral with Custom Theme 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2982,7 +2348,7 @@ exports[`Storyshots Button Neutral with Custom Theme 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2993,761 +2359,57 @@ exports[`Storyshots Button Neutral with Custom Theme 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c0:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c0:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c0:hover .icon,
+.c0:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c0 > .icon {
   color: aqua;
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   color: slateblue;
   border-color: slateblue;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c0:hover > .icon,
+.c0:focus > .icon {
   color: slateblue;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
+<button
   className="c0"
+  onClick={[Function]}
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Neutral enough?
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Neutral with Icon 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 10,
-        }
-      }
-    >
-      <i
-        className="wg-order"
-      />
-    </div>
-    Label
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Neutral with Righ  Icon 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    Label
-    <div
-      className="icon"
-      style={
-        Object {
-          "marginLeft": 10,
-        }
-      }
-    >
-      <i
-        className="wg-small-arrow-bottom"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Off Neutral Button 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: rgba(0,0,0,0.16);
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #3498db;
-}
-
-.c1:focus {
-  background-color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  style={
-    Object {
-      "backgroundColor": "rgba(0,0,0,0.32)",
-      "display": "inline-block",
-      "padding": "10px",
-    }
-  }
->
-  <div
-    className="c0"
-  >
-    <button
-      className="wrapped c1"
-      disabled={false}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
-    >
-      Label
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button Off Neutral Button Loading 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: rgba(0,0,0,0.16);
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon.left-icon i::before {
-  display: inline-block;
-  -webkit-animation: spin 1.1s infinite linear;
-  animation: spin 1.1s infinite linear;
-}
-
-.c1:hover {
-  background-color: #3498db;
-}
-
-.c1:focus {
-  background-color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  style={
-    Object {
-      "backgroundColor": "rgba(0,0,0,0.32)",
-      "display": "inline-block",
-      "padding": "10px",
-    }
-  }
->
-  <div
-    className="c0"
-  >
-    <button
-      className="wrapped c1"
-      disabled={true}
-      onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 10,
-          }
-        }
-      >
-        <i
-          className="wg-loading"
-        />
-      </div>
-      Label
-    </button>
-  </div>
-</div>
+  Neutral enough?
+</button>
 `;
 
 exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 16px;
-}
-
-.c2 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c2:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c2:focus {
-  box-shadow: none;
-}
-
-.c2:hover .icon,
-.c2:focus .icon {
-  color: white;
-}
-
-.c2 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:hover,
-.c2:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c2:hover > .icon,
-.c2:focus > .icon {
-  color: #3498db;
-}
-
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3778,6 +2440,89 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
   background-color: #FFFFFF;
   color: #59636f;
   padding: 0 8px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c0:focus {
+  box-shadow: none;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:hover,
+.c0:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c0:hover > .icon,
+.c0:focus > .icon {
+  color: #3498db;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
 }
 
 .c1 .icon {
@@ -3831,140 +2576,444 @@ exports[`Storyshots Button Plus and minus icon buttons in small and medium sizes
 }
 
 <div>
-  <div
+  <button
     className="c0"
+    size="SMALL"
+    type="NEUTRAL"
   >
-    <button
-      className="wrapped c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="NEUTRAL"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
-  <div
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
+  <button
     className="c0"
+    size="SMALL"
+    type="NEUTRAL"
   >
-    <button
-      className="wrapped c1"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="SMALL"
-      type="NEUTRAL"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
-  <div
-    className="c0"
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
+  <button
+    className="c1"
+    size="MEDIUM"
+    type="NEUTRAL"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="NEUTRAL"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-minus"
-        />
-      </div>
-    </button>
-  </div>
-  <div
-    className="c0"
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
+  <button
+    className="c1"
+    size="MEDIUM"
+    type="NEUTRAL"
   >
-    <button
-      className="wrapped c2"
-      disabled={false}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
-      size="MEDIUM"
-      type="NEUTRAL"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
         }
-      >
-        <i
-          className="wg-add"
-        />
-      </div>
-    </button>
-  </div>
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
 </div>
 `;
 
-exports[`Storyshots Button Positive 1`] = `
+exports[`Storyshots Button Secondary (fluid) 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
   width: 100%;
-  height: 100%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
 }
 
-.c0 .appear-enter {
-  opacity: 0;
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c0 .appear-exit {
-  opacity: 1;
+.c0:focus {
+  box-shadow: none;
 }
 
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0:hover {
+  background-color: #2980b9;
+}
+
+.c0:focus {
+  background-color: #2980b9;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+<div
+  style={
+    Object {
+      "background": "rgba(0, 0, 0, 0.32)",
+      "height": 400,
+      "width": 400,
+    }
+  }
+>
+  <button
+    className="c0"
+    onClick={[Function]}
+    size="SMALL"
+    type="SECONDARY"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c0 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c0:focus {
+  box-shadow: none;
+}
+
+.c0:hover .icon,
+.c0:focus .icon {
+  color: white;
+}
+
+.c0:hover {
+  background-color: #2980b9;
+}
+
+.c0:focus {
+  background-color: #2980b9;
+}
+
+.c0:disabled,
+.c0:disabled .icon,
+.c0:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+<div
+  style={
+    Object {
+      "background": "rgba(0, 0, 0, 0.32)",
+      "height": 400,
+      "width": 400,
+    }
+  }
+>
+  <button
+    className="c0"
+    onClick={[Function]}
+    size="SMALL"
+    type="SECONDARY"
+  >
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 10,
+        }
+      }
+    >
+      <i
+        className="wg-order"
+      />
+    </div>
+    Secondary Button
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button Small 1`] = `
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 0 8px;
+}
+
+.c15 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c15:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c15:focus {
+  box-shadow: none;
+}
+
+.c15:hover .icon,
+.c15:focus .icon {
+  color: white;
+}
+
+.c15:hover {
+  background-color: #3498db;
+}
+
+.c15:focus {
+  background-color: #3498db;
+}
+
+.c15:disabled,
+.c15:disabled .icon,
+.c15:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c15:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 8px;
+}
+
+.c11 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c11:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c11:focus {
+  box-shadow: none;
+}
+
+.c11:hover .icon,
+.c11:focus .icon {
+  color: white;
+}
+
+.c11:hover {
+  background-color: #2980b9;
+}
+
+.c11:focus {
+  background-color: #2980b9;
+}
+
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c11:disabled {
+  background-color: #ccc;
+  box-shadow: none;
 }
 
 .c1 {
@@ -3995,9 +3044,8 @@ exports[`Storyshots Button Positive 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #2ecc71;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 16px;
 }
 
@@ -4025,12 +3073,19 @@ exports[`Storyshots Button Positive 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #27ae60;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #27ae60;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -4044,57 +3099,7 @@ exports[`Storyshots Button Positive 1`] = `
   box-shadow: none;
 }
 
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="POSITIVE"
-  >
-    Positive Button
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Primary 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4128,7 +3133,7 @@ exports[`Storyshots Button Primary 1`] = `
   padding: 0 16px;
 }
 
-.c1 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4139,89 +3144,513 @@ exports[`Storyshots Button Primary 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #dd3311;
 }
 
-.c1:focus {
+.c2:focus {
   background-color: #dd3311;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="PRIMARY"
-  >
-    Label
-  </button>
-</div>
-`;
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
 
-exports[`Storyshots Button Right Icon only (neutral) 1`] = `
-.c0 {
-  position: relative;
+.c3 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c3:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c3:focus {
+  box-shadow: none;
+}
+
+.c3:hover .icon,
+.c3:focus .icon {
+  color: white;
+}
+
+.c3:hover {
+  background-color: #2980b9;
+}
+
+.c3:focus {
+  background-color: #2980b9;
+}
+
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #dd3311;
+  padding: 0 16px;
+}
+
+.c4 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c4:focus {
+  box-shadow: none;
+}
+
+.c4:hover .icon,
+.c4:focus .icon {
+  color: white;
+}
+
+.c4:hover {
+  background-color: #bc2b0e;
+}
+
+.c4:focus {
+  background-color: #bc2b0e;
+}
+
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #9b59b6;
+  padding: 0 16px;
+}
+
+.c5 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c5:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c5:focus {
+  box-shadow: none;
+}
+
+.c5:hover .icon,
+.c5:focus .icon {
+  color: white;
+}
+
+.c5:hover {
+  background-color: #8e44ad;
+}
+
+.c5:focus {
+  background-color: #8e44ad;
+}
+
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #2ecc71;
+  padding: 0 16px;
+}
+
+.c6 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c6:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c6:focus {
+  box-shadow: none;
+}
+
+.c6:hover .icon,
+.c6:focus .icon {
+  color: white;
+}
+
+.c6:hover {
+  background-color: #27ae60;
+}
+
+.c6:focus {
+  background-color: #27ae60;
+}
+
+.c6:disabled,
+.c6:disabled .icon,
+.c6:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: rgba(0,0,0,0.16);
+  padding: 0 16px;
+}
+
+.c7 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c7:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c7:focus {
+  box-shadow: none;
+}
+
+.c7:hover .icon,
+.c7:focus .icon {
+  color: white;
+}
+
+.c7:hover {
+  background-color: #3498db;
+}
+
+.c7:focus {
+  background-color: #3498db;
+}
+
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c8 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8 > .icon.left-icon i::before {
   display: inline-block;
+  -webkit-animation: spin 1.1s infinite linear;
+  animation: spin 1.1s infinite linear;
 }
 
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.c8 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
-.c0 .appear-enter {
-  opacity: 0;
+.c8:hover,
+.c8:focus {
+  color: #3498db;
+  border-color: #3498db;
 }
 
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c8:hover > .icon,
+.c8:focus > .icon {
+  color: #3498db;
 }
 
-.c0 .appear-exit {
-  opacity: 1;
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
 }
 
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
 }
 
-.c1 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4254,7 +3683,7 @@ exports[`Storyshots Button Right Icon only (neutral) 1`] = `
   padding: 0 8px;
 }
 
-.c1 .icon {
+.c9 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4265,107 +3694,354 @@ exports[`Storyshots Button Right Icon only (neutral) 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c9:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c9:hover .icon,
+.c9:focus .icon {
   color: white;
 }
 
-.c1 > .icon {
+.c9 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
+.c9:hover,
+.c9:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c9:hover > .icon,
+.c9:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon"
-      style={
-        Object {
-          "marginLeft": 0,
-        }
-      }
-    >
-      <i
-        className="wg-small-arrow-bottom"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Saving Status 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #ff4411;
+  padding: 0 8px;
 }
 
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.c10 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
-.c0 .appear-enter {
-  opacity: 0;
+.c10:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c10:focus {
+  box-shadow: none;
 }
 
-.c0 .appear-exit {
-  opacity: 1;
+.c10:hover .icon,
+.c10:focus .icon {
+  color: white;
 }
 
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c10:hover {
+  background-color: #dd3311;
 }
 
-.c1 {
+.c10:focus {
+  background-color: #dd3311;
+}
+
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #dd3311;
+  padding: 0 8px;
+}
+
+.c12 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c12:focus {
+  box-shadow: none;
+}
+
+.c12:hover .icon,
+.c12:focus .icon {
+  color: white;
+}
+
+.c12:hover {
+  background-color: #bc2b0e;
+}
+
+.c12:focus {
+  background-color: #bc2b0e;
+}
+
+.c12:disabled,
+.c12:disabled .icon,
+.c12:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #9b59b6;
+  padding: 0 8px;
+}
+
+.c13 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c13:focus {
+  box-shadow: none;
+}
+
+.c13:hover .icon,
+.c13:focus .icon {
+  color: white;
+}
+
+.c13:hover {
+  background-color: #8e44ad;
+}
+
+.c13:focus {
+  background-color: #8e44ad;
+}
+
+.c13:disabled,
+.c13:disabled .icon,
+.c13:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c13:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #2ecc71;
+  padding: 0 8px;
+}
+
+.c14 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c14:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c14:focus {
+  box-shadow: none;
+}
+
+.c14:hover .icon,
+.c14:focus .icon {
+  color: white;
+}
+
+.c14:hover {
+  background-color: #27ae60;
+}
+
+.c14:focus {
+  background-color: #27ae60;
+}
+
+.c14:disabled,
+.c14:disabled .icon,
+.c14:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c14:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4395,10 +4071,10 @@ exports[`Storyshots Button Saving Status 1`] = `
   cursor: pointer;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
+  padding: 0 8px;
 }
 
-.c1 .icon {
+.c16 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4409,347 +4085,241 @@ exports[`Storyshots Button Saving Status 1`] = `
   align-self: center;
 }
 
-.c1:hover {
+.c16:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c1:focus {
+.c16:focus {
   box-shadow: none;
 }
 
-.c1:hover .icon,
-.c1:focus .icon {
+.c16:hover .icon,
+.c16:focus .icon {
   color: white;
 }
 
-.c1 > .icon.left-icon i::before {
+.c16 > .icon.left-icon i::before {
   display: inline-block;
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c1 > .icon {
+.c16 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:hover,
-.c1:focus {
+.c16:hover,
+.c16:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c1:hover > .icon,
-.c1:focus > .icon {
+.c16:hover > .icon,
+.c16:focus > .icon {
   color: #3498db;
 }
 
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
+.c16:disabled,
+.c16:disabled .icon,
+.c16:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c1:disabled {
+.c16:disabled {
   background-color: #ccc;
   box-shadow: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 > * {
+  margin-right: 16px;
+}
+
+.c0 .section > * {
+  margin-top: 16px;
 }
 
 <div
   className="c0"
 >
-  <button
-    className="wrapped c1"
-    disabled={true}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 10,
-        }
-      }
-    >
-      <i
-        className="wg-loading"
-      />
-    </div>
-    Saving…
-  </button>
-</div>
-`;
-
-exports[`Storyshots Button Secondary (fluid) 1`] = `
-.c0 {
-  position: relative;
-  display: block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  style={
-    Object {
-      "background": "rgba(0, 0, 0, 0.32)",
-      "height": 400,
-      "width": 400,
-    }
-  }
->
   <div
-    className="c0"
+    className="section"
   >
     <button
-      className="wrapped c1"
-      disabled={false}
+      className="c1"
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Default
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
+    >
+      Primary
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Neutral
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
       size="SMALL"
       type="SECONDARY"
     >
-      Secondary Button
+      Secondary
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEGATIVE"
+    >
+      Negative
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="SMALL"
+      type="CLOSED"
+    >
+      Closed
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="SMALL"
+      type="POSITIVE"
+    >
+      Positive
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
+      >
+        Off neutral
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Disabled
     </button>
   </div>
-</div>
-`;
-
-exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
-.c0 {
-  position: relative;
-  display: block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  style={
-    Object {
-      "background": "rgba(0, 0, 0, 0.32)",
-      "height": 400,
-      "width": 400,
-    }
-  }
->
   <div
-    className="c0"
+    className="section"
   >
     <button
-      className="wrapped c1"
-      disabled={false}
+      className="c1"
       onClick={[Function]}
-      onMouseLeave={[Function]}
-      onMouseOver={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Default
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Primary
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Neutral
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
       size="SMALL"
       type="SECONDARY"
     >
@@ -4765,173 +4335,908 @@ exports[`Storyshots Button Secondary (fluid) with icon 1`] = `
           className="wg-order"
         />
       </div>
-      Secondary Button
+      Secondary
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEGATIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Negative
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="SMALL"
+      type="CLOSED"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Closed
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="SMALL"
+      type="POSITIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Positive
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-order"
+          />
+        </div>
+        Off neutral
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Disabled
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Default
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Primary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Neutral
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="SMALL"
+      type="SECONDARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Secondary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEGATIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Negative
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="SMALL"
+      type="CLOSED"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Closed
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="SMALL"
+      type="POSITIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Positive
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 10,
+            }
+          }
+        >
+          <i
+            className="wg-order"
+          />
+        </div>
+        Off neutral
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+      Disabled
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Default
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
+    >
+      Primary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Neutral
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c3"
+      onClick={[Function]}
+      size="SMALL"
+      type="SECONDARY"
+    >
+      Secondary
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c4"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEGATIVE"
+    >
+      Negative
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c5"
+      onClick={[Function]}
+      size="SMALL"
+      type="CLOSED"
+    >
+      Closed
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c6"
+      onClick={[Function]}
+      size="SMALL"
+      type="POSITIVE"
+    >
+      Positive
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c7"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
+      >
+        Off neutral
+        <div
+          className="icon"
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <i
+            className="wg-small-arrow-bottom"
+          />
+        </div>
+      </button>
+    </div>
+    <button
+      className="c8"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      loading
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+    <button
+      className="c1"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Disabled
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+  </div>
+  <div
+    className="section"
+  >
+    <button
+      className="c9"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c10"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c9"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c11"
+      onClick={[Function]}
+      size="SMALL"
+      type="SECONDARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c12"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEGATIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c13"
+      onClick={[Function]}
+      size="SMALL"
+      type="CLOSED"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <button
+      className="c14"
+      onClick={[Function]}
+      size="SMALL"
+      type="POSITIVE"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "rgba(0,0,0,0.32)",
+          "display": "inline-block",
+          "padding": "10px",
+        }
+      }
+    >
+      <button
+        className="c15"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
+            }
+          }
+        >
+          <i
+            className="wg-order"
+          />
+        </div>
+      </button>
+    </div>
+    <button
+      className="c16"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+    </button>
+    <button
+      className="c9"
+      disabled={true}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
+          }
+        }
+      >
+        <i
+          className="wg-order"
+        />
+      </div>
     </button>
   </div>
 </div>
 `;
 
-exports[`Storyshots Button Secondary 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-}
-
-.c0 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c0 .appear-enter {
-  opacity: 0;
-}
-
-.c0 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c0 .appear-exit {
-  opacity: 1;
-}
-
-.c0 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-<div
-  className="c0"
->
-  <button
-    className="wrapped c1"
-    disabled={false}
-    onClick={[Function]}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="SECONDARY"
-  >
-    Secondary Button
-  </button>
-</div>
-`;
-
 exports[`Storyshots Button extended style 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4964,7 +5269,7 @@ exports[`Storyshots Button extended style 1`] = `
   padding: 0 16px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4975,41 +5280,41 @@ exports[`Storyshots Button extended style 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2 > .icon {
+.c1 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:hover,
-.c2:focus {
+.c1:hover,
+.c1:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c2:hover > .icon,
-.c2:focus > .icon {
+.c1:hover > .icon,
+.c1:focus > .icon {
   color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -5022,30 +5327,23 @@ exports[`Storyshots Button extended style 1`] = `
   font-size: 2em;
 }
 
-<div
+<button
   className="c0 c1"
+  size="SMALL"
+  type="NEUTRAL"
 >
-  <button
-    className="wrapped c2"
-    disabled={false}
-    onMouseLeave={[Function]}
-    onMouseOver={[Function]}
-    size="SMALL"
-    type="NEUTRAL"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 10,
-        }
+  <div
+    className="icon left-icon"
+    style={
+      Object {
+        "marginRight": 10,
       }
-    >
-      <i
-        className="wg-edit"
-      />
-    </div>
-    Label
-  </button>
-</div>
+    }
+  >
+    <i
+      className="wg-edit"
+    />
+  </div>
+  Label
+</button>
 `;

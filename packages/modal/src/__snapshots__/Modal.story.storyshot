@@ -2,38 +2,6 @@
 
 exports[`Storyshots Modal Center aligned 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -66,7 +34,7 @@ exports[`Storyshots Modal Center aligned 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -77,41 +45,41 @@ exports[`Storyshots Modal Center aligned 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -177,7 +145,7 @@ exports[`Storyshots Modal Center aligned 1`] = `
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -238,35 +206,28 @@ exports[`Storyshots Modal Center aligned 1`] = `
         <header
           className="c6"
         />
-        <div
+        <button
           className="closeButton c7"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c9"
+        className="content c8"
       >
         Center aligned
       </div>
@@ -277,38 +238,6 @@ exports[`Storyshots Modal Center aligned 1`] = `
 
 exports[`Storyshots Modal Default 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -341,7 +270,7 @@ exports[`Storyshots Modal Default 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -352,41 +281,41 @@ exports[`Storyshots Modal Default 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -452,7 +381,7 @@ exports[`Storyshots Modal Default 1`] = `
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -514,36 +443,29 @@ exports[`Storyshots Modal Default 1`] = `
         <header
           className="c6"
         />
-        <div
+        <button
           className="closeButton c7"
+          data-testid="modal-close-icon"
+          onClick={[Function]}
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onClick={[Function]}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c9"
+        className="content c8"
       >
         Default
       </div>
@@ -554,37 +476,288 @@ exports[`Storyshots Modal Default 1`] = `
 
 exports[`Storyshots Modal Extensive Content 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 8px;
 }
 
-.c7 .hitArea {
+.c7 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c7:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c7:focus {
+  box-shadow: none;
+}
+
+.c7:hover .icon,
+.c7:focus .icon {
+  color: white;
+}
+
+.c7 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:hover,
+.c7:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c7:hover > .icon,
+.c7:focus > .icon {
+  color: #3498db;
+}
+
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.c0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c1 {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.32);
 }
 
-.c7 .appear-enter {
-  opacity: 0;
+.c2 {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c3 {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: none;
+  overflow: hidden;
 }
 
-.c7 .appear-exit {
-  opacity: 1;
+.c8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
 }
 
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c6 {
+  overflow: auto;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c5 .closeButton {
+  margin-left: auto;
+  padding-left: 16px;
+}
+
+.c9 {
+  white-space: pre-line;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "justifyContent": "flex-start",
+      "opacity": 0,
+      "position": "fixed",
+      "zIndex": 1500,
+    }
+  }
+>
+  <div
+    className="overlay c1"
+    data-testid="modal-overlay"
+  />
+  <div
+    className="c2"
+    style={
+      Object {
+        "transform": "translate3D(0, -50px, 0)",
+      }
+    }
+  >
+    <div
+      className="card c3 c4"
+      overflow="visible"
+      width="100%"
+    >
+      <div
+        className="header c5"
+      >
+        <header
+          className="c6"
+        />
+        <button
+          className="closeButton c7"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
+        >
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
+              }
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
+      </div>
+      <div
+        className="content c8"
+      >
+        <span
+          className="c9"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus et dui rhoncus iaculis. Pellentesque orci purus, iaculis nec est porttitor, placerat convallis dolor. Curabitur id ipsum diam. Donec sit amet eleifend erat. Donec nulla libero, luctus sit amet metus ut, efficitur dignissim lectus. Nunc ultrices, ligula sed malesuada ultrices, odio tortor condimentum risus, ut lobortis libero metus vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium scelerisque nisl mattis vehicula. Phasellus quis rutrum ex, ut bibendum est. Pellentesque fermentum, lorem nec semper elementum, ex tortor malesuada odio, et interdum ex ipsum quis eros. Duis nec commodo tellus.
+
+Mauris vulputate metus sapien, vel vestibulum leo laoreet quis. Quisque viverra ex vel enim vehicula sollicitudin. Aliquam nisl felis, bibendum nec faucibus a, sollicitudin eget justo. Nullam non ullamcorper augue, et eleifend velit. Phasellus tincidunt elementum ex, quis laoreet magna dictum eu. Integer sagittis id augue sit amet interdum. Aliquam blandit porta finibus. Quisque nulla nisi, pulvinar vitae fringilla et, aliquam ac tortor. Suspendisse purus augue, lacinia ac pulvinar ac, blandit pharetra odio. Maecenas justo leo, tincidunt eu porttitor vel, hendrerit a dui. Suspendisse potenti. Maecenas ac lectus tellus. Integer tincidunt lacus eu elit venenatis, sit amet dictum enim lacinia. Proin suscipit lectus nec tortor varius pharetra.
+
+Mauris euismod venenatis lorem, nec pretium est consectetur at. Pellentesque finibus imperdiet semper. In porta sollicitudin sem, sit amet vulputate nunc pretium condimentum. Aliquam maximus nulla non arcu mollis, eget fringilla erat imperdiet. Pellentesque orci dui, molestie vel lacinia in, finibus ac mi. Mauris ligula justo, lobortis nec magna nec, euismod vestibulum orci. Donec metus lorem, tempor ac arcu non, tempor commodo velit. Etiam ut metus quis orci tincidunt tristique non et sapien. Pellentesque elementum ultrices neque dapibus elementum. Fusce ac leo non enim scelerisque facilisis sit amet vel neque. Nulla sagittis leo a volutpat tincidunt. Praesent non quam vitae lorem facilisis sagittis pulvinar in felis.
+
+Nulla eleifend nisl diam. Quisque sit amet pulvinar dui, ut dignissim tortor. Aliquam at mi eget diam ultrices pellentesque ut quis quam. Maecenas faucibus turpis vel vulputate imperdiet. Nunc cursus nulla ac turpis convallis mattis. Curabitur in faucibus velit, nec sagittis eros. Aenean ac suscipit quam, ut tempus velit. Ut ac ante euismod, pretium arcu eu, pretium ex. Aliquam metus orci, vehicula ut augue non, ornare feugiat metus. Morbi eleifend urna purus, aliquet pulvinar justo consequat eu. Nam euismod dui sit amet lectus consequat auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam blandit ultricies nulla nec condimentum. In hac habitasse platea dictumst. Ut consequat risus eget nunc egestas scelerisque. Aliquam et pulvinar mauris.
+
+Sed blandit lacinia dui sit amet sodales. Nullam sodales maximus eleifend. In molestie lacus sit amet volutpat convallis. Vestibulum et ultrices est, nec vehicula diam. Proin ut ultricies quam. Donec vitae sapien pellentesque, sollicitudin leo quis, gravida massa. Pellentesque vestibulum eros eu dignissim venenatis. Quisque nec neque vitae purus mattis dictum. Nulla ornare vestibulum quam et consectetur. Fusce eleifend pulvinar dapibus. Sed tellus risus, feugiat ut bibendum quis, condimentum quis nibh.
+
+Cras in ligula in mi commodo pharetra ut in magna. Phasellus eget dignissim odio. Aliquam erat volutpat. Vivamus mollis, ex sit amet maximus porta, tortor neque malesuada turpis, at placerat nisi nulla vitae sem. Suspendisse vitae neque non ipsum aliquam faucibus eu imperdiet diam. Donec feugiat mauris felis, ac elementum leo dictum vel. Donec dictum tincidunt libero, gravida volutpat sapien fermentum pulvinar. Pellentesque in quam ut nunc finibus euismod. Vivamus eget hendrerit lorem. Suspendisse fermentum feugiat metus, sit amet molestie lorem ultricies vitae. Aliquam ut rutrum purus. Duis euismod posuere eros, eget pulvinar massa congue ac. Maecenas scelerisque placerat euismod.
+
+Duis quis consequat dolor, sit amet fermentum purus. Sed at lacus quis erat auctor dignissim. Curabitur vehicula justo a ante imperdiet, sit amet ornare sem porta. Fusce sit amet maximus lorem. In metus urna, viverra eget elit at, luctus rutrum purus. Ut in ligula in nisl ullamcorper rutrum. Fusce a augue eget turpis placerat commodo. Maecenas est purus, rhoncus eu est vitae, pulvinar pretium turpis. Nunc venenatis quis lacus non lacinia.
+
+Suspendisse nunc velit, porttitor a placerat nec, imperdiet vel justo. Nunc sed dui a ante venenatis malesuada. Vestibulum vitae risus a leo consectetur semper. Nullam a urna et velit euismod convallis nec et velit. Nunc et diam quis lorem tristique consectetur non eget tortor. Ut ligula ex, finibus vel semper vitae, semper sed arcu. Aenean non odio pulvinar felis feugiat vestibulum. Nulla in aliquet nibh. Pellentesque ullamcorper arcu ut massa vehicula dignissim. Nullam laoreet tortor lorem, nec venenatis augue facilisis in. Nulla tortor nunc, molestie eu tincidunt ultrices, semper sed enim. Cras consequat elementum bibendum. Pellentesque scelerisque id diam nec ornare. Quisque tempus metus ut dapibus tincidunt. Nulla vel lectus in augue iaculis placerat porttitor ut augue.
+
+Nulla pulvinar ipsum vitae nulla mattis, eget finibus felis bibendum. Nunc volutpat, erat ut accumsan ornare, ante nulla posuere felis, vel scelerisque dui sapien ac tortor. Proin tellus nisi, efficitur ac rhoncus a, blandit consectetur ex. Curabitur et blandit diam. Donec dignissim nibh et velit facilisis, blandit ullamcorper felis suscipit. Fusce luctus consequat eros et viverra. Vivamus ultricies, lorem porta aliquam iaculis, nibh nisi finibus nisi, vel pulvinar erat nunc vel eros. Etiam congue euismod urna elementum dapibus. Etiam mollis libero non lorem feugiat laoreet. Vestibulum ipsum dui, faucibus quis condimentum vitae, laoreet a felis. Fusce non mollis est, quis viverra quam.
+
+Vestibulum pulvinar consequat felis ut gravida. Donec luctus sem non massa faucibus tincidunt. Donec consequat venenatis pharetra. Quisque bibendum, nisl nec posuere placerat, sapien leo pretium felis, sed varius orci mauris vel tortor. Donec at massa ex. Quisque rutrum mauris quis urna sagittis, eget luctus lorem facilisis. Phasellus elementum nibh ac aliquet hendrerit. Proin interdum faucibus tincidunt.
+
+In hac habitasse platea dictumst. Vestibulum elementum pharetra venenatis. Vivamus metus tellus, varius a pharetra ut, iaculis vel lacus. In at commodo tellus. Duis non dui vel nisl placerat aliquam. Etiam sed leo nec velit tempor imperdiet. Vivamus ac ligula erat. Proin velit sem, porttitor quis posuere id, elementum pretium augue. Suspendisse in arcu porta, dignissim sem et, semper arcu. Suspendisse condimentum dui et hendrerit bibendum. Proin imperdiet justo justo, pulvinar imperdiet est mollis vel.
+
+Quisque quis eleifend nisi, nec mollis erat. Sed sodales augue ligula, nec interdum magna dictum vitae. Phasellus vel tortor sed eros fermentum congue ultricies vitae lectus. Sed euismod interdum turpis, sed pharetra eros tincidunt at. Morbi dignissim a dolor quis bibendum. Pellentesque suscipit luctus elit nec blandit. Proin vulputate enim libero, quis gravida leo mattis id. Quisque finibus venenatis justo, a convallis augue hendrerit id. Nam sagittis erat mattis enim auctor, molestie fringilla turpis bibendum. Nulla facilisi. Suspendisse eget luctus erat. Integer metus nulla, sagittis eu rutrum et, maximus et felis. Donec feugiat leo ex. Vestibulum quam neque, sollicitudin vel dolor vel, tincidunt finibus ligula. Vestibulum blandit hendrerit erat fermentum congue.
+
+Vestibulum rhoncus non tellus ac hendrerit. Maecenas at quam quis tortor rutrum aliquam at eu diam. Nunc congue consequat pellentesque. Curabitur at massa faucibus, auctor augue et, cursus sapien. Duis ipsum sapien, egestas dictum varius ut, facilisis in odio. Curabitur porttitor, nisi quis blandit mattis, enim nunc finibus odio, ut pulvinar magna diam commodo felis. Nunc et nisl at nunc finibus suscipit. Fusce non odio non ex rutrum pellentesque eu nec nisl.
+
+Praesent ac neque cursus mi laoreet aliquam ac id elit. Donec suscipit enim non mi consectetur, nec fermentum ligula luctus. Mauris cursus faucibus enim, sed sagittis dolor imperdiet eu. Vestibulum id diam tempus, convallis turpis vitae, aliquam diam. Nulla mattis non ipsum et mollis. Quisque ac consequat tortor. Nam ac orci facilisis, sodales est in, vehicula erat. Etiam id ex blandit, facilisis nulla sit amet, finibus arcu. Pellentesque nec quam sapien. Praesent interdum, erat eget aliquam tempor, orci metus finibus nibh, et lobortis velit nulla id lorem. Donec hendrerit, eros cursus dapibus ultrices, nibh libero facilisis diam, nec faucibus massa dolor eu magna.
+
+Vivamus eget tristique metus. Sed volutpat, est ac viverra ultrices, ligula lacus sollicitudin erat, ut tempus nunc est at nibh. Sed leo augue, pellentesque in fermentum eu, molestie eget metus. Morbi vel aliquet velit. Pellentesque nisl arcu, fermentum nec risus at, pellentesque fringilla mi. Morbi placerat, tortor et vestibulum pellentesque, quam massa sagittis mi, porta pretium sapien tortor sed metus. Quisque ac lectus leo.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vehicula fringilla nunc. Donec lobortis sagittis lectus tempus vestibulum. Donec ullamcorper leo dui, quis mollis libero pharetra non. Nulla hendrerit, libero in semper consequat, lacus metus gravida diam, ac malesuada velit elit vel augue. Quisque tincidunt vehicula tortor at malesuada. Pellentesque vulputate vulputate est, eu vehicula quam sollicitudin vel. Sed scelerisque eu quam ac lobortis. Curabitur consequat convallis arcu sed tincidunt. Proin ornare est non erat dictum, nec ultricies tortor varius. Aliquam in imperdiet lacus, eu congue turpis. Donec urna augue, aliquet pretium molestie id, rhoncus luctus risus. Suspendisse a neque eget velit sollicitudin varius.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque finibus feugiat felis vulputate hendrerit. Donec mollis, ligula eu consectetur rutrum, ligula sem congue arcu, ut semper ipsum nibh eget sem. Vivamus pulvinar enim enim, eu interdum erat congue et. Ut ut tempor diam. Etiam scelerisque, odio et maximus facilisis, nibh mi maximus tellus, in dapibus ante mauris quis nibh. Sed sit amet nulla sodales, interdum quam ultricies, semper velit. Phasellus porta et eros nec lobortis.
+
+Mauris nec ipsum id quam luctus molestie. Phasellus et ligula quam. In sed finibus velit. Vestibulum eget tristique ligula, eu pellentesque ex. Integer suscipit semper enim et accumsan. Suspendisse vitae risus metus. Cras pharetra purus vel leo venenatis, ut vulputate nulla congue. Nulla non enim justo. Ut non sapien nulla. Nunc condimentum sodales maximus. Etiam suscipit tortor id nulla varius gravida. Nam ut magna sapien. Nullam bibendum tempor quam sed varius. Ut a metus nisl.
+
+In ornare risus sit amet nunc gravida finibus. Duis elit magna, egestas et magna vitae, facilisis blandit diam. Vivamus vehicula eros at lectus rutrum, sit amet euismod tellus dapibus. Suspendisse consequat sed justo non congue. Fusce quis ex enim. Donec ac massa at sem mollis congue ac efficitur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed commodo quis lorem consectetur vehicula.
+
+Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nunc laoreet nisi a risus convallis, suscipit blandit lorem consequat. Sed convallis ipsum eleifend ante iaculis, a semper lacus sollicitudin. Fusce vitae massa nibh. Aliquam tempus orci sed massa consectetur, ut venenatis eros varius. Vestibulum in feugiat lectus. Aliquam in facilisis lacus. Maecenas euismod imperdiet orci, quis interdum elit vulputate non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Modal With ModalTitle header 1`] = `
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -664,328 +837,6 @@ exports[`Storyshots Modal Extensive Content 1`] = `
 }
 
 .c8:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c4 {
-  background-color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 100%;
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: visible;
-}
-
-.c0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.32);
-}
-
-.c2 {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.c3 {
-  max-height: 100%;
-  max-width: 100%;
-  min-width: 200px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: none;
-  overflow: hidden;
-}
-
-.c9 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 16px;
-}
-
-.c6 {
-  overflow: auto;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c5 .closeButton {
-  margin-left: auto;
-  padding-left: 16px;
-}
-
-.c10 {
-  white-space: pre-line;
-}
-
-<div
-  className="c0"
-  style={
-    Object {
-      "justifyContent": "flex-start",
-      "opacity": 0,
-      "position": "fixed",
-      "zIndex": 1500,
-    }
-  }
->
-  <div
-    className="overlay c1"
-    data-testid="modal-overlay"
-  />
-  <div
-    className="c2"
-    style={
-      Object {
-        "transform": "translate3D(0, -50px, 0)",
-      }
-    }
-  >
-    <div
-      className="card c3 c4"
-      overflow="visible"
-      width="100%"
-    >
-      <div
-        className="header c5"
-      >
-        <header
-          className="c6"
-        />
-        <div
-          className="closeButton c7"
-        >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
-              }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        className="content c9"
-      >
-        <span
-          className="c10"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus et dui rhoncus iaculis. Pellentesque orci purus, iaculis nec est porttitor, placerat convallis dolor. Curabitur id ipsum diam. Donec sit amet eleifend erat. Donec nulla libero, luctus sit amet metus ut, efficitur dignissim lectus. Nunc ultrices, ligula sed malesuada ultrices, odio tortor condimentum risus, ut lobortis libero metus vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium scelerisque nisl mattis vehicula. Phasellus quis rutrum ex, ut bibendum est. Pellentesque fermentum, lorem nec semper elementum, ex tortor malesuada odio, et interdum ex ipsum quis eros. Duis nec commodo tellus.
-
-Mauris vulputate metus sapien, vel vestibulum leo laoreet quis. Quisque viverra ex vel enim vehicula sollicitudin. Aliquam nisl felis, bibendum nec faucibus a, sollicitudin eget justo. Nullam non ullamcorper augue, et eleifend velit. Phasellus tincidunt elementum ex, quis laoreet magna dictum eu. Integer sagittis id augue sit amet interdum. Aliquam blandit porta finibus. Quisque nulla nisi, pulvinar vitae fringilla et, aliquam ac tortor. Suspendisse purus augue, lacinia ac pulvinar ac, blandit pharetra odio. Maecenas justo leo, tincidunt eu porttitor vel, hendrerit a dui. Suspendisse potenti. Maecenas ac lectus tellus. Integer tincidunt lacus eu elit venenatis, sit amet dictum enim lacinia. Proin suscipit lectus nec tortor varius pharetra.
-
-Mauris euismod venenatis lorem, nec pretium est consectetur at. Pellentesque finibus imperdiet semper. In porta sollicitudin sem, sit amet vulputate nunc pretium condimentum. Aliquam maximus nulla non arcu mollis, eget fringilla erat imperdiet. Pellentesque orci dui, molestie vel lacinia in, finibus ac mi. Mauris ligula justo, lobortis nec magna nec, euismod vestibulum orci. Donec metus lorem, tempor ac arcu non, tempor commodo velit. Etiam ut metus quis orci tincidunt tristique non et sapien. Pellentesque elementum ultrices neque dapibus elementum. Fusce ac leo non enim scelerisque facilisis sit amet vel neque. Nulla sagittis leo a volutpat tincidunt. Praesent non quam vitae lorem facilisis sagittis pulvinar in felis.
-
-Nulla eleifend nisl diam. Quisque sit amet pulvinar dui, ut dignissim tortor. Aliquam at mi eget diam ultrices pellentesque ut quis quam. Maecenas faucibus turpis vel vulputate imperdiet. Nunc cursus nulla ac turpis convallis mattis. Curabitur in faucibus velit, nec sagittis eros. Aenean ac suscipit quam, ut tempus velit. Ut ac ante euismod, pretium arcu eu, pretium ex. Aliquam metus orci, vehicula ut augue non, ornare feugiat metus. Morbi eleifend urna purus, aliquet pulvinar justo consequat eu. Nam euismod dui sit amet lectus consequat auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam blandit ultricies nulla nec condimentum. In hac habitasse platea dictumst. Ut consequat risus eget nunc egestas scelerisque. Aliquam et pulvinar mauris.
-
-Sed blandit lacinia dui sit amet sodales. Nullam sodales maximus eleifend. In molestie lacus sit amet volutpat convallis. Vestibulum et ultrices est, nec vehicula diam. Proin ut ultricies quam. Donec vitae sapien pellentesque, sollicitudin leo quis, gravida massa. Pellentesque vestibulum eros eu dignissim venenatis. Quisque nec neque vitae purus mattis dictum. Nulla ornare vestibulum quam et consectetur. Fusce eleifend pulvinar dapibus. Sed tellus risus, feugiat ut bibendum quis, condimentum quis nibh.
-
-Cras in ligula in mi commodo pharetra ut in magna. Phasellus eget dignissim odio. Aliquam erat volutpat. Vivamus mollis, ex sit amet maximus porta, tortor neque malesuada turpis, at placerat nisi nulla vitae sem. Suspendisse vitae neque non ipsum aliquam faucibus eu imperdiet diam. Donec feugiat mauris felis, ac elementum leo dictum vel. Donec dictum tincidunt libero, gravida volutpat sapien fermentum pulvinar. Pellentesque in quam ut nunc finibus euismod. Vivamus eget hendrerit lorem. Suspendisse fermentum feugiat metus, sit amet molestie lorem ultricies vitae. Aliquam ut rutrum purus. Duis euismod posuere eros, eget pulvinar massa congue ac. Maecenas scelerisque placerat euismod.
-
-Duis quis consequat dolor, sit amet fermentum purus. Sed at lacus quis erat auctor dignissim. Curabitur vehicula justo a ante imperdiet, sit amet ornare sem porta. Fusce sit amet maximus lorem. In metus urna, viverra eget elit at, luctus rutrum purus. Ut in ligula in nisl ullamcorper rutrum. Fusce a augue eget turpis placerat commodo. Maecenas est purus, rhoncus eu est vitae, pulvinar pretium turpis. Nunc venenatis quis lacus non lacinia.
-
-Suspendisse nunc velit, porttitor a placerat nec, imperdiet vel justo. Nunc sed dui a ante venenatis malesuada. Vestibulum vitae risus a leo consectetur semper. Nullam a urna et velit euismod convallis nec et velit. Nunc et diam quis lorem tristique consectetur non eget tortor. Ut ligula ex, finibus vel semper vitae, semper sed arcu. Aenean non odio pulvinar felis feugiat vestibulum. Nulla in aliquet nibh. Pellentesque ullamcorper arcu ut massa vehicula dignissim. Nullam laoreet tortor lorem, nec venenatis augue facilisis in. Nulla tortor nunc, molestie eu tincidunt ultrices, semper sed enim. Cras consequat elementum bibendum. Pellentesque scelerisque id diam nec ornare. Quisque tempus metus ut dapibus tincidunt. Nulla vel lectus in augue iaculis placerat porttitor ut augue.
-
-Nulla pulvinar ipsum vitae nulla mattis, eget finibus felis bibendum. Nunc volutpat, erat ut accumsan ornare, ante nulla posuere felis, vel scelerisque dui sapien ac tortor. Proin tellus nisi, efficitur ac rhoncus a, blandit consectetur ex. Curabitur et blandit diam. Donec dignissim nibh et velit facilisis, blandit ullamcorper felis suscipit. Fusce luctus consequat eros et viverra. Vivamus ultricies, lorem porta aliquam iaculis, nibh nisi finibus nisi, vel pulvinar erat nunc vel eros. Etiam congue euismod urna elementum dapibus. Etiam mollis libero non lorem feugiat laoreet. Vestibulum ipsum dui, faucibus quis condimentum vitae, laoreet a felis. Fusce non mollis est, quis viverra quam.
-
-Vestibulum pulvinar consequat felis ut gravida. Donec luctus sem non massa faucibus tincidunt. Donec consequat venenatis pharetra. Quisque bibendum, nisl nec posuere placerat, sapien leo pretium felis, sed varius orci mauris vel tortor. Donec at massa ex. Quisque rutrum mauris quis urna sagittis, eget luctus lorem facilisis. Phasellus elementum nibh ac aliquet hendrerit. Proin interdum faucibus tincidunt.
-
-In hac habitasse platea dictumst. Vestibulum elementum pharetra venenatis. Vivamus metus tellus, varius a pharetra ut, iaculis vel lacus. In at commodo tellus. Duis non dui vel nisl placerat aliquam. Etiam sed leo nec velit tempor imperdiet. Vivamus ac ligula erat. Proin velit sem, porttitor quis posuere id, elementum pretium augue. Suspendisse in arcu porta, dignissim sem et, semper arcu. Suspendisse condimentum dui et hendrerit bibendum. Proin imperdiet justo justo, pulvinar imperdiet est mollis vel.
-
-Quisque quis eleifend nisi, nec mollis erat. Sed sodales augue ligula, nec interdum magna dictum vitae. Phasellus vel tortor sed eros fermentum congue ultricies vitae lectus. Sed euismod interdum turpis, sed pharetra eros tincidunt at. Morbi dignissim a dolor quis bibendum. Pellentesque suscipit luctus elit nec blandit. Proin vulputate enim libero, quis gravida leo mattis id. Quisque finibus venenatis justo, a convallis augue hendrerit id. Nam sagittis erat mattis enim auctor, molestie fringilla turpis bibendum. Nulla facilisi. Suspendisse eget luctus erat. Integer metus nulla, sagittis eu rutrum et, maximus et felis. Donec feugiat leo ex. Vestibulum quam neque, sollicitudin vel dolor vel, tincidunt finibus ligula. Vestibulum blandit hendrerit erat fermentum congue.
-
-Vestibulum rhoncus non tellus ac hendrerit. Maecenas at quam quis tortor rutrum aliquam at eu diam. Nunc congue consequat pellentesque. Curabitur at massa faucibus, auctor augue et, cursus sapien. Duis ipsum sapien, egestas dictum varius ut, facilisis in odio. Curabitur porttitor, nisi quis blandit mattis, enim nunc finibus odio, ut pulvinar magna diam commodo felis. Nunc et nisl at nunc finibus suscipit. Fusce non odio non ex rutrum pellentesque eu nec nisl.
-
-Praesent ac neque cursus mi laoreet aliquam ac id elit. Donec suscipit enim non mi consectetur, nec fermentum ligula luctus. Mauris cursus faucibus enim, sed sagittis dolor imperdiet eu. Vestibulum id diam tempus, convallis turpis vitae, aliquam diam. Nulla mattis non ipsum et mollis. Quisque ac consequat tortor. Nam ac orci facilisis, sodales est in, vehicula erat. Etiam id ex blandit, facilisis nulla sit amet, finibus arcu. Pellentesque nec quam sapien. Praesent interdum, erat eget aliquam tempor, orci metus finibus nibh, et lobortis velit nulla id lorem. Donec hendrerit, eros cursus dapibus ultrices, nibh libero facilisis diam, nec faucibus massa dolor eu magna.
-
-Vivamus eget tristique metus. Sed volutpat, est ac viverra ultrices, ligula lacus sollicitudin erat, ut tempus nunc est at nibh. Sed leo augue, pellentesque in fermentum eu, molestie eget metus. Morbi vel aliquet velit. Pellentesque nisl arcu, fermentum nec risus at, pellentesque fringilla mi. Morbi placerat, tortor et vestibulum pellentesque, quam massa sagittis mi, porta pretium sapien tortor sed metus. Quisque ac lectus leo.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vehicula fringilla nunc. Donec lobortis sagittis lectus tempus vestibulum. Donec ullamcorper leo dui, quis mollis libero pharetra non. Nulla hendrerit, libero in semper consequat, lacus metus gravida diam, ac malesuada velit elit vel augue. Quisque tincidunt vehicula tortor at malesuada. Pellentesque vulputate vulputate est, eu vehicula quam sollicitudin vel. Sed scelerisque eu quam ac lobortis. Curabitur consequat convallis arcu sed tincidunt. Proin ornare est non erat dictum, nec ultricies tortor varius. Aliquam in imperdiet lacus, eu congue turpis. Donec urna augue, aliquet pretium molestie id, rhoncus luctus risus. Suspendisse a neque eget velit sollicitudin varius.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque finibus feugiat felis vulputate hendrerit. Donec mollis, ligula eu consectetur rutrum, ligula sem congue arcu, ut semper ipsum nibh eget sem. Vivamus pulvinar enim enim, eu interdum erat congue et. Ut ut tempor diam. Etiam scelerisque, odio et maximus facilisis, nibh mi maximus tellus, in dapibus ante mauris quis nibh. Sed sit amet nulla sodales, interdum quam ultricies, semper velit. Phasellus porta et eros nec lobortis.
-
-Mauris nec ipsum id quam luctus molestie. Phasellus et ligula quam. In sed finibus velit. Vestibulum eget tristique ligula, eu pellentesque ex. Integer suscipit semper enim et accumsan. Suspendisse vitae risus metus. Cras pharetra purus vel leo venenatis, ut vulputate nulla congue. Nulla non enim justo. Ut non sapien nulla. Nunc condimentum sodales maximus. Etiam suscipit tortor id nulla varius gravida. Nam ut magna sapien. Nullam bibendum tempor quam sed varius. Ut a metus nisl.
-
-In ornare risus sit amet nunc gravida finibus. Duis elit magna, egestas et magna vitae, facilisis blandit diam. Vivamus vehicula eros at lectus rutrum, sit amet euismod tellus dapibus. Suspendisse consequat sed justo non congue. Fusce quis ex enim. Donec ac massa at sem mollis congue ac efficitur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed commodo quis lorem consectetur vehicula.
-
-Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nunc laoreet nisi a risus convallis, suscipit blandit lorem consequat. Sed convallis ipsum eleifend ante iaculis, a semper lacus sollicitudin. Fusce vitae massa nibh. Aliquam tempus orci sed massa consectetur, ut venenatis eros varius. Vestibulum in feugiat lectus. Aliquam in facilisis lacus. Maecenas euismod imperdiet orci, quis interdum elit vulputate non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Modal With ModalTitle header 1`] = `
-.c8 {
-  position: relative;
-  display: inline-block;
-}
-
-.c8 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c8 .appear-enter {
-  opacity: 0;
-}
-
-.c8 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 .appear-exit {
-  opacity: 1;
-}
-
-.c8 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 8px;
-}
-
-.c9 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c9:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c9:focus {
-  box-shadow: none;
-}
-
-.c9:hover .icon,
-.c9:focus .icon {
-  color: white;
-}
-
-.c9 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9:hover,
-.c9:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c9:hover > .icon,
-.c9:focus > .icon {
-  color: #3498db;
-}
-
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1061,7 +912,7 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   overflow: hidden;
 }
 
-.c10 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1131,35 +982,28 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
             Header with ModalTitle
           </div>
         </header>
-        <div
+        <button
           className="closeButton c8"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c9"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c10"
+        className="content c9"
       >
         Content
       </div>
@@ -1323,37 +1167,288 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
 
 exports[`Storyshots Modal With cardProps 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 8px;
 }
 
-.c7 .hitArea {
+.c7 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c7:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c7:focus {
+  box-shadow: none;
+}
+
+.c7:hover .icon,
+.c7:focus .icon {
+  color: white;
+}
+
+.c7 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:hover,
+.c7:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c7:hover > .icon,
+.c7:focus > .icon {
+  color: #3498db;
+}
+
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 400px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.c0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c1 {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.32);
 }
 
-.c7 .appear-enter {
-  opacity: 0;
+.c2 {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c3 {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: none;
+  overflow: hidden;
 }
 
-.c7 .appear-exit {
-  opacity: 1;
+.c8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
 }
 
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
+.c6 {
+  overflow: auto;
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c5 .closeButton {
+  margin-left: auto;
+  padding-left: 16px;
+}
+
+.c9 {
+  white-space: pre-line;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "justifyContent": "flex-start",
+      "opacity": 0,
+      "position": "fixed",
+      "zIndex": 1500,
+    }
+  }
+>
+  <div
+    className="overlay c1"
+    data-testid="modal-overlay"
+  />
+  <div
+    className="c2"
+    style={
+      Object {
+        "transform": "translate3D(0, -50px, 0)",
+      }
+    }
+  >
+    <div
+      className="card c3 c4"
+      overflow="visible"
+      width="400px"
+    >
+      <div
+        className="header c5"
+      >
+        <header
+          className="c6"
+        />
+        <button
+          className="closeButton c7"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
+        >
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
+              }
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
+      </div>
+      <div
+        className="content c8"
+      >
+        <span
+          className="c9"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus et dui rhoncus iaculis. Pellentesque orci purus, iaculis nec est porttitor, placerat convallis dolor. Curabitur id ipsum diam. Donec sit amet eleifend erat. Donec nulla libero, luctus sit amet metus ut, efficitur dignissim lectus. Nunc ultrices, ligula sed malesuada ultrices, odio tortor condimentum risus, ut lobortis libero metus vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium scelerisque nisl mattis vehicula. Phasellus quis rutrum ex, ut bibendum est. Pellentesque fermentum, lorem nec semper elementum, ex tortor malesuada odio, et interdum ex ipsum quis eros. Duis nec commodo tellus.
+
+Mauris vulputate metus sapien, vel vestibulum leo laoreet quis. Quisque viverra ex vel enim vehicula sollicitudin. Aliquam nisl felis, bibendum nec faucibus a, sollicitudin eget justo. Nullam non ullamcorper augue, et eleifend velit. Phasellus tincidunt elementum ex, quis laoreet magna dictum eu. Integer sagittis id augue sit amet interdum. Aliquam blandit porta finibus. Quisque nulla nisi, pulvinar vitae fringilla et, aliquam ac tortor. Suspendisse purus augue, lacinia ac pulvinar ac, blandit pharetra odio. Maecenas justo leo, tincidunt eu porttitor vel, hendrerit a dui. Suspendisse potenti. Maecenas ac lectus tellus. Integer tincidunt lacus eu elit venenatis, sit amet dictum enim lacinia. Proin suscipit lectus nec tortor varius pharetra.
+
+Mauris euismod venenatis lorem, nec pretium est consectetur at. Pellentesque finibus imperdiet semper. In porta sollicitudin sem, sit amet vulputate nunc pretium condimentum. Aliquam maximus nulla non arcu mollis, eget fringilla erat imperdiet. Pellentesque orci dui, molestie vel lacinia in, finibus ac mi. Mauris ligula justo, lobortis nec magna nec, euismod vestibulum orci. Donec metus lorem, tempor ac arcu non, tempor commodo velit. Etiam ut metus quis orci tincidunt tristique non et sapien. Pellentesque elementum ultrices neque dapibus elementum. Fusce ac leo non enim scelerisque facilisis sit amet vel neque. Nulla sagittis leo a volutpat tincidunt. Praesent non quam vitae lorem facilisis sagittis pulvinar in felis.
+
+Nulla eleifend nisl diam. Quisque sit amet pulvinar dui, ut dignissim tortor. Aliquam at mi eget diam ultrices pellentesque ut quis quam. Maecenas faucibus turpis vel vulputate imperdiet. Nunc cursus nulla ac turpis convallis mattis. Curabitur in faucibus velit, nec sagittis eros. Aenean ac suscipit quam, ut tempus velit. Ut ac ante euismod, pretium arcu eu, pretium ex. Aliquam metus orci, vehicula ut augue non, ornare feugiat metus. Morbi eleifend urna purus, aliquet pulvinar justo consequat eu. Nam euismod dui sit amet lectus consequat auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam blandit ultricies nulla nec condimentum. In hac habitasse platea dictumst. Ut consequat risus eget nunc egestas scelerisque. Aliquam et pulvinar mauris.
+
+Sed blandit lacinia dui sit amet sodales. Nullam sodales maximus eleifend. In molestie lacus sit amet volutpat convallis. Vestibulum et ultrices est, nec vehicula diam. Proin ut ultricies quam. Donec vitae sapien pellentesque, sollicitudin leo quis, gravida massa. Pellentesque vestibulum eros eu dignissim venenatis. Quisque nec neque vitae purus mattis dictum. Nulla ornare vestibulum quam et consectetur. Fusce eleifend pulvinar dapibus. Sed tellus risus, feugiat ut bibendum quis, condimentum quis nibh.
+
+Cras in ligula in mi commodo pharetra ut in magna. Phasellus eget dignissim odio. Aliquam erat volutpat. Vivamus mollis, ex sit amet maximus porta, tortor neque malesuada turpis, at placerat nisi nulla vitae sem. Suspendisse vitae neque non ipsum aliquam faucibus eu imperdiet diam. Donec feugiat mauris felis, ac elementum leo dictum vel. Donec dictum tincidunt libero, gravida volutpat sapien fermentum pulvinar. Pellentesque in quam ut nunc finibus euismod. Vivamus eget hendrerit lorem. Suspendisse fermentum feugiat metus, sit amet molestie lorem ultricies vitae. Aliquam ut rutrum purus. Duis euismod posuere eros, eget pulvinar massa congue ac. Maecenas scelerisque placerat euismod.
+
+Duis quis consequat dolor, sit amet fermentum purus. Sed at lacus quis erat auctor dignissim. Curabitur vehicula justo a ante imperdiet, sit amet ornare sem porta. Fusce sit amet maximus lorem. In metus urna, viverra eget elit at, luctus rutrum purus. Ut in ligula in nisl ullamcorper rutrum. Fusce a augue eget turpis placerat commodo. Maecenas est purus, rhoncus eu est vitae, pulvinar pretium turpis. Nunc venenatis quis lacus non lacinia.
+
+Suspendisse nunc velit, porttitor a placerat nec, imperdiet vel justo. Nunc sed dui a ante venenatis malesuada. Vestibulum vitae risus a leo consectetur semper. Nullam a urna et velit euismod convallis nec et velit. Nunc et diam quis lorem tristique consectetur non eget tortor. Ut ligula ex, finibus vel semper vitae, semper sed arcu. Aenean non odio pulvinar felis feugiat vestibulum. Nulla in aliquet nibh. Pellentesque ullamcorper arcu ut massa vehicula dignissim. Nullam laoreet tortor lorem, nec venenatis augue facilisis in. Nulla tortor nunc, molestie eu tincidunt ultrices, semper sed enim. Cras consequat elementum bibendum. Pellentesque scelerisque id diam nec ornare. Quisque tempus metus ut dapibus tincidunt. Nulla vel lectus in augue iaculis placerat porttitor ut augue.
+
+Nulla pulvinar ipsum vitae nulla mattis, eget finibus felis bibendum. Nunc volutpat, erat ut accumsan ornare, ante nulla posuere felis, vel scelerisque dui sapien ac tortor. Proin tellus nisi, efficitur ac rhoncus a, blandit consectetur ex. Curabitur et blandit diam. Donec dignissim nibh et velit facilisis, blandit ullamcorper felis suscipit. Fusce luctus consequat eros et viverra. Vivamus ultricies, lorem porta aliquam iaculis, nibh nisi finibus nisi, vel pulvinar erat nunc vel eros. Etiam congue euismod urna elementum dapibus. Etiam mollis libero non lorem feugiat laoreet. Vestibulum ipsum dui, faucibus quis condimentum vitae, laoreet a felis. Fusce non mollis est, quis viverra quam.
+
+Vestibulum pulvinar consequat felis ut gravida. Donec luctus sem non massa faucibus tincidunt. Donec consequat venenatis pharetra. Quisque bibendum, nisl nec posuere placerat, sapien leo pretium felis, sed varius orci mauris vel tortor. Donec at massa ex. Quisque rutrum mauris quis urna sagittis, eget luctus lorem facilisis. Phasellus elementum nibh ac aliquet hendrerit. Proin interdum faucibus tincidunt.
+
+In hac habitasse platea dictumst. Vestibulum elementum pharetra venenatis. Vivamus metus tellus, varius a pharetra ut, iaculis vel lacus. In at commodo tellus. Duis non dui vel nisl placerat aliquam. Etiam sed leo nec velit tempor imperdiet. Vivamus ac ligula erat. Proin velit sem, porttitor quis posuere id, elementum pretium augue. Suspendisse in arcu porta, dignissim sem et, semper arcu. Suspendisse condimentum dui et hendrerit bibendum. Proin imperdiet justo justo, pulvinar imperdiet est mollis vel.
+
+Quisque quis eleifend nisi, nec mollis erat. Sed sodales augue ligula, nec interdum magna dictum vitae. Phasellus vel tortor sed eros fermentum congue ultricies vitae lectus. Sed euismod interdum turpis, sed pharetra eros tincidunt at. Morbi dignissim a dolor quis bibendum. Pellentesque suscipit luctus elit nec blandit. Proin vulputate enim libero, quis gravida leo mattis id. Quisque finibus venenatis justo, a convallis augue hendrerit id. Nam sagittis erat mattis enim auctor, molestie fringilla turpis bibendum. Nulla facilisi. Suspendisse eget luctus erat. Integer metus nulla, sagittis eu rutrum et, maximus et felis. Donec feugiat leo ex. Vestibulum quam neque, sollicitudin vel dolor vel, tincidunt finibus ligula. Vestibulum blandit hendrerit erat fermentum congue.
+
+Vestibulum rhoncus non tellus ac hendrerit. Maecenas at quam quis tortor rutrum aliquam at eu diam. Nunc congue consequat pellentesque. Curabitur at massa faucibus, auctor augue et, cursus sapien. Duis ipsum sapien, egestas dictum varius ut, facilisis in odio. Curabitur porttitor, nisi quis blandit mattis, enim nunc finibus odio, ut pulvinar magna diam commodo felis. Nunc et nisl at nunc finibus suscipit. Fusce non odio non ex rutrum pellentesque eu nec nisl.
+
+Praesent ac neque cursus mi laoreet aliquam ac id elit. Donec suscipit enim non mi consectetur, nec fermentum ligula luctus. Mauris cursus faucibus enim, sed sagittis dolor imperdiet eu. Vestibulum id diam tempus, convallis turpis vitae, aliquam diam. Nulla mattis non ipsum et mollis. Quisque ac consequat tortor. Nam ac orci facilisis, sodales est in, vehicula erat. Etiam id ex blandit, facilisis nulla sit amet, finibus arcu. Pellentesque nec quam sapien. Praesent interdum, erat eget aliquam tempor, orci metus finibus nibh, et lobortis velit nulla id lorem. Donec hendrerit, eros cursus dapibus ultrices, nibh libero facilisis diam, nec faucibus massa dolor eu magna.
+
+Vivamus eget tristique metus. Sed volutpat, est ac viverra ultrices, ligula lacus sollicitudin erat, ut tempus nunc est at nibh. Sed leo augue, pellentesque in fermentum eu, molestie eget metus. Morbi vel aliquet velit. Pellentesque nisl arcu, fermentum nec risus at, pellentesque fringilla mi. Morbi placerat, tortor et vestibulum pellentesque, quam massa sagittis mi, porta pretium sapien tortor sed metus. Quisque ac lectus leo.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vehicula fringilla nunc. Donec lobortis sagittis lectus tempus vestibulum. Donec ullamcorper leo dui, quis mollis libero pharetra non. Nulla hendrerit, libero in semper consequat, lacus metus gravida diam, ac malesuada velit elit vel augue. Quisque tincidunt vehicula tortor at malesuada. Pellentesque vulputate vulputate est, eu vehicula quam sollicitudin vel. Sed scelerisque eu quam ac lobortis. Curabitur consequat convallis arcu sed tincidunt. Proin ornare est non erat dictum, nec ultricies tortor varius. Aliquam in imperdiet lacus, eu congue turpis. Donec urna augue, aliquet pretium molestie id, rhoncus luctus risus. Suspendisse a neque eget velit sollicitudin varius.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque finibus feugiat felis vulputate hendrerit. Donec mollis, ligula eu consectetur rutrum, ligula sem congue arcu, ut semper ipsum nibh eget sem. Vivamus pulvinar enim enim, eu interdum erat congue et. Ut ut tempor diam. Etiam scelerisque, odio et maximus facilisis, nibh mi maximus tellus, in dapibus ante mauris quis nibh. Sed sit amet nulla sodales, interdum quam ultricies, semper velit. Phasellus porta et eros nec lobortis.
+
+Mauris nec ipsum id quam luctus molestie. Phasellus et ligula quam. In sed finibus velit. Vestibulum eget tristique ligula, eu pellentesque ex. Integer suscipit semper enim et accumsan. Suspendisse vitae risus metus. Cras pharetra purus vel leo venenatis, ut vulputate nulla congue. Nulla non enim justo. Ut non sapien nulla. Nunc condimentum sodales maximus. Etiam suscipit tortor id nulla varius gravida. Nam ut magna sapien. Nullam bibendum tempor quam sed varius. Ut a metus nisl.
+
+In ornare risus sit amet nunc gravida finibus. Duis elit magna, egestas et magna vitae, facilisis blandit diam. Vivamus vehicula eros at lectus rutrum, sit amet euismod tellus dapibus. Suspendisse consequat sed justo non congue. Fusce quis ex enim. Donec ac massa at sem mollis congue ac efficitur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed commodo quis lorem consectetur vehicula.
+
+Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nunc laoreet nisi a risus convallis, suscipit blandit lorem consequat. Sed convallis ipsum eleifend ante iaculis, a semper lacus sollicitudin. Fusce vitae massa nibh. Aliquam tempus orci sed massa consectetur, ut venenatis eros varius. Vestibulum in feugiat lectus. Aliquam in facilisis lacus. Maecenas euismod imperdiet orci, quis interdum elit vulputate non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Modal With cardProps and custom header 1`] = `
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1529,6 +1624,12 @@ exports[`Storyshots Modal With cardProps 1`] = `
   white-space: pre-line;
 }
 
+.c7 {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Lucida Console",Monaco,monospace;
+}
+
 <div
   className="c0"
   style={
@@ -1562,33 +1663,32 @@ exports[`Storyshots Modal With cardProps 1`] = `
       >
         <header
           className="c6"
-        />
-        <div
-          className="closeButton c7"
         >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
+          <div
+            className="c7"
           >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+            HEADER
+          </div>
+        </header>
+        <button
+          className="closeButton c8"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
+        >
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
         className="content c9"
@@ -1643,374 +1743,8 @@ Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nu
 </div>
 `;
 
-exports[`Storyshots Modal With cardProps and custom header 1`] = `
-.c8 {
-  position: relative;
-  display: inline-block;
-}
-
-.c8 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c8 .appear-enter {
-  opacity: 0;
-}
-
-.c8 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 .appear-exit {
-  opacity: 1;
-}
-
-.c8 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 8px;
-}
-
-.c9 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c9:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c9:focus {
-  box-shadow: none;
-}
-
-.c9:hover .icon,
-.c9:focus .icon {
-  color: white;
-}
-
-.c9 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9:hover,
-.c9:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c9:hover > .icon,
-.c9:focus > .icon {
-  color: #3498db;
-}
-
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c4 {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 400px;
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: visible;
-}
-
-.c0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.32);
-}
-
-.c2 {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.c3 {
-  max-height: 100%;
-  max-width: 100%;
-  min-width: 200px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border: none;
-  overflow: hidden;
-}
-
-.c10 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 16px;
-}
-
-.c6 {
-  overflow: auto;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c5 .closeButton {
-  margin-left: auto;
-  padding-left: 16px;
-}
-
-.c11 {
-  white-space: pre-line;
-}
-
-.c7 {
-  font-size: 32px;
-  font-weight: bold;
-  font-family: "Lucida Console",Monaco,monospace;
-}
-
-<div
-  className="c0"
-  style={
-    Object {
-      "justifyContent": "flex-start",
-      "opacity": 0,
-      "position": "fixed",
-      "zIndex": 1500,
-    }
-  }
->
-  <div
-    className="overlay c1"
-    data-testid="modal-overlay"
-  />
-  <div
-    className="c2"
-    style={
-      Object {
-        "transform": "translate3D(0, -50px, 0)",
-      }
-    }
-  >
-    <div
-      className="card c3 c4"
-      overflow="visible"
-      width="400px"
-    >
-      <div
-        className="header c5"
-      >
-        <header
-          className="c6"
-        >
-          <div
-            className="c7"
-          >
-            HEADER
-          </div>
-        </header>
-        <div
-          className="closeButton c8"
-        >
-          <button
-            className="wrapped c9"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
-              }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        className="content c10"
-      >
-        <span
-          className="c11"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus et dui rhoncus iaculis. Pellentesque orci purus, iaculis nec est porttitor, placerat convallis dolor. Curabitur id ipsum diam. Donec sit amet eleifend erat. Donec nulla libero, luctus sit amet metus ut, efficitur dignissim lectus. Nunc ultrices, ligula sed malesuada ultrices, odio tortor condimentum risus, ut lobortis libero metus vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium scelerisque nisl mattis vehicula. Phasellus quis rutrum ex, ut bibendum est. Pellentesque fermentum, lorem nec semper elementum, ex tortor malesuada odio, et interdum ex ipsum quis eros. Duis nec commodo tellus.
-
-Mauris vulputate metus sapien, vel vestibulum leo laoreet quis. Quisque viverra ex vel enim vehicula sollicitudin. Aliquam nisl felis, bibendum nec faucibus a, sollicitudin eget justo. Nullam non ullamcorper augue, et eleifend velit. Phasellus tincidunt elementum ex, quis laoreet magna dictum eu. Integer sagittis id augue sit amet interdum. Aliquam blandit porta finibus. Quisque nulla nisi, pulvinar vitae fringilla et, aliquam ac tortor. Suspendisse purus augue, lacinia ac pulvinar ac, blandit pharetra odio. Maecenas justo leo, tincidunt eu porttitor vel, hendrerit a dui. Suspendisse potenti. Maecenas ac lectus tellus. Integer tincidunt lacus eu elit venenatis, sit amet dictum enim lacinia. Proin suscipit lectus nec tortor varius pharetra.
-
-Mauris euismod venenatis lorem, nec pretium est consectetur at. Pellentesque finibus imperdiet semper. In porta sollicitudin sem, sit amet vulputate nunc pretium condimentum. Aliquam maximus nulla non arcu mollis, eget fringilla erat imperdiet. Pellentesque orci dui, molestie vel lacinia in, finibus ac mi. Mauris ligula justo, lobortis nec magna nec, euismod vestibulum orci. Donec metus lorem, tempor ac arcu non, tempor commodo velit. Etiam ut metus quis orci tincidunt tristique non et sapien. Pellentesque elementum ultrices neque dapibus elementum. Fusce ac leo non enim scelerisque facilisis sit amet vel neque. Nulla sagittis leo a volutpat tincidunt. Praesent non quam vitae lorem facilisis sagittis pulvinar in felis.
-
-Nulla eleifend nisl diam. Quisque sit amet pulvinar dui, ut dignissim tortor. Aliquam at mi eget diam ultrices pellentesque ut quis quam. Maecenas faucibus turpis vel vulputate imperdiet. Nunc cursus nulla ac turpis convallis mattis. Curabitur in faucibus velit, nec sagittis eros. Aenean ac suscipit quam, ut tempus velit. Ut ac ante euismod, pretium arcu eu, pretium ex. Aliquam metus orci, vehicula ut augue non, ornare feugiat metus. Morbi eleifend urna purus, aliquet pulvinar justo consequat eu. Nam euismod dui sit amet lectus consequat auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam blandit ultricies nulla nec condimentum. In hac habitasse platea dictumst. Ut consequat risus eget nunc egestas scelerisque. Aliquam et pulvinar mauris.
-
-Sed blandit lacinia dui sit amet sodales. Nullam sodales maximus eleifend. In molestie lacus sit amet volutpat convallis. Vestibulum et ultrices est, nec vehicula diam. Proin ut ultricies quam. Donec vitae sapien pellentesque, sollicitudin leo quis, gravida massa. Pellentesque vestibulum eros eu dignissim venenatis. Quisque nec neque vitae purus mattis dictum. Nulla ornare vestibulum quam et consectetur. Fusce eleifend pulvinar dapibus. Sed tellus risus, feugiat ut bibendum quis, condimentum quis nibh.
-
-Cras in ligula in mi commodo pharetra ut in magna. Phasellus eget dignissim odio. Aliquam erat volutpat. Vivamus mollis, ex sit amet maximus porta, tortor neque malesuada turpis, at placerat nisi nulla vitae sem. Suspendisse vitae neque non ipsum aliquam faucibus eu imperdiet diam. Donec feugiat mauris felis, ac elementum leo dictum vel. Donec dictum tincidunt libero, gravida volutpat sapien fermentum pulvinar. Pellentesque in quam ut nunc finibus euismod. Vivamus eget hendrerit lorem. Suspendisse fermentum feugiat metus, sit amet molestie lorem ultricies vitae. Aliquam ut rutrum purus. Duis euismod posuere eros, eget pulvinar massa congue ac. Maecenas scelerisque placerat euismod.
-
-Duis quis consequat dolor, sit amet fermentum purus. Sed at lacus quis erat auctor dignissim. Curabitur vehicula justo a ante imperdiet, sit amet ornare sem porta. Fusce sit amet maximus lorem. In metus urna, viverra eget elit at, luctus rutrum purus. Ut in ligula in nisl ullamcorper rutrum. Fusce a augue eget turpis placerat commodo. Maecenas est purus, rhoncus eu est vitae, pulvinar pretium turpis. Nunc venenatis quis lacus non lacinia.
-
-Suspendisse nunc velit, porttitor a placerat nec, imperdiet vel justo. Nunc sed dui a ante venenatis malesuada. Vestibulum vitae risus a leo consectetur semper. Nullam a urna et velit euismod convallis nec et velit. Nunc et diam quis lorem tristique consectetur non eget tortor. Ut ligula ex, finibus vel semper vitae, semper sed arcu. Aenean non odio pulvinar felis feugiat vestibulum. Nulla in aliquet nibh. Pellentesque ullamcorper arcu ut massa vehicula dignissim. Nullam laoreet tortor lorem, nec venenatis augue facilisis in. Nulla tortor nunc, molestie eu tincidunt ultrices, semper sed enim. Cras consequat elementum bibendum. Pellentesque scelerisque id diam nec ornare. Quisque tempus metus ut dapibus tincidunt. Nulla vel lectus in augue iaculis placerat porttitor ut augue.
-
-Nulla pulvinar ipsum vitae nulla mattis, eget finibus felis bibendum. Nunc volutpat, erat ut accumsan ornare, ante nulla posuere felis, vel scelerisque dui sapien ac tortor. Proin tellus nisi, efficitur ac rhoncus a, blandit consectetur ex. Curabitur et blandit diam. Donec dignissim nibh et velit facilisis, blandit ullamcorper felis suscipit. Fusce luctus consequat eros et viverra. Vivamus ultricies, lorem porta aliquam iaculis, nibh nisi finibus nisi, vel pulvinar erat nunc vel eros. Etiam congue euismod urna elementum dapibus. Etiam mollis libero non lorem feugiat laoreet. Vestibulum ipsum dui, faucibus quis condimentum vitae, laoreet a felis. Fusce non mollis est, quis viverra quam.
-
-Vestibulum pulvinar consequat felis ut gravida. Donec luctus sem non massa faucibus tincidunt. Donec consequat venenatis pharetra. Quisque bibendum, nisl nec posuere placerat, sapien leo pretium felis, sed varius orci mauris vel tortor. Donec at massa ex. Quisque rutrum mauris quis urna sagittis, eget luctus lorem facilisis. Phasellus elementum nibh ac aliquet hendrerit. Proin interdum faucibus tincidunt.
-
-In hac habitasse platea dictumst. Vestibulum elementum pharetra venenatis. Vivamus metus tellus, varius a pharetra ut, iaculis vel lacus. In at commodo tellus. Duis non dui vel nisl placerat aliquam. Etiam sed leo nec velit tempor imperdiet. Vivamus ac ligula erat. Proin velit sem, porttitor quis posuere id, elementum pretium augue. Suspendisse in arcu porta, dignissim sem et, semper arcu. Suspendisse condimentum dui et hendrerit bibendum. Proin imperdiet justo justo, pulvinar imperdiet est mollis vel.
-
-Quisque quis eleifend nisi, nec mollis erat. Sed sodales augue ligula, nec interdum magna dictum vitae. Phasellus vel tortor sed eros fermentum congue ultricies vitae lectus. Sed euismod interdum turpis, sed pharetra eros tincidunt at. Morbi dignissim a dolor quis bibendum. Pellentesque suscipit luctus elit nec blandit. Proin vulputate enim libero, quis gravida leo mattis id. Quisque finibus venenatis justo, a convallis augue hendrerit id. Nam sagittis erat mattis enim auctor, molestie fringilla turpis bibendum. Nulla facilisi. Suspendisse eget luctus erat. Integer metus nulla, sagittis eu rutrum et, maximus et felis. Donec feugiat leo ex. Vestibulum quam neque, sollicitudin vel dolor vel, tincidunt finibus ligula. Vestibulum blandit hendrerit erat fermentum congue.
-
-Vestibulum rhoncus non tellus ac hendrerit. Maecenas at quam quis tortor rutrum aliquam at eu diam. Nunc congue consequat pellentesque. Curabitur at massa faucibus, auctor augue et, cursus sapien. Duis ipsum sapien, egestas dictum varius ut, facilisis in odio. Curabitur porttitor, nisi quis blandit mattis, enim nunc finibus odio, ut pulvinar magna diam commodo felis. Nunc et nisl at nunc finibus suscipit. Fusce non odio non ex rutrum pellentesque eu nec nisl.
-
-Praesent ac neque cursus mi laoreet aliquam ac id elit. Donec suscipit enim non mi consectetur, nec fermentum ligula luctus. Mauris cursus faucibus enim, sed sagittis dolor imperdiet eu. Vestibulum id diam tempus, convallis turpis vitae, aliquam diam. Nulla mattis non ipsum et mollis. Quisque ac consequat tortor. Nam ac orci facilisis, sodales est in, vehicula erat. Etiam id ex blandit, facilisis nulla sit amet, finibus arcu. Pellentesque nec quam sapien. Praesent interdum, erat eget aliquam tempor, orci metus finibus nibh, et lobortis velit nulla id lorem. Donec hendrerit, eros cursus dapibus ultrices, nibh libero facilisis diam, nec faucibus massa dolor eu magna.
-
-Vivamus eget tristique metus. Sed volutpat, est ac viverra ultrices, ligula lacus sollicitudin erat, ut tempus nunc est at nibh. Sed leo augue, pellentesque in fermentum eu, molestie eget metus. Morbi vel aliquet velit. Pellentesque nisl arcu, fermentum nec risus at, pellentesque fringilla mi. Morbi placerat, tortor et vestibulum pellentesque, quam massa sagittis mi, porta pretium sapien tortor sed metus. Quisque ac lectus leo.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vehicula fringilla nunc. Donec lobortis sagittis lectus tempus vestibulum. Donec ullamcorper leo dui, quis mollis libero pharetra non. Nulla hendrerit, libero in semper consequat, lacus metus gravida diam, ac malesuada velit elit vel augue. Quisque tincidunt vehicula tortor at malesuada. Pellentesque vulputate vulputate est, eu vehicula quam sollicitudin vel. Sed scelerisque eu quam ac lobortis. Curabitur consequat convallis arcu sed tincidunt. Proin ornare est non erat dictum, nec ultricies tortor varius. Aliquam in imperdiet lacus, eu congue turpis. Donec urna augue, aliquet pretium molestie id, rhoncus luctus risus. Suspendisse a neque eget velit sollicitudin varius.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque finibus feugiat felis vulputate hendrerit. Donec mollis, ligula eu consectetur rutrum, ligula sem congue arcu, ut semper ipsum nibh eget sem. Vivamus pulvinar enim enim, eu interdum erat congue et. Ut ut tempor diam. Etiam scelerisque, odio et maximus facilisis, nibh mi maximus tellus, in dapibus ante mauris quis nibh. Sed sit amet nulla sodales, interdum quam ultricies, semper velit. Phasellus porta et eros nec lobortis.
-
-Mauris nec ipsum id quam luctus molestie. Phasellus et ligula quam. In sed finibus velit. Vestibulum eget tristique ligula, eu pellentesque ex. Integer suscipit semper enim et accumsan. Suspendisse vitae risus metus. Cras pharetra purus vel leo venenatis, ut vulputate nulla congue. Nulla non enim justo. Ut non sapien nulla. Nunc condimentum sodales maximus. Etiam suscipit tortor id nulla varius gravida. Nam ut magna sapien. Nullam bibendum tempor quam sed varius. Ut a metus nisl.
-
-In ornare risus sit amet nunc gravida finibus. Duis elit magna, egestas et magna vitae, facilisis blandit diam. Vivamus vehicula eros at lectus rutrum, sit amet euismod tellus dapibus. Suspendisse consequat sed justo non congue. Fusce quis ex enim. Donec ac massa at sem mollis congue ac efficitur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed commodo quis lorem consectetur vehicula.
-
-Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nunc laoreet nisi a risus convallis, suscipit blandit lorem consequat. Sed convallis ipsum eleifend ante iaculis, a semper lacus sollicitudin. Fusce vitae massa nibh. Aliquam tempus orci sed massa consectetur, ut venenatis eros varius. Vestibulum in feugiat lectus. Aliquam in facilisis lacus. Maecenas euismod imperdiet orci, quis interdum elit vulputate non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Modal With cardProps, header and footer 1`] = `
-.c8 {
-  position: relative;
-  display: inline-block;
-}
-
-.c8 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c8 .appear-enter {
-  opacity: 0;
-}
-
-.c8 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 .appear-exit {
-  opacity: 1;
-}
-
-.c8 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c13 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2044,7 +1778,7 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   padding: 0 16px;
 }
 
-.c13 .icon {
+.c12 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2055,39 +1789,39 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   align-self: center;
 }
 
-.c13:hover {
+.c12:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c13:focus {
+.c12:focus {
   box-shadow: none;
 }
 
-.c13:hover .icon,
-.c13:focus .icon {
+.c12:hover .icon,
+.c12:focus .icon {
   color: white;
 }
 
-.c13:hover {
+.c12:hover {
   background-color: #dd3311;
 }
 
-.c13:focus {
+.c12:focus {
   background-color: #dd3311;
 }
 
-.c13:disabled,
-.c13:disabled .icon,
-.c13:disabled:hover {
+.c12:disabled,
+.c12:disabled .icon,
+.c12:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c13:disabled {
+.c12:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2120,7 +1854,7 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   padding: 0 8px;
 }
 
-.c9 .icon {
+.c8 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2131,41 +1865,41 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   align-self: center;
 }
 
-.c9:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c9:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c9:hover .icon,
-.c9:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c9 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c9:hover > .icon,
-.c9:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:disabled {
+.c8:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -2241,7 +1975,7 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   overflow: hidden;
 }
 
-.c10 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2268,7 +2002,7 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   padding-left: 16px;
 }
 
-.c12 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2277,12 +2011,12 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   border-top: solid 1px rgba(0,0,0,0.16);
 }
 
-.c12 .closeButton {
+.c11 .closeButton {
   margin-left: auto;
   padding-left: 16px;
 }
 
-.c11 {
+.c10 {
   white-space: pre-line;
 }
 
@@ -2329,38 +2063,31 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
             HEADER
           </div>
         </header>
-        <div
+        <button
           className="closeButton c8"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c9"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c10"
+        className="content c9"
       >
         <span
-          className="c11"
+          className="c10"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus et dui rhoncus iaculis. Pellentesque orci purus, iaculis nec est porttitor, placerat convallis dolor. Curabitur id ipsum diam. Donec sit amet eleifend erat. Donec nulla libero, luctus sit amet metus ut, efficitur dignissim lectus. Nunc ultrices, ligula sed malesuada ultrices, odio tortor condimentum risus, ut lobortis libero metus vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium scelerisque nisl mattis vehicula. Phasellus quis rutrum ex, ut bibendum est. Pellentesque fermentum, lorem nec semper elementum, ex tortor malesuada odio, et interdum ex ipsum quis eros. Duis nec commodo tellus.
 
@@ -2405,7 +2132,7 @@ Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nu
         </span>
       </div>
       <div
-        className="footer c12"
+        className="footer c11"
       >
         <div
           style={
@@ -2416,20 +2143,13 @@ Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nu
             }
           }
         >
-          <div
-            className="c8"
+          <button
+            className="c12"
+            size="SMALL"
+            type="PRIMARY"
           >
-            <button
-              className="wrapped c13"
-              disabled={false}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="PRIMARY"
-            >
-              Action Button
-            </button>
-          </div>
+            Action Button
+          </button>
         </div>
       </div>
     </div>
@@ -2439,38 +2159,6 @@ Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nu
 
 exports[`Storyshots Modal With custom close button props 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2504,7 +2192,7 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2515,34 +2203,34 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8:hover {
+.c7:hover {
   background-color: #bc2b0e;
 }
 
-.c8:focus {
+.c7:focus {
   background-color: #bc2b0e;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -2608,7 +2296,7 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2669,35 +2357,28 @@ exports[`Storyshots Modal With custom close button props 1`] = `
         <header
           className="c6"
         />
-        <div
+        <button
           className="closeButton c7"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEGATIVE"
         >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEGATIVE"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close-int"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close-int"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c9"
+        className="content c8"
       >
         Content
       </div>
@@ -2708,38 +2389,6 @@ exports[`Storyshots Modal With custom close button props 1`] = `
 
 exports[`Storyshots Modal With custom header style 1`] = `
 .c8 {
-  position: relative;
-  display: inline-block;
-}
-
-.c8 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c8 .appear-enter {
-  opacity: 0;
-}
-
-.c8 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 .appear-exit {
-  opacity: 1;
-}
-
-.c8 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2772,7 +2421,7 @@ exports[`Storyshots Modal With custom header style 1`] = `
   padding: 0 8px;
 }
 
-.c9 .icon {
+.c8 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2783,41 +2432,41 @@ exports[`Storyshots Modal With custom header style 1`] = `
   align-self: center;
 }
 
-.c9:hover {
+.c8:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c9:focus {
+.c8:focus {
   box-shadow: none;
 }
 
-.c9:hover .icon,
-.c9:focus .icon {
+.c8:hover .icon,
+.c8:focus .icon {
   color: white;
 }
 
-.c9 > .icon {
+.c8 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c9:hover > .icon,
-.c9:focus > .icon {
+.c8:hover > .icon,
+.c8:focus > .icon {
   color: #3498db;
 }
 
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:disabled {
+.c8:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -2883,7 +2532,7 @@ exports[`Storyshots Modal With custom header style 1`] = `
   overflow: hidden;
 }
 
-.c10 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2948,35 +2597,28 @@ exports[`Storyshots Modal With custom header style 1`] = `
         <header
           className="c7"
         />
-        <div
+        <button
           className="closeButton c8"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c9"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c10"
+        className="content c9"
       >
         Content
       </div>
@@ -3011,70 +2653,6 @@ exports[`Storyshots Modal With custom parentNode 1`] = `
 
 exports[`Storyshots Modal With footer 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 {
-  position: relative;
-  display: block;
-}
-
-.c11 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c11 .appear-enter {
-  opacity: 0;
-}
-
-.c11 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c11 .appear-exit {
-  opacity: 1;
-}
-
-.c11 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3107,7 +2685,7 @@ exports[`Storyshots Modal With footer 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3118,46 +2696,46 @@ exports[`Storyshots Modal With footer 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c12 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3192,7 +2770,7 @@ exports[`Storyshots Modal With footer 1`] = `
   padding: 0 16px;
 }
 
-.c12 .icon {
+.c10 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3203,34 +2781,34 @@ exports[`Storyshots Modal With footer 1`] = `
   align-self: center;
 }
 
-.c12:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c12:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c12:hover .icon,
-.c12:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c12:hover {
+.c10:hover {
   background-color: #dd3311;
 }
 
-.c12:focus {
+.c10:focus {
   background-color: #dd3311;
 }
 
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c12:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -3296,7 +2874,7 @@ exports[`Storyshots Modal With footer 1`] = `
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3323,7 +2901,7 @@ exports[`Storyshots Modal With footer 1`] = `
   padding-left: 16px;
 }
 
-.c10 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3332,7 +2910,7 @@ exports[`Storyshots Modal With footer 1`] = `
   border-top: solid 1px rgba(0,0,0,0.16);
 }
 
-.c10 .closeButton {
+.c9 .closeButton {
   margin-left: auto;
   padding-left: 16px;
 }
@@ -3371,40 +2949,33 @@ exports[`Storyshots Modal With footer 1`] = `
         <header
           className="c6"
         />
-        <div
+        <button
           className="closeButton c7"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c9"
+        className="content c8"
       >
         With footer
       </div>
       <div
-        className="footer c10"
+        className="footer c9"
       >
         <div
           style={
@@ -3413,20 +2984,13 @@ exports[`Storyshots Modal With footer 1`] = `
             }
           }
         >
-          <div
-            className="c11"
+          <button
+            className="c10"
+            size="SMALL"
+            type="PRIMARY"
           >
-            <button
-              className="wrapped c12"
-              disabled={false}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="PRIMARY"
-            >
-              Action Button
-            </button>
-          </div>
+            Action Button
+          </button>
         </div>
       </div>
     </div>
@@ -3436,38 +3000,6 @@ exports[`Storyshots Modal With footer 1`] = `
 
 exports[`Storyshots Modal With header 1`] = `
 .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3500,7 +3032,7 @@ exports[`Storyshots Modal With header 1`] = `
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3511,41 +3043,41 @@ exports[`Storyshots Modal With header 1`] = `
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -3611,7 +3143,7 @@ exports[`Storyshots Modal With header 1`] = `
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3674,35 +3206,28 @@ exports[`Storyshots Modal With header 1`] = `
         >
           Header as a node string
         </header>
-        <div
+        <button
           className="closeButton c7"
+          data-testid="modal-close-icon"
+          size="SMALL"
+          type="NEUTRAL"
         >
-          <button
-            className="wrapped c8"
-            data-testid="modal-close-icon"
-            disabled={false}
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-            size="SMALL"
-            type="NEUTRAL"
-          >
-            <div
-              className="icon left-icon"
-              style={
-                Object {
-                  "marginRight": 0,
-                }
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "marginRight": 0,
               }
-            >
-              <i
-                className="wg-close"
-              />
-            </div>
-          </button>
-        </div>
+            }
+          >
+            <i
+              className="wg-close"
+            />
+          </div>
+        </button>
       </div>
       <div
-        className="content c9"
+        className="content c8"
       >
         Content
       </div>
@@ -3725,38 +3250,6 @@ Array [
     Behind
   </div>,
   .c7 {
-  position: relative;
-  display: inline-block;
-}
-
-.c7 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c7 .appear-enter {
-  opacity: 0;
-}
-
-.c7 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c7 .appear-exit {
-  opacity: 1;
-}
-
-.c7 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3789,7 +3282,7 @@ Array [
   padding: 0 8px;
 }
 
-.c8 .icon {
+.c7 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3800,41 +3293,41 @@ Array [
   align-self: center;
 }
 
-.c8:hover {
+.c7:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c8:focus {
+.c7:focus {
   box-shadow: none;
 }
 
-.c8:hover .icon,
-.c8:focus .icon {
+.c7:hover .icon,
+.c7:focus .icon {
   color: white;
 }
 
-.c8 > .icon {
+.c7 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c8:hover > .icon,
-.c8:focus > .icon {
+.c7:hover > .icon,
+.c7:focus > .icon {
   color: #3498db;
 }
 
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
+.c7:disabled,
+.c7:disabled .icon,
+.c7:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c8:disabled {
+.c7:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -3900,7 +3393,7 @@ Array [
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3927,7 +3420,7 @@ Array [
   padding-left: 16px;
 }
 
-.c10 {
+.c9 {
   white-space: pre-line;
 }
 
@@ -3965,38 +3458,31 @@ Array [
           <header
             className="c6"
           />
-          <div
+          <button
             className="closeButton c7"
+            data-testid="modal-close-icon"
+            size="SMALL"
+            type="NEUTRAL"
           >
-            <button
-              className="wrapped c8"
-              data-testid="modal-close-icon"
-              disabled={false}
-              onMouseLeave={[Function]}
-              onMouseOver={[Function]}
-              size="SMALL"
-              type="NEUTRAL"
-            >
-              <div
-                className="icon left-icon"
-                style={
-                  Object {
-                    "marginRight": 0,
-                  }
+            <div
+              className="icon left-icon"
+              style={
+                Object {
+                  "marginRight": 0,
                 }
-              >
-                <i
-                  className="wg-close"
-                />
-              </div>
-            </button>
-          </div>
+              }
+            >
+              <i
+                className="wg-close"
+              />
+            </div>
+          </button>
         </div>
         <div
-          className="content c9"
+          className="content c8"
         >
           <span
-            className="c10"
+            className="c9"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed lectus et dui rhoncus iaculis. Pellentesque orci purus, iaculis nec est porttitor, placerat convallis dolor. Curabitur id ipsum diam. Donec sit amet eleifend erat. Donec nulla libero, luctus sit amet metus ut, efficitur dignissim lectus. Nunc ultrices, ligula sed malesuada ultrices, odio tortor condimentum risus, ut lobortis libero metus vitae orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut pretium scelerisque nisl mattis vehicula. Phasellus quis rutrum ex, ut bibendum est. Pellentesque fermentum, lorem nec semper elementum, ex tortor malesuada odio, et interdum ex ipsum quis eros. Duis nec commodo tellus.
 

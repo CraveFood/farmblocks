@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import Link from "@crave/farmblocks-link";
-import { alignments } from "@crave/farmblocks-tooltip";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 import Label from "@crave/farmblocks-label";
-import values from "object.values";
 
 import Wrapper from "./styledComponents/Wrapper";
 
@@ -31,7 +30,7 @@ export const formInputProps = {
   clearIcon: PropTypes.string,
   leftIcon: PropTypes.string,
   moreInfoContent: PropTypes.node,
-  moreInfoAlign: PropTypes.oneOf(values(alignments)),
+  moreInfoTooltipProps: PropTypes.object,
   prefix: PropTypes.string,
   suffix: PropTypes.string,
   autoControlFocusedStyle: PropTypes.bool,
@@ -208,7 +207,7 @@ const formInput = WrappedComponent => {
         protected: covered,
         disableManualReplace,
         moreInfoContent,
-        moreInfoAlign,
+        moreInfoTooltipProps,
         autoControlFocusedStyle,
         className,
         ...wrappedComponentProps
@@ -232,7 +231,7 @@ const formInput = WrappedComponent => {
             <Label
               className="label"
               moreInfoContent={moreInfoContent}
-              moreInfoAlign={moreInfoAlign}
+              moreInfoTooltipProps={moreInfoTooltipProps}
               focused={this.state.focused}
               invalid={wrapperProps.invalid}
               protected={covered}
@@ -264,7 +263,7 @@ const formInput = WrappedComponent => {
       refName: "ref",
       clearable: false,
       clearIcon: "wg-close-int",
-      moreInfoAlign: alignments.LEFT,
+      moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
       autoControlFocusedStyle: true,
     };
   };

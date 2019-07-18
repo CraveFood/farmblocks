@@ -2,38 +2,6 @@
 
 exports[`Storyshots Alert default 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +35,7 @@ exports[`Storyshots Alert default 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -78,34 +46,34 @@ exports[`Storyshots Alert default 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -161,70 +129,31 @@ exports[`Storyshots Alert default 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert default at bottom 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -258,7 +187,7 @@ exports[`Storyshots Alert default at bottom 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -269,34 +198,34 @@ exports[`Storyshots Alert default at bottom 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -352,70 +281,31 @@ exports[`Storyshots Alert default at bottom 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert extended style 1`] = `
 .c2 {
-  position: relative;
-  display: inline-block;
-}
-
-.c2 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 .appear-enter {
-  opacity: 0;
-}
-
-.c2 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 .appear-exit {
-  opacity: 1;
-}
-
-.c2 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -449,7 +339,7 @@ exports[`Storyshots Alert extended style 1`] = `
   padding: 0 8px;
 }
 
-.c3 .icon {
+.c2 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -460,34 +350,34 @@ exports[`Storyshots Alert extended style 1`] = `
   align-self: center;
 }
 
-.c3:hover {
+.c2:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c2:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c2:hover .icon,
+.c2:focus .icon {
   color: white;
 }
 
-.c3:hover {
+.c2:hover {
   background-color: #3498db;
 }
 
-.c3:focus {
+.c2:focus {
   background-color: #3498db;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c2:disabled,
+.c2:disabled .icon,
+.c2:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
+.c2:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -549,32 +439,25 @@ exports[`Storyshots Alert extended style 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c2"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c3"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
@@ -633,38 +516,6 @@ exports[`Storyshots Alert non dismissable 1`] = `
 
 exports[`Storyshots Alert type attention 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -698,7 +549,7 @@ exports[`Storyshots Alert type attention 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -709,34 +560,34 @@ exports[`Storyshots Alert type attention 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -792,70 +643,31 @@ exports[`Storyshots Alert type attention 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert type negative 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -889,7 +701,7 @@ exports[`Storyshots Alert type negative 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -900,34 +712,34 @@ exports[`Storyshots Alert type negative 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -983,70 +795,31 @@ exports[`Storyshots Alert type negative 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert type news 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1080,7 +853,7 @@ exports[`Storyshots Alert type news 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1091,34 +864,34 @@ exports[`Storyshots Alert type news 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1174,70 +947,31 @@ exports[`Storyshots Alert type news 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert type positive 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1271,7 +1005,7 @@ exports[`Storyshots Alert type positive 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1282,34 +1016,34 @@ exports[`Storyshots Alert type positive 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1365,70 +1099,31 @@ exports[`Storyshots Alert type positive 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1462,7 +1157,7 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1473,34 +1168,34 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1556,70 +1251,31 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
   <div
     className="dismiss-button"
   >
-    <div
+    <button
       className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="OFF_NEUTRAL"
     >
-      <button
-        className="wrapped c2"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 0,
           }
-        >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert with custom z-index 1`] = `
 .c1 {
-  position: relative;
-  display: inline-block;
-}
-
-.c1 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 .appear-enter {
-  opacity: 0;
-}
-
-.c1 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c1 .appear-exit {
-  opacity: 1;
-}
-
-.c1 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1653,7 +1309,7 @@ exports[`Storyshots Alert with custom z-index 1`] = `
   padding: 0 8px;
 }
 
-.c2 .icon {
+.c1 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1664,34 +1320,34 @@ exports[`Storyshots Alert with custom z-index 1`] = `
   align-self: center;
 }
 
-.c2:hover {
+.c1:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c2:focus {
+.c1:focus {
   box-shadow: none;
 }
 
-.c2:hover .icon,
-.c2:focus .icon {
+.c1:hover .icon,
+.c1:focus .icon {
   color: white;
 }
 
-.c2:hover {
+.c1:hover {
   background-color: #3498db;
 }
 
-.c2:focus {
+.c1:focus {
   background-color: #3498db;
 }
 
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1770,32 +1426,25 @@ exports[`Storyshots Alert with custom z-index 1`] = `
     <div
       className="dismiss-button"
     >
-      <div
+      <button
         className="c1"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <button
-          className="wrapped c2"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="SMALL"
-          type="OFF_NEUTRAL"
-        >
-          <div
-            className="icon left-icon"
-            style={
-              Object {
-                "marginRight": 0,
-              }
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "marginRight": 0,
             }
-          >
-            <i
-              className="wg-close"
-            />
-          </div>
-        </button>
-      </div>
+          }
+        >
+          <i
+            className="wg-close"
+          />
+        </div>
+      </button>
     </div>
   </div>
 </div>

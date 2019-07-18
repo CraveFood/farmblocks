@@ -1,40 +1,31 @@
 import styled, { css } from "styled-components";
 import { colors as colorConstants } from "@crave/farmblocks-theme";
+import { POSITIONS } from "@crave/farmblocks-tooltip";
 
-const align = props => {
-  const { tooltipAlign } = props;
-  if (tooltipAlign === "center") {
-    return null;
-  }
+const tooltipAlign = ({ tooltipProps }) => {
+  const { positionX } = tooltipProps;
+  if (!positionX || positionX === POSITIONS.X.CENTER) return null;
+
   return css`
-    margin-${tooltipAlign}: -4px;
+    margin-${positionX}: -4px;
   `;
 };
 
 const StyledInfo = styled.div`
 	.tooltip {
-		${align};
+		${tooltipAlign};
 	}
 
 	.icon {
 		display: inline-block;
 		margin: 0 8px;
-	}
-
-	.hit-area{
-		margin: -12px;
-		padding: 12px;
-		margin-top: -62px;
-		padding-top: 62px;
+		cursor: pointer;
 	}
 
 	.icon:hover, .hovered {
 		color: ${colorConstants.INDIGO_MILK_CAP};
 	}
 
-	.icon:hover {
-		color: ${colorConstants.INDIGO_MILK_CAP};
-	}
 }`;
 
 export default StyledInfo;

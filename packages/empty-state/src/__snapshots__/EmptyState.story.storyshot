@@ -357,38 +357,6 @@ exports[`Storyshots EmptyState With image 1`] = `
 
 exports[`Storyshots EmptyState With loading action 1`] = `
 .c3 {
-  position: relative;
-  display: inline-block;
-}
-
-.c3 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c3 .appear-enter {
-  opacity: 0;
-}
-
-.c3 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c3 .appear-exit {
-  opacity: 1;
-}
-
-.c3 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -422,7 +390,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   padding: 0 16px;
 }
 
-.c4 .icon {
+.c3 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -433,40 +401,40 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   align-self: center;
 }
 
-.c4:hover {
+.c3:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c4:focus {
+.c3:focus {
   box-shadow: none;
 }
 
-.c4:hover .icon,
-.c4:focus .icon {
+.c3:hover .icon,
+.c3:focus .icon {
   color: white;
 }
 
-.c4 > .icon.left-icon i::before {
+.c3 > .icon.left-icon i::before {
   display: inline-block;
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c4:hover {
+.c3:hover {
   background-color: #2980b9;
 }
 
-.c4:focus {
+.c3:focus {
   background-color: #2980b9;
 }
 
-.c4:disabled,
-.c4:disabled .icon,
-.c4:disabled:hover {
+.c3:disabled,
+.c3:disabled .icon,
+.c3:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c4:disabled {
+.c3:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -556,72 +524,34 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   <div
     className="buttons"
   >
-    <div
+    <button
       className="c3"
+      data-testid="empty-state-button-Primary Action"
+      disabled={true}
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c4"
-        data-testid="empty-state-button-Primary Action"
-        disabled={true}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 10,
-            }
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "marginRight": 10,
           }
-        >
-          <i
-            className="wg-loading"
-          />
-        </div>
-        Primary Action
-      </button>
-    </div>
+        }
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      Primary Action
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots EmptyState With one action 1`] = `
 .c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -655,7 +585,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
   padding: 0 16px;
 }
 
-.c5 .icon {
+.c4 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -666,34 +596,34 @@ exports[`Storyshots EmptyState With one action 1`] = `
   align-self: center;
 }
 
-.c5:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: #2980b9;
 }
 
-.c5:focus {
+.c4:focus {
   background-color: #2980b9;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -797,60 +727,21 @@ exports[`Storyshots EmptyState With one action 1`] = `
   <div
     className="buttons"
   >
-    <div
+    <button
       className="c4"
+      data-testid="empty-state-button-Primary Action"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c5"
-        data-testid="empty-state-button-Primary Action"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Primary Action
-      </button>
-    </div>
+      Primary Action
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots EmptyState With one action and info 1`] = `
 .c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -884,7 +775,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   padding: 0 16px;
 }
 
-.c5 .icon {
+.c4 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -895,34 +786,34 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   align-self: center;
 }
 
-.c5:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: #2980b9;
 }
 
-.c5:focus {
+.c4:focus {
   background-color: #2980b9;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -947,7 +838,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   font-weight: inherit;
 }
 
-.c6 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1036,25 +927,18 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   <div
     className="buttons"
   >
-    <div
+    <button
       className="c4"
+      data-testid="empty-state-button-Primary Action"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c5"
-        data-testid="empty-state-button-Primary Action"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Primary Action
-      </button>
-    </div>
+      Primary Action
+    </button>
   </div>
   <div
-    className="info c6"
+    className="info c5"
     fontWeight="inherit"
     size={14}
     type="#59636f"
@@ -1066,38 +950,6 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 
 exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 .c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1131,7 +983,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   padding: 0 16px;
 }
 
-.c5 .icon {
+.c4 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1142,34 +994,34 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   align-self: center;
 }
 
-.c5:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: #2980b9;
 }
 
-.c5:focus {
+.c4:focus {
   background-color: #2980b9;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1281,61 +1133,22 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
     <div
       className="buttons"
     >
-      <div
+      <button
         className="c4"
+        data-testid="empty-state-button-Primary Action"
+        onClick={[Function]}
+        size="MEDIUM"
+        type="SECONDARY"
       >
-        <button
-          className="wrapped c5"
-          data-testid="empty-state-button-Primary Action"
-          disabled={false}
-          onClick={[Function]}
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-          size="MEDIUM"
-          type="SECONDARY"
-        >
-          Primary Action
-        </button>
-      </div>
+        Primary Action
+      </button>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots EmptyState With two actions 1`] = `
-.c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hitArea {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-in;
-  transition: opacity 100ms ease-in;
-}
-
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1369,7 +1182,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   padding: 0 16px;
 }
 
-.c6 .icon {
+.c5 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1380,39 +1193,39 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   align-self: center;
 }
 
-.c6:hover {
+.c5:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c6:focus {
+.c5:focus {
   box-shadow: none;
 }
 
-.c6:hover .icon,
-.c6:focus .icon {
+.c5:hover .icon,
+.c5:focus .icon {
   color: white;
 }
 
-.c6:hover {
+.c5:hover {
   background-color: #2980b9;
 }
 
-.c6:focus {
+.c5:focus {
   background-color: #2980b9;
 }
 
-.c6:disabled,
-.c6:disabled .icon,
-.c6:disabled:hover {
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c6:disabled {
+.c5:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1445,7 +1258,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   padding: 0 16px;
 }
 
-.c5 .icon {
+.c4 .icon {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1456,41 +1269,41 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   align-self: center;
 }
 
-.c5:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c5:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c5:hover .icon,
-.c5:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c5 > .icon {
+.c4 > .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:hover,
-.c5:focus {
+.c4:hover,
+.c4:focus {
   color: #3498db;
   border-color: #3498db;
 }
 
-.c5:hover > .icon,
-.c5:focus > .icon {
+.c4:hover > .icon,
+.c4:focus > .icon {
   color: #3498db;
 }
 
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c5:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1594,38 +1407,24 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   <div
     className="buttons"
   >
-    <div
+    <button
       className="c4"
+      data-testid="empty-state-button-Secondary Action"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
     >
-      <button
-        className="wrapped c5"
-        data-testid="empty-state-button-Secondary Action"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="NEUTRAL"
-      >
-        Secondary Action
-      </button>
-    </div>
-    <div
-      className="c4"
+      Secondary Action
+    </button>
+    <button
+      className="c5"
+      data-testid="empty-state-button-Primary Action"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="SECONDARY"
     >
-      <button
-        className="wrapped c6"
-        data-testid="empty-state-button-Primary Action"
-        disabled={false}
-        onClick={[Function]}
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
-      >
-        Primary Action
-      </button>
-    </div>
+      Primary Action
+    </button>
   </div>
 </div>
 `;
