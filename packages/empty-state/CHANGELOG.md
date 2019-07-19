@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.3.4...@crave/farmblocks-empty-state@3.3.5) (2019-07-19)
+
+
+### Bug Fixes
+
+* **empty-state:** buttons alignment ([e8d4962](https://github.com/CraveFood/farmblocks/commit/e8d4962))
+
+
+
+
+
 ## [3.3.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.3.3...@crave/farmblocks-empty-state@3.3.4) (2019-07-18)
 
 **Note:** Version bump only for package @crave/farmblocks-empty-state
