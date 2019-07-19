@@ -49,6 +49,7 @@ export const ContentWrapper = styled.div`
 
 export const HeaderWrapper = styled.header`
   overflow: auto;
+  padding-right: 16px;
 `;
 
 export const Section = styled.div`
@@ -60,6 +61,5 @@ export const Section = styled.div`
 
   .closeButton {
     margin-left: auto;
-    padding-left: 16px;
   }
 `;
