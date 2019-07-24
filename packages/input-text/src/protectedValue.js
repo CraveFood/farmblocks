@@ -37,7 +37,11 @@ const Container = styled.div`
     flex-grow: 1;
   }
 
-  .margin-button {
+  .buttons {
+    display: flex;
+  }
+
+  #cancel-button {
     margin: 0 8px;
   }
 `;
@@ -158,12 +162,11 @@ export default WrappedComponent => {
           />
           {covered && !isEditing && this.renderCover()}
           {covered && displayButtons && isEditing && (
-            <div>
+            <div className="buttons">
               <Button
                 id="cancel-button"
                 onClick={this.onCancel}
                 size={buttonSizes.MEDIUM}
-                className="margin-button"
               >
                 {cancelButtonText}
               </Button>
