@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.13...@crave/farmblocks-input-text@3.6.14) (2019-07-24)
+
+
+### Bug Fixes
+
+* **input-text:** alignment of protect input buttons ([ead1951](https://github.com/CraveFood/farmblocks/commit/ead1951)), closes [#855](https://github.com/CraveFood/farmblocks/issues/855)
+
+
+
+
+
 ## [3.6.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.12...@crave/farmblocks-input-text@3.6.13) (2019-07-19)
 
 **Note:** Version bump only for package @crave/farmblocks-input-text
