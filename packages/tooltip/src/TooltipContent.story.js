@@ -174,7 +174,14 @@ storiesOf("Tooltip/TooltipContent", module)
     );
   })
   .add("auto aligned/positioned", () => (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "calc(100vh - 30px)",
+      }}
+    >
       <div
         style={{
           display: "flex",
@@ -205,8 +212,6 @@ storiesOf("Tooltip/TooltipContent", module)
           display: "flex",
           justifyContent: "space-between",
           width: "100%",
-          position: "fixed",
-          bottom: 0,
         }}
       >
         <div>
@@ -231,32 +236,32 @@ storiesOf("Tooltip/TooltipContent", module)
     </div>
   ))
   .add("auto aligned/positioned (with boundaries)", () => {
-    // eslint-disable-next-line react/prop-types
-    const BoundaryContainer = ({ children, ...props }) => (
-      <div
-        style={{
-          border: "solid 1px orangered",
-          height: 300,
-          width: 600,
-          margin: 60,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-        }}
-        {...props}
-      >
-        {children}
-      </div>
-    );
     return (
       <div>
-        <BoundaryContainer className="exampleContainer">
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            border: "solid 1px orangered",
+            height: 300,
+            width: 600,
+            margin: 60,
+            display: "flex",
+            justifyContent: "space-between",
+            position: "relative",
+          }}
+          className="exampleContainer"
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+          >
             <div>
               <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
               <TooltipContent
                 positionX={POSITIONS.X.AUTO}
-                text="Auto aligned tooltip"
+                text="Auto aligned/positioned tooltip"
                 boundariesSelector=".exampleContainer"
               />
             </div>
@@ -265,13 +270,21 @@ storiesOf("Tooltip/TooltipContent", module)
               <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
               <TooltipContent
                 positionX={POSITIONS.X.AUTO}
-                text="Auto aligned tooltip"
+                text="Auto aligned/positioned tooltip"
                 boundariesSelector=".exampleContainer"
               />
             </div>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: "100%",
+              position: "absolute",
+              bottom: 20,
+            }}
+          >
             <div>
               <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
 
@@ -294,7 +307,7 @@ storiesOf("Tooltip/TooltipContent", module)
               />
             </div>
           </div>
-        </BoundaryContainer>
+        </div>
       </div>
     );
   })
