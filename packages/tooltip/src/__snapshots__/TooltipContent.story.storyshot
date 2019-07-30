@@ -1197,10 +1197,10 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned (with boundar
       Object {
         "border": "solid 1px orangered",
         "display": "flex",
-        "flexDirection": "column",
         "height": 300,
         "justifyContent": "space-between",
         "margin": 60,
+        "position": "relative",
         "width": 600,
       }
     }
@@ -1210,6 +1210,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned (with boundar
         Object {
           "display": "flex",
           "justifyContent": "space-between",
+          "width": "100%",
         }
       }
     >
@@ -1229,7 +1230,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned (with boundar
             className="c2"
             offset="15px"
           >
-            Auto aligned tooltip
+            Auto aligned/positioned tooltip
           </div>
         </div>
       </div>
@@ -1249,7 +1250,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned (with boundar
             className="c2"
             offset="15px"
           >
-            Auto aligned tooltip
+            Auto aligned/positioned tooltip
           </div>
         </div>
       </div>
@@ -1257,8 +1258,11 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned (with boundar
     <div
       style={
         Object {
+          "bottom": 20,
           "display": "flex",
           "justifyContent": "space-between",
+          "position": "absolute",
+          "width": "100%",
         }
       }
     >
@@ -1431,7 +1435,16 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
   auto: 8px;
 }
 
-<div>
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "calc(100vh - 30px)",
+      "justifyContent": "space-between",
+    }
+  }
+>
   <div
     style={
       Object {
@@ -1485,10 +1498,8 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
   <div
     style={
       Object {
-        "bottom": 0,
         "display": "flex",
         "justifyContent": "space-between",
-        "position": "fixed",
         "width": "100%",
       }
     }
