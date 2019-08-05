@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@2.0.1...@crave/farmblocks-tooltip@2.1.0) (2019-08-05)
+
+
+### Features
+
+* **Tooltip:** consider the tooltip height on Y axis auto positioning ([73a62ac](https://github.com/CraveFood/farmblocks/commit/73a62ac)), closes [#858](https://github.com/CraveFood/farmblocks/issues/858)
+
+
+
+
+
 ## [2.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@2.0.0...@crave/farmblocks-tooltip@2.0.1) (2019-07-19)
 
 **Note:** Version bump only for package @crave/farmblocks-tooltip
