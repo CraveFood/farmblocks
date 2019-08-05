@@ -725,6 +725,7 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned (with boundaries) 1`
       "height": 300,
       "justifyContent": "space-between",
       "margin": 60,
+      "position": "relative",
       "width": 600,
     }
   }
@@ -734,6 +735,7 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned (with boundaries) 1`
       Object {
         "display": "flex",
         "justifyContent": "space-between",
+        "width": "100%",
       }
     }
   >
@@ -773,8 +775,11 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned (with boundaries) 1`
   <div
     style={
       Object {
+        "bottom": 20,
         "display": "flex",
         "justifyContent": "space-between",
+        "position": "absolute",
+        "width": "100%",
       }
     }
   >
@@ -925,7 +930,16 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
   transition: opacity 200ms ease-out;
 }
 
-<div>
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "calc(100vh - 30px)",
+      "justifyContent": "space-between",
+    }
+  }
+>
   <div
     style={
       Object {
@@ -971,10 +985,8 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
   <div
     style={
       Object {
-        "bottom": 0,
         "display": "flex",
         "justifyContent": "space-between",
-        "position": "fixed",
         "width": "100%",
       }
     }

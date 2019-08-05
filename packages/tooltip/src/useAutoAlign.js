@@ -56,7 +56,7 @@ export function getPositionData(tooltipRef, boundariesSelector) {
       boundariesNode?.getBoundingClientRect().height || window.innerHeight;
 
     if (right >= maxRight) positionData.x = POSITIONS.X.RIGHT;
-    if (y >= maxHeight) positionData.y = POSITIONS.Y.TOP;
+    if (y + height >= maxHeight) positionData.y = POSITIONS.Y.TOP;
 
     return { ...positionData, height };
   }

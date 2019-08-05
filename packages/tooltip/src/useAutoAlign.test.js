@@ -69,12 +69,12 @@ describe("useAutoAlign", () => {
     describe("with boundariesSelector", () => {
       it("should return RIGHT and TOP when tooltip is outside boundaries", () => {
         const container = {
-          getBoundingClientRect: () => ({ right: 90, height: 40 }),
+          getBoundingClientRect: () => ({ right: 90, height: 70 }),
         };
 
         const tooltipRef = {
           current: {
-            getBoundingClientRect: () => ({ right: 100, y: 50 }),
+            getBoundingClientRect: () => ({ right: 100, y: 50, height: 70 }),
             closest: () => container,
           },
         };
@@ -162,10 +162,10 @@ describe("useAutoAlign", () => {
         });
       });
 
-      it("should return LEFT and BOTTOM if tooltip is outside the viewport", () => {
+      it("should return RIGHT and TOP if tooltip is outside the viewport", () => {
         const tooltipRef = {
           current: {
-            getBoundingClientRect: () => ({ right: 1001, y: 1001 }),
+            getBoundingClientRect: () => ({ right: 1001, y: 1001, height: 10 }),
             closest: () => false,
           },
         };

@@ -131,6 +131,7 @@ storiesOf("Tooltip/Tooltip", module)
               content="Top center aligned without arrow"
               hideArrow
               positionX={POSITIONS.X.CENTER}
+              positionY={POSITIONS.Y.TOP}
             />
           </div>
 
@@ -148,7 +149,14 @@ storiesOf("Tooltip/Tooltip", module)
     );
   })
   .add("auto aligned/positioned", () => (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "calc(100vh - 30px)",
+      }}
+    >
       <div
         style={{
           display: "flex",
@@ -175,8 +183,6 @@ storiesOf("Tooltip/Tooltip", module)
           display: "flex",
           justifyContent: "space-between",
           width: "100%",
-          position: "fixed",
-          bottom: 0,
         }}
       >
         <Tooltip
@@ -195,8 +201,7 @@ storiesOf("Tooltip/Tooltip", module)
     </div>
   ))
   .add("auto aligned/positioned (with boundaries)", () => {
-    // eslint-disable-next-line react/prop-types
-    const BoundaryContainer = ({ children, ...props }) => (
+    return (
       <div
         style={{
           border: "solid 1px orangered",
@@ -206,15 +211,17 @@ storiesOf("Tooltip/Tooltip", module)
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
+          position: "relative",
         }}
-        {...props}
+        className="exampleContainer"
       >
-        {children}
-      </div>
-    );
-    return (
-      <BoundaryContainer className="exampleContainer">
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
           <Tooltip
             trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
             content="Auto aligned/positioned tooltip"
@@ -231,7 +238,15 @@ storiesOf("Tooltip/Tooltip", module)
           />
         </div>
 
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+            position: "absolute",
+            bottom: 20,
+          }}
+        >
           <Tooltip
             trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
             content="Auto aligned/positioned tooltip"
@@ -247,6 +262,6 @@ storiesOf("Tooltip/Tooltip", module)
             boundariesSelector=".exampleContainer"
           />
         </div>
-      </BoundaryContainer>
+      </div>
     );
   });
