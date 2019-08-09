@@ -4,6 +4,7 @@ import { TOP, BOTTOM, CENTER } from "./constants/positions";
 
 const Container = styled.div`
   position: relative;
+  z-index: ${props => props.zIndex};
 `;
 
 const centerAlignment = css`
@@ -75,7 +76,6 @@ const StyledTooltip = styled.div`
   visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
 
   position: absolute;
-  z-index: ${props => props.zIndex};
   padding: ${props => props.padding || "8px"};
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
