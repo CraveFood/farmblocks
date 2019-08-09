@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@2.1.0...@crave/farmblocks-tooltip@2.1.1) (2019-08-09)
+
+
+### Bug Fixes
+
+* **tooltip:** fix z-index style, applying it to the container ([88ea569](https://github.com/CraveFood/farmblocks/commit/88ea569))
+* **tooltip:** update storyshots ([1aa5cdc](https://github.com/CraveFood/farmblocks/commit/1aa5cdc))
+
+
+
+
+
 # [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@2.0.1...@crave/farmblocks-tooltip@2.1.0) (2019-08-05)
 
 
