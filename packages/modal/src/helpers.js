@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import PropTypes from "prop-types";
 
 export const useModal = ({ openAtMount = false } = {}) => {
   const [isOpen, setOpen] = useState(openAtMount);
-  const actions = {
-    open: () => setOpen(true),
-    close: () => setOpen(false),
-    toggle: () => setOpen(val => !val),
-  };
-  const props = { isOpen, onRequestClose: actions.close };
+  const actions = useMemo(
+    () => ({
+      open: () => setOpen(true),
+      close: () => setOpen(false),
+      toggle: () => setOpen(val => !val),
+    }),
+
+    [setOpen],
+  );
+  const props = useMemo(() => ({ isOpen, onRequestClose: actions.close }), [
+    isOpen,
+    actions,
+  ]);
 
   return [props, actions];
 };
