@@ -7,11 +7,10 @@ import { useModal, ModalManager } from "./helpers";
 describe("Modal helpers", () => {
   describe("useModal", () => {
     let result;
-    let rerender;
     let props;
     let actions;
     beforeEach(() => {
-      ({ result, rerender } = renderHook(() => useModal()));
+      ({ result } = renderHook(() => useModal()));
       [props, actions] = result.current;
     });
 
@@ -93,14 +92,6 @@ describe("Modal helpers", () => {
           expect(props.isOpen).toBe(false);
         });
       });
-
-      it("should stay the same in every render", () => {
-        const [, prevActions] = result.current;
-        rerender();
-        const [, nextActions] = result.current;
-
-        expect(nextActions).toBe(prevActions);
-      });
     });
 
     describe("props", () => {
@@ -124,20 +115,6 @@ describe("Modal helpers", () => {
           [props, actions] = result.current;
           expect(props.isOpen).toBe(false);
         });
-      });
-
-      it("should stay the same until isOpen change", () => {
-        const [firstProps] = result.current;
-
-        rerender();
-        const [secondProps, { open }] = result.current;
-
-        expect(secondProps).toBe(firstProps);
-
-        hookAct(open);
-        const [thirdProps] = result.current;
-
-        expect(thirdProps).not.toBe(secondProps);
       });
     });
   });
