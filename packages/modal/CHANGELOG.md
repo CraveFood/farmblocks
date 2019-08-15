@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.0.3...@crave/farmblocks-modal@2.1.0) (2019-08-15)
+
+
+### Features
+
+* **Modal:** memoise results of useModal ([d38f8a2](https://github.com/CraveFood/farmblocks/commit/d38f8a2)), closes [#875](https://github.com/CraveFood/farmblocks/issues/875)
+* **Modal:** memoise results of useModal ([8bb0e3d](https://github.com/CraveFood/farmblocks/commit/8bb0e3d)), closes [#875](https://github.com/CraveFood/farmblocks/issues/875)
+
+
+
+
+
 ## [2.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.0.2...@crave/farmblocks-modal@2.0.3) (2019-07-19)
 
 
