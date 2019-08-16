@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
 const checkboxSize = "16px";
@@ -37,6 +37,24 @@ const checkboxStyles = props =>
     ${checkboxColors};
   `;
 
+const spin = keyframes`
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+`;
+export const Loading = styled.div`
+  display: flex;
+  justify-content: center;
+
+  i {
+    animation: ${spin} 1.1s linear infinite;
+  }
+`;
+
 const switchBackground = props => {
   if (props.disabled) {
     return colors.GREY_32;
@@ -66,6 +84,9 @@ const switchStyles = props =>
       background: ${props.disabled ? colors.WHITE_32 : "white"};
       box-shadow: 0 0 2px 0 ${colors.GREY_16};
       left: ${({ checked }) => (checked ? "28px" : "4px")};
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     background: ${switchBackground};
   `;
@@ -136,10 +157,13 @@ const Label = styled.label`
     align-items: center;
     box-sizing: border-box;
     border: 1px solid;
-    margin-right: ${props => (props.hasText ? margin : "0")};
 
     ${switchStyles};
     ${checkboxStyles};
+  }
+
+  .label {
+    margin-left: ${props => (props.hasText ? margin : "0")};
   }
 
   :hover .visibleCheckbox {
