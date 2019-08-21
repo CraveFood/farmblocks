@@ -35,7 +35,7 @@ const checkboxStories = (moduleTitle, Checkbox) =>
     .add("in a fieldset", () => (
       <fieldset>
         <Checkbox label="Checkbox Label 1" name="foo" />
-        <Checkbox disabled label="Disabled Checkbox" name="foo" />
+        <Checkbox disabled label="Disabled Checkbox" name="foo" />{" "}
         <Checkbox
           checked
           disabled
@@ -43,6 +43,8 @@ const checkboxStories = (moduleTitle, Checkbox) =>
           name="foo"
         />
         <Checkbox label="Checkbox Label 3" name="foo" />
+        <Checkbox label="Checkbox Label 4" checked name="foo" />
+        <Checkbox label="Checkbox" loading />
         <div style={{ marginTop: 24 }}>
           <div>
             Another field
@@ -65,6 +67,30 @@ const checkboxStories = (moduleTitle, Checkbox) =>
         }
       `;
       return <StyledCheckbox label="Checkbox Label" />;
+    })
+    .add("with loading state control", () => {
+      const WithState = () => {
+        const [checked, setChecked] = useState(false);
+        const [loading, setLoading] = useState(false);
+
+        return (
+          <Checkbox
+            checked={checked}
+            loading={loading}
+            onChange={e => {
+              setLoading(true);
+              setChecked(e.target.checked);
+              setTimeout(() => {
+                setLoading(false);
+              }, 1000);
+              action("onChange")(e);
+            }}
+            label="Checkbox Label"
+          />
+        );
+      };
+
+      return <WithState />;
     });
 
 checkboxStories("Checkbox/Checkbox Input", CheckboxComponent);

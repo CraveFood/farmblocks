@@ -39,7 +39,6 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 0;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -60,6 +59,10 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 0;
 }
 
 .c0:hover .visibleCheckbox {
@@ -133,7 +136,6 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 0;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -154,6 +156,10 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 0;
 }
 
 .c0:hover .visibleCheckbox {
@@ -241,7 +247,6 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -262,6 +267,10 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -356,7 +365,6 @@ exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -377,6 +385,10 @@ exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c1 .label {
+  margin-left: 8px;
 }
 
 .c1:hover .visibleCheckbox {
@@ -448,6 +460,22 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   font-weight: 600;
 }
 
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 i {
+  -webkit-animation: iVXCSc 1.1s linear infinite;
+  animation: iVXCSc 1.1s linear infinite;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -486,7 +514,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -507,6 +534,10 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -556,7 +587,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -577,6 +607,10 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c4 .label {
+  margin-left: 8px;
 }
 
 .c4:hover .visibleCheckbox {
@@ -625,7 +659,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -648,11 +681,90 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   width: 100%;
 }
 
+.c2 .label {
+  margin-left: 8px;
+}
+
 .c2:hover .visibleCheckbox {
   border-width: 1px;
 }
 
 .c2 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c5 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c5 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.c5 .visibleCheckbox .checkmark {
+  visibility: visible;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c5 .label {
+  margin-left: 8px;
+}
+
+.c5:hover .visibleCheckbox {
+  color: #3498db;
+  background-color: #ffffff;
+  border-color: #3498db;
+  border-width: 2px;
+}
+
+.c5 .hiddenCheckbox:focus + div .visibleCheckbox {
   border-color: #3498db;
 }
 
@@ -719,6 +831,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       </div>
     </div>
   </label>
+   
   <label
     checked={true}
     className="c4"
@@ -783,6 +896,68 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       </div>
     </div>
   </label>
+  <label
+    checked={true}
+    className="c5"
+    onMouseUp={[Function]}
+  >
+    <input
+      checked={true}
+      className="hiddenCheckbox"
+      name="foo"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="centerVisibleCheckbox"
+    >
+      <div
+        className="visibleCheckbox"
+      >
+        <div
+          className="checkmark wg-check"
+        />
+      </div>
+      <div
+        className="label c1"
+        fontWeight="title"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox Label 4
+      </div>
+    </div>
+  </label>
+  <label
+    className="c2"
+    disabled={true}
+    onMouseUp={[Function]}
+  >
+    <input
+      className="hiddenCheckbox"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="centerVisibleCheckbox"
+    >
+      <div
+        className="c6"
+      >
+        <i
+          className="wg-loading"
+        />
+      </div>
+      <div
+        className="label c1"
+        fontWeight="title"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox
+      </div>
+    </div>
+  </label>
   <div
     style={
       Object {
@@ -798,6 +973,124 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
     </div>
   </div>
 </fieldset>
+`;
+
+exports[`Storyshots Checkbox/Checkbox Input with loading state control 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c0 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 4px;
+  color: #3498db;
+  background-color: #FFFFFF;
+  border-color: rgba(0,0,0,0.16);
+}
+
+.c0 .visibleCheckbox .checkmark {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.c0 .label {
+  margin-left: 8px;
+}
+
+.c0:hover .visibleCheckbox {
+  border-color: #3498db;
+  border-width: 2px;
+}
+
+.c0 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+<label
+  checked={false}
+  className="c0"
+  disabled={false}
+  onMouseUp={[Function]}
+>
+  <input
+    checked={false}
+    className="hiddenCheckbox"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <div
+    className="centerVisibleCheckbox"
+  >
+    <div
+      className="visibleCheckbox"
+    >
+      <div
+        className="checkmark wg-check"
+      />
+    </div>
+    <div
+      className="label c1"
+      fontWeight="title"
+      size={16}
+      type="#2f313a"
+    >
+      Checkbox Label
+    </div>
+  </div>
+</label>
 `;
 
 exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
@@ -849,7 +1142,6 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -870,6 +1162,10 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -951,7 +1247,6 @@ exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 0;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -972,6 +1267,10 @@ exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 0;
 }
 
 .c0:hover .visibleCheckbox {
@@ -1057,7 +1356,6 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 16px;
   height: 16px;
   font-size: 8px;
@@ -1078,6 +1376,10 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -1159,7 +1461,6 @@ exports[`Storyshots Checkbox/Switch Input Default 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 0;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1179,6 +1480,22 @@ exports[`Storyshots Checkbox/Switch Input Default 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 0;
 }
 
 .c0:hover .visibleCheckbox {
@@ -1259,7 +1576,6 @@ exports[`Storyshots Checkbox/Switch Input checked 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 0;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1279,6 +1595,22 @@ exports[`Storyshots Checkbox/Switch Input checked 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 0;
 }
 
 .c0:hover .visibleCheckbox {
@@ -1371,7 +1703,6 @@ exports[`Storyshots Checkbox/Switch Input disabled 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1391,6 +1722,22 @@ exports[`Storyshots Checkbox/Switch Input disabled 1`] = `
   background: rgba(255,255,255,0.32);
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -1486,7 +1833,6 @@ exports[`Storyshots Checkbox/Switch Input extended style 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1506,6 +1852,22 @@ exports[`Storyshots Checkbox/Switch Input extended style 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .label {
+  margin-left: 8px;
 }
 
 .c1:hover .visibleCheckbox {
@@ -1584,6 +1946,22 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   font-weight: normal;
 }
 
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 i {
+  -webkit-animation: iVXCSc 1.1s linear infinite;
+  animation: iVXCSc 1.1s linear infinite;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1622,7 +2000,6 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1642,6 +2019,22 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -1698,7 +2091,6 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1718,6 +2110,22 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   background: rgba(255,255,255,0.32);
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 .label {
+  margin-left: 8px;
 }
 
 .c4:hover .visibleCheckbox {
@@ -1767,7 +2175,6 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -1787,6 +2194,22 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   background: rgba(255,255,255,0.32);
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .label {
+  margin-left: 8px;
 }
 
 .c2:hover .visibleCheckbox {
@@ -1794,6 +2217,97 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
 }
 
 .c2 .hiddenCheckbox:focus + div .visibleCheckbox {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c5 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c5 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 56px;
+  height: 32px;
+  border-radius: 100px;
+  border-color: rgba(0,0,0,0.16);
+  background: #2ecc71;
+}
+
+.c5 .visibleCheckbox .toggle {
+  position: relative;
+  -webkit-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+  width: 24px;
+  height: 24px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
+  left: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 .label {
+  margin-left: 8px;
+}
+
+.c5:hover .visibleCheckbox {
+  background: #27ae60;
+  border-color: rgba(0,0,0,0.16);
+  border-width: 1px;
+}
+
+.c5:hover .visibleCheckbox .toggle {
+  border-color: #2ecc71;
+  left: 22px;
+}
+
+.c5 .hiddenCheckbox:focus + div .visibleCheckbox {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }
@@ -1861,6 +2375,7 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
       </div>
     </div>
   </label>
+   
   <label
     checked={true}
     className="c4"
@@ -1925,6 +2440,76 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
       </div>
     </div>
   </label>
+  <label
+    checked={true}
+    className="c5"
+    onMouseUp={[Function]}
+  >
+    <input
+      checked={true}
+      className="hiddenCheckbox"
+      name="foo"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="centerVisibleCheckbox"
+    >
+      <div
+        className="visibleCheckbox"
+      >
+        <div
+          className="toggle"
+        />
+      </div>
+      <div
+        className="label c1"
+        fontWeight="normal"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox Label 4
+      </div>
+    </div>
+  </label>
+  <label
+    className="c2"
+    disabled={true}
+    onMouseUp={[Function]}
+  >
+    <input
+      className="hiddenCheckbox"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="centerVisibleCheckbox"
+    >
+      <div
+        className="visibleCheckbox"
+      >
+        <div
+          className="toggle"
+        >
+          <div
+            className="c6"
+          >
+            <i
+              className="wg-loading"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="label c1"
+        fontWeight="normal"
+        size={16}
+        type="#2f313a"
+      >
+        Checkbox
+      </div>
+    </div>
+  </label>
   <div
     style={
       Object {
@@ -1940,6 +2525,142 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
     </div>
   </div>
 </fieldset>
+`;
+
+exports[`Storyshots Checkbox/Switch Input with loading state control 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: normal;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c0 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c0 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 56px;
+  height: 32px;
+  border-radius: 100px;
+  border-color: rgba(0,0,0,0.16);
+  background: #f6f8f9;
+}
+
+.c0 .visibleCheckbox .toggle {
+  position: relative;
+  -webkit-transition: ease all 0.2s;
+  transition: ease all 0.2s;
+  width: 24px;
+  height: 24px;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
+  left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 8px;
+}
+
+.c0:hover .visibleCheckbox {
+  background: #f6f8f9;
+  border-color: #3498db;
+  border-width: 1px;
+}
+
+.c0:hover .visibleCheckbox .toggle {
+  border-color: #3498db;
+  left: 10px;
+}
+
+.c0 .hiddenCheckbox:focus + div .visibleCheckbox {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+<label
+  checked={false}
+  className="c0"
+  disabled={false}
+  onMouseUp={[Function]}
+>
+  <input
+    checked={false}
+    className="hiddenCheckbox"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <div
+    className="centerVisibleCheckbox"
+  >
+    <div
+      className="visibleCheckbox"
+    >
+      <div
+        className="toggle"
+      />
+    </div>
+    <div
+      className="label c1"
+      fontWeight="normal"
+      size={16}
+      type="#2f313a"
+    >
+      Checkbox Label
+    </div>
+  </div>
+</label>
 `;
 
 exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
@@ -1991,7 +2712,6 @@ exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -2011,6 +2731,22 @@ exports[`Storyshots Checkbox/Switch Input with onChange event 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {
@@ -2099,7 +2835,6 @@ exports[`Storyshots Checkbox/Switch Input with state control 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 0;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -2119,6 +2854,22 @@ exports[`Storyshots Checkbox/Switch Input with state control 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 0;
 }
 
 .c0:hover .visibleCheckbox {
@@ -2211,7 +2962,6 @@ exports[`Storyshots Checkbox/Switch Input with text label 1`] = `
   align-items: center;
   box-sizing: border-box;
   border: 1px solid;
-  margin-right: 8px;
   width: 56px;
   height: 32px;
   border-radius: 100px;
@@ -2231,6 +2981,22 @@ exports[`Storyshots Checkbox/Switch Input with text label 1`] = `
   background: white;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.16);
   left: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .label {
+  margin-left: 8px;
 }
 
 .c0:hover .visibleCheckbox {

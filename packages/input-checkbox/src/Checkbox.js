@@ -4,6 +4,7 @@ import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import StyledLabel from "./styledComponents/Checkbox";
+import Toggle from "./Toggle";
 
 const createCheckbox = ({ isSwitch }) =>
   class Checkbox extends React.Component {
@@ -40,6 +41,7 @@ const createCheckbox = ({ isSwitch }) =>
         onChange,
         innerRef,
         className,
+        loading,
         ...inputProps
       } = this.props;
 
@@ -47,7 +49,7 @@ const createCheckbox = ({ isSwitch }) =>
         onMouseUp: this.onMouseUp,
         switch: isSwitch,
         checked,
-        disabled: inputProps.disabled,
+        disabled: inputProps.disabled || loading,
         hasText: !!label,
         className,
       };
@@ -63,9 +65,7 @@ const createCheckbox = ({ isSwitch }) =>
         <StyledLabel {...labelProps} ref={innerRef}>
           <input {...inputProps} type="checkbox" className="hiddenCheckbox" />
           <div className="centerVisibleCheckbox">
-            <div className="visibleCheckbox">
-              <div className={isSwitch ? "toggle" : "checkmark wg-check"} />
-            </div>
+            <Toggle isSwitch={isSwitch} loading={loading} />
             {label && (
               <Text
                 className="label"
@@ -84,6 +84,7 @@ const createCheckbox = ({ isSwitch }) =>
     static propTypes = {
       label: PropTypes.string,
       checked: PropTypes.bool,
+      loading: PropTypes.bool,
       onMouseUp: PropTypes.func,
       onChange: PropTypes.func,
       disabled: PropTypes.bool,
