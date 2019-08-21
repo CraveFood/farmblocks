@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.1.2...@crave/farmblocks-input-checkbox@5.2.0) (2019-08-21)
+
+
+### Features
+
+* **Checkbox:** add loading property ([eaad622](https://github.com/CraveFood/farmblocks/commit/eaad622)), closes [#878](https://github.com/CraveFood/farmblocks/issues/878)
+
+
+
+
+
 ## [5.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.1.1...@crave/farmblocks-input-checkbox@5.1.2) (2019-07-09)
 
 
