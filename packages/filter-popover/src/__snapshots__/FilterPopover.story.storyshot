@@ -639,6 +639,153 @@ exports[`Storyshots Filter Popover extended style 1`] = `
 </div>
 `;
 
+exports[`Storyshots Filter Popover formContent as a function 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: none;
+  color: #2f313a;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #2f313a;
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.c1 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c1:hover {
+  box-shadow: none;
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c0 {
+  display: inline-block;
+  width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+<div
+  className="c0"
+  width="auto"
+>
+  <div
+    id="trigger"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <button
+      className="trigger c1"
+      fontSize="14px"
+      fontWeight="normal"
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Filter
+      <div
+        className="icon"
+        style={
+          Object {
+            "marginLeft": 10,
+          }
+        }
+      >
+        <i
+          className="wg-small-arrow-bottom"
+        />
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Filter Popover zIndex 1`] = `
 Array [
   .c1 {
