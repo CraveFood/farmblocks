@@ -96,4 +96,32 @@ describe("Filter Popover", () => {
     expect(onFormCancelClickMock).toBeCalled();
     expect(queryByText("Form content")).not.toBeInTheDocument();
   });
+
+  test("should pass dismiss to formContent", async () => {
+    const { queryByText } = render(
+      <FilterPopover
+        triggerLabel="Trigger"
+        formTitle="Form Title"
+        onFormSaveClick={onFormSaveClickMock}
+        onFormCancelClick={onFormCancelClickMock}
+        formContent={dismiss => (
+          <button onClick={() => dismiss()}>Click to dismiss</button>
+        )}
+        dismissOnSave
+      />,
+    );
+
+    expect(queryByText("Form content")).not.toBeInTheDocument();
+
+    // Open popover
+    fireEvent.click(queryByText("Trigger"));
+    await wait(() => {});
+
+    // call dismiss
+    fireEvent.click(queryByText("Click to dismiss"));
+
+    await waitForElementToBeRemoved(() => queryByText("Click to dismiss"));
+
+    expect(queryByText("Click to dismiss")).not.toBeInTheDocument();
+  });
 });
