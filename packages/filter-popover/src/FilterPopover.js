@@ -51,7 +51,9 @@ const FilterPopover = props => {
           title={props.formTitle}
           loading={props.formLoading}
         >
-          {props.formContent}
+          {typeof props.formContent === "function"
+            ? props.formContent(dismiss)
+            : props.formContent}
         </FormWrapper>
       )}
     />
@@ -71,7 +73,7 @@ FilterPopover.propTypes = {
   triggerTextColor: PropTypes.string,
   triggerFontWeight: PropTypes.string,
   formTitle: PropTypes.string,
-  formContent: PropTypes.node,
+  formContent: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
   formLoading: PropTypes.bool,
   formSaveLabel: PropTypes.string,
   formCancelLabel: PropTypes.string,

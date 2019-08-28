@@ -85,6 +85,15 @@ storiesOf("Filter Popover", module)
       </div>
     </>
   ))
+  .add("formContent as a function", () => (
+    <FilterPopover
+      triggerLabel="Filter"
+      formTitle="Form Title"
+      formContent={dismiss => (
+        <button onClick={() => dismiss()}>Click to dismiss</button>
+      )}
+    />
+  ))
   .add("extended style", () => (
     <FilterPopover
       css={`
