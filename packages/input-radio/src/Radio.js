@@ -74,7 +74,7 @@ class Radio extends React.Component {
   }
 
   static propTypes = {
-    label: PropTypes.string,
+    label: PropTypes.node,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,
     onClick: PropTypes.func,
