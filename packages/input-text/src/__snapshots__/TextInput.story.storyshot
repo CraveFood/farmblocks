@@ -3235,179 +3235,6 @@ exports[`Storyshots Text Input Required field 1`] = `
   float: left;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c5 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 .input input {
-  padding: 0 16px;
-  height: 46px;
-}
-
-.c5 .input textarea {
-  padding: 16px;
-}
-
-.c5 .input input,
-.c5 .input textarea {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
-  cursor: pointer;
-}
-
-.c5 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c5 .input .icon.left {
-  margin-left: 16px;
-}
-
-.c5 .input .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
-}
-
-.c5 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-  margin-right: 16px;
-}
-
-.c5 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c5 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c5 .input.dropdown {
-  cursor: pointer;
-}
-
-.c5 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c5 .prefix,
-.c5 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3567,6 +3394,179 @@ exports[`Storyshots Text Input Required field 1`] = `
   font-size: 16px;
   background-color: rgba(0,0,0,0.16);
   color: rgba(0,0,0,0.32);
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
   padding: 0 16px;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
@@ -3810,179 +3810,6 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   float: left;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c5 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c5 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 .input input {
-  padding: 0 16px;
-  height: 46px;
-}
-
-.c5 .input textarea {
-  padding: 16px;
-}
-
-.c5 .input input,
-.c5 .input textarea {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
-  cursor: pointer;
-}
-
-.c5 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c5 .input .icon.left {
-  margin-left: 16px;
-}
-
-.c5 .input .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
-}
-
-.c5 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-  margin-right: 16px;
-}
-
-.c5 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c5 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c5 .input.dropdown {
-  cursor: pointer;
-}
-
-.c5 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c5 .prefix,
-.c5 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4142,6 +3969,179 @@ exports[`Storyshots Text Input Required field with invalid handler 1`] = `
   font-size: 16px;
   background-color: rgba(0,0,0,0.16);
   color: rgba(0,0,0,0.32);
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c5 .input textarea {
+  padding: 16px;
+}
+
+.c5 .input input,
+.c5 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 .input input::-webkit-input-placeholder,
+.c5 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::-moz-placeholder,
+.c5 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input:-ms-input-placeholder,
+.c5 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input::placeholder,
+.c5 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .input input[type="search"],
+.c5 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 .input input[type="search"]::-webkit-search-cancel-button,
+.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 .input input[type="search"]::-ms-clear,
+.c5 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 .input input[role="combobox"],
+.c5 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c5 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c5 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
   padding: 0 16px;
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
