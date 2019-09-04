@@ -102,6 +102,7 @@ class AmountSelectors extends React.Component {
   };
 
   render() {
+    const { disabled } = this.props;
     return (
       <Wrapper size={this.props.size} className={this.props.className}>
         <Button
@@ -110,7 +111,9 @@ class AmountSelectors extends React.Component {
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-minus"
           disabled={
-            this.state.disableBoth || this.state.value <= this.props.min
+            disabled ||
+            this.state.disableBoth ||
+            this.state.value <= this.props.min
           }
           onClick={this.decrement}
           tooltipText={this.state.tooltipText}
@@ -128,6 +131,7 @@ class AmountSelectors extends React.Component {
             onChange={this.onChange}
             onBlur={this.updateDisplayValue}
             fontSize={selectorSizeToFontSize[this.props.size]}
+            disabled={disabled}
           />
         </div>
         <Button
@@ -136,7 +140,9 @@ class AmountSelectors extends React.Component {
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-add"
           disabled={
-            this.state.disableBoth || this.state.value >= this.props.max
+            disabled ||
+            this.state.disableBoth ||
+            this.state.value >= this.props.max
           }
           onClick={this.increment}
           tooltipText={this.state.tooltipText}
@@ -151,6 +157,7 @@ class AmountSelectors extends React.Component {
     min: PropTypes.number,
     max: PropTypes.number,
     enforceStep: PropTypes.bool,
+    disabled: PropTypes.bool,
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
     size: PropTypes.oneOf(values(selectorSizes)),
