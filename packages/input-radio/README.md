@@ -28,7 +28,7 @@ ReactDOM.render(
       <Radio value="third" label="Third (disabled)" disabled />
     </RadioGroup>
   </div>,
-  root
+  root,
 );
 
 document.body.appendChild(root);
@@ -38,21 +38,21 @@ document.body.appendChild(root);
 
 ### Radio
 
-* `label`: string
-* `name`: string
-* `checked`: boolean
-* `disabled`: boolean
-* `onClick`: function
-* `onChange`: function
-* `value`: any
+- `label`: node
+- `name`: string
+- `checked`: boolean
+- `disabled`: boolean
+- `onClick`: function
+- `onChange`: function
+- `value`: any
 
 ### RadioGroup
 
-* `defaultValue`: any. If set, the radio option with this value will be
+- `defaultValue`: any. If set, the radio option with this value will be
   automatically checked.
-* `name`: string. Will be given to all the children.
-* `disabled`: boolean. If set, all the children will be disabled.
-* `onChange`: function
+- `name`: string. Will be given to all the children.
+- `disabled`: boolean. If set, all the children will be disabled.
+- `onChange`: function
 
 ## License
 

@@ -25,6 +25,7 @@ storiesOf("Amount selectors", module)
     }
     return <MyStory />;
   })
+  .add("Disabled", () => <AmountSelectors disabled />)
   .add("With 0.5 steps", () => <AmountSelectors value={2} step={0.5} />)
   .add("With 0.5 steps and step mismatch validation (browser)", () => (
     <AmountSelectors value={2} step={0.5} enforceStep />

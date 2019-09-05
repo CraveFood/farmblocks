@@ -434,7 +434,7 @@ export default Table;
 Table.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
   width: PropTypes.string,
-  rowHeight: PropTypes.oneOf([rowHeights.SMALL, rowHeights.MEDIUM]),
+  rowHeight: PropTypes.string,
   rowGroupKey: PropTypes.string,
   flatGroupCondition: PropTypes.func,
   onTitleClick: PropTypes.func,
