@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.3.9...@crave/farmblocks-amount-selectors@2.4.0) (2019-09-05)
+
+
+### Features
+
+* **amount-selectors:** add disabled property ([ebcafcf](https://github.com/CraveFood/farmblocks/commit/ebcafcf)), closes [#893](https://github.com/CraveFood/farmblocks/issues/893)
+
+
+
+
+
 ## [2.3.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.3.8...@crave/farmblocks-amount-selectors@2.3.9) (2019-08-09)
 
 **Note:** Version bump only for package @crave/farmblocks-amount-selectors

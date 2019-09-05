@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.4.1...@crave/farmblocks-input-radio@3.4.2) (2019-09-05)
+
+
+### Bug Fixes
+
+* **input-radio:** change label property type from string to node ([ed49ef2](https://github.com/CraveFood/farmblocks/commit/ed49ef2)), closes [#890](https://github.com/CraveFood/farmblocks/issues/890)
+
+
+
+
+
 ## [3.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.4.0...@crave/farmblocks-input-radio@3.4.1) (2019-07-09)
 
 **Note:** Version bump only for package @crave/farmblocks-input-radio
