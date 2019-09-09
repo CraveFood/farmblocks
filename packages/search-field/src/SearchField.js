@@ -67,7 +67,7 @@ class SearchField extends React.Component {
       return this.setState(emptyState);
     }
 
-    const selectedItem = items && items.find(item => item[valueKey] === value);
+    const selectedItem = items?.find(item => item[valueKey] === value);
     if (selectedItem) {
       return this.setState({
         inputValue: selectedItem[labelKey],
@@ -88,9 +88,7 @@ class SearchField extends React.Component {
           )
         : -1;
 
-      if (this.scroller) {
-        this.scroller.centerChildByIndex(highlightedIndex);
-      }
+      this.scroller?.centerChildByIndex(highlightedIndex);
 
       return {
         highlightedIndex,
@@ -105,10 +103,7 @@ class SearchField extends React.Component {
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnSearchChange.flush();
         } else {
-          this.selectResult(
-            this.state.highlightedIndex,
-            () => target && target.blur && target.blur(),
-          );
+          this.selectResult(this.state.highlightedIndex, () => target?.blur());
         }
         break;
       case "Escape":
@@ -143,16 +138,15 @@ class SearchField extends React.Component {
 
   valueUpdated = (item, cb) => {
     const { valueKey } = this.props;
-    this.props.onChange?.(item && item[valueKey], item);
-    return cb && cb();
+    this.props.onChange?.(item?.[valueKey], item);
+    return cb?.();
   };
 
   onBlur = () => {
     const { selectedItem } = this.state;
     const { labelKey } = this.props;
 
-    const inputValue =
-      selectedItem && selectedItem[labelKey] ? selectedItem[labelKey] : "";
+    const inputValue = selectedItem?.[labelKey] || "";
     if (!selectedItem) {
       this.props.onSearchChange("");
       this.valueUpdated();
@@ -162,7 +156,7 @@ class SearchField extends React.Component {
 
   selectResult = (index, cb) => {
     const { items, labelKey } = this.props;
-    const selectedItem = items && items[index];
+    const selectedItem = items?.[index];
     return (
       selectedItem &&
       this.setState(
@@ -174,8 +168,7 @@ class SearchField extends React.Component {
 
   onItemClick = ({ currentTarget }) => {
     const selectedIndex =
-      this.scroller &&
-      this.scroller.wrapper && // ref inside a ref 😜
+      this.scroller?.wrapper && // ref inside a ref 😬
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
 
     this.selectResult(selectedIndex);
@@ -248,7 +241,7 @@ class SearchField extends React.Component {
           focused={this.state.focused}
         />
         {focused &&
-          ((this.state.items && this.state.items.length) || footer) &&
+          (this.state.items?.length || footer) &&
           this.renderMenu(menuProps)}
       </DropdownWrapper>
     );
