@@ -8,13 +8,18 @@ import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import Menu, { defaultKeyNames, keyNamesPropTypes } from "./components/Menu";
 
 class SearchField extends React.Component {
-  state = {
-    highlightedIndex: -1,
-    focused: false,
-    inputValue: "",
-    items: [],
-    selectedItem: null,
-  };
+  constructor(props) {
+    super(props);
+
+    this.inputRef = React.createRef();
+    this.state = {
+      highlightedIndex: -1,
+      focused: false,
+      inputValue: "",
+      items: [],
+      selectedItem: null,
+    };
+  }
 
   componentDidMount = () => {
     const { value, items } = this.props;
@@ -126,8 +131,12 @@ class SearchField extends React.Component {
     this.setState({ focused: true, highlightedIndex: -1 });
   };
 
-  handleSearchChange = event => {
+  handleSearchChangeEvent = event => {
     const { value } = event.target;
+    this.handleSearchChangeValue(value);
+  };
+
+  handleSearchChangeValue = value => {
     this.debouncedOnSearchChange(value);
     if (!value) {
       this.debouncedOnSearchChange.flush();
@@ -137,9 +146,9 @@ class SearchField extends React.Component {
   };
 
   valueUpdated = (item, cb) => {
-    const { valueKey } = this.props;
-    this.props.onChange?.(item?.[valueKey], item);
-    return cb?.();
+    const { valueKey, onChange } = this.props;
+    onChange?.(item?.[valueKey], item);
+    cb?.();
   };
 
   handleBlur = () => {
@@ -148,22 +157,34 @@ class SearchField extends React.Component {
 
     const inputValue = selectedItem?.[labelKey] || "";
     if (!selectedItem) {
-      this.props.onSearchChange("");
-      this.valueUpdated();
+      this.props.onSearchChange("", this.selectResult);
     }
     return this.setState({ focused: false, highlightedIndex: -1, inputValue });
   };
 
   selectResult = (index, cb) => {
-    const { items, labelKey } = this.props;
+    const { items, valueKey, labelKey, onBeforeChange } = this.props;
     const selectedItem = items?.[index];
-    return (
-      selectedItem &&
-      this.setState(
-        { selectedItem, focused: false, inputValue: selectedItem[labelKey] },
-        () => this.valueUpdated(selectedItem, cb),
-      )
-    );
+
+    if (selectedItem) {
+      const proceed = () => {
+        this.setState(
+          { selectedItem, focused: false, inputValue: selectedItem[labelKey] },
+          () => this.valueUpdated(selectedItem, cb),
+        );
+      };
+      if (onBeforeChange) {
+        onBeforeChange({
+          value: selectedItem[valueKey],
+          selectedItem,
+          inputDOMElement: this.inputRef.current,
+          changeSearch: this.handleSearchChangeValue,
+          proceed,
+        });
+        return;
+      }
+      proceed();
+    }
   };
 
   handleItemClick = ({ currentTarget }) => {
@@ -198,6 +219,7 @@ class SearchField extends React.Component {
       maxMenuHeight,
       items,
       onScrollReachEnd,
+      onBeforeChange,
       onChange,
       footer,
       value,
@@ -229,6 +251,7 @@ class SearchField extends React.Component {
       >
         <Input
           {...inputProps}
+          innerRef={this.inputRef}
           className="searchInput"
           type="search"
           protected={!!selectedItem}
@@ -236,7 +259,7 @@ class SearchField extends React.Component {
           value={inputValue}
           onKeyDown={this.handleKeyDown}
           onFocus={this.handleFocus}
-          onChange={this.handleSearchChange}
+          onChange={this.handleSearchChangeEvent}
           onBlur={this.handleBlur}
           focused={this.state.focused}
         />
@@ -261,6 +284,7 @@ class SearchField extends React.Component {
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
     onSearchChange: PropTypes.func,
+    onBeforeChange: PropTypes.func,
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
     className: PropTypes.string,

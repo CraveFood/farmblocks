@@ -97,6 +97,44 @@ storiesOf("Search Field", module)
   .add("onChange", () => (
     <SearchField onChange={action("onChange")} items={items} label="Fruits" />
   ))
+  .add("onBeforeChange proceeding", () => (
+    <SearchField
+      onBeforeChange={args => {
+        action("onBeforeChange")(args);
+        args.proceed();
+      }}
+      onChange={action("onChange")}
+      items={items}
+      label="Fruits"
+    />
+  ))
+  .add("onBeforeChange halting", () => (
+    <SearchField
+      onBeforeChange={args => {
+        action("onBeforeChange")(args);
+      }}
+      onChange={action("onChange")}
+      items={items}
+      label="Fruits"
+    />
+  ))
+  .add("onBeforeChange manipulating input", () => (
+    <SearchField
+      onBeforeChange={({ selectedItem, inputDOMElement }) => {
+        setImmediate(() => {
+          inputDOMElement.focus();
+          // eslint-disable-next-line no-param-reassign
+          inputDOMElement.value = selectedItem.label
+            .split("")
+            .reverse()
+            .join("");
+        });
+      }}
+      onChange={action("onChange")}
+      items={items}
+      label="Fruits"
+    />
+  ))
   .add("onSearchChange + onChange", () => (
     <SearchField
       onSearchChange={action("onSearchChange")}
