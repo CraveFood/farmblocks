@@ -110,7 +110,7 @@ Menu.defaultProps = {
 Menu.propTypes = {
   ...menuPropTypes,
   ...keyNamesPropTypes,
-  innerRef: PropTypes.func,
+  innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   className: PropTypes.string,
 };
 

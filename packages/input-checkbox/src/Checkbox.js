@@ -88,7 +88,7 @@ const createCheckbox = ({ isSwitch }) =>
       onMouseUp: PropTypes.func,
       onChange: PropTypes.func,
       disabled: PropTypes.bool,
-      innerRef: PropTypes.func,
+      innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
       className: PropTypes.string,
     };
 
