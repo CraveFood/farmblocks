@@ -96,7 +96,7 @@ class SearchField extends React.Component {
     });
   };
 
-  onKeyDown = event => {
+  handleKeyDown = event => {
     const { key, target } = event;
     switch (key) {
       case "Enter":
@@ -122,11 +122,11 @@ class SearchField extends React.Component {
     }
   };
 
-  onFocus = () => {
+  handleFocus = () => {
     this.setState({ focused: true, highlightedIndex: -1 });
   };
 
-  onSearchChange = event => {
+  handleSearchChange = event => {
     const { value } = event.target;
     this.debouncedOnSearchChange(value);
     if (!value) {
@@ -142,7 +142,7 @@ class SearchField extends React.Component {
     return cb?.();
   };
 
-  onBlur = () => {
+  handleBlur = () => {
     const { selectedItem } = this.state;
     const { labelKey } = this.props;
 
@@ -166,7 +166,7 @@ class SearchField extends React.Component {
     );
   };
 
-  onItemClick = ({ currentTarget }) => {
+  handleItemClick = ({ currentTarget }) => {
     const selectedIndex =
       this.scroller?.wrapper && // ref inside a ref 😬
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
@@ -184,7 +184,7 @@ class SearchField extends React.Component {
         innerRef={node => {
           this.scroller = node;
         }}
-        onItemClick={this.onItemClick}
+        onItemClick={this.handleItemClick}
         highlightedIndex={highlightedIndex}
       />
     );
@@ -234,10 +234,10 @@ class SearchField extends React.Component {
           protected={!!selectedItem}
           disableManualReplace
           value={inputValue}
-          onKeyDown={this.onKeyDown}
-          onFocus={this.onFocus}
-          onChange={this.onSearchChange}
-          onBlur={this.onBlur}
+          onKeyDown={this.handleKeyDown}
+          onFocus={this.handleFocus}
+          onChange={this.handleSearchChange}
+          onBlur={this.handleBlur}
           focused={this.state.focused}
         />
         {focused &&
