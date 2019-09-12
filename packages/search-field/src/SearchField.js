@@ -163,28 +163,30 @@ class SearchField extends React.Component {
   };
 
   selectResult = (index, cb) => {
-    const { items, valueKey, labelKey, onBeforeChange } = this.props;
+    const { items, valueKey, onBeforeChange } = this.props;
     const selectedItem = items?.[index];
 
-    if (selectedItem) {
-      const proceed = () => {
-        this.setState(
-          { selectedItem, focused: false, inputValue: selectedItem[labelKey] },
-          () => this.valueUpdated(selectedItem, cb),
-        );
-      };
-      if (onBeforeChange) {
-        onBeforeChange({
-          value: selectedItem[valueKey],
-          selectedItem,
-          inputDOMElement: this.inputRef.current,
-          changeSearch: this.handleSearchChangeValue,
-          proceed,
-        });
-        return;
-      }
-      proceed();
+    if (!selectedItem) return;
+
+    const proceed = (item = selectedItem) => {
+      this.setState({ selectedItem: item, focused: false }, () => {
+        this.valueUpdated(item, cb);
+        this.inputRef.current?.blur();
+      });
+    };
+
+    if (onBeforeChange) {
+      onBeforeChange({
+        value: selectedItem[valueKey],
+        selectedItem,
+        inputDOMElement: this.inputRef.current,
+        changeSearch: this.handleSearchChangeValue,
+        proceed,
+      });
+      return;
     }
+
+    proceed();
   };
 
   handleItemClick = ({ currentTarget }) => {

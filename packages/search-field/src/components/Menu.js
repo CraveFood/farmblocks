@@ -28,7 +28,7 @@ export const menuPropTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      label: PropTypes.string,
+      label: PropTypes.node,
       image: PropTypes.string,
     }),
   ),
