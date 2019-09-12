@@ -14,7 +14,7 @@ const Cover = styled(styledInput)`
     position: absolute;
     width: 100%;
     height: 48px;
-    padding: 16px;
+    padding: 0 16px;
     bottom: 0;
     background: ${colors.SUGAR};
     color: ${colors.CARBON};
