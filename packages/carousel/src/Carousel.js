@@ -12,11 +12,8 @@ const defaultConfig = {
   fontSize: 88,
   displayTime: 4,
   transitionTime: 2,
-  border: {
-    radius: "16px",
-    width: "4px",
-    color: "rgba(255, 255, 255, 0.56)",
-  },
+  border: "4px solid rgba(255, 255, 255, 0.56)",
+  borderRadius: "16px",
 };
 
 class Carousel extends React.Component {
@@ -86,9 +83,12 @@ class Carousel extends React.Component {
                 <Image
                   className="image"
                   src={item.image}
-                  border={configProps.border}
                   width="100%"
                   height="100%"
+                  borderRadius={configProps.borderRadius}
+                  css={{
+                    border: configProps.border,
+                  }}
                 />
                 <Text
                   className="itemLabel"
