@@ -465,19 +465,12 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
 }
 
 .c7 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
   box-sizing: border-box;
-  min-width: 72px;
-  min-height: 72px;
   width: 72px;
   height: 72px;
   overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://picsum.photos/200?image=0);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .c6 {
@@ -622,7 +615,8 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
         <div
           className="empty-state c6"
         >
-          <div
+          <img
+            alt=""
             className="thumbnail c7"
             size={72}
             src="https://picsum.photos/200?image=0"
