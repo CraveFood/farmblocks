@@ -6,83 +6,98 @@ import badgeSizes from "./constants/badgeSizes";
 import fitModes from "./constants/fitModes";
 import Image from ".";
 
-const imgSrc = "https://picsum.photos/512?image=0";
+const imgSrcs = {
+  squared: "https://picsum.photos/512?image=66",
+  horizontal: "https://picsum.photos/400/200?image=1",
+  vertical: "https://picsum.photos/200/400?image=1011",
+  small: "https://picsum.photos/56?image=111",
+};
+
+// eslint-disable-next-line
+const RenderImage = ({ src = imgSrcs.squared, size=thumbnailSizes.X_LARGE ,...props }) => (
+  <Image src={src} size={size} {...props} />
+);
+
+const Group = props => (
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      flexWrap: "wrap",
+    }}
+    {...props}
+  />
+);
 
 storiesOf("Image", module)
-  .add("default", () => <Image src={imgSrc} />)
-  .add("thumbnail", () => <Image src={imgSrc} />)
-  .add("custom dimensions and border", () => (
-    <Image
-      src={imgSrc}
-      width="800px"
-      height="400px"
-      border={{
-        radius: "16px",
-        width: "4px",
-        color: "rgba(255, 255, 255, 0.56)",
-      }}
-    />
+  .add("image size values", () => (
+    <Group>
+      <div style={{ padding: "16px 0 16px 0", fontWeight: "bold" }}>
+        Badge sizes
+      </div>
+      <div style={{ display: "flex" }}>
+        {Object.keys(badgeSizes)
+          .reverse()
+          .map(size => (
+            <div style={{ marginRight: "36px" }}>
+              <div>{`${size} - ${badgeSizes[size]}px`}</div>
+              <RenderImage size={badgeSizes[size]} badge />
+            </div>
+          ))}
+      </div>
+      <div style={{ padding: "16px 0 16px 0", fontWeight: "bold" }}>
+        Thumbnail sizes
+      </div>
+      <div style={{ display: "flex" }}>
+        {Object.keys(thumbnailSizes)
+          .reverse()
+          .map(size => (
+            <div style={{ marginRight: "36px" }}>
+              <div>{`${size} - ${thumbnailSizes[size]}px`}</div>
+              <RenderImage size={thumbnailSizes[size]} />
+            </div>
+          ))}
+      </div>
+    </Group>
   ))
-  .add("badge", () => <Image src={imgSrc} badge />)
-  .add("thumbnail (small)", () => (
-    <div>
-      <Image src={imgSrc} size={thumbnailSizes.SMALL} />
-    </div>
+  .add("image fit values", () => (
+    <Group>
+      {Object.keys(imgSrcs).map(src => (
+        <>
+          <div style={{ padding: "16px 0 16px 0", fontWeight: "bold" }}>
+            {src} image
+          </div>
+          <div style={{ display: "flex" }}>
+            {Object.keys(fitModes).map(mode => (
+              <div style={{ paddingRight: "28px" }}>
+                <div>{`${fitModes[mode]}`}</div>
+                <RenderImage fit={fitModes[mode]} src={imgSrcs[src]} />
+              </div>
+            ))}
+          </div>
+        </>
+      ))}
+    </Group>
   ))
-  .add("thumbnail (medium)", () => (
-    <div>
-      <Image src={imgSrc} size={thumbnailSizes.MEDIUM} />
-    </div>
-  ))
-  .add("thumbnail (large)", () => (
-    <div>
-      <Image src={imgSrc} size={thumbnailSizes.LARGE} />
-    </div>
-  ))
-  .add("thumbnail (extra large)", () => (
-    <div>
-      <Image src={imgSrc} size={thumbnailSizes.X_LARGE} />
-    </div>
-  ))
-  .add("thumbnail (huge)", () => (
-    <div>
-      <Image src={imgSrc} size={thumbnailSizes.HUGE} />
-    </div>
-  ))
-  .add("badge (extra small)", () => (
-    <div>
-      <Image src={imgSrc} badge size={badgeSizes.X_SMALL} />
-    </div>
-  ))
-  .add("badge (small)", () => (
-    <div>
-      <Image src={imgSrc} badge size={badgeSizes.SMALL} />
-    </div>
-  ))
-  .add("badge (medium)", () => (
-    <div>
-      <Image src={imgSrc} badge size={badgeSizes.MEDIUM} />
-    </div>
-  ))
-  .add("badge (large)", () => (
-    <div>
-      <Image src={imgSrc} badge size={badgeSizes.LARGE} />
-    </div>
-  ))
-  .add("fit (cover)", () => (
-    <div>
-      <Image src={imgSrc} fit={fitModes.COVER} />
-    </div>
-  ))
-  .add("fit (contain)", () => (
-    <div>
-      <Image src={imgSrc} fit={fitModes.CONTAIN} />
-    </div>
-  ))
+  .add("custom dimensions", () => {
+    const width = "800px";
+    const height = "400px";
+    return (
+      <>
+        <div>{`width - ${width} / height - ${height}`}</div>
+        <RenderImage width={width} height={height} />
+      </>
+    );
+  })
+  .add("custom borderRadius", () => {
+    const borderRadius = "35px";
+    return (
+      <>
+        <div>{`border-radius - ${borderRadius}`}</div>
+        <RenderImage borderRadius={borderRadius} />
+      </>
+    );
+  })
   .add("custom css", () => (
-    <Image
-      src={imgSrc}
-      size={300}
-      css={{ opacity: 0.5, border: "dotted 5px red" }}
-    />
+    <RenderImage size={300} css={{ opacity: 0.5, border: "dotted 5px red" }} />
   ));
