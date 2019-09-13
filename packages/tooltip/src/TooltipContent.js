@@ -11,7 +11,6 @@ const Tooltip = ({
   text,
   positionX: originalPositionX,
   positionY: originalPositionY,
-  boundariesSelector,
   ...props
 }) => {
   const content = children || text;
@@ -21,7 +20,6 @@ const Tooltip = ({
   const { positionX, positionY, triggerHeight, ready } = useAutoAlign({
     originalPositionX,
     originalPositionY,
-    boundariesSelector,
     tooltipRef,
     isVisible: props.isVisible,
   });
@@ -51,7 +49,6 @@ Tooltip.propTypes = {
   positionX: PropTypes.oneOf(values(POSITIONS.X)),
   positionY: PropTypes.oneOf(values(POSITIONS.Y)),
   zIndex: PropTypes.number,
-  boundariesSelector: PropTypes.string,
   hideArrow: PropTypes.bool,
   padding: PropTypes.string,
   offset: PropTypes.string,

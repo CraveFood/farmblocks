@@ -4,7 +4,6 @@ import POSITIONS, { AUTO } from "./constants/positions";
 const useAutoAlign = ({
   originalPositionX,
   originalPositionY,
-  boundariesSelector,
   tooltipRef,
   isVisible,
 }) => {
@@ -18,7 +17,7 @@ const useAutoAlign = ({
       setReady(false);
     } else {
       // eslint-disable-next-line no-use-before-define
-      const positionData = getPositionData(tooltipRef, boundariesSelector);
+      const positionData = getPositionData(tooltipRef);
 
       if (originalPositionX === AUTO) setPositionX(positionData.x);
       if (originalPositionY === AUTO) setPositionY(positionData.y);
@@ -39,7 +38,7 @@ const useAutoAlign = ({
   return { positionX, positionY, triggerHeight, ready };
 };
 
-export function getPositionData(tooltipRef, boundariesSelector) {
+export function getPositionData(tooltipRef) {
   const positionData = {
     x: POSITIONS.X.LEFT,
     y: POSITIONS.Y.BOTTOM,
@@ -48,12 +47,8 @@ export function getPositionData(tooltipRef, boundariesSelector) {
   if (tooltipRef.current) {
     const { right, y, height } = tooltipRef.current.getBoundingClientRect();
 
-    const boundariesNode =
-      boundariesSelector && tooltipRef.current.closest(boundariesSelector);
-    const maxRight =
-      boundariesNode?.getBoundingClientRect().right || window.innerWidth;
-    const maxHeight =
-      boundariesNode?.getBoundingClientRect().height || window.innerHeight;
+    const maxRight = window.innerWidth;
+    const maxHeight = window.innerHeight;
 
     if (right >= maxRight) positionData.x = POSITIONS.X.RIGHT;
     if (y + height >= maxHeight) positionData.y = POSITIONS.Y.TOP;

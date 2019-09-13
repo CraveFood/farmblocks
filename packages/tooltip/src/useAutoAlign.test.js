@@ -66,67 +66,6 @@ describe("useAutoAlign", () => {
       });
     });
 
-    describe("with boundariesSelector", () => {
-      it("should return RIGHT and TOP when tooltip is outside boundaries", () => {
-        const container = {
-          getBoundingClientRect: () => ({ right: 90, height: 70 }),
-        };
-
-        const tooltipRef = {
-          current: {
-            getBoundingClientRect: () => ({ right: 100, y: 50, height: 70 }),
-            closest: () => container,
-          },
-        };
-        const boundariesSelector = ".myContainer";
-
-        const { result } = renderHook(() =>
-          useAutoAlign({
-            originalPositionX: AUTO,
-            originalPositionY: AUTO,
-            tooltipRef,
-            boundariesSelector,
-            isVisible: true,
-          }),
-        );
-        expect(result.current).toEqual({
-          positionX: RIGHT,
-          positionY: TOP,
-          ready: true,
-          triggerHeight: undefined,
-        });
-      });
-      it("should return LEFT and BOTTOM when tooltip is inside boundaries", () => {
-        const container = {
-          getBoundingClientRect: () => ({ right: 150, y: 140 }),
-        };
-
-        const tooltipRef = {
-          current: {
-            getBoundingClientRect: () => ({ right: 100, y: 50 }),
-            closest: () => container,
-          },
-        };
-        const boundariesSelector = ".myContainer";
-
-        const { result } = renderHook(() =>
-          useAutoAlign({
-            originalPositionX: AUTO,
-            originalPositionY: AUTO,
-            tooltipRef,
-            boundariesSelector,
-            isVisible: true,
-          }),
-        );
-        expect(result.current).toEqual({
-          positionX: LEFT,
-          positionY: BOTTOM,
-          ready: true,
-          triggerHeight: undefined,
-        });
-      });
-    });
-
     describe("without boundariesSelector", () => {
       let originalWindowWidth;
       beforeEach(() => {
