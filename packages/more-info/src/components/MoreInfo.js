@@ -26,15 +26,15 @@ const MoreInfo = ({
         className={`text ${tooltipVisible ? "hovered" : ""}`}
       >
         {text}
-        <Tooltip
-          trigger={trigger || <i className={icon} />}
-          content={children}
-          className="icon"
-          onMouseOver={() => setTooltipVisible(true)}
-          onMouseLeave={() => setTooltipVisible(false)}
-          {...tooltipProps}
-        />
       </Text>
+      <Tooltip
+        trigger={trigger || <i className={icon} />}
+        content={children}
+        className="icon"
+        onMouseOver={() => setTooltipVisible(true)}
+        onMouseLeave={() => setTooltipVisible(false)}
+        {...tooltipProps}
+      />
     </StyledInfo>
   );
 };
