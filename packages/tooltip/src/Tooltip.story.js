@@ -199,4 +199,36 @@ storiesOf("Tooltip/Tooltip", module)
         />
       </div>
     </div>
+  ))
+  .add("auto positioned considering TOP boundaries", () => (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: 400,
+        background: "aliceblue",
+      }}
+    >
+      <div style={{ background: "beige", height: 180 }} />
+
+      <Tooltip
+        trigger={
+          <div css="padding: 10px; background: orange">
+            Hover me - Resize window up to the blue boundary. The tooltip should
+            open on the bottom
+          </div>
+        }
+        content={
+          <div
+            css="
+            height: 150px;
+            width: 150px;
+            background-image: linear-gradient(red, yellow)
+            "
+          />
+        }
+        positionX={POSITIONS.X.AUTO}
+        positionY={POSITIONS.Y.AUTO}
+      />
+    </div>
   ));

@@ -91,6 +91,7 @@ describe("useAutoAlign", () => {
             originalPositionY: AUTO,
             tooltipRef,
             isVisible: true,
+            offset: "15px",
           }),
         );
         expect(result.current).toEqual({
@@ -115,11 +116,41 @@ describe("useAutoAlign", () => {
             originalPositionY: AUTO,
             tooltipRef,
             isVisible: true,
+            offset: "15px",
           }),
         );
         expect(result.current).toEqual({
           positionX: RIGHT,
           positionY: TOP,
+          ready: true,
+          triggerHeight: undefined,
+        });
+      });
+
+      it("should return RIGHT and BOTTOM if tooltip is outside the viewport and the tooltip doesn't fit the screen on the top", () => {
+        const tooltipRef = {
+          current: {
+            getBoundingClientRect: () => ({
+              right: 1001,
+              y: 1001,
+              height: 990,
+            }),
+            closest: () => false,
+          },
+        };
+
+        const { result } = renderHook(() =>
+          useAutoAlign({
+            originalPositionX: AUTO,
+            originalPositionY: AUTO,
+            tooltipRef,
+            isVisible: true,
+            offset: "15px",
+          }),
+        );
+        expect(result.current).toEqual({
+          positionX: RIGHT,
+          positionY: BOTTOM,
           ready: true,
           triggerHeight: undefined,
         });

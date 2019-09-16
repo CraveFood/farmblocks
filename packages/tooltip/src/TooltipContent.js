@@ -22,6 +22,7 @@ const Tooltip = ({
     originalPositionY,
     tooltipRef,
     isVisible: props.isVisible,
+    offset: props.offset,
   });
 
   return (
