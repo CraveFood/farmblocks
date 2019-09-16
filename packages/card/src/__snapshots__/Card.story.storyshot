@@ -610,10 +610,22 @@ exports[`Storyshots Card With overflowing content 1`] = `
   font-weight: 600;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c1 .icon {
   display: inline-block;
   margin: 0 8px;
   cursor: pointer;
+  color: #59636f;
 }
 
 .c1 .icon:hover,
@@ -647,18 +659,18 @@ exports[`Storyshots Card With overflowing content 1`] = `
       type="#59636f"
     >
       Visible tooltip
+    </div>
+    <div
+      className="icon c3"
+    >
       <div
-        className="icon c3"
-      >
-        <div
-          className="hit-area"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-        <i
-          className="wg-question"
-        />
-      </div>
+        className="hit-area"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+      <i
+        className="wg-question"
+      />
     </div>
   </div>
 </div>
@@ -708,10 +720,22 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
   font-weight: 600;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c1 .icon {
   display: inline-block;
   margin: 0 8px;
   cursor: pointer;
+  color: #59636f;
 }
 
 .c1 .icon:hover,
@@ -745,18 +769,18 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
       type="#59636f"
     >
       Overflowing tooltip not visible
+    </div>
+    <div
+      className="icon c3"
+    >
       <div
-        className="icon c3"
-      >
-        <div
-          className="hit-area"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-        <i
-          className="wg-question"
-        />
-      </div>
+        className="hit-area"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+      />
+      <i
+        className="wg-question"
+      />
     </div>
   </div>
 </div>

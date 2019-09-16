@@ -5652,10 +5652,22 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   text-transform: uppercase;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c4 .icon {
   display: inline-block;
   margin: 0 8px;
   cursor: pointer;
+  color: #59636f;
 }
 
 .c4 .icon:hover,
@@ -5889,19 +5901,18 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
         fontWeight="title"
         size={16}
         type="#59636f"
+      />
+      <div
+        className="icon c6"
       >
         <div
-          className="icon c6"
-        >
-          <div
-            className="hit-area"
-            onMouseLeave={[Function]}
-            onMouseOver={[Function]}
-          />
-          <i
-            className="wg-question"
-          />
-        </div>
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <i
+          className="wg-question"
+        />
       </div>
     </div>
   </div>
