@@ -180,7 +180,6 @@ class SearchField extends React.Component {
         value: selectedItem[valueKey],
         selectedItem,
         inputDOMElement: this.inputRef.current,
-        changeSearch: this.handleSearchChangeValue,
         proceed,
       });
       return;
@@ -264,6 +263,7 @@ class SearchField extends React.Component {
           onChange={this.handleSearchChangeEvent}
           onBlur={this.handleBlur}
           focused={this.state.focused}
+          data-testid="search-input"
         />
         {focused &&
           (this.state.items?.length || footer) &&
