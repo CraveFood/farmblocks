@@ -42,7 +42,7 @@ document.body.appendChild(root);
 | src          | **required**, the URL of the image                                                          | string  |
 | badge        | make the image a circle                                                                     | boolean |
 | borderRadius | the border radius of the image (it will be ignored if the _badge_ prop is true)             | string  |
-| fit          | how should the image fit the size (same options that the background-scale css attribute)    | string  |
+| fit          | how should the image fit the size (same options that the object-fit css attribute)    | string  |
 | height       | the height of the image                                                                     | string  |
 | size         | if your image uses the same size in pixels for width and height, you can use this shorthand | number  |
 | width        | the width of the image                                                                      | string  |
