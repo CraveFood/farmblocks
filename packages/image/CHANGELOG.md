@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@1.2.6...@crave/farmblocks-image@2.0.0) (2019-09-16)
+
+
+### Features
+
+* **Image:** replace div/background-image by img element ([b3885fc](https://github.com/CraveFood/farmblocks/commit/b3885fc)), closes [#892](https://github.com/CraveFood/farmblocks/issues/892)
+* **Image/story:** Remove deprecated stories and replace fit stories ([801d577](https://github.com/CraveFood/farmblocks/commit/801d577))
+* **README:** Update properties docs and sort it by required then alphabetically ([efb8291](https://github.com/CraveFood/farmblocks/commit/efb8291))
+
+
+### BREAKING CHANGES
+
+* **Image:** removed border prop
+
+
+
+
+
 ## [1.2.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@1.2.5...@crave/farmblocks-image@1.2.6) (2019-09-10)
 
 **Note:** Version bump only for package @crave/farmblocks-image

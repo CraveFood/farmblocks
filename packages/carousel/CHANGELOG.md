@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@3.3.3...@crave/farmblocks-carousel@3.4.0) (2019-09-16)
+
+
+### Features
+
+* **Remove deprecated border:** remove deprecated border ([2276314](https://github.com/CraveFood/farmblocks/commit/2276314))
+
+
+
+
+
 ## [3.3.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@3.3.2...@crave/farmblocks-carousel@3.3.3) (2019-09-10)
 
 **Note:** Version bump only for package @crave/farmblocks-carousel
