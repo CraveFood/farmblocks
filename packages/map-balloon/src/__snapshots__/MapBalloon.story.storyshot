@@ -1388,19 +1388,12 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
 
 exports[`Storyshots Map Balloon Single Image 1`] = `
 .c4 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
   box-sizing: border-box;
-  min-width: 184px;
-  min-height: 184px;
   width: 184px;
   height: 184px;
   overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  background-image: url(https://picsum.photos/180?image=0);
-  background-size: cover;
-  background-position: center;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .c1 {
@@ -1451,7 +1444,8 @@ exports[`Storyshots Map Balloon Single Image 1`] = `
         className="image single c2"
         src="https://picsum.photos/180?image=0"
       />
-      <div
+      <img
+        alt=""
         className="image single c3 c4"
         size={184}
         src="https://picsum.photos/180?image=0"
@@ -1463,19 +1457,12 @@ exports[`Storyshots Map Balloon Single Image 1`] = `
 
 exports[`Storyshots Map Balloon custom border radius 1`] = `
 .c4 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
   box-sizing: border-box;
-  min-width: 184px;
-  min-height: 184px;
   width: 184px;
   height: 184px;
   overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  background-image: url(https://picsum.photos/180?image=0);
-  background-size: cover;
-  background-position: center;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .c1 {
@@ -1526,7 +1513,8 @@ exports[`Storyshots Map Balloon custom border radius 1`] = `
         className="image single c2"
         src="https://picsum.photos/180?image=0"
       />
-      <div
+      <img
+        alt=""
         className="image single c3 c4"
         size={184}
         src="https://picsum.photos/180?image=0"

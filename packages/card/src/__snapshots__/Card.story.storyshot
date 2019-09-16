@@ -390,19 +390,12 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
 }
 
 .c6 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
   box-sizing: border-box;
-  min-width: 40px;
-  min-height: 40px;
   width: 40px;
   height: 40px;
   overflow: hidden;
-  border: solid 2px rgba(0,0,0,0.16);
   border-radius: 100%;
-  background-image: url(https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .c1 {
@@ -537,7 +530,8 @@ exports[`Storyshots Card With content (footer and empty state) and 1136px width 
       className="helperContent c5"
       size={16}
     >
-      <div
+      <img
+        alt=""
         className="image c6"
         size={40}
         src="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"

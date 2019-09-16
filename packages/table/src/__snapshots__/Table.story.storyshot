@@ -6778,52 +6778,22 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
   font-weight: 600;
 }
 
-.c9 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
+.c13 {
   box-sizing: border-box;
-  min-width: 48px;
-  min-height: 48px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.c9 {
+  box-sizing: border-box;
   width: 48px;
   height: 48px;
   overflow: hidden;
-  border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://picsum.photos/200?image=0);
-  background-size: cover;
-  background-position: center;
-}
-
-.c13 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 24px;
-  min-height: 24px;
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://picsum.photos/100?image=42);
-  background-size: cover;
-  background-position: center;
-}
-
-.c17 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  min-width: 24px;
-  min-height: 24px;
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 100%;
-  background-image: url(https://picsum.photos/100?image=13);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .c2 {
@@ -7202,7 +7172,8 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
             }
           }
         >
-          <div
+          <img
+            alt=""
             className="c9"
             size={48}
             src="https://picsum.photos/200?image=0"
@@ -7292,7 +7263,8 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
               }
             }
           >
-            <div
+            <img
+              alt=""
               className="c13"
               size={24}
               src="https://picsum.photos/100?image=42"
@@ -7389,7 +7361,8 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
             }
           }
         >
-          <div
+          <img
+            alt=""
             className="c9"
             size={48}
             src="https://picsum.photos/200?image=0"
@@ -7479,8 +7452,9 @@ exports[`Storyshots Table/Custom Cells Complete example 1`] = `
               }
             }
           >
-            <div
-              className="c17"
+            <img
+              alt=""
+              className="c13"
               size={24}
               src="https://picsum.photos/100?image=13"
             />
@@ -7605,19 +7579,12 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
 }
 
 .c7 {
-  background-origin: border-box;
-  background-repeat: no-repeat;
   box-sizing: border-box;
-  min-width: 48px;
-  min-height: 48px;
   width: 48px;
   height: 48px;
   overflow: hidden;
-  border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
-  background-image: url(https://picsum.photos/200?image=0);
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .c2 {
@@ -7922,7 +7889,8 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
             }
           }
         >
-          <div
+          <img
+            alt=""
             className="c7"
             size={48}
             src="https://picsum.photos/200?image=0"
@@ -8034,7 +8002,8 @@ exports[`Storyshots Table/Custom Cells Image + title + link (custom cell example
             }
           }
         >
-          <div
+          <img
+            alt=""
             className="c7"
             size={48}
             src="https://picsum.photos/200?image=0"
