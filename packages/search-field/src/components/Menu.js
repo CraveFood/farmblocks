@@ -28,7 +28,7 @@ export const menuPropTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      label: PropTypes.string,
+      label: PropTypes.node,
       image: PropTypes.string,
     }),
   ),
@@ -110,7 +110,7 @@ Menu.defaultProps = {
 Menu.propTypes = {
   ...menuPropTypes,
   ...keyNamesPropTypes,
-  innerRef: PropTypes.func,
+  innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   className: PropTypes.string,
 };
 

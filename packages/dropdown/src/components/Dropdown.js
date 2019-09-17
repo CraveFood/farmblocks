@@ -53,7 +53,7 @@ Dropdown.propTypes = {
   zIndex: PropTypes.number,
   size: PropTypes.oneOf(values(buttonSizes)),
   width: PropTypes.string,
-  innerRef: PropTypes.func,
+  innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   maxHeight: PropTypes.string,
   className: PropTypes.string,
 };

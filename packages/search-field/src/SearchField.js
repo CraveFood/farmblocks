@@ -8,13 +8,18 @@ import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import Menu, { defaultKeyNames, keyNamesPropTypes } from "./components/Menu";
 
 class SearchField extends React.Component {
-  state = {
-    highlightedIndex: -1,
-    focused: false,
-    inputValue: "",
-    items: [],
-    selectedItem: null,
-  };
+  constructor(props) {
+    super(props);
+
+    this.inputRef = React.createRef();
+    this.state = {
+      highlightedIndex: -1,
+      focused: false,
+      inputValue: "",
+      items: [],
+      selectedItem: null,
+    };
+  }
 
   componentDidMount = () => {
     const { value, items } = this.props;
@@ -67,7 +72,7 @@ class SearchField extends React.Component {
       return this.setState(emptyState);
     }
 
-    const selectedItem = items && items.find(item => item[valueKey] === value);
+    const selectedItem = items?.find(item => item[valueKey] === value);
     if (selectedItem) {
       return this.setState({
         inputValue: selectedItem[labelKey],
@@ -88,9 +93,7 @@ class SearchField extends React.Component {
           )
         : -1;
 
-      if (this.scroller) {
-        this.scroller.centerChildByIndex(highlightedIndex);
-      }
+      this.scroller?.centerChildByIndex(highlightedIndex);
 
       return {
         highlightedIndex,
@@ -98,17 +101,14 @@ class SearchField extends React.Component {
     });
   };
 
-  onKeyDown = event => {
+  handleKeyDown = event => {
     const { key, target } = event;
     switch (key) {
       case "Enter":
         if (this.state.highlightedIndex < 0) {
           this.debouncedOnSearchChange.flush();
         } else {
-          this.selectResult(
-            this.state.highlightedIndex,
-            () => target && target.blur && target.blur(),
-          );
+          this.selectResult(this.state.highlightedIndex, () => target?.blur());
         }
         break;
       case "Escape":
@@ -127,12 +127,16 @@ class SearchField extends React.Component {
     }
   };
 
-  onFocus = () => {
+  handleFocus = () => {
     this.setState({ focused: true, highlightedIndex: -1 });
   };
 
-  onSearchChange = event => {
+  handleSearchChangeEvent = event => {
     const { value } = event.target;
+    this.handleSearchChangeValue(value);
+  };
+
+  handleSearchChangeValue = value => {
     this.debouncedOnSearchChange(value);
     if (!value) {
       this.debouncedOnSearchChange.flush();
@@ -142,40 +146,51 @@ class SearchField extends React.Component {
   };
 
   valueUpdated = (item, cb) => {
-    const { valueKey } = this.props;
-    this.props.onChange?.(item && item[valueKey], item);
-    return cb && cb();
+    const { valueKey, onChange } = this.props;
+    onChange?.(item?.[valueKey], item);
+    cb?.();
   };
 
-  onBlur = () => {
+  handleBlur = () => {
     const { selectedItem } = this.state;
     const { labelKey } = this.props;
 
-    const inputValue =
-      selectedItem && selectedItem[labelKey] ? selectedItem[labelKey] : "";
+    const inputValue = selectedItem?.[labelKey] || "";
     if (!selectedItem) {
-      this.props.onSearchChange("");
-      this.valueUpdated();
+      this.props.onSearchChange("", this.selectResult);
     }
     return this.setState({ focused: false, highlightedIndex: -1, inputValue });
   };
 
   selectResult = (index, cb) => {
-    const { items, labelKey } = this.props;
-    const selectedItem = items && items[index];
-    return (
-      selectedItem &&
-      this.setState(
-        { selectedItem, focused: false, inputValue: selectedItem[labelKey] },
-        () => this.valueUpdated(selectedItem, cb),
-      )
-    );
+    const { items, valueKey, onBeforeChange } = this.props;
+    const selectedItem = items?.[index];
+
+    if (!selectedItem) return;
+
+    const proceed = (item = selectedItem) => {
+      this.setState({ selectedItem: item, focused: false }, () => {
+        this.valueUpdated(item, cb);
+        this.inputRef.current?.blur();
+      });
+    };
+
+    if (onBeforeChange) {
+      onBeforeChange({
+        value: selectedItem[valueKey],
+        selectedItem,
+        inputDOMElement: this.inputRef.current,
+        proceed,
+      });
+      return;
+    }
+
+    proceed();
   };
 
-  onItemClick = ({ currentTarget }) => {
+  handleItemClick = ({ currentTarget }) => {
     const selectedIndex =
-      this.scroller &&
-      this.scroller.wrapper && // ref inside a ref 😜
+      this.scroller?.wrapper && // ref inside a ref 😬
       Array.from(this.scroller.wrapper.childNodes).indexOf(currentTarget);
 
     this.selectResult(selectedIndex);
@@ -191,7 +206,7 @@ class SearchField extends React.Component {
         innerRef={node => {
           this.scroller = node;
         }}
-        onItemClick={this.onItemClick}
+        onItemClick={this.handleItemClick}
         highlightedIndex={highlightedIndex}
       />
     );
@@ -205,6 +220,7 @@ class SearchField extends React.Component {
       maxMenuHeight,
       items,
       onScrollReachEnd,
+      onBeforeChange,
       onChange,
       footer,
       value,
@@ -236,19 +252,21 @@ class SearchField extends React.Component {
       >
         <Input
           {...inputProps}
+          innerRef={this.inputRef}
           className="searchInput"
           type="search"
           protected={!!selectedItem}
           disableManualReplace
           value={inputValue}
-          onKeyDown={this.onKeyDown}
-          onFocus={this.onFocus}
-          onChange={this.onSearchChange}
-          onBlur={this.onBlur}
+          onKeyDown={this.handleKeyDown}
+          onFocus={this.handleFocus}
+          onChange={this.handleSearchChangeEvent}
+          onBlur={this.handleBlur}
           focused={this.state.focused}
+          data-testid="search-input"
         />
         {focused &&
-          ((this.state.items && this.state.items.length) || footer) &&
+          (this.state.items?.length || footer) &&
           this.renderMenu(menuProps)}
       </DropdownWrapper>
     );
@@ -268,6 +286,7 @@ class SearchField extends React.Component {
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     debounceDelay: PropTypes.number,
     onSearchChange: PropTypes.func,
+    onBeforeChange: PropTypes.func,
     onChange: PropTypes.func,
     zIndex: PropTypes.number,
     className: PropTypes.string,

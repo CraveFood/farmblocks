@@ -19,7 +19,7 @@ export const formInputProps = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
-  innerRef: PropTypes.func,
+  innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   input: PropTypes.shape({
     value: PropTypes.any,
     onChange: PropTypes.func,
