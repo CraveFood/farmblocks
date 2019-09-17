@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.4.13...@crave/farmblocks-search-field@3.5.0) (2019-09-17)
+
+
+### Bug Fixes
+
+* **hoc-input:** accept object as innerRef ([4e7b557](https://github.com/CraveFood/farmblocks/commit/4e7b557))
+* **ScrollBox:** remove onReachEnd from remainingProps ([a8fb199](https://github.com/CraveFood/farmblocks/commit/a8fb199))
+
+
+### Features
+
+* **SearchField:** accept item manipulation in onBeforeChange ([48fb6c8](https://github.com/CraveFood/farmblocks/commit/48fb6c8))
+* **SearchField:** add onBeforeChange prop ([0229aad](https://github.com/CraveFood/farmblocks/commit/0229aad))
+
+
+
+
+
 ## [3.4.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.4.12...@crave/farmblocks-search-field@3.4.13) (2019-09-16)
 
 **Note:** Version bump only for package @crave/farmblocks-search-field

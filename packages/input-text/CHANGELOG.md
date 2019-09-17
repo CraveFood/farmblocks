@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.20](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.19...@crave/farmblocks-input-text@3.6.20) (2019-09-17)
+
+
+### Bug Fixes
+
+* **TextInput:** scroll in protected input ([ec1a8a0](https://github.com/CraveFood/farmblocks/commit/ec1a8a0))
+
+
+
+
+
 ## [3.6.19](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.18...@crave/farmblocks-input-text@3.6.19) (2019-09-16)
 
 **Note:** Version bump only for package @crave/farmblocks-input-text

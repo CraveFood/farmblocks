@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.2.1...@crave/farmblocks-input-checkbox@5.2.2) (2019-09-17)
+
+
+### Bug Fixes
+
+* **hoc-input:** accept object as innerRef ([4e7b557](https://github.com/CraveFood/farmblocks/commit/4e7b557))
+
+
+
+
+
 ## [5.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.2.0...@crave/farmblocks-input-checkbox@5.2.1) (2019-09-10)
 
 **Note:** Version bump only for package @crave/farmblocks-input-checkbox

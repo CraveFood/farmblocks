@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.0.6...@crave/farmblocks-hoc-input@6.0.7) (2019-09-17)
+
+
+### Bug Fixes
+
+* **hoc-input:** accept object as innerRef ([4e7b557](https://github.com/CraveFood/farmblocks/commit/4e7b557))
+
+
+
+
+
 ## [6.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.0.5...@crave/farmblocks-hoc-input@6.0.6) (2019-09-16)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input
