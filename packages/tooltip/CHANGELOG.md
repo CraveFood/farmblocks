@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@2.1.3...@crave/farmblocks-tooltip@3.0.0) (2019-09-18)
+
+
+### Bug Fixes
+
+* **Tooltip:** consider the top boundary before autopositioning the tooltip on the top ([a9cfccb](https://github.com/CraveFood/farmblocks/commit/a9cfccb)), closes [#877](https://github.com/CraveFood/farmblocks/issues/877)
+
+
+### Code Refactoring
+
+* **Tooltip:** remove boundariesSelector property ([505bc79](https://github.com/CraveFood/farmblocks/commit/505bc79))
+
+
+### BREAKING CHANGES
+
+* **Tooltip:** this component no longer works with boundariesSelector
+
+
+
+
+
 ## [2.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@2.1.2...@crave/farmblocks-tooltip@2.1.3) (2019-09-16)
 
 **Note:** Version bump only for package @crave/farmblocks-tooltip

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.2...@crave/farmblocks-modal@2.1.3) (2019-09-18)
+
+**Note:** Version bump only for package @crave/farmblocks-modal
+
+
+
+
+
 ## [2.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.1...@crave/farmblocks-modal@2.1.2) (2019-09-16)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
