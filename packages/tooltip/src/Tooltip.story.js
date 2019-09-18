@@ -200,68 +200,35 @@ storiesOf("Tooltip/Tooltip", module)
       </div>
     </div>
   ))
-  .add("auto aligned/positioned (with boundaries)", () => {
-    return (
-      <div
-        style={{
-          border: "solid 1px orangered",
-          height: 300,
-          width: 600,
-          margin: 60,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          position: "relative",
-        }}
-        className="exampleContainer"
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
-          <Tooltip
-            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
-            content="Auto aligned/positioned tooltip"
-            positionX={POSITIONS.X.AUTO}
-            positionY={POSITIONS.Y.AUTO}
-            boundariesSelector=".exampleContainer"
-          />
-          <Tooltip
-            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
-            content="Auto aligned/positioned tooltip"
-            positionX={POSITIONS.X.AUTO}
-            positionY={POSITIONS.Y.AUTO}
-            boundariesSelector=".exampleContainer"
-          />
-        </div>
+  .add("auto positioned considering TOP boundaries", () => (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: 400,
+        background: "aliceblue",
+      }}
+    >
+      <div style={{ background: "beige", height: 180 }} />
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "100%",
-            position: "absolute",
-            bottom: 20,
-          }}
-        >
-          <Tooltip
-            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
-            content="Auto aligned/positioned tooltip"
-            positionX={POSITIONS.X.AUTO}
-            positionY={POSITIONS.Y.AUTO}
-            boundariesSelector=".exampleContainer"
+      <Tooltip
+        trigger={
+          <div css="padding: 10px; background: orange">
+            Hover me - Resize window up to the blue boundary. The tooltip should
+            open on the bottom
+          </div>
+        }
+        content={
+          <div
+            css="
+            height: 150px;
+            width: 150px;
+            background-image: linear-gradient(red, yellow)
+            "
           />
-          <Tooltip
-            trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
-            content="Auto aligned/positioned tooltip"
-            positionX={POSITIONS.X.AUTO}
-            positionY={POSITIONS.Y.AUTO}
-            boundariesSelector=".exampleContainer"
-          />
-        </div>
-      </div>
-    );
-  });
+        }
+        positionX={POSITIONS.X.AUTO}
+        positionY={POSITIONS.Y.AUTO}
+      />
+    </div>
+  ));

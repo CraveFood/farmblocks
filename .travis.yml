@@ -15,21 +15,13 @@ before_install:
   - git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
   - git fetch --all
   - git checkout "$BRANCH"
-  - yarn global add greenkeeper-lockfile@2
 install:
-  - |
-    if [[ $BRANCH == *"greenkeeper"* ]]; then
-      greenkeeper-lockfile-update;
-      yarn install;
-    else
-      yarn install --frozen-lockfile;
-    fi
+  - yarn install --frozen-lockfile;
   - yarn build
 script:
   - yarn lint .
   - yarn lint.test .
   - travis_wait yarn coverage
-  - greenkeeper-lockfile-upload
 after_success:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
   - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc

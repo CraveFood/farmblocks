@@ -16,10 +16,14 @@ const StyledInfo = styled.div`
 		${tooltipAlign};
 	}
 
+	display: flex;
+	align-items: baseline;
+
 	.icon {
 		display: inline-block;
 		margin: 0 8px;
 		cursor: pointer;
+		color: ${colorConstants.OYSTER};
 	}
 
 	.icon:hover, .hovered {

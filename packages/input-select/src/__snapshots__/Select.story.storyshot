@@ -4714,6 +4714,17 @@ exports[`Storyshots Select Input With more info content 1`] = `
   text-transform: uppercase;
 }
 
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c7 .tooltip {
   margin-left: -4px;
 }
@@ -4722,6 +4733,7 @@ exports[`Storyshots Select Input With more info content 1`] = `
   display: inline-block;
   margin: 0 8px;
   cursor: pointer;
+  color: #59636f;
 }
 
 .c7 .icon:hover,
@@ -5041,19 +5053,18 @@ exports[`Storyshots Select Input With more info content 1`] = `
               fontWeight="title"
               size={16}
               type="#59636f"
+            />
+            <div
+              className="icon c9"
             >
               <div
-                className="icon c9"
-              >
-                <div
-                  className="hit-area"
-                  onMouseLeave={[Function]}
-                  onMouseOver={[Function]}
-                />
-                <i
-                  className="wg-question"
-                />
-              </div>
+                className="hit-area"
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+              />
+              <i
+                className="wg-question"
+              />
             </div>
           </div>
         </div>

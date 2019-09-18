@@ -31,8 +31,6 @@ User interface blocks.
 - [Farmblocks-Theme](https://github.com/CraveFood/farmblocks/tree/master/packages/theme) - Theme constants for farmblocks components.
 - [Farmblocks-Tooltip](https://github.com/CraveFood/farmblocks/tree/master/packages/tooltip) - A simple tooltip component.
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/CraveFood/farmblocks.svg)](https://greenkeeper.io/)
-
 ### Compatibility
 
 ![browserstack-logo-600x315](https://user-images.githubusercontent.com/7760/34738829-7327ddc4-f561-11e7-97e2-2fe0474eaf05.png)
