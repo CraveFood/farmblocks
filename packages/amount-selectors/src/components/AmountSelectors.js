@@ -1,9 +1,11 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import values from "object.values";
+import { Transition } from "react-spring/renderprops.cjs";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import InputText from "@crave/farmblocks-input-text";
 import { fontSizes } from "@crave/farmblocks-theme";
-import values from "object.values";
+import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
 
 import selectorSizes from "../constants/selectorSizes";
 import Wrapper from "../styledComponents/AmountSelector";
@@ -31,6 +33,7 @@ class AmountSelectors extends React.Component {
       disableBoth: false,
       tooltipText: "",
       displayValue,
+      focused: false,
     };
   }
 
@@ -47,9 +50,7 @@ class AmountSelectors extends React.Component {
 
   onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
-    const hasBrowserValidation = !!(
-      event.target && event.target.validity !== undefined
-    );
+    const hasBrowserValidation = event?.target?.validity !== undefined;
     const disableBoth =
       hasBrowserValidation && this.disableBoth(event.target.validity);
 
@@ -57,9 +58,17 @@ class AmountSelectors extends React.Component {
       ? event.target.validationMessage
       : "";
 
-    const validValue = parseFloat(value) || 0;
+    const validValue = parseFloat(value);
 
-    this.setState({ value: validValue, disableBoth, tooltipText }, cb);
+    this.setState(
+      state => ({
+        value: validValue,
+        displayValue: validValue || state.displayValue,
+        disableBoth,
+        tooltipText,
+      }),
+      cb,
+    );
     return this.props.onChange(validValue);
   };
 
@@ -102,7 +111,21 @@ class AmountSelectors extends React.Component {
   };
 
   render() {
-    const { disabled } = this.props;
+    const {
+      disabled,
+      max,
+      min,
+      minAmountMessage,
+      maxAmountMessage,
+      showBoundariesMessageOnlyOnFocus,
+    } = this.props;
+    const { focused, value } = this.state;
+    const showMessage = !showBoundariesMessageOnlyOnFocus || focused;
+    const showMaxMessage = value > max && showMessage;
+    const showMinMessage = value < min && showMessage;
+    const showTooltipMessage =
+      (showMaxMessage && maxAmountMessage) ||
+      (showMinMessage && minAmountMessage);
     return (
       <Wrapper size={this.props.size} className={this.props.className}>
         <Button
@@ -111,38 +134,61 @@ class AmountSelectors extends React.Component {
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-minus"
           disabled={
-            disabled ||
-            this.state.disableBoth ||
-            this.state.value <= this.props.min
+            disabled || this.state.disableBoth || value <= this.props.min
           }
           onClick={this.decrement}
           tooltipText={this.state.tooltipText}
         />
         <div className="inputContainer">
           <InputText
+            data-testid="input-text"
             className="inputComponent"
             type="number"
-            min={this.props.min}
-            max={this.props.max}
+            min={min}
+            max={max}
             step={this.props.step}
             value={this.state.displayValue}
             readOnly={this.props.disableTyping}
-            onKeyDown={this.onKeyDown}
             onChange={this.onChange}
-            onBlur={this.updateDisplayValue}
+            onBlur={() => {
+              this.setState({ focused: false, disableBoth: false });
+              this.updateDisplayValue();
+            }}
             fontSize={selectorSizeToFontSize[this.props.size]}
             disabled={disabled}
+            onFocus={() => this.setState({ focused: true })}
           />
+          <Transition
+            items={showTooltipMessage}
+            from={{ opacity: 0 }}
+            enter={{ opacity: 1 }}
+            leave={{ opacity: 0 }}
+          >
+            {tooltipMessage =>
+              tooltipMessage &&
+              (props => (
+                <TooltipContent
+                  style={props}
+                  className="tooltip-content"
+                  offset="-9px"
+                  positionX={POSITIONS.X.CENTER}
+                  isVisible
+                  {...this.props.tooltipProps}
+                >
+                  {tooltipMessage}
+                </TooltipContent>
+              ))
+            }
+          </Transition>
         </div>
+
         <Button
           className="increaseButton"
           type={buttonTypes.SECONDARY}
           size={selectorSizeToButtonSize[this.props.size]}
           icon="wg-add"
           disabled={
-            disabled ||
-            this.state.disableBoth ||
-            this.state.value >= this.props.max
+            disabled || this.state.disableBoth || value >= this.props.max
           }
           onClick={this.increment}
           tooltipText={this.state.tooltipText}
@@ -156,12 +202,16 @@ class AmountSelectors extends React.Component {
     step: PropTypes.number,
     min: PropTypes.number,
     max: PropTypes.number,
+    maxAmountMessage: PropTypes.string,
+    minAmountMessage: PropTypes.string,
+    showBoundariesMessageOnlyOnFocus: PropTypes.bool,
     enforceStep: PropTypes.bool,
     disabled: PropTypes.bool,
     onChange: PropTypes.func,
     disableTyping: PropTypes.bool,
     size: PropTypes.oneOf(values(selectorSizes)),
     className: PropTypes.string,
+    tooltipProps: PropTypes.object,
   };
 
   static defaultProps = {
@@ -169,6 +219,8 @@ class AmountSelectors extends React.Component {
     step: 1,
     min: 0,
     max: Number.MAX_VALUE,
+    maxAmountMessage: "Reached maximum amount",
+    minAmountMessage: "Reached minimum amount",
     onChange: () => false,
     disableTyping: false,
     size: selectorSizes.MEDIUM,

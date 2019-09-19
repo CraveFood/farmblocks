@@ -30,11 +30,20 @@ storiesOf("Amount selectors", module)
   .add("With 0.5 steps and step mismatch validation (browser)", () => (
     <AmountSelectors value={2} step={0.5} enforceStep />
   ))
-  .add("With a max value of 3", () => (
-    <AmountSelectors max={3} value={2} step={0.5} />
+  .add("With a max value of 3 and min of 1", () => (
+    <AmountSelectors
+      max={3}
+      min={1}
+      value={2}
+      step={0.5}
+      showBoundariesMessageOnlyOnFocus
+    />
   ))
   .add("With a max value of 3 and initial value = 5", () => (
     <AmountSelectors max={3} value={5} />
+  ))
+  .add("With a min value of 3 and initial value = 1", () => (
+    <AmountSelectors min={3} value={1} />
   ))
   .add("With onChange function", () => (
     <AmountSelectors onChange={action("amount changed")} />

@@ -1,6 +1,11 @@
 import React from "react";
 import Enzyme, { mount, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
+import {
+  render,
+  fireEvent,
+  waitForElementToBeRemoved,
+} from "@testing-library/react";
 
 import AmountSelectors from "./AmountSelectors";
 
@@ -30,11 +35,14 @@ describe("Amount selectors", () => {
       const component = mount(<AmountSelectors />);
       const newValue = "2";
       const expectedDisplayValue = "2.00";
+      component.find("input").simulate("focus");
+      expect(component.state("focused")).toBe(true);
       component
         .find("input")
         .simulate("change", { target: { value: newValue } });
       component.find("input").simulate("blur", {});
       expect(component.state("displayValue")).toBe(expectedDisplayValue);
+      expect(component.state("focused")).toBe(false);
     });
 
     test("empty input should display 0", () => {
@@ -48,10 +56,10 @@ describe("Amount selectors", () => {
       expect(component.state("displayValue")).toBe(expectedDisplayValue);
     });
 
-    test("value should be capped at max and min fter onBlur", () => {
+    test("value should be capped at max and min after onBlur", () => {
       const maxValue = 10;
       const minValue = 4;
-      const bigVaalue = "300";
+      const bigValue = "300";
       const smallValue = "1";
       const expectedMaxDisplayValue = "10.00";
       const expectedMinDisplayValue = "4.00";
@@ -59,7 +67,7 @@ describe("Amount selectors", () => {
         <AmountSelectors max={maxValue} min={minValue} />,
       );
       const input = component.find("input");
-      input.simulate("change", { target: { value: bigVaalue } });
+      input.simulate("change", { target: { value: bigValue } });
       input.simulate("blur", {});
       expect(component.state("displayValue")).toBe(expectedMaxDisplayValue);
       input.simulate("change", { target: { value: smallValue } });
@@ -77,9 +85,12 @@ describe("Amount selectors", () => {
       );
       const { onChange } = component.instance();
 
+      expect(component.state("displayValue")).toBe("0.00");
+
       onChange(onChangeValue);
 
       expect(component.state("value")).toBe(onChangeValue);
+      expect(component.state("displayValue")).toBe(onChangeValue);
     });
 
     test("should handle an event fired by input", () => {
@@ -158,5 +169,53 @@ describe("Amount selectors", () => {
     const expectedValue = Number(value.toFixed(2));
 
     expect(validValue).toBe(expectedValue);
+  });
+
+  describe("max and minimum messages", () => {
+    test("should show maximum amount tooltip when component mounts", () => {
+      const { queryByText } = render(<AmountSelectors max={1} value={3} />);
+      expect(queryByText("Reached maximum amount")).toBeInTheDocument();
+    });
+
+    test("should show maximum amount tooltip when component gets focused", async () => {
+      const { queryByText, getByTestId } = render(
+        <AmountSelectors max={1} value={3} showBoundariesMessageOnlyOnFocus />,
+      );
+      expect(queryByText("Reached maximum amount")).not.toBeInTheDocument();
+
+      fireEvent.focus(getByTestId("input-text"));
+      expect(queryByText("Reached maximum amount")).toBeInTheDocument();
+
+      fireEvent.change(getByTestId("input-text"), {
+        target: { value: 0.5 },
+      });
+      await waitForElementToBeRemoved(() =>
+        queryByText("Reached maximum amount"),
+      );
+      expect(queryByText("Reached maximum amount")).not.toBeInTheDocument();
+    });
+
+    test("should show minimum amount tooltip when component mounts", () => {
+      const { queryByText } = render(<AmountSelectors min={5} value={3} />);
+      expect(queryByText("Reached minimum amount")).toBeInTheDocument();
+    });
+
+    test("should show minimum amount tooltip when component gets focused", async () => {
+      const { queryByText, getByTestId } = render(
+        <AmountSelectors min={3} value={1} showBoundariesMessageOnlyOnFocus />,
+      );
+      expect(queryByText("Reached minimum amount")).not.toBeInTheDocument();
+
+      fireEvent.focus(getByTestId("input-text"));
+      expect(queryByText("Reached minimum amount")).toBeInTheDocument();
+
+      fireEvent.change(getByTestId("input-text"), {
+        target: { value: 5 },
+      });
+      await waitForElementToBeRemoved(() =>
+        queryByText("Reached minimum amount"),
+      );
+      expect(queryByText("Reached minimum amount")).not.toBeInTheDocument();
+    });
   });
 });
