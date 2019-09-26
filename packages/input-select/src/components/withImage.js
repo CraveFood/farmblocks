@@ -20,7 +20,7 @@ export default Input =>
         <LabelContainer className="labelContainer">
           {image && (
             <ItemImage
-              className="itemImage"
+              className="selectedItemImage"
               src={image}
               size={badgeSizes.SMALL}
               badge

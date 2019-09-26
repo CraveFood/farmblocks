@@ -18,7 +18,7 @@ const moreItems = [
   { value: "6", label: "Coconut" },
 ];
 
-const imgSrc = "https://picsum.photos/100?image=0";
+const imgSrc = "https://picsum.photos/100";
 const addImage = (item, index) => ({
   ...item,
   image: `${imgSrc}?image=${index + 1000}`,
