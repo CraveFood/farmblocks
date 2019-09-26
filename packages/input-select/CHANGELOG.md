@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.6.14...@crave/farmblocks-input-select@3.7.0) (2019-09-26)
+
+
+### Bug Fixes
+
+* **storybook:** Fix imgSrc removing params ([9ca2c5b](https://github.com/CraveFood/farmblocks/commit/9ca2c5b))
+
+
+### Features
+
+* **withImage:** Use different classes for selected or option images ([e31f38f](https://github.com/CraveFood/farmblocks/commit/e31f38f))
+
+
+
+
+
 ## [3.6.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.6.13...@crave/farmblocks-input-select@3.6.14) (2019-09-18)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select
