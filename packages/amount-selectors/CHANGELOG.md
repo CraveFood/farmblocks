@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.4.4...@crave/farmblocks-amount-selectors@2.5.0) (2019-10-01)
+
+
+### Features
+
+* **AmountSelectors:** add tooltip when user types a value above the maximum amount allowed ([b78968b](https://github.com/CraveFood/farmblocks/commit/b78968b))
+
+
+
+
+
 ## [2.4.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.4.3...@crave/farmblocks-amount-selectors@2.4.4) (2019-09-18)
 
 **Note:** Version bump only for package @crave/farmblocks-amount-selectors
