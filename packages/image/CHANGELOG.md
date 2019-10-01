@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@2.0.0...@crave/farmblocks-image@3.0.0) (2019-10-01)
+
+
+### Bug Fixes
+
+* **Image:** remove orverflow hidden from default image styles ([84f349f](https://github.com/CraveFood/farmblocks/commit/84f349f)), closes [#916](https://github.com/CraveFood/farmblocks/issues/916)
+
+
+### BREAKING CHANGES
+
+* **Image:** overflow hidden isnt default anymore
+
+
+
+
+
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@1.2.6...@crave/farmblocks-image@2.0.0) (2019-09-16)
 
 
