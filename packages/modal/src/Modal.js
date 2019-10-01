@@ -63,6 +63,7 @@ const Modal = ({
     },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
+    trail: 1,
     unique: true,
   });
   const slide = useTransition(isOpen, null, {
