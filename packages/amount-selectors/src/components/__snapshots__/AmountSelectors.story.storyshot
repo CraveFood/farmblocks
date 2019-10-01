@@ -352,6 +352,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
@@ -748,6 +749,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={true}
                 fontSize={16}
                 max={1.7976931348623157e+308}
@@ -1145,6 +1147,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
@@ -1541,6 +1544,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={14}
                 max={1.7976931348623157e+308}
@@ -1936,6 +1940,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
@@ -2331,404 +2336,10 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
-                min={0}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
-                readOnly={false}
-                step={0.5}
-                type="number"
-                value="2.00"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="messagesContainer"
-        />
-      </div>
-    </div>
-  </div>
-  <button
-    className="increaseButton c1"
-    onClick={[Function]}
-    size="MEDIUM"
-    type="SECONDARY"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <i
-        className="wg-add"
-      />
-    </div>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Amount selectors With a max value of 3 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c4 .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  box-shadow: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c4 .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c4 .input input {
-  padding: 0 16px;
-  height: 46px;
-}
-
-.c4 .input textarea {
-  padding: 16px;
-}
-
-.c4 .input input,
-.c4 .input textarea {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
-  cursor: pointer;
-}
-
-.c4 .input .icon {
-  color: rgba(0,0,0,0.16);
-  height: 16px;
-}
-
-.c4 .input .icon.left {
-  margin-left: 16px;
-}
-
-.c4 .input .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
-}
-
-.c4 .input .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
-  margin-right: 16px;
-}
-
-.c4 .input .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c4 .input .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c4 .input.dropdown {
-  cursor: pointer;
-}
-
-.c4 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c4 input[type="number"]::-webkit-inner-spin-button,
-.c4 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c4 .prefix,
-.c4 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  position: relative;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c3 >:first-child {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c3 .buttons {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c3 #cancel-button {
-  margin: 0 8px;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  margin: 0 0 24px 0;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 48px;
-}
-
-.c0 .inputContainer {
-  width: 70px;
-  margin: 0 8px;
-}
-
-.c0 .inputContainer input {
-  text-align: center;
-}
-
-.c0 .inputContainer input:invalid {
-  box-shadow: none;
-}
-
-<div
-  className="c0"
-  size="MEDIUM"
->
-  <button
-    className="decreaseButton c1"
-    onClick={[Function]}
-    size="MEDIUM"
-    type="SECONDARY"
-  >
-    <div
-      className="icon left-icon"
-      style={
-        Object {
-          "marginRight": 0,
-        }
-      }
-    >
-      <i
-        className="wg-minus"
-      />
-    </div>
-  </button>
-  <div
-    className="inputContainer"
-  >
-    <div
-      className="c2"
-    >
-      <div
-        className="inputComponent"
-      >
-        <div
-          className="c3"
-        >
-          <div
-            className="wrapped c4"
-            disabled={false}
-            fontSize={16}
-            onClick={[Function]}
-            type="number"
-          >
-            <div
-              className="input"
-              onMouseDown={[Function]}
-            >
-              <input
-                className="wrapped"
-                disabled={false}
-                fontSize={16}
-                max={3}
                 min={0}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2848,6 +2459,61 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   box-shadow: none;
 }
 
+.c5 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -9px;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3121,6 +2787,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={3}
@@ -3142,10 +2809,900 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
         />
       </div>
     </div>
+    <div
+      className="tooltip-content c5"
+      offset="-9px"
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="tooltip-content c6"
+        offset="-9px"
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        Reached maximum amount
+      </div>
+    </div>
   </div>
   <button
     className="increaseButton c1"
     disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
+  >
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c1 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #2980b9;
+}
+
+.c1:focus {
+  background-color: #2980b9;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c4 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c4 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c4 .input textarea {
+  padding: 16px;
+}
+
+.c4 .input input,
+.c4 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c4 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c4 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c4 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c4 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c4 .input.dropdown {
+  cursor: pointer;
+}
+
+.c4 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4 .prefix,
+.c4 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c3 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 .buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 #cancel-button {
+  margin: 0 8px;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <button
+    className="decreaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
+  >
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="inputComponent"
+      >
+        <div
+          className="c3"
+        >
+          <div
+            className="wrapped c4"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
+            <div
+              className="input"
+              onMouseDown={[Function]}
+            >
+              <input
+                className="wrapped"
+                data-testid="input-text"
+                disabled={false}
+                fontSize={16}
+                max={3}
+                min={1}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={0.5}
+                type="number"
+                value="2.00"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="messagesContainer"
+        />
+      </div>
+    </div>
+  </div>
+  <button
+    className="increaseButton c1"
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
+  >
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <i
+        className="wg-add"
+      />
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c1 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1:hover {
+  background-color: #2980b9;
+}
+
+.c1:focus {
+  background-color: #2980b9;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c6 {
+  visibility: hidden;
+  position: absolute;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  white-space: pre;
+  color: #2f313a;
+  font-family: lato,sans-serif;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: -9px;
+}
+
+.c6:after,
+.c6:before {
+  border: solid 1px rgba(0,0,0,0.16);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.c6:before {
+  bottom: 100%;
+  border-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.16);
+  border-width: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c6:after {
+  bottom: calc(100% - 1px);
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c4 .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c4 .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c4 .input textarea {
+  padding: 16px;
+}
+
+.c4 .input input,
+.c4 .input textarea {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c4 .input input::-webkit-input-placeholder,
+.c4 .input textarea::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::-moz-placeholder,
+.c4 .input textarea::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input:-ms-input-placeholder,
+.c4 .input textarea:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input::placeholder,
+.c4 .input textarea::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 .input input[type="search"],
+.c4 .input textarea[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c4 .input input[type="search"]::-webkit-search-cancel-button,
+.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 .input input[type="search"]::-ms-clear,
+.c4 .input textarea[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c4 .input input[role="combobox"],
+.c4 .input textarea[role="combobox"] {
+  cursor: pointer;
+}
+
+.c4 .input .icon {
+  color: rgba(0,0,0,0.16);
+  height: 16px;
+}
+
+.c4 .input .icon.left {
+  margin-left: 16px;
+}
+
+.c4 .input .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c4 .input .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c4 .input .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c4 .input.dropdown {
+  cursor: pointer;
+}
+
+.c4 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4 .prefix,
+.c4 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c3 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 .buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 #cancel-button {
+  margin: 0 8px;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+<div
+  className="c0"
+  size="MEDIUM"
+>
+  <button
+    className="decreaseButton c1"
+    disabled={true}
+    onClick={[Function]}
+    size="MEDIUM"
+    type="SECONDARY"
+  >
+    <div
+      className="icon left-icon"
+      style={
+        Object {
+          "marginRight": 0,
+        }
+      }
+    >
+      <i
+        className="wg-minus"
+      />
+    </div>
+  </button>
+  <div
+    className="inputContainer"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="inputComponent"
+      >
+        <div
+          className="c3"
+        >
+          <div
+            className="wrapped c4"
+            disabled={false}
+            fontSize={16}
+            onClick={[Function]}
+            type="number"
+          >
+            <div
+              className="input"
+              onMouseDown={[Function]}
+            >
+              <input
+                className="wrapped"
+                data-testid="input-text"
+                disabled={false}
+                fontSize={16}
+                max={1.7976931348623157e+308}
+                min={3}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                readOnly={false}
+                step={1}
+                type="number"
+                value="1.00"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="messagesContainer"
+        />
+      </div>
+    </div>
+    <div
+      className="tooltip-content c5"
+      offset="-9px"
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="tooltip-content c6"
+        offset="-9px"
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      >
+        Reached minimum amount
+      </div>
+    </div>
+  </div>
+  <button
+    className="increaseButton c1"
     onClick={[Function]}
     size="MEDIUM"
     type="SECONDARY"
@@ -3518,6 +4075,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
@@ -3913,6 +4471,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
@@ -4309,6 +4868,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
               >
                 <input
                   className="wrapped"
+                  data-testid="input-text"
                   disabled={false}
                   fontSize={16}
                   max={1.7976931348623157e+308}
@@ -4725,6 +5285,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
             >
               <input
                 className="wrapped"
+                data-testid="input-text"
                 disabled={false}
                 fontSize={16}
                 max={1.7976931348623157e+308}
