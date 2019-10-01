@@ -10,7 +10,6 @@ const StyledImage = styled.img`
   box-sizing: border-box;
   width: ${getWidth};
   height: ${getHeight};
-  overflow: hidden;
   border-radius: ${getBorderRadius};
   object-fit: ${({ fit }) => fit};
   ${props => props.css};
