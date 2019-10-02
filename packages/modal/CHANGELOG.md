@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.4...@crave/farmblocks-modal@2.1.5) (2019-10-02)
+
+
+### Bug Fixes
+
+* **Modal:** add trail option on react-spring animations to dismiss the memory leak warning ([5ea1e66](https://github.com/CraveFood/farmblocks/commit/5ea1e66))
+
+
+
+
+
 ## [2.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.3...@crave/farmblocks-modal@2.1.4) (2019-10-01)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
