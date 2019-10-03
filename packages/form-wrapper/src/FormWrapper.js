@@ -33,7 +33,7 @@ const Footer = styled.div`
 `;
 
 const FormWrapper = props => {
-  const { title, extraContent, id } = props;
+  const { title, extraContent, id, saveButtonProps } = props;
   return (
     <div className={props.className} id={id}>
       <Header className="header">
@@ -61,6 +61,7 @@ const FormWrapper = props => {
           size={buttonSizes.MEDIUM}
           onClick={props.onSave}
           loading={props.loading}
+          {...saveButtonProps}
         >
           {props.saveLabel}
         </Button>
@@ -84,6 +85,7 @@ FormWrapper.propTypes = {
   extraContent: PropTypes.node,
   title: PropTypes.string,
   cancelLabel: PropTypes.string,
+  saveButtonProps: PropTypes.object,
   saveLabel: PropTypes.string,
   loading: PropTypes.bool,
   id: PropTypes.string,
