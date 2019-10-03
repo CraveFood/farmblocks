@@ -20,7 +20,7 @@ const CHECKBOX = "checkbox";
 const getRefName = (type, key) => `${type}-${key}`;
 const getRowKey = (index, subIndex = "") => `${index},${subIndex}`;
 
-class Table extends React.Component {
+class Table extends React.PureComponent {
   state = {
     rowsMap: {},
     selectedRows: [],
@@ -370,6 +370,8 @@ class Table extends React.Component {
       selectionHeader,
       borderless,
       className,
+      stickyHeader,
+      stickyHeaderTopOffset,
     } = this.props;
     const emptySelection = this.state.selectedRows.length === 0;
     const selectionHeaderVisible = selectionHeader && !emptySelection;
@@ -379,6 +381,8 @@ class Table extends React.Component {
       selectionHeaderVisible,
       borderless,
       className,
+      stickyHeader,
+      stickyHeaderTopOffset,
     };
     const { selectedData, allChecked } = this.state;
 
@@ -446,9 +450,12 @@ Table.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   renderExtraChildRows: PropTypes.func,
+  stickyHeader: PropTypes.bool,
+  stickyHeaderTopOffset: PropTypes.number,
 };
 
 Table.defaultProps = {
   borderless: false,
   rowHeight: rowHeights.MEDIUM,
+  stickyHeaderTopOffset: 0,
 };
