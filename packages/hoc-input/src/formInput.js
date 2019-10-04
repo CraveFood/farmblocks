@@ -32,8 +32,8 @@ export const formInputProps = {
   leftIcon: PropTypes.string,
   moreInfoContent: PropTypes.node,
   moreInfoTooltipProps: PropTypes.object,
-  prefix: PropTypes.string,
-  suffix: PropTypes.string,
+  prefix: PropTypes.node,
+  suffix: PropTypes.node,
   autoControlFocusedStyle: PropTypes.bool,
   className: PropTypes.string,
 };
