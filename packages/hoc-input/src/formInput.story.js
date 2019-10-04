@@ -41,6 +41,9 @@ storiesOf("HOC formInput", module)
       type="text"
     />
   ))
+  .add("html text input with label and active flag", () => (
+    <EnhancedInput active label="Input Label" type="text" />
+  ))
   .add("html text input with label and focused flag", () => (
     <EnhancedInput focused label="Input Label" type="text" />
   ))
@@ -108,6 +111,7 @@ storiesOf("HOC formInput", module)
   .add("with prefix", () => (
     <div>
       <EnhancedInput type="text" prefix="$" label="Default" />
+      <EnhancedInput type="text" prefix="$" label="Active" active />
       <EnhancedInput type="text" prefix="$" label="Focused on Mount" focused />
       <EnhancedInput type="text" prefix="$" label="Disabled" disabled />
       <EnhancedInput type="text" prefix="$" label="Invalid" invalid />
@@ -123,6 +127,7 @@ storiesOf("HOC formInput", module)
   .add("with suffix", () => (
     <div>
       <EnhancedInput type="text" suffix="CS" label="Default" />
+      <EnhancedInput type="text" suffix="CS" label="Active" active />
       <EnhancedInput type="text" suffix="CS" label="Focused on Mount" focused />
       <EnhancedInput type="text" suffix="CS" label="Disabled" disabled />
       <EnhancedInput type="text" suffix="CS" label="Invalid" invalid />
@@ -138,6 +143,7 @@ storiesOf("HOC formInput", module)
   .add("with prefix and suffix", () => (
     <div>
       <EnhancedInput type="text" prefix="$" suffix="CS" label="Default" />
+      <EnhancedInput type="text" prefix="$" suffix="CS" label="Active" active />
       <EnhancedInput
         type="text"
         prefix="$"

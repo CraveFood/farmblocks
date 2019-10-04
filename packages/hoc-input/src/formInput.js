@@ -13,6 +13,7 @@ export const formInputProps = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
   fontSize: PropTypes.number,
+  active: PropTypes.bool,
   focused: PropTypes.bool,
   disabled: PropTypes.bool,
   invalid: PropTypes.bool,
@@ -197,6 +198,7 @@ const formInput = WrappedComponent => {
       const { value } = this.state;
       const {
         label,
+        active,
         focused,
         onChange,
         onFocus,
@@ -214,6 +216,7 @@ const formInput = WrappedComponent => {
       } = this.props;
       const wrapperProps = {
         protected: covered,
+        active,
         focused: this.state.focused,
         invalid,
         filled: !!value || value === 0,
@@ -232,7 +235,7 @@ const formInput = WrappedComponent => {
               className="label"
               moreInfoContent={moreInfoContent}
               moreInfoTooltipProps={moreInfoTooltipProps}
-              focused={this.state.focused}
+              focused={this.state.focused || active}
               invalid={wrapperProps.invalid}
               protected={covered}
               disabled={wrapperProps.disabled}
@@ -255,6 +258,7 @@ const formInput = WrappedComponent => {
       value: "",
       type: "text",
       focused: false,
+      active: false,
       disabled: false,
       onChange: () => null,
       onFocus: () => null,

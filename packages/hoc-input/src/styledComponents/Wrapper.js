@@ -13,7 +13,7 @@ const inputBoxShadow = props => {
   `;
 };
 const inputBorderColor = props => {
-  if (props.focused) {
+  if (props.focused || props.active) {
     return colors.INDIGO_MILK_CAP;
   }
   return props.invalid ? colors.STRAWBERRY : colors.GREY_16;
@@ -33,7 +33,7 @@ const fontStyles = css`
 `;
 
 const addonColor = props => {
-  if (props.focused) {
+  if (props.focused || props.active) {
     return css`
       background-color: ${colors.INDIGO_MILK_CAP};
       color: white;
