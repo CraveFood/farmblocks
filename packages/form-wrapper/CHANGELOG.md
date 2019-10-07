@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@1.5.12...@crave/farmblocks-form-wrapper@1.6.0) (2019-10-07)
+
+
+### Features
+
+* **FormWrapper:** Add story for save button prop customization ([80d919f](https://github.com/CraveFood/farmblocks/commit/80d919f))
+* **FormWrapper:** allow save button props customization ([d27ead6](https://github.com/CraveFood/farmblocks/commit/d27ead6)), closes [#921](https://github.com/CraveFood/farmblocks/issues/921) [#922](https://github.com/CraveFood/farmblocks/issues/922)
+* **FormWrapper:** Decouple header and footer components ([f3cc48c](https://github.com/CraveFood/farmblocks/commit/f3cc48c))
+
+
+
+
+
 ## [1.5.12](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-form-wrapper@1.5.11...@crave/farmblocks-form-wrapper@1.5.12) (2019-10-01)
 
 **Note:** Version bump only for package @crave/farmblocks-form-wrapper
