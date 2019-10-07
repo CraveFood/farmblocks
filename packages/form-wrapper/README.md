@@ -27,17 +27,18 @@ Output:
 
 ### Properties
 
-| propery      | type     | description                                                                                                   | required | default      |
-| ------------ | -------- | ------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
-| title        | string   | The text to be used as the title                                                                              |          |              |
-| cancelLabel  | string   | The text to be used in the Cancel link                                                                        |          | Cancel       |
-| saveLabel    | string   | The text to be used by the Save button                                                                        |          | Save         |
-| onCancel     | function | Callback of Cancel link click                                                                                 | Yes      |              |
-| onSave       | function | Callback of Save button click                                                                                 | Yes      |              |
-| children     | node     | Contents to be rendered                                                                                       | Yes      |              |
-| extraContent | node     | Contents to be rendered after Save button                                                                     |          |              |
-| loading      | boolean  | Loading state to be passed to Save button                                                                     |          |              |
-| id           | string   | id attribute given to the wrapper and to the save and cancel actionables (with `-save` and `-cancel` sufixes) |          | form-wrapper |
+| propery         | type     | description                                                                                                     | required | default      |
+| --------------- | -------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| title           | string   | The text to be used as the title                                                                                |          |              |
+| cancelLabel     | string   | The text to be used in the Cancel link                                                                          |          | Cancel       |
+| saveLabel       | string   | The text to be used by the Save button                                                                          |          | Save         |
+| saveButtonProps | object   | The props for Save button ([check Button](https://github.com/CraveFood/farmblocks/tree/master/packages/button)) |          |              |
+| onCancel        | function | Callback of Cancel link click                                                                                   | Yes      |              |
+| onSave          | function | Callback of Save button click                                                                                   | Yes      |              |
+| children        | node     | Contents to be rendered                                                                                         | Yes      |              |
+| extraContent    | node     | Contents to be rendered after Save button                                                                       |          |              |
+| loading         | boolean  | Loading state to be passed to Save button                                                                       |          |              |
+| id              | string   | id attribute given to the wrapper and to the save and cancel actionables (with `-save` and `-cancel` sufixes)   |          | form-wrapper |
 
 ## License
 
