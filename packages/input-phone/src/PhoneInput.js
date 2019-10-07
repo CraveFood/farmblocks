@@ -21,6 +21,7 @@ const PhoneInput = ({
   onChange,
   textSelectCountryTitle,
   textSelectCountryCancel,
+  disabled,
   ...props
 }) => {
   const [popoverOpen, setPopoverOpen] = useState(false);
@@ -45,8 +46,10 @@ const PhoneInput = ({
             tooltipProps={{
               padding: "0",
             }}
+            disabled={disabled}
             trigger={
               <CountrySelectorTrigger
+                disabled={disabled}
                 countryCode={getCountryCallingCode(country)}
               />
             }
@@ -76,6 +79,7 @@ const PhoneInput = ({
             }
           }
         "
+        disabled={disabled}
         {...props}
       />
     </>
@@ -87,6 +91,7 @@ PhoneInput.defaultProps = {
   defaultCountry: "US",
   textSelectCountryTitle: "Select Country",
   textSelectCountryCancel: "Cancel",
+  disabled: false,
 };
 
 PhoneInput.propTypes = {
@@ -124,6 +129,11 @@ PhoneInput.propTypes = {
    * Text for the cancel button of the country selection popover
    */
   textSelectCountryCancel: PropTypes.string,
+
+  /**
+   * Displays the input greyed out and prevents edition
+   */
+  disabled: PropTypes.bool,
 };
 
 export default PhoneInput;

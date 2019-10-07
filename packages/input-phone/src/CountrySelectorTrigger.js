@@ -9,7 +9,7 @@ const Trigger = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  cursor: pointer;
+  cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
 `;
 
 const CountrySelectorTrigger = ({ countryCode, ...props }) => {
@@ -23,6 +23,7 @@ const CountrySelectorTrigger = ({ countryCode, ...props }) => {
 
 CountrySelectorTrigger.propTypes = {
   countryCode: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
 };
 
 export default CountrySelectorTrigger;
