@@ -35,6 +35,7 @@ npm install @crave/farmblocks-popover
 | onOpen       | called when the popover opens                                                                                            | func                 |          |         |
 | onBeforeOpen | called before the popover opens. If the given function returns a Promise, the popover will wait until it resolve to open | func                 |          |         |
 | onClose      | called when the popover closes                                                                                           | func                 |          |         |
+| disabled     | prevents the popover to open when the trigger is clicked.                                                                | bool                 |          | false   |
 
 ## License
 

@@ -56,9 +56,10 @@ class Popover extends React.Component {
   };
 
   toggle = async () => {
+    const { onOpen, onClose, disabled } = this.props;
+
     // eslint-disable-next-line react/no-access-state-in-setstate
-    const isVisible = !this.state.isVisible;
-    const { onOpen, onClose } = this.props;
+    const isVisible = disabled ? false : !this.state.isVisible;
 
     try {
       // eslint-disable-next-line babel/no-unused-expressions
@@ -95,6 +96,7 @@ class Popover extends React.Component {
         <div
           role="button"
           id="trigger"
+          className="popover__trigger"
           onClick={this.toggle}
           onKeyDown={this.toggle}
           tabIndex="0"
@@ -133,10 +135,12 @@ class Popover extends React.Component {
     onBeforeOpen: PropTypes.func,
     onClose: PropTypes.func,
     className: PropTypes.string,
+    disabled: PropTypes.bool,
   };
 
   static defaultProps = {
     triggerWidth: "auto",
+    disabled: false,
   };
 }
 

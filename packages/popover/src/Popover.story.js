@@ -35,6 +35,14 @@ storiesOf("Popover", module)
       />
     </div>
   ))
+  .add("Disabled", () => (
+    <Popover
+      trigger={<Link>It won&apos;t open</Link>}
+      content={() => <Text>Popover content</Text>}
+      onOutsideClick={action("onOutsideClick")}
+      disabled
+    />
+  ))
   .add("Dismissable", () => (
     <Popover
       trigger={<Link>Trigger</Link>}
