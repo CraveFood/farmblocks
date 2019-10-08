@@ -19,6 +19,7 @@ export const GRAPE = "#9b59b6";
 export const EGGPLANT = "#8e44ad";
 export const GREY_16 = "rgba(0, 0, 0, 0.16)";
 export const GREY_32 = "rgba(0, 0, 0, 0.32)";
+export const GREY_48 = "rgba(0, 0, 0, 0.48)";
 export const WHITE_32 = "rgba(255, 255, 255, 0.32)";
 export const WHITE_56 = "rgba(255, 255, 255, 0.56)";
 
@@ -44,6 +45,7 @@ export default {
   EGGPLANT,
   GREY_16,
   GREY_32,
+  GREY_48,
   WHITE_32,
   WHITE_56,
 };
