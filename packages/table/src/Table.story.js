@@ -25,6 +25,15 @@ storiesOf("Table/Basic", module)
       <Column title="Price" text={row => row.price} />
     </Table>
   ))
+  .add("Sticky header", () => (
+    <div>
+      <Text type={colors.STRAWBERRY}>Scroll down \/</Text>
+      <Table data={[...fruits, ...fruits, ...fruits, ...fruits]} stickyHeader>
+        <Column title="Fruit" text={row => row.name} />
+        <Column title="Price" text={row => row.price} />
+      </Table>
+    </div>
+  ))
   .add("Light column", () => (
     <Table data={fruits}>
       <Column title="Fruit" text={row => row.name} fontWeight="light" />

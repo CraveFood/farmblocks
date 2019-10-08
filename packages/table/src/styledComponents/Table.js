@@ -16,6 +16,27 @@ const borderTop = props =>
     border-top: none;
   `;
 
+const stickyHeaderCss = ({ stickyHeader, stickyHeaderTopOffset }) =>
+  stickyHeader &&
+  css`
+    caption > span > div {
+      z-index: 3;
+      border-top: solid 1px ${colors.GREY_16};
+    }
+    thead .cell {
+      position: sticky;
+      top: ${stickyHeaderTopOffset}px;
+      z-index: 2;
+      border-bottom: solid 1px ${colors.GREY_16};
+    }
+    .tooltip {
+      z-index: 120;
+    }
+    .body:first-of-type .cell {
+      border-top: none;
+    }
+  `;
+
 const Table = styled.table`
   border-collapse: separate;
   border-spacing: 0;
@@ -25,6 +46,7 @@ const Table = styled.table`
   ${borderTop};
   thead .cell {
     ${borderTop};
+    padding: 8px 0 8px 16px;
   }
 
   .cell {
@@ -91,6 +113,8 @@ const Table = styled.table`
   tbody tr.clickable {
     cursor: pointer;
   }
+
+  ${stickyHeaderCss}
 `;
 
 export default Table;
