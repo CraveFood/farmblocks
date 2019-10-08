@@ -39,6 +39,7 @@ exports[`Storyshots Popover Button as a trigger - Right aligned 1`] = `
     width="auto"
   >
     <div
+      className="popover__trigger"
       id="trigger"
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -137,6 +138,7 @@ exports[`Storyshots Popover Center aligned 1`] = `
     width="auto"
   >
     <div
+      className="popover__trigger"
       id="trigger"
       onClick={[Function]}
       onKeyDown={[Function]}
@@ -189,6 +191,7 @@ exports[`Storyshots Popover Custom padding 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -278,6 +281,7 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -292,6 +296,103 @@ exports[`Storyshots Popover Default - Link as a trigger 1`] = `
     >
       <span>
         Trigger
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Popover Disabled 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c1 i.margin-left {
+  margin-left: 8px;
+}
+
+.c1 i.margin-right {
+  margin-right: 8px;
+}
+
+.c1 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 > a {
+  color: inherit;
+}
+
+.c1:hover {
+  color: #2980b9;
+}
+
+.c0 {
+  display: inline-block;
+  width: auto;
+}
+
+.c0 .appear-enter {
+  opacity: 0;
+}
+
+.c0 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c0 .appear-exit {
+  opacity: 1;
+}
+
+.c0 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+<div
+  className="c0"
+  width="auto"
+>
+  <div
+    className="popover__trigger"
+    id="trigger"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    <div
+      className="c1"
+      disabled={false}
+      size={16}
+      type="#3498db"
+    >
+      <span>
+        It won't open
       </span>
     </div>
   </div>
@@ -374,6 +475,7 @@ exports[`Storyshots Popover Dismissable 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -425,6 +527,7 @@ exports[`Storyshots Popover Nested popover 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -518,6 +621,7 @@ exports[`Storyshots Popover Tooltip positioned on top 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -569,6 +673,7 @@ exports[`Storyshots Popover custom triggerWidth 1`] = `
   width="300px"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -675,6 +780,7 @@ exports[`Storyshots Popover extended style 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -771,6 +877,7 @@ exports[`Storyshots Popover onBeforeOpen - 2s delay 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -867,6 +974,7 @@ exports[`Storyshots Popover onBeforeOpen - no promise 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -963,6 +1071,7 @@ exports[`Storyshots Popover onBeforeOpen - prevent open 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -1059,6 +1168,7 @@ exports[`Storyshots Popover onOpen/onClose 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -1155,6 +1265,7 @@ exports[`Storyshots Popover trigger as function 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}
@@ -1251,6 +1362,7 @@ exports[`Storyshots Popover w/ Tooltip arrow 1`] = `
   width="auto"
 >
   <div
+    className="popover__trigger"
     id="trigger"
     onClick={[Function]}
     onKeyDown={[Function]}

@@ -11,7 +11,7 @@ exports[`Storyshots Currency Input Allow negative 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -36,23 +36,25 @@ exports[`Storyshots Currency Input Allow negative 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -65,76 +67,84 @@ exports[`Storyshots Currency Input Allow negative 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -265,7 +275,7 @@ exports[`Storyshots Currency Input Custom margin of 50px 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -290,23 +300,25 @@ exports[`Storyshots Currency Input Custom margin of 50px 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -319,76 +331,84 @@ exports[`Storyshots Currency Input Custom margin of 50px 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -519,7 +539,7 @@ exports[`Storyshots Currency Input Default 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -544,23 +564,25 @@ exports[`Storyshots Currency Input Default 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -573,76 +595,84 @@ exports[`Storyshots Currency Input Default 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -773,7 +803,7 @@ exports[`Storyshots Currency Input Disabled 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -798,23 +828,25 @@ exports[`Storyshots Currency Input Disabled 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -827,76 +859,84 @@ exports[`Storyshots Currency Input Disabled 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1027,7 +1067,7 @@ exports[`Storyshots Currency Input With Prefix 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1052,23 +1092,25 @@ exports[`Storyshots Currency Input With Prefix 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1081,76 +1123,84 @@ exports[`Storyshots Currency Input With Prefix 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1285,7 +1335,7 @@ exports[`Storyshots Currency Input With Prefix and Suffix 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1310,23 +1360,25 @@ exports[`Storyshots Currency Input With Prefix and Suffix 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1339,76 +1391,84 @@ exports[`Storyshots Currency Input With Prefix and Suffix 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1547,7 +1607,7 @@ exports[`Storyshots Currency Input With Suffix 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1572,23 +1632,25 @@ exports[`Storyshots Currency Input With Suffix 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1601,76 +1663,84 @@ exports[`Storyshots Currency Input With Suffix 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1816,7 +1886,7 @@ exports[`Storyshots Currency Input With Validation Messages 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1841,23 +1911,25 @@ exports[`Storyshots Currency Input With Validation Messages 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1870,76 +1942,84 @@ exports[`Storyshots Currency Input With Validation Messages 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: #dd3311;
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2111,7 +2191,7 @@ exports[`Storyshots Currency Input With custom decimal precision 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2136,23 +2216,25 @@ exports[`Storyshots Currency Input With custom decimal precision 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2165,76 +2247,84 @@ exports[`Storyshots Currency Input With custom decimal precision 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2365,7 +2455,7 @@ exports[`Storyshots Currency Input With custom separators 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2390,23 +2480,25 @@ exports[`Storyshots Currency Input With custom separators 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2419,76 +2511,84 @@ exports[`Storyshots Currency Input With custom separators 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2619,7 +2719,7 @@ exports[`Storyshots Currency Input With value 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2644,23 +2744,25 @@ exports[`Storyshots Currency Input With value 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2673,76 +2775,84 @@ exports[`Storyshots Currency Input With value 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
