@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.2.8...@crave/farmblocks-table@4.3.0) (2019-10-08)
+
+
+### Features
+
+* **Table:** add sticky header option ([137d71b](https://github.com/CraveFood/farmblocks/commit/137d71b))
+
+
+
+
+
 ## [4.2.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.2.7...@crave/farmblocks-table@4.2.8) (2019-10-01)
 
 **Note:** Version bump only for package @crave/farmblocks-table
