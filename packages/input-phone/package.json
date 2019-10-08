@@ -14,7 +14,8 @@
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'"
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'",
+    "prepublish": "node ./updateCountryList.js"
   },
   "repository": {
     "type": "git",
