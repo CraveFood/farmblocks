@@ -509,3 +509,597 @@ exports[`Storyshots Label extended style 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots SideNav Nav With Items 1`] = `
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c7 {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.c2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s;
+  transition: width 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  top: 60px;
+  background-color: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 1;
+  width: 56px;
+}
+
+.c2 * {
+  box-sizing: border-box;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  list-style-type: none;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  background-color: undefined;
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.activated {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c4:hover .icon,
+.c4.activated .icon {
+  color: #ff4411;
+}
+
+.c4.activated {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c1 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.c1:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c6 {
+  background-color: white;
+  border-top: 1px solid rgba(0,0,0,0.16);
+}
+
+.c8 {
+  background-color: white;
+  border-top: 1px solid rgba(0,0,0,0.16);
+}
+
+.c9 {
+  height: 100vh;
+  width: 600px;
+  margin-top: 60px;
+  padding: 18px;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 56px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  height: 60px;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.32);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+    >
+      <i
+        className="wg-list"
+      />
+    </div>
+  </div>
+  <nav
+    className="c2"
+    width="300px"
+  >
+    <div
+      className="c3"
+    >
+      <div>
+        <li
+          className="activated c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-purveyor"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            Vendors
+          </div>
+        </li>
+        <li
+          className="c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-order"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            Orders
+          </div>
+        </li>
+      </div>
+      <div>
+        <li
+          className="c6 c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <img
+              alt=""
+              className="c7"
+              size={36}
+              src="https://picsum.photos/640/?image=889"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            Account
+          </div>
+        </li>
+        <li
+          className="c8 c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-edit"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            Settings
+          </div>
+        </li>
+      </div>
+    </div>
+  </nav>
+  <div
+    className="c9"
+  >
+    <h1>
+      MAIN CONTENT
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav With Router And Custom Highlight Color 1`] = `
+Array [
+  .c4 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s;
+  transition: width 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  top: 0;
+  background-color: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 1;
+  width: 56px;
+  width: 270px;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  list-style-type: none;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  background-color: undefined;
+}
+
+.c3 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c3 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c3:hover,
+.c3.activated {
+  color: #2f313a;
+  background-color: rgba(39,174,96,0.04);
+}
+
+.c3:hover .icon,
+.c3.activated .icon {
+  color: #27ae60;
+}
+
+.c3.activated {
+  padding-left: 4px;
+  border-left: 4px solid #27ae60;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: #27ae60;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.c2:hover {
+  background-color: rgba(39,174,96,0.08);
+  color: #27ae60;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+<nav
+    className="c0"
+    width="300px"
+  >
+    <div
+      className="c1"
+    >
+      <div
+        className="c2"
+        onClick={[Function]}
+      >
+        <i
+          className="wg-list"
+        />
+      </div>
+      <h1
+        style={
+          Object {
+            "margin": "0 0 0 8px",
+          }
+        }
+      >
+        Routes
+      </h1>
+    </div>
+    <a
+      aria-current={null}
+      href="/purveyor"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/order"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/search"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/meat"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
+    </a>
+  </nav>,
+  .c0 {
+  height: 100vh;
+  width: 600px;
+  padding: 18px;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 270px;
+}
+
+<div
+    className="c0"
+  >
+    <h1>
+      select a route
+    </h1>
+  </div>,
+]
+`;
