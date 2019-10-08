@@ -8,20 +8,8 @@ import {
 } from "@storybook/react";
 import createPercyAddon from "@percy-io/percy-storybook";
 
-import { withInfo } from "@storybook/addon-info";
-
 const { percyAddon, serializeStories } = createPercyAddon();
 setAddon(percyAddon);
-
-const req = require.context(
-  "../",
-  true,
-  /^((?![\\/]node_modules).)*\.story\.js$/,
-);
-
-function loadStories() {
-  req.keys().forEach(filename => req(filename));
-}
 
 const GlobalStyle = createGlobalStyle`
 
@@ -143,6 +131,14 @@ const GlobalStyle = createGlobalStyle`
     content: "\\e978";
   }
 
+  .wg-list:before {
+    content: "\\e92f";
+  }
+
+  .wg-list-view:before {
+    content: "\\e963";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -163,6 +159,8 @@ const GlobalStyle = createGlobalStyle`
   .wg-minus,
   .wg-add,
   .wg-location,
+  .wg-list,
+  .wg-list-view,
   .wg-check-box {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
@@ -195,13 +193,8 @@ function withGlobalStyle(storyFn) {
   );
 }
 
-// avoid the withInfo decorator when generating snapshots/running tests
-if (process.env.NODE_ENV !== "test") {
-  addDecorator(withInfo);
-}
-
 addDecorator(withGlobalStyle);
 
-configure(loadStories, module);
+configure(require.context("../packages/", true, /\.story\.js$/), module);
 
 serializeStories(getStorybook);
