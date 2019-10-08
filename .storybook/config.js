@@ -131,6 +131,14 @@ const GlobalStyle = createGlobalStyle`
     content: "\\e978";
   }
 
+  .wg-list:before {
+    content: "\\e92f";
+  }
+
+  .wg-list-view:before {
+    content: "\\e963";
+  }
+
   .wg-order,
   .wg-meat,
   .wg-loading,
@@ -151,6 +159,8 @@ const GlobalStyle = createGlobalStyle`
   .wg-minus,
   .wg-add,
   .wg-location,
+  .wg-list,
+  .wg-list-view,
   .wg-check-box {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'whatsgood-fonticon' !important;
