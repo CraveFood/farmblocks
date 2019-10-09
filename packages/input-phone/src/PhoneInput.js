@@ -6,11 +6,15 @@ import {
   formatIncompletePhoneNumber,
   getCountryCallingCode,
 } from "libphonenumber-js";
+import { FixedSizeList as List } from "react-window";
 import TextInput from "@crave/farmblocks-input-text";
+import { fontSizes, colors } from "@crave/farmblocks-theme";
 import Popover from "@crave/farmblocks-popover";
-import FormWrapper from "@crave/farmblocks-form-wrapper";
+import { FormWrapperHeader } from "@crave/farmblocks-form-wrapper";
 
 import CountrySelectorTrigger from "./CountrySelectorTrigger";
+import countries from "./countries.json";
+import CountryRow from "./CountryRow";
 
 /**
  * This component uses the [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) library to convert phone numbers typed in their national standard to the [RFC3966](https://www.ietf.org/rfc/rfc3966.txt) notation.
@@ -21,6 +25,7 @@ const PhoneInput = ({
   onChange,
   textSelectCountryTitle,
   textSelectCountryCancel,
+  textSelectCountrySearch,
   disabled,
   ...props
 }) => {
@@ -37,35 +42,63 @@ const PhoneInput = ({
     [defaultCountry],
   );
   return (
-    <>
-      <TextInput
-        prefix={
-          <Popover
-            onOpen={() => setPopoverOpen(true)}
-            onClose={() => setPopoverOpen(false)}
-            tooltipProps={{
-              padding: "0",
-            }}
-            disabled={disabled}
-            trigger={
-              <CountrySelectorTrigger
-                disabled={disabled}
-                countryCode={getCountryCallingCode(country)}
-              />
-            }
-            content={() => (
-              <FormWrapper
+    <TextInput
+      prefix={
+        <Popover
+          onOpen={() => setPopoverOpen(true)}
+          onClose={() => setPopoverOpen(false)}
+          tooltipProps={{
+            padding: "0",
+          }}
+          disabled={disabled}
+          trigger={
+            <CountrySelectorTrigger
+              disabled={disabled}
+              countryCode={getCountryCallingCode(country)}
+            />
+          }
+          content={() => (
+            // We stop propagation to avoid giving focus to the main input
+            // This happens because the popover is inside the input wrapper
+            // eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
+            <div onClick={event => event.stopPropagation()}>
+              <FormWrapperHeader
                 title={textSelectCountryTitle}
                 cancelLabel={textSelectCountryCancel}
               />
-            )}
-          />
-        }
-        active={popoverOpen}
-        value={formatIncompletePhoneNumber(phone?.nationalNumber, country)}
-        onChange={handleChange}
-        inputMode="tel"
-        css="
+              <TextInput
+                placeholder={textSelectCountrySearch}
+                type="search"
+                fontSize={fontSizes.SMALL}
+                margin="8px"
+              />
+              <ul
+                css={`
+                  padding: 0;
+                  margin: 0;
+                  border-top: solid 1px ${colors.GREY_16};
+                `}
+              >
+                <List
+                  height={250}
+                  itemCount={countries.length}
+                  itemData={countries}
+                  itemKey={(index, data) => data[index].code}
+                  itemSize={54}
+                  width={300}
+                >
+                  {CountryRow}
+                </List>
+              </ul>
+            </div>
+          )}
+        />
+      }
+      active={popoverOpen}
+      value={formatIncompletePhoneNumber(phone?.nationalNumber, country)}
+      onChange={handleChange}
+      inputMode="tel"
+      css="
           .input {
             overflow: unset;
           }
@@ -79,10 +112,9 @@ const PhoneInput = ({
             }
           }
         "
-        disabled={disabled}
-        {...props}
-      />
-    </>
+      disabled={disabled}
+      {...props}
+    />
   );
 };
 
@@ -91,6 +123,7 @@ PhoneInput.defaultProps = {
   defaultCountry: "US",
   textSelectCountryTitle: "Select Country",
   textSelectCountryCancel: "Cancel",
+  textSelectCountrySearch: "Search",
   disabled: false,
 };
 
@@ -129,6 +162,11 @@ PhoneInput.propTypes = {
    * Text for the cancel button of the country selection popover
    */
   textSelectCountryCancel: PropTypes.string,
+
+  /**
+   * Text for the search field of the country selection popover
+   */
+  textSelectCountrySearch: PropTypes.string,
 
   /**
    * Displays the input greyed out and prevents edition
