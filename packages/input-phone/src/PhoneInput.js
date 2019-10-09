@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback, useState } from "react";
+import React, { useMemo, useCallback, useState, useRef } from "react";
 import PropTypes from "prop-types";
 import {
   parsePhoneNumberFromString,
@@ -15,6 +15,7 @@ import { FormWrapperHeader } from "@crave/farmblocks-form-wrapper";
 import CountrySelectorTrigger from "./CountrySelectorTrigger";
 import countries from "./countries.json";
 import CountryRow from "./CountryRow";
+import { useCountrySearch } from "./PhoneInput.hooks";
 
 /**
  * This component uses the [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) library to convert phone numbers typed in their national standard to the [RFC3966](https://www.ietf.org/rfc/rfc3966.txt) notation.
@@ -29,18 +30,29 @@ const PhoneInput = ({
   disabled,
   ...props
 }) => {
+  const listRef = useRef();
+
   const [popoverOpen, setPopoverOpen] = useState(false);
+  const [countryQuery, setCountryQuery] = useState("");
 
   const phone = useMemo(() => parsePhoneNumberFromString(value), [value]);
-  const country = phone?.country || defaultCountry;
 
-  const handleChange = useCallback(
+  const country = phone?.country || defaultCountry;
+  const filteredCountries = useCountrySearch(countries, countryQuery);
+
+  const handleNumberChange = useCallback(
     ({ target }) => {
       const newValue = parseDigits(target?.value);
       onChange(parsePhoneNumberFromString(newValue, country).getURI());
     },
     [defaultCountry],
   );
+
+  const handleSearchChange = useCallback(event => {
+    setCountryQuery(event.target.value);
+    listRef.current?.scrollTo(0);
+  }, []);
+
   return (
     <TextInput
       prefix={
@@ -57,7 +69,7 @@ const PhoneInput = ({
               countryCode={getCountryCallingCode(country)}
             />
           }
-          content={() => (
+          content={dismiss => (
             // We stop propagation to avoid giving focus to the main input
             // This happens because the popover is inside the input wrapper
             // eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
@@ -65,12 +77,15 @@ const PhoneInput = ({
               <FormWrapperHeader
                 title={textSelectCountryTitle}
                 cancelLabel={textSelectCountryCancel}
+                onCancel={dismiss}
               />
               <TextInput
                 placeholder={textSelectCountrySearch}
                 type="search"
                 fontSize={fontSizes.SMALL}
                 margin="8px"
+                value={countryQuery}
+                onChange={handleSearchChange}
               />
               <ul
                 css={`
@@ -81,11 +96,12 @@ const PhoneInput = ({
               >
                 <List
                   height={250}
-                  itemCount={countries.length}
-                  itemData={countries}
+                  itemCount={filteredCountries.length}
+                  itemData={filteredCountries}
                   itemKey={(index, data) => data[index].code}
                   itemSize={54}
                   width={300}
+                  ref={listRef}
                 >
                   {CountryRow}
                 </List>
@@ -96,7 +112,7 @@ const PhoneInput = ({
       }
       active={popoverOpen}
       value={formatIncompletePhoneNumber(phone?.nationalNumber, country)}
-      onChange={handleChange}
+      onChange={handleNumberChange}
       inputMode="tel"
       css="
           .input {
