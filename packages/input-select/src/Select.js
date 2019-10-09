@@ -160,7 +160,7 @@ class Select extends React.Component {
 
     return (
       <EnhancedInput
-        className="input"
+        className="select__search"
         readOnly={disableSearch}
         placeholder={getValues(this.props)?.length ? "" : placeholder}
         {...inputProps}
