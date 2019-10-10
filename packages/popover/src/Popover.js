@@ -45,7 +45,7 @@ class Popover extends React.Component {
   }
 
   handleOuterClick = event => {
-    if (this.popover.contains(event.target)) {
+    if (this.popover?.contains(event.target)) {
       return;
     }
 
@@ -55,7 +55,8 @@ class Popover extends React.Component {
     }
   };
 
-  toggle = async () => {
+  toggle = async event => {
+    event?.stopPropagation?.();
     const { onOpen, onClose, disabled } = this.props;
 
     // eslint-disable-next-line react/no-access-state-in-setstate
