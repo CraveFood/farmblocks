@@ -31,6 +31,8 @@ const PhoneInput = ({
   ...props
 }) => {
   const listRef = useRef();
+  const searchInputRef = useRef();
+  const numberInputRef = useRef();
 
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [countryQuery, setCountryQuery] = useState("");
@@ -53,12 +55,26 @@ const PhoneInput = ({
     listRef.current?.scrollTo(0);
   }, []);
 
+  const handlePopoverOpen = useCallback(() => {
+    setPopoverOpen(true);
+    setImmediate(() => {
+      searchInputRef.current?.focus?.();
+    });
+  }, []);
+  const handlePopoverClose = useCallback(() => {
+    setPopoverOpen(false);
+    setImmediate(() => {
+      numberInputRef.current?.focus?.();
+    });
+  }, []);
+
   return (
     <TextInput
+      innerRef={numberInputRef}
       prefix={
         <Popover
-          onOpen={() => setPopoverOpen(true)}
-          onClose={() => setPopoverOpen(false)}
+          onOpen={handlePopoverOpen}
+          onClose={handlePopoverClose}
           tooltipProps={{
             padding: "0",
           }}
@@ -86,6 +102,7 @@ const PhoneInput = ({
                 margin="8px"
                 value={countryQuery}
                 onChange={handleSearchChange}
+                innerRef={searchInputRef}
               />
               <ul
                 css={`
