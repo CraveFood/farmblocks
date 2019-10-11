@@ -4,23 +4,16 @@ import { colors } from "@crave/farmblocks-theme";
 import { Switch, Route, NavLink, withRouter } from "react-router-dom";
 import StoryRouter from "storybook-react-router";
 
-import SideNav from "./SideNav";
+import SideNav, { SideNavWithButtons } from "./SideNav";
 import NavItem from "./NavItem";
-import NavButton from "./NavButton";
+import Content from "./Content";
 
 const NavWithItems = () => {
-  const [expanded, setExpanded] = useState(false);
-  const whiteWithBorder = {
-    backgroundColor: "white",
-    borderTop: `1px solid ${colors.GREY_16}`,
-  };
-
+  const navBarHeight = "60px";
   return (
     <div>
-      <TopNav>
-        <NavButton onClick={() => setExpanded(e => !e)} active={!expanded} />
-      </TopNav>
-      <SideNav offsetTop="60px" expanded={expanded}>
+      <TopNav />
+      <SideNav expanded offsetTop={navBarHeight}>
         <NavList>
           <div>
             <NavItem activated icon="wg-purveyor">
@@ -31,88 +24,193 @@ const NavWithItems = () => {
           <div>
             <NavItem
               image="https://picsum.photos/640/?image=889"
-              css={whiteWithBorder}
+              background="white"
+              activated
             >
               Account
             </NavItem>
-            <NavItem icon="wg-edit" css={whiteWithBorder}>
+            <NavItem icon="wg-edit" background="white">
               Settings
             </NavItem>
           </div>
         </NavList>
       </SideNav>
-      <Content expanded={expanded} offsetTop="60px">
-        <h1>MAIN CONTENT</h1>
-        <Lorem />
+      <Content expanded offsetTop={navBarHeight}>
+        <div style={{ padding: "24px" }}>
+          <h1>MAIN CONTENT</h1>
+          <Lorem />
+        </div>
       </Content>
     </div>
   );
 };
 export const navWithItems = () => <NavWithItems />;
 
-export const withRouterAndCustomHighlightColor = withRouter(({ location }) => {
-  const [expanded, setExpanded] = useState(true);
+export const PushMenu = withRouter(({ location }) => {
+  const [expanded, setExpanded] = useState(false);
+  const toggle = () => setExpanded(e => !e);
   const tabs = ["purveyor", "order", "search", "meat"];
   const highlightColor = colors.AVOCADO;
 
   return (
     <>
-      <SideNav expanded={expanded}>
+      <SideNavWithButtons
+        expanded={expanded}
+        onToggle={toggle}
+        onClose={() => setExpanded(false)}
+        highlightColor={highlightColor}
+      >
         <NavHeader>
-          <NavButton
-            highlightColor={highlightColor}
-            onClick={() => setExpanded(e => !e)}
-            active
-          />
-          <h1 style={{ margin: "0 0 0 8px" }}>Routes</h1>
+          <h1 style={{ margin: "8px 8px 8px 48px" }}>Routes</h1>
         </NavHeader>
-        {tabs.map(tab => (
-          <NavLink to={`/${tab}`} key={tab} style={{ textDecoration: "none" }}>
-            <NavItem
-              activated={location.pathname === `/${tab}`}
-              icon={`wg-${tab}`}
-              highlightColor={highlightColor}
-            >
-              {tab}
-            </NavItem>
-          </NavLink>
-        ))}
-      </SideNav>
+        <NavItems tabs={tabs} location={location} />
+      </SideNavWithButtons>
 
       <Content expanded={expanded}>
-        <Switch>
-          {tabs.map(tab => (
-            <Route path={`/${tab}`} key={tab}>
-              <h1>{tab}</h1>
-              <Lorem />
-            </Route>
-          ))}
-          <Route>
-            <h1>select a route</h1>
-          </Route>
-        </Switch>
+        <NavRoutes tabs={tabs} />
       </Content>
     </>
   );
 });
-withRouterAndCustomHighlightColor.story = {
+PushMenu.story = {
   decorators: [StoryRouter()],
 };
+
+export const overlayMenu = withRouter(({ location }) => {
+  const [expanded, setExpanded] = useState(false);
+  const toggle = () => setExpanded(e => !e);
+  const tabs = ["purveyor", "order", "search", "meat"];
+  const highlightColor = colors.AVOCADO;
+
+  return (
+    <>
+      <SideNavWithButtons
+        expanded={expanded}
+        variant="overlay"
+        onToggle={toggle}
+        onClose={() => setExpanded(false)}
+        highlightColor={highlightColor}
+      >
+        <NavHeader css={{ marginTop: "40px" }} />
+        <NavItems
+          tabs={tabs}
+          location={location}
+          highlightColor={highlightColor}
+          onClick={() => setExpanded(false)}
+        />
+      </SideNavWithButtons>
+
+      <Content
+        variant="overlay"
+        expanded={expanded}
+        onClick={expanded ? () => setExpanded(false) : undefined}
+      >
+        <NavRoutes tabs={tabs} />
+      </Content>
+    </>
+  );
+});
+overlayMenu.story = {
+  decorators: [StoryRouter()],
+};
+
+// block scroll on full screen
+export const fullScreenMenu = withRouter(({ location }) => {
+  const [expanded, setExpanded] = useState(false);
+  const toggle = () => setExpanded(e => !e);
+  const tabs = ["purveyor", "order", "search", "meat"];
+
+  return (
+    <>
+      <SideNavWithButtons
+        expanded={expanded}
+        variant="fullWidth"
+        mobileVariant="overlay"
+        onToggle={toggle}
+        onClose={() => setExpanded(false)}
+      >
+        <div style={{ marginTop: "40px" }} />
+        <NavItems
+          tabs={tabs}
+          location={location}
+          onClick={() => setExpanded(false)}
+        />
+      </SideNavWithButtons>
+
+      <Content variant="fullWidth">
+        <NavRoutes tabs={tabs} />
+      </Content>
+    </>
+  );
+});
+
+fullScreenMenu.story = {
+  decorators: [StoryRouter()],
+};
+
+const NavRoutes = ({ tabs }) => (
+  <div style={{ padding: "24px", height: "100vh", boxSizing: "border-box" }}>
+    <Switch>
+      {[...tabs, "account"].map(tab => (
+        <Route path={`/${tab}`} key={tab}>
+          <h1>{tab}</h1>
+          <Lorem />
+        </Route>
+      ))}
+      <Route>
+        <h1>select a route</h1>
+        <Lorem />
+      </Route>
+    </Switch>
+  </div>
+);
+
+const NavItems = ({
+  tabs,
+  location,
+  highlightColor,
+  onClick,
+  variant,
+  ...props
+}) => (
+  <>
+    {tabs.map(tab => (
+      <NavItem
+        key={tab}
+        activated={location.pathname === `/${tab}`}
+        onClick={onClick}
+        icon={`wg-${tab}`}
+        highlightColor={highlightColor}
+        variant={variant}
+        as={NavLink}
+        to={`/${tab}`}
+        style={{ textDecoration: "none" }}
+        {...props}
+      >
+        {tab}
+      </NavItem>
+    ))}
+
+    <NavItem
+      image="https://picsum.photos/640/?image=889"
+      background="white"
+      activated={location.pathname === "/account"}
+      variant={variant}
+      highlightColor={highlightColor}
+      onClick={onClick}
+      as={NavLink}
+      to="/account"
+      style={{ textDecoration: "none" }}
+      {...props}
+    >
+      Account
+    </NavItem>
+  </>
+);
 
 export default { title: "SideNav" };
 
 // story only components
-
-const Content = styled.div`
-  height: 100vh;
-  width: 600px;
-  ${({ offsetTop }) => offsetTop && `margin-top: ${offsetTop};`};
-
-  padding: 18px;
-  transition: margin 0.25s;
-  transition-timing-function: ease-in-out;
-  margin-left: ${({ expanded }) => (expanded ? 270 : 56)}px;
-`;
 
 const TopNav = styled.div`
   box-sizing: border-box;
@@ -126,7 +224,7 @@ const TopNav = styled.div`
   right: 0;
   left: 0;
 
-  z-index: 2;
+  z-index: 101;
 `;
 
 const NavList = styled.div`
