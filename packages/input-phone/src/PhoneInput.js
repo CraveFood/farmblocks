@@ -27,6 +27,7 @@ const PhoneInput = ({
   textSelectCountryTitle,
   textSelectCountryCancel,
   textSelectCountrySearch,
+  priorityCountries,
   disabled,
   ...props
 }) => {
@@ -45,7 +46,11 @@ const PhoneInput = ({
     phone,
     selectedCountry,
   ]);
-  const filteredCountries = useCountrySearch(countries, countryQuery);
+  const filteredCountries = useCountrySearch(
+    countries,
+    countryQuery,
+    priorityCountries,
+  );
 
   const triggerChange = useCallback(
     (number, code = country) => {
@@ -209,7 +214,7 @@ PhoneInput.propTypes = {
    * Countries to show at the top of the list, like the ones with your
    * biggest user base, so most users can easily select their country
    * without the need to search in the full list.
-   * Use a string of country codes separated by colons `,`.
+   * Use a string of country codes separated by colons. E.g. `"US,CA,BR"`.
    */
   priorityCountries: PropTypes.string,
 

@@ -31,3 +31,7 @@ export const withState = () => {
   };
   return <StateExample />;
 };
+
+export const withPriorityCountries = () => (
+  <PhoneInput priorityCountries="US,CA,BR" />
+);
