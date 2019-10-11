@@ -31,6 +31,8 @@ const NavItem = React.memo(
 
 NavItem.defaultProps = {
   highlightColor: colors.RED_ORANGE,
+  variant: "push",
+  mobileVariant: "fullWidth",
 };
 
 NavItem.propTypes = {
@@ -38,6 +40,8 @@ NavItem.propTypes = {
   highlightColor: PropTypes.string,
   background: PropTypes.string,
   activated: PropTypes.bool,
+  variant: PropTypes.string,
+  mobileVariant: PropTypes.string,
   icon: PropTypes.string,
   image: PropTypes.string,
   iconProps: PropTypes.object, // eslint-disable-line
