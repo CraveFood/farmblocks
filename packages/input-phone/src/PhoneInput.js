@@ -30,24 +30,39 @@ const PhoneInput = ({
   disabled,
   ...props
 }) => {
+  const dismissRef = useRef();
   const listRef = useRef();
   const searchInputRef = useRef();
   const numberInputRef = useRef();
 
+  const [selectedCountry, setSelectedCountry] = useState(defaultCountry);
   const [popoverOpen, setPopoverOpen] = useState(false);
   const [countryQuery, setCountryQuery] = useState("");
 
   const phone = useMemo(() => parsePhoneNumberFromString(value), [value]);
 
-  const country = phone?.country || defaultCountry;
+  const country = useMemo(() => phone?.country || selectedCountry, [
+    phone,
+    selectedCountry,
+  ]);
   const filteredCountries = useCountrySearch(countries, countryQuery);
+
+  const triggerChange = useCallback(
+    (number, code = country) => {
+      onChange?.(
+        parsePhoneNumberFromString(number, code)?.getURI() ||
+          `tel+${getCountryCallingCode(code)}${number}`,
+      );
+    },
+    [country, onChange],
+  );
 
   const handleNumberChange = useCallback(
     ({ target }) => {
       const newValue = parseDigits(target?.value);
-      onChange(parsePhoneNumberFromString(newValue, country).getURI());
+      triggerChange(newValue);
     },
-    [defaultCountry],
+    [country],
   );
 
   const handleSearchChange = useCallback(event => {
@@ -68,6 +83,21 @@ const PhoneInput = ({
     });
   }, []);
 
+  const handleCountrySelection = useCallback(code => {
+    setSelectedCountry(code);
+    setCountryQuery("");
+    triggerChange("", code);
+    dismissRef.current?.();
+  }, []);
+
+  const listData = useMemo(
+    () => ({
+      items: filteredCountries,
+      handler: handleCountrySelection,
+    }),
+    [filteredCountries],
+  );
+
   return (
     <TextInput
       innerRef={numberInputRef}
@@ -85,46 +115,49 @@ const PhoneInput = ({
               countryCode={getCountryCallingCode(country)}
             />
           }
-          content={dismiss => (
-            // We stop propagation to avoid giving focus to the main input
-            // This happens because the popover is inside the input wrapper
-            // eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
-            <div onClick={event => event.stopPropagation()}>
-              <FormWrapperHeader
-                title={textSelectCountryTitle}
-                cancelLabel={textSelectCountryCancel}
-                onCancel={dismiss}
-              />
-              <TextInput
-                placeholder={textSelectCountrySearch}
-                type="search"
-                fontSize={fontSizes.SMALL}
-                margin="8px"
-                value={countryQuery}
-                onChange={handleSearchChange}
-                innerRef={searchInputRef}
-              />
-              <ul
-                css={`
-                  padding: 0;
-                  margin: 0;
-                  border-top: solid 1px ${colors.GREY_16};
-                `}
-              >
-                <List
-                  height={250}
-                  itemCount={filteredCountries.length}
-                  itemData={filteredCountries}
-                  itemKey={(index, data) => data[index].code}
-                  itemSize={54}
-                  width={300}
-                  ref={listRef}
+          content={dismiss => {
+            dismissRef.current = dismiss;
+            return (
+              // We stop propagation to avoid giving focus to the main input
+              // This happens because the popover is inside the input wrapper
+              // eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
+              <div onClick={event => event.stopPropagation()}>
+                <FormWrapperHeader
+                  title={textSelectCountryTitle}
+                  cancelLabel={textSelectCountryCancel}
+                  onCancel={dismiss}
+                />
+                <TextInput
+                  placeholder={textSelectCountrySearch}
+                  type="search"
+                  fontSize={fontSizes.SMALL}
+                  margin="8px"
+                  value={countryQuery}
+                  onChange={handleSearchChange}
+                  innerRef={searchInputRef}
+                />
+                <ul
+                  css={`
+                    padding: 0;
+                    margin: 0;
+                    border-top: solid 1px ${colors.GREY_16};
+                  `}
                 >
-                  {CountryRow}
-                </List>
-              </ul>
-            </div>
-          )}
+                  <List
+                    height={250}
+                    itemCount={listData.items.length}
+                    itemData={listData}
+                    itemKey={index => filteredCountries[index].code}
+                    itemSize={54}
+                    width={300}
+                    ref={listRef}
+                  >
+                    {CountryRow}
+                  </List>
+                </ul>
+              </div>
+            );
+          }}
         />
       }
       active={popoverOpen}
