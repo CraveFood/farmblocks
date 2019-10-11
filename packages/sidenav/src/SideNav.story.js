@@ -13,7 +13,7 @@ const NavWithItems = () => {
   return (
     <div>
       <TopNav />
-      <SideNav expanded offsetTop={navBarHeight}>
+      <SideNav expanded mobileVariant="push" offsetTop={navBarHeight}>
         <NavList>
           <div>
             <NavItem activated icon="wg-purveyor">
@@ -91,11 +91,10 @@ export const overlayMenu = withRouter(({ location }) => {
         onClose={() => setExpanded(false)}
         highlightColor={highlightColor}
       >
-        <NavHeader css={{ marginTop: "40px" }} />
+        <NavHeader css={{ marginTop: "60px" }} />
         <NavItems
           tabs={tabs}
           location={location}
-          highlightColor={highlightColor}
           onClick={() => setExpanded(false)}
         />
       </SideNavWithButtons>
@@ -129,7 +128,7 @@ export const fullScreenMenu = withRouter(({ location }) => {
         onToggle={toggle}
         onClose={() => setExpanded(false)}
       >
-        <div style={{ marginTop: "40px" }} />
+        <div style={{ marginTop: "60px" }} />
         <NavItems
           tabs={tabs}
           location={location}
@@ -137,7 +136,7 @@ export const fullScreenMenu = withRouter(({ location }) => {
         />
       </SideNavWithButtons>
 
-      <Content variant="fullWidth">
+      <Content variant="fullWidth" mobileVariant="overlay" expanded={expanded}>
         <NavRoutes tabs={tabs} />
       </Content>
     </>
@@ -165,14 +164,7 @@ const NavRoutes = ({ tabs }) => (
   </div>
 );
 
-const NavItems = ({
-  tabs,
-  location,
-  highlightColor,
-  onClick,
-  variant,
-  ...props
-}) => (
+const NavItems = ({ tabs, location, onClick, ...props }) => (
   <>
     {tabs.map(tab => (
       <NavItem
@@ -180,8 +172,6 @@ const NavItems = ({
         activated={location.pathname === `/${tab}`}
         onClick={onClick}
         icon={`wg-${tab}`}
-        highlightColor={highlightColor}
-        variant={variant}
         as={NavLink}
         to={`/${tab}`}
         style={{ textDecoration: "none" }}
@@ -195,8 +185,6 @@ const NavItems = ({
       image="https://picsum.photos/640/?image=889"
       background="white"
       activated={location.pathname === "/account"}
-      variant={variant}
-      highlightColor={highlightColor}
       onClick={onClick}
       as={NavLink}
       to="/account"
