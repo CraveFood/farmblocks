@@ -17,8 +17,8 @@ install:
   - yarn install --frozen-lockfile;
   - yarn build
 script:
-  - yarn lint .
-  - yarn lint.test .
+  - yarn lint . || travis_terminate 1;
+  - yarn lint.test . || travis_terminate 1;
   - travis_wait yarn coverage
 after_success:
   - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
