@@ -1,22 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "@crave/farmblocks-theme";
-import { IconButton } from "./SideNav.styled";
+import { IconButton, CloseButton, ToggleButton } from "./NavButton.styled";
+import { PUSH } from "./constants/variants";
 
-const NavButton = React.memo(({ icon, ...props }) => (
-  <IconButton {...props}>
+const NavButton = React.memo(({ component: Component, icon, ...props }) => (
+  <Component {...props}>
     <i className={icon} />
-  </IconButton>
+  </Component>
+));
+
+export const NavToggle = React.memo(props => (
+  <NavButton component={ToggleButton} icon="wg-list" {...props} />
+));
+
+export const NavClose = React.memo(props => (
+  <NavButton component={CloseButton} icon="wg-close" {...props} />
 ));
 
 NavButton.defaultProps = {
-  icon: "wg-list",
   highlightColor: colors.RED_ORANGE,
+  component: IconButton,
+  variant: PUSH,
 };
 
 NavButton.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.string.required,
+  component: PropTypes.element,
   highlightColor: PropTypes.string,
+  variant: PropTypes.string,
+  zIndex: PropTypes.string,
+  onClick: PropTypes.func,
+  active: PropTypes.bool,
 };
 
 export default NavButton;
