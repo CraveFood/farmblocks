@@ -59,6 +59,7 @@ SideNav.propTypes = {
   collapsedWidth: PropTypes.string,
   expandedWidth: PropTypes.string,
   expanded: PropTypes.bool,
+  // todo oneoftype constants ...
   variant: PropTypes.string,
 };
 

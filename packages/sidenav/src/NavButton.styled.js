@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import { colors } from "@crave/farmblocks-theme";
 import { transparentize } from "polished";
 
 import { PUSH } from "./constants/variants";
 
 const isPush = variant => variant === PUSH;
+export const GREY_48 = "rgba(0, 0, 0, 0.48)";
 
 export const IconButton = styled.div`
   box-sizing: border-box;
-  color: ${({ active, highlightColor }) =>
-    active ? highlightColor : colors.GREY_48};
+  color: ${({ active, highlightColor }) => (active ? highlightColor : GREY_48)};
   font-size: 16px;
   display: flex;
   align-items: center;

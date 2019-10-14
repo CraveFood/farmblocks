@@ -4,6 +4,8 @@ import { transparentize } from "polished";
 
 import { FULLWIDTH, PUSH, OVERLAY } from "./constants/variants";
 
+export const GREY_48 = "rgba(0, 0, 0, 0.48)";
+
 // Sidebar variant style
 const sideBarFullWidth = css`
   top:0;
@@ -90,7 +92,7 @@ export const NavItem = styled.li`
   padding: 8px;
   cursor: pointer;
   background-color: ${({ background }) => background};
-  color: ${colors.GREY_48};
+  color: ${GREY_48};
 
   .thumb-container {
     display: flex;
@@ -103,7 +105,7 @@ export const NavItem = styled.li`
 
   .icon {
     font-size: 24px;
-    color: ${colors.GREY_48};
+    color: ${GREY_48};
   }
 
   &:hover,
