@@ -14,8 +14,8 @@ Image.propTypes = {
   badge: PropTypes.bool,
   size: PropTypes.number,
   borderRadius: PropTypes.string,
-  width: PropTypes.string,
-  height: PropTypes.string,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   fit: PropTypes.string,
   alt: PropTypes.string,
   css: PropTypes.oneOfType([
