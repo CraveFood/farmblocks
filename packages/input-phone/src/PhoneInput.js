@@ -13,7 +13,7 @@ import Popover from "@crave/farmblocks-popover";
 import { FormWrapperHeader } from "@crave/farmblocks-form-wrapper";
 
 import CountrySelectorTrigger from "./CountrySelectorTrigger";
-import countries from "./countries.json";
+import { countries, flags } from "./countries.json";
 import CountryRow from "./CountryRow";
 import { useCountrySearch } from "./PhoneInput.hooks";
 
@@ -117,7 +117,9 @@ const PhoneInput = ({
           trigger={
             <CountrySelectorTrigger
               disabled={disabled}
-              countryCode={getCountryCallingCode(country)}
+              callingCode={getCountryCallingCode(country)}
+              flag={flags[country]}
+              code={country}
             />
           }
           content={dismiss => {

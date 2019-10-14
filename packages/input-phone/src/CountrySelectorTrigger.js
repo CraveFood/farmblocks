@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import emojiSupport from "detect-emoji-support";
 
 import ChevronDown from "./ChevronDown";
 
@@ -12,17 +13,19 @@ const Trigger = styled.div`
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
 `;
 
-const CountrySelectorTrigger = ({ countryCode, ...props }) => {
+const CountrySelectorTrigger = ({ callingCode, flag, code, ...props }) => {
   return (
     <Trigger {...props}>
-      +{countryCode}
+      {emojiSupport() ? flag : `${code} `}+{callingCode}
       <ChevronDown />
     </Trigger>
   );
 };
 
 CountrySelectorTrigger.propTypes = {
-  countryCode: PropTypes.string.isRequired,
+  flag: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired,
+  callingCode: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
 };
 

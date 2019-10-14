@@ -35,4 +35,12 @@ const trimmedList = countries
   .filter(country => country !== null)
   .sort((a, b) => a.name.localeCompare(b.name, "en"));
 
-fs.writeFileSync("./src/countries.json", JSON.stringify(trimmedList));
+const flags = trimmedList.reduce((acc, country) => {
+  acc[country.code] = country.flag;
+  return acc;
+}, {});
+
+fs.writeFileSync(
+  "./src/countries.json",
+  JSON.stringify({ countries: trimmedList, flags }),
+);

@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { areEqual } from "react-window";
+import emojiSupport from "detect-emoji-support";
 import { DropdownItemWrapper } from "@crave/farmblocks-dropdown";
 import { Item } from "@crave/farmblocks-input-select";
 
@@ -17,7 +18,7 @@ const CountryRow = memo(({ index, style, data: { items, handler } }) => {
       <Item
         label={
           <>
-            {country.flag}
+            {emojiSupport() ? country.flag : country.code}
             <SubtleText>+{country.callingCode}</SubtleText>
             {country.name}
             {country.nativeNames && (
