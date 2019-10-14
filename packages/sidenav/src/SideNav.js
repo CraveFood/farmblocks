@@ -2,9 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "@crave/farmblocks-theme";
 
-import { PUSH } from "./constants/variants";
+import { PUSH, FULLWIDTH } from "./constants/variants";
 import { Sidebar } from "./SideNav.styled";
 import { NavToggle, NavClose } from "./NavButton";
+import useScrollLock from "./utils/useScrollLock";
 
 const SideNav = React.memo(({ children, ...props }) => {
   const { highlightColor, variant, expanded, zIndex } = props;
@@ -25,21 +26,29 @@ const SideNav = React.memo(({ children, ...props }) => {
   );
 });
 
-export const SideNavWithButtons = React.memo(
-  ({ children, onToggle, onClose, ...props }) => {
-    return (
-      <>
-        {onToggle && (
-          <NavToggle {...props} onClick={onToggle} active={!props.expanded} />
-        )}
-        <SideNav {...props}>
-          {onClose && <NavClose onClick={onClose} />}
-          {children}
-        </SideNav>
-      </>
-    );
-  },
-);
+export const SideNavWithButtons = ({
+  children,
+  onToggle,
+  onClose,
+  ...props
+}) => {
+  useScrollLock({
+    condition: props.expanded && props.variant === FULLWIDTH,
+    element: document.body,
+  });
+
+  return (
+    <>
+      {onToggle && (
+        <NavToggle {...props} onClick={onToggle} active={!props.expanded} />
+      )}
+      <SideNav {...props}>
+        {onClose && <NavClose onClick={onClose} />}
+        {children}
+      </SideNav>
+    </>
+  );
+};
 
 SideNav.defaultProps = {
   background: colors.SUGAR,

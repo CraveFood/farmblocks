@@ -128,6 +128,7 @@ export const NavItem = styled.li`
 
 export const Content = styled.div`
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
   ${({ offsetTop }) => offsetTop && `margin-top: ${offsetTop};`};
   ${({ variant }) => sideNavTheme[variant].content}
 `;
