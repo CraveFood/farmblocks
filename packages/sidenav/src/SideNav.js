@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "@crave/farmblocks-theme";
+import { useScrollLock } from "@crave/farmblocks-modal";
 
 import { PUSH, FULLWIDTH, OVERLAY } from "./constants/variants";
 import { Sidebar } from "./SideNav.styled";
 import { NavToggle, NavClose } from "./NavButton";
-import useScrollLock from "./utils/useScrollLock";
 
 const SideNav = React.memo(({ children, ...props }) => {
   const { highlightColor, variant, expanded, zIndex } = props;
