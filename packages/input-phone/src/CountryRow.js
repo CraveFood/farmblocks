@@ -11,25 +11,32 @@ const SubtleText = styled.span`
   margin: 0 0.3em;
 `;
 
-const CountryRow = memo(({ index, style, data: { items, handler } }) => {
-  const country = items[index];
-  return (
-    <DropdownItemWrapper onClick={() => handler(country.code)} style={style}>
-      <Item
-        label={
-          <>
-            {emojiSupport() ? country.flag : country.code}
-            <SubtleText>+{country.callingCode}</SubtleText>
-            {country.name}
-            {country.nativeNames && (
-              <SubtleText>{country.nativeNames}</SubtleText>
-            )}
-          </>
-        }
-      />
-    </DropdownItemWrapper>
-  );
-}, areEqual);
+const CountryRow = memo(
+  ({ index, style, data: { items, handler, highlightIndex } }) => {
+    const country = items[index];
+    return (
+      <DropdownItemWrapper
+        onClick={() => handler(country.code)}
+        highlighted={index === highlightIndex}
+        style={style}
+      >
+        <Item
+          label={
+            <>
+              {emojiSupport() ? country.flag : country.code}
+              <SubtleText>+{country.callingCode}</SubtleText>
+              {country.name}
+              {country.nativeNames && (
+                <SubtleText>{country.nativeNames}</SubtleText>
+              )}
+            </>
+          }
+        />
+      </DropdownItemWrapper>
+    );
+  },
+  areEqual,
+);
 
 CountryRow.propTypes = {
   index: PropTypes.number,
@@ -46,6 +53,7 @@ CountryRow.propTypes = {
         nativeNames: PropTypes.string,
       }),
     ),
+    highlightIndex: PropTypes.number,
   }),
 };
 

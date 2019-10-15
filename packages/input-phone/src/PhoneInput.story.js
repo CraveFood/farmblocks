@@ -12,7 +12,9 @@ export default {
   },
 };
 
-export const basic = () => <PhoneInput value="tel:+12133734253" />;
+export const basic = () => (
+  <PhoneInput value="tel:+12133734253" label="Phone" />
+);
 
 export const disabled = () => <PhoneInput value="tel:+12133734253" disabled />;
 
@@ -26,6 +28,7 @@ export const withState = () => {
           setValue(newValue);
         }}
         value={value}
+        label={`Value -> "${value}"`}
       />
     );
   };

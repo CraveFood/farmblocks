@@ -16,7 +16,7 @@ import { FormWrapperHeader } from "@crave/farmblocks-form-wrapper";
 import CountrySelectorTrigger from "./CountrySelectorTrigger";
 import { countries, flags } from "./countries.json";
 import CountryRow from "./CountryRow";
-import { useCountrySearch } from "./PhoneInput.hooks";
+import { useCountrySearch, useHighlight } from "./PhoneInput.hooks";
 
 const fullScreenBreakpoint = "500px";
 
@@ -73,13 +73,29 @@ const PhoneInput = ({
     [country],
   );
 
+  const handleCountrySelection = useCallback(code => {
+    setSelectedCountry(code);
+    setCountryQuery("");
+    triggerChange("", code);
+    dismissRef.current?.();
+  }, []);
+
+  const { handleKeyDown, highlightIndex, resetIndex } = useHighlight({
+    items: filteredCountries,
+    listRef,
+    selectFn: handleCountrySelection,
+    cancelFn: dismissRef.current,
+  });
+
   const handleSearchChange = useCallback(event => {
     setCountryQuery(event.target.value);
+    resetIndex();
     listRef.current?.scrollTo(0);
   }, []);
 
   const handlePopoverOpen = useCallback(() => {
     setPopoverOpen(true);
+    resetIndex();
     setImmediate(() => {
       searchInputRef.current?.focus?.();
     });
@@ -91,19 +107,13 @@ const PhoneInput = ({
     });
   }, []);
 
-  const handleCountrySelection = useCallback(code => {
-    setSelectedCountry(code);
-    setCountryQuery("");
-    triggerChange("", code);
-    dismissRef.current?.();
-  }, []);
-
   const listData = useMemo(
     () => ({
       items: filteredCountries,
       handler: handleCountrySelection,
+      highlightIndex,
     }),
-    [filteredCountries],
+    [filteredCountries, highlightIndex],
   );
 
   return (
@@ -154,6 +164,7 @@ const PhoneInput = ({
                   margin="8px"
                   value={countryQuery}
                   onChange={handleSearchChange}
+                  onKeyDown={handleKeyDown}
                   innerRef={searchInputRef}
                 />
                 <ul
@@ -206,7 +217,6 @@ const PhoneInput = ({
 
           .popover__trigger {
             height: 100%;
-            outline: none;
           }
         }
       `}
