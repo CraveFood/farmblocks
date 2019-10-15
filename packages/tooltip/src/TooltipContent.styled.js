@@ -5,6 +5,15 @@ import { TOP, BOTTOM, CENTER } from "./constants/positions";
 const Container = styled.div`
   position: relative;
   z-index: ${props => props.zIndex};
+
+  @media only screen and (max-width: ${props => props.fullScreenBreakpoint}) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: ${colors.GREY_32};
+    position: fixed;
+  }
 `;
 
 const centerAlignment = css`
@@ -40,7 +49,7 @@ const positionYStyle = ({ positionY, offset, triggerHeight }) => {
   `;
 };
 
-const arrow = ({ hideArrow, positionY }) => {
+const arrow = ({ hideArrow, positionY, fullScreenBreakpoint }) => {
   if (hideArrow) return css``;
 
   return css`
@@ -69,6 +78,13 @@ const arrow = ({ hideArrow, positionY }) => {
       border-width: 7px;
       ${positionXStyle("8px")};
     }
+    
+    @media only screen and (max-width: ${fullScreenBreakpoint}) { 
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
   `;
 };
 
@@ -92,6 +108,13 @@ const StyledTooltip = styled.div`
   ${positionYStyle};
 
   overflow: ${props => props.overflow};
+
+  @media only screen and (max-width: ${props => props.fullScreenBreakpoint}) {
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
 `;
 
 export { Container, StyledTooltip };
