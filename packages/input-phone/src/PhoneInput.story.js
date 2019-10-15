@@ -38,3 +38,31 @@ export const withState = () => {
 export const withPriorityCountries = () => (
   <PhoneInput priorityCountries="US,CA,BR" />
 );
+
+export const changingDefaultCountry = () => {
+  const Example = () => {
+    const [defaultCountry, setDefaultCountry] = useState("US");
+    const [value, setValue] = useState("");
+
+    return (
+      <>
+        <PhoneInput
+          onChange={newValue => {
+            action("onChange")(newValue);
+            setValue(newValue);
+          }}
+          value={value}
+          defaultCountry={defaultCountry}
+        />
+
+        <button onClick={() => setDefaultCountry("BR")}>default to BR</button>
+        <button onClick={() => setDefaultCountry("US")}>default to US</button>
+        <button onClick={() => setValue("tel:+447400123456")}>
+          set number
+        </button>
+        <button onClick={() => setValue("")}>clear number</button>
+      </>
+    );
+  };
+  return <Example />;
+};

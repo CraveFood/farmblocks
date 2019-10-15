@@ -1,4 +1,10 @@
-import React, { useMemo, useCallback, useState, useRef } from "react";
+import React, {
+  useMemo,
+  useCallback,
+  useState,
+  useRef,
+  useEffect,
+} from "react";
 import PropTypes from "prop-types";
 import {
   parsePhoneNumberFromString,
@@ -45,15 +51,21 @@ const PhoneInput = ({
 
   const phone = useMemo(() => parsePhoneNumberFromString(value), [value]);
 
-  const country = useMemo(() => phone?.country || selectedCountry, [
-    phone,
-    selectedCountry,
-  ]);
+  const country = useMemo(
+    () => phone?.country || selectedCountry || defaultCountry,
+    [phone, selectedCountry, defaultCountry],
+  );
   const filteredCountries = useCountrySearch(
     countries,
     countryQuery,
     priorityCountries,
   );
+
+  useEffect(() => {
+    if (!value) {
+      setSelectedCountry(null);
+    }
+  }, [value]);
 
   const triggerChange = useCallback(
     (number, code = country) => {
@@ -139,11 +151,13 @@ const PhoneInput = ({
           content={dismiss => {
             dismissRef.current = dismiss;
             return (
-              // We stop propagation to avoid giving focus to the main input
-              // This happens because the popover is inside the input wrapper
               // eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
               <div
-                onClick={event => event.stopPropagation()}
+                onClick={event => {
+                  // We stop propagation to avoid giving focus to the main input
+                  // This happens because the popover is inside the input wrapper
+                  event.stopPropagation();
+                }}
                 css="
                 display: flex;
                 flex-direction: column;
@@ -198,7 +212,7 @@ const PhoneInput = ({
         />
       }
       active={popoverOpen}
-      value={formatIncompletePhoneNumber(phone?.nationalNumber, country)}
+      value={formatIncompletePhoneNumber(phone?.format("NATIONAL"), country)}
       onChange={handleNumberChange}
       inputMode="tel"
       css={`
