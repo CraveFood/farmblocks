@@ -7,6 +7,7 @@ import {
   getCountryCallingCode,
 } from "libphonenumber-js";
 import { FixedSizeList as List } from "react-window";
+import AutoSizer from "react-virtualized-auto-sizer";
 import TextInput from "@crave/farmblocks-input-text";
 import { fontSizes, colors } from "@crave/farmblocks-theme";
 import Popover from "@crave/farmblocks-popover";
@@ -16,6 +17,8 @@ import CountrySelectorTrigger from "./CountrySelectorTrigger";
 import { countries, flags } from "./countries.json";
 import CountryRow from "./CountryRow";
 import { useCountrySearch } from "./PhoneInput.hooks";
+
+const fullScreenBreakpoint = "500px";
 
 /**
  * This component uses the [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) library to convert phone numbers typed in their national standard to the [RFC3966](https://www.ietf.org/rfc/rfc3966.txt) notation.
@@ -112,6 +115,7 @@ const PhoneInput = ({
           onClose={handlePopoverClose}
           tooltipProps={{
             padding: "0",
+            fullScreenBreakpoint,
           }}
           disabled={disabled}
           trigger={
@@ -128,7 +132,16 @@ const PhoneInput = ({
               // We stop propagation to avoid giving focus to the main input
               // This happens because the popover is inside the input wrapper
               // eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events
-              <div onClick={event => event.stopPropagation()}>
+              <div
+                onClick={event => event.stopPropagation()}
+                css="
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-height: 340px;
+                min-width: 300px;
+              "
+              >
                 <FormWrapperHeader
                   title={textSelectCountryTitle}
                   cancelLabel={textSelectCountryCancel}
@@ -148,19 +161,25 @@ const PhoneInput = ({
                     padding: 0;
                     margin: 0;
                     border-top: solid 1px ${colors.GREY_16};
+                    flex: 1;
+                    width: 100%;
                   `}
                 >
-                  <List
-                    height={250}
-                    itemCount={listData.items.length}
-                    itemData={listData}
-                    itemKey={index => filteredCountries[index].code}
-                    itemSize={54}
-                    width={300}
-                    ref={listRef}
-                  >
-                    {CountryRow}
-                  </List>
+                  <AutoSizer>
+                    {({ height, width }) => (
+                      <List
+                        height={height}
+                        itemCount={listData.items.length}
+                        itemData={listData}
+                        itemKey={index => filteredCountries[index].code}
+                        itemSize={54}
+                        width={width}
+                        ref={listRef}
+                      >
+                        {CountryRow}
+                      </List>
+                    )}
+                  </AutoSizer>
                 </ul>
               </div>
             );
@@ -171,20 +190,26 @@ const PhoneInput = ({
       value={formatIncompletePhoneNumber(phone?.nationalNumber, country)}
       onChange={handleNumberChange}
       inputMode="tel"
-      css="
-          .input {
-            overflow: unset;
-          }
-          .prefix {
-            padding: 0;
-            align-items: stretch;
-
-            .popover__trigger {
-              height: 100%;
-              outline: none;
+      css={`
+        .input {
+          overflow: unset;
+          @media only screen and (max-width: ${fullScreenBreakpoint}) {
+            input {
+              /* This prevents iOS from zooming in the input on focus */
+              font-size: 16px;
             }
           }
-        "
+        }
+        .prefix {
+          padding: 0;
+          align-items: stretch;
+
+          .popover__trigger {
+            height: 100%;
+            outline: none;
+          }
+        }
+      `}
       disabled={disabled}
       {...props}
     />
