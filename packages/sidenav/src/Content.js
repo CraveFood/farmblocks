@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { PUSH } from "./constants/variants";
+import { PUSH, FULLWIDTH, OVERLAY } from "./constants/variants";
 import { Content as StyledContent } from "./SideNav.styled";
 
 const Content = React.memo(props => <StyledContent {...props} />);
@@ -20,7 +20,7 @@ Content.propTypes = {
   offsetTop: PropTypes.string,
   collapsedWidth: PropTypes.string,
   expandedWidth: PropTypes.string,
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf([PUSH, FULLWIDTH, OVERLAY]),
 };
 
 export default Content;

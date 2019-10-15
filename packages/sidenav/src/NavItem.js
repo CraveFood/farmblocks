@@ -4,7 +4,7 @@ import Text from "@crave/farmblocks-text";
 import { colors } from "@crave/farmblocks-theme";
 import Image from "@crave/farmblocks-image";
 
-import { PUSH } from "./constants/variants";
+import { PUSH, FULLWIDTH, OVERLAY } from "./constants/variants";
 import { NavItem as StyledNavItem } from "./SideNav.styled";
 
 const NavItem = React.memo(
@@ -24,6 +24,7 @@ const NavItem = React.memo(
 NavItem.defaultProps = {
   highlightColor: colors.RED_ORANGE,
   variant: PUSH,
+  iconSize: "24px",
 };
 
 NavItem.propTypes = {
@@ -31,8 +32,9 @@ NavItem.propTypes = {
   highlightColor: PropTypes.string,
   background: PropTypes.string,
   activated: PropTypes.bool,
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf([PUSH, FULLWIDTH, OVERLAY]),
   icon: PropTypes.string,
+  iconSize: PropTypes.string,
   image: PropTypes.string,
   textProps: PropTypes.shape(Text.propTypes),
   imageProps: PropTypes.shape(Image.propTypes),

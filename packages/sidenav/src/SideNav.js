@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "@crave/farmblocks-theme";
 
-import { PUSH, FULLWIDTH } from "./constants/variants";
+import { PUSH, FULLWIDTH, OVERLAY } from "./constants/variants";
 import { Sidebar } from "./SideNav.styled";
 import { NavToggle, NavClose } from "./NavButton";
 import useScrollLock from "./utils/useScrollLock";
@@ -68,8 +68,7 @@ SideNav.propTypes = {
   collapsedWidth: PropTypes.string,
   expandedWidth: PropTypes.string,
   expanded: PropTypes.bool,
-  // todo oneoftype constants ...
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf([PUSH, FULLWIDTH, OVERLAY]),
 };
 
 SideNavWithButtons.defaultProps = {

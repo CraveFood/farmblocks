@@ -104,7 +104,7 @@ export const NavItem = styled.li`
   }
 
   .icon {
-    font-size: 24px;
+    font-size: ${({ iconSize }) => iconSize};
     color: ${GREY_48};
   }
 
