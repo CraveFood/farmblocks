@@ -1,9 +1,9 @@
-export const FULLWIDTH = "fullWidth";
+export const FULLSCREEN = "fullScreen";
 export const OVERLAY = "overlay";
 export const PUSH = "push";
 
 export default {
-  FULLWIDTH,
+  FULLSCREEN,
   OVERLAY,
   PUSH,
 };

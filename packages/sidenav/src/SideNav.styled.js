@@ -2,12 +2,12 @@ import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import { transparentize } from "polished";
 
-import { FULLWIDTH, PUSH, OVERLAY } from "./constants/variants";
+import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
 
 export const GREY_48 = "rgba(0, 0, 0, 0.48)";
 
 // Sidebar variant style
-const sideBarFullWidth = css`
+const sideBarFullScreen = css`
   top:0;
   ${({ expanded }) => expanded && "padding: 16px;"}
   width: ${({ expanded }) => (expanded ? "100%" : "0px")};
@@ -28,7 +28,7 @@ const sideBarPush = css`
 `;
 
 // NavItem variant style
-const navItemFullWidth = css`
+const navItemFullScreen = css`
   border-radius: 90px;
   padding: 8px 16px;
 
@@ -58,9 +58,9 @@ const contentPush = css`
 
 // variant theme
 const sideNavTheme = {
-  [FULLWIDTH]: {
-    sidebar: sideBarFullWidth,
-    navitem: navItemFullWidth,
+  [FULLSCREEN]: {
+    sidebar: sideBarFullScreen,
+    navitem: navItemFullScreen,
     content: "",
   },
   [OVERLAY]: { sidebar: sideBarOverlay, navitem: "", content: contentOverlay },
