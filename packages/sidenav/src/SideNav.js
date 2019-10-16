@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { colors } from "@crave/farmblocks-theme";
 import { useScrollLock } from "@crave/farmblocks-modal";
 
-import { PUSH, FULLWIDTH, OVERLAY } from "./constants/variants";
+import { PUSH, FULLSCREEN, OVERLAY } from "./constants/variants";
 import { Sidebar } from "./SideNav.styled";
 import { NavToggle, NavClose } from "./NavButton";
 
@@ -33,17 +33,25 @@ export const SideNavWithButtons = ({
   ...props
 }) => {
   useScrollLock({
-    condition: props.expanded && props.variant === FULLWIDTH,
+    condition: props.expanded && props.variant === FULLSCREEN,
     element: document.body,
   });
 
   return (
     <>
       {onToggle && (
-        <NavToggle {...props} onClick={onToggle} active={!props.expanded} />
+        <NavToggle
+          {...props}
+          onClick={onToggle}
+          active={!props.expanded}
+          data-testid="toggle-navbar"
+        />
       )}
-      <SideNav {...props}>
-        {onClose && <NavClose onClick={onClose} />}
+      <SideNav
+        data-testid={`navbar-${props.expanded ? "expanded" : "collapsed"}`}
+        {...props}
+      >
+        {onClose && <NavClose onClick={onClose} data-testid="close-navbar" />}
         {children}
       </SideNav>
     </>
@@ -61,14 +69,39 @@ SideNav.defaultProps = {
 };
 
 SideNav.propTypes = {
+  /**
+   The following props will be injected on all SideNav childrens: [highlightColor, variant, expanded, zIndex]
+  */
   children: PropTypes.node,
+  /**
+   Background color of the navBar
+  */
   background: PropTypes.string,
-  zIndex: PropTypes.number,
+  /**
+   The "top" style value. e.g. used to add offset gap of a top bar
+   */
   offsetTop: PropTypes.string,
+  /**
+   PUSH= width on collapsed state(!expanded), OVERLAY/FULLSCREEN= always "0px"
+   */
   collapsedWidth: PropTypes.string,
+  /**
+   PUSH/OVERLAY= width on expanded state(expanded), FULLSCREEN= always "100%"
+   */
   expandedWidth: PropTypes.string,
+  /**
+   Sidebar state value (collapsed/expanded)
+   */
   expanded: PropTypes.bool,
-  variant: PropTypes.oneOf([PUSH, FULLWIDTH, OVERLAY]),
+  /**
+   The sidebar style
+   */
+  variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
+  /**
+   "Active" color for Icon, lef-border and background (transparentized) 
+   */
+  highlightColor: PropTypes.string,
+  zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 SideNavWithButtons.defaultProps = {
@@ -77,7 +110,6 @@ SideNavWithButtons.defaultProps = {
 
 SideNavWithButtons.propTypes = {
   ...SideNav.propTypes,
-  highlightColor: PropTypes.string,
 };
 
 export default SideNav;

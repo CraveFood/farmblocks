@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { PUSH, FULLWIDTH, OVERLAY } from "./constants/variants";
+import { PUSH, FULLSCREEN, OVERLAY } from "./constants/variants";
 import { Content as StyledContent } from "./SideNav.styled";
 
-const Content = React.memo(props => <StyledContent {...props} />);
+const Content = React.memo(props => (
+  <StyledContent data-testid="content-navbar" {...props} />
+));
 
 Content.defaultProps = {
   expanded: false,
@@ -16,11 +18,26 @@ Content.defaultProps = {
 
 Content.propTypes = {
   children: PropTypes.node,
+  /**
+   Sidebar state value (collapsed/extended)
+  */
   expanded: PropTypes.bool,
+  /**
+   The "margin-top" style value. e.g. used to add offset gap of a top bar
+  */
   offsetTop: PropTypes.string,
+  /**
+    PUSH= sidebar offset("margin-left") on collapsed state(!expanded)
+  */
   collapsedWidth: PropTypes.string,
+  /**
+    PUSH=  sidebar offset("margin-left") on expanded state(expanded)
+  */
   expandedWidth: PropTypes.string,
-  variant: PropTypes.oneOf([PUSH, FULLWIDTH, OVERLAY]),
+  /**
+   The sidebar style
+  */
+  variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
 };
 
 export default Content;
