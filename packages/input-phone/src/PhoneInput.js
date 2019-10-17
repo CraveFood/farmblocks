@@ -71,7 +71,7 @@ const PhoneInput = ({
     (number, code = country) => {
       onChange?.(
         parsePhoneNumberFromString(number, code)?.getURI() ||
-          `tel+${getCountryCallingCode(code)}${number}`,
+          `tel:+${getCountryCallingCode(code)}${number}`,
       );
     },
     [country, onChange],
@@ -180,6 +180,7 @@ const PhoneInput = ({
                   onChange={handleSearchChange}
                   onKeyDown={handleKeyDown}
                   innerRef={searchInputRef}
+                  data-testid="country-search-input"
                 />
                 <ul
                   css={`
@@ -236,6 +237,7 @@ const PhoneInput = ({
       `}
       disabled={disabled}
       {...props}
+      data-testid="national-number-input"
     />
   );
 };

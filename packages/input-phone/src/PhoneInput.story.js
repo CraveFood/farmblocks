@@ -66,3 +66,11 @@ export const changingDefaultCountry = () => {
   };
   return <Example />;
 };
+
+export const customTexts = () => (
+  <PhoneInput
+    textSelectCountryTitle="Selecione o país"
+    textSelectCountryCancel="Cancelar"
+    textSelectCountrySearch="Pesquisar"
+  />
+);
