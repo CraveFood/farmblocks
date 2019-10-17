@@ -229,6 +229,7 @@ const PhoneInput = ({
         .prefix {
           padding: 0;
           align-items: stretch;
+          border-radius: 3px 0 0 3px;
 
           .popover__trigger {
             height: 100%;
