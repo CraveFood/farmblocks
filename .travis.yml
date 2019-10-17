@@ -6,6 +6,8 @@ cache:
   directories:
     - node_modules
 before_install:
+  - echo "Printing node version..."
+  - node -v 
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.12.1
   - export PATH="$HOME/.yarn/bin:$PATH"
   - export BRANCH="${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}"
@@ -20,29 +22,3 @@ script:
   - yarn lint .
   - yarn lint.test .
   - travis_wait yarn coverage
-after_success:
-  - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > /home/travis/.npmrc
-  - echo "@crave:registry=https://registry.npmjs.org/" >> /home/travis/.npmrc
-  - git config user.name "Travis CI" || travis_terminate 1;
-  - git config user.email "travis@cravefood.services" || travis_terminate 1;
-  - git remote set-url origin https://${GH_TOKEN}@github.com/CraveFood/farmblocks.git || travis_terminate 1;
-  - |
-    if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
-      yarn snapshot || travis_terminate 1;
-    else
-      if [ $BRANCH == "master" ]; then
-        yarn snyk || travis_terminate 1;
-        snyk monitor || travis_terminate 1;
-        lerna publish --yes || travis_terminate 1;
-        yarn build-storybook || travis_terminate 1;
-        git add docs;
-        git commit -m "chore(docs): [ci skip] gallery update";
-        git push origin "$BRANCH";
-        source ./bin/github_get_release_id.sh;
-        ./bin/github_publish_release.sh;
-      else
-        if [ $TRAVIS_EVENT_TYPE == "push" ]; then
-          lerna publish --canary --yes --preid "alpha-$BRANCH-$TRAVIS_JOB_NUMBER" || travis_terminate 1;
-        fi
-      fi
-    fi
