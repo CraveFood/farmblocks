@@ -38,6 +38,7 @@ const PhoneInput = ({
   textSelectCountrySearch,
   priorityCountries,
   disabled,
+  tooltipProps,
   ...props
 }) => {
   const dismissRef = useRef();
@@ -138,6 +139,7 @@ const PhoneInput = ({
           tooltipProps={{
             padding: "0",
             fullScreenBreakpoint,
+            ...tooltipProps,
           }}
           disabled={disabled}
           trigger={
@@ -219,7 +221,8 @@ const PhoneInput = ({
       css={`
         .input {
           overflow: unset;
-          @media only screen and (max-width: ${fullScreenBreakpoint}) {
+          @media only screen and (max-width: ${tooltipProps?.fullScreenBreakpoint ||
+              fullScreenBreakpoint}) {
             input {
               /* This prevents iOS from zooming in the input on focus */
               font-size: 16px;
@@ -297,6 +300,11 @@ PhoneInput.propTypes = {
    * Displays the input greyed out and prevents edition
    */
   disabled: PropTypes.bool,
+
+  /**
+   * Props to be passed to the Tooltip component
+   */
+  tooltipProps: PropTypes.object,
 };
 
 export default PhoneInput;

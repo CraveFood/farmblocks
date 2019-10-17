@@ -74,3 +74,14 @@ export const customTexts = () => (
     textSelectCountrySearch="Pesquisar"
   />
 );
+
+export const withTooltipProps = () => (
+  <>
+    <div style={{ height: 360 }} />
+    <PhoneInput
+      tooltipProps={{
+        positionY: "top",
+      }}
+    />
+  </>
+);
