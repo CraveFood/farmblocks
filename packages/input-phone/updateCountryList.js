@@ -41,6 +41,8 @@ const flags = trimmedList.reduce((acc, country) => {
 }, {});
 
 fs.writeFileSync(
-  "./src/countries.json",
-  JSON.stringify({ countries: trimmedList, flags }),
+  "./src/countries.js",
+  `export const countries = ${JSON.stringify(trimmedList)};
+  export const flags = ${JSON.stringify(flags)};
+  `,
 );

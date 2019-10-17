@@ -20,7 +20,7 @@ import Popover from "@crave/farmblocks-popover";
 import { FormWrapperHeader } from "@crave/farmblocks-form-wrapper";
 
 import CountrySelectorTrigger from "./CountrySelectorTrigger";
-import { countries, flags } from "./countries.json";
+import { countries, flags } from "./countries";
 import CountryRow from "./CountryRow";
 import { useCountrySearch, useHighlight } from "./PhoneInput.hooks";
 
