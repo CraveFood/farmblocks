@@ -27,8 +27,6 @@ exports[`Storyshots Select Input (private) withImage - Empty image path 1`] = `
 exports[`Storyshots Select Input (private) withImage - Valid image path 1`] = `
 .c2 {
   box-sizing: border-box;
-  width: 24px;
-  height: 24px;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -60,8 +58,10 @@ exports[`Storyshots Select Input (private) withImage - Valid image path 1`] = `
   <img
     alt=""
     className="selectedItemImage c1 c2"
+    height={24}
     size={24}
     src="https://picsum.photos/100?image=0"
+    width={24}
   />
   <input />
 </div>
@@ -70,8 +70,6 @@ exports[`Storyshots Select Input (private) withImage - Valid image path 1`] = `
 exports[`Storyshots Select Input (private) withImage - With inputRef 1`] = `
 .c2 {
   box-sizing: border-box;
-  width: 24px;
-  height: 24px;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -103,8 +101,10 @@ exports[`Storyshots Select Input (private) withImage - With inputRef 1`] = `
   <img
     alt=""
     className="selectedItemImage c1 c2"
+    height={24}
     size={24}
     src="https://picsum.photos/100?image=0"
+    width={24}
   />
   <input />
 </div>

@@ -13,10 +13,11 @@ const imgSrcs = {
   small: "https://picsum.photos/56?image=111",
 };
 
-// eslint-disable-next-line
-const RenderImage = ({ src = imgSrcs.squared, size=thumbnailSizes.X_LARGE ,...props }) => (
-  <Image src={src} size={size} {...props} />
-);
+const RenderImage = ({
+  src = imgSrcs.squared, // eslint-disable-line
+  size = thumbnailSizes.X_LARGE, // eslint-disable-line
+  ...props
+}) => <Image src={src} size={size} {...props} />;
 
 const Group = props => (
   <div
@@ -80,11 +81,11 @@ storiesOf("Image", module)
     </Group>
   ))
   .add("custom dimensions", () => {
-    const width = "800px";
-    const height = "400px";
+    const width = 800;
+    const height = 400;
     return (
       <>
-        <div>{`width - ${width} / height - ${height}`}</div>
+        <div>{`width - ${width}px / height - ${height}px`}</div>
         <RenderImage width={width} height={height} />
       </>
     );
