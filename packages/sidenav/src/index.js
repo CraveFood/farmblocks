@@ -1,5 +1,10 @@
-export { default, SideNavWithButtons } from "./SideNav";
-export { default as NavItem } from "./NavItem";
-export { default as NavButton, NavToggle, NavClose } from "./NavButton";
-export { default as Content } from "./Content";
+export { default } from "./SideNav";
+export { default as SideBar, SideBarBase } from "./components/SideBar";
+export { default as NavItem } from "./components/NavItem";
+export {
+  default as NavButton,
+  ToggleButton,
+  CloseButton,
+} from "./components/NavButton";
+export { default as PageWrapper } from "./helpers/PageWrapper";
 export { default as variants } from "./constants/variants";

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { transparentize } from "polished";
 
-import { PUSH } from "./constants/variants";
+import { PUSH } from "../../constants/variants";
 
 const isPush = variant => variant === PUSH;
 export const GREY_48 = "rgba(0, 0, 0, 0.48)";

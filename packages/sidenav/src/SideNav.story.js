@@ -6,10 +6,10 @@ import { Switch, Route, NavLink, withRouter } from "react-router-dom";
 import StoryRouter from "storybook-react-router";
 import { useMediaQuery } from "react-responsive";
 
-import { SideNavWithButtons } from "./SideNav";
+import SideNav from "./SideNav";
 import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
-import NavItem from "./NavItem";
-import Content from "./Content";
+import NavItem from "./components/NavItem";
+import PageWrapper from "./helpers/PageWrapper";
 
 const tabs = ["purveyor", "order", "search", "meat"];
 
@@ -19,7 +19,7 @@ const SideNavPushComp = () => {
 
   return (
     <>
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         onToggle={toggle}
         onClose={() => setExpanded(false)}
@@ -30,11 +30,11 @@ const SideNavPushComp = () => {
             {tab}
           </NavItem>
         ))}
-      </SideNavWithButtons>
+      </SideNav>
 
-      <Content expanded={expanded}>
+      <PageWrapper expanded={expanded}>
         <LoremBlock variant={PUSH} />
-      </Content>
+      </PageWrapper>
     </>
   );
 };
@@ -50,7 +50,7 @@ const SideNavOverlayComp = () => {
 
   return (
     <>
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         onToggle={toggle}
         onClose={() => setExpanded(false)}
@@ -67,11 +67,11 @@ const SideNavOverlayComp = () => {
             {tab}
           </NavItem>
         ))}
-      </SideNavWithButtons>
+      </SideNav>
 
-      <Content expanded={expanded} variant={OVERLAY} onClick={handleClick}>
+      <PageWrapper expanded={expanded} variant={OVERLAY} onClick={handleClick}>
         <LoremBlock variant={OVERLAY} />
-      </Content>
+      </PageWrapper>
     </>
   );
 };
@@ -86,7 +86,7 @@ const SideNavFullScreenComp = () => {
 
   return (
     <>
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         onToggle={toggle}
         onClose={() => setExpanded(false)}
@@ -103,11 +103,11 @@ const SideNavFullScreenComp = () => {
             {tab}
           </NavItem>
         ))}
-      </SideNavWithButtons>
+      </SideNav>
 
-      <Content expanded={expanded} variant={FULLSCREEN}>
+      <PageWrapper expanded={expanded} variant={FULLSCREEN}>
         <LoremBlock variant={FULLSCREEN} />
-      </Content>
+      </PageWrapper>
     </>
   );
 };
@@ -119,18 +119,18 @@ export const SideNavPushWithRouter = withRouter(({ location }) => {
 
   return (
     <>
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         onToggle={toggle}
         onClose={() => setExpanded(false)}
       >
         <NavHeader />
         <NavItems tabs={tabs} location={location} />
-      </SideNavWithButtons>
+      </SideNav>
 
-      <Content expanded={expanded}>
+      <PageWrapper expanded={expanded}>
         <NavRoutes tabs={tabs} />
-      </Content>
+      </PageWrapper>
     </>
   );
 });
@@ -148,7 +148,7 @@ export const SideNavOverlayWithRouder = withRouter(({ location }) => {
 
   return (
     <>
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         variant={OVERLAY}
         onToggle={toggle}
@@ -157,11 +157,11 @@ export const SideNavOverlayWithRouder = withRouter(({ location }) => {
       >
         <NavHeader />
         <NavItems tabs={tabs} location={location} onClick={collapse} />
-      </SideNavWithButtons>
+      </SideNav>
 
-      <Content variant={OVERLAY} expanded={expanded} onClick={handleClick}>
+      <PageWrapper variant={OVERLAY} expanded={expanded} onClick={handleClick}>
         <NavRoutes tabs={tabs} />
-      </Content>
+      </PageWrapper>
     </>
   );
 });
@@ -176,7 +176,7 @@ export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
 
   return (
     <>
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         variant={FULLSCREEN}
         onToggle={toggle}
@@ -184,11 +184,11 @@ export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
       >
         <NavHeader />
         <NavItems tabs={tabs} location={location} onClick={collapse} />
-      </SideNavWithButtons>
+      </SideNav>
 
-      <Content variant={FULLSCREEN} expanded={expanded}>
+      <PageWrapper variant={FULLSCREEN} expanded={expanded}>
         <NavRoutes tabs={tabs} />
-      </Content>
+      </PageWrapper>
     </>
   );
 });
@@ -209,7 +209,7 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
   return (
     <div>
       <TopNav isPush={!isMobile} />
-      <SideNavWithButtons
+      <SideNav
         expanded={expanded}
         onToggle={toggle}
         variant={variant}
@@ -218,10 +218,10 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
         offsetTop="56px"
       >
         <NavItems tabs={tabs} location={location} onClick={handleClick} />
-      </SideNavWithButtons>
-      <Content expanded={expanded} variant={variant} offsetTop="56px">
+      </SideNav>
+      <PageWrapper expanded={expanded} variant={variant} offsetTop="56px">
         <NavRoutes tabs={tabs} />
-      </Content>
+      </PageWrapper>
     </div>
   );
 });
@@ -233,32 +233,34 @@ NavWithJsMediaQuery.story = {
 const NavItems = ({ tabs, location, onClick, ...props }) => (
   <>
     {tabs.map(tab => (
-      <NavItem
-        key={tab}
-        activated={location.pathname === `/${tab}`}
-        onClick={onClick}
-        icon={`wg-${tab}`}
-        as={NavLink}
+      <NavLink
         to={`/${tab}`}
-        style={{ textDecoration: "none" }}
-        {...props}
-      >
-        {tab}
-      </NavItem>
+        key={tab}
+        style={{ textDecoration: "none" }}>
+        <NavItem
+          activated={location.pathname === `/${tab}`}
+          onClick={onClick}
+          icon={`wg-${tab}`}
+          {...props}
+        >
+          {tab}
+        </NavItem>
+      </NavLink>
     ))}
 
-    <NavItem
-      image="https://picsum.photos/640/?image=889"
-      background="white"
-      activated={location.pathname === "/account"}
-      onClick={onClick}
-      as={NavLink}
+    <NavLink
       to="/account"
-      style={{ textDecoration: "none" }}
-      {...props}
-    >
-      Account
-    </NavItem>
+      style={{ textDecoration: "none" }}>
+      <NavItem
+        image="https://picsum.photos/640/?image=889"
+        background="white"
+        activated={location.pathname === "/account"}
+        onClick={onClick}
+        {...props}
+      >
+        Account
+      </NavItem>
+    </NavLink>
   </>
 );
 

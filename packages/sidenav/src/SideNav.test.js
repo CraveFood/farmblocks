@@ -15,13 +15,13 @@ describe("SideNav", () => {
     it("should display navbar with collapsed width", () => {
       const { getByTestId } = render(<SideNavPush />);
       const navbar = getByTestId("navbar-collapsed");
-      const content = getByTestId("content-navbar");
+      const pageWrapper = getByTestId("pageWrapper-navbar");
 
       expect(navbar).toBeVisible();
       expect(navbar).toHaveStyle(
         `width:${SideNav.defaultProps.collapsedWidth};`,
       );
-      expect(content).toHaveStyle(
+      expect(pageWrapper).toHaveStyle(
         `margin-left:${SideNav.defaultProps.collapsedWidth};`,
       );
     });
@@ -44,13 +44,13 @@ describe("SideNav", () => {
       fireEvent.click(toggleButton);
 
       const navbar = getByTestId("navbar-expanded");
-      const content = getByTestId("content-navbar");
+      const pageWrapper = getByTestId("pageWrapper-navbar");
 
       expect(toggleButton).toHaveStyle(`color: ${GREY_48};`);
       expect(navbar).toHaveStyle(
         `width:${SideNav.defaultProps.expandedWidth};`,
       );
-      expect(content).toHaveStyle(
+      expect(pageWrapper).toHaveStyle(
         `margin-left:${SideNav.defaultProps.expandedWidth};`,
       );
     });
@@ -83,12 +83,12 @@ describe("SideNav", () => {
       fireEvent.click(toggleButton);
 
       const navbar = getByTestId("navbar-expanded");
-      const content = getByTestId("content-navbar");
+      const pageWrapper = getByTestId("pageWrapper-navbar");
 
       expect(navbar).toHaveStyle(
         `width: ${SideNav.defaultProps.expandedWidth};`,
       );
-      expect(content).toHaveStyle(`background-color:${colors.GREY_16};`);
+      expect(pageWrapper).toHaveStyle(`background-color:${colors.GREY_16};`);
       expect(getByTestId("close-navbar")).toBeVisible();
     });
   });

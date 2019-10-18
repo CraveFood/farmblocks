@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { PUSH, FULLSCREEN, OVERLAY } from "./constants/variants";
-import { Content as StyledContent } from "./SideNav.styled";
+import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
+import StyledPageWrapper from "./PageWrapper.styled";
 
-const Content = React.memo(props => (
-  <StyledContent data-testid="content-navbar" {...props} />
+const PageWrapper = React.memo(props => (
+  <StyledPageWrapper data-testid="pageWrapper-navbar" {...props} />
 ));
 
-Content.defaultProps = {
+PageWrapper.defaultProps = {
   expanded: false,
   offsetTop: "0",
   collapsedWidth: "56px",
@@ -16,7 +16,7 @@ Content.defaultProps = {
   variant: PUSH,
 };
 
-Content.propTypes = {
+PageWrapper.propTypes = {
   children: PropTypes.node,
   /**
    Sidebar state value (collapsed/extended)
@@ -31,7 +31,7 @@ Content.propTypes = {
   */
   collapsedWidth: PropTypes.string,
   /**
-    PUSH=  sidebar offset("margin-left") on expanded state(expanded)
+    PUSH= sidebar offset("margin-left") on expanded state(expanded)
   */
   expandedWidth: PropTypes.string,
   /**
@@ -40,4 +40,4 @@ Content.propTypes = {
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
 };
 
-export default Content;
+export default PageWrapper;

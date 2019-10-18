@@ -4,12 +4,12 @@ import Text from "@crave/farmblocks-text";
 import { colors } from "@crave/farmblocks-theme";
 import Image from "@crave/farmblocks-image";
 
-import { PUSH, FULLSCREEN, OVERLAY } from "./constants/variants";
-import { NavItem as StyledNavItem } from "./SideNav.styled";
+import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
+import NavItemStyled from "./NavItem.styled";
 
 const NavItem = React.memo(
   ({ icon, children, activated, image, textProps, imageProps, ...props }) => (
-    <StyledNavItem className={activated && "activated"} {...props}>
+    <NavItemStyled className={activated && "activated"} {...props}>
       <div className="thumb-container">
         {image && <Image size={36} src={image} badge {...imageProps} />}
         {icon && <i className={`icon ${icon}`} />}
@@ -17,7 +17,7 @@ const NavItem = React.memo(
       <Text type="inherit" fontWeight="title" {...textProps}>
         {children}
       </Text>
-    </StyledNavItem>
+    </NavItemStyled>
   ),
 );
 
