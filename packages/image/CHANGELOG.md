@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@3.0.0...@crave/farmblocks-image@3.0.1) (2019-10-18)
+
+
+### Bug Fixes
+
+* **Image:** proptypes width and height could be a number value ([9663a9c](https://github.com/CraveFood/farmblocks/commit/9663a9c))
+
+
+
+
+
 # [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@2.0.0...@crave/farmblocks-image@3.0.0) (2019-10-01)
 
 
