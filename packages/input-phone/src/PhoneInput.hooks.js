@@ -10,19 +10,29 @@ export const useCountrySearch = (data, query, priority) => {
   const fuse = useRef(new Fuse(data, options));
 
   const allCountries = useMemo(() => {
-    const codes = priority?.split(",");
+    try {
+      const codes = priority?.split(",");
 
-    const topCountries = data?.filter(country => codes?.includes(country.code));
+      const topCountries = data?.filter(country =>
+        codes?.includes(country.code),
+      );
 
-    const indexedTopCountries = topCountries?.reduce(
-      (acc, country) => ({ ...acc, [country.code]: country }),
-      {},
-    );
+      const indexedTopCountries = topCountries?.reduce(
+        (acc, country) => ({ ...acc, [country.code]: country }),
+        {},
+      );
 
-    const orderedTopCountries =
-      codes?.map(code => indexedTopCountries[code]) || [];
+      const orderedTopCountries =
+        codes?.map(code => indexedTopCountries[code]) || [];
 
-    return [...orderedTopCountries, ...data];
+      return [...orderedTopCountries, ...data];
+    } catch (_error) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        'farmblocks-input-phone: To avoid rerenders, send the priorityCountries list of codes as a string. E.g. "US,CA,GB"',
+      );
+      return data;
+    }
   }, [data, priority]);
 
   useEffect(() => {
