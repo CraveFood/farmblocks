@@ -466,8 +466,6 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
 
 .c7 {
   box-sizing: border-box;
-  width: 72px;
-  height: 72px;
   border-radius: 4px;
   object-fit: cover;
 }
@@ -617,8 +615,10 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
           <img
             alt=""
             className="thumbnail c7"
+            height={72}
             size={72}
             src="https://picsum.photos/200?image=0"
+            width={72}
           />
           <div
             className="title c8"
