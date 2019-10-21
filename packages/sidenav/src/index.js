@@ -1,5 +1,5 @@
 export { default } from "./SideNav";
-export { default as SideBar, SideBarBase } from "./components/SideBar";
+export { default as SideBar } from "./components/SideBar";
 export { default as NavItem } from "./components/NavItem";
 export {
   default as NavButton,

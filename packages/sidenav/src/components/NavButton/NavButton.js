@@ -18,29 +18,14 @@ NavButton.defaultProps = {
 };
 
 NavButton.propTypes = {
-  /**
-   icon class name
-  */
   icon: PropTypes.string,
-  /**
-    used as "button", the icon container
-  */
   component: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.object,
     PropTypes.func,
   ]),
-  /**
-   When true add highlight color and background
-   */
   active: PropTypes.bool,
-  /**
-   Color used on the active icon and tranparentized for the hover background-color
-   */
   highlightColor: PropTypes.string,
-  /**
-   The sidebar style
-   */
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
   onClick: PropTypes.func,
   zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

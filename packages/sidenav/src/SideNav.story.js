@@ -38,17 +38,21 @@ export const NavItems = () => (
 );
 
 export const SideNavSimple = () => (
-  <SideNav>
-    <div>Sidebar Content</div>
-  </SideNav>
+  <SideNav>{() => <div>Sidebar Content</div>}</SideNav>
 );
 
 export const CompleteSideNavSimple = () => (
   <>
     <SideNav>
-      <NavItem activated>Item 1 (activated)</NavItem>
-      <NavItem>Item 2</NavItem>
-      <NavItem>Item 3</NavItem>
+      {props => (
+        <>
+          <NavItem activated {...props}>
+            Item 1 (activated)
+          </NavItem>
+          <NavItem {...props}>Item 2</NavItem>
+          <NavItem {...props}>Item 3</NavItem>
+        </>
+      )}
     </SideNav>
     <PageWrapper expanded>
       <h1>Page Content</h1>
@@ -67,12 +71,21 @@ const SideNavPushComp = () => {
         onToggle={toggle}
         onClose={() => setExpanded(false)}
       >
-        <NavHeader />
-        {tabs.map(tab => (
-          <NavItem key={tab} activated={tab === tabs[0]} icon={`wg-${tab}`}>
-            {tab}
-          </NavItem>
-        ))}
+        {props => (
+          <>
+            <NavHeader />
+            {tabs.map(tab => (
+              <NavItem
+                key={tab}
+                activated={tab === tabs[0]}
+                icon={`wg-${tab}`}
+                {...props}
+              >
+                {tab}
+              </NavItem>
+            ))}
+          </>
+        )}
       </SideNav>
 
       <PageWrapper expanded={expanded}>
@@ -99,17 +112,22 @@ const SideNavOverlayComp = () => {
         onClose={() => setExpanded(false)}
         variant={OVERLAY}
       >
-        <NavHeader />
-        {tabs.map(tab => (
-          <NavItem
-            key={tab}
-            activated={tab === tabs[0]}
-            icon={`wg-${tab}`}
-            onClick={handleClick}
-          >
-            {tab}
-          </NavItem>
-        ))}
+        {props => (
+          <>
+            <NavHeader />
+            {tabs.map(tab => (
+              <NavItem
+                key={tab}
+                activated={tab === tabs[0]}
+                icon={`wg-${tab}`}
+                onClick={handleClick}
+                {...props}
+              >
+                {tab}
+              </NavItem>
+            ))}
+          </>
+        )}
       </SideNav>
 
       <PageWrapper expanded={expanded} variant={OVERLAY} onClick={handleClick}>
@@ -135,17 +153,22 @@ const SideNavFullScreenComp = () => {
         onClose={() => setExpanded(false)}
         variant={FULLSCREEN}
       >
-        <NavHeader />
-        {tabs.map(tab => (
-          <NavItem
-            key={tab}
-            activated={tab === tabs[0]}
-            icon={`wg-${tab}`}
-            onClick={handleClick}
-          >
-            {tab}
-          </NavItem>
-        ))}
+        {props => (
+          <>
+            <NavHeader />
+            {tabs.map(tab => (
+              <NavItem
+                key={tab}
+                activated={tab === tabs[0]}
+                icon={`wg-${tab}`}
+                onClick={handleClick}
+                {...props}
+              >
+                {tab}
+              </NavItem>
+            ))}
+          </>
+        )}
       </SideNav>
 
       <PageWrapper expanded={expanded} variant={FULLSCREEN}>
@@ -167,8 +190,12 @@ export const SideNavPushWithRouter = withRouter(({ location }) => {
         onToggle={toggle}
         onClose={() => setExpanded(false)}
       >
-        <NavHeader />
-        <NavLinkItems tabs={tabs} location={location} />
+        {props => (
+          <>
+            <NavHeader />
+            <NavLinkItems tabs={tabs} location={location} {...props} />
+          </>
+        )}
       </SideNav>
 
       <PageWrapper expanded={expanded}>
@@ -198,8 +225,17 @@ export const SideNavOverlayWithRouder = withRouter(({ location }) => {
         onClose={collapse}
         highlightColor={highlightColor}
       >
-        <NavHeader />
-        <NavLinkItems tabs={tabs} location={location} onClick={collapse} />
+        {props => (
+          <>
+            <NavHeader />
+            <NavLinkItems
+              tabs={tabs}
+              location={location}
+              onClick={collapse}
+              {...props}
+            />
+          </>
+        )}
       </SideNav>
 
       <PageWrapper variant={OVERLAY} expanded={expanded} onClick={handleClick}>
@@ -225,8 +261,16 @@ export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
         onToggle={toggle}
         onClose={collapse}
       >
-        <NavHeader />
-        <NavLinkItems tabs={tabs} location={location} onClick={collapse} />
+        {props => (
+          <>
+            <NavLinkItems
+              tabs={tabs}
+              location={location}
+              onClick={collapse}
+              {...props}
+            />
+          </>
+        )}
       </SideNav>
 
       <PageWrapper variant={FULLSCREEN} expanded={expanded}>
@@ -260,7 +304,16 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
         onClose={collapse}
         offsetTop="56px"
       >
-        <NavLinkItems tabs={tabs} location={location} onClick={handleClick} />
+        {props => (
+          <>
+            <NavLinkItems
+              tabs={tabs}
+              location={location}
+              onClick={handleClick}
+              {...props}
+            />
+          </>
+        )}
       </SideNav>
       <PageWrapper expanded={expanded} variant={variant} offsetTop="56px">
         <NavRoutes tabs={tabs} />
