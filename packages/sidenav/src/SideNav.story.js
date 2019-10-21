@@ -13,6 +13,49 @@ import PageWrapper from "./helpers/PageWrapper";
 
 const tabs = ["purveyor", "order", "search", "meat"];
 
+const useToggle = initialState => {
+  const [expanded, setExpanded] = useState(initialState);
+  const toggle = () => setExpanded(e => !e);
+  const collapse = () => setExpanded(false);
+  const expand = () => setExpanded(true);
+
+  return [expanded, { toggle, collapse, expand }];
+};
+
+const NavItemWithToggle = props => {
+  const [active, { toggle }] = useToggle(false);
+  return <NavItem activated={active} onClick={toggle} {...props} />;
+};
+
+export const NavItems = () => (
+  <div>
+    <NavItemWithToggle>Simple Item</NavItemWithToggle>
+    <NavItemWithToggle image="https://picsum.photos/640/?image=234">
+      Item with Image
+    </NavItemWithToggle>
+    <NavItemWithToggle icon="wg-meat">Item with Icon</NavItemWithToggle>
+  </div>
+);
+
+export const SideNavSimple = () => (
+  <SideNav>
+    <div>Sidebar Content</div>
+  </SideNav>
+);
+
+export const CompleteSideNavSimple = () => (
+  <>
+    <SideNav>
+      <NavItem activated>Item 1 (activated)</NavItem>
+      <NavItem>Item 2</NavItem>
+      <NavItem>Item 3</NavItem>
+    </SideNav>
+    <PageWrapper expanded>
+      <h1>Page Content</h1>
+    </PageWrapper>
+  </>
+);
+
 const SideNavPushComp = () => {
   const [expanded, setExpanded] = useState(false);
   const toggle = () => setExpanded(e => !e);
@@ -125,7 +168,7 @@ export const SideNavPushWithRouter = withRouter(({ location }) => {
         onClose={() => setExpanded(false)}
       >
         <NavHeader />
-        <NavItems tabs={tabs} location={location} />
+        <NavLinkItems tabs={tabs} location={location} />
       </SideNav>
 
       <PageWrapper expanded={expanded}>
@@ -156,7 +199,7 @@ export const SideNavOverlayWithRouder = withRouter(({ location }) => {
         highlightColor={highlightColor}
       >
         <NavHeader />
-        <NavItems tabs={tabs} location={location} onClick={collapse} />
+        <NavLinkItems tabs={tabs} location={location} onClick={collapse} />
       </SideNav>
 
       <PageWrapper variant={OVERLAY} expanded={expanded} onClick={handleClick}>
@@ -183,7 +226,7 @@ export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
         onClose={collapse}
       >
         <NavHeader />
-        <NavItems tabs={tabs} location={location} onClick={collapse} />
+        <NavLinkItems tabs={tabs} location={location} onClick={collapse} />
       </SideNav>
 
       <PageWrapper variant={FULLSCREEN} expanded={expanded}>
@@ -217,7 +260,7 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
         onClose={collapse}
         offsetTop="56px"
       >
-        <NavItems tabs={tabs} location={location} onClick={handleClick} />
+        <NavLinkItems tabs={tabs} location={location} onClick={handleClick} />
       </SideNav>
       <PageWrapper expanded={expanded} variant={variant} offsetTop="56px">
         <NavRoutes tabs={tabs} />
@@ -230,13 +273,10 @@ NavWithJsMediaQuery.story = {
 };
 
 /* eslint-disable */
-const NavItems = ({ tabs, location, onClick, ...props }) => (
+const NavLinkItems = ({ tabs, location, onClick, ...props }) => (
   <>
     {tabs.map(tab => (
-      <NavLink
-        to={`/${tab}`}
-        key={tab}
-        style={{ textDecoration: "none" }}>
+      <NavLink to={`/${tab}`} key={tab} style={{ textDecoration: "none" }}>
         <NavItem
           activated={location.pathname === `/${tab}`}
           onClick={onClick}
@@ -248,9 +288,7 @@ const NavItems = ({ tabs, location, onClick, ...props }) => (
       </NavLink>
     ))}
 
-    <NavLink
-      to="/account"
-      style={{ textDecoration: "none" }}>
+    <NavLink to="/account" style={{ textDecoration: "none" }}>
       <NavItem
         image="https://picsum.photos/640/?image=889"
         background="white"
@@ -278,12 +316,16 @@ const NavRoutes = ({ tabs }) => (
     <Switch>
       {[...tabs, "account"].map(tab => (
         <Route path={`/${tab}`} key={tab}>
-          <Text upper fontWeight="title" size={32}>{tab}</Text>
+          <Text upper fontWeight="title" size={32}>
+            {tab}
+          </Text>
           <Lorem />
         </Route>
       ))}
       <Route>
-        <Text upper fontWeight="title" size={32}>select a route</Text>
+        <Text upper fontWeight="title" size={32}>
+          select a route
+        </Text>
         <Lorem />
       </Route>
     </Switch>
@@ -322,16 +364,16 @@ const Lorem = () => (
       margin: "16px 0",
     }}
   >
-  <Text>
-    Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus
-    molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias
-    officiis assumenda officia quibusdam deleniti eos cupiditate dolore
-    doloribus!
-  </Text>
+    <Text>
+      Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta
+      minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum
+      alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore
+      doloribus!
+    </Text>
   </div>
 );
 
-const LoremBlock = ({variant}) => (
+const LoremBlock = ({ variant }) => (
   <div
     style={{
       margin: "0 24px",
@@ -340,7 +382,9 @@ const LoremBlock = ({variant}) => (
       boxSizing: "border-box",
     }}
   >
-    <Text upper fontWeight="title" size={32}>{variant}</Text>
+    <Text upper fontWeight="title" size={32}>
+      {variant}
+    </Text>
     <Lorem />
   </div>
 );
