@@ -4,23 +4,28 @@ import { colors } from "@crave/farmblocks-theme";
 
 import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
 import SideBarStyled from "./SideBar.styled";
+import NavItem from "../NavItem";
+import { CloseButton } from "../NavButton";
+import matchComponent from "../../utils/componentMatcher";
 
 export const SideBarBase = props => <SideBarStyled {...props} />;
 
 const SideBar = React.memo(({ children, ...props }) => {
   const { highlightColor, variant, expanded, zIndex } = props;
+  const isNavItem = matchComponent(NavItem);
+  const isCloseButton = matchComponent(CloseButton);
+
   return (
     <SideBarStyled {...props}>
-      {React.Children.map(
-        children,
-        child =>
-          child &&
-          React.cloneElement(child, {
-            highlightColor,
-            variant,
-            expanded,
-            zIndex,
-          }),
+      {React.Children.map(children, child =>
+        isNavItem(child) || isCloseButton(child)
+          ? React.cloneElement(child, {
+              highlightColor,
+              variant,
+              expanded,
+              zIndex,
+            })
+          : child,
       )}
     </SideBarStyled>
   );
@@ -72,4 +77,5 @@ SideBar.propTypes = {
   zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
+SideBarBase.defaultProps = {};
 export default SideBar;

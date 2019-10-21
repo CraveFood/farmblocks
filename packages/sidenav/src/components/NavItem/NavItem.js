@@ -10,10 +10,12 @@ import NavItemStyled from "./NavItem.styled";
 const NavItem = React.memo(
   ({ icon, children, activated, image, textProps, imageProps, ...props }) => (
     <NavItemStyled className={activated && "activated"} {...props}>
-      <div className="thumb-container">
-        {image && <Image size={36} src={image} badge {...imageProps} />}
-        {icon && <i className={`icon ${icon}`} />}
-      </div>
+      {(image || icon) && (
+        <div className="thumb-container">
+          {image && <Image size={36} src={image} badge {...imageProps} />}
+          {icon && <i className={`icon ${icon}`} />}
+        </div>
+      )}
       <Text type="inherit" fontWeight="title" {...textProps}>
         {children}
       </Text>
