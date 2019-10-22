@@ -9,6 +9,8 @@ A React Sidebar Navigation component
 - [Installation](#installation)
 - [Usage](#usage)
 - [API](#api)
+  - [SideNav](#sidenav)
+  - [NavItem](#navitem)
 - [Helpers](#helpers)
   - [PageWrapper](#pagewrapper)
 - [License](#license)
@@ -16,13 +18,13 @@ A React Sidebar Navigation component
 ## Installation
 
 ```sh
-npm install @crave/farmblocks-modal
+npm install @crave/farmblocks-sidenav
 ```
 
 or with yarn
 
 ```sh
-yarn add @crave/farmblocks-modal
+yarn add @crave/farmblocks-sidenav
 ```
 
 ## Usage
@@ -34,11 +36,7 @@ import React from "react";
 import { render } from "react-dom";
 import SideNav from "@crave/farmblocks-sidenav";
 
-const App = () => (
-  <SideNav>
-    <div>Sidebar Content</div>
-  </SideNav>
-);
+const App = () => <SideNav render={() => <div>Sidebar Content</div>} />;
 
 render(<App />, document.getElementById("root"));
 ```
@@ -52,11 +50,15 @@ import SideNav, { NavItem, PageWrapper } from "@crave/farmblocks-sidenav";
 
 const App = () => (
   <>
-    <SideNav>
-      <NavItem activated>Item 1 (activated)</NavItem>
-      <NavItem>Item 2</NavItem>
-      <NavItem>Item 3</NavItem>
-    </SideNav>
+    <SideNav
+      render={() => (
+        <>
+          <NavItem active>Item 1 (active)</NavItem>
+          <NavItem>Item 2</NavItem>
+          <NavItem>Item 3</NavItem>
+        </>
+      )}
+    />
     <PageWrapper expanded>
       <h1>Page Content</h1>
     </PageWrapper>
@@ -66,23 +68,71 @@ const App = () => (
 render(<App />, document.getElementById("root"));
 ```
 
+Good Example
+
+```jsx
+import React from "react";
+import { render } from "react-dom";
+import SideNav, { NavItem, PageWrapper } from "@crave/farmblocks-sidenav";
+
+const App = () => {
+  const [expanded, { toggle, collapse }] = useToggle(false);
+  const [selected, setSelected] = useState(tabs[0]);
+  const tabs = ["purveyor", "order", "search", "meat"];
+
+  return (
+    <>
+      <SideNav
+        expanded={expanded}
+        onToggle={toggle}
+        onClose={collapse}
+        render={props => (
+          <>
+            <NavHeader />
+            {tabs.map(tab => (
+              <NavItem
+                key={tab}
+                onClick={() => setSelected(tab)}
+                active={tab === selected}
+                icon={`wg-${tab}`}
+                {...props}
+              >
+                {tab}
+              </NavItem>
+            ))}
+          </>
+        )}
+      />
+
+      <PageWrapper expanded={expanded}>
+        <LoremIpsumBlock />
+      </PageWrapper>
+    </>
+  );
+};
+
+render(<App />, document.getElementById("root"));
+```
+
+To see these and more examples running, visit our [storybook](https://cravefood.github.io/farmblocks/?path=/story/sidenav--side-nav-overlay)
+
 ## API
 
 ### SideNav
 
 - **expanded** (_Boolean_) = `true`
 
-  > Whether the sidebar is exapanded or collapsed.
+  > Whether the sidebar is expanded or collapsed.
 
 - **variant** (`"push"` | `"fullScreen"` | `"overlay"`) = `"push"`
 
   > Style variant.
 
-- **expandedWidth** (_String_) = `"56px"`
+- **expandedWidth** (_String_) = `"270px"`
 
   > Width on expanded `false` state. (only applied on "push" || "overlay" variant)
 
-- **collapsedWidth** (_String_) = `"270px"`
+- **collapsedWidth** (_String_) = `"56px"`
 
   > Width on expanded `true` state. (only applied on "push" variant)
 
@@ -90,13 +140,13 @@ render(<App />, document.getElementById("root"));
 
   > Passing this prop will render a hamburguer button on the page top/left corner, that will trigger this function on click.
 
-- **onClose** (_Function_) = `"270px"`
+- **onClose** (_Function_)
 
   > Passing this prop will render a close button on the sidebar top/right corner when expanded. (only applied on "fullScreen" || "overlay" variant)
 
-- **children** (_Function_)
+- **render** (_Function_)
 
-  > Render props child, contains the following props [highlightColor, variant, expanded, zIndex]
+  > Render the sidebar content, passing as args the following props {highlightColor, variant, expanded, zIndex}.
 
 - **highlightColor** (_String_)
 
@@ -116,13 +166,13 @@ render(<App />, document.getElementById("root"));
 
 ### NavItem
 
-- **activated** (_Boolean_)
+- **active** (_Boolean_)
 
   > Whether the item is with active style or not.
 
 - **variant** (`"push"` | `"fullScreen"` | `"overlay"`) = `"push"`
 
-  > Set rounded style on "fullScreen" variant, the other ones don't affect this component.
+  > On "fullScreen" variant set rounded style, the other ones don't affect this component.
 
 - **children** (_String_)
 
@@ -156,7 +206,54 @@ render(<App />, document.getElementById("root"));
 
   > Props for children(text) component, accept any farmblocks-text prop
 
-## Usage
+## Helpers
+
+### PageWrapper
+
+Wrapper to help your page follow sidenav variants.
+
+```jsx
+import React from "react";
+import { render } from "react-dom";
+import SideNav, {
+  NavItem,
+  PageWrapper,
+  variants,
+} from "@crave/farmblocks-sidenav";
+
+const App = () => (
+  <>
+    <SideNav variant={variants.OVERLAY} expanded />
+    <PageWrapper variant={variants.OVERLAY} expanded>
+      <h1>Page Content</h1>
+    </PageWrapper>
+  </>
+);
+
+render(<App />, document.getElementById("root"));
+```
+
+**API**
+
+- **expanded** (_Boolean_) = `false`
+
+  > Whether the sidebar is expanded or collapsed.
+
+- **variant** (`"push"` | `"fullScreen"` | `"overlay"`) = `"push"`
+
+  > Sidebar variant style.
+
+- **expandedWidth** (_String_) = `"270px"`
+
+  > Width on expanded `false` state. (only applied on "push" || "overlay" variant)
+
+- **collapsedWidth** (_String_) = `"56px"`
+
+  > Width on expanded `true` state. (only applied on "push" variant)
+
+- **offsetTop** (_String_) = `"0"`
+
+  > Top spacing gap.
 
 ## License
 
