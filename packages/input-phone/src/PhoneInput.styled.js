@@ -7,7 +7,7 @@ export const PopoverWrapper = styled.div`
   flex-direction: column;
   height: 100%;
   min-height: 340px;
-  min-width: 300px;
+  min-width: 280px;
 `;
 
 export const CountryListWrapper = styled.ul`
