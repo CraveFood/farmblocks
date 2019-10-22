@@ -7,7 +7,7 @@ import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
 import SideBar from "./components/SideBar";
 import { ToggleButton, CloseButton } from "./components/NavButton";
 
-const SideNav = ({ children, onToggle, onClose, ...props }) => {
+const SideNav = ({ render, onToggle, onClose, ...props }) => {
   useScrollLock({
     condition: props.expanded && props.variant === FULLSCREEN,
     element: document.body,
@@ -36,12 +36,12 @@ const SideNav = ({ children, onToggle, onClose, ...props }) => {
       >
         {onClose && (
           <CloseButton
+            {...propsToInject}
             onClick={onClose}
             data-testid="close-navbar"
-            {...propsToInject}
           />
         )}
-        {children(propsToInject)}
+        {render(propsToInject)}
       </SideBar>
     </>
   );
@@ -58,7 +58,7 @@ SideNav.defaultProps = {
 };
 
 SideNav.propTypes = {
-  children: PropTypes.func,
+  render: PropTypes.func,
   background: PropTypes.string,
   offsetTop: PropTypes.string,
   collapsedWidth: PropTypes.string,

@@ -8,8 +8,8 @@ import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
 import NavItemStyled from "./NavItem.styled";
 
 const NavItem = React.memo(
-  ({ icon, children, activated, image, textProps, imageProps, ...props }) => (
-    <NavItemStyled className={activated && "activated"} {...props}>
+  ({ icon, children, active, image, textProps, imageProps, ...props }) => (
+    <NavItemStyled className={active && "active"} {...props}>
       {(image || icon) && (
         <div className="thumb-container">
           {image && <Image size={36} src={image} badge {...imageProps} />}
@@ -31,7 +31,7 @@ NavItem.defaultProps = {
 
 NavItem.propTypes = {
   children: PropTypes.node,
-  activated: PropTypes.bool,
+  active: PropTypes.bool,
   highlightColor: PropTypes.string,
   background: PropTypes.string,
   icon: PropTypes.string,

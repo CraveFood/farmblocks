@@ -12,11 +12,11 @@ const fullScreenStyle = css`
   padding: 8px 16px;
 
   &:hover,
-  &.activated {
+  &.active {
     color: ${({ highlightColor }) => highlightColor && highlightColor};
   }
 
-  &.activated {
+  &.active {
     padding-left: 16px;
     border-left: none;
   }
@@ -46,7 +46,7 @@ const NavItem = styled.li`
   }
 
   &:hover,
-  &.activated {
+  &.active {
     color: ${colors.CARBON};
     background-color: ${({ highlightColor }) =>
       transparentize(0.96, highlightColor)};
@@ -55,7 +55,7 @@ const NavItem = styled.li`
     }
   }
 
-  &.activated {
+  &.active {
     padding-left: 4px;
     border-left: 4px solid ${({ highlightColor }) => highlightColor};
   }
