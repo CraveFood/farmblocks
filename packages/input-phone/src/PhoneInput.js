@@ -103,7 +103,7 @@ const PhoneInput = ({
     items: filteredCountries,
     listRef,
     selectFn: handleCountrySelection,
-    cancelFn: dismissRef.current,
+    cancelFnRef: dismissRef,
   });
 
   const handleSearchChange = useCallback(event => {

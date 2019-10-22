@@ -46,7 +46,7 @@ export const useCountrySearch = (data, query, priority) => {
   return fuse.current.search(query);
 };
 
-export const useHighlight = ({ items, listRef, selectFn, cancelFn }) => {
+export const useHighlight = ({ items, listRef, selectFn, cancelFnRef }) => {
   const [highlightIndex, setHighlightIndex] = useState(-1);
 
   const changeHighlight = useCallback(
@@ -88,7 +88,7 @@ export const useHighlight = ({ items, listRef, selectFn, cancelFn }) => {
 
       if (key === "Escape") {
         setHighlightIndex(-1);
-        cancelFn?.();
+        cancelFnRef?.current?.();
         return;
       }
 
