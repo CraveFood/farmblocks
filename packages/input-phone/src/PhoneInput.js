@@ -63,6 +63,11 @@ const PhoneInput = ({
     priorityCountries,
   );
 
+  const nationalNumber = useMemo(
+    () => formatIncompletePhoneNumber(phone?.format("NATIONAL"), country),
+    [phone, country],
+  );
+
   useEffect(() => {
     if (!value) {
       setSelectedCountry(null);
@@ -184,7 +189,7 @@ const PhoneInput = ({
         />
       }
       active={popoverOpen}
-      value={formatIncompletePhoneNumber(phone?.format("NATIONAL"), country)}
+      value={nationalNumber}
       onChange={handleNumberChange}
       inputMode="tel"
       disabled={disabled}

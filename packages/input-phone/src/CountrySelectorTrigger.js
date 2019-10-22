@@ -13,14 +13,16 @@ const Trigger = styled.div`
   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
 `;
 
-const CountrySelectorTrigger = ({ callingCode, flag, code, ...props }) => {
-  return (
-    <Trigger {...props}>
-      {emojiSupport() ? flag : `${code} `}+{callingCode}
-      <ChevronDown />
-    </Trigger>
-  );
-};
+const CountrySelectorTrigger = React.memo(
+  ({ callingCode, flag, code, ...props }) => {
+    return (
+      <Trigger {...props}>
+        {emojiSupport() ? flag : `${code} `}+{callingCode}
+        <ChevronDown />
+      </Trigger>
+    );
+  },
+);
 
 CountrySelectorTrigger.propTypes = {
   flag: PropTypes.string.isRequired,
