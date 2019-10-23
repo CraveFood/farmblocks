@@ -14118,153 +14118,7 @@ exports[`Storyshots Label extended style 1`] = `
 </div>
 `;
 
-exports[`Storyshots SideNav Complete Side Nav Simple 1`] = `
-Array [
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background-color: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  width: 270px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-}
-
-.c1 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c1 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c1:hover,
-.c1.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c1:hover .icon,
-.c1.active .icon {
-  color: #ff4411;
-}
-
-.c1.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-expanded"
-  >
-    <li
-      className="active c1"
-    >
-      <div
-        className="c2"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        Item 1 (active)
-      </div>
-    </li>
-    <li
-      className="c1"
-    >
-      <div
-        className="c2"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        Item 2
-      </div>
-    </li>
-    <li
-      className="c1"
-    >
-      <div
-        className="c2"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        Item 3
-      </div>
-    </li>
-  </nav>,
-  .c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 0;
-  -webkit-transition: margin 0.25s;
-  transition: margin 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  margin-left: 270px;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <h1>
-      Page Content
-    </h1>
-  </div>,
-]
-`;
-
-exports[`Storyshots SideNav Nav Items 1`] = `
+exports[`Storyshots SideNav/NavItem Nav Items 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -14483,7 +14337,153 @@ exports[`Storyshots SideNav Nav Items 1`] = `
 </div>
 `;
 
-exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
+exports[`Storyshots SideNav/SideNav Complete Side Nav Simple 1`] = `
+Array [
+  .c2 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 270px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c1 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c1 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c1:hover,
+.c1.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c1:hover .icon,
+.c1.active .icon {
+  color: #ff4411;
+}
+
+.c1.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+<nav
+    className="c0"
+    data-testid="navbar-expanded"
+  >
+    <li
+      className="active c1"
+    >
+      <div
+        className="c2"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        Item 1 (active)
+      </div>
+    </li>
+    <li
+      className="c1"
+    >
+      <div
+        className="c2"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        Item 2
+      </div>
+    </li>
+    <li
+      className="c1"
+    >
+      <div
+        className="c2"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        Item 3
+      </div>
+    </li>
+  </nav>,
+  .c0 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 270px;
+}
+
+<div
+    className="c0"
+    data-testid="pageWrapper-navbar"
+  >
+    <h1>
+      Page Content
+    </h1>
+  </div>,
+]
+`;
+
+exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
 .c10 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -14978,7 +14978,7 @@ exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
 </div>
 `;
 
-exports[`Storyshots SideNav Side Nav Full Screen 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
 Array [
   .c0 {
   box-sizing: border-box;
@@ -15202,6 +15202,7 @@ Array [
     />
     <li
       className="active c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -15311,6 +15312,7 @@ Array [
 <div
     className="c0"
     data-testid="pageWrapper-navbar"
+    onClick={[Function]}
   >
     <div
       style={
@@ -15351,7 +15353,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots SideNav Side Nav Full Screen With Router 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
 Array [
   .c0 {
   box-sizing: border-box;
@@ -15860,7 +15862,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots SideNav Side Nav Overlay 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
 Array [
   .c0 {
   box-sizing: border-box;
@@ -16057,6 +16059,7 @@ Array [
     />
     <li
       className="active c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -16076,6 +16079,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -16095,6 +16099,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -16114,6 +16119,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -16205,7 +16211,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots SideNav Side Nav Overlay With Rouder 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Overlay With Rouder 1`] = `
 Array [
   .c0 {
   box-sizing: border-box;
@@ -16695,7 +16701,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots SideNav Side Nav Push 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
 Array [
   .c0 {
   box-sizing: border-box;
@@ -16913,6 +16919,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -16932,6 +16939,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -16951,6 +16959,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -17045,7 +17054,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots SideNav Side Nav Push With Router 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
 Array [
   .c0 {
   box-sizing: border-box;
@@ -17534,7 +17543,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots SideNav Side Nav Simple 1`] = `
+exports[`Storyshots SideNav/SideNav Side Nav Simple 1`] = `
 .c0 {
   box-sizing: border-box;
   position: fixed;

@@ -7,38 +7,14 @@ import StoryRouter from "storybook-react-router";
 import { useMediaQuery } from "react-responsive";
 
 import SideNav from "./SideNav";
-import variants, { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
+import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
 import NavItem from "./components/NavItem";
 import PageWrapper from "./helpers/PageWrapper";
+import useToggle from "./utils/useToggle";
 
 const tabs = ["purveyor", "order", "search", "meat"];
 
-const useToggle = initialState => {
-  const [expanded, setExpanded] = useState(initialState);
-  const toggle = () => setExpanded(e => !e);
-  const collapse = () => setExpanded(false);
-  const expand = () => setExpanded(true);
-
-  return [expanded, { toggle, collapse, expand }];
-};
-
-const NavItemWithToggle = props => {
-  const [active, { toggle }] = useToggle(false);
-  return <NavItem active={active} onClick={toggle} {...props} />;
-};
-
-export const NavItems = () => (
-  <div>
-    <NavItemWithToggle>Simple Item</NavItemWithToggle>
-    <NavItemWithToggle image="https://picsum.photos/640/?image=234">
-      Item with Image
-    </NavItemWithToggle>
-    <NavItemWithToggle icon="wg-meat">Item with Icon</NavItemWithToggle>
-    <NavItemWithToggle variant={variants.FULLSCREEN} icon="wg-search">
-      Item with fullScreen variant and Icon
-    </NavItemWithToggle>
-  </div>
-);
+export default { title: "SideNav/SideNav" };
 
 export const SideNavSimple = () => (
   <SideNav render={() => <div>Sidebar Content</div>} />
@@ -65,7 +41,6 @@ export const CompleteSideNavSimple = () => (
 
 const SideNavPushComp = () => {
   const [expanded, { toggle, collapse }] = useToggle(false);
-  const tabs = ["purveyor", "order", "search", "meat"];
   const [selected, setSelected] = useState(tabs[0]);
 
   return (
@@ -103,7 +78,13 @@ export const SideNavPush = () => <SideNavPushComp />;
 
 const SideNavOverlayComp = () => {
   const [expanded, { toggle, collapse }] = useToggle(false);
-  const handleClick = expanded ? collapse : undefined;
+  const [selected, setSelected] = useState(tabs[0]);
+  const handleClick = tab => {
+    if (expanded) {
+      collapse();
+    }
+    setSelected(tab);
+  };
 
   return (
     <>
@@ -118,9 +99,9 @@ const SideNavOverlayComp = () => {
             {tabs.map(tab => (
               <NavItem
                 key={tab}
-                active={tab === tabs[0]}
                 icon={`wg-${tab}`}
-                onClick={handleClick}
+                active={tab === selected}
+                onClick={() => handleClick(tab)}
                 {...props}
               >
                 {tab}
@@ -140,7 +121,13 @@ export const SideNavOverlay = () => <SideNavOverlayComp />;
 
 const SideNavFullScreenComp = () => {
   const [expanded, { toggle, collapse }] = useToggle(false);
-  const handleClick = expanded ? collapse : undefined;
+  const [selected, setSelected] = useState(tabs[0]);
+  const handleClick = tab => {
+    if (expanded) {
+      collapse();
+    }
+    setSelected(tab);
+  };
 
   return (
     <>
@@ -155,9 +142,9 @@ const SideNavFullScreenComp = () => {
             {tabs.map(tab => (
               <NavItem
                 key={tab}
-                active={tab === tabs[0]}
                 icon={`wg-${tab}`}
-                onClick={handleClick}
+                active={tab === selected}
+                onClick={() => handleClick(tab)}
                 {...props}
               >
                 {tab}
@@ -335,8 +322,6 @@ const NavLinkItems = ({ tabs, location, onClick, ...props }) => (
     </NavLink>
   </>
 );
-
-export default { title: "SideNav" };
 
 const NavRoutes = ({ tabs }) => (
   <div
