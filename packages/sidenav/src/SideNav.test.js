@@ -3,7 +3,7 @@ import { render, fireEvent } from "@testing-library/react";
 import { colors } from "@crave/farmblocks-theme";
 
 import SideNav from "./SideNav";
-import { GREY_48 } from "./NavButton.styled";
+import { GREY_48 } from "./components/NavButton/NavButton.styled";
 import {
   SideNavPush,
   SideNavOverlay,

@@ -102,10 +102,7 @@ const SideNavPushComp = () => {
 export const SideNavPush = () => <SideNavPushComp />;
 
 const SideNavOverlayComp = () => {
-  const [expanded, setExpanded] = useState(false);
-  const toggle = () => setExpanded(e => !e);
-  const collapse = () => setExpanded(false);
-
+  const [expanded, { toggle, collapse }] = useToggle(false);
   const handleClick = expanded ? collapse : undefined;
 
   return (
@@ -113,7 +110,7 @@ const SideNavOverlayComp = () => {
       <SideNav
         expanded={expanded}
         onToggle={toggle}
-        onClose={() => setExpanded(false)}
+        onClose={collapse}
         variant={OVERLAY}
         render={props => (
           <>
@@ -142,10 +139,7 @@ const SideNavOverlayComp = () => {
 export const SideNavOverlay = () => <SideNavOverlayComp />;
 
 const SideNavFullScreenComp = () => {
-  const [expanded, setExpanded] = useState(false);
-  const toggle = () => setExpanded(e => !e);
-  const collapse = () => setExpanded(false);
-
+  const [expanded, { toggle, collapse }] = useToggle(false);
   const handleClick = expanded ? collapse : undefined;
 
   return (
@@ -153,7 +147,7 @@ const SideNavFullScreenComp = () => {
       <SideNav
         expanded={expanded}
         onToggle={toggle}
-        onClose={() => setExpanded(false)}
+        onClose={collapse}
         variant={FULLSCREEN}
         render={props => (
           <>
@@ -182,15 +176,14 @@ const SideNavFullScreenComp = () => {
 export const SideNavFullScreen = () => <SideNavFullScreenComp />;
 
 export const SideNavPushWithRouter = withRouter(({ location }) => {
-  const [expanded, setExpanded] = useState(false);
-  const toggle = () => setExpanded(e => !e);
+  const [expanded, { toggle, collapse }] = useToggle(false);
 
   return (
     <>
       <SideNav
         expanded={expanded}
         onToggle={toggle}
-        onClose={() => setExpanded(false)}
+        onClose={collapse}
         render={props => (
           <>
             <NavHeader />
@@ -210,9 +203,7 @@ SideNavPushWithRouter.story = {
 };
 
 export const SideNavOverlayWithRouder = withRouter(({ location }) => {
-  const [expanded, setExpanded] = useState(false);
-  const toggle = () => setExpanded(e => !e);
-  const collapse = () => setExpanded(false);
+  const [expanded, { toggle, collapse }] = useToggle(false);
 
   const highlightColor = colors.AVOCADO;
   const handleClick = expanded ? collapse : undefined;
@@ -249,9 +240,7 @@ SideNavOverlayWithRouder.story = {
 };
 
 export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
-  const [expanded, setExpanded] = useState(false);
-  const toggle = () => setExpanded(e => !e);
-  const collapse = () => setExpanded(false);
+  const [expanded, { toggle, collapse }] = useToggle(false);
 
   return (
     <>
@@ -281,9 +270,7 @@ SideNavFullScreenWithRouter.story = {
 };
 
 export const NavWithJsMediaQuery = withRouter(({ location }) => {
-  const [expanded, setExpanded] = useState(false);
-  const toggle = () => setExpanded(e => !e);
-  const collapse = () => setExpanded(false);
+  const [expanded, { toggle, collapse }] = useToggle(false);
   const isMobile = useMediaQuery({ maxWidth: 760 });
 
   const variant = isMobile ? FULLSCREEN : PUSH;
