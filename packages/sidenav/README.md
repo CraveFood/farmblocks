@@ -114,7 +114,7 @@ const App = () => {
 render(<App />, document.getElementById("root"));
 ```
 
-To see these and more examples running, visit our [storybook](https://cravefood.github.io/farmblocks/?path=/story/sidenav--side-nav-overlay)
+To see these and more examples running, visit our [storybook](https://cravefood.github.io/farmblocks/?path=/story/sidenav-sidenav--side-nav-overlay)
 
 ## API
 
