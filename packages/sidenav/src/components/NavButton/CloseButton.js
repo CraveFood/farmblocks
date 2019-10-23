@@ -15,6 +15,6 @@ export const CloseButton = styled(NavButtonStyled)`
   ${({ variant }) => variant === PUSH && "display: none;"}
 `;
 
-export default React.memo(props => (
+export default props => (
   <NavButton component={CloseButton} icon="wg-close" {...props} />
-));
+);

@@ -7,20 +7,26 @@ import Image from "@crave/farmblocks-image";
 import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
 import NavItemStyled from "./NavItem.styled";
 
-const NavItem = React.memo(
-  ({ icon, children, active, image, textProps, imageProps, ...props }) => (
-    <NavItemStyled className={active && "active"} {...props}>
-      {(image || icon) && (
-        <div className="thumb-container">
-          {image && <Image size={36} src={image} badge {...imageProps} />}
-          {icon && <i className={`icon ${icon}`} />}
-        </div>
-      )}
-      <Text type="inherit" fontWeight="title" {...textProps}>
-        {children}
-      </Text>
-    </NavItemStyled>
-  ),
+const NavItem = ({
+  icon,
+  children,
+  active,
+  image,
+  textProps,
+  imageProps,
+  ...props
+}) => (
+  <NavItemStyled className={active && "active"} {...props}>
+    {(image || icon) && (
+      <div className="thumb-container">
+        {image && <Image size={36} src={image} badge {...imageProps} />}
+        {icon && <i className={`icon ${icon}`} />}
+      </div>
+    )}
+    <Text type="inherit" fontWeight="title" {...textProps}>
+      {children}
+    </Text>
+  </NavItemStyled>
 );
 
 NavItem.defaultProps = {

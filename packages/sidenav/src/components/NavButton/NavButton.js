@@ -5,11 +5,11 @@ import { colors } from "@crave/farmblocks-theme";
 import NavButtonStyled from "./NavButton.styled";
 import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
 
-const NavButton = React.memo(({ component: Component, icon, ...props }) => (
+const NavButton = ({ component: Component, icon, ...props }) => (
   <Component role="button" {...props}>
     <i className={icon} />
   </Component>
-));
+);
 
 NavButton.defaultProps = {
   highlightColor: colors.RED_ORANGE,

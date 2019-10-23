@@ -13,6 +13,6 @@ export const ToggleButton = styled(NavButtonStyled)`
     variant === PUSH ? zIndex + 10 : zIndex - 10};
 `;
 
-export default React.memo(props => (
+export default props => (
   <NavButton component={ToggleButton} icon="wg-list" {...props} />
-));
+);

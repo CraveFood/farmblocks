@@ -8,23 +8,20 @@ import SideBar from "./components/SideBar";
 import { ToggleButton, CloseButton } from "./components/NavButton";
 
 const SideNav = ({ render, onToggle, onClose, ...props }) => {
+  const { highlightColor, variant, expanded, zIndex } = props;
+
   useScrollLock({
     condition: props.expanded && props.variant === FULLSCREEN,
     element: document.body,
   });
 
-  const propsToInject = (({ highlightColor, variant, expanded, zIndex }) => ({
-    highlightColor,
-    variant,
-    expanded,
-    zIndex,
-  }))(props);
-
   return (
     <>
       {onToggle && (
         <ToggleButton
-          {...propsToInject}
+          zIndex={zIndex}
+          variant={variant}
+          highlightColor={highlightColor}
           onClick={onToggle}
           active={!props.expanded}
           data-testid="toggle-navbar"
@@ -36,12 +33,14 @@ const SideNav = ({ render, onToggle, onClose, ...props }) => {
       >
         {onClose && (
           <CloseButton
-            {...propsToInject}
+            variant={variant}
+            highlightColor={highlightColor}
+            expanded={expanded}
             onClick={onClose}
             data-testid="close-navbar"
           />
         )}
-        {render(propsToInject)}
+        {render({ highlightColor, variant })}
       </SideBar>
     </>
   );
