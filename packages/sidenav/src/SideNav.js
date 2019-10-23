@@ -48,6 +48,7 @@ const SideNav = ({ render, onToggle, onClose, ...props }) => {
 
 SideNav.defaultProps = {
   backgroundColor: colors.SUGAR,
+  highlightColor: colors.RED_ORANGE,
   zIndex: 100,
   offsetTop: "0",
   collapsedWidth: "56px",

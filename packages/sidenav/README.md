@@ -146,9 +146,9 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
 - **render** (_Function_)
 
-  > Render the sidebar content, passing as args the following props {highlightColor, variant, expanded, zIndex}.
+  > Render the sidebar content, passing as args the following props: highlightColor, variant.
 
-- **highlightColor** (_String_)
+- **highlightColor** (_String_) = `farmblocks.theme.colors.RED_ORANGE`
 
   > Color used to highlight active/hover nav item and close button.
 
