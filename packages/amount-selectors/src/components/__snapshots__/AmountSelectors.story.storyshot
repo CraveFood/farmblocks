@@ -88,7 +88,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -113,23 +113,25 @@ exports[`Storyshots Amount selectors Default 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -142,76 +144,84 @@ exports[`Storyshots Amount selectors Default 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -485,7 +495,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -510,23 +520,25 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -539,76 +551,84 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -883,7 +903,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -908,23 +928,25 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -937,76 +959,84 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1280,7 +1310,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1305,23 +1335,25 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1334,76 +1366,84 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1677,7 +1717,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1702,23 +1742,25 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1731,76 +1773,84 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2073,7 +2123,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2098,23 +2148,25 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2127,76 +2179,84 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2524,7 +2584,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2549,23 +2609,25 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2578,76 +2640,84 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2737,6 +2807,33 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
 
 .c0 .inputContainer input:invalid {
   box-shadow: none;
+}
+
+@media only screen and (max-width:) {
+  .c5 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
+}
+
+@media only screen and (max-width:) {
+  .c6:after,
+  .c6:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:) {
+  .c6 {
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
 }
 
 <div
@@ -2942,7 +3039,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2967,23 +3064,25 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2996,76 +3095,84 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -3393,7 +3500,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3418,23 +3525,25 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3447,76 +3556,84 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -3606,6 +3723,33 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
 
 .c0 .inputContainer input:invalid {
   box-shadow: none;
+}
+
+@media only screen and (max-width:) {
+  .c5 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
+}
+
+@media only screen and (max-width:) {
+  .c6:after,
+  .c6:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:) {
+  .c6 {
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
 }
 
 <div
@@ -3811,7 +3955,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3836,23 +3980,25 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3865,76 +4011,84 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -4208,7 +4362,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4233,23 +4387,25 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4262,76 +4418,84 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -4604,7 +4768,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   flex-direction: column;
 }
 
-.c4 .input {
+.c4 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4629,23 +4793,25 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   overflow: auto;
 }
 
-.c4 .input .wrapped {
+.c4 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 .input input {
+.c4 > .input > input,
+.select__search .c4 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c4 .input textarea {
+.c4 > .input > textarea {
   padding: 16px;
 }
 
-.c4 .input input,
-.c4 .input textarea {
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4658,76 +4824,84 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   background: none;
 }
 
-.c4 .input input::-webkit-input-placeholder,
-.c4 .input textarea::-webkit-input-placeholder {
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::-moz-placeholder,
-.c4 .input textarea::-moz-placeholder {
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input:-ms-input-placeholder,
-.c4 .input textarea:-ms-input-placeholder {
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input::placeholder,
-.c4 .input textarea::placeholder {
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .input input[type="search"],
-.c4 .input textarea[type="search"] {
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c4 .input input[type="search"]::-webkit-search-cancel-button,
-.c4 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 .input input[type="search"]::-ms-clear,
-.c4 .input textarea[type="search"]::-ms-clear {
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 .input input[role="combobox"],
-.c4 .input textarea[role="combobox"] {
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 .input .icon {
+.c4 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c4 .input .icon.left {
+.c4 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c4 .input .icon.dropdown {
+.c4 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c4 .input .clear {
+.c4 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c4 .input .clear:hover {
+.c4 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 .input .clear a {
+.c4 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -5007,7 +5181,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c5 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -5032,23 +5206,25 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c5 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c5 > .input > input,
+.select__search .c5 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c5 > .input > textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5061,76 +5237,84 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 .input .icon {
+.c5 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c5 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c5 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c5 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c5 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c5 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;

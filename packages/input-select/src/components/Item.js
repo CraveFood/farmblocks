@@ -14,8 +14,8 @@ const ItemImage = styled(Image)`
   }
 `;
 
-const Item = ({ selected, image, label, id, checkbox }) => (
-  <ItemContainer className="itemContainer" id={id}>
+const Item = ({ selected, image, label, checkbox, className, ...props }) => (
+  <ItemContainer className={`itemContainer ${className || ""}`} {...props}>
     <LabelContainer className="labelContainer">
       {checkbox && <Checkbox className="checkbox" checked={selected} />}
       {image && (
@@ -34,8 +34,8 @@ const Item = ({ selected, image, label, id, checkbox }) => (
 Item.propTypes = {
   selected: PropTypes.bool,
   image: PropTypes.string,
-  id: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  label: PropTypes.node.isRequired,
   checkbox: PropTypes.bool,
 };
 

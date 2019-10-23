@@ -51,7 +51,7 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -76,23 +76,25 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -105,76 +107,84 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -224,7 +234,7 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -249,23 +259,25 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -278,76 +290,84 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: #3498db;
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -470,7 +490,7 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -495,23 +515,25 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -524,76 +546,84 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -708,7 +738,7 @@ exports[`Storyshots HOC formInput extended style 1`] = `
   flex-direction: column;
 }
 
-.c1 .input {
+.c1 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -733,23 +763,25 @@ exports[`Storyshots HOC formInput extended style 1`] = `
   overflow: auto;
 }
 
-.c1 .input .wrapped {
+.c1 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c1 .input input {
+.c1 > .input > input,
+.select__search .c1 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c1 .input textarea {
+.c1 > .input > textarea {
   padding: 16px;
 }
 
-.c1 .input input,
-.c1 .input textarea {
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -762,76 +794,84 @@ exports[`Storyshots HOC formInput extended style 1`] = `
   background: none;
 }
 
-.c1 .input input::-webkit-input-placeholder,
-.c1 .input textarea::-webkit-input-placeholder {
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c1 .input input::-moz-placeholder,
-.c1 .input textarea::-moz-placeholder {
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c1 .input input:-ms-input-placeholder,
-.c1 .input textarea:-ms-input-placeholder {
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c1 .input input::placeholder,
-.c1 .input textarea::placeholder {
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c1 .input input[type="search"],
-.c1 .input textarea[type="search"] {
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c1 .input input[type="search"]::-webkit-search-cancel-button,
-.c1 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c1 .input input[type="search"]::-ms-clear,
-.c1 .input textarea[type="search"]::-ms-clear {
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c1 .input input[role="combobox"],
-.c1 .input textarea[role="combobox"] {
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c1 .input .icon {
+.c1 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c1 .input .icon.left {
+.c1 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c1 .input .icon.dropdown {
+.c1 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c1 .input .clear {
+.c1 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c1 .input .clear:hover {
+.c1 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c1 .input .clear a {
+.c1 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -959,7 +999,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -984,23 +1024,25 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1013,76 +1055,84 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1171,7 +1221,7 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1196,23 +1246,25 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1225,76 +1277,84 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1369,7 +1429,7 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1394,23 +1454,25 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1423,76 +1485,84 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1573,7 +1643,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1598,23 +1668,25 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1627,76 +1699,84 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -1823,7 +1903,7 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1848,23 +1928,25 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1877,76 +1959,84 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2086,7 +2176,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2111,23 +2201,25 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2140,76 +2232,84 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2304,7 +2404,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2329,23 +2429,25 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2358,76 +2460,84 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2501,7 +2611,7 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2526,23 +2636,25 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2555,76 +2667,84 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2716,7 +2836,7 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2741,23 +2861,25 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2770,76 +2892,84 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -2954,7 +3084,7 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2979,23 +3109,25 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3008,76 +3140,84 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -3188,7 +3328,7 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3213,23 +3353,25 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3242,76 +3384,84 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -3387,6 +3537,250 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 </div>
 `;
 
+exports[`Storyshots HOC formInput html text input with label and active flag 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3498db;
+  text-align: left;
+  line-height: 16px;
+  font-weight: 600;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.c1 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-bottom: 8px;
+  float: left;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c0 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 > .input > input,
+.select__search .c0 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c0 > .input > textarea {
+  padding: 16px;
+}
+
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c0 > .input > .icon {
+  color: #3498db;
+  height: 16px;
+}
+
+.c0 > .input > .icon.left {
+  margin-left: 16px;
+}
+
+.c0 > .input > .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c0 > .input > .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c0 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c0 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c0 .input.dropdown {
+  cursor: pointer;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0 .prefix,
+.c0 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+  disabled={false}
+  onClick={[Function]}
+  type="text"
+>
+  <div
+    className="input"
+    onMouseDown={[Function]}
+  >
+    <input
+      className="wrapped"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="label"
+  >
+    <div
+      className="labelText c1 c2"
+      fontWeight="title"
+      letterSpacing="2px"
+      size={14}
+      type="#3498db"
+    >
+      Input Label
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots HOC formInput html text input with label and focused flag 1`] = `
 .c2 {
   font-family: Lato,sans-serif;
@@ -3422,7 +3816,7 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3447,23 +3841,25 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3476,76 +3872,84 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.16);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: #3498db;
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -3656,7 +4060,7 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3681,23 +4085,25 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3710,76 +4116,84 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -3867,7 +4281,7 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3892,23 +4306,25 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3921,76 +4337,84 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -4065,7 +4489,7 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4090,23 +4514,25 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4119,76 +4545,84 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -4288,7 +4722,7 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4313,23 +4747,25 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4342,76 +4778,84 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: #dd3311;
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -4522,7 +4966,7 @@ exports[`Storyshots HOC formInput small container 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4547,23 +4991,25 @@ exports[`Storyshots HOC formInput small container 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4576,76 +5022,84 @@ exports[`Storyshots HOC formInput small container 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -4862,7 +5316,7 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -4887,23 +5341,25 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4916,76 +5372,84 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -5113,7 +5577,7 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -5138,23 +5602,25 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5167,76 +5633,84 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -5357,7 +5831,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -5382,23 +5856,25 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5411,76 +5887,84 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -5698,7 +6182,7 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -5723,23 +6207,25 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5752,76 +6238,84 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -5952,7 +6446,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -5968,7 +6462,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   text-transform: uppercase;
 }
 
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -5992,7 +6486,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   float: left;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6002,7 +6496,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c6 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6027,23 +6521,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c6 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c6 > .input > input,
+.select__search .c6 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c6 > .input > textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c6 > .input > input,
+.c6 > .input > textarea,
+.select__search .c6 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6056,97 +6552,105 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c6 > .input > input::-webkit-input-placeholder,
+.c6 > .input > textarea::-webkit-input-placeholder,
+.select__search .c6 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c6 > .input > input::-moz-placeholder,
+.c6 > .input > textarea::-moz-placeholder,
+.select__search .c6 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c6 > .input > input:-ms-input-placeholder,
+.c6 > .input > textarea:-ms-input-placeholder,
+.select__search .c6 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c6 > .input > input::placeholder,
+.c6 > .input > textarea::placeholder,
+.select__search .c6 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c6 > .input > input[type="search"],
+.c6 > .input > textarea[type="search"],
+.select__search .c6 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c6 > .input > input[type="search"]::-ms-clear,
+.c6 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c6 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c6 > .input > input[role="combobox"],
+.c6 > .input > textarea[role="combobox"],
+.select__search .c6 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c5 .input .icon {
+.c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c6 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c6 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c6 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c6 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c6 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c6 .input.dropdown {
   cursor: default;
 }
 
-.c5 input[type="number"] {
+.c6 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c6 input[type="number"]::-webkit-inner-spin-button,
+.c6 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c6 .prefix,
+.c6 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: rgba(0,0,0,0.16);
@@ -6175,7 +6679,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6200,23 +6704,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6229,76 +6735,84 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -6348,7 +6862,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6357,7 +6871,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   border-radius: 4px;
   border-color: #3498db;
   background-color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6373,23 +6887,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6402,76 +6918,84 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: #3498db;
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -6511,7 +7035,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6521,7 +7045,190 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: #3498db;
+  height: 16px;
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 16px;
+}
+
+.c5 > .input > .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6546,23 +7253,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c8 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c8 > .input > input,
+.select__search .c8 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c8 > .input > textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6575,97 +7284,105 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c8 > .input > .icon {
   color: #dd3311;
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c8 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c8 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c8 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c8 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c8 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c8 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 input[type="number"] {
+.c8 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c8 .prefix,
+.c8 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #dd3311;
@@ -6684,7 +7401,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6694,7 +7411,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   flex-direction: column;
 }
 
-.c9 .input {
+.c10 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6719,23 +7436,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   overflow: auto;
 }
 
-.c9 .input .wrapped {
+.c10 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c9 .input input {
+.c10 > .input > input,
+.select__search .c10 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c9 .input textarea {
+.c10 > .input > textarea {
   padding: 16px;
 }
 
-.c9 .input input,
-.c9 .input textarea {
+.c10 > .input > input,
+.c10 > .input > textarea,
+.select__search .c10 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6748,97 +7467,105 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   background: none;
 }
 
-.c9 .input input::-webkit-input-placeholder,
-.c9 .input textarea::-webkit-input-placeholder {
+.c10 > .input > input::-webkit-input-placeholder,
+.c10 > .input > textarea::-webkit-input-placeholder,
+.select__search .c10 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input::-moz-placeholder,
-.c9 .input textarea::-moz-placeholder {
+.c10 > .input > input::-moz-placeholder,
+.c10 > .input > textarea::-moz-placeholder,
+.select__search .c10 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input:-ms-input-placeholder,
-.c9 .input textarea:-ms-input-placeholder {
+.c10 > .input > input:-ms-input-placeholder,
+.c10 > .input > textarea:-ms-input-placeholder,
+.select__search .c10 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input::placeholder,
-.c9 .input textarea::placeholder {
+.c10 > .input > input::placeholder,
+.c10 > .input > textarea::placeholder,
+.select__search .c10 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input[type="search"],
-.c9 .input textarea[type="search"] {
+.c10 > .input > input[type="search"],
+.c10 > .input > textarea[type="search"],
+.select__search .c10 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c9 .input input[type="search"]::-webkit-search-cancel-button,
-.c9 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c9 .input input[type="search"]::-ms-clear,
-.c9 .input textarea[type="search"]::-ms-clear {
+.c10 > .input > input[type="search"]::-ms-clear,
+.c10 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c10 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c9 .input input[role="combobox"],
-.c9 .input textarea[role="combobox"] {
+.c10 > .input > input[role="combobox"],
+.c10 > .input > textarea[role="combobox"],
+.select__search .c10 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c9 .input .icon {
+.c10 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c9 .input .icon.left {
+.c10 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c9 .input .icon.dropdown {
+.c10 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c9 .input .clear {
+.c10 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c9 .input .clear:hover {
+.c10 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c9 .input .clear a {
+.c10 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c9 .input.dropdown {
+.c10 .input.dropdown {
   cursor: pointer;
 }
 
-.c9 input[type="number"] {
+.c10 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c9 input[type="number"]::-webkit-inner-spin-button,
-.c9 input[type="number"]::-webkit-outer-spin-button {
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c9 .prefix,
-.c9 .suffix {
+.c10 .prefix,
+.c10 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -6932,51 +7659,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         size={14}
         type="#3498db"
       >
-        Focused on Mount
+        Active
       </div>
     </div>
   </div>
   <div
     className="c5"
-    disabled={true}
-    onClick={[Function]}
-    type="text"
-  >
-    <div
-      className="input"
-      onMouseDown={[Function]}
-    >
-      <div
-        className="prefix"
-      >
-        $
-      </div>
-      <input
-        className="wrapped"
-        disabled={true}
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      className="label"
-    >
-      <div
-        className="labelText c1 c6"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Disabled
-      </div>
-    </div>
-  </div>
-  <div
-    className="c7"
     disabled={false}
     onClick={[Function]}
     type="text"
@@ -7004,7 +7692,85 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
       className="label"
     >
       <div
-        className="labelText c1 c8"
+        className="labelText c1 c4"
+        fontWeight="title"
+        letterSpacing="2px"
+        size={14}
+        type="#3498db"
+      >
+        Focused on Mount
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input"
+      onMouseDown={[Function]}
+    >
+      <div
+        className="prefix"
+      >
+        $
+      </div>
+      <input
+        className="wrapped"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="label"
+    >
+      <div
+        className="labelText c1 c7"
+        fontWeight="title"
+        letterSpacing="2px"
+        size={14}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Disabled
+      </div>
+    </div>
+  </div>
+  <div
+    className="c8"
+    disabled={false}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input"
+      onMouseDown={[Function]}
+    >
+      <div
+        className="prefix"
+      >
+        $
+      </div>
+      <input
+        className="wrapped"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="label"
+    >
+      <div
+        className="labelText c1 c9"
         fontWeight="title"
         letterSpacing="2px"
         size={14}
@@ -7062,7 +7828,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
     </div>
   </div>
   <div
-    className="c9"
+    className="c10"
     disabled={false}
     fontSize={14}
     onClick={[Function]}
@@ -7138,7 +7904,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -7154,7 +7920,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   text-transform: uppercase;
 }
 
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -7178,7 +7944,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   float: left;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7188,7 +7954,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c6 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -7213,23 +7979,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c6 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c6 > .input > input,
+.select__search .c6 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c6 > .input > textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c6 > .input > input,
+.c6 > .input > textarea,
+.select__search .c6 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -7242,97 +8010,105 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c6 > .input > input::-webkit-input-placeholder,
+.c6 > .input > textarea::-webkit-input-placeholder,
+.select__search .c6 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c6 > .input > input::-moz-placeholder,
+.c6 > .input > textarea::-moz-placeholder,
+.select__search .c6 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c6 > .input > input:-ms-input-placeholder,
+.c6 > .input > textarea:-ms-input-placeholder,
+.select__search .c6 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c6 > .input > input::placeholder,
+.c6 > .input > textarea::placeholder,
+.select__search .c6 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c6 > .input > input[type="search"],
+.c6 > .input > textarea[type="search"],
+.select__search .c6 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c6 > .input > input[type="search"]::-ms-clear,
+.c6 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c6 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c6 > .input > input[role="combobox"],
+.c6 > .input > textarea[role="combobox"],
+.select__search .c6 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c5 .input .icon {
+.c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c6 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c6 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c6 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c6 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c6 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c6 .input.dropdown {
   cursor: default;
 }
 
-.c5 input[type="number"] {
+.c6 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c6 input[type="number"]::-webkit-inner-spin-button,
+.c6 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c6 .prefix,
+.c6 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: rgba(0,0,0,0.16);
@@ -7361,7 +8137,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -7386,23 +8162,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -7415,76 +8193,84 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -7534,7 +8320,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -7543,7 +8329,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   border-radius: 4px;
   border-color: #3498db;
   background-color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7559,23 +8345,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -7588,76 +8376,84 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: #3498db;
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -7697,7 +8493,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7707,7 +8503,190 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: #3498db;
+  height: 16px;
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 16px;
+}
+
+.c5 > .input > .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -7732,23 +8711,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c8 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c8 > .input > input,
+.select__search .c8 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c8 > .input > textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -7761,97 +8742,105 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c8 > .input > .icon {
   color: #dd3311;
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c8 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c8 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c8 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c8 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c8 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c8 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 input[type="number"] {
+.c8 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c8 .prefix,
+.c8 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #dd3311;
@@ -7870,7 +8859,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7880,7 +8869,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   flex-direction: column;
 }
 
-.c9 .input {
+.c10 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -7905,23 +8894,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   overflow: auto;
 }
 
-.c9 .input .wrapped {
+.c10 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c9 .input input {
+.c10 > .input > input,
+.select__search .c10 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c9 .input textarea {
+.c10 > .input > textarea {
   padding: 16px;
 }
 
-.c9 .input input,
-.c9 .input textarea {
+.c10 > .input > input,
+.c10 > .input > textarea,
+.select__search .c10 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -7934,97 +8925,105 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   background: none;
 }
 
-.c9 .input input::-webkit-input-placeholder,
-.c9 .input textarea::-webkit-input-placeholder {
+.c10 > .input > input::-webkit-input-placeholder,
+.c10 > .input > textarea::-webkit-input-placeholder,
+.select__search .c10 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input::-moz-placeholder,
-.c9 .input textarea::-moz-placeholder {
+.c10 > .input > input::-moz-placeholder,
+.c10 > .input > textarea::-moz-placeholder,
+.select__search .c10 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input:-ms-input-placeholder,
-.c9 .input textarea:-ms-input-placeholder {
+.c10 > .input > input:-ms-input-placeholder,
+.c10 > .input > textarea:-ms-input-placeholder,
+.select__search .c10 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input::placeholder,
-.c9 .input textarea::placeholder {
+.c10 > .input > input::placeholder,
+.c10 > .input > textarea::placeholder,
+.select__search .c10 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input[type="search"],
-.c9 .input textarea[type="search"] {
+.c10 > .input > input[type="search"],
+.c10 > .input > textarea[type="search"],
+.select__search .c10 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c9 .input input[type="search"]::-webkit-search-cancel-button,
-.c9 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c9 .input input[type="search"]::-ms-clear,
-.c9 .input textarea[type="search"]::-ms-clear {
+.c10 > .input > input[type="search"]::-ms-clear,
+.c10 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c10 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c9 .input input[role="combobox"],
-.c9 .input textarea[role="combobox"] {
+.c10 > .input > input[role="combobox"],
+.c10 > .input > textarea[role="combobox"],
+.select__search .c10 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c9 .input .icon {
+.c10 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c9 .input .icon.left {
+.c10 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c9 .input .icon.dropdown {
+.c10 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c9 .input .clear {
+.c10 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c9 .input .clear:hover {
+.c10 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c9 .input .clear a {
+.c10 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c9 .input.dropdown {
+.c10 .input.dropdown {
   cursor: pointer;
 }
 
-.c9 input[type="number"] {
+.c10 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c9 input[type="number"]::-webkit-inner-spin-button,
-.c9 input[type="number"]::-webkit-outer-spin-button {
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c9 .prefix,
-.c9 .suffix {
+.c10 .prefix,
+.c10 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -8128,56 +9127,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         size={14}
         type="#3498db"
       >
-        Focused on Mount
+        Active
       </div>
     </div>
   </div>
   <div
     className="c5"
-    disabled={true}
-    onClick={[Function]}
-    type="text"
-  >
-    <div
-      className="input"
-      onMouseDown={[Function]}
-    >
-      <div
-        className="prefix"
-      >
-        $
-      </div>
-      <input
-        className="wrapped"
-        disabled={true}
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
-      <div
-        className="suffix"
-      >
-        CS
-      </div>
-    </div>
-    <div
-      className="label"
-    >
-      <div
-        className="labelText c1 c6"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Disabled
-      </div>
-    </div>
-  </div>
-  <div
-    className="c7"
     disabled={false}
     onClick={[Function]}
     type="text"
@@ -8210,7 +9165,95 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
       className="label"
     >
       <div
-        className="labelText c1 c8"
+        className="labelText c1 c4"
+        fontWeight="title"
+        letterSpacing="2px"
+        size={14}
+        type="#3498db"
+      >
+        Focused on Mount
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input"
+      onMouseDown={[Function]}
+    >
+      <div
+        className="prefix"
+      >
+        $
+      </div>
+      <input
+        className="wrapped"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+      <div
+        className="suffix"
+      >
+        CS
+      </div>
+    </div>
+    <div
+      className="label"
+    >
+      <div
+        className="labelText c1 c7"
+        fontWeight="title"
+        letterSpacing="2px"
+        size={14}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Disabled
+      </div>
+    </div>
+  </div>
+  <div
+    className="c8"
+    disabled={false}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input"
+      onMouseDown={[Function]}
+    >
+      <div
+        className="prefix"
+      >
+        $
+      </div>
+      <input
+        className="wrapped"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+      <div
+        className="suffix"
+      >
+        CS
+      </div>
+    </div>
+    <div
+      className="label"
+    >
+      <div
+        className="labelText c1 c9"
         fontWeight="title"
         letterSpacing="2px"
         size={14}
@@ -8273,7 +9316,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
     </div>
   </div>
   <div
-    className="c9"
+    className="c10"
     disabled={false}
     fontSize={14}
     onClick={[Function]}
@@ -8354,7 +9397,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -8370,7 +9413,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   text-transform: uppercase;
 }
 
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -8394,7 +9437,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   float: left;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8404,7 +9447,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   flex-direction: column;
 }
 
-.c5 .input {
+.c6 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -8429,23 +9472,25 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   overflow: auto;
 }
 
-.c5 .input .wrapped {
+.c6 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 .input input {
+.c6 > .input > input,
+.select__search .c6 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 .input textarea {
+.c6 > .input > textarea {
   padding: 16px;
 }
 
-.c5 .input input,
-.c5 .input textarea {
+.c6 > .input > input,
+.c6 > .input > textarea,
+.select__search .c6 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -8458,97 +9503,105 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   background: none;
 }
 
-.c5 .input input::-webkit-input-placeholder,
-.c5 .input textarea::-webkit-input-placeholder {
+.c6 > .input > input::-webkit-input-placeholder,
+.c6 > .input > textarea::-webkit-input-placeholder,
+.select__search .c6 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::-moz-placeholder,
-.c5 .input textarea::-moz-placeholder {
+.c6 > .input > input::-moz-placeholder,
+.c6 > .input > textarea::-moz-placeholder,
+.select__search .c6 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input:-ms-input-placeholder,
-.c5 .input textarea:-ms-input-placeholder {
+.c6 > .input > input:-ms-input-placeholder,
+.c6 > .input > textarea:-ms-input-placeholder,
+.select__search .c6 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input::placeholder,
-.c5 .input textarea::placeholder {
+.c6 > .input > input::placeholder,
+.c6 > .input > textarea::placeholder,
+.select__search .c6 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .input input[type="search"],
-.c5 .input textarea[type="search"] {
+.c6 > .input > input[type="search"],
+.c6 > .input > textarea[type="search"],
+.select__search .c6 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 .input input[type="search"]::-webkit-search-cancel-button,
-.c5 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 .input input[type="search"]::-ms-clear,
-.c5 .input textarea[type="search"]::-ms-clear {
+.c6 > .input > input[type="search"]::-ms-clear,
+.c6 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c6 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 .input input[role="combobox"],
-.c5 .input textarea[role="combobox"] {
+.c6 > .input > input[role="combobox"],
+.c6 > .input > textarea[role="combobox"],
+.select__search .c6 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c5 .input .icon {
+.c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c5 .input .icon.left {
+.c6 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c5 .input .icon.dropdown {
+.c6 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c5 .input .clear {
+.c6 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c5 .input .clear:hover {
+.c6 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 .input .clear a {
+.c6 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c6 .input.dropdown {
   cursor: default;
 }
 
-.c5 input[type="number"] {
+.c6 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c6 input[type="number"]::-webkit-inner-spin-button,
+.c6 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c6 .prefix,
+.c6 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: rgba(0,0,0,0.16);
@@ -8577,7 +9630,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   flex-direction: column;
 }
 
-.c0 .input {
+.c0 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -8602,23 +9655,25 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   overflow: auto;
 }
 
-.c0 .input .wrapped {
+.c0 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c0 .input input {
+.c0 > .input > input,
+.select__search .c0 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c0 .input textarea {
+.c0 > .input > textarea {
   padding: 16px;
 }
 
-.c0 .input input,
-.c0 .input textarea {
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -8631,76 +9686,84 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   background: none;
 }
 
-.c0 .input input::-webkit-input-placeholder,
-.c0 .input textarea::-webkit-input-placeholder {
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::-moz-placeholder,
-.c0 .input textarea::-moz-placeholder {
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input:-ms-input-placeholder,
-.c0 .input textarea:-ms-input-placeholder {
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input::placeholder,
-.c0 .input textarea::placeholder {
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c0 .input input[type="search"],
-.c0 .input textarea[type="search"] {
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c0 .input input[type="search"]::-webkit-search-cancel-button,
-.c0 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c0 .input input[type="search"]::-ms-clear,
-.c0 .input textarea[type="search"]::-ms-clear {
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c0 .input input[role="combobox"],
-.c0 .input textarea[role="combobox"] {
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c0 .input .icon {
+.c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c0 .input .icon.left {
+.c0 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c0 .input .icon.dropdown {
+.c0 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c0 .input .clear {
+.c0 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c0 .input .clear:hover {
+.c0 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c0 .input .clear a {
+.c0 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -8750,7 +9813,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   flex-direction: column;
 }
 
-.c3 .input {
+.c3 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -8759,7 +9822,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   border-radius: 4px;
   border-color: #3498db;
   background-color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8775,23 +9838,25 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   overflow: auto;
 }
 
-.c3 .input .wrapped {
+.c3 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c3 .input input {
+.c3 > .input > input,
+.select__search .c3 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c3 .input textarea {
+.c3 > .input > textarea {
   padding: 16px;
 }
 
-.c3 .input input,
-.c3 .input textarea {
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -8804,76 +9869,84 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   background: none;
 }
 
-.c3 .input input::-webkit-input-placeholder,
-.c3 .input textarea::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::-moz-placeholder,
-.c3 .input textarea::-moz-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input:-ms-input-placeholder,
-.c3 .input textarea:-ms-input-placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input::placeholder,
-.c3 .input textarea::placeholder {
-  color: rgba(0,0,0,0.16);
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
 }
 
-.c3 .input input[type="search"],
-.c3 .input textarea[type="search"] {
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c3 .input input[type="search"]::-webkit-search-cancel-button,
-.c3 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c3 .input input[type="search"]::-ms-clear,
-.c3 .input textarea[type="search"]::-ms-clear {
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c3 .input input[role="combobox"],
-.c3 .input textarea[role="combobox"] {
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c3 .input .icon {
+.c3 > .input > .icon {
   color: #3498db;
   height: 16px;
 }
 
-.c3 .input .icon.left {
+.c3 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c3 .input .icon.dropdown {
+.c3 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c3 .input .clear {
+.c3 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c3 .input .clear:hover {
+.c3 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c3 .input .clear a {
+.c3 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
@@ -8913,7 +9986,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8923,7 +9996,190 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   flex-direction: column;
 }
 
-.c7 .input {
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: #3498db;
+  height: 16px;
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 16px;
+}
+
+.c5 > .input > .icon.dropdown {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.32);
+  height: 16px;
+  margin-right: 16px;
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c8 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -8948,23 +10204,25 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   overflow: auto;
 }
 
-.c7 .input .wrapped {
+.c8 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c7 .input input {
+.c8 > .input > input,
+.select__search .c8 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c7 .input textarea {
+.c8 > .input > textarea {
   padding: 16px;
 }
 
-.c7 .input input,
-.c7 .input textarea {
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -8977,97 +10235,105 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   background: none;
 }
 
-.c7 .input input::-webkit-input-placeholder,
-.c7 .input textarea::-webkit-input-placeholder {
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::-moz-placeholder,
-.c7 .input textarea::-moz-placeholder {
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input:-ms-input-placeholder,
-.c7 .input textarea:-ms-input-placeholder {
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input::placeholder,
-.c7 .input textarea::placeholder {
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c7 .input input[type="search"],
-.c7 .input textarea[type="search"] {
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c7 .input input[type="search"]::-webkit-search-cancel-button,
-.c7 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c7 .input input[type="search"]::-ms-clear,
-.c7 .input textarea[type="search"]::-ms-clear {
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c7 .input input[role="combobox"],
-.c7 .input textarea[role="combobox"] {
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c7 .input .icon {
+.c8 > .input > .icon {
   color: #dd3311;
   height: 16px;
 }
 
-.c7 .input .icon.left {
+.c8 > .input > .icon.left {
   margin-left: 16px;
 }
 
-.c7 .input .icon.dropdown {
+.c8 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c7 .input .clear {
+.c8 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 16px;
 }
 
-.c7 .input .clear:hover {
+.c8 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c7 .input .clear a {
+.c8 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c7 .input.dropdown {
+.c8 .input.dropdown {
   cursor: pointer;
 }
 
-.c7 input[type="number"] {
+.c8 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c7 .prefix,
-.c7 .suffix {
+.c8 .prefix,
+.c8 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #dd3311;
@@ -9086,7 +10352,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   align-items: center;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9096,7 +10362,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   flex-direction: column;
 }
 
-.c9 .input {
+.c10 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -9121,23 +10387,25 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   overflow: auto;
 }
 
-.c9 .input .wrapped {
+.c10 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c9 .input input {
+.c10 > .input > input,
+.select__search .c10 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c9 .input textarea {
+.c10 > .input > textarea {
   padding: 16px;
 }
 
-.c9 .input input,
-.c9 .input textarea {
+.c10 > .input > input,
+.c10 > .input > textarea,
+.select__search .c10 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -9150,97 +10418,105 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   background: none;
 }
 
-.c9 .input input::-webkit-input-placeholder,
-.c9 .input textarea::-webkit-input-placeholder {
+.c10 > .input > input::-webkit-input-placeholder,
+.c10 > .input > textarea::-webkit-input-placeholder,
+.select__search .c10 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input::-moz-placeholder,
-.c9 .input textarea::-moz-placeholder {
+.c10 > .input > input::-moz-placeholder,
+.c10 > .input > textarea::-moz-placeholder,
+.select__search .c10 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input:-ms-input-placeholder,
-.c9 .input textarea:-ms-input-placeholder {
+.c10 > .input > input:-ms-input-placeholder,
+.c10 > .input > textarea:-ms-input-placeholder,
+.select__search .c10 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input::placeholder,
-.c9 .input textarea::placeholder {
+.c10 > .input > input::placeholder,
+.c10 > .input > textarea::placeholder,
+.select__search .c10 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .input input[type="search"],
-.c9 .input textarea[type="search"] {
+.c10 > .input > input[type="search"],
+.c10 > .input > textarea[type="search"],
+.select__search .c10 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c9 .input input[type="search"]::-webkit-search-cancel-button,
-.c9 .input textarea[type="search"]::-webkit-search-cancel-button {
+.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c9 .input input[type="search"]::-ms-clear,
-.c9 .input textarea[type="search"]::-ms-clear {
+.c10 > .input > input[type="search"]::-ms-clear,
+.c10 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c10 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c9 .input input[role="combobox"],
-.c9 .input textarea[role="combobox"] {
+.c10 > .input > input[role="combobox"],
+.c10 > .input > textarea[role="combobox"],
+.select__search .c10 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c9 .input .icon {
+.c10 > .input > .icon {
   color: rgba(0,0,0,0.16);
   height: 16px;
 }
 
-.c9 .input .icon.left {
+.c10 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c9 .input .icon.dropdown {
+.c10 > .input > .icon.dropdown {
   margin-left: 8px;
   margin-right: 16px;
 }
 
-.c9 .input .clear {
+.c10 > .input > .clear {
   color: rgba(0,0,0,0.32);
   height: 16px;
   margin-right: 8px;
 }
 
-.c9 .input .clear:hover {
+.c10 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c9 .input .clear a {
+.c10 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c9 .input.dropdown {
+.c10 .input.dropdown {
   cursor: pointer;
 }
 
-.c9 input[type="number"] {
+.c10 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c9 input[type="number"]::-webkit-inner-spin-button,
-.c9 input[type="number"]::-webkit-outer-spin-button {
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c9 .prefix,
-.c9 .suffix {
+.c10 .prefix,
+.c10 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -9334,51 +10610,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         size={14}
         type="#3498db"
       >
-        Focused on Mount
+        Active
       </div>
     </div>
   </div>
   <div
     className="c5"
-    disabled={true}
-    onClick={[Function]}
-    type="text"
-  >
-    <div
-      className="input"
-      onMouseDown={[Function]}
-    >
-      <input
-        className="wrapped"
-        disabled={true}
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
-      <div
-        className="suffix"
-      >
-        CS
-      </div>
-    </div>
-    <div
-      className="label"
-    >
-      <div
-        className="labelText c1 c6"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Disabled
-      </div>
-    </div>
-  </div>
-  <div
-    className="c7"
     disabled={false}
     onClick={[Function]}
     type="text"
@@ -9406,7 +10643,85 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
       className="label"
     >
       <div
-        className="labelText c1 c8"
+        className="labelText c1 c4"
+        fontWeight="title"
+        letterSpacing="2px"
+        size={14}
+        type="#3498db"
+      >
+        Focused on Mount
+      </div>
+    </div>
+  </div>
+  <div
+    className="c6"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input"
+      onMouseDown={[Function]}
+    >
+      <input
+        className="wrapped"
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+      <div
+        className="suffix"
+      >
+        CS
+      </div>
+    </div>
+    <div
+      className="label"
+    >
+      <div
+        className="labelText c1 c7"
+        fontWeight="title"
+        letterSpacing="2px"
+        size={14}
+        type="rgba(0, 0, 0, 0.32)"
+      >
+        Disabled
+      </div>
+    </div>
+  </div>
+  <div
+    className="c8"
+    disabled={false}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input"
+      onMouseDown={[Function]}
+    >
+      <input
+        className="wrapped"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+      <div
+        className="suffix"
+      >
+        CS
+      </div>
+    </div>
+    <div
+      className="label"
+    >
+      <div
+        className="labelText c1 c9"
         fontWeight="title"
         letterSpacing="2px"
         size={14}
@@ -9464,7 +10779,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
     </div>
   </div>
   <div
-    className="c9"
+    className="c10"
     disabled={false}
     fontSize={14}
     onClick={[Function]}

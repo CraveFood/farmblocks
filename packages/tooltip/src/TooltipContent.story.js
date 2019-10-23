@@ -278,6 +278,15 @@ storiesOf("Tooltip/TooltipContent", module)
       </TooltipContent>
     </Container>
   ))
+  .add("responsive", () => (
+    <Container>
+      <TooltipContent
+        isVisible
+        fullScreenBreakpoint="500px"
+        text="Resize the window"
+      />
+    </Container>
+  ))
   .add("extended style", () => (
     <Container>
       <TooltipContent

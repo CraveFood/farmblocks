@@ -83,7 +83,6 @@ const Component = () => (
 | -------- | --------------------------------- | ------ | -------- | ------- |
 | label    | Text to display on Item           | string | x        |         |
 | image    | Path for image to display on Item | string |          |         |
-| id       | DOM element Id attribute          | string |          |         |
 
 ## License
 

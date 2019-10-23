@@ -46,9 +46,12 @@ describe("Popover", () => {
   });
 
   describe("handleOuterClick", () => {
-    const originalEventListener = document.addEventListener;
-
-    let wrapper, popoverInstance, map, onOutsideClickSpy;
+    let wrapper,
+      popoverInstance,
+      map,
+      onOutsideClickSpy,
+      addEventListenerMock,
+      removeEventListenerMock;
 
     class PopoverComponent extends React.Component {
       render() {
@@ -69,9 +72,15 @@ describe("Popover", () => {
 
     beforeEach(async () => {
       map = {};
-      document.addEventListener = jest.fn((event, cb) => {
-        map[event] = cb;
-      });
+
+      addEventListenerMock = jest
+        .spyOn(document, "addEventListener")
+        .mockImplementation((event, cb) => {
+          map[event] = cb;
+        });
+      removeEventListenerMock = jest
+        .spyOn(document, "removeEventListener")
+        .mockImplementation(() => undefined);
 
       onOutsideClickSpy = jest.fn();
 
@@ -83,8 +92,11 @@ describe("Popover", () => {
     });
 
     afterEach(() => {
-      document.addEventListener = originalEventListener;
-      onOutsideClickSpy.mockRestore();
+      wrapper.unmount();
+
+      addEventListenerMock.mockRestore();
+      removeEventListenerMock.mockRestore();
+      onOutsideClickSpy.mockReset();
     });
 
     test("should dismiss popover on outer click", () => {
@@ -330,6 +342,26 @@ describe("Popover", () => {
         <Popover trigger={() => expectedResult} content={content} />,
       );
       expect(wrapper.containsMatchingElement(expectedResult)).toEqual(true);
+    });
+
+    it("should NOT propagate the click event to the parent", () => {
+      const parentClickSpy = jest.fn();
+
+      const wrapper = mount(
+        // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
+        <div onClick={parentClickSpy} data-testid="parent">
+          <Popover
+            trigger={<span id="trigger">trigger</span>}
+            content={content}
+          />
+          <div id="sibling" />
+        </div>,
+      );
+
+      wrapper.find("span#trigger").simulate("click");
+      expect(parentClickSpy).not.toHaveBeenCalled();
+      wrapper.find("#sibling").simulate("click");
+      expect(parentClickSpy).toHaveBeenCalled();
     });
   });
 

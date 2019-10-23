@@ -54,6 +54,7 @@ Tooltip.propTypes = {
   padding: PropTypes.string,
   offset: PropTypes.string,
   overflow: PropTypes.string,
+  fullScreenBreakpoint: PropTypes.string,
 };
 
 Tooltip.defaultProps = {
