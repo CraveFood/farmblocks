@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { colors } from "@crave/farmblocks-theme";
 
-import { IconButton } from "./NavButton.styled";
+import NavButtonStyled from "./NavButton.styled";
 import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
 
 const NavButton = React.memo(({ component: Component, icon, ...props }) => (
@@ -13,7 +13,7 @@ const NavButton = React.memo(({ component: Component, icon, ...props }) => (
 
 NavButton.defaultProps = {
   highlightColor: colors.RED_ORANGE,
-  component: IconButton,
+  component: NavButtonStyled,
   variant: PUSH,
 };
 
