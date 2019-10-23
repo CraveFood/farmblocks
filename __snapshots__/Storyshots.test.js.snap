@@ -14118,6 +14118,371 @@ exports[`Storyshots Label extended style 1`] = `
 </div>
 `;
 
+exports[`Storyshots SideNav Complete Side Nav Simple 1`] = `
+Array [
+  .c2 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c0 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 270px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c1 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c1 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c1:hover,
+.c1.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c1:hover .icon,
+.c1.active .icon {
+  color: #ff4411;
+}
+
+.c1.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+<nav
+    className="c0"
+    data-testid="navbar-expanded"
+  >
+    <li
+      className="active c1"
+    >
+      <div
+        className="c2"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        Item 1 (active)
+      </div>
+    </li>
+    <li
+      className="c1"
+    >
+      <div
+        className="c2"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        Item 2
+      </div>
+    </li>
+    <li
+      className="c1"
+    >
+      <div
+        className="c2"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        Item 3
+      </div>
+    </li>
+  </nav>,
+  .c0 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 270px;
+}
+
+<div
+    className="c0"
+    data-testid="pageWrapper-navbar"
+  >
+    <h1>
+      Page Content
+    </h1>
+  </div>,
+]
+`;
+
+exports[`Storyshots SideNav Nav Items 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c2 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c0 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c0 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c0:hover,
+.c0.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c0:hover .icon,
+.c0.active .icon {
+  color: #ff4411;
+}
+
+.c0.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c3 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c3 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c3:hover,
+.c3.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c3:hover .icon,
+.c3.active .icon {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c3:hover,
+.c3.active {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
+<div>
+  <li
+    className="c0"
+    onClick={[Function]}
+  >
+    <div
+      className="c1"
+      fontWeight="title"
+      size={18}
+      type="inherit"
+    >
+      Simple Item
+    </div>
+  </li>
+  <li
+    className="c0"
+    onClick={[Function]}
+  >
+    <div
+      className="thumb-container"
+    >
+      <img
+        alt=""
+        className="c2"
+        height={36}
+        size={36}
+        src="https://picsum.photos/640/?image=234"
+        width={36}
+      />
+    </div>
+    <div
+      className="c1"
+      fontWeight="title"
+      size={18}
+      type="inherit"
+    >
+      Item with Image
+    </div>
+  </li>
+  <li
+    className="c0"
+    onClick={[Function]}
+  >
+    <div
+      className="thumb-container"
+    >
+      <i
+        className="icon wg-meat"
+      />
+    </div>
+    <div
+      className="c1"
+      fontWeight="title"
+      size={18}
+      type="inherit"
+    >
+      Item with Icon
+    </div>
+  </li>
+  <li
+    className="c3"
+    onClick={[Function]}
+  >
+    <div
+      className="thumb-container"
+    >
+      <i
+        className="icon wg-search"
+      />
+    </div>
+    <div
+      className="c1"
+      fontWeight="title"
+      size={18}
+      type="inherit"
+    >
+      Item with fullScreen variant and Icon
+    </div>
+  </li>
+</div>
+`;
+
 exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
 .c10 {
   font-family: Lato,sans-serif;
@@ -14152,8 +14517,6 @@ exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
 
 .c7 {
   box-sizing: border-box;
-  width: 36px;
-  height: 36px;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -14173,6 +14536,77 @@ exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 56px;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c3:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c1 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
+}
+
+.c1:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
 }
 
 .c4 {
@@ -14214,17 +14648,17 @@ exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
 }
 
 .c4:hover,
-.c4.activated {
+.c4.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
 .c4:hover .icon,
-.c4.activated .icon {
+.c4.active .icon {
   color: #ff4411;
 }
 
-.c4.activated {
+.c4.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
 }
@@ -14269,101 +14703,31 @@ exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
 }
 
 .c6:hover,
-.c6.activated {
+.c6.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
 .c6:hover .icon,
-.c6.activated .icon {
+.c6.active .icon {
   color: #ff4411;
 }
 
-.c6.activated {
+.c6.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
 }
 
 .c8 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
-  margin-top: 56px;
+  padding-top: 56px;
   -webkit-transition: margin 0.25s;
   transition: margin 0.25s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   margin-left: 56px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: #ff4411;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 110;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c3:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c0 {
@@ -14417,172 +14781,163 @@ exports[`Storyshots SideNav Nav With Js Media Query 1`] = `
     </div>
     <a
       aria-current={null}
-      className="c4"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/purveyor"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c4"
       >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c5"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c4"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/order"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c4"
       >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c5"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c4"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/search"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c4"
       >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c5"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c4"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/meat"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c4"
       >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c5"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        meat
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      background="white"
-      className="c6"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/account"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c6"
       >
-        <img
-          alt=""
-          className="c7"
-          size={36}
-          src="https://picsum.photos/640/?image=889"
-        />
-      </div>
-      <div
-        className="c5"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        Account
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <img
+            alt=""
+            className="c7"
+            height={36}
+            size={36}
+            src="https://picsum.photos/640/?image=889"
+            width={36}
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          Account
+        </div>
+      </li>
     </a>
   </nav>
   <div
     className="c8"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -14667,7 +15022,7 @@ Array [
       className="wg-list"
     />
   </div>,
-  .c4 {
+  .c3 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -14709,72 +15064,6 @@ Array [
   opacity: 0.9;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.activated {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.activated .icon {
-  color: #ff4411;
-}
-
-.c3.activated {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c3:hover,
-.c3.activated {
-  color: #ff4411;
-}
-
-.c3.activated {
-  padding-left: 16px;
-  border-left: none;
-}
-
 .c1 {
   box-sizing: border-box;
   color: rgba(0,0,0,0.48);
@@ -14813,6 +15102,72 @@ Array [
   color: #ff4411;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c2 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c3 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c3:hover,
+.c3.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c3:hover .icon,
+.c3.active .icon {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c3:hover,
+.c3.active {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14846,7 +15201,7 @@ Array [
       className="c2"
     />
     <li
-      className="activated c3"
+      className="active c3"
     >
       <div
         className="thumb-container"
@@ -14866,6 +15221,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -14885,6 +15241,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -14904,6 +15261,7 @@ Array [
     </li>
     <li
       className="c3"
+      onClick={[Function]}
     >
       <div
         className="thumb-container"
@@ -14945,13 +15303,14 @@ Array [
 
 .c0 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
-  margin-top: 0;
+  padding-top: 0;
 }
 
 <div
     className="c0"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -15046,10 +15405,8 @@ Array [
   font-weight: 600;
 }
 
-.c6 {
+.c5 {
   box-sizing: border-box;
-  width: 36px;
-  height: 36px;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -15084,139 +15441,6 @@ Array [
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   opacity: 0.9;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.activated {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.activated .icon {
-  color: #ff4411;
-}
-
-.c3.activated {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c3:hover,
-.c3.activated {
-  color: #ff4411;
-}
-
-.c3.activated {
-  padding-left: 16px;
-  border-left: none;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  background-color: white;
-  color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c5 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c5 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c5:hover,
-.c5.activated {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c5:hover .icon,
-.c5.activated .icon {
-  color: #ff4411;
-}
-
-.c5.activated {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c5:hover,
-.c5.activated {
-  color: #ff4411;
-}
-
-.c5.activated {
-  padding-left: 16px;
-  border-left: none;
 }
 
 .c1 {
@@ -15266,10 +15490,128 @@ Array [
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  list-style-type: none;
   padding: 8px;
-  min-height: 56px;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c3 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c2 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c2:hover,
+.c2.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c2:hover .icon,
+.c2.active .icon {
+  color: #ff4411;
+}
+
+.c2.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c2:hover,
+.c2.active {
+  color: #ff4411;
+}
+
+.c2.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c4:hover .icon,
+.c4.active .icon {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c4:hover,
+.c4.active {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 16px;
+  border-left: none;
 }
 
 <nav
@@ -15286,172 +15628,165 @@ Array [
         className="wg-close"
       />
     </div>
-    <div
-      className="c2"
-    />
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/purveyor"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="fullScreen"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c2"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c3"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/order"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="fullScreen"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c2"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c3"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/search"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="fullScreen"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c2"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c3"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/meat"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="fullScreen"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c2"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        meat
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c3"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      background="white"
-      className="c5"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/account"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="fullScreen"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
-      >
-        <img
-          alt=""
-          className="c6"
-          size={36}
-          src="https://picsum.photos/640/?image=889"
-        />
-      </div>
-      <div
+      <li
         className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
+        onClick={[Function]}
       >
-        Account
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <img
+            alt=""
+            className="c5"
+            height={36}
+            size={36}
+            src="https://picsum.photos/640/?image=889"
+            width={36}
+          />
+        </div>
+        <div
+          className="c3"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          Account
+        </div>
+      </li>
     </a>
   </nav>,
   .c2 {
@@ -15477,13 +15812,14 @@ Array [
 
 .c0 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
-  margin-top: 0;
+  padding-top: 0;
 }
 
 <div
     className="c0"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -15595,6 +15931,44 @@ Array [
   width: 0px;
 }
 
+.c1 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c1:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -15634,57 +16008,19 @@ Array [
 }
 
 .c3:hover,
-.c3.activated {
+.c3.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
 .c3:hover .icon,
-.c3.activated .icon {
+.c3.active .icon {
   color: #ff4411;
 }
 
-.c3.activated {
+.c3.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c2 {
@@ -15720,7 +16056,7 @@ Array [
       className="c2"
     />
     <li
-      className="activated c3"
+      className="active c3"
     >
       <div
         className="thumb-container"
@@ -15819,6 +16155,7 @@ Array [
 
 .c0 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
   margin-top: 0;
   -webkit-transition: 0.3s;
@@ -15827,7 +16164,7 @@ Array [
 
 <div
     className="c0"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -15924,8 +16261,6 @@ Array [
 
 .c6 {
   box-sizing: border-box;
-  width: 36px;
-  height: 36px;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -15945,6 +16280,44 @@ Array [
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 0px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c1:hover {
+  background-color: rgba(39,174,96,0.08);
+  color: #27ae60;
 }
 
 .c3 {
@@ -15986,17 +16359,17 @@ Array [
 }
 
 .c3:hover,
-.c3.activated {
+.c3.active {
   color: #2f313a;
   background-color: rgba(39,174,96,0.04);
 }
 
 .c3:hover .icon,
-.c3.activated .icon {
+.c3.active .icon {
   color: #27ae60;
 }
 
-.c3.activated {
+.c3.active {
   padding-left: 4px;
   border-left: 4px solid #27ae60;
 }
@@ -16041,57 +16414,19 @@ Array [
 }
 
 .c5:hover,
-.c5.activated {
+.c5.active {
   color: #2f313a;
   background-color: rgba(39,174,96,0.04);
 }
 
 .c5:hover .icon,
-.c5.activated .icon {
+.c5.active .icon {
   color: #27ae60;
 }
 
-.c5.activated {
+.c5.active {
   padding-left: 4px;
   border-left: 4px solid #27ae60;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c1:hover {
-  background-color: rgba(39,174,96,0.08);
-  color: #27ae60;
 }
 
 .c2 {
@@ -16126,121 +16461,166 @@ Array [
     <div
       className="c2"
     />
-    <li
-      className="activated c3"
+    <a
+      aria-current={null}
+      href="/purveyor"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#27ae60"
       href="/order"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="overlay"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#27ae60"
       href="/search"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="overlay"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#27ae60"
       href="/meat"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="overlay"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
+        onClick={[Function]}
       >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/account"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c5"
+        onClick={[Function]}
       >
-        meat
-      </div>
-    </li>
+        <div
+          className="thumb-container"
+        >
+          <img
+            alt=""
+            className="c6"
+            height={36}
+            size={36}
+            src="https://picsum.photos/640/?image=889"
+            width={36}
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          Account
+        </div>
+      </li>
+    </a>
   </nav>,
   .c2 {
   font-family: Lato,sans-serif;
@@ -16265,6 +16645,7 @@ Array [
 
 .c0 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
   margin-top: 0;
   -webkit-transition: 0.3s;
@@ -16273,7 +16654,7 @@ Array [
 
 <div
     className="c0"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -16385,60 +16766,6 @@ Array [
   width: 56px;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.activated {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.activated .icon {
-  color: #ff4411;
-}
-
-.c3.activated {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
 .c1 {
   box-sizing: border-box;
   color: rgba(0,0,0,0.48);
@@ -16478,6 +16805,60 @@ Array [
   color: #ff4411;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c3 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c3 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c3:hover,
+.c3.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c3:hover .icon,
+.c3.active .icon {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16510,21 +16891,9 @@ Array [
     <div
       className="c2"
     />
-    <a
-      aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#27ae60"
-      href="/purveyor"
-      iconSize="24px"
+    <li
+      className="active c3"
       onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-      variant="overlay"
-      zIndex={100}
     >
       <div
         className="thumb-container"
@@ -16598,43 +16967,7 @@ Array [
       >
         meat
       </div>
-    </a>
-    <a
-      aria-current={null}
-      background="white"
-      className="c5"
-      expanded={false}
-      highlightColor="#27ae60"
-      href="/account"
-      iconSize="24px"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-      variant="overlay"
-      zIndex={100}
-    >
-      <div
-        className="thumb-container"
-      >
-        <img
-          alt=""
-          className="c6"
-          size={36}
-          src="https://picsum.photos/640/?image=889"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        Account
-      </div>
-    </a>
+    </li>
   </nav>,
   .c2 {
   font-family: Lato,sans-serif;
@@ -16659,8 +16992,9 @@ Array [
 
 .c0 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
-  margin-top: 0;
+  padding-top: 0;
   -webkit-transition: margin 0.25s;
   transition: margin 0.25s;
   -webkit-transition-timing-function: ease-in-out;
@@ -16670,7 +17004,7 @@ Array [
 
 <div
     className="c0"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -16767,8 +17101,6 @@ Array [
 
 .c6 {
   box-sizing: border-box;
-  width: 36px;
-  height: 36px;
   border-radius: 100%;
   object-fit: cover;
 }
@@ -16788,6 +17120,45 @@ Array [
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 56px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c1:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
 }
 
 .c3 {
@@ -16829,17 +17200,17 @@ Array [
 }
 
 .c3:hover,
-.c3.activated {
+.c3.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
 .c3:hover .icon,
-.c3.activated .icon {
+.c3.active .icon {
   color: #ff4411;
 }
 
-.c3.activated {
+.c3.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
 }
@@ -16884,58 +17255,19 @@ Array [
 }
 
 .c5:hover,
-.c5.activated {
+.c5.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
 .c5:hover .icon,
-.c5.activated .icon {
+.c5.active .icon {
   color: #ff4411;
 }
 
-.c5.activated {
+.c5.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c2 {
@@ -16972,167 +17304,158 @@ Array [
     />
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/purveyor"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
       >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/order"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
       >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/search"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
       >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      className="c3"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/meat"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c3"
       >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        meat
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
     </a>
     <a
       aria-current={null}
-      background="white"
-      className="c5"
-      expanded={false}
-      highlightColor="#ff4411"
       href="/account"
-      iconSize="24px"
       onClick={[Function]}
       style={
         Object {
           "textDecoration": "none",
         }
       }
-      variant="push"
-      zIndex={100}
     >
-      <div
-        className="thumb-container"
+      <li
+        className="c5"
       >
-        <img
-          alt=""
-          className="c6"
-          size={36}
-          src="https://picsum.photos/640/?image=889"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        Account
-      </div>
+        <div
+          className="thumb-container"
+        >
+          <img
+            alt=""
+            className="c6"
+            height={36}
+            size={36}
+            src="https://picsum.photos/640/?image=889"
+            width={36}
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          Account
+        </div>
+      </li>
     </a>
   </nav>,
   .c2 {
@@ -17158,8 +17481,9 @@ Array [
 
 .c0 {
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
-  margin-top: 0;
+  padding-top: 0;
   -webkit-transition: margin 0.25s;
   transition: margin 0.25s;
   -webkit-transition-timing-function: ease-in-out;
@@ -17169,7 +17493,7 @@ Array [
 
 <div
     className="c0"
-    data-testid="content-navbar"
+    data-testid="pageWrapper-navbar"
   >
     <div
       style={
@@ -17208,4 +17532,32 @@ Array [
     </div>
   </div>,
 ]
+`;
+
+exports[`Storyshots SideNav Side Nav Simple 1`] = `
+.c0 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 270px;
+}
+
+<nav
+  className="c0"
+  data-testid="navbar-expanded"
+>
+  <div>
+    Sidebar Content
+  </div>
+</nav>
 `;
