@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@2.0.8...@crave/farmblocks-popover@2.1.0) (2019-10-23)
+
+
+### Features
+
+* **popover:** add \`disabled\` prop ([a3e079d](https://github.com/CraveFood/farmblocks/commit/a3e079d))
+* **popover:** stop propagation of trigger click event ([184fc36](https://github.com/CraveFood/farmblocks/commit/184fc36))
+
+
+
+
+
 ## [2.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@2.0.7...@crave/farmblocks-popover@2.0.8) (2019-10-18)
 
 **Note:** Version bump only for package @crave/farmblocks-popover

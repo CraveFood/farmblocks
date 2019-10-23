@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.0.10...@crave/farmblocks-hoc-input@6.1.0) (2019-10-23)
+
+
+### Bug Fixes
+
+* **hoc-input:** css classes affecting child components ([938db1d](https://github.com/CraveFood/farmblocks/commit/938db1d))
+
+
+### Features
+
+* **hoc-input:** add \`active\` prop ([894e103](https://github.com/CraveFood/farmblocks/commit/894e103))
+* **hoc-input:** change types of prefix and suffix to node ([6bdaa41](https://github.com/CraveFood/farmblocks/commit/6bdaa41))
+
+
+
+
+
 ## [6.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.0.9...@crave/farmblocks-hoc-input@6.0.10) (2019-10-18)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.7.2...@crave/farmblocks-input-select@3.8.0) (2019-10-23)
+
+
+### Bug Fixes
+
+* **hoc-input:** css classes affecting child components ([938db1d](https://github.com/CraveFood/farmblocks/commit/938db1d))
+
+
+### Features
+
+* **input-select > item:** pass all extra props to wrapper ([d58aa76](https://github.com/CraveFood/farmblocks/commit/d58aa76))
+
+
+
+
+
 ## [3.7.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.7.1...@crave/farmblocks-input-select@3.7.2) (2019-10-18)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select
