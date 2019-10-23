@@ -38,7 +38,7 @@ export const SideBar = styled.nav`
   overflow-x: hidden;
   transition: 0.25s;
   transition-timing-function: ease-in-out;
-  background-color: ${({ background }) => background};
+  background-color: ${({ backgroundColor }) => backgroundColor};
   box-shadow: 0px 2px 2px 0px ${colors.GREY_32};
   z-index: ${({ zIndex }) => zIndex};
 

@@ -13,7 +13,7 @@ const fullScreenStyle = css`
 
   &:hover,
   &.active {
-    color: ${({ highlightColor }) => highlightColor && highlightColor};
+    color: ${({ highlightColor }) => highlightColor};
   }
 
   &.active {
@@ -28,7 +28,7 @@ const NavItem = styled.li`
   list-style-type: none;
   padding: 8px;
   cursor: pointer;
-  background-color: ${({ background }) => background};
+  background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${GREY_48};
 
   .thumb-container {

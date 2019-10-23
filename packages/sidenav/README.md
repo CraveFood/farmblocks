@@ -152,7 +152,7 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
   > Color used to highlight active/hover nav item and close button.
 
-- **background** (_String_) = `farmblocks.theme.colors.SUGAR`
+- **backgroundColor** (_String_) = `farmblocks.theme.colors.SUGAR`
 
   > Sidebar background color.
 
@@ -182,7 +182,7 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
   > Color used to highlight active/hover items.
 
-- **background** (_String_)
+- **backgroundColor** (_String_)
 
   > NavItem background color.
 

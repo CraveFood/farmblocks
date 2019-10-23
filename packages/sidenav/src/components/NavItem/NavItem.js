@@ -39,7 +39,7 @@ NavItem.propTypes = {
   children: PropTypes.node,
   active: PropTypes.bool,
   highlightColor: PropTypes.string,
-  background: PropTypes.string,
+  backgroundColor: PropTypes.string,
   icon: PropTypes.string,
   iconSize: PropTypes.string,
   image: PropTypes.string,

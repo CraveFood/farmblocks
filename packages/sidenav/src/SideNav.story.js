@@ -297,7 +297,7 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
         expanded={expanded}
         onToggle={toggle}
         variant={variant}
-        background={sidebarColor}
+        backgroundColor={sidebarColor}
         onClose={collapse}
         offsetTop="56px"
         render={props => (
@@ -338,7 +338,7 @@ const NavLinkItems = ({ tabs, location, onClick, ...props }) => (
     <NavLink to="/account" style={{ textDecoration: "none" }}>
       <NavItem
         image="https://picsum.photos/640/?image=889"
-        background="white"
+        backgroundColor="white"
         active={location.pathname === "/account"}
         onClick={onClick}
         {...props}

@@ -47,7 +47,7 @@ const SideNav = ({ render, onToggle, onClose, ...props }) => {
 };
 
 SideNav.defaultProps = {
-  background: colors.SUGAR,
+  backgroundColor: colors.SUGAR,
   zIndex: 100,
   offsetTop: "0",
   collapsedWidth: "56px",
@@ -58,7 +58,7 @@ SideNav.defaultProps = {
 
 SideNav.propTypes = {
   render: PropTypes.func,
-  background: PropTypes.string,
+  backgroundColor: PropTypes.string,
   offsetTop: PropTypes.string,
   collapsedWidth: PropTypes.string,
   expandedWidth: PropTypes.string,
