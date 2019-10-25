@@ -255,6 +255,10 @@ render(<App />, document.getElementById("root"));
 
   > Top spacing gap.
 
+- **overlayProps** (_String_) = `"0"`
+
+  > Props passed to overlay component
+
 ## License
 
 MIT

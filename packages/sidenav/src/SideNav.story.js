@@ -111,7 +111,11 @@ const SideNavOverlayComp = () => {
         )}
       />
 
-      <PageWrapper expanded={expanded} variant={OVERLAY} onClick={handleClick}>
+      <PageWrapper
+        expanded={expanded}
+        variant={OVERLAY}
+        overlayProps={{ onClick: handleClick }}
+      >
         <LoremBlock variant={OVERLAY} />
       </PageWrapper>
     </>

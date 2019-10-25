@@ -2,10 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
-import StyledPageWrapper from "./PageWrapper.styled";
+import StyledPageWrapper, { Overlay } from "./PageWrapper.styled";
 
-const PageWrapper = React.memo(props => (
-  <StyledPageWrapper data-testid="pageWrapper-navbar" {...props} />
+const PageWrapper = React.memo(({ overlayProps, ...props }) => (
+  <>
+    {props.variant === OVERLAY && (
+      <Overlay expanded={props.expanded} {...overlayProps} />
+    )}
+    <StyledPageWrapper data-testid="pageWrapper-navbar" {...props} />
+  </>
 ));
 
 PageWrapper.defaultProps = {
@@ -38,6 +43,10 @@ PageWrapper.propTypes = {
    The sidebar style
   */
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
+  /**
+   Props passed to overlay component
+  */
+  overlayProps: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
 };
 
 export default PageWrapper;
