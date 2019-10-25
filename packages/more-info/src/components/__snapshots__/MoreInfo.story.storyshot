@@ -72,7 +72,7 @@ exports[`Storyshots More info Default 1`] = `
     className="c0"
   >
     <div
-      className="text  c1"
+      className="c1 text "
       fontWeight="title"
       size={16}
       type="#59636f"
@@ -80,7 +80,7 @@ exports[`Storyshots More info Default 1`] = `
       Mouse over the icon for more info
     </div>
     <div
-      className="icon c2"
+      className="c2 icon"
     >
       <div
         className="hit-area"
@@ -171,13 +171,13 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
     className="c0"
   >
     <div
-      className="text  c1"
+      className="c1 text "
       fontWeight="title"
       size={16}
       type="#59636f"
     />
     <div
-      className="icon c2"
+      className="c2 icon"
     >
       <div
         className="hit-area"
@@ -274,13 +274,13 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
     className="c0"
   >
     <div
-      className="text  c1"
+      className="c1 text "
       fontWeight="title"
       size={16}
       type="#59636f"
     />
     <div
-      className="icon c2"
+      className="c2 icon"
     >
       <div
         className="hit-area"
@@ -339,7 +339,7 @@ exports[`Storyshots More info extended style 1`] = `
   font-weight: 600;
 }
 
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -350,41 +350,41 @@ exports[`Storyshots More info extended style 1`] = `
   align-items: baseline;
 }
 
-.c1 .icon {
+.c0 .icon {
   display: inline-block;
   margin: 0 8px;
   cursor: pointer;
   color: #59636f;
 }
 
-.c1 .icon:hover,
-.c1 .hovered {
+.c0 .icon:hover,
+.c0 .hovered {
   color: #3498db;
 }
 
-.c0 .text {
+.c1 .text {
   font-family: serif;
 }
 
-.c0 .icon {
+.c1 .icon {
   position: relative;
 }
 
-.c0 .icon i {
+.c1 .icon i {
   visibility: hidden;
 }
 
-.c0 .icon .hit-area {
+.c1 .icon .hit-area {
   z-index: 1;
 }
 
-.c0 .icon::before {
+.c1 .icon::before {
   content: '🤔';
   position: absolute;
   top: 0;
 }
 
-.c0 .icon.tooltip {
+.c1 .icon.tooltip {
   width: 250px;
   white-space: pre-line;
   text-align: center;
@@ -395,7 +395,7 @@ exports[`Storyshots More info extended style 1`] = `
     className="c0 c1"
   >
     <div
-      className="text  c2"
+      className="c2 text "
       fontWeight="title"
       size={16}
       type="#59636f"
@@ -403,7 +403,7 @@ exports[`Storyshots More info extended style 1`] = `
       How much wood could a woodchuck chuck if a woodchuck could chuck wood?
     </div>
     <div
-      className="icon c3"
+      className="c3 icon"
     >
       <div
         className="hit-area"

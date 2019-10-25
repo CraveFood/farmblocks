@@ -124,7 +124,7 @@ exports[`Storyshots Filter Popover Default 1`] = `
     tabIndex="0"
   >
     <button
-      className="trigger c1"
+      className="c1 trigger"
       fontSize="14px"
       fontWeight="normal"
       size="SMALL"
@@ -278,7 +278,7 @@ exports[`Storyshots Filter Popover With value set 1`] = `
     tabIndex="0"
   >
     <button
-      className="trigger c1"
+      className="c1 trigger"
       fontSize="14px"
       fontWeight="normal"
       size="SMALL"
@@ -444,7 +444,7 @@ exports[`Storyshots Filter Popover With value set and custom Cancel label and ha
     tabIndex="0"
   >
     <button
-      className="trigger c1"
+      className="c1 trigger"
       fontSize="14px"
       fontWeight="normal"
       size="SMALL"
@@ -566,43 +566,43 @@ exports[`Storyshots Filter Popover extended style 1`] = `
   box-shadow: none;
 }
 
-.c1 {
+.c0 {
   display: inline-block;
   width: auto;
 }
 
-.c1 .appear-enter {
+.c0 .appear-enter {
   opacity: 0;
 }
 
-.c1 .appear-enter-active {
+.c0 .appear-enter-active {
   opacity: 1;
   -webkit-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in;
 }
 
-.c1 .appear-exit {
+.c0 .appear-exit {
   opacity: 1;
 }
 
-.c1 .appear-exit-active {
+.c0 .appear-exit-active {
   opacity: 0;
   -webkit-transition: opacity 200ms ease-out;
   transition: opacity 200ms ease-out;
 }
 
-.c0 {
+.c1 {
   background: lightcyan;
   padding: 16px;
 }
 
-.c0 .trigger {
+.c1 .trigger {
   -webkit-transform: rotate(0.5turn);
   -ms-transform: rotate(0.5turn);
   transform: rotate(0.5turn);
 }
 
-.c0 .formWrapper {
+.c1 .formWrapper {
   background: lavender;
 }
 
@@ -619,7 +619,7 @@ exports[`Storyshots Filter Popover extended style 1`] = `
     tabIndex="0"
   >
     <button
-      className="trigger c2"
+      className="c2 trigger"
       fontSize="14px"
       fontWeight="normal"
       size="SMALL"
@@ -767,7 +767,7 @@ exports[`Storyshots Filter Popover formContent as a function 1`] = `
     tabIndex="0"
   >
     <button
-      className="trigger c1"
+      className="c1 trigger"
       fontSize="14px"
       fontWeight="normal"
       size="SMALL"
@@ -916,7 +916,7 @@ Array [
       tabIndex="0"
     >
       <button
-        className="trigger c1"
+        className="c1 trigger"
         fontSize="14px"
         fontWeight="normal"
         size="SMALL"
