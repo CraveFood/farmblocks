@@ -7,7 +7,11 @@ import StyledPageWrapper, { Overlay } from "./PageWrapper.styled";
 const PageWrapper = React.memo(({ overlayProps, ...props }) => (
   <>
     {props.variant === OVERLAY && (
-      <Overlay expanded={props.expanded} {...overlayProps} />
+      <Overlay
+        data-testid="overlay-pageWrapper"
+        expanded={props.expanded}
+        {...overlayProps}
+      />
     )}
     <StyledPageWrapper data-testid="pageWrapper-navbar" {...props} />
   </>
@@ -46,7 +50,7 @@ PageWrapper.propTypes = {
   /**
    Props passed to overlay component
   */
-  overlayProps: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
+  overlayProps: PropTypes.object, // eslint-disable-line
 };
 
 export default PageWrapper;

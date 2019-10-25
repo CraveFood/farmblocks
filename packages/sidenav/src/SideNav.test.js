@@ -83,12 +83,12 @@ describe("SideNav", () => {
       fireEvent.click(toggleButton);
 
       const navbar = getByTestId("navbar-expanded");
-      const pageWrapper = getByTestId("pageWrapper-navbar");
+      const overlay = getByTestId("overlay-pageWrapper");
 
       expect(navbar).toHaveStyle(
         `width: ${SideNav.defaultProps.expandedWidth};`,
       );
-      expect(pageWrapper).toHaveStyle(`background-color:${colors.GREY_16};`);
+      expect(overlay).toBeVisible();
       expect(getByTestId("close-navbar")).toBeVisible();
     });
   });
@@ -121,13 +121,11 @@ describe("SideNav", () => {
 
       const navbar = getByTestId("navbar-expanded");
 
-      expect(navbar).toHaveStyle(
-        `  width: 100%;
+      expect(navbar).toHaveStyle(`
+         width: 100%;
          justify-content: center;
-         backdrop-filter: blur(5px);
          opacity: 0.9;
-      `,
-      );
+      `);
       expect(getByTestId("close-navbar")).toBeVisible();
     });
   });

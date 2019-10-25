@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
@@ -44,5 +45,17 @@ export const SideBar = styled.nav`
 
   ${({ variant }) => variantsStyle[variant]}
 `;
+
+SideBar.propTypes = {
+  backgroundColor: PropTypes.string.isRequired,
+  collapsedWidth: PropTypes.string.isRequired,
+  expandedWidth: PropTypes.string.isRequired,
+  variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]).isRequired,
+  render: PropTypes.func,
+  offsetTop: PropTypes.string,
+  expanded: PropTypes.bool,
+  highlightColor: PropTypes.string,
+  zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
 
 export default SideBar;

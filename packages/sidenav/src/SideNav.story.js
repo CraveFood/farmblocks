@@ -14,7 +14,7 @@ import useToggle from "./utils/useToggle";
 
 const tabs = ["purveyor", "order", "search", "meat"];
 
-export default { title: "SideNav/SideNav" };
+export default { title: "SideNav/SideNav", component: SideNav };
 
 export const SideNavSimple = () => (
   <SideNav render={() => <div>Sidebar Content</div>} />
@@ -39,132 +39,140 @@ export const CompleteSideNavSimple = () => (
   </>
 );
 
-const SideNavPushComp = () => {
-  const [expanded, { toggle, collapse }] = useToggle(false);
-  const [selected, setSelected] = useState(tabs[0]);
+export const SideNavPush = () => {
+  const SideNavPushComp = () => {
+    const [expanded, { toggle, collapse }] = useToggle(false);
+    const [selected, setSelected] = useState(tabs[0]);
 
-  return (
-    <>
-      <SideNav
-        expanded={expanded}
-        onToggle={toggle}
-        onClose={collapse}
-        render={props => (
-          <>
-            <NavHeader />
-            {tabs.map(tab => (
-              <NavItem
-                key={tab}
-                onClick={() => setSelected(tab)}
-                active={tab === selected}
-                icon={`wg-${tab}`}
-                {...props}
-              >
-                {tab}
-              </NavItem>
-            ))}
-          </>
-        )}
-      />
+    return (
+      <>
+        <SideNav
+          expanded={expanded}
+          onToggle={toggle}
+          onClose={collapse}
+          render={props => (
+            <>
+              <NavHeader />
+              {tabs.map(tab => (
+                <NavItem
+                  key={tab}
+                  onClick={() => setSelected(tab)}
+                  active={tab === selected}
+                  icon={`wg-${tab}`}
+                  {...props}
+                >
+                  {tab}
+                </NavItem>
+              ))}
+            </>
+          )}
+        />
 
-      <PageWrapper expanded={expanded}>
-        <LoremBlock variant={PUSH} />
-      </PageWrapper>
-    </>
-  );
-};
-
-export const SideNavPush = () => <SideNavPushComp />;
-
-const SideNavOverlayComp = () => {
-  const [expanded, { toggle, collapse }] = useToggle(false);
-  const [selected, setSelected] = useState(tabs[0]);
-  const handleClick = tab => {
-    if (expanded) {
-      collapse();
-    }
-    setSelected(tab);
+        <PageWrapper expanded={expanded}>
+          <LoremBlock variant={PUSH} />
+        </PageWrapper>
+      </>
+    );
   };
 
-  return (
-    <>
-      <SideNav
-        expanded={expanded}
-        onToggle={toggle}
-        onClose={collapse}
-        variant={OVERLAY}
-        render={props => (
-          <>
-            <NavHeader />
-            {tabs.map(tab => (
-              <NavItem
-                key={tab}
-                icon={`wg-${tab}`}
-                active={tab === selected}
-                onClick={() => handleClick(tab)}
-                {...props}
-              >
-                {tab}
-              </NavItem>
-            ))}
-          </>
-        )}
-      />
-
-      <PageWrapper
-        expanded={expanded}
-        variant={OVERLAY}
-        overlayProps={{ onClick: handleClick }}
-      >
-        <LoremBlock variant={OVERLAY} />
-      </PageWrapper>
-    </>
-  );
+  return <SideNavPushComp />;
 };
-export const SideNavOverlay = () => <SideNavOverlayComp />;
 
-const SideNavFullScreenComp = () => {
-  const [expanded, { toggle, collapse }] = useToggle(false);
-  const [selected, setSelected] = useState(tabs[0]);
-  const handleClick = tab => {
-    if (expanded) {
-      collapse();
-    }
-    setSelected(tab);
+export const SideNavOverlay = () => {
+  const SideNavOverlayComp = () => {
+    const [expanded, { toggle, collapse }] = useToggle(false);
+    const [selected, setSelected] = useState(tabs[0]);
+    const handleClick = tab => {
+      if (expanded) {
+        collapse();
+      }
+      setSelected(tab);
+    };
+
+    return (
+      <>
+        <SideNav
+          expanded={expanded}
+          onToggle={toggle}
+          onClose={collapse}
+          variant={OVERLAY}
+          render={props => (
+            <>
+              <NavHeader />
+              {tabs.map(tab => (
+                <NavItem
+                  key={tab}
+                  icon={`wg-${tab}`}
+                  active={tab === selected}
+                  onClick={() => handleClick(tab)}
+                  {...props}
+                >
+                  {tab}
+                </NavItem>
+              ))}
+            </>
+          )}
+        />
+
+        <PageWrapper
+          expanded={expanded}
+          variant={OVERLAY}
+          overlayProps={{ onClick: handleClick }}
+        >
+          <LoremBlock variant={OVERLAY} />
+        </PageWrapper>
+      </>
+    );
   };
 
-  return (
-    <>
-      <SideNav
-        expanded={expanded}
-        onToggle={toggle}
-        onClose={collapse}
-        variant={FULLSCREEN}
-        render={props => (
-          <>
-            <NavHeader />
-            {tabs.map(tab => (
-              <NavItem
-                key={tab}
-                icon={`wg-${tab}`}
-                active={tab === selected}
-                onClick={() => handleClick(tab)}
-                {...props}
-              >
-                {tab}
-              </NavItem>
-            ))}
-          </>
-        )}
-      />
-
-      <PageWrapper expanded={expanded} variant={FULLSCREEN}>
-        <LoremBlock variant={FULLSCREEN} />
-      </PageWrapper>
-    </>
-  );
+  return <SideNavOverlayComp />;
 };
-export const SideNavFullScreen = () => <SideNavFullScreenComp />;
+
+export const SideNavFullScreen = () => {
+  const SideNavFullScreenComp = () => {
+    const [expanded, { toggle, collapse }] = useToggle(false);
+    const [selected, setSelected] = useState(tabs[0]);
+    const handleClick = tab => {
+      if (expanded) {
+        collapse();
+      }
+      setSelected(tab);
+    };
+
+    return (
+      <>
+        <SideNav
+          expanded={expanded}
+          onToggle={toggle}
+          onClose={collapse}
+          variant={FULLSCREEN}
+          render={props => (
+            <>
+              <NavHeader />
+              {tabs.map(tab => (
+                <NavItem
+                  key={tab}
+                  icon={`wg-${tab}`}
+                  active={tab === selected}
+                  onClick={() => handleClick(tab)}
+                  {...props}
+                >
+                  {tab}
+                </NavItem>
+              ))}
+            </>
+          )}
+        />
+
+        <PageWrapper expanded={expanded} variant={FULLSCREEN}>
+          <LoremBlock variant={FULLSCREEN} />
+        </PageWrapper>
+      </>
+    );
+  };
+
+  return <SideNavFullScreenComp />;
+};
 
 export const SideNavPushWithRouter = withRouter(({ location }) => {
   const [expanded, { toggle, collapse }] = useToggle(false);
