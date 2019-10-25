@@ -1,8 +1,13 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-console, import/no-extraneous-dependencies */
 const fs = require("fs");
 const path = require("path");
+const { promisify } = require("util");
+const exec = promisify(require("child_process").exec);
 const junk = require("junk");
 const svgr = require("@svgr/core").default;
+const ora = require("ora");
+
+const status = ora("Loading SVG files").start();
 
 const svgSourcePath = "./src/svg";
 const jsxSourcePath = "./src/jsx";
@@ -19,58 +24,100 @@ const groups = fs
   .filter(junk.not) // exclude system files/folders
   .filter(isDir);
 
-groups.reduce((allGroupsAcc, group) => {
-  const groupPath = `${svgSourcePath}/${group}`;
-  const svgFiles = fs.readdirSync(groupPath).filter(isSvg);
+async function lintFiles() {
+  const lintStatus = ora("Linting files").start();
+  try {
+    await exec("eslint --fix --ext js ./src/jsx/");
+    lintStatus.succeed("Lint succeeded");
+  } catch (error) {
+    lintStatus.fail("Lint failed");
+    console.error(error);
+  }
+}
 
-  const groupFiles = svgFiles.reduce((groupFilesAcc, file) => {
+const jsxTemplate = ({ template }, { state }, { imports, jsx }) => template.ast`
+  ${imports}
+  import PropTypes from 'prop-types';
+  
+  const ${state.componentName} = React.forwardRef(({size, ...props}, ref) => (
+    ${jsx}
+  ));
+
+  ${state.componentName}.propTypes = {
+    color: PropTypes.string,
+    size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    ariaLabel: PropTypes.string
+  };
+
+  ${state.componentName}.defaultProps = {
+    color: "currentColor",
+    size: "1em"
+  };
+
+  export default ${state.componentName};
+`;
+
+function convertFilesOfGroups(group, groupPath) {
+  return async (groupFilesAccPromise, file) => {
+    const groupFilesAcc = await groupFilesAccPromise;
     const componentName = path.basename(file, path.extname(file));
 
+    status.text = `Group: ${group} | File: ${componentName}`;
+
     const jsxPath = `${jsxSourcePath}/${componentName}.js`;
-    const svgCode = fs.readFileSync(`${groupPath}/${file}`, {
+    const svgCode = await fs.promises.readFile(`${groupPath}/${file}`, {
       encoding: "utf8",
     });
 
-    const jsxCode = svgr.sync(svgCode, {
-      replaceAttrValues: { "#2F313A": "{props.color}" },
-      svgProps: {
-        width: "{props.size}",
-        height: "{props.size}",
-        ref: "{ref}",
-        ariaHidden: "{!props.ariaLabel}",
+    const jsxCode = await svgr(
+      svgCode,
+      {
+        replaceAttrValues: { "#2F313A": "{props.color}" },
+        svgProps: {
+          width: "{props.size}",
+          height: "{props.size}",
+          ref: "{ref}",
+          ariaHidden: "{!props.ariaLabel}",
+        },
+        template: jsxTemplate,
+        plugins: [
+          "@svgr/plugin-svgo",
+          "@svgr/plugin-jsx",
+          "@svgr/plugin-prettier",
+        ],
       },
-      template: ({ template }, _opts, { imports, jsx }) => template.ast`
-        ${imports}
-        import PropTypes from 'prop-types';
-        
-        const ${componentName} = React.forwardRef(({size, ...props}, ref) => (
-          ${jsx}
-        ));
+      { componentName, group },
+    );
+    await fs.promises.writeFile(jsxPath, jsxCode);
+    return Promise.resolve([...groupFilesAcc, jsxPath]);
+  };
+}
 
-        ${componentName}.propTypes = {
-          color: PropTypes.string,
-          size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-          ariaLabel: PropTypes.string
-        };
+async function buildJSX() {
+  try {
+    await groups.reduce(async (allGroupsAccPromise, group) => {
+      const allGroupsAcc = await allGroupsAccPromise;
 
-        ${componentName}.defaultProps = {
-          color: "currentColor",
-          size: "1em"
-        };
+      const groupPath = `${svgSourcePath}/${group}`;
+      const svgFiles = (await fs.promises.readdir(groupPath)).filter(isSvg);
 
-        export default ${componentName};
-      `,
-      plugins: [
-        "@svgr/plugin-svgo",
-        "@svgr/plugin-jsx",
-        "@svgr/plugin-prettier",
-      ],
-    });
+      const groupFiles = await svgFiles.reduce(
+        convertFilesOfGroups(group, groupPath),
+        Promise.resolve([]),
+      );
 
-    fs.writeFileSync(jsxPath, jsxCode);
+      return Promise.resolve([...allGroupsAcc, ...groupFiles]);
+    }, Promise.resolve([]));
 
-    return [...groupFilesAcc, jsxPath];
-  }, []);
+    status.succeed("JSX files created");
 
-  return [...allGroupsAcc, ...groupFiles];
-}, []);
+    return Promise.resolve();
+  } catch (error) {
+    status.fail("Build failed");
+
+    console.error(error);
+    return Promise.reject();
+  }
+}
+
+buildJSX().then(lintFiles);
