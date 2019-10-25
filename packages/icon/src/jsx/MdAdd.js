@@ -1,17 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MdAdd = React.forwardRef(({ size, ...props }, ref) => (
+const MdAdd = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
+    viewBox="0 0 40 40"
     ref={ref}
     ariaHidden={!props.ariaLabel}
     {...props}
   >
     <path
       d="M20 12a1 1 0 0 1 1 1v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-2 0v-6h-6a1 1 0 0 1 0-2h6v-6a1 1 0 0 1 1-1z"
-      fill={props.color}
+      fill={color}
       fillRule="nonzero"
     />
   </svg>

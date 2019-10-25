@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MdNewBid = React.forwardRef(({ size, ...props }, ref) => (
+const MdNewBid = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
-    width={props.size}
-    height={props.size}
+    width={size}
+    height={size}
+    viewBox="0 0 40 40"
     ref={ref}
     ariaHidden={!props.ariaLabel}
     {...props}
   >
     <g
-      stroke={props.color}
+      stroke={color}
       strokeWidth={2}
       fill="none"
       fillRule="evenodd"
