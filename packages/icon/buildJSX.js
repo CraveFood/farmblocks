@@ -7,7 +7,7 @@ const junk = require("junk");
 const svgr = require("@svgr/core").default;
 const ora = require("ora");
 
-const status = ora("Loading SVG files").start();
+const jsxStatus = ora("Loading SVG files").start();
 
 const svgSourcePath = "./src/svg";
 const jsxSourcePath = "./src/jsx";
@@ -35,28 +35,32 @@ async function lintFiles() {
   }
 }
 
-const jsxTemplate = ({ template }, { state }, { imports, jsx }) => template.ast`
+const jsxTemplate = (
+  { template },
+  { state: { componentName, group } },
+  { imports, jsx },
+) => template.ast`
   ${imports}
   import PropTypes from 'prop-types';
   
-  const ${state.componentName} = React.forwardRef(({size, ...props}, ref) => (
+  const ${componentName} = React.forwardRef(({size, color, ...props}, ref) => (
     ${jsx}
   ));
 
-  ${state.componentName}.propTypes = {
+  ${componentName}.propTypes = {
     color: PropTypes.string,
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     ariaLabel: PropTypes.string
   };
 
-  ${state.componentName}.defaultProps = {
+  ${componentName}.defaultProps = {
     color: "currentColor",
     size: "1em"
   };
 
-  ${state.componentName}.groupName = "${state.group}";
+  ${componentName}.groupName = "${group}";
 
-  export default ${state.componentName};
+  export default ${componentName};
 `;
 
 function convertFilesOfGroups(group, groupPath) {
@@ -64,7 +68,7 @@ function convertFilesOfGroups(group, groupPath) {
     const groupFilesAcc = await groupFilesAccPromise;
     const componentName = path.basename(file, path.extname(file));
 
-    status.text = `Group: ${group} | File: ${componentName}`;
+    jsxStatus.text = `Group: ${group} | File: ${componentName}`;
 
     const jsxPath = `${jsxSourcePath}/${componentName}.js`;
     const svgCode = await fs.promises.readFile(`${groupPath}/${file}`, {
@@ -74,10 +78,11 @@ function convertFilesOfGroups(group, groupPath) {
     const jsxCode = await svgr(
       svgCode,
       {
-        replaceAttrValues: { "#2F313A": "{props.color}" },
+        icon: true,
+        replaceAttrValues: { "#2F313A": "{color}" },
         svgProps: {
-          width: "{props.size}",
-          height: "{props.size}",
+          width: "{size}",
+          height: "{size}",
           ref: "{ref}",
           ariaHidden: "{!props.ariaLabel}",
         },
@@ -91,13 +96,13 @@ function convertFilesOfGroups(group, groupPath) {
       { componentName, group },
     );
     await fs.promises.writeFile(jsxPath, jsxCode);
-    return Promise.resolve([...groupFilesAcc, jsxPath]);
+    return Promise.resolve([...groupFilesAcc, componentName]);
   };
 }
 
 async function buildJSX() {
   try {
-    await groups.reduce(async (allGroupsAccPromise, group) => {
+    const files = await groups.reduce(async (allGroupsAccPromise, group) => {
       const allGroupsAcc = await allGroupsAccPromise;
 
       const groupPath = `${svgSourcePath}/${group}`;
@@ -111,15 +116,42 @@ async function buildJSX() {
       return Promise.resolve([...allGroupsAcc, ...groupFiles]);
     }, Promise.resolve([]));
 
-    status.succeed("JSX files created");
+    jsxStatus.succeed("JSX files created");
 
-    return Promise.resolve();
+    return Promise.resolve(files);
   } catch (error) {
-    status.fail("Build failed");
+    jsxStatus.fail("Build failed");
 
     console.error(error);
     return Promise.reject();
   }
 }
 
-buildJSX().then(lintFiles);
+async function buildIndex(components) {
+  const indexStatus = ora("Building index file").start();
+
+  try {
+    await fs.promises.writeFile(
+      "./src/jsx/index.js",
+      components
+        .map(
+          component =>
+            `export { default as ${component} } from "./${component}";`,
+        )
+        .sort()
+        .join("\n"),
+    );
+
+    indexStatus.succeed("Index file created");
+    return Promise.resolve();
+  } catch (error) {
+    indexStatus.fail("Index file failed");
+
+    console.error(error);
+    return Promise.reject();
+  }
+}
+
+buildJSX()
+  .then(buildIndex)
+  .then(lintFiles);
