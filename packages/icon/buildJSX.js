@@ -54,6 +54,8 @@ const jsxTemplate = ({ template }, { state }, { imports, jsx }) => template.ast`
     size: "1em"
   };
 
+  ${state.componentName}.groupName = "${state.group}";
+
   export default ${state.componentName};
 `;
 
