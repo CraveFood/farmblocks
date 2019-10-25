@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MdAddtoCart = React.forwardRef(({ size, ...props }, ref) => (
+const MdAddToCart = React.forwardRef(({ size, ...props }, ref) => (
   <svg
     width={props.size}
     height={props.size}
@@ -10,20 +10,20 @@ const MdAddtoCart = React.forwardRef(({ size, ...props }, ref) => (
     {...props}
   >
     <path
-      d="M28 14v2a1 1 0 0 1-2 0v-2H14v2a1 1 0 0 1-2 0v-2H9.905l-1.8 18h23.79l-1.8-18H28zm-15.938-2a8.001 8.001 0 0 1 15.876 0H31a1 1 0 0 1 .995.9l2 20A1 1 0 0 1 33 34H7a1 1 0 0 1-.995-1.1l2-20A1 1 0 0 1 9 12h3.062zm2.021 0h11.834a6.002 6.002 0 0 0-11.834 0zM21 22h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2h-2a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2z"
+      d="M27.052 17.606A5.967 5.967 0 0 1 23.091 13H11.574l3.193 9h10.727l1.558-4.394zm2.012.311l-1.922 5.417a1 1 0 0 1-.943.666H14.061a1 1 0 0 1-.942-.666L8.742 11H6a1 1 0 0 1 0-2h3.448a1 1 0 0 1 .943.666l.476 1.343A1.01 1.01 0 0 1 11 11h12.077a5.96 5.96 0 0 1 11.841.96 5.958 5.958 0 0 1-5.854 5.957zM18 28.5a2.5 2.5 0 1 1-5 .003 2.5 2.5 0 0 1 5-.003zm9 0a2.5 2.5 0 1 1-5.001 0 2.5 2.5 0 0 1 5.001 0zM30 11V9a1 1 0 0 0-2 0v2h-2a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2h-2z"
       fill={props.color}
       fillRule="nonzero"
     />
   </svg>
 ));
-MdAddtoCart.propTypes = {
+MdAddToCart.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   ariaLabel: PropTypes.string,
 };
-MdAddtoCart.defaultProps = {
+MdAddToCart.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
-MdAddtoCart.groupName = "CartBag";
-export default MdAddtoCart;
+MdAddToCart.groupName = "Cart";
+export default MdAddToCart;

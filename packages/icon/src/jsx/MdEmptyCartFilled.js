@@ -10,7 +10,7 @@ const MdEmptyCartFilled = React.forwardRef(({ size, ...props }, ref) => (
     {...props}
   >
     <path
-      d="M12.062 12a8.001 8.001 0 0 1 15.876 0H31a1 1 0 0 1 .995.9l2 20A1 1 0 0 1 33 34H7a1 1 0 0 1-.995-1.1l2-20A1 1 0 0 1 9 12h3.062zm2.021 0h11.834a6.002 6.002 0 0 0-11.834 0zM16 24a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm4 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm4 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+      d="M8.742 11H6a1 1 0 0 1 0-2h3.448a1 1 0 0 1 .943.666l.476 1.343A1.01 1.01 0 0 1 11 11h18.327l.559-1.376c.49-1.208 2.305-.518 1.869.71l-4.613 13A1 1 0 0 1 26.2 24H14.06a1 1 0 0 1-.942-.666L8.742 11zM18 28.5a2.5 2.5 0 1 1-5 .002 2.5 2.5 0 0 1 5-.003zm9 0a2.5 2.5 0 1 1-5.001 0 2.5 2.5 0 0 1 5.001 0z"
       fill={props.color}
       fillRule="nonzero"
     />
@@ -25,5 +25,5 @@ MdEmptyCartFilled.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
-MdEmptyCartFilled.groupName = "CartBag";
+MdEmptyCartFilled.groupName = "Cart";
 export default MdEmptyCartFilled;
