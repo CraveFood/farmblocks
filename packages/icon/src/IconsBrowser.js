@@ -6,6 +6,15 @@ import Text, { fontSizes } from "@crave/farmblocks-text";
 
 import * as icons from ".";
 
+export const Pre = styled.pre`
+  display: inline-block;
+  font-size: 1rem;
+  background: aliceblue;
+  color: darkslateblue;
+  margin: 0;
+  padding: 4px;
+`;
+
 const Grid = styled.div`
   display: grid;
   grid: auto-flow min-content / repeat(auto-fill, minmax(180px, 1fr));
@@ -62,6 +71,13 @@ const groupNames = Object.keys(grouped).sort();
 export default () => (
   <>
     <Text size={fontSizes.HUGE}>Farmblocks Icons</Text>
+    <Text>
+      Use the names bellow the icons to import it.
+      <br />
+      Example:{" "}
+      <Pre>{`import { SmPlaceholder } from '@crave/farmblocks-icon';`}</Pre>
+    </Text>
+    <hr />
     <Grid>
       {groupNames.map(groupName => (
         <>
