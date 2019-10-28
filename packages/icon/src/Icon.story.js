@@ -1,6 +1,14 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
 
-import Icon from ".";
+import * as icons from ".";
+import IconsBrowser from "./IconsBrowser";
 
-storiesOf("Icon", module).add("Default", () => <Icon />);
+export default {
+  title: "Assets|Icons",
+  component: icons.SmPlaceholder,
+  parameters: {
+    componentSubtitle: "A list of SVG icons in JSX",
+  },
+};
+
+export const allIcons = () => <IconsBrowser />;
