@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MdAddToBag = React.forwardRef(({ size, color, ...props }, ref) => (
+const MdAddToBagBkp = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
@@ -17,14 +17,14 @@ const MdAddToBag = React.forwardRef(({ size, color, ...props }, ref) => (
     />
   </svg>
 ));
-MdAddToBag.propTypes = {
+MdAddToBagBkp.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdAddToBag.defaultProps = {
+MdAddToBagBkp.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
-MdAddToBag.groupName = "Cart";
-export default MdAddToBag;
+MdAddToBagBkp.groupName = "Cart";
+export default MdAddToBagBkp;
