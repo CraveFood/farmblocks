@@ -8,7 +8,7 @@ const SmArrowRightFilled = React.forwardRef(
       height={size}
       viewBox="0 0 24 24"
       ref={ref}
-      ariaHidden={!props.ariaLabel}
+      aria-hidden={!props["aria-label"]}
       {...props}
     >
       <path
@@ -22,7 +22,7 @@ const SmArrowRightFilled = React.forwardRef(
 SmArrowRightFilled.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ariaLabel: PropTypes.string,
+  "aria-label": PropTypes.string,
 };
 SmArrowRightFilled.defaultProps = {
   color: "currentColor",

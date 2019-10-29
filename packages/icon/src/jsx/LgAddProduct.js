@@ -7,7 +7,7 @@ const LgAddProduct = React.forwardRef(({ size, color, ...props }, ref) => (
     height={size}
     viewBox="0 0 100 100"
     ref={ref}
-    ariaHidden={!props.ariaLabel}
+    aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
@@ -20,7 +20,7 @@ const LgAddProduct = React.forwardRef(({ size, color, ...props }, ref) => (
 LgAddProduct.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ariaLabel: PropTypes.string,
+  "aria-label": PropTypes.string,
 };
 LgAddProduct.defaultProps = {
   color: "currentColor",

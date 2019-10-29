@@ -8,7 +8,7 @@ const LgAgriculturalSupplies = React.forwardRef(
       height={size}
       viewBox="0 0 100 100"
       ref={ref}
-      ariaHidden={!props.ariaLabel}
+      aria-hidden={!props["aria-label"]}
       {...props}
     >
       <path
@@ -22,7 +22,7 @@ const LgAgriculturalSupplies = React.forwardRef(
 LgAgriculturalSupplies.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ariaLabel: PropTypes.string,
+  "aria-label": PropTypes.string,
 };
 LgAgriculturalSupplies.defaultProps = {
   color: "currentColor",

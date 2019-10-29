@@ -7,7 +7,7 @@ const LgMobileDevices = React.forwardRef(({ size, color, ...props }, ref) => (
     height={size}
     viewBox="0 0 100 100"
     ref={ref}
-    ariaHidden={!props.ariaLabel}
+    aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
@@ -20,7 +20,7 @@ const LgMobileDevices = React.forwardRef(({ size, color, ...props }, ref) => (
 LgMobileDevices.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ariaLabel: PropTypes.string,
+  "aria-label": PropTypes.string,
 };
 LgMobileDevices.defaultProps = {
   color: "currentColor",

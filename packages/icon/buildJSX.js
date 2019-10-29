@@ -50,7 +50,7 @@ const jsxTemplate = (
   ${componentName}.propTypes = {
     color: PropTypes.string,
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    ariaLabel: PropTypes.string
+    'aria-label': PropTypes.string
   };
 
   ${componentName}.defaultProps = {
@@ -84,7 +84,7 @@ function convertFilesOfGroups(group, groupPath) {
           width: "{size}",
           height: "{size}",
           ref: "{ref}",
-          ariaHidden: "{!props.ariaLabel}",
+          "aria-hidden": "{!props['aria-label']}",
         },
         template: jsxTemplate,
         plugins: [

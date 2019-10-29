@@ -7,7 +7,7 @@ const SmChevronRight = React.forwardRef(({ size, color, ...props }, ref) => (
     height={size}
     viewBox="0 0 24 24"
     ref={ref}
-    ariaHidden={!props.ariaLabel}
+    aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
@@ -20,7 +20,7 @@ const SmChevronRight = React.forwardRef(({ size, color, ...props }, ref) => (
 SmChevronRight.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ariaLabel: PropTypes.string,
+  "aria-label": PropTypes.string,
 };
 SmChevronRight.defaultProps = {
   color: "currentColor",

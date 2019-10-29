@@ -7,7 +7,7 @@ const MdOrders = React.forwardRef(({ size, color, ...props }, ref) => (
     height={size}
     viewBox="0 0 40 40"
     ref={ref}
-    ariaHidden={!props.ariaLabel}
+    aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
@@ -20,7 +20,7 @@ const MdOrders = React.forwardRef(({ size, color, ...props }, ref) => (
 MdOrders.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  ariaLabel: PropTypes.string,
+  "aria-label": PropTypes.string,
 };
 MdOrders.defaultProps = {
   color: "currentColor",
