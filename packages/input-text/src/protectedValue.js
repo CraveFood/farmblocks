@@ -62,6 +62,16 @@ export const protectedValueProps = {
 // until the edit button is clicked
 export default WrappedComponent => {
   return class ProtectedInput extends React.Component {
+    static propTypes = {
+      ...protectedValueProps,
+      ...formInputProps,
+    };
+
+    static defaultProps = {
+      cancelButtonText: "Cancel",
+      saveButtonText: "Save",
+    };
+
     state = {
       isEditing: false,
       value: this.props.value,
@@ -189,15 +199,5 @@ export default WrappedComponent => {
         </Container>
       );
     }
-
-    static defaultProps = {
-      cancelButtonText: "Cancel",
-      saveButtonText: "Save",
-    };
-
-    static propTypes = {
-      ...protectedValueProps,
-      ...formInputProps,
-    };
   };
 };

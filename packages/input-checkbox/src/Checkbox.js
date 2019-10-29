@@ -8,6 +8,22 @@ import Toggle from "./Toggle";
 
 const createCheckbox = ({ isSwitch }) =>
   class Checkbox extends React.Component {
+    static propTypes = {
+      label: PropTypes.string,
+      checked: PropTypes.bool,
+      loading: PropTypes.bool,
+      onMouseUp: PropTypes.func,
+      onChange: PropTypes.func,
+      disabled: PropTypes.bool,
+      innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+      className: PropTypes.string,
+    };
+
+    static defaultProps = {
+      onMouseUp: () => null,
+      onChange: () => null,
+    };
+
     state = {
       clicked: false,
     };
@@ -80,22 +96,6 @@ const createCheckbox = ({ isSwitch }) =>
         </StyledLabel>
       );
     }
-
-    static propTypes = {
-      label: PropTypes.string,
-      checked: PropTypes.bool,
-      loading: PropTypes.bool,
-      onMouseUp: PropTypes.func,
-      onChange: PropTypes.func,
-      disabled: PropTypes.bool,
-      innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
-      className: PropTypes.string,
-    };
-
-    static defaultProps = {
-      onMouseUp: () => null,
-      onChange: () => null,
-    };
   };
 
 export const Checkbox = createCheckbox({ isSwitch: false });

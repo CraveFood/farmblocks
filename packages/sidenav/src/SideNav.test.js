@@ -1,6 +1,5 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-import { colors } from "@crave/farmblocks-theme";
 
 import SideNav from "./SideNav";
 import { GREY_48 } from "./components/NavButton/NavButton.styled";
@@ -99,7 +98,7 @@ describe("SideNav", () => {
       const navbar = getByTestId("navbar-collapsed");
 
       expect(navbar).toBeVisible();
-      expect(navbar).toHaveStyle(`width: 0px;`);
+      expect(navbar).toHaveStyle(`width: 1px;`);
     });
 
     it("should display hamburguer button and hide close button", () => {
@@ -124,7 +123,6 @@ describe("SideNav", () => {
       expect(navbar).toHaveStyle(`
          width: 100%;
          justify-content: center;
-         opacity: 0.9;
       `);
       expect(getByTestId("close-navbar")).toBeVisible();
     });

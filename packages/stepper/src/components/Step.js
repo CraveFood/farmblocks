@@ -31,11 +31,11 @@ export default class Step extends React.Component {
       </Container>
     );
   }
-
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
-    onClick: PropTypes.func.isRequired,
-    className: PropTypes.string,
-  };
 }
+
+Step.propTypes = {
+  children: PropTypes.node.isRequired,
+  status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
+  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};

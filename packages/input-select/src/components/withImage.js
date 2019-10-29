@@ -14,8 +14,14 @@ export const refName = "inputRef";
 
 export default Input =>
   class InputWithImage extends React.Component {
+    static propTypes = {
+      image: PropTypes.string,
+      inputRef: PropTypes.func,
+    };
+
     render() {
       const { image, inputRef, ...props } = this.props;
+
       return (
         <LabelContainer className="labelContainer">
           {image && (
@@ -30,9 +36,4 @@ export default Input =>
         </LabelContainer>
       );
     }
-
-    static propTypes = {
-      image: PropTypes.string,
-      inputRef: PropTypes.func,
-    };
   };

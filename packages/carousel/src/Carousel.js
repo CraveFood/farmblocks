@@ -105,36 +105,36 @@ class Carousel extends React.Component {
       </Container>
     );
   }
-
-  static propTypes = {
-    imageSet: PropTypes.arrayOf(
-      PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
-    ),
-    onChange: PropTypes.func,
-    onEnd: PropTypes.func,
-    scale: PropTypes.bool,
-    itemConfig: PropTypes.shape({
-      width: PropTypes.number,
-      height: PropTypes.number,
-      margin: PropTypes.number,
-      fontSize: PropTypes.number,
-      displayTime: PropTypes.number,
-      transitionTime: PropTypes.number,
-      border: PropTypes.shape({
-        width: PropTypes.string,
-        radius: PropTypes.string,
-        color: PropTypes.string,
-      }),
-    }),
-    className: PropTypes.string,
-  };
-
-  static defaultProps = {
-    itemConfig: defaultConfig,
-    scale: true,
-    onChange: () => null,
-    onEnd: () => null,
-  };
 }
+
+Carousel.propTypes = {
+  imageSet: PropTypes.arrayOf(
+    PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
+  ),
+  onChange: PropTypes.func,
+  onEnd: PropTypes.func,
+  scale: PropTypes.bool,
+  itemConfig: PropTypes.shape({
+    width: PropTypes.number,
+    height: PropTypes.number,
+    margin: PropTypes.number,
+    fontSize: PropTypes.number,
+    displayTime: PropTypes.number,
+    transitionTime: PropTypes.number,
+    border: PropTypes.shape({
+      width: PropTypes.string,
+      radius: PropTypes.string,
+      color: PropTypes.string,
+    }),
+  }),
+  className: PropTypes.string,
+};
+
+Carousel.defaultProps = {
+  itemConfig: defaultConfig,
+  scale: true,
+  onChange: () => null,
+  onEnd: () => null,
+};
 
 export default Carousel;

@@ -124,25 +124,25 @@ class Popover extends React.Component {
       </Container>
     );
   }
-
-  static propTypes = {
-    trigger: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
-    content: PropTypes.func.isRequired,
-    // eslint-disable-next-line react/forbid-prop-types
-    tooltipProps: PropTypes.object,
-    triggerWidth: PropTypes.string,
-    onOutsideClick: PropTypes.func,
-    onOpen: PropTypes.func,
-    onBeforeOpen: PropTypes.func,
-    onClose: PropTypes.func,
-    className: PropTypes.string,
-    disabled: PropTypes.bool,
-  };
-
-  static defaultProps = {
-    triggerWidth: "auto",
-    disabled: false,
-  };
 }
+
+Popover.propTypes = {
+  trigger: PropTypes.oneOfType([PropTypes.node, PropTypes.func]).isRequired,
+  content: PropTypes.func.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  tooltipProps: PropTypes.object,
+  triggerWidth: PropTypes.string,
+  onOutsideClick: PropTypes.func,
+  onOpen: PropTypes.func,
+  onBeforeOpen: PropTypes.func,
+  onClose: PropTypes.func,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+};
+
+Popover.defaultProps = {
+  triggerWidth: "auto",
+  disabled: false,
+};
 
 export default Popover;

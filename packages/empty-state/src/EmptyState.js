@@ -106,22 +106,22 @@ class EmptyState extends React.PureComponent {
       </Container>
     );
   }
-
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    imageSrc: PropTypes.string,
-    description: PropTypes.string,
-    actions: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string.isRequired,
-        type: PropTypes.string.isRequired,
-        onClick: PropTypes.func.isRequired,
-      }),
-    ),
-    info: PropTypes.string,
-    icon: PropTypes.string,
-    className: PropTypes.string,
-  };
 }
+
+EmptyState.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string,
+  description: PropTypes.string,
+  actions: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      onClick: PropTypes.func.isRequired,
+    }),
+  ),
+  info: PropTypes.string,
+  icon: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export default EmptyState;

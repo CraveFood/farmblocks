@@ -15,6 +15,21 @@ export const withMessagesProps = {
 
 const withMessages = WrappedComponent => {
   return class ValidationMessages extends React.Component {
+    static propTypes = {
+      ...WrappedComponent.propTypes,
+      ...withMessagesProps,
+      className: PropTypes.string,
+    };
+
+    /* eslint-disable react/default-props-match-prop-types */
+    // false negative. The linter don't follow the spread of `withMessagesProp`
+    static defaultProps = {
+      errorIconSrc: errorIcon,
+      validationMessages: [],
+      onInvalid: () => null,
+    };
+    /* eslint-enable react/default-props-match-prop-types */
+
     state = {
       messages: this.props.validationMessages,
     };
@@ -98,21 +113,6 @@ const withMessages = WrappedComponent => {
         </div>
       );
     }
-
-    static propTypes = {
-      ...WrappedComponent.propTypes,
-      ...withMessagesProps,
-      className: PropTypes.string,
-    };
-
-    /* eslint-disable react/default-props-match-prop-types */
-    // false negative. The linter don't follow the spread of `withMessagesProp`
-    static defaultProps = {
-      errorIconSrc: errorIcon,
-      validationMessages: [],
-      onInvalid: () => null,
-    };
-    /* eslint-enable react/default-props-match-prop-types */
   };
 };
 
