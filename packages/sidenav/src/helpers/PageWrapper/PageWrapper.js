@@ -6,12 +6,8 @@ import StyledPageWrapper, { Overlay } from "./PageWrapper.styled";
 
 const PageWrapper = React.memo(({ overlayProps, ...props }) => (
   <>
-    {props.variant === OVERLAY && (
-      <Overlay
-        data-testid="overlay-pageWrapper"
-        expanded={props.expanded}
-        {...overlayProps}
-      />
+    {props.variant === OVERLAY && props.expanded && (
+      <Overlay data-testid="overlay-pageWrapper" {...overlayProps} />
     )}
     <StyledPageWrapper data-testid="pageWrapper-navbar" {...props} />
   </>

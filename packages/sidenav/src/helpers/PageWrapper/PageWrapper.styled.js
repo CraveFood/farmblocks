@@ -16,8 +16,9 @@ const variantsStyle = {
 
 const PageWrapper = styled.div`
   box-sizing: border-box;
+  width: 100%;
   -webkit-overflow-scrolling: touch;
-  ${({ offsetTop }) => offsetTop && `margin-top: ${offsetTop};`};
+  ${({ offsetTop }) => offsetTop && `padding-top: ${offsetTop};`};
   ${({ variant }) => variantsStyle[variant]}
 `;
 
@@ -29,13 +30,8 @@ export const Overlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  transition: 0.3s;
-  ${({ expanded }) =>
-    expanded &&
-    css`
-      background-color: ${colors.GREY_16};
-      cursor: pointer;
-    `};
+  cursor: pointer;
+  background-color: ${colors.GREY_16};
 `;
 
 export default PageWrapper;
