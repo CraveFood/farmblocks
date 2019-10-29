@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const MdAddToCartBkp = React.forwardRef(({ size, color, ...props }, ref) => (
+const MdAddToCart = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
@@ -17,14 +17,14 @@ const MdAddToCartBkp = React.forwardRef(({ size, color, ...props }, ref) => (
     />
   </svg>
 ));
-MdAddToCartBkp.propTypes = {
+MdAddToCart.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdAddToCartBkp.defaultProps = {
+MdAddToCart.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
-MdAddToCartBkp.groupName = "Cart";
-export default MdAddToCartBkp;
+MdAddToCart.groupName = "Cart";
+export default MdAddToCart;

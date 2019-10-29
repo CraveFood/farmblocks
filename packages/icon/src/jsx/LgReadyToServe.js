@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const LgReadyToServeBkp = React.forwardRef(({ size, color, ...props }, ref) => (
+const LgReadyToServe = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
@@ -17,14 +17,14 @@ const LgReadyToServeBkp = React.forwardRef(({ size, color, ...props }, ref) => (
     />
   </svg>
 ));
-LgReadyToServeBkp.propTypes = {
+LgReadyToServe.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-LgReadyToServeBkp.defaultProps = {
+LgReadyToServe.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
-LgReadyToServeBkp.groupName = "Categories";
-export default LgReadyToServeBkp;
+LgReadyToServe.groupName = "Categories";
+export default LgReadyToServe;
