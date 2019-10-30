@@ -146,6 +146,7 @@ class Select extends React.Component {
       maxHeight,
       multi,
       placeholder,
+      className = "",
       ...inputProps
     } = this.props;
 
@@ -160,7 +161,7 @@ class Select extends React.Component {
 
     return (
       <EnhancedInput
-        className="select__search"
+        className={`select__search ${className}`}
         readOnly={disableSearch}
         placeholder={getValues(this.props)?.length ? "" : placeholder}
         {...inputProps}
