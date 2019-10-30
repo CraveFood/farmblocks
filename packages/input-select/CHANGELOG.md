@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.8.0...@crave/farmblocks-input-select@3.8.1) (2019-10-30)
+
+
+### Bug Fixes
+
+* **Select:** prevent className prop override ([b41a519](https://github.com/CraveFood/farmblocks/commit/b41a519)), closes [#939](https://github.com/CraveFood/farmblocks/issues/939)
+
+
+
+
+
 # [3.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.7.2...@crave/farmblocks-input-select@3.8.0) (2019-10-23)
 
 
