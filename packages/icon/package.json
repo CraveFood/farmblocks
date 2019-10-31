@@ -1,0 +1,46 @@
+{
+  "name": "@crave/farmblocks-icon",
+  "version": "0.1.0",
+  "description": "A SVG icon library for React",
+  "author": "Crave Food Systems and AUTHORS",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "AUTHORS",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'",
+    "buildJSX": "rm -rf ./src/jsx && node ./buildJSX.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraveFood/farmblocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CraveFood/farmblocks/issues"
+  },
+  "homepage": "https://github.com/CraveFood/farmblocks#readme",
+  "keywords": [
+    "farmblocks",
+    "react"
+  ],
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@svgr/core": "^4.3.3",
+    "@svgr/plugin-jsx": "^4.3.3",
+    "@svgr/plugin-prettier": "^4.3.2",
+    "@svgr/plugin-svgo": "^4.3.1",
+    "junk": "^3.1.0",
+    "ora": "^4.0.2"
+  }
+}

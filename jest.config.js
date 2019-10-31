@@ -10,7 +10,7 @@ const basicConfig = {
   ],
   setupFilesAfterEnv: ["<rootDir>/jest.testFramework.js"],
   moduleNameMapper: {
-    "\\.(css|jpg|png)$": "<rootDir>/empty-module.js",
+    "\\.(css|jpg|png|svg)$": "<rootDir>/empty-module.js",
   },
 };
 
