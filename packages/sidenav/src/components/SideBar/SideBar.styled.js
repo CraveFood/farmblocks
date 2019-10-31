@@ -5,8 +5,8 @@ import { colors } from "@crave/farmblocks-theme";
 import { FULLSCREEN, PUSH, OVERLAY } from "../../constants/variants";
 
 const fullScreenStyle = css`
-  top:0;
-  ${({ expanded }) => expanded && "padding: 16px;"}
+  top: 0;
+  ${({ expanded }) => (expanded ? "padding: 16px;" : "padding: 16px 0;")}
   width: ${({ expanded }) => (expanded ? "100%" : "0px")};
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ export const SideBar = styled.nav`
   left: 0;
   top: ${({ offsetTop }) => offsetTop};
   overflow-x: hidden;
-  transition: 0.25s;
+  transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
   transition-timing-function: ease-in-out;
   background-color: ${({ backgroundColor }) => backgroundColor};
   box-shadow: 0px 2px 2px 0px ${colors.GREY_32};
