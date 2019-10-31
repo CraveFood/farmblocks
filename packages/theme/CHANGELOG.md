@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.6.3 (2019-10-31)
+
+**Note:** Version bump only for package @crave/farmblocks-theme
+
+
+
+
+
 ## [1.6.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.6.1...@crave/farmblocks-theme@1.6.2) (2019-03-07)
 
 

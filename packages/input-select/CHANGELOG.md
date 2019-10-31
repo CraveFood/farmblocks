@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.8.1...@crave/farmblocks-input-select@3.8.2) (2019-10-31)
+
+**Note:** Version bump only for package @crave/farmblocks-input-select
+
+
+
+
+
 ## [3.8.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.8.0...@crave/farmblocks-input-select@3.8.1) (2019-10-30)
 
 
