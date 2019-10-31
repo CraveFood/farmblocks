@@ -41,6 +41,7 @@ export const SVGFile = () => (
     <Text>You can import the original svg files intead of the JSX ones:</Text>
     <p>
       <Pre>
+        {/* eslint-disable-next-line */}
         {`import LgPhoto from '@crave/farmblocks-icon/svg/Actions/LgPhoto.svg';`}
       </Pre>
     </p>
