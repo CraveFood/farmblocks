@@ -16,7 +16,6 @@ const variantsStyle = {
 
 const PageWrapper = styled.div`
   box-sizing: border-box;
-  width: 100%;
   -webkit-overflow-scrolling: touch;
   ${({ offsetTop }) => offsetTop && `padding-top: ${offsetTop};`};
   ${({ variant }) => variantsStyle[variant]}

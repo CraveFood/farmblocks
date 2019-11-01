@@ -6,13 +6,20 @@ import { FULLSCREEN, PUSH, OVERLAY } from "../../constants/variants";
 
 const fullScreenStyle = css`
   top: 0;
-  ${({ expanded }) => (expanded ? "padding: 16px;" : "padding: 16px 0;")}
-  width: ${({ expanded }) => (expanded ? "100%" : "0px")};
+  padding: ${({ expanded }) => (expanded ? "16px" : "16px 0")};
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  backdrop-filter: blur(5px);
-  opacity: 0.9;
+  
+  ${
+    "" /* keep 1px width when collapsed to prevent safari from lose backdrop-filter setting it to 0 */
+  }
+  width: ${({ expanded }) => (expanded ? "100%" : "1px")};
+  transform: translate(${({ expanded }) => (expanded ? "0" : "1px")});
+
+  backdrop-filter: blur(8px);
+  background: ${({ backgroundColor }) => backgroundColor}CC;
 `;
 
 const overlayStyle = css`
@@ -39,7 +46,7 @@ export const SideBar = styled.nav`
   overflow-x: hidden;
   transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
   transition-timing-function: ease-in-out;
-  background-color: ${({ backgroundColor }) => backgroundColor};
+  background: ${({ backgroundColor }) => backgroundColor};
   box-shadow: 0px 2px 2px 0px ${colors.GREY_32};
   z-index: ${({ zIndex }) => zIndex};
 
