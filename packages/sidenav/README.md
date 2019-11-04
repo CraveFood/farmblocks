@@ -29,7 +29,7 @@ yarn add @crave/farmblocks-sidenav
 
 ## Usage
 
-Simplest example
+Basic example
 
 ```jsx
 import React from "react";
@@ -160,7 +160,7 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
   > Top spacing gap.
 
-- **zIndex** (_Number_ | _String_) = `100`
+- **zIndex** (_Number_ ) = `100`
 
   > The sidebar z-index
 
@@ -174,7 +174,7 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
   > On "fullScreen" variant set rounded style, the other ones don't affect this component.
 
-- **children** (_String_)
+- **children** (_Node_)
 
   > Text content.
 
@@ -198,11 +198,11 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
   > Image src url (don't use `image` prop along with `icon` prop)
 
-- **imageProps** (_String_)
+- **imageProps** (_Object_)
 
   > Props for image component, accept any farmblocks-image prop
 
-- **textProps** (_String_)
+- **textProps** (_Object_)
 
   > Props for children(text) component, accept any farmblocks-text prop
 
@@ -255,7 +255,7 @@ render(<App />, document.getElementById("root"));
 
   > Top spacing gap.
 
-- **overlayProps** (_String_) = `"0"`
+- **overlayProps** (_Object_)
 
   > Props passed to overlay component
 
