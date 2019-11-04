@@ -68,7 +68,7 @@ const App = () => (
 render(<App />, document.getElementById("root"));
 ```
 
-Good Example
+Complete Example
 
 ```jsx
 import React from "react";
