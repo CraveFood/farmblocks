@@ -41,7 +41,7 @@ const App = () => <SideNav render={() => <div>Sidebar Content</div>} />;
 render(<App />, document.getElementById("root"));
 ```
 
-Simplest example with NavItem and PageWrapper
+Basic example with NavItem and PageWrapper
 
 ```jsx
 import React from "react";
