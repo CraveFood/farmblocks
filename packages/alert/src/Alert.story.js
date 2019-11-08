@@ -13,6 +13,9 @@ const StyledAlert = styled(Alert)`
 const ExtendedAlert = props => <StyledAlert {...props} />;
 
 storiesOf("Alert", module)
+  .addDecorator(storyFn => (
+    <div style={{ transform: "scale(1)", height: 200 }}>{storyFn()}</div>
+  ))
   .add("default", () => (
     <Alert text="Default is set to news type, and have default onDismiss function that hides the alert." />
   ))
