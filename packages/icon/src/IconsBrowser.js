@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import Text, { fontSizes } from "@crave/farmblocks-text";
 
-import * as icons from ".";
+import * as icons from "./jsx";
 
 export const Pre = styled.pre`
   display: inline-block;
