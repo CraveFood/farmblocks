@@ -11,7 +11,7 @@ const SideNav = ({ render, onToggle, onClose, ...props }) => {
   const { highlightColor, variant, expanded, zIndex } = props;
 
   useScrollLock({
-    condition: props.expanded && props.variant === FULLSCREEN,
+    condition: props.expanded && props.variant !== PUSH,
     element: document.body,
   });
 
@@ -66,7 +66,7 @@ SideNav.propTypes = {
   expanded: PropTypes.bool,
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
   highlightColor: PropTypes.string,
-  zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  zIndex: PropTypes.number,
   onToggle: PropTypes.func,
   onClose: PropTypes.func,
 };

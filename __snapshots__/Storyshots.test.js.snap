@@ -14338,8 +14338,7 @@ exports[`Storyshots SideNav/NavItem Nav Items 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Complete Side Nav Simple 1`] = `
-Array [
-  .c2 {
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -14420,7 +14419,26 @@ Array [
   border-left: 4px solid #ff4411;
 }
 
-<nav
+.c3 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 270px;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <nav
     className="c0"
     data-testid="navbar-expanded"
   >
@@ -14460,27 +14478,16 @@ Array [
         Item 3
       </div>
     </li>
-  </nav>,
-  .c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-  -webkit-transition: margin 0.25s;
-  transition: margin 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  margin-left: 270px;
-}
-
-<div
-    className="c0"
+  </nav>
+  <div
+    className="c3"
     data-testid="pageWrapper-navbar"
   >
     <h1>
       Page Content
     </h1>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
@@ -14750,12 +14757,478 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   z-index: 101;
 }
 
-<div>
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <div>
+    <div
+      className="c0"
+    />
+    <div
+      className="c1"
+      data-testid="toggle-navbar"
+      onClick={[Function]}
+      role="button"
+    >
+      <i
+        className="wg-list"
+      />
+    </div>
+    <nav
+      className="c2"
+      data-testid="navbar-collapsed"
+    >
+      <div
+        className="c3"
+        data-testid="close-navbar"
+        onClick={[Function]}
+        role="button"
+      >
+        <i
+          className="wg-close"
+        />
+      </div>
+      <a
+        aria-current={null}
+        href="/purveyor"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-purveyor"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            purveyor
+          </div>
+        </li>
+      </a>
+      <a
+        aria-current={null}
+        href="/order"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-order"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            order
+          </div>
+        </li>
+      </a>
+      <a
+        aria-current={null}
+        href="/search"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-search"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            search
+          </div>
+        </li>
+      </a>
+      <a
+        aria-current={null}
+        href="/meat"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="c4"
+        >
+          <div
+            className="thumb-container"
+          >
+            <i
+              className="icon wg-meat"
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            meat
+          </div>
+        </li>
+      </a>
+      <a
+        aria-current={null}
+        href="/account"
+        onClick={[Function]}
+        style={
+          Object {
+            "textDecoration": "none",
+          }
+        }
+      >
+        <li
+          className="c6"
+        >
+          <div
+            className="thumb-container"
+          >
+            <img
+              alt=""
+              className="c7"
+              height={36}
+              size={36}
+              src="https://picsum.photos/640/?image=889"
+              width={36}
+            />
+          </div>
+          <div
+            className="c5"
+            fontWeight="title"
+            size={18}
+            type="inherit"
+          >
+            Account
+          </div>
+        </li>
+      </a>
+    </nav>
+    <div
+      className="c8"
+      data-testid="pageWrapper-navbar"
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "height": "100vh",
+            "margin": "0 24px",
+            "padding": "24px",
+          }
+        }
+      >
+        <div
+          className="c9"
+          fontWeight="title"
+          size={32}
+          type="#2f313a"
+        >
+          select a route
+        </div>
+        <div
+          style={
+            Object {
+              "margin": "16px 0",
+            }
+          }
+        >
+          <div
+            className="c10"
+            fontWeight="inherit"
+            size={18}
+            type="#2f313a"
+          >
+            Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  top: 0;
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1px;
+  -webkit-transform: translate(1px);
+  -ms-transform: translate(1px);
+  transform: translate(1px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #f6f8f9;
+  background: #f6f8f9CC;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c2:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c0 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
+}
+
+.c0:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c4:hover .icon,
+.c4.active .icon {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c4:hover,
+.c4.active {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
+.c6 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  min-height: 56px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
   <div
     className="c0"
-  />
-  <div
-    className="c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
@@ -14765,11 +15238,11 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
     />
   </div>
   <nav
-    className="c2"
+    className="c1"
     data-testid="navbar-collapsed"
   >
     <div
-      className="c3"
+      className="c2"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
@@ -14778,6 +15251,2155 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         className="wg-close"
       />
     </div>
+    <div
+      className="c3"
+    />
+    <li
+      className="c4 active"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-purveyor"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        purveyor
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-order"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        order
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-search"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        search
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-meat"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        meat
+      </div>
+    </li>
+  </nav>
+  <div
+    className="c6"
+    data-testid="pageWrapper-navbar"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": "100vh",
+          "margin": "0 24px",
+          "padding": "24px",
+        }
+      }
+    >
+      <div
+        className="c7"
+        fontWeight="title"
+        size={32}
+        type="#2f313a"
+      >
+        fullScreen
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "16px 0",
+          }
+        }
+      >
+        <div
+          className="c8"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c6 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  top: 0;
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1px;
+  -webkit-transform: translate(1px);
+  -ms-transform: translate(1px);
+  transform: translate(1px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #f6f8f9;
+  background: #f6f8f9CC;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c2:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c0 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
+}
+
+.c0:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c3 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c3 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c3:hover,
+.c3.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c3:hover .icon,
+.c3.active .icon {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c3:hover,
+.c3.active {
+  color: #ff4411;
+}
+
+.c3.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c5 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c5 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c5:hover,
+.c5.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c5:hover .icon,
+.c5.active .icon {
+  color: #ff4411;
+}
+
+.c5.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c5:hover,
+.c5.active {
+  color: #ff4411;
+}
+
+.c5.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
+.c7 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <div
+    className="c0"
+    data-testid="toggle-navbar"
+    onClick={[Function]}
+    role="button"
+  >
+    <i
+      className="wg-list"
+    />
+  </div>
+  <nav
+    className="c1"
+    data-testid="navbar-collapsed"
+  >
+    <div
+      className="c2"
+      data-testid="close-navbar"
+      onClick={[Function]}
+      role="button"
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+    <a
+      aria-current={null}
+      href="/purveyor"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/order"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/search"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/meat"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c3"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/account"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c5"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <img
+            alt=""
+            className="c6"
+            height={36}
+            size={36}
+            src="https://picsum.photos/640/?image=889"
+            width={36}
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          Account
+        </div>
+      </li>
+    </a>
+  </nav>
+  <div
+    className="c7"
+    data-testid="pageWrapper-navbar"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": "100vh",
+          "margin": "0 24px",
+          "padding": "24px",
+        }
+      }
+    >
+      <div
+        className="c8"
+        fontWeight="title"
+        size={32}
+        type="#2f313a"
+      >
+        select a route
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "16px 0",
+          }
+        }
+      >
+        <div
+          className="c9"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 0px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c2:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c0 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
+}
+
+.c0:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c4:hover .icon,
+.c4.active .icon {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c6 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  min-height: 56px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <div
+    className="c0"
+    data-testid="toggle-navbar"
+    onClick={[Function]}
+    role="button"
+  >
+    <i
+      className="wg-list"
+    />
+  </div>
+  <nav
+    className="c1"
+    data-testid="navbar-collapsed"
+  >
+    <div
+      className="c2"
+      data-testid="close-navbar"
+      onClick={[Function]}
+      role="button"
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+    <div
+      className="c3"
+    />
+    <li
+      className="c4 active"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-purveyor"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        purveyor
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-order"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        order
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-search"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        search
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-meat"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        meat
+      </div>
+    </li>
+  </nav>
+  <div
+    className="c6"
+    data-testid="pageWrapper-navbar"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": "100vh",
+          "margin": "0 24px",
+          "padding": "24px",
+        }
+      }
+    >
+      <div
+        className="c7"
+        fontWeight="title"
+        size={32}
+        type="#2f313a"
+      >
+        overlay
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "16px 0",
+          }
+        }
+      >
+        <div
+          className="c8"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c7 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 0px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c2:hover {
+  background-color: rgba(39,174,96,0.08);
+  color: #27ae60;
+}
+
+.c0 {
+  box-sizing: border-box;
+  color: #27ae60;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
+}
+
+.c0:hover {
+  background-color: rgba(39,174,96,0.08);
+  color: #27ae60;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.active {
+  color: #2f313a;
+  background-color: rgba(39,174,96,0.04);
+}
+
+.c4:hover .icon,
+.c4.active .icon {
+  color: #27ae60;
+}
+
+.c4.active {
+  padding-left: 4px;
+  border-left: 4px solid #27ae60;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+}
+
+.c6 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c6 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c6:hover,
+.c6.active {
+  color: #2f313a;
+  background-color: rgba(39,174,96,0.04);
+}
+
+.c6:hover .icon,
+.c6.active .icon {
+  color: #27ae60;
+}
+
+.c6.active {
+  padding-left: 4px;
+  border-left: 4px solid #27ae60;
+}
+
+.c8 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  min-height: 56px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <div
+    className="c0"
+    data-testid="toggle-navbar"
+    onClick={[Function]}
+    role="button"
+  >
+    <i
+      className="wg-list"
+    />
+  </div>
+  <nav
+    className="c1"
+    data-testid="navbar-collapsed"
+  >
+    <div
+      className="c2"
+      data-testid="close-navbar"
+      onClick={[Function]}
+      role="button"
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+    <div
+      className="c3"
+    />
+    <a
+      aria-current={null}
+      href="/purveyor"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c4"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-purveyor"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          purveyor
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/order"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c4"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-order"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          order
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/search"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c4"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-search"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          search
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/meat"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c4"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <i
+            className="icon wg-meat"
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          meat
+        </div>
+      </li>
+    </a>
+    <a
+      aria-current={null}
+      href="/account"
+      onClick={[Function]}
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+    >
+      <li
+        className="c6"
+        onClick={[Function]}
+      >
+        <div
+          className="thumb-container"
+        >
+          <img
+            alt=""
+            className="c7"
+            height={36}
+            size={36}
+            src="https://picsum.photos/640/?image=889"
+            width={36}
+          />
+        </div>
+        <div
+          className="c5"
+          fontWeight="title"
+          size={18}
+          type="inherit"
+        >
+          Account
+        </div>
+      </li>
+    </a>
+  </nav>
+  <div
+    className="c8"
+    data-testid="pageWrapper-navbar"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": "100vh",
+          "margin": "0 24px",
+          "padding": "24px",
+        }
+      }
+    >
+      <div
+        className="c9"
+        fontWeight="title"
+        size={32}
+        type="#2f313a"
+      >
+        select a route
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "16px 0",
+          }
+        }
+      >
+        <div
+          className="c10"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 56px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c2:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c0 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
+}
+
+.c0:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c4:hover .icon,
+.c4.active .icon {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c6 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 56px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  min-height: 56px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <div
+    className="c0"
+    data-testid="toggle-navbar"
+    onClick={[Function]}
+    role="button"
+  >
+    <i
+      className="wg-list"
+    />
+  </div>
+  <nav
+    className="c1"
+    data-testid="navbar-collapsed"
+  >
+    <div
+      className="c2"
+      data-testid="close-navbar"
+      onClick={[Function]}
+      role="button"
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+    <div
+      className="c3"
+    />
+    <li
+      className="c4 active"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-purveyor"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        purveyor
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-order"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        order
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-search"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        search
+      </div>
+    </li>
+    <li
+      className="c4"
+      onClick={[Function]}
+    >
+      <div
+        className="thumb-container"
+      >
+        <i
+          className="icon wg-meat"
+        />
+      </div>
+      <div
+        className="c5"
+        fontWeight="title"
+        size={18}
+        type="inherit"
+      >
+        meat
+      </div>
+    </li>
+  </nav>
+  <div
+    className="c6"
+    data-testid="pageWrapper-navbar"
+  >
+    <div
+      style={
+        Object {
+          "boxSizing": "border-box",
+          "height": "100vh",
+          "margin": "0 24px",
+          "padding": "24px",
+        }
+      }
+    >
+      <div
+        className="c7"
+        fontWeight="title"
+        size={32}
+        type="#2f313a"
+      >
+        push
+      </div>
+      <div
+        style={
+          Object {
+            "margin": "16px 0",
+          }
+        }
+      >
+        <div
+          className="c8"
+          fontWeight="inherit"
+          size={18}
+          type="#2f313a"
+        >
+          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: inherit;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 32px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c7 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #f6f8f9;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  z-index: 100;
+  width: 56px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c2:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c0 {
+  box-sizing: border-box;
+  color: #ff4411;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 16px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
+}
+
+.c0:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c4 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c4:hover,
+.c4.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c4:hover .icon,
+.c4.active .icon {
+  color: #ff4411;
+}
+
+.c4.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+}
+
+.c6 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+}
+
+.c6 .icon {
+  font-size: 24px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c6:hover,
+.c6.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c6:hover .icon,
+.c6.active .icon {
+  color: #ff4411;
+}
+
+.c6.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c8 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 56px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  min-height: 56px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <div
+    className="c0"
+    data-testid="toggle-navbar"
+    onClick={[Function]}
+    role="button"
+  >
+    <i
+      className="wg-list"
+    />
+  </div>
+  <nav
+    className="c1"
+    data-testid="navbar-collapsed"
+  >
+    <div
+      className="c2"
+      data-testid="close-navbar"
+      onClick={[Function]}
+      role="button"
+    >
+      <i
+        className="wg-close"
+      />
+    </div>
+    <div
+      className="c3"
+    />
     <a
       aria-current={null}
       href="/purveyor"
@@ -14977,2568 +17599,6 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
 </div>
 `;
 
-exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
-Array [
-  .c0 {
-  box-sizing: border-box;
-  color: #ff4411;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
-}
-
-.c0:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-<div
-    className="c0"
-    data-testid="toggle-navbar"
-    onClick={[Function]}
-    role="button"
-  >
-    <i
-      className="wg-list"
-    />
-  </div>,
-  .c4 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  top: 0;
-  padding: 16px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 1px;
-  -webkit-transform: translate(1px);
-  -ms-transform: translate(1px);
-  transform: translate(1px);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  background: #f6f8f9CC;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.active .icon {
-  color: #ff4411;
-}
-
-.c3.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c3:hover,
-.c3.active {
-  color: #ff4411;
-}
-
-.c3.active {
-  padding-left: 16px;
-  border-left: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  min-height: 56px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-collapsed"
-  >
-    <div
-      className="c1"
-      data-testid="close-navbar"
-      onClick={[Function]}
-      role="button"
-    >
-      <i
-        className="wg-close"
-      />
-    </div>
-    <div
-      className="c2"
-    />
-    <li
-      className="c3 active"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        meat
-      </div>
-    </li>
-  </nav>,
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 32px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "height": "100vh",
-          "margin": "0 24px",
-          "padding": "24px",
-        }
-      }
-    >
-      <div
-        className="c1"
-        fontWeight="title"
-        size={32}
-        type="#2f313a"
-      >
-        fullScreen
-      </div>
-      <div
-        style={
-          Object {
-            "margin": "16px 0",
-          }
-        }
-      >
-        <div
-          className="c2"
-          fontWeight="inherit"
-          size={18}
-          type="#2f313a"
-        >
-          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
-Array [
-  .c0 {
-  box-sizing: border-box;
-  color: #ff4411;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
-}
-
-.c0:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-<div
-    className="c0"
-    data-testid="toggle-navbar"
-    onClick={[Function]}
-    role="button"
-  >
-    <i
-      className="wg-list"
-    />
-  </div>,
-  .c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c5 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  top: 0;
-  padding: 16px 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 1px;
-  -webkit-transform: translate(1px);
-  -ms-transform: translate(1px);
-  transform: translate(1px);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  background: #f6f8f9CC;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c2 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c2 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c2:hover,
-.c2.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c2:hover .icon,
-.c2.active .icon {
-  color: #ff4411;
-}
-
-.c2.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c2:hover,
-.c2.active {
-  color: #ff4411;
-}
-
-.c2.active {
-  padding-left: 16px;
-  border-left: none;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  background-color: white;
-  color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c4 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c4 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c4:hover,
-.c4.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c4:hover .icon,
-.c4.active .icon {
-  color: #ff4411;
-}
-
-.c4.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c4:hover,
-.c4.active {
-  color: #ff4411;
-}
-
-.c4.active {
-  padding-left: 16px;
-  border-left: none;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-collapsed"
-  >
-    <div
-      className="c1"
-      data-testid="close-navbar"
-      onClick={[Function]}
-      role="button"
-    >
-      <i
-        className="wg-close"
-      />
-    </div>
-    <a
-      aria-current={null}
-      href="/purveyor"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c2"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-purveyor"
-          />
-        </div>
-        <div
-          className="c3"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          purveyor
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/order"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c2"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-order"
-          />
-        </div>
-        <div
-          className="c3"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          order
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/search"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c2"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-search"
-          />
-        </div>
-        <div
-          className="c3"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          search
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/meat"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c2"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-meat"
-          />
-        </div>
-        <div
-          className="c3"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          meat
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/account"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c4"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <img
-            alt=""
-            className="c5"
-            height={36}
-            size={36}
-            src="https://picsum.photos/640/?image=889"
-            width={36}
-          />
-        </div>
-        <div
-          className="c3"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          Account
-        </div>
-      </li>
-    </a>
-  </nav>,
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 32px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "height": "100vh",
-          "margin": "0 24px",
-          "padding": "24px",
-        }
-      }
-    >
-      <div
-        className="c1"
-        fontWeight="title"
-        size={32}
-        type="#2f313a"
-      >
-        select a route
-      </div>
-      <div
-        style={
-          Object {
-            "margin": "16px 0",
-          }
-        }
-      >
-        <div
-          className="c2"
-          fontWeight="inherit"
-          size={18}
-          type="#2f313a"
-        >
-          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
-Array [
-  .c0 {
-  box-sizing: border-box;
-  color: #ff4411;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
-}
-
-.c0:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-<div
-    className="c0"
-    data-testid="toggle-navbar"
-    onClick={[Function]}
-    role="button"
-  >
-    <i
-      className="wg-list"
-    />
-  </div>,
-  .c4 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  width: 0px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.active .icon {
-  color: #ff4411;
-}
-
-.c3.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  min-height: 56px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-collapsed"
-  >
-    <div
-      className="c1"
-      data-testid="close-navbar"
-      onClick={[Function]}
-      role="button"
-    >
-      <i
-        className="wg-close"
-      />
-    </div>
-    <div
-      className="c2"
-    />
-    <li
-      className="c3 active"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        meat
-      </div>
-    </li>
-  </nav>,
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 32px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "height": "100vh",
-          "margin": "0 24px",
-          "padding": "24px",
-        }
-      }
-    >
-      <div
-        className="c1"
-        fontWeight="title"
-        size={32}
-        type="#2f313a"
-      >
-        overlay
-      </div>
-      <div
-        style={
-          Object {
-            "margin": "16px 0",
-          }
-        }
-      >
-        <div
-          className="c2"
-          fontWeight="inherit"
-          size={18}
-          type="#2f313a"
-        >
-          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots SideNav/SideNav Side Nav Overlay With Rouder 1`] = `
-Array [
-  .c0 {
-  box-sizing: border-box;
-  color: #27ae60;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
-}
-
-.c0:hover {
-  background-color: rgba(39,174,96,0.08);
-  color: #27ae60;
-}
-
-<div
-    className="c0"
-    data-testid="toggle-navbar"
-    onClick={[Function]}
-    role="button"
-  >
-    <i
-      className="wg-list"
-    />
-  </div>,
-  .c4 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c6 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  width: 0px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c1:hover {
-  background-color: rgba(39,174,96,0.08);
-  color: #27ae60;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.active {
-  color: #2f313a;
-  background-color: rgba(39,174,96,0.04);
-}
-
-.c3:hover .icon,
-.c3.active .icon {
-  color: #27ae60;
-}
-
-.c3.active {
-  padding-left: 4px;
-  border-left: 4px solid #27ae60;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  background-color: white;
-  color: rgba(0,0,0,0.48);
-}
-
-.c5 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c5 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c5:hover,
-.c5.active {
-  color: #2f313a;
-  background-color: rgba(39,174,96,0.04);
-}
-
-.c5:hover .icon,
-.c5.active .icon {
-  color: #27ae60;
-}
-
-.c5.active {
-  padding-left: 4px;
-  border-left: 4px solid #27ae60;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  min-height: 56px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-collapsed"
-  >
-    <div
-      className="c1"
-      data-testid="close-navbar"
-      onClick={[Function]}
-      role="button"
-    >
-      <i
-        className="wg-close"
-      />
-    </div>
-    <div
-      className="c2"
-    />
-    <a
-      aria-current={null}
-      href="/purveyor"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-purveyor"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          purveyor
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/order"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-order"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          order
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/search"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-search"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          search
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/meat"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-meat"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          meat
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/account"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c5"
-        onClick={[Function]}
-      >
-        <div
-          className="thumb-container"
-        >
-          <img
-            alt=""
-            className="c6"
-            height={36}
-            size={36}
-            src="https://picsum.photos/640/?image=889"
-            width={36}
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          Account
-        </div>
-      </li>
-    </a>
-  </nav>,
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 32px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "height": "100vh",
-          "margin": "0 24px",
-          "padding": "24px",
-        }
-      }
-    >
-      <div
-        className="c1"
-        fontWeight="title"
-        size={32}
-        type="#2f313a"
-      >
-        select a route
-      </div>
-      <div
-        style={
-          Object {
-            "margin": "16px 0",
-          }
-        }
-      >
-        <div
-          className="c2"
-          fontWeight="inherit"
-          size={18}
-          type="#2f313a"
-        >
-          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
-Array [
-  .c0 {
-  box-sizing: border-box;
-  color: #ff4411;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 110;
-}
-
-.c0:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-<div
-    className="c0"
-    data-testid="toggle-navbar"
-    onClick={[Function]}
-    role="button"
-  >
-    <i
-      className="wg-list"
-    />
-  </div>,
-  .c4 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  width: 56px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.active .icon {
-  color: #ff4411;
-}
-
-.c3.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  min-height: 56px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-collapsed"
-  >
-    <div
-      className="c1"
-      data-testid="close-navbar"
-      onClick={[Function]}
-      role="button"
-    >
-      <i
-        className="wg-close"
-      />
-    </div>
-    <div
-      className="c2"
-    />
-    <li
-      className="c3 active"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-purveyor"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        purveyor
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-order"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        order
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-search"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        search
-      </div>
-    </li>
-    <li
-      className="c3"
-      onClick={[Function]}
-    >
-      <div
-        className="thumb-container"
-      >
-        <i
-          className="icon wg-meat"
-        />
-      </div>
-      <div
-        className="c4"
-        fontWeight="title"
-        size={18}
-        type="inherit"
-      >
-        meat
-      </div>
-    </li>
-  </nav>,
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 32px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-  -webkit-transition: margin 0.25s;
-  transition: margin 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  margin-left: 56px;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "height": "100vh",
-          "margin": "0 24px",
-          "padding": "24px",
-        }
-      }
-    >
-      <div
-        className="c1"
-        fontWeight="title"
-        size={32}
-        type="#2f313a"
-      >
-        push
-      </div>
-      <div
-        style={
-          Object {
-            "margin": "16px 0",
-          }
-        }
-      >
-        <div
-          className="c2"
-          fontWeight="inherit"
-          size={18}
-          type="#2f313a"
-        >
-          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
-Array [
-  .c0 {
-  box-sizing: border-box;
-  color: #ff4411;
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 110;
-}
-
-.c0:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-<div
-    className="c0"
-    data-testid="toggle-navbar"
-    onClick={[Function]}
-    role="button"
-  >
-    <i
-      className="wg-list"
-    />
-  </div>,
-  .c4 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: inherit;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c6 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  background: #f6f8f9;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  z-index: 100;
-  width: 56px;
-}
-
-.c1 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 16px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 16px;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c1:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c3 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c3:hover,
-.c3.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c3:hover .icon,
-.c3.active .icon {
-  color: #ff4411;
-}
-
-.c3.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
-  background-color: white;
-  color: rgba(0,0,0,0.48);
-}
-
-.c5 .thumb-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-}
-
-.c5 .icon {
-  font-size: 24px;
-  color: rgba(0,0,0,0.48);
-}
-
-.c5:hover,
-.c5.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c5:hover .icon,
-.c5.active .icon {
-  color: #ff4411;
-}
-
-.c5.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 8px;
-  min-height: 56px;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-<nav
-    className="c0"
-    data-testid="navbar-collapsed"
-  >
-    <div
-      className="c1"
-      data-testid="close-navbar"
-      onClick={[Function]}
-      role="button"
-    >
-      <i
-        className="wg-close"
-      />
-    </div>
-    <div
-      className="c2"
-    />
-    <a
-      aria-current={null}
-      href="/purveyor"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-purveyor"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          purveyor
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/order"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-order"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          order
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/search"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-search"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          search
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/meat"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c3"
-      >
-        <div
-          className="thumb-container"
-        >
-          <i
-            className="icon wg-meat"
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          meat
-        </div>
-      </li>
-    </a>
-    <a
-      aria-current={null}
-      href="/account"
-      onClick={[Function]}
-      style={
-        Object {
-          "textDecoration": "none",
-        }
-      }
-    >
-      <li
-        className="c5"
-      >
-        <div
-          className="thumb-container"
-        >
-          <img
-            alt=""
-            className="c6"
-            height={36}
-            size={36}
-            src="https://picsum.photos/640/?image=889"
-            width={36}
-          />
-        </div>
-        <div
-          className="c4"
-          fontWeight="title"
-          size={18}
-          type="inherit"
-        >
-          Account
-        </div>
-      </li>
-    </a>
-  </nav>,
-  .c2 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 32px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.c0 {
-  box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 0;
-  -webkit-transition: margin 0.25s;
-  transition: margin 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  margin-left: 56px;
-}
-
-<div
-    className="c0"
-    data-testid="pageWrapper-navbar"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "height": "100vh",
-          "margin": "0 24px",
-          "padding": "24px",
-        }
-      }
-    >
-      <div
-        className="c1"
-        fontWeight="title"
-        size={32}
-        type="#2f313a"
-      >
-        select a route
-      </div>
-      <div
-        style={
-          Object {
-            "margin": "16px 0",
-          }
-        }
-      >
-        <div
-          className="c2"
-          fontWeight="inherit"
-          size={18}
-          type="#2f313a"
-        >
-          Lorem iTextsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
 exports[`Storyshots SideNav/SideNav Side Nav Simple 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -17557,12 +17617,403 @@ exports[`Storyshots SideNav/SideNav Side Nav Simple 1`] = `
   width: 270px;
 }
 
-<nav
-  className="c0"
-  data-testid="navbar-expanded"
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
 >
-  <div>
-    Sidebar Content
+  <nav
+    className="c0"
+    data-testid="navbar-expanded"
+  >
+    <div>
+      Sidebar Content
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Storyshots SideNav/helpers/PageWrapper Page Wrapper Default 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c1 .icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c5 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c5 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c5 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c5 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c5:hover .visibleInput,
+.c5 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c3 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c3 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c3 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c3:hover .visibleInput,
+.c3 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c3 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 56px;
+}
+
+<div
+  className="c0"
+  data-testid="pageWrapper-navbar"
+  style={
+    Object {
+      "backgroundColor": "#FFAF8D",
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px 56px",
+      }
+    }
+  >
+    <h3>
+      Expanded - 
+      false
+    </h3>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Expand
+    </button>
+    <h3>
+      Variant - 
+      push
+    </h3>
+    <div
+      className="c2"
+    >
+      <label
+        checked={true}
+        className="c3 radio val-push checked "
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={true}
+          name="pagewrapperVariant"
+          onClick={[Function]}
+          type="radio"
+          value="push"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          push
+        </div>
+      </label>
+      <label
+        checked={false}
+        className="c5 radio val-overlay  "
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          name="pagewrapperVariant"
+          onClick={[Function]}
+          type="radio"
+          value="overlay"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          overlay
+        </div>
+      </label>
+      <label
+        checked={false}
+        className="c5 radio val-fullScreen  "
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          name="pagewrapperVariant"
+          onClick={[Function]}
+          type="radio"
+          value="fullScreen"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          fullScreen
+        </div>
+      </label>
+    </div>
   </div>
-</nav>
+</div>
 `;

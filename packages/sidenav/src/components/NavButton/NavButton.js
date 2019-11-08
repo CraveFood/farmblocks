@@ -28,7 +28,7 @@ NavButton.propTypes = {
   highlightColor: PropTypes.string,
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
   onClick: PropTypes.func,
-  zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  zIndex: PropTypes.number,
 };
 
 export default NavButton;

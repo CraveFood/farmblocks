@@ -18,13 +18,12 @@ const PageWrapper = styled.div`
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   ${({ offsetTop }) => offsetTop && `padding-top: ${offsetTop};`};
-  ${({ variant }) => variantsStyle[variant]}
+  ${({ variant }) => variantsStyle[variant] || ""};
 `;
 
 export const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   right: 0;

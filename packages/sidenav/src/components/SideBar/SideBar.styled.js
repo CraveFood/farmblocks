@@ -11,14 +11,14 @@ const fullScreenStyle = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  ${
-    "" /* keep 1px width when collapsed to prevent safari from lose backdrop-filter setting it to 0 */
-  }
+
+  /* Keeping 1px width when collapsed to prevent Safari from losing 
+     backdrop-filter if it's set to 0 */
   width: ${({ expanded }) => (expanded ? "100%" : "1px")};
   transform: translate(${({ expanded }) => (expanded ? "0" : "1px")});
 
   backdrop-filter: blur(8px);
+  background: ${({ backgroundColor }) => backgroundColor};
   background: ${({ backgroundColor }) => backgroundColor}CC;
 `;
 
@@ -50,7 +50,7 @@ export const SideBar = styled.nav`
   box-shadow: 0px 2px 2px 0px ${colors.GREY_32};
   z-index: ${({ zIndex }) => zIndex};
 
-  ${({ variant }) => variantsStyle[variant]}
+  ${({ variant }) => variantsStyle[variant] || ""};
 `;
 
 SideBar.propTypes = {
@@ -62,7 +62,7 @@ SideBar.propTypes = {
   offsetTop: PropTypes.string,
   expanded: PropTypes.bool,
   highlightColor: PropTypes.string,
-  zIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  zIndex: PropTypes.number,
 };
 
 export default SideBar;
