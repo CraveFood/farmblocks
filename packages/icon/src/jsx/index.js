@@ -261,6 +261,8 @@ export { default as MdMerge } from "./MdMerge";
 export { default as MdMergeFilled } from "./MdMergeFilled";
 export { default as MdMessages } from "./MdMessages";
 export { default as MdMessagesFilled } from "./MdMessagesFilled";
+export { default as MdMinus } from "./MdMinus";
+export { default as MdMinusFilled } from "./MdMinusFilled";
 export { default as MdMobileDevices } from "./MdMobileDevices";
 export { default as MdMobileDevicesFilled } from "./MdMobileDevicesFilled";
 export { default as MdMore } from "./MdMore";
