@@ -1,31 +1,23 @@
 import * as React from "react";
 import PropTypes from "prop-types";
+import { withAnimation, MdLoading } from "@crave/farmblocks-icon";
 
 import buttonSizes from "./constants/buttonSizes";
 import buttonTypes from "./constants/buttonTypes";
 import StyledButton from "./styledComponents/Button";
 
-// We need a class component here because some components are passing
-// ref to Button
-// eslint-disable-next-line react/prefer-stateless-function
-export default class Button extends React.Component {
-  render() {
-    const {
-      disabled,
-      icon,
-      rightIcon,
-      text,
-      children,
-      loading,
-      ...buttonProps
-    } = this.props;
+const LoadingIcon = withAnimation(MdLoading);
 
-    // @FIXME revisit font icon assets on farmblocks
-    const iconName = loading ? "wg-loading" : icon;
+const Button = React.forwardRef(
+  (
+    { disabled, icon, rightIcon, text, children, loading, ...buttonProps },
+    ref,
+  ) => {
+    const leftIcon = loading ? <LoadingIcon data-testid="loading" /> : icon;
 
     const isDisabled = disabled || loading;
     const showIcon = icon || loading;
-    const marginOffset = text || children ? 10 : 0;
+    const iconOffset = text || children ? 6 : 0;
     const buttonContent = text || children;
     const isIconOnly = buttonContent === undefined;
 
@@ -35,33 +27,35 @@ export default class Button extends React.Component {
         isIconOnly={isIconOnly}
         displayBlock={buttonProps.fluid}
         isLoading={loading}
+        ref={ref}
         {...buttonProps}
       >
         {showIcon && (
-          <div className="icon left-icon" style={{ marginRight: marginOffset }}>
-            <i className={iconName} />
+          <div
+            className="icon left-icon"
+            style={{ transform: `translateX(-${iconOffset}px)` }}
+          >
+            {leftIcon}
           </div>
         )}
         {buttonContent}
         {rightIcon && (
-          <div className="icon" style={{ marginLeft: marginOffset }}>
-            <i className={rightIcon} />
+          <div
+            className="icon right-icon"
+            style={{ transform: `translateX(${iconOffset}px)` }}
+          >
+            {rightIcon}
           </div>
         )}
       </StyledButton>
     );
-  }
-}
-
-Button.defaultProps = {
-  size: buttonSizes.SMALL,
-  type: buttonTypes.NEUTRAL,
-};
+  },
+);
 
 Button.propTypes = {
   activated: PropTypes.bool,
-  icon: PropTypes.string,
-  rightIcon: PropTypes.string,
+  icon: PropTypes.node,
+  rightIcon: PropTypes.node,
   onClick: PropTypes.func,
   text: PropTypes.string,
   children: PropTypes.node,
@@ -77,3 +71,10 @@ Button.propTypes = {
   textColor: PropTypes.string,
   // ... and all properties accepted by the html button
 };
+
+Button.defaultProps = {
+  size: buttonSizes.SMALL,
+  type: buttonTypes.NEUTRAL,
+};
+
+export default Button;
