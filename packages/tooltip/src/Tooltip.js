@@ -35,6 +35,13 @@ const Container = styled.div`
     opacity: 0;
     transition: opacity 200ms ease-out;
   }
+
+  @media only screen and (max-width: 480px) {
+    .hit-area {
+      min-height: 40px;
+      min-width: 40px;
+    }
+  }
 `;
 
 const Tooltip = props => {
