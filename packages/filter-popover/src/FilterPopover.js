@@ -4,6 +4,7 @@ import Button from "@crave/farmblocks-button";
 import Popover from "@crave/farmblocks-popover";
 import { colors } from "@crave/farmblocks-theme";
 import FormWrapper from "@crave/farmblocks-form-wrapper";
+import { SmChevronDown, SmCheckFilled } from "@crave/farmblocks-icon";
 
 const FilterPopover = props => {
   return (
@@ -16,9 +17,9 @@ const FilterPopover = props => {
       trigger={
         <Button
           className="trigger"
-          rightIcon="wg-small-arrow-bottom"
+          rightIcon={<SmChevronDown />}
           boxShadow="none"
-          paddingX="8px"
+          paddingX="10px 0 8px"
           activated={props.hasValue}
           textColor={props.triggerTextColor}
           fontSize={props.triggerFontSize}
@@ -28,7 +29,7 @@ const FilterPopover = props => {
 
           {props.hasValue && (
             <div className="icon" style={{ marginLeft: 8 }}>
-              <i className="wg-check-box" />
+              <SmCheckFilled />
             </div>
           )}
         </Button>
