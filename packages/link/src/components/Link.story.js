@@ -1,8 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-
 import { fontSizes } from "@crave/farmblocks-theme";
+import { MdLocation } from "@crave/farmblocks-icon";
+
 import Link from "./Link";
 import linkTypes from "../constants/linkTypes";
 
@@ -21,23 +22,28 @@ storiesOf("Link/Featured", module)
     </Link>
   ))
   .add("with left icon", () => (
-    <Link href="#" leftIcon="wg-place">
+    <Link href="#" leftIcon={<MdLocation />}>
       Awesome Link
     </Link>
   ))
   .add("with right icon", () => (
-    <Link href="#" rightIcon="wg-place">
+    <Link href="#" rightIcon={<MdLocation />}>
       Awesome Link
     </Link>
   ))
-  .add("icon only", () => <Link href="#" leftIcon="wg-place" />)
+  .add("icon only", () => <Link href="#" leftIcon={<MdLocation />} />)
   .add("external, mini size", () => (
     <Link href="#" size={fontSizes.SMALL} external lineHeight={1.14}>
       Awesome Link
     </Link>
   ))
   .add("with left icon, mini size", () => (
-    <Link href="#" size={fontSizes.SMALL} leftIcon="wg-place" lineHeight={1.14}>
+    <Link
+      href="#"
+      size={fontSizes.SMALL}
+      leftIcon={<MdLocation />}
+      lineHeight={1.14}
+    >
       Awesome Link
     </Link>
   ))
@@ -64,7 +70,7 @@ storiesOf("Link/Featured", module)
   .add("with left icon, white color", () => (
     <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
       <Link
-        leftIcon="wg-place"
+        leftIcon={<MdLocation />}
         type={linkTypes.WHITE}
         lineHeight={1.33}
         size={fontSizes.LARGE}
@@ -77,7 +83,7 @@ storiesOf("Link/Featured", module)
     <div style={{ background: "rgba(0, 0, 0, 0.32)" }}>
       <Link
         type={linkTypes.WHITE}
-        leftIcon="wg-place"
+        leftIcon={<MdLocation />}
         size={fontSizes.SMALL}
         lineHeight={1.14}
       >
@@ -106,7 +112,7 @@ storiesOf("Link/Featured", module)
   ))
   .add("no href", () => <Link>Awesome Link</Link>)
   .add("no href with left icon", () => (
-    <Link leftIcon="wg-place">Awesome Link</Link>
+    <Link leftIcon={<MdLocation />}>Awesome Link</Link>
   ))
   .add("Custom color", () => (
     <Link href="#" type="hotpink">

@@ -1,6 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { fontSizes } from "@crave/farmblocks-theme";
+import { MdLinkExternal } from "@crave/farmblocks-icon";
 
 import linkTypes from "../constants/linkTypes";
 import StyledLink from "../styledComponents/Link";
@@ -33,10 +34,14 @@ const Link = props => {
   return (
     <StyledLink {...containerProps}>
       <LinkComponent onClick={disabled ? undefined : onClick} {...linkProps}>
-        {leftIcon && <i className={`${leftIcon} margin-right }`} />}
+        {leftIcon && <span className="margin-right">{leftIcon}</span>}
         {children}
-        {rightIcon && <i className={`${rightIcon} margin-left }`} />}
-        {external && <i className="wg-external-link margin-left" />}
+        {rightIcon && <span className="margin-left">{rightIcon}</span>}
+        {external && (
+          <span className="margin-left">
+            <MdLinkExternal />
+          </span>
+        )}
       </LinkComponent>
     </StyledLink>
   );
@@ -45,8 +50,8 @@ const Link = props => {
 Link.propTypes = {
   children: PropTypes.node,
   type: PropTypes.string,
-  leftIcon: PropTypes.string,
-  rightIcon: PropTypes.string,
+  leftIcon: PropTypes.node,
+  rightIcon: PropTypes.node,
   external: PropTypes.bool,
   size: PropTypes.number,
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
