@@ -20,7 +20,8 @@ const Container = styled.div`
 
     > * {
       margin: 0 8px;
-      display: inline;
+      display: inline-flex;
+      vertical-align: middle;
     }
   }
 

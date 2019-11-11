@@ -21,11 +21,7 @@ class EmptyState extends React.PureComponent {
     }
 
     if (icon) {
-      return (
-        <div className="icon">
-          <i className={icon} />
-        </div>
-      );
+      return <div className="icon">{icon}</div>;
     }
 
     return <noscript />;

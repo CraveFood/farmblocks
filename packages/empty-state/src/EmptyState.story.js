@@ -2,6 +2,7 @@ import React from "react";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import { buttonTypes } from "@crave/farmblocks-button";
+import { MdOrders, MdAlert, MdFavoriteHeartFull } from "@crave/farmblocks-icon";
 
 import EmptyState from "./EmptyState";
 
@@ -14,6 +15,7 @@ const primaryAction = {
   text: "Primary Action",
   onClick: action("onPrimaryActionClick"),
   type: buttonTypes.SECONDARY,
+  icon: <MdFavoriteHeartFull />,
 };
 
 const secondaryAction = {
@@ -78,7 +80,7 @@ storiesOf("EmptyState", module)
   ))
   .add("With icon", () => (
     <EmptyState
-      icon="wg-order"
+      icon={<MdOrders />}
       title="Empty State Title"
       description={twoLinesDescription}
     />
@@ -101,7 +103,7 @@ storiesOf("EmptyState", module)
           font-family: monospace;
         }
       "
-      icon="wg-order"
+      icon={<MdOrders />}
       title="Empty State Title"
       description={twoLinesDescription}
       info={twoLinesDescription}
@@ -109,7 +111,7 @@ storiesOf("EmptyState", module)
   ))
   .add("With loading action", () => (
     <EmptyState
-      icon="wg-alert"
+      icon={<MdAlert />}
       title="Empty State Title"
       description={twoLinesDescription}
       actions={[{ ...primaryAction, loading: true }]}
