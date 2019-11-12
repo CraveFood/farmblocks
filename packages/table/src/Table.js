@@ -5,6 +5,7 @@ import Text, { fontSizes, fontTypes } from "@crave/farmblocks-text";
 import Link from "@crave/farmblocks-link";
 import { Checkbox } from "@crave/farmblocks-input-checkbox";
 import Button from "@crave/farmblocks-button";
+import { SmChevronDown, SmChevronUp } from "@crave/farmblocks-icon";
 
 import StyledTable from "./styledComponents/Table";
 import { HeaderCell, BodyCell } from "./styledComponents/Cell";
@@ -35,6 +36,7 @@ class Table extends React.PureComponent {
 
   componentDidUpdate(oldProps) {
     if (oldProps.data.length !== this.props.data.length) {
+      // eslint-disable-next-line react/no-did-update-set-state
       this.setState({ rowsMap: this.mapRows() });
       if (this.state.allChecked) {
         this.selectAllToggle(true);
@@ -159,9 +161,11 @@ class Table extends React.PureComponent {
   };
 
   renderExpandToggle = rowKey => {
-    const icon = this.state.expandedRows.includes(rowKey)
-      ? "wg-small-arrow-top"
-      : "wg-small-arrow-bottom";
+    const icon = this.state.expandedRows.includes(rowKey) ? (
+      <SmChevronUp />
+    ) : (
+      <SmChevronDown />
+    );
     return (
       <Button
         icon={icon}
@@ -238,7 +242,7 @@ class Table extends React.PureComponent {
           >
             {columnProps.title}
           </Link>
-          <i className="wg-small-arrow-bottom icon" />
+          <SmChevronDown className="icon" />
         </div>,
       );
     }
@@ -423,6 +427,7 @@ class Table extends React.PureComponent {
           }
 
           return (
+            // eslint-disable-next-line react/no-array-index-key
             <tbody key={index} className="body">
               {this.renderRow(row, index)}
             </tbody>

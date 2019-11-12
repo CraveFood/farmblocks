@@ -17,8 +17,8 @@ export const HeaderCell = styled.th`
   }
   & .icon {
     color: ${colors.GREY_16};
-    font-size: 12px;
-    margin-left: 8px;
+    font-size: 24px;
+    vertical-align: bottom;
   }
 `;
 export const BodyCell = styled.td`
