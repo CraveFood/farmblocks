@@ -4,8 +4,11 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import styled, { keyframes } from "styled-components";
+import { MdLoading, withAnimation } from "@crave/farmblocks-icon";
 
 import SearchField from ".";
+
+const LoadingIcon = withAnimation(MdLoading);
 
 const image = "https://picsum.photos/100?image=0";
 const items = [
@@ -174,7 +177,7 @@ storiesOf("Search Field", module)
       <SearchField
         footer={
           <Loading>
-            <i className="wg-loading" />
+            <LoadingIcon size={24} />
           </Loading>
         }
         label="Fruits"

@@ -5,6 +5,7 @@ import { colors } from "@crave/farmblocks-theme";
 import styled from "styled-components";
 import Text, { fontSizes } from "@crave/farmblocks-text";
 import Link, { linkTypes } from "@crave/farmblocks-link";
+import { MdQuestion } from "@crave/farmblocks-icon";
 
 import Menu from "./Menu";
 
@@ -46,9 +47,7 @@ const FooterWrapper = props => <StyledFooterWrapper {...props} />;
 
 const Footer = () => (
   <FooterWrapper>
-    <Text className="icon">
-      <i className="wg-question" />
-    </Text>
+    <MdQuestion size={32} />
     <Text size={fontSizes.SMALL}>
       Can’t find a farmers market?
       <Text size={fontSizes.NORMAL}>
