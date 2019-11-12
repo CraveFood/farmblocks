@@ -27,7 +27,7 @@ ReactDOM.render(
       position: "relative",
       width: 500,
       height: 500,
-      background: "lightcyan"
+      background: "lightcyan",
     }}
   >
     <MapBalloon
@@ -38,54 +38,49 @@ ReactDOM.render(
       imageSet={[
         {
           name: "Strawberries",
-          image: "https://source.unsplash.com/eCre0iMGtEA/800x800"
+          image: "https://source.unsplash.com/eCre0iMGtEA/800x800",
           // Photo by Clem Onojeghuo
-        }
+        },
       ]}
     />
   </div>,
-  root
+  root,
 );
 
 document.body.appendChild(root);
 ```
 
-### Required Font icon
-
-This package assumes that the application using it uses a font icon that have a
-farm symbol, and that the class name to include that icon is `.wg-purveyor`.
-
 ## API
 
-* `x`: number (default: 0). The x position of the pin, in pixels.
-* `y`: number (default: 0). The y position of the pin, in pixels.
-* `align`: string (default: 'left') The alignment of the balloon relative to the
+- `x`: number (default: 0). The x position of the pin, in pixels.
+- `y`: number (default: 0). The y position of the pin, in pixels.
+- `align`: string (default: 'left') The alignment of the balloon relative to the
   pin. You can use our constants by importing the `alignments` object:
-  * `import MapBalloon, { alignments } from "@crave/farmblocks-map-balloon";`
-* `singleImage`: string. Path for a single image to be displayed in a smaller
+  - `import MapBalloon, { alignments } from "@crave/farmblocks-map-balloon";`
+- `singleImage`: string. Path for a single image to be displayed in a smaller
   balloon without caption.
-* `caption`: string (required if `singleImage` is not used). Text to show under
+- `caption`: string (required if `singleImage` is not used). Text to show under
   the images.
-* `imageSet`: array (required if `singleImage` is not used). The list of images
+- `imageSet`: array (required if `singleImage` is not used). The list of images
   to be displayed on a balloon. Items should be objects with the following
   properties:
-  * `name`: string (required). Text to show over the the image.
-  * `image`: string (required). Path to product image.
-* `open`: boolean (default: 0). Defines if the balloon wil be visible. Otherwise
+  - `name`: string (required). Text to show over the the image.
+  - `image`: string (required). Path to product image.
+- `open`: boolean (default: 0). Defines if the balloon wil be visible. Otherwise
   only the pin will be rendered
-* `animated`: boolean (default: false). Defines if the balloon is animated or
+- `animated`: boolean (default: false). Defines if the balloon is animated or
   not
-* `balloonSize`: number (default: 260). Balloon size
-* `borderRadius`: string (default: 8px). Defines the balloon border radius
-* `pinColor`: string (default: #f1c618). Color to be set to the pin icon
-* `pinHighlightColor`: string (defaults to the `pinColor` value). Color to be set to the highlighted pin
-* `pinSize`: number (default: 40). Size to be set to the pin icon
-* `opacity`: number (default: 1)
-* `captionSize`: number (default: 18), Size of the caption text.
-* `imageTextSize`: number (default: 28), Size of the text overlay on images.
-* `onPinClick`: function. Called when the pin is clicked. If set, changes the pin visual into a round button
-* `onBalloonClick`: function. Called when the balloon is clicked. If set, adds an indicator to the balloon text.
-* `value`: any. A value that will be passed as first argument for `onPinClick` and `onBalloonClick` calls. This can be handy to identify which pin/balloon was clicked.
+- `balloonSize`: number (default: 260). Balloon size
+- `borderRadius`: string (default: 8px). Defines the balloon border radius
+- `pinColor`: string (default: #f1c618). Color to be set to the pin icon
+- `pinHighlightColor`: string (defaults to the `pinColor` value). Color to be set to the highlighted pin
+- `pinSize`: number (default: 40). Size to be set to the pin icon
+- `opacity`: number (default: 1)
+- `captionSize`: number (default: 18), Size of the caption text.
+- `imageTextSize`: number (default: 28), Size of the text overlay on images.
+- `onPinClick`: function. Called when the pin is clicked. If set, changes the pin visual into a round button
+- `onBalloonClick`: function. Called when the balloon is clicked. If set, adds an indicator to the balloon text.
+- `value`: any. A value that will be passed as first argument for `onPinClick` and `onBalloonClick` calls. This can be handy to identify which pin/balloon was clicked.
 
 ## License
 

@@ -28,7 +28,7 @@ ReactDOM.render(
   <Link href="#" type={linkTypes.NEUTRAL} size="14" lineHeight="1.14">
     This is a link!
   </Link>,
-  root
+  root,
 );
 
 document.body.appendChild(root);
@@ -43,8 +43,8 @@ document.body.appendChild(root);
 | type       | the type of link (reflects on color and text-decoration)                                 | string. One of `FEATURED`, `NEUTRAL`, `NORMAL` or `WHITE` constants from linkTypes.js or any valid CSS color |
 | disabled   | indicates a disabled link                                                                | boolean                                                                                                      |
 | onClick    | a function to handle an onClick event                                                    | function                                                                                                     |
-| leftIcon   | an icon to be placed on the left side of the link                                        | string                                                                                                       |
-| rightIcon  | an icon to be placed on the right side of the link                                       | string                                                                                                       |
+| leftIcon   | an icon to be placed on the left side of the link                                        | node                                                                                                         |
+| rightIcon  | an icon to be placed on the right side of the link                                       | node                                                                                                         |
 | external   | an indication of an external link (an icon will be placed on the right side of the link) | boolean                                                                                                      |
 | size       | a `font-size` css value for `children`                                                   | number                                                                                                       |
 | lineHeight | a `line-height` css value for `children`                                                 | number or string                                                                                             |

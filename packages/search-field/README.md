@@ -41,11 +41,6 @@ class App extends Component {
 render(<App />, document.getElementById("root"));
 ```
 
-### Required Font icon
-
-This package assumes that the application using it uses a font icon that have an
-edit symbol, and that the class name to include that icon is `.wg-edit`.
-
 ## API
 
 - **items** (_Array_)

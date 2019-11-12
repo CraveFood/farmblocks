@@ -26,8 +26,8 @@ const App = () => (
       {
         text: "Primary Action",
         onClick: () => console.log("clicked"),
-        type: buttonTypes.PRIMARY
-      }
+        type: buttonTypes.PRIMARY,
+      },
     ]}
     info={text}
   />
@@ -43,7 +43,7 @@ render(<App />, document.getElementById("root"));
 | title       | string           | a text that is bold and will be rendered on the first line                                                                                                                                                     | Yes      |
 | description | string           | a text that will be rendered bellow title                                                                                                                                                                      |          |
 | imageSrc    | string           | image source to be rendered. This property overrides `icon` if both are present                                                                                                                                |          |
-| icon        | string           | icon name to be rendered                                                                                                                                                                                       |          |
+| icon        | node             | icon name to be rendered                                                                                                                                                                                       |          |
 | actions     | array of objects | each object corresponds to one button that will be rendered. We expect 3 required properties on each object: text (string), type(string) a valid farmblocks-theme.buttonTypes or any color, onClick (function) |          |
 | info        | string           | a text that is smaller than the others and will be rendered bellow buttons                                                                                                                                     |          |
 

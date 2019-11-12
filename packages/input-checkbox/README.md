@@ -2,8 +2,8 @@
 
 Input elements that behaves like a toggle:
 
-* Checkbox
-* Switch
+- Checkbox
+- Switch
 
 ## Installation
 
@@ -29,17 +29,11 @@ render(
     <Switch checked label="Switch Label" />
     <Checkbox disabled checked label="Checkbox Label" />
   </div>,
-  root
+  root,
 );
 ```
 
 See the stories source code for more usage examples.
-
-### Required Font icon
-
-This package assumes that the application using it uses a font icon that have a
-checkmark symbol, and that the class name to include that icon is `.wg-check`.
-This icon is used by the Checkbox component only.
 
 ## Properties
 
