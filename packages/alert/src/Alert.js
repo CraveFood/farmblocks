@@ -54,6 +54,7 @@ class Alert extends React.Component {
     } = this.props;
     const alert = (
       <StyledAlert
+        data-testid="alert-content"
         className={className}
         type={this.props.type}
         zIndex={zIndex}

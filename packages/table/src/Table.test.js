@@ -142,7 +142,7 @@ describe("Table", function() {
           <Column title="Name" text={row => row.name} />
         </Table>,
       );
-      const firstExpandButton = component.find("td Button").first();
+      const firstExpandButton = component.find("td button").first();
 
       firstExpandButton
         .props()
