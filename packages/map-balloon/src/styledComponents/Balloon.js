@@ -29,10 +29,6 @@ const animation = css`
     transform: scale(1);
     opacity: 1;
   }
-
-  .wg-small-arrow-right {
-    transition: color 0.3s;
-  }
 `;
 
 const interactiveStyle = css`
@@ -40,16 +36,11 @@ const interactiveStyle = css`
 
   bottom: ${props => props.pinSize / 2 + 8}px;
 
-  .wg-small-arrow-right {
-    color: ${colors.GREY_16};
-  }
+  color: ${colors.GREY_16};
 
   &:active {
     transform: translateY(2px);
-
-    .wg-small-arrow-right {
-      color: ${colors.GREY_32};
-    }
+    color: ${colors.GREY_32};
   }
 `;
 const Balloon = styled(Card).attrs({ overflow: "hidden" })`

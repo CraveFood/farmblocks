@@ -10,8 +10,7 @@ const interactiveStyle = css`
     props.animated
       ? "transition: transform 0.3s, color 0.3s, background-color 0.3s"
       : ""};
-  font-size: ${props => props.pinSize - 16}px;
-  padding: 8px;
+  font-size: ${props => props.pinSize - 10}px;
   height: ${pinSize}px;
   box-sizing: border-box;
   cursor: pointer;
@@ -38,8 +37,11 @@ const interactiveStyle = css`
 `;
 
 const Pin = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: ${pinSize}px;
-  text-align: center;
   width: ${pinSize}px;
 
   position: absolute;
@@ -48,7 +50,7 @@ const Pin = styled.div`
 
   color: ${props => props.pinColor};
 
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.24));
 
   ${props => (props.interactive ? interactiveStyle : "")};
 `;
