@@ -14,7 +14,17 @@ import useToggle from "./utils/useToggle";
 
 const tabs = ["purveyor", "order", "search", "meat"];
 
-export default { title: "SideNav/SideNav", component: SideNav };
+export default {
+  title: "SideNav/SideNav",
+  component: SideNav,
+  decorators: [
+    storyFn => (
+      <div style={{ transform: "scale(1)", minHeight: "500px" }}>
+        {storyFn()}
+      </div>
+    ),
+  ],
+};
 
 export const SideNavSimple = () => (
   <SideNav render={() => <div>Sidebar Content</div>} />
@@ -201,7 +211,7 @@ SideNavPushWithRouter.story = {
   decorators: [StoryRouter()],
 };
 
-export const SideNavOverlayWithRouder = withRouter(({ location }) => {
+export const SideNavOverlayWithRouter = withRouter(({ location }) => {
   const [expanded, { toggle, collapse }] = useToggle(false);
 
   const highlightColor = colors.AVOCADO;
@@ -234,7 +244,7 @@ export const SideNavOverlayWithRouder = withRouter(({ location }) => {
     </>
   );
 });
-SideNavOverlayWithRouder.story = {
+SideNavOverlayWithRouter.story = {
   decorators: [StoryRouter()],
 };
 

@@ -58,16 +58,49 @@ SideNav.defaultProps = {
 };
 
 SideNav.propTypes = {
+  /**
+    Render the sidebar content, passing as args the following props: highlightColor, variant.
+ */
   render: PropTypes.func,
+  /**
+    Sidebar background color.
+ */
   backgroundColor: PropTypes.string,
+  /**
+    Top spacing gap.
+ */
   offsetTop: PropTypes.string,
+  /**
+    Width on expanded `false` state. (only applied on "push" || "overlay" variant)
+  */
   collapsedWidth: PropTypes.string,
+  /**
+    Width on expanded `true` state. (only applied on "push" variant)
+  */
   expandedWidth: PropTypes.string,
+  /**
+    Whether the sidebar is expanded or collapsed.
+  */
   expanded: PropTypes.bool,
+  /**
+    Style variant.
+  */
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
+  /**
+    Color used to highlight active/hover nav item and close button.
+  */
   highlightColor: PropTypes.string,
+  /**
+    The sidebar z-index
+  */
   zIndex: PropTypes.number,
+  /**
+    Passing this prop will render a hamburguer button on the page top/left corner, that will trigger this function on click.
+  */
   onToggle: PropTypes.func,
+  /**
+    Passing this prop will render a close button on the sidebar top/right corner when expanded. (only applied on "fullScreen" ||
+  */
   onClose: PropTypes.func,
 };
 

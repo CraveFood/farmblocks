@@ -36,16 +36,46 @@ NavItem.defaultProps = {
 };
 
 NavItem.propTypes = {
-  children: PropTypes.node,
+  /**
+    Whether the item is with active style or not. 
+  */
   active: PropTypes.bool,
-  highlightColor: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  icon: PropTypes.string,
-  iconSize: PropTypes.string,
-  image: PropTypes.string,
-  textProps: PropTypes.shape(Text.propTypes),
-  imageProps: PropTypes.shape(Image.propTypes),
+  /**
+    On "fullScreen" variant set rounded style, the other ones don't affect this component. 
+  */
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
+  /**
+    Text content. 
+  */
+  children: PropTypes.node,
+  /**
+   Color used to highlight active/hover items. 
+  */
+  highlightColor: PropTypes.string,
+  /**
+    NavItem background color. 
+  */
+  backgroundColor: PropTypes.string,
+  /**
+    Icon class name (don't use `icon` prop along with `image` prop) 
+  */
+  icon: PropTypes.string,
+  /**
+    Font size for the icon 
+  */
+  iconSize: PropTypes.string,
+  /**
+   Image src url (don't use `image` prop along with `icon` prop) 
+  */
+  image: PropTypes.string,
+  /**
+   Props for image component, accept any farmblocks-image prop 
+ */
+  imageProps: PropTypes.shape(Image.propTypes),
+  /**
+  Props for children(text) component, accept any farmblocks-text prop 
+  */
+  textProps: PropTypes.shape(Text.propTypes),
 };
 
 export default NavItem;
