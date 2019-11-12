@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import values from "object.values";
+import Button from "@crave/farmblocks-button";
 
 import { Container, StyledTooltip } from "./TooltipContent.styled";
 import POSITIONS from "./constants/positions";
@@ -9,6 +10,8 @@ import useAutoAlign from "./useAutoAlign";
 const Tooltip = ({
   children,
   text,
+  hideButtonLabel,
+  onHideButtonClick,
   positionX: originalPositionX,
   positionY: originalPositionY,
   ...props
@@ -17,7 +20,13 @@ const Tooltip = ({
 
   const tooltipRef = useRef(null);
 
-  const { positionX, positionY, triggerHeight, ready } = useAutoAlign({
+  const {
+    positionX,
+    positionY,
+    triggerHeight,
+    triggerWidth,
+    ready,
+  } = useAutoAlign({
     originalPositionX,
     originalPositionY,
     tooltipRef,
@@ -25,8 +34,16 @@ const Tooltip = ({
     offset: props.offset,
   });
 
+  const overlayRef = useRef(null);
+
+  const handleClose = e => {
+    if (e.target === overlayRef.current) {
+      onHideButtonClick();
+    }
+  };
+
   return (
-    <Container {...props}>
+    <Container onTouchStart={handleClose} ref={overlayRef} {...props}>
       {content && (
         <StyledTooltip
           {...props}
@@ -35,8 +52,14 @@ const Tooltip = ({
           positionY={positionY}
           ref={tooltipRef}
           triggerHeight={triggerHeight}
+          triggerWidth={triggerWidth}
         >
           {content}
+          {hideButtonLabel && (
+            <div className="closeButton">
+              <Button onClick={onHideButtonClick}>{hideButtonLabel}</Button>
+            </div>
+          )}
         </StyledTooltip>
       )}
     </Container>
@@ -55,6 +78,8 @@ Tooltip.propTypes = {
   offset: PropTypes.string,
   overflow: PropTypes.string,
   fullScreenBreakpoint: PropTypes.string,
+  onHideButtonClick: PropTypes.func,
+  hideButtonLabel: PropTypes.string,
 };
 
 Tooltip.defaultProps = {
@@ -63,6 +88,7 @@ Tooltip.defaultProps = {
   zIndex: 1000,
   offset: "15px",
   positionY: POSITIONS.Y.BOTTOM,
+  onHideButtonClick: () => {},
 };
 
 export default Tooltip;

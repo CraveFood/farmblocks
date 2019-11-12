@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
-import { TOP, BOTTOM, CENTER } from "./constants/positions";
+import { TOP, CENTER } from "./constants/positions";
 
 const Container = styled.div`
   position: relative;
@@ -32,12 +32,6 @@ const positionXStyle = coordinate => ({ positionX }) => {
 };
 
 const positionYStyle = ({ positionY, offset, triggerHeight }) => {
-  if (positionY === BOTTOM) {
-    return css`
-      top: ${offset};
-    `;
-  }
-
   if (positionY === TOP) {
     return css`
       bottom: ${triggerHeight + Number.parseInt(offset, 10)}px;
@@ -102,7 +96,12 @@ const StyledTooltip = styled.div`
 
   font-family: lato, sans-serif;
 
-  ${positionXStyle(0)};
+  ${({ triggerWidth }) =>
+    positionXStyle(triggerWidth < 32 ? `${triggerWidth / 2 - 16}px` : 0)};
+
+  .closeButton {
+    display: none;
+  }
 
   ${arrow};
   ${positionYStyle};
@@ -110,10 +109,18 @@ const StyledTooltip = styled.div`
   overflow: ${props => props.overflow};
 
   @media only screen and (max-width: ${props => props.fullScreenBreakpoint}) {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    .closeButton {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-top: 16px;
+    }
   }
 `;
 

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
@@ -40,13 +40,14 @@ const Container = styled.div`
     .hit-area {
       min-height: 40px;
       min-width: 40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 `;
 
 const Tooltip = props => {
-  const [isVisible, setIsVisible] = useState(false);
-
   const {
     className,
     disableTooltip,
@@ -58,18 +59,50 @@ const Tooltip = props => {
     ...tooltipProps
   } = props;
 
+  const [isVisible, setIsVisible] = useState(false);
+  const tooltip = useRef();
+
+  const hide = () => {
+    setIsVisible(false);
+  };
+
+  const handleOuterClick = event => {
+    if (tooltip.current?.contains(event.target)) {
+      return;
+    }
+
+    if (isVisible) {
+      hide();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("touch", handleOuterClick, {
+      capture: true,
+    });
+    return () => {
+      document.removeEventListener("touch", handleOuterClick, {
+        capture: true,
+      });
+    };
+  }, []);
+
   return (
-    <Container className={className} displayBlock={displayBlock}>
+    <Container
+      ref={tooltip}
+      className={className}
+      displayBlock={displayBlock}
+      onMouseLeave={event => {
+        hide();
+        onMouseLeave?.(event);
+      }}
+    >
       {!disableTooltip && (
         <div
           className="hit-area"
           onMouseOver={e => {
             setIsVisible(true);
             onMouseOver?.(e);
-          }}
-          onMouseLeave={e => {
-            setIsVisible(false);
-            onMouseLeave?.(e);
           }}
         />
       )}
@@ -81,7 +114,11 @@ const Tooltip = props => {
         timeout={200}
         classNames="appear"
       >
-        <TooltipContent className="tooltip" {...tooltipProps}>
+        <TooltipContent
+          className="tooltip"
+          onHideButtonClick={hide}
+          {...tooltipProps}
+        >
           {content}
         </TooltipContent>
       </CSSTransition>
