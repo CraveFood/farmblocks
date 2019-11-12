@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Image, { thumbnailSizes } from "@crave/farmblocks-image";
 import { Checkbox } from "@crave/farmblocks-input-checkbox";
+import { SmCheck } from "@crave/farmblocks-icon";
 
 import ItemContainer from "../styledComponents/ItemContainer";
 import LabelContainer from "../styledComponents/LabelContainer";
@@ -27,7 +28,7 @@ const Item = ({ selected, image, label, checkbox, className, ...props }) => (
       )}
       {label}
     </LabelContainer>
-    {!checkbox && selected && <i className="icon wg-check" />}
+    {!checkbox && selected && <SmCheck size={24} />}
   </ItemContainer>
 );
 
