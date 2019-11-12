@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import Button, { buttonTypes } from "@crave/farmblocks-button";
 import { action } from "@storybook/addon-actions";
+import { MdRemoveFilled } from "@crave/farmblocks-icon";
 
 import Modal, { ModalTitle } from ".";
 import lipsum from "./lipsum";
@@ -114,7 +115,10 @@ storiesOf("Modal", module)
   .add("With custom close button props", () => (
     <Modal
       isOpen
-      closeButtonProps={{ icon: "wg-close-int", type: buttonTypes.NEGATIVE }}
+      closeButtonProps={{
+        icon: <MdRemoveFilled />,
+        type: buttonTypes.NEGATIVE,
+      }}
     >
       Content
     </Modal>
