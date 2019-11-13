@@ -16450,10 +16450,6 @@ exports[`Storyshots Label With more info 1`] = `
   align-items: baseline;
 }
 
-.c2 .tooltip {
-  margin-left: -3px;
-}
-
 .c2 .icon {
   display: inline-block;
   margin: 0 4px;
@@ -16483,6 +16479,18 @@ exports[`Storyshots Label With more info 1`] = `
   top: -1px;
 }
 
+@media only screen and (pointer:coarse) {
+  .c5 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div>
   <div
     className="c0 c1 labelText"
@@ -16507,10 +16515,10 @@ exports[`Storyshots Label With more info 1`] = `
       />
       <div
         className="c5 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span
@@ -16618,10 +16626,6 @@ exports[`Storyshots Label With more info right aligned 1`] = `
   align-items: baseline;
 }
 
-.c2 .tooltip {
-  margin-right: -3px;
-}
-
 .c2 .icon {
   display: inline-block;
   margin: 0 4px;
@@ -16651,6 +16655,18 @@ exports[`Storyshots Label With more info right aligned 1`] = `
   top: -1px;
 }
 
+@media only screen and (pointer:coarse) {
+  .c5 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div>
   <div
     className="c0 c1 labelText"
@@ -16675,10 +16691,10 @@ exports[`Storyshots Label With more info right aligned 1`] = `
       />
       <div
         className="c5 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span

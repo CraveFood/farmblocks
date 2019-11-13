@@ -6641,6 +6641,18 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   align-items: center;
 }
 
+@media only screen and (pointer:coarse) {
+  .c6 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div
   className="c0"
   disabled={false}
@@ -6686,10 +6698,10 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
         />
         <div
           className="c6 icon"
+          onMouseLeave={[Function]}
         >
           <div
             className="hit-area"
-            onMouseLeave={[Function]}
             onMouseOver={[Function]}
           />
           <span

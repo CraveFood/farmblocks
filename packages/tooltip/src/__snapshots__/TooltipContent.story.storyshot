@@ -6,16 +6,15 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
+  height: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -37,12 +36,14 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
 }
 
 .c0 .icon {
-  line-height: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  font-size: 1em;
 }
 
 .c0:hover {
@@ -142,6 +143,10 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   top: 15px;
 }
 
+.c2 .closeButton {
+  display: none;
+}
+
 .c2:after,
 .c2:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -184,6 +189,10 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 15px;
+}
+
+.c3 .closeButton {
+  display: none;
 }
 
 .c3:after,
@@ -233,6 +242,10 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   top: 15px;
 }
 
+.c4 .closeButton {
+  display: none;
+}
+
 .c4:after,
 .c4:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -274,6 +287,10 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   top: 15px;
 }
 
+.c6 .closeButton {
+  display: none;
+}
+
 .c7 {
   visibility: hidden;
   position: absolute;
@@ -292,6 +309,10 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   top: 15px;
 }
 
+.c7 .closeButton {
+  display: none;
+}
+
 .c8 {
   visibility: hidden;
   position: absolute;
@@ -305,6 +326,10 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
   font-family: lato,sans-serif;
   right: 0;
   top: 15px;
+}
+
+.c8 .closeButton {
+  display: none;
 }
 
 @media only screen and (max-width:) {
@@ -327,10 +352,29 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c2 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c2 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -343,10 +387,29 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c3 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c3 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -359,37 +422,113 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c4 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c4 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
 @media only screen and (max-width:) {
   .c6 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c6 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
 @media only screen and (max-width:) {
   .c7 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c7 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
 @media only screen and (max-width:) {
   .c8 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c8 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -427,6 +566,7 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c2"
@@ -453,6 +593,7 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c3"
@@ -479,6 +620,7 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c4"
@@ -518,6 +660,7 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c6"
@@ -547,6 +690,7 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c7"
@@ -576,6 +720,7 @@ exports[`Storyshots Tooltip/TooltipContent Bottom positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c8"
@@ -595,16 +740,15 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
+  height: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -626,12 +770,14 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
 }
 
 .c0 .icon {
-  line-height: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  font-size: 1em;
 }
 
 .c0:hover {
@@ -731,6 +877,10 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   bottom: NaNpx;
 }
 
+.c2 .closeButton {
+  display: none;
+}
+
 .c2:after,
 .c2:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -773,6 +923,10 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: NaNpx;
+}
+
+.c3 .closeButton {
+  display: none;
 }
 
 .c3:after,
@@ -822,6 +976,10 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   bottom: NaNpx;
 }
 
+.c4 .closeButton {
+  display: none;
+}
+
 .c4:after,
 .c4:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -863,6 +1021,10 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   bottom: NaNpx;
 }
 
+.c6 .closeButton {
+  display: none;
+}
+
 .c7 {
   visibility: hidden;
   position: absolute;
@@ -881,6 +1043,10 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   bottom: NaNpx;
 }
 
+.c7 .closeButton {
+  display: none;
+}
+
 .c8 {
   visibility: hidden;
   position: absolute;
@@ -894,6 +1060,10 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
   font-family: lato,sans-serif;
   right: 0;
   bottom: NaNpx;
+}
+
+.c8 .closeButton {
+  display: none;
 }
 
 @media only screen and (max-width:) {
@@ -916,10 +1086,29 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c2 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c2 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -932,10 +1121,29 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c3 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c3 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -948,37 +1156,113 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c4 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c4 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
 @media only screen and (max-width:) {
   .c6 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c6 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
 @media only screen and (max-width:) {
   .c7 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c7 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
 @media only screen and (max-width:) {
   .c8 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c8 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1017,6 +1301,7 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c2"
@@ -1044,6 +1329,7 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c3"
@@ -1071,6 +1357,7 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c4"
@@ -1111,6 +1398,7 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c6"
@@ -1141,6 +1429,7 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c7"
@@ -1171,6 +1460,7 @@ exports[`Storyshots Tooltip/TooltipContent Top positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c8"
@@ -1190,16 +1480,15 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
+  height: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1221,12 +1510,14 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
 }
 
 .c0 .icon {
-  line-height: 1;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  font-size: 1em;
 }
 
 .c0:hover {
@@ -1281,6 +1572,10 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
   top: 15px;
 }
 
+.c2 .closeButton {
+  display: none;
+}
+
 .c2:after,
 .c2:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -1327,10 +1622,29 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
 
 @media only screen and (max-width:) {
   .c2 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c2 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1364,6 +1678,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c2"
@@ -1384,6 +1699,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c2"
@@ -1414,6 +1730,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c2"
@@ -1434,6 +1751,7 @@ exports[`Storyshots Tooltip/TooltipContent auto aligned/positioned 1`] = `
       <div
         className="c1"
         offset="15px"
+        onTouchStart={[Function]}
       >
         <div
           className="c2"
@@ -1468,6 +1786,10 @@ exports[`Storyshots Tooltip/TooltipContent custom offset 1`] = `
   top: 30vh;
 }
 
+.c1 .closeButton {
+  display: none;
+}
+
 .c1:after,
 .c1:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -1514,10 +1836,29 @@ exports[`Storyshots Tooltip/TooltipContent custom offset 1`] = `
 
 @media only screen and (max-width:) {
   .c1 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c1 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1533,6 +1874,7 @@ exports[`Storyshots Tooltip/TooltipContent custom offset 1`] = `
   <div
     className="c0"
     offset="30vh"
+    onTouchStart={[Function]}
   >
     <div
       className="c1"
@@ -1565,6 +1907,10 @@ exports[`Storyshots Tooltip/TooltipContent custom padding 1`] = `
   top: 15px;
 }
 
+.c1 .closeButton {
+  display: none;
+}
+
 .c1:after,
 .c1:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -1611,10 +1957,29 @@ exports[`Storyshots Tooltip/TooltipContent custom padding 1`] = `
 
 @media only screen and (max-width:) {
   .c1 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c1 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1630,6 +1995,7 @@ exports[`Storyshots Tooltip/TooltipContent custom padding 1`] = `
   <div
     className="c0"
     offset="15px"
+    onTouchStart={[Function]}
   >
     <div
       className="c1"
@@ -1660,6 +2026,10 @@ exports[`Storyshots Tooltip/TooltipContent extended style 1`] = `
   font-family: lato,sans-serif;
   left: 0;
   top: 15px;
+}
+
+.c2 .closeButton {
+  display: none;
 }
 
 .c2:after,
@@ -1713,10 +2083,29 @@ exports[`Storyshots Tooltip/TooltipContent extended style 1`] = `
 
 @media only screen and (max-width:) {
   .c2 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c2 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1732,6 +2121,7 @@ exports[`Storyshots Tooltip/TooltipContent extended style 1`] = `
   <div
     className="c0 c1"
     offset="15px"
+    onTouchStart={[Function]}
   >
     <div
       className="c2 c1"
@@ -1764,6 +2154,10 @@ exports[`Storyshots Tooltip/TooltipContent isVisible false 1`] = `
   top: 15px;
 }
 
+.c1 .closeButton {
+  display: none;
+}
+
 .c1:after,
 .c1:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -1810,10 +2204,29 @@ exports[`Storyshots Tooltip/TooltipContent isVisible false 1`] = `
 
 @media only screen and (max-width:) {
   .c1 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c1 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1829,6 +2242,7 @@ exports[`Storyshots Tooltip/TooltipContent isVisible false 1`] = `
   <div
     className="c0"
     offset="15px"
+    onTouchStart={[Function]}
   >
     <div
       className="c1"
@@ -1861,6 +2275,10 @@ exports[`Storyshots Tooltip/TooltipContent responsive 1`] = `
   top: 15px;
 }
 
+.c1 .closeButton {
+  display: none;
+}
+
 .c1:after,
 .c1:before {
   border: solid 1px rgba(0,0,0,0.16);
@@ -1907,10 +2325,29 @@ exports[`Storyshots Tooltip/TooltipContent responsive 1`] = `
 
 @media only screen and (max-width:500px) {
   .c1 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c1 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -1926,6 +2363,7 @@ exports[`Storyshots Tooltip/TooltipContent responsive 1`] = `
   <div
     className="c0"
     offset="15px"
+    onTouchStart={[Function]}
   >
     <div
       className="c1"
@@ -1956,6 +2394,10 @@ exports[`Storyshots Tooltip/TooltipContent with card 1`] = `
   font-family: lato,sans-serif;
   left: 0;
   top: 15px;
+}
+
+.c1 .closeButton {
+  display: none;
 }
 
 .c1:after,
@@ -2015,10 +2457,29 @@ exports[`Storyshots Tooltip/TooltipContent with card 1`] = `
 
 @media only screen and (max-width:) {
   .c1 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c1 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -2034,6 +2495,7 @@ exports[`Storyshots Tooltip/TooltipContent with card 1`] = `
   <div
     className="c0"
     offset="15px"
+    onTouchStart={[Function]}
   >
     <div
       className="c1"
@@ -2071,6 +2533,10 @@ exports[`Storyshots Tooltip/TooltipContent with content overflow hidden 1`] = `
   left: 0;
   top: 15px;
   overflow: hidden;
+}
+
+.c1 .closeButton {
+  display: none;
 }
 
 .c1:after,
@@ -2119,10 +2585,29 @@ exports[`Storyshots Tooltip/TooltipContent with content overflow hidden 1`] = `
 
 @media only screen and (max-width:) {
   .c1 {
-    top: 16px;
     right: 16px;
-    bottom: 16px;
     left: 16px;
+    white-space: pre-wrap;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+  }
+
+  .c1 .closeButton {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 16px;
   }
 }
 
@@ -2138,6 +2623,7 @@ exports[`Storyshots Tooltip/TooltipContent with content overflow hidden 1`] = `
   <div
     className="c0"
     offset="15px"
+    onTouchStart={[Function]}
     overflow="hidden"
   >
     <div
@@ -2188,6 +2674,7 @@ exports[`Storyshots Tooltip/TooltipContent without content 1`] = `
   <div
     className="c0"
     offset="15px"
+    onTouchStart={[Function]}
   />
 </div>
 `;

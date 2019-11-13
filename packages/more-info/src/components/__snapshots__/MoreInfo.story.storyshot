@@ -80,6 +80,18 @@ exports[`Storyshots More info Default 1`] = `
   color: #3498db;
 }
 
+@media only screen and (pointer:coarse) {
+  .c2 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div>
   <div
     className="c0"
@@ -97,10 +109,10 @@ exports[`Storyshots More info Default 1`] = `
       </span>
       <div
         className="c2 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span
@@ -192,10 +204,6 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
   align-items: baseline;
 }
 
-.c0 .tooltip {
-  margin-left: -3px;
-}
-
 .c0 .icon {
   display: inline-block;
   margin: 0 4px;
@@ -210,6 +218,18 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 .c0 .icon:hover,
 .c0 .hovered {
   color: #3498db;
+}
+
+@media only screen and (pointer:coarse) {
+  .c2 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
 }
 
 <div>
@@ -227,10 +247,10 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
       />
       <div
         className="c2 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span
@@ -322,10 +342,6 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
   align-items: baseline;
 }
 
-.c0 .tooltip {
-  margin-right: -3px;
-}
-
 .c0 .icon {
   display: inline-block;
   margin: 0 4px;
@@ -340,6 +356,18 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 .c0 .icon:hover,
 .c0 .hovered {
   color: #3498db;
+}
+
+@media only screen and (pointer:coarse) {
+  .c2 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
 }
 
 <div
@@ -363,10 +391,10 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
       />
       <div
         className="c2 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span
@@ -502,6 +530,18 @@ exports[`Storyshots More info extended style 1`] = `
   text-align: center;
 }
 
+@media only screen and (pointer:coarse) {
+  .c3 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div>
   <div
     className="c0 c1"
@@ -519,10 +559,10 @@ exports[`Storyshots More info extended style 1`] = `
       </span>
       <div
         className="c3 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span
