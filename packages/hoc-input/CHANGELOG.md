@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.1.1...@crave/farmblocks-hoc-input@6.2.0) (2019-11-13)
+
+
+### Features
+
+* **sidenav:** export package components ([1ab6c94](https://github.com/CraveFood/farmblocks/commit/1ab6c9446fd65e17f0c8acd5396b8bd967e5ef2d))
+
+
+
+
+
 ## [6.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.1.0...@crave/farmblocks-hoc-input@6.1.1) (2019-10-31)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input

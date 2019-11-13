@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.8...@crave/farmblocks-modal@2.2.0) (2019-11-13)
+
+
+### Features
+
+* **modal:** export useScrollLock util ([b45c348](https://github.com/CraveFood/farmblocks/commit/b45c348f1c6933c8f868f38a616396fac0f7595e))
+* **sidenav:** export package components ([1ab6c94](https://github.com/CraveFood/farmblocks/commit/1ab6c9446fd65e17f0c8acd5396b8bd967e5ef2d))
+
+
+
+
+
 ## [2.1.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.7...@crave/farmblocks-modal@2.1.8) (2019-10-31)
 
 **Note:** Version bump only for package @crave/farmblocks-modal

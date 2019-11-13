@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.25...@crave/farmblocks-input-text@3.7.0) (2019-11-13)
+
+
+### Features
+
+* **sidenav:** export package components ([1ab6c94](https://github.com/CraveFood/farmblocks/commit/1ab6c9446fd65e17f0c8acd5396b8bd967e5ef2d))
+
+
+
+
+
 ## [3.6.25](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.24...@crave/farmblocks-input-text@3.6.25) (2019-10-31)
 
 **Note:** Version bump only for package @crave/farmblocks-input-text

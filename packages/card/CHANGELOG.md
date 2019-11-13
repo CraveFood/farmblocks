@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@2.2.19...@crave/farmblocks-card@2.3.0) (2019-11-13)
+
+
+### Features
+
+* **sidenav:** export package components ([1ab6c94](https://github.com/CraveFood/farmblocks/commit/1ab6c9446fd65e17f0c8acd5396b8bd967e5ef2d))
+
+
+
+
+
 ## [2.2.19](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@2.2.18...@crave/farmblocks-card@2.2.19) (2019-10-31)
 
 **Note:** Version bump only for package @crave/farmblocks-card
