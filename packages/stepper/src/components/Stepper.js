@@ -46,16 +46,16 @@ export default class Stepper extends React.Component {
 
     return <div className={this.props.className}>{steps}</div>;
   }
-
-  static propTypes = {
-    steps: PropTypes.arrayOf(PropTypes.string),
-    completedSteps: PropTypes.number,
-    onClick: PropTypes.func.isRequired,
-    className: PropTypes.string,
-  };
-
-  static defaultProps = {
-    steps: [],
-    completedSteps: 0,
-  };
 }
+
+Stepper.propTypes = {
+  steps: PropTypes.arrayOf(PropTypes.string),
+  completedSteps: PropTypes.number,
+  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+
+Stepper.defaultProps = {
+  steps: [],
+  completedSteps: 0,
+};

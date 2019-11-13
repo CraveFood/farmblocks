@@ -51,29 +51,29 @@ export default class Button extends React.Component {
       </StyledButton>
     );
   }
-
-  static defaultProps = {
-    size: buttonSizes.SMALL,
-    type: buttonTypes.NEUTRAL,
-  };
-
-  static propTypes = {
-    activated: PropTypes.bool,
-    icon: PropTypes.string,
-    rightIcon: PropTypes.string,
-    onClick: PropTypes.func,
-    text: PropTypes.string,
-    children: PropTypes.node,
-    size: PropTypes.oneOf(Object.keys(buttonSizes)),
-    type: PropTypes.oneOf(Object.keys(buttonTypes)),
-    fluid: PropTypes.bool,
-    loading: PropTypes.bool,
-    disabled: PropTypes.bool,
-    boxShadow: PropTypes.string,
-    paddingX: PropTypes.string,
-    fontSize: PropTypes.string,
-    fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    textColor: PropTypes.string,
-    // ... and all properties accepted by the html button
-  };
 }
+
+Button.defaultProps = {
+  size: buttonSizes.SMALL,
+  type: buttonTypes.NEUTRAL,
+};
+
+Button.propTypes = {
+  activated: PropTypes.bool,
+  icon: PropTypes.string,
+  rightIcon: PropTypes.string,
+  onClick: PropTypes.func,
+  text: PropTypes.string,
+  children: PropTypes.node,
+  size: PropTypes.oneOf(Object.keys(buttonSizes)),
+  type: PropTypes.oneOf(Object.keys(buttonTypes)),
+  fluid: PropTypes.bool,
+  loading: PropTypes.bool,
+  disabled: PropTypes.bool,
+  boxShadow: PropTypes.string,
+  paddingX: PropTypes.string,
+  fontSize: PropTypes.string,
+  fontWeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  textColor: PropTypes.string,
+  // ... and all properties accepted by the html button
+};

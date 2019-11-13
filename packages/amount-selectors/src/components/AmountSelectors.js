@@ -196,35 +196,35 @@ class AmountSelectors extends React.Component {
       </Wrapper>
     );
   }
-
-  static propTypes = {
-    value: PropTypes.number,
-    step: PropTypes.number,
-    min: PropTypes.number,
-    max: PropTypes.number,
-    maxAmountMessage: PropTypes.string,
-    minAmountMessage: PropTypes.string,
-    showBoundariesMessageOnlyOnFocus: PropTypes.bool,
-    enforceStep: PropTypes.bool,
-    disabled: PropTypes.bool,
-    onChange: PropTypes.func,
-    disableTyping: PropTypes.bool,
-    size: PropTypes.oneOf(values(selectorSizes)),
-    className: PropTypes.string,
-    tooltipProps: PropTypes.object,
-  };
-
-  static defaultProps = {
-    value: 0,
-    step: 1,
-    min: 0,
-    max: Number.MAX_VALUE,
-    maxAmountMessage: "Reached maximum amount",
-    minAmountMessage: "Reached minimum amount",
-    onChange: () => false,
-    disableTyping: false,
-    size: selectorSizes.MEDIUM,
-  };
 }
+
+AmountSelectors.propTypes = {
+  value: PropTypes.number,
+  step: PropTypes.number,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  maxAmountMessage: PropTypes.string,
+  minAmountMessage: PropTypes.string,
+  showBoundariesMessageOnlyOnFocus: PropTypes.bool,
+  enforceStep: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func,
+  disableTyping: PropTypes.bool,
+  size: PropTypes.oneOf(values(selectorSizes)),
+  className: PropTypes.string,
+  tooltipProps: PropTypes.object,
+};
+
+AmountSelectors.defaultProps = {
+  value: 0,
+  step: 1,
+  min: 0,
+  max: Number.MAX_VALUE,
+  maxAmountMessage: "Reached maximum amount",
+  minAmountMessage: "Reached minimum amount",
+  onChange: () => false,
+  disableTyping: false,
+  size: selectorSizes.MEDIUM,
+};
 
 export default AmountSelectors;

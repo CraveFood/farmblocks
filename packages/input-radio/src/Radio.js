@@ -72,20 +72,20 @@ class Radio extends React.Component {
       </Label>
     );
   }
-
-  static propTypes = {
-    label: PropTypes.node,
-    checked: PropTypes.bool,
-    disabled: PropTypes.bool,
-    onClick: PropTypes.func,
-    onChange: PropTypes.func,
-    value: PropTypes.any,
-    className: PropTypes.string,
-  };
-
-  static defaultProps = {
-    checked: false,
-  };
 }
+
+Radio.propTypes = {
+  label: PropTypes.node,
+  checked: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func,
+  onChange: PropTypes.func,
+  value: PropTypes.any,
+  className: PropTypes.string,
+};
+
+Radio.defaultProps = {
+  checked: false,
+};
 
 export default Radio;

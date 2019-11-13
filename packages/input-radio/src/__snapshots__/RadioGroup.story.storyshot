@@ -95,7 +95,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
 >
   <label
     checked={false}
-    className="radio val-first   c1"
+    className="c1 radio val-first  "
   >
     <input
       className="hiddenInput"
@@ -123,7 +123,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-second   c1"
+    className="c1 radio val-second  "
   >
     <input
       className="hiddenInput"
@@ -151,7 +151,7 @@ exports[`Storyshots RadioGroup Default 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-third   c1"
+    className="c1 radio val-third  "
   >
     <input
       className="hiddenInput"
@@ -343,7 +343,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
 >
   <label
     checked={false}
-    className="radio val-first   c1"
+    className="c1 radio val-first  "
     disabled={true}
   >
     <input
@@ -373,7 +373,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-second   c1"
+    className="c1 radio val-second  "
     disabled={true}
   >
     <input
@@ -403,7 +403,7 @@ exports[`Storyshots RadioGroup all disabled 1`] = `
   </label>
   <label
     checked={true}
-    className="radio val-third checked  c3"
+    className="c3 radio val-third checked "
     disabled={true}
   >
     <input
@@ -655,7 +655,7 @@ exports[`Storyshots RadioGroup extended style 1`] = `
   background: currentColor;
 }
 
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -669,24 +669,24 @@ exports[`Storyshots RadioGroup extended style 1`] = `
   align-items: flex-start;
 }
 
-.c0 {
+.c1 {
   background: cornsilk;
   padding: 16px;
 }
 
-.c0 .radio {
+.c1 .radio {
   -webkit-transition: -webkit-transform .3s;
   -webkit-transition: transform .3s;
   transition: transform .3s;
   background: antiquewhite;
 }
 
-.c0 .radio .checkedIndicator {
+.c1 .radio .checkedIndicator {
   position: relative;
   background: none;
 }
 
-.c0 .radio .checkedIndicator::after {
+.c1 .radio .checkedIndicator::after {
   position: absolute;
   bottom: -100%;
   left: -20%;
@@ -695,13 +695,13 @@ exports[`Storyshots RadioGroup extended style 1`] = `
   text-shadow: 0 0 1px black;
 }
 
-.c0 .radio.checked {
+.c1 .radio.checked {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.c0 .radio.disabled {
+.c1 .radio.disabled {
   -webkit-text-decoration: line-through;
   text-decoration: line-through;
 }
@@ -711,7 +711,7 @@ exports[`Storyshots RadioGroup extended style 1`] = `
 >
   <label
     checked={false}
-    className="radio val-first   c2"
+    className="c2 radio val-first  "
   >
     <input
       className="hiddenInput"
@@ -739,7 +739,7 @@ exports[`Storyshots RadioGroup extended style 1`] = `
   </label>
   <label
     checked={true}
-    className="radio val-second checked  c4"
+    className="c4 radio val-second checked "
   >
     <input
       className="hiddenInput"
@@ -767,7 +767,7 @@ exports[`Storyshots RadioGroup extended style 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-third  disabled c5"
+    className="c5 radio val-third  disabled"
     disabled={true}
   >
     <input
@@ -893,7 +893,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
 >
   <label
     checked={false}
-    className="radio val-first   c1"
+    className="c1 radio val-first  "
   >
     <input
       className="hiddenInput"
@@ -921,7 +921,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-second   c1"
+    className="c1 radio val-second  "
   >
     <input
       className="hiddenInput"
@@ -949,7 +949,7 @@ exports[`Storyshots RadioGroup onChange 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-third   c1"
+    className="c1 radio val-third  "
   >
     <input
       className="hiddenInput"
@@ -1145,7 +1145,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
 >
   <label
     checked={false}
-    className="radio val-first   c1"
+    className="c1 radio val-first  "
   >
     <input
       className="hiddenInput"
@@ -1173,7 +1173,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   </label>
   <label
     checked={true}
-    className="radio val-second checked  c3"
+    className="c3 radio val-second checked "
   >
     <input
       className="hiddenInput"
@@ -1201,7 +1201,7 @@ exports[`Storyshots RadioGroup w/ default value 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-third   c1"
+    className="c1 radio val-third  "
   >
     <input
       className="hiddenInput"
@@ -1398,7 +1398,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
 >
   <label
     checked={false}
-    className="radio val-first   c1"
+    className="c1 radio val-first  "
   >
     <input
       className="hiddenInput"
@@ -1426,7 +1426,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-second   c1"
+    className="c1 radio val-second  "
   >
     <input
       className="hiddenInput"
@@ -1454,7 +1454,7 @@ exports[`Storyshots RadioGroup w/ disabled option 1`] = `
   </label>
   <label
     checked={false}
-    className="radio val-third  disabled c3"
+    className="c3 radio val-third  disabled"
     disabled={true}
   >
     <input

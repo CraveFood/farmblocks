@@ -271,28 +271,28 @@ class SearchField extends React.Component {
       </DropdownWrapper>
     );
   }
-
-  static defaultProps = {
-    onSearchChange: () => false,
-    onScrollReachEnd: () => false,
-    onChange: () => false,
-    width: 200,
-    maxMenuHeight: 353,
-    debounceDelay: 500,
-    ...defaultKeyNames,
-  };
-
-  static propTypes = {
-    width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    debounceDelay: PropTypes.number,
-    onSearchChange: PropTypes.func,
-    onBeforeChange: PropTypes.func,
-    onChange: PropTypes.func,
-    zIndex: PropTypes.number,
-    className: PropTypes.string,
-    ...keyNamesPropTypes,
-    ...Menu.propTypes,
-  };
 }
+
+SearchField.defaultProps = {
+  onSearchChange: () => false,
+  onScrollReachEnd: () => false,
+  onChange: () => false,
+  width: 200,
+  maxMenuHeight: 353,
+  debounceDelay: 500,
+  ...defaultKeyNames,
+};
+
+SearchField.propTypes = {
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  debounceDelay: PropTypes.number,
+  onSearchChange: PropTypes.func,
+  onBeforeChange: PropTypes.func,
+  onChange: PropTypes.func,
+  zIndex: PropTypes.number,
+  className: PropTypes.string,
+  ...keyNamesPropTypes,
+  ...Menu.propTypes,
+};
 
 export default SearchField;

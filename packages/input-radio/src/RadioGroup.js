@@ -46,15 +46,15 @@ class RadioGroup extends React.Component {
       </Group>
     );
   }
-
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    name: PropTypes.string.isRequired,
-    defaultValue: PropTypes.any,
-    onChange: PropTypes.func,
-    disabled: PropTypes.bool,
-    className: PropTypes.string,
-  };
 }
+
+RadioGroup.propTypes = {
+  children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
+  defaultValue: PropTypes.any,
+  onChange: PropTypes.func,
+  disabled: PropTypes.bool,
+  className: PropTypes.string,
+};
 
 export default RadioGroup;

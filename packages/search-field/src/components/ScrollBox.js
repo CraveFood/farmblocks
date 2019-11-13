@@ -77,14 +77,14 @@ export default class ScrollBox extends React.Component {
       </ScrollWrapper>
     );
   }
-
-  static defaultProps = {
-    onReachEnd: () => false,
-  };
-
-  static propTypes = {
-    children: PropTypes.node,
-    maxHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    onReachEnd: PropTypes.func,
-  };
 }
+
+ScrollBox.propTypes = {
+  children: PropTypes.node,
+  maxHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  onReachEnd: PropTypes.func,
+};
+
+ScrollBox.defaultProps = {
+  onReachEnd: () => false,
+};

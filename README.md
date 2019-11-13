@@ -24,6 +24,7 @@ User interface blocks.
 - [Farmblocks-Map-Balloon](https://github.com/CraveFood/farmblocks/tree/master/packages/map-balloon) - A React component to display pictures and a caption over a map.
 - [Farmblocks-Modal](https://github.com/CraveFood/farmblocks/tree/master/packages/modal) - A module to display and control modals and dialogs Components.
 - [Farmblocks-More-Info](https://github.com/CraveFood/farmblocks/tree/master/packages/more-info) - A component which renders a text, an icon, and a tooltip when mouse is over the icon.
+- [Farmblocks-Sidenav](https://github.com/CraveFood/farmblocks/tree/master/packages/sidenav) - A React Sidebar Navigation component.
 - [Farmblocks-Stepper](https://github.com/CraveFood/farmblocks/tree/master/packages/stepper) - A React component for displaying step to step actions.
 - [Farmblocks-Tag](https://github.com/CraveFood/farmblocks/tree/master/packages/tag) - A styled and removable tag.
 - [Farmblocks-Table](https://github.com/CraveFood/farmblocks/tree/master/packages/table) - A component for rendering data tables.

@@ -257,43 +257,43 @@ class Select extends React.Component {
       </DropdownWrapper>
     );
   }
-
-  static defaultProps = {
-    onChange: () => false,
-    width: "200px",
-    items: [],
-  };
-
-  static propTypes = {
-    ...formInputProps,
-    ...withMessagesProps,
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        label: PropTypes.string,
-        image: PropTypes.string,
-      }),
-    ),
-    value: (props, ...rest) => {
-      const valueTypes = PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-      ]);
-      return (props.multi ? PropTypes.arrayOf(valueTypes) : valueTypes)(
-        props,
-        ...rest,
-      );
-    },
-    width: PropTypes.string,
-    onChange: PropTypes.func,
-    renderItem: PropTypes.func,
-    noResultsMessage: PropTypes.string,
-    disableSearch: PropTypes.bool,
-    zIndex: PropTypes.number,
-    maxHeight: PropTypes.string,
-    multi: PropTypes.bool,
-    className: PropTypes.string,
-  };
 }
+
+Select.defaultProps = {
+  onChange: () => false,
+  width: "200px",
+  items: [],
+};
+
+Select.propTypes = {
+  ...formInputProps,
+  ...withMessagesProps,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      label: PropTypes.string,
+      image: PropTypes.string,
+    }),
+  ),
+  value: (props, ...rest) => {
+    const valueTypes = PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]);
+    return (props.multi ? PropTypes.arrayOf(valueTypes) : valueTypes)(
+      props,
+      ...rest,
+    );
+  },
+  width: PropTypes.string,
+  onChange: PropTypes.func,
+  renderItem: PropTypes.func,
+  noResultsMessage: PropTypes.string,
+  disableSearch: PropTypes.bool,
+  zIndex: PropTypes.number,
+  maxHeight: PropTypes.string,
+  multi: PropTypes.bool,
+  className: PropTypes.string,
+};
 
 export default Select;

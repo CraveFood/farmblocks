@@ -42,6 +42,30 @@ const getValueFromProps = ({ input, value }) => (input ? input.value : value);
 
 const formInput = WrappedComponent => {
   return class Input extends React.Component {
+    static displayName = wrapDisplayName(WrappedComponent, "formInput");
+
+    static propTypes = {
+      ...WrappedComponent.propTypes,
+      ...formInputProps,
+    };
+
+    static defaultProps = {
+      value: "",
+      type: "text",
+      focused: false,
+      active: false,
+      disabled: false,
+      onChange: () => null,
+      onFocus: () => null,
+      onBlur: () => null,
+      input: null,
+      refName: "ref",
+      clearable: false,
+      clearIcon: "wg-close-int",
+      moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
+      autoControlFocusedStyle: true,
+    };
+
     state = {
       value: getValueFromProps(this.props),
       focused: this.props.focused,
@@ -246,30 +270,6 @@ const formInput = WrappedComponent => {
         </Wrapper>
       );
     }
-
-    static displayName = wrapDisplayName(WrappedComponent, "formInput");
-
-    static propTypes = {
-      ...WrappedComponent.propTypes,
-      ...formInputProps,
-    };
-
-    static defaultProps = {
-      value: "",
-      type: "text",
-      focused: false,
-      active: false,
-      disabled: false,
-      onChange: () => null,
-      onFocus: () => null,
-      onBlur: () => null,
-      input: null,
-      refName: "ref",
-      clearable: false,
-      clearIcon: "wg-close-int",
-      moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
-      autoControlFocusedStyle: true,
-    };
   };
 };
 
