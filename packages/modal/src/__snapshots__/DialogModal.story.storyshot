@@ -1,20 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
-.c9 {
+.c7 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c7 .farmblocks-icon {
+  display: block;
+}
+
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -35,50 +45,48 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   padding: 0 16px;
 }
 
-.c9 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.c10 .icon {
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
-.c9:hover {
+.c10:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c9:focus {
+.c10:focus {
   box-shadow: none;
 }
 
-.c9:hover .icon,
-.c9:focus .icon {
+.c10:hover .icon,
+.c10:focus .icon {
   color: white;
 }
 
-.c9:hover {
+.c10:hover {
   background-color: #2980b9;
 }
 
-.c9:focus {
+.c10:focus {
   background-color: #2980b9;
 }
 
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c9:disabled {
+.c10:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c7 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
@@ -88,7 +96,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -127,7 +135,11 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
 
 .c6 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c6 > .icon {
@@ -243,12 +255,28 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
           <div
             className="icon"
           >
-            <i
-              className="wg-alert"
-            />
+            <span
+              className="c7"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
+              >
+                <path
+                  d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13 4.019c1.119 0 1.948.828 1.948 1.903v.044c0 1.074-.83 1.903-1.948 1.903-1.119 0-1.948-.829-1.948-1.903v-.044c0-1.075.83-1.903 1.948-1.903zM18.008 13.14c-.067-.648.292-1.14.895-1.14h2.195c.602 0 .961.492.894 1.14l-.962 8.416c-.068.605-.47.986-1.03.986s-.962-.38-1.03-.986l-.962-8.416z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
           <div
-            className="c7 title"
+            className="c8 title"
             fontWeight="title"
             size={24}
             type="#2f313a"
@@ -256,7 +284,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
             Dialog Modal Title
           </div>
           <div
-            className="c8 description"
+            className="c9 description"
             fontWeight="inherit"
             size={18}
             type="#59636f"
@@ -267,7 +295,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
             className="buttons"
           >
             <button
-              className="c9"
+              className="c10"
               data-testid="empty-state-button-Primary Action"
               onClick={[Function]}
               size="MEDIUM"
@@ -284,97 +312,21 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
 `;
 
 exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c11 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c11:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c11:focus {
-  box-shadow: none;
-}
-
-.c11:hover .icon,
-.c11:focus .icon {
-  color: white;
-}
-
-.c11:hover {
-  background-color: #2980b9;
-}
-
-.c11:focus {
-  background-color: #2980b9;
-}
-
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c11:disabled {
-  background-color: #ccc;
-  box-shadow: none;
-}
-
 .c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -395,14 +347,12 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -440,6 +390,82 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
 }
 
 .c10:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c11 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c11:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c11:focus {
+  box-shadow: none;
+}
+
+.c11:hover .icon,
+.c11:focus .icon {
+  color: white;
+}
+
+.c11:hover {
+  background-color: #2980b9;
+}
+
+.c11:focus {
+  background-color: #2980b9;
+}
+
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c11:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -499,7 +525,11 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
 
 .c6 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c6 > .icon {

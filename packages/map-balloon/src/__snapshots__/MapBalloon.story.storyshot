@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Map Balloon Animated 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 28px;
   -webkit-font-smoothing: antialiased;
@@ -11,7 +20,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +30,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -40,17 +49,29 @@ exports[`Storyshots Map Balloon Animated 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
-.c4 {
+.c5 {
   -webkit-transition: -webkit-transform 0.3s,opacity 0.3s,color 0.3s;
   -webkit-transition: transform 0.3s,opacity 0.3s,color 0.3s;
   transition: transform 0.3s,opacity 0.3s,color 0.3s;
@@ -79,32 +100,27 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   user-select: none;
 }
 
-.c4.fade-enter,
-.c4.fade-exit-active {
+.c5.fade-enter,
+.c5.fade-exit-active {
   -webkit-transform: scale(0.5) rotate(5deg);
   -ms-transform: scale(0.5) rotate(5deg);
   transform: scale(0.5) rotate(5deg);
   opacity: 0;
 }
 
-.c4.fade-enter-active,
-.c4.fade-enter-done {
+.c5.fade-enter-active,
+.c5.fade-enter-done {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
 
-.c4 .wg-small-arrow-right {
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.c4 .caption {
+.c5 .caption {
   margin: 16px 8px;
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -120,7 +136,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -140,7 +156,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   height: 147px;
   box-sizing: border-box;
   background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
@@ -175,21 +191,41 @@ exports[`Storyshots Map Balloon Animated 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location open"
-    />
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       >
         <div
-          className="c6 gradient"
+          className="c7 gradient"
         >
           <div
-            className="c7 text"
+            className="c8 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -199,7 +235,7 @@ exports[`Storyshots Map Balloon Animated 1`] = `
         </div>
       </div>
       <div
-        className="c8 c9 caption"
+        className="c9 c10 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -213,7 +249,16 @@ exports[`Storyshots Map Balloon Animated 1`] = `
 `;
 
 exports[`Storyshots Map Balloon Custom opacity 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 28px;
   -webkit-font-smoothing: antialiased;
@@ -223,7 +268,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -233,7 +278,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -252,17 +297,29 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
-.c4 {
+.c5 {
   position: absolute;
   bottom: 48px;
   left: -33px;
@@ -288,11 +345,11 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   user-select: none;
 }
 
-.c4 .caption {
+.c5 .caption {
   margin: 16px 8px;
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -308,7 +365,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -328,7 +385,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   height: 147px;
   box-sizing: border-box;
   background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
@@ -363,21 +420,41 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location open"
-    />
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       >
         <div
-          className="c6 gradient"
+          className="c7 gradient"
         >
           <div
-            className="c7 text"
+            className="c8 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -387,7 +464,7 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
         </div>
       </div>
       <div
-        className="c8 c9 caption"
+        className="c9 c10 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -401,7 +478,16 @@ exports[`Storyshots Map Balloon Custom opacity 1`] = `
 `;
 
 exports[`Storyshots Map Balloon Custom pin 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 28px;
   -webkit-font-smoothing: antialiased;
@@ -411,7 +497,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -421,7 +507,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -440,17 +526,29 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 30px;
-  text-align: center;
   width: 30px;
   position: absolute;
   bottom: 0;
   left: -15px;
   color: black;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
-.c4 {
+.c5 {
   position: absolute;
   bottom: 38px;
   left: -33px;
@@ -476,11 +574,11 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   user-select: none;
 }
 
-.c4 .caption {
+.c5 .caption {
   margin: 16px 8px;
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -496,7 +594,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -516,7 +614,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   height: 147px;
   box-sizing: border-box;
   background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
@@ -551,21 +649,41 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location open"
-    />
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       >
         <div
-          className="c6 gradient"
+          className="c7 gradient"
         >
           <div
-            className="c7 text"
+            className="c8 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -575,7 +693,7 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
         </div>
       </div>
       <div
-        className="c8 c9 caption"
+        className="c9 c10 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -589,6 +707,15 @@ exports[`Storyshots Map Balloon Custom pin 1`] = `
 `;
 
 exports[`Storyshots Map Balloon Default 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   position: absolute;
   top: 400px;
@@ -597,14 +724,26 @@ exports[`Storyshots Map Balloon Default 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
 .c0 {
@@ -624,13 +763,42 @@ exports[`Storyshots Map Balloon Default 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location "
-    />
+      className="c2 pin "
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Map Balloon Interactive 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   position: absolute;
   top: 400px;
@@ -639,16 +807,27 @@ exports[`Storyshots Map Balloon Interactive 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: FireBrick;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
-  font-size: 24px;
-  padding: 8px;
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  font-size: 30px;
   height: 40px;
   box-sizing: border-box;
   cursor: pointer;
@@ -689,15 +868,44 @@ exports[`Storyshots Map Balloon Interactive 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-place "
+      className="c2 pin "
       onClick={[Function]}
-    />
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Map Balloon Interactive open 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 28px;
   -webkit-font-smoothing: antialiased;
@@ -707,7 +915,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -717,7 +925,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   font-weight: inherit;
 }
 
-.c10 {
+.c11 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -727,7 +935,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   font-weight: 600;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -746,16 +954,27 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: FireBrick;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
-  font-size: 24px;
-  padding: 8px;
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  font-size: 30px;
   height: 40px;
   box-sizing: border-box;
   cursor: pointer;
@@ -779,7 +998,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   background-color: FireBrick;
 }
 
-.c4 {
+.c5 {
   position: absolute;
   bottom: 48px;
   left: -33px;
@@ -805,27 +1024,21 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   user-select: none;
   cursor: pointer;
   bottom: 28px;
-}
-
-.c4 .caption {
-  margin: 16px 8px;
-}
-
-.c4 .wg-small-arrow-right {
   color: rgba(0,0,0,0.16);
 }
 
-.c4:active {
+.c5 .caption {
+  margin: 16px 8px;
+}
+
+.c5:active {
   -webkit-transform: translateY(2px);
   -ms-transform: translateY(2px);
   transform: translateY(2px);
-}
-
-.c4:active .wg-small-arrow-right {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -841,7 +1054,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -861,7 +1074,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   height: 147px;
   box-sizing: border-box;
   background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
@@ -896,23 +1109,43 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-place open"
+      className="c2 pin open"
       onClick={[Function]}
-    />
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       onClick={[Function]}
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       >
         <div
-          className="c6 gradient"
+          className="c7 gradient"
         >
           <div
-            className="c7 text"
+            className="c8 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -922,7 +1155,7 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
         </div>
       </div>
       <div
-        className="c8 c9 caption"
+        className="c9 c10 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -930,11 +1163,31 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
       >
         Paloma Orchards
         <div
-          className="c10 text wg-small-arrow-right"
+          className="c11 text"
           fontWeight="title"
           size={18}
           type="rgba(0, 0, 0, 0.32)"
-        />
+        >
+          <span
+            className="c3"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="2 2 20 20"
+              width={24}
+            >
+              <path
+                d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -942,6 +1195,15 @@ exports[`Storyshots Map Balloon Interactive open 1`] = `
 `;
 
 exports[`Storyshots Map Balloon Interactive toggle 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   position: absolute;
   top: 400px;
@@ -950,19 +1212,30 @@ exports[`Storyshots Map Balloon Interactive toggle 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: DarkBlue;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
   -webkit-transition: -webkit-transform 0.3s,color 0.3s,background-color 0.3s;
   -webkit-transition: transform 0.3s,color 0.3s,background-color 0.3s;
   transition: transform 0.3s,color 0.3s,background-color 0.3s;
-  font-size: 24px;
-  padding: 8px;
+  font-size: 30px;
   height: 40px;
   box-sizing: border-box;
   cursor: pointer;
@@ -1003,15 +1276,44 @@ exports[`Storyshots Map Balloon Interactive toggle 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-place "
+      className="c2 pin "
       onClick={[Function]}
-    />
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Map Balloon Open Balloon 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 28px;
   -webkit-font-smoothing: antialiased;
@@ -1021,7 +1323,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1031,7 +1333,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -1050,17 +1352,29 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
-.c4 {
+.c5 {
   position: absolute;
   bottom: 48px;
   left: -33px;
@@ -1086,11 +1400,11 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   user-select: none;
 }
 
-.c4 .caption {
+.c5 .caption {
   margin: 16px 8px;
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1106,7 +1420,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1126,7 +1440,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   height: 147px;
   box-sizing: border-box;
   background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
@@ -1161,21 +1475,41 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location open"
-    />
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       >
         <div
-          className="c6 gradient"
+          className="c7 gradient"
         >
           <div
-            className="c7 text"
+            className="c8 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -1185,7 +1519,7 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
         </div>
       </div>
       <div
-        className="c8 c9 caption"
+        className="c9 c10 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -1199,7 +1533,16 @@ exports[`Storyshots Map Balloon Open Balloon 1`] = `
 `;
 
 exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 28px;
   -webkit-font-smoothing: antialiased;
@@ -1209,7 +1552,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1219,7 +1562,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -1238,17 +1581,29 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
-.c4 {
+.c5 {
   position: absolute;
   bottom: 48px;
   -webkit-transform-origin: bottom right;
@@ -1274,11 +1629,11 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   user-select: none;
 }
 
-.c4 .caption {
+.c5 .caption {
   margin: 16px 8px;
 }
 
-.c9 {
+.c10 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1294,7 +1649,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1314,7 +1669,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   height: 147px;
   box-sizing: border-box;
   background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
@@ -1349,21 +1704,41 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location open"
-    />
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       >
         <div
-          className="c6 gradient"
+          className="c7 gradient"
         >
           <div
-            className="c7 text"
+            className="c8 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -1373,7 +1748,7 @@ exports[`Storyshots Map Balloon Open Balloon at Right 1`] = `
         </div>
       </div>
       <div
-        className="c8 c9 caption"
+        className="c9 c10 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -1523,7 +1898,16 @@ exports[`Storyshots Map Balloon custom border radius 1`] = `
 `;
 
 exports[`Storyshots Map Balloon custom sizes 1`] = `
-.c7 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 30px;
   -webkit-font-smoothing: antialiased;
@@ -1533,7 +1917,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 30px;
   -webkit-font-smoothing: antialiased;
@@ -1543,7 +1927,7 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -1562,48 +1946,6 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
 }
 
 .c2 {
-  font-size: 40px;
-  text-align: center;
-  width: 40px;
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
-}
-
-.c4 {
-  position: absolute;
-  bottom: 48px;
-  left: -33px;
-  -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  transform-origin: bottom left;
-  height: 350px;
-  width: 350px;
-  padding: 0;
-  border-radius: 8px;
-  border: none;
-  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c4 .caption {
-  margin: 16px 8px;
-}
-
-.c9 {
-  padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1612,152 +1954,18 @@ exports[`Storyshots Map Balloon custom sizes 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background-image: url(https://picsum.photos/640?image=0);
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c6 {
-  height: 147px;
-  box-sizing: border-box;
-  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding: 24px;
-}
-
-.c0 {
-  position: relative;
-  width: 800px;
-  height: 800px;
-  background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-    opacity={1}
-    x={400}
-    y={400}
-  >
-    <div
-      className="c2 pin wg-location open"
-    />
-    <div
-      className="c3 c4 balloon"
-      overflow="hidden"
-      width="100%"
-    >
-      <div
-        className="c5 imageSet"
-      >
-        <div
-          className="c6 gradient"
-        >
-          <div
-            className="c7 text"
-            fontWeight="title"
-            size={30}
-            type="white"
-          >
-            Romaine Lettuce
-          </div>
-        </div>
-      </div>
-      <div
-        className="c8 c9 caption"
-        fontWeight="inherit"
-        size={30}
-        title={true}
-        type="#59636f"
-      >
-        Paloma Orchards
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Map Balloon extended style 1`] = `
-.c8 {
-  font-family: Lato,sans-serif;
-  font-size: 28px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c9 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: inherit;
-}
-
-.c4 {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.c1 {
-  position: absolute;
-  top: 400px;
-  left: 400px;
-  opacity: 1;
-}
-
-.c3 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
 .c5 {
@@ -1767,8 +1975,8 @@ exports[`Storyshots Map Balloon extended style 1`] = `
   -webkit-transform-origin: bottom left;
   -ms-transform-origin: bottom left;
   transform-origin: bottom left;
-  height: 260px;
-  width: 260px;
+  height: 350px;
+  width: 350px;
   padding: 0;
   border-radius: 8px;
   border: none;
@@ -1851,6 +2059,235 @@ exports[`Storyshots Map Balloon extended style 1`] = `
   background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
 }
 
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    opacity={1}
+    x={400}
+    y={400}
+  >
+    <div
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
+    <div
+      className="c4 c5 balloon"
+      overflow="hidden"
+      width="100%"
+    >
+      <div
+        className="c6 imageSet"
+      >
+        <div
+          className="c7 gradient"
+        >
+          <div
+            className="c8 text"
+            fontWeight="title"
+            size={30}
+            type="white"
+          >
+            Romaine Lettuce
+          </div>
+        </div>
+      </div>
+      <div
+        className="c9 c10 caption"
+        fontWeight="inherit"
+        size={30}
+        title={true}
+        type="#59636f"
+      >
+        Paloma Orchards
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Map Balloon extended style 1`] = `
+.c4 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c4 .farmblocks-icon {
+  display: block;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 28px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: left;
+  font-weight: inherit;
+}
+
+.c5 {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  opacity: 1;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  color: #f1c618;
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+}
+
+.c6 {
+  position: absolute;
+  bottom: 48px;
+  left: -33px;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  height: 260px;
+  width: 260px;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c6 .caption {
+  margin: 16px 8px;
+}
+
+.c11 {
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url(https://picsum.photos/640?image=0);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c8 {
+  height: 147px;
+  box-sizing: border-box;
+  background: linear-gradient( 180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.48) 100% );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 24px;
+}
+
+.c0 {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: #ccc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFElEQVR4AWMgEthTT+GoQnsiMAMA+G4Eb/fCw1gAAAAASUVORK5CYII=);
+}
+
 .c2 .pin {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -1879,21 +2316,41 @@ exports[`Storyshots Map Balloon extended style 1`] = `
     y={400}
   >
     <div
-      className="c3 pin wg-location open"
-    />
+      className="c3 pin open"
+    >
+      <span
+        className="c4"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c4 c5 balloon"
+      className="c5 c6 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c6 imageSet"
+        className="c7 imageSet"
       >
         <div
-          className="c7 gradient"
+          className="c8 gradient"
         >
           <div
-            className="c8 text"
+            className="c9 text"
             fontWeight="title"
             size={28}
             type="white"
@@ -1903,7 +2360,7 @@ exports[`Storyshots Map Balloon extended style 1`] = `
         </div>
       </div>
       <div
-        className="c9 c10 caption"
+        className="c10 c11 caption"
         fontWeight="inherit"
         size={18}
         title={true}
@@ -1917,7 +2374,16 @@ exports[`Storyshots Map Balloon extended style 1`] = `
 `;
 
 exports[`Storyshots Map Balloon imageSet without name 1`] = `
-.c6 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1927,7 +2393,7 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
   font-weight: inherit;
 }
 
-.c3 {
+.c4 {
   background-color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
@@ -1946,17 +2412,29 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
 }
 
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 40px;
-  text-align: center;
   width: 40px;
   position: absolute;
   bottom: 0;
   left: -20px;
   color: #f1c618;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.24);
+  -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.24));
 }
 
-.c4 {
+.c5 {
   position: absolute;
   bottom: 48px;
   left: -33px;
@@ -1982,11 +2460,11 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
   user-select: none;
 }
 
-.c4 .caption {
+.c5 .caption {
   margin: 16px 8px;
 }
 
-.c7 {
+.c8 {
   padding-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2002,7 +2480,7 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
   justify-content: space-between;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2039,18 +2517,38 @@ exports[`Storyshots Map Balloon imageSet without name 1`] = `
     y={400}
   >
     <div
-      className="c2 pin wg-location open"
-    />
+      className="c2 pin open"
+    >
+      <span
+        className="c3"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM24 16a4 4 0 10-8 0 4 4 0 008 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
     <div
-      className="c3 c4 balloon"
+      className="c4 c5 balloon"
       overflow="hidden"
       width="100%"
     >
       <div
-        className="c5 imageSet"
+        className="c6 imageSet"
       />
       <div
-        className="c6 c7 caption"
+        className="c7 c8 caption"
         fontWeight="inherit"
         size={18}
         title={true}

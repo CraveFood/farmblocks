@@ -230,10 +230,7 @@ describe("formInput", function() {
     const component = mount(<EnhancedInput type="search" value={value} />);
     expect(component.state("value")).toBe(value);
 
-    component
-      .find("LinkContainer[className='clear']")
-      .find("span")
-      .simulate("click");
+    component.find("span[data-testid='input-clear']").simulate("click");
     expect(component.state("value")).toBe("");
   });
 

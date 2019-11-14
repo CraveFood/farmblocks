@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots More info Default 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c2 {
   position: relative;
   display: inline-block;
@@ -57,9 +66,13 @@ exports[`Storyshots More info Default 1`] = `
 
 .c0 .icon {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   cursor: pointer;
   color: #59636f;
+}
+
+.c0 .icon .farmblocks-icon {
+  font-size: 1.2em;
 }
 
 .c0 .icon:hover,
@@ -72,30 +85,59 @@ exports[`Storyshots More info Default 1`] = `
     className="c0"
   >
     <div
-      className="c1 text "
+      className="c1"
       fontWeight="title"
       size={16}
       type="#59636f"
     >
-      Mouse over the icon for more info
-    </div>
-    <div
-      className="c2 icon"
-    >
+      <span
+        className="text "
+      >
+        Mouse over the icon for more info
+      </span>
       <div
-        className="hit-area"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-      <i
-        className="wg-question"
-      />
+        className="c2 icon"
+      >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c2 {
   position: relative;
   display: inline-block;
@@ -151,14 +193,18 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
 }
 
 .c0 .tooltip {
-  margin-left: -4px;
+  margin-left: -3px;
 }
 
 .c0 .icon {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   cursor: pointer;
   color: #59636f;
+}
+
+.c0 .icon .farmblocks-icon {
+  font-size: 1.2em;
 }
 
 .c0 .icon:hover,
@@ -171,28 +217,57 @@ exports[`Storyshots More info Without text - tooltip left aligned 1`] = `
     className="c0"
   >
     <div
-      className="c1 text "
+      className="c1"
       fontWeight="title"
       size={16}
       type="#59636f"
-    />
-    <div
-      className="c2 icon"
     >
+      <span
+        className="text "
+      />
       <div
-        className="hit-area"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-      <i
-        className="wg-question"
-      />
+        className="c2 icon"
+      >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c2 {
   position: relative;
   display: inline-block;
@@ -248,14 +323,18 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
 }
 
 .c0 .tooltip {
-  margin-left: -4px;
+  margin-right: -3px;
 }
 
 .c0 .icon {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   cursor: pointer;
   color: #59636f;
+}
+
+.c0 .icon .farmblocks-icon {
+  font-size: 1.2em;
 }
 
 .c0 .icon:hover,
@@ -274,28 +353,57 @@ exports[`Storyshots More info Without text - tooltip right aligned 1`] = `
     className="c0"
   >
     <div
-      className="c1 text "
+      className="c1"
       fontWeight="title"
       size={16}
       type="#59636f"
-    />
-    <div
-      className="c2 icon"
     >
+      <span
+        className="text "
+      />
       <div
-        className="hit-area"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-      <i
-        className="wg-question"
-      />
+        className="c2 icon"
+      >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots More info extended style 1`] = `
+.c4 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c4 .farmblocks-icon {
+  display: block;
+}
+
 .c3 {
   position: relative;
   display: inline-block;
@@ -352,9 +460,13 @@ exports[`Storyshots More info extended style 1`] = `
 
 .c0 .icon {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   cursor: pointer;
   color: #59636f;
+}
+
+.c0 .icon .farmblocks-icon {
+  font-size: 1.2em;
 }
 
 .c0 .icon:hover,
@@ -370,7 +482,7 @@ exports[`Storyshots More info extended style 1`] = `
   position: relative;
 }
 
-.c1 .icon i {
+.c1 .icon svg {
   visibility: hidden;
 }
 
@@ -395,24 +507,44 @@ exports[`Storyshots More info extended style 1`] = `
     className="c0 c1"
   >
     <div
-      className="c2 text "
+      className="c2"
       fontWeight="title"
       size={16}
       type="#59636f"
     >
-      How much wood could a woodchuck chuck if a woodchuck could chuck wood?
-    </div>
-    <div
-      className="c3 icon"
-    >
+      <span
+        className="text "
+      >
+        How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+      </span>
       <div
-        className="hit-area"
-        onMouseLeave={[Function]}
-        onMouseOver={[Function]}
-      />
-      <i
-        className="wg-question"
-      />
+        className="c3 icon"
+      >
+        <div
+          className="hit-area"
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+        />
+        <span
+          className="c4"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>

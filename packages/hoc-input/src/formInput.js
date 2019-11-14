@@ -171,7 +171,11 @@ const formInput = WrappedComponent => {
       const iconName = leftIcon || (isSearch && <MdSearch />);
 
       const clearButton = (clearable || isSearch) && this.state.value && (
-        <Link className="clear" onClick={this.handleClearClick}>
+        <Link
+          className="clear"
+          data-testid="input-clear"
+          onClick={this.handleClearClick}
+        >
           {clearIcon}
         </Link>
       );

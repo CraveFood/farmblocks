@@ -160,21 +160,22 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
 
 .c3 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c3 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c3 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c3 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -343,21 +344,22 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
 
 .c0 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -416,7 +418,6 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -450,7 +451,6 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -480,6 +480,15 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
 `;
 
 exports[`Storyshots HOC formInput disabled html text input with combobox role 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -599,21 +608,22 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -678,7 +688,6 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
   >
     <div
       className="input dropdown"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -694,9 +703,25 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
       <div
         className="icon dropdown"
       >
-        <i
-          className="wg-small-arrow-bottom"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="2 2 20 20"
+            width="1em"
+          >
+            <path
+              d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
@@ -847,21 +872,22 @@ exports[`Storyshots HOC formInput extended style 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -936,7 +962,6 @@ exports[`Storyshots HOC formInput extended style 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -1108,21 +1133,22 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -1181,7 +1207,6 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -1330,21 +1355,22 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -1402,7 +1428,6 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -1419,6 +1444,15 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 `;
 
 exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1538,21 +1572,22 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -1610,14 +1645,29 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <div
       className="icon left"
     >
-      <i
-        className="wg-order"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M29.666 11.437a1 1 0 01.334.746V32a1 1 0 01-1 1H11a1 1 0 01-1-1V8a1 1 0 011-1h13.313a1 1 0 01.666.254l4.687 4.183zM28 13h-4V9.061L23.932 9H12v22h16V13zm-13 4.25a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <input
       className="wrapped"
@@ -1633,6 +1683,15 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
 `;
 
 exports[`Storyshots HOC formInput html search input 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1752,21 +1811,22 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -1824,14 +1884,29 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <div
       className="icon left"
     >
-      <i
-        className="wg-search"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <input
       className="wrapped"
@@ -1849,6 +1924,15 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 
 exports[`Storyshots HOC formInput html search input with custom clear icon 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -1861,35 +1945,35 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   color: #3498db;
 }
 
-.c1 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c1 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
-.c1 a {
+.c2 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 a:hover {
+.c2 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 a:hover i {
+.c2 a:hover i {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c2 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c2:hover {
   color: #2980b9;
 }
 
@@ -2012,21 +2096,22 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -2084,14 +2169,29 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <div
       className="icon left"
     >
-      <i
-        className="wg-search"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <input
       className="wrapped"
@@ -2103,17 +2203,34 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
       value="broccoli"
     />
     <div
-      className="c1 clear"
+      className="c2 clear"
       disabled={false}
       size={16}
       type="#3498db"
     >
       <span
+        data-testid="input-clear"
         onClick={[Function]}
       >
-        <i
-          className="wg-close"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M19.5 8V6a1 1 0 012 0v2H30a1 1 0 011 1v5a1 1 0 01-1 1h-1v17a1 1 0 01-1 1H12a1 1 0 01-1-1V15h-1a1 1 0 01-1-1V9a1 1 0 011-1h9.5zM24 31h3V15H13v16h3V18a.5.5 0 111 0v13h2.5V18a.5.5 0 111 0v13H23V18a.5.5 0 111 0v13zm5-18v-3H11v3h18z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </span>
     </div>
   </div>
@@ -2122,6 +2239,15 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 
 exports[`Storyshots HOC formInput html search input with value 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -2134,35 +2260,35 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   color: #3498db;
 }
 
-.c1 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c1 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
-.c1 a {
+.c2 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 a:hover {
+.c2 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 a:hover i {
+.c2 a:hover i {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c2 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c2:hover {
   color: #2980b9;
 }
 
@@ -2285,21 +2411,22 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -2357,14 +2484,29 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <div
       className="icon left"
     >
-      <i
-        className="wg-search"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <input
       className="wrapped"
@@ -2376,17 +2518,34 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
       value="broccoli"
     />
     <div
-      className="c1 clear"
+      className="c2 clear"
       disabled={false}
       size={16}
       type="#3498db"
     >
       <span
+        data-testid="input-clear"
         onClick={[Function]}
       >
-        <i
-          className="wg-close-int"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M21.414 20l4.243-4.243a1 1 0 10-1.414-1.414L20 18.586l-4.243-4.243a1 1 0 10-1.414 1.414L18.586 20l-4.243 4.243a1 1 0 101.414 1.414L20 21.414l4.243 4.243a1 1 0 101.414-1.414L21.414 20zm7.778 9.192c-5.076 5.077-13.308 5.077-18.384 0-5.077-5.077-5.077-13.307 0-18.384 5.076-5.077 13.308-5.077 18.384 0 5.076 5.076 5.076 13.308 0 18.384z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </span>
     </div>
   </div>
@@ -2513,21 +2672,22 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -2585,7 +2745,6 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -2601,6 +2760,15 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 `;
 
 exports[`Storyshots HOC formInput html text input with combobox readonly role 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2720,21 +2888,22 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -2799,7 +2968,6 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   >
     <div
       className="input dropdown"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -2816,9 +2984,25 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
       <div
         className="icon dropdown"
       >
-        <i
-          className="wg-small-arrow-bottom"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="2 2 20 20"
+            width="1em"
+          >
+            <path
+              d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
@@ -2826,6 +3010,15 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
 `;
 
 exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2945,21 +3138,22 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3024,7 +3218,6 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   >
     <div
       className="input dropdown"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -3040,9 +3233,25 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
       <div
         className="icon dropdown"
       >
-        <i
-          className="wg-small-arrow-bottom"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="2 2 20 20"
+            width="1em"
+          >
+            <path
+              d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
@@ -3193,21 +3402,22 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3265,7 +3475,6 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -3437,21 +3646,22 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3509,7 +3719,6 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -3681,21 +3890,22 @@ exports[`Storyshots HOC formInput html text input with label and active flag 1`]
 
 .c0 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3753,7 +3963,6 @@ exports[`Storyshots HOC formInput html text input with label and active flag 1`]
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -3925,21 +4134,22 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
 
 .c0 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3997,7 +4207,6 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -4169,21 +4378,22 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -4241,7 +4451,6 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -4390,21 +4599,22 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -4462,7 +4672,6 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <textarea
       className="wrapped"
@@ -4598,7 +4807,8 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
@@ -4606,13 +4816,13 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 8px;
 }
 
@@ -4671,7 +4881,6 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -4831,21 +5040,22 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
 
 .c0 > .input > .icon {
   color: #dd3311;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -4903,7 +5113,6 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -5075,21 +5284,22 @@ exports[`Storyshots HOC formInput small container 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -5154,7 +5364,6 @@ exports[`Storyshots HOC formInput small container 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -5188,7 +5397,6 @@ exports[`Storyshots HOC formInput small container 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -5227,7 +5435,6 @@ exports[`Storyshots HOC formInput small container 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -5266,7 +5473,6 @@ exports[`Storyshots HOC formInput small container 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -5306,6 +5512,15 @@ exports[`Storyshots HOC formInput small container 1`] = `
 `;
 
 exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5425,7 +5640,8 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
@@ -5433,13 +5649,13 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 8px;
 }
 
@@ -5498,14 +5714,29 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <div
       className="icon left"
     >
-      <i
-        className="wg-order"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M29.666 11.437a1 1 0 01.334.746V32a1 1 0 01-1 1H11a1 1 0 01-1-1V8a1 1 0 011-1h13.313a1 1 0 01.666.254l4.687 4.183zM28 13h-4V9.061L23.932 9H12v22h16V13zm-13 4.25a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <input
       className="wrapped"
@@ -5523,6 +5754,15 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
 
 exports[`Storyshots HOC formInput small html search input with value 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -5535,35 +5775,35 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
   color: #3498db;
 }
 
-.c1 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c1 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
-.c1 a {
+.c2 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 a:hover {
+.c2 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 a:hover i {
+.c2 a:hover i {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 > a {
+.c2 > a {
   color: inherit;
 }
 
-.c1:hover {
+.c2:hover {
   color: #2980b9;
 }
 
@@ -5686,7 +5926,8 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
@@ -5694,13 +5935,13 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 8px;
 }
 
@@ -5759,14 +6000,29 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <div
       className="icon left"
     >
-      <i
-        className="wg-search"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <input
       className="wrapped"
@@ -5779,17 +6035,34 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
       value="broccoli"
     />
     <div
-      className="c1 clear"
+      className="c2 clear"
       disabled={false}
       size={16}
       type="#3498db"
     >
       <span
+        data-testid="input-clear"
         onClick={[Function]}
       >
-        <i
-          className="wg-close-int"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M21.414 20l4.243-4.243a1 1 0 10-1.414-1.414L20 18.586l-4.243-4.243a1 1 0 10-1.414 1.414L18.586 20l-4.243 4.243a1 1 0 101.414 1.414L20 21.414l4.243 4.243a1 1 0 101.414-1.414L21.414 20zm7.778 9.192c-5.076 5.077-13.308 5.077-18.384 0-5.077-5.077-5.077-13.307 0-18.384 5.076-5.077 13.308-5.077 18.384 0 5.076 5.076 5.076 13.308 0 18.384z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </span>
     </div>
   </div>
@@ -5940,21 +6213,22 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -6013,7 +6287,6 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -6047,7 +6320,6 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -6077,6 +6349,15 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 `;
 
 exports[`Storyshots HOC formInput with label and more info 1`] = `
+.c7 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c7 .farmblocks-icon {
+  display: block;
+}
+
 .c6 {
   position: relative;
   display: inline-block;
@@ -6149,9 +6430,13 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
 
 .c3 .icon {
   display: inline-block;
-  margin: 0 8px;
+  margin: 0 4px;
   cursor: pointer;
   color: #59636f;
+}
+
+.c3 .icon .farmblocks-icon {
+  font-size: 1.2em;
 }
 
 .c3 .icon:hover,
@@ -6291,21 +6576,22 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -6363,7 +6649,6 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
 >
   <div
     className="input"
-    onMouseDown={[Function]}
   >
     <input
       className="wrapped"
@@ -6391,22 +6676,42 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
       className="c3 c4 moreInfo"
     >
       <div
-        className="c5 text "
+        className="c5"
         fontWeight="title"
         size={16}
         type="#59636f"
-      />
-      <div
-        className="c6 icon"
       >
+        <span
+          className="text "
+        />
         <div
-          className="hit-area"
-          onMouseLeave={[Function]}
-          onMouseOver={[Function]}
-        />
-        <i
-          className="wg-question"
-        />
+          className="c6 icon"
+        >
+          <div
+            className="hit-area"
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+          />
+          <span
+            className="c7"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height="1em"
+              viewBox="4 4 32 32"
+              width="1em"
+            >
+              <path
+                d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -6414,6 +6719,15 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
 `;
 
 exports[`Storyshots HOC formInput with prefix 1`] = `
+.c10 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c10 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -6605,21 +6919,22 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -6788,21 +7103,22 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -6971,21 +7287,22 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 
 .c3 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c3 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c3 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c3 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -7154,21 +7471,22 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 
 .c5 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c5 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c5 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c5 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -7337,21 +7655,22 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 
 .c8 > .input > .icon {
   color: #dd3311;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c8 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c8 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c8 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -7401,7 +7720,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7411,7 +7730,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   flex-direction: column;
 }
 
-.c10 > .input {
+.c11 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -7436,25 +7755,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   overflow: auto;
 }
 
-.c10 > .input .wrapped {
+.c11 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c10 > .input > input,
-.select__search .c10 > .input input {
+.c11 > .input > input,
+.select__search .c11 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c10 > .input > textarea {
+.c11 > .input > textarea {
   padding: 16px;
 }
 
-.c10 > .input > input,
-.c10 > .input > textarea,
-.select__search .c10 > .input input {
+.c11 > .input > input,
+.c11 > .input > textarea,
+.select__search .c11 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -7467,105 +7786,106 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   background: none;
 }
 
-.c10 > .input > input::-webkit-input-placeholder,
-.c10 > .input > textarea::-webkit-input-placeholder,
-.select__search .c10 > .input input::-webkit-input-placeholder {
+.c11 > .input > input::-webkit-input-placeholder,
+.c11 > .input > textarea::-webkit-input-placeholder,
+.select__search .c11 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input::-moz-placeholder,
-.c10 > .input > textarea::-moz-placeholder,
-.select__search .c10 > .input input::-moz-placeholder {
+.c11 > .input > input::-moz-placeholder,
+.c11 > .input > textarea::-moz-placeholder,
+.select__search .c11 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input:-ms-input-placeholder,
-.c10 > .input > textarea:-ms-input-placeholder,
-.select__search .c10 > .input input:-ms-input-placeholder {
+.c11 > .input > input:-ms-input-placeholder,
+.c11 > .input > textarea:-ms-input-placeholder,
+.select__search .c11 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input::placeholder,
-.c10 > .input > textarea::placeholder,
-.select__search .c10 > .input input::placeholder {
+.c11 > .input > input::placeholder,
+.c11 > .input > textarea::placeholder,
+.select__search .c11 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input[type="search"],
-.c10 > .input > textarea[type="search"],
-.select__search .c10 > .input input[type="search"] {
+.c11 > .input > input[type="search"],
+.c11 > .input > textarea[type="search"],
+.select__search .c11 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
+.c11 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c11 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c11 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c10 > .input > input[type="search"]::-ms-clear,
-.c10 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c10 > .input input[type="search"]::-ms-clear {
+.c11 > .input > input[type="search"]::-ms-clear,
+.c11 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c11 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c10 > .input > input[role="combobox"],
-.c10 > .input > textarea[role="combobox"],
-.select__search .c10 > .input input[role="combobox"] {
+.c11 > .input > input[role="combobox"],
+.c11 > .input > textarea[role="combobox"],
+.select__search .c11 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c10 > .input > .icon {
+.c11 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
-.c10 > .input > .icon.left {
+.c11 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c10 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+.c11 > .input > .icon.dropdown {
+  margin: 0 8px;
 }
 
-.c10 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+.c11 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 8px;
 }
 
-.c10 > .input > .clear:hover {
+.c11 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c10 > .input > .clear a {
+.c11 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c10 .input.dropdown {
+.c11 .input.dropdown {
   cursor: pointer;
 }
 
-.c10 input[type="number"] {
+.c11 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c10 input[type="number"]::-webkit-inner-spin-button,
-.c10 input[type="number"]::-webkit-outer-spin-button {
+.c11 input[type="number"]::-webkit-inner-spin-button,
+.c11 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c10 .prefix,
-.c10 .suffix {
+.c11 .prefix,
+.c11 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -7593,7 +7913,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7632,7 +7951,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7671,7 +7989,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7710,7 +8027,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7749,7 +8065,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7788,7 +8103,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7798,9 +8112,25 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
       <div
         className="icon left"
       >
-        <i
-          className="wg-search"
-        />
+        <span
+          className="c10"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <input
         className="wrapped"
@@ -7828,7 +8158,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
     </div>
   </div>
   <div
-    className="c10"
+    className="c11"
     disabled={false}
     fontSize={14}
     onClick={[Function]}
@@ -7836,7 +8166,6 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -7872,6 +8201,15 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 `;
 
 exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
+.c10 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c10 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -8063,21 +8401,22 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -8246,21 +8585,22 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -8429,21 +8769,22 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 
 .c3 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c3 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c3 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c3 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -8612,21 +8953,22 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 
 .c5 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c5 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c5 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c5 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -8795,21 +9137,22 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 
 .c8 > .input > .icon {
   color: #dd3311;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c8 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c8 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c8 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -8859,7 +9202,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8869,7 +9212,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   flex-direction: column;
 }
 
-.c10 > .input {
+.c11 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -8894,25 +9237,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   overflow: auto;
 }
 
-.c10 > .input .wrapped {
+.c11 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c10 > .input > input,
-.select__search .c10 > .input input {
+.c11 > .input > input,
+.select__search .c11 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c10 > .input > textarea {
+.c11 > .input > textarea {
   padding: 16px;
 }
 
-.c10 > .input > input,
-.c10 > .input > textarea,
-.select__search .c10 > .input input {
+.c11 > .input > input,
+.c11 > .input > textarea,
+.select__search .c11 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -8925,105 +9268,106 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   background: none;
 }
 
-.c10 > .input > input::-webkit-input-placeholder,
-.c10 > .input > textarea::-webkit-input-placeholder,
-.select__search .c10 > .input input::-webkit-input-placeholder {
+.c11 > .input > input::-webkit-input-placeholder,
+.c11 > .input > textarea::-webkit-input-placeholder,
+.select__search .c11 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input::-moz-placeholder,
-.c10 > .input > textarea::-moz-placeholder,
-.select__search .c10 > .input input::-moz-placeholder {
+.c11 > .input > input::-moz-placeholder,
+.c11 > .input > textarea::-moz-placeholder,
+.select__search .c11 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input:-ms-input-placeholder,
-.c10 > .input > textarea:-ms-input-placeholder,
-.select__search .c10 > .input input:-ms-input-placeholder {
+.c11 > .input > input:-ms-input-placeholder,
+.c11 > .input > textarea:-ms-input-placeholder,
+.select__search .c11 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input::placeholder,
-.c10 > .input > textarea::placeholder,
-.select__search .c10 > .input input::placeholder {
+.c11 > .input > input::placeholder,
+.c11 > .input > textarea::placeholder,
+.select__search .c11 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input[type="search"],
-.c10 > .input > textarea[type="search"],
-.select__search .c10 > .input input[type="search"] {
+.c11 > .input > input[type="search"],
+.c11 > .input > textarea[type="search"],
+.select__search .c11 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
+.c11 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c11 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c11 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c10 > .input > input[type="search"]::-ms-clear,
-.c10 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c10 > .input input[type="search"]::-ms-clear {
+.c11 > .input > input[type="search"]::-ms-clear,
+.c11 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c11 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c10 > .input > input[role="combobox"],
-.c10 > .input > textarea[role="combobox"],
-.select__search .c10 > .input input[role="combobox"] {
+.c11 > .input > input[role="combobox"],
+.c11 > .input > textarea[role="combobox"],
+.select__search .c11 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c10 > .input > .icon {
+.c11 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
-.c10 > .input > .icon.left {
+.c11 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c10 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+.c11 > .input > .icon.dropdown {
+  margin: 0 8px;
 }
 
-.c10 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+.c11 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 8px;
 }
 
-.c10 > .input > .clear:hover {
+.c11 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c10 > .input > .clear a {
+.c11 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c10 .input.dropdown {
+.c11 .input.dropdown {
   cursor: pointer;
 }
 
-.c10 input[type="number"] {
+.c11 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c10 input[type="number"]::-webkit-inner-spin-button,
-.c10 input[type="number"]::-webkit-outer-spin-button {
+.c11 input[type="number"]::-webkit-inner-spin-button,
+.c11 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c10 .prefix,
-.c10 .suffix {
+.c11 .prefix,
+.c11 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -9051,7 +9395,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9095,7 +9438,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9139,7 +9481,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9183,7 +9524,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9227,7 +9567,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9271,7 +9610,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9281,9 +9619,25 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
       <div
         className="icon left"
       >
-        <i
-          className="wg-search"
-        />
+        <span
+          className="c10"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <input
         className="wrapped"
@@ -9316,7 +9670,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
     </div>
   </div>
   <div
-    className="c10"
+    className="c11"
     disabled={false}
     fontSize={14}
     onClick={[Function]}
@@ -9324,7 +9678,6 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="prefix"
@@ -9365,6 +9718,15 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 `;
 
 exports[`Storyshots HOC formInput with suffix 1`] = `
+.c10 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c10 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 14px;
@@ -9556,21 +9918,22 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -9739,21 +10102,22 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 
 .c0 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c0 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c0 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c0 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -9922,21 +10286,22 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 
 .c3 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c3 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c3 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c3 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -10105,21 +10470,22 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 
 .c5 > .input > .icon {
   color: #3498db;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c5 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c5 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c5 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -10288,21 +10654,22 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 
 .c8 > .input > .icon {
   color: #dd3311;
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c8 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c8 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c8 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -10352,7 +10719,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10362,7 +10729,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   flex-direction: column;
 }
 
-.c10 > .input {
+.c11 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -10387,25 +10754,25 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   overflow: auto;
 }
 
-.c10 > .input .wrapped {
+.c11 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c10 > .input > input,
-.select__search .c10 > .input input {
+.c11 > .input > input,
+.select__search .c11 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c10 > .input > textarea {
+.c11 > .input > textarea {
   padding: 16px;
 }
 
-.c10 > .input > input,
-.c10 > .input > textarea,
-.select__search .c10 > .input input {
+.c11 > .input > input,
+.c11 > .input > textarea,
+.select__search .c11 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -10418,105 +10785,106 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   background: none;
 }
 
-.c10 > .input > input::-webkit-input-placeholder,
-.c10 > .input > textarea::-webkit-input-placeholder,
-.select__search .c10 > .input input::-webkit-input-placeholder {
+.c11 > .input > input::-webkit-input-placeholder,
+.c11 > .input > textarea::-webkit-input-placeholder,
+.select__search .c11 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input::-moz-placeholder,
-.c10 > .input > textarea::-moz-placeholder,
-.select__search .c10 > .input input::-moz-placeholder {
+.c11 > .input > input::-moz-placeholder,
+.c11 > .input > textarea::-moz-placeholder,
+.select__search .c11 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input:-ms-input-placeholder,
-.c10 > .input > textarea:-ms-input-placeholder,
-.select__search .c10 > .input input:-ms-input-placeholder {
+.c11 > .input > input:-ms-input-placeholder,
+.c11 > .input > textarea:-ms-input-placeholder,
+.select__search .c11 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input::placeholder,
-.c10 > .input > textarea::placeholder,
-.select__search .c10 > .input input::placeholder {
+.c11 > .input > input::placeholder,
+.c11 > .input > textarea::placeholder,
+.select__search .c11 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c10 > .input > input[type="search"],
-.c10 > .input > textarea[type="search"],
-.select__search .c10 > .input input[type="search"] {
+.c11 > .input > input[type="search"],
+.c11 > .input > textarea[type="search"],
+.select__search .c11 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
+.c11 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c11 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c11 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c10 > .input > input[type="search"]::-ms-clear,
-.c10 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c10 > .input input[type="search"]::-ms-clear {
+.c11 > .input > input[type="search"]::-ms-clear,
+.c11 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c11 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c10 > .input > input[role="combobox"],
-.c10 > .input > textarea[role="combobox"],
-.select__search .c10 > .input input[role="combobox"] {
+.c11 > .input > input[role="combobox"],
+.c11 > .input > textarea[role="combobox"],
+.select__search .c11 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c10 > .input > .icon {
+.c11 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
-.c10 > .input > .icon.left {
+.c11 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c10 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+.c11 > .input > .icon.dropdown {
+  margin: 0 8px;
 }
 
-.c10 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+.c11 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 8px;
 }
 
-.c10 > .input > .clear:hover {
+.c11 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c10 > .input > .clear a {
+.c11 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c10 .input.dropdown {
+.c11 .input.dropdown {
   cursor: pointer;
 }
 
-.c10 input[type="number"] {
+.c11 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c10 input[type="number"]::-webkit-inner-spin-button,
-.c10 input[type="number"]::-webkit-outer-spin-button {
+.c11 input[type="number"]::-webkit-inner-spin-button,
+.c11 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c10 .prefix,
-.c10 .suffix {
+.c11 .prefix,
+.c11 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -10544,7 +10912,6 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -10583,7 +10950,6 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -10622,7 +10988,6 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -10661,7 +11026,6 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -10700,7 +11064,6 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"
@@ -10739,14 +11102,29 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <div
         className="icon left"
       >
-        <i
-          className="wg-search"
-        />
+        <span
+          className="c10"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <input
         className="wrapped"
@@ -10779,7 +11157,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
     </div>
   </div>
   <div
-    className="c10"
+    className="c11"
     disabled={false}
     fontSize={14}
     onClick={[Function]}
@@ -10787,7 +11165,6 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   >
     <div
       className="input"
-      onMouseDown={[Function]}
     >
       <input
         className="wrapped"

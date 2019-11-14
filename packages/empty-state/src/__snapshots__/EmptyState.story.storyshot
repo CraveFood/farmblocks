@@ -50,7 +50,11 @@ exports[`Storyshots EmptyState Default 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -131,7 +135,11 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -173,6 +181,15 @@ exports[`Storyshots EmptyState Long Title, inside a container 1`] = `
 
 exports[`Storyshots EmptyState With icon 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
@@ -182,7 +199,7 @@ exports[`Storyshots EmptyState With icon 1`] = `
   font-weight: 600;
 }
 
-.c2 {
+.c3 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -221,7 +238,11 @@ exports[`Storyshots EmptyState With icon 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -235,12 +256,28 @@ exports[`Storyshots EmptyState With icon 1`] = `
   <div
     className="icon"
   >
-    <i
-      className="wg-order"
-    />
+    <span
+      className="c1"
+      color="currentColor"
+      size="1em"
+    >
+      <svg
+        aria-hidden={true}
+        className="farmblocks-icon "
+        height="1em"
+        viewBox="4 4 32 32"
+        width="1em"
+      >
+        <path
+          d="M29.666 11.437a1 1 0 01.334.746V32a1 1 0 01-1 1H11a1 1 0 01-1-1V8a1 1 0 011-1h13.313a1 1 0 01.666.254l4.687 4.183zM28 13h-4V9.061L23.932 9H12v22h16V13zm-13 4.25a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15z"
+          fill="currentColor"
+          fillRule="nonzero"
+        />
+      </svg>
+    </span>
   </div>
   <div
-    className="c1 title"
+    className="c2 title"
     fontWeight="title"
     size={24}
     type="#2f313a"
@@ -248,7 +285,7 @@ exports[`Storyshots EmptyState With icon 1`] = `
     Empty State Title
   </div>
   <div
-    className="c2 description"
+    className="c3 description"
     fontWeight="inherit"
     size={18}
     type="#59636f"
@@ -314,7 +351,11 @@ exports[`Storyshots EmptyState With image 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -353,20 +394,30 @@ exports[`Storyshots EmptyState With image 1`] = `
 `;
 
 exports[`Storyshots EmptyState With loading action 1`] = `
-.c3 {
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -387,56 +438,59 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   padding: 0 16px;
 }
 
-.c3 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.c4 .icon {
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
-.c3:hover {
+.c4:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
 }
 
-.c3:focus {
+.c4:focus {
   box-shadow: none;
 }
 
-.c3:hover .icon,
-.c3:focus .icon {
+.c4:hover .icon,
+.c4:focus .icon {
   color: white;
 }
 
-.c3 > .icon.left-icon i::before {
+.c4 > .icon.left-icon i::before {
   display: inline-block;
   -webkit-animation: spin 1.1s infinite linear;
   animation: spin 1.1s infinite linear;
 }
 
-.c3:hover {
+.c4:hover {
   background-color: #2980b9;
 }
 
-.c3:focus {
+.c4:focus {
   background-color: #2980b9;
 }
 
-.c3:disabled,
-.c3:disabled .icon,
-.c3:disabled:hover {
+.c4:disabled,
+.c4:disabled .icon,
+.c4:disabled:hover {
   color: rgba(0,0,0,0.32);
 }
 
-.c3:disabled {
+.c4:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
 
-.c1 {
+.c5 {
+  -webkit-animation: 2s linear 0s infinite normal iVXCSc;
+  animation: 2s linear 0s infinite normal iVXCSc;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
@@ -446,7 +500,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   font-weight: 600;
 }
 
-.c2 {
+.c3 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -485,7 +539,11 @@ exports[`Storyshots EmptyState With loading action 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -499,12 +557,28 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   <div
     className="icon"
   >
-    <i
-      className="wg-alert"
-    />
+    <span
+      className="c1"
+      color="currentColor"
+      size="1em"
+    >
+      <svg
+        aria-hidden={true}
+        className="farmblocks-icon "
+        height="1em"
+        viewBox="4 4 32 32"
+        width="1em"
+      >
+        <path
+          d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13 4.019c1.119 0 1.948.828 1.948 1.903v.044c0 1.074-.83 1.903-1.948 1.903-1.119 0-1.948-.829-1.948-1.903v-.044c0-1.075.83-1.903 1.948-1.903zM18.008 13.14c-.067-.648.292-1.14.895-1.14h2.195c.602 0 .961.492.894 1.14l-.962 8.416c-.068.605-.47.986-1.03.986s-.962-.38-1.03-.986l-.962-8.416z"
+          fill="currentColor"
+          fillRule="nonzero"
+        />
+      </svg>
+    </span>
   </div>
   <div
-    className="c1 title"
+    className="c2 title"
     fontWeight="title"
     size={24}
     type="#2f313a"
@@ -512,7 +586,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
     Empty State Title
   </div>
   <div
-    className="c2 description"
+    className="c3 description"
     fontWeight="inherit"
     size={18}
     type="#59636f"
@@ -523,7 +597,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
     className="buttons"
   >
     <button
-      className="c3"
+      className="c4"
       data-testid="empty-state-button-Primary Action"
       disabled={true}
       onClick={[Function]}
@@ -534,13 +608,30 @@ exports[`Storyshots EmptyState With loading action 1`] = `
         className="icon left-icon"
         style={
           Object {
-            "marginRight": 10,
+            "transform": "translateX(-6px)",
           }
         }
       >
-        <i
-          className="wg-loading"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon c5"
+            data-testid="loading"
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M19 8a1 1 0 012 0v6a1 1 0 01-2 0V8zm2 24a1 1 0 01-2 0v-5a1 1 0 012 0v5zM8 21a1 1 0 010-2h6a1 1 0 010 2H8zm18-.5a.5.5 0 110-1h6a.5.5 0 110 1h-6zm3.197 7.283a1 1 0 01-1.414 1.414l-3.86-3.86a1 1 0 011.414-1.414l3.86 3.86zm-12.87-12.87a1 1 0 01-1.414 1.414l-4.11-4.11a1 1 0 011.414-1.414l4.11 4.11zm-1.664 9.01a1 1 0 011.414 1.414l-3.86 3.86a1 1 0 01-1.414-1.414l3.86-3.86zm13.12-13.12a1 1 0 011.414 1.414l-4.11 4.11a1 1 0 01-1.414-1.414l4.11-4.11z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       Primary Action
     </button>
@@ -549,20 +640,30 @@ exports[`Storyshots EmptyState With loading action 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c5 .farmblocks-icon {
+  display: block;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -584,14 +685,12 @@ exports[`Storyshots EmptyState With one action 1`] = `
 }
 
 .c4 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c4:hover {
@@ -681,7 +780,11 @@ exports[`Storyshots EmptyState With one action 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -726,6 +829,34 @@ exports[`Storyshots EmptyState With one action 1`] = `
       size="MEDIUM"
       type="SECONDARY"
     >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-6px)",
+          }
+        }
+      >
+        <span
+          className="c5"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M25.598 9C30.145 9 33 11.716 33 16.094c0 1.638-.652 3.22-1.724 4.708a12.92 12.92 0 01-1.66 1.881l-8.33 7.8c-.346.337-.81.517-1.286.517s-.94-.18-1.273-.505l-8.321-7.806c-.427-.363-1.113-1.086-1.735-1.962C7.631 19.262 7 17.704 7 16.094 7 11.716 9.855 9 14.402 9c1.981 0 3.874.98 5.598 2.461C21.724 9.98 23.617 9 25.598 9zM14.79 11.202a5.5 5.5 0 00-5.5 5.5.5.5 0 101 0 4.5 4.5 0 014.5-4.5.5.5 0 000-1z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
       Primary Action
     </button>
   </div>
@@ -733,20 +864,30 @@ exports[`Storyshots EmptyState With one action 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action and info 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c5 .farmblocks-icon {
+  display: block;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -768,14 +909,12 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 }
 
 .c4 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c4:hover {
@@ -830,7 +969,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   font-weight: inherit;
 }
 
-.c5 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -875,7 +1014,11 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -920,11 +1063,39 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
       size="MEDIUM"
       type="SECONDARY"
     >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-6px)",
+          }
+        }
+      >
+        <span
+          className="c5"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M25.598 9C30.145 9 33 11.716 33 16.094c0 1.638-.652 3.22-1.724 4.708a12.92 12.92 0 01-1.66 1.881l-8.33 7.8c-.346.337-.81.517-1.286.517s-.94-.18-1.273-.505l-8.321-7.806c-.427-.363-1.113-1.086-1.735-1.962C7.631 19.262 7 17.704 7 16.094 7 11.716 9.855 9 14.402 9c1.981 0 3.874.98 5.598 2.461C21.724 9.98 23.617 9 25.598 9zM14.79 11.202a5.5 5.5 0 00-5.5 5.5.5.5 0 101 0 4.5 4.5 0 014.5-4.5.5.5 0 000-1z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
       Primary Action
     </button>
   </div>
   <div
-    className="c5 info"
+    className="c6 info"
     fontWeight="inherit"
     size={14}
     type="#59636f"
@@ -935,20 +1106,30 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
 `;
 
 exports[`Storyshots EmptyState With one action, inside a container 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c5 .farmblocks-icon {
+  display: block;
+}
+
 .c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -970,14 +1151,12 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 }
 
 .c4 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c4:hover {
@@ -1067,7 +1246,11 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -1120,6 +1303,34 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
         size="MEDIUM"
         type="SECONDARY"
       >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-6px)",
+            }
+          }
+        >
+          <span
+            className="c5"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height="1em"
+              viewBox="4 4 32 32"
+              width="1em"
+            >
+              <path
+                d="M25.598 9C30.145 9 33 11.716 33 16.094c0 1.638-.652 3.22-1.724 4.708a12.92 12.92 0 01-1.66 1.881l-8.33 7.8c-.346.337-.81.517-1.286.517s-.94-.18-1.273-.505l-8.321-7.806c-.427-.363-1.113-1.086-1.735-1.962C7.631 19.262 7 17.704 7 16.094 7 11.716 9.855 9 14.402 9c1.981 0 3.874.98 5.598 2.461C21.724 9.98 23.617 9 25.598 9zM14.79 11.202a5.5 5.5 0 00-5.5 5.5.5.5 0 101 0 4.5 4.5 0 014.5-4.5.5.5 0 000-1z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
         Primary Action
       </button>
     </div>
@@ -1128,81 +1339,13 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
 `;
 
 exports[`Storyshots EmptyState With two actions 1`] = `
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
+.c6 {
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 
-.c5 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c5:focus {
-  box-shadow: none;
-}
-
-.c5:hover .icon,
-.c5:focus .icon {
-  color: white;
-}
-
-.c5:hover {
-  background-color: #2980b9;
-}
-
-.c5:focus {
-  background-color: #2980b9;
-}
-
-.c5:disabled,
-.c5:disabled .icon,
-.c5:disabled:hover {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5:disabled {
-  background-color: #ccc;
-  box-shadow: none;
+.c6 .farmblocks-icon {
+  display: block;
 }
 
 .c4 {
@@ -1210,15 +1353,16 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1239,14 +1383,12 @@ exports[`Storyshots EmptyState With two actions 1`] = `
 }
 
 .c4 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c4:hover {
@@ -1284,6 +1426,82 @@ exports[`Storyshots EmptyState With two actions 1`] = `
 }
 
 .c4:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #3498db;
+  padding: 0 16px;
+}
+
+.c5 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c5:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c5:focus {
+  box-shadow: none;
+}
+
+.c5:hover .icon,
+.c5:focus .icon {
+  color: white;
+}
+
+.c5:hover {
+  background-color: #2980b9;
+}
+
+.c5:focus {
+  background-color: #2980b9;
+}
+
+.c5:disabled,
+.c5:disabled .icon,
+.c5:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5:disabled {
   background-color: #ccc;
   box-shadow: none;
 }
@@ -1343,7 +1561,11 @@ exports[`Storyshots EmptyState With two actions 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -1397,6 +1619,34 @@ exports[`Storyshots EmptyState With two actions 1`] = `
       size="MEDIUM"
       type="SECONDARY"
     >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-6px)",
+          }
+        }
+      >
+        <span
+          className="c6"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M25.598 9C30.145 9 33 11.716 33 16.094c0 1.638-.652 3.22-1.724 4.708a12.92 12.92 0 01-1.66 1.881l-8.33 7.8c-.346.337-.81.517-1.286.517s-.94-.18-1.273-.505l-8.321-7.806c-.427-.363-1.113-1.086-1.735-1.962C7.631 19.262 7 17.704 7 16.094 7 11.716 9.855 9 14.402 9c1.981 0 3.874.98 5.598 2.461C21.724 9.98 23.617 9 25.598 9zM14.79 11.202a5.5 5.5 0 00-5.5 5.5.5.5 0 101 0 4.5 4.5 0 014.5-4.5.5.5 0 000-1z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
       Primary Action
     </button>
   </div>
@@ -1405,6 +1655,15 @@ exports[`Storyshots EmptyState With two actions 1`] = `
 
 exports[`Storyshots EmptyState extended style 1`] = `
 .c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
+.c3 {
   font-family: Lato,sans-serif;
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
@@ -1414,7 +1673,7 @@ exports[`Storyshots EmptyState extended style 1`] = `
   font-weight: 600;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1424,7 +1683,7 @@ exports[`Storyshots EmptyState extended style 1`] = `
   font-weight: inherit;
 }
 
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -1463,7 +1722,11 @@ exports[`Storyshots EmptyState extended style 1`] = `
 
 .c0 > .buttons > * {
   margin: 0 8px;
-  display: inline;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .c0 > .icon {
@@ -1498,12 +1761,28 @@ exports[`Storyshots EmptyState extended style 1`] = `
   <div
     className="icon"
   >
-    <i
-      className="wg-order"
-    />
+    <span
+      className="c2"
+      color="currentColor"
+      size="1em"
+    >
+      <svg
+        aria-hidden={true}
+        className="farmblocks-icon "
+        height="1em"
+        viewBox="4 4 32 32"
+        width="1em"
+      >
+        <path
+          d="M29.666 11.437a1 1 0 01.334.746V32a1 1 0 01-1 1H11a1 1 0 01-1-1V8a1 1 0 011-1h13.313a1 1 0 01.666.254l4.687 4.183zM28 13h-4V9.061L23.932 9H12v22h16V13zm-13 4.25a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15zm0 3a.75.75 0 110-1.5h10a.75.75 0 110 1.5H15z"
+          fill="currentColor"
+          fillRule="nonzero"
+        />
+      </svg>
+    </span>
   </div>
   <div
-    className="c2 title"
+    className="c3 title"
     fontWeight="title"
     size={24}
     type="#2f313a"
@@ -1511,7 +1790,7 @@ exports[`Storyshots EmptyState extended style 1`] = `
     Empty State Title
   </div>
   <div
-    className="c3 description"
+    className="c4 description"
     fontWeight="inherit"
     size={18}
     type="#59636f"
@@ -1519,7 +1798,7 @@ exports[`Storyshots EmptyState extended style 1`] = `
     Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.
   </div>
   <div
-    className="c4 info"
+    className="c5 info"
     fontWeight="inherit"
     size={14}
     type="#59636f"

@@ -1,21 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Stepper default 1`] = `
-.c3 {
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
+.c4 {
   font-family: Lato,sans-serif;
-  size: 18px;
-  line-height: 1.33;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   background: white;
-  padding: 16px 24px;
+  padding: 8px 24px;
+  min-height: 48px;
   color: #2f313a;
   opacity: 0.24;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c4 .description {
+  padding: 0 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  line-height: 1.33;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 8px 24px;
+  min-height: 48px;
+  cursor: pointer;
+  color: #2f313a;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -26,53 +69,30 @@ exports[`Storyshots Stepper default 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.c2 {
-  font-family: Lato,sans-serif;
-  size: 18px;
   line-height: 1.33;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  background: white;
-  padding: 16px 24px;
-  cursor: pointer;
-  color: #2f313a;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
-.c2 .description {
-  padding: 0 16px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c2:hover {
+.c3:hover {
   color: #3498db;
-  border: solid 2px #3498db;
+  border: solid 1px #3498db;
 }
 
 .c1 {
   font-family: Lato,sans-serif;
-  size: 18px;
-  line-height: 1.33;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   background: white;
-  padding: 16px 24px;
+  padding: 8px 24px;
+  min-height: 48px;
   color: #2f313a;
   color: white;
   background: #2ecc71;
@@ -86,6 +106,7 @@ exports[`Storyshots Stepper default 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  line-height: 1.33;
 }
 
 .c0 {
@@ -109,13 +130,25 @@ exports[`Storyshots Stepper default 1`] = `
         className="c1 step completed"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-check"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M10.721 14.453l5.49-7.066a1 1 0 011.579 1.226l-6.215 8a1 1 0 01-1.526.064l-2.785-3.03a1 1 0 011.472-1.354l1.985 2.16z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
@@ -130,13 +163,25 @@ exports[`Storyshots Stepper default 1`] = `
         className="c1 step completed"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-check"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M10.721 14.453l5.49-7.066a1 1 0 011.579 1.226l-6.215 8a1 1 0 01-1.526.064l-2.785-3.03a1 1 0 011.472-1.354l1.985 2.16z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
@@ -148,84 +193,156 @@ exports[`Storyshots Stepper default 1`] = `
       className="c0 stepContainer"
     >
       <div
-        className="c2 step current"
+        className="c3 step current"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-checker"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M17.778 4C19.005 4 20 4.995 20 6.222v11.556A2.222 2.222 0 0117.778 20H6.222A2.222 2.222 0 014 17.778V6.222C4 4.995 4.995 4 6.222 4h11.556zm-1.445 2H7.667C6.747 6 6 6.746 6 7.667v8.666C6 17.253 6.746 18 7.667 18h8.666c.92 0 1.667-.746 1.667-1.667V7.667C18 6.747 17.254 6 16.333 6z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
           Connect to purchasers
         </div>
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-small-arrow-right"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
     <div
       className="c0 stepContainer"
     >
       <div
-        className="c3 step pending"
+        className="c4 step pending"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-checker"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M17.778 4C19.005 4 20 4.995 20 6.222v11.556A2.222 2.222 0 0117.778 20H6.222A2.222 2.222 0 014 17.778V6.222C4 4.995 4.995 4 6.222 4h11.556zm-1.445 2H7.667C6.747 6 6 6.746 6 7.667v8.666C6 17.253 6.746 18 7.667 18h8.666c.92 0 1.667-.746 1.667-1.667V7.667C18 6.747 17.254 6 16.333 6z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
           Add products
         </div>
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-small-arrow-right"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
     <div
       className="c0 stepContainer"
     >
       <div
-        className="c3 step pending"
+        className="c4 step pending"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-checker"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M17.778 4C19.005 4 20 4.995 20 6.222v11.556A2.222 2.222 0 0117.778 20H6.222A2.222 2.222 0 014 17.778V6.222C4 4.995 4.995 4 6.222 4h11.556zm-1.445 2H7.667C6.747 6 6 6.746 6 7.667v8.666C6 17.253 6.746 18 7.667 18h8.666c.92 0 1.667-.746 1.667-1.667V7.667C18 6.747 17.254 6 16.333 6z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
           Start selling
         </div>
-        <div
-          className="icon"
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-small-arrow-right"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
@@ -233,21 +350,64 @@ exports[`Storyshots Stepper default 1`] = `
 `;
 
 exports[`Storyshots Stepper extended style 1`] = `
-.c4 {
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c5 {
   font-family: Lato,sans-serif;
-  size: 18px;
-  line-height: 1.33;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   background: white;
-  padding: 16px 24px;
+  padding: 8px 24px;
+  min-height: 48px;
   color: #2f313a;
   opacity: 0.24;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.c5 .description {
+  padding: 0 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  line-height: 1.33;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  border: solid 1px rgba(0,0,0,0.16);
+  background: white;
+  padding: 8px 24px;
+  min-height: 48px;
+  cursor: pointer;
+  color: #2f313a;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -258,53 +418,30 @@ exports[`Storyshots Stepper extended style 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  size: 18px;
   line-height: 1.33;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-  border: solid 1px rgba(0,0,0,0.16);
-  background: white;
-  padding: 16px 24px;
-  cursor: pointer;
-  color: #2f313a;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
-.c3 .description {
-  padding: 0 16px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c3:hover {
+.c4:hover {
   color: #3498db;
-  border: solid 2px #3498db;
+  border: solid 1px #3498db;
 }
 
 .c2 {
   font-family: Lato,sans-serif;
-  size: 18px;
-  line-height: 1.33;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   background: white;
-  padding: 16px 24px;
+  padding: 8px 24px;
+  min-height: 48px;
   color: #2f313a;
   color: white;
   background: #2ecc71;
@@ -318,6 +455,7 @@ exports[`Storyshots Stepper extended style 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  line-height: 1.33;
 }
 
 .c1 {
@@ -358,13 +496,25 @@ exports[`Storyshots Stepper extended style 1`] = `
         className="c2 step completed"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-check"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M10.721 14.453l5.49-7.066a1 1 0 011.579 1.226l-6.215 8a1 1 0 01-1.526.064l-2.785-3.03a1 1 0 011.472-1.354l1.985 2.16z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
@@ -379,13 +529,25 @@ exports[`Storyshots Stepper extended style 1`] = `
         className="c2 step completed"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-check"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M10.721 14.453l5.49-7.066a1 1 0 011.579 1.226l-6.215 8a1 1 0 01-1.526.064l-2.785-3.03a1 1 0 011.472-1.354l1.985 2.16z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
@@ -397,84 +559,156 @@ exports[`Storyshots Stepper extended style 1`] = `
       className="c1 stepContainer"
     >
       <div
-        className="c3 step current"
+        className="c4 step current"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-checker"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M17.778 4C19.005 4 20 4.995 20 6.222v11.556A2.222 2.222 0 0117.778 20H6.222A2.222 2.222 0 014 17.778V6.222C4 4.995 4.995 4 6.222 4h11.556zm-1.445 2H7.667C6.747 6 6 6.746 6 7.667v8.666C6 17.253 6.746 18 7.667 18h8.666c.92 0 1.667-.746 1.667-1.667V7.667C18 6.747 17.254 6 16.333 6z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
           Connect to purchasers
         </div>
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-small-arrow-right"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
     <div
       className="c1 stepContainer"
     >
       <div
-        className="c4 step pending"
+        className="c5 step pending"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-checker"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M17.778 4C19.005 4 20 4.995 20 6.222v11.556A2.222 2.222 0 0117.778 20H6.222A2.222 2.222 0 014 17.778V6.222C4 4.995 4.995 4 6.222 4h11.556zm-1.445 2H7.667C6.747 6 6 6.746 6 7.667v8.666C6 17.253 6.746 18 7.667 18h8.666c.92 0 1.667-.746 1.667-1.667V7.667C18 6.747 17.254 6 16.333 6z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
           Add products
         </div>
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-small-arrow-right"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
     <div
       className="c1 stepContainer"
     >
       <div
-        className="c4 step pending"
+        className="c5 step pending"
         onClick={[Function]}
       >
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-checker"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M17.778 4C19.005 4 20 4.995 20 6.222v11.556A2.222 2.222 0 0117.778 20H6.222A2.222 2.222 0 014 17.778V6.222C4 4.995 4.995 4 6.222 4h11.556zm-1.445 2H7.667C6.747 6 6 6.746 6 7.667v8.666C6 17.253 6.746 18 7.667 18h8.666c.92 0 1.667-.746 1.667-1.667V7.667C18 6.747 17.254 6 16.333 6z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
         <div
           className="description"
         >
           Start selling
         </div>
-        <div
-          className="icon"
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
         >
-          <i
-            className="wg-small-arrow-right"
-          />
-        </div>
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon icon"
+            height={20}
+            viewBox="2 2 20 20"
+            width={20}
+          >
+            <path
+              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
     </div>
   </div>
