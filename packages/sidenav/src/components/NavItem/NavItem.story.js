@@ -1,4 +1,6 @@
 import React from "react";
+import { LgMeats, MdSearch } from "@crave/farmblocks-icon";
+
 import { FULLSCREEN } from "../../constants/variants";
 import useToggle from "../../utils/useToggle";
 import NavItem from "./NavItem";
@@ -17,8 +19,8 @@ export const NavItems = () => {
       <NavItemWithToggle image="https://picsum.photos/640/?image=234">
         Item with Image
       </NavItemWithToggle>
-      <NavItemWithToggle icon="wg-meat">Item with Icon</NavItemWithToggle>
-      <NavItemWithToggle variant={FULLSCREEN} icon="wg-search">
+      <NavItemWithToggle icon={<LgMeats />}>Item with Icon</NavItemWithToggle>
+      <NavItemWithToggle variant={FULLSCREEN} icon={<MdSearch />}>
         Item with fullScreen variant and Icon
       </NavItemWithToggle>
     </div>

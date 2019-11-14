@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { MdViewList } from "@crave/farmblocks-icon";
 
 import NavButton from "./NavButton";
 import NavButtonStyled from "./NavButton.styled";
@@ -14,5 +15,7 @@ export const ToggleButton = styled(NavButtonStyled)`
 `;
 
 export default props => (
-  <NavButton component={ToggleButton} icon="wg-list" {...props} />
+  <NavButton component={ToggleButton} {...props}>
+    <MdViewList />
+  </NavButton>
 );

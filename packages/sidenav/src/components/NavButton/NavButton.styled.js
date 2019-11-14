@@ -6,11 +6,10 @@ export const GREY_48 = "rgba(0, 0, 0, 0.48)";
 export default styled.div`
   box-sizing: border-box;
   color: ${({ active, highlightColor }) => (active ? highlightColor : GREY_48)};
-  font-size: 16px;
+  font-size: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
   height: 40px;
   width: 40px;
   cursor: pointer;

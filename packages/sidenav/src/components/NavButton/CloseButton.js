@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { MdRemove } from "@crave/farmblocks-icon";
 
 import NavButton from "./NavButton";
 import NavButtonStyled from "./NavButton.styled";
@@ -16,5 +17,7 @@ export const CloseButton = styled(NavButtonStyled)`
 `;
 
 export default props => (
-  <NavButton component={CloseButton} icon="wg-close" {...props} />
+  <NavButton component={CloseButton} {...props}>
+    <MdRemove />
+  </NavButton>
 );
