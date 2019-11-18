@@ -1,30 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const MdList = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 40 40"
+    viewBox="4 4 32 32"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M17 25a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2H17zm0-6a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2H17zm0-6a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2H17zm-6 12a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2h-1zm0-6a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2h-1zm0-6a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2h-1z"
+      d="M17 25a1 1 0 000 2h12a1 1 0 000-2H17zm0-6a1 1 0 000 2h12a1 1 0 000-2H17zm0-6a1 1 0 000 2h12a1 1 0 000-2H17zm-6 12a1 1 0 000 2h1a1 1 0 000-2h-1zm0-6a1 1 0 000 2h1a1 1 0 000-2h-1zm0-6a1 1 0 000 2h1a1 1 0 000-2h-1z"
       fill={color}
       fillRule="nonzero"
     />
   </svg>
 ));
-MdList.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdList.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const MdList = withWrapper(Vector);
 MdList.groupName = "Menu";
 export default MdList;

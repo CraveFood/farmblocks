@@ -1,30 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const MdEditFilled = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 40 40"
+    viewBox="4 4 32 32"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M29.707 17.293l-7-7 2-2a1 1 0 0 1 1.415 0l5.585 5.585a1 1 0 0 1 0 1.414l-2 2zm-1.414 1.414l-10.97 10.97a1 1 0 0 1-.45.26l-7.616 2.029a1 1 0 0 1-1.223-1.224l2.03-7.614a1 1 0 0 1 .26-.45l10.97-10.97 6.999 6.999z"
+      d="M29.707 17.293l-7-7 2-2a1 1 0 011.415 0l5.585 5.585a1 1 0 010 1.414l-2 2zm-1.414 1.414l-10.97 10.97a1 1 0 01-.45.26l-7.616 2.029a1 1 0 01-1.223-1.224l2.03-7.614a1 1 0 01.26-.45l10.97-10.97 6.999 6.999z"
       fill={color}
       fillRule="nonzero"
     />
   </svg>
 ));
-MdEditFilled.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdEditFilled.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const MdEditFilled = withWrapper(Vector);
 MdEditFilled.groupName = "Actions";
 export default MdEditFilled;
