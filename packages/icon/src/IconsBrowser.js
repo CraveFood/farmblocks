@@ -5,6 +5,7 @@ import { colors } from "@crave/farmblocks-theme";
 import Text, { fontSizes } from "@crave/farmblocks-text";
 
 import * as icons from "./jsx";
+import { croppedSizes } from "../sizes";
 
 export const Pre = styled.pre`
   display: inline-block;
@@ -43,18 +44,20 @@ const Item = styled.div`
   background: white;
   color: ${colors.CARBON};
 `;
-const IconWrapper = styled.div`
+const IconCanvas = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-`;
 
-const sizes = {
-  Sm: 24,
-  Md: 40,
-  Lg: 100,
-};
+  svg.farmblocks-icon {
+    background: #fafafa
+      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"         fill-opacity=".05" ><rect x="200" width="200" height="200" /><rect y="200" width="200" height="200" /></svg>');
+    background-size: 32px 32px;
+    background-position: center;
+    border: 1px solid #ddd;
+  }
+`;
 
 const grouped = Object.keys(icons).reduce((acc, iconName) => {
   const Icon = icons[iconName];
@@ -62,7 +65,7 @@ const grouped = Object.keys(icons).reduce((acc, iconName) => {
     ...(acc || {}),
     [Icon.groupName]: [
       ...(acc[Icon.groupName] || []),
-      { name: iconName, size: sizes[iconName.substr(0, 2)] },
+      { name: iconName, size: croppedSizes[iconName.substr(0, 2)] },
     ],
   };
 }, {});
@@ -88,9 +91,9 @@ export default () => (
             const Icon = icons[name];
             return (
               <Item key={name}>
-                <IconWrapper>
+                <IconCanvas>
                   <Icon size={size} aria-label={name} />
-                </IconWrapper>
+                </IconCanvas>
                 <Text size={fontSizes.SMALL}>{name}</Text>
               </Item>
             );

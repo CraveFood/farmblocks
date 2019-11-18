@@ -12,14 +12,14 @@ import {
   MdLoading,
   LgTomato,
 } from ".";
-import Icon from "./Icon";
+import { IconWrapper } from "./Icon";
 import LgPhoto from "./svg/Actions/LgPhoto.svg";
 import IconsBrowser, { Pre } from "./IconsBrowser";
 import withAnimation from "./withAnimation";
 
 export default {
   title: "Assets|Icons",
-  component: Icon,
+  component: IconWrapper,
   parameters: {
     componentSubtitle: "A list of SVG icons in JSX",
   },
@@ -36,7 +36,7 @@ export const insideText = () => (
     </Text>
     <Text>
       But you can override it with the <Pre>size</Pre> (
-      <LgGroceryItems size={110} />) and <Pre>color</Pre> (
+      <LgGroceryItems size={80} />) and <Pre>color</Pre> (
       <MdPickupLocationFilled color="indianred" />) props.
     </Text>
   </>
@@ -100,12 +100,12 @@ export const animated = () => {
       </p>
       <Text>
         The default animation is a simple spin:
-        <SpinningLoading size={40} />
+        <SpinningLoading size={32} />
       </Text>
 
       <Text>
-        But you can customize the animation:
-        <BouncingTomato size={110} color="tomato" />
+        But you can customize the animation keyframes:
+        <BouncingTomato size={80} color="tomato" />
       </Text>
     </>
   );

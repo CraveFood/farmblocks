@@ -12,6 +12,8 @@ const jsxStatus = ora("Loading SVG files").start();
 const svgSourcePath = "./src/svg";
 const jsxSourcePath = "./src/jsx";
 
+const { originalSizes, croppedSizes } = require("./sizes");
+
 if (!fs.existsSync(jsxSourcePath)) {
   fs.mkdirSync(jsxSourcePath);
 }
@@ -42,21 +44,25 @@ const jsxTemplate = (
 ) => template.ast`
   ${imports}
   import PropTypes from 'prop-types';
+
+  import {withWrapper} from '../Icon';
   
-  const ${componentName} = React.forwardRef(({size, color, ...props}, ref) => (
+  const Vector = React.forwardRef(({size, color, ...props}, ref) => (
     ${jsx}
   ));
 
-  ${componentName}.propTypes = {
+  Vector.propTypes = {
     color: PropTypes.string,
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     'aria-label': PropTypes.string
   };
 
-  ${componentName}.defaultProps = {
+  Vector.defaultProps = {
     color: "currentColor",
     size: "1em"
   };
+
+  const ${componentName} = withWrapper(Vector);
 
   ${componentName}.groupName = "${group}";
 
@@ -75,6 +81,11 @@ function convertFilesOfGroups(group, groupPath) {
       encoding: "utf8",
     });
 
+    const iconSizeName = componentName.substr(0, 2);
+    const originalSize = originalSizes[iconSizeName];
+    const croppedSize = croppedSizes[iconSizeName];
+    const margin = Math.floor((originalSize - croppedSize) / 2);
+
     const jsxCode = await svgr(
       svgCode,
       {
@@ -85,6 +96,7 @@ function convertFilesOfGroups(group, groupPath) {
           height: "{size}",
           ref: "{ref}",
           "aria-hidden": "{!props['aria-label']}",
+          viewBox: `${margin} ${margin} ${croppedSize} ${croppedSize}`,
         },
         template: jsxTemplate,
         plugins: [
