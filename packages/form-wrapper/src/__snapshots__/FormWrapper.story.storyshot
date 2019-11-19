@@ -6,15 +6,16 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -37,14 +38,12 @@ exports[`Storyshots Form Wrapper Default 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -92,12 +91,12 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -277,21 +276,22 @@ exports[`Storyshots Form Wrapper Default 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -451,7 +451,6 @@ exports[`Storyshots Form Wrapper Default 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -499,7 +498,6 @@ exports[`Storyshots Form Wrapper Default 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -555,15 +553,16 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -586,14 +585,12 @@ exports[`Storyshots Form Wrapper With id 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -641,12 +638,12 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -826,21 +823,22 @@ exports[`Storyshots Form Wrapper With id 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -1000,7 +998,6 @@ exports[`Storyshots Form Wrapper With id 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -1048,7 +1045,6 @@ exports[`Storyshots Form Wrapper With id 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -1104,15 +1100,16 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1135,14 +1132,12 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c10:hover {
@@ -1190,12 +1185,12 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -1375,21 +1370,22 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -1551,7 +1547,6 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -1599,7 +1594,6 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -1655,15 +1649,16 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1686,14 +1681,12 @@ exports[`Storyshots Form Wrapper With title 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -1741,12 +1734,12 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -1926,21 +1919,22 @@ exports[`Storyshots Form Wrapper With title 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -2102,7 +2096,6 @@ exports[`Storyshots Form Wrapper With title 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -2150,7 +2143,6 @@ exports[`Storyshots Form Wrapper With title 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -2206,15 +2198,16 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -2237,14 +2230,12 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
 }
 
 .c11 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c11:hover {
@@ -2292,12 +2283,12 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   color: #59636f;
 }
 
-.c3 i.margin-left {
-  margin-left: 8px;
+.c3 span.margin-left {
+  margin-left: 4px;
 }
 
-.c3 i.margin-right {
-  margin-right: 8px;
+.c3 span.margin-right {
+  margin-right: 4px;
 }
 
 .c3 a {
@@ -2477,21 +2468,22 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
 
 .c7 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c7 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c7 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c7 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -2684,7 +2676,6 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -2732,7 +2723,6 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -2788,15 +2778,16 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -2819,14 +2810,12 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -2874,12 +2863,12 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -3059,21 +3048,22 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3235,7 +3225,6 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -3283,7 +3272,6 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -3342,15 +3330,16 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -3373,14 +3362,12 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -3428,12 +3415,12 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -3613,21 +3600,22 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -3796,7 +3784,6 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
             >
               <div
                 className="input"
-                onMouseDown={[Function]}
               >
                 <input
                   className="wrapped"
@@ -3844,7 +3831,6 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
             >
               <div
                 className="input"
-                onMouseDown={[Function]}
               >
                 <input
                   className="wrapped"
@@ -3896,20 +3882,30 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
 `;
 
 exports[`Storyshots Form Wrapper loading 1`] = `
+.c11 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c11 .farmblocks-icon {
+  display: block;
+}
+
 .c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -3932,14 +3928,12 @@ exports[`Storyshots Form Wrapper loading 1`] = `
 }
 
 .c10 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1.4em;
 }
 
 .c10:hover {
@@ -3980,6 +3974,11 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   box-shadow: none;
 }
 
+.c12 {
+  -webkit-animation: 2s linear 0s infinite normal iVXCSc;
+  animation: 2s linear 0s infinite normal iVXCSc;
+}
+
 .c2 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -3993,12 +3992,12 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   color: #59636f;
 }
 
-.c2 i.margin-left {
-  margin-left: 8px;
+.c2 span.margin-left {
+  margin-left: 4px;
 }
 
-.c2 i.margin-right {
-  margin-right: 8px;
+.c2 span.margin-right {
+  margin-right: 4px;
 }
 
 .c2 a {
@@ -4178,21 +4177,22 @@ exports[`Storyshots Form Wrapper loading 1`] = `
 
 .c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
-  height: 16px;
+  font-size: 20px;
+  height: 24px;
 }
 
 .c6 > .input > .icon.left {
-  margin-left: 16px;
+  margin-left: 12px;
 }
 
 .c6 > .input > .icon.dropdown {
-  margin-left: 8px;
-  margin-right: 16px;
+  margin: 0 8px;
 }
 
 .c6 > .input > .clear {
-  color: rgba(0,0,0,0.32);
-  height: 16px;
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
   margin-right: 16px;
 }
 
@@ -4354,7 +4354,6 @@ exports[`Storyshots Form Wrapper loading 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -4402,7 +4401,6 @@ exports[`Storyshots Form Wrapper loading 1`] = `
           >
             <div
               className="input"
-              onMouseDown={[Function]}
             >
               <input
                 className="wrapped"
@@ -4451,13 +4449,30 @@ exports[`Storyshots Form Wrapper loading 1`] = `
         className="icon left-icon"
         style={
           Object {
-            "marginRight": 10,
+            "transform": "translateX(-6px)",
           }
         }
       >
-        <i
-          className="wg-loading"
-        />
+        <span
+          className="c11"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon c12"
+            data-testid="loading"
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M19 8a1 1 0 012 0v6a1 1 0 01-2 0V8zm2 24a1 1 0 01-2 0v-5a1 1 0 012 0v5zM8 21a1 1 0 010-2h6a1 1 0 010 2H8zm18-.5a.5.5 0 110-1h6a.5.5 0 110 1h-6zm3.197 7.283a1 1 0 01-1.414 1.414l-3.86-3.86a1 1 0 011.414-1.414l3.86 3.86zm-12.87-12.87a1 1 0 01-1.414 1.414l-4.11-4.11a1 1 0 011.414-1.414l4.11 4.11zm-1.664 9.01a1 1 0 011.414 1.414l-3.86 3.86a1 1 0 01-1.414-1.414l3.86-3.86zm13.12-13.12a1 1 0 011.414 1.414l-4.11 4.11a1 1 0 01-1.414-1.414l4.11-4.11z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       Save
     </button>

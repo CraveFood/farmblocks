@@ -20,7 +20,7 @@ const NavItem = ({
     {(image || icon) && (
       <div className="thumb-container">
         {image && <Image size={36} src={image} badge {...imageProps} />}
-        {icon && <i className={`icon ${icon}`} />}
+        <span className="icon">{icon}</span>
       </div>
     )}
     <Text type="inherit" fontWeight="title" {...textProps}>
@@ -32,49 +32,58 @@ const NavItem = ({
 NavItem.defaultProps = {
   highlightColor: colors.RED_ORANGE,
   variant: PUSH,
-  iconSize: "24px",
+  iconSize: "32px",
 };
 
 NavItem.propTypes = {
   /**
-    Whether the item is with active style or not. 
-  */
+   * Whether the item is with active style or not.
+   */
   active: PropTypes.bool,
+
   /**
-    On "fullScreen" variant set rounded style, the other ones don't affect this component. 
-  */
+   * On "fullScreen" variant set rounded style, the other ones don't affect this component.
+   */
   variant: PropTypes.oneOf([PUSH, FULLSCREEN, OVERLAY]),
+
   /**
-    Text content. 
-  */
+   * Text content.
+   */
   children: PropTypes.node,
+
   /**
-   Color used to highlight active/hover items. 
-  */
+   * Color used to highlight active/hover items.
+   */
   highlightColor: PropTypes.string,
+
   /**
-    NavItem background color. 
-  */
+   * NavItem background color.
+   */
   backgroundColor: PropTypes.string,
+
   /**
-    Icon class name (don't use `icon` prop along with `image` prop) 
-  */
-  icon: PropTypes.string,
+   * Icon node (don't use `icon` prop along with `image` prop)
+   */
+  icon: PropTypes.node,
+
   /**
-    Font size for the icon 
-  */
+   * Size for the icon
+   */
   iconSize: PropTypes.string,
+
   /**
-   Image src url (don't use `image` prop along with `icon` prop) 
-  */
+   * Image src url (don't use `image` prop along with `icon` prop)
+   */
   image: PropTypes.string,
+
   /**
-   Props for image component, accept any farmblocks-image prop 
- */
+   * Props for image component, accept any farmblocks-image prop
+   */
   imageProps: PropTypes.shape(Image.propTypes),
+
   /**
-  Props for children(text) component, accept any farmblocks-text prop 
-  */
+   * Props for children(text) component, accept any farmblocks-text prop
+   */
   textProps: PropTypes.shape(Text.propTypes),
 };
 

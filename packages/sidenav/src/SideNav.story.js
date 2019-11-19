@@ -5,6 +5,7 @@ import Text from "@crave/farmblocks-text";
 import { Switch, Route, NavLink, withRouter } from "react-router-dom";
 import StoryRouter from "storybook-react-router";
 import { useMediaQuery } from "react-responsive";
+import { MdVendors, MdOrders, MdSearch, LgMeats } from "@crave/farmblocks-icon";
 
 import SideNav from "./SideNav";
 import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
@@ -13,6 +14,12 @@ import PageWrapper from "./helpers/PageWrapper";
 import useToggle from "./utils/useToggle";
 
 const tabs = ["purveyor", "order", "search", "meat"];
+const icons = {
+  purveyor: <MdVendors />,
+  order: <MdOrders />,
+  search: <MdSearch />,
+  meat: <LgMeats />,
+};
 
 export default {
   title: "SideNav/SideNav",
@@ -68,7 +75,7 @@ export const SideNavPush = () => {
                   key={tab}
                   onClick={() => setSelected(tab)}
                   active={tab === selected}
-                  icon={`wg-${tab}`}
+                  icon={icons[tab]}
                   {...props}
                 >
                   {tab}
@@ -112,7 +119,7 @@ export const SideNavOverlay = () => {
               {tabs.map(tab => (
                 <NavItem
                   key={tab}
-                  icon={`wg-${tab}`}
+                  icon={icons[tab]}
                   active={tab === selected}
                   onClick={() => handleClick(tab)}
                   {...props}
@@ -162,7 +169,7 @@ export const SideNavFullScreen = () => {
               {tabs.map(tab => (
                 <NavItem
                   key={tab}
-                  icon={`wg-${tab}`}
+                  icon={icons[tab]}
                   active={tab === selected}
                   onClick={() => handleClick(tab)}
                   {...props}
@@ -323,7 +330,7 @@ const NavLinkItems = ({ tabs, location, onClick, ...props }) => (
         <NavItem
           active={location.pathname === `/${tab}`}
           onClick={onClick}
-          icon={`wg-${tab}`}
+          icon={icons[tab]}
           {...props}
         >
           {tab}

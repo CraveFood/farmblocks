@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import values from "object.values";
+import { MdRemove } from "@crave/farmblocks-icon";
 
 import StyledTag from "./styledComponent/StyledTag";
 import tagTypes from "../constants/tagTypes";
@@ -16,11 +17,7 @@ const Tag = ({
 }) => {
   return (
     <StyledTag disabled={disabled} removable={!!onRemove} {...wrapperProps}>
-      {icon && (
-        <div className="icon">
-          <i className={icon} />
-        </div>
-      )}
+      {icon && <div className="icon">{icon}</div>}
       {text || children}
       {onRemove && !disabled && (
         <div
@@ -34,7 +31,7 @@ const Tag = ({
             }
           }}
         >
-          <i className="wg-close" />
+          <MdRemove />
         </div>
       )}
     </StyledTag>
@@ -50,7 +47,7 @@ Tag.propTypes = {
   onRemove: PropTypes.func,
   value: PropTypes.any, // eslint-disable-line react/forbid-prop-types
   type: PropTypes.oneOf(values(tagTypes)),
-  icon: PropTypes.string,
+  icon: PropTypes.node,
   children: PropTypes.node,
   disabled: PropTypes.bool,
 };

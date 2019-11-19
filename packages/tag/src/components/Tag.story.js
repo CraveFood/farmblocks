@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
+import { MdOrders } from "@crave/farmblocks-icon";
 
 import Tag, { tagTypes } from "..";
 
@@ -35,12 +36,16 @@ storiesOf("Tag", module)
   ))
   .add("With icon", () => (
     <div style={{ marginTop: "20px" }}>
-      <Tag text="Tag with icon" icon="wg-order" />
+      <Tag text="Tag with icon" icon={<MdOrders />} />
     </div>
   ))
   .add("Removable with icon", () => (
     <div style={{ marginTop: "20px" }}>
-      <Tag text="Tag with icon" icon="wg-order" onRemove={action("onRemove")} />
+      <Tag
+        text="Tag with icon"
+        icon={<MdOrders />}
+        onRemove={action("onRemove")}
+      />
     </div>
   ))
   .add("Removable", () => (

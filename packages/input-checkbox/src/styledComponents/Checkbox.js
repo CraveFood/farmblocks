@@ -25,21 +25,17 @@ const checkboxStyles = props =>
   css`
     width: ${checkboxSize};
     height: ${checkboxSize};
-    font-size: 8px;
     border-radius: 4px;
 
     .checkmark {
       visibility: ${({ checked }) => (checked ? "visible" : "hidden")};
-      display: flex;
-      justify-content: center;
-      width: 100%;
     }
     ${checkboxColors};
   `;
 
 const spin = keyframes`
 from {
-  transform: rotate(0deg);
+  transform: rotate(0deg) ;
 }
 
 to {
@@ -50,7 +46,7 @@ export const Loading = styled.div`
   display: flex;
   justify-content: center;
 
-  i {
+  svg {
     animation: ${spin} 1.1s linear infinite;
   }
 `;

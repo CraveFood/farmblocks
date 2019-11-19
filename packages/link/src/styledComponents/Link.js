@@ -50,12 +50,12 @@ const LinkContainer = styled.div`
 
   position: relative;
 
-  i.margin-left {
-    margin-left: 8px;
+  span.margin-left {
+    margin-left: 4px;
   }
 
-  i.margin-right {
-    margin-right: 8px;
+  span.margin-right {
+    margin-right: 4px;
   }
 
   font-size: ${props => props.size}px;

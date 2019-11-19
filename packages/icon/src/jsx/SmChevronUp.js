@@ -1,30 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const SmChevronUp = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 24 24"
+    viewBox="2 2 20 20"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M12 11.414l-3.293 3.293a1 1 0 1 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1-1.414 1.414L12 11.414z"
+      d="M12 11.414l-3.293 3.293a1 1 0 11-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L12 11.414z"
       fill={color}
       fillRule="nonzero"
     />
   </svg>
 ));
-SmChevronUp.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-SmChevronUp.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const SmChevronUp = withWrapper(Vector);
 SmChevronUp.groupName = "Actions";
 export default SmChevronUp;

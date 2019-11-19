@@ -8,6 +8,12 @@ import Image from "@crave/farmblocks-image";
 import Link from "@crave/farmblocks-link";
 import Button, { buttonSizes, buttonTypes } from "@crave/farmblocks-button";
 import { Dropdown, DropdownItem } from "@crave/farmblocks-dropdown";
+import {
+  SmChevronDown,
+  SmCheck,
+  MdOrders,
+  MdLocation,
+} from "@crave/farmblocks-icon";
 
 import { Table, Column, SelectionBar, rowHeights } from ".";
 
@@ -115,7 +121,7 @@ storiesOf("Table/Basic", module)
               textAlign: "center",
             }}
           >
-            <i className="wg-small-arrow-bottom" />
+            <SmChevronDown size={24} />
           </div>
         )}
         text={() => <div />}
@@ -322,7 +328,7 @@ const InfoCell = props => (
           {props.title}
         </Text>
       </div>
-      <Link leftIcon="wg-place" href={props.linkSrc}>
+      <Link leftIcon={<MdLocation />} href={props.linkSrc}>
         {props.linkText}
       </Link>
     </div>
@@ -383,7 +389,7 @@ storiesOf("Table/Custom Cells", module)
         customCell={row => (
           <Button
             type={buttonTypes.PRIMARY}
-            icon="wg-check"
+            icon={<SmCheck />}
             onClick={action(`button clicked`)}
           >
             Accept ({row.id})
@@ -406,7 +412,7 @@ storiesOf("Table/Custom Cells", module)
             <Button
               size={buttonSizes.MEDIUM}
               type={buttonTypes.SECONDARY}
-              icon="wg-order"
+              icon={<MdOrders />}
               onClick={action(`button clicked`)}
             >
               Message
@@ -443,7 +449,7 @@ storiesOf("Table/Custom Cells", module)
             <Button
               size={buttonSizes.SMALL}
               type={buttonTypes.SECONDARY}
-              icon="wg-order"
+              icon={<MdOrders />}
               onClick={action(`button clicked`)}
             >
               Message
@@ -526,7 +532,7 @@ storiesOf("Table/Custom Cells", module)
               <Button
                 size={buttonSizes.MEDIUM}
                 type={buttonTypes.SECONDARY}
-                icon="wg-order"
+                icon={<MdOrders />}
                 onClick={action(`button clicked`)}
               >
                 Connect

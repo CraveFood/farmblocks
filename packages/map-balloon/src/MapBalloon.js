@@ -4,6 +4,11 @@ import values from "object.values";
 import Text, { fontTypes } from "@crave/farmblocks-text";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 import { CSSTransition } from "react-transition-group";
+import {
+  MdLocationFilled,
+  MdLocation,
+  SmChevronDown,
+} from "@crave/farmblocks-icon";
 
 import alignments from "./constants/alignments";
 import Wrapper from "./styledComponents/Wrapper";
@@ -36,7 +41,7 @@ const MapBalloon = ({
 }) => {
   const interactivePin = !!onPinClick;
   const interactiveBalloon = !!onBalloonClick;
-  const pinIconClass = interactivePin ? "wg-place" : "wg-location";
+  const pinIcon = interactivePin ? <MdLocation /> : <MdLocationFilled />;
   return (
     <Wrapper className={className} x={x} y={y} opacity={opacity}>
       {(singleImage && (
@@ -49,14 +54,16 @@ const MapBalloon = ({
       )) || (
         <>
           <Pin
-            className={`pin ${pinIconClass} ${open ? "open" : ""}`}
+            className={`pin ${open ? "open" : ""}`}
             pinColor={pinColor}
             pinHighlightColor={pinHighlightColor}
             pinSize={pinSize}
             interactive={interactivePin}
             animated={animated}
             onClick={onPinClick && (event => onPinClick(value, event))}
-          />
+          >
+            {pinIcon}
+          </Pin>
           <CSSTransition
             in={open}
             classNames="fade"
@@ -94,8 +101,10 @@ const MapBalloon = ({
                     fontWeight="title"
                     type={fontTypes.SUBTLE}
                     size={captionSize}
-                    className="text wg-small-arrow-right"
-                  />
+                    className="text"
+                  >
+                    <SmChevronDown size={24} />
+                  </Text>
                 ) : null}
               </Caption>
             </Balloon>

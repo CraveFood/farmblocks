@@ -14,12 +14,12 @@ exports[`Storyshots Link/Featured Custom color 1`] = `
   color: hotpink;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -70,12 +70,12 @@ exports[`Storyshots Link/Featured Default - left aligned, medium size 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -130,12 +130,12 @@ exports[`Storyshots Link/Featured disabled link 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -198,12 +198,12 @@ exports[`Storyshots Link/Featured disabled link with onClick function 1`] = `
   color: rgba(0,0,0,0.32);
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -251,6 +251,15 @@ exports[`Storyshots Link/Featured disabled link with onClick function 1`] = `
 `;
 
 exports[`Storyshots Link/Featured external 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -264,12 +273,12 @@ exports[`Storyshots Link/Featured external 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -306,14 +315,43 @@ exports[`Storyshots Link/Featured external 1`] = `
     href="#"
   >
     Awesome Link
-    <i
-      className="wg-external-link margin-left"
-    />
+    <span
+      className="margin-left"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M23.586 15H15v10h10v-8.586l-4.293 4.293a1 1 0 01-1.414-1.414L23.586 15zM29 11h-5a1 1 0 010-2h6a1 1 0 011 1v6a1 1 0 01-2 0v-5zM14 27a1 1 0 01-1-1V14a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H14z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
   </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured external, mini size 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -327,12 +365,12 @@ exports[`Storyshots Link/Featured external, mini size 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -369,14 +407,43 @@ exports[`Storyshots Link/Featured external, mini size 1`] = `
     href="#"
   >
     Awesome Link
-    <i
-      className="wg-external-link margin-left"
-    />
+    <span
+      className="margin-left"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M23.586 15H15v10h10v-8.586l-4.293 4.293a1 1 0 01-1.414-1.414L23.586 15zM29 11h-5a1 1 0 010-2h6a1 1 0 011 1v6a1 1 0 01-2 0v-5zM14 27a1 1 0 01-1-1V14a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H14z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
   </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured external, mini size, white color 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -390,12 +457,12 @@ exports[`Storyshots Link/Featured external, mini size, white color 1`] = `
   color: white;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -439,15 +506,44 @@ exports[`Storyshots Link/Featured external, mini size, white color 1`] = `
       href="#"
     >
       Awesome Link
-      <i
-        className="wg-external-link margin-left"
-      />
+      <span
+        className="margin-left"
+      >
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M23.586 15H15v10h10v-8.586l-4.293 4.293a1 1 0 01-1.414-1.414L23.586 15zM29 11h-5a1 1 0 010-2h6a1 1 0 011 1v6a1 1 0 01-2 0v-5zM14 27a1 1 0 01-1-1V14a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H14z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </span>
     </a>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured external, white color 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -461,12 +557,12 @@ exports[`Storyshots Link/Featured external, white color 1`] = `
   color: white;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -510,15 +606,44 @@ exports[`Storyshots Link/Featured external, white color 1`] = `
       href="#"
     >
       Awesome Link
-      <i
-        className="wg-external-link margin-left"
-      />
+      <span
+        className="margin-left"
+      >
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M23.586 15H15v10h10v-8.586l-4.293 4.293a1 1 0 01-1.414-1.414L23.586 15zM29 11h-5a1 1 0 010-2h6a1 1 0 011 1v6a1 1 0 01-2 0v-5zM14 27a1 1 0 01-1-1V14a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H14z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </span>
     </a>
   </div>
 </div>
 `;
 
 exports[`Storyshots Link/Featured icon only 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -532,12 +657,12 @@ exports[`Storyshots Link/Featured icon only 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -573,9 +698,29 @@ exports[`Storyshots Link/Featured icon only 1`] = `
   <a
     href="#"
   >
-    <i
-      className="wg-place margin-right }"
-    />
+    <span
+      className="margin-right"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
   </a>
 </div>
 `;
@@ -594,12 +739,12 @@ exports[`Storyshots Link/Featured link with onClick function 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -662,12 +807,12 @@ exports[`Storyshots Link/Featured no href 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -707,6 +852,15 @@ exports[`Storyshots Link/Featured no href 1`] = `
 `;
 
 exports[`Storyshots Link/Featured no href with left icon 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -720,12 +874,12 @@ exports[`Storyshots Link/Featured no href with left icon 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -759,9 +913,29 @@ exports[`Storyshots Link/Featured no href with left icon 1`] = `
   type="#3498db"
 >
   <span>
-    <i
-      className="wg-place margin-right }"
-    />
+    <span
+      className="margin-right"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
     Awesome Link
   </span>
 </div>
@@ -781,12 +955,12 @@ exports[`Storyshots Link/Featured right aligned 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -837,6 +1011,15 @@ exports[`Storyshots Link/Featured right aligned 1`] = `
 `;
 
 exports[`Storyshots Link/Featured with left icon 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -850,12 +1033,12 @@ exports[`Storyshots Link/Featured with left icon 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -891,15 +1074,44 @@ exports[`Storyshots Link/Featured with left icon 1`] = `
   <a
     href="#"
   >
-    <i
-      className="wg-place margin-right }"
-    />
+    <span
+      className="margin-right"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
     Awesome Link
   </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with left icon, mini size 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -913,12 +1125,12 @@ exports[`Storyshots Link/Featured with left icon, mini size 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -954,15 +1166,44 @@ exports[`Storyshots Link/Featured with left icon, mini size 1`] = `
   <a
     href="#"
   >
-    <i
-      className="wg-place margin-right }"
-    />
+    <span
+      className="margin-right"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
     Awesome Link
   </a>
 </div>
 `;
 
 exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -976,12 +1217,12 @@ exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
   color: white;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -1022,9 +1263,29 @@ exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
     type="white"
   >
     <span>
-      <i
-        className="wg-place margin-right }"
-      />
+      <span
+        className="margin-right"
+      >
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </span>
       Awesome Link
     </span>
   </div>
@@ -1032,6 +1293,15 @@ exports[`Storyshots Link/Featured with left icon, mini size, white color 1`] = `
 `;
 
 exports[`Storyshots Link/Featured with left icon, white color 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -1045,12 +1315,12 @@ exports[`Storyshots Link/Featured with left icon, white color 1`] = `
   color: white;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -1091,9 +1361,29 @@ exports[`Storyshots Link/Featured with left icon, white color 1`] = `
     type="white"
   >
     <span>
-      <i
-        className="wg-place margin-right }"
-      />
+      <span
+        className="margin-right"
+      >
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </span>
       Awesome Link
     </span>
   </div>
@@ -1101,6 +1391,15 @@ exports[`Storyshots Link/Featured with left icon, white color 1`] = `
 `;
 
 exports[`Storyshots Link/Featured with right icon 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   font-family: Lato,sans-serif;
   display: inline-block;
@@ -1114,12 +1413,12 @@ exports[`Storyshots Link/Featured with right icon 1`] = `
   color: #3498db;
 }
 
-.c0 i.margin-left {
-  margin-left: 8px;
+.c0 span.margin-left {
+  margin-left: 4px;
 }
 
-.c0 i.margin-right {
-  margin-right: 8px;
+.c0 span.margin-right {
+  margin-right: 4px;
 }
 
 .c0 a {
@@ -1156,9 +1455,29 @@ exports[`Storyshots Link/Featured with right icon 1`] = `
     href="#"
   >
     Awesome Link
-    <i
-      className="wg-place margin-left }"
-    />
+    <span
+      className="margin-left"
+    >
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M20.764 34.75a1 1 0 01-.661.25h-.206a1 1 0 01-.661-.25 12.922 12.922 0 01-.418-.391 26.22 26.22 0 01-1.048-1.083 32.885 32.885 0 01-3.155-4.038C11.735 24.896 10 20.11 10 15.02 10 9.167 14.266 5 19.897 5h.206C25.733 5 30 9.167 30 15.02c0 5.09-1.734 9.876-4.615 14.218a32.885 32.885 0 01-3.155 4.038c-.378.413-.73.774-1.048 1.083-.194.188-.336.32-.418.391zM20 33.883l.103-.116V33h-.206v.767l.103.116zm.756-1.959c1.01-1.1 2.02-2.37 2.962-3.791C26.398 24.093 28 19.673 28 15.02 28 10.283 24.639 7 20.103 7h-.206C15.361 7 12 10.282 12 15.02c0 4.653 1.602 9.073 4.282 13.113a30.898 30.898 0 002.962 3.791c.268.293.522.557.756.791.234-.234.488-.498.756-.79zM23 16a3 3 0 10-6 0 3 3 0 006 0zm2 0a5 5 0 11-10 0 5 5 0 0110 0z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </span>
   </a>
 </div>
 `;

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { useTransition } from "react-spring";
 import Button, { buttonSizes } from "@crave/farmblocks-button";
 import Text, { fontSizes } from "@crave/farmblocks-text";
+import { MdRemove } from "@crave/farmblocks-icon";
 
 import {
   Wrapper,
@@ -99,7 +100,7 @@ const Modal = ({
                           {showCloseButton && (
                             <Button
                               className="closeButton"
-                              icon="wg-close"
+                              icon={<MdRemove size={24} />}
                               size={buttonSizes.SMALL}
                               onClick={onRequestClose}
                               data-testid="modal-close-icon"

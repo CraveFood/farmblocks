@@ -1,30 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const SmArrowUpFilled = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 24 24"
+    viewBox="2 2 20 20"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M22 12c0 5.523-4.478 10-10 10-5.523 0-10-4.477-10-10C2 6.478 6.477 2 12 2c5.522 0 10 4.478 10 10zM11 9.914V16a1 1 0 0 0 2 0V9.914l2.293 2.293a1 1 0 0 0 1.414-1.414l-4-4a1 1 0 0 0-1.414 0l-4 4a1 1 0 0 0 1.414 1.414L11 9.914z"
+      d="M22 12c0 5.523-4.478 10-10 10-5.523 0-10-4.477-10-10C2 6.478 6.477 2 12 2c5.522 0 10 4.478 10 10zM11 9.914V16a1 1 0 002 0V9.914l2.293 2.293a1 1 0 001.414-1.414l-4-4a1 1 0 00-1.414 0l-4 4a1 1 0 001.414 1.414L11 9.914z"
       fill={color}
       fillRule="nonzero"
     />
   </svg>
 ));
-SmArrowUpFilled.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-SmArrowUpFilled.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const SmArrowUpFilled = withWrapper(Vector);
 SmArrowUpFilled.groupName = "Actions";
 export default SmArrowUpFilled;

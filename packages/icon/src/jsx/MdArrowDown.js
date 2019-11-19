@@ -1,30 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const MdArrowDown = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 40 40"
+    viewBox="4 4 32 32"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M21 23.93l3.763-4.106a1 1 0 1 1 1.474 1.352l-5.5 6a1 1 0 0 1-1.474 0l-5.5-6a1 1 0 1 1 1.474-1.352L19 23.93V13.5a1 1 0 0 1 2 0v10.43z"
+      d="M21 23.93l3.763-4.106a1 1 0 111.474 1.352l-5.5 6a1 1 0 01-1.474 0l-5.5-6a1 1 0 111.474-1.352L19 23.93V13.5a1 1 0 012 0v10.43z"
       fill={color}
       fillRule="nonzero"
     />
   </svg>
 ));
-MdArrowDown.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdArrowDown.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const MdArrowDown = withWrapper(Vector);
 MdArrowDown.groupName = "Actions";
 export default MdArrowDown;

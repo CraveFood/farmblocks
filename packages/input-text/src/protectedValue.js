@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import { formInputProps, styledInput } from "@crave/farmblocks-hoc-input";
+import { SmEdit } from "@crave/farmblocks-icon";
 
 // the cover of a protected field is a div (instead of an input) enhanced with formInput hoc and some extra style overridings
 const Cover = styled(styledInput)`
@@ -114,7 +115,7 @@ export default WrappedComponent => {
                   onClick={this.onUncover}
                   onKeyDown={this.onUncover}
                 >
-                  <i className="wg-edit" />
+                  <SmEdit />
                 </a>
               </div>
             )}

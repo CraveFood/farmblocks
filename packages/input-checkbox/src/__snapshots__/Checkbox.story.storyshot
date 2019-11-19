@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -41,7 +50,6 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -50,15 +58,6 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -89,15 +88,40 @@ exports[`Storyshots Checkbox/Checkbox Input Default 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
   </div>
 </label>
 `;
 
 exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -138,7 +162,6 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #FFFFFF;
   background-color: #3498db;
@@ -147,15 +170,6 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: visible;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -190,9 +204,25 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
   </div>
 </label>
@@ -200,6 +230,15 @@ exports[`Storyshots Checkbox/Checkbox Input checked 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -249,7 +288,6 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
@@ -258,15 +296,6 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: visible;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -300,12 +329,28 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <div
-      className="c1 label"
+      className="c2 label"
       fontWeight="title"
       size={16}
       type="rgba(0, 0, 0, 0.32)"
@@ -318,6 +363,15 @@ exports[`Storyshots Checkbox/Checkbox Input disabled 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
 .c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
+.c3 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -367,7 +421,6 @@ exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -376,15 +429,6 @@ exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -423,12 +467,28 @@ exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c2"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <div
-      className="c2 label"
+      className="c3 label"
       fontWeight="title"
       size={16}
       type="#2f313a"
@@ -441,6 +501,15 @@ exports[`Storyshots Checkbox/Checkbox Input extended style 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -450,7 +519,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   font-weight: 600;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -460,7 +529,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   font-weight: 600;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -471,7 +540,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   justify-content: center;
 }
 
-.c6 i {
+.c7 svg {
   -webkit-animation: iVXCSc 1.1s linear infinite;
   animation: iVXCSc 1.1s linear infinite;
 }
@@ -516,7 +585,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -525,15 +593,6 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -549,156 +608,12 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   border-color: #3498db;
 }
 
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: default;
-  padding-left: 8px;
-}
-
-.c4 .centerVisibleCheckbox {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 .hiddenCheckbox {
-  opacity: 0;
-  width: 0;
-  margin: 0;
-}
-
-.c4 .visibleCheckbox {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  border: 1px solid;
-  width: 16px;
-  height: 16px;
-  font-size: 8px;
-  border-radius: 4px;
-  color: rgba(0,0,0,0.16);
-  background-color: rgba(0,0,0,0.16);
-  border-color: rgba(0,0,0,0.16);
-}
-
-.c4 .visibleCheckbox .checkmark {
-  visibility: visible;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.c4 .label {
-  margin-left: 8px;
-}
-
-.c4:hover .visibleCheckbox {
-  border-width: 1px;
-}
-
-.c4 .hiddenCheckbox:focus + div .visibleCheckbox {
-  border-color: #3498db;
-}
-
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: default;
-  padding-left: 8px;
-}
-
-.c2 .centerVisibleCheckbox {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 .hiddenCheckbox {
-  opacity: 0;
-  width: 0;
-  margin: 0;
-}
-
-.c2 .visibleCheckbox {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  border: 1px solid;
-  width: 16px;
-  height: 16px;
-  font-size: 8px;
-  border-radius: 4px;
-  color: rgba(0,0,0,0.16);
-  background-color: rgba(0,0,0,0.16);
-  border-color: rgba(0,0,0,0.16);
-}
-
-.c2 .visibleCheckbox .checkmark {
-  visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.c2 .label {
-  margin-left: 8px;
-}
-
-.c2:hover .visibleCheckbox {
-  border-width: 1px;
-}
-
-.c2 .hiddenCheckbox:focus + div .visibleCheckbox {
-  border-color: #3498db;
-}
-
 .c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  cursor: pointer;
+  cursor: default;
   padding-left: 8px;
 }
 
@@ -733,24 +648,14 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #3498db;
-  border-color: #3498db;
+  color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.16);
 }
 
 .c5 .visibleCheckbox .checkmark {
   visibility: visible;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c5 .label {
@@ -758,13 +663,137 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
 }
 
 .c5:hover .visibleCheckbox {
+  border-width: 1px;
+}
+
+.c5 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: default;
+  padding-left: 8px;
+}
+
+.c3 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.16);
+}
+
+.c3 .visibleCheckbox .checkmark {
+  visibility: hidden;
+}
+
+.c3 .label {
+  margin-left: 8px;
+}
+
+.c3:hover .visibleCheckbox {
+  border-width: 1px;
+}
+
+.c3 .hiddenCheckbox:focus + div .visibleCheckbox {
+  border-color: #3498db;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.c6 .centerVisibleCheckbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 .hiddenCheckbox {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c6 .visibleCheckbox {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.c6 .visibleCheckbox .checkmark {
+  visibility: visible;
+}
+
+.c6 .label {
+  margin-left: 8px;
+}
+
+.c6:hover .visibleCheckbox {
   color: #3498db;
   background-color: #ffffff;
   border-color: #3498db;
   border-width: 2px;
 }
 
-.c5 .hiddenCheckbox:focus + div .visibleCheckbox {
+.c6 .hiddenCheckbox:focus + div .visibleCheckbox {
   border-color: #3498db;
 }
 
@@ -785,12 +814,28 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       <div
         className="visibleCheckbox"
       >
-        <div
-          className="checkmark wg-check"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon checkmark"
+            height="100%"
+            viewBox="4 4 32 32"
+            width="100%"
+          >
+            <path
+              d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <div
-        className="c1 label"
+        className="c2 label"
         fontWeight="title"
         size={16}
         type="#2f313a"
@@ -800,7 +845,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
     </div>
   </label>
   <label
-    className="c2"
+    className="c3"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -817,12 +862,28 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       <div
         className="visibleCheckbox"
       >
-        <div
-          className="checkmark wg-check"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon checkmark"
+            height="100%"
+            viewBox="4 4 32 32"
+            width="100%"
+          >
+            <path
+              d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <div
-        className="c3 label"
+        className="c4 label"
         fontWeight="title"
         size={16}
         type="rgba(0, 0, 0, 0.32)"
@@ -834,7 +895,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
    
   <label
     checked={true}
-    className="c4"
+    className="c5"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -852,12 +913,28 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       <div
         className="visibleCheckbox"
       >
-        <div
-          className="checkmark wg-check"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon checkmark"
+            height="100%"
+            viewBox="4 4 32 32"
+            width="100%"
+          >
+            <path
+              d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <div
-        className="c3 label"
+        className="c4 label"
         fontWeight="title"
         size={16}
         type="rgba(0, 0, 0, 0.32)"
@@ -882,12 +959,28 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       <div
         className="visibleCheckbox"
       >
-        <div
-          className="checkmark wg-check"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon checkmark"
+            height="100%"
+            viewBox="4 4 32 32"
+            width="100%"
+          >
+            <path
+              d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <div
-        className="c1 label"
+        className="c2 label"
         fontWeight="title"
         size={16}
         type="#2f313a"
@@ -898,7 +991,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
   </label>
   <label
     checked={true}
-    className="c5"
+    className="c6"
     onMouseUp={[Function]}
   >
     <input
@@ -914,12 +1007,28 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       <div
         className="visibleCheckbox"
       >
-        <div
-          className="checkmark wg-check"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon checkmark"
+            height="100%"
+            viewBox="4 4 32 32"
+            width="100%"
+          >
+            <path
+              d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <div
-        className="c1 label"
+        className="c2 label"
         fontWeight="title"
         size={16}
         type="#2f313a"
@@ -929,7 +1038,7 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
     </div>
   </label>
   <label
-    className="c2"
+    className="c3"
     disabled={true}
     onMouseUp={[Function]}
   >
@@ -942,14 +1051,30 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
       className="centerVisibleCheckbox"
     >
       <div
-        className="c6"
+        className="c7"
       >
-        <i
-          className="wg-loading"
-        />
+        <span
+          className="c1"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height="1em"
+            viewBox="4 4 32 32"
+            width="1em"
+          >
+            <path
+              d="M19 8a1 1 0 012 0v6a1 1 0 01-2 0V8zm2 24a1 1 0 01-2 0v-5a1 1 0 012 0v5zM8 21a1 1 0 010-2h6a1 1 0 010 2H8zm18-.5a.5.5 0 110-1h6a.5.5 0 110 1h-6zm3.197 7.283a1 1 0 01-1.414 1.414l-3.86-3.86a1 1 0 011.414-1.414l3.86 3.86zm-12.87-12.87a1 1 0 01-1.414 1.414l-4.11-4.11a1 1 0 011.414-1.414l4.11 4.11zm-1.664 9.01a1 1 0 011.414 1.414l-3.86 3.86a1 1 0 01-1.414-1.414l3.86-3.86zm13.12-13.12a1 1 0 011.414 1.414l-4.11 4.11a1 1 0 01-1.414-1.414l4.11-4.11z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
       </div>
       <div
-        className="c1 label"
+        className="c2 label"
         fontWeight="title"
         size={16}
         type="#2f313a"
@@ -977,6 +1102,15 @@ exports[`Storyshots Checkbox/Checkbox Input in a fieldset 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input with loading state control 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1026,7 +1160,6 @@ exports[`Storyshots Checkbox/Checkbox Input with loading state control 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -1035,15 +1168,6 @@ exports[`Storyshots Checkbox/Checkbox Input with loading state control 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -1077,12 +1201,28 @@ exports[`Storyshots Checkbox/Checkbox Input with loading state control 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <div
-      className="c1 label"
+      className="c2 label"
       fontWeight="title"
       size={16}
       type="#2f313a"
@@ -1095,6 +1235,15 @@ exports[`Storyshots Checkbox/Checkbox Input with loading state control 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1144,7 +1293,6 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -1153,15 +1301,6 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -1192,12 +1331,28 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <div
-      className="c1 label"
+      className="c2 label"
       fontWeight="title"
       size={16}
       type="#2f313a"
@@ -1209,6 +1364,15 @@ exports[`Storyshots Checkbox/Checkbox Input with onChange event 1`] = `
 `;
 
 exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1249,7 +1413,6 @@ exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -1258,15 +1421,6 @@ exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -1299,9 +1453,25 @@ exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
   </div>
 </label>
@@ -1309,6 +1479,15 @@ exports[`Storyshots Checkbox/Checkbox Input with state control 1`] = `
 
 exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
 .c1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c1 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -1358,7 +1537,6 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
   border: 1px solid;
   width: 16px;
   height: 16px;
-  font-size: 8px;
   border-radius: 4px;
   color: #3498db;
   background-color: #FFFFFF;
@@ -1367,15 +1545,6 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
 
 .c0 .visibleCheckbox .checkmark {
   visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .c0 .label {
@@ -1406,12 +1575,28 @@ exports[`Storyshots Checkbox/Checkbox Input with text label 1`] = `
     <div
       className="visibleCheckbox"
     >
-      <div
-        className="checkmark wg-check"
-      />
+      <span
+        className="c1"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon checkmark"
+          height="100%"
+          viewBox="4 4 32 32"
+          width="100%"
+        >
+          <path
+            d="M26.177 12.432a1 1 0 111.646 1.136l-8.977 13a1 1 0 01-1.597.065l-4.023-4.924a1 1 0 111.548-1.266l3.182 3.894 8.221-11.905z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
     </div>
     <div
-      className="c1 label"
+      className="c2 label"
       fontWeight="title"
       size={16}
       type="#2f313a"
@@ -1926,6 +2111,15 @@ exports[`Storyshots Checkbox/Switch Input extended style 1`] = `
 `;
 
 exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
+.c7 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c7 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 16px;
@@ -1957,7 +2151,7 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
   justify-content: center;
 }
 
-.c6 i {
+.c6 svg {
   -webkit-animation: iVXCSc 1.1s linear infinite;
   animation: iVXCSc 1.1s linear infinite;
 }
@@ -2494,9 +2688,25 @@ exports[`Storyshots Checkbox/Switch Input in a fieldset 1`] = `
           <div
             className="c6"
           >
-            <i
-              className="wg-loading"
-            />
+            <span
+              className="c7"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
+              >
+                <path
+                  d="M19 8a1 1 0 012 0v6a1 1 0 01-2 0V8zm2 24a1 1 0 01-2 0v-5a1 1 0 012 0v5zM8 21a1 1 0 010-2h6a1 1 0 010 2H8zm18-.5a.5.5 0 110-1h6a.5.5 0 110 1h-6zm3.197 7.283a1 1 0 01-1.414 1.414l-3.86-3.86a1 1 0 011.414-1.414l3.86 3.86zm-12.87-12.87a1 1 0 01-1.414 1.414l-4.11-4.11a1 1 0 011.414-1.414l4.11 4.11zm-1.664 9.01a1 1 0 011.414 1.414l-3.86 3.86a1 1 0 01-1.414-1.414l3.86-3.86zm13.12-13.12a1 1 0 011.414 1.414l-4.11 4.11a1 1 0 01-1.414-1.414l4.11-4.11z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
         </div>
       </div>

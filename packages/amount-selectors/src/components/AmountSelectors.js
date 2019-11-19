@@ -6,6 +6,7 @@ import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import InputText from "@crave/farmblocks-input-text";
 import { fontSizes } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
+import { MdAdd, MdMinus } from "@crave/farmblocks-icon";
 
 import selectorSizes from "../constants/selectorSizes";
 import Wrapper from "../styledComponents/AmountSelector";
@@ -18,6 +19,11 @@ const selectorSizeToButtonSize = {
 const selectorSizeToFontSize = {
   [selectorSizes.SMALL]: fontSizes.SMALL,
   [selectorSizes.MEDIUM]: fontSizes.MEDIUM,
+};
+
+const selectorSizeToIconSize = {
+  [selectorSizes.SMALL]: 24,
+  [selectorSizes.MEDIUM]: 32,
 };
 
 class AmountSelectors extends React.Component {
@@ -118,6 +124,7 @@ class AmountSelectors extends React.Component {
       minAmountMessage,
       maxAmountMessage,
       showBoundariesMessageOnlyOnFocus,
+      size,
     } = this.props;
     const { focused, value } = this.state;
     const showMessage = !showBoundariesMessageOnlyOnFocus || focused;
@@ -127,12 +134,12 @@ class AmountSelectors extends React.Component {
       (showMaxMessage && maxAmountMessage) ||
       (showMinMessage && minAmountMessage);
     return (
-      <Wrapper size={this.props.size} className={this.props.className}>
+      <Wrapper size={size} className={this.props.className}>
         <Button
           className="decreaseButton"
           type={buttonTypes.SECONDARY}
-          size={selectorSizeToButtonSize[this.props.size]}
-          icon="wg-minus"
+          size={selectorSizeToButtonSize[size]}
+          icon={<MdMinus size={selectorSizeToIconSize[size]} />}
           disabled={
             disabled || this.state.disableBoth || value <= this.props.min
           }
@@ -154,7 +161,7 @@ class AmountSelectors extends React.Component {
               this.setState({ focused: false, disableBoth: false });
               this.updateDisplayValue();
             }}
-            fontSize={selectorSizeToFontSize[this.props.size]}
+            fontSize={selectorSizeToFontSize[size]}
             disabled={disabled}
             onFocus={() => this.setState({ focused: true })}
           />
@@ -185,8 +192,8 @@ class AmountSelectors extends React.Component {
         <Button
           className="increaseButton"
           type={buttonTypes.SECONDARY}
-          size={selectorSizeToButtonSize[this.props.size]}
-          icon="wg-add"
+          size={selectorSizeToButtonSize[size]}
+          icon={<MdAdd size={selectorSizeToIconSize[size]} />}
           disabled={
             disabled || this.state.disableBoth || value >= this.props.max
           }

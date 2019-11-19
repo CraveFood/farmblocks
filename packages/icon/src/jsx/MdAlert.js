@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const MdAlert = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 40 40"
+    viewBox="4 4 32 32"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
@@ -17,14 +18,15 @@ const MdAlert = React.forwardRef(({ size, color, ...props }, ref) => (
     />
   </svg>
 ));
-MdAlert.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdAlert.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const MdAlert = withWrapper(Vector);
 MdAlert.groupName = "States";
 export default MdAlert;

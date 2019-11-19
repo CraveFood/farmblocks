@@ -5,9 +5,9 @@ import { colors } from "@crave/farmblocks-theme";
 import NavButtonStyled from "./NavButton.styled";
 import { PUSH, FULLSCREEN, OVERLAY } from "../../constants/variants";
 
-const NavButton = ({ component: Component, icon, ...props }) => (
+const NavButton = ({ component: Component, children, ...props }) => (
   <Component role="button" {...props}>
-    <i className={icon} />
+    {children}
   </Component>
 );
 
@@ -18,7 +18,7 @@ NavButton.defaultProps = {
 };
 
 NavButton.propTypes = {
-  icon: PropTypes.string,
+  children: PropTypes.node,
   component: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.object,

@@ -2,9 +2,16 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import styled, { ThemeProvider } from "styled-components";
+import {
+  MdOrders,
+  SmChevronDown,
+  MdEdit,
+  MdAdd,
+  MdMinus,
+} from "@crave/farmblocks-icon";
+
 import buttonTypes from "./constants/buttonTypes";
 import buttonSizes from "./constants/buttonSizes";
-
 import Button from "./index";
 
 const Container = styled.div`
@@ -82,26 +89,26 @@ storiesOf("Button", module)
   .add("Small", () => (
     <Container>
       {getStories({})}
-      {getStories({ icon: "wg-order" })}
-      {getStories({ icon: "wg-order", rightIcon: "wg-small-arrow-bottom" })}
-      {getStories({ rightIcon: "wg-small-arrow-bottom" })}
-      {getStories({ text: "", icon: "wg-order" })}
+      {getStories({ icon: <MdOrders /> })}
+      {getStories({ icon: <MdOrders />, rightIcon: <SmChevronDown /> })}
+      {getStories({ rightIcon: <SmChevronDown /> })}
+      {getStories({ text: "", icon: <MdOrders /> })}
     </Container>
   ))
   .add("Medium", () => (
     <Container>
       {getStories({ size: buttonSizes.MEDIUM })}
-      {getStories({ size: buttonSizes.MEDIUM, icon: "wg-order" })}
+      {getStories({ size: buttonSizes.MEDIUM, icon: <MdOrders /> })}
       {getStories({
         size: buttonSizes.MEDIUM,
-        icon: "wg-order",
-        rightIcon: "wg-small-arrow-bottom",
+        icon: <MdOrders />,
+        rightIcon: <SmChevronDown />,
       })}
       {getStories({
         size: buttonSizes.MEDIUM,
-        rightIcon: "wg-small-arrow-bottom",
+        rightIcon: <SmChevronDown />,
       })}
-      {getStories({ size: buttonSizes.MEDIUM, text: "", icon: "wg-order" })}
+      {getStories({ size: buttonSizes.MEDIUM, text: "", icon: <MdOrders /> })}
     </Container>
   ))
   .add("Secondary (fluid)", () => (
@@ -121,7 +128,7 @@ storiesOf("Button", module)
         fluid
         onClick={action("buttonClicked")}
         text="Secondary Button"
-        icon="wg-order"
+        icon={<MdOrders />}
       />
     </div>
   ))
@@ -169,10 +176,10 @@ storiesOf("Button", module)
   ))
   .add("Plus and minus icon buttons in small and medium sizes", () => (
     <div>
-      <Button icon="wg-minus" />
-      <Button icon="wg-add" />
-      <Button icon="wg-minus" size={buttonSizes.MEDIUM} />
-      <Button icon="wg-add" size={buttonSizes.MEDIUM} />
+      <Button icon={<MdMinus />} />
+      <Button icon={<MdAdd />} />
+      <Button icon={<MdMinus />} size={buttonSizes.MEDIUM} />
+      <Button icon={<MdAdd />} size={buttonSizes.MEDIUM} />
     </div>
   ))
   .add("Custom box-shadow", () => (
@@ -196,10 +203,10 @@ storiesOf("Button", module)
       css="
         font-family: serif;
         .left-icon {
-          font-size: 2em;
+          font-size: 3em;
         }
       "
       text="Label"
-      icon="wg-edit"
+      icon={<MdEdit />}
     />
   ));

@@ -38,11 +38,12 @@ const NavItem = styled.li`
     min-height: 40px;
     min-width: 40px;
     margin-right: 8px;
-  }
-
-  .icon {
     font-size: ${({ iconSize }) => iconSize};
     color: ${GREY_48};
+
+    svg {
+      display: block;
+    }
   }
 
   &:hover,

@@ -21,7 +21,7 @@ storiesOf("More info", module)
   ))
   .add("Without text - tooltip right aligned", () => (
     <div style={{ marginLeft: "200px" }}>
-      <MoreInfo tooltipProps={{ positionX: POSITIONS.X.LEFT }}>
+      <MoreInfo tooltipProps={{ positionX: POSITIONS.X.RIGHT }}>
         Awesome tooltip
       </MoreInfo>
     </div>
@@ -35,7 +35,7 @@ storiesOf("More info", module)
         }
         .icon {
           position: relative;
-          i {visibility: hidden;}
+          svg {visibility: hidden;}
           .hit-area {
             z-index: 1;
           }

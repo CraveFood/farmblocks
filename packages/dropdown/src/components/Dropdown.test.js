@@ -35,7 +35,7 @@ describe("Dropdown", function() {
     expect(tree.find("DropdownMenuWrapper").length).toBe(0);
 
     // click on trigger button should open the dropdown items
-    tree.find("Button").simulate("click");
+    tree.find("button").simulate("click");
     expect(tree.find("DropdownMenuWrapper").length).toBe(1);
 
     // click on the first option of the dropdown items
@@ -62,7 +62,7 @@ describe("Dropdown", function() {
     expect(tree.find("DropdownMenuWrapper").length).toBe(0);
 
     // click on trigger button should open the dropdown items
-    tree.find("Button").simulate("click");
+    tree.find("button").simulate("click");
     expect(tree.find("DropdownMenuWrapper").length).toBe(1);
 
     const props = tree.find("DropdownMenuWrapper").props();

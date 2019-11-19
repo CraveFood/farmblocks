@@ -12,7 +12,7 @@ export default {
   [statusTypes.CURRENT]: {
     hover: {
       color: INDIGO_MILK_CAP,
-      border: `solid 2px ${INDIGO_MILK_CAP}`,
+      border: `solid 1px ${INDIGO_MILK_CAP}`,
     },
   },
   [statusTypes.PENDING]: {

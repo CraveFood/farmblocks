@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { MdCheck, MdLoading } from "@crave/farmblocks-icon";
 
 import { Loading } from "./styledComponents/Checkbox";
 
@@ -10,7 +11,7 @@ const Toggle = ({ isSwitch, loading }) => {
         <div className="toggle">
           {loading && (
             <Loading>
-              <i className="wg-loading" />
+              <MdLoading />
             </Loading>
           )}
         </div>
@@ -21,14 +22,14 @@ const Toggle = ({ isSwitch, loading }) => {
   if (loading) {
     return (
       <Loading>
-        <i className="wg-loading" />
+        <MdLoading />
       </Loading>
     );
   }
 
   return (
     <div className="visibleCheckbox">
-      <div className="checkmark wg-check" />
+      <MdCheck className="checkmark" size="100%" />
     </div>
   );
 };

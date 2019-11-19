@@ -1,20 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Alert default 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -32,18 +42,16 @@ exports[`Storyshots Alert default 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -120,53 +128,90 @@ exports[`Storyshots Alert default 1`] = `
 }
 
 <div
-  className="c0"
-  type="NEWS"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    Default is set to news type, and have default onDismiss function that hides the alert.
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="NEWS"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      Default is set to news type, and have default onDismiss function that hides the alert.
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert default at bottom 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -184,18 +229,16 @@ exports[`Storyshots Alert default at bottom 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -272,53 +315,90 @@ exports[`Storyshots Alert default at bottom 1`] = `
 }
 
 <div
-  className="c0"
-  type="NEWS"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    Default is set to news type, and have default onDismiss function that hides the alert.
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="NEWS"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      Default is set to news type, and have default onDismiss function that hides the alert.
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert extended style 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -336,18 +416,16 @@ exports[`Storyshots Alert extended style 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c2 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c2:hover {
@@ -430,34 +508,61 @@ exports[`Storyshots Alert extended style 1`] = `
 }
 
 <div
-  className="c0 c1"
-  type="NEWS"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    Extended with 'transform: rotate(5deg)'
-  </p>
   <div
-    className="dismiss-button"
+    className="c0 c1"
+    data-testid="alert-content"
+    type="NEWS"
   >
-    <button
-      className="c2"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      Extended with 'transform: rotate(5deg)'
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c2"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c3"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -505,30 +610,50 @@ exports[`Storyshots Alert non dismissable 1`] = `
 }
 
 <div
-  className="c0"
-  type="NEWS"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    I can't be dismissed!
-  </p>
+  <div
+    className="c0"
+    data-testid="alert-content"
+    type="NEWS"
+  >
+    <p>
+      I can't be dismissed!
+    </p>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Alert type attention 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -546,18 +671,16 @@ exports[`Storyshots Alert type attention 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -634,53 +757,90 @@ exports[`Storyshots Alert type attention 1`] = `
 }
 
 <div
-  className="c0"
-  type="ATTENTION"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    Attention alert!
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="ATTENTION"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      Attention alert!
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert type negative 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -698,18 +858,16 @@ exports[`Storyshots Alert type negative 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -786,53 +944,90 @@ exports[`Storyshots Alert type negative 1`] = `
 }
 
 <div
-  className="c0"
-  type="NEGATIVE"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    Negative alert!
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="NEGATIVE"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      Negative alert!
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert type news 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -850,18 +1045,16 @@ exports[`Storyshots Alert type news 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -938,53 +1131,90 @@ exports[`Storyshots Alert type news 1`] = `
 }
 
 <div
-  className="c0"
-  type="NEWS"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    New alert!
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="NEWS"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      New alert!
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert type positive 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1002,18 +1232,16 @@ exports[`Storyshots Alert type positive 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -1090,53 +1318,90 @@ exports[`Storyshots Alert type positive 1`] = `
 }
 
 <div
-  className="c0"
-  type="POSITIVE"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    Positive alert!
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="POSITIVE"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      Positive alert!
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1154,18 +1419,16 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -1242,53 +1505,90 @@ exports[`Storyshots Alert visibleTime 2 seconds 1`] = `
 }
 
 <div
-  className="c0"
-  type="NEWS"
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
+    }
+  }
 >
-  <p>
-    This message will self-destruct in 2 seconds
-  </p>
   <div
-    className="dismiss-button"
+    className="c0"
+    data-testid="alert-content"
+    type="NEWS"
   >
-    <button
-      className="c1"
-      onClick={[Function]}
-      size="SMALL"
-      type="OFF_NEUTRAL"
+    <p>
+      This message will self-destruct in 2 seconds
+    </p>
+    <div
+      className="dismiss-button"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "marginRight": 0,
-          }
-        }
+      <button
+        className="c1"
+        data-testid="alert-dismiss"
+        onClick={[Function]}
+        size="SMALL"
+        type="OFF_NEUTRAL"
       >
-        <i
-          className="wg-close"
-        />
-      </div>
-    </button>
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Alert with custom z-index 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 32px;
+  min-height: 32px;
+  min-width: 32px;
   box-sizing: border-box;
   border: solid 1px rgba(0,0,0,0.16);
   border-radius: 4px;
@@ -1306,18 +1606,16 @@ exports[`Storyshots Alert with custom z-index 1`] = `
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   background-color: rgba(0,0,0,0.16);
-  padding: 0 8px;
+  padding: 0 0;
 }
 
 .c1 .icon {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  line-height: 1;
   color: rgba(255,255,255,0.56);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-size: 1em;
 }
 
 .c1:hover {
@@ -1393,58 +1691,85 @@ exports[`Storyshots Alert with custom z-index 1`] = `
   right: 24px;
 }
 
-<div>
-  <div
-    style={
-      Object {
-        "background": "gray",
-        "height": 120,
-        "position": "absolute",
-        "width": 120,
-        "zIndex": 10,
-      }
+<div
+  style={
+    Object {
+      "height": 200,
+      "transform": "scale(1)",
     }
-  />
-  <div
-    style={
-      Object {
-        "background": "rgba(0, 0, 0, 0.7)",
-        "height": 100,
-        "position": "absolute",
-        "width": 100,
-        "zIndex": 12,
-      }
-    }
-  />
-  <div
-    className="c0"
-    type="NEWS"
-  >
-    <p>
-      should display between the two
-    </p>
+  }
+>
+  <div>
     <div
-      className="dismiss-button"
+      style={
+        Object {
+          "background": "gray",
+          "height": 120,
+          "position": "absolute",
+          "width": 120,
+          "zIndex": 10,
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "background": "rgba(0, 0, 0, 0.7)",
+          "height": 100,
+          "position": "absolute",
+          "width": 100,
+          "zIndex": 12,
+        }
+      }
+    />
+    <div
+      className="c0"
+      data-testid="alert-content"
+      type="NEWS"
     >
-      <button
-        className="c1"
-        onClick={[Function]}
-        size="SMALL"
-        type="OFF_NEUTRAL"
+      <p>
+        should display between the two
+      </p>
+      <div
+        className="dismiss-button"
       >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "marginRight": 0,
-            }
-          }
+        <button
+          className="c1"
+          data-testid="alert-dismiss"
+          onClick={[Function]}
+          size="SMALL"
+          type="OFF_NEUTRAL"
         >
-          <i
-            className="wg-close"
-          />
-        </div>
-      </button>
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "transform": "translateX(-0px)",
+              }
+            }
+          >
+            <span
+              className="c2"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height={24}
+                viewBox="4 4 32 32"
+                width={24}
+              >
+                <path
+                  d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -1,30 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withWrapper } from "../Icon";
 
-const MdAdd = React.forwardRef(({ size, color, ...props }, ref) => (
+const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
   <svg
     width={size}
     height={size}
-    viewBox="0 0 40 40"
+    viewBox="4 4 32 32"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M20 12a1 1 0 0 1 1 1v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-2 0v-6h-6a1 1 0 0 1 0-2h6v-6a1 1 0 0 1 1-1z"
+      d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
       fill={color}
       fillRule="nonzero"
     />
   </svg>
 ));
-MdAdd.propTypes = {
+Vector.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   "aria-label": PropTypes.string,
 };
-MdAdd.defaultProps = {
+Vector.defaultProps = {
   color: "currentColor",
   size: "1em",
 };
+const MdAdd = withWrapper(Vector);
 MdAdd.groupName = "Actions";
 export default MdAdd;

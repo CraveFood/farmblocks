@@ -23,10 +23,9 @@ function colors({ status }) {
 
 const StepContainer = styled.div`
   font-family: Lato, sans-serif;
-  size: 18px;
-  line-height: 1.33;
 
   display: flex;
+  align-items: center;
 
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
@@ -34,11 +33,14 @@ const StepContainer = styled.div`
 
   background: white;
 
-  padding: 16px 24px;
+  padding: 8px 24px;
+  min-height: 48px;
 
   .description {
     padding: 0 16px;
     flex-grow: 1;
+
+    line-height: 1.33;
   }
 
   cursor: ${props => props.status === statusTypes.CURRENT && "pointer"};

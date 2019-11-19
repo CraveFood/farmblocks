@@ -121,21 +121,22 @@ const Wrapper = styled.div`
 
     > .icon {
       color: ${inputBorderColor};
-      height: 16px;
+      font-size: 20px;
+      height: 24px;
     }
 
     > .icon.left {
-      margin-left: ${ifSmall("8", "16")}px;
+      margin-left: ${ifSmall("8", "12")}px;
     }
 
     > .icon.dropdown {
-      margin-left: 8px;
-      margin-right: 16px;
+      margin: 0 8px;
     }
 
     > .clear {
-      color: ${colors.GREY_32};
-      height: 16px;
+      color: ${colors.GREY_16};
+      font-size: 20px;
+      height: 24px;
       &:hover {
         text-decoration: none;
         color: ${colors.INDIGO_MILK_CAP};

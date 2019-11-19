@@ -3,7 +3,7 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 
 import tagTypes from "../../constants/tagTypes";
 
-const rightPadding = props => (props.removable ? "0px" : "8px");
+const rightPadding = props => (props.removable ? "1px" : "8px");
 
 const typeStyles = {
   [tagTypes.SECONDARY]: css`
@@ -34,12 +34,13 @@ const disabledStyles = {
   [tagTypes.SECONDARY]: css`
     background-color: ${colorConstants.GREY_32};
     pointer-events: none;
-    padding: 6px 16px 8px;
+    padding: 6px 14px 8px 15px;
   `,
 };
 
 const StyledTag = styled.div`
   display: inline-flex;
+  align-items: center;
   box-sizing: border-box;
   border: 1px solid ${colorConstants.GREY_16};
   border-radius: 4px;
@@ -55,18 +56,20 @@ const StyledTag = styled.div`
   pointer-events: none;
   &:hover {
     border-width: 2px;
-    padding: 5px 0px 7px 7px;
+    padding: 5px 0 7px 7px;
   }
 
   .icon {
-    padding-right: 8px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
   }
 
   .close-icon {
     display: inline-flex;
+    align-items: center;
     box-sizing: border-box;
-    padding: 5px 8px 8px 8px;
-    font-size: 8px;
+    font-size: 20px;
     color: ${colorConstants.GREY_32};
 
     pointer-events: auto;
@@ -74,7 +77,6 @@ const StyledTag = styled.div`
 
   &:hover .close-icon,
   &:focus .close-icon {
-    padding-right: 7px;
     cursor: pointer;
   }
 

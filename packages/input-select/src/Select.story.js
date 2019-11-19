@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import Image from "@crave/farmblocks-image";
+import { SmCheck } from "@crave/farmblocks-icon";
 
 import Select, { fontSizes } from ".";
 
@@ -83,7 +84,7 @@ storiesOf("Select Input", module)
             }}
           >
             {item.label}
-            {selected && <i className="icon wg-check" />}
+            {selected && <SmCheck size={24} />}
           </span>
           <Image src={item.image} />
         </div>

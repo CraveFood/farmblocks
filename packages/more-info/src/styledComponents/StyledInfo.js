@@ -7,7 +7,7 @@ const tooltipAlign = ({ tooltipProps }) => {
   if (!positionX || positionX === POSITIONS.X.CENTER) return null;
 
   return css`
-    margin-${positionX}: -4px;
+    margin-${positionX}: -3px;
   `;
 };
 
@@ -21,9 +21,12 @@ const StyledInfo = styled.div`
 
 	.icon {
 		display: inline-block;
-		margin: 0 8px;
+		margin: 0 4px;
 		cursor: pointer;
 		color: ${colorConstants.OYSTER};
+		.farmblocks-icon {
+			font-size: 1.2em;
+		}
 	}
 
 	.icon:hover, .hovered {

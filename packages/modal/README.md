@@ -12,8 +12,9 @@ A React Modal component
 - [Helpers](#helpers)
   - [useModal](#usemodal)
   - [ModalManager](#modalmanager)
-- [Extended Components](#extended-components)
+- [Extra Components](#extra-components)
   - [DialogModal](#dialogmodal)
+  - [ModalTitle](#modaltitle)
 - [License](#license)
 
 ## Installation
@@ -178,11 +179,12 @@ It accepts all the props from both of them.
 
 ```jsx
 import { DialogModal } from "@crave/farmblocks-modal";
+import { MdAlert } from "@crave/farmblocks-icon";
 
 const Example = () => (
   <DialogModal
     isOpen
-    icon="wg-alert"
+    icon={<MdAlert />}
     title="Delete entry?"
     description="This action can't be undone"
     actions={[

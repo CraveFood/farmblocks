@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { fontSizes } from "@crave/farmblocks-theme";
 import { POSITIONS } from "@crave/farmblocks-tooltip";
+import { MdTrash, MdOrders } from "@crave/farmblocks-icon";
 
 import formInput from ".";
 
@@ -71,7 +72,7 @@ storiesOf("HOC formInput", module)
     <EnhancedInput type="search" fontSize={fontSizes.SMALL} value="broccoli" />
   ))
   .add("html search input with custom clear icon", () => (
-    <EnhancedInput type="search" value="broccoli" clearIcon="wg-close" />
+    <EnhancedInput type="search" value="broccoli" clearIcon={<MdTrash />} />
   ))
   .add("html input with clear button", () => <EnhancedInput clearable />)
   .add("html text input with combobox role", () => (
@@ -90,11 +91,11 @@ storiesOf("HOC formInput", module)
     </div>
   ))
   .add("html input with leftIcon", () => (
-    <EnhancedInput leftIcon="wg-order" value="foo bar" />
+    <EnhancedInput leftIcon={<MdOrders />} value="foo bar" />
   ))
   .add("small html input with leftIcon", () => (
     <EnhancedInput
-      leftIcon="wg-order"
+      leftIcon={<MdOrders />}
       fontSize={fontSizes.SMALL}
       value="foo bar"
     />

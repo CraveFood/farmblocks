@@ -230,20 +230,8 @@ describe("formInput", function() {
     const component = mount(<EnhancedInput type="search" value={value} />);
     expect(component.state("value")).toBe(value);
 
-    component
-      .find("LinkContainer[className='clear']")
-      .find("span")
-      .simulate("click");
+    component.find("span[data-testid='input-clear']").simulate("click");
     expect(component.state("value")).toBe("");
-  });
-  test("click on the button to clear the input should not remove input's focus", function() {
-    const value = "tomato";
-    const component = mount(<EnhancedInput clearable value={value} />);
-    const event = { preventDefault: jest.fn() };
-
-    component.find("div.input").simulate("mousedown", event);
-    component.find(".clear i").simulate("mousedown", event);
-    expect(event.preventDefault).toHaveBeenCalledTimes(1);
   });
 
   test("click on the dropdown icon should remove input's focus", () => {
@@ -252,7 +240,7 @@ describe("formInput", function() {
     const event = { preventDefault: jest.fn() };
 
     component.find("div.input").simulate("mousedown", event);
-    component.find("i").simulate("mousedown", event);
+    component.find("svg").simulate("mousedown", event);
     expect(event.preventDefault).toHaveBeenCalledTimes(0);
   });
 });

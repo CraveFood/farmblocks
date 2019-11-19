@@ -38,11 +38,6 @@ render(
 
 See the stories source code for more usage examples.
 
-### Required Font icon
-
-This package assumes that the application using it uses a font icon that have a
-checkmark symbol, and that the class name to include that icon is `.wg-check`.
-
 ### Required Polyfills
 
 This package assumes it will run on an enviroment that has support for
@@ -71,7 +66,7 @@ table.
 | rowGroupKey           | string                                                 | if you have rows that contains sub-rows as a list under a key, you can pass this property with the name of the key, to have a table with row groups generated                                                                                                                                                                                                               |
 | flatGroupCondition    | function `(row) => boolean`                            | if you need to display some row groups as regular rows, use a function to describe in which conditions a rowgroup should be flattened                                                                                                                                                                                                                                       |
 | collapsed             | boolean                                                | if row groups are used, this flag will add a button column with buttons that works as expand/collapse toggle on the start of row groups. The groups will start collapsed.                                                                                                                                                                                                   |
-| onTitleClick          | function `(columnIndex, data) => any`                  | when the option `clickable` is used on the Column children, that column title will be a link and will have the `wg-arrow-down` icon displayed, upon click such columns will trigger the function you provide in this property, it will be called with 2 arguments, the index of the clicked column from left to right and the whole table data                              |
+| onTitleClick          | function `(columnIndex, data) => any`                  | when the option `clickable` is used on the Column children, that column title will be a link and will have the `SmChevronDown` icon displayed, upon click such columns will trigger the function you provide in this property, it will be called with 2 arguments, the index of the clicked column from left to right and the whole table data                              |
 | children              | React nodes                                            | the table comopnent expect Column children that describes how to interpret and render the table data on each column for all rows                                                                                                                                                                                                                                            |
 | onRowClick            | function                                               | use this function to listen to row clicks. Please note that click on buttons or links also propagate the click until it reachs the row. To prevent this behaviour, you should call `event.stopPropagation` on the target element.                                                                                                                                           |
 | renderExtraChildRows  | function                                               | use this to render rows along with the ones managed by `rowGroupKey`. It passes an object with the `rowData` and the components `ChildRow`, `ChildCell` and `IndentedChildCell`. **Warning**: This API is low level and you need to ensure that the number of cells matches the columns of the table, including the cells for the selection checkbox and the expand button. |

@@ -79,6 +79,12 @@ const App = () => {
   const [expanded, { toggle, collapse }] = useToggle(false);
   const [selected, setSelected] = useState(tabs[0]);
   const tabs = ["purveyor", "order", "search", "meat"];
+  const icons = {
+    purveyor: <MdVendors />,
+    order: <MdOrders />,
+    search: <MdSearch />,
+    meat: <LgMeats />,
+  };
 
   return (
     <>
@@ -94,7 +100,7 @@ const App = () => {
                 key={tab}
                 onClick={() => setSelected(tab)}
                 active={tab === selected}
-                icon={`wg-${tab}`}
+                icon={icons[tab]}
                 {...props}
               >
                 {tab}
@@ -186,11 +192,11 @@ To see these and more examples running, visit our [storybook](https://cravefood.
 
   > NavItem background color.
 
-- **icon** (_String_)
+- **icon** (_Node_)
 
-  > Icon class name (don't use `icon` prop along with `image` prop)
+  > Icon node (don't use `icon` prop along with `image` prop)
 
-- **iconSize** (_String_)
+- **iconSize** (_String | Number_)
 
   > Font size for the icon
 

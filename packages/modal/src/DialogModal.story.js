@@ -2,6 +2,7 @@ import React from "react";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import { buttonTypes } from "@crave/farmblocks-button";
+import { MdAlert, MdQuestion } from "@crave/farmblocks-icon";
 
 import { DialogModal, useModal } from ".";
 
@@ -31,7 +32,7 @@ storiesOf("Modal/DialogModal", module)
   ))
   .add("Icon + one action", () => (
     <DialogModal
-      icon="wg-alert"
+      icon={<MdAlert />}
       title="Dialog Modal Title"
       description="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod."
       actions={[primaryAction]}
@@ -56,7 +57,7 @@ storiesOf("Modal/DialogModal", module)
           <button onClick={open}>Do Something</button>
           <DialogModal
             {...modalProps}
-            icon="wg-question"
+            icon={<MdQuestion />}
             title="Do the thing?"
             description="Once it's done, there's no way back."
             actions={[

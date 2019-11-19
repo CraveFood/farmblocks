@@ -6,7 +6,7 @@ import { NEUTRAL } from "../constants/buttonTypes";
 
 const buttonHeight = ({ size }) => (size === MEDIUM ? 48 : 32);
 const lineHeight = props => buttonHeight(props) - 2;
-const paddingStyle = ({ size, isIconOnly, paddingX }) => {
+const paddingStyle = ({ isIconOnly, paddingX }) => {
   if (paddingX) {
     return css`
       padding: 0 ${paddingX};
@@ -14,7 +14,7 @@ const paddingStyle = ({ size, isIconOnly, paddingX }) => {
   }
 
   return css`
-    padding: 0 ${size !== MEDIUM && isIconOnly ? "8px" : "16px"};
+    padding: 0 ${isIconOnly ? "0" : "16px"};
   `;
 };
 
@@ -86,9 +86,10 @@ function loadingStyle(props) {
 
 const Button = styled.button`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  height: ${buttonHeight}px;
+  min-height: ${buttonHeight}px;
+  min-width: ${buttonHeight}px;
   box-sizing: border-box;
 
   border: solid 1px rgba(0, 0, 0, 0.16);
@@ -110,9 +111,10 @@ const Button = styled.button`
   cursor: pointer;
 
   .icon {
-    display: inline-flex;
+    line-height: 1;
     color: rgba(255, 255, 255, 0.56);
     align-self: center;
+    font-size: ${({ size }) => (size === MEDIUM ? "1.4em" : "1em")};
   }
 
   &:hover {
