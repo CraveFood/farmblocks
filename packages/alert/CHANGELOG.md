@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@4.4.0...@crave/farmblocks-alert@5.0.0) (2019-11-19)
+
+
+### Features
+
+* **alert:** use new icon ([6e18c90](https://github.com/CraveFood/farmblocks/commit/6e18c90abdb6c2439da457a32cb40956dcdc02a2))
+
+
+### BREAKING CHANGES
+
+* **alert:** uses a new version of the Button component which expects icons as node
+
+
+
+
+
 # [4.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@4.3.11...@crave/farmblocks-alert@4.4.0) (2019-11-13)
 
 

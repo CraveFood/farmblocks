@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.4.0...@crave/farmblocks-empty-state@4.0.0) (2019-11-19)
+
+
+### Features
+
+* **empty-state:** use new icon ([6c629aa](https://github.com/CraveFood/farmblocks/commit/6c629aa982ef6a92e0519ab22d892f1d8314e08c))
+
+
+### BREAKING CHANGES
+
+* **empty-state:** uses a new version of the Button component which expects icons as node
+
+
+
+
+
 # [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.3.10...@crave/farmblocks-empty-state@3.4.0) (2019-11-13)
 
 

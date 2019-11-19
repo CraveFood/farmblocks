@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@2.1.0...@crave/farmblocks-more-info@3.0.0) (2019-11-19)
+
+
+### Features
+
+* **more-info:** use new icons ([a4a6ccc](https://github.com/CraveFood/farmblocks/commit/a4a6ccc212b7f036dc71ce2d7a3534ace55ab2f5))
+
+
+### BREAKING CHANGES
+
+* **more-info:** removed the icon prop in favor of trigger
+
+
+
+
+
 # [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@2.0.10...@crave/farmblocks-more-info@2.1.0) (2019-11-13)
 
 

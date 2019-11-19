@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@1.5.0...@crave/farmblocks-tags@2.0.0) (2019-11-19)
+
+
+### Features
+
+* **tag:** use new icons ([4e76c14](https://github.com/CraveFood/farmblocks/commit/4e76c147206fb563823ad3ddacfbf6c672c36231))
+
+
+### BREAKING CHANGES
+
+* **tag:** icon prop expect a node intead of a className
+
+
+
+
+
 # [1.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@1.4.6...@crave/farmblocks-tags@1.5.0) (2019-11-13)
 
 

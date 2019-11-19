@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.4.0...@crave/farmblocks-table@5.0.0) (2019-11-19)
+
+
+### Features
+
+* **table:** use new icons ([66d9151](https://github.com/CraveFood/farmblocks/commit/66d91512c93f9237326a8d01fa7d7db8a906e4d9))
+
+
+### BREAKING CHANGES
+
+* **table:** uses a new version of the Button component which expects icons as node
+
+
+
+
+
 # [4.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@4.3.2...@crave/farmblocks-table@4.4.0) (2019-11-13)
 
 

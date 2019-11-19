@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.4.0...@crave/farmblocks-stepper@2.5.0) (2019-11-19)
+
+
+### Features
+
+* **stepper:** use new icons ([8049078](https://github.com/CraveFood/farmblocks/commit/8049078498a457cfd3d394434e1b15828b852acf))
+
+
+
+
+
 # [2.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.3.3...@crave/farmblocks-stepper@2.4.0) (2019-11-13)
 
 

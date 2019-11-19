@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.3.0...@crave/farmblocks-icon@0.4.0) (2019-11-19)
+
+
+### Features
+
+* **icon:** add minus ([e327b11](https://github.com/CraveFood/farmblocks/commit/e327b11b17b9677eeb5fe085ac58ad4ec2581a81))
+* **icon:** add withAnimation HOC ([4d3beb0](https://github.com/CraveFood/farmblocks/commit/4d3beb0786db91369d43626335ca0dbf7ff86573))
+* **icon:** crop part of the margin in the icons ([29de35b](https://github.com/CraveFood/farmblocks/commit/29de35b0401abb9691fd59477d099d4f02989129))
+
+
+
+
+
 # [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.2.0...@crave/farmblocks-icon@0.3.0) (2019-11-13)
 
 

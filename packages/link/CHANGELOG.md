@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@4.2.6...@crave/farmblocks-link@5.0.0) (2019-11-19)
+
+
+### Features
+
+* **link:** use new icons ([15da3a9](https://github.com/CraveFood/farmblocks/commit/15da3a98ff1e554794709f2d8c017c88259c6f42))
+
+
+### BREAKING CHANGES
+
+* **link:** leftIcon and rightIcon props expect a node intead of a className
+
+
+
+
+
 ## [4.2.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@4.2.5...@crave/farmblocks-link@4.2.6) (2019-10-31)
 
 **Note:** Version bump only for package @crave/farmblocks-link

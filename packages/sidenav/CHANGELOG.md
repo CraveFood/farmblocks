@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@1.0.0...@crave/farmblocks-sidenav@2.0.0) (2019-11-19)
+
+
+### Features
+
+* **sidenav:** use new icons ([ed6050c](https://github.com/CraveFood/farmblocks/commit/ed6050c619d45e1aefd7807dc0aa4abc36a7fbff))
+
+
+### BREAKING CHANGES
+
+* **sidenav:** icon prop now expects a node instead of a classname
+
+
+
+
+
 # 1.0.0 (2019-11-13)
 
 

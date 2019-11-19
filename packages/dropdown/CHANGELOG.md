@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@1.5.0...@crave/farmblocks-dropdown@2.0.0) (2019-11-19)
+
+
+### Features
+
+* **dropdown:** use new icon ([48764d6](https://github.com/CraveFood/farmblocks/commit/48764d6c87b4c09ff7f060c40c11b8276546b71a))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** uses a new version of the Button component which expects icons as node
+
+
+
+
+
 # [1.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@1.4.7...@crave/farmblocks-dropdown@1.5.0) (2019-11-13)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.2.0...@crave/farmblocks-hoc-input@7.0.0) (2019-11-19)
+
+
+### Features
+
+* **hoc-input:** use new icons ([e3b8eb2](https://github.com/CraveFood/farmblocks/commit/e3b8eb27da9b364d0dca95ef6e02dff9fc5164e8))
+
+
+### BREAKING CHANGES
+
+* **hoc-input:** clearIcon and leftIcon props expect a node intead of a className
+
+
+
+
+
 # [6.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@6.1.1...@crave/farmblocks-hoc-input@6.2.0) (2019-11-13)
 
 

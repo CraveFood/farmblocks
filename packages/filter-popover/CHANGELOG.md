@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@2.2.0...@crave/farmblocks-filter-popover@3.0.0) (2019-11-19)
+
+
+### Features
+
+* **filter-popover:** use new icon ([768b8d7](https://github.com/CraveFood/farmblocks/commit/768b8d78f12b47b0817bf1e8fecea3ef84b919b5))
+
+
+### BREAKING CHANGES
+
+* **filter-popover:** uses a new version of the Button component which expects icons as node
+
+
+
+
+
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@2.1.10...@crave/farmblocks-filter-popover@2.2.0) (2019-11-13)
 
 

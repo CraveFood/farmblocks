@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.6.0...@crave/farmblocks-amount-selectors@2.7.0) (2019-11-19)
+
+
+### Features
+
+* **amount-selectors:** use new icons ([37ce7ce](https://github.com/CraveFood/farmblocks/commit/37ce7ced1f64a7ba2f3d56d47a5a534636f56a3b))
+
+
+
+
+
 # [2.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.5.4...@crave/farmblocks-amount-selectors@2.6.0) (2019-11-13)
 
 

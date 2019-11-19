@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.2.0...@crave/farmblocks-modal@3.0.0) (2019-11-19)
+
+
+### Features
+
+* **modal:** use new icons ([22a2772](https://github.com/CraveFood/farmblocks/commit/22a27722da0e6e57604c4b02604a013448900577))
+
+
+### BREAKING CHANGES
+
+* **modal:** uses a new version of the Button component which expects icons as node
+
+
+
+
+
 # [2.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@2.1.8...@crave/farmblocks-modal@2.2.0) (2019-11-13)
 
 

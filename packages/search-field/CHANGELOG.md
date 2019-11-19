@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.6.0...@crave/farmblocks-search-field@3.7.0) (2019-11-19)
+
+
+### Features
+
+* **search-field:** use new icons ([a4c86cb](https://github.com/CraveFood/farmblocks/commit/a4c86cb2065570171d1ac7e3fe944b22e878ad39))
+
+
+
+
+
 # [3.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.5.7...@crave/farmblocks-search-field@3.6.0) (2019-11-13)
 
 

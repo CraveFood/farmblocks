@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@7.1.0...@crave/farmblocks-button@8.0.0) (2019-11-19)
+
+
+### Features
+
+* **button:** use new icons ([6ce048d](https://github.com/CraveFood/farmblocks/commit/6ce048d46273ca78ec72dede62fbfa91c5e97d6d))
+
+
+### BREAKING CHANGES
+
+* **button:** icon and rightIcon props now expect a node
+
+
+
+
+
 # [7.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@7.0.2...@crave/farmblocks-button@7.1.0) (2019-11-13)
 
 

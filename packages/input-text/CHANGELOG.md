@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.7.0...@crave/farmblocks-input-text@3.8.0) (2019-11-19)
+
+
+### Features
+
+* **input-text:** use new icon ([cd92861](https://github.com/CraveFood/farmblocks/commit/cd92861b116a9934e8dbdda68b86b1a03ec4fbfc))
+
+
+
+
+
 # [3.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.6.25...@crave/farmblocks-input-text@3.7.0) (2019-11-13)
 
 
