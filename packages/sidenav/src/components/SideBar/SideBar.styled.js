@@ -41,7 +41,7 @@ export const SideBar = styled.nav`
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
-  left: 0;
+  ${({ position }) => position}: 0;
   top: ${({ offsetTop }) => offsetTop};
   overflow-x: hidden;
   transition: width 0.25s, padding-right 0.25s, padding-left 0.25s;
@@ -63,6 +63,7 @@ SideBar.propTypes = {
   expanded: PropTypes.bool,
   highlightColor: PropTypes.string,
   zIndex: PropTypes.number,
+  position: PropTypes.oneOf(["right", "left"]),
 };
 
 export default SideBar;

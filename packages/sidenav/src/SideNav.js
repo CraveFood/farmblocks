@@ -55,6 +55,7 @@ SideNav.defaultProps = {
   expandedWidth: "270px",
   variant: PUSH,
   expanded: true,
+  position: "left",
 };
 
 SideNav.propTypes = {
@@ -71,7 +72,7 @@ SideNav.propTypes = {
  */
   offsetTop: PropTypes.string,
   /**
-    Width on expanded `false` state. (only applied on "push" || "overlay" variant)
+    Width on expanded `false` state. (only applied on "push" or "overlay" variant)
   */
   collapsedWidth: PropTypes.string,
   /**
@@ -99,9 +100,13 @@ SideNav.propTypes = {
   */
   onToggle: PropTypes.func,
   /**
-    Passing this prop will render a close button on the sidebar top/right corner when expanded. (only applied on "fullScreen" ||
+    Passing this prop will render a close button on the sidebar top/right corner when expanded. (only applied on "fullScreen" or "overlay")
   */
   onClose: PropTypes.func,
+  /**
+    The position to anchor the sidebar, accepts "right" or "left"
+  */
+  position: PropTypes.oneOf(["right", "left"]),
 };
 
 export default SideNav;
