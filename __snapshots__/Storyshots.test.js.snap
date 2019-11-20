@@ -17183,6 +17183,147 @@ exports[`Storyshots SideNav/SideNav Complete Side Nav Simple 1`] = `
 </div>
 `;
 
+exports[`Storyshots SideNav/SideNav Drawer Like Using Sidebar On The Right 1`] = `
+.c6 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c6 .farmblocks-icon {
+  display: block;
+}
+
+.c4 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.c4:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
+.c1 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+}
+
+.c0 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 56px;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  width: 450px;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.16);
+}
+
+.c2 {
+  backgroundcolor: hotpink;
+  height: 98vh;
+}
+
+.c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  left: auto;
+  z-index: 100;
+}
+
+.c3 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  height: 56px;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.32);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 90;
+}
+
+<div
+  style={
+    Object {
+      "minHeight": "500px",
+      "transform": "scale(1)",
+    }
+  }
+>
+  <nav
+    className="c0"
+    onClose={[Function]}
+  />
+  <div
+    className="c1 c2"
+    data-testid="pageWrapper-navbar"
+  >
+    <div
+      className="c3"
+    />
+    <div
+      className="c4 c5"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        className="c6"
+        color="currentColor"
+        size="1em"
+      >
+        <svg
+          aria-hidden={true}
+          className="farmblocks-icon "
+          height="1em"
+          viewBox="4 4 32 32"
+          width="1em"
+        >
+          <path
+            d="M28 25a1 1 0 010 2H12a1 1 0 010-2h16zm0-6a1 1 0 010 2H12a1 1 0 010-2h16zm0-6a1 1 0 010 2H12a1 1 0 010-2h16z"
+            fill="currentColor"
+            fillRule="nonzero"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
 .c2 {
   display: inline-block;
@@ -21179,7 +21320,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Simple 1`] = `
     data-testid="navbar-expanded"
   >
     <div>
-      Sidebar Content
+      SideBar Content
     </div>
   </nav>
 </div>
