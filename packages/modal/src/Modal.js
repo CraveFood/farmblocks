@@ -59,7 +59,6 @@ const Modal = ({
       opacity: 0,
       position:
         parentNode === Modal.defaultProps.parentNode ? "fixed" : "absolute",
-      justifyContent: verticalAlign,
       zIndex,
     },
     enter: { opacity: 1 },
@@ -78,7 +77,14 @@ const Modal = ({
     fade.map(
       ({ item: fadeItem, key: fadeKey, props: fadeStyle }) =>
         fadeItem && (
-          <Wrapper className={className} key={fadeKey} style={fadeStyle}>
+          <Wrapper
+            className={className}
+            key={fadeKey}
+            style={fadeStyle}
+            p={[1, 1, 5]}
+            pb={[2, 2, 5]}
+            justifyContent={verticalAlign}
+          >
             <Overlay
               data-testid="modal-overlay"
               className="overlay"
@@ -91,7 +97,7 @@ const Modal = ({
                     <ConstrainedCard
                       floating
                       className="card"
-                      padding="0"
+                      p={0}
                       {...cardProps}
                     >
                       {(header || showCloseButton) && (
@@ -135,7 +141,7 @@ Modal.defaultProps = {
   shouldCloseOnOverlayClick: true,
   shouldCloseOnEsc: true,
   showCloseButton: true,
-  verticalAlign: "flex-start",
+  verticalAlign: ["flex-end", "flex-start"],
   zIndex: 1500,
 };
 
@@ -156,7 +162,7 @@ Modal.propTypes = {
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
   closeButtonProps: PropTypes.shape(Button.propTypes),
   className: PropTypes.string,
-  verticalAlign: PropTypes.oneOf(["flex-start", "center", "flex-end"]),
+  verticalAlign: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   zIndex: PropTypes.number,
 };
 

@@ -50,9 +50,9 @@ This code will render:
 
   > Whether the modal is visible or not.
 
-- **verticalAlign** (`"flex-start"` | `"center"` | `"flex-end"`) = `"flex-start"`
+- **verticalAlign** (_Array_ || _String_) = `["flex-end", "flex-start"]`
 
-  > Vertical position of the modal at the viewport
+  > Vertical position of the modal at the viewport. All justify-content values are valid.
 
 - **parentNode** (_HTMLElement_) = `document.body`
 
@@ -220,6 +220,15 @@ const Example = () => (
 ```
 
 ![image](https://user-images.githubusercontent.com/32174637/61314892-03ca3680-a7d4-11e9-8387-b7985d32c351.png)
+
+## Peer dependencies
+
+- prop-types
+- react
+- react-dom
+- react-spring
+- styled-components
+- styled-system
 
 ## License
 

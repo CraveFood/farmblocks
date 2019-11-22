@@ -11,7 +11,11 @@ const DialogModal = props => (
   <Modal
     showCloseButton={false}
     {...pick(props, modalPropKeys)}
-    cardProps={{ width: "560px", padding: "16px 40px", ...props.cardProps }}
+    cardProps={{
+      width: "560px",
+      py: [0, 2],
+      ...props.cardProps,
+    }}
   >
     <EmptyState className="empty-state" {...omit(props, modalPropKeys)} />
   </Modal>
