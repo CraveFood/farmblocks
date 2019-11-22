@@ -112,10 +112,10 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -123,7 +123,6 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -136,6 +135,12 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -166,6 +171,7 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -195,6 +201,29 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div>
   <button
     onClick={[Function]}
@@ -203,9 +232,28 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
   </button>
   <div
     className="c0"
+    justifyContent={
+      Array [
+        "flex-end",
+        "flex-start",
+      ]
+    }
+    p={
+      Array [
+        1,
+        1,
+        5,
+      ]
+    }
+    pb={
+      Array [
+        2,
+        2,
+        5,
+      ]
+    }
     style={
       Object {
-        "justifyContent": "flex-start",
         "opacity": 0,
         "position": "fixed",
         "zIndex": 1500,
@@ -221,7 +269,7 @@ exports[`Storyshots Modal/helpers ModalManager open at mount 1`] = `
       className="c2"
       style={
         Object {
-          "transform": "translate3D(0, -50px, 0)",
+          "transform": "translate3D(0, 50px, 0)",
         }
       }
     >
@@ -446,10 +494,10 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -457,7 +505,6 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -470,6 +517,12 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -500,6 +553,7 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -529,6 +583,29 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div>
   <button
     onClick={[Function]}
@@ -537,9 +614,28 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
   </button>
   <div
     className="c0"
+    justifyContent={
+      Array [
+        "flex-end",
+        "flex-start",
+      ]
+    }
+    p={
+      Array [
+        1,
+        1,
+        5,
+      ]
+    }
+    pb={
+      Array [
+        2,
+        2,
+        5,
+      ]
+    }
     style={
       Object {
-        "justifyContent": "flex-start",
         "opacity": 0,
         "position": "fixed",
         "zIndex": 1500,
@@ -555,7 +651,7 @@ exports[`Storyshots Modal/helpers useModal open at mount 1`] = `
       className="c2"
       style={
         Object {
-          "transform": "translate3D(0, -50px, 0)",
+          "transform": "translate3D(0, 50px, 0)",
         }
       }
     >

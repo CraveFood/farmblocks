@@ -97,10 +97,10 @@ exports[`Storyshots Modal Center aligned 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -108,7 +108,6 @@ exports[`Storyshots Modal Center aligned 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,6 +120,12 @@ exports[`Storyshots Modal Center aligned 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c1 {
@@ -151,6 +156,7 @@ exports[`Storyshots Modal Center aligned 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -180,11 +186,39 @@ exports[`Storyshots Modal Center aligned 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 <div
   className="c0"
+  justifyContent="center"
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "center",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -199,7 +233,7 @@ exports[`Storyshots Modal Center aligned 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -357,10 +391,10 @@ exports[`Storyshots Modal Default 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -368,7 +402,6 @@ exports[`Storyshots Modal Default 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -381,6 +414,12 @@ exports[`Storyshots Modal Default 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -411,6 +450,7 @@ exports[`Storyshots Modal Default 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -440,11 +480,53 @@ exports[`Storyshots Modal Default 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -460,7 +542,7 @@ exports[`Storyshots Modal Default 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -619,10 +701,10 @@ exports[`Storyshots Modal Extensive Content 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -630,7 +712,6 @@ exports[`Storyshots Modal Extensive Content 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -643,6 +724,12 @@ exports[`Storyshots Modal Extensive Content 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -673,6 +760,7 @@ exports[`Storyshots Modal Extensive Content 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -706,11 +794,53 @@ exports[`Storyshots Modal Extensive Content 1`] = `
   white-space: pre-line;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -725,7 +855,7 @@ exports[`Storyshots Modal Extensive Content 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -936,10 +1066,10 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -947,7 +1077,6 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -960,6 +1089,12 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -990,6 +1125,7 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c10 {
@@ -1019,11 +1155,53 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -1038,7 +1216,7 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -1124,10 +1302,10 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -1135,7 +1313,6 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1148,6 +1325,12 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -1178,6 +1361,7 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c8 {
@@ -1207,11 +1391,53 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -1226,7 +1452,7 @@ exports[`Storyshots Modal With ModalTitle header and without close button 1`] = 
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -1358,10 +1584,10 @@ exports[`Storyshots Modal With cardProps 1`] = `
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 400px;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -1369,7 +1595,6 @@ exports[`Storyshots Modal With cardProps 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1382,6 +1607,12 @@ exports[`Storyshots Modal With cardProps 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -1412,6 +1643,7 @@ exports[`Storyshots Modal With cardProps 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -1445,11 +1677,53 @@ exports[`Storyshots Modal With cardProps 1`] = `
   white-space: pre-line;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -1464,7 +1738,7 @@ exports[`Storyshots Modal With cardProps 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -1665,10 +1939,10 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 400px;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -1676,7 +1950,6 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1689,6 +1962,12 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -1719,6 +1998,7 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c10 {
@@ -1758,11 +2038,53 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
   font-family: "Lucida Console",Monaco,monospace;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -1777,7 +2099,7 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -2070,10 +2392,10 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 400px;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -2081,7 +2403,6 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2094,6 +2415,12 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -2124,6 +2451,7 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c10 {
@@ -2170,11 +2498,53 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   white-space: pre-line;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -2189,7 +2559,7 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -2414,10 +2784,10 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -2425,7 +2795,6 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2438,6 +2807,12 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -2468,6 +2843,7 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -2497,11 +2873,53 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -2516,7 +2934,7 @@ exports[`Storyshots Modal With custom close button props 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -2674,10 +3092,10 @@ exports[`Storyshots Modal With custom header style 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -2685,7 +3103,6 @@ exports[`Storyshots Modal With custom header style 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2698,6 +3115,12 @@ exports[`Storyshots Modal With custom header style 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c2 {
@@ -2728,6 +3151,7 @@ exports[`Storyshots Modal With custom header style 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c10 {
@@ -2761,11 +3185,53 @@ exports[`Storyshots Modal With custom header style 1`] = `
   background: black;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0 c1"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -2780,7 +3246,7 @@ exports[`Storyshots Modal With custom header style 1`] = `
     className="c3"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -3039,10 +3505,10 @@ exports[`Storyshots Modal With footer 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -3050,7 +3516,6 @@ exports[`Storyshots Modal With footer 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3063,6 +3528,12 @@ exports[`Storyshots Modal With footer 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -3093,6 +3564,7 @@ exports[`Storyshots Modal With footer 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -3135,11 +3607,53 @@ exports[`Storyshots Modal With footer 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -3154,7 +3668,7 @@ exports[`Storyshots Modal With footer 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -3331,10 +3845,10 @@ exports[`Storyshots Modal With header 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -3342,7 +3856,6 @@ exports[`Storyshots Modal With header 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3355,6 +3868,12 @@ exports[`Storyshots Modal With header 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -3385,6 +3904,7 @@ exports[`Storyshots Modal With header 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -3414,11 +3934,53 @@ exports[`Storyshots Modal With header 1`] = `
   margin-left: auto;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -3433,7 +3995,7 @@ exports[`Storyshots Modal With header 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
@@ -3605,10 +4167,10 @@ Array [
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -3616,7 +4178,6 @@ Array [
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3629,6 +4190,12 @@ Array [
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -3659,6 +4226,7 @@ Array [
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c9 {
@@ -3692,11 +4260,53 @@ Array [
   white-space: pre-line;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
     className="c0"
+    justifyContent={
+      Array [
+        "flex-end",
+        "flex-start",
+      ]
+    }
+    p={
+      Array [
+        1,
+        1,
+        5,
+      ]
+    }
+    pb={
+      Array [
+        2,
+        2,
+        5,
+      ]
+    }
     style={
       Object {
-        "justifyContent": "flex-start",
         "opacity": 0,
         "position": "fixed",
         "zIndex": 2,
@@ -3711,7 +4321,7 @@ Array [
       className="c2"
       style={
         Object {
-          "transform": "translate3D(0, -50px, 0)",
+          "transform": "translate3D(0, 50px, 0)",
         }
       }
     >
@@ -3837,10 +4447,10 @@ exports[`Storyshots Modal Without close button and without header 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   border: solid 1px rgba(0,0,0,0.16);
   width: 100%;
-  padding: 0;
   box-sizing: border-box;
   border-radius: 4px;
   overflow: visible;
+  padding: 0;
 }
 
 .c0 {
@@ -3848,7 +4458,6 @@ exports[`Storyshots Modal Without close button and without header 1`] = `
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3861,6 +4470,12 @@ exports[`Storyshots Modal Without close button and without header 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  padding: 8px;
+  padding-bottom: 16px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c1 {
@@ -3891,6 +4506,7 @@ exports[`Storyshots Modal Without close button and without header 1`] = `
   flex-direction: column;
   border: none;
   overflow: hidden;
+  padding: 0;
 }
 
 .c5 {
@@ -3902,11 +4518,53 @@ exports[`Storyshots Modal Without close button and without header 1`] = `
   padding: 16px;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
 <div
   className="c0"
+  justifyContent={
+    Array [
+      "flex-end",
+      "flex-start",
+    ]
+  }
+  p={
+    Array [
+      1,
+      1,
+      5,
+    ]
+  }
+  pb={
+    Array [
+      2,
+      2,
+      5,
+    ]
+  }
   style={
     Object {
-      "justifyContent": "flex-start",
       "opacity": 0,
       "position": "fixed",
       "zIndex": 1500,
@@ -3921,7 +4579,7 @@ exports[`Storyshots Modal Without close button and without header 1`] = `
     className="c2"
     style={
       Object {
-        "transform": "translate3D(0, -50px, 0)",
+        "transform": "translate3D(0, 50px, 0)",
       }
     }
   >
