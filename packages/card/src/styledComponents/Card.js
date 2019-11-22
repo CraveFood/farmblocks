@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { space } from "styled-system";
 import { colors } from "@crave/farmblocks-theme";
 import { cardTypes, cardTypeColors } from "../constants/cardTypes";
 
@@ -23,10 +24,10 @@ const Card = styled.div`
   box-shadow: ${boxShadow};
   border: solid 1px ${colors.GREY_16};
   width: ${props => props.width};
-  padding: ${props => props.padding};
   box-sizing: border-box;
   border-radius: 4px;
   overflow: ${props => props.overflow};
+  ${space}
 `;
 
 export default Card;

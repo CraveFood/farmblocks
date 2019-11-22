@@ -22,12 +22,12 @@ storiesOf("Card", module)
     </Card>
   ))
   .add("Floating with content and 40px padding and 1136px width", () => (
-    <Card floating padding="40px" width="1136px">
+    <Card floating p="40px" width="1136px">
       <EmptyState title="My Card Title" description="My card description" />
     </Card>
   ))
   .add("With content (footer and empty state) and 1136px width", () => (
-    <Card padding="0" width="1136px">
+    <Card p="0" width="1136px">
       <EmptyState title="My Card Title" description="My card description" />
       <Footer
         helpText="Have questions about account setup?"
