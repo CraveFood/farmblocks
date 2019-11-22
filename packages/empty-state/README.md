@@ -47,6 +47,14 @@ render(<App />, document.getElementById("root"));
 | actions     | array of objects | each object corresponds to one button that will be rendered. We expect 3 required properties on each object: text (string), type(string) a valid farmblocks-theme.buttonTypes or any color, onClick (function) |          |
 | info        | string           | a text that is smaller than the others and will be rendered bellow buttons                                                                                                                                     |          |
 
+## Peer dependencies
+
+- prop-types
+- react
+- styled-components
+- react-responsive
+- styled-system
+
 ## License
 
 MIT

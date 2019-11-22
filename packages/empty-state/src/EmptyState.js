@@ -1,108 +1,58 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Image, { thumbnailSizes } from "@crave/farmblocks-image";
 import Text, { fontTypes, fontSizes } from "@crave/farmblocks-text";
-import Button, { buttonSizes } from "@crave/farmblocks-button";
 
 import Container from "./styledComponents/Container";
+import Buttons from "./Buttons";
+import Thumbnail from "./Thumbnail";
 
-class EmptyState extends React.PureComponent {
-  renderThumbnail() {
-    const { imageSrc, icon } = this.props;
+const EmptyState = ({
+  className,
+  imageSrc,
+  icon,
+  title,
+  description,
+  actions,
+  info,
+}) => (
+  <Container className={className}>
+    <Thumbnail imageSrc={imageSrc} icon={icon} />
 
-    if (imageSrc) {
-      return (
-        <Image
-          className="thumbnail"
-          size={thumbnailSizes.LARGE}
-          src={imageSrc}
-        />
-      );
-    }
+    <Text
+      className="title"
+      fontWeight="title"
+      align="center"
+      size={fontSizes.HUGE}
+      type={fontTypes.NORMAL}
+    >
+      {title}
+    </Text>
 
-    if (icon) {
-      return <div className="icon">{icon}</div>;
-    }
-
-    return <noscript />;
-  }
-
-  renderTitle() {
-    return (
+    {description && (
       <Text
-        className="title"
-        fontWeight="title"
+        className="description"
         align="center"
-        size={fontSizes.HUGE}
-        type={fontTypes.NORMAL}
+        size={fontSizes.LARGE}
+        type={fontTypes.NEUTRAL}
       >
-        {this.props.title}
+        {description}
       </Text>
-    );
-  }
+    )}
 
-  renderDescription() {
-    return (
-      this.props.description && (
-        <Text
-          className="description"
-          align="center"
-          size={fontSizes.LARGE}
-          type={fontTypes.NEUTRAL}
-        >
-          {this.props.description}
-        </Text>
-      )
-    );
-  }
+    <Buttons actions={actions} />
 
-  renderInfo() {
-    return (
-      this.props.info && (
-        <Text
-          className="info"
-          align="center"
-          size={fontSizes.SMALL}
-          type={fontTypes.NEUTRAL}
-        >
-          {this.props.info}
-        </Text>
-      )
-    );
-  }
-
-  renderButtons() {
-    const { actions } = this.props;
-    if (!actions || !actions.length) {
-      return null;
-    }
-
-    return (
-      <div className="buttons">
-        {actions.map(buttonProps => (
-          <Button
-            key={`empty-state-button-${buttonProps.text}`}
-            data-testid={`empty-state-button-${buttonProps.text}`}
-            size={buttonSizes.MEDIUM}
-            {...buttonProps}
-          />
-        ))}
-      </div>
-    );
-  }
-
-  render() {
-    return (
-      <Container className={this.props.className}>
-        {this.renderThumbnail()}
-        {this.renderTitle()}
-        {this.renderDescription()}
-        {this.renderButtons()}
-        {this.renderInfo()}
-      </Container>
-    );
-  }
-}
+    {info && (
+      <Text
+        className="info"
+        align="center"
+        size={fontSizes.SMALL}
+        type={fontTypes.NEUTRAL}
+      >
+        {info}
+      </Text>
+    )}
+  </Container>
+);
 
 EmptyState.propTypes = {
   title: PropTypes.string.isRequired,

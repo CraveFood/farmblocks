@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import { fontTypes } from "@crave/farmblocks-text";
+import { space, flexbox } from "styled-system";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  ${space};
+  ${flexbox};
 
   > .thumbnail {
     margin-bottom: 24px;
@@ -13,21 +15,6 @@ const Container = styled.div`
   > .description,
   > .info {
     margin-top: 16px;
-  }
-
-  > .buttons {
-    margin-top: 24px;
-
-    > * {
-      margin: 0 8px;
-      display: inline-flex;
-      vertical-align: middle;
-    }
-  }
-
-  > .icon {
-    font-size: 72px;
-    color: ${fontTypes.SUBTLE};
   }
 `;
 
