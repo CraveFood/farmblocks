@@ -43,7 +43,7 @@ const interactiveStyle = css`
     color: ${colors.GREY_32};
   }
 `;
-const Balloon = styled(Card).attrs({ overflow: "hidden" })`
+const Balloon = styled(Card).attrs({ overflow: "hidden", p: 0 })`
   ${props => props.animated && animation};
   position: absolute;
   bottom: ${props => props.pinSize + 8}px;
