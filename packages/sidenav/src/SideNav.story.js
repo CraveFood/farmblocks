@@ -5,11 +5,19 @@ import Text from "@crave/farmblocks-text";
 import { Switch, Route, NavLink, withRouter } from "react-router-dom";
 import StoryRouter from "storybook-react-router";
 import { useMediaQuery } from "react-responsive";
-import { MdVendors, MdOrders, MdSearch, LgMeats } from "@crave/farmblocks-icon";
+import {
+  MdVendors,
+  MdViewList,
+  MdOrders,
+  MdSearch,
+  LgMeats,
+} from "@crave/farmblocks-icon";
 
 import SideNav from "./SideNav";
 import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
 import NavItem from "./components/NavItem";
+import SideBar from "./components/SideBar";
+import NavButton from "./components/NavButton";
 import PageWrapper from "./helpers/PageWrapper";
 import useToggle from "./utils/useToggle";
 
@@ -34,7 +42,7 @@ export default {
 };
 
 export const SideNavSimple = () => (
-  <SideNav render={() => <div>Sidebar Content</div>} />
+  <SideNav render={() => <div>SideBar Content</div>} />
 );
 
 export const CompleteSideNavSimple = () => (
@@ -55,6 +63,49 @@ export const CompleteSideNavSimple = () => (
     </PageWrapper>
   </>
 );
+
+export const DrawerLikeUsingSidebarOnTheRight = () => {
+  const Drawer = () => {
+    const [expanded, { toggle, collapse }] = useToggle(true);
+
+    return (
+      <>
+        <SideBar
+          expanded={expanded}
+          onClose={collapse}
+          offsetTop="56px"
+          expandedWidth="450px"
+          variant={OVERLAY}
+          position="right"
+          css="box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.16);"
+          render={() => <></>}
+        />
+
+        <PageWrapper
+          expanded={expanded}
+          variant={FULLSCREEN}
+          css="backgroundcolor: hotpink; height:98vh;"
+        >
+          <TopNav />
+          <NavButton
+            onClick={toggle}
+            css={`
+              position: absolute;
+              top: 8px;
+              right: 8px;
+              left: auto;
+              z-index: 100;
+            `}
+          >
+            <MdViewList />
+          </NavButton>
+        </PageWrapper>
+      </>
+    );
+  };
+
+  return <Drawer />;
+};
 
 export const SideNavPush = () => {
   const SideNavPushComp = () => {
