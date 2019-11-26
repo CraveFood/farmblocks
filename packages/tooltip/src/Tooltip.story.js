@@ -226,7 +226,7 @@ storiesOf("Tooltip/Tooltip", module)
         />
         <Tooltip
           trigger={<MdQuestion css="display:block;" />}
-          content="On mobile the minimun hit area is 40px height/width"
+          content="On mobile the minimum hit area is 40px height/width"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
           fullScreenBreakpoint="500px"
