@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@3.2.1...@crave/farmblocks-tooltip@3.3.0) (2019-11-26)
+
+
+### Features
+
+* **tooltip:** add touch breakpoint and refactor styled structure ([8145c18](https://github.com/CraveFood/farmblocks/commit/8145c186b4495f6873f557334de5e40786c2a251))
+* **tooltip:** set a min hit area on mobile devices ([286629f](https://github.com/CraveFood/farmblocks/commit/286629fc5df33899dcddf5c0db28626e7d318dfb))
+* **tooltip mobile:** add mobile styles for tooltip ([6904245](https://github.com/CraveFood/farmblocks/commit/690424593734230e1c946c31640e86cbfd7a1b97))
+
+
+
+
+
 ## [3.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@3.2.0...@crave/farmblocks-tooltip@3.2.1) (2019-11-19)
 
 **Note:** Version bump only for package @crave/farmblocks-tooltip

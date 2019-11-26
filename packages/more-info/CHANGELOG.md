@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@3.0.0...@crave/farmblocks-more-info@3.1.0) (2019-11-26)
+
+
+### Features
+
+* **tooltip mobile:** add mobile styles for tooltip ([6904245](https://github.com/CraveFood/farmblocks/commit/690424593734230e1c946c31640e86cbfd7a1b97))
+
+
+
+
+
 # [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@2.1.0...@crave/farmblocks-more-info@3.0.0) (2019-11-19)
 
 

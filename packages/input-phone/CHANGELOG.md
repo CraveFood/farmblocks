@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-phone@0.2.5...@crave/farmblocks-input-phone@0.3.0) (2019-11-26)
+
+
+### Features
+
+* **phone input popover:** set a min height to fill the view ([cea70bd](https://github.com/CraveFood/farmblocks/commit/cea70bd07e74dfc5a2d8610c5ac19c8eb6ba5521))
+
+
+
+
+
 ## [0.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-phone@0.2.4...@crave/farmblocks-input-phone@0.2.5) (2019-11-19)
 
 **Note:** Version bump only for package @crave/farmblocks-input-phone
