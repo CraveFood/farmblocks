@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@2.0.0...@crave/farmblocks-sidenav@2.1.0) (2019-11-26)
+
+
+### Features
+
+* **sidenav:** add position property to set x-axis position ([7616001](https://github.com/CraveFood/farmblocks/commit/7616001725ea376117f1c0844fe7331e4c60c03d)), closes [#946](https://github.com/CraveFood/farmblocks/issues/946)
+
+
+
+
+
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@1.0.0...@crave/farmblocks-sidenav@2.0.0) (2019-11-19)
 
 
