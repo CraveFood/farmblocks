@@ -668,6 +668,18 @@ exports[`Storyshots Card With overflowing content 1`] = `
   overflow: visible;
 }
 
+@media only screen and (pointer:coarse) {
+  .c3 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div
   className="c0"
   overflow="visible"
@@ -689,10 +701,10 @@ exports[`Storyshots Card With overflowing content 1`] = `
       </span>
       <div
         className="c3 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span
@@ -811,6 +823,18 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
   overflow: hidden;
 }
 
+@media only screen and (pointer:coarse) {
+  .c3 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div
   className="c0"
   overflow="hidden"
@@ -832,10 +856,10 @@ exports[`Storyshots Card With overflowing content hidden 1`] = `
       </span>
       <div
         className="c3 icon"
+        onMouseLeave={[Function]}
       >
         <div
           className="hit-area"
-          onMouseLeave={[Function]}
           onMouseOver={[Function]}
         />
         <span

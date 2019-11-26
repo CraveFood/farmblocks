@@ -12,12 +12,14 @@ const useAutoAlign = ({
   const [positionX, setPositionX] = useState(originalPositionX);
   const [positionY, setPositionY] = useState(originalPositionY);
   const [triggerHeight, setTriggerHeight] = useState();
+  const [triggerWidth, setTriggerWidth] = useState();
 
   useEffect(() => {
     if (!isVisible) {
       setReady(false);
     } else {
       let tHeight = 0;
+      let tWidth = 0;
       if (tooltipRef?.current && !triggerHeight) {
         // the tooltip trigger is always the container's previous sibling
         const trigger =
@@ -25,7 +27,9 @@ const useAutoAlign = ({
 
         if (trigger) {
           tHeight = trigger.getBoundingClientRect()?.height;
+          tWidth = trigger.getBoundingClientRect()?.width;
           setTriggerHeight(tHeight);
+          setTriggerWidth(tWidth);
         }
       }
 
@@ -43,7 +47,7 @@ const useAutoAlign = ({
     }
   }, [isVisible]);
 
-  return { positionX, positionY, triggerHeight, ready };
+  return { positionX, positionY, triggerHeight, triggerWidth, ready };
 };
 
 export function getPositionData({ tooltipRef, offset, triggerHeight }) {

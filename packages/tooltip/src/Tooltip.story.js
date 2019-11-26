@@ -3,6 +3,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button, { buttonTypes } from "@crave/farmblocks-button";
 import Text from "@crave/farmblocks-text";
+import { MdQuestion } from "@crave/farmblocks-icon";
 
 import Tooltip, { POSITIONS } from ".";
 
@@ -196,6 +197,55 @@ storiesOf("Tooltip/Tooltip", module)
           content="Auto aligned/positioned tooltip"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
+        />
+      </div>
+    </div>
+  ))
+  .add("with fullscreen breakpoint", () => (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
+        <Tooltip
+          trigger={<Button type={buttonTypes.SECONDARY}>Mobile</Button>}
+          content="Use mobile breakpoint to see this popover on fullscreen."
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
+          fullScreenBreakpoint="500px"
+        />
+        <Tooltip
+          trigger={<MdQuestion css="display:block;" />}
+          content="On mobile the minimum hit area is 40px height/width"
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
+          fullScreenBreakpoint="500px"
+          css={{
+            ".hit-area": {
+              border: "2px solid orange",
+              boxSizing: "border-box",
+            },
+          }}
+        />
+        <Tooltip
+          trigger={
+            <Button type={buttonTypes.SECONDARY}>With hide button</Button>
+          }
+          content="Tap Got it! to close the popover"
+          positionX={POSITIONS.X.AUTO}
+          positionY={POSITIONS.Y.AUTO}
+          hideButtonLabel="Got it!"
+          fullScreenBreakpoint="500px"
         />
       </div>
     </div>

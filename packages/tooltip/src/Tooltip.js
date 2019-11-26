@@ -1,45 +1,12 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
 
 import TooltipContent from "./TooltipContent";
-
-const Container = styled.div`
-  position: relative;
-  display: ${props => (props.displayBlock ? "block" : "inline-block")};
-
-  .hit-area {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  .appear-enter {
-    opacity: 0;
-  }
-
-  .appear-enter-active {
-    opacity: 1;
-    transition: opacity 200ms ease-in;
-  }
-
-  .appear-exit {
-    opacity: 1;
-  }
-
-  .appear-exit-active {
-    opacity: 0;
-    transition: opacity 200ms ease-out;
-  }
-`;
+import Container from "./Tooltip.styled";
 
 const Tooltip = props => {
-  const [isVisible, setIsVisible] = useState(false);
-
   const {
     className,
     disableTooltip,
@@ -51,18 +18,50 @@ const Tooltip = props => {
     ...tooltipProps
   } = props;
 
+  const [isVisible, setIsVisible] = useState(false);
+  const tooltip = useRef();
+
+  const hide = () => {
+    setIsVisible(false);
+  };
+
+  const handleOuterClick = event => {
+    if (tooltip.current?.contains(event.target)) {
+      return;
+    }
+
+    if (isVisible) {
+      hide();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("touch", handleOuterClick, {
+      capture: true,
+    });
+    return () => {
+      document.removeEventListener("touch", handleOuterClick, {
+        capture: true,
+      });
+    };
+  }, []);
+
   return (
-    <Container className={className} displayBlock={displayBlock}>
+    <Container
+      ref={tooltip}
+      className={className}
+      displayBlock={displayBlock}
+      onMouseLeave={event => {
+        hide();
+        onMouseLeave?.(event);
+      }}
+    >
       {!disableTooltip && (
         <div
           className="hit-area"
           onMouseOver={e => {
             setIsVisible(true);
             onMouseOver?.(e);
-          }}
-          onMouseLeave={e => {
-            setIsVisible(false);
-            onMouseLeave?.(e);
           }}
         />
       )}
@@ -74,7 +73,11 @@ const Tooltip = props => {
         timeout={200}
         classNames="appear"
       >
-        <TooltipContent className="tooltip" {...tooltipProps}>
+        <TooltipContent
+          className="tooltip"
+          onHideButtonClick={hide}
+          {...tooltipProps}
+        >
           {content}
         </TooltipContent>
       </CSSTransition>

@@ -5222,10 +5222,6 @@ exports[`Storyshots Select Input With more info content 1`] = `
   align-items: baseline;
 }
 
-.c7 .tooltip {
-  margin-left: -3px;
-}
-
 .c7 .icon {
   display: inline-block;
   margin: 0 4px;
@@ -5490,6 +5486,18 @@ exports[`Storyshots Select Input With more info content 1`] = `
   min-width: 80px !important;
 }
 
+@media only screen and (pointer:coarse) {
+  .c10 .hit-area {
+    min-height: 40px;
+    min-width: 40px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
 <div
   className="c0"
   width="300px"
@@ -5586,10 +5594,10 @@ exports[`Storyshots Select Input With more info content 1`] = `
               />
               <div
                 className="c10 icon"
+                onMouseLeave={[Function]}
               >
                 <div
                   className="hit-area"
-                  onMouseLeave={[Function]}
                   onMouseOver={[Function]}
                 />
                 <span

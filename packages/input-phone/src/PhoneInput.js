@@ -23,8 +23,6 @@ import CountryList from "./CountryList";
 import { useCountrySearch, useHighlight } from "./PhoneInput.hooks";
 import { PopoverWrapper, NationalNumberInput } from "./PhoneInput.styled";
 
-const fullScreenBreakpoint = "500px";
-
 /**
  * This component uses the [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js)
  * library to convert phone numbers typed in their national standard to the
@@ -40,6 +38,7 @@ const PhoneInput = ({
   priorityCountries,
   disabled,
   tooltipProps,
+  fullScreenBreakpoint,
   ...props
 }) => {
   const dismissRef = useRef();
@@ -165,6 +164,7 @@ const PhoneInput = ({
                   // This happens because the popover is inside the input wrapper
                   event.stopPropagation();
                 }}
+                fullScreenBreakpoint={fullScreenBreakpoint}
               >
                 <FormWrapperHeader
                   title={textSelectCountryTitle}
@@ -206,6 +206,7 @@ PhoneInput.defaultProps = {
   textSelectCountryCancel: "Cancel",
   textSelectCountrySearch: "Search",
   disabled: false,
+  fullScreenBreakpoint: "500px",
 };
 
 PhoneInput.propTypes = {
@@ -258,6 +259,10 @@ PhoneInput.propTypes = {
    * Props to be passed to the Tooltip component
    */
   tooltipProps: PropTypes.object,
+  /**
+   * Breakpoint to set popover as fullscreen
+   */
+  fullScreenBreakpoint: PropTypes.string,
 };
 
 export default PhoneInput;
