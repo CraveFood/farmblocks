@@ -1,51 +1,10 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
 
 import TooltipContent from "./TooltipContent";
-
-const Container = styled.div`
-  position: relative;
-  display: ${props => (props.displayBlock ? "block" : "inline-block")};
-
-  .hit-area {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  .appear-enter {
-    opacity: 0;
-  }
-
-  .appear-enter-active {
-    opacity: 1;
-    transition: opacity 200ms ease-in;
-  }
-
-  .appear-exit {
-    opacity: 1;
-  }
-
-  .appear-exit-active {
-    opacity: 0;
-    transition: opacity 200ms ease-out;
-  }
-
-  @media only screen and (max-width: 480px) {
-    .hit-area {
-      min-height: 40px;
-      min-width: 40px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-`;
+import Container from "./Tooltip.styled";
 
 const Tooltip = props => {
   const {
