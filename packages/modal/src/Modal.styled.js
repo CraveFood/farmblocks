@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { animated } from "react-spring";
+import { space, flexbox } from "styled-system";
 import { colors } from "@crave/farmblocks-theme";
 import Card from "@crave/farmblocks-card";
 
@@ -8,11 +9,12 @@ export const Wrapper = styled(animated.div)`
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  ${space}
+  ${flexbox}
 `;
 
 export const Overlay = styled.div`
@@ -38,6 +40,7 @@ export const ConstrainedCard = styled(Card)`
   flex-direction: column;
   border: none;
   overflow: hidden;
+  ${space}
 `;
 
 export const ContentWrapper = styled.div`
