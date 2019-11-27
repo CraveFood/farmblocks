@@ -67,8 +67,8 @@ const Modal = ({
     unique: true,
   });
   const slide = useTransition(isOpen, null, {
-    from: { transform: "translate3D(0, -50px, 0)" },
-    enter: { transform: "translate3D(0, 0px, 0)" },
+    from: { transform: "translate3D(0, 50px, 0)" },
+    enter: { transform: "translate3D(0, 0, 0)" },
     leave: { transform: "translate3D(0, 50px, 0)" },
     unique: true,
   });
