@@ -152,13 +152,9 @@ export { default as MdCreditCardFail } from "./MdCreditCardFail";
 export { default as MdCreditCardFailFilled } from "./MdCreditCardFailFilled";
 export { default as MdCreditCardFilled } from "./MdCreditCardFilled";
 export { default as MdCreditCardPending } from "./MdCreditCardPending";
-export {
-  default as MdCreditCardPendingFilled,
-} from "./MdCreditCardPendingFilled";
+export { default as MdCreditCardPendingFilled } from "./MdCreditCardPendingFilled";
 export { default as MdCreditCardSuccess } from "./MdCreditCardSuccess";
-export {
-  default as MdCreditCardSuccessFilled,
-} from "./MdCreditCardSuccessFilled";
+export { default as MdCreditCardSuccessFilled } from "./MdCreditCardSuccessFilled";
 export { default as MdCurbsidePickup } from "./MdCurbsidePickup";
 export { default as MdCurbsidePickup2 } from "./MdCurbsidePickup2";
 export { default as MdCurbsidePickup2Filled } from "./MdCurbsidePickup2Filled";
@@ -173,12 +169,8 @@ export { default as MdDelivered } from "./MdDelivered";
 export { default as MdDeliveredFilled } from "./MdDeliveredFilled";
 export { default as MdDeliveryByCarrier } from "./MdDeliveryByCarrier";
 export { default as MdDeliveryByCarrier2 } from "./MdDeliveryByCarrier2";
-export {
-  default as MdDeliveryByCarrier2Filled,
-} from "./MdDeliveryByCarrier2Filled";
-export {
-  default as MdDeliveryByCarrierFilled,
-} from "./MdDeliveryByCarrierFilled";
+export { default as MdDeliveryByCarrier2Filled } from "./MdDeliveryByCarrier2Filled";
+export { default as MdDeliveryByCarrierFilled } from "./MdDeliveryByCarrierFilled";
 export { default as MdDeliveryByFarm } from "./MdDeliveryByFarm";
 export { default as MdDeliveryByFarm2 } from "./MdDeliveryByFarm2";
 export { default as MdDeliveryByFarm2Filled } from "./MdDeliveryByFarm2Filled";
@@ -216,9 +208,7 @@ export { default as MdGeneralPaymentFilled } from "./MdGeneralPaymentFilled";
 export { default as MdHandshake } from "./MdHandshake";
 export { default as MdHandshakeFilled } from "./MdHandshakeFilled";
 export { default as MdHealthCertificate } from "./MdHealthCertificate";
-export {
-  default as MdHealthCertificateFilled,
-} from "./MdHealthCertificateFilled";
+export { default as MdHealthCertificateFilled } from "./MdHealthCertificateFilled";
 export { default as MdHospitals } from "./MdHospitals";
 export { default as MdHospitalsFilled } from "./MdHospitalsFilled";
 export { default as MdInBag } from "./MdInBag";
@@ -232,9 +222,7 @@ export { default as MdInfoFilled } from "./MdInfoFilled";
 export { default as MdInstagram } from "./MdInstagram";
 export { default as MdInstagramFilled } from "./MdInstagramFilled";
 export { default as MdInsuranceCertificate } from "./MdInsuranceCertificate";
-export {
-  default as MdInsuranceCertificateFilled,
-} from "./MdInsuranceCertificateFilled";
+export { default as MdInsuranceCertificateFilled } from "./MdInsuranceCertificateFilled";
 export { default as MdInternalNotes } from "./MdInternalNotes";
 export { default as MdInternalNotesFilled } from "./MdInternalNotesFilled";
 export { default as MdInvoice } from "./MdInvoice";
