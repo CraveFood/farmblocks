@@ -5,11 +5,7 @@ import withMessages from "@crave/farmblocks-hoc-validation-messages";
 
 import { withMargin, commonPropTypes } from "./TextInput";
 
-const EnhancedInput = compose(
-  withMargin,
-  withMessages,
-  formInput,
-);
+const EnhancedInput = compose(withMargin, withMessages, formInput);
 
 const TextArea = EnhancedInput("textarea");
 
