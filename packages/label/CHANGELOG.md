@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@1.0.14...@crave/farmblocks-label@1.0.15) (2019-11-27)
+
+**Note:** Version bump only for package @crave/farmblocks-label
+
+
+
+
+
 ## [1.0.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@1.0.13...@crave/farmblocks-label@1.0.14) (2019-11-27)
 
 **Note:** Version bump only for package @crave/farmblocks-label
