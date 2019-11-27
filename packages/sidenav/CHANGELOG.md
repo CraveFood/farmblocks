@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@2.1.1...@crave/farmblocks-sidenav@2.1.2) (2019-11-27)
+
+**Note:** Version bump only for package @crave/farmblocks-sidenav
+
+
+
+
+
 ## [2.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@2.1.0...@crave/farmblocks-sidenav@2.1.1) (2019-11-26)
 
 **Note:** Version bump only for package @crave/farmblocks-sidenav

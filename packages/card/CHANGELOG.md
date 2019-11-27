@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@2.3.2...@crave/farmblocks-card@3.0.0) (2019-11-27)
+
+
+### Features
+
+* **Card:** use padding from styled-sysmte ([1d6a53c](https://github.com/CraveFood/farmblocks/commit/1d6a53c0da855196664bb3daa39d8df33fbf7eeb)), closes [#948](https://github.com/CraveFood/farmblocks/issues/948)
+
+
+### BREAKING CHANGES
+
+* **Card:** The \`padding\` property has been replace with \`p\` from styled-system
+
+
+
+
+
 ## [2.3.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@2.3.1...@crave/farmblocks-card@2.3.2) (2019-11-26)
 
 **Note:** Version bump only for package @crave/farmblocks-card

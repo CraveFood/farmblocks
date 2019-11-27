@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@4.0.0...@crave/farmblocks-empty-state@4.1.0) (2019-11-27)
+
+
+### Features
+
+* **EmptyState:** adapt component to work on small screens ([9205056](https://github.com/CraveFood/farmblocks/commit/9205056ade83db729c9b7ea07aa6780fa8230e4b))
+
+
+
+
+
 # [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@3.4.0...@crave/farmblocks-empty-state@4.0.0) (2019-11-19)
 
 

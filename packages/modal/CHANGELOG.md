@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@3.0.1...@crave/farmblocks-modal@3.1.0) (2019-11-27)
+
+
+### Features
+
+* **Modal:** adjust modal position on small screens ([8805d49](https://github.com/CraveFood/farmblocks/commit/8805d49e0b45dc17cbc50d4a6bfaa98141a211c7))
+* **Modal:** change slide animation ([7212772](https://github.com/CraveFood/farmblocks/commit/7212772f472b71916e1cd42fcbf4a9e0931b8a48))
+
+
+
+
+
 ## [3.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@3.0.0...@crave/farmblocks-modal@3.0.1) (2019-11-26)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
