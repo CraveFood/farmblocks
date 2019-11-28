@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@4.1.1...@crave/farmblocks-empty-state@4.1.2) (2019-11-28)
+
+
+### Bug Fixes
+
+* **EmptyState:** icon proptype ([95c37ff](https://github.com/CraveFood/farmblocks/commit/95c37ff9a35c5bbecd211b6fc3a87f098dad289d))
+
+
+
+
+
 ## [4.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@4.1.0...@crave/farmblocks-empty-state@4.1.1) (2019-11-27)
 
 **Note:** Version bump only for package @crave/farmblocks-empty-state
