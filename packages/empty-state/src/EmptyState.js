@@ -66,7 +66,7 @@ EmptyState.propTypes = {
     }),
   ),
   info: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.node,
   className: PropTypes.string,
 };
 
