@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.6.3...@crave/farmblocks-theme@1.7.0) (2019-12-03)
+
+
+### Features
+
+* **theme:** add TANGERINE color ([911bc36](https://github.com/CraveFood/farmblocks/commit/911bc3651e3096adce16861d7845aa567dcb0e7c))
+
+
+
+
+
 ## 1.6.3 (2019-10-31)
 
 **Note:** Version bump only for package @crave/farmblocks-theme
