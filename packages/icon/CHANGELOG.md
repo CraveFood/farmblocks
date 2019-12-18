@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.4.1...@crave/farmblocks-icon@0.5.0) (2019-12-18)
+
+
+### Features
+
+* **Icon:** add MdLogout2 ([603a6ca](https://github.com/CraveFood/farmblocks/commit/603a6ca13ec38e88a00b308a2259315b62cc4ab3))
+
+
+
+
+
 ## [0.4.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.4.0...@crave/farmblocks-icon@0.4.1) (2019-11-27)
 
 **Note:** Version bump only for package @crave/farmblocks-icon

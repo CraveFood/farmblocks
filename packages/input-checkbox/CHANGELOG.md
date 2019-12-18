@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.4.2...@crave/farmblocks-input-checkbox@5.4.3) (2019-12-18)
+
+**Note:** Version bump only for package @crave/farmblocks-input-checkbox
+
+
+
+
+
 ## [5.4.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.4.1...@crave/farmblocks-input-checkbox@5.4.2) (2019-12-03)
 
 **Note:** Version bump only for package @crave/farmblocks-input-checkbox
