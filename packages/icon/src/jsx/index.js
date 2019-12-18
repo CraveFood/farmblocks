@@ -240,6 +240,7 @@ export { default as MdLoadingFilled } from "./MdLoadingFilled";
 export { default as MdLocation } from "./MdLocation";
 export { default as MdLocationFilled } from "./MdLocationFilled";
 export { default as MdLogout } from "./MdLogout";
+export { default as MdLogout2 } from "./MdLogout2";
 export { default as MdLogoutFilled } from "./MdLogoutFilled";
 export { default as MdLostConnection } from "./MdLostConnection";
 export { default as MdLostConnectionFilled } from "./MdLostConnectionFilled";
