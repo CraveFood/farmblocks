@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@3.1.2...@crave/farmblocks-image@3.2.0) (2019-12-27)
+
+
+### Features
+
+* **Image:** add withBoxShadow property ([febbf32](https://github.com/CraveFood/farmblocks/commit/febbf325b20179faf9eadae67c9090b4c21db2d9))
+
+
+
+
+
 ## [3.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@3.1.1...@crave/farmblocks-image@3.1.2) (2019-12-03)
 
 **Note:** Version bump only for package @crave/farmblocks-image
