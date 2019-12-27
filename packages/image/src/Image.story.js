@@ -61,6 +61,36 @@ storiesOf("Image", module)
       </div>
     </Group>
   ))
+  .add("with box shadow", () => (
+    <Group>
+      <div style={{ padding: "16px 0 16px 0", fontWeight: "bold" }}>
+        Badge sizes
+      </div>
+      <div style={{ display: "flex" }}>
+        {Object.keys(badgeSizes)
+          .reverse()
+          .map(size => (
+            <div style={{ marginRight: "36px" }}>
+              <div>{`${size} - ${badgeSizes[size]}px`}</div>
+              <RenderImage size={badgeSizes[size]} badge withBoxShadow />
+            </div>
+          ))}
+      </div>
+      <div style={{ padding: "16px 0 16px 0", fontWeight: "bold" }}>
+        Thumbnail sizes
+      </div>
+      <div style={{ display: "flex" }}>
+        {Object.keys(thumbnailSizes)
+          .reverse()
+          .map(size => (
+            <div style={{ marginRight: "36px" }}>
+              <div>{`${size} - ${thumbnailSizes[size]}px`}</div>
+              <RenderImage size={thumbnailSizes[size]} withBoxShadow />
+            </div>
+          ))}
+      </div>
+    </Group>
+  ))
   .add("image fit values", () => (
     <Group>
       {Object.keys(imgSrcs).map(src => (

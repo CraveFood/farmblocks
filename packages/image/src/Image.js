@@ -14,6 +14,7 @@ Image.propTypes = {
   badge: PropTypes.bool,
   size: PropTypes.number,
   borderRadius: PropTypes.string,
+  withBoxShadow: PropTypes.bool,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   fit: PropTypes.string,
