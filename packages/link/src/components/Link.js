@@ -1,6 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { fontSizes } from "@crave/farmblocks-theme";
+import { fontWeights, fontSizes } from "@crave/farmblocks-theme";
 import { MdLinkExternal } from "@crave/farmblocks-icon";
 
 import linkTypes from "../constants/linkTypes";
@@ -18,6 +18,7 @@ const Link = props => {
     children,
     className,
     onClick,
+    fontWeight,
     ...linkProps
   } = props;
 
@@ -27,6 +28,7 @@ const Link = props => {
     type,
     disabled,
     className,
+    fontWeight,
   };
 
   const LinkComponent = linkProps.href && !disabled ? "a" : "span";
@@ -57,6 +59,7 @@ Link.propTypes = {
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
+  fontWeight: PropTypes.string,
   className: PropTypes.string,
   // ... and all properties of html <a>
 };
@@ -67,6 +70,7 @@ Link.defaultProps = {
   lineHeight: 1,
   disabled: false,
   external: false,
+  fontWeight: fontWeights.SEMIBOLD,
 };
 
 export default Link;

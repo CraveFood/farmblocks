@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fontWeights, fontTypes } from "@crave/farmblocks-theme";
+import { fontTypes } from "@crave/farmblocks-theme";
 
 import hoverColors from "../constants/hoverColors";
 import linkTypes from "../constants/linkTypes";
@@ -59,7 +59,7 @@ const LinkContainer = styled.div`
   }
 
   font-size: ${props => props.size}px;
-  font-weight: ${fontWeights.SEMIBOLD};
+  font-weight: ${({ fontWeight }) => fontWeight};
 
   line-height: ${props => props.lineHeight};
 
