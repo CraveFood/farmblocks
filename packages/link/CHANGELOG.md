@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@5.0.3...@crave/farmblocks-link@5.1.0) (2020-01-03)
+
+
+### Features
+
+* **Link:** add fontWeight property ([18a85a6](https://github.com/CraveFood/farmblocks/commit/18a85a64f1ea7b07f56bd462f410bfa8f54cb707))
+
+
+
+
+
 ## [5.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-link@5.0.2...@crave/farmblocks-link@5.0.3) (2019-12-18)
 
 **Note:** Version bump only for package @crave/farmblocks-link
