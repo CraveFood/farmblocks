@@ -118,4 +118,7 @@ storiesOf("Link/Featured", module)
     <Link href="#" type="hotpink">
       Awesome Link
     </Link>
+  ))
+  .add("custom font weight", () => (
+    <Link fontWeight="normal">Awesome Link</Link>
   ));

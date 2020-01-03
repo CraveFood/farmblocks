@@ -48,6 +48,7 @@ document.body.appendChild(root);
 | external   | an indication of an external link (an icon will be placed on the right side of the link) | boolean                                                                                                      |
 | size       | a `font-size` css value for `children`                                                   | number                                                                                                       |
 | lineHeight | a `line-height` css value for `children`                                                 | number or string                                                                                             |
+| fontWeight | a `font-weight` css value for `children`                                                 | number or string                                                                                             |
 
 ## License
 
