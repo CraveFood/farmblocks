@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.5.3...@crave/farmblocks-stepper@2.5.4) (2020-01-08)
+
+**Note:** Version bump only for package @crave/farmblocks-stepper
+
+
+
+
+
 ## [2.5.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-stepper@2.5.2...@crave/farmblocks-stepper@2.5.3) (2019-12-18)
 
 **Note:** Version bump only for package @crave/farmblocks-stepper

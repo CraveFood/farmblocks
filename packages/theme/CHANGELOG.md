@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.7.0...@crave/farmblocks-theme@1.8.0) (2020-01-08)
+
+
+### Features
+
+* **Button:** use tangerine as primary color ([e9d437c](https://github.com/CraveFood/farmblocks/commit/e9d437ccde7a6005953ea0df1ade14e05a21ecd1))
+
+
+
+
+
 # [1.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.6.3...@crave/farmblocks-theme@1.7.0) (2019-12-03)
 
 
