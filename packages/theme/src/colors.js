@@ -22,6 +22,7 @@ export const GREY_32 = "rgba(0, 0, 0, 0.32)";
 export const WHITE_32 = "rgba(255, 255, 255, 0.32)";
 export const WHITE_56 = "rgba(255, 255, 255, 0.56)";
 export const TANGERINE = "#fd6a08";
+export const TANGERINE_2 = "#E36009";
 
 export default {
   CARBON,
@@ -48,4 +49,5 @@ export default {
   WHITE_32,
   WHITE_56,
   TANGERINE,
+  TANGERINE_2,
 };

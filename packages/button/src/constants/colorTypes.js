@@ -12,8 +12,8 @@ import {
 
 export default {
   [PRIMARY]: {
-    color: colorConstants.RED_ORANGE,
-    hoverColor: colorConstants.STRAWBERRY,
+    color: colorConstants.TANGERINE,
+    hoverColor: colorConstants.TANGERINE_2,
   },
   [NEUTRAL]: {
     textColor: colorConstants.OYSTER,
