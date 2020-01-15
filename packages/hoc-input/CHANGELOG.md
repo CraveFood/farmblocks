@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.0.9...@crave/farmblocks-hoc-input@7.1.0) (2020-01-15)
+
+
+### Features
+
+* **formInput:** add borderRadius property ([4bfccd0](https://github.com/CraveFood/farmblocks/commit/4bfccd0d76dabe3e54bc5f20e32f37a18c1c5e20))
+
+
+
+
+
 ## [7.0.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.0.8...@crave/farmblocks-hoc-input@7.0.9) (2020-01-08)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input

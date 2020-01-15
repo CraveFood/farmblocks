@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-currency@1.3.10...@crave/farmblocks-input-currency@1.3.11) (2020-01-15)
+
+**Note:** Version bump only for package @crave/farmblocks-input-currency
+
+
+
+
+
 ## [1.3.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-currency@1.3.9...@crave/farmblocks-input-currency@1.3.10) (2020-01-08)
 
 **Note:** Version bump only for package @crave/farmblocks-input-currency
