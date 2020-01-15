@@ -41,6 +41,7 @@ export const formInputProps = {
   suffix: PropTypes.node,
   autoControlFocusedStyle: PropTypes.bool,
   className: PropTypes.string,
+  borderRadius: PropTypes.string,
 };
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
@@ -69,6 +70,7 @@ const formInput = WrappedComponent => {
       clearIcon: <MdRemoveFilled />,
       moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
       autoControlFocusedStyle: true,
+      borderRadius: "4px",
     };
 
     state = {
@@ -232,6 +234,7 @@ const formInput = WrappedComponent => {
         moreInfoTooltipProps,
         autoControlFocusedStyle,
         className,
+        borderRadius,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
@@ -244,6 +247,7 @@ const formInput = WrappedComponent => {
         type: wrappedComponentProps.type,
         fontSize: wrappedComponentProps.fontSize,
         className,
+        borderRadius,
       };
 
       return (

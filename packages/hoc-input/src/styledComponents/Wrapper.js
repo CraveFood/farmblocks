@@ -16,7 +16,7 @@ const inputBorderColor = props => {
   if (props.focused || props.active) {
     return colors.INDIGO_MILK_CAP;
   }
-  return props.invalid ? colors.STRAWBERRY : colors.GREY_16;
+  return props.invalid ? colors.STRAWBERRY : "rgba(0,0,0,0.08)";
 };
 const placeholderColor = props => {
   return props.focused ? colors.GREY_16 : colors.GREY_32;
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
     order: 2;
     box-sizing: border-box;
     border: solid 1px;
-    border-radius: 4px;
+    border-radius: ${({ borderRadius }) => borderRadius};
     border-color: ${inputBorderColor};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
     ${inputBoxShadow};
