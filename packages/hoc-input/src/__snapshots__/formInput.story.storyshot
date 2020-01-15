@@ -58,7 +58,7 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -159,7 +159,7 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
 }
 
 .c3 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -479,6 +479,213 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
 </div>
 `;
 
+exports[`Storyshots HOC formInput custom border radius 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 32px;
+  border-color: rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c0 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c0 > .input > input,
+.select__search .c0 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c0 > .input > textarea {
+  padding: 16px;
+}
+
+.c0 > .input > input,
+.c0 > .input > textarea,
+.select__search .c0 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c0 > .input > input::-webkit-input-placeholder,
+.c0 > .input > textarea::-webkit-input-placeholder,
+.select__search .c0 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input::-moz-placeholder,
+.c0 > .input > textarea::-moz-placeholder,
+.select__search .c0 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input:-ms-input-placeholder,
+.c0 > .input > textarea:-ms-input-placeholder,
+.select__search .c0 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input::placeholder,
+.c0 > .input > textarea::placeholder,
+.select__search .c0 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 > .input > input[type="search"],
+.c0 > .input > textarea[type="search"],
+.select__search .c0 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c0 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c0 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c0 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c0 > .input > input[type="search"]::-ms-clear,
+.c0 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c0 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c0 > .input > input[role="combobox"],
+.c0 > .input > textarea[role="combobox"],
+.select__search .c0 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c0 > .input > .icon {
+  color: rgba(0,0,0,0.08);
+  font-size: 20px;
+  height: 24px;
+}
+
+.c0 > .input > .icon.left {
+  margin-left: 12px;
+}
+
+.c0 > .input > .icon.dropdown {
+  margin: 0 8px;
+}
+
+.c0 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.c0 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c0 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c0 .input.dropdown {
+  cursor: pointer;
+}
+
+.c0 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c0 input[type="number"]::-webkit-inner-spin-button,
+.c0 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c0 .prefix,
+.c0 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+  disabled={false}
+  onClick={[Function]}
+  type="text"
+>
+  <div
+    className="input"
+  >
+    <input
+      className="wrapped"
+      disabled={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots HOC formInput disabled html text input with combobox role 1`] = `
 .c1 {
   display: inline-block;
@@ -506,7 +713,7 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
   display: -webkit-box;
@@ -607,7 +814,7 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -770,7 +977,7 @@ exports[`Storyshots HOC formInput extended style 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -871,7 +1078,7 @@ exports[`Storyshots HOC formInput extended style 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -1031,7 +1238,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
   display: -webkit-box;
@@ -1132,7 +1339,7 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -1253,7 +1460,7 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -1354,7 +1561,7 @@ exports[`Storyshots HOC formInput html input with clear button 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -1470,7 +1677,7 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -1571,7 +1778,7 @@ exports[`Storyshots HOC formInput html input with leftIcon 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -1709,7 +1916,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -1810,7 +2017,7 @@ exports[`Storyshots HOC formInput html search input 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -1994,7 +2201,7 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -2095,7 +2302,7 @@ exports[`Storyshots HOC formInput html search input with custom clear icon 1`] =
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -2310,7 +2517,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -2411,7 +2618,7 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -2572,7 +2779,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -2673,7 +2880,7 @@ exports[`Storyshots HOC formInput html text input 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -2788,7 +2995,7 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -2889,7 +3096,7 @@ exports[`Storyshots HOC formInput html text input with combobox readonly role 1`
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -3038,7 +3245,7 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -3139,7 +3346,7 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -3302,7 +3509,7 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -3403,7 +3610,7 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -3546,7 +3753,7 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -3647,7 +3854,7 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -4278,7 +4485,7 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -4379,7 +4586,7 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -4499,7 +4706,7 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -4600,7 +4807,7 @@ exports[`Storyshots HOC formInput html textarea 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -4707,7 +4914,7 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -4808,7 +5015,7 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -5184,7 +5391,7 @@ exports[`Storyshots HOC formInput small container 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -5285,7 +5492,7 @@ exports[`Storyshots HOC formInput small container 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -5540,7 +5747,7 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -5641,7 +5848,7 @@ exports[`Storyshots HOC formInput small html input with leftIcon 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -5826,7 +6033,7 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
   display: -webkit-box;
@@ -5927,7 +6134,7 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -6114,7 +6321,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -6215,7 +6422,7 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -6477,7 +6684,7 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -6578,7 +6785,7 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -6832,7 +7039,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
   display: -webkit-box;
@@ -6933,7 +7140,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 }
 
 .c6 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -7016,7 +7223,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -7117,7 +7324,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -7752,7 +7959,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -7853,7 +8060,7 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 }
 
 .c11 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -8314,7 +8521,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
   display: -webkit-box;
@@ -8415,7 +8622,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 }
 
 .c6 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -8498,7 +8705,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -8599,7 +8806,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -9234,7 +9441,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -9335,7 +9542,7 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 }
 
 .c11 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -9831,7 +10038,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
   display: -webkit-box;
@@ -9932,7 +10139,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 }
 
 .c6 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -10015,7 +10222,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -10116,7 +10323,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 }
 
 .c0 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
@@ -10751,7 +10958,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
@@ -10852,7 +11059,7 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 }
 
 .c11 > .input > .icon {
-  color: rgba(0,0,0,0.16);
+  color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
