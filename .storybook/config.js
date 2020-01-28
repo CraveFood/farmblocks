@@ -44,6 +44,9 @@ const theme = {
     light: 300,
   },
   space: new Array(8).fill(0).map((_val, index) => index * 8),
+
+  // match with addon-viewport option
+  breakpoints: ["321px", "415px", "835px"],
 };
 
 function withGlobalStyle(storyFn) {

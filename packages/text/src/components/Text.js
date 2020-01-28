@@ -1,22 +1,52 @@
-import * as React from "react";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+import { typography } from "styled-system";
+import ssPropTypes from "@styled-system/prop-types";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
-import Container from "../styledComponents/Text";
+import paragraphLineHeights from "../constants/paragraphLineHeights";
 
-const Text = props => <Container {...props} />;
+const paragraphStyle = props => {
+  return (
+    props.paragraph &&
+    css`
+      line-height: ${paragraphLineHeights[props.size]};
+    `
+  );
+};
+
+const Text = styled.div`
+  font-family: Lato, sans-serif;
+  font-size: ${props => `${props.size}px`};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: ${props => props.type};
+
+  text-align: ${props => props.align};
+
+  ${paragraphStyle};
+  ${typography};
+
+  ${({ upper }) => upper && "text-transform: uppercase"}
+
+  ${({ truncate }) =>
+    truncate &&
+    ` white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      `};
+`;
 
 Text.propTypes = {
   children: PropTypes.node,
-  size: PropTypes.number,
+  size: PropTypes.number, // DEPRECATED - Use fontSize instead
   type: PropTypes.string,
-  align: PropTypes.oneOf(["left", "center", "right", "justify"]),
-  lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  fontWeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  align: PropTypes.oneOf(["left", "center", "right", "justify"]), // DEPRECATED - Use textAlign instead
   paragraph: PropTypes.bool,
-  letterSpacing: PropTypes.string,
   truncate: PropTypes.bool,
   upper: PropTypes.bool,
+  ...ssPropTypes.typography,
 };
 
 Text.defaultProps = {
@@ -24,7 +54,6 @@ Text.defaultProps = {
   type: fontTypes.NORMAL,
   align: "left",
   paragraph: false,
-  fontWeight: "inherit",
 };
 
 export default Text;
