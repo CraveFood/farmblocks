@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.5.3...@crave/farmblocks-text@3.6.0) (2020-01-28)
+
+
+### Features
+
+* **text:** add styled-system typography ([0391d57](https://github.com/CraveFood/farmblocks/commit/0391d578fe28343725b86a2204664d59572436b3))
+
+
+
+
+
 ## [3.5.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.5.2...@crave/farmblocks-text@3.5.3) (2020-01-08)
 
 **Note:** Version bump only for package @crave/farmblocks-text
