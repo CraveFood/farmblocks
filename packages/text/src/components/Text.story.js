@@ -59,4 +59,7 @@ storiesOf("Text/Default", module)
   ))
   .add("extended style", () => (
     <Text css="font-style: italic;">Awesome Text</Text>
+  ))
+  .add("responsive", () => (
+    <Text fontSize={["5pt", 2, fontSizes.HUGE, "5rem"]}>Awesome Text</Text>
   ));
