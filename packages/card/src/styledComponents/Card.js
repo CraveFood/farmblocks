@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { space } from "styled-system";
 import { colors } from "@crave/farmblocks-theme";
+
 import { cardTypes, cardTypeColors } from "../constants/cardTypes";
 
 const boxShadow = props => {
@@ -9,8 +10,8 @@ const boxShadow = props => {
   }
 
   return props.floating
-    ? `0 4px 4px 0 ${colors.GREY_16}`
-    : `0 1px 1px 0 ${colors.GREY_16}`;
+    ? `0 4px 4px 0 ${colors.GREY_08}`
+    : `0 1px 1px 0 ${colors.GREY_08}`;
 };
 
 const backgroundColor = props => {
@@ -22,7 +23,7 @@ const backgroundColor = props => {
 const Card = styled.div`
   background-color: ${backgroundColor};
   box-shadow: ${boxShadow};
-  border: solid 1px ${colors.GREY_16};
+  border: solid 1px ${colors.GREY_08};
   width: ${props => props.width};
   box-sizing: border-box;
   border-radius: 4px;

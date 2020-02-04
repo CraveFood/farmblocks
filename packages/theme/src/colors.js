@@ -17,6 +17,7 @@ export const STRAWBERRY = "#dd3311";
 export const TOMATO = "#bc2b0e";
 export const GRAPE = "#9b59b6";
 export const EGGPLANT = "#8e44ad";
+export const GREY_08 = "rgba(0, 0, 0, 0.08)";
 export const GREY_16 = "rgba(0, 0, 0, 0.16)";
 export const GREY_32 = "rgba(0, 0, 0, 0.32)";
 export const WHITE_32 = "rgba(255, 255, 255, 0.32)";
@@ -44,6 +45,7 @@ export default {
   TOMATO,
   GRAPE,
   EGGPLANT,
+  GREY_08,
   GREY_16,
   GREY_32,
   WHITE_32,
