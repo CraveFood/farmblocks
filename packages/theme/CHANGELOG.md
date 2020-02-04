@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.8.0...@crave/farmblocks-theme@1.9.0) (2020-02-04)
+
+
+### Features
+
+* **theme:** add GREY_08 color ([64037a6](https://github.com/CraveFood/farmblocks/commit/64037a6f9a1396dd7835c585902e6edc164aa305))
+
+
+
+
+
 # [1.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.7.0...@crave/farmblocks-theme@1.8.0) (2020-01-08)
 
 

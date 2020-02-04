@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@3.0.8...@crave/farmblocks-card@3.1.0) (2020-02-04)
+
+
+### Features
+
+* **Card:** change border and box shadow color ([d78a693](https://github.com/CraveFood/farmblocks/commit/d78a693133f1fa41e47b3dceb950b3d7fb94187e))
+
+
+
+
+
 ## [3.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-card@3.0.7...@crave/farmblocks-card@3.0.8) (2020-01-28)
 
 **Note:** Version bump only for package @crave/farmblocks-card
