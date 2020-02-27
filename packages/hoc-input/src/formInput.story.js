@@ -205,6 +205,10 @@ storiesOf("HOC formInput", module)
     </div>
   ))
   .add("html textarea", () => <TextArea rows="4" />)
+
+  .add("html text area with label and focused flag", () => (
+    <TextArea focused rows="4" label="TextArea Label" />
+  ))
   .add("custom border radius", () => <EnhancedInput borderRadius="32px" />)
   .add("extended style", () => (
     <EnhancedInput
