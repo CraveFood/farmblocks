@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.1.2...@crave/farmblocks-hoc-input@7.1.3) (2020-02-28)
+
+
+### Bug Fixes
+
+* **hoc-input:** add textarea to the ref querySelector ([5a92db2](https://github.com/CraveFood/farmblocks/commit/5a92db29b659dc7618cfc8842ad25545af455208)), closes [#970](https://github.com/CraveFood/farmblocks/issues/970)
+
+
+
+
+
 ## [7.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.1.1...@crave/farmblocks-hoc-input@7.1.2) (2020-02-04)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input
