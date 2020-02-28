@@ -197,7 +197,7 @@ const formInput = WrappedComponent => {
         <div
           className={classNames("input", { dropdown: isDropdown })}
           ref={element => {
-            this.inputRef = element && element.querySelector("input");
+            this.inputRef = element && element.querySelector("input, textarea");
           }}
         >
           {prefix && <div className="prefix">{prefix}</div>}
