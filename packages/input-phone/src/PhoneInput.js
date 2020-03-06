@@ -63,7 +63,7 @@ const PhoneInput = ({
   );
 
   const nationalNumber = useMemo(
-    () => formatIncompletePhoneNumber(phone?.format("NATIONAL"), country),
+    () => formatIncompletePhoneNumber(phone?.format("NATIONAL") || "", country),
     [phone, country],
   );
 
