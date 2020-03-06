@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@3.5.6...@crave/farmblocks-carousel@3.5.7) (2020-03-06)
+
+**Note:** Version bump only for package @crave/farmblocks-carousel
+
+
+
+
+
 ## [3.5.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@3.5.5...@crave/farmblocks-carousel@3.5.6) (2020-02-04)
 
 **Note:** Version bump only for package @crave/farmblocks-carousel
