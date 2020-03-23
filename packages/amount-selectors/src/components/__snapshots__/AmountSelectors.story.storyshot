@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Amount selectors Default 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -39,9 +39,8 @@ exports[`Storyshots Amount selectors Default 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -67,12 +66,19 @@ exports[`Storyshots Amount selectors Default 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -86,7 +92,83 @@ exports[`Storyshots Amount selectors Default 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -96,13 +178,13 @@ exports[`Storyshots Amount selectors Default 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -121,25 +203,25 @@ exports[`Storyshots Amount selectors Default 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -152,106 +234,106 @@ exports[`Storyshots Amount selectors Default 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -270,7 +352,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -278,25 +360,25 @@ exports[`Storyshots Amount selectors Default 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -322,16 +404,28 @@ exports[`Storyshots Amount selectors Default 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -342,7 +436,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -355,7 +449,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -366,16 +460,16 @@ exports[`Storyshots Amount selectors Default 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -385,6 +479,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -410,10 +505,10 @@ exports[`Storyshots Amount selectors Default 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -424,7 +519,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -437,7 +532,7 @@ exports[`Storyshots Amount selectors Default 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -448,12 +543,12 @@ exports[`Storyshots Amount selectors Default 1`] = `
 `;
 
 exports[`Storyshots Amount selectors Disabled 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -486,9 +581,8 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -514,12 +608,19 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -533,7 +634,83 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -543,13 +720,13 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: rgba(0,0,0,0.16);
   box-shadow: none;
@@ -568,25 +745,25 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -599,106 +776,106 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: default;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: rgba(0,0,0,0.16);
@@ -717,7 +894,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -725,25 +902,25 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -769,16 +946,28 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -789,7 +978,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -802,7 +991,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -813,16 +1002,16 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={true}
             fontSize={16}
             onClick={[Function]}
@@ -832,6 +1021,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={true}
@@ -857,11 +1047,11 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -872,7 +1062,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -885,7 +1075,7 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -896,12 +1086,12 @@ exports[`Storyshots Amount selectors Disabled 1`] = `
 `;
 
 exports[`Storyshots Amount selectors Disabled typing 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -934,9 +1124,8 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -962,12 +1151,19 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -981,7 +1177,83 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -991,13 +1263,13 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -1016,25 +1288,25 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1047,106 +1319,106 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -1165,7 +1437,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1173,25 +1445,25 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -1217,16 +1489,28 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -1237,7 +1521,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -1250,7 +1534,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -1261,16 +1545,16 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -1280,6 +1564,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -1305,10 +1590,10 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -1319,7 +1604,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -1332,7 +1617,7 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -1342,13 +1627,1042 @@ exports[`Storyshots Amount selectors Disabled typing 1`] = `
 </div>
 `;
 
-exports[`Storyshots Amount selectors Small size 1`] = `
-.c2 {
+exports[`Storyshots Amount selectors Removable 1`] = `
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 0;
+}
+
+.c1 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 32px;
+  min-width: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 0;
+}
+
+.c11 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1em;
+}
+
+.c11:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c11:focus {
+  box-shadow: none;
+}
+
+.c11:hover .icon,
+.c11:focus .icon {
+  color: white;
+}
+
+.c11 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c11:hover,
+.c11:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c11:hover > .icon,
+.c11:focus > .icon {
+  color: #3498db;
+}
+
+.c11:disabled,
+.c11:disabled .icon,
+.c11:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c11:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 32px;
+  min-width: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c13 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1em;
+}
+
+.c13:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c13:focus {
+  box-shadow: none;
+}
+
+.c13:hover .icon,
+.c13:focus .icon {
+  color: white;
+}
+
+.c13:hover {
+  background-color: #E36009;
+}
+
+.c13:focus {
+  background-color: #E36009;
+}
+
+.c13:disabled,
+.c13:disabled .icon,
+.c13:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c13:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 32px;
+  border-color: rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c7 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c7 > .input > input,
+.select__search .c7 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c7 > .input > textarea {
+  padding: 16px;
+}
+
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c7 > .input > .icon {
+  color: rgba(0,0,0,0.08);
+  font-size: 20px;
+  height: 24px;
+}
+
+.c7 > .input > .icon.left {
+  margin-left: 12px;
+}
+
+.c7 > .input > .icon.dropdown {
+  margin: 0 8px;
+}
+
+.c7 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.c7 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c7 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c7 .input.dropdown {
+  cursor: pointer;
+}
+
+.c7 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c7 .prefix,
+.c7 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c12 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  box-shadow: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c12 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c12 > .input > input,
+.select__search .c12 > .input input {
+  padding: 0 8px;
+  height: 30px;
+}
+
+.c12 > .input > textarea {
+  padding: 16px;
+}
+
+.c12 > .input > input,
+.c12 > .input > textarea,
+.select__search .c12 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  color: #2f313a;
+  background: none;
+}
+
+.c12 > .input > input::-webkit-input-placeholder,
+.c12 > .input > textarea::-webkit-input-placeholder,
+.select__search .c12 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12 > .input > input::-moz-placeholder,
+.c12 > .input > textarea::-moz-placeholder,
+.select__search .c12 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12 > .input > input:-ms-input-placeholder,
+.c12 > .input > textarea:-ms-input-placeholder,
+.select__search .c12 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12 > .input > input::placeholder,
+.c12 > .input > textarea::placeholder,
+.select__search .c12 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12 > .input > input[type="search"],
+.c12 > .input > textarea[type="search"],
+.select__search .c12 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c12 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c12 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c12 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c12 > .input > input[type="search"]::-ms-clear,
+.c12 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c12 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c12 > .input > input[role="combobox"],
+.c12 > .input > textarea[role="combobox"],
+.select__search .c12 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c12 > .input > .icon {
+  color: rgba(0,0,0,0.08);
+  font-size: 20px;
+  height: 24px;
+}
+
+.c12 > .input > .icon.left {
+  margin-left: 8px;
+}
+
+.c12 > .input > .icon.dropdown {
+  margin: 0 8px;
+}
+
+.c12 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.c12 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c12 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c12 .input.dropdown {
+  cursor: pointer;
+}
+
+.c12 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c12 input[type="number"]::-webkit-inner-spin-button,
+.c12 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c12 .prefix,
+.c12 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c6 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c6 .buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 #cancel-button {
+  margin: 0 8px;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  margin: 0 0 24px 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+.c0 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c0 .inputContainer input {
+  text-align: center;
+}
+
+.c0 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+}
+
+.c10 .inputContainer {
+  width: 70px;
+  margin: 0 8px;
+}
+
+.c10 .inputContainer input {
+  text-align: center;
+}
+
+.c10 .inputContainer input:invalid {
+  box-shadow: none;
+}
+
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
+<div>
+  <div
+    className="c0"
+    size="MEDIUM"
+  >
+    <button
+      className="c1 c2 removeButton"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={24}
+            viewBox="4 4 32 32"
+            width={24}
+          >
+            <path
+              d="M19.5 8V6a1 1 0 012 0v2H30a1 1 0 011 1v5a1 1 0 01-1 1h-1v17a1 1 0 01-1 1H12a1 1 0 01-1-1V15h-1a1 1 0 01-1-1V9a1 1 0 011-1h9.5zM24 31h3V15H13v16h3V18a.5.5 0 111 0v13h2.5V18a.5.5 0 111 0v13H23V18a.5.5 0 111 0v13zm5-18v-3H11v3h18z"
+              fill="#ff4411"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+    </button>
+    <div
+      className="inputContainer"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5 inputComponent"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7 wrapped"
+              disabled={false}
+              fontSize={16}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  _css="rgba(0, 0, 0, 0.08)"
+                  className="wrapped"
+                  data-testid="input-text"
+                  disabled={false}
+                  fontSize={16}
+                  max={1.7976931348623157e+308}
+                  min={1}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  readOnly={false}
+                  step={1}
+                  type="number"
+                  value="1.00"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="messagesContainer"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      className="c8 c9 increaseButton"
+      onClick={[Function]}
+      size="MEDIUM"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={32}
+            viewBox="4 4 32 32"
+            width={32}
+          >
+            <path
+              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+              fill="white"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+    </button>
+  </div>
+  <div
+    className="c10"
+    size="SMALL"
+  >
+    <button
+      className="c11 c2 removeButton"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={16}
+            viewBox="4 4 32 32"
+            width={16}
+          >
+            <path
+              d="M19.5 8V6a1 1 0 012 0v2H30a1 1 0 011 1v5a1 1 0 01-1 1h-1v17a1 1 0 01-1 1H12a1 1 0 01-1-1V15h-1a1 1 0 01-1-1V9a1 1 0 011-1h9.5zM24 31h3V15H13v16h3V18a.5.5 0 111 0v13h2.5V18a.5.5 0 111 0v13H23V18a.5.5 0 111 0v13zm5-18v-3H11v3h18z"
+              fill="#ff4411"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+    </button>
+    <div
+      className="inputContainer"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5 inputComponent"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c12 wrapped"
+              disabled={false}
+              fontSize={14}
+              onClick={[Function]}
+              type="number"
+            >
+              <div
+                className="input"
+              >
+                <input
+                  _css="rgba(0, 0, 0, 0.08)"
+                  className="wrapped"
+                  data-testid="input-text"
+                  disabled={false}
+                  fontSize={14}
+                  max={1.7976931348623157e+308}
+                  min={1}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onInvalid={[Function]}
+                  readOnly={false}
+                  step={1}
+                  type="number"
+                  value="1.00"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="messagesContainer"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      className="c13 c9 increaseButton"
+      onClick={[Function]}
+      size="SMALL"
+      type="PRIMARY"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={24}
+            viewBox="4 4 32 32"
+            width={24}
+          >
+            <path
+              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+              fill="white"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Amount selectors Small size 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -1381,9 +2695,8 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -1409,12 +2722,19 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -1428,7 +2748,83 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 32px;
+  min-width: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1438,13 +2834,13 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 16px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -1463,25 +2859,25 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 8px;
   height: 30px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1494,106 +2890,106 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 8px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 8px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 14px;
   background-color: #f6f8f9;
@@ -1612,7 +3008,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -1620,25 +3016,25 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -1664,16 +3060,28 @@ exports[`Storyshots Amount selectors Small size 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="SMALL"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="SMALL"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -1684,7 +3092,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -1697,7 +3105,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -1708,16 +3116,16 @@ exports[`Storyshots Amount selectors Small size 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={14}
             onClick={[Function]}
@@ -1727,6 +3135,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -1752,10 +3161,10 @@ exports[`Storyshots Amount selectors Small size 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="SMALL"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -1766,7 +3175,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -1779,7 +3188,7 @@ exports[`Storyshots Amount selectors Small size 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -1790,12 +3199,12 @@ exports[`Storyshots Amount selectors Small size 1`] = `
 `;
 
 exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -1828,9 +3237,8 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -1856,12 +3264,19 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -1875,7 +3290,83 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1885,13 +3376,13 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -1910,25 +3401,25 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1941,106 +3432,106 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2059,7 +3550,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2067,25 +3558,25 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2111,15 +3602,27 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -2130,7 +3633,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -2143,7 +3646,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="#ff4411"
             fillRule="nonzero"
           />
         </svg>
@@ -2154,16 +3657,16 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -2173,6 +3676,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -2198,10 +3702,10 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -2212,7 +3716,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -2225,7 +3729,7 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -2236,12 +3740,12 @@ exports[`Storyshots Amount selectors With 0.5 steps 1`] = `
 `;
 
 exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation (browser) 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -2274,9 +3778,8 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -2302,12 +3805,19 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -2321,7 +3831,83 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2331,13 +3917,13 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -2356,25 +3942,25 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2387,106 +3973,106 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -2505,7 +4091,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -2513,25 +4099,25 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -2557,15 +4143,27 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -2576,7 +4174,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -2589,7 +4187,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="#ff4411"
             fillRule="nonzero"
           />
         </svg>
@@ -2600,16 +4198,16 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -2619,6 +4217,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -2644,10 +4243,10 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -2658,7 +4257,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -2671,7 +4270,7 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -2682,12 +4281,12 @@ exports[`Storyshots Amount selectors With 0.5 steps and step mismatch validation
 `;
 
 exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -2720,9 +4319,8 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -2748,12 +4346,19 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -2767,12 +4372,88 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   box-shadow: none;
 }
 
-.c6 {
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c10 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c10:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c10:focus {
+  box-shadow: none;
+}
+
+.c10:hover .icon,
+.c10:focus .icon {
+  color: white;
+}
+
+.c10:hover {
+  background-color: #E36009;
+}
+
+.c10:focus {
+  background-color: #E36009;
+}
+
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c8 {
   position: relative;
   z-index: 1000;
 }
 
-.c7 {
+.c9 {
   visibility: hidden;
   position: absolute;
   padding: 8px;
@@ -2790,12 +4471,12 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   top: -9px;
 }
 
-.c7 .closeButton {
+.c9 .closeButton {
   display: none;
 }
 
-.c7:after,
-.c7:before {
+.c9:after,
+.c9:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -2804,7 +4485,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   pointer-events: none;
 }
 
-.c7:before {
+.c9:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -2815,7 +4496,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   transform: translateX(-50%);
 }
 
-.c7:after {
+.c9:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -2826,7 +4507,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   transform: translateX(-50%);
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2836,13 +4517,13 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -2861,25 +4542,25 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2892,106 +4573,106 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3010,7 +4691,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3018,25 +4699,25 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3062,8 +4743,20 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c11 {
+  border-radius: 50%;
+}
+
 @media only screen and (max-width:) {
-  .c6 {
+  .c8 {
     top: 0;
     right: 0;
     bottom: 0;
@@ -3074,14 +4767,14 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
 }
 
 @media only screen and (max-width:) {
-  .c7:after,
-  .c7:before {
+  .c9:after,
+  .c9:before {
     display: none;
   }
 }
 
 @media only screen and (max-width:) {
-  .c7 {
+  .c9 {
     right: 16px;
     left: 16px;
     white-space: pre-wrap;
@@ -3091,7 +4784,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
     transform: translate(0,-50%);
   }
 
-  .c7 .closeButton {
+  .c9 .closeButton {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3113,10 +4806,10 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -3127,7 +4820,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -3140,7 +4833,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="#ff4411"
             fillRule="nonzero"
           />
         </svg>
@@ -3151,16 +4844,16 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3170,6 +4863,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -3194,7 +4888,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
       </div>
     </div>
     <div
-      className="c6 tooltip-content"
+      className="c8 tooltip-content"
       offset="-9px"
       onTouchStart={[Function]}
       style={
@@ -3204,7 +4898,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
       }
     >
       <div
-        className="c7 tooltip-content"
+        className="c9 tooltip-content"
         offset="-9px"
         style={
           Object {
@@ -3217,11 +4911,11 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c10 c11 increaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -3232,7 +4926,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -3245,7 +4939,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -3256,12 +4950,12 @@ exports[`Storyshots Amount selectors With a max value of 3 and initial value = 5
 `;
 
 exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -3294,9 +4988,8 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -3322,12 +5015,19 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -3341,7 +5041,83 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3351,13 +5127,13 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -3376,25 +5152,25 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3407,106 +5183,106 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -3525,7 +5301,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -3533,25 +5309,25 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -3577,15 +5353,27 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -3596,7 +5384,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -3609,7 +5397,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="#ff4411"
             fillRule="nonzero"
           />
         </svg>
@@ -3620,16 +5408,16 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -3639,6 +5427,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -3664,10 +5453,10 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -3678,7 +5467,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -3691,7 +5480,7 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -3702,12 +5491,12 @@ exports[`Storyshots Amount selectors With a max value of 3 and min of 1 1`] = `
 `;
 
 exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -3740,9 +5529,8 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -3768,12 +5556,19 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -3787,12 +5582,88 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   box-shadow: none;
 }
 
-.c6 {
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c10 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c10:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c10:focus {
+  box-shadow: none;
+}
+
+.c10:hover .icon,
+.c10:focus .icon {
+  color: white;
+}
+
+.c10:hover {
+  background-color: #E36009;
+}
+
+.c10:focus {
+  background-color: #E36009;
+}
+
+.c10:disabled,
+.c10:disabled .icon,
+.c10:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c8 {
   position: relative;
   z-index: 1000;
 }
 
-.c7 {
+.c9 {
   visibility: hidden;
   position: absolute;
   padding: 8px;
@@ -3810,12 +5681,12 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   top: -9px;
 }
 
-.c7 .closeButton {
+.c9 .closeButton {
   display: none;
 }
 
-.c7:after,
-.c7:before {
+.c9:after,
+.c9:before {
   border: solid 1px rgba(0,0,0,0.16);
   content: " ";
   height: 0;
@@ -3824,7 +5695,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   pointer-events: none;
 }
 
-.c7:before {
+.c9:before {
   bottom: 100%;
   border-color: transparent;
   border-bottom-color: rgba(0,0,0,0.16);
@@ -3835,7 +5706,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   transform: translateX(-50%);
 }
 
-.c7:after {
+.c9:after {
   bottom: calc(100% - 1px);
   border-color: transparent;
   border-bottom-color: #ffffff;
@@ -3846,7 +5717,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   transform: translateX(-50%);
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3856,13 +5727,13 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -3881,25 +5752,25 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3912,106 +5783,106 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -4030,7 +5901,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -4038,25 +5909,25 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -4082,8 +5953,20 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c11 {
+  border-radius: 50%;
+}
+
 @media only screen and (max-width:) {
-  .c6 {
+  .c8 {
     top: 0;
     right: 0;
     bottom: 0;
@@ -4094,14 +5977,14 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
 }
 
 @media only screen and (max-width:) {
-  .c7:after,
-  .c7:before {
+  .c9:after,
+  .c9:before {
     display: none;
   }
 }
 
 @media only screen and (max-width:) {
-  .c7 {
+  .c9 {
     right: 16px;
     left: 16px;
     white-space: pre-wrap;
@@ -4111,7 +5994,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
     transform: translate(0,-50%);
   }
 
-  .c7 .closeButton {
+  .c9 .closeButton {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4133,11 +6016,11 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -4148,7 +6031,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -4161,7 +6044,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -4172,16 +6055,16 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -4191,6 +6074,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -4215,7 +6099,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
       </div>
     </div>
     <div
-      className="c6 tooltip-content"
+      className="c8 tooltip-content"
       offset="-9px"
       onTouchStart={[Function]}
       style={
@@ -4225,7 +6109,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
       }
     >
       <div
-        className="c7 tooltip-content"
+        className="c9 tooltip-content"
         offset="-9px"
         style={
           Object {
@@ -4238,10 +6122,10 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c10 c11 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -4252,7 +6136,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -4265,7 +6149,7 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -4276,12 +6160,12 @@ exports[`Storyshots Amount selectors With a min value of 3 and initial value = 1
 `;
 
 exports[`Storyshots Amount selectors With onChange function 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -4314,9 +6198,8 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -4342,12 +6225,19 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -4361,7 +6251,83 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4371,13 +6337,13 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -4396,25 +6362,25 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4427,106 +6393,106 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -4545,7 +6511,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -4553,25 +6519,25 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -4597,16 +6563,28 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -4617,7 +6595,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -4630,7 +6608,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -4641,16 +6619,16 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -4660,6 +6638,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -4685,10 +6664,10 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -4699,7 +6678,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -4712,7 +6691,7 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -4723,12 +6702,12 @@ exports[`Storyshots Amount selectors With onChange function 1`] = `
 `;
 
 exports[`Storyshots Amount selectors With value set 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -4761,9 +6740,8 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -4789,12 +6767,19 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -4808,7 +6793,83 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4818,13 +6879,13 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -4843,25 +6904,25 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -4874,106 +6935,106 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -4992,7 +7053,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -5000,25 +7061,25 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -5044,15 +7105,27 @@ exports[`Storyshots Amount selectors With value set 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div
   className="c0"
   size="MEDIUM"
 >
   <button
-    className="c1 decreaseButton"
+    className="c1 c2 decreaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -5063,7 +7136,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -5076,7 +7149,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="#ff4411"
             fillRule="nonzero"
           />
         </svg>
@@ -5087,16 +7160,16 @@ exports[`Storyshots Amount selectors With value set 1`] = `
     className="inputContainer"
   >
     <div
-      className="c3"
+      className="c4"
     >
       <div
-        className="inputComponent"
+        className="c5 inputComponent"
       >
         <div
-          className="c4"
+          className="c6"
         >
           <div
-            className="c5 wrapped"
+            className="c7 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -5106,6 +7179,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -5131,10 +7205,10 @@ exports[`Storyshots Amount selectors With value set 1`] = `
     </div>
   </div>
   <button
-    className="c1 increaseButton"
+    className="c8 c9 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -5145,7 +7219,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
       }
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -5158,7 +7232,7 @@ exports[`Storyshots Amount selectors With value set 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
@@ -5169,12 +7243,12 @@ exports[`Storyshots Amount selectors With value set 1`] = `
 `;
 
 exports[`Storyshots Amount selectors With value set after mount 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
@@ -5207,9 +7281,8 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -5235,12 +7308,19 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   color: white;
 }
 
-.c1:hover {
-  background-color: #2980b9;
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c1:hover,
 .c1:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
 }
 
 .c1:disabled,
@@ -5254,7 +7334,83 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   box-shadow: none;
 }
 
-.c5 {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c8 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c8:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8:hover .icon,
+.c8:focus .icon {
+  color: white;
+}
+
+.c8:hover {
+  background-color: #E36009;
+}
+
+.c8:focus {
+  background-color: #E36009;
+}
+
+.c8:disabled,
+.c8:disabled .icon,
+.c8:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5264,13 +7420,13 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   flex-direction: column;
 }
 
-.c5 > .input {
+.c7 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -5289,25 +7445,25 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c7 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.select__search .c7 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c5 > .input > textarea {
+.c7 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c7 > .input > input,
+.c7 > .input > textarea,
+.select__search .c7 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5320,106 +7476,106 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c7 > .input > input::-webkit-input-placeholder,
+.c7 > .input > textarea::-webkit-input-placeholder,
+.select__search .c7 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c7 > .input > input::-moz-placeholder,
+.c7 > .input > textarea::-moz-placeholder,
+.select__search .c7 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c7 > .input > input:-ms-input-placeholder,
+.c7 > .input > textarea:-ms-input-placeholder,
+.select__search .c7 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c7 > .input > input::placeholder,
+.c7 > .input > textarea::placeholder,
+.select__search .c7 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c7 > .input > input[type="search"],
+.c7 > .input > textarea[type="search"],
+.select__search .c7 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c7 > .input > input[type="search"]::-ms-clear,
+.c7 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c7 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c7 > .input > input[role="combobox"],
+.c7 > .input > textarea[role="combobox"],
+.select__search .c7 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c5 > .input > .icon {
+.c7 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c5 > .input > .icon.left {
+.c7 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c5 > .input > .icon.dropdown {
+.c7 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c5 > .input > .clear {
+.c7 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c5 > .input > .clear:hover {
+.c7 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c7 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c7 .input.dropdown {
   cursor: pointer;
 }
 
-.c5 input[type="number"] {
+.c7 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c7 input[type="number"]::-webkit-inner-spin-button,
+.c7 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c7 .prefix,
+.c7 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -5438,7 +7594,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c6 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -5446,25 +7602,25 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   align-items: flex-end;
 }
 
-.c4 >:first-child {
+.c6 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c4 .buttons {
+.c6 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c4 #cancel-button {
+.c6 #cancel-button {
   margin: 0 8px;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -5490,16 +7646,28 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
   box-shadow: none;
 }
 
+.c2 {
+  border-radius: 50%;
+}
+
+.c5 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c9 {
+  border-radius: 50%;
+}
+
 <div>
   <div
     className="c0"
     size="MEDIUM"
   >
     <button
-      className="c1 decreaseButton"
+      className="c1 c2 decreaseButton"
       onClick={[Function]}
       size="MEDIUM"
-      type="SECONDARY"
+      type="NEUTRAL"
     >
       <div
         className="icon left-icon"
@@ -5510,7 +7678,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
         }
       >
         <span
-          className="c2"
+          className="c3"
           color="currentColor"
           size="1em"
         >
@@ -5523,7 +7691,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
           >
             <path
               d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-              fill="currentColor"
+              fill="#ff4411"
               fillRule="nonzero"
             />
           </svg>
@@ -5534,16 +7702,16 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
       className="inputContainer"
     >
       <div
-        className="c3"
+        className="c4"
       >
         <div
-          className="inputComponent"
+          className="c5 inputComponent"
         >
           <div
-            className="c4"
+            className="c6"
           >
             <div
-              className="c5 wrapped"
+              className="c7 wrapped"
               disabled={false}
               fontSize={16}
               onClick={[Function]}
@@ -5553,6 +7721,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
                 className="input"
               >
                 <input
+                  _css="rgba(0, 0, 0, 0.08)"
                   className="wrapped"
                   data-testid="input-text"
                   disabled={false}
@@ -5578,10 +7747,10 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
       </div>
     </div>
     <button
-      className="c1 increaseButton"
+      className="c8 c9 increaseButton"
       onClick={[Function]}
       size="MEDIUM"
-      type="SECONDARY"
+      type="PRIMARY"
     >
       <div
         className="icon left-icon"
@@ -5592,7 +7761,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
         }
       >
         <span
-          className="c2"
+          className="c3"
           color="currentColor"
           size="1em"
         >
@@ -5605,7 +7774,7 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
           >
             <path
               d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-              fill="currentColor"
+              fill="white"
               fillRule="nonzero"
             />
           </svg>
@@ -5622,12 +7791,12 @@ exports[`Storyshots Amount selectors With value set after mount 1`] = `
 `;
 
 exports[`Storyshots Amount selectors extended style 1`] = `
-.c3 {
+.c4 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c3 .farmblocks-icon {
+.c4 .farmblocks-icon {
   display: block;
 }
 
@@ -5660,9 +7829,8 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   text-overflow: ellipsis;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
+  background-color: #FFFFFF;
+  color: #59636f;
   padding: 0 0;
 }
 
@@ -5688,12 +7856,19 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   color: white;
 }
 
-.c2:hover {
-  background-color: #2980b9;
+.c2 > .icon {
+  color: rgba(0,0,0,0.32);
 }
 
+.c2:hover,
 .c2:focus {
-  background-color: #2980b9;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c2:hover > .icon,
+.c2:focus > .icon {
+  color: #3498db;
 }
 
 .c2:disabled,
@@ -5707,7 +7882,83 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   box-shadow: none;
 }
 
-.c6 {
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 46px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  background-color: #fd6a08;
+  padding: 0 0;
+}
+
+.c9 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.c9:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c9:focus {
+  box-shadow: none;
+}
+
+.c9:hover .icon,
+.c9:focus .icon {
+  color: white;
+}
+
+.c9:hover {
+  background-color: #E36009;
+}
+
+.c9:focus {
+  background-color: #E36009;
+}
+
+.c9:disabled,
+.c9:disabled .icon,
+.c9:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5717,13 +7968,13 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   flex-direction: column;
 }
 
-.c6 > .input {
+.c8 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
   border: solid 1px;
-  border-radius: 4px;
+  border-radius: 32px;
   border-color: rgba(0,0,0,0.08);
   background-color: #ffffff;
   box-shadow: none;
@@ -5742,25 +7993,25 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   overflow: auto;
 }
 
-.c6 > .input .wrapped {
+.c8 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 > .input > input,
-.select__search .c6 > .input input {
+.c8 > .input > input,
+.select__search .c8 > .input input {
   padding: 0 16px;
   height: 46px;
 }
 
-.c6 > .input > textarea {
+.c8 > .input > textarea {
   padding: 16px;
 }
 
-.c6 > .input > input,
-.c6 > .input > textarea,
-.select__search .c6 > .input input {
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5773,106 +8024,106 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   background: none;
 }
 
-.c6 > .input > input::-webkit-input-placeholder,
-.c6 > .input > textarea::-webkit-input-placeholder,
-.select__search .c6 > .input input::-webkit-input-placeholder {
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 > .input > input::-moz-placeholder,
-.c6 > .input > textarea::-moz-placeholder,
-.select__search .c6 > .input input::-moz-placeholder {
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 > .input > input:-ms-input-placeholder,
-.c6 > .input > textarea:-ms-input-placeholder,
-.select__search .c6 > .input input:-ms-input-placeholder {
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 > .input > input::placeholder,
-.c6 > .input > textarea::placeholder,
-.select__search .c6 > .input input::placeholder {
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 > .input > input[type="search"],
-.c6 > .input > textarea[type="search"],
-.select__search .c6 > .input input[type="search"] {
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 8px;
 }
 
-.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c6 > .input > input[type="search"]::-ms-clear,
-.c6 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c6 > .input input[type="search"]::-ms-clear {
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c6 > .input > input[role="combobox"],
-.c6 > .input > textarea[role="combobox"],
-.select__search .c6 > .input input[role="combobox"] {
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c6 > .input > .icon {
+.c8 > .input > .icon {
   color: rgba(0,0,0,0.08);
   font-size: 20px;
   height: 24px;
 }
 
-.c6 > .input > .icon.left {
+.c8 > .input > .icon.left {
   margin-left: 12px;
 }
 
-.c6 > .input > .icon.dropdown {
+.c8 > .input > .icon.dropdown {
   margin: 0 8px;
 }
 
-.c6 > .input > .clear {
+.c8 > .input > .clear {
   color: rgba(0,0,0,0.16);
   font-size: 20px;
   height: 24px;
   margin-right: 16px;
 }
 
-.c6 > .input > .clear:hover {
+.c8 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c6 > .input > .clear a {
+.c8 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c6 .input.dropdown {
+.c8 .input.dropdown {
   cursor: pointer;
 }
 
-.c6 input[type="number"] {
+.c8 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c6 .prefix,
-.c6 .suffix {
+.c8 .prefix,
+.c8 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   background-color: #f6f8f9;
@@ -5891,7 +8142,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   align-items: center;
 }
 
-.c5 {
+.c7 {
   position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
@@ -5899,25 +8150,25 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   align-items: flex-end;
 }
 
-.c5 >:first-child {
+.c7 >:first-child {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
-.c5 .buttons {
+.c7 .buttons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c5 #cancel-button {
+.c7 #cancel-button {
   margin: 0 8px;
 }
 
-.c4 {
+.c5 {
   font-family: Lato,sans-serif;
   margin: 0 0 24px 0;
 }
@@ -5943,6 +8194,18 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   box-shadow: none;
 }
 
+.c3 {
+  border-radius: 50%;
+}
+
+.c6 .input {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+.c10 {
+  border-radius: 50%;
+}
+
 .c1 {
   opacity: 0.8;
 }
@@ -5962,11 +8225,11 @@ exports[`Storyshots Amount selectors extended style 1`] = `
   size="MEDIUM"
 >
   <button
-    className="c2 decreaseButton"
+    className="c2 c3 decreaseButton"
     disabled={true}
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="NEUTRAL"
   >
     <div
       className="icon left-icon"
@@ -5977,7 +8240,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
       }
     >
       <span
-        className="c3"
+        className="c4"
         color="currentColor"
         size="1em"
       >
@@ -5990,7 +8253,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
         >
           <path
             d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-            fill="currentColor"
+            fill="rgba(0, 0, 0, 0.16)"
             fillRule="nonzero"
           />
         </svg>
@@ -6001,16 +8264,16 @@ exports[`Storyshots Amount selectors extended style 1`] = `
     className="inputContainer"
   >
     <div
-      className="c4"
+      className="c5"
     >
       <div
-        className="inputComponent"
+        className="c6 inputComponent"
       >
         <div
-          className="c5"
+          className="c7"
         >
           <div
-            className="c6 wrapped"
+            className="c8 wrapped"
             disabled={false}
             fontSize={16}
             onClick={[Function]}
@@ -6020,6 +8283,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
               className="input"
             >
               <input
+                _css="rgba(0, 0, 0, 0.08)"
                 className="wrapped"
                 data-testid="input-text"
                 disabled={false}
@@ -6045,10 +8309,10 @@ exports[`Storyshots Amount selectors extended style 1`] = `
     </div>
   </div>
   <button
-    className="c2 increaseButton"
+    className="c9 c10 increaseButton"
     onClick={[Function]}
     size="MEDIUM"
-    type="SECONDARY"
+    type="PRIMARY"
   >
     <div
       className="icon left-icon"
@@ -6059,7 +8323,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
       }
     >
       <span
-        className="c3"
+        className="c4"
         color="currentColor"
         size="1em"
       >
@@ -6072,7 +8336,7 @@ exports[`Storyshots Amount selectors extended style 1`] = `
         >
           <path
             d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-            fill="currentColor"
+            fill="white"
             fillRule="nonzero"
           />
         </svg>
