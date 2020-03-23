@@ -26,7 +26,7 @@ const selectorSizeToIconSize = {
   [selectorSizes.MEDIUM]: 32,
 };
 
-const removableInputBorderRadius = {
+const inputBorderRadius = {
   [selectorSizes.SMALL]: "16px",
   [selectorSizes.MEDIUM]: "32px",
 };
@@ -139,25 +139,28 @@ class AmountSelectors extends React.Component {
     const showTooltipMessage =
       (showMaxMessage && maxAmountMessage) ||
       (showMinMessage && minAmountMessage);
+    const disableDecreaseButton =
+      disabled || this.state.disableBoth || value <= this.props.min;
+    const disableIncreaseButton =
+      disabled || this.state.disableBoth || value >= this.props.max;
     return (
       <Wrapper size={size} className={this.props.className}>
         {!removable || (removable && value > min) ? (
           <Button
             className="decreaseButton"
-            type={removable ? buttonTypes.NEUTRAL : buttonTypes.SECONDARY}
             size={selectorSizeToButtonSize[size]}
             icon={
               <MdMinus
                 size={selectorSizeToIconSize[size]}
-                color={removable && colors.RED_ORANGE}
+                color={
+                  disableDecreaseButton ? colors.GREY_16 : colors.RED_ORANGE
+                }
               />
             }
-            disabled={
-              disabled || this.state.disableBoth || value <= this.props.min
-            }
+            disabled={disableDecreaseButton}
             onClick={this.decrement}
             tooltipText={this.state.tooltipText}
-            css={removable && { borderRadius: "50%" }}
+            css={{ borderRadius: "50%" }}
           />
         ) : (
           <Button
@@ -166,11 +169,12 @@ class AmountSelectors extends React.Component {
             icon={
               <MdTrash
                 size={selectorSizeToIconSize[size] - 8}
-                color={colors.RED_ORANGE}
+                color={disabled ? colors.GREY_16 : colors.RED_ORANGE}
               />
             }
             onClick={this.props.onRemoveClick}
             css={{ borderRadius: "50%" }}
+            disabled={disabled}
           />
         )}
         <div className="inputContainer">
@@ -191,7 +195,7 @@ class AmountSelectors extends React.Component {
             fontSize={selectorSizeToFontSize[size]}
             disabled={disabled}
             onFocus={() => this.setState({ focused: true })}
-            borderRadius={removable && removableInputBorderRadius[size]}
+            borderRadius={inputBorderRadius[size]}
             css={`
               .input {
                 box-shadow: 0 3px 3px 0 ${colors.GREY_08};
@@ -224,20 +228,18 @@ class AmountSelectors extends React.Component {
 
         <Button
           className="increaseButton"
-          type={removable ? buttonTypes.PRIMARY : buttonTypes.SECONDARY}
+          type={buttonTypes.PRIMARY}
           size={selectorSizeToButtonSize[size]}
           icon={
             <MdAdd
               size={selectorSizeToIconSize[size]}
-              color={removable && "white"}
+              color={disableIncreaseButton ? colors.GREY_16 : "white"}
             />
           }
-          disabled={
-            disabled || this.state.disableBoth || value >= this.props.max
-          }
+          disabled={disableIncreaseButton}
           onClick={this.increment}
           tooltipText={this.state.tooltipText}
-          css={removable && { borderRadius: "50%" }}
+          css={{ borderRadius: "50%" }}
         />
       </Wrapper>
     );
@@ -271,6 +273,7 @@ AmountSelectors.defaultProps = {
   maxAmountMessage: "Reached maximum amount",
   minAmountMessage: "Reached minimum amount",
   onChange: () => false,
+  onRemoveClick: () => false,
   disableTyping: false,
   size: selectorSizes.MEDIUM,
 };
