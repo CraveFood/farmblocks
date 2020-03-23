@@ -4,9 +4,9 @@ import values from "object.values";
 import { Transition } from "react-spring/renderprops.cjs";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 import InputText from "@crave/farmblocks-input-text";
-import { fontSizes } from "@crave/farmblocks-theme";
+import { fontSizes, colors } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
-import { MdAdd, MdMinus } from "@crave/farmblocks-icon";
+import { MdAdd, MdMinus, MdTrash } from "@crave/farmblocks-icon";
 
 import selectorSizes from "../constants/selectorSizes";
 import Wrapper from "../styledComponents/AmountSelector";
@@ -24,6 +24,11 @@ const selectorSizeToFontSize = {
 const selectorSizeToIconSize = {
   [selectorSizes.SMALL]: 24,
   [selectorSizes.MEDIUM]: 32,
+};
+
+const removableInputBorderRadius = {
+  [selectorSizes.SMALL]: "16px",
+  [selectorSizes.MEDIUM]: "32px",
 };
 
 class AmountSelectors extends React.Component {
@@ -125,6 +130,7 @@ class AmountSelectors extends React.Component {
       maxAmountMessage,
       showBoundariesMessageOnlyOnFocus,
       size,
+      removable,
     } = this.props;
     const { focused, value } = this.state;
     const showMessage = !showBoundariesMessageOnlyOnFocus || focused;
@@ -135,17 +141,38 @@ class AmountSelectors extends React.Component {
       (showMinMessage && minAmountMessage);
     return (
       <Wrapper size={size} className={this.props.className}>
-        <Button
-          className="decreaseButton"
-          type={buttonTypes.SECONDARY}
-          size={selectorSizeToButtonSize[size]}
-          icon={<MdMinus size={selectorSizeToIconSize[size]} />}
-          disabled={
-            disabled || this.state.disableBoth || value <= this.props.min
-          }
-          onClick={this.decrement}
-          tooltipText={this.state.tooltipText}
-        />
+        {!removable || (removable && value > min) ? (
+          <Button
+            className="decreaseButton"
+            type={removable ? buttonTypes.NEUTRAL : buttonTypes.SECONDARY}
+            size={selectorSizeToButtonSize[size]}
+            icon={
+              <MdMinus
+                size={selectorSizeToIconSize[size]}
+                color={removable && colors.RED_ORANGE}
+              />
+            }
+            disabled={
+              disabled || this.state.disableBoth || value <= this.props.min
+            }
+            onClick={this.decrement}
+            tooltipText={this.state.tooltipText}
+            css={removable && { borderRadius: "50%" }}
+          />
+        ) : (
+          <Button
+            className="removeButton"
+            size={selectorSizeToButtonSize[size]}
+            icon={
+              <MdTrash
+                size={selectorSizeToIconSize[size] - 8}
+                color={colors.RED_ORANGE}
+              />
+            }
+            onClick={this.props.onRemoveClick}
+            css={{ borderRadius: "50%" }}
+          />
+        )}
         <div className="inputContainer">
           <InputText
             data-testid="input-text"
@@ -164,6 +191,12 @@ class AmountSelectors extends React.Component {
             fontSize={selectorSizeToFontSize[size]}
             disabled={disabled}
             onFocus={() => this.setState({ focused: true })}
+            borderRadius={removable && removableInputBorderRadius[size]}
+            css={`
+              .input {
+                box-shadow: 0 3px 3px 0 ${colors.GREY_08};
+              }
+            `}
           />
           <Transition
             items={showTooltipMessage}
@@ -191,14 +224,20 @@ class AmountSelectors extends React.Component {
 
         <Button
           className="increaseButton"
-          type={buttonTypes.SECONDARY}
+          type={removable ? buttonTypes.PRIMARY : buttonTypes.SECONDARY}
           size={selectorSizeToButtonSize[size]}
-          icon={<MdAdd size={selectorSizeToIconSize[size]} />}
+          icon={
+            <MdAdd
+              size={selectorSizeToIconSize[size]}
+              color={removable && "white"}
+            />
+          }
           disabled={
             disabled || this.state.disableBoth || value >= this.props.max
           }
           onClick={this.increment}
           tooltipText={this.state.tooltipText}
+          css={removable && { borderRadius: "50%" }}
         />
       </Wrapper>
     );
@@ -220,6 +259,8 @@ AmountSelectors.propTypes = {
   size: PropTypes.oneOf(values(selectorSizes)),
   className: PropTypes.string,
   tooltipProps: PropTypes.object,
+  onRemoveClick: PropTypes.func,
+  removable: PropTypes.bool,
 };
 
 AmountSelectors.defaultProps = {

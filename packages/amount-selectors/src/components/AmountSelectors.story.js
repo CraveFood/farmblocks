@@ -62,4 +62,21 @@ storiesOf("Amount selectors", module)
         }
       "
     />
+  ))
+  .add("Removable", () => (
+    <div>
+      <AmountSelectors
+        min={1}
+        value={1}
+        removable
+        onRemoveClick={action("onRemoveClick")}
+      />
+      <AmountSelectors
+        size={selectorSizes.SMALL}
+        min={1}
+        value={1}
+        removable
+        onRemoveClick={action("smallonRemoveClick")}
+      />
+    </div>
   ));
