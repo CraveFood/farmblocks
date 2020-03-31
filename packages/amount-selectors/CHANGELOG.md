@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.7.14...@crave/farmblocks-amount-selectors@3.0.0) (2020-03-31)
+
+
+### Features
+
+* **amount-selector:** add removable option and style ([56609c3](https://github.com/CraveFood/farmblocks/commit/56609c3fa9b2f2c465dbfa3ac61432ea2e5dc0ce)), closes [#974](https://github.com/CraveFood/farmblocks/issues/974)
+* **amount-selectors:** change component style ([66d89af](https://github.com/CraveFood/farmblocks/commit/66d89afd82f72924d6764a8479745941d621a92c))
+
+
+### BREAKING CHANGES
+
+* **amount-selectors:** changes were made on buttons and text input
+
+
+
+
+
 ## [2.7.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@2.7.13...@crave/farmblocks-amount-selectors@2.7.14) (2020-03-06)
 
 **Note:** Version bump only for package @crave/farmblocks-amount-selectors
