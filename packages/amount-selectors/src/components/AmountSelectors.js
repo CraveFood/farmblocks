@@ -161,6 +161,7 @@ class AmountSelectors extends React.Component {
             onClick={this.decrement}
             tooltipText={this.state.tooltipText}
             css={{ borderRadius: "50%" }}
+            data-testid="amount-selectors-decrease-button"
           />
         ) : (
           <Button
@@ -175,6 +176,7 @@ class AmountSelectors extends React.Component {
             onClick={this.props.onRemoveClick}
             css={{ borderRadius: "50%" }}
             disabled={disabled}
+            data-testid="amount-selectors-remove-button"
           />
         )}
         <div className="inputContainer">
@@ -240,6 +242,7 @@ class AmountSelectors extends React.Component {
           onClick={this.increment}
           tooltipText={this.state.tooltipText}
           css={{ borderRadius: "50%" }}
+          data-testid="amount-selectors-increase-button"
         />
       </Wrapper>
     );
