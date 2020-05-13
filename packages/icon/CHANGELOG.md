@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.5.1...@crave/farmblocks-icon@0.6.0) (2020-05-13)
+
+
+### Features
+
+* **icons:** add github and dribbble ([8b27c92](https://github.com/CraveFood/farmblocks/commit/8b27c9203a0bb2b0618cd1acb744c83fc31b57b6))
+
+
+
+
+
 ## [0.5.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.5.0...@crave/farmblocks-icon@0.5.1) (2020-03-06)
 
 **Note:** Version bump only for package @crave/farmblocks-icon
