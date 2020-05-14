@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@2.0.7...@crave/farmblocks-tags@2.0.8) (2020-05-14)
+
+**Note:** Version bump only for package @crave/farmblocks-tags
+
+
+
+
+
 ## [2.0.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@2.0.6...@crave/farmblocks-tags@2.0.7) (2020-05-13)
 
 **Note:** Version bump only for package @crave/farmblocks-tags

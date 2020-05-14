@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.6.0...@crave/farmblocks-icon@0.6.1) (2020-05-14)
+
+
+### Bug Fixes
+
+* **icon:** color of MdDribbble and MdGithub ([ed9bcea](https://github.com/CraveFood/farmblocks/commit/ed9bcea0f63d61573d34e0aae9d8ec27cee036c3)), closes [#979](https://github.com/CraveFood/farmblocks/issues/979)
+
+
+
+
+
 # [0.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.5.1...@crave/farmblocks-icon@0.6.0) (2020-05-13)
 
 
