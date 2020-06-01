@@ -278,6 +278,15 @@ storiesOf("Select Input", module)
       onChange={action("onChange")}
       value="999"
     />
+  ))
+  .add("With onMenuVisibilityChange", () => (
+    <Select
+      placeholder="Select some fruits"
+      items={moreItems}
+      onChange={action("onChange")}
+      width="500px"
+      onMenuVisibilityChange={action("onMenuVisibilityChange")}
+    />
   ));
 
 const ValueState = ({ children }) => {
