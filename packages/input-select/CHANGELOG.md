@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.11.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.10.16...@crave/farmblocks-input-select@3.11.0) (2020-06-04)
+
+
+### Features
+
+* **input-select:** add onMenuVisibilityChange callback ([4b55f74](https://github.com/CraveFood/farmblocks/commit/4b55f741b221a81b70ace96e7afd36f1b1e28968))
+
+
+
+
+
 ## [3.10.16](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.10.15...@crave/farmblocks-input-select@3.10.16) (2020-05-14)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select
