@@ -68,6 +68,7 @@ class Select extends React.Component {
       this.input.select();
     }
     this.setState({ isMenuOpen });
+    this.props.onMenuVisibilityChange?.(isMenuOpen);
   };
 
   onFilter = event => {
@@ -147,6 +148,7 @@ class Select extends React.Component {
       multi,
       placeholder,
       className = "",
+      onMenuVisibilityChange,
       ...inputProps
     } = this.props;
 
@@ -294,6 +296,7 @@ Select.propTypes = {
   maxHeight: PropTypes.string,
   multi: PropTypes.bool,
   className: PropTypes.string,
+  onMenuVisibilityChange: PropTypes.func,
 };
 
 export default Select;

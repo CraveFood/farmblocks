@@ -124,8 +124,14 @@ describe("Select input", () => {
 
   describe("onMenuVisibilityChange", () => {
     test("should update state and select text on input", () => {
+      const onMenuVisibilityChangeSpy = jest.fn();
       wrapper = mount(
-        <Select items={items} onChange={onChangeMock} value={0} />,
+        <Select
+          items={items}
+          onChange={onChangeMock}
+          value={0}
+          onMenuVisibilityChange={onMenuVisibilityChangeSpy}
+        />,
       );
       const { input, onMenuVisibilityChange } = wrapper.instance();
       input.select = jest.fn();
@@ -135,6 +141,7 @@ describe("Select input", () => {
 
       expect(input.select).toHaveBeenCalledTimes(1);
       expect(wrapper.state().isMenuOpen).toBe(isOpen);
+      expect(onMenuVisibilityChangeSpy).toBeCalledWith(isOpen);
     });
 
     test("should update state and not select text on input", () => {

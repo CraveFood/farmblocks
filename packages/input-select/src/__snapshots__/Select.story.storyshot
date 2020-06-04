@@ -5585,6 +5585,330 @@ exports[`Storyshots Select Input With more info content 1`] = `
 </div>
 `;
 
+exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
+.c4 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c4 .farmblocks-icon {
+  display: block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 0 16px;
+  height: 46px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 8px;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.08);
+  font-size: 20px;
+  height: 24px;
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 12px;
+}
+
+.c1 > .input > .icon.dropdown {
+  margin: 0 8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+  font-size: 20px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  background-color: #f6f8f9;
+  color: #2f313a;
+  padding: 0 16px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 > label {
+  padding: 0 8px 0 0;
+}
+
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  width: 500px;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > div {
+  margin: 8px 0 0 8px;
+}
+
+.c3 > div + input {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 80px !important;
+}
+
+<div
+  className="DropdownWrapper-pqs3t4-0 c0"
+  width="500px"
+>
+  <div
+    style={Object {}}
+  >
+    <div
+      className="select__search "
+    >
+      <div
+        className="c1 wrapped"
+        disabled={false}
+        onClick={[Function]}
+        type="text"
+      >
+        <div
+          className="input dropdown"
+        >
+          <div
+            className="c2 labelContainer"
+          >
+            <div
+              className="c3 tagsWrapper"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded={false}
+                autoComplete="off"
+                className="wrapped"
+                disabled={false}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onInvalid={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Select some fruits"
+                role="combobox"
+                size="1"
+                type="text"
+                value=""
+                width="500px"
+              />
+            </div>
+          </div>
+          <div
+            className="icon dropdown"
+          >
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="2 2 20 20"
+                width="1em"
+              >
+                <path
+                  d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="messagesContainer"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Select Input With value 1`] = `
 .c4 {
   display: inline-block;
