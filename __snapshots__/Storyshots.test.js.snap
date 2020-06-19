@@ -13568,26 +13568,153 @@ Array [
 ]
 `;
 
+exports[`Storyshots Form|Label Labels 1`] = `
+.c1 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f313a;
+}
+
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3498db;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #dd3311;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.32);
+}
+
+.c0 {
+  margin-bottom: 24px;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f313a;
+  border: dotted 4px sienna;
+  color: chocolate;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c1"
+      htmlFor="default"
+    >
+      Default Label
+    </label>
+    <input
+      id="default"
+    />
+  </div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c2"
+      htmlFor="focused"
+    >
+      Focused Label
+    </label>
+    <input
+      id="focused"
+    />
+  </div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c3"
+      htmlFor="invalid"
+    >
+      Invalid Label
+    </label>
+    <input
+      id="invalid"
+    />
+  </div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c4"
+      disabled={true}
+      htmlFor="disabled"
+    >
+      Disabled Label
+    </label>
+    <input
+      id="disabled"
+    />
+  </div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c1"
+      htmlFor="protected"
+    >
+      Protected Label
+    </label>
+    <input
+      id="protected"
+    />
+  </div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c1"
+      disabled={true}
+      htmlFor="protected-disabled"
+    >
+      Protected Disabled Label
+    </label>
+    <input
+      id="protected-disabled"
+    />
+  </div>
+  <div
+    className="c0"
+  >
+    <label
+      className="c5"
+      htmlFor="extended"
+    >
+      Extended style
+    </label>
+    <input
+      id="extended"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Form|Phone Input Basic 1`] = `
 .c6 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c3 {
@@ -13942,19 +14069,12 @@ exports[`Storyshots Form|Phone Input Basic 1`] = `
               value="(213) 373-4253"
             />
           </div>
-          <div
-            className="label"
+          <label
+            className="c6 label"
+            disabled={false}
           >
-            <div
-              className="Text-pfq5dp-0 c6 labelText"
-              fontWeight="title"
-              letterSpacing="2px"
-              size={14}
-              type="#2f313a"
-            >
-              Phone
-            </div>
-          </div>
+            Phone
+          </label>
         </div>
       </div>
       <div
@@ -15440,23 +15560,9 @@ exports[`Storyshots Form|Phone Input With Priority Countries 1`] = `
 exports[`Storyshots Form|Phone Input With State 1`] = `
 .c6 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c3 {
@@ -15811,19 +15917,12 @@ exports[`Storyshots Form|Phone Input With State 1`] = `
               value=""
             />
           </div>
-          <div
-            className="label"
+          <label
+            className="c6 label"
+            disabled={false}
           >
-            <div
-              className="Text-pfq5dp-0 c6 labelText"
-              fontWeight="title"
-              letterSpacing="2px"
-              size={14}
-              type="#2f313a"
-            >
-              Value -&gt; ""
-            </div>
-          </div>
+            Value -&gt; ""
+          </label>
         </div>
       </div>
       <div
@@ -16204,574 +16303,6 @@ exports[`Storyshots Form|Phone Input With Tooltip Props 1`] = `
 </div>
 `;
 
-exports[`Storyshots Label Default 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-<div>
-  <div
-    className="Text-pfq5dp-0 c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#2f313a"
-  >
-    Default Label
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label Disabled 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-<div>
-  <div
-    className="Text-pfq5dp-0 c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="rgba(0, 0, 0, 0.32)"
-  >
-    Disabled Label
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label Focused 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-<div>
-  <div
-    className="Text-pfq5dp-0 c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#3498db"
-  >
-    Focused Label
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label Invalid 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-<div>
-  <div
-    className="Text-pfq5dp-0 c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#dd3311"
-  >
-    Invalid Label
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label Protected and disabled 1`] = `
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-<div>
-  <div
-    className="Text-pfq5dp-0 c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#2f313a"
-  >
-    Protected Label
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label With more info 1`] = `
-.c5 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c5 .farmblocks-icon {
-  display: block;
-}
-
-.c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hit-area {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 200ms ease-in;
-  transition: opacity 200ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-out;
-  transition: opacity 200ms ease-out;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.c1 .icon {
-  display: inline-block;
-  margin: 0 4px;
-  cursor: pointer;
-  color: #59636f;
-}
-
-.c1 .icon .farmblocks-icon {
-  font-size: 1.2em;
-}
-
-.c1 .icon:hover,
-.c1 .hovered {
-  color: #3498db;
-}
-
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-.c2 {
-  position: relative;
-  top: -1px;
-}
-
-@media only screen and (pointer:coarse) {
-  .c4 .hit-area {
-    min-height: 40px;
-    min-width: 40px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-  }
-}
-
-<div>
-  <div
-    className="c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#2f313a"
-  >
-    Default Label
-  </div>
-  <div
-    className="c1 c2 moreInfo"
-  >
-    <div
-      className="c3"
-      fontWeight="title"
-      size={16}
-      type="#59636f"
-    >
-      <span
-        className="text "
-      />
-      <div
-        className="c4 icon"
-        onMouseLeave={[Function]}
-      >
-        <div
-          className="hit-area"
-          onMouseOver={[Function]}
-        />
-        <span
-          className="c5"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            height="1em"
-            viewBox="4 4 32 32"
-            width="1em"
-          >
-            <path
-              d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
-              fill="currentColor"
-              fillRule="nonzero"
-            />
-          </svg>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label With more info right aligned 1`] = `
-.c5 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c5 .farmblocks-icon {
-  display: block;
-}
-
-.c4 {
-  position: relative;
-  display: inline-block;
-}
-
-.c4 .hit-area {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c4 .appear-enter {
-  opacity: 0;
-}
-
-.c4 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 200ms ease-in;
-  transition: opacity 200ms ease-in;
-}
-
-.c4 .appear-exit {
-  opacity: 1;
-}
-
-.c4 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-out;
-  transition: opacity 200ms ease-out;
-}
-
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.c1 .icon {
-  display: inline-block;
-  margin: 0 4px;
-  cursor: pointer;
-  color: #59636f;
-}
-
-.c1 .icon .farmblocks-icon {
-  font-size: 1.2em;
-}
-
-.c1 .icon:hover,
-.c1 .hovered {
-  color: #3498db;
-}
-
-.c0 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-.c2 {
-  position: relative;
-  top: -1px;
-}
-
-@media only screen and (pointer:coarse) {
-  .c4 .hit-area {
-    min-height: 40px;
-    min-width: 40px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-  }
-}
-
-<div>
-  <div
-    className="c0 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#2f313a"
-  >
-    Default Label
-  </div>
-  <div
-    className="c1 c2 moreInfo"
-  >
-    <div
-      className="c3"
-      fontWeight="title"
-      size={16}
-      type="#59636f"
-    >
-      <span
-        className="text "
-      />
-      <div
-        className="c4 icon"
-        onMouseLeave={[Function]}
-      >
-        <div
-          className="hit-area"
-          onMouseOver={[Function]}
-        />
-        <span
-          className="c5"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            height="1em"
-            viewBox="4 4 32 32"
-            width="1em"
-          >
-            <path
-              d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
-              fill="currentColor"
-              fillRule="nonzero"
-            />
-          </svg>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Label extended style 1`] = `
-.c1 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-.c0 {
-  border: dotted 4px sienna;
-}
-
-.c0::after {
-  display: block;
-  content: '';
-  clear: both;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="Text-pfq5dp-0 c1 labelText"
-    fontWeight="title"
-    letterSpacing="2px"
-    size={14}
-    type="#2f313a"
-  >
-    Default Label
-  </div>
-</div>
-`;
-
 exports[`Storyshots SideNav/NavItem Nav Items 1`] = `
 .c3 {
   display: inline-block;
@@ -16782,6 +16313,12 @@ exports[`Storyshots SideNav/NavItem Nav Items 1`] = `
   display: block;
 }
 
+.c2 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .c1 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -16790,12 +16327,6 @@ exports[`Storyshots SideNav/NavItem Nav Items 1`] = `
   color: inherit;
   text-align: left;
   font-weight: 600;
-}
-
-.c2 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
 }
 
 .c0 {
@@ -17350,6 +16881,12 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   display: block;
 }
 
+.c8 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .c6 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -17378,12 +16915,6 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: left;
-}
-
-.c8 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
 }
 
 .c3 {
@@ -18478,6 +18009,12 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   display: block;
 }
 
+.c7 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .c5 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -18506,12 +18043,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: left;
-}
-
-.c7 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
 }
 
 .c2 {
@@ -19591,6 +19122,12 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   display: block;
 }
 
+.c8 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .c6 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -19619,12 +19156,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: left;
-}
-
-.c8 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
 }
 
 .c2 {
@@ -20684,6 +20215,12 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   display: block;
 }
 
+.c8 {
+  box-sizing: border-box;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .c6 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -20712,12 +20249,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: left;
-}
-
-.c8 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
 }
 
 .c2 {
