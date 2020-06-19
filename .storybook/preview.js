@@ -60,6 +60,4 @@ function withGlobalStyle(storyFn) {
 
 addDecorator(withGlobalStyle);
 
-configure(require.context("../packages/", true, /\.story\.js$/), module);
-
 serializeStories(getStorybook);
