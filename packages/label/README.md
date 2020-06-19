@@ -2,49 +2,33 @@
 
 Label to be used along with form inputs
 
+> ### ⚠️ Legacy
+>
+> This package was completely rewritten in v2
+> If you're looking for documentation of the old version, check: <https://www.npmjs.com/package/@crave/farmblocks-label/v/1.0.26>
+
 ## Installation
 
-```
+```bash
 npm install @crave/farmblocks-label
 ```
 
 ## Usage
 
-You can combine the text props to create a full customizable text page.
+It's a customised `label` html tag that changes its color accordingly with its predefined props.
 
 ```jsx
-import React from "react";
-import { render } from "react-dom";
-
 import Label from "@crave/farmblocks-label";
 
-const App = () => (
+export default () => (
   <div>
-    <Label>Default Label</Label>
-    <Label focused>Focused Label</Label>
-    <Label invalid>Invalid Label</Label>
-    <Label disabled>Disabled Label</Label>
-    <Label moreInfoContent="More info content">With more info</Label>
+    <Label for="default">Default Label</Label>
+    <input id="default" />
   </div>
 );
-
-render(<App />, document.getElementById("root"));
 ```
 
-The code above will render:
-![image](https://user-images.githubusercontent.com/17936244/49942331-286fd000-fecc-11e8-94e9-460029233bef.png)
-
-## Api
-
-| Property             | Description                                                                                   | Type   | Default |
-| -------------------- | --------------------------------------------------------------------------------------------- | ------ | ------- |
-| children             | Content that will be rendered inside a farmblocks-text component                              | node   |         |
-| focused              | Sets INDIGO_MILK_CAP color                                                                    | bool   | false   |
-| invalid              | Sets STRAWBERRY color                                                                         | bool   | false   |
-| disabled             | Sets GREY_32 color                                                                            | bool   | false   |
-| protected            | When this property is set to `true` along with `disabled`, the default color is used (CARBON) | bool   | false   |
-| moreInfoContent      | Content to display in a MoreInfo in the label                                                 | node   |         |
-| moreInfoTooltipProps | props to be passed to Tooltip component                                                       | object |         |
+For more examples and details on the available props, [read the docs](https://cravefood.github.io/farmblocks/?path=/docs/form-label--labels)
 
 ## License
 
