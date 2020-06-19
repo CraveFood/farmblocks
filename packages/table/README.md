@@ -63,8 +63,7 @@ export default () => (
 );
 ```
 
-<h2 id="helpers">Helper Hooks</h2>
-TODO
+For more examples and details on the available props, [read the docs](https://cravefood.github.io/farmblocks/?path=/docs/layout-table-basic--simple-usage).
 
 ## License
 

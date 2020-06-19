@@ -2,18 +2,42 @@ import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import Text from "@crave/farmblocks-text";
 
-export const Table = styled.table`
+export const Table = styled.table.attrs(props => ({
+  className: `${props.className || ""} ${
+    props.$columnsTemplate ? "__asGrid" : ""
+  }`,
+}))`
+  min-width: 100%;
+  overflow-x: scroll;
+
   border: none;
   border-spacing: 0;
+
+  @supports (display: contents) {
+    &.__asGrid {
+      display: grid;
+      grid-template-columns: ${({ $columnsTemplate }) => $columnsTemplate};
+    }
+  }
 `;
 
 export const THead = styled.thead`
-  background-color: ${colors.SUGAR};
+  .__asGrid & {
+    display: contents;
+  }
 `;
 
-export const TBody = styled.tbody``;
+export const TBody = styled.tbody`
+  .__asGrid & {
+    display: contents;
+  }
+`;
 
-export const TR = styled.tr``;
+export const TR = styled.tr`
+  .__asGrid & {
+    display: contents;
+  }
+`;
 
 export const TH = styled(Text).attrs({
   as: "th",
@@ -24,6 +48,9 @@ export const TH = styled(Text).attrs({
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
+  background-color: ${colors.SUGAR};
+
+  white-space: nowrap;
 `;
 
 export const TD = styled(Text).attrs({
@@ -35,6 +62,9 @@ export const TD = styled(Text).attrs({
   line-height: 24px;
   color: ${colors.OYSTER};
 `;
+TD.defaultProps = {
+  truncate: true,
+};
 
 export const TDBold = styled(TD)`
   font-weight: 700;
