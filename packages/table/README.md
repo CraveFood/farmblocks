@@ -63,7 +63,7 @@ export default () => (
 );
 ```
 
-For more examples and details on the available props, [read the docs](https://cravefood.github.io/farmblocks/?path=/docs/layout-table-basic--simple-usage).
+For more examples and details on the available props, [read the docs](https://cravefood.github.io/farmblocks/?path=/docs/layout-table--basic#table).
 
 ## License
 

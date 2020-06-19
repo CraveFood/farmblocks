@@ -1,0 +1,137 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+
+import { Table, THead, TBody, TR, TH, TD, TDBold } from "./index";
+
+<Meta title="Layout|Table" />
+
+# Table
+
+A component for rendering data tables.
+
+## Basic Example
+
+Our table component is essentially the default table element with some style applied, so the usage is the same.
+
+<Preview>
+  <Story name="Basic">
+    <Table>
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+        </TR>
+      </THead>
+      <TBody>
+        <TR>
+          <TD>Apple</TD>
+          <TDBold>$ 0.50</TDBold>
+        </TR>
+        <TR>
+          <TD>Banana</TD>
+          <TDBold>$ 0.60</TDBold>
+        </TR>
+        <TR>
+          <TD>Cherry</TD>
+          <TDBold>$ 9,999.99</TDBold>
+        </TR>
+        <TR>
+          <TD>Coconut</TD>
+          <TDBold>$ 2.30</TDBold>
+        </TR>
+      </TBody>
+    </Table>
+  </Story>
+</Preview>
+
+## Extending style
+
+All the components in this package are [styled-components](https://styled-components.com/). So extending its CSS is very simple:
+
+<!-- This is to render in the docs -->
+```js
+const TDRed = styled(TD)`
+  color: tomato;
+`;
+```
+<!-- The real one, used in the story -->
+export const TDRed = styled(TD)`
+  color: tomato;
+`;
+
+Then you can use it just as the regular one.
+
+<Preview>
+  <Story name="Extending Style" parameters={{
+      docs: {
+        transformSource: console.log
+      }
+    }}>
+    <Table>
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+        </TR>
+      </THead>
+      <TBody>
+        <TR>
+          <TD>Apple</TD>
+          <TDRed>$ 0.50</TDRed>
+        </TR>
+        <TR>
+          <TD>Banana</TD>
+          <TDRed>$ 0.60</TDRed>
+        </TR>
+        <TR>
+          <TD>Cherry</TD>
+          <TDRed>$ 9,999.99</TDRed>
+        </TR>
+        <TR>
+          <TD>Coconut</TD>
+          <TDRed>$ 2.30</TDRed>
+        </TR>
+      </TBody>
+    </Table>
+  </Story>
+</Preview>
+
+## As CSS Grid
+
+The native `<table>` element is pretty decent for most cases. But converting it to `display: grid` can give us [some more control](https://adamlynch.com/flexible-data-tables-with-css-grid/).
+
+To use it, we need to set up the columns with the `$columnsTemplate` prop.
+It receives the values for the [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) CSS property.
+
+In browsers that don't support CSS Grid, it will fall back to `display: table`.
+
+<Preview>
+  <Story name="As CSS Grid">
+    <Table $columnsTemplate="minmax(150px, 1fr) max-content">
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+        </TR>
+      </THead>
+      <TBody>
+        <TR>
+          <TD>Apple</TD>
+          <TDBold>$ 0.50</TDBold>
+        </TR>
+        <TR>
+          <TD>Banana</TD>
+          <TDBold>$ 0.60</TDBold>
+        </TR>
+        <TR>
+          <TD>Cherry</TD>
+          <TDBold>$ 9,999.99</TDBold>
+        </TR>
+        <TR>
+          <TD>Coconut</TD>
+          <TDBold>$ 2.30</TDBold>
+        </TR>
+      </TBody>
+    </Table>
+  </Story>
+</Preview>

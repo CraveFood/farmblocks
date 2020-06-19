@@ -5,6 +5,7 @@ repos:
     rev: "1.19.1"
     hooks:
       - id: prettier
+        exclude: ".mdx$"
 
   - repo: local
     hooks:
