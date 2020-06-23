@@ -10,9 +10,6 @@ import {
   DropdownMenuWrapper,
   DropdownItemWrapper,
 } from "@crave/farmblocks-dropdown";
-import withMessages, {
-  withMessagesProps,
-} from "@crave/farmblocks-hoc-validation-messages";
 import Tag from "@crave/farmblocks-tags";
 
 import withImage, { refName } from "./components/withImage";
@@ -21,11 +18,7 @@ import EmptyCard from "./components/EmptyCard";
 import DropdownWrapper from "./styledComponents/DropdownWrapper";
 import InputWithTags from "./components/InputWithTags";
 
-const EnhancedInput = compose(
-  withMessages,
-  formInput,
-  withImage,
-)(InputWithTags);
+const EnhancedInput = compose(formInput, withImage)(InputWithTags);
 EnhancedInput.displayName = "EnhancedInput";
 
 const getValues = ({ multi, value }) => {
@@ -269,7 +262,6 @@ Select.defaultProps = {
 
 Select.propTypes = {
   ...formInputProps,
-  ...withMessagesProps,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
