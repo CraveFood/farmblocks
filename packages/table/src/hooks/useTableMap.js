@@ -2,17 +2,20 @@ import React, { useCallback } from "react";
 
 import { TR, TD } from "../components.styled";
 
+const defaultCellComponents = {};
+const defaultPlaceholders = {};
+
 export default ({
   columns,
   keyProp,
   rowComponent: Row = TR,
-  cellComponents = {},
-  placeholders = {},
+  cellComponents = defaultCellComponents,
+  placeholders = defaultPlaceholders,
 } = {}) => {
   return useCallback(
     (row, index) => (
-      <Row key={row[keyProp] || index}>
-        {columns.map(columnName => {
+      <Row key={row[keyProp] || index} $rowData={row} $rowIndex={index}>
+        {columns.map((columnName, columnIndex) => {
           const Cell =
             cellComponents[columnName] || cellComponents.$default || TD;
 
@@ -21,10 +24,20 @@ export default ({
             placeholders[columnName] ||
             placeholders.$default;
 
-          return <Cell key={columnName}>{content}</Cell>;
+          return (
+            <Cell
+              key={columnName}
+              $rowData={row}
+              $rowIndex={index}
+              $columnName={columnName}
+              $columnIndex={columnIndex}
+            >
+              {content}
+            </Cell>
+          );
         })}
       </Row>
     ),
-    [columns],
+    [columns, keyProp, Row, cellComponents, placeholders],
   );
 };

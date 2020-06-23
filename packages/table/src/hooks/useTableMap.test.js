@@ -2,7 +2,9 @@ import React from "react";
 import { renderHook } from "@testing-library/react-hooks";
 import { render, screen } from "@testing-library/react";
 
-import useTableMap from "./useTableMap";
+import { useTableMap, Table, TBody, TR, TD } from "..";
+
+/* eslint-disable react/prop-types */
 
 describe("Table Hooks / useTableMap", () => {
   it("should return a function", () => {
@@ -35,9 +37,9 @@ describe("Table Hooks / useTableMap", () => {
     const renderTable = ({ options, data }) => {
       const { result } = renderHook(() => useTableMap(options));
       render(
-        <table>
-          <tbody>{data.map(result.current)}</tbody>
-        </table>,
+        <Table>
+          <TBody>{data.map(result.current)}</TBody>
+        </Table>,
       );
     };
 
@@ -78,7 +80,7 @@ describe("Table Hooks / useTableMap", () => {
     });
 
     it("should use the given rowComponent", () => {
-      const Row = props => <tr data-testid="customRow" {...props} />;
+      const Row = props => <TR data-testid="customRow" {...props} />;
 
       renderTable({
         options: {
@@ -93,8 +95,8 @@ describe("Table Hooks / useTableMap", () => {
 
     it("should use the given cellComponents", () => {
       const cellComponents = {
-        column1: props => <td data-testid="customCell" {...props} />,
-        $default: props => <td data-testid="defaultCell" {...props} />,
+        column1: props => <TD data-testid="customCell" {...props} />,
+        $default: props => <TD data-testid="defaultCell" {...props} />,
       };
 
       renderTable({
@@ -132,6 +134,56 @@ describe("Table Hooks / useTableMap", () => {
 
       // placeholder is not given, fall back to $default
       expect(screen.getByText("defaultPlaceholder")).toBeInTheDocument();
+    });
+
+    it("should pass the equivalent data to the row component", () => {
+      const Row = ({ $rowData, $rowIndex, ...props }) => (
+        <TR {...props}>
+          <TD>rowIndex: {$rowIndex}</TD>
+          <TD>rowData: {JSON.stringify($rowData)}</TD>
+        </TR>
+      );
+
+      renderTable({
+        options: {
+          columns: ["column1"],
+          rowComponent: Row,
+        },
+        data: [{ column1: "a" }],
+      });
+
+      expect(screen.getByText("rowIndex: 0")).toBeInTheDocument();
+      expect(screen.getByText(`rowData: {"column1":"a"}`)).toBeInTheDocument();
+    });
+
+    it("should pass the row data to the cell component", () => {
+      const Cell = ({
+        $rowData,
+        $rowIndex,
+        $columnName,
+        $columnIndex,
+        ...props
+      }) => (
+        <TD {...props}>
+          <pre>rowIndex: {$rowIndex}</pre>
+          <pre>rowData: {JSON.stringify($rowData)}</pre>
+          <pre>columnName: {$columnName}</pre>
+          <pre>columnIndex: {$columnIndex}</pre>
+        </TD>
+      );
+
+      renderTable({
+        options: {
+          columns: ["column1"],
+          cellComponents: { $default: Cell },
+        },
+        data: [{ column1: "a" }],
+      });
+
+      expect(screen.getByText("rowIndex: 0")).toBeInTheDocument();
+      expect(screen.getByText('rowData: {"column1":"a"}')).toBeInTheDocument();
+      expect(screen.getByText("columnName: column1")).toBeInTheDocument();
+      expect(screen.getByText("columnIndex: 0")).toBeInTheDocument();
     });
   });
 });
