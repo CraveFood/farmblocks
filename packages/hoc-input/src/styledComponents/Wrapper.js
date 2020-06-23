@@ -171,5 +171,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
   }
+
+  .label {
+    margin-bottom: 8px;
+  }
 `;
 export default Wrapper;

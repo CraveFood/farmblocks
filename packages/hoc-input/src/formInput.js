@@ -10,6 +10,8 @@ import {
   MdRemoveFilled,
   SmChevronDown,
 } from "@crave/farmblocks-icon";
+import Text from "@crave/farmblocks-text";
+import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Wrapper from "./styledComponents/Wrapper";
 
@@ -235,13 +237,14 @@ const formInput = WrappedComponent => {
         autoControlFocusedStyle,
         className,
         borderRadius,
+        validationMessages,
         ...wrappedComponentProps
       } = this.props;
       const wrapperProps = {
         protected: covered,
         active,
         focused: this.state.focused,
-        invalid,
+        invalid: invalid || validationMessages?.length > 0,
         filled: !!value || value === 0,
         disabled: wrappedComponentProps.disabled,
         type: wrappedComponentProps.type,
@@ -267,6 +270,18 @@ const formInput = WrappedComponent => {
               {label}
             </Label>
           )}
+
+          {validationMessages?.map(text => (
+            <Text
+              className="error-message-text"
+              size={fontSizes.SMALL}
+              type={fontTypes.NEGATIVE}
+              key={`err-${text}`}
+              css="margin-top: 8px; order: 3;"
+            >
+              {text}
+            </Text>
+          ))}
         </Wrapper>
       );
     }
