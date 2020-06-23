@@ -201,6 +201,10 @@ exports[`Storyshots Search Field Default 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -265,68 +269,60 @@ exports[`Storyshots Search Field Default 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -533,6 +529,10 @@ exports[`Storyshots Search Field Z-index 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -612,68 +612,60 @@ exports[`Storyshots Search Field Z-index 1`] = `
       className="c1"
     >
       <div
-        className="searchInput"
+        className="c2"
       >
         <div
-          className="c2"
+          className="c3 searchInput"
+          disabled={false}
+          onClick={[Function]}
+          type="search"
         >
           <div
-            className="c3 wrapped"
-            disabled={false}
-            onClick={[Function]}
-            type="search"
+            className="input"
           >
             <div
-              className="input"
+              className="icon left"
             >
-              <div
-                className="icon left"
+              <span
+                className="c4"
+                color="currentColor"
+                size="1em"
               >
-                <span
-                  className="c4"
-                  color="currentColor"
-                  size="1em"
+                <svg
+                  aria-hidden={true}
+                  className="farmblocks-icon "
+                  height="1em"
+                  viewBox="4 4 32 32"
+                  width="1em"
                 >
-                  <svg
-                    aria-hidden={true}
-                    className="farmblocks-icon "
-                    height="1em"
-                    viewBox="4 4 32 32"
-                    width="1em"
-                  >
-                    <path
-                      d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                      fill="currentColor"
-                      fillRule="nonzero"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <input
-                className="wrapped"
-                data-testid="search-input"
-                disabled={false}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
-                onKeyDown={[Function]}
-                type="search"
-                value=""
-              />
-              
+                  <path
+                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                    fill="currentColor"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </span>
             </div>
-            <label
-              className="c5 label"
+            <input
+              className="wrapped"
+              data-testid="search-input"
               disabled={false}
-            >
-              Fruits
-            </label>
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              type="search"
+              value=""
+            />
+            
           </div>
+          <label
+            className="c5 label"
+            disabled={false}
+          >
+            Fruits
+          </label>
         </div>
-        <div
-          className="messagesContainer"
-        />
       </div>
     </div>
   </div>
@@ -896,6 +888,10 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -960,69 +956,61 @@ exports[`Storyshots Search Field custom debounce delay 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="3s delay"
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="3s delay"
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -1229,6 +1217,10 @@ exports[`Storyshots Search Field custom menu height 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -1293,68 +1285,60 @@ exports[`Storyshots Search Field custom menu height 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -1561,6 +1545,10 @@ exports[`Storyshots Search Field custom width 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -1625,68 +1613,60 @@ exports[`Storyshots Search Field custom width 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -1893,6 +1873,10 @@ exports[`Storyshots Search Field disabled 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -1957,68 +1941,60 @@ exports[`Storyshots Search Field disabled 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={true}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={true}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={true}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={true}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={true}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -2225,6 +2201,10 @@ exports[`Storyshots Search Field extended style 1`] = `
   align-items: center;
 }
 
+.c4 .label {
+  margin-bottom: 8px;
+}
+
 .c3 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -2329,68 +2309,60 @@ exports[`Storyshots Search Field extended style 1`] = `
     className="c2"
   >
     <div
-      className="searchInput"
+      className="c3"
     >
       <div
-        className="c3"
+        className="c4 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c4 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c5"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c5"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c6 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c6 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -2597,6 +2569,10 @@ exports[`Storyshots Search Field loading 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -2661,68 +2637,60 @@ exports[`Storyshots Search Field loading 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -2929,6 +2897,10 @@ exports[`Storyshots Search Field onBeforeChange halting 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -2993,68 +2965,60 @@ exports[`Storyshots Search Field onBeforeChange halting 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -3261,6 +3225,10 @@ exports[`Storyshots Search Field onBeforeChange manipulating input 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -3325,68 +3293,60 @@ exports[`Storyshots Search Field onBeforeChange manipulating input 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -3593,6 +3553,10 @@ exports[`Storyshots Search Field onBeforeChange proceeding 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -3657,68 +3621,60 @@ exports[`Storyshots Search Field onBeforeChange proceeding 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -3925,6 +3881,10 @@ exports[`Storyshots Search Field onChange 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -3989,68 +3949,60 @@ exports[`Storyshots Search Field onChange 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -4257,6 +4209,10 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -4321,68 +4277,60 @@ exports[`Storyshots Search Field onScrollReachEnd 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -4589,6 +4537,10 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -4653,68 +4605,60 @@ exports[`Storyshots Search Field onSearchChange (debounced) 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -4921,6 +4865,10 @@ exports[`Storyshots Search Field onSearchChange + onChange + custom keys 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -4985,68 +4933,60 @@ exports[`Storyshots Search Field onSearchChange + onChange + custom keys 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -5253,6 +5193,10 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -5317,68 +5261,60 @@ exports[`Storyshots Search Field onSearchChange + onChange 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -5630,6 +5566,10 @@ exports[`Storyshots Search Field update items and keep value the same 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c7 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5814,6 +5754,10 @@ exports[`Storyshots Search Field update items and keep value the same 1`] = `
   align-items: center;
 }
 
+.c7 .label {
+  margin-bottom: 8px;
+}
+
 .c7 .input {
   position: absolute;
   width: 100%;
@@ -5896,22 +5840,61 @@ exports[`Storyshots Search Field update items and keep value the same 1`] = `
       className="c1"
     >
       <div
-        className="searchInput"
+        className="c2"
       >
         <div
-          className="c2"
+          className="c3 searchInput"
+          disabled={false}
+          onClick={[Function]}
+          type="search"
         >
           <div
-            className="c3 wrapped"
-            disabled={false}
-            onClick={[Function]}
-            type="search"
+            className="input"
           >
             <div
-              className="input"
+              className="icon left"
             >
-              <div
-                className="icon left"
+              <span
+                className="c4"
+                color="currentColor"
+                size="1em"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="farmblocks-icon "
+                  height="1em"
+                  viewBox="4 4 32 32"
+                  width="1em"
+                >
+                  <path
+                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                    fill="currentColor"
+                    fillRule="nonzero"
+                  />
+                </svg>
+              </span>
+            </div>
+            <input
+              className="wrapped"
+              data-testid="search-input"
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              type="search"
+              value="Apple"
+            />
+            <div
+              className="c5 clear"
+              disabled={false}
+              fontWeight="600"
+              size={16}
+              type="#3498db"
+            >
+              <span
+                data-testid="input-clear"
+                onClick={[Function]}
               >
                 <span
                   className="c4"
@@ -5926,108 +5909,61 @@ exports[`Storyshots Search Field update items and keep value the same 1`] = `
                     width="1em"
                   >
                     <path
-                      d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                      d="M21.414 20l4.243-4.243a1 1 0 10-1.414-1.414L20 18.586l-4.243-4.243a1 1 0 10-1.414 1.414L18.586 20l-4.243 4.243a1 1 0 101.414 1.414L20 21.414l4.243 4.243a1 1 0 101.414-1.414L21.414 20zm7.778 9.192c-5.076 5.077-13.308 5.077-18.384 0-5.077-5.077-5.077-13.307 0-18.384 5.076-5.077 13.308-5.077 18.384 0 5.076 5.076 5.076 13.308 0 18.384z"
                       fill="currentColor"
                       fillRule="nonzero"
                     />
                   </svg>
                 </span>
-              </div>
-              <input
-                className="wrapped"
-                data-testid="search-input"
-                disabled={false}
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onInvalid={[Function]}
+              </span>
+            </div>
+          </div>
+          <label
+            className="c6 label"
+            disabled={false}
+          >
+            Fruits
+          </label>
+        </div>
+        <div
+          className="c7"
+        >
+          <div
+            className="input"
+          >
+            Apple
+            <div
+              className="clear"
+            >
+              <a
+                onClick={[Function]}
                 onKeyDown={[Function]}
-                type="search"
-                value="Apple"
-              />
-              <div
-                className="c5 clear"
-                disabled={false}
-                fontWeight="600"
-                size={16}
-                type="#3498db"
+                role="link"
+                tabIndex="0"
               >
                 <span
-                  data-testid="input-clear"
-                  onClick={[Function]}
+                  className="c4"
+                  color="currentColor"
+                  size="1em"
                 >
-                  <span
-                    className="c4"
-                    color="currentColor"
-                    size="1em"
+                  <svg
+                    aria-hidden={true}
+                    className="farmblocks-icon "
+                    height="1em"
+                    viewBox="2 2 20 20"
+                    width="1em"
                   >
-                    <svg
-                      aria-hidden={true}
-                      className="farmblocks-icon "
-                      height="1em"
-                      viewBox="4 4 32 32"
-                      width="1em"
-                    >
-                      <path
-                        d="M21.414 20l4.243-4.243a1 1 0 10-1.414-1.414L20 18.586l-4.243-4.243a1 1 0 10-1.414 1.414L18.586 20l-4.243 4.243a1 1 0 101.414 1.414L20 21.414l4.243 4.243a1 1 0 101.414-1.414L21.414 20zm7.778 9.192c-5.076 5.077-13.308 5.077-18.384 0-5.077-5.077-5.077-13.307 0-18.384 5.076-5.077 13.308-5.077 18.384 0 5.076 5.076 5.076 13.308 0 18.384z"
-                        fill="currentColor"
-                        fillRule="nonzero"
-                      />
-                    </svg>
-                  </span>
+                    <path
+                      d="M18.945 10.53L13.47 5.056l1.762-1.763a1 1 0 011.414 0l4.062 4.063a1 1 0 010 1.414l-1.762 1.762zm-1.414 1.415l-3.233 3.233a22.333 22.333 0 01-10.04 5.788 1 1 0 01-1.224-1.224 22.34 22.34 0 015.788-10.04l3.233-3.233 5.476 5.476z"
+                      fill="currentColor"
+                      fillRule="nonzero"
+                    />
+                  </svg>
                 </span>
-              </div>
-            </div>
-            <label
-              className="c6 label"
-              disabled={false}
-            >
-              Fruits
-            </label>
-          </div>
-          <div
-            className="c7"
-          >
-            <div
-              className="input"
-            >
-              Apple
-              <div
-                className="clear"
-              >
-                <a
-                  onClick={[Function]}
-                  onKeyDown={[Function]}
-                  role="link"
-                  tabIndex="0"
-                >
-                  <span
-                    className="c4"
-                    color="currentColor"
-                    size="1em"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      className="farmblocks-icon "
-                      height="1em"
-                      viewBox="2 2 20 20"
-                      width="1em"
-                    >
-                      <path
-                        d="M18.945 10.53L13.47 5.056l1.762-1.763a1 1 0 011.414 0l4.062 4.063a1 1 0 010 1.414l-1.762 1.762zm-1.414 1.415l-3.233 3.233a22.333 22.333 0 01-10.04 5.788 1 1 0 01-1.224-1.224 22.34 22.34 0 015.788-10.04l3.233-3.233 5.476 5.476z"
-                        fill="currentColor"
-                        fillRule="nonzero"
-                      />
-                    </svg>
-                  </span>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <div
-          className="messagesContainer"
-        />
       </div>
     </div>
   </div>
@@ -6242,6 +6178,10 @@ exports[`Storyshots Search Field update items every 3 seconds 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -6306,68 +6246,60 @@ exports[`Storyshots Search Field update items every 3 seconds 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -6574,6 +6506,10 @@ exports[`Storyshots Search Field with empty items array 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -6638,69 +6574,61 @@ exports[`Storyshots Search Field with empty items array 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Click here. Menu should not open"
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            placeholder="Click here. Menu should not open"
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -6907,6 +6835,10 @@ exports[`Storyshots Search Field with footer 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -6971,68 +6903,60 @@ exports[`Storyshots Search Field with footer 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -7239,6 +7163,10 @@ exports[`Storyshots Search Field with items 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   position: relative;
   -webkit-align-items: flex-end;
@@ -7303,68 +7231,60 @@ exports[`Storyshots Search Field with items 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
+          />
+          
         </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -7616,6 +7536,10 @@ exports[`Storyshots Search Field with selected item 1`] = `
   align-items: center;
 }
 
+.c3 .label {
+  margin-bottom: 8px;
+}
+
 .c7 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7800,6 +7724,10 @@ exports[`Storyshots Search Field with selected item 1`] = `
   align-items: center;
 }
 
+.c7 .label {
+  margin-bottom: 8px;
+}
+
 .c7 .input {
   position: absolute;
   width: 100%;
@@ -7881,22 +7809,61 @@ exports[`Storyshots Search Field with selected item 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
+              >
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
+          </div>
+          <input
+            className="wrapped"
+            data-testid="search-input"
+            disabled={false}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value="Banana"
+          />
+          <div
+            className="c5 clear"
+            disabled={false}
+            fontWeight="600"
+            size={16}
+            type="#3498db"
+          >
+            <span
+              data-testid="input-clear"
+              onClick={[Function]}
             >
               <span
                 className="c4"
@@ -7911,108 +7878,61 @@ exports[`Storyshots Search Field with selected item 1`] = `
                   width="1em"
                 >
                   <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                    d="M21.414 20l4.243-4.243a1 1 0 10-1.414-1.414L20 18.586l-4.243-4.243a1 1 0 10-1.414 1.414L18.586 20l-4.243 4.243a1 1 0 101.414 1.414L20 21.414l4.243 4.243a1 1 0 101.414-1.414L21.414 20zm7.778 9.192c-5.076 5.077-13.308 5.077-18.384 0-5.077-5.077-5.077-13.307 0-18.384 5.076-5.077 13.308-5.077 18.384 0 5.076 5.076 5.076 13.308 0 18.384z"
                     fill="currentColor"
                     fillRule="nonzero"
                   />
                 </svg>
               </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
+            </span>
+          </div>
+        </div>
+        <label
+          className="c6 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          className="input"
+        >
+          Banana
+          <div
+            className="clear"
+          >
+            <a
+              onClick={[Function]}
               onKeyDown={[Function]}
-              type="search"
-              value="Banana"
-            />
-            <div
-              className="c5 clear"
-              disabled={false}
-              fontWeight="600"
-              size={16}
-              type="#3498db"
+              role="link"
+              tabIndex="0"
             >
               <span
-                data-testid="input-clear"
-                onClick={[Function]}
+                className="c4"
+                color="currentColor"
+                size="1em"
               >
-                <span
-                  className="c4"
-                  color="currentColor"
-                  size="1em"
+                <svg
+                  aria-hidden={true}
+                  className="farmblocks-icon "
+                  height="1em"
+                  viewBox="2 2 20 20"
+                  width="1em"
                 >
-                  <svg
-                    aria-hidden={true}
-                    className="farmblocks-icon "
-                    height="1em"
-                    viewBox="4 4 32 32"
-                    width="1em"
-                  >
-                    <path
-                      d="M21.414 20l4.243-4.243a1 1 0 10-1.414-1.414L20 18.586l-4.243-4.243a1 1 0 10-1.414 1.414L18.586 20l-4.243 4.243a1 1 0 101.414 1.414L20 21.414l4.243 4.243a1 1 0 101.414-1.414L21.414 20zm7.778 9.192c-5.076 5.077-13.308 5.077-18.384 0-5.077-5.077-5.077-13.307 0-18.384 5.076-5.077 13.308-5.077 18.384 0 5.076 5.076 5.076 13.308 0 18.384z"
-                      fill="currentColor"
-                      fillRule="nonzero"
-                    />
-                  </svg>
-                </span>
+                  <path
+                    d="M18.945 10.53L13.47 5.056l1.762-1.763a1 1 0 011.414 0l4.062 4.063a1 1 0 010 1.414l-1.762 1.762zm-1.414 1.415l-3.233 3.233a22.333 22.333 0 01-10.04 5.788 1 1 0 01-1.224-1.224 22.34 22.34 0 015.788-10.04l3.233-3.233 5.476 5.476z"
+                    fill="currentColor"
+                    fillRule="nonzero"
+                  />
+                </svg>
               </span>
-            </div>
-          </div>
-          <label
-            className="c6 label"
-            disabled={false}
-          >
-            Fruits
-          </label>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="input"
-          >
-            Banana
-            <div
-              className="clear"
-            >
-              <a
-                onClick={[Function]}
-                onKeyDown={[Function]}
-                role="link"
-                tabIndex="0"
-              >
-                <span
-                  className="c4"
-                  color="currentColor"
-                  size="1em"
-                >
-                  <svg
-                    aria-hidden={true}
-                    className="farmblocks-icon "
-                    height="1em"
-                    viewBox="2 2 20 20"
-                    width="1em"
-                  >
-                    <path
-                      d="M18.945 10.53L13.47 5.056l1.762-1.763a1 1 0 011.414 0l4.062 4.063a1 1 0 010 1.414l-1.762 1.762zm-1.414 1.415l-3.233 3.233a22.333 22.333 0 01-10.04 5.788 1 1 0 01-1.224-1.224 22.34 22.34 0 015.788-10.04l3.233-3.233 5.476 5.476z"
-                      fill="currentColor"
-                      fillRule="nonzero"
-                    />
-                  </svg>
-                </span>
-              </a>
-            </div>
+            </a>
           </div>
         </div>
       </div>
-      <div
-        className="messagesContainer"
-      />
     </div>
   </div>
 </div>
@@ -8219,34 +8139,21 @@ exports[`Storyshots Search Field with validation message 1`] = `
   align-items: center;
 }
 
-.c7 {
-  box-sizing: border-box;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
-.c8 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  line-height: 24px;
+.c3 .label {
+  margin-bottom: 8px;
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 16px;
-}
-
-.c6 .icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 8px;
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
+  margin-top: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
 }
 
 .c2 {
@@ -8313,105 +8220,72 @@ exports[`Storyshots Search Field with validation message 1`] = `
     className="c1"
   >
     <div
-      className="searchInput"
+      className="c2"
     >
       <div
-        className="c2"
+        className="c3 searchInput"
+        disabled={false}
+        onClick={[Function]}
+        type="search"
       >
         <div
-          className="c3 wrapped"
-          disabled={false}
-          onClick={[Function]}
-          type="search"
+          className="input"
         >
           <div
-            className="input"
+            className="icon left"
           >
-            <div
-              className="icon left"
+            <span
+              className="c4"
+              color="currentColor"
+              size="1em"
             >
-              <span
-                className="c4"
-                color="currentColor"
-                size="1em"
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height="1em"
+                viewBox="4 4 32 32"
+                width="1em"
               >
-                <svg
-                  aria-hidden={true}
-                  className="farmblocks-icon "
-                  height="1em"
-                  viewBox="4 4 32 32"
-                  width="1em"
-                >
-                  <path
-                    d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
-                    fill="currentColor"
-                    fillRule="nonzero"
-                  />
-                </svg>
-              </span>
-            </div>
-            <input
-              className="wrapped"
-              data-testid="search-input"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              onInvalid={[Function]}
-              onKeyDown={[Function]}
-              type="search"
-              value=""
-            />
-            
+                <path
+                  d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+                  fill="currentColor"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </span>
           </div>
-          <label
-            className="c5 label"
+          <input
+            className="wrapped"
+            data-testid="search-input"
             disabled={false}
-          >
-            Fruits
-          </label>
-        </div>
-      </div>
-      <div
-        className="messagesContainer"
-      >
-        <div
-          className="c6 messageWrapper"
-        >
-          <img
-            alt=""
-            className="c7 icon"
-            height={24}
-            size={24}
-            src="data:image/png;base64,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"
-            width={24}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            type="search"
+            value=""
           />
-          <div
-            className="c8 text"
-            size={16}
-            type="#2f313a"
-          >
-            One error
-          </div>
+          
+        </div>
+        <label
+          className="c5 label"
+          disabled={false}
+        >
+          Fruits
+        </label>
+        <div
+          className="Text-pfq5dp-0 c6 error-message-text"
+          size={14}
+          type="#dd3311"
+        >
+          One error
         </div>
         <div
-          className="c6 messageWrapper"
+          className="Text-pfq5dp-0 c6 error-message-text"
+          size={14}
+          type="#dd3311"
         >
-          <img
-            alt=""
-            className="c7 icon"
-            height={24}
-            size={24}
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAB2CAYAAAAdp2cRAAAAAXNSR0IArs4c6QAAEy9JREFUeAHtXXmUHFW5/3rvnpmeJZMACRFCICFBQgwJYXkKLihubOJxwQVc+EM9Hjyo7z18/qHneN7xwQM5ynFBARFRXBAB0aAgCAphM6wxIWASQjYSklm7p3d/v6/osbqqZ+nJne6aom7OZGq9Vff+6vvut09ozTGdFQma72YgyhEtSkV8N7DX8oA2ZUsSfi1PgJ/HHgDrU3QDYANgfToDPh1WQLEBsD6dAZ8OK6DYAFifzoBPhxVQbACsT2fAp8MKKDYA1qcz4NNhBRQbAOvTGfDpsAKKDYD16Qz4dFgBxQbA+nQGfDqsgGIDYH06Az4dVkCxAbA+nQGfDiug2ABYn86AT4cVUKxPgdVMAN+MrYJslXJZKpWy4L9//wi3McpQyBoqf4fD2MV3jd+jx30zESIzH1gCWSqKlEoYTUwiPb0STndJuAM/be0SwjGJ4YdgFgpSKeInNyLloQEpDfZLuX+fVIaHRCIRCUUwHfjthzZjga0Ui1Ip5CTS2SOxQxdI9OB5Ep13mMQOPwrbh0p0zjyJzOqVUCIloWRKKbMyMgJQswC1X0ov75TC7h1SfGmzFLa9gP1dUtixVY8ryPwgqhQ+A5GeccBWCnmd5uTK/5C2k98miWNWSOx1CxXMUCI5PgRp2+klb7DtiBQJMoDNbVov2Ufvk+yD90h5YL+E4uhzBgIcYhrljMi2I4XiX2r1adJx+jmSWL5a4guOBkUmagAysVMAFec2PCWZ+34nw/feCYD78JwJPhoTDzbUB7PtZgTFljNDkjh6uaTPu1DaTnqLxI9cOq1UFJt/hPAneexKaTv1XTJ4642S+esaCcXiYOkzYw32NrDlEgSjsnR+8CLpfO/5kjjuBGtyJ/FlVyBUFV/eAcFoUMrZDKTlkq614VS7RHoPVsFqom6ih8yXDvzEF71eEitPkYGfXi2lfXvBns1ziYnepdHz3gUWEmwIUm33BRdLJyg1OmfuhGPLP/eMZJ94SHLPrpPS/r1SHh4QyechCUNqpgoUjeqHQXBDnd2SWLhEkitOxgezWsLjsNr4EUdL90c+JzEIZ/uvuUzym54R9uHl5klgKyMZic5fKD2f/rJ0vPM8qC6dY84hwcw8dI+MPPWolHa9JIWXt0tp78uQhgoWu3YKPlX9Fsez3bMk+sffCCkzftQxkjrxzSqQ1XtYONUmHWecB0n7IOm77grJ3H8X3ssujdW7q3XHPCY8haTC9RRsj6BS6h2L7RV2bpOBW66X7Np7pbh9i7JIWiFCXAMna3SgDgwWTWoOt3cqwAmsq+lzL5AUKHmsltv4lPTdeLUM3fZTTwpVFJ4iH52T+FpvzBuWxcpIVhLHnyK9n/+aBSp1SUcrY83sv/kH0n/9tyC1/h6gbga7zcEQATZL48JkQWW/oFp+CGqYAIVz/Sy8sAGs/DEpbH5OInPnS7RnjuMNwNFnHwxhbpmU8b4jf3/Qc+DuK1a8Ayz10ygMDb0Xf10l33oWoPymZ2XvFZfK0J2/kMKW58BuixYoTnbrgmISBxRkfOBg1aVXdksB62hu/RO69lJ4crYI1ujYYUdKkez/uaewdntHoCKw3lhjwQ7D7R1gv18Cpb61rllv+P410v/jq7CWPmKZD2n+m45GgNE3P7Tckw/Lvr27VbqmEOds8QWLpPtTl0hxz07J/+MJT1GuJ1hxpViSboDa+f5PSjjZ5pw/GfjVtdJ37RWSx9qmjex2okZVCaySADl/eKuy7fH6UC4QkvJgnxorSgAvueIUUKZtecA1lNYjsw6W3LqHIIUPgrVP4t3Ge66Bc56gWApLaeipXed9Arplh2tYA7dcJ32g1CKEJTXt6YS7Lqs9AHYanjVH0u/9sEQg+eLG0fN0AGQevBvUCMrHujxuq4ILR8HArT+RMlSwOZdeUXMLnQztp54BG/N22fv/X8E5dSPVXNOKnQlGNr2vRP0yvmS5dJ55vkTq6KnDD6yRgZ993wK1AUqoQHedc+mVklr1JpE4rEX2BoNH+9vPkZ2fPVdKe3ZZH4v9fL1tuPcqMHIMrfk1KPQQldjtl9Hc2H762TLyzOMydDskZQ/ouC3mGxVJv+9CSRy7yj5Pup2Dftp3/VWS37JpcpM/2gNUHtiPCWq4q0cNCTQmjP5A94wdvkj1VjVajN43wQY+rAq8QoO3/FgGb7/JdTFZcvrMD6sAqCqU64rmHmgZsBWwNRr0U7D9OnXVMvykfdf8n+QoKLFNhv1aV/JiqUD9UUf76DHHBvy3fD6vbajhPYq7t0v/z78v2XUP1t4K4JPHnSjp93xIqbv2ZPP3WgMsrT9YizrAEilZOtvAbTdK9rEH1L7bGKiv9oT+i1BZxgSX5wFQ433jQwC4OahdA7/8kfO11RKVOuVtEluw2DJ8uK5o3oGWAFtBtEMK/tQkbLQa4WAbL53dmXt/JyUILFP2pChl7QCwsA/XbSEp7X5pCsCiM/QdAsWTmwzffZur9zgMF+2nnyUCIa2VrSXACiIfUjAXxmBcdza6yHIbnsb8HcCrEdhd24ErOYO70YFOq9GUG/RcNWnedpPF9m0dRdLd0rYS6zsiO8bkGLbrp2vzAGZviq8E+yyFGkY+ONfW3ManJbMWkQvQB9U0OMVHkKqKpMh6FEs2DHfegU56CN9MfuOTMnjnzbVviWdHDz9SEtB5NRar9mzT9poOLCXG6LzD1RznHGV27Z8Rg7QFSn6DQo2zIwI7Fni6vk6RDdufA7s0LU6Zv/3JflS3Y/MXSNuqNyJ4zgrjcV3QhANNB5b2XQ02Q/CZs408/Zj6Uae8tr7aYQjA0mBQl2IhtJFNY6V0Pr7xfXwkpR3bJP/PDTX30m4cW7hYQnQ34ppWtOYCi0HSC8NoQg0Ss42Yeqtal0zMAyl2J4Cts8Zynhm4ZgJXmg+Le3dJFh4eZ2OUJEN4KCi2ojUXWK6vPbPBho9yjXUEkQ9FUFkoYuCVCCzUGQa/uRqQVVXHBLJw+VGtGnliresxEZg0qfYwJKcVzcAsTv61GaHPYO7oIYe6btJwFkY+GAkWg/EeViIGwblbBfHEBtbYasdYWhi2SieBvYXTnRLjOF8rrFiBPagWWEqPpf17rHAW++wc4LayXOfEkmKxxhpr4A7loUHJ78THYmuMyIggcJ0pJ61oTaVYCjO02TINw96KiMIvM80Ck2Su0QhBAaqWHTN6sbyHa6yhZ6GfSnbYepb95XE80jWr/nJgv26atpsMLOYT/kxNubANiCGiDG8xNtnsG7hRl9UELduzShB2BB4eU43SNW3Tqns7OmUccigad31cjsumZbe5wFKYgf/SGVVfRlSihoiaHCIoxsWKq2zYELHq66IvLiWkWlfjWCfy+bpuMnOgucCSK5IFOn2rlBzrWYkOYIzUZXUtdbBitUiZkIjt78Zn1JF++Q5GuZD9mRNsNxdYDhTuMma92ZuyZuNftqXy1K6xVHWwvppswFSjHJHV52yassn45ha05gKLAWr6o8PzMZrHSoo21ZRiIanaKRb9q0CF78tcQ6dgufXCekaB5Qfd5NZcYDHAan6qfZxWLg3inUyyYzyrBOmXzxtt6L/40j+xa26iK/hw+GEyZMbZmFBNZ0ErWnOBxdqqmeQOdkgViLk0cqDGf8cMkjsMwWdajVYsbNsM8x+sRCYpSIHtkOjc19U8nYlgTKw2+qyaJ4y/Ex3/tNmzFCZoESpSj3S0xMKlkqXeB2XfJVw5rp3sLte+vd/8ImKRH4Z/tFeG//BLqCa16/tk+xrvujCyBZh2aW/6AdMR4RQU7RdN43ZTgeUgS337pADXnLMlV5wo0btukfzAerOxuXAEDMIhzrVWhRyT1Erbd3evJJetdA5HyjrOzS0DtrmsmGGcsN/mtz7vMrUll622bMh2Ycc1XVM4QEDhRguzDgVBNdg/rVhcW1Mr4Xt1NM0OQGyUJok5zjVjt7nAckQw8rOQB91d9kaVJ774WAm1IzXRxOQTUCQo016bWn2qtJ32bnhbFiGVxGDqI4Sx6EHzJLHsBPtQ9KMlV1Iv0muCFWP4tMQUd26VwvatOin2GWE4auYvf5D85o0W27SfbHCbKRwdyAToveQbNWkjA7feIPu+/XVN3Wiwy9rLQa2RLiRPM8veoYMzeiP35FrLnFh7V9P2WkSxO6Tw/Horuco2VK0Cg/xUXQvr+VJt1467Ced2EvHKc75yZQ2ovKcTua+zPvdV17PH7a/OSdqgYwuP0SwG5+nCiy+g8swDLsCd103nfvOB5WggrWYeuQ+Rfi+6xpY+5wKNXjyQyINKqSDdH/v8mHpx+uyPaRkE18MnewDmQ3pu2t/yHo38t99Go0Ru/TrUjoK+3CI2zPdpCbCMJc7+DYlRKLnj9Femjj9ZUicgfJMmOrC7KTWsr9G5h4HvjzU8nKd6MkWDCG0OicXLQP0fd71eHnWihu+53eXocF04zQfGGvn0Ppb6LGonZe67EzptrRDFB3cinye+dPkBMOMwuMHWMYGjm42V2YB84+OkJAyBjOu3xg7beiC1MsSH6R+haMR2pvmbrQEW46TrbhgFsrIQMpzxtyz00fWBi7SU3pSoFpM69Mdb6weFg5qzj/wFZQkQhtOoTgtQQ6kOLTKSPut8F1osdDKIbHsru2EKH42rx6kfaF3iMyaVtlT6MVnQI4IgN3tjeYBKMafsmimMjYDA6MEcQllZSoBBZbrWARRag3LIPN/zjYst/2kjwFJ9whLShvSN2V++DAJeLUUyvooS9xCMIaoz2wfT5O2W16CgmlBATC5DNROvP/7VL/3fs5BcfpLmsOYpQTP4ugEgOPFDd/0aPtltKA+0W2N/h1H655Ur/0cqsAo1JNjoWhxCuaDTZPZ/XYbCnLBr2xo5Dmsv7v/e/1rSdgPvaevG2KYnMtppFeq/6WqNNe54x7mwEsVrBtgD1YRVTpl0zKCxRsClc2H47t/qvZZJERViWKjLQW01D3TuAFSqX8lVp2o1GxokahrO5zc8qVn3/ICc0SE11zZxp3WsuDpIfN0ErLBlI/TCpSrN2us4EOi2N50BtlyQIlSI8iCqrbFNkioIisYewQqla98k79Nn6JraDvZ7tsz+78u1ZK4et/3HGlP7r/kmJOE76vpkbZc2bbPlrLg6Uk4+HeAMvk6gdAHrKDkb0y5D7V1SAGst70OoKiPsp0tPBKBqB0ZccPrMj4D9Xi4RxEM7Gx0afT/5jgzc/ENPVWnzDLCcMLLkwvPP6lrKHFMWmHa2xJLjtMRAJTOswg8z31VqNgUwAGXsErMBmbvbdf5npOfCL9T1NpXxDoOoDMfaimGW1m2EEzgHZnjfU8BybDTa02rDyi4sLu2UlHlNjBVJwRqpS1JaLkOqprRLCrbmFmpGI5NM6oTww/vDnV2SWLpC0meBSmFjJrj1GilVQf3h5VaQu6kPq97DpnCMwHqslqI1Cq65VCt6PnGJJN9wkku1qI61UszL4B0/11TG4o4XVfqlAKNAEVz8aFZdVaXUMBVk9EB1qXqQIvCnRuB6q3pp0md/VKucVp/h/M0i1QMo+dd303etvhsRxJydTdM+ayl6EliOV4tPo5pMz0X/iTpK75xQ2mQq48jfLatPCTWhSMWkZpYGou3YkooRV8DAM0jLrATHBLHkcaskefwbJYmK5RP5TkeefVz6b/i2fkyMc2qIM0wTiPW69TSwfGGyZP4Rh+5PXiLtbz0Ljvj59cbhOsZo/wLyVukPJcAsk6txv7A/E9ToQXMhfc9HOMtC1731DrAPemv6brhKsg/di8Qy5L16uHkeWJ07BKRR+m1HreA0Cn0ll63SjL1mzCtZupZP+PMdWkLX0lMZP6w8vRmvMKVnzAxgOTSsiUwD4Z9h6UAdpTaU3GG0BV1n09FYezH/wnoZWfew1pgYefyvSunTpl4ZHsTMAbY6cKgi5QwARhmADrDmJOo88O/sEHBnoZLqLY381hK1cJLn/rEOFqvbNVOdRo2awpiNdNiia2cesNWJAsBcf0PQdVMoXM2/wZM4YolEsHZGZs2GsaB7wnWQHIBWrHL/K8ikRwwWYpQYppp59H61cLGUgjPkpfp4r/+eucBWZxYsWrP0oPawkEccJsn4EYsRwIbK4BC6mIerZkRSHVQfK+UCmXH4IxAF+GMZm0QzJQtclxjcDaeEXu8xvbQ63Mn+nvnA2kdKkEHJaomiBQnGeaqrpLqqjVjzhmBzDvEEsw4YYQEQR/+OgL2/GbxNYJsbMD6dk0VjBGzOYnOTWnYJGiPwYIBJV95MZa+NTp1/gB1z5KTMMU/69kTLQmN8O6MeGVgArEeAMP0aAbCmZ9Qj/QXAegQI068RAGt6Rj3SXwCsR4Aw/RoBsKZn1CP9BcB6BAjTrxEAa3pGPdJfAKxHgDD9GgGwpmfUI/0FwHoECNOvEQBrekY90l8ArEeAMP0aAbCmZ9Qj/QXAegQI068RAGt6Rj3SXwCsR4Aw/RoBsKZn1CP9BcB6BAjTrxEAa3pGPdJfAKxHgDD9GgGwpmfUI/0FwHoECNOvEQBrekY90l8ArEeAMP0amuLBJJ6g+WsG/gUtOE7PkrPARAAAAABJRU5ErkJggg=="
-            width={24}
-          />
-          <div
-            className="c8 text"
-            size={16}
-            type="#2f313a"
-          >
-            Another error
-          </div>
+          Another error
         </div>
       </div>
     </div>
