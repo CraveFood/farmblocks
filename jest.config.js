@@ -17,6 +17,10 @@ const basicConfig = {
 const completeConfig = {
   ...basicConfig,
   verbose: true,
+  transform: {
+    "^.+\\.[tj]sx?$": "babel-jest",
+    "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx",
+  },
 };
 
 const fastConfig = {
