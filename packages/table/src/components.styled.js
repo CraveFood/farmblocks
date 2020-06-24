@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "@crave/farmblocks-theme";
+import { colors, fontSizes, fontWeights } from "@crave/farmblocks-theme";
 import Text from "@crave/farmblocks-text";
 
 export const Table = styled.table.attrs(props => ({
@@ -39,31 +39,33 @@ export const TR = styled.tr`
   }
 `;
 
-export const TH = styled(Text).attrs({
-  as: "th",
-})`
+export const TH = styled(Text)`
   border: solid ${colors.GREY_08};
   border-width: 1px 0;
   padding: 8px 24px;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
+  line-height: 1.5;
   background-color: ${colors.SUGAR};
 
   white-space: nowrap;
 `;
+TH.defaultProps = {
+  as: "th",
+  fontSize: fontSizes.MEDIUM,
+  fontWeight: fontWeights.SEMIBOLD,
+};
 
-export const TD = styled(Text).attrs({
-  as: "td",
-})`
+export const TD = styled(Text).attrs(props => ({
+  type: props.color,
+}))`
   border-bottom: 1px solid ${colors.GREY_08};
   padding: 16px 24px;
-  font-size: 16px;
-  line-height: 24px;
-  color: ${colors.OYSTER};
+  line-height: 1.5;
 `;
 TD.defaultProps = {
+  as: "td",
   truncate: true,
+  fontSize: fontSizes.MEDIUM,
+  color: colors.OYSTER,
 };
 
 export const TDBold = styled(TD)`
