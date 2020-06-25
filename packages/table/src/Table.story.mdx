@@ -1,0 +1,231 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import styled from "styled-components";
+
+import { Table, THead, TBody, TR, TH, TD, TDBold } from "./index";
+import * as useTableMapStories from './hooks/useTableMap.story';
+
+<Meta title="Layout|Table" />
+
+# Table
+
+A group of React components for rendering data tables.
+
+## Basic Example
+
+Our table component is essentially the default table element with some style applied, so the usage is the same.
+
+<Preview>
+  <Story name="Basic">
+    <Table>
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+        </TR>
+      </THead>
+      <TBody>
+        <TR>
+          <TD>Apple</TD>
+          <TDBold>$ 0.50</TDBold>
+        </TR>
+        <TR>
+          <TD>Banana</TD>
+          <TDBold>$ 0.60</TDBold>
+        </TR>
+        <TR>
+          <TD>Cherry</TD>
+          <TDBold>$ 9,999.99</TDBold>
+        </TR>
+        <TR>
+          <TD>Coconut</TD>
+          <TDBold>$ 2.30</TDBold>
+        </TR>
+      </TBody>
+    </Table>
+  </Story>
+</Preview>
+
+### Extending style
+
+All the components in this package are [styled-components](https://styled-components.com/). So extending its CSS is very simple:
+
+<!-- This is to render in the docs -->
+```js
+const TDRed = styled(TD)`
+  color: tomato;
+`;
+```
+<!-- The real one, used in the story -->
+export const TDRed = styled(TD)`
+  color: tomato;
+`;
+
+Then you can use it just as the regular one.
+
+<Preview>
+  <Story name="Extending Style" parameters={{
+      docs: {
+        transformSource: console.log
+      }
+    }}>
+    <Table>
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+        </TR>
+      </THead>
+      <TBody>
+        <TR>
+          <TD>Apple</TD>
+          <TDRed>$ 0.50</TDRed>
+        </TR>
+        <TR>
+          <TD>Banana</TD>
+          <TDRed>$ 0.60</TDRed>
+        </TR>
+        <TR>
+          <TD>Cherry</TD>
+          <TDRed>$ 9,999.99</TDRed>
+        </TR>
+        <TR>
+          <TD>Coconut</TD>
+          <TDRed>$ 2.30</TDRed>
+        </TR>
+      </TBody>
+    </Table>
+  </Story>
+</Preview>
+
+### As CSS Grid
+
+The native `<table>` element is pretty decent for most cases. But converting it to `display: grid` can give us [some more control](https://adamlynch.com/flexible-data-tables-with-css-grid/).
+
+To use it, we need to set up the columns with the `$columnsTemplate` prop.
+It receives the values for the [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) CSS property.
+
+In browsers that don't support CSS Grid, it will fall back to `display: table`.
+
+<Preview>
+  <Story name="As CSS Grid">
+    <Table $columnsTemplate="minmax(150px, 1fr) max-content">
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+        </TR>
+      </THead>
+      <TBody>
+        <TR>
+          <TD>Apple</TD>
+          <TDBold>$ 0.50</TDBold>
+        </TR>
+        <TR>
+          <TD>Banana</TD>
+          <TDBold>$ 0.60</TDBold>
+        </TR>
+        <TR>
+          <TD>Cherry</TD>
+          <TDBold>$ 9,999.99</TDBold>
+        </TR>
+        <TR>
+          <TD>Coconut</TD>
+          <TDBold>$ 2.30</TDBold>
+        </TR>
+      </TBody>
+    </Table>
+  </Story>
+</Preview>
+
+## Hooks
+
+### useTableMap
+
+This hook creates a function you can pass to [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and will render the rows and cells from the content in the array.
+
+Example:
+```jsx
+import { action } from "@storybook/addon-actions";
+
+import { Table, THead, TBody, TR, TH, useTableMap, TD } from "@crave/farmblocks-table";
+
+const fruits = [
+  { id: 0, name: "Apple", price: "$ 0.50" },
+  { id: 1, name: "Banana", price: "$ 0.60" },
+  { id: 2, name: "Cherry", price: "$ 9,999.99" },
+  { id: 3, name: "Coconut" },
+];
+
+const Actions = ({ $rowData }) => (
+  <TD>
+    <button
+      onClick={action(`Added ${$rowData.name} to cart`)}
+      disabled={!$rowData.price}
+    >
+      Add to cart
+    </button>
+  </TD>
+);
+
+const FruitTable = () => {
+  const mapData = useTableMap({
+    columns: ["name", "price", "actions"],
+    keyProp: "id",
+    placeholders: { price: "N/A" },
+    cellComponents: { actions: Actions },
+  });
+
+  return (
+    <Table>
+      <THead>
+        <TR>
+          <TH>Fruit</TH>
+          <TH>Price</TH>
+          <TH /> {/* actions column, we don't want to label it */}
+        </TR>
+      </THead>
+      <TBody>{fruits.map(mapData)}</TBody>
+    </Table>
+  );
+};
+```
+
+<Preview>
+  <Story name="useTableMap Hook">
+    {useTableMapStories.example()}
+  </Story>
+</Preview>
+
+The hook takes an `options` object. The available properties are:
+- **columns** (_String[]_) *Required
+  > This array will set the order and name of the properties to get the content from the data array.
+  
+
+- **keyProp** (_String_)
+  > React needs a [unique key](https://reactjs.org/docs/lists-and-keys.html#keys) prop for each entry when mapping a list. You can use this option to set the name of the property to be used as key.  
+  > This is optional, but highly recommended. It will fall back to the item index, which can lead to performance impacts and bugs.
+  
+
+- **rowComponent** (_Component_) = `TR`
+  > Sets the component to be used as row. For extra customization, it injects the following props:
+  > - **$rowData**: The full object for that position in the data array
+  > - **$rowIndex**: The index of the row in the data array
+  
+
+- **cellComponents** (_Object_)
+  > Use the column name as the key to change the cell component for that specific column. Use `$default` to the all the remaining cell components.  
+  > Example:
+  > ```jsx
+  > cellComponents: { name: TDBold,  $default: TDRed }
+  > ```
+  > Just like `rowComponent`, it injects `$rowData` and `$rowIndex`, as well as the follwing props:
+  > - **$columnName**: The name given in `columns` for that position
+  > - **$columnIndex**: The index of the column in the row
+  
+
+- **placeholders** (_Object_)
+  > What to render when the column content is not available. As in `cellComponents`, use the object keys to set it to each column.  
+  > Example:
+  > ```jsx
+  > placeholders: { price: 'N/A' }
+  > ```
