@@ -4,14 +4,14 @@ import { colors, fontSizes } from "@crave/farmblocks-theme";
 
 const outlineColor = transparentize(0.92, colors.INDIGO_MILK_CAP);
 
-const inputBorderColor = props => {
-  if (props.focused || props.active) {
-    return colors.INDIGO_MILK_CAP;
-  }
-  return props.invalid ? colors.STRAWBERRY : "rgba(0,0,0,0.08)";
-};
-const placeholderColor = props => {
-  return props.focused ? colors.GREY_16 : colors.GREY_32;
+const getColorByStatus = ({ fallbackColor }) => ({
+  focused,
+  active,
+  invalid,
+}) => {
+  if (focused || active) return colors.INDIGO_MILK_CAP;
+  if (invalid) return colors.STRAWBERRY;
+  return fallbackColor;
 };
 
 const ifSmall = (smallValue, defaultValue) => props =>
@@ -20,34 +20,9 @@ const ifSmall = (smallValue, defaultValue) => props =>
 const customCursor = props => (props.disabled ? "default" : "pointer");
 
 const fontStyles = css`
-  font-family: Lato, sans-serif;
-  font-size: ${ifSmall(fontSizes.SMALL, fontSizes.MEDIUM)}px;
+  font-family: Lato-regular, sans-serif;
+  font-size: ${fontSizes.MEDIUM}px;
 `;
-
-const addonColor = props => {
-  if (props.focused || props.active) {
-    return css`
-      background-color: ${colors.INDIGO_MILK_CAP};
-      color: white;
-    `;
-  }
-  if (props.invalid) {
-    return css`
-      background-color: ${colors.STRAWBERRY};
-      color: white;
-    `;
-  }
-  if (props.disabled && !props.protected) {
-    return css`
-      background-color: ${colors.GREY_16};
-      color: ${colors.GREY_32};
-    `;
-  }
-  return css`
-    background-color: ${colors.SUGAR};
-    color: ${colors.CARBON};
-  `;
-};
 
 const focusedStyle = ({ focused, active, borderRadius }) =>
   (focused || active) &&
@@ -66,7 +41,7 @@ const Wrapper = styled.div`
     box-sizing: border-box;
     border: solid 1px;
     border-radius: ${({ borderRadius }) => borderRadius};
-    border-color: ${inputBorderColor};
+    border-color: ${getColorByStatus({ fallbackColor: colors.GREY_16 })};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
 
     ${focusedStyle};
@@ -83,8 +58,7 @@ const Wrapper = styled.div`
 
     > input,
     .select__search & input {
-      padding: 0 ${ifSmall("8", "16")}px;
-      height: ${ifSmall("30", "46")}px;
+      padding: 8px 16px;
     }
 
     > textarea {
@@ -102,7 +76,7 @@ const Wrapper = styled.div`
       color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {
-        color: ${placeholderColor};
+        color: ${colors.GREY_32};
       }
       &[type="search"] {
         -webkit-appearance: none;
@@ -122,7 +96,7 @@ const Wrapper = styled.div`
     }
 
     > .icon {
-      color: ${inputBorderColor};
+      color: ${getColorByStatus({ fallbackColor: colors.GREY_16 })};
       font-size: 20px;
       height: 24px;
     }
@@ -164,14 +138,20 @@ const Wrapper = styled.div`
     margin: 0;
   }
 
+  .prefix {
+    margin-left: 16px;
+    margin-right: -8px; // adjust default input margin from 16px to 8px
+  }
+
+  .suffix {
+    margin-right: 16px;
+    margin-left: -8px; // adjust default input margin from 16px to 8px
+  }
+
   .prefix,
   .suffix {
     ${fontStyles};
-    ${addonColor};
-    padding: 0 16px;
-    align-self: stretch;
-    display: flex;
-    align-items: center;
+    color: ${getColorByStatus({ fallbackColor: colors.GREY_32 })};
   }
 
   .label {
