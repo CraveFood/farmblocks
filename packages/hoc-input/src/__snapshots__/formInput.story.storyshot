@@ -3,44 +3,16 @@
 exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c3 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -431,19 +403,12 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Always focused
-      </div>
-    </div>
+      Always focused
+    </label>
   </div>
   <div
     className="c2"
@@ -464,19 +429,12 @@ exports[`Storyshots HOC formInput autoControlFocusedStyle = false 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Never focused
-      </div>
-    </div>
+      Never focused
+    </label>
   </div>
 </div>
 `;
@@ -940,23 +898,9 @@ exports[`Storyshots HOC formInput disabled html text input with combobox role 1`
 exports[`Storyshots HOC formInput extended style 1`] = `
 .c2 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -1179,42 +1123,21 @@ exports[`Storyshots HOC formInput extended style 1`] = `
       value="aligned right"
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c2 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c2 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#2f313a"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
 exports[`Storyshots HOC formInput html disabled input with label 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: rgba(0,0,0,0.32);
 }
 
 .c0 {
@@ -1421,19 +1344,12 @@ exports[`Storyshots HOC formInput html disabled input with label 1`] = `
         value="Disabled field"
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={true}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Input Label
-      </div>
-    </div>
+      Input Label
+    </label>
   </div>
 </div>
 `;
@@ -2760,23 +2676,9 @@ exports[`Storyshots HOC formInput html search input with value 1`] = `
 exports[`Storyshots HOC formInput html text area with label and focused flag 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c0 {
@@ -2983,19 +2885,12 @@ exports[`Storyshots HOC formInput html text area with label and focused flag 1`]
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#3498db"
-    >
-      TextArea Label
-    </div>
-  </div>
+    TextArea Label
+  </label>
 </div>
 `;
 
@@ -3708,23 +3603,9 @@ exports[`Storyshots HOC formInput html text input with combobox role 1`] = `
 exports[`Storyshots HOC formInput html text input with input.onChange and input.value  1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -3930,42 +3811,21 @@ exports[`Storyshots HOC formInput html text input with input.onChange and input.
       value="input.value"
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#2f313a"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
 exports[`Storyshots HOC formInput html text input with label 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -4171,42 +4031,21 @@ exports[`Storyshots HOC formInput html text input with label 1`] = `
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#2f313a"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
 exports[`Storyshots HOC formInput html text input with label and active flag 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c0 {
@@ -4412,42 +4251,21 @@ exports[`Storyshots HOC formInput html text input with label and active flag 1`]
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#3498db"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
 exports[`Storyshots HOC formInput html text input with label and focused flag 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c0 {
@@ -4653,42 +4471,21 @@ exports[`Storyshots HOC formInput html text input with label and focused flag 1`
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#3498db"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
 exports[`Storyshots HOC formInput html text input with label and placeholder 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -4895,19 +4692,12 @@ exports[`Storyshots HOC formInput html text input with label and placeholder 1`]
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#2f313a"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
@@ -5331,23 +5121,9 @@ exports[`Storyshots HOC formInput input with fontSize property SMALL 1`] = `
 exports[`Storyshots HOC formInput invalid input 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #dd3311;
 }
 
 .c0 {
@@ -5553,42 +5329,21 @@ exports[`Storyshots HOC formInput invalid input 1`] = `
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="Text-pfq5dp-0 c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#dd3311"
-    >
-      Input Label
-    </div>
-  </div>
+    Input Label
+  </label>
 </div>
 `;
 
 exports[`Storyshots HOC formInput small container 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -5801,19 +5556,12 @@ exports[`Storyshots HOC formInput small container 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Default
-      </div>
-    </div>
+      Default
+    </label>
   </div>
   <div
     className="c0"
@@ -5839,19 +5587,12 @@ exports[`Storyshots HOC formInput small container 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Prefix
-      </div>
-    </div>
+      Prefix
+    </label>
   </div>
   <div
     className="c0"
@@ -5877,19 +5618,12 @@ exports[`Storyshots HOC formInput small container 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Suffix
-      </div>
-    </div>
+      Suffix
+    </label>
   </div>
   <div
     className="c0"
@@ -5920,19 +5654,12 @@ exports[`Storyshots HOC formInput small container 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Both
-      </div>
-    </div>
+      Both
+    </label>
   </div>
 </div>
 `;
@@ -6499,23 +6226,9 @@ exports[`Storyshots HOC formInput small html search input with value 1`] = `
 exports[`Storyshots HOC formInput two html inputs with label 1`] = `
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c0 {
@@ -6722,19 +6435,12 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Input Label
-      </div>
-    </div>
+      Input Label
+    </label>
   </div>
   <div
     className="c0"
@@ -6755,127 +6461,22 @@ exports[`Storyshots HOC formInput two html inputs with label 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Input Label
-      </div>
-    </div>
+      Input Label
+    </label>
   </div>
 </div>
 `;
 
 exports[`Storyshots HOC formInput with label and more info 1`] = `
-.c6 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c6 .farmblocks-icon {
-  display: block;
-}
-
-.c5 {
-  position: relative;
-  display: inline-block;
-}
-
-.c5 .hit-area {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c5 .appear-enter {
-  opacity: 0;
-}
-
-.c5 .appear-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 200ms ease-in;
-  transition: opacity 200ms ease-in;
-}
-
-.c5 .appear-exit {
-  opacity: 1;
-}
-
-.c5 .appear-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-out;
-  transition: opacity 200ms ease-out;
-}
-
-.c4 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-weight: 600;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.c2 .icon {
-  display: inline-block;
-  margin: 0 4px;
-  cursor: pointer;
-  color: #59636f;
-}
-
-.c2 .icon .farmblocks-icon {
-  font-size: 1.2em;
-}
-
-.c2 .icon:hover,
-.c2 .hovered {
-  color: #3498db;
-}
-
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
-}
-
-.c3 {
-  position: relative;
-  top: -1px;
+  color: #2f313a;
 }
 
 .c0 {
@@ -7060,18 +6661,6 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-@media only screen and (pointer:coarse) {
-  .c5 .hit-area {
-    min-height: 40px;
-    min-width: 40px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-  }
 }
 
 <div
@@ -7093,61 +6682,12 @@ exports[`Storyshots HOC formInput with label and more info 1`] = `
       value=""
     />
   </div>
-  <div
-    className="label"
+  <label
+    className="c1 label"
+    disabled={false}
   >
-    <div
-      className="c1 labelText"
-      fontWeight="title"
-      letterSpacing="2px"
-      size={14}
-      type="#2f313a"
-    >
-      this is a regular label
-    </div>
-    <div
-      className="c2 c3 moreInfo"
-    >
-      <div
-        className="c4"
-        fontWeight="title"
-        size={16}
-        type="#59636f"
-      >
-        <span
-          className="text "
-        />
-        <div
-          className="c5 icon"
-          onMouseLeave={[Function]}
-        >
-          <div
-            className="hit-area"
-            onMouseOver={[Function]}
-          />
-          <span
-            className="c6"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height="1em"
-              viewBox="4 4 32 32"
-              width="1em"
-            >
-              <path
-                d="M31 20c0-6.074-4.926-11-11-11-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11zm2 0c0 7.18-5.82 13-13 13S7 27.18 7 20 12.82 7 20 7c7.179 0 13 5.821 13 13zm-13.505 4.408c1.05 0 1.827.776 1.827 1.785v.042c0 1.01-.776 1.787-1.827 1.787s-1.829-.778-1.829-1.787v-.042c0-1.009.778-1.785 1.829-1.785zm0-1.387c-.61 0-1.051-.462-1.134-1.028l-.212-1.43c-.103-.693.295-1.177.967-1.26 1.827-.23 2.67-.798 2.67-1.828v-.042c0-.944-.717-1.49-1.934-1.49-.904 0-1.682.271-2.437.839-.252.189-.588.336-.947.336A1.487 1.487 0 0115 15.648c0-.399.166-.82.545-1.135C16.659 13.59 18.067 13 19.915 13 22.94 13 25 14.555 25 17.35v.041c0 2.668-1.85 3.761-4.14 4.223l-.064.379c-.084.546-.525 1.028-1.133 1.028h-.168z"
-                fill="currentColor"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
+    this is a regular label
+  </label>
 </div>
 `;
 
@@ -7163,86 +6703,30 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
 
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c3 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c6 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: rgba(0,0,0,0.32);
 }
 
 .c8 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #dd3311;
 }
 
 .c0 {
@@ -8374,19 +7858,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Default
-      </div>
-    </div>
+      Default
+    </label>
   </div>
   <div
     className="c2"
@@ -8412,19 +7889,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Active
-      </div>
-    </div>
+      Active
+    </label>
   </div>
   <div
     className="c4"
@@ -8450,19 +7920,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Focused on Mount
-      </div>
-    </div>
+      Focused on Mount
+    </label>
   </div>
   <div
     className="c5"
@@ -8488,19 +7951,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c6 label"
+      disabled={true}
     >
-      <div
-        className="Text-pfq5dp-0 c6 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Disabled
-      </div>
-    </div>
+      Disabled
+    </label>
   </div>
   <div
     className="c7"
@@ -8526,19 +7982,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c8 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c8 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#dd3311"
-      >
-        Invalid
-      </div>
-    </div>
+      Invalid
+    </label>
   </div>
   <div
     className="c0"
@@ -8588,19 +8037,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
       />
       
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Search
-      </div>
-    </div>
+      Search
+    </label>
   </div>
   <div
     className="c10"
@@ -8628,19 +8070,12 @@ exports[`Storyshots HOC formInput with prefix 1`] = `
         value=""
       />
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Small
-      </div>
-    </div>
+      Small
+    </label>
   </div>
 </div>
 `;
@@ -8657,86 +8092,30 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
 
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c3 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c6 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: rgba(0,0,0,0.32);
 }
 
 .c8 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #dd3311;
 }
 
 .c0 {
@@ -9873,19 +9252,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Default
-      </div>
-    </div>
+      Default
+    </label>
   </div>
   <div
     className="c2"
@@ -9916,19 +9288,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Active
-      </div>
-    </div>
+      Active
+    </label>
   </div>
   <div
     className="c4"
@@ -9959,19 +9324,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Focused on Mount
-      </div>
-    </div>
+      Focused on Mount
+    </label>
   </div>
   <div
     className="c5"
@@ -10002,19 +9360,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c6 label"
+      disabled={true}
     >
-      <div
-        className="Text-pfq5dp-0 c6 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Disabled
-      </div>
-    </div>
+      Disabled
+    </label>
   </div>
   <div
     className="c7"
@@ -10045,19 +9396,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c8 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c8 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#dd3311"
-      >
-        Invalid
-      </div>
-    </div>
+      Invalid
+    </label>
   </div>
   <div
     className="c0"
@@ -10112,19 +9456,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Search
-      </div>
-    </div>
+      Search
+    </label>
   </div>
   <div
     className="c10"
@@ -10157,19 +9494,12 @@ exports[`Storyshots HOC formInput with prefix and suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Small
-      </div>
-    </div>
+      Small
+    </label>
   </div>
 </div>
 `;
@@ -10186,86 +9516,30 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
 
 .c1 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #2f313a;
 }
 
 .c3 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #3498db;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #3498db;
 }
 
 .c6 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgba(0,0,0,0.32);
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: rgba(0,0,0,0.32);
 }
 
 .c8 {
   font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16px;
-  -webkit-letter-spacing: 2px;
-  -moz-letter-spacing: 2px;
-  -ms-letter-spacing: 2px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  margin-bottom: 8px;
-  float: left;
+  color: #dd3311;
 }
 
 .c0 {
@@ -11397,19 +10671,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Default
-      </div>
-    </div>
+      Default
+    </label>
   </div>
   <div
     className="c2"
@@ -11435,19 +10702,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Active
-      </div>
-    </div>
+      Active
+    </label>
   </div>
   <div
     className="c4"
@@ -11473,19 +10733,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c3 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c3 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#3498db"
-      >
-        Focused on Mount
-      </div>
-    </div>
+      Focused on Mount
+    </label>
   </div>
   <div
     className="c5"
@@ -11511,19 +10764,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c6 label"
+      disabled={true}
     >
-      <div
-        className="Text-pfq5dp-0 c6 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="rgba(0, 0, 0, 0.32)"
-      >
-        Disabled
-      </div>
-    </div>
+      Disabled
+    </label>
   </div>
   <div
     className="c7"
@@ -11549,19 +10795,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c8 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c8 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#dd3311"
-      >
-        Invalid
-      </div>
-    </div>
+      Invalid
+    </label>
   </div>
   <div
     className="c0"
@@ -11611,19 +10850,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Search
-      </div>
-    </div>
+      Search
+    </label>
   </div>
   <div
     className="c10"
@@ -11651,19 +10883,12 @@ exports[`Storyshots HOC formInput with suffix 1`] = `
         CS
       </div>
     </div>
-    <div
-      className="label"
+    <label
+      className="c1 label"
+      disabled={false}
     >
-      <div
-        className="Text-pfq5dp-0 c1 labelText"
-        fontWeight="title"
-        letterSpacing="2px"
-        size={14}
-        type="#2f313a"
-      >
-        Small
-      </div>
-    </div>
+      Small
+    </label>
   </div>
 </div>
 `;
