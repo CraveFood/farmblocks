@@ -14,6 +14,8 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import Wrapper from "./styledComponents/Wrapper";
 
+const ICON_SIZE = 18;
+
 export const formInputProps = {
   label: PropTypes.string,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -34,7 +36,6 @@ export const formInputProps = {
   readOnly: PropTypes.bool,
   refName: PropTypes.string,
   clearable: PropTypes.bool,
-  clearIcon: PropTypes.node,
   leftIcon: PropTypes.elementType,
   moreInfoContent: PropTypes.node,
   moreInfoTooltipProps: PropTypes.object,
@@ -68,7 +69,6 @@ const formInput = WrappedComponent => {
       input: null,
       refName: "ref",
       clearable: false,
-      clearIcon: <MdRemoveFilled />,
       moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
       autoControlFocusedStyle: true,
       borderRadius: "4px",
@@ -157,7 +157,6 @@ const formInput = WrappedComponent => {
       innerRef,
       refName,
       clearable,
-      clearIcon,
       leftIcon,
       prefix,
       suffix,
@@ -175,11 +174,11 @@ const formInput = WrappedComponent => {
 
       const clearButton = (clearable || isSearch) && this.state.value && (
         <Link
-          className="clear"
+          className="clear icon right"
           data-testid="input-clear"
           onClick={this.handleClearClick}
         >
-          {clearIcon}
+          <MdRemoveFilled size={ICON_SIZE} />
         </Link>
       );
 
@@ -201,7 +200,7 @@ const formInput = WrappedComponent => {
 
           {LeftIcon && (
             <div className="icon left">
-              <LeftIcon size={18} />
+              <LeftIcon size={ICON_SIZE} />
             </div>
           )}
 
@@ -217,7 +216,7 @@ const formInput = WrappedComponent => {
 
           {RightIcon && (
             <div className="icon right">
-              <SmChevronDown size={18} />
+              <SmChevronDown size={ICON_SIZE} />
             </div>
           )}
           {suffix && <div className="suffix">{suffix}</div>}

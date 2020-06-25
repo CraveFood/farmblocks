@@ -88,7 +88,6 @@ const Wrapper = styled.div`
           width: 0;
           height: 0;
         }
-        padding-left: 8px;
       }
       &[role="combobox"] {
         cursor: ${customCursor};
@@ -111,8 +110,6 @@ const Wrapper = styled.div`
 
     > .clear {
       color: ${colors.GREY_16};
-      font-size: 20px;
-      height: 24px;
       &:hover {
         text-decoration: none;
         color: ${colors.INDIGO_MILK_CAP};
@@ -121,7 +118,6 @@ const Wrapper = styled.div`
         text-decoration: none;
         cursor: pointer;
       }
-      margin-right: ${ifSmall("8", "16")}px;
     }
   }
 
