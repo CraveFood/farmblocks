@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@1.0.26...@crave/farmblocks-label@2.0.0) (2020-06-25)
+
+
+### Features
+
+* **label:** rewrite with new style ([10cef1d](https://github.com/CraveFood/farmblocks/commit/10cef1de6505bc3c57b9ee77b1d69291c72ab07e))
+
+
+### BREAKING CHANGES
+
+* **label:** This component no longer accepts moreInfoTooltipProps, moreInfoContent props
+
+
+
+
+
 ## [1.0.26](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@1.0.25...@crave/farmblocks-label@1.0.26) (2020-05-14)
 
 **Note:** Version bump only for package @crave/farmblocks-label
