@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@5.0.12...@crave/farmblocks-table@6.0.0) (2020-06-25)
+
+
+### Features
+
+* **table:** create basic components ([b1c2850](https://github.com/CraveFood/farmblocks/commit/b1c2850e1628405f7b5f12e5e56482ddfbcbf251))
+* **table:** create useTableMap hook ([464a685](https://github.com/CraveFood/farmblocks/commit/464a68592d7b01d684c0f9427bee8e8e95f1f2d2))
+* **table:** pass data to custom components in useTableMap ([1b2e010](https://github.com/CraveFood/farmblocks/commit/1b2e010af34cb040af2c0d5d5b814b78202259d7))
+* **table:** use css grid ([40c033c](https://github.com/CraveFood/farmblocks/commit/40c033c9411eb3b662b27458206fb8f263d30e8e))
+
+
+### BREAKING CHANGES
+
+* **table:** complete rewrite of the package.
+
+affects: @crave/farmblocks-table
+
+
+
+
+
 ## [5.0.12](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@5.0.11...@crave/farmblocks-table@5.0.12) (2020-06-25)
 
 **Note:** Version bump only for package @crave/farmblocks-table
