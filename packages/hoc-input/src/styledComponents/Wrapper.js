@@ -1,17 +1,9 @@
 import styled, { css } from "styled-components";
+import { transparentize } from "polished";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 
-const inputBoxShadow = props => {
-  if (!props.focused && (props.disabled || props.filled)) {
-    return css`
-      box-shadow: none;
-    `;
-  }
-  const shadowSize = props.focused ? "0 4px 4px 0" : "0 2px 2px 0";
-  return css`
-    box-shadow: ${shadowSize} ${colors.GREY_16};
-  `;
-};
+const outlineColor = transparentize(0.92, colors.INDIGO_MILK_CAP);
+
 const inputBorderColor = props => {
   if (props.focused || props.active) {
     return colors.INDIGO_MILK_CAP;
@@ -57,6 +49,14 @@ const addonColor = props => {
   `;
 };
 
+const focusedStyle = ({ focused, active, borderRadius }) =>
+  (focused || active) &&
+  css`
+    box-shadow: 0 0 0px ${borderRadius} ${outlineColor};
+    border-width: 2px;
+    margin: -1px; // balances the border-width increase
+  `;
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -68,7 +68,9 @@ const Wrapper = styled.div`
     border-radius: ${({ borderRadius }) => borderRadius};
     border-color: ${inputBorderColor};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
-    ${inputBoxShadow};
+
+    ${focusedStyle};
+
     display: flex;
     flex-direction: row;
     align-items: center;
