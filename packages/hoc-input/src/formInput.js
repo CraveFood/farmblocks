@@ -1,6 +1,5 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import Link from "@crave/farmblocks-link";
 import { POSITIONS } from "@crave/farmblocks-tooltip";
@@ -197,7 +196,7 @@ const formInput = WrappedComponent => {
         // there's no functionality in keyboard navigation.
         // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <div
-          className={classNames("input", { dropdown: isDropdown })}
+          className={`input ${isDropdown ? "dropdown" : ""}`}
           ref={element => {
             this.inputRef = element && element.querySelector("input, textarea");
           }}
