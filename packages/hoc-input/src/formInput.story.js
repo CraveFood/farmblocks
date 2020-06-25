@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { fontSizes } from "@crave/farmblocks-theme";
 import { POSITIONS } from "@crave/farmblocks-tooltip";
-import { MdTrash, MdOrders } from "@crave/farmblocks-icon";
+import { MdTrash, MdSearch } from "@crave/farmblocks-icon";
 
 import formInput from ".";
 
@@ -101,11 +101,11 @@ storiesOf("HOC formInput", module)
     </div>
   ))
   .add("html input with leftIcon", () => (
-    <EnhancedInput leftIcon={<MdOrders />} value="foo bar" />
+    <EnhancedInput leftIcon={MdSearch} value="foo bar" />
   ))
   .add("small html input with leftIcon", () => (
     <EnhancedInput
-      leftIcon={<MdOrders />}
+      leftIcon={MdSearch}
       fontSize={fontSizes.SMALL}
       value="foo bar"
     />

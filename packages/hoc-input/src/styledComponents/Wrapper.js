@@ -97,16 +97,16 @@ const Wrapper = styled.div`
 
     > .icon {
       color: ${getColorByStatus({ fallbackColor: colors.GREY_16 })};
-      font-size: 20px;
-      height: 24px;
-    }
 
-    > .icon.left {
-      margin-left: ${ifSmall("8", "12")}px;
-    }
+      &.left {
+        margin-left: 8px;
+        margin-right: -8px; // adjust default input margin from 16px to 8px
+      }
 
-    > .icon.dropdown {
-      margin: 0 8px;
+      &.right {
+        margin-right: 8px;
+        margin-left: -8px; // adjust default input margin from 16px to 8px
+      }
     }
 
     > .clear {

@@ -35,7 +35,7 @@ export const formInputProps = {
   refName: PropTypes.string,
   clearable: PropTypes.bool,
   clearIcon: PropTypes.node,
-  leftIcon: PropTypes.node,
+  leftIcon: PropTypes.elementType,
   moreInfoContent: PropTypes.node,
   moreInfoTooltipProps: PropTypes.object,
   prefix: PropTypes.node,
@@ -171,7 +171,7 @@ const formInput = WrappedComponent => {
 
       const isSearch =
         inputProps.type && inputProps.type.toLowerCase() === "search";
-      const iconName = leftIcon || (isSearch && <MdSearch />);
+      const LeftIcon = leftIcon || (isSearch && MdSearch);
 
       const clearButton = (clearable || isSearch) && this.state.value && (
         <Link
@@ -184,11 +184,7 @@ const formInput = WrappedComponent => {
       );
 
       const isDropdown = inputProps.role === "combobox";
-      const dropDownIcon = isDropdown && (
-        <div className="icon dropdown">
-          <SmChevronDown />
-        </div>
-      );
+      const RightIcon = isDropdown && SmChevronDown;
 
       return (
         // Although we use onMouseDown, this element don't need role=button
@@ -202,7 +198,13 @@ const formInput = WrappedComponent => {
           }}
         >
           {prefix && <div className="prefix">{prefix}</div>}
-          {iconName && <div className="icon left">{iconName}</div>}
+
+          {LeftIcon && (
+            <div className="icon left">
+              <LeftIcon size={18} />
+            </div>
+          )}
+
           <WrappedComponent
             className="wrapped"
             {...inputProps}
@@ -210,8 +212,14 @@ const formInput = WrappedComponent => {
             {...{ [refName]: innerRef }}
             value={this.state.value}
           />
+
           {clearButton}
-          {dropDownIcon}
+
+          {RightIcon && (
+            <div className="icon right">
+              <SmChevronDown size={18} />
+            </div>
+          )}
           {suffix && <div className="suffix">{suffix}</div>}
         </div>
       );
