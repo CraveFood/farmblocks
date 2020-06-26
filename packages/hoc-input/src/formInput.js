@@ -32,8 +32,6 @@ export const formInputProps = {
   readOnly: PropTypes.bool,
   refName: PropTypes.string,
   leftIcon: PropTypes.elementType,
-  moreInfoContent: PropTypes.node,
-  moreInfoTooltipProps: PropTypes.object,
   prefix: PropTypes.node,
   suffix: PropTypes.node,
   autoControlFocusedStyle: PropTypes.bool,
@@ -64,7 +62,6 @@ const formInput = WrappedComponent => {
       onBlur: () => null,
       input: null,
       refName: "ref",
-      moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
       autoControlFocusedStyle: true,
       borderRadius: "4px",
       mb: "24px",
@@ -233,8 +230,6 @@ const formInput = WrappedComponent => {
         meta,
         protected: covered,
         disableManualReplace,
-        moreInfoContent,
-        moreInfoTooltipProps,
         autoControlFocusedStyle,
         className,
         borderRadius,
@@ -263,8 +258,6 @@ const formInput = WrappedComponent => {
           {label && (
             <Label
               className="label"
-              moreInfoContent={moreInfoContent}
-              moreInfoTooltipProps={moreInfoTooltipProps}
               focused={this.state.focused || active}
               invalid={wrapperProps.invalid}
               protected={covered}
