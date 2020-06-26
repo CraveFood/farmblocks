@@ -13,7 +13,7 @@ import Wrapper from "./styledComponents/Wrapper";
 const ICON_SIZE = 18;
 
 export const formInputProps = {
-  label: PropTypes.string,
+  label: PropTypes.node,
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
   fontSize: PropTypes.number,
@@ -52,15 +52,7 @@ const formInput = WrappedComponent => {
     };
 
     static defaultProps = {
-      value: "",
       type: "text",
-      focused: false,
-      active: false,
-      disabled: false,
-      onChange: () => null,
-      onFocus: () => null,
-      onBlur: () => null,
-      input: null,
       refName: "ref",
       autoControlFocusedStyle: true,
       borderRadius: "4px",
@@ -105,7 +97,7 @@ const formInput = WrappedComponent => {
 
     handleClearClick = () => {
       this.setState({ value: "" });
-      this.props.onChange({
+      this.props.onChange?.({
         type: "change",
         value: "",
         target: { value: "" },
@@ -121,15 +113,12 @@ const formInput = WrappedComponent => {
         value: event.value || event.target.value,
       });
 
-      if (this.props.input && this.props.input.onChange) {
-        return this.props.input.onChange(event);
-      }
-
-      return this.props.onChange(event);
+      this.props.input?.onChange?.(event);
+      this.props.onChange?.(event);
     };
 
     onFocus = event => {
-      this.props.onFocus(event);
+      this.props.onFocus?.(event);
 
       if (!this.props.autoControlFocusedStyle) {
         return;
@@ -138,7 +127,7 @@ const formInput = WrappedComponent => {
     };
 
     onBlur = event => {
-      this.props.onBlur(event);
+      this.props.onBlur?.(event);
 
       if (!this.props.autoControlFocusedStyle) {
         return;
