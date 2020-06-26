@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { space } from "styled-system";
 import { transparentize } from "polished";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 
@@ -20,7 +21,7 @@ const ifSmall = (smallValue, defaultValue) => props =>
 const customCursor = props => (props.disabled ? "default" : "pointer");
 
 const fontStyles = css`
-  font-family: Lato-regular, sans-serif;
+  font-family: Lato, sans-serif;
   font-size: ${fontSizes.MEDIUM}px;
 `;
 
@@ -35,6 +36,7 @@ const focusedStyle = ({ focused, active, borderRadius }) =>
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  ${space}
 
   > .input {
     order: 2;
