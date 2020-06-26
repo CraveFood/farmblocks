@@ -4,11 +4,7 @@ import wrapDisplayName from "recompose/wrapDisplayName";
 import Link from "@crave/farmblocks-link";
 import { POSITIONS } from "@crave/farmblocks-tooltip";
 import Label from "@crave/farmblocks-label";
-import {
-  MdSearch,
-  MdRemoveFilled,
-  SmChevronDown,
-} from "@crave/farmblocks-icon";
+import { MdSearch, MdRemove, SmChevronDown } from "@crave/farmblocks-icon";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
@@ -177,7 +173,7 @@ const formInput = WrappedComponent => {
           data-testid="input-clear"
           onClick={this.handleClearClick}
         >
-          <MdRemoveFilled size={ICON_SIZE} />
+          <MdRemove size={32} />
         </Link>
       );
 
