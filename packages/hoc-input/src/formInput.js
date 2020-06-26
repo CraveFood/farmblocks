@@ -35,7 +35,6 @@ export const formInputProps = {
   }),
   readOnly: PropTypes.bool,
   refName: PropTypes.string,
-  clearable: PropTypes.bool,
   leftIcon: PropTypes.elementType,
   moreInfoContent: PropTypes.node,
   moreInfoTooltipProps: PropTypes.object,
@@ -69,7 +68,6 @@ const formInput = WrappedComponent => {
       onBlur: () => null,
       input: null,
       refName: "ref",
-      clearable: false,
       moreInfoTooltipProps: { positionX: POSITIONS.X.LEFT },
       autoControlFocusedStyle: true,
       borderRadius: "4px",
@@ -158,7 +156,6 @@ const formInput = WrappedComponent => {
     renderInput = ({
       innerRef,
       refName,
-      clearable,
       leftIcon,
       prefix,
       suffix,
@@ -174,7 +171,7 @@ const formInput = WrappedComponent => {
         inputProps.type && inputProps.type.toLowerCase() === "search";
       const LeftIcon = leftIcon || (isSearch && MdSearch);
 
-      const clearButton = (clearable || isSearch) && this.state.value && (
+      const clearButton = isSearch && this.state.value && (
         <Link
           className="clear icon right"
           data-testid="input-clear"
