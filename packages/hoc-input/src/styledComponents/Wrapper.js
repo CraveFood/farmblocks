@@ -25,10 +25,10 @@ const fontStyles = css`
   font-size: ${fontSizes.MEDIUM}px;
 `;
 
-const focusedStyle = ({ focused, active, borderRadius }) =>
+const focusedStyle = ({ focused, active }) =>
   (focused || active) &&
   css`
-    box-shadow: 0 0 0px ${borderRadius} ${outlineColor};
+    box-shadow: 0 0 0px 4px ${outlineColor};
     border-width: 2px;
     margin: -1px; // balances the border-width increase
   `;
