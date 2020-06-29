@@ -1,0 +1,412 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import styled from "styled-components";
+import { MdSearch } from "@crave/farmblocks-icon";
+
+import formInput from "./index";
+import { FbInput, Container, WithValue, FocusContainer } from "./formInput.story.utils";
+
+<Meta title="Form|HOC formInput" />
+
+# hoc-input
+
+A High Order Component that adds behaviour of label support, different styles
+for focus and errors, and validation error messages.
+
+This component uses the html `input` element. So the APIs are very similar.
+
+For example, `value`, `placeholder`, `disabled`, `maxLength`, `onChange` and
+others not listed here, should work as expected, you can assume that the
+property will be forwarded to the core html input element. Ref.:
+[MDN &lt;input&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+
+## Basic Example
+
+Simply compose the desired element with the HOC and that's it.
+
+```jsx
+import formInput from "@crave/farmblocks-hoc-input";
+const FbInput = formInput(props => React.createElement("input", props));
+const Form = () => <FbInput label="Label" placeholder="Helpful placeholder" />;
+```
+
+Useful properties at this point:
+
+
+- **label** (_Node_)
+  > Value to be rendered as `@crave/farmblocks-label`
+- **value** (_String_ | _Number_)
+  > Input value
+- **placeholder** (_String_)
+  > Input placeholder
+- **onChange** (_Function_)
+  > Callback to listen to input changes
+- **onFocus** (_Function_)
+  > Callback to listen to when input gets focused
+- **onBlur** (_Function_)
+  > Callback to listen to when input loses focus
+
+
+<Preview>
+  <Story name="Basic">
+    <Container>
+      <FbInput
+        placeholder="Insert a helpul placeholder here ;)"
+        label="Label"
+        onChange={action("onChange")}
+        onFocus={action("onFocus")}
+        onBlur={action("onBlur")}
+      />
+    </Container>
+  </Story>
+</Preview>
+
+## Status
+
+Checkout the available status and how they affect the input style:
+
+- **active** (_Boolean_)
+- **focused** (_Boolean_)
+- **invalid** (_Boolean_)
+- **disabled** (_Boolean_)
+- **validationMessages** (_String[]_)
+  > Note that this property will render the validation messages below the input AND will set its status to `invalid`
+
+<Preview>
+  <Story name="Input Status">
+    <Container>
+      <FbInput placeholder="Input without label" />
+      <FbInput label="With value" value="Foo bar" />
+      <FbInput label="Focused" placeholder="Focused style" focused />
+      <FbInput label="Active" placeholder="Active style" active />
+      <FbInput label="Invalid" placeholder="Invalid style" invalid />
+      <FbInput label="Invalid" value="Invalid with value" invalid />
+      <FbInput
+        label="With validation messages"
+        placeholder="With validation messages"
+        validationMessages={["Required Field"]}
+      />
+      <FbInput
+        label="With two validation messages"
+        placeholder="With validation messages"
+        validationMessages={["Required Field", "Valid values: avocado and guacamole"]}
+      />
+      <FbInput label="Disabled" placeholder="With placeholder" disabled />
+      <FbInput label="Disabled" value="Foo Bar" disabled />
+    </Container>
+  </Story>
+</Preview>
+
+## Using Icons
+
+You can set an icon to the left side of your input
+
+- **leftIcon** (_ElementType_)
+  > We accept any React element type, but it's designed to work with elements from `@crave-farmblocks/icon`. We'll also set the icon size to 18
+
+<Preview>
+  <Story name="With Icon">
+    <Container>
+      <FbInput placeholder="Input with left icon" leftIcon={MdSearch} />
+      <FbInput
+        label="With left icon and value"
+        leftIcon={MdSearch}
+        value="Foo bar"
+      />
+      <FbInput
+        label="With left icon and Focused"
+        placeholder="Focused style"
+        focused
+        leftIcon={MdSearch}
+      />
+      <FbInput
+        label="With left icon and Active"
+        placeholder="Active style"
+        active
+        leftIcon={MdSearch}
+      />
+      <FbInput
+        label="With left icon and Invalid"
+        placeholder="Invalid style"
+        invalid
+        leftIcon={MdSearch}
+      />
+      <FbInput
+        label="With left icon, value and Invalid"
+        value="Invalid with value"
+        invalid
+        leftIcon={MdSearch}
+      />
+      <FbInput
+        label="With left icon and Error messages"
+        placeholder="With validation messages"
+        validationMessages={["Required Field"]}
+        leftIcon={MdSearch}
+      />
+      <FbInput
+        label="With left icon and Disabled"
+        placeholder="With placeholder"
+        disabled
+        leftIcon={MdSearch}
+      />
+      <FbInput
+        label="With left icon and Disabled"
+        value="Foo bar"
+        disabled
+        leftIcon={MdSearch}
+      />
+    </Container>
+  </Story>
+</Preview>
+
+## Prefix and Suffix
+
+Use `prefix` and `suffix` to append helpful content to the inputs
+
+- **prefix** (_Node_)
+  > We accept any valid node, but the common case would be with string
+- **suffix** (_Node_)
+  > We accept any valid node, but the common case would be with string
+
+<Preview>
+  <Story name="Prefix and Suffix">
+    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around'}}>
+      <Container width={[1, 1, 1, 1 / 4]}>
+        <FbInput prefix="$" placeholder="Input without label" />
+        <FbInput prefix="$" label="With value" value="Foo bar" />
+        <FbInput
+          prefix="$"
+          label="Focused"
+          placeholder="Focused style"
+          focused
+        />
+        <FbInput prefix="$" label="Active" placeholder="Active style" active />
+        <FbInput
+          prefix="$"
+          label="Invalid"
+          placeholder="Invalid style"
+          invalid
+        />
+        <FbInput
+          prefix="$"
+          label="Invalid"
+          value="Invalid with value"
+          invalid
+        />
+        <FbInput
+          prefix="$"
+          label="Error messages"
+          placeholder="With validation messages"
+          validationMessages={["Required Field"]}
+        />
+        <FbInput
+          prefix="$"
+          label="Disabled"
+          placeholder="With placeholder"
+          disabled
+        />
+        <FbInput prefix="$" label="Disabled" value="Foo Bar" disabled />
+      </Container>
+      <Container width={[1, 1, 1, 1 / 4]} >
+        <FbInput suffix="/ CASE" placeholder="Input without label" />
+        <FbInput suffix="/ CASE" label="With value" value="Foo bar" />
+        <FbInput
+          suffix="/ CASE"
+          label="Focused"
+          placeholder="Focused style"
+          focused
+        />
+        <FbInput suffix="/ CASE" label="Active" placeholder="Active style" active />
+        <FbInput
+          suffix="/ CASE"
+          label="Invalid"
+          placeholder="Invalid style"
+          invalid
+        />
+        <FbInput
+          suffix="/ CASE"
+          label="Invalid"
+          value="Invalid with value"
+          invalid
+        />
+        <FbInput
+          suffix="/ CASE"
+          label="Error messages"
+          placeholder="With validation messages"
+          validationMessages={["Required Field"]}
+        />
+        <FbInput
+          suffix="/ CASE"
+          label="Disabled"
+          placeholder="With placeholder"
+          disabled
+        />
+        <FbInput suffix="/ CASE" label="Disabled" value="Foo Bar" disabled />
+      </Container>
+      <Container width={[1, 1, 1, 1 / 4]}>
+        <FbInput prefix="$" suffix="/ CASE" placeholder="Input without label" />
+        <FbInput prefix="$" suffix="/ CASE" label="With value" value="Foo bar" />
+        <FbInput
+          prefix="$" suffix="/ CASE"
+          label="Focused"
+          placeholder="Focused style"
+          focused
+        />
+        <FbInput prefix="$" suffix="/ CASE" label="Active" placeholder="Active style" active />
+        <FbInput
+          prefix="$" suffix="/ CASE"
+          label="Invalid"
+          placeholder="Invalid style"
+          invalid
+        />
+        <FbInput
+          prefix="$" suffix="/ CASE"
+          label="Invalid"
+          value="Invalid with value"
+          invalid
+        />
+        <FbInput
+          prefix="$" suffix="/ CASE"
+          label="Error messages"
+          placeholder="With validation messages"
+          validationMessages={["Required Field"]}
+        />
+        <FbInput
+          prefix="$" suffix="/ CASE"
+          label="Disabled"
+          placeholder="With placeholder"
+          disabled
+        />
+        <FbInput prefix="$" suffix="/ CASE" label="Disabled" value="Foo Bar" disabled />
+      </Container>
+    </div>
+  </Story>
+</Preview>
+
+## Custom type
+The default input type is set to `text` but it's possible to set a custom type to the input.
+Changing the input type can change its visual as well. Check out how a `search` input type is rendered: note the farmblocks icon `MdSearch` rendered on the left and a clear action (represented by the farmblocks icon `MdRemove`) on the right side. 
+- **type** (_String_) = `text`
+  > A valid html type attribute value
+
+<Preview>
+  <Story name="Custom Type">
+    <Container>
+      <FbInput
+        placeholder="Type in and see the clear action appear"
+        type='search'
+      />
+      <FbInput
+        placeholder="Type in and see the clear action appear"
+        value='Tap the clear action'
+        type='search'
+      />
+    </Container>
+  </Story>
+</Preview>
+
+## Other props
+- **readOnly** (_Boolean_)
+  > Disable typing, the only way to edit the value from now on is by updating the value through props
+
+<Preview>
+  <Story name="Read Only">
+    <Container>
+      <WithValue> 
+        {(value) => <FbInput readOnly value={value}/>}
+      </WithValue> 
+    </Container>
+  </Story>
+</Preview>
+
+- **autoControlFocusedStyle** (_Boolean_) = true
+  > set this property to false to control manually the focused style through the property focused
+
+<Preview>
+  <Story name="Controll manually focused state">
+    <Container>
+      <FocusContainer>
+        {(focused) =>
+          <FbInput autoControlFocusedStyle={false} focused={focused}/>}
+      </FocusContainer>
+    </Container>
+  </Story>
+</Preview>
+
+- **mb** (_String_) = 24px
+  > Customize margin bottom
+
+<Preview>
+  <Story name="Margin Bottom">
+    <Container>
+      <FbInput
+        label="mb is set to 100px"
+        mb="100px"
+      />
+      <div style={{borderTop: 'solid 1px'}} />
+    </Container>
+  </Story>
+</Preview>
+
+- **borderRadius** (_String_) = 4px
+  > Customize border radius
+
+<Preview>
+  <Story name="Border Radius">
+    <Container>
+      <FbInput
+        placeholder="Custom border radius"
+        borderRadius="24px"
+      />
+    </Container>
+  </Story>
+</Preview>
+
+- **small** (_Boolean_)
+  > change the top and bottom padding to 4px. Default is set to 8px
+
+<Preview>
+  <Story name="Small">
+    <Container>
+      <FbInput small placeholder="Input without label" />
+      <FbInput small label="With value" value="Foo bar" />
+      <FbInput small label="Focused" placeholder="Focused style" focused />
+      <FbInput small label="Active" placeholder="Active style" active />
+      <FbInput small label="Invalid" placeholder="Invalid style" invalid />
+      <FbInput small label="Invalid" value="Invalid with value" invalid />
+      <FbInput small
+        label="With validation messages"
+        placeholder="With validation messages"
+        validationMessages={["Required Field"]}
+      />
+      <FbInput small
+        label="With two validation messages"
+        placeholder="With validation messages"
+        validationMessages={["Required Field", "Valid values: avocado and guacamole"]}
+      />
+      <FbInput small label="Disabled" placeholder="With placeholder" disabled />
+      <FbInput small label="Disabled" value="Foo Bar" disabled />
+    </Container>
+  </Story>
+</Preview>
+
+- **className** (_String_)
+  > className to be passed to the wrapper component
+- **refName** (_String_) = ref
+  > refName to be passed to the wrapped component. Check its use case on input-select package
+- **innerRef** (_Function_ | _Object_)
+  > ref for the internal `input` element 
+
+## Usage with redux-form
+redux-form input injects a property called `input` with `value` and `onChange`. When this property is passed `input.onChange` gets called and it listens to changes on `input.value`
+
+<Preview>
+  <Story name="Redux form properties">
+    <Container>
+      <WithValue> 
+        {(value) => <FbInput input={{onChange: action('input.onChange'), value}} />}
+      </WithValue> 
+    </Container>
+  </Story>
+</Preview>
+
