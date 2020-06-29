@@ -15,9 +15,6 @@ const getColorByStatus = ({ fallbackColor }) => ({
   return fallbackColor;
 };
 
-const ifSmall = (smallValue, defaultValue) => props =>
-  props.fontSize === fontSizes.SMALL ? smallValue : defaultValue;
-
 const customCursor = props => (props.disabled ? "default" : "pointer");
 
 const fontStyles = css`
@@ -60,7 +57,8 @@ const Wrapper = styled.div`
 
     > input,
     .select__search & input {
-      padding: 8px 16px;
+      padding: ${({ small }) => (small ? "4px 16px" : "8px 16px")};
+      line-height: 1.5;
     }
 
     > textarea {
