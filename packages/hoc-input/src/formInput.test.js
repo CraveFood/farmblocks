@@ -1,246 +1,153 @@
 import React from "react";
-import renderer from "react-test-renderer";
-import Adapter from "enzyme-adapter-react-16";
-import { shallow, mount, configure } from "enzyme";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 import formInput from ".";
-import Wrapper from "./styledComponents/Wrapper";
 
 describe("formInput", function() {
-  configure({ adapter: new Adapter() });
-
   const EnhancedInput = formInput("input");
 
-  describe("receiving new props", () => {
-    const value = "some value";
-    let component, setStateSpy;
+  describe("onChange and value", () => {
+    let onChangeSpy;
 
     beforeEach(() => {
-      component = mount(<EnhancedInput value={value} />);
-      setStateSpy = jest.spyOn(component.instance(), "setState");
+      onChangeSpy = jest.fn();
     });
 
     afterEach(() => {
-      setStateSpy.mockClear();
+      jest.resetAllMocks();
     });
 
-    test("passing the same value on props should leave value state as it is", () => {
-      component.setProps({ value });
-      component.update();
+    const INITIAL_VALUE = "initial value";
+    const UPDATED_VALUE = "updated value";
 
-      expect(setStateSpy).not.toHaveBeenCalled();
+    it("should update input value after receiving new value through props", () => {
+      const { rerender } = render(<EnhancedInput value={INITIAL_VALUE} />);
+      const input = screen.getByRole("textbox");
+
+      expect(input).toHaveValue(INITIAL_VALUE);
+
+      rerender(<EnhancedInput value={UPDATED_VALUE} />);
+      expect(input).toHaveValue(UPDATED_VALUE);
     });
 
-    test("changing the value property should update value state", () => {
-      const newValue = "New value";
+    it("should update input value after receiving new input.value through props", () => {
+      const { rerender } = render(
+        <EnhancedInput input={{ value: INITIAL_VALUE }} />,
+      );
+      const input = screen.getByRole("textbox");
+      expect(input).toHaveValue(INITIAL_VALUE);
 
-      component.setProps({ value: newValue });
-      expect(setStateSpy).toHaveBeenCalledWith({ value: newValue });
+      rerender(<EnhancedInput input={{ value: UPDATED_VALUE }} />);
+      expect(input).toHaveValue(UPDATED_VALUE);
     });
 
-    test("not changing the input.value property should not update value state", () => {
-      component.setProps({ input: { value } });
-      expect(setStateSpy).not.toHaveBeenCalled();
+    it("should call onChange callback when user types in", () => {
+      render(<EnhancedInput onChange={onChangeSpy} />);
+      const input = screen.getByRole("textbox");
+      expect(input).toHaveValue("");
+
+      userEvent.type(input, UPDATED_VALUE);
+      expect(input).toHaveValue(UPDATED_VALUE);
+      expect(onChangeSpy).toBeCalled();
     });
 
-    test("changing the input.value property should update value state", () => {
-      const newValue = "Other value";
+    it("should call input.onChange callback when user types in", () => {
+      render(<EnhancedInput input={{ onChange: onChangeSpy }} />);
+      const input = screen.getByRole("textbox");
+      expect(input).toHaveValue("");
 
-      component.setProps({ input: { value: newValue } });
-      expect(setStateSpy).toHaveBeenCalledWith({ value: newValue });
+      userEvent.type(input, UPDATED_VALUE);
+      expect(input).toHaveValue(UPDATED_VALUE);
+      expect(onChangeSpy).toBeCalled();
     });
 
-    test("changing the focused property with autoControlFocusedStyle = false should update state", () => {
-      component = mount(<EnhancedInput autoControlFocusedStyle={false} />);
-      expect(component.state().focused).toBe(false);
+    it("should handle clear icon click by setting input value to empty string", () => {
+      render(
+        <EnhancedInput
+          onChange={onChangeSpy}
+          type="search"
+          value={INITIAL_VALUE}
+        />,
+      );
+      const input = screen.getByRole("searchbox");
+      expect(input).toHaveValue(INITIAL_VALUE);
 
-      component.setProps({ focused: true });
-      expect(component.state().focused).toBe(true);
-
-      component.setProps({ focused: false });
-      expect(component.state().focused).toBe(false);
+      userEvent.click(screen.getByTestId("input-clear"));
+      expect(input).toHaveValue("");
+      expect(onChangeSpy).toBeCalled();
     });
   });
 
-  describe("(with value focused)", () => {
-    test("changing focused property from false to true should focus", function() {
-      const originalFocused = false;
-      const focused = true;
-      const setInputFocusMock = jest.fn();
-      const component = shallow(<EnhancedInput focused={originalFocused} />);
-      component.instance().setInputFocus = setInputFocusMock;
-      component.setProps({ focused });
-      expect(setInputFocusMock).toBeCalled();
-    });
-
-    test("changing focused property from true to false should remove input focus", function() {
-      const originalFocused = true;
-      const focused = false;
-      const onBlurMock = jest.fn();
-      const component = shallow(<EnhancedInput focused={originalFocused} />);
-      component.instance().inputRef = { blur: onBlurMock };
-      component.setProps({ focused });
-      expect(onBlurMock).toBeCalled();
-    });
-  });
-
-  test("default onChange function returns null", function() {
-    const component = renderer.create(<EnhancedInput />);
-    const tree = component.toTree();
-    expect(tree.props.onChange()).toBeNull();
-  });
-
-  test("onChange property is called after input change", function() {
-    const onChangeMock = jest.fn();
-    const component = mount(<EnhancedInput onChange={onChangeMock} />);
-    component.find("input").simulate("change", { target: { value: "foo" } });
-    expect(onChangeMock).toBeCalled();
-  });
-
-  test("onChange event change value", function() {
-    const component = mount(<EnhancedInput />);
-    component.find("input").simulate("change", { target: { value: "foo" } });
-    const newState = component.state();
-    expect(newState.value).toBe("foo");
-  });
-
-  test("input.onChange property is called after input change", function() {
-    const onChangeMock = jest.fn();
-    const component = mount(
-      <EnhancedInput input={{ onChange: onChangeMock, value: "foo" }} />,
-    );
-
-    component.find("input").simulate("change", { target: { value: "bar" } });
-    expect(onChangeMock).toBeCalled();
-  });
-
-  describe("onFocus and onBlur", () => {
-    let onFocusMock, onBlurMock;
-
+  describe("focus and blur", () => {
+    let onFocus, onBlur;
     beforeEach(() => {
-      onFocusMock = jest.fn();
-      onBlurMock = jest.fn();
+      onFocus = jest.fn();
+      onBlur = jest.fn();
     });
-
     afterEach(() => {
-      onFocusMock.mockRestore();
-      onBlurMock.mockRestore();
+      jest.resetAllMocks();
     });
 
-    test("default onFocus function returns null", function() {
-      const component = renderer.create(<EnhancedInput />);
+    it("should call onFocus when input gets focused", () => {
+      render(<EnhancedInput onFocus={onFocus} />);
+      expect(onFocus).toBeCalledTimes(0);
 
-      const tree = component.toTree();
+      userEvent.click(screen.getByRole("textbox"));
 
-      expect(tree.props.onFocus()).toBeNull();
+      expect(onFocus).toBeCalled();
     });
 
-    test("default onBlur function returns null", function() {
-      const component = renderer.create(<EnhancedInput />);
+    it("should call onBlur when input gets blurred", () => {
+      render(
+        <>
+          <EnhancedInput onBlur={onBlur} focused />
+          <button>click me</button>
+        </>,
+      );
+      expect(onBlur).toBeCalledTimes(0);
 
-      const tree = component.toTree();
+      userEvent.click(screen.getByRole("button", { name: "click me" }));
 
-      expect(tree.props.onBlur()).toBeNull();
+      expect(onBlur).toBeCalled();
+    });
+    it("should set input focus when component mounts", () => {
+      render(<EnhancedInput onFocus={onFocus} focused />);
+      expect(onFocus).toBeCalled();
     });
 
-    describe("autoControlFocusedStyle = true", () => {
-      test("onFocus property is called after input gains focus", function() {
-        const component = mount(<EnhancedInput onFocus={onFocusMock} />);
+    it("should set input focus when focused property changes", () => {
+      const { rerender } = render(<EnhancedInput onFocus={onFocus} />);
+      const input = screen.getByRole("textbox");
+      expect(onFocus).toBeCalledTimes(0);
+      expect(input).not.toHaveClass("focused");
 
-        expect(component.state().focused).toBe(false);
+      rerender(<EnhancedInput onFocus={onFocus} focused />);
 
-        component.find("input").simulate("focus");
-
-        expect(onFocusMock).toBeCalled();
-        expect(component.state().focused).toBe(true);
-      });
-
-      test("onFocus event change focused", function() {
-        const component = mount(<EnhancedInput />);
-
-        component.find("input").simulate("focus");
-
-        expect(component.state().focused).toBe(true);
-      });
-
-      test("onBlur property is called after input looses focus", function() {
-        const component = mount(<EnhancedInput onBlur={onBlurMock} focused />);
-
-        expect(component.state().focused).toBe(true);
-
-        component.find("input").simulate("blur");
-
-        expect(onBlurMock).toBeCalled();
-        expect(component.state().focused).toBe(false);
-      });
-
-      test("onBlur event change focused", function() {
-        const component = mount(<EnhancedInput />);
-
-        component.find("input").simulate("blur");
-
-        expect(component.state().focused).toBe(false);
-      });
-
-      test("get focus on wrapper click", function() {
-        const component = mount(<EnhancedInput />);
-
-        const wrapper = component.find(Wrapper);
-        const input = component.find("input").instance();
-
-        input.focus = onFocusMock;
-
-        wrapper.simulate("click");
-        expect(onFocusMock).toHaveBeenCalledTimes(1);
-      });
+      expect(onFocus).toBeCalled();
+      expect(input).toHaveClass("focused");
     });
 
-    describe("autoControlFocusedStyle = false", () => {
-      test("onFocus should be called and focused state should remain false", function() {
-        const component = mount(
-          <EnhancedInput
-            onFocus={onFocusMock}
-            autoControlFocusedStyle={false}
-          />,
+    describe("autoControlFocusedStyle", () => {
+      it("should set input focused style when focused changes to true ", () => {
+        const { rerender } = render(
+          <EnhancedInput autoControlFocusedStyle={false} />,
         );
-        component.find("input").simulate("focus");
+        const input = screen.getByRole("textbox");
+        expect(input).not.toHaveClass("focused");
 
-        expect(onFocusMock).toBeCalled();
-        expect(component.state().focused).toBe(false);
-      });
+        // User click should not apply the focused style
+        userEvent.click(input);
+        expect(input).not.toHaveClass("focused");
 
-      test("onBlur should be called and focused state should remain true", function() {
-        const component = mount(
-          <EnhancedInput
-            onBlur={onBlurMock}
-            focused
-            autoControlFocusedStyle={false}
-          />,
-        );
-        component.find("input").simulate("blur");
+        // Changing the property focused to true should apply the focused style
+        rerender(<EnhancedInput autoControlFocusedStyle={false} focused />);
+        expect(input).toHaveClass("focused");
 
-        expect(onBlurMock).toBeCalled();
-        expect(component.state().focused).toBe(true);
+        // Changing the property focused to false should remove the focused style
+        rerender(<EnhancedInput autoControlFocusedStyle={false} />);
+        expect(input).not.toHaveClass("focused");
       });
     });
-  });
-
-  test("no value when clear button is clicked", function() {
-    const value = "tomato";
-    const component = mount(<EnhancedInput type="search" value={value} />);
-    expect(component.state("value")).toBe(value);
-
-    component.find("span[data-testid='input-clear']").simulate("click");
-    expect(component.state("value")).toBe("");
-  });
-
-  test("click on the dropdown icon should remove input's focus", () => {
-    const value = "tomato";
-    const component = mount(<EnhancedInput role="combobox" value={value} />);
-    const event = { preventDefault: jest.fn() };
-
-    component.find("div.input").simulate("mousedown", event);
-    component.find("svg").simulate("mousedown", event);
-    expect(event.preventDefault).toHaveBeenCalledTimes(0);
   });
 });
