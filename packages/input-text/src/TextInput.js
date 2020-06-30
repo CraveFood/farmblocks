@@ -4,9 +4,6 @@ import { compose } from "recompose";
 import styled from "styled-components";
 import ReactInputMask from "react-input-mask";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
-import withMessages, {
-  withMessagesProps,
-} from "@crave/farmblocks-hoc-validation-messages";
 
 import protectedValue, { protectedValueProps } from "./protectedValue";
 
@@ -29,19 +26,13 @@ export const withMargin = Comp => {
   return Margin;
 };
 
-export const EnhancedInput = compose(
-  withMargin,
-  withMessages,
-  protectedValue,
-  formInput,
-);
+export const EnhancedInput = compose(withMargin, protectedValue, formInput);
 
 const RegularInput = EnhancedInput("input");
 const MaskedInput = EnhancedInput(ReactInputMask);
 
 export const commonPropTypes = {
   ...formInputProps,
-  ...withMessagesProps,
   type: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,

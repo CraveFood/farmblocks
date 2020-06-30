@@ -49,7 +49,17 @@ storiesOf("HOC formInput", module)
     <EnhancedInput focused label="Input Label" type="text" />
   ))
   .add("invalid input", () => (
-    <EnhancedInput label="Input Label" type="text" invalid />
+    <>
+      <EnhancedInput label="Input Label" type="text" invalid />
+      <br />
+      <br />
+      <EnhancedInput
+        label="With validation messages"
+        type="text"
+        invalid
+        validationMessages={["Required Field"]}
+      />
+    </>
   ))
   .add("html disabled input with label", () => (
     <div>
