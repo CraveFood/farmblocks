@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.7.18...@crave/farmblocks-search-field@3.8.0) (2020-06-30)
+
+
+### Features
+
+* remove obsolete hoc-validation-messages from dependent packages ([0b5bf23](https://github.com/CraveFood/farmblocks/commit/0b5bf23461c0c467607d44ff4a35fa3f0bfecab9))
+
+
+
+
+
 ## [3.7.18](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.7.17...@crave/farmblocks-search-field@3.7.18) (2020-06-25)
 
 **Note:** Version bump only for package @crave/farmblocks-search-field

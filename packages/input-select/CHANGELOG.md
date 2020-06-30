@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.12.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.11.1...@crave/farmblocks-input-select@3.12.0) (2020-06-30)
+
+
+### Features
+
+* remove obsolete hoc-validation-messages from dependent packages ([0b5bf23](https://github.com/CraveFood/farmblocks/commit/0b5bf23461c0c467607d44ff4a35fa3f0bfecab9))
+
+
+
+
+
 ## [3.11.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@3.11.0...@crave/farmblocks-input-select@3.11.1) (2020-06-25)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select

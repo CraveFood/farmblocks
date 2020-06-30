@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.1.7...@crave/farmblocks-hoc-input@7.2.0) (2020-06-30)
+
+
+### Features
+
+* **hoc-input:** render validation messages ([7e60a3e](https://github.com/CraveFood/farmblocks/commit/7e60a3eb6d74a5e6ad9b3d811544cb967947f340))
+
+
+
+
+
 ## [7.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.1.6...@crave/farmblocks-hoc-input@7.1.7) (2020-06-25)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input
