@@ -12,6 +12,9 @@ const basicConfig = {
   moduleNameMapper: {
     "\\.(css|jpg|png|svg)$": "<rootDir>/empty-module.js",
   },
+  testEnvironment:
+    // Ref.: https://github.com/testing-library/react-testing-library/issues/662
+    "<rootDir>/node_modules/jest-environment-jsdom-fourteen/lib/index.js",
 };
 
 const completeConfig = {
