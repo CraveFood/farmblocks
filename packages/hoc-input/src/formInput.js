@@ -2,7 +2,6 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import Link from "@crave/farmblocks-link";
-import { POSITIONS } from "@crave/farmblocks-tooltip";
 import Label from "@crave/farmblocks-label";
 import { MdSearch, MdRemove, SmChevronDown } from "@crave/farmblocks-icon";
 import Text from "@crave/farmblocks-text";
@@ -55,6 +54,7 @@ const formInput = WrappedComponent => {
       type: "text",
       refName: "ref",
       autoControlFocusedStyle: true,
+      focused: false,
       borderRadius: "4px",
       mb: "24px",
     };
@@ -186,7 +186,7 @@ const formInput = WrappedComponent => {
           )}
 
           <WrappedComponent
-            className="wrapped"
+            className={`wrapped ${this.state.focused ? "focused" : ""}`}
             {...inputProps}
             {...handlers}
             {...{ [refName]: innerRef }}
