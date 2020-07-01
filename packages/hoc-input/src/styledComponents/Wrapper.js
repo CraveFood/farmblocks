@@ -34,6 +34,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   ${space}
+  ${fontStyles};
 
   > .input {
     order: 2;
@@ -58,11 +59,18 @@ const Wrapper = styled.div`
     > input,
     .select__search & input {
       padding: ${({ small }) => (small ? "4px 16px" : "8px 16px")};
-      line-height: 1.5;
+      line-height: ${({ small }) => (small ? "24px" : "22px")};
     }
 
     > textarea {
       padding: 16px;
+    }
+
+    input,
+    textarea,
+    select {
+      font-family: inherit;
+      font-size: inherit;
     }
 
     > input,
@@ -72,7 +80,6 @@ const Wrapper = styled.div`
       border: 0;
       flex: 1;
       outline: none;
-      ${fontStyles};
       color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {

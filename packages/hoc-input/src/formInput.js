@@ -37,6 +37,7 @@ export const formInputProps = {
   className: PropTypes.string,
   borderRadius: PropTypes.string,
   mb: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  validationMessages: PropTypes.arrayOf(PropTypes.string),
 };
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
@@ -218,7 +219,6 @@ const formInput = WrappedComponent => {
         input,
         meta,
         protected: covered,
-        disableManualReplace,
         autoControlFocusedStyle,
         className,
         borderRadius,
