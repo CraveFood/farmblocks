@@ -22,10 +22,10 @@ describe("PhoneInput", () => {
       const { getByText, rerender } = render(
         <PhoneInput value="tel:+4407400123456" />,
       );
-      expect(getByText("🇬🇧+44")).toBeInTheDocument();
+      expect(getByText("🇬🇧 +44")).toBeInTheDocument();
 
       rerender(<PhoneInput value="tel:+819012345678" />);
-      expect(getByText("🇯🇵+81")).toBeInTheDocument();
+      expect(getByText("🇯🇵 +81")).toBeInTheDocument();
     });
 
     test("should get show the 2 letter country code when emoji is not available", () => {
@@ -37,7 +37,7 @@ describe("PhoneInput", () => {
 
     test("should open popover when clicked", async () => {
       const { getByText } = render(<PhoneInput />);
-      fireEvent.click(getByText("🇺🇸+1"));
+      fireEvent.click(getByText("🇺🇸 +1"));
 
       await waitForElement(() => getByText("Select Country"));
       expect(getByText("Select Country")).toBeInTheDocument();
@@ -46,14 +46,14 @@ describe("PhoneInput", () => {
     describe("defaultCountry", () => {
       test("should set the input prefix", () => {
         const { getByText } = render(<PhoneInput defaultCountry="CA" />);
-        expect(getByText("🇨🇦+1")).toBeInTheDocument();
+        expect(getByText("🇨🇦 +1")).toBeInTheDocument();
       });
 
       test("should be ignored when there's a value", () => {
         const { getByText } = render(
           <PhoneInput defaultCountry="CA" value="tel:+5511987654321" />,
         );
-        expect(getByText("🇧🇷+55")).toBeInTheDocument();
+        expect(getByText("🇧🇷 +55")).toBeInTheDocument();
       });
     });
   });
@@ -89,7 +89,7 @@ describe("PhoneInput", () => {
       ({ getByText, queryByText, getByTestId, rerender } = render(
         <PhoneInput onChange={onChangeSpy} />,
       ));
-      fireEvent.click(getByText("🇺🇸+1"));
+      fireEvent.click(getByText("🇺🇸 +1"));
       await waitForElement(() => getByText("Select Country"));
     });
 
@@ -97,7 +97,7 @@ describe("PhoneInput", () => {
       fireEvent.click(getByText("Albania", { exact: false }));
       await waitForElementToBeRemoved(() => getByText("Select Country"));
 
-      expect(getByText("🇦🇱+355")).toBeInTheDocument();
+      expect(getByText("🇦🇱 +355")).toBeInTheDocument();
       expect(onChangeSpy).toHaveBeenCalledWith("tel:+355");
     });
 
@@ -151,9 +151,9 @@ describe("PhoneInput", () => {
       down();
       enter();
       await waitForElementToBeRemoved(() => getByText("Select Country"));
-      expect(getByText("🇳🇿+64")).toBeInTheDocument();
+      expect(getByText("🇳🇿 +64")).toBeInTheDocument();
 
-      fireEvent.click(getByText("🇳🇿+64"));
+      fireEvent.click(getByText("🇳🇿 +64"));
       await waitForElement(() => getByText("Select Country"));
       down();
       down();
@@ -163,7 +163,7 @@ describe("PhoneInput", () => {
       up();
       enter();
       await waitForElementToBeRemoved(() => getByText("Select Country"));
-      expect(getByText("🇸🇲+378")).toBeInTheDocument();
+      expect(getByText("🇸🇲 +378")).toBeInTheDocument();
     });
   });
 });

@@ -6,7 +6,6 @@ import emojiSupport from "detect-emoji-support";
 import ChevronDown from "./ChevronDown";
 
 const Trigger = styled.div`
-  padding: 0 4px 0 8px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -17,7 +16,7 @@ const CountrySelectorTrigger = React.memo(
   ({ callingCode, flag, code, ...props }) => {
     return (
       <Trigger {...props}>
-        {emojiSupport() ? flag : `${code} `}+{callingCode}
+        {emojiSupport() ? flag : code} +{callingCode}
         <ChevronDown />
       </Trigger>
     );
