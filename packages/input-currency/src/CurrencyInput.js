@@ -1,14 +1,8 @@
 import { compose } from "recompose";
 import ReactNumberFormat from "react-number-format";
-import TextInput, {
-  EnhancedInput,
-  withMargin,
-} from "@crave/farmblocks-input-text";
+import TextInput, { EnhancedInput } from "@crave/farmblocks-input-text";
 
-const EnhancedCurrencyInput = compose(
-  withMargin,
-  EnhancedInput,
-)(ReactNumberFormat);
+const EnhancedCurrencyInput = compose(EnhancedInput)(ReactNumberFormat);
 
 EnhancedCurrencyInput.propTypes = {
   ...ReactNumberFormat.propTypes,
