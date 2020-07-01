@@ -256,7 +256,6 @@ class SearchField extends React.Component {
           className="searchInput"
           type="search"
           protected={!!selectedItem}
-          disableManualReplace
           value={inputValue}
           onKeyDown={this.handleKeyDown}
           onFocus={this.handleFocus}
