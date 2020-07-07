@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
+import { SmChevronUp } from "@crave/farmblocks-icon";
+import { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
 
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
-import { buttonSizes } from "../index";
 
 storiesOf("Dropdown/Component", module)
   .add("With text", () => (
@@ -153,4 +154,20 @@ storiesOf("Dropdown/Component", module)
         <CustomItem value={3} text="Strawberry" />
       </Dropdown>
     );
-  });
+  })
+  .add("with buttonProps", () => (
+    <Dropdown
+      text="Select fruit"
+      handleSelection={action("handleSelection")}
+      buttonProps={{
+        rightIcon: null,
+        icon: <SmChevronUp />,
+        type: buttonTypes.PRIMARY,
+        size: buttonSizes.SMALL,
+      }}
+    >
+      <DropdownItem value={1} text="Banana" />
+      <DropdownItem value={2}>Apple</DropdownItem>
+      <DropdownItem value={3} text="Strawberry" />
+    </Dropdown>
+  ));
