@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.6.1...@crave/farmblocks-icon@0.7.0) (2020-07-08)
+
+
+### Features
+
+* **icon:** add SmDownload ([087d20d](https://github.com/CraveFood/farmblocks/commit/087d20d5ca67da637b28d58fb92e302aa787a58b))
+
+
+
+
+
 ## [0.6.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.6.0...@crave/farmblocks-icon@0.6.1) (2020-05-14)
 
 

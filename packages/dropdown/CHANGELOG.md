@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@2.0.8...@crave/farmblocks-dropdown@2.1.0) (2020-07-08)
+
+
+### Features
+
+* **dropdown:** add buttonProps property ([6d2618b](https://github.com/CraveFood/farmblocks/commit/6d2618b848f0dc7823b688c24b71849c906f82a6)), closes [#991](https://github.com/CraveFood/farmblocks/issues/991)
+
+
+
+
+
 ## [2.0.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@2.0.7...@crave/farmblocks-dropdown@2.0.8) (2020-05-14)
 
 **Note:** Version bump only for package @crave/farmblocks-dropdown
