@@ -51,6 +51,7 @@ This code will render:
 | zIndex          | z-index passed to the dropdown items container                                                                                          | number                   |          |                    |
 | width           | Custom dropdown items container width                                                                                                   | string                   |          |                    |
 | size            | One of the constants in `buttonSizes` from `farmblocks-button` package. For convenience, `buttonSizes` is also exported on this package | string                   |          | buttonSizes.MEDIUM |
+| buttonProps     | Props to be forwarded to the button trigger                                                                                             | Object                   |          |                    |
 
 ### DropdownItem
 

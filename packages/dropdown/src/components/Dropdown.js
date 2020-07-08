@@ -21,6 +21,7 @@ const Dropdown = props => (
           text={props.text}
           size={props.size}
           ref={props.innerRef}
+          {...props.buttonProps}
           className="menuButton"
         />
       </AriaButtonWrapper>
@@ -57,6 +58,7 @@ Dropdown.propTypes = {
   innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
   maxHeight: PropTypes.string,
   className: PropTypes.string,
+  buttonProps: PropTypes.object,
 };
 
 export default Dropdown;
