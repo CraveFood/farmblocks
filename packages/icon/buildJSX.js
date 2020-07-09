@@ -40,9 +40,10 @@ async function lintFiles() {
 const jsxTemplate = (
   { template },
   { state: { componentName, group } },
-  { imports, jsx },
-) => template.ast`
-  ${imports}
+  { jsx },
+) => {
+  return template.ast`
+  import React from "react";
   import PropTypes from 'prop-types';
 
   import {withWrapper} from '../Icon';
@@ -68,6 +69,7 @@ const jsxTemplate = (
 
   export default ${componentName};
 `;
+};
 
 function convertFilesOfGroups(group, groupPath) {
   return async (groupFilesAccPromise, file) => {
