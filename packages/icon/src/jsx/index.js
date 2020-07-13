@@ -360,6 +360,5 @@ export { default as SmChevronRight } from "./SmChevronRight";
 export { default as SmChevronRightFilled } from "./SmChevronRightFilled";
 export { default as SmChevronUp } from "./SmChevronUp";
 export { default as SmChevronUpFilled } from "./SmChevronUpFilled";
-export { default as SmDownload } from "./SmDownload";
 export { default as SmEdit } from "./SmEdit";
 export { default as SmPlaceholder } from "./SmPlaceholder";
