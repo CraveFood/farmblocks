@@ -42,7 +42,7 @@ after_success:
         ./bin/github_publish_release.sh;
       else
         if [ $TRAVIS_EVENT_TYPE == "push" ]; then
-          lerna publish --canary --yes --preid "alpha-$BRANCH-$TRAVIS_JOB_NUMBER" || travis_terminate 1;
+          lerna publish --canary --yes --preid "alpha-$BRANCH-$TRAVIS_JOB_NUMBER" --force-publish=* || travis_terminate 1;
         fi
       fi
     fi
