@@ -3,8 +3,9 @@ import {
   render,
   fireEvent,
   waitForElementToBeRemoved,
-  wait,
+  screen,
 } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 import FilterPopover from "./FilterPopover";
 
@@ -21,7 +22,7 @@ describe("Filter Popover", () => {
   });
 
   test("should call onFormSaveClick and leave popover open when clicking on Filter button", async () => {
-    const { queryByText } = render(
+    render(
       <FilterPopover
         triggerLabel="Trigger"
         formTitle="Form Title"
@@ -30,22 +31,21 @@ describe("Filter Popover", () => {
       />,
     );
 
-    expect(queryByText("Form content")).not.toBeInTheDocument();
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
 
     // open popover
-    fireEvent.click(queryByText("Trigger"));
-    await wait(() => {});
+    userEvent.click(screen.getByText("Trigger"));
 
     // click on Filter button
-    fireEvent.click(queryByText("Filter"));
-    await wait(() => {});
+    const filterNode = await screen.findByText("Filter");
+    userEvent.click(filterNode);
 
     expect(onFormSaveClickMock).toBeCalled();
-    expect(queryByText("Form content")).toBeInTheDocument();
+    expect(screen.getByText("Form content")).toBeInTheDocument();
   });
 
   test("should call onFormSaveClick and dismiss popover open when clicking on Filter button", async () => {
-    const { queryByText } = render(
+    render(
       <FilterPopover
         triggerLabel="Trigger"
         formTitle="Form Title"
@@ -55,23 +55,23 @@ describe("Filter Popover", () => {
       />,
     );
 
-    expect(queryByText("Form content")).not.toBeInTheDocument();
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
 
     // open popover
-    fireEvent.click(queryByText("Trigger"));
-    await wait(() => {});
+    userEvent.click(screen.getByText("Trigger"));
 
     // click on Filter button
-    fireEvent.click(queryByText("Filter"));
+    const filterNode = await screen.findByText("Filter");
+    userEvent.click(filterNode);
 
-    await waitForElementToBeRemoved(() => queryByText("Form content"));
+    await waitForElementToBeRemoved(() => screen.queryByText("Form content"));
 
     expect(onFormSaveClickMock).toBeCalled();
-    expect(queryByText("Form content")).not.toBeInTheDocument();
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
   });
 
   test("should call onFormCancelClick and dismiss popover open when clicking on cancel button", async () => {
-    const { queryByText } = render(
+    render(
       <FilterPopover
         triggerLabel="Trigger"
         formTitle="Form Title"
@@ -82,23 +82,23 @@ describe("Filter Popover", () => {
       />,
     );
 
-    expect(queryByText("Form content")).not.toBeInTheDocument();
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
 
     // Open popover
-    fireEvent.click(queryByText("Trigger"));
-    await wait(() => {});
+    fireEvent.click(screen.queryByText("Trigger"));
 
-    // click on Filter button
-    fireEvent.click(queryByText("Cancel"));
+    // click on Cancel button
+    const cancelNode = await screen.findByText("Cancel");
+    userEvent.click(cancelNode);
 
-    await waitForElementToBeRemoved(() => queryByText("Form content"));
+    await waitForElementToBeRemoved(() => screen.queryByText("Form content"));
 
     expect(onFormCancelClickMock).toBeCalled();
-    expect(queryByText("Form content")).not.toBeInTheDocument();
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
   });
 
   test("should pass dismiss to formContent", async () => {
-    const { queryByText } = render(
+    render(
       <FilterPopover
         triggerLabel="Trigger"
         formTitle="Form Title"
@@ -111,17 +111,19 @@ describe("Filter Popover", () => {
       />,
     );
 
-    expect(queryByText("Form content")).not.toBeInTheDocument();
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
 
     // Open popover
-    fireEvent.click(queryByText("Trigger"));
-    await wait(() => {});
+    fireEvent.click(screen.queryByText("Trigger"));
 
     // call dismiss
-    fireEvent.click(queryByText("Click to dismiss"));
+    const cancelNode = await screen.findByText("Click to dismiss");
+    userEvent.click(cancelNode);
 
-    await waitForElementToBeRemoved(() => queryByText("Click to dismiss"));
+    await waitForElementToBeRemoved(() =>
+      screen.queryByText("Click to dismiss"),
+    );
 
-    expect(queryByText("Click to dismiss")).not.toBeInTheDocument();
+    expect(screen.queryByText("Click to dismiss")).not.toBeInTheDocument();
   });
 });
