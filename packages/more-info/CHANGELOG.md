@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@3.1.16...@crave/farmblocks-more-info@4.0.0) (2020-07-14)
+
+
+### Features
+
+* **icon:** move to peerDependencies in dependant packages ([701ad3f](https://github.com/CraveFood/farmblocks/commit/701ad3f427a1d757e7f069a8ec2419c3e3ba290e)), closes [#993](https://github.com/CraveFood/farmblocks/issues/993)
+
+
+### BREAKING CHANGES
+
+* **icon:** farmblocks-icon is now a peer dependency
+
+
+
+
+
 ## [3.1.16](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@3.1.15...@crave/farmblocks-more-info@3.1.16) (2020-07-08)
 
 **Note:** Version bump only for package @crave/farmblocks-more-info

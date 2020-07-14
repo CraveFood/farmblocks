@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.4.10...@crave/farmblocks-input-checkbox@6.0.0) (2020-07-14)
+
+
+### Features
+
+* **icon:** move to peerDependencies in dependant packages ([701ad3f](https://github.com/CraveFood/farmblocks/commit/701ad3f427a1d757e7f069a8ec2419c3e3ba290e)), closes [#993](https://github.com/CraveFood/farmblocks/issues/993)
+
+
+### BREAKING CHANGES
+
+* **icon:** farmblocks-icon is now a peer dependency
+
+
+
+
+
 ## [5.4.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@5.4.9...@crave/farmblocks-input-checkbox@5.4.10) (2020-07-08)
 
 **Note:** Version bump only for package @crave/farmblocks-input-checkbox
