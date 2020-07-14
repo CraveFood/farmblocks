@@ -1,0 +1,382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots SideNav/helpers/PageWrapper Page Wrapper Default 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 32px;
+  min-width: 32px;
+  box-sizing: border-box;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  outline: 0;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #59636f;
+  padding: 0 16px;
+}
+
+.c1 .icon {
+  line-height: 1;
+  color: rgba(255,255,255,0.56);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1em;
+}
+
+.c1:hover {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+}
+
+.c1:focus {
+  box-shadow: none;
+}
+
+.c1:hover .icon,
+.c1:focus .icon {
+  color: white;
+}
+
+.c1 > .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:hover,
+.c1:focus {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.c1:hover > .icon,
+.c1:focus > .icon {
+  color: #3498db;
+}
+
+.c1:disabled,
+.c1:disabled .icon,
+.c1:disabled:hover {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1:disabled {
+  background-color: #ccc;
+  box-shadow: none;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-weight: 600;
+}
+
+.c3 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c3 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c3 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c3 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c3:hover .visibleInput,
+.c3 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c3 .checkedIndicator {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c5 {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c5 .hiddenInput {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+.c5 .visibleInput {
+  height: 16px;
+  width: 16px;
+  color: #3498db;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  margin: 4px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.c5 .checkedIndicator {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background: currentColor;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out,-webkit-transform 0.3s ease-out;
+  -webkit-transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out,transform 0.3s ease-out;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  will-change: opacity,transform;
+}
+
+.c5:hover .visibleInput,
+.c5 .hiddenInput:focus + .visibleInput {
+  color: #3498db;
+  border-width: 2px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0 {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 0;
+  -webkit-transition: margin 0.25s;
+  transition: margin 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  margin-left: 56px;
+}
+
+<div
+  className="c0"
+  data-testid="pageWrapper-navbar"
+  style={
+    Object {
+      "backgroundColor": "#FFAF8D",
+      "height": "100vh",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "padding": "24px 56px",
+      }
+    }
+  >
+    <h3>
+      Expanded - 
+      false
+    </h3>
+    <button
+      className="c1"
+      onClick={[Function]}
+      size="SMALL"
+      type="NEUTRAL"
+    >
+      Expand
+    </button>
+    <h3>
+      Variant - 
+      push
+    </h3>
+    <div
+      className="c2"
+    >
+      <label
+        checked={true}
+        className="c3 radio val-push checked "
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={true}
+          name="pagewrapperVariant"
+          onClick={[Function]}
+          type="radio"
+          value="push"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          push
+        </div>
+      </label>
+      <label
+        checked={false}
+        className="c5 radio val-overlay  "
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          name="pagewrapperVariant"
+          onClick={[Function]}
+          type="radio"
+          value="overlay"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          overlay
+        </div>
+      </label>
+      <label
+        checked={false}
+        className="c5 radio val-fullScreen  "
+      >
+        <input
+          className="hiddenInput"
+          defaultChecked={false}
+          name="pagewrapperVariant"
+          onClick={[Function]}
+          type="radio"
+          value="fullScreen"
+        />
+        <div
+          className="visibleInput"
+        >
+          <div
+            className="checkedIndicator"
+          />
+        </div>
+        <div
+          className="c4"
+          fontWeight="title"
+          size={16}
+          type="#2f313a"
+        >
+          fullScreen
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;

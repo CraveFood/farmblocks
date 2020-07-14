@@ -1,0 +1,7046 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Form|HOC formInput Basic 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Insert a helpul placeholder here ;)"
+        type="text"
+      />
+    </div>
+    <label
+      className="c2 label"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Border Radius 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 24px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Custom border radius"
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Controll manually focused state 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div>
+    <input
+      onClick={[Function]}
+      type="button"
+      value="Click me to toggle focused style"
+    />
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Custom Type 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.c3 span.margin-left {
+  margin-left: 4px;
+}
+
+.c3 span.margin-right {
+  margin-right: 4px;
+}
+
+.c3 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3 a:hover i {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 > a {
+  color: inherit;
+}
+
+.c3:hover {
+  color: #2980b9;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="search"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Type in and see the clear action appear"
+        type="search"
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="search"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Type in and see the clear action appear"
+        type="search"
+        value="Tap the clear action"
+      />
+      <div
+        className="c3 clear icon right"
+        disabled={false}
+        fontWeight="600"
+        size={16}
+        type="#3498db"
+      >
+        <span
+          data-testid="input-clear"
+          onClick={[Function]}
+        >
+          <span
+            className="c2"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={32}
+              viewBox="4 4 32 32"
+              width={32}
+            >
+              <path
+                d="M21.414 20l4.243 4.243a1 1 0 11-1.414 1.414L20 21.414l-4.243 4.243a1 1 0 11-1.414-1.414L18.586 20l-4.243-4.243a1 1 0 111.414-1.414L20 18.586l4.243-4.243a1 1 0 111.414 1.414L21.414 20z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Input Status 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #3498db;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #dd3311;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c3 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 0 0px 4px rgba(52,152,219,0.08);
+  border-width: 2px;
+  margin: -1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c3 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > .input > input,
+.select__search .c3 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c3 > .input > textarea {
+  padding: 16px;
+}
+
+.c3 > .input input,
+.c3 > .input textarea,
+.c3 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 > .input > .icon {
+  color: #3498db;
+}
+
+.c3 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c3 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c3 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c3 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c3 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c3 .prefix,
+.c3 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #3498db;
+}
+
+.c3 .label {
+  margin-bottom: 8px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: #dd3311;
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c5 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c5 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #dd3311;
+}
+
+.c5 .label {
+  margin-bottom: 8px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c8 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c8 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 > .input > input,
+.select__search .c8 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c8 > .input > textarea {
+  padding: 16px;
+}
+
+.c8 > .input input,
+.c8 > .input textarea,
+.c8 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c8 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c8 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c8 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c8 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c8 .input.dropdown {
+  cursor: default;
+}
+
+.c8 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c8 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c8 .prefix,
+.c8 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .label {
+  margin-bottom: 8px;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
+  margin-top: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Input without label"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Foo bar"
+      />
+    </div>
+    <label
+      className="c2 label"
+    >
+      With value
+    </label>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped focused"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Focused style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c4 label"
+    >
+      Focused
+    </label>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Active style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c4 label"
+    >
+      Active
+    </label>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Invalid style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      Invalid
+    </label>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Invalid with value"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      Invalid
+    </label>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With validation messages"
+        type="text"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      With validation messages
+    </label>
+    <div
+      className="Text-pfq5dp-0 c7 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Required Field
+    </div>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With validation messages"
+        type="text"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      With two validation messages
+    </label>
+    <div
+      className="Text-pfq5dp-0 c7 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Required Field
+    </div>
+    <div
+      className="Text-pfq5dp-0 c7 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Valid values: avocado and guacamole
+    </div>
+  </div>
+  <div
+    className="c8"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With placeholder"
+        type="text"
+      />
+    </div>
+    <label
+      className="c9 label"
+      disabled={true}
+    >
+      Disabled
+    </label>
+  </div>
+  <div
+    className="c8"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Foo Bar"
+      />
+    </div>
+    <label
+      className="c9 label"
+      disabled={true}
+    >
+      Disabled
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Margin Bottom 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 100px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+      />
+    </div>
+    <label
+      className="c2 label"
+    >
+      mb is set to 100px
+    </label>
+  </div>
+  <div
+    style={
+      Object {
+        "borderTop": "solid 1px",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #3498db;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #dd3311;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c3 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 0 0px 4px rgba(52,152,219,0.08);
+  border-width: 2px;
+  margin: -1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c3 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > .input > input,
+.select__search .c3 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c3 > .input > textarea {
+  padding: 16px;
+}
+
+.c3 > .input input,
+.c3 > .input textarea,
+.c3 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 > .input > .icon {
+  color: #3498db;
+}
+
+.c3 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c3 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c3 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c3 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c3 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c3 .prefix,
+.c3 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #3498db;
+}
+
+.c3 .label {
+  margin-bottom: 8px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: #dd3311;
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c5 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c5 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #dd3311;
+}
+
+.c5 .label {
+  margin-bottom: 8px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c8 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c8 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 > .input > input,
+.select__search .c8 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c8 > .input > textarea {
+  padding: 16px;
+}
+
+.c8 > .input input,
+.c8 > .input textarea,
+.c8 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c8 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c8 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c8 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c8 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c8 .input.dropdown {
+  cursor: default;
+}
+
+.c8 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c8 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c8 .prefix,
+.c8 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .label {
+  margin-bottom: 8px;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
+  margin-top: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 25%;
+  }
+}
+
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexWrap": "wrap",
+      "justifyContent": "space-around",
+    }
+  }
+>
+  <div
+    className="c0"
+    width={
+      Array [
+        1,
+        1,
+        1,
+        0.25,
+      ]
+    }
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Input without label"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Foo bar"
+        />
+      </div>
+      <label
+        className="c2 label"
+      >
+        With value
+      </label>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped focused"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Focused style"
+          type="text"
+        />
+      </div>
+      <label
+        className="c4 label"
+      >
+        Focused
+      </label>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Active style"
+          type="text"
+        />
+      </div>
+      <label
+        className="c4 label"
+      >
+        Active
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Invalid style"
+          type="text"
+        />
+      </div>
+      <label
+        className="c6 label"
+      >
+        Invalid
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Invalid with value"
+        />
+      </div>
+      <label
+        className="c6 label"
+      >
+        Invalid
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="With validation messages"
+          type="text"
+        />
+      </div>
+      <label
+        className="c6 label"
+      >
+        Error messages
+      </label>
+      <div
+        className="Text-pfq5dp-0 c7 error-message-text"
+        size={14}
+        type="#dd3311"
+      >
+        Required Field
+      </div>
+    </div>
+    <div
+      className="c8"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="With placeholder"
+          type="text"
+        />
+      </div>
+      <label
+        className="c9 label"
+        disabled={true}
+      >
+        Disabled
+      </label>
+    </div>
+    <div
+      className="c8"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Foo Bar"
+        />
+      </div>
+      <label
+        className="c9 label"
+        disabled={true}
+      >
+        Disabled
+      </label>
+    </div>
+  </div>
+  <div
+    className="c0"
+    width={
+      Array [
+        1,
+        1,
+        1,
+        0.25,
+      ]
+    }
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Input without label"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Foo bar"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c2 label"
+      >
+        With value
+      </label>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped focused"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Focused style"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c4 label"
+      >
+        Focused
+      </label>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Active style"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c4 label"
+      >
+        Active
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Invalid style"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c6 label"
+      >
+        Invalid
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Invalid with value"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c6 label"
+      >
+        Invalid
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="With validation messages"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c6 label"
+      >
+        Error messages
+      </label>
+      <div
+        className="Text-pfq5dp-0 c7 error-message-text"
+        size={14}
+        type="#dd3311"
+      >
+        Required Field
+      </div>
+    </div>
+    <div
+      className="c8"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="With placeholder"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c9 label"
+        disabled={true}
+      >
+        Disabled
+      </label>
+    </div>
+    <div
+      className="c8"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Foo Bar"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c9 label"
+        disabled={true}
+      >
+        Disabled
+      </label>
+    </div>
+  </div>
+  <div
+    className="c0"
+    width={
+      Array [
+        1,
+        1,
+        1,
+        0.25,
+      ]
+    }
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Input without label"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+    </div>
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Foo bar"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c2 label"
+      >
+        With value
+      </label>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped focused"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Focused style"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c4 label"
+      >
+        Focused
+      </label>
+    </div>
+    <div
+      className="c3"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Active style"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c4 label"
+      >
+        Active
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Invalid style"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c6 label"
+      >
+        Invalid
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Invalid with value"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c6 label"
+      >
+        Invalid
+      </label>
+    </div>
+    <div
+      className="c5"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="With validation messages"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c6 label"
+      >
+        Error messages
+      </label>
+      <div
+        className="Text-pfq5dp-0 c7 error-message-text"
+        size={14}
+        type="#dd3311"
+      >
+        Required Field
+      </div>
+    </div>
+    <div
+      className="c8"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="With placeholder"
+          type="text"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c9 label"
+        disabled={true}
+      >
+        Disabled
+      </label>
+    </div>
+    <div
+      className="c8"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          $
+        </div>
+        <input
+          className="wrapped "
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+          value="Foo Bar"
+        />
+        <div
+          className="suffix"
+        >
+          / CASE
+        </div>
+      </div>
+      <label
+        className="c9 label"
+        disabled={true}
+      >
+        Disabled
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Read Only 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div>
+    <input
+      onClick={[Function]}
+      type="button"
+      value="Click me to change input value"
+    />
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={true}
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Redux form properties 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div>
+    <input
+      onClick={[Function]}
+      type="button"
+      value="Click me to change input value"
+    />
+    <div
+      className="c1"
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput Small 1`] = `
+.c2 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #3498db;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #dd3311;
+}
+
+.c9 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c3 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 0 0px 4px rgba(52,152,219,0.08);
+  border-width: 2px;
+  margin: -1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c3 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 > .input > input,
+.select__search .c3 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c3 > .input > textarea {
+  padding: 16px;
+}
+
+.c3 > .input input,
+.c3 > .input textarea,
+.c3 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c3 > .input > input,
+.c3 > .input > textarea,
+.select__search .c3 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c3 > .input > input::-webkit-input-placeholder,
+.c3 > .input > textarea::-webkit-input-placeholder,
+.select__search .c3 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input::-moz-placeholder,
+.c3 > .input > textarea::-moz-placeholder,
+.select__search .c3 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input:-ms-input-placeholder,
+.c3 > .input > textarea:-ms-input-placeholder,
+.select__search .c3 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input::placeholder,
+.c3 > .input > textarea::placeholder,
+.select__search .c3 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 > .input > input[type="search"],
+.c3 > .input > textarea[type="search"],
+.select__search .c3 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c3 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c3 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c3 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3 > .input > input[type="search"]::-ms-clear,
+.c3 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c3 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c3 > .input > input[role="combobox"],
+.c3 > .input > textarea[role="combobox"],
+.select__search .c3 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c3 > .input > .icon {
+  color: #3498db;
+}
+
+.c3 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c3 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c3 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c3 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c3 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c3 .input.dropdown {
+  cursor: pointer;
+}
+
+.c3 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c3 input[type="number"]::-webkit-inner-spin-button,
+.c3 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c3 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c3 .prefix,
+.c3 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #3498db;
+}
+
+.c3 .label {
+  margin-bottom: 8px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: #dd3311;
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c5 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c5 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #dd3311;
+}
+
+.c5 .label {
+  margin-bottom: 8px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c8 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c8 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 > .input > input,
+.select__search .c8 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c8 > .input > textarea {
+  padding: 16px;
+}
+
+.c8 > .input input,
+.c8 > .input textarea,
+.c8 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c8 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c8 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c8 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c8 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c8 .input.dropdown {
+  cursor: default;
+}
+
+.c8 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c8 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c8 .prefix,
+.c8 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .label {
+  margin-bottom: 8px;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
+  margin-top: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Input without label"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Foo bar"
+      />
+    </div>
+    <label
+      className="c2 label"
+    >
+      With value
+    </label>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped focused"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Focused style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c4 label"
+    >
+      Focused
+    </label>
+  </div>
+  <div
+    className="c3"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Active style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c4 label"
+    >
+      Active
+    </label>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Invalid style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      Invalid
+    </label>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Invalid with value"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      Invalid
+    </label>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With validation messages"
+        type="text"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      With validation messages
+    </label>
+    <div
+      className="Text-pfq5dp-0 c7 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Required Field
+    </div>
+  </div>
+  <div
+    className="c5"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With validation messages"
+        type="text"
+      />
+    </div>
+    <label
+      className="c6 label"
+    >
+      With two validation messages
+    </label>
+    <div
+      className="Text-pfq5dp-0 c7 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Required Field
+    </div>
+    <div
+      className="Text-pfq5dp-0 c7 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Valid values: avocado and guacamole
+    </div>
+  </div>
+  <div
+    className="c8"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With placeholder"
+        type="text"
+      />
+    </div>
+    <label
+      className="c9 label"
+      disabled={true}
+    >
+      Disabled
+    </label>
+  </div>
+  <div
+    className="c8"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <input
+        className="wrapped "
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Foo Bar"
+      />
+    </div>
+    <label
+      className="c9 label"
+      disabled={true}
+    >
+      Disabled
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|HOC formInput With Icon 1`] = `
+.c2 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c2 .farmblocks-icon {
+  display: block;
+}
+
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #3498db;
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #dd3311;
+}
+
+.c10 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c4 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #3498db;
+  background-color: #ffffff;
+  box-shadow: 0 0 0px 4px rgba(52,152,219,0.08);
+  border-width: 2px;
+  margin: -1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c4 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c4 > .input > input,
+.select__search .c4 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c4 > .input > textarea {
+  padding: 16px;
+}
+
+.c4 > .input input,
+.c4 > .input textarea,
+.c4 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c4 > .input > input,
+.c4 > .input > textarea,
+.select__search .c4 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c4 > .input > input::-webkit-input-placeholder,
+.c4 > .input > textarea::-webkit-input-placeholder,
+.select__search .c4 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 > .input > input::-moz-placeholder,
+.c4 > .input > textarea::-moz-placeholder,
+.select__search .c4 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 > .input > input:-ms-input-placeholder,
+.c4 > .input > textarea:-ms-input-placeholder,
+.select__search .c4 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 > .input > input::placeholder,
+.c4 > .input > textarea::placeholder,
+.select__search .c4 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c4 > .input > input[type="search"],
+.c4 > .input > textarea[type="search"],
+.select__search .c4 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4 > .input > input[type="search"]::-ms-clear,
+.c4 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c4 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c4 > .input > input[role="combobox"],
+.c4 > .input > textarea[role="combobox"],
+.select__search .c4 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c4 > .input > .icon {
+  color: #3498db;
+}
+
+.c4 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c4 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c4 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c4 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c4 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c4 .input.dropdown {
+  cursor: pointer;
+}
+
+.c4 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c4 input[type="number"]::-webkit-inner-spin-button,
+.c4 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c4 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c4 .prefix,
+.c4 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #3498db;
+}
+
+.c4 .label {
+  margin-bottom: 8px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c6 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c6 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 > .input > input,
+.select__search .c6 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c6 > .input > textarea {
+  padding: 16px;
+}
+
+.c6 > .input input,
+.c6 > .input textarea,
+.c6 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c6 > .input > input,
+.c6 > .input > textarea,
+.select__search .c6 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c6 > .input > input::-webkit-input-placeholder,
+.c6 > .input > textarea::-webkit-input-placeholder,
+.select__search .c6 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input::-moz-placeholder,
+.c6 > .input > textarea::-moz-placeholder,
+.select__search .c6 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input:-ms-input-placeholder,
+.c6 > .input > textarea:-ms-input-placeholder,
+.select__search .c6 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input::placeholder,
+.c6 > .input > textarea::placeholder,
+.select__search .c6 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input[type="search"],
+.c6 > .input > textarea[type="search"],
+.select__search .c6 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c6 > .input > input[type="search"]::-ms-clear,
+.c6 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c6 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c6 > .input > input[role="combobox"],
+.c6 > .input > textarea[role="combobox"],
+.select__search .c6 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c6 > .input > .icon {
+  color: #dd3311;
+}
+
+.c6 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c6 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c6 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c6 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c6 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c6 .input.dropdown {
+  cursor: pointer;
+}
+
+.c6 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c6 input[type="number"]::-webkit-inner-spin-button,
+.c6 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c6 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c6 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c6 .prefix,
+.c6 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #dd3311;
+}
+
+.c6 .label {
+  margin-bottom: 8px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c9 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c9 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c9 > .input > input,
+.select__search .c9 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c9 > .input > textarea {
+  padding: 16px;
+}
+
+.c9 > .input input,
+.c9 > .input textarea,
+.c9 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c9 > .input > input,
+.c9 > .input > textarea,
+.select__search .c9 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c9 > .input > input::-webkit-input-placeholder,
+.c9 > .input > textarea::-webkit-input-placeholder,
+.select__search .c9 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9 > .input > input::-moz-placeholder,
+.c9 > .input > textarea::-moz-placeholder,
+.select__search .c9 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9 > .input > input:-ms-input-placeholder,
+.c9 > .input > textarea:-ms-input-placeholder,
+.select__search .c9 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9 > .input > input::placeholder,
+.c9 > .input > textarea::placeholder,
+.select__search .c9 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9 > .input > input[type="search"],
+.c9 > .input > textarea[type="search"],
+.select__search .c9 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c9 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c9 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c9 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c9 > .input > input[type="search"]::-ms-clear,
+.c9 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c9 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c9 > .input > input[role="combobox"],
+.c9 > .input > textarea[role="combobox"],
+.select__search .c9 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c9 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c9 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c9 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c9 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c9 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c9 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c9 .input.dropdown {
+  cursor: default;
+}
+
+.c9 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c9 input[type="number"]::-webkit-inner-spin-button,
+.c9 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c9 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c9 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c9 .prefix,
+.c9 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c9 .label {
+  margin-bottom: 8px;
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
+  margin-top: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:321px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:415px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:835px) {
+  .c0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="c0"
+  width={
+    Array [
+      1,
+      1,
+      1,
+      0.3333333333333333,
+    ]
+  }
+>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Input with left icon"
+        type="text"
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Foo bar"
+      />
+    </div>
+    <label
+      className="c3 label"
+    >
+      With left icon and value
+    </label>
+  </div>
+  <div
+    className="c4"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped focused"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Focused style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c5 label"
+    >
+      With left icon and Focused
+    </label>
+  </div>
+  <div
+    className="c4"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Active style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c5 label"
+    >
+      With left icon and Active
+    </label>
+  </div>
+  <div
+    className="c6"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Invalid style"
+        type="text"
+      />
+    </div>
+    <label
+      className="c7 label"
+    >
+      With left icon and Invalid
+    </label>
+  </div>
+  <div
+    className="c6"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Invalid with value"
+      />
+    </div>
+    <label
+      className="c7 label"
+    >
+      With left icon, value and Invalid
+    </label>
+  </div>
+  <div
+    className="c6"
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With validation messages"
+        type="text"
+      />
+    </div>
+    <label
+      className="c7 label"
+    >
+      With left icon and Error messages
+    </label>
+    <div
+      className="Text-pfq5dp-0 c8 error-message-text"
+      size={14}
+      type="#dd3311"
+    >
+      Required Field
+    </div>
+  </div>
+  <div
+    className="c9"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="With placeholder"
+        type="text"
+      />
+    </div>
+    <label
+      className="c10 label"
+      disabled={true}
+    >
+      With left icon and Disabled
+    </label>
+  </div>
+  <div
+    className="c9"
+    disabled={true}
+    onClick={[Function]}
+    type="text"
+  >
+    <div
+      className="input "
+    >
+      <div
+        className="icon left"
+      >
+        <span
+          className="c2"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={18}
+            viewBox="4 4 32 32"
+            width={18}
+          >
+            <path
+              d="M22.46 22.271a.952.952 0 01.063-.059 7.447 7.447 0 001.837-4.918c0-4.08-3.244-7.39-7.246-7.39-4.002 0-7.247 3.309-7.247 7.39 0 4.082 3.245 7.391 7.247 7.391a7.159 7.159 0 005.242-2.287.954.954 0 01.104-.127zm9.267 8.104a.966.966 0 010 1.346.92.92 0 01-1.32 0l-7.29-7.433a8.977 8.977 0 01-6.003 2.302C12.08 26.59 8 22.428 8 17.294 8 12.161 12.08 8 17.114 8c5.033 0 9.113 4.161 9.113 9.294a9.376 9.376 0 01-1.837 5.599l7.337 7.482z"
+              fill="currentColor"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="wrapped "
+        disabled={true}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value="Foo bar"
+      />
+    </div>
+    <label
+      className="c10 label"
+      disabled={true}
+    >
+      With left icon and Disabled
+    </label>
+  </div>
+</div>
+`;
