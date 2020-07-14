@@ -8,6 +8,8 @@ A SVG icon library for React
 npm install @crave/farmblocks-icon
 ```
 
+> ⚠️If you're using the icons in a package, consider setting it as a [peer dependency](https://classic.yarnpkg.com/en/docs/dependency-types/#toc-peerdependencies) to avoid duplication of the icons in case another package uses a different version
+
 ## Usage
 
 ```jsx
