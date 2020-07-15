@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@8.0.0...@crave/farmblocks-hoc-input@9.0.0) (2020-07-15)
+
+
+### Bug Fixes
+
+* **amount-selectors:** disable auto control focus style on input when disableTyping is  true ([2b62faa](https://github.com/CraveFood/farmblocks/commit/2b62faa639f7582e69b9175dbe4640622cada939))
+* **hoc-input:** change clear action icon for search inputs ([c3f8614](https://github.com/CraveFood/farmblocks/commit/c3f8614a10642292601d53bde5f4b02f5f41c43f))
+* **hoc-input:** fix focused border width ([da547ca](https://github.com/CraveFood/farmblocks/commit/da547ca711f8f8233933df387c7b2caddfb9feb6))
+* **hoc-input:** font style ([bd9a519](https://github.com/CraveFood/farmblocks/commit/bd9a5190af168450e20d7b7af0cdde2b0fd0ecd8))
+* **hoc-input:** remove obsolete props moreInfoContent and moreInfoTooltipProps ([7d64492](https://github.com/CraveFood/farmblocks/commit/7d6449297aacb58457e2ab67db5ba232cb8c0062))
+
+
+### Code Refactoring
+
+* **hoc-input:** remove unused property 'clearable' ([e939e80](https://github.com/CraveFood/farmblocks/commit/e939e800cfb43a84bea6e785dbc55f2ecc921171))
+
+
+### Features
+
+* **hoc-input:** add focused class to input ([db69f3f](https://github.com/CraveFood/farmblocks/commit/db69f3fa75abe2b835f19819c3df7ae9c4f85c30))
+* **hoc-input:** add mb property ([215aadd](https://github.com/CraveFood/farmblocks/commit/215aaddd967e82aaf526f05c3762886ce01fc930))
+* **hoc-input:** adjust icon position and size ([3131517](https://github.com/CraveFood/farmblocks/commit/3131517c9bbde06555a0a6c0a22b99c3f2be8b73))
+* **hoc-input:** adjust position of clear icon on search input ([a1c2731](https://github.com/CraveFood/farmblocks/commit/a1c2731b5cdc0935890998bbb7468d7c85d349b7))
+* **hoc-input:** adjust prefix and sufix position and color ([cdaf71f](https://github.com/CraveFood/farmblocks/commit/cdaf71f93023b7de94af7d6e6d653b8ac9eb655d))
+* **hoc-input:** apply new border style ([0f87c3a](https://github.com/CraveFood/farmblocks/commit/0f87c3aa5749a0b3656a92a4c3f61b8db2ddb703))
+* **hoc-input:** rename property name \`fontSize\` to ´small´ ([d2f0eb1](https://github.com/CraveFood/farmblocks/commit/d2f0eb18f1fdb4b5fccd0f82b63fcf28bc829343))
+
+
+### BREAKING CHANGES
+
+* **hoc-input:** this hoc no longer accepts \`fontSize\` property. Use \`small\` instead
+* **hoc-input:** as Label component no longer works with these properties we do not expect them anymore
+* **hoc-input:** this component no longer expects a 'clearable' property
+* **hoc-input:** this component no longer receives clearIcon. It always render MdRemoveFilled as the clear action
+* **hoc-input:** leftIcon no longer accepts a node, it accepts an elementType instead
+
+
+
+
+
 # [8.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@7.2.1...@crave/farmblocks-hoc-input@8.0.0) (2020-07-14)
 
 

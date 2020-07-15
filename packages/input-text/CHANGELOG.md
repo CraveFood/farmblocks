@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@4.0.0...@crave/farmblocks-input-text@5.0.0) (2020-07-15)
+
+
+### Features
+
+* **input-text:** refactor component to work with new hoc-input ([bdfae4d](https://github.com/CraveFood/farmblocks/commit/bdfae4d3568463991910a19d18756e1950d5e67c))
+
+
+### BREAKING CHANGES
+
+* **input-text:** This component no longer exports \`withMargin\` hoc. The following properties have been removed as
+well: \`margin\`, \`mask\`, \`onReplace\`, \`onCancel\`, \`cancelButtonText\`, \`saveButtonText\`, and
+\`disableManualReplace\`
+
+
+
+
+
 # [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@3.9.1...@crave/farmblocks-input-text@4.0.0) (2020-07-14)
 
 

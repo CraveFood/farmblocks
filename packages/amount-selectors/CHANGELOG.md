@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@4.0.0...@crave/farmblocks-amount-selectors@5.0.0) (2020-07-15)
+
+
+### Bug Fixes
+
+* **amount-selectors:** disable auto control focus style on input when disableTyping is  true ([2b62faa](https://github.com/CraveFood/farmblocks/commit/2b62faa639f7582e69b9175dbe4640622cada939))
+
+
+### Features
+
+* **amount-selectors:** refactor component to work with new hoc-input ([3554442](https://github.com/CraveFood/farmblocks/commit/3554442fe193425a0aa1ec03e7a8cb303e344968))
+
+
+### BREAKING CHANGES
+
+* **amount-selectors:** this component no longer expects size and showBoundariesMessageOnlyOnFocus properties.
+decreaseButton and increaveButton class names have been renamed to button-decreaseand
+button-increase
+
+
+
+
+
 # [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@3.0.5...@crave/farmblocks-amount-selectors@4.0.0) (2020-07-14)
 
 

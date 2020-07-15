@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@2.0.0...@crave/farmblocks-label@2.0.1) (2020-07-15)
+
+
+### Bug Fixes
+
+* **label:** set line-height to 1.5 ([1ec25ad](https://github.com/CraveFood/farmblocks/commit/1ec25addc41f5dacbe5d308cb97f6fb3882cdf38))
+
+
+
+
+
 # [2.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-label@1.0.26...@crave/farmblocks-label@2.0.0) (2020-06-25)
 
 

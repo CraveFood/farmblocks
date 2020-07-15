@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-currency@1.3.21...@crave/farmblocks-input-currency@1.4.0) (2020-07-15)
+
+
+### Features
+
+* **input-currency:** refactor component to work with new hoc-input ([124bed3](https://github.com/CraveFood/farmblocks/commit/124bed3237a9b2a39bc637fb0aba32065a5ef524))
+
+
+
+
+
 ## [1.3.21](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-currency@1.3.20...@crave/farmblocks-input-currency@1.3.21) (2020-07-14)
 
 **Note:** Version bump only for package @crave/farmblocks-input-currency
