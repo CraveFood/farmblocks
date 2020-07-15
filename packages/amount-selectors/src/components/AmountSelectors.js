@@ -107,6 +107,7 @@ class AmountSelectors extends React.Component {
       minAmountMessage,
       maxAmountMessage,
       removable,
+      disableTyping,
     } = this.props;
     const { value } = this.state;
     const showMaxMessage = value > max;
@@ -186,7 +187,8 @@ class AmountSelectors extends React.Component {
           max={max}
           step={this.props.step}
           value={this.state.displayValue}
-          readOnly={this.props.disableTyping}
+          readOnly={disableTyping}
+          autoControlFocusedStyle={!disableTyping}
           onChange={this.onChange}
           onBlur={() => {
             this.updateDisplayValue();
