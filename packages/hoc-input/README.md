@@ -11,13 +11,6 @@ npm install @crave/farmblocks-hoc-input
 
 ## Usage
 
-This component uses the html `input` element. So the APIs are very similar.
-
-For example, `value`, `placeholder`, `disabled`, `maxLength`, `onChange` and
-others not listed here, should work as expected, you can assume that the
-property will be forwarded to the core html input element. Ref.:
-[MDN &lt;input&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
-
 ```jsx
 import formInput from "@crave/farmblocks-hoc-input";
 const FbInput = formInput(props => React.createElement("input", props));
