@@ -1,61 +1,15 @@
-import * as React from "react";
-import PropTypes from "prop-types";
 import { compose } from "recompose";
-import styled from "styled-components";
-import ReactInputMask from "react-input-mask";
 import formInput, { formInputProps } from "@crave/farmblocks-hoc-input";
 
 import protectedValue, { protectedValueProps } from "./protectedValue";
 
-export const Container = styled.div`
-  font-family: Lato, sans-serif;
-  margin: ${({ margin }) => margin};
-`;
+export const EnhancedInput = compose(protectedValue, formInput);
 
-export const withMargin = Comp => {
-  const Margin = ({ margin, ...props }) => (
-    <Container margin={margin}>
-      <Comp {...props} />
-    </Container>
-  );
-
-  Margin.propTypes = {
-    margin: PropTypes.string,
-  };
-
-  return Margin;
-};
-
-export const EnhancedInput = compose(withMargin, protectedValue, formInput);
-
-const RegularInput = EnhancedInput("input");
-const MaskedInput = EnhancedInput(ReactInputMask);
-
-export const commonPropTypes = {
-  ...formInputProps,
-  type: PropTypes.string,
-  placeholder: PropTypes.string,
-  required: PropTypes.bool,
-
-  margin: PropTypes.string,
-  // and any other properties to forward to the html input element...
-};
-
-const TextInput = props => {
-  const Input = props.mask ? MaskedInput : RegularInput;
-
-  return <Input {...props} />;
-};
+const TextInput = EnhancedInput("input");
 
 TextInput.propTypes = {
-  mask: PropTypes.string,
+  ...formInputProps,
   ...protectedValueProps,
-  ...commonPropTypes,
-};
-
-TextInput.defaultProps = {
-  type: "text", // eslint-disable-line
-  margin: "0 0 24px 0", // eslint-disable-line
 };
 
 export default TextInput;

@@ -1,221 +1,170 @@
 import React from "react";
-import Enzyme, { mount, shallow } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
-import {
-  render,
-  fireEvent,
-  waitForElementToBeRemoved,
-} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 import AmountSelectors from "./AmountSelectors";
 
-Enzyme.configure({ adapter: new Adapter() });
-
 describe("Amount selectors", () => {
+  let onChange;
+  beforeEach(() => {
+    onChange = jest.fn();
+  });
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
   describe("Buttons", () => {
-    test("decrement button should decrease the state value by 1", () => {
-      const initialValue = 2;
-      const expectedValue = 1;
-      const component = shallow(<AmountSelectors value={initialValue} />);
-      component.children(".decreaseButton").simulate("click");
+    const value = 2.5;
+    it("decrement button should decrease value by 1", () => {
+      render(<AmountSelectors value={value} onChange={onChange} />);
+      const input = screen.getByRole("spinbutton");
 
-      expect(component.state("value")).toBe(expectedValue);
+      expect(input).toHaveValue(value);
+
+      userEvent.click(screen.getByTestId("button--decrease"));
+      expect(onChange).toBeCalledWith(value - 1);
+      expect(input).toHaveValue(value - 1);
     });
-    test("increment button should increase the state value by 1", () => {
-      const initialValue = 1;
-      const expectedValue = 2;
-      const component = shallow(<AmountSelectors value={initialValue} />);
-      component.children(".increaseButton").simulate("click");
+    it("increment button should increase value by 1", () => {
+      render(<AmountSelectors value={value} onChange={onChange} />);
+      const input = screen.getByRole("spinbutton");
 
-      expect(component.state("value")).toBe(expectedValue);
+      expect(input).toHaveValue(value);
+
+      userEvent.click(screen.getByTestId("button--increase"));
+      expect(onChange).toBeCalledWith(value + 1);
+      expect(input).toHaveValue(value + 1);
+    });
+
+    it("should increase and decrease with custom step", () => {
+      const step = 0.5;
+      render(<AmountSelectors value={value} onChange={onChange} step={step} />);
+      const input = screen.getByRole("spinbutton");
+
+      expect(input).toHaveValue(value);
+
+      userEvent.click(screen.getByTestId("button--increase"));
+      expect(onChange).toBeCalledWith(value + step);
+      expect(input).toHaveValue(value + step);
+
+      userEvent.click(screen.getByTestId("button--decrease"));
+      expect(onChange).toBeCalledWith(value);
+      expect(input).toHaveValue(value);
+    });
+
+    it("click on remove button should fire onRemoveClick", () => {
+      const onRemoveClick = jest.fn();
+      render(
+        <AmountSelectors
+          value={value}
+          min={value}
+          onChange={onChange}
+          onRemoveClick={onRemoveClick}
+          removable
+        />,
+      );
+      const input = screen.getByRole("spinbutton");
+      expect(input).toHaveValue(value);
+
+      userEvent.click(screen.getByTestId("button--remove"));
+
+      expect(onRemoveClick).toBeCalled();
     });
   });
+
   describe("Formatting", () => {
-    test("value should be formatted after onBlur", () => {
-      const component = mount(<AmountSelectors />);
-      const newValue = "2";
-      const expectedDisplayValue = "2.00";
-      component.find("input").simulate("focus");
-      expect(component.state("focused")).toBe(true);
-      component
-        .find("input")
-        .simulate("change", { target: { value: newValue } });
-      component.find("input").simulate("blur", {});
-      expect(component.state("displayValue")).toBe(expectedDisplayValue);
-      expect(component.state("focused")).toBe(false);
-    });
-
-    test("empty input should display 0", () => {
-      const component = mount(<AmountSelectors value={10} />);
-      const newValue = "";
-      const expectedDisplayValue = "0.00";
-      component
-        .find("input")
-        .simulate("change", { target: { value: newValue } });
-      component.find("input").simulate("blur", {});
-      expect(component.state("displayValue")).toBe(expectedDisplayValue);
-    });
-
-    test("value should be capped at max and min after onBlur", () => {
-      const maxValue = 10;
-      const minValue = 4;
-      const bigValue = "300";
-      const smallValue = "1";
-      const expectedMaxDisplayValue = "10.00";
-      const expectedMinDisplayValue = "4.00";
-      const component = mount(
-        <AmountSelectors max={maxValue} min={minValue} />,
+    it("value should be formatted after onBlur", () => {
+      render(
+        <>
+          <AmountSelectors onChange={onChange} value={1} />
+          <button>Click me so input will loose focus</button>
+        </>,
       );
-      const input = component.find("input");
-      input.simulate("change", { target: { value: bigValue } });
-      input.simulate("blur", {});
-      expect(component.state("displayValue")).toBe(expectedMaxDisplayValue);
-      input.simulate("change", { target: { value: smallValue } });
-      input.simulate("blur", {});
-      expect(component.state("displayValue")).toBe(expectedMinDisplayValue);
+
+      const input = screen.getByRole("spinbutton");
+
+      userEvent.type(input, "{backspace}{backspace}abc99.8");
+      userEvent.click(
+        screen.getByRole("button", {
+          name: "Click me so input will loose focus",
+        }),
+      );
+
+      expect(onChange).toHaveBeenLastCalledWith(99.8);
+      expect(input).toHaveValue(99.8);
+    });
+
+    it("value should be capped at max and min after onBlur", () => {
+      const max = 10;
+      const min = 4;
+
+      render(
+        <>
+          <AmountSelectors onChange={onChange} max={max} min={min} />
+          <button>Click me so input will loose focus</button>
+        </>,
+      );
+      const button = screen.getByRole("button", {
+        name: "Click me so input will loose focus",
+      });
+
+      const input = screen.getByRole("spinbutton");
+      expect(input).toHaveValue(0);
+
+      userEvent.type(input, "{backspace}{backspace}999");
+      userEvent.click(button);
+      expect(input).toHaveValue(max);
+      expect(onChange).toBeCalledWith(max);
+
+      userEvent.type(input, "{backspace}{backspace}3");
+      userEvent.click(button);
+      expect(input).toHaveValue(min);
+      expect(onChange).toBeCalledWith(min);
     });
   });
   describe("onChange function", () => {
-    test("should add to state a value between min and max values", () => {
-      const initialValue = 0;
-      const onChangeValue = 2;
-
-      const component = shallow(
-        <AmountSelectors min={initialValue} value={initialValue} />,
-      );
-      const { onChange } = component.instance();
-
-      expect(component.state("displayValue")).toBe("0.00");
-
-      onChange(onChangeValue);
-
-      expect(component.state("value")).toBe(onChangeValue);
-      expect(component.state("displayValue")).toBe(onChangeValue);
-    });
-
-    test("should handle an event fired by input", () => {
-      const initialValue = 0;
-      const event = {
-        target: {
-          value: 1,
-        },
-      };
-      const component = shallow(<AmountSelectors value={initialValue} />);
-      const { onChange } = component.instance();
-
-      onChange(event);
-
-      expect(component.state("value")).toBe(event.target.value);
-    });
-
-    test("should disable both buttons when enforceStep is passed if browser validation fail with step mismatch", () => {
+    it("should disable both buttons when enforceStep is passed if browser validation fail with step mismatch", () => {
       const step = 0.5;
-      const event = {
-        target: {
-          value: 1.2,
-          validity: {
-            stepMismatch: true,
-          },
-        },
-      };
-      const component = shallow(<AmountSelectors step={step} enforceStep />);
-      component.instance().onChange(event);
-      expect(component.state().disableBoth).toBe(true);
-    });
+      render(
+        <AmountSelectors
+          onChange={onChange}
+          step={step}
+          enforceStep
+          value={5}
+        />,
+      );
+      const increaseButton = screen.getByTestId("button--increase");
+      const decreaseButton = screen.getByTestId("button--decrease");
+      expect(increaseButton).toBeEnabled();
+      expect(decreaseButton).toBeEnabled();
 
-    test("should disable both buttons if browser validation fail with bad input error", () => {
-      const event = {
-        target: {
-          value: "aaa",
-          validity: {
-            stepMismatch: false,
-            badInput: true,
-          },
-        },
-      };
-      const component = shallow(<AmountSelectors />);
-      component.instance().onChange(event);
-      expect(component.state().disableBoth).toBe(true);
+      const input = screen.getByRole("spinbutton");
+      userEvent.type(input, "{backspace}{backspace}3.2");
+      expect(increaseButton).toBeDisabled();
+      expect(decreaseButton).toBeDisabled();
     });
   });
 
   describe("component update", () => {
-    test("should update value when prop value is set after mount", () => {
-      const onChange = jest.fn();
-      const component = mount(
-        <AmountSelectors value={1} onChange={onChange} />,
-      );
-      const newValue = 2;
-      component.setProps({ value: newValue });
-      expect(component.state("value")).toBe(newValue);
+    it("should update value when prop value is set after mount", () => {
+      const { rerender } = render(<AmountSelectors value={5} />);
+      const input = screen.getByRole("spinbutton");
+
+      expect(input).toHaveValue(5);
+
+      rerender(<AmountSelectors value={7} />);
+      expect(input).toHaveValue(7);
     });
-
-    test("should update displayed value when prop value changes", () => {
-      const nextValue = 10;
-      const expectedDisplayValue = "10.00";
-      const component = mount(<AmountSelectors value={0} />);
-      component.setProps({ value: nextValue });
-      expect(component.state().displayValue).toBe(expectedDisplayValue);
-    });
-  });
-
-  test("getValidValue should return a valid value with 2 decimal places", () => {
-    const component = shallow(<AmountSelectors />);
-    const { getValidValue } = component.instance();
-
-    const value = 3.345678;
-    const validValue = getValidValue(value);
-
-    const expectedValue = Number(value.toFixed(2));
-
-    expect(validValue).toBe(expectedValue);
   });
 
   describe("max and minimum messages", () => {
-    test("should show maximum amount tooltip when component mounts", () => {
-      const { queryByText } = render(<AmountSelectors max={1} value={3} />);
-      expect(queryByText("Reached maximum amount")).toBeInTheDocument();
+    it("should show maximum amount tooltip when component mounts", () => {
+      render(<AmountSelectors max={1} value={3} />);
+      expect(screen.getByText("Reached maximum amount")).toBeInTheDocument();
     });
 
-    test("should show maximum amount tooltip when component gets focused", async () => {
-      const { queryByText, getByTestId } = render(
-        <AmountSelectors max={1} value={3} showBoundariesMessageOnlyOnFocus />,
-      );
-      expect(queryByText("Reached maximum amount")).not.toBeInTheDocument();
-
-      fireEvent.focus(getByTestId("input-text"));
-      expect(queryByText("Reached maximum amount")).toBeInTheDocument();
-
-      fireEvent.change(getByTestId("input-text"), {
-        target: { value: 0.5 },
-      });
-      await waitForElementToBeRemoved(() =>
-        queryByText("Reached maximum amount"),
-      );
-      expect(queryByText("Reached maximum amount")).not.toBeInTheDocument();
-    });
-
-    test("should show minimum amount tooltip when component mounts", () => {
-      const { queryByText } = render(<AmountSelectors min={5} value={3} />);
-      expect(queryByText("Reached minimum amount")).toBeInTheDocument();
-    });
-
-    test("should show minimum amount tooltip when component gets focused", async () => {
-      const { queryByText, getByTestId } = render(
-        <AmountSelectors min={3} value={1} showBoundariesMessageOnlyOnFocus />,
-      );
-      expect(queryByText("Reached minimum amount")).not.toBeInTheDocument();
-
-      fireEvent.focus(getByTestId("input-text"));
-      expect(queryByText("Reached minimum amount")).toBeInTheDocument();
-
-      fireEvent.change(getByTestId("input-text"), {
-        target: { value: 5 },
-      });
-      await waitForElementToBeRemoved(() =>
-        queryByText("Reached minimum amount"),
-      );
-      expect(queryByText("Reached minimum amount")).not.toBeInTheDocument();
+    it("should show minimum amount tooltip when component mounts", () => {
+      render(<AmountSelectors min={5} value={3} />);
+      expect(screen.getByText("Reached minimum amount")).toBeInTheDocument();
     });
   });
 });

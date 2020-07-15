@@ -1,0 +1,2408 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Form|Phone Input Basic 1`] = `
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={false}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={false}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={false}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value="(213) 373-4253"
+        />
+      </div>
+      <label
+        className="c5 label"
+        disabled={false}
+      >
+        Phone
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|Phone Input Changing Default Country 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={false}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={false}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={false}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    default to BR
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    default to US
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    set number
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    clear number
+  </button>
+</div>
+`;
+
+exports[`Storyshots Form|Phone Input Custom Texts 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={false}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={false}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={false}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|Phone Input Disabled 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: default;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={true}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={true}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={true}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value="(213) 373-4253"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|Phone Input With Priority Countries 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={false}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={false}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={false}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|Phone Input With State 1`] = `
+.c5 {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2f313a;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={false}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={false}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={false}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <label
+        className="c5 label"
+        disabled={false}
+      >
+        Value -&gt; ""
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|Phone Input With Tooltip Props 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c1 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c1 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c1 > .input > input,
+.select__search .c1 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c1 > .input > textarea {
+  padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c1 > .input > input,
+.c1 > .input > textarea,
+.select__search .c1 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c1 > .input > input::-webkit-input-placeholder,
+.c1 > .input > textarea::-webkit-input-placeholder,
+.select__search .c1 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::-moz-placeholder,
+.c1 > .input > textarea::-moz-placeholder,
+.select__search .c1 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input:-ms-input-placeholder,
+.c1 > .input > textarea:-ms-input-placeholder,
+.select__search .c1 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input::placeholder,
+.c1 > .input > textarea::placeholder,
+.select__search .c1 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 > .input > input[type="search"],
+.c1 > .input > textarea[type="search"],
+.select__search .c1 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1 > .input > input[type="search"]::-ms-clear,
+.c1 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c1 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c1 > .input > input[role="combobox"],
+.c1 > .input > textarea[role="combobox"],
+.select__search .c1 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c1 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c1 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c1 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c1 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c1 .input.dropdown {
+  cursor: pointer;
+}
+
+.c1 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c1 input[type="number"]::-webkit-inner-spin-button,
+.c1 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c1 .prefix,
+.c1 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .label {
+  margin-bottom: 8px;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c0 >:first-child {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  display: inline-block;
+  width: auto;
+}
+
+.c3 .appear-enter {
+  opacity: 0;
+}
+
+.c3 .appear-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c3 .appear-exit {
+  opacity: 1;
+}
+
+.c3 .appear-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.c4 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c2 .input {
+  overflow: unset;
+}
+
+.c2 .prefix {
+  padding: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 3px 0 0 3px;
+  color: #2f313a;
+}
+
+.c2 .prefix .popover__trigger {
+  height: 100%;
+}
+
+@media only screen and (max-width:) {
+  .c2 .input input {
+    font-size: 16px;
+  }
+}
+
+<div
+  style={
+    Object {
+      "height": 400,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "height": 360,
+      }
+    }
+  />
+  <div
+    className="c0"
+  >
+    <div
+      className="c1 c2"
+      disabled={false}
+      onClick={[Function]}
+      type="text"
+    >
+      <div
+        className="input "
+      >
+        <div
+          className="prefix"
+        >
+          <div
+            className="c3"
+            width="auto"
+          >
+            <div
+              className="popover__trigger"
+              id="trigger"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex="0"
+            >
+              <div
+                className="c4"
+                disabled={false}
+              >
+                US
+                 +
+                1
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 12.5857864 3.2928932-3.29289318c.3905243-.39052429 1.0236893-.39052429 1.4142136 0s.3905243 1.02368928 0 1.41421358l-4 4c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-3.99999998-4c-.39052429-.3905243-.39052429-1.02368929 0-1.41421358s1.02368927-.39052429 1.41421356 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          className="wrapped "
+          data-testid="national-number-input"
+          disabled={false}
+          inputMode="tel"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

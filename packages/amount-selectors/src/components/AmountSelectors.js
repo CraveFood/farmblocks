@@ -1,35 +1,15 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import values from "object.values";
 import { Transition } from "react-spring/renderprops.cjs";
 import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
-import InputText from "@crave/farmblocks-input-text";
-import { fontSizes, colors } from "@crave/farmblocks-theme";
+import { colors } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
 import { MdAdd, MdMinus, MdTrash } from "@crave/farmblocks-icon";
+import formInput from "@crave/farmblocks-hoc-input";
 
-import selectorSizes from "../constants/selectorSizes";
 import Wrapper from "../styledComponents/AmountSelector";
 
-const selectorSizeToButtonSize = {
-  [selectorSizes.SMALL]: buttonSizes.SMALL,
-  [selectorSizes.MEDIUM]: buttonSizes.MEDIUM,
-};
-
-const selectorSizeToFontSize = {
-  [selectorSizes.SMALL]: fontSizes.SMALL,
-  [selectorSizes.MEDIUM]: fontSizes.MEDIUM,
-};
-
-const selectorSizeToIconSize = {
-  [selectorSizes.SMALL]: 24,
-  [selectorSizes.MEDIUM]: 32,
-};
-
-const inputBorderRadius = {
-  [selectorSizes.SMALL]: "16px",
-  [selectorSizes.MEDIUM]: "32px",
-};
+const Input = formInput("input");
 
 class AmountSelectors extends React.Component {
   constructor(props) {
@@ -44,7 +24,6 @@ class AmountSelectors extends React.Component {
       disableBoth: false,
       tooltipText: "",
       displayValue,
-      focused: false,
     };
   }
 
@@ -68,7 +47,6 @@ class AmountSelectors extends React.Component {
     const tooltipText = hasBrowserValidation
       ? event.target.validationMessage
       : "";
-
     const validValue = parseFloat(value);
 
     this.setState(
@@ -128,118 +106,112 @@ class AmountSelectors extends React.Component {
       min,
       minAmountMessage,
       maxAmountMessage,
-      showBoundariesMessageOnlyOnFocus,
-      size,
       removable,
+      disableTyping,
     } = this.props;
-    const { focused, value } = this.state;
-    const showMessage = !showBoundariesMessageOnlyOnFocus || focused;
-    const showMaxMessage = value > max && showMessage;
-    const showMinMessage = value < min && showMessage;
-    const showTooltipMessage =
+    const { value } = this.state;
+    const showMaxMessage = value > max;
+    const showMinMessage = value < min;
+    const tooltipMessage =
       (showMaxMessage && maxAmountMessage) ||
-      (showMinMessage && minAmountMessage);
+      (showMinMessage && minAmountMessage) ||
+      this.state.tooltipText;
     const disableDecreaseButton =
-      disabled || this.state.disableBoth || value <= this.props.min;
+      disabled || this.state.disableBoth || value <= min;
     const disableIncreaseButton =
-      disabled || this.state.disableBoth || value >= this.props.max;
+      disabled || this.state.disableBoth || value >= max;
+
     return (
-      <Wrapper size={size} className={this.props.className}>
-        {!removable || (removable && value > min) ? (
-          <Button
-            className="decreaseButton"
-            size={selectorSizeToButtonSize[size]}
-            icon={
-              <MdMinus
-                size={selectorSizeToIconSize[size]}
-                color={
-                  disableDecreaseButton ? colors.GREY_16 : colors.RED_ORANGE
-                }
-              />
-            }
-            disabled={disableDecreaseButton}
-            onClick={this.decrement}
-            tooltipText={this.state.tooltipText}
-            css={{ borderRadius: "50%" }}
-          />
-        ) : (
-          <Button
-            className="removeButton"
-            size={selectorSizeToButtonSize[size]}
-            icon={
-              <MdTrash
-                size={selectorSizeToIconSize[size] - 8}
-                color={disabled ? colors.GREY_16 : colors.RED_ORANGE}
-              />
-            }
-            onClick={this.props.onRemoveClick}
-            css={{ borderRadius: "50%" }}
-            disabled={disabled}
-          />
-        )}
-        <div className="inputContainer">
-          <InputText
-            data-testid="input-text"
-            className="inputComponent"
-            type="number"
-            min={min}
-            max={max}
-            step={this.props.step}
-            value={this.state.displayValue}
-            readOnly={this.props.disableTyping}
-            onChange={this.onChange}
-            onBlur={() => {
-              this.setState({ focused: false, disableBoth: false });
-              this.updateDisplayValue();
-            }}
-            fontSize={selectorSizeToFontSize[size]}
-            disabled={disabled}
-            onFocus={() => this.setState({ focused: true })}
-            borderRadius={inputBorderRadius[size]}
-            css={`
-              .input {
-                box-shadow: 0 3px 3px 0 ${colors.GREY_08};
+      <Wrapper className={this.props.className}>
+        <div>
+          {!removable || (removable && value > min) ? (
+            <Button
+              className="button button--decrease"
+              data-testid="button--decrease"
+              size={buttonSizes.SMALL}
+              icon={
+                <MdMinus
+                  size={24}
+                  color={
+                    disableDecreaseButton ? colors.GREY_16 : colors.RED_ORANGE
+                  }
+                />
               }
-            `}
-          />
+              disabled={disableDecreaseButton}
+              onClick={this.decrement}
+            />
+          ) : (
+            <Button
+              className="button button--remove"
+              data-testid="button--remove"
+              size={buttonSizes.SMALL}
+              icon={
+                <MdTrash
+                  size={24 - 8}
+                  color={disabled ? colors.GREY_16 : colors.RED_ORANGE}
+                />
+              }
+              onClick={this.props.onRemoveClick}
+              disabled={disabled}
+            />
+          )}
+
           <Transition
-            items={showTooltipMessage}
+            items={tooltipMessage}
             from={{ opacity: 0 }}
             enter={{ opacity: 1 }}
             leave={{ opacity: 0 }}
           >
-            {tooltipMessage =>
-              tooltipMessage &&
+            {message =>
+              message &&
               (props => (
                 <TooltipContent
                   style={props}
                   className="tooltip-content"
-                  offset="-9px"
-                  positionX={POSITIONS.X.CENTER}
+                  positionX={POSITIONS.X.LEFT}
                   isVisible
                   {...this.props.tooltipProps}
                 >
-                  {tooltipMessage}
+                  {message}
                 </TooltipContent>
               ))
             }
           </Transition>
         </div>
 
+        <Input
+          data-testid="input-text"
+          className="inputComponent"
+          type="number"
+          min={min}
+          max={max}
+          step={this.props.step}
+          value={this.state.displayValue}
+          readOnly={disableTyping}
+          autoControlFocusedStyle={!disableTyping}
+          onChange={this.onChange}
+          onBlur={() => {
+            this.updateDisplayValue();
+          }}
+          small
+          disabled={disabled}
+          borderRadius="16px"
+          mb={0}
+        />
+
         <Button
-          className="increaseButton"
+          className="button button--increase"
+          data-testid="button--increase"
           type={buttonTypes.PRIMARY}
-          size={selectorSizeToButtonSize[size]}
+          size={buttonSizes.SMALL}
           icon={
             <MdAdd
-              size={selectorSizeToIconSize[size]}
+              size={24}
               color={disableIncreaseButton ? colors.GREY_16 : "white"}
             />
           }
           disabled={disableIncreaseButton}
           onClick={this.increment}
-          tooltipText={this.state.tooltipText}
-          css={{ borderRadius: "50%" }}
         />
       </Wrapper>
     );
@@ -253,12 +225,10 @@ AmountSelectors.propTypes = {
   max: PropTypes.number,
   maxAmountMessage: PropTypes.string,
   minAmountMessage: PropTypes.string,
-  showBoundariesMessageOnlyOnFocus: PropTypes.bool,
   enforceStep: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
   disableTyping: PropTypes.bool,
-  size: PropTypes.oneOf(values(selectorSizes)),
   className: PropTypes.string,
   tooltipProps: PropTypes.object,
   onRemoveClick: PropTypes.func,
@@ -275,7 +245,6 @@ AmountSelectors.defaultProps = {
   onChange: () => false,
   onRemoveClick: () => false,
   disableTyping: false,
-  size: selectorSizes.MEDIUM,
 };
 
 export default AmountSelectors;

@@ -1,74 +1,51 @@
 import styled, { css } from "styled-components";
+import { space } from "styled-system";
+import { transparentize } from "polished";
 import { colors, fontSizes } from "@crave/farmblocks-theme";
 
-const inputBoxShadow = props => {
-  if (!props.focused && (props.disabled || props.filled)) {
-    return css`
-      box-shadow: none;
-    `;
-  }
-  const shadowSize = props.focused ? "0 4px 4px 0" : "0 2px 2px 0";
-  return css`
-    box-shadow: ${shadowSize} ${colors.GREY_16};
-  `;
-};
-const inputBorderColor = props => {
-  if (props.focused || props.active) {
-    return colors.INDIGO_MILK_CAP;
-  }
-  return props.invalid ? colors.STRAWBERRY : "rgba(0,0,0,0.08)";
-};
-const placeholderColor = props => {
-  return props.focused ? colors.GREY_16 : colors.GREY_32;
-};
+const outlineColor = transparentize(0.92, colors.INDIGO_MILK_CAP);
 
-const ifSmall = (smallValue, defaultValue) => props =>
-  props.fontSize === fontSizes.SMALL ? smallValue : defaultValue;
+const getColorByStatus = ({ fallbackColor }) => ({
+  focused,
+  active,
+  invalid,
+}) => {
+  if (focused || active) return colors.INDIGO_MILK_CAP;
+  if (invalid) return colors.STRAWBERRY;
+  return fallbackColor;
+};
 
 const customCursor = props => (props.disabled ? "default" : "pointer");
 
 const fontStyles = css`
   font-family: Lato, sans-serif;
-  font-size: ${ifSmall(fontSizes.SMALL, fontSizes.MEDIUM)}px;
+  font-size: ${fontSizes.MEDIUM}px;
 `;
 
-const addonColor = props => {
-  if (props.focused || props.active) {
-    return css`
-      background-color: ${colors.INDIGO_MILK_CAP};
-      color: white;
-    `;
-  }
-  if (props.invalid) {
-    return css`
-      background-color: ${colors.STRAWBERRY};
-      color: white;
-    `;
-  }
-  if (props.disabled && !props.protected) {
-    return css`
-      background-color: ${colors.GREY_16};
-      color: ${colors.GREY_32};
-    `;
-  }
-  return css`
-    background-color: ${colors.SUGAR};
-    color: ${colors.CARBON};
+const focusedStyle = ({ focused, active }) =>
+  (focused || active) &&
+  css`
+    box-shadow: 0 0 0px 4px ${outlineColor};
+    border-width: 2px;
+    margin: -1px; // balances the border-width increase
   `;
-};
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  ${space}
+  ${fontStyles};
 
   > .input {
     order: 2;
     box-sizing: border-box;
     border: solid 1px;
     border-radius: ${({ borderRadius }) => borderRadius};
-    border-color: ${inputBorderColor};
+    border-color: ${getColorByStatus({ fallbackColor: colors.GREY_16 })};
     background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
-    ${inputBoxShadow};
+
+    ${focusedStyle};
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,12 +58,19 @@ const Wrapper = styled.div`
 
     > input,
     .select__search & input {
-      padding: 0 ${ifSmall("8", "16")}px;
-      height: ${ifSmall("30", "46")}px;
+      padding: ${({ small }) => (small ? "4px 16px" : "8px 16px")};
+      line-height: ${({ small }) => (small ? "24px" : "22px")};
     }
 
     > textarea {
       padding: 16px;
+    }
+
+    input,
+    textarea,
+    select {
+      font-family: inherit;
+      font-size: inherit;
     }
 
     > input,
@@ -96,11 +80,10 @@ const Wrapper = styled.div`
       border: 0;
       flex: 1;
       outline: none;
-      ${fontStyles};
       color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {
-        color: ${placeholderColor};
+        color: ${colors.GREY_32};
       }
       &[type="search"] {
         -webkit-appearance: none;
@@ -112,7 +95,6 @@ const Wrapper = styled.div`
           width: 0;
           height: 0;
         }
-        padding-left: 8px;
       }
       &[role="combobox"] {
         cursor: ${customCursor};
@@ -120,23 +102,21 @@ const Wrapper = styled.div`
     }
 
     > .icon {
-      color: ${inputBorderColor};
-      font-size: 20px;
-      height: 24px;
-    }
+      color: ${getColorByStatus({ fallbackColor: colors.GREY_16 })};
 
-    > .icon.left {
-      margin-left: ${ifSmall("8", "12")}px;
-    }
+      &.left {
+        margin-left: 8px;
+        margin-right: -8px; // adjust default input margin from 16px to 8px
+      }
 
-    > .icon.dropdown {
-      margin: 0 8px;
+      &.right {
+        margin-right: 8px;
+        margin-left: -8px; // adjust default input margin from 16px to 8px
+      }
     }
 
     > .clear {
       color: ${colors.GREY_16};
-      font-size: 20px;
-      height: 24px;
       &:hover {
         text-decoration: none;
         color: ${colors.INDIGO_MILK_CAP};
@@ -145,7 +125,6 @@ const Wrapper = styled.div`
         text-decoration: none;
         cursor: pointer;
       }
-      margin-right: ${ifSmall("8", "16")}px;
     }
   }
 
@@ -162,14 +141,20 @@ const Wrapper = styled.div`
     margin: 0;
   }
 
+  .prefix {
+    margin-left: 16px;
+    margin-right: -8px; // adjust default input margin from 16px to 8px
+  }
+
+  .suffix {
+    margin-right: 16px;
+    margin-left: -8px; // adjust default input margin from 16px to 8px
+  }
+
   .prefix,
   .suffix {
     ${fontStyles};
-    ${addonColor};
-    padding: 0 16px;
-    align-self: stretch;
-    display: flex;
-    align-items: center;
+    color: ${getColorByStatus({ fallbackColor: colors.GREY_32 })};
   }
 
   .label {

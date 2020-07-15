@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import Image from "@crave/farmblocks-image";
 import { SmCheck } from "@crave/farmblocks-icon";
 
-import Select, { fontSizes } from ".";
+import Select from ".";
 
 const items = [
   { value: "1", label: "Apple" },
@@ -250,26 +250,6 @@ storiesOf("Select Input", module)
 
     return <SelectStory />;
   })
-  .add("With more info content", () => (
-    <Select
-      placeholder="Select fruit"
-      label="Regular label"
-      moreInfoContent="More info text"
-      value={1}
-      items={items}
-      onChange={action("onChange")}
-      width="300px"
-    />
-  ))
-  .add("Small size", () => (
-    <Select
-      fontSize={fontSizes.SMALL}
-      placeholder="Select fruit"
-      label="Fruit"
-      items={items}
-      onChange={action("onChange")}
-    />
-  ))
   .add("Duplicated labels", () => (
     <Select
       placeholder="Select fruit"
@@ -357,14 +337,16 @@ storiesOf("Select Input/Multi", module)
     />
   ))
   .add("Without search", () => (
-    <Select
-      multi
-      disableSearch
-      placeholder="Select some fruits"
-      items={moreItems}
-      onChange={action("onChange")}
-      width="500px"
-    />
+    <ValueState>
+      <Select
+        multi
+        disableSearch
+        placeholder="Select some fruits"
+        items={moreItems}
+        onChange={action("onChange")}
+        width="500px"
+      />
+    </ValueState>
   ))
   .add("With errors", () => (
     <Select

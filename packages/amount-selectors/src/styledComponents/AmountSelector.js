@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
-import selectorSizes from "../constants/selectorSizes";
-
-const componentHeight = ({ size }) =>
-  size === selectorSizes.SMALL ? "32px" : "48px";
-
 export default styled.div`
   display: flex;
-  height: ${componentHeight};
+  width: 100%;
 
-  .inputContainer {
-    width: 70px;
+  .inputComponent {
     margin: 0 8px;
+    min-width: 50px;
+    flex-grow: 1;
 
     input {
       text-align: center;
@@ -20,5 +16,11 @@ export default styled.div`
         box-shadow: none;
       }
     }
+  }
+
+  .button {
+    border-radius: 50%;
+    min-width: 34px;
+    min-height: 34px;
   }
 `;

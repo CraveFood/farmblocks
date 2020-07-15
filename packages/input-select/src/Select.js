@@ -165,6 +165,7 @@ class Select extends React.Component {
         refName={refName}
         image={image}
         onKeyDown={this.onKeyDown(rest.onKeyDown)}
+        mb={0}
       >
         {multi && this.renderTags()}
       </EnhancedInput>
@@ -174,7 +175,7 @@ class Select extends React.Component {
   renderMenu = items => {
     const { noResultsMessage, maxHeight } = this.props;
 
-    if (!items || !items.length) {
+    if (!items?.length) {
       return (
         <EmptyCard className="emptyCard" noResultsMessage={noResultsMessage} />
       );

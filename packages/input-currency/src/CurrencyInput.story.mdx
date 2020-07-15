@@ -1,0 +1,67 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+
+import CurrencyInput from ".";
+
+<Meta title="Form|Currency Input" />
+
+# input-currency
+
+A regular html input composed with our [formInput HOC](https://cravefood.github.io/farmblocks/?path=/docs/form-hoc-forminput--basic#hoc-input) using [react-number-format](https://www.npmjs.com/package/react-number-format) instead of a regular html input. So the props for those packages are available here as well.
+
+## Basic Example
+
+```jsx
+import CurrencyInput from "@crave/farmblocks-input-currency";
+<CurrencyInput prefix="$" value={123.45} />;
+```
+
+## Properties
+
+Here is a list of the most common props to be used with currency:
+
+- **decimalScale** (_Number_) = 2
+  > number of digits after the decimal separator
+- **fixedDecimalScale** (_Boolean_) = true
+  > if true it adds 0s to match given decimalScale
+- **decimalSeparator** (_String_) = .
+- **thousandSeparator** (_String_) = ,
+- **allowNegative** (_Boolean_) = false
+
+<Preview>
+  <Story name="Basic">
+    <div>
+      <CurrencyInput onChange={action("onChange")} placeholder="Enter number" />
+      <CurrencyInput
+        label="Default props"
+        value={1234}
+        onChange={action("onChange")}
+      />
+      <CurrencyInput
+        label="Without decimal scale"
+        value={1234}
+        fixedDecimalScale={false}
+        onChange={action("onChange")}
+      />
+      <CurrencyInput
+        label="Custom decimalScale"
+        decimalScale={4}
+        value={1234}
+        onChange={action("onChange")}
+      />
+      <CurrencyInput
+        label="Negative"
+        allowNegative
+        onChange={action("onChange")}
+        value={-1234}
+      />
+      <CurrencyInput
+        label="Custom decimal an thousand separators"
+        value={1234}
+        decimalSeparator=","
+        thousandSeparator="."
+        onChange={action("onChange")}
+      />
+    </div>
+  </Story>
+</Preview>

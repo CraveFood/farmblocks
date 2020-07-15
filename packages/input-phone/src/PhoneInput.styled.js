@@ -38,6 +38,8 @@ export const NationalNumberInput = styled(TextInput)`
     align-items: stretch;
     border-radius: 3px 0 0 3px;
 
+    color: ${colors.CARBON};
+
     .popover__trigger {
       height: 100%;
     }

@@ -13,7 +13,6 @@ import {
   getCountryCallingCode,
 } from "libphonenumber-js";
 import TextInput from "@crave/farmblocks-input-text";
-import { fontSizes } from "@crave/farmblocks-theme";
 import Popover from "@crave/farmblocks-popover";
 import { FormWrapperHeader } from "@crave/farmblocks-form-wrapper";
 
@@ -171,17 +170,18 @@ const PhoneInput = ({
                   cancelLabel={textSelectCountryCancel}
                   onCancel={dismiss}
                 />
-                <TextInput
-                  placeholder={textSelectCountrySearch}
-                  type="search"
-                  fontSize={fontSizes.SMALL}
-                  margin="8px"
-                  value={countryQuery}
-                  onChange={handleSearchChange}
-                  onKeyDown={handleKeyDown}
-                  innerRef={searchInputRef}
-                  data-testid="country-search-input"
-                />
+                <div css="margin: 8px">
+                  <TextInput
+                    placeholder={textSelectCountrySearch}
+                    type="search"
+                    value={countryQuery}
+                    onChange={handleSearchChange}
+                    onKeyDown={handleKeyDown}
+                    innerRef={searchInputRef}
+                    data-testid="country-search-input"
+                    mb={0}
+                  />
+                </div>
                 <CountryList ref={listRef} data={listData} />
               </PopoverWrapper>
             );

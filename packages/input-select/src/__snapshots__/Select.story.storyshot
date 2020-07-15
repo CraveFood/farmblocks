@@ -14,6 +14,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -25,6 +26,9 @@ exports[`Storyshots Select Input Custom items 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -34,9 +38,8 @@ exports[`Storyshots Select Input Custom items 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,12 +63,19 @@ exports[`Storyshots Select Input Custom items 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -77,8 +87,6 @@ exports[`Storyshots Select Input Custom items 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -112,7 +120,6 @@ exports[`Storyshots Select Input Custom items 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -135,24 +142,21 @@ exports[`Storyshots Select Input Custom items 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -181,24 +185,21 @@ exports[`Storyshots Select Input Custom items 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -246,7 +247,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -254,6 +255,12 @@ exports[`Storyshots Select Input Custom items 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -265,7 +272,6 @@ exports[`Storyshots Select Input Custom items 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -282,8 +288,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -299,7 +304,7 @@ exports[`Storyshots Select Input Custom items 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -309,9 +314,9 @@ exports[`Storyshots Select Input Custom items 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -324,7 +329,6 @@ exports[`Storyshots Select Input Custom items 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -347,6 +351,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -358,6 +363,9 @@ exports[`Storyshots Select Input Custom width 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -367,9 +375,8 @@ exports[`Storyshots Select Input Custom width 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,12 +400,19 @@ exports[`Storyshots Select Input Custom width 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -410,8 +424,6 @@ exports[`Storyshots Select Input Custom width 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -445,7 +457,6 @@ exports[`Storyshots Select Input Custom width 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -468,24 +479,21 @@ exports[`Storyshots Select Input Custom width 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -514,24 +522,21 @@ exports[`Storyshots Select Input Custom width 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -579,7 +584,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -587,6 +592,12 @@ exports[`Storyshots Select Input Custom width 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -598,7 +609,6 @@ exports[`Storyshots Select Input Custom width 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -615,8 +625,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -632,7 +641,7 @@ exports[`Storyshots Select Input Custom width 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -642,9 +651,9 @@ exports[`Storyshots Select Input Custom width 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -657,7 +666,6 @@ exports[`Storyshots Select Input Custom width 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -680,6 +688,7 @@ exports[`Storyshots Select Input Default 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -691,6 +700,9 @@ exports[`Storyshots Select Input Default 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -700,9 +712,8 @@ exports[`Storyshots Select Input Default 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -726,12 +737,19 @@ exports[`Storyshots Select Input Default 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -743,8 +761,6 @@ exports[`Storyshots Select Input Default 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -778,7 +794,6 @@ exports[`Storyshots Select Input Default 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -801,24 +816,21 @@ exports[`Storyshots Select Input Default 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -847,24 +859,21 @@ exports[`Storyshots Select Input Default 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -912,7 +921,7 @@ exports[`Storyshots Select Input Default 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -920,6 +929,12 @@ exports[`Storyshots Select Input Default 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -931,7 +946,6 @@ exports[`Storyshots Select Input Default 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -948,8 +962,7 @@ exports[`Storyshots Select Input Default 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -965,7 +978,7 @@ exports[`Storyshots Select Input Default 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -975,9 +988,9 @@ exports[`Storyshots Select Input Default 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -990,7 +1003,6 @@ exports[`Storyshots Select Input Default 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -1013,6 +1025,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -1024,6 +1037,9 @@ exports[`Storyshots Select Input Default with id 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -1033,9 +1049,8 @@ exports[`Storyshots Select Input Default with id 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1059,12 +1074,19 @@ exports[`Storyshots Select Input Default with id 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -1076,8 +1098,6 @@ exports[`Storyshots Select Input Default with id 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -1111,7 +1131,6 @@ exports[`Storyshots Select Input Default with id 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -1134,24 +1153,21 @@ exports[`Storyshots Select Input Default with id 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -1180,24 +1196,21 @@ exports[`Storyshots Select Input Default with id 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -1245,7 +1258,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -1253,6 +1266,12 @@ exports[`Storyshots Select Input Default with id 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -1264,7 +1283,6 @@ exports[`Storyshots Select Input Default with id 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -1281,8 +1299,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               id="select-fruit"
               onBlur={[Function]}
               onChange={[Function]}
@@ -1299,7 +1316,7 @@ exports[`Storyshots Select Input Default with id 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -1309,9 +1326,9 @@ exports[`Storyshots Select Input Default with id 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -1324,7 +1341,6 @@ exports[`Storyshots Select Input Default with id 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -1347,6 +1363,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: rgba(0,0,0,0.32);
 }
 
@@ -1358,6 +1375,9 @@ exports[`Storyshots Select Input Disabled 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -1367,9 +1387,8 @@ exports[`Storyshots Select Input Disabled 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
-  box-shadow: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1393,12 +1412,19 @@ exports[`Storyshots Select Input Disabled 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -1410,8 +1436,6 @@ exports[`Storyshots Select Input Disabled 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: rgba(0,0,0,0.32);
   background: none;
 }
@@ -1445,7 +1469,6 @@ exports[`Storyshots Select Input Disabled 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -1468,24 +1491,21 @@ exports[`Storyshots Select Input Disabled 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -1514,24 +1534,21 @@ exports[`Storyshots Select Input Disabled 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: rgba(0,0,0,0.16);
   color: rgba(0,0,0,0.32);
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c1 .label {
@@ -1579,7 +1596,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -1587,6 +1604,12 @@ exports[`Storyshots Select Input Disabled 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -1615,7 +1638,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
+              className="wrapped "
               disabled={true}
               onBlur={[Function]}
               onChange={[Function]}
@@ -1632,7 +1655,7 @@ exports[`Storyshots Select Input Disabled 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -1642,9 +1665,9 @@ exports[`Storyshots Select Input Disabled 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -1680,6 +1703,7 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -1691,6 +1715,9 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -1700,9 +1727,8 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1726,12 +1752,19 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -1743,8 +1776,6 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -1778,7 +1809,6 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -1801,24 +1831,21 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -1847,24 +1874,21 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -1912,7 +1936,7 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -1920,6 +1944,12 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -1931,7 +1961,6 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -1948,8 +1977,7 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -1965,7 +1993,7 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -1975,9 +2003,9 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -1990,7 +2018,6 @@ exports[`Storyshots Select Input Duplicated labels 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -2013,6 +2040,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -2024,6 +2052,9 @@ exports[`Storyshots Select Input Empty items 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -2033,9 +2064,8 @@ exports[`Storyshots Select Input Empty items 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2059,12 +2089,19 @@ exports[`Storyshots Select Input Empty items 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -2076,8 +2113,6 @@ exports[`Storyshots Select Input Empty items 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -2111,7 +2146,6 @@ exports[`Storyshots Select Input Empty items 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -2134,24 +2168,21 @@ exports[`Storyshots Select Input Empty items 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -2180,24 +2211,21 @@ exports[`Storyshots Select Input Empty items 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -2245,7 +2273,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -2253,6 +2281,12 @@ exports[`Storyshots Select Input Empty items 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -2264,7 +2298,6 @@ exports[`Storyshots Select Input Empty items 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -2281,8 +2314,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -2298,7 +2330,7 @@ exports[`Storyshots Select Input Empty items 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -2308,9 +2340,9 @@ exports[`Storyshots Select Input Empty items 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -2323,7 +2355,6 @@ exports[`Storyshots Select Input Empty items 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -2346,6 +2377,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -2357,6 +2389,9 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -2366,9 +2401,8 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2392,12 +2426,19 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -2409,8 +2450,6 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -2444,7 +2483,6 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -2467,24 +2505,21 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -2513,24 +2548,21 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -2578,7 +2610,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -2586,6 +2618,12 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div>
@@ -2598,7 +2636,6 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
     >
       <div
         className="c1 select__search "
-        disabled={false}
         onClick={[Function]}
         type="text"
       >
@@ -2615,8 +2652,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
                 aria-autocomplete="list"
                 aria-expanded={false}
                 autoComplete="off"
-                className="wrapped"
-                disabled={false}
+                className="wrapped "
                 onBlur={[Function]}
                 onChange={[Function]}
                 onClick={[Function]}
@@ -2633,7 +2669,7 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
             </div>
           </div>
           <div
-            className="icon dropdown"
+            className="icon right"
           >
             <span
               className="c4"
@@ -2643,9 +2679,9 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
               <svg
                 aria-hidden={true}
                 className="farmblocks-icon "
-                height="1em"
+                height={18}
                 viewBox="2 2 20 20"
-                width="1em"
+                width={18}
               >
                 <path
                   d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -2658,7 +2694,6 @@ exports[`Storyshots Select Input Receiving new value 1`] = `
         </div>
         <label
           className="c5 label"
-          disabled={false}
         >
           Fruit
         </label>
@@ -2692,6 +2727,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -2703,6 +2739,9 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -2712,9 +2751,8 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2738,12 +2776,19 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -2755,8 +2800,6 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -2790,7 +2833,6 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -2813,24 +2855,21 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -2859,24 +2898,21 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -2924,7 +2960,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -2932,6 +2968,12 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -2943,7 +2985,6 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -2960,8 +3001,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -2978,7 +3018,7 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -2988,9 +3028,9 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -3003,342 +3043,6 @@ exports[`Storyshots Select Input Search (autocomplete) disabled 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
-      >
-        Fruit
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Select Input Small size 1`] = `
-.c4 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c4 .farmblocks-icon {
-  display: block;
-}
-
-.c5 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #2f313a;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c1 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c1 > .input > input,
-.select__search .c1 > .input input {
-  padding: 0 8px;
-  height: 30px;
-}
-
-.c1 > .input > textarea {
-  padding: 16px;
-}
-
-.c1 > .input > input,
-.c1 > .input > textarea,
-.select__search .c1 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  color: #2f313a;
-  background: none;
-}
-
-.c1 > .input > input::-webkit-input-placeholder,
-.c1 > .input > textarea::-webkit-input-placeholder,
-.select__search .c1 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input::-moz-placeholder,
-.c1 > .input > textarea::-moz-placeholder,
-.select__search .c1 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input:-ms-input-placeholder,
-.c1 > .input > textarea:-ms-input-placeholder,
-.select__search .c1 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input::placeholder,
-.c1 > .input > textarea::placeholder,
-.select__search .c1 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input[type="search"],
-.c1 > .input > textarea[type="search"],
-.select__search .c1 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1 > .input > input[type="search"]::-ms-clear,
-.c1 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c1 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c1 > .input > input[role="combobox"],
-.c1 > .input > textarea[role="combobox"],
-.select__search .c1 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
-}
-
-.c1 > .input > .icon.left {
-  margin-left: 8px;
-}
-
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
-}
-
-.c1 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 8px;
-}
-
-.c1 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c1 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c1 .input.dropdown {
-  cursor: pointer;
-}
-
-.c1 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c1 input[type="number"]::-webkit-inner-spin-button,
-.c1 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1 .prefix,
-.c1 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 .label {
-  margin-bottom: 8px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 > label {
-  padding: 0 8px 0 0;
-}
-
-.c0 {
-  font-family: lato,sans-serif;
-  display: inline-block;
-  position: relative;
-  width: 200px;
-}
-
-.c0 *:focus {
-  outline: none;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 > div {
-  margin: 8px 0 0 8px;
-}
-
-.c3 > div + input {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  min-width: 80px !important;
-}
-
-<div
-  className="DropdownWrapper-pqs3t4-0 c0"
-  width="200px"
->
-  <div
-    style={Object {}}
-  >
-    <div
-      className="c1 select__search "
-      disabled={false}
-      fontSize={14}
-      onClick={[Function]}
-      type="text"
-    >
-      <div
-        className="input dropdown"
-      >
-        <div
-          className="c2 labelContainer"
-        >
-          <div
-            className="c3 tagsWrapper"
-          >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              fontSize={14}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              size="1"
-              type="text"
-              value=""
-              width="200px"
-            />
-          </div>
-        </div>
-        <div
-          className="icon dropdown"
-        >
-          <span
-            className="c4"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height="1em"
-              viewBox="2 2 20 20"
-              width="1em"
-            >
-              <path
-                d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
-                fill="currentColor"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-      </div>
-      <label
-        className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -3361,6 +3065,7 @@ exports[`Storyshots Select Input With Images 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -3372,6 +3077,9 @@ exports[`Storyshots Select Input With Images 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -3381,9 +3089,8 @@ exports[`Storyshots Select Input With Images 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3407,12 +3114,19 @@ exports[`Storyshots Select Input With Images 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -3424,8 +3138,6 @@ exports[`Storyshots Select Input With Images 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -3459,7 +3171,6 @@ exports[`Storyshots Select Input With Images 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -3482,24 +3193,21 @@ exports[`Storyshots Select Input With Images 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -3528,24 +3236,21 @@ exports[`Storyshots Select Input With Images 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -3593,7 +3298,7 @@ exports[`Storyshots Select Input With Images 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -3601,6 +3306,12 @@ exports[`Storyshots Select Input With Images 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -3612,7 +3323,6 @@ exports[`Storyshots Select Input With Images 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -3629,8 +3339,7 @@ exports[`Storyshots Select Input With Images 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -3646,7 +3355,7 @@ exports[`Storyshots Select Input With Images 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -3656,9 +3365,9 @@ exports[`Storyshots Select Input With Images 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -3671,7 +3380,6 @@ exports[`Storyshots Select Input With Images 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -3694,6 +3402,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -3705,6 +3414,9 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -3714,9 +3426,8 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3740,12 +3451,19 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -3757,8 +3475,6 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -3792,7 +3508,6 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -3815,24 +3530,21 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -3861,24 +3573,21 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -3937,7 +3646,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
 }
 
 .c5 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c5 > div + input {
@@ -3945,6 +3654,12 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c5 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -3956,7 +3671,6 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -3981,8 +3695,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -3998,7 +3711,7 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c6"
@@ -4008,9 +3721,9 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -4023,7 +3736,6 @@ exports[`Storyshots Select Input With Selected Image 1`] = `
       </div>
       <label
         className="c7 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -4046,6 +3758,7 @@ exports[`Storyshots Select Input With errors 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #dd3311;
 }
 
@@ -4057,6 +3770,9 @@ exports[`Storyshots Select Input With errors 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -4068,7 +3784,6 @@ exports[`Storyshots Select Input With errors 1`] = `
   border-radius: 4px;
   border-color: #dd3311;
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4092,12 +3807,19 @@ exports[`Storyshots Select Input With errors 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -4109,8 +3831,6 @@ exports[`Storyshots Select Input With errors 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -4144,7 +3864,6 @@ exports[`Storyshots Select Input With errors 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -4168,23 +3887,20 @@ exports[`Storyshots Select Input With errors 1`] = `
 
 .c1 > .input > .icon {
   color: #dd3311;
-  font-size: 20px;
-  height: 24px;
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -4213,24 +3929,21 @@ exports[`Storyshots Select Input With errors 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #dd3311;
-  color: white;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: #dd3311;
 }
 
 .c1 .label {
@@ -4291,7 +4004,7 @@ exports[`Storyshots Select Input With errors 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -4299,6 +4012,12 @@ exports[`Storyshots Select Input With errors 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -4310,7 +4029,6 @@ exports[`Storyshots Select Input With errors 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -4327,8 +4045,7 @@ exports[`Storyshots Select Input With errors 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -4344,7 +4061,7 @@ exports[`Storyshots Select Input With errors 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -4354,9 +4071,9 @@ exports[`Storyshots Select Input With errors 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -4369,7 +4086,6 @@ exports[`Storyshots Select Input With errors 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -4399,6 +4115,7 @@ exports[`Storyshots Select Input With max height 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -4410,6 +4127,9 @@ exports[`Storyshots Select Input With max height 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -4419,9 +4139,8 @@ exports[`Storyshots Select Input With max height 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4445,12 +4164,19 @@ exports[`Storyshots Select Input With max height 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -4462,8 +4188,6 @@ exports[`Storyshots Select Input With max height 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -4497,7 +4221,6 @@ exports[`Storyshots Select Input With max height 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -4520,24 +4243,21 @@ exports[`Storyshots Select Input With max height 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -4566,24 +4286,21 @@ exports[`Storyshots Select Input With max height 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -4631,7 +4348,7 @@ exports[`Storyshots Select Input With max height 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -4639,6 +4356,12 @@ exports[`Storyshots Select Input With max height 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -4650,7 +4373,6 @@ exports[`Storyshots Select Input With max height 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -4667,8 +4389,7 @@ exports[`Storyshots Select Input With max height 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -4684,7 +4405,7 @@ exports[`Storyshots Select Input With max height 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -4694,9 +4415,9 @@ exports[`Storyshots Select Input With max height 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -4709,342 +4430,8 @@ exports[`Storyshots Select Input With max height 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Select Input With more info content 1`] = `
-.c4 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c4 .farmblocks-icon {
-  display: block;
-}
-
-.c5 {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #2f313a;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
-  background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c1 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c1 > .input > input,
-.select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
-}
-
-.c1 > .input > textarea {
-  padding: 16px;
-}
-
-.c1 > .input > input,
-.c1 > .input > textarea,
-.select__search .c1 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #2f313a;
-  background: none;
-}
-
-.c1 > .input > input::-webkit-input-placeholder,
-.c1 > .input > textarea::-webkit-input-placeholder,
-.select__search .c1 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input::-moz-placeholder,
-.c1 > .input > textarea::-moz-placeholder,
-.select__search .c1 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input:-ms-input-placeholder,
-.c1 > .input > textarea:-ms-input-placeholder,
-.select__search .c1 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input::placeholder,
-.c1 > .input > textarea::placeholder,
-.select__search .c1 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1 > .input > input[type="search"],
-.c1 > .input > textarea[type="search"],
-.select__search .c1 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-left: 8px;
-}
-
-.c1 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c1 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c1 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1 > .input > input[type="search"]::-ms-clear,
-.c1 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c1 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c1 > .input > input[role="combobox"],
-.c1 > .input > textarea[role="combobox"],
-.select__search .c1 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
-}
-
-.c1 > .input > .icon.left {
-  margin-left: 12px;
-}
-
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
-}
-
-.c1 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
-}
-
-.c1 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c1 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c1 .input.dropdown {
-  cursor: pointer;
-}
-
-.c1 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c1 input[type="number"]::-webkit-inner-spin-button,
-.c1 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1 .prefix,
-.c1 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 .label {
-  margin-bottom: 8px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 > label {
-  padding: 0 8px 0 0;
-}
-
-.c0 {
-  font-family: lato,sans-serif;
-  display: inline-block;
-  position: relative;
-  width: 300px;
-}
-
-.c0 *:focus {
-  outline: none;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c3 > div {
-  margin: 8px 0 0 8px;
-}
-
-.c3 > div + input {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  min-width: 80px !important;
-}
-
-<div
-  className="DropdownWrapper-pqs3t4-0 c0"
-  width="300px"
->
-  <div
-    style={Object {}}
-  >
-    <div
-      className="c1 select__search "
-      disabled={false}
-      onClick={[Function]}
-      type="text"
-    >
-      <div
-        className="input dropdown"
-      >
-        <div
-          className="c2 labelContainer"
-        >
-          <div
-            className="c3 tagsWrapper"
-          >
-            <input
-              aria-autocomplete="list"
-              aria-expanded={false}
-              autoComplete="off"
-              className="wrapped"
-              disabled={false}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              placeholder="Select fruit"
-              role="combobox"
-              size="1"
-              type="text"
-              value=""
-              width="300px"
-            />
-          </div>
-        </div>
-        <div
-          className="icon dropdown"
-        >
-          <span
-            className="c4"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height="1em"
-              viewBox="2 2 20 20"
-              width="1em"
-            >
-              <path
-                d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
-                fill="currentColor"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-      </div>
-      <label
-        className="c5 label"
-        disabled={false}
-      >
-        Regular label
       </label>
     </div>
   </div>
@@ -5069,6 +4456,9 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -5078,9 +4468,8 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5104,12 +4493,19 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -5121,8 +4517,6 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -5156,7 +4550,6 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -5179,24 +4572,21 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -5225,24 +4615,21 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -5290,7 +4677,7 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -5298,6 +4685,12 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -5309,7 +4702,6 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -5326,8 +4718,7 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -5343,7 +4734,7 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -5353,9 +4744,9 @@ exports[`Storyshots Select Input With onMenuVisibilityChange 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -5385,6 +4776,7 @@ exports[`Storyshots Select Input With value 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -5396,6 +4788,9 @@ exports[`Storyshots Select Input With value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -5405,9 +4800,8 @@ exports[`Storyshots Select Input With value 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5431,12 +4825,19 @@ exports[`Storyshots Select Input With value 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -5448,8 +4849,6 @@ exports[`Storyshots Select Input With value 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -5483,7 +4882,6 @@ exports[`Storyshots Select Input With value 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -5506,24 +4904,21 @@ exports[`Storyshots Select Input With value 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -5552,24 +4947,21 @@ exports[`Storyshots Select Input With value 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -5617,7 +5009,7 @@ exports[`Storyshots Select Input With value 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -5625,6 +5017,12 @@ exports[`Storyshots Select Input With value 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -5636,7 +5034,6 @@ exports[`Storyshots Select Input With value 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -5653,8 +5050,7 @@ exports[`Storyshots Select Input With value 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -5670,7 +5066,7 @@ exports[`Storyshots Select Input With value 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -5680,9 +5076,9 @@ exports[`Storyshots Select Input With value 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -5695,7 +5091,6 @@ exports[`Storyshots Select Input With value 1`] = `
       </div>
       <label
         className="c5 label"
-        disabled={false}
       >
         Fruit
       </label>
@@ -5718,6 +5113,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
+  line-height: 1.5;
   color: #2f313a;
 }
 
@@ -5729,6 +5125,9 @@ exports[`Storyshots Select Input Z-index 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -5738,9 +5137,8 @@ exports[`Storyshots Select Input Z-index 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5764,12 +5162,19 @@ exports[`Storyshots Select Input Z-index 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -5781,8 +5186,6 @@ exports[`Storyshots Select Input Z-index 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -5816,7 +5219,6 @@ exports[`Storyshots Select Input Z-index 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -5839,24 +5241,21 @@ exports[`Storyshots Select Input Z-index 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -5885,24 +5284,21 @@ exports[`Storyshots Select Input Z-index 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -5951,7 +5347,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -5959,6 +5355,12 @@ exports[`Storyshots Select Input Z-index 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div>
@@ -5985,7 +5387,6 @@ exports[`Storyshots Select Input Z-index 1`] = `
     >
       <div
         className="c1 select__search "
-        disabled={false}
         onClick={[Function]}
         type="text"
       >
@@ -6002,8 +5403,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
                 aria-autocomplete="list"
                 aria-expanded={false}
                 autoComplete="off"
-                className="wrapped"
-                disabled={false}
+                className="wrapped "
                 onBlur={[Function]}
                 onChange={[Function]}
                 onClick={[Function]}
@@ -6019,7 +5419,7 @@ exports[`Storyshots Select Input Z-index 1`] = `
             </div>
           </div>
           <div
-            className="icon dropdown"
+            className="icon right"
           >
             <span
               className="c4"
@@ -6029,9 +5429,9 @@ exports[`Storyshots Select Input Z-index 1`] = `
               <svg
                 aria-hidden={true}
                 className="farmblocks-icon "
-                height="1em"
+                height={18}
                 viewBox="2 2 20 20"
-                width="1em"
+                width={18}
               >
                 <path
                   d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -6044,7 +5444,6 @@ exports[`Storyshots Select Input Z-index 1`] = `
         </div>
         <label
           className="c5 label"
-          disabled={false}
         >
           Fruit
         </label>
@@ -6087,6 +5486,9 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -6096,9 +5498,8 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6122,12 +5523,19 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -6139,8 +5547,6 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -6174,7 +5580,6 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -6197,24 +5602,21 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -6243,24 +5645,21 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -6308,7 +5707,7 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -6316,6 +5715,12 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -6327,7 +5732,6 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -6344,8 +5748,7 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -6361,7 +5764,7 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -6371,9 +5774,9 @@ exports[`Storyshots Select Input/Multi Default 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -6407,6 +5810,9 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -6416,9 +5822,8 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: rgba(0,0,0,0.16);
-  box-shadow: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6442,12 +5847,19 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -6459,8 +5871,6 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: rgba(0,0,0,0.32);
   background: none;
 }
@@ -6494,7 +5904,6 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -6517,24 +5926,21 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -6563,24 +5969,21 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: rgba(0,0,0,0.16);
   color: rgba(0,0,0,0.32);
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c1 .label {
@@ -6702,7 +6105,7 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -6710,6 +6113,12 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -6759,7 +6168,7 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
+              className="wrapped "
               disabled={true}
               onBlur={[Function]}
               onChange={[Function]}
@@ -6776,7 +6185,7 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c5"
@@ -6786,9 +6195,9 @@ exports[`Storyshots Select Input/Multi Disabled 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -6822,6 +6231,9 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -6833,7 +6245,6 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
   border-radius: 4px;
   border-color: #dd3311;
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6857,12 +6268,19 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -6874,8 +6292,6 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -6909,7 +6325,6 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -6933,23 +6348,20 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
 
 .c1 > .input > .icon {
   color: #dd3311;
-  font-size: 20px;
-  height: 24px;
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -6978,24 +6390,21 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #dd3311;
-  color: white;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: #dd3311;
 }
 
 .c1 .label {
@@ -7056,7 +6465,7 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -7064,6 +6473,12 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -7075,7 +6490,6 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -7092,8 +6506,7 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -7109,7 +6522,7 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -7119,9 +6532,9 @@ exports[`Storyshots Select Input/Multi With errors 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -7162,6 +6575,9 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -7171,9 +6587,8 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7197,12 +6612,19 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -7214,8 +6636,6 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -7249,7 +6669,6 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -7272,24 +6691,21 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -7318,24 +6734,21 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -7383,7 +6796,7 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -7391,6 +6804,12 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -7402,7 +6821,6 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -7419,8 +6837,7 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -7436,7 +6853,7 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -7446,9 +6863,9 @@ exports[`Storyshots Select Input/Multi With images + Parent handling value 1`] =
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -7482,6 +6899,9 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -7491,9 +6911,8 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7517,12 +6936,19 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -7534,8 +6960,6 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -7569,7 +6993,6 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -7592,24 +7015,21 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -7638,24 +7058,21 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -7703,7 +7120,7 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -7711,6 +7128,12 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -7722,7 +7145,6 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -7739,8 +7161,7 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -7756,7 +7177,7 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -7766,9 +7187,9 @@ exports[`Storyshots Select Input/Multi With images 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -7802,6 +7223,9 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -7811,9 +7235,8 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7837,12 +7260,19 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -7854,8 +7284,6 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -7889,7 +7317,6 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -7912,24 +7339,21 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -7958,24 +7382,21 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -8023,7 +7444,7 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -8031,6 +7452,12 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -8042,7 +7469,6 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -8059,8 +7485,7 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -8076,7 +7501,7 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -8086,9 +7511,9 @@ exports[`Storyshots Select Input/Multi With parent handling value 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -8122,6 +7547,9 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -8131,9 +7559,8 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8157,12 +7584,19 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -8174,8 +7608,6 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -8209,7 +7641,6 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -8232,24 +7663,21 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -8278,24 +7706,21 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -8414,7 +7839,7 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -8422,6 +7847,12 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -8433,7 +7864,6 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -8549,8 +7979,7 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -8566,7 +7995,7 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c5"
@@ -8576,9 +8005,9 @@ exports[`Storyshots Select Input/Multi With some selected 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -8612,6 +8041,9 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c1 > .input {
@@ -8621,9 +8053,8 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8647,12 +8078,19 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
 
 .c1 > .input > input,
 .select__search .c1 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c1 > .input > textarea {
   padding: 16px;
+}
+
+.c1 > .input input,
+.c1 > .input textarea,
+.c1 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c1 > .input > input,
@@ -8664,8 +8102,6 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -8699,7 +8135,6 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
 .select__search .c1 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c1 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -8722,24 +8157,21 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
 }
 
 .c1 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c1 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c1 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c1 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c1 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c1 > .input > .clear:hover {
@@ -8768,24 +8200,21 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
   margin: 0;
 }
 
+.c1 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c1 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c1 .prefix,
 .c1 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c1 .label {
@@ -8833,7 +8262,7 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
 }
 
 .c3 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c3 > div + input {
@@ -8841,6 +8270,12 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c3 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 <div
@@ -8852,7 +8287,6 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
   >
     <div
       className="c1 select__search "
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -8869,8 +8303,7 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -8887,7 +8320,7 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c4"
@@ -8897,9 +8330,9 @@ exports[`Storyshots Select Input/Multi Without search 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"
@@ -8933,6 +8366,9 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
 }
 
 .c2 > .input {
@@ -8942,9 +8378,8 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
   box-sizing: border-box;
   border: solid 1px;
   border-radius: 4px;
-  border-color: rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.16);
   background-color: #ffffff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8968,12 +8403,19 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
 
 .c2 > .input > input,
 .select__search .c2 > .input input {
-  padding: 0 16px;
-  height: 46px;
+  padding: 8px 16px;
+  line-height: 22px;
 }
 
 .c2 > .input > textarea {
   padding: 16px;
+}
+
+.c2 > .input input,
+.c2 > .input textarea,
+.c2 > .input select {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .c2 > .input > input,
@@ -8985,8 +8427,6 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
   -ms-flex: 1;
   flex: 1;
   outline: none;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
   color: #2f313a;
   background: none;
 }
@@ -9020,7 +8460,6 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
 .select__search .c2 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-left: 8px;
 }
 
 .c2 > .input > input[type="search"]::-webkit-search-cancel-button,
@@ -9043,24 +8482,21 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
 }
 
 .c2 > .input > .icon {
-  color: rgba(0,0,0,0.08);
-  font-size: 20px;
-  height: 24px;
+  color: rgba(0,0,0,0.16);
 }
 
 .c2 > .input > .icon.left {
-  margin-left: 12px;
+  margin-left: 8px;
+  margin-right: -8px;
 }
 
-.c2 > .input > .icon.dropdown {
-  margin: 0 8px;
+.c2 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
 }
 
 .c2 > .input > .clear {
   color: rgba(0,0,0,0.16);
-  font-size: 20px;
-  height: 24px;
-  margin-right: 16px;
 }
 
 .c2 > .input > .clear:hover {
@@ -9089,24 +8525,21 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
   margin: 0;
 }
 
+.c2 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c2 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
 .c2 .prefix,
 .c2 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
-  background-color: #f6f8f9;
-  color: #2f313a;
-  padding: 0 16px;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  color: rgba(0,0,0,0.32);
 }
 
 .c2 .label {
@@ -9225,7 +8658,7 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
 }
 
 .c4 > div {
-  margin: 8px 0 0 8px;
+  margin: 8px 0px 8px 8px;
 }
 
 .c4 > div + input {
@@ -9233,6 +8666,12 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
   -ms-flex: 1;
   flex: 1;
   min-width: 80px !important;
+}
+
+.c4 .wrapped {
+  border: none;
+  margin: 8px 16px;
+  cursor: pointer;
 }
 
 .c1 {
@@ -9278,7 +8717,6 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
   >
     <div
       className="c2 select__search c1"
-      disabled={false}
       onClick={[Function]}
       type="text"
     >
@@ -9394,8 +8832,7 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
               aria-autocomplete="list"
               aria-expanded={false}
               autoComplete="off"
-              className="wrapped"
-              disabled={false}
+              className="wrapped "
               onBlur={[Function]}
               onChange={[Function]}
               onClick={[Function]}
@@ -9411,7 +8848,7 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
           </div>
         </div>
         <div
-          className="icon dropdown"
+          className="icon right"
         >
           <span
             className="c6"
@@ -9421,9 +8858,9 @@ exports[`Storyshots Select Input/Multi extended style 1`] = `
             <svg
               aria-hidden={true}
               className="farmblocks-icon "
-              height="1em"
+              height={18}
               viewBox="2 2 20 20"
-              width="1em"
+              width={18}
             >
               <path
                 d="M12 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L12 12.586z"

@@ -1,0 +1,145 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import styled from "styled-components";
+
+import AmountSelectors from "./AmountSelectors";
+import { Container } from "./AmountSelectors.story.utils";
+
+<Meta title="Form|AmountSelectors" />
+
+# amount-selectors
+
+A number input with buttons to decrease and increase its value.
+
+## Basic Example
+
+```jsx
+import AmountSelectors from "@crave/farmblocks-amount-selectors";
+const Form = () => (
+  <AmountSelectors
+    onChange={handleChanges}
+    max={100}
+    min={1}
+    onRemoveClick={handleRemoveClick}
+  />
+);
+```
+
+## Properties
+
+- **value** (_Number_) = 0
+  > Input value
+- **onChange** (_Function_)
+  > Callback to listen to input changes
+
+<Preview>
+  <Story name="Basic">
+    <Container>
+      <AmountSelectors onChange={action("onChange")} />
+    </Container>
+  </Story>
+</Preview>
+
+- **min** (_Number_)
+  > Minimum amount allowed
+- **minAmountMessage** (_Number_)
+  > Message to be displayed after typing a value less than `min` value
+- **max** (_Number_)
+  > Maximum amount allowed
+- **maxAmountMessage** (_Number_)
+
+  > Message to be displayed after typing a value greater than `max` value
+
+<Preview>
+  <Story name="Min and max amount">
+    <div css="display: flex">
+      <Container m={2}>
+        Mininum amount = 10
+        <AmountSelectors min={10} value={10} />
+      </Container>
+      <Container m={2}>
+        Maximum amount = 10
+        <AmountSelectors max={10} value={10} />
+      </Container>
+    </div>
+  </Story>
+  <Story name="Min and max amount with messages">
+    <div css="display: flex">
+      <Container m={2}>
+        Mininum amount = 10
+        <AmountSelectors min={10} value={9} />
+      </Container>
+      <Container m={2}>
+        Maximum amount = 10
+        <AmountSelectors max={10} value={11} />
+      </Container>
+    </div>
+  </Story>
+</Preview>
+
+- **removable** (_Boolean_)
+  > When set to true it'll render a delete button whenever it reaches the minimum value
+- **onRemoveClick** (_onRemoveClick_)
+
+  > Callback to listen to clicks on delete button
+
+<Preview>
+  <Story name="Removable">
+    <Container>
+      <AmountSelectors
+        removable
+        min={1}
+        value={1}
+        onRemoveClick={action("onRemoveClick")}
+      />
+    </Container>
+  </Story>
+</Preview>
+
+- **step** (_Number_) = 1
+
+  > Step value to be increased or decreased through increase/decrease button
+
+<Preview>
+  <Story name="Custom step">
+    <Container>
+      <AmountSelectors step={0.7} />
+    </Container>
+  </Story>
+</Preview>
+
+- **enforceStep** (_Boolean_)
+
+  > Disable increase/deacrease buttons when value mismatch the steps
+
+<Preview>
+  <Story name="Enforce step">
+    <Container>
+      <AmountSelectors step={0.7} enforceStep />
+    </Container>
+  </Story>
+</Preview>
+
+- **disabletyping** (_Boolean_)
+
+  > Disable input typing
+
+<Preview>
+  <Story name="Disable typing">
+    <Container>
+      <AmountSelectors disableTyping />
+    </Container>
+  </Story>
+</Preview>
+
+- **disabled** (_Boolean_)
+
+  > Disable input and buttons
+
+<Preview>
+  <Story name="Disabled">
+    <Container>
+      <AmountSelectors disabled />
+    </Container>
+  </Story>
+</Preview>

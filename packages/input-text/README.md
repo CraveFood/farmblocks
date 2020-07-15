@@ -29,60 +29,18 @@ render(
     />
     <TextAreaInput label="Text area input" rows="4" />
   </div>,
-  root
+  root,
 );
 ```
 
-See the stories source code for more usage examples.
-
-## Properties
-
-The core of the Text Input component is an html `input` element of default type
-`type="text"`. So the APIs are very similar.
+This component uses the html `input` element. So the APIs are very similar.
 
 For example, `value`, `placeholder`, `disabled`, `maxLength`, `onChange` and
 others not listed here, should work as expected, you can assume that the
-property will be forwarded to the core html input element.
+property will be forwarded to the core html input element. Ref.:
+[MDN &lt;input&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
-### Extra properties
-
-In addition to the normal input properties, there are some other optional
-properties that provides enhanced functionality:
-
-| property             | type             | description                                                                                                                                                                                                                                                           | default    |
-| -------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| label                | string           | a text to be used as label for the field                                                                                                                                                                                                                              |            |
-| validationMessages   | array of strings | text messages to display if the invalid property is present / true if passed will style the field as a field that needs attention / corrections                                                                                                                       |            |
-| errorIconSrc         | string           | the url for a custom icon to be displayed before all error messages                                                                                                                                                                                                   |            |
-| protected            | boolean          | a flag that makes the field harder to edit, the user will have to unlock the field by clicking on a pencil icon, and after typing the new value, hit Enter to replace the previous value or Escape to leave the previous value                                        |            |
-| onUncover            | function         | if the field is protected, this event handler will be called when the protection cover is removed (click on the edit icon)                                                                                                                                            |            |
-| onReplace            | function         | if the field is protected, pass a function that receives the new value for the field and it will be called when the user finished editing by pressing Enter, this handler will also be triggered if the property value of the component changes after the first mount |            |
-| disableManualReplace | boolean          | if the field is protected, this flag will disable manual value replacement, the user wont see the save/cancel buttons and the equivalent enter/escape keys wont change the value. This property is used by the search-field                                           |            |
-| onCancel             | function         | if the field is protected, you can pass a function to be called when the user cancels the editing by pressing Esc                                                                                                                                                     |            |
-| cancelButtonText     | string           | protected only: text to be used on save button                                                                                                                                                                                                                        | Cancel     |
-| saveButtonText       | string           | protected only: text to be used on save button                                                                                                                                                                                                                        |            |
-| mask                 | string           | when a mask is present, the component will wrap an instance of react-input-mask, check its docs for further information                                                                                                                                               |            |
-| margin               | string           | custom margin                                                                                                                                                                                                                                                         | 0 0 24px 0 |
-
-## Built-in constraint validation
-
-Modern browsers have some built-in validation checks that you can use, such as
-marking that a field cannot be empty with the `required` property for example.
-This can be useful to prevent a trip to your server-side when you know before
-hand that a field cannot be empty.
-
-Other html input attributes that have built-in browser validation checks are the
-type attribute, like `type="email"`, `type="URL"`, `type="number"`, etc... and
-even regular expression patterns with the `pattern` attribute. See
-[this MDN page](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation).
-
-If used, and supported by the browser, The Text Input component will override
-the default native browser balloon and display the validation message provided
-by the browser using the farmblocks styling.
-
-We recomend however that you do back-end validation regardless of the browser
-constraint support, and then use the `validationMessages` propertiy to present
-the returned field errors of your server-side validations.
+For more examples and details on the available props, [read the docs](https://cravefood.github.io/farmblocks/?path=/docs/form-text-input--basic).
 
 ## License
 
