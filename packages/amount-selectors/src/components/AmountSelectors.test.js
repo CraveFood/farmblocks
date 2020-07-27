@@ -121,28 +121,6 @@ describe("Amount selectors", () => {
       expect(onChange).toBeCalledWith(min);
     });
   });
-  describe("onChange function", () => {
-    it("should disable both buttons when enforceStep is passed if browser validation fail with step mismatch", () => {
-      const step = 0.5;
-      render(
-        <AmountSelectors
-          onChange={onChange}
-          step={step}
-          enforceStep
-          value={5}
-        />,
-      );
-      const increaseButton = screen.getByTestId("button--increase");
-      const decreaseButton = screen.getByTestId("button--decrease");
-      expect(increaseButton).toBeEnabled();
-      expect(decreaseButton).toBeEnabled();
-
-      const input = screen.getByRole("spinbutton");
-      userEvent.type(input, "{backspace}{backspace}3.2");
-      expect(increaseButton).toBeDisabled();
-      expect(decreaseButton).toBeDisabled();
-    });
-  });
 
   describe("component update", () => {
     it("should update value when prop value is set after mount", () => {

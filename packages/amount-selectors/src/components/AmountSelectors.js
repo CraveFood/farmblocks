@@ -21,8 +21,6 @@ class AmountSelectors extends React.Component {
 
     this.state = {
       value: Number(displayValue),
-      disableBoth: false,
-      tooltipText: "",
       displayValue,
     };
   }
@@ -33,28 +31,15 @@ class AmountSelectors extends React.Component {
     }
   }
 
-  // Conditions to disable both buttons,
-  // see https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
-  disableBoth = validity =>
-    validity.badInput || (validity.stepMismatch && this.props.enforceStep);
-
   onChange = (event, cb) => {
     const value = typeof event === "number" ? event : event.target.value;
-    const hasBrowserValidation = event?.target?.validity !== undefined;
-    const disableBoth =
-      hasBrowserValidation && this.disableBoth(event.target.validity);
 
-    const tooltipText = hasBrowserValidation
-      ? event.target.validationMessage
-      : "";
     const validValue = parseFloat(value);
 
     this.setState(
       state => ({
         value: validValue,
         displayValue: validValue || state.displayValue,
-        disableBoth,
-        tooltipText,
       }),
       cb,
     );
@@ -114,12 +99,9 @@ class AmountSelectors extends React.Component {
     const showMinMessage = value < min;
     const tooltipMessage =
       (showMaxMessage && maxAmountMessage) ||
-      (showMinMessage && minAmountMessage) ||
-      this.state.tooltipText;
-    const disableDecreaseButton =
-      disabled || this.state.disableBoth || value <= min;
-    const disableIncreaseButton =
-      disabled || this.state.disableBoth || value >= max;
+      (showMinMessage && minAmountMessage);
+    const disableDecreaseButton = disabled || value <= min;
+    const disableIncreaseButton = disabled || value >= max;
 
     return (
       <Wrapper className={this.props.className}>
@@ -225,7 +207,6 @@ AmountSelectors.propTypes = {
   max: PropTypes.number,
   maxAmountMessage: PropTypes.string,
   minAmountMessage: PropTypes.string,
-  enforceStep: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func,
   disableTyping: PropTypes.bool,
