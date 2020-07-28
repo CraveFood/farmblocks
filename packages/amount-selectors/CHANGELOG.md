@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@5.0.0...@crave/farmblocks-amount-selectors@6.0.0) (2020-07-28)
+
+
+### Bug Fixes
+
+* **AmountSelectors:** remove browser validation ([ba61d00](https://github.com/CraveFood/farmblocks/commit/ba61d00cbfd6ae8c42c7d72a141c9517ce860a1a))
+
+
+### BREAKING CHANGES
+
+* **AmountSelectors:** This component no longer expects enforceStep property
+
+
+
+
+
 # [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@4.0.0...@crave/farmblocks-amount-selectors@5.0.0) (2020-07-15)
 
 
