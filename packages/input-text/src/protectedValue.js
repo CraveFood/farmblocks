@@ -102,6 +102,7 @@ export default WrappedComponent => {
 
           {covered && !isEditing && (
             <ProtectedCover
+              prefix={wrappedComponentProps.prefix}
               value={this.state.value}
               disabled={this.props.disabled}
               handleEditClick={this.onUncover}
