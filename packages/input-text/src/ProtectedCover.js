@@ -40,6 +40,7 @@ Cover.displayName = "InputCover";
 
 const ProtectedCover = ({
   value,
+  protectedValue,
   prefix,
   disabled,
   handleEditClick,
@@ -57,7 +58,7 @@ const ProtectedCover = ({
     >
       <div className="input">
         {prefix && <div className="prefix">{prefix}</div>}
-        {value}
+        {protectedValue || value}
         {!disabled && (
           <Link
             className="clear"
@@ -75,6 +76,7 @@ const ProtectedCover = ({
 
 ProtectedCover.propTypes = {
   value: PropTypes.node,
+  protectedValue: PropTypes.node,
   prefix: PropTypes.node,
   disabled: PropTypes.bool,
   handleEditClick: PropTypes.func.isRequired,
