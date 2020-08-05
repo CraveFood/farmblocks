@@ -16,6 +16,7 @@ const Container = styled.div`
 // extra properties supported/extended by the protected field HOC
 export const protectedValueProps = {
   protected: PropTypes.bool,
+  protectedValue: PropTypes.node,
   onUncover: PropTypes.func,
   onKeyDown: PropTypes.func,
 };
@@ -71,6 +72,7 @@ export default WrappedComponent => {
     render() {
       const {
         protected: covered,
+        protectedValue,
         onKeyDown,
         onUncover,
         cancelButtonText,
@@ -102,7 +104,9 @@ export default WrappedComponent => {
 
           {covered && !isEditing && (
             <ProtectedCover
+              prefix={wrappedComponentProps.prefix}
               value={this.state.value}
+              protectedValue={protectedValue}
               disabled={this.props.disabled}
               handleEditClick={this.onUncover}
               label={wrappedComponentProps.label}

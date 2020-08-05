@@ -27,6 +27,9 @@ const Cover = styled(styledInput)`
     color: ${colors.CARBON};
     cursor: auto;
   }
+  .prefix {
+    margin: 0 8px 0 0;
+  }
 
   .clear {
     position: absolute;
@@ -37,6 +40,8 @@ Cover.displayName = "InputCover";
 
 const ProtectedCover = ({
   value,
+  protectedValue,
+  prefix,
   disabled,
   handleEditClick,
   label,
@@ -52,7 +57,8 @@ const ProtectedCover = ({
       data-testid="protected-input-cover"
     >
       <div className="input">
-        {value}
+        {prefix && <div className="prefix">{prefix}</div>}
+        {protectedValue || value}
         {!disabled && (
           <Link
             className="clear"
@@ -69,7 +75,9 @@ const ProtectedCover = ({
 };
 
 ProtectedCover.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.node,
+  protectedValue: PropTypes.node,
+  prefix: PropTypes.node,
   disabled: PropTypes.bool,
   handleEditClick: PropTypes.func.isRequired,
   label: PropTypes.string,

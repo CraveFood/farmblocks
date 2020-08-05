@@ -38,6 +38,8 @@ Use these properties to do so:
 
 - **protected** (_Boolean_)
   > a flag that makes the field harder to edit, the user will have to unlock the field by clicking on a pencil icon, and after typing the new value, hit Enter to replace the previous value or Escape to leave the previous value
+- **protectedValue** (_Node_)
+  > the value to render while the input is protected, in case you need to format it differently than the open input. Will fall back to `value`
 - **onUncover** (_Function_)
   > if the field is protected, this event handler will be called when the protection cover is removed (click on the edit icon)
 - **onKeyDown** (_Function_)
@@ -50,7 +52,14 @@ Use these properties to do so:
     <div>
       <TextInput protected placeholder="Input without label" />
       <TextInput protected label="With value" value="Foo bar" />
+      <TextInput
+        protected
+        label="With protectedValue"
+        protectedValue="Zero"
+        value={0}
+      />
       <TextInput protected label="Invalid" invalid />
+      <TextInput protected label="With prefix" prefix="$" value="0" />
       <TextInput
         protected
         label="Validation Messages"
