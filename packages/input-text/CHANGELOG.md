@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@5.0.0...@crave/farmblocks-input-text@5.1.0) (2020-08-05)
+
+
+### Bug Fixes
+
+* **ProtectedCover:** render prefix ([c69e1ca](https://github.com/CraveFood/farmblocks/commit/c69e1cab50ac504895573c02053d100fdd85d445))
+
+
+### Features
+
+* **TextInput:** add protectedValue prop ([e613346](https://github.com/CraveFood/farmblocks/commit/e61334690418f492b171a823b0f15eb9d2ae6a44))
+
+
+
+
+
 # [5.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@4.0.0...@crave/farmblocks-input-text@5.0.0) (2020-07-15)
 
 

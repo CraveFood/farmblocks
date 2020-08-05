@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.22](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-phone@0.3.21...@crave/farmblocks-input-phone@0.3.22) (2020-08-05)
+
+**Note:** Version bump only for package @crave/farmblocks-input-phone
+
+
+
+
+
 ## [0.3.21](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-phone@0.3.20...@crave/farmblocks-input-phone@0.3.21) (2020-07-15)
 
 **Note:** Version bump only for package @crave/farmblocks-input-phone
