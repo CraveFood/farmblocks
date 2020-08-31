@@ -1,0 +1,210 @@
+import { Meta, Story, Preview, Canvas } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import styled, { ThemeProvider } from "styled-components";
+import { MdSettings, SmChevronDown, MdEdit } from "@crave/farmblocks-icon";
+
+import Button, {
+  buttonVariants, 
+  PrimaryButton,
+  SecondaryButton,
+  NeutralButton,
+  PositiveButton,
+  NegativeButton,
+  GhostButton,} 
+from "./";
+
+<Meta title="Form|Button" />
+
+# Farmblocks Button
+
+A React component for displaying buttons and actionable icons
+
+## Basic Example
+
+```jsx
+import Button, {buttonVariants, PrimaryButton} from "@crave/farmblocks-button";
+const Form = () => (
+  <Button onChange={handleButtonClick} variant={buttonVariants.PRIMARY} small>
+    Click me
+  </Button>
+
+  <PrimaryButton onChange={handleButtonClick} small>
+    Click me
+  </PrimaryButton>
+);
+```
+
+
+## Properties
+
+- **children** (_Node)_
+- **text** (_String_)
+  > Text to be rendered as the button's children. Children will be ignored when `text` is present
+- **onClick** (_Function_)
+  > Callback to listen to button clicks
+- **small** (_Boolean_)
+  > Set the button height to 32px. The default height is 40px
+- **active** (_Boolean_)
+  > Set the active style
+
+<Preview>
+  <Story name="Default">
+    <Button onClick={action('onClick')}>Default button</Button>
+  </Story>
+  <Story name="Small">
+    <Button onClick={action('onClick')} small>Small button</Button>
+  </Story>
+  <Story name="Active">
+    <Button onClick={action('onClick')} active>Active button</Button>
+  </Story>
+</Preview>
+
+- **disabled** (_Boolean_)
+  > Set the loading style
+
+<Preview>
+  <Story name="Disabled">
+    <Button onClick={action('onClick')} disabled>Disabled</Button>
+  </Story>
+</Preview>
+
+- **loading** (_Boolean_)
+  > Set the loading style
+
+<Preview>
+  <Story name="Loading">
+    <Button loading>Loading</Button>
+  </Story>
+</Preview>
+
+- **fluid** (_Boolean_)
+  > Set width to 100% of it's parent
+  
+<Preview>
+  <Story name="Fluid">
+    <div style={{ width: 400, height: 150, background: "rgba(0, 0, 0, 0.32)" }}>
+    <Button variant={buttonVariants.PRIMARY} fluid text="Primary" />
+    <br />
+    <Button variant={buttonVariants.PRIMARY} fluid icon={<MdSettings size={22} />}>
+      Primary With Icon
+    </Button>
+  </div>
+  </Story>
+</Preview>
+
+## Using Icons
+- **icon** (_Node_)
+  > farmblocks-icon node to be rendered on the left side, or as an icon only button
+- **rightIcon** (_Node_)
+  > farmblocks-icon node to be rendered on the right side
+
+<Preview>
+  <Story name="With icon">
+    <Button onClick={action('onClick')} icon={<MdSettings size={22} />}>Left Icon</Button>
+  </Story>
+  <Story name="With right icon">
+    <Button onClick={action('onClick')} rightIcon={<SmChevronDown size={20} />}>Right Icon</Button>
+  </Story>
+  <Story name="With both icons">
+    <Button onClick={action('onClick')} icon={<MdSettings size={22} />} rightIcon={<SmChevronDown size={20} />}>Both icons</Button>
+  </Story>
+</Preview>
+
+
+## Default Variants
+These are the default variants that this component works with. 
+
+- **variant** (_One of buttonVariants_) = `buttonVariants.NEUTRAL`
+  > set the variant style
+
+<Preview>
+  <Story id="form-button-all-variants-with-default-size--default" />
+</Preview>
+
+## Named components
+For convenience, we also export these named components: `PrimaryButton`, `SecondaryButton`, `PositiveButton`, `NegativeButton`, `GhostButton` that will automatically set the variant style
+
+<Preview>
+  <Story name="NeutralButton">
+    <NeutralButton>Neutral</NeutralButton>
+  </Story>
+  <Story name="PrimaryButton">
+    <PrimaryButton>Primary</PrimaryButton>
+  </Story>
+  <Story name="SecondaryButton">
+    <SecondaryButton>Secondary</SecondaryButton>
+  </Story>
+  <Story name="PositiveButton">
+    <PositiveButton>Positive</PositiveButton>
+  </Story>
+  <Story name="NegativeButton">
+    <NegativeButton>Negative</NegativeButton>
+  </Story>
+  <Story name="GhostButton">
+    <GhostButton>Ghost</GhostButton>
+  </Story>
+</Preview>
+
+## Custom Theme
+It's possible to customize the themes using styled-components `ThemeProvider`. Please refer to the `buttonThemes` file to see implementation details
+
+<Preview>
+  <Story name="Custom Theme">
+    <ThemeProvider
+      theme={{
+        [buttonVariants.PRIMARY]: {
+          normal: { backgroundColor: "deeppink" },
+          hover: { backgroundColor: "blueviolet" },
+        },
+        myVariant: {
+          normal: {
+            backgroundColor: "chartreuse",
+            textColor: "tomato",
+          },
+          hover: {
+            textColor: "slateblue",
+            borderColor: "tomato",
+            borderWidth: 4,
+          },
+        },
+      }}
+    >
+      <Button
+        variant={buttonVariants.PRIMARY}
+        onClick={action("buttonClicked")}
+        text="🦄 My Beautiful Primary Button"
+      />
+      <br />
+      <Button
+        variant='myVariant'
+        onClick={action("buttonClicked")}
+        text="🦄 My Beautiful Own Variant"
+      />
+    </ThemeProvider>
+  </Story>
+</Preview>
+
+Inline customizations are still possible:
+
+<Preview>
+  <Story name="extended style">
+    <Button
+      css="
+        font-family: serif;
+        .left-icon {
+          font-size: 3em;
+        }
+      "
+      text="Label"
+      icon={<MdEdit />}
+    />
+  </Story>
+</Preview>
+
+## Test Properties
+The following properties are used for testing purposes and should not be used on a production environment
+
+- **hovered** (_Boolean_)
+  > Set the hovered style
+- **focused** (_Boolean_)
+  > Set the focused style

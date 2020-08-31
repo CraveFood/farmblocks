@@ -1,156 +1,119 @@
 import styled, { css } from "styled-components";
+import { colors } from "@crave/farmblocks-theme";
+import "focus-visible";
 
-import colorTypes from "../constants/colorTypes";
-import { MEDIUM } from "../constants/buttonSizes";
-import { NEUTRAL } from "../constants/buttonTypes";
+import buttonThemes from "../constants/buttonThemes";
+import buttonVariants from "../constants/buttonVariants";
 
-const buttonHeight = ({ size }) => (size === MEDIUM ? 48 : 32);
-const lineHeight = props => buttonHeight(props) - 2;
-const paddingStyle = ({ isIconOnly, paddingX }) => {
-  if (paddingX) {
-    return css`
-      padding: 0 ${paddingX};
-    `;
-  }
+const buttonHeight = ({ small }) => (small ? 32 : 40);
 
-  return css`
-    padding: 0 ${isIconOnly ? "0" : "16px"};
-  `;
-};
+const calcPadding = borderWidth => ({ paddingX, paddingY }) =>
+  `${paddingY - borderWidth + 1}px ${paddingX - borderWidth + 1}px`;
 
-function neutralStyle(props) {
-  const { textColor, iconColor, textHoverColor, color } = props.theme[NEUTRAL];
-  const activatedNeutralStyle = css`
-    color: ${textHoverColor};
-    border-color: ${textHoverColor};
-    > .icon {
-      color: ${textHoverColor};
-    }
-  `;
-  return css`
-    background-color: ${color};
-    color: ${props.textColor || textColor};
-    > .icon {
-      color: ${iconColor};
-    }
-    ${({ activated }) => activated && activatedNeutralStyle};
+function themeStyle(props) {
+  const theme = { ...buttonThemes, ...props.theme };
 
-    &:hover,
-    &:focus {
-      ${activatedNeutralStyle};
-    }
-  `;
-}
-
-function typeStyle(props) {
-  const theme = { ...colorTypes, ...props.theme };
-  if (props.type === NEUTRAL) {
-    return neutralStyle({ ...props, theme });
-  }
-  const { color, hoverColor } = theme[props.type];
+  const { normal, hover, active } =
+    theme[props.variant] || theme[buttonVariants.NEUTRAL];
 
   return css`
-    transition: background 0.3s ease;
-    background-color: ${color};
+    background-color: ${normal?.backgroundColor};
+    color: ${normal?.textColor};
+    border: ${normal?.border || `solid 1px ${colors.GREY_16}`};
+    box-shadow: ${normal?.boxShadow || `0px 2px 2px 0px ${colors.GREY_16}`};
 
-    &:hover {
-      background-color: ${hoverColor};
+    .icon {
+      transition: color 0.3s ease;
+      color: ${normal?.iconColor || colors.WHITE_48};
+
+      line-height: 1;
     }
 
-    &:focus {
-      background-color: ${hoverColor};
-    }
-  `;
-}
+    :not(:disabled) {
+      &:hover,
+      &.hovered,
+      &:active,
+      &.active {
+        background-color: ${hover?.backgroundColor};
+        color: ${hover?.textColor};
+        border-width: ${hover?.borderWidth && `${hover?.borderWidth}px`};
+        border-color: ${hover?.borderColor};
+        box-shadow: ${hover?.boxShadow || `0px 4px 4px 0px ${colors.GREY_16}`};
+        padding: ${calcPadding(hover?.borderWidth || 1)};
+      }
 
-function loadingStyle(props) {
-  return (
-    props.isLoading &&
-    css`
-      > .icon.left-icon i::before {
-        display: inline-block;
-        animation: spin 1.1s infinite linear;
-        @keyframes spin {
-          0% {
-            transform: rotate(0deg);
-          }
-
-          100% {
-            transform: rotate(360deg);
-          }
+      &:hover,
+      &.hovered,
+      &:active,
+      &.active,
+      &:focus,
+      &.focused {
+        .icon {
+          color: ${hover?.iconColor || "#FFFFFF"};
         }
       }
-    `
-  );
+
+      &.active,
+      &:active {
+        box-shadow: none;
+        background-color: ${active?.backgroundColor};
+      }
+    }
+
+    /* Chrome keeps the :focus style after a click, so this a polyfill for the :focus-visible pseudo element that is available on Firefox only */
+    &:focus,
+    &.focused {
+      outline: none;
+    }
+    &.focus-visible,
+    &.focused:not(:disabled) {
+      // we use box-shadow instead of outline to keep the rounded borders
+      box-shadow: 0 0 0 3px ${colors.INDIGO_MILK_CAP_56};
+    }
+  `;
 }
 
 const Button = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: ${buttonHeight}px;
-  min-width: ${buttonHeight}px;
-  box-sizing: border-box;
-
-  border: solid 1px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-  box-shadow: ${props => props.boxShadow || "0 2px 2px 0 rgba(0, 0, 0, 0.16)"};
-
-  color: ${({ textColor }) => textColor || "white"};
-
-  line-height: ${lineHeight}px;
   font-size: 16px;
   font-family: lato, sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
 
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: ${({ paddingX, paddingY }) => `${paddingY}px ${paddingX}px`};
+  border-radius: 4px;
+
+  line-height: 1;
+  height: ${buttonHeight}px;
+  min-width: ${buttonHeight}px;
+  width: ${props => {
+    if (props.fluid) return "100%";
+    if (props.iconOnly) return `${buttonHeight(props)}px`;
+    return null;
+  }};
+  overflow: hidden;
 
   cursor: pointer;
-
-  .icon {
-    line-height: 1;
-    color: rgba(255, 255, 255, 0.56);
-    align-self: center;
-    font-size: ${({ size }) => (size === MEDIUM ? "1.4em" : "1em")};
-  }
-
-  &:hover {
-    box-shadow: ${props =>
-      props.boxShadow || "0 4px 4px 0 rgba(0, 0, 0, 0.16)"};
-  }
-
-  &:focus {
-    box-shadow: none;
-  }
-
-  &:hover .icon,
-  &:focus .icon {
-    color: white;
-  }
-
-  width: ${props => props.fluid && "100%"};
-
-  ${loadingStyle};
-
-  ${typeStyle};
-  ${paddingStyle};
-
-  font-size: ${({ fontSize }) => fontSize && fontSize};
-  font-weight: ${({ fontWeight }) => fontWeight && fontWeight};
-
-  &:disabled,
-  &:disabled .icon,
-  &:disabled :hover {
-    color: rgba(0, 0, 0, 0.32);
-  }
+  transition: background 0.3s ease, color 0.3s ease;
 
   &:disabled {
-    background-color: #ccc;
+    background-color: ${colors.GREY_32};
+    color: ${colors.GREY_32};
+    border-width: 1px;
+    border-color: ${colors.GREY_16};
     box-shadow: none;
+    cursor: default;
+
+    .icon {
+      color: ${colors.GREY_32};
+    }
   }
+
+  ${themeStyle};
 `;
 
 Button.displayName = "StyledButton";

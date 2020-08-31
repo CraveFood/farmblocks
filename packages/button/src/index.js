@@ -1,4 +1,10 @@
 export { default } from "./Button";
-export { default as buttonTypes } from "./constants/buttonTypes";
-export { default as buttonSizes } from "./constants/buttonSizes";
-export { default as colorTypes } from "./constants/colorTypes";
+export { PrimaryButton } from "./Button";
+export { SecondaryButton } from "./Button";
+export { GhostButton } from "./Button";
+export { PositiveButton } from "./Button";
+export { NegativeButton } from "./Button";
+export { NeutralButton } from "./Button";
+
+export { default as buttonThemes } from "./constants/buttonThemes";
+export { default as buttonVariants } from "./constants/buttonVariants";
