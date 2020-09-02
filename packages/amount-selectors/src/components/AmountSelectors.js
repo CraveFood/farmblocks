@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Transition } from "react-spring/renderprops.cjs";
-import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import { PrimaryButton, NeutralButton } from "@crave/farmblocks-button";
 import { colors } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
 import { MdAdd, MdMinus, MdTrash } from "@crave/farmblocks-icon";
@@ -107,10 +107,10 @@ class AmountSelectors extends React.Component {
       <Wrapper className={this.props.className}>
         <div>
           {!removable || (removable && value > min) ? (
-            <Button
+            <NeutralButton
               className="button button--decrease"
               data-testid="button--decrease"
-              size={buttonSizes.SMALL}
+              small
               icon={
                 <MdMinus
                   size={24}
@@ -123,10 +123,10 @@ class AmountSelectors extends React.Component {
               onClick={this.decrement}
             />
           ) : (
-            <Button
+            <NeutralButton
               className="button button--remove"
               data-testid="button--remove"
-              size={buttonSizes.SMALL}
+              small
               icon={
                 <MdTrash
                   size={24 - 8}
@@ -181,11 +181,10 @@ class AmountSelectors extends React.Component {
           mb={0}
         />
 
-        <Button
+        <PrimaryButton
           className="button button--increase"
           data-testid="button--increase"
-          type={buttonTypes.PRIMARY}
-          size={buttonSizes.SMALL}
+          small
           icon={
             <MdAdd
               size={24}
