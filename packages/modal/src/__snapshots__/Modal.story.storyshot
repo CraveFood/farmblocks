@@ -11,6 +11,11 @@ exports[`Storyshots Modal Center aligned 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,73 +28,75 @@ exports[`Storyshots Modal Center aligned 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -249,10 +256,9 @@ exports[`Storyshots Modal Center aligned 1`] = `
           className="c6"
         />
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -305,6 +311,11 @@ exports[`Storyshots Modal Default 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -317,73 +328,75 @@ exports[`Storyshots Modal Default 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -558,11 +571,10 @@ exports[`Storyshots Modal Default 1`] = `
           className="c6"
         />
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
           onClick={[Function]}
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -615,6 +627,11 @@ exports[`Storyshots Modal Extensive Content 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -627,73 +644,75 @@ exports[`Storyshots Modal Extensive Content 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -871,10 +890,9 @@ exports[`Storyshots Modal Extensive Content 1`] = `
           className="c6"
         />
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -970,6 +988,11 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
 }
 
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -982,73 +1005,75 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c8:hover,
-.c8:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c8:hover > .icon,
-.c8:focus > .icon {
-  color: #3498db;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c7 {
@@ -1241,10 +1266,9 @@ exports[`Storyshots Modal With ModalTitle header 1`] = `
           </div>
         </header>
         <button
-          className="c8 closeButton"
+          className="c8 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -1498,6 +1522,11 @@ exports[`Storyshots Modal With cardProps 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1510,73 +1539,75 @@ exports[`Storyshots Modal With cardProps 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -1754,10 +1785,9 @@ exports[`Storyshots Modal With cardProps 1`] = `
           className="c6"
         />
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -1853,6 +1883,11 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
 }
 
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1865,73 +1900,75 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c8:hover,
-.c8:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c8:hover > .icon,
-.c8:focus > .icon {
-  color: #3498db;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -2121,10 +2158,9 @@ exports[`Storyshots Modal With cardProps and custom header 1`] = `
           </div>
         </header>
         <button
-          className="c8 closeButton"
+          className="c8 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -2220,6 +2256,11 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
 }
 
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2232,76 +2273,83 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c8:hover,
-.c8:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c8:hover > .icon,
-.c8:focus > .icon {
-  color: #3498db;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c13 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2314,67 +2362,72 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #fd6a08;
-  padding: 0 16px;
-}
-
-.c13 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c13:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c13:focus {
-  box-shadow: none;
-}
-
-.c13:hover .icon,
-.c13:focus .icon {
-  color: white;
-}
-
-.c13:hover {
-  background-color: #E36009;
-}
-
-.c13:focus {
-  background-color: #E36009;
-}
-
-.c13:disabled,
-.c13:disabled .icon,
-.c13:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c13:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c13:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c13 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c13:not(:disabled):hover,
+.c13:not(:disabled).hovered,
+.c13:not(:disabled):active,
+.c13:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c13:not(:disabled):hover .icon,
+.c13:not(:disabled).hovered .icon,
+.c13:not(:disabled):active .icon,
+.c13:not(:disabled).active .icon,
+.c13:not(:disabled):focus .icon,
+.c13:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c13:not(:disabled).active,
+.c13:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c13:focus,
+.c13.focused {
+  outline: none;
+}
+
+.c13.focus-visible,
+.c13.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c7 {
@@ -2584,10 +2637,9 @@ exports[`Storyshots Modal With cardProps, header and footer 1`] = `
           </div>
         </header>
         <button
-          className="c8 closeButton"
+          className="c8 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -2680,9 +2732,8 @@ Cras augue metus, lobortis sit amet nisi pellentesque, efficitur luctus nisl. Nu
           }
         >
           <button
-            className="c13"
-            size="SMALL"
-            type="PRIMARY"
+            className="c13 undefined   "
+            type="button"
           >
             Action Button
           </button>
@@ -2704,6 +2755,11 @@ exports[`Storyshots Modal With custom close button props 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2716,67 +2772,73 @@ exports[`Storyshots Modal With custom close button props 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #dd3311;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
-  box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7:hover {
-  background-color: #bc2b0e;
-}
-
-.c7:focus {
-  background-color: #bc2b0e;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #dd3311;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: #bc2b0e;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -2950,10 +3012,9 @@ exports[`Storyshots Modal With custom close button props 1`] = `
           className="c6"
         />
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEGATIVE"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -3006,6 +3067,11 @@ exports[`Storyshots Modal With custom header style 1`] = `
 }
 
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3018,73 +3084,75 @@ exports[`Storyshots Modal With custom header style 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c8:hover,
-.c8:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c8:hover > .icon,
-.c8:focus > .icon {
-  color: #3498db;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c4 {
@@ -3262,10 +3330,9 @@ exports[`Storyshots Modal With custom header style 1`] = `
           className="c7"
         />
         <button
-          className="c8 closeButton"
+          className="c8 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -3342,6 +3409,11 @@ exports[`Storyshots Modal With footer 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3354,76 +3426,83 @@ exports[`Storyshots Modal With footer 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c11 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3436,68 +3515,73 @@ exports[`Storyshots Modal With footer 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #fd6a08;
-  padding: 0 16px;
-}
-
-.c11 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c11:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c11:focus {
-  box-shadow: none;
-}
-
-.c11:hover .icon,
-.c11:focus .icon {
-  color: white;
-}
-
-.c11:hover {
-  background-color: #E36009;
-}
-
-.c11:focus {
-  background-color: #E36009;
-}
-
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c11:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c11:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c11 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c11:not(:disabled):hover,
+.c11:not(:disabled).hovered,
+.c11:not(:disabled):active,
+.c11:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c11:not(:disabled):hover .icon,
+.c11:not(:disabled).hovered .icon,
+.c11:not(:disabled):active .icon,
+.c11:not(:disabled).active .icon,
+.c11:not(:disabled):focus .icon,
+.c11:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c11:not(:disabled).active,
+.c11:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c11:focus,
+.c11.focused {
+  outline: none;
+}
+
+.c11.focus-visible,
+.c11.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -3684,10 +3768,9 @@ exports[`Storyshots Modal With footer 1`] = `
           className="c6"
         />
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -3735,9 +3818,8 @@ exports[`Storyshots Modal With footer 1`] = `
           }
         >
           <button
-            className="c11"
-            size="SMALL"
-            type="PRIMARY"
+            className="c11 undefined   "
+            type="button"
           >
             Action Button
           </button>
@@ -3759,6 +3841,11 @@ exports[`Storyshots Modal With header 1`] = `
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3771,73 +3858,75 @@ exports[`Storyshots Modal With header 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -4013,10 +4102,9 @@ exports[`Storyshots Modal With header 1`] = `
           Header as a node string
         </header>
         <button
-          className="c7 closeButton"
+          className="c7 closeButton   "
           data-testid="modal-close-icon"
-          size="SMALL"
-          type="NEUTRAL"
+          type="button"
         >
           <div
             className="icon left-icon"
@@ -4093,6 +4181,11 @@ Array [
 }
 
 .c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4105,73 +4198,75 @@ Array [
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #59636f;
-  padding: 0 0;
-}
-
-.c7 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c7:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c7:focus {
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: transparent;
+  color: #59636f;
+  border: none;
   box-shadow: none;
-}
-
-.c7:hover .icon,
-.c7:focus .icon {
-  color: white;
-}
-
-.c7 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7:hover,
-.c7:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c7:hover > .icon,
-.c7:focus > .icon {
-  color: #3498db;
-}
-
-.c7:disabled,
-.c7:disabled .icon,
-.c7:disabled:hover {
-  color: rgba(0,0,0,0.32);
 }
 
 .c7:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: rgba(0,0,0,0.04);
+  color: #3498db;
+  box-shadow: none;
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.08);
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -4349,10 +4444,9 @@ Array [
             className="c6"
           />
           <button
-            className="c7 closeButton"
+            className="c7 closeButton   "
             data-testid="modal-close-icon"
-            size="SMALL"
-            type="NEUTRAL"
+            type="button"
           >
             <div
               className="icon left-icon"

@@ -2,6 +2,11 @@
 
 exports[`Storyshots Form Wrapper Default 1`] = `
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,68 +19,73 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c2 {
@@ -464,11 +474,10 @@ exports[`Storyshots Form Wrapper Default 1`] = `
     className="c7 footer"
   >
     <button
-      className="c8 save"
+      className="c8 save   "
       id="form-wrapper-save"
       onClick={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
+      type="button"
     >
       Save
     </button>
@@ -478,6 +487,11 @@ exports[`Storyshots Form Wrapper Default 1`] = `
 
 exports[`Storyshots Form Wrapper With id 1`] = `
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -490,68 +504,73 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c2 {
@@ -940,11 +959,10 @@ exports[`Storyshots Form Wrapper With id 1`] = `
     className="c7 footer"
   >
     <button
-      className="c8 save"
+      className="c8 save   "
       id="an-id-save"
       onClick={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
+      type="button"
     >
       Save
     </button>
@@ -954,6 +972,11 @@ exports[`Storyshots Form Wrapper With id 1`] = `
 
 exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -966,68 +989,73 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #fd6a08;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #E36009;
-}
-
-.c8:focus {
-  background-color: #E36009;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c2 {
@@ -1418,11 +1446,10 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
     className="c7 footer"
   >
     <button
-      className="c8 save"
+      className="c8 save   "
       id="form-wrapper-save"
       onClick={[Function]}
-      size="SMALL"
-      type="PRIMARY"
+      type="button"
     >
       Save
     </button>
@@ -1432,6 +1459,11 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
 
 exports[`Storyshots Form Wrapper With title 1`] = `
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1444,68 +1476,73 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c2 {
@@ -1896,11 +1933,10 @@ exports[`Storyshots Form Wrapper With title 1`] = `
     className="c7 footer"
   >
     <button
-      className="c8 save"
+      className="c8 save   "
       id="form-wrapper-save"
       onClick={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
+      type="button"
     >
       Save
     </button>
@@ -1910,6 +1946,11 @@ exports[`Storyshots Form Wrapper With title 1`] = `
 
 exports[`Storyshots Form Wrapper extended style 1`] = `
 .c9 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1922,68 +1963,73 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c9 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c9:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c9:focus {
-  box-shadow: none;
-}
-
-.c9:hover .icon,
-.c9:focus .icon {
-  color: white;
-}
-
-.c9:hover {
-  background-color: #2980b9;
-}
-
-.c9:focus {
-  background-color: #2980b9;
-}
-
-.c9:disabled,
-.c9:disabled .icon,
-.c9:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c9:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c9:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c9 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c9:not(:disabled):hover,
+.c9:not(:disabled).hovered,
+.c9:not(:disabled):active,
+.c9:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c9:not(:disabled):hover .icon,
+.c9:not(:disabled).hovered .icon,
+.c9:not(:disabled):active .icon,
+.c9:not(:disabled).active .icon,
+.c9:not(:disabled):focus .icon,
+.c9:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c9:not(:disabled).active,
+.c9:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c9:focus,
+.c9.focused {
+  outline: none;
+}
+
+.c9.focus-visible,
+.c9.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c3 {
@@ -2405,11 +2451,10 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
     className="c8 footer"
   >
     <button
-      className="c9 save"
+      className="c9 save   "
       id="form-wrapper-save"
       onClick={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
+      type="button"
     >
       Save
     </button>
@@ -2419,6 +2464,11 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
 
 exports[`Storyshots Form Wrapper extra content 1`] = `
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2431,68 +2481,73 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c2 {
@@ -2883,11 +2938,10 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
     className="c7 footer"
   >
     <button
-      className="c8 save"
+      className="c8 save   "
       id="form-wrapper-save"
       onClick={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
+      type="button"
     >
       Save
     </button>
@@ -2900,6 +2954,11 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
 
 exports[`Storyshots Form Wrapper in compact container 1`] = `
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2912,68 +2971,73 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c2 {
@@ -3371,11 +3435,10 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
       className="c7 footer"
     >
       <button
-        className="c8 save"
+        className="c8 save   "
         id="form-wrapper-save"
         onClick={[Function]}
-        size="MEDIUM"
-        type="SECONDARY"
+        type="button"
       >
         Save
       </button>
@@ -3395,6 +3458,11 @@ exports[`Storyshots Form Wrapper loading 1`] = `
 }
 
 .c8 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3407,74 +3475,73 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c8 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c8:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c8:focus {
-  box-shadow: none;
-}
-
-.c8:hover .icon,
-.c8:focus .icon {
-  color: white;
-}
-
-.c8 > .icon.left-icon i::before {
-  display: inline-block;
-  -webkit-animation: spin 1.1s infinite linear;
-  animation: spin 1.1s infinite linear;
-}
-
-.c8:hover {
-  background-color: #2980b9;
-}
-
-.c8:focus {
-  background-color: #2980b9;
-}
-
-.c8:disabled,
-.c8:disabled .icon,
-.c8:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c8:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c8:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c8:not(:disabled):hover,
+.c8:not(:disabled).hovered,
+.c8:not(:disabled):active,
+.c8:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c8:not(:disabled):hover .icon,
+.c8:not(:disabled).hovered .icon,
+.c8:not(:disabled):active .icon,
+.c8:not(:disabled).active .icon,
+.c8:not(:disabled):focus .icon,
+.c8:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c8:not(:disabled).active,
+.c8:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c8:focus,
+.c8.focused {
+  outline: none;
+}
+
+.c8.focus-visible,
+.c8.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c10 {
@@ -3870,18 +3937,17 @@ exports[`Storyshots Form Wrapper loading 1`] = `
     className="c7 footer"
   >
     <button
-      className="c8 save"
+      className="c8 save   "
       disabled={true}
       id="form-wrapper-save"
       onClick={[Function]}
-      size="MEDIUM"
-      type="SECONDARY"
+      type="button"
     >
       <div
         className="icon left-icon"
         style={
           Object {
-            "transform": "translateX(-6px)",
+            "transform": "translateX(-8px)",
           }
         }
       >
@@ -3894,9 +3960,9 @@ exports[`Storyshots Form Wrapper loading 1`] = `
             aria-hidden={true}
             className="farmblocks-icon c10"
             data-testid="loading"
-            height="1em"
+            height={22}
             viewBox="4 4 32 32"
-            width="1em"
+            width={22}
           >
             <path
               d="M19 8a1 1 0 012 0v6a1 1 0 01-2 0V8zm2 24a1 1 0 01-2 0v-5a1 1 0 012 0v5zM8 21a1 1 0 010-2h6a1 1 0 010 2H8zm18-.5a.5.5 0 110-1h6a.5.5 0 110 1h-6zm3.197 7.283a1 1 0 01-1.414 1.414l-3.86-3.86a1 1 0 011.414-1.414l3.86 3.86zm-12.87-12.87a1 1 0 01-1.414 1.414l-4.11-4.11a1 1 0 011.414-1.414l4.11 4.11zm-1.664 9.01a1 1 0 011.414 1.414l-3.86 3.86a1 1 0 01-1.414-1.414l3.86-3.86zm13.12-13.12a1 1 0 011.414 1.414l-4.11 4.11a1 1 0 01-1.414-1.414l4.11-4.11z"

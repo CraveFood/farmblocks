@@ -2,6 +2,11 @@
 
 exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,67 +19,72 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -164,9 +174,8 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
           onMouseOver={[Function]}
         />
         <button
-          className="c1"
-          size="SMALL"
-          type="SECONDARY"
+          className="c1 undefined   "
+          type="button"
         >
           Hover me
         </button>
@@ -188,9 +197,8 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
           onMouseOver={[Function]}
         />
         <button
-          className="c1"
-          size="SMALL"
-          type="SECONDARY"
+          className="c1 undefined   "
+          type="button"
         >
           Hover me
         </button>
@@ -212,9 +220,8 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
           onMouseOver={[Function]}
         />
         <button
-          className="c1"
-          size="SMALL"
-          type="SECONDARY"
+          className="c1 undefined   "
+          type="button"
         >
           Hover me
         </button>
@@ -308,6 +315,11 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
 
 exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -320,67 +332,72 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -471,9 +488,8 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
           onMouseOver={[Function]}
         />
         <button
-          className="c1"
-          size="SMALL"
-          type="SECONDARY"
+          className="c1 undefined   "
+          type="button"
         >
           Hover me
         </button>
@@ -496,9 +512,8 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
           onMouseOver={[Function]}
         />
         <button
-          className="c1"
-          size="SMALL"
-          type="SECONDARY"
+          className="c1 undefined   "
+          type="button"
         >
           Hover me
         </button>
@@ -521,9 +536,8 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
           onMouseOver={[Function]}
         />
         <button
-          className="c1"
-          size="SMALL"
-          type="SECONDARY"
+          className="c1 undefined   "
+          type="button"
         >
           Hover me
         </button>
@@ -620,6 +634,11 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
 
 exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -632,67 +651,72 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -768,9 +792,8 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="c1"
-        size="SMALL"
-        type="SECONDARY"
+        className="c1 undefined   "
+        type="button"
       >
         Hover me
       </button>
@@ -784,9 +807,8 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="c1"
-        size="SMALL"
-        type="SECONDARY"
+        className="c1 undefined   "
+        type="button"
       >
         Hover me
       </button>
@@ -810,9 +832,8 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="c1"
-        size="SMALL"
-        type="SECONDARY"
+        className="c1 undefined   "
+        type="button"
       >
         Hover me
       </button>
@@ -826,9 +847,8 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="c1"
-        size="SMALL"
-        type="SECONDARY"
+        className="c1 undefined   "
+        type="button"
       >
         Hover me
       </button>
@@ -934,6 +954,11 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -946,67 +971,72 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c1 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #2980b9;
-}
-
-.c1:focus {
-  background-color: #2980b9;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #3498db;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  background-color: #2980b9;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -1091,9 +1121,8 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="c1"
-        size="SMALL"
-        type="SECONDARY"
+        className="c1 undefined   "
+        type="button"
       >
         Mobile
       </button>
@@ -1135,9 +1164,8 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
         onMouseOver={[Function]}
       />
       <button
-        className="c1"
-        size="SMALL"
-        type="SECONDARY"
+        className="c1 undefined   "
+        type="button"
       >
         With hide button
       </button>

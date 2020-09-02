@@ -11,6 +11,11 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,73 +28,74 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -116,16 +122,15 @@ exports[`Storyshots Dropdown/Component Custom menu width 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -166,6 +171,11 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -178,73 +188,75 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 0;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -271,9 +283,8 @@ exports[`Storyshots Dropdown/Component Icon only 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         <div
           className="icon right-icon"
@@ -320,6 +331,11 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -332,73 +348,75 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 0;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -434,9 +452,8 @@ exports[`Storyshots Dropdown/Component Right aligned 1`] = `
         tabIndex="0"
       >
         <button
-          className="c1 menuButton"
-          size="MEDIUM"
-          type="NEUTRAL"
+          className="c1 menuButton   "
+          type="button"
         >
           <div
             className="icon right-icon"
@@ -484,6 +501,11 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -496,73 +518,74 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -589,16 +612,15 @@ exports[`Storyshots Dropdown/Component Small size 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="SMALL"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -639,6 +661,11 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -651,73 +678,74 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -744,16 +772,15 @@ exports[`Storyshots Dropdown/Component With maxHeight 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -794,6 +821,11 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -806,73 +838,74 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -899,16 +932,15 @@ exports[`Storyshots Dropdown/Component With ref 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -949,6 +981,11 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -961,73 +998,74 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -1054,16 +1092,15 @@ exports[`Storyshots Dropdown/Component With selected item 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -1104,6 +1141,11 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1116,73 +1158,74 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -1209,16 +1252,15 @@ exports[`Storyshots Dropdown/Component With text 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c1 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -1259,6 +1301,11 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1271,73 +1318,75 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 4px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 0;
-}
-
-.c1 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c1:hover,
-.c1:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c1:hover > .icon,
-.c1:focus > .icon {
-  color: #3498db;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -1383,9 +1432,8 @@ exports[`Storyshots Dropdown/Component With z-index 1`] = `
         tabIndex="0"
       >
         <button
-          className="c1 menuButton"
-          size="MEDIUM"
-          type="NEUTRAL"
+          className="c1 menuButton   "
+          type="button"
         >
           <div
             className="icon right-icon"
@@ -1446,6 +1494,11 @@ exports[`Storyshots Dropdown/Component extended style 1`] = `
 }
 
 .c2 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1458,73 +1511,74 @@ exports[`Storyshots Dropdown/Component extended style 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c2 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c2:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c2:focus {
-  box-shadow: none;
-}
-
-.c2:hover .icon,
-.c2:focus .icon {
-  color: white;
-}
-
-.c2 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2:hover,
-.c2:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c2:hover > .icon,
-.c2:focus > .icon {
-  color: #3498db;
-}
-
-.c2:disabled,
-.c2:disabled .icon,
-.c2:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c2:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c2:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c2:not(:disabled):hover,
+.c2:not(:disabled).hovered,
+.c2:not(:disabled):active,
+.c2:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c2:not(:disabled):hover .icon,
+.c2:not(:disabled).hovered .icon,
+.c2:not(:disabled):active .icon,
+.c2:not(:disabled).active .icon,
+.c2:not(:disabled):focus .icon,
+.c2:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c2:not(:disabled).active,
+.c2:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c2:focus,
+.c2.focused {
+  outline: none;
+}
+
+.c2.focus-visible,
+.c2.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -1563,16 +1617,15 @@ exports[`Storyshots Dropdown/Component extended style 1`] = `
       tabIndex="0"
     >
       <button
-        className="c2 menuButton"
-        size="MEDIUM"
-        type="NEUTRAL"
+        className="c2 menuButton   "
+        type="button"
       >
         Select fruit
         <div
           className="icon right-icon"
           style={
             Object {
-              "transform": "translateX(6px)",
+              "transform": "translateX(8px)",
             }
           }
         >
@@ -1613,6 +1666,11 @@ exports[`Storyshots Dropdown/Component with buttonProps 1`] = `
 }
 
 .c1 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1625,67 +1683,72 @@ exports[`Storyshots Dropdown/Component with buttonProps 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 32px;
-  min-width: 32px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 30px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #fd6a08;
-  padding: 0 16px;
-}
-
-.c1 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1em;
-}
-
-.c1:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c1:focus {
-  box-shadow: none;
-}
-
-.c1:hover .icon,
-.c1:focus .icon {
-  color: white;
-}
-
-.c1:hover {
-  background-color: #E36009;
-}
-
-.c1:focus {
-  background-color: #E36009;
-}
-
-.c1:disabled,
-.c1:disabled .icon,
-.c1:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 32px;
+  min-width: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c1:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c1:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c1 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled).hovered,
+.c1:not(:disabled):active,
+.c1:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c1:not(:disabled):hover .icon,
+.c1:not(:disabled).hovered .icon,
+.c1:not(:disabled):active .icon,
+.c1:not(:disabled).active .icon,
+.c1:not(:disabled):focus .icon,
+.c1:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c1:not(:disabled).active,
+.c1:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c1:focus,
+.c1.focused {
+  outline: none;
+}
+
+.c1.focus-visible,
+.c1.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c0 {
@@ -1712,15 +1775,14 @@ exports[`Storyshots Dropdown/Component with buttonProps 1`] = `
       tabIndex="0"
     >
       <button
-        className="c1 menuButton"
-        size="SMALL"
-        type="PRIMARY"
+        className="c1 menuButton   "
+        type="button"
       >
         <div
           className="icon left-icon"
           style={
             Object {
-              "transform": "translateX(-6px)",
+              "transform": "translateX(-8px)",
             }
           }
         >

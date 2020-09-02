@@ -11,6 +11,11 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
 }
 
 .c12 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -23,67 +28,72 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c12 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c12:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c12:focus {
-  box-shadow: none;
-}
-
-.c12:hover .icon,
-.c12:focus .icon {
-  color: white;
-}
-
-.c12:hover {
-  background-color: #2980b9;
-}
-
-.c12:focus {
-  background-color: #2980b9;
-}
-
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c12:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c12:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c12:not(:disabled):hover,
+.c12:not(:disabled).hovered,
+.c12:not(:disabled):active,
+.c12:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c12:not(:disabled):hover .icon,
+.c12:not(:disabled).hovered .icon,
+.c12:not(:disabled):active .icon,
+.c12:not(:disabled).active .icon,
+.c12:not(:disabled):focus .icon,
+.c12:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c12:not(:disabled).active,
+.c12:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c12:focus,
+.c12.focused {
+  outline: none;
+}
+
+.c12.focus-visible,
+.c12.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c9 {
@@ -374,11 +384,10 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
             className="c11 buttons"
           >
             <button
-              className="c12"
+              className="c12 undefined   "
               data-testid="empty-state-button-Primary Action"
               onClick={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
+              type="button"
             >
               Primary Action
             </button>
@@ -392,6 +401,11 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
 
 exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
 .c11 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -404,76 +418,82 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
+  line-height: 1;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
   cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: #FFFFFF;
   color: #59636f;
-  padding: 0 16px;
-}
-
-.c11 .icon {
-  line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c11:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c11:focus {
-  box-shadow: none;
-}
-
-.c11:hover .icon,
-.c11:focus .icon {
-  color: white;
-}
-
-.c11 > .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c11:hover,
-.c11:focus {
-  color: #3498db;
-  border-color: #3498db;
-}
-
-.c11:hover > .icon,
-.c11:focus > .icon {
-  color: #3498db;
-}
-
-.c11:disabled,
-.c11:disabled .icon,
-.c11:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c11:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c11:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c11 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c11:not(:disabled):hover,
+.c11:not(:disabled).hovered,
+.c11:not(:disabled):active,
+.c11:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 15px;
+}
+
+.c11:not(:disabled):hover .icon,
+.c11:not(:disabled).hovered .icon,
+.c11:not(:disabled):active .icon,
+.c11:not(:disabled).active .icon,
+.c11:not(:disabled):focus .icon,
+.c11:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c11:not(:disabled).active,
+.c11:not(:disabled):active {
   box-shadow: none;
 }
 
+.c11:focus,
+.c11.focused {
+  outline: none;
+}
+
+.c11.focus-visible,
+.c11.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
 .c12 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -486,67 +506,72 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 48px;
-  min-width: 48px;
-  box-sizing: border-box;
-  border: solid 1px rgba(0,0,0,0.16);
+  padding: 4px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-  color: white;
-  line-height: 46px;
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  outline: 0;
-  cursor: pointer;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-  background-color: #3498db;
-  padding: 0 16px;
-}
-
-.c12 .icon {
   line-height: 1;
-  color: rgba(255,255,255,0.56);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  font-size: 1.4em;
-}
-
-.c12:hover {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-}
-
-.c12:focus {
-  box-shadow: none;
-}
-
-.c12:hover .icon,
-.c12:focus .icon {
-  color: white;
-}
-
-.c12:hover {
-  background-color: #2980b9;
-}
-
-.c12:focus {
-  background-color: #2980b9;
-}
-
-.c12:disabled,
-.c12:disabled .icon,
-.c12:disabled:hover {
-  color: rgba(0,0,0,0.32);
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
 .c12:disabled {
-  background-color: #ccc;
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
   box-shadow: none;
+  cursor: default;
+}
+
+.c12:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c12 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c12:not(:disabled):hover,
+.c12:not(:disabled).hovered,
+.c12:not(:disabled):active,
+.c12:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 16px;
+}
+
+.c12:not(:disabled):hover .icon,
+.c12:not(:disabled).hovered .icon,
+.c12:not(:disabled):active .icon,
+.c12:not(:disabled).active .icon,
+.c12:not(:disabled):focus .icon,
+.c12:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c12:not(:disabled).active,
+.c12:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c12:focus,
+.c12.focused {
+  outline: none;
+}
+
+.c12.focus-visible,
+.c12.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c8 {
@@ -823,20 +848,18 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
             className="c10 buttons"
           >
             <button
-              className="c11"
-              data-testid="empty-state-button-Secondary Action"
+              className="c11 undefined   "
+              data-testid="empty-state-button-Neutral Action"
               onClick={[Function]}
-              size="MEDIUM"
-              type="NEUTRAL"
+              type="button"
             >
-              Secondary Action
+              Neutral Action
             </button>
             <button
-              className="c12"
+              className="c12 undefined   "
               data-testid="empty-state-button-Primary Action"
               onClick={[Function]}
-              size="MEDIUM"
-              type="SECONDARY"
+              type="button"
             >
               Primary Action
             </button>
