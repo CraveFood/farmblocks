@@ -1,7 +1,7 @@
 import React from "react";
 
 import { storiesOf } from "@storybook/react";
-import Button, { buttonTypes } from "@crave/farmblocks-button";
+import { SecondaryButton } from "@crave/farmblocks-button";
 import Text from "@crave/farmblocks-text";
 import { MdQuestion } from "@crave/farmblocks-icon";
 
@@ -17,14 +17,14 @@ storiesOf("Tooltip/Tooltip", module)
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={marginStyle}>
             <Tooltip
-              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              trigger={<SecondaryButton small>Hover me</SecondaryButton>}
               content="Bottom left aligned"
             />
           </div>
 
           <div style={marginStyle}>
             <Tooltip
-              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              trigger={<SecondaryButton small>Hover me</SecondaryButton>}
               content={<div>Bottom left aligned</div>}
               positionX={POSITIONS.X.CENTER}
             />
@@ -32,7 +32,7 @@ storiesOf("Tooltip/Tooltip", module)
 
           <div style={marginStyle}>
             <Tooltip
-              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              trigger={<SecondaryButton small>Hover me</SecondaryButton>}
               content={<div>Bottom right aligned</div>}
               positionX={POSITIONS.X.RIGHT}
             />
@@ -85,7 +85,7 @@ storiesOf("Tooltip/Tooltip", module)
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={marginStyle}>
             <Tooltip
-              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              trigger={<SecondaryButton small>Hover me</SecondaryButton>}
               content="Top left aligned"
               positionY={POSITIONS.Y.TOP}
             />
@@ -93,7 +93,7 @@ storiesOf("Tooltip/Tooltip", module)
 
           <div style={marginStyle}>
             <Tooltip
-              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              trigger={<SecondaryButton small>Hover me</SecondaryButton>}
               content={<div>Top left aligned</div>}
               positionX={POSITIONS.X.CENTER}
               positionY={POSITIONS.Y.TOP}
@@ -102,7 +102,7 @@ storiesOf("Tooltip/Tooltip", module)
 
           <div style={marginStyle}>
             <Tooltip
-              trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+              trigger={<SecondaryButton small>Hover me</SecondaryButton>}
               content={<div>Top right aligned</div>}
               positionX={POSITIONS.X.RIGHT}
               positionY={POSITIONS.Y.TOP}
@@ -166,13 +166,13 @@ storiesOf("Tooltip/Tooltip", module)
         }}
       >
         <Tooltip
-          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          trigger={<SecondaryButton small>Hover me</SecondaryButton>}
           content="Auto aligned/positioned tooltip"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
         />
         <Tooltip
-          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          trigger={<SecondaryButton small>Hover me</SecondaryButton>}
           content="Auto aligned/positioned tooltip"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
@@ -187,13 +187,13 @@ storiesOf("Tooltip/Tooltip", module)
         }}
       >
         <Tooltip
-          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          trigger={<SecondaryButton small>Hover me</SecondaryButton>}
           content="Auto aligned/positioned tooltip"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
         />
         <Tooltip
-          trigger={<Button type={buttonTypes.SECONDARY}>Hover me</Button>}
+          trigger={<SecondaryButton small>Hover me</SecondaryButton>}
           content="Auto aligned/positioned tooltip"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
@@ -218,7 +218,7 @@ storiesOf("Tooltip/Tooltip", module)
         }}
       >
         <Tooltip
-          trigger={<Button type={buttonTypes.SECONDARY}>Mobile</Button>}
+          trigger={<SecondaryButton small>Mobile</SecondaryButton>}
           content="Use mobile breakpoint to see this popover on fullscreen."
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
@@ -238,9 +238,7 @@ storiesOf("Tooltip/Tooltip", module)
           }}
         />
         <Tooltip
-          trigger={
-            <Button type={buttonTypes.SECONDARY}>With hide button</Button>
-          }
+          trigger={<SecondaryButton small>With hide button</SecondaryButton>}
           content="Tap Got it! to close the popover"
           positionX={POSITIONS.X.AUTO}
           positionY={POSITIONS.Y.AUTO}
