@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { space, flexbox } from "styled-system";
 import { useMediaQuery } from "react-responsive";
-import Button, { buttonSizes } from "@crave/farmblocks-button";
+import Button from "@crave/farmblocks-button";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -35,9 +35,9 @@ const Buttons = ({ actions }) => {
         <Button
           key={`empty-state-button-${buttonProps.text}`}
           data-testid={`empty-state-button-${buttonProps.text}`}
-          size={!isMobile && buttonSizes.MEDIUM}
           fluid={isMobile}
           {...buttonProps}
+          small={buttonProps.small || isMobile}
         />
       ))}
     </Wrapper>
@@ -48,8 +48,9 @@ Buttons.propTypes = {
   actions: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
+      variant: PropTypes.string.isRequired,
       onClick: PropTypes.func.isRequired,
+      small: PropTypes.object,
     }),
   ),
 };
