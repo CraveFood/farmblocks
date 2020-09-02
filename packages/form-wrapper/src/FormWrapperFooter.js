@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import Button, { buttonVariants } from "@crave/farmblocks-button";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
@@ -20,8 +20,7 @@ const FormWrapperFooter = ({
     <Button
       className="save"
       id={`${id}-save`}
-      type={buttonTypes.SECONDARY}
-      size={buttonSizes.MEDIUM}
+      variant={buttonVariants.SECONDARY}
       onClick={onSave}
       loading={loading}
       fluid
