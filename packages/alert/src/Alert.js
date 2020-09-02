@@ -1,6 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import { GhostButton } from "@crave/farmblocks-button";
 import { MdRemove } from "@crave/farmblocks-icon";
 
 import StyledAlert from "./styledComponents/Alert";
@@ -64,11 +64,9 @@ class Alert extends React.Component {
 
         {this.props.dismissable && (
           <div className="dismiss-button">
-            <Button
+            <GhostButton
               data-testid="alert-dismiss"
-              icon={<MdRemove size={24} />}
-              size={buttonSizes.SMALL}
-              type={buttonTypes.OFF_NEUTRAL}
+              icon={<MdRemove size={32} />}
               onClick={this.dismissHandler}
             />
           </div>
