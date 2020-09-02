@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { useTransition } from "react-spring";
-import Button, { buttonSizes } from "@crave/farmblocks-button";
+import Button, { buttonVariants } from "@crave/farmblocks-button";
 import Text, { fontSizes } from "@crave/farmblocks-text";
 import { MdRemove } from "@crave/farmblocks-icon";
 
@@ -107,7 +107,8 @@ const Modal = ({
                             <Button
                               className="closeButton"
                               icon={<MdRemove size={24} />}
-                              size={buttonSizes.SMALL}
+                              small
+                              variant={buttonVariants.GHOST}
                               onClick={onRequestClose}
                               data-testid="modal-close-icon"
                               {...closeButtonProps}
