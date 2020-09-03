@@ -98,7 +98,7 @@ const Button = styled.button`
   overflow: hidden;
 
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
 
   &:disabled {
     background-color: ${colors.GREY_32};
