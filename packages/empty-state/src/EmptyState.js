@@ -61,8 +61,9 @@ EmptyState.propTypes = {
   actions: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
+      variant: PropTypes.string.isRequired,
       onClick: PropTypes.func.isRequired,
+      small: PropTypes.object,
     }),
   ),
   info: PropTypes.string,

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
-import Button, { buttonTypes } from "@crave/farmblocks-button";
+import Button, { buttonVariants } from "@crave/farmblocks-button";
 import { action } from "@storybook/addon-actions";
 import { MdRemoveFilled } from "@crave/farmblocks-icon";
 
@@ -57,7 +57,12 @@ storiesOf("Modal", module)
       isOpen
       footer={
         <div style={{ width: "100%" }}>
-          <Button fluid text="Action Button" type={buttonTypes.PRIMARY} />
+          <Button
+            fluid
+            text="Action Button"
+            variant={buttonVariants.PRIMARY}
+            small
+          />
         </div>
       }
     >
@@ -103,7 +108,11 @@ storiesOf("Modal", module)
               display: "flex",
             }}
           >
-            <Button text="Action Button" type={buttonTypes.PRIMARY} />
+            <Button
+              text="Action Button"
+              variant={buttonVariants.PRIMARY}
+              small
+            />
           </div>
         }
         cardProps={{ width: "400px", floating: false }}
@@ -117,7 +126,7 @@ storiesOf("Modal", module)
       isOpen
       closeButtonProps={{
         icon: <MdRemoveFilled />,
-        type: buttonTypes.NEGATIVE,
+        variant: buttonVariants.NEGATIVE,
       }}
     >
       Content

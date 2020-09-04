@@ -1,7 +1,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
-import { buttonTypes } from "@crave/farmblocks-button";
+import { buttonVariants } from "@crave/farmblocks-button";
 import { MdOrders, MdAlert, MdFavoriteHeartFull } from "@crave/farmblocks-icon";
 
 import EmptyState from "./EmptyState";
@@ -14,14 +14,14 @@ const imgSrc = "https://picsum.photos/200?image=0";
 const primaryAction = {
   text: "Primary Action",
   onClick: action("onPrimaryActionClick"),
-  type: buttonTypes.SECONDARY,
+  variant: buttonVariants.PRIMARY,
   icon: <MdFavoriteHeartFull />,
 };
 
-const secondaryAction = {
-  text: "Secondary Action",
-  onClick: action("onSecondaryActionClick"),
-  type: buttonTypes.NEUTRAL,
+const neutralAction = {
+  text: "Neutral Action",
+  onClick: action("onNeutralActionClick"),
+  variant: buttonVariants.NEUTRAL,
 };
 
 storiesOf("EmptyState", module)
@@ -56,7 +56,7 @@ storiesOf("EmptyState", module)
       imageSrc={imgSrc}
       title="Empty State Title"
       description={twoLinesDescription}
-      actions={[secondaryAction, primaryAction]}
+      actions={[neutralAction, primaryAction]}
     />
   ))
   .add("With one action, inside a container", () => (

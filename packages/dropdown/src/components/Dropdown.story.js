@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { SmChevronUp } from "@crave/farmblocks-icon";
-import { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import { buttonVariants } from "@crave/farmblocks-button";
 
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
@@ -105,7 +105,7 @@ storiesOf("Dropdown/Component", module)
   ))
   .add("Small size", () => (
     <Dropdown
-      size={buttonSizes.SMALL}
+      buttonProps={{ small: true }}
       text="Select fruit"
       handleSelection={action("handleSelection")}
       innerRef={action("innerRef")}
@@ -162,8 +162,8 @@ storiesOf("Dropdown/Component", module)
       buttonProps={{
         rightIcon: null,
         icon: <SmChevronUp />,
-        type: buttonTypes.PRIMARY,
-        size: buttonSizes.SMALL,
+        variant: buttonVariants.PRIMARY,
+        small: true,
       }}
     >
       <DropdownItem value={1} text="Banana" />

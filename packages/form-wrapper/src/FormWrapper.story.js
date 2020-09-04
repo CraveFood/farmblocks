@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import Input from "@crave/farmblocks-input-text";
-import { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import { buttonVariants } from "@crave/farmblocks-button";
 
 import FormWrapper from ".";
 
@@ -72,7 +72,7 @@ storiesOf("Form Wrapper", module)
       onCancel={action("onCancel")}
       onSave={action("onSave")}
       title="Title"
-      saveButtonProps={{ type: buttonTypes.PRIMARY, size: buttonSizes.SMALL }}
+      saveButtonProps={{ variant: buttonVariants.PRIMARY, small: true }}
     >
       <Input label="First Name" />
       <Input label="Last Name" />

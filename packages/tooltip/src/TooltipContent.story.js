@@ -2,7 +2,7 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import Card from "@crave/farmblocks-card";
-import Button, { buttonTypes } from "@crave/farmblocks-button";
+import { SecondaryButton } from "@crave/farmblocks-button";
 import Link from "@crave/farmblocks-link";
 
 import { TooltipContent, POSITIONS } from ".";
@@ -30,12 +30,12 @@ storiesOf("Tooltip/TooltipContent", module)
       <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={marginStyle}>
-            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+            <SecondaryButton small>Trigger Ref</SecondaryButton>
             <TooltipContent isVisible text="Bottom left aligned" />
           </div>
 
           <div style={marginStyle}>
-            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+            <SecondaryButton small>Trigger Ref</SecondaryButton>
             <TooltipContent
               isVisible
               text="Bottom center aligned"
@@ -44,7 +44,7 @@ storiesOf("Tooltip/TooltipContent", module)
           </div>
 
           <div style={marginStyle}>
-            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+            <SecondaryButton small>Trigger Ref</SecondaryButton>
             <TooltipContent
               isVisible
               text="Bottom right aligned"
@@ -101,7 +101,7 @@ storiesOf("Tooltip/TooltipContent", module)
       <div style={{ display: "flex", flexDirection: "column", marginTop: 60 }}>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={marginStyle}>
-            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+            <SecondaryButton small>Trigger Ref</SecondaryButton>
             <TooltipContent
               isVisible
               text="Top left aligned"
@@ -110,7 +110,7 @@ storiesOf("Tooltip/TooltipContent", module)
           </div>
 
           <div style={marginStyle}>
-            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+            <SecondaryButton small>Trigger Ref</SecondaryButton>
 
             <TooltipContent
               isVisible
@@ -121,7 +121,7 @@ storiesOf("Tooltip/TooltipContent", module)
           </div>
 
           <div style={marginStyle}>
-            <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+            <SecondaryButton small>Trigger Ref</SecondaryButton>
             <TooltipContent
               isVisible
               text="Top right aligned"
@@ -190,7 +190,7 @@ storiesOf("Tooltip/TooltipContent", module)
         }}
       >
         <div>
-          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+          <SecondaryButton small>Trigger Ref</SecondaryButton>
           <TooltipContent
             positionX={POSITIONS.X.AUTO}
             positionY={POSITIONS.Y.AUTO}
@@ -198,7 +198,7 @@ storiesOf("Tooltip/TooltipContent", module)
           />
         </div>
         <div>
-          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+          <SecondaryButton small>Trigger Ref</SecondaryButton>
           <TooltipContent
             positionX={POSITIONS.X.AUTO}
             positionY={POSITIONS.Y.AUTO}
@@ -215,7 +215,7 @@ storiesOf("Tooltip/TooltipContent", module)
         }}
       >
         <div>
-          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+          <SecondaryButton small>Trigger Ref</SecondaryButton>
 
           <TooltipContent
             positionX={POSITIONS.X.AUTO}
@@ -224,7 +224,7 @@ storiesOf("Tooltip/TooltipContent", module)
           />
         </div>
         <div>
-          <Button type={buttonTypes.SECONDARY}>Trigger Ref</Button>
+          <SecondaryButton small>Trigger Ref</SecondaryButton>
 
           <TooltipContent
             positionX={POSITIONS.X.AUTO}

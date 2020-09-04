@@ -1,7 +1,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
-import Button, { buttonTypes, buttonSizes } from "@crave/farmblocks-button";
+import Button, { PrimaryButton } from "@crave/farmblocks-button";
 
 import Footer from "./Footer";
 
@@ -31,18 +31,11 @@ storiesOf("Footer", module)
       helpLinkText="Get support"
       onHelpLinkClick={action("onHelpLinkClick")}
       actions={[
-        <Button
-          onClick={action("onCancelClick")}
-          text="Cancel"
-          key="cancel"
-          size={buttonSizes.MEDIUM}
-        />,
-        <Button
+        <Button onClick={action("onCancelClick")} text="Cancel" key="cancel" />,
+        <PrimaryButton
           onClick={action("onSaveClick")}
           text="Save"
-          type={buttonTypes.PRIMARY}
           key="save"
-          size={buttonSizes.MEDIUM}
         />,
       ]}
       helpImageSrc="https://crave-whatsgood-sandbox.imgix.net/businesses/32/inventory/8fae5d32-f6d4-47bb-8062-e4e85c47788b.png"

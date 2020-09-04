@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "@crave/farmblocks-theme";
 
 import bgColors from "../constants/colors";
 import { ATTENTION } from "../constants/alertTypes";
@@ -27,7 +28,7 @@ const Container = styled.div`
     font-weight: 600;
     line-height: 1.33;
     text-align: center;
-    color: ${props => (props.type === ATTENTION ? "#2f313a" : "#ffffff")};
+    color: ${props => (props.type === ATTENTION ? colors.CARBON : "#ffffff")};
     margin: 0;
   }
 
@@ -36,6 +37,12 @@ const Container = styled.div`
     top: 50%;
     margin-top: -16px;
     right: 24px;
+
+    :hover {
+      .icon {
+        color: ${colors.GREY_32};
+      }
+    }
   }
 `;
 

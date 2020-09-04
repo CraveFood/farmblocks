@@ -1,7 +1,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
-import { buttonTypes } from "@crave/farmblocks-button";
+import { buttonVariants } from "@crave/farmblocks-button";
 import { MdAlert, MdQuestion } from "@crave/farmblocks-icon";
 
 import { DialogModal, useModal } from ".";
@@ -9,13 +9,13 @@ import { DialogModal, useModal } from ".";
 const primaryAction = {
   text: "Primary Action",
   onClick: action("onPrimaryActionClick"),
-  type: buttonTypes.SECONDARY,
+  variant: buttonVariants.PRIMARY,
 };
 
-const secondaryAction = {
-  text: "Secondary Action",
-  onClick: action("onSecondaryActionClick"),
-  type: buttonTypes.NEUTRAL,
+const neutralAction = {
+  text: "Neutral Action",
+  onClick: action("onNeutralActionClick"),
+  variant: buttonVariants.NEUTRAL,
 };
 
 storiesOf("Modal/DialogModal", module)
@@ -24,7 +24,7 @@ storiesOf("Modal/DialogModal", module)
       imageSrc="https://picsum.photos/200?image=0"
       title="Dialog Modal Title"
       description="Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod."
-      actions={[secondaryAction, primaryAction]}
+      actions={[neutralAction, primaryAction]}
       isOpen
       onRequestClose={action("onRequestClose")}
       cardProps={{ width: "700px" }}
@@ -64,12 +64,12 @@ storiesOf("Modal/DialogModal", module)
               {
                 text: "Don't do",
                 onClick: cancel,
-                type: buttonTypes.NEUTRAL,
+                variant: buttonVariants.NEUTRAL,
               },
               {
                 text: "Do it!",
                 onClick: confirm,
-                type: buttonTypes.PRIMARY,
+                variant: buttonVariants.PRIMARY,
               },
             ]}
             onRequestClose={cancel}
