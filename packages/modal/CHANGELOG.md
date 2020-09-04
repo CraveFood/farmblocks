@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.0.0...@crave/farmblocks-modal@4.1.0) (2020-09-04)
+
+
+### Features
+
+* **modal:** update button ([d1ae324](https://github.com/CraveFood/farmblocks/commit/d1ae324fd4cba40a122e647e2587e937e19fba43))
+
+
+
+
+
 # [4.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@3.1.15...@crave/farmblocks-modal@4.0.0) (2020-07-14)
 
 

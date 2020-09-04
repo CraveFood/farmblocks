@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@6.0.0...@crave/farmblocks-amount-selectors@6.1.0) (2020-09-04)
+
+
+### Features
+
+* **amount-selectors:** update button ([df905ab](https://github.com/CraveFood/farmblocks/commit/df905ab92644e51fa40f847d341a0d3167e6fccc))
+
+
+
+
+
 # [6.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@5.0.0...@crave/farmblocks-amount-selectors@6.0.0) (2020-07-28)
 
 

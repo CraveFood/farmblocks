@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@6.0.0...@crave/farmblocks-alert@6.1.0) (2020-09-04)
+
+
+### Features
+
+* **alert:** update button ([93b6e6c](https://github.com/CraveFood/farmblocks/commit/93b6e6c3c89df6644d4200fea45bc485119292a8))
+
+
+
+
+
 # [6.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@5.0.9...@crave/farmblocks-alert@6.0.0) (2020-07-14)
 
 

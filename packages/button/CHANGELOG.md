@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@9.0.0...@crave/farmblocks-button@10.0.0) (2020-09-04)
+
+
+### Features
+
+* **button:** redesign ([5fb8217](https://github.com/CraveFood/farmblocks/commit/5fb8217d00fdf12d585923613c61936a6b49bf9b)), closes [#1001](https://github.com/CraveFood/farmblocks/issues/1001)
+
+
+### BREAKING CHANGES
+
+* **button:** This package no longer expects the following properties: activated, size, type, boxShadow, paddingX,
+fontSize, fontWeight, and textColor.
+Use the new properties instead: variant, small, and active.
+The theme structure has been changed as well, for further details check the docs.
+
+
+
+
+
 # [9.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@8.1.5...@crave/farmblocks-button@9.0.0) (2020-07-14)
 
 

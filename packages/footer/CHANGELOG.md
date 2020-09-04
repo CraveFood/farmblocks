@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@2.4.16...@crave/farmblocks-footer@2.5.0) (2020-09-04)
+
+
+### Features
+
+* **footer:** update button ([ead8ba9](https://github.com/CraveFood/farmblocks/commit/ead8ba9dbd8d70136c1289197299206109325caf))
+
+
+
+
+
 ## [2.4.16](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-footer@2.4.15...@crave/farmblocks-footer@2.4.16) (2020-07-14)
 
 **Note:** Version bump only for package @crave/farmblocks-footer

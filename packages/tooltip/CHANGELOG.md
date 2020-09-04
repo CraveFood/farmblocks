@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@3.3.18...@crave/farmblocks-tooltip@3.4.0) (2020-09-04)
+
+
+### Features
+
+* **tooltip:** update button ([01590ae](https://github.com/CraveFood/farmblocks/commit/01590ae9f0d270ed4e86e15d4e11b72a4e6bdf89))
+
+
+
+
+
 ## [3.3.18](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tooltip@3.3.17...@crave/farmblocks-tooltip@3.3.18) (2020-07-15)
 
 **Note:** Version bump only for package @crave/farmblocks-tooltip
