@@ -24,7 +24,7 @@ exports[`Storyshots SideNav/helpers/PageWrapper Page Wrapper Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -32,6 +32,11 @@ exports[`Storyshots SideNav/helpers/PageWrapper Page Wrapper Default 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c1 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1:disabled {
@@ -288,7 +293,9 @@ exports[`Storyshots SideNav/helpers/PageWrapper Page Wrapper Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Expand
+      <span>
+        Expand
+      </span>
     </button>
     <h3>
       Variant - 

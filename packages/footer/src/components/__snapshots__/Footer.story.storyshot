@@ -350,7 +350,7 @@ exports[`Storyshots Footer with one action 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -358,6 +358,11 @@ exports[`Storyshots Footer with one action 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -572,7 +577,9 @@ exports[`Storyshots Footer with one action 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -602,7 +609,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -610,6 +617,11 @@ exports[`Storyshots Footer with two actions 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -690,7 +702,7 @@ exports[`Storyshots Footer with two actions 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -698,6 +710,11 @@ exports[`Storyshots Footer with two actions 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -910,14 +927,18 @@ exports[`Storyshots Footer with two actions 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Cancel
+      <span>
+        Cancel
+      </span>
     </button>
     <button
       className="c7 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -1103,7 +1124,7 @@ exports[`Storyshots Footer without image 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1111,6 +1132,11 @@ exports[`Storyshots Footer without image 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -1311,7 +1337,9 @@ exports[`Storyshots Footer without image 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -1341,7 +1369,7 @@ exports[`Storyshots Footer without link 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1349,6 +1377,11 @@ exports[`Storyshots Footer without link 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -1505,7 +1538,9 @@ exports[`Storyshots Footer without link 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>

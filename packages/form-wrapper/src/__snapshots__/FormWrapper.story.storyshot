@@ -25,7 +25,7 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -33,6 +33,11 @@ exports[`Storyshots Form Wrapper Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -479,7 +484,9 @@ exports[`Storyshots Form Wrapper Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -510,7 +517,7 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -518,6 +525,11 @@ exports[`Storyshots Form Wrapper With id 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -964,7 +976,9 @@ exports[`Storyshots Form Wrapper With id 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -995,7 +1009,7 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
   height: 32px;
   min-width: 32px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1003,6 +1017,11 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -1451,7 +1470,9 @@ exports[`Storyshots Form Wrapper With saveButtonProps customization 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -1482,7 +1503,7 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1490,6 +1511,11 @@ exports[`Storyshots Form Wrapper With title 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -1938,7 +1964,9 @@ exports[`Storyshots Form Wrapper With title 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -1969,7 +1997,7 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1977,6 +2005,11 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -2456,7 +2489,9 @@ exports[`Storyshots Form Wrapper extended style 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>
@@ -2487,7 +2522,7 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -2495,6 +2530,11 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -2943,7 +2983,9 @@ exports[`Storyshots Form Wrapper extra content 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
   <div>
@@ -2977,7 +3019,7 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -2985,6 +3027,11 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -3440,7 +3487,9 @@ exports[`Storyshots Form Wrapper in compact container 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Save
+        <span>
+          Save
+        </span>
       </button>
     </div>
   </div>
@@ -3481,7 +3530,7 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -3489,6 +3538,11 @@ exports[`Storyshots Form Wrapper loading 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -3972,7 +4026,9 @@ exports[`Storyshots Form Wrapper loading 1`] = `
           </svg>
         </span>
       </div>
-      Save
+      <span>
+        Save
+      </span>
     </button>
   </div>
 </div>

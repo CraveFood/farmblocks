@@ -60,7 +60,7 @@ const Button = React.forwardRef(
           </div>
         )}
 
-        {buttonContent}
+        <span>{buttonContent}</span>
 
         {rightIcon && (
           <div

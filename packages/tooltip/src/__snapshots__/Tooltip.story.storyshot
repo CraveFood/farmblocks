@@ -24,7 +24,7 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -32,6 +32,11 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c1 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1:disabled {
@@ -177,7 +182,9 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
           className="c1 undefined   "
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
       </div>
     </div>
@@ -200,7 +207,9 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
           className="c1 undefined   "
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
       </div>
     </div>
@@ -223,7 +232,9 @@ exports[`Storyshots Tooltip/Tooltip Bottom positioned 1`] = `
           className="c1 undefined   "
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
       </div>
     </div>
@@ -337,7 +348,7 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -345,6 +356,11 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c1 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1:disabled {
@@ -491,7 +507,9 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
           className="c1 undefined   "
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
       </div>
     </div>
@@ -515,7 +533,9 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
           className="c1 undefined   "
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
       </div>
     </div>
@@ -539,7 +559,9 @@ exports[`Storyshots Tooltip/Tooltip Top positioned 1`] = `
           className="c1 undefined   "
           type="button"
         >
-          Hover me
+          <span>
+            Hover me
+          </span>
         </button>
       </div>
     </div>
@@ -656,7 +678,7 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -664,6 +686,11 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c1 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1:disabled {
@@ -795,7 +822,9 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         className="c1 undefined   "
         type="button"
       >
-        Hover me
+        <span>
+          Hover me
+        </span>
       </button>
     </div>
     <div
@@ -810,7 +839,9 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         className="c1 undefined   "
         type="button"
       >
-        Hover me
+        <span>
+          Hover me
+        </span>
       </button>
     </div>
   </div>
@@ -835,7 +866,9 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         className="c1 undefined   "
         type="button"
       >
-        Hover me
+        <span>
+          Hover me
+        </span>
       </button>
     </div>
     <div
@@ -850,7 +883,9 @@ exports[`Storyshots Tooltip/Tooltip auto aligned/positioned 1`] = `
         className="c1 undefined   "
         type="button"
       >
-        Hover me
+        <span>
+          Hover me
+        </span>
       </button>
     </div>
   </div>
@@ -976,7 +1011,7 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -984,6 +1019,11 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c1 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c1:disabled {
@@ -1124,7 +1164,9 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
         className="c1 undefined   "
         type="button"
       >
-        Mobile
+        <span>
+          Mobile
+        </span>
       </button>
     </div>
     <div
@@ -1167,7 +1209,9 @@ exports[`Storyshots Tooltip/Tooltip with fullscreen breakpoint 1`] = `
         className="c1 undefined   "
         type="button"
       >
-        With hide button
+        <span>
+          With hide button
+        </span>
       </button>
     </div>
   </div>

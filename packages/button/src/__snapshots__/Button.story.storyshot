@@ -33,7 +33,7 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -41,6 +41,11 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -119,7 +124,7 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -127,6 +132,11 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c4 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c4:disabled {
@@ -207,7 +217,7 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -215,6 +225,11 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -293,7 +308,7 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -301,6 +316,11 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -379,7 +399,7 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -387,6 +407,11 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -465,7 +490,7 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -473,6 +498,11 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -606,42 +636,54 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   "
@@ -677,14 +719,18 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   "
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -698,42 +744,54 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
@@ -769,14 +827,18 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -790,42 +852,54 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined active  "
@@ -861,14 +935,18 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined active  "
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -882,42 +960,54 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
@@ -953,14 +1043,18 @@ exports[`Storyshots Form|Button/All variants with default size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
 </div>
@@ -1000,7 +1094,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   height: 40px;
   min-width: 40px;
   width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1008,6 +1102,11 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -1087,7 +1186,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   height: 40px;
   min-width: 40px;
   width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1095,6 +1194,11 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -1176,7 +1280,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   height: 40px;
   min-width: 40px;
   width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1184,6 +1288,11 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -1263,7 +1372,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   height: 40px;
   min-width: 40px;
   width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1271,6 +1380,11 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -1350,7 +1464,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   height: 40px;
   min-width: 40px;
   width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1358,6 +1472,11 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -1437,7 +1556,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   height: 40px;
   min-width: 40px;
   width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1445,6 +1564,11 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -1606,6 +1730,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined   "
@@ -1640,6 +1765,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined   "
@@ -1674,6 +1800,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined   "
@@ -1708,6 +1835,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined   "
@@ -1742,6 +1870,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined   "
@@ -1776,6 +1905,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   "
@@ -1811,6 +1941,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   "
@@ -1845,6 +1976,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
   <div
@@ -1886,6 +2018,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined   hovered"
@@ -1920,6 +2053,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined   hovered"
@@ -1954,6 +2088,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined   hovered"
@@ -1988,6 +2123,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined   hovered"
@@ -2022,6 +2158,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined   hovered"
@@ -2056,6 +2193,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   hovered"
@@ -2091,6 +2229,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   hovered"
@@ -2125,6 +2264,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
   <div
@@ -2166,6 +2306,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined active  "
@@ -2200,6 +2341,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined active  "
@@ -2234,6 +2376,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined active  "
@@ -2268,6 +2411,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined active  "
@@ -2302,6 +2446,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined active  "
@@ -2336,6 +2481,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined active  "
@@ -2371,6 +2517,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined active  "
@@ -2405,6 +2552,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
   <div
@@ -2446,6 +2594,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined  focused "
@@ -2480,6 +2629,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined  focused "
@@ -2514,6 +2664,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined  focused "
@@ -2548,6 +2699,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined  focused "
@@ -2582,6 +2734,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined  focused "
@@ -2616,6 +2769,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined  focused "
@@ -2651,6 +2805,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined  focused "
@@ -2685,6 +2840,7 @@ exports[`Storyshots Form|Button/All variants with default size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
 </div>
@@ -2723,7 +2879,7 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -2731,6 +2887,11 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -2809,7 +2970,7 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -2817,6 +2978,11 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -2897,7 +3063,7 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -2905,6 +3071,11 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -2983,7 +3154,7 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -2991,6 +3162,11 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -3069,7 +3245,7 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -3077,6 +3253,11 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -3155,7 +3336,7 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -3163,6 +3344,11 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -3324,7 +3510,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3387,7 +3575,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3450,7 +3640,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3513,7 +3705,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3576,7 +3770,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3639,7 +3835,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3703,7 +3901,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3766,7 +3966,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3836,7 +4038,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3899,7 +4103,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -3962,7 +4168,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4025,7 +4233,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4088,7 +4298,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4151,7 +4363,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4215,7 +4429,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4278,7 +4494,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4348,7 +4566,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4411,7 +4631,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4474,7 +4696,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4537,7 +4761,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4600,7 +4826,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4663,7 +4891,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4727,7 +4957,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4790,7 +5022,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4860,7 +5094,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4923,7 +5159,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -4986,7 +5224,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -5049,7 +5289,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -5112,7 +5354,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -5175,7 +5419,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -5239,7 +5485,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -5302,7 +5550,9 @@ exports[`Storyshots Form|Button/All variants with default size Left and Right ic
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -5369,7 +5619,7 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -5377,6 +5627,11 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -5455,7 +5710,7 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -5463,6 +5718,11 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -5543,7 +5803,7 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -5551,6 +5811,11 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -5629,7 +5894,7 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -5637,6 +5902,11 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -5715,7 +5985,7 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -5723,6 +5993,11 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -5801,7 +6076,7 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -5809,6 +6084,11 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -5970,7 +6250,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined   "
@@ -6005,7 +6287,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined   "
@@ -6040,7 +6324,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined   "
@@ -6075,7 +6361,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined   "
@@ -6110,7 +6398,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined   "
@@ -6145,7 +6435,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   "
@@ -6181,7 +6473,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   "
@@ -6216,7 +6510,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -6258,7 +6554,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined   hovered"
@@ -6293,7 +6591,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined   hovered"
@@ -6328,7 +6628,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined   hovered"
@@ -6363,7 +6665,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined   hovered"
@@ -6398,7 +6702,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined   hovered"
@@ -6433,7 +6739,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
@@ -6469,7 +6777,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
@@ -6504,7 +6814,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -6546,7 +6858,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined active  "
@@ -6581,7 +6895,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined active  "
@@ -6616,7 +6932,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined active  "
@@ -6651,7 +6969,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined active  "
@@ -6686,7 +7006,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined active  "
@@ -6721,7 +7043,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined active  "
@@ -6757,7 +7081,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined active  "
@@ -6792,7 +7118,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -6834,7 +7162,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined  focused "
@@ -6869,7 +7199,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined  focused "
@@ -6904,7 +7236,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined  focused "
@@ -6939,7 +7273,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined  focused "
@@ -6974,7 +7310,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined  focused "
@@ -7009,7 +7347,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
@@ -7045,7 +7385,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
@@ -7080,7 +7422,9 @@ exports[`Storyshots Form|Button/All variants with default size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
 </div>
@@ -7119,7 +7463,7 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -7127,6 +7471,11 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -7205,7 +7554,7 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -7213,6 +7562,11 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -7293,7 +7647,7 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -7301,6 +7655,11 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -7379,7 +7738,7 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -7387,6 +7746,11 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -7465,7 +7829,7 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -7473,6 +7837,11 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -7551,7 +7920,7 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -7559,6 +7928,11 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -7692,7 +8066,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7727,7 +8103,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7762,7 +8140,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7797,7 +8177,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7832,7 +8214,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7867,7 +8251,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7931,7 +8317,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -7966,7 +8354,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8008,7 +8398,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8043,7 +8435,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8078,7 +8472,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8113,7 +8509,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8148,7 +8546,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8183,7 +8583,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8247,7 +8649,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8282,7 +8686,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8324,7 +8730,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8359,7 +8767,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8394,7 +8804,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8429,7 +8841,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8464,7 +8878,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8499,7 +8915,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8563,7 +8981,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8598,7 +9018,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8640,7 +9062,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8675,7 +9099,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8710,7 +9136,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8745,7 +9173,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8780,7 +9210,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8815,7 +9247,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8879,7 +9313,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8914,7 +9350,9 @@ exports[`Storyshots Form|Button/All variants with default size Right icon 1`] = 
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -8981,7 +9419,7 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -8989,6 +9427,11 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -9067,7 +9510,7 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -9075,6 +9518,11 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c4 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c4:disabled {
@@ -9155,7 +9603,7 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -9163,6 +9611,11 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -9241,7 +9694,7 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -9249,6 +9702,11 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -9327,7 +9785,7 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -9335,6 +9793,11 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -9413,7 +9876,7 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -9421,6 +9884,11 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -9554,42 +10022,54 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined   "
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   "
@@ -9625,14 +10105,18 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   "
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -9646,42 +10130,54 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined   hovered"
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
@@ -9717,14 +10213,18 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -9738,42 +10238,54 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined active  "
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined active  "
@@ -9809,14 +10321,18 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined active  "
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -9830,42 +10346,54 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c4 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c5 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c6 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c7 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c8 undefined  focused "
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
@@ -9901,14 +10429,18 @@ exports[`Storyshots Form|Button/All variants with small size Default 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
 </div>
@@ -9948,7 +10480,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   height: 32px;
   min-width: 32px;
   width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -9956,6 +10488,11 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -10035,7 +10572,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   height: 32px;
   min-width: 32px;
   width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -10043,6 +10580,11 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -10124,7 +10666,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   height: 32px;
   min-width: 32px;
   width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -10132,6 +10674,11 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -10211,7 +10758,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   height: 32px;
   min-width: 32px;
   width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -10219,6 +10766,11 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -10298,7 +10850,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   height: 32px;
   min-width: 32px;
   width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -10306,6 +10858,11 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -10385,7 +10942,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   height: 32px;
   min-width: 32px;
   width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -10393,6 +10950,11 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -10554,6 +11116,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined   "
@@ -10588,6 +11151,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined   "
@@ -10622,6 +11186,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined   "
@@ -10656,6 +11221,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined   "
@@ -10690,6 +11256,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined   "
@@ -10724,6 +11291,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   "
@@ -10759,6 +11327,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   "
@@ -10793,6 +11362,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
   <div
@@ -10834,6 +11404,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined   hovered"
@@ -10868,6 +11439,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined   hovered"
@@ -10902,6 +11474,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined   hovered"
@@ -10936,6 +11509,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined   hovered"
@@ -10970,6 +11544,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined   hovered"
@@ -11004,6 +11579,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   hovered"
@@ -11039,6 +11615,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined   hovered"
@@ -11073,6 +11650,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
   <div
@@ -11114,6 +11692,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined active  "
@@ -11148,6 +11727,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined active  "
@@ -11182,6 +11762,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined active  "
@@ -11216,6 +11797,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined active  "
@@ -11250,6 +11832,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined active  "
@@ -11284,6 +11867,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined active  "
@@ -11319,6 +11903,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined active  "
@@ -11353,6 +11938,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
   <div
@@ -11394,6 +11980,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c5 undefined  focused "
@@ -11428,6 +12015,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c6 undefined  focused "
@@ -11462,6 +12050,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c7 undefined  focused "
@@ -11496,6 +12085,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c8 undefined  focused "
@@ -11530,6 +12120,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c9 undefined  focused "
@@ -11564,6 +12155,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined  focused "
@@ -11599,6 +12191,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
     <button
       className="c3 undefined  focused "
@@ -11633,6 +12226,7 @@ exports[`Storyshots Form|Button/All variants with small size Icon only 1`] = `
           </svg>
         </span>
       </div>
+      <span />
     </button>
   </div>
 </div>
@@ -11671,7 +12265,7 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -11679,6 +12273,11 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -11757,7 +12356,7 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -11765,6 +12364,11 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -11845,7 +12449,7 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -11853,6 +12457,11 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -11931,7 +12540,7 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -11939,6 +12548,11 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -12017,7 +12631,7 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -12025,6 +12639,11 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -12103,7 +12722,7 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -12111,6 +12730,11 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -12272,7 +12896,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12335,7 +12961,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12398,7 +13026,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12461,7 +13091,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12524,7 +13156,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12587,7 +13221,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12651,7 +13287,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12714,7 +13352,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12784,7 +13424,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12847,7 +13489,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12910,7 +13554,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -12973,7 +13619,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13036,7 +13684,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13099,7 +13749,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13163,7 +13815,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13226,7 +13880,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13296,7 +13952,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13359,7 +14017,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13422,7 +14082,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13485,7 +14147,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13548,7 +14212,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13611,7 +14277,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13675,7 +14343,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13738,7 +14408,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13808,7 +14480,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13871,7 +14545,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13934,7 +14610,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -13997,7 +14675,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -14060,7 +14740,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -14123,7 +14805,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -14187,7 +14871,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -14250,7 +14936,9 @@ exports[`Storyshots Form|Button/All variants with small size Left and Right icon
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -14317,7 +15005,7 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -14325,6 +15013,11 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -14403,7 +15096,7 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -14411,6 +15104,11 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -14491,7 +15189,7 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -14499,6 +15197,11 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -14577,7 +15280,7 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -14585,6 +15288,11 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -14663,7 +15371,7 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -14671,6 +15379,11 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -14749,7 +15462,7 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -14757,6 +15470,11 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -14918,7 +15636,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined   "
@@ -14953,7 +15673,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined   "
@@ -14988,7 +15710,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined   "
@@ -15023,7 +15747,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined   "
@@ -15058,7 +15784,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined   "
@@ -15093,7 +15821,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   "
@@ -15129,7 +15859,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   "
@@ -15164,7 +15896,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -15206,7 +15940,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined   hovered"
@@ -15241,7 +15977,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined   hovered"
@@ -15276,7 +16014,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined   hovered"
@@ -15311,7 +16051,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined   hovered"
@@ -15346,7 +16088,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined   hovered"
@@ -15381,7 +16125,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
@@ -15417,7 +16163,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined   hovered"
@@ -15452,7 +16200,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -15494,7 +16244,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined active  "
@@ -15529,7 +16281,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined active  "
@@ -15564,7 +16318,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined active  "
@@ -15599,7 +16355,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined active  "
@@ -15634,7 +16392,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined active  "
@@ -15669,7 +16429,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined active  "
@@ -15705,7 +16467,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined active  "
@@ -15740,7 +16504,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
   <div
@@ -15782,7 +16548,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Primary
+      <span>
+        Primary
+      </span>
     </button>
     <button
       className="c5 undefined  focused "
@@ -15817,7 +16585,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Neutral
+      <span>
+        Neutral
+      </span>
     </button>
     <button
       className="c6 undefined  focused "
@@ -15852,7 +16622,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Secondary
+      <span>
+        Secondary
+      </span>
     </button>
     <button
       className="c7 undefined  focused "
@@ -15887,7 +16659,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Negative
+      <span>
+        Negative
+      </span>
     </button>
     <button
       className="c8 undefined  focused "
@@ -15922,7 +16696,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Positive
+      <span>
+        Positive
+      </span>
     </button>
     <button
       className="c9 undefined  focused "
@@ -15957,7 +16733,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Ghost
+      <span>
+        Ghost
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
@@ -15993,7 +16771,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
     </button>
     <button
       className="c3 undefined  focused "
@@ -16028,7 +16808,9 @@ exports[`Storyshots Form|Button/All variants with small size Left icon 1`] = `
           </svg>
         </span>
       </div>
-      Disabled
+      <span>
+        Disabled
+      </span>
     </button>
   </div>
 </div>
@@ -16067,7 +16849,7 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -16075,6 +16857,11 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3:disabled {
@@ -16153,7 +16940,7 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -16161,6 +16948,11 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -16241,7 +17033,7 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -16249,6 +17041,11 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -16327,7 +17124,7 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -16335,6 +17132,11 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c7:disabled {
@@ -16413,7 +17215,7 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -16421,6 +17223,11 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c8 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c8:disabled {
@@ -16499,7 +17306,7 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -16507,6 +17314,11 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c9 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c9:disabled {
@@ -16640,7 +17452,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16675,7 +17489,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16710,7 +17526,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16745,7 +17563,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16780,7 +17600,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16815,7 +17637,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16879,7 +17703,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16914,7 +17740,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16956,7 +17784,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -16991,7 +17821,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17026,7 +17858,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17061,7 +17895,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17096,7 +17932,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17131,7 +17969,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17195,7 +18035,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17230,7 +18072,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17272,7 +18116,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17307,7 +18153,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17342,7 +18190,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17377,7 +18227,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17412,7 +18264,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17447,7 +18301,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17511,7 +18367,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17546,7 +18404,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17588,7 +18448,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Primary
+      <span>
+        Primary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17623,7 +18485,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Neutral
+      <span>
+        Neutral
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17658,7 +18522,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Secondary
+      <span>
+        Secondary
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17693,7 +18559,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Negative
+      <span>
+        Negative
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17728,7 +18596,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Positive
+      <span>
+        Positive
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17763,7 +18633,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Ghost
+      <span>
+        Ghost
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17827,7 +18699,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
           </svg>
         </span>
       </div>
-      loading
+      <span>
+        loading
+      </span>
       <div
         className="icon right-icon"
         style={
@@ -17862,7 +18736,9 @@ exports[`Storyshots Form|Button/All variants with small size Right icon 1`] = `
       disabled={true}
       type="button"
     >
-      Disabled
+      <span>
+        Disabled
+      </span>
       <div
         className="icon right-icon"
         style={

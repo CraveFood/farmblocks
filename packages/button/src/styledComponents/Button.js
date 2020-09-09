@@ -95,7 +95,13 @@ const Button = styled.button`
     if (props.iconOnly) return `${buttonHeight(props)}px`;
     return null;
   }};
-  overflow: hidden;
+
+  white-space: nowrap;
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   cursor: pointer;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
