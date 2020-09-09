@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.8.5...@crave/farmblocks-search-field@3.8.6) (2020-09-09)
+
+**Note:** Version bump only for package @crave/farmblocks-search-field
+
+
+
+
+
 ## [3.8.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.8.4...@crave/farmblocks-search-field@3.8.5) (2020-09-04)
 
 **Note:** Version bump only for package @crave/farmblocks-search-field

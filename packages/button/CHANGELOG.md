@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.0...@crave/farmblocks-button@10.0.1) (2020-09-09)
+
+
+### Bug Fixes
+
+* **button:** add white-space: nowrap ([b95d942](https://github.com/CraveFood/farmblocks/commit/b95d94234810ac2461a08190edbb58733acd8d81))
+
+
+
+
+
 # [10.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@9.0.0...@crave/farmblocks-button@10.0.0) (2020-09-04)
 
 
