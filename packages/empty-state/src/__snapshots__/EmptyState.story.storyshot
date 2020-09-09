@@ -349,7 +349,7 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -357,6 +357,11 @@ exports[`Storyshots EmptyState With loading action 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -572,7 +577,9 @@ exports[`Storyshots EmptyState With loading action 1`] = `
           </svg>
         </span>
       </div>
-      Primary Action
+      <span>
+        Primary Action
+      </span>
     </button>
   </div>
 </div>
@@ -611,7 +618,7 @@ exports[`Storyshots EmptyState With one action 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -619,6 +626,11 @@ exports[`Storyshots EmptyState With one action 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -813,7 +825,9 @@ exports[`Storyshots EmptyState With one action 1`] = `
           </svg>
         </span>
       </div>
-      Primary Action
+      <span>
+        Primary Action
+      </span>
     </button>
   </div>
 </div>
@@ -852,7 +866,7 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -860,6 +874,11 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -1063,7 +1082,9 @@ exports[`Storyshots EmptyState With one action and info 1`] = `
           </svg>
         </span>
       </div>
-      Primary Action
+      <span>
+        Primary Action
+      </span>
     </button>
   </div>
   <div
@@ -1109,7 +1130,7 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1117,6 +1138,11 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -1319,7 +1345,9 @@ exports[`Storyshots EmptyState With one action, inside a container 1`] = `
             </svg>
           </span>
         </div>
-        Primary Action
+        <span>
+          Primary Action
+        </span>
       </button>
     </div>
   </div>
@@ -1359,7 +1387,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1367,6 +1395,11 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c5 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c5:disabled {
@@ -1447,7 +1480,7 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1455,6 +1488,11 @@ exports[`Storyshots EmptyState With two actions 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c6:disabled {
@@ -1621,7 +1659,9 @@ exports[`Storyshots EmptyState With two actions 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Neutral Action
+      <span>
+        Neutral Action
+      </span>
     </button>
     <button
       className="c6 undefined   "
@@ -1657,7 +1697,9 @@ exports[`Storyshots EmptyState With two actions 1`] = `
           </svg>
         </span>
       </div>
-      Primary Action
+      <span>
+        Primary Action
+      </span>
     </button>
   </div>
 </div>

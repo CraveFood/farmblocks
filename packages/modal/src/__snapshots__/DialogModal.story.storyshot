@@ -33,7 +33,7 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -41,6 +41,11 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c12 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c12:disabled {
@@ -389,7 +394,9 @@ exports[`Storyshots Modal/DialogModal Icon + one action 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Primary Action
+              <span>
+                Primary Action
+              </span>
             </button>
           </div>
         </div>
@@ -423,7 +430,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -431,6 +438,11 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c11 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c11:disabled {
@@ -511,7 +523,7 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -519,6 +531,11 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c12 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c12:disabled {
@@ -853,7 +870,9 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Neutral Action
+              <span>
+                Neutral Action
+              </span>
             </button>
             <button
               className="c12 undefined   "
@@ -861,7 +880,9 @@ exports[`Storyshots Modal/DialogModal Image + two actions 1`] = `
               onClick={[Function]}
               type="button"
             >
-              Primary Action
+              <span>
+                Primary Action
+              </span>
             </button>
           </div>
         </div>

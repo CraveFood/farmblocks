@@ -24,7 +24,7 @@ exports[`Storyshots Form|Button Active 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -32,6 +32,11 @@ exports[`Storyshots Form|Button Active 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -94,7 +99,9 @@ exports[`Storyshots Form|Button Active 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Active button
+  <span>
+    Active button
+  </span>
 </button>
 `;
 
@@ -123,13 +130,18 @@ Array [
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
   background-color: deeppink;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -190,7 +202,9 @@ Array [
     onClick={[Function]}
     type="button"
   >
-    🦄 My Beautiful Primary Button
+    <span>
+      🦄 My Beautiful Primary Button
+    </span>
   </button>,
   <br />,
   .c0 {
@@ -216,7 +230,7 @@ Array [
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -224,6 +238,11 @@ Array [
   color: tomato;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -286,7 +305,9 @@ Array [
     onClick={[Function]}
     type="button"
   >
-    🦄 My Beautiful Own Variant
+    <span>
+      🦄 My Beautiful Own Variant
+    </span>
   </button>,
 ]
 `;
@@ -315,7 +336,7 @@ exports[`Storyshots Form|Button Default 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -323,6 +344,11 @@ exports[`Storyshots Form|Button Default 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -385,7 +411,9 @@ exports[`Storyshots Form|Button Default 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Default button
+  <span>
+    Default button
+  </span>
 </button>
 `;
 
@@ -413,7 +441,7 @@ exports[`Storyshots Form|Button Disabled 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -421,6 +449,11 @@ exports[`Storyshots Form|Button Disabled 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -484,7 +517,9 @@ exports[`Storyshots Form|Button Disabled 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Disabled
+  <span>
+    Disabled
+  </span>
 </button>
 `;
 
@@ -522,7 +557,7 @@ exports[`Storyshots Form|Button Fluid 1`] = `
   height: 40px;
   min-width: 40px;
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -530,6 +565,11 @@ exports[`Storyshots Form|Button Fluid 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -598,7 +638,9 @@ exports[`Storyshots Form|Button Fluid 1`] = `
     className="c0 undefined   "
     type="button"
   >
-    Primary
+    <span>
+      Primary
+    </span>
   </button>
   <br />
   <button
@@ -633,7 +675,9 @@ exports[`Storyshots Form|Button Fluid 1`] = `
         </svg>
       </span>
     </div>
-    Primary With Icon
+    <span>
+      Primary With Icon
+    </span>
   </button>
 </div>
 `;
@@ -662,7 +706,7 @@ exports[`Storyshots Form|Button GhostButton 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -670,6 +714,11 @@ exports[`Storyshots Form|Button GhostButton 1`] = `
   color: #59636f;
   border: none;
   box-shadow: none;
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -731,7 +780,9 @@ exports[`Storyshots Form|Button GhostButton 1`] = `
   className="c0 undefined   "
   type="button"
 >
-  Ghost
+  <span>
+    Ghost
+  </span>
 </button>
 `;
 
@@ -768,7 +819,7 @@ exports[`Storyshots Form|Button Loading 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -776,6 +827,11 @@ exports[`Storyshots Form|Button Loading 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -872,7 +928,9 @@ exports[`Storyshots Form|Button Loading 1`] = `
       </svg>
     </span>
   </div>
-  Loading
+  <span>
+    Loading
+  </span>
 </button>
 `;
 
@@ -900,7 +958,7 @@ exports[`Storyshots Form|Button NegativeButton 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -908,6 +966,11 @@ exports[`Storyshots Form|Button NegativeButton 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -967,7 +1030,9 @@ exports[`Storyshots Form|Button NegativeButton 1`] = `
   className="c0 undefined   "
   type="button"
 >
-  Negative
+  <span>
+    Negative
+  </span>
 </button>
 `;
 
@@ -995,7 +1060,7 @@ exports[`Storyshots Form|Button NeutralButton 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1003,6 +1068,11 @@ exports[`Storyshots Form|Button NeutralButton 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1064,7 +1134,9 @@ exports[`Storyshots Form|Button NeutralButton 1`] = `
   className="c0 undefined   "
   type="button"
 >
-  Neutral
+  <span>
+    Neutral
+  </span>
 </button>
 `;
 
@@ -1092,7 +1164,7 @@ exports[`Storyshots Form|Button PositiveButton 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1100,6 +1172,11 @@ exports[`Storyshots Form|Button PositiveButton 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1159,7 +1236,9 @@ exports[`Storyshots Form|Button PositiveButton 1`] = `
   className="c0 undefined   "
   type="button"
 >
-  Positive
+  <span>
+    Positive
+  </span>
 </button>
 `;
 
@@ -1187,7 +1266,7 @@ exports[`Storyshots Form|Button PrimaryButton 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1195,6 +1274,11 @@ exports[`Storyshots Form|Button PrimaryButton 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1254,7 +1338,9 @@ exports[`Storyshots Form|Button PrimaryButton 1`] = `
   className="c0 undefined   "
   type="button"
 >
-  Primary
+  <span>
+    Primary
+  </span>
 </button>
 `;
 
@@ -1282,7 +1368,7 @@ exports[`Storyshots Form|Button SecondaryButton 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1290,6 +1376,11 @@ exports[`Storyshots Form|Button SecondaryButton 1`] = `
   color: #FFFFFF;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1349,7 +1440,9 @@ exports[`Storyshots Form|Button SecondaryButton 1`] = `
   className="c0 undefined   "
   type="button"
 >
-  Secondary
+  <span>
+    Secondary
+  </span>
 </button>
 `;
 
@@ -1377,7 +1470,7 @@ exports[`Storyshots Form|Button Small 1`] = `
   line-height: 1;
   height: 32px;
   min-width: 32px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1385,6 +1478,11 @@ exports[`Storyshots Form|Button Small 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1447,7 +1545,9 @@ exports[`Storyshots Form|Button Small 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Small button
+  <span>
+    Small button
+  </span>
 </button>
 `;
 
@@ -1484,7 +1584,7 @@ exports[`Storyshots Form|Button With both icons 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1492,6 +1592,11 @@ exports[`Storyshots Form|Button With both icons 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1582,7 +1687,9 @@ exports[`Storyshots Form|Button With both icons 1`] = `
       </svg>
     </span>
   </div>
-  Both icons
+  <span>
+    Both icons
+  </span>
   <div
     className="icon right-icon"
     style={
@@ -1647,7 +1754,7 @@ exports[`Storyshots Form|Button With icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1655,6 +1762,11 @@ exports[`Storyshots Form|Button With icon 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1745,7 +1857,9 @@ exports[`Storyshots Form|Button With icon 1`] = `
       </svg>
     </span>
   </div>
-  Left Icon
+  <span>
+    Left Icon
+  </span>
 </button>
 `;
 
@@ -1782,7 +1896,7 @@ exports[`Storyshots Form|Button With right icon 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1790,6 +1904,11 @@ exports[`Storyshots Form|Button With right icon 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -1852,7 +1971,9 @@ exports[`Storyshots Form|Button With right icon 1`] = `
   onClick={[Function]}
   type="button"
 >
-  Right Icon
+  <span>
+    Right Icon
+  </span>
   <div
     className="icon right-icon"
     style={
@@ -1917,7 +2038,7 @@ exports[`Storyshots Form|Button extended style 1`] = `
   line-height: 1;
   height: 40px;
   min-width: 40px;
-  overflow: hidden;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
   transition: background 0.3s,color 0.3s,border-color 0.3s;
@@ -1925,6 +2046,11 @@ exports[`Storyshots Form|Button extended style 1`] = `
   color: #59636f;
   border: solid 1px rgba(0,0,0,0.16);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c0 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0:disabled {
@@ -2022,6 +2148,8 @@ exports[`Storyshots Form|Button extended style 1`] = `
       </svg>
     </span>
   </div>
-  Label
+  <span>
+    Label
+  </span>
 </button>
 `;
