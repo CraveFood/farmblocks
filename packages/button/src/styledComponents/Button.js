@@ -87,7 +87,7 @@ const Button = styled.button`
   padding: ${({ paddingX, paddingY }) => `${paddingY}px ${paddingX}px`};
   border-radius: 4px;
 
-  line-height: 1;
+  line-height: 1.5;
   height: ${buttonHeight}px;
   min-width: ${buttonHeight}px;
   width: ${props => {
