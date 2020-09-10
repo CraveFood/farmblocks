@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.1...@crave/farmblocks-button@10.0.2) (2020-09-10)
+
+
+### Bug Fixes
+
+* **Button:** increase line-height ([e2d64a8](https://github.com/CraveFood/farmblocks/commit/e2d64a843b42af3a2bc2ecdb17e08bd2d9111ea9))
+
+
+
+
+
 ## [10.0.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.0...@crave/farmblocks-button@10.0.1) (2020-09-09)
 
 

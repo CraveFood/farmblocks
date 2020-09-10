@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@5.1.2...@crave/farmblocks-input-text@5.1.3) (2020-09-10)
+
+**Note:** Version bump only for package @crave/farmblocks-input-text
+
+
+
+
+
 ## [5.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-text@5.1.1...@crave/farmblocks-input-text@5.1.2) (2020-09-09)
 
 **Note:** Version bump only for package @crave/farmblocks-input-text
