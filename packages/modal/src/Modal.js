@@ -136,9 +136,11 @@ const Modal = ({
   );
 };
 
+const DOCUMENT_EXISTS = typeof document !== "undefined";
+
 Modal.defaultProps = {
   isOpen: false,
-  parentNode: document.body,
+  parentNode: DOCUMENT_EXISTS ? document.body : undefined,
   shouldCloseOnOverlayClick: true,
   shouldCloseOnEsc: true,
   showCloseButton: true,
@@ -148,7 +150,7 @@ Modal.defaultProps = {
 
 Modal.propTypes = {
   isOpen: PropTypes.bool,
-  parentNode: PropTypes.instanceOf(HTMLElement),
+  parentNode: PropTypes.instanceOf(DOCUMENT_EXISTS ? HTMLElement : {}),
   shouldCloseOnOverlayClick: PropTypes.bool,
   shouldCloseOnEsc: PropTypes.bool,
   showCloseButton: PropTypes.bool,
