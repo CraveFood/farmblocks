@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.2...@crave/farmblocks-modal@4.1.3) (2020-09-28)
+
+
+### Bug Fixes
+
+* **modal:** conditional use of document global ([77f053c](https://github.com/CraveFood/farmblocks/commit/77f053cb983fb2adc6d77f234f10b9d7c01736ef))
+
+
+
+
+
 ## [4.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.1...@crave/farmblocks-modal@4.1.2) (2020-09-10)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
