@@ -17,7 +17,13 @@ const FilterPopover = props => {
         <Button
           className="trigger"
           rightIcon={<SmChevronDown />}
-          css="box-shadow: none; button::-moz-focus-inner { border: 10px dotted red; }"
+          css={`
+            box-shadow: none;
+            span {
+              display: flex;
+              align-items: center;
+            }
+          `}
           small
           active={isVisible || props.hasValue}
         >
