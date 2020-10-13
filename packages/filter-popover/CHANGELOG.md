@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@4.1.2...@crave/farmblocks-filter-popover@4.1.3) (2020-10-13)
+
+
+### Bug Fixes
+
+* **FilterPopover:** set a flex container for button contents ([b63c32b](https://github.com/CraveFood/farmblocks/commit/b63c32ba401e7ad3526ae0a01252ccce322e7f91))
+
+
+
+
+
 ## [4.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@4.1.1...@crave/farmblocks-filter-popover@4.1.2) (2020-09-10)
 
 **Note:** Version bump only for package @crave/farmblocks-filter-popover
