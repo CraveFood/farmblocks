@@ -7,12 +7,20 @@ import {
   OYSTER,
 } from "./colors";
 
+export const NORMAL = CARBON;
+export const NEUTRAL = OYSTER;
+export const POSITIVE = LETTUCE;
+export const NEGATIVE = STRAWBERRY;
+export const FEATURED = INDIGO_MILK_CAP;
+export const SUBTLE = GREY_32;
+export const WHITE = "white";
+
 export default {
-  NORMAL: CARBON,
-  NEUTRAL: OYSTER,
-  POSITIVE: LETTUCE,
-  NEGATIVE: STRAWBERRY,
-  FEATURED: INDIGO_MILK_CAP,
-  SUBTLE: GREY_32,
-  WHITE: "white",
+  NORMAL,
+  NEUTRAL,
+  POSITIVE,
+  NEGATIVE,
+  FEATURED,
+  SUBTLE,
+  WHITE,
 };

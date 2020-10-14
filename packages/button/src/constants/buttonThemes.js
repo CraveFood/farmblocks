@@ -1,7 +1,5 @@
 import { colors } from "@crave/farmblocks-theme";
 
-import buttonVariants from "./buttonVariants";
-
 const WHITE = "#FFFFFF";
 
 const primaryStyle = {
@@ -72,11 +70,18 @@ const ghostStyle = {
   },
 };
 
+export const PRIMARY_BUTTON = primaryStyle;
+export const SECONDARY_BUTTON = secondaryStyle;
+export const POSITIVE_BUTTON = positiveStyle;
+export const NEGATIVE_BUTTON = negativeStyle;
+export const NEUTRAL_BUTTON = neutralStyle;
+export const GHOST_BUTTON = ghostStyle;
+
 export default {
-  [buttonVariants.PRIMARY]: primaryStyle,
-  [buttonVariants.SECONDARY]: secondaryStyle,
-  [buttonVariants.POSITIVE]: positiveStyle,
-  [buttonVariants.NEGATIVE]: negativeStyle,
-  [buttonVariants.NEUTRAL]: neutralStyle,
-  [buttonVariants.GHOST]: ghostStyle,
+  PRIMARY_BUTTON,
+  SECONDARY_BUTTON,
+  POSITIVE_BUTTON,
+  NEGATIVE_BUTTON,
+  NEUTRAL_BUTTON,
+  GHOST_BUTTON,
 };
