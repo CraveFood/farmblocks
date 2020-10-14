@@ -1,7 +1,7 @@
 module.exports = api => {
   api.cache(true);
   return {
-    presets: ["@babel/preset-env", "@babel/preset-react"],
+    presets: ["@babel/preset-react"],
     plugins: [
       // Stage 1 plugins
       "@babel/plugin-proposal-optional-chaining",
@@ -20,6 +20,7 @@ module.exports = api => {
     ],
     env: {
       test: {
+        presets: ["@babel/preset-env"],
         plugins: ["babel-plugin-require-context-hook"],
       },
     },
