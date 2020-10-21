@@ -1,7 +1,13 @@
+export const HUGE = 24;
+export const X_LARGE = 20;
+export const LARGE = 18;
+export const MEDIUM = 16;
+export const SMALL = 14;
+
 export default {
-  HUGE: 24,
-  X_LARGE: 20,
-  LARGE: 18,
-  MEDIUM: 16,
-  SMALL: 14,
+  HUGE,
+  X_LARGE,
+  LARGE,
+  MEDIUM,
+  SMALL,
 };

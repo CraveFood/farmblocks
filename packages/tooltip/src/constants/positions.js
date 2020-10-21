@@ -5,11 +5,11 @@ export const AUTO = "auto";
 export const TOP = "top";
 export const BOTTOM = "bottom";
 
-export default {
-  X: { LEFT, CENTER, RIGHT, AUTO },
-  Y: {
-    TOP,
-    BOTTOM,
-    AUTO,
-  },
+export const X = { LEFT, CENTER, RIGHT, AUTO };
+export const Y = {
+  TOP,
+  BOTTOM,
+  AUTO,
 };
+
+export default { X, Y };

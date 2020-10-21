@@ -1,8 +1,11 @@
-const badgeSizes = {
-  X_SMALL: 16,
-  SMALL: 24,
-  MEDIUM: 40,
-  LARGE: 56,
-};
+export const X_SMALL = 16;
+export const SMALL = 24;
+export const MEDIUM = 40;
+export const LARGE = 56;
 
-module.exports = badgeSizes;
+export default {
+  X_SMALL,
+  SMALL,
+  MEDIUM,
+  LARGE,
+};

@@ -1,4 +1,7 @@
+export const LEFT = "left";
+export const RIGHT = "right";
+
 export default {
-  LEFT: "left",
-  RIGHT: "right",
+  LEFT,
+  RIGHT,
 };

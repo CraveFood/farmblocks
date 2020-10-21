@@ -1,8 +1,10 @@
 import { fontTypes } from "@crave/farmblocks-theme";
 
+export const { FEATURED, NEUTRAL, NORMAL, WHITE } = fontTypes;
+
 export default {
-  FEATURED: fontTypes.FEATURED,
-  NEUTRAL: fontTypes.NEUTRAL,
-  NORMAL: fontTypes.NORMAL,
-  WHITE: fontTypes.WHITE,
+  FEATURED,
+  NEUTRAL,
+  NORMAL,
+  WHITE,
 };

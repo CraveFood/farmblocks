@@ -1,6 +1,7 @@
-const tagTypes = {
-  NEUTRAL: "NEUTRAL",
-  SECONDARY: "SECONDARY",
-};
+export const NEUTRAL = "NEUTRAL";
+export const SECONDARY = "SECONDARY";
 
-module.exports = tagTypes;
+export default {
+  NEUTRAL,
+  SECONDARY,
+};
