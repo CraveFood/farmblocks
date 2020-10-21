@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@6.1.2...@crave/farmblocks-amount-selectors@6.1.3) (2020-10-21)
+
+
+### Bug Fixes
+
+* **constants:** named exports ([b26b409](https://github.com/CraveFood/farmblocks/commit/b26b40974c07b25d7e73cb336962a061a93f02eb))
+
+
+
+
+
 ## [6.1.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@6.1.1...@crave/farmblocks-amount-selectors@6.1.2) (2020-09-10)
 
 **Note:** Version bump only for package @crave/farmblocks-amount-selectors

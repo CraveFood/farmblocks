@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@3.2.4...@crave/farmblocks-image@3.2.5) (2020-10-21)
+
+
+### Bug Fixes
+
+* **constants:** named exports ([b26b409](https://github.com/CraveFood/farmblocks/commit/b26b40974c07b25d7e73cb336962a061a93f02eb))
+
+
+
+
+
 ## [3.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-image@3.2.3...@crave/farmblocks-image@3.2.4) (2020-09-04)
 
 **Note:** Version bump only for package @crave/farmblocks-image

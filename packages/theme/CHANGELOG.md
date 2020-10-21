@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.10.0...@crave/farmblocks-theme@1.10.1) (2020-10-21)
+
+
+### Bug Fixes
+
+* **constants:** named exports ([b26b409](https://github.com/CraveFood/farmblocks/commit/b26b40974c07b25d7e73cb336962a061a93f02eb))
+
+
+
+
+
 # [1.10.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.9.0...@crave/farmblocks-theme@1.10.0) (2020-09-04)
 
 
