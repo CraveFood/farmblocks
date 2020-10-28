@@ -121,11 +121,7 @@ Carousel.propTypes = {
     fontSize: PropTypes.number,
     displayTime: PropTypes.number,
     transitionTime: PropTypes.number,
-    border: PropTypes.shape({
-      width: PropTypes.string,
-      radius: PropTypes.string,
-      color: PropTypes.string,
-    }),
+    border: PropTypes.string,
   }),
   className: PropTypes.string,
 };
