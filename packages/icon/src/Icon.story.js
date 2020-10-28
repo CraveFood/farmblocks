@@ -37,7 +37,7 @@ export const insideText = () => (
     <Text>
       But you can override it with the <Pre>size</Pre> (
       <LgGroceryItems size={80} />) and <Pre>color</Pre> (
-      <MdPickupLocationFilled color="indianred" />) props.
+      <MdPickupLocationFilled color="indianred" />) props 😉
     </Text>
   </>
 );
