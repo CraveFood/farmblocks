@@ -76,7 +76,7 @@ const Button = React.forwardRef(
 );
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(Object.keys(buttonVariants)),
+  variant: PropTypes.oneOf(Object.values(buttonVariants)),
   small: PropTypes.bool,
   active: PropTypes.bool,
   hovered: PropTypes.bool,
