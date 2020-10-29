@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.7.2...@crave/farmblocks-icon@1.0.0) (2020-10-29)
+
+
+### Bug Fixes
+
+* **Icon:** simple change to bump version ([562075e](https://github.com/CraveFood/farmblocks/commit/562075e5d1177960b284c4f11af84072063346ee)), closes [#1015](https://github.com/CraveFood/farmblocks/issues/1015)
+
+
+### BREAKING CHANGES
+
+* **Icon:** Apps using our components should handle the transpilation by their own when supporting ES5
+
+
+
+
+
 ## [0.7.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@0.7.1...@crave/farmblocks-icon@0.7.2) (2020-07-15)
 
 **Note:** Version bump only for package @crave/farmblocks-icon

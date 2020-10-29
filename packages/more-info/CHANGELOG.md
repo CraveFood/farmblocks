@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@4.0.5...@crave/farmblocks-more-info@4.0.6) (2020-10-29)
+
+**Note:** Version bump only for package @crave/farmblocks-more-info
+
+
+
+
+
 ## [4.0.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@4.0.4...@crave/farmblocks-more-info@4.0.5) (2020-10-21)
 
 **Note:** Version bump only for package @crave/farmblocks-more-info

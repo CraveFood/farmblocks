@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.3...@crave/farmblocks-button@10.0.4) (2020-10-29)
+
+
+### Bug Fixes
+
+* **button:** variant prop type ([2b196a1](https://github.com/CraveFood/farmblocks/commit/2b196a1d71a3d5472e3bd96685ec561522b1c97e))
+
+
+
+
+
 ## [10.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.2...@crave/farmblocks-button@10.0.3) (2020-10-21)
 
 

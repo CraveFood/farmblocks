@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.12](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@3.5.11...@crave/farmblocks-carousel@3.5.12) (2020-10-29)
+
+
+### Bug Fixes
+
+* **carousel:** border prop type ([1c7bd89](https://github.com/CraveFood/farmblocks/commit/1c7bd89819eb91f5a74a41a0c8f53ca30031c31b))
+
+
+
+
+
 ## [3.5.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-carousel@3.5.10...@crave/farmblocks-carousel@3.5.11) (2020-10-21)
 
 **Note:** Version bump only for package @crave/farmblocks-carousel
