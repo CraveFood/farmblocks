@@ -1886,3 +1886,35 @@ exports[`Storyshots Dropdown/Component with buttonProps 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Dropdown/Component with custom trigger 1`] = `
+.c0 {
+  font-family: lato,sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+.c0 *:focus {
+  outline: none;
+}
+
+<div
+  className="c0"
+>
+  <div>
+    <span
+      aria-expanded={false}
+      aria-haspopup={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
+      tabIndex="0"
+    >
+      <button>
+        click
+      </button>
+    </span>
+  </div>
+</div>
+`;
