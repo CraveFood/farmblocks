@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.1.4...@crave/farmblocks-dropdown@3.2.0) (2021-01-07)
+
+
+### Features
+
+* **dropdown:** add \`trigger\` property ([58241f9](https://github.com/CraveFood/farmblocks/commit/58241f9c4e1a968665679c3fabe45ef153fd5a3f))
+
+
+
+
+
 ## [3.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.1.3...@crave/farmblocks-dropdown@3.1.4) (2020-10-29)
 
 **Note:** Version bump only for package @crave/farmblocks-dropdown
