@@ -170,4 +170,14 @@ storiesOf("Dropdown/Component", module)
       <DropdownItem value={2}>Apple</DropdownItem>
       <DropdownItem value={3} text="Strawberry" />
     </Dropdown>
+  ))
+  .add("with custom trigger", () => (
+    <Dropdown
+      handleSelection={action("handleSelection")}
+      trigger={<button>click</button>}
+    >
+      <DropdownItem value={1} text="Banana" />
+      <DropdownItem value={2}>Apple</DropdownItem>
+      <DropdownItem value={3} text="Strawberry" />
+    </Dropdown>
   ));

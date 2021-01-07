@@ -15,13 +15,15 @@ const Dropdown = props => (
   <DropdownWrapper className={props.className}>
     <AriaWrapper onSelection={props.handleSelection}>
       <AriaButtonWrapper>
-        <Button
-          rightIcon={<SmChevronDown />}
-          text={props.text}
-          ref={props.innerRef}
-          {...props.buttonProps}
-          className="menuButton"
-        />
+        {props.trigger || (
+          <Button
+            rightIcon={<SmChevronDown />}
+            text={props.text}
+            ref={props.innerRef}
+            {...props.buttonProps}
+            className="menuButton"
+          />
+        )}
       </AriaButtonWrapper>
 
       <Menu>
@@ -55,6 +57,7 @@ Dropdown.propTypes = {
   maxHeight: PropTypes.string,
   className: PropTypes.string,
   buttonProps: PropTypes.object,
+  trigger: PropTypes.node,
 };
 
 export default Dropdown;
