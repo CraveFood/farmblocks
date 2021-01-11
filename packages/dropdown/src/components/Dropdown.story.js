@@ -10,7 +10,11 @@ import DropdownItem from "./DropdownItem";
 
 storiesOf("Dropdown/Component", module)
   .add("With text", () => (
-    <Dropdown text="Select fruit" handleSelection={action("handleSelection")}>
+    <Dropdown
+      text="Select fruit"
+      handleSelection={action("handleSelection")}
+      onMenuToggle={action("onMenuToggle")}
+    >
       <DropdownItem value={1} text="Banana" />
       <DropdownItem value={2}>Apple</DropdownItem>
       <DropdownItem value={3} text="Strawberry" />
