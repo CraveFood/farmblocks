@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.2.0...@crave/farmblocks-dropdown@3.3.0) (2021-01-11)
+
+
+### Features
+
+* **dropdown:** set active style to trigger when menu is open ([70693cb](https://github.com/CraveFood/farmblocks/commit/70693cb6eb5ecd586d9be03e80d45be0995c6fa7))
+
+
+
+
+
 # [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.1.4...@crave/farmblocks-dropdown@3.2.0) (2021-01-07)
 
 
