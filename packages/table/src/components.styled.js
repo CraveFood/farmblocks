@@ -19,6 +19,10 @@ export const Table = styled.table.attrs(props => ({
       grid-template-columns: ${({ $columnsTemplate }) => $columnsTemplate};
     }
   }
+
+  tr:hover td {
+    background-color: ${colors.SUGAR};
+  }
 `;
 
 export const THead = styled.thead`
@@ -36,21 +40,21 @@ export const TBody = styled.tbody`
 export const TR = styled.tr`
   .__asGrid & {
     display: contents;
+    height: 64px;
   }
 `;
 
 export const TH = styled(Text)`
   border: solid ${colors.GREY_08};
-  border-width: 1px 0;
-  padding: 8px 24px;
+  border-width: 0 0 1px;
+  padding: 8px 16px;
   line-height: 1.5;
-  background-color: ${colors.SUGAR};
 
   white-space: nowrap;
 `;
 TH.defaultProps = {
   as: "th",
-  fontSize: fontSizes.MEDIUM,
+  fontSize: fontSizes.SMALL,
   fontWeight: fontWeights.SEMIBOLD,
 };
 
@@ -58,8 +62,11 @@ export const TD = styled(Text).attrs(props => ({
   type: props.color,
 }))`
   border-bottom: 1px solid ${colors.GREY_08};
-  padding: 16px 24px;
+  padding: 8px 16px;
   line-height: 1.5;
+  height: 64px;
+
+  transition: background-color 0.2s ease-in-out;
 `;
 TD.defaultProps = {
   as: "td",
