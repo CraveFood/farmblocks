@@ -40,7 +40,6 @@ export const TBody = styled.tbody`
 export const TR = styled.tr`
   .__asGrid & {
     display: contents;
-    height: 64px;
   }
 `;
 
