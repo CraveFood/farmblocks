@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@6.1.0...@crave/farmblocks-table@6.1.1) (2021-01-22)
+
+
+### Bug Fixes
+
+* **table:** remove unecessary css height prop ([5fb905d](https://github.com/CraveFood/farmblocks/commit/5fb905d214131d0ad5a551bc3084148e68cc369b))
+
+
+
+
+
 # [6.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-table@6.0.3...@crave/farmblocks-table@6.1.0) (2021-01-21)
 
 
