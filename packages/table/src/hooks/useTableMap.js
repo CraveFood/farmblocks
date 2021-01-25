@@ -11,8 +11,8 @@ export default ({
   rowComponent: Row = TR,
   cellComponents = defaultCellComponents,
   placeholders = defaultPlaceholders,
-} = {}) =>
-  useCallback(
+} = {}) => {
+  return useCallback(
     (row, index) => (
       <Row key={row[keyProp] || index} $rowData={row} $rowIndex={index}>
         {columns.map((columnName, columnIndex) => {
@@ -40,3 +40,4 @@ export default ({
     ),
     [columns, keyProp, Row, cellComponents, placeholders],
   );
+};
