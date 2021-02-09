@@ -10,6 +10,12 @@ storiesOf("Radio", module)
   .add("Disabled", () => <Radio disabled />)
   .add("Disabled checked", () => <Radio disabled checked />)
   .add("Default w/ label", () => <Radio label="Default radio" />)
+  .add("Default w/ labelProps", () => (
+    <Radio
+      label="Default radio"
+      labelProps={{ type: "purple", fontSize: 54 }}
+    />
+  ))
   .add("Checked w/ label", () => <Radio label="Checked radio" checked />)
   .add("Disabled w/ label", () => <Radio label="Disabled radio" disabled />)
   .add("onClick", () => <Radio label="Click me" onClick={action("onClick")} />)

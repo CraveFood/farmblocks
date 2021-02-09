@@ -65,7 +65,12 @@ class Radio extends React.Component {
           <div className="checkedIndicator" />
         </div>
         {label && (
-          <Text fontWeight="title" type={fontColor} size={fontSizes.MEDIUM}>
+          <Text
+            fontWeight="title"
+            type={fontColor}
+            size={fontSizes.MEDIUM}
+            {...this.props.labelProps}
+          >
             {label}
           </Text>
         )}
@@ -82,6 +87,7 @@ Radio.propTypes = {
   onChange: PropTypes.func,
   value: PropTypes.any,
   className: PropTypes.string,
+  labelProps: PropTypes.object,
 };
 
 Radio.defaultProps = {
