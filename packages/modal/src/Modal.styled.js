@@ -57,10 +57,12 @@ export const HeaderWrapper = styled.header`
 
 export const Section = styled.div`
   display: flex;
-  padding: 16px;
+  padding: 12px 16px;
   ${({ children, header }) =>
     children &&
-    `border-${header ? "bottom" : "top"}: solid 1px ${colors.GREY_16}`};
+    `border-${header ? "bottom" : "top"}: solid 1px ${colors.GREY_08}`};
+
+  align-items: ${({ header }) => header && "center"};
 
   .closeButton {
     margin-left: auto;
