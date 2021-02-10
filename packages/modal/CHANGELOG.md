@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.5...@crave/farmblocks-modal@4.1.6) (2021-02-10)
+
+
+### Bug Fixes
+
+* **Modal:** adjust header styles ([697c2fe](https://github.com/CraveFood/farmblocks/commit/697c2fef988fe1379de53f69d307291bfdc91cb5))
+
+
+
+
+
 ## [4.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.4...@crave/farmblocks-modal@4.1.5) (2020-10-29)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
