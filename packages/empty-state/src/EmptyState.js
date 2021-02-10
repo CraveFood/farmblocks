@@ -63,7 +63,7 @@ EmptyState.propTypes = {
       text: PropTypes.string.isRequired,
       variant: PropTypes.string,
       onClick: PropTypes.func.isRequired,
-      small: PropTypes.object,
+      small: PropTypes.bool,
     }),
   ),
   info: PropTypes.string,
