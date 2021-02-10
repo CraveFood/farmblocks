@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { useTransition } from "react-spring";
 import Button, { buttonVariants } from "@crave/farmblocks-button";
-import Text, { fontSizes } from "@crave/farmblocks-text";
+import Text from "@crave/farmblocks-text";
 import { MdRemove } from "@crave/farmblocks-icon";
 
 import {
@@ -33,7 +33,6 @@ const Modal = ({
   verticalAlign,
   zIndex,
   header,
-  headerProps,
   footer,
   footerProps,
 }) => {
@@ -101,14 +100,14 @@ const Modal = ({
                       {...cardProps}
                     >
                       {(header || showCloseButton) && (
-                        <Section className="header" header {...headerProps}>
+                        <Section className="header" header>
                           <HeaderWrapper>{header}</HeaderWrapper>
                           {showCloseButton && (
                             <Button
                               className="closeButton"
                               icon={<MdRemove size={24} />}
                               small
-                              variant={buttonVariants.GHOST}
+                              variant={buttonVariants.NEUTRAL}
                               onClick={onRequestClose}
                               data-testid="modal-close-icon"
                               {...closeButtonProps}
@@ -159,7 +158,6 @@ Modal.propTypes = {
   onClose: PropTypes.func,
   children: PropTypes.node,
   header: PropTypes.node,
-  headerProps: PropTypes.object,
   footer: PropTypes.node,
   footerProps: PropTypes.object,
   cardProps: PropTypes.shape(ConstrainedCard.propTypes),
@@ -169,8 +167,6 @@ Modal.propTypes = {
   zIndex: PropTypes.number,
 };
 
-export const ModalTitle = props => (
-  <Text fontWeight="title" size={fontSizes.HUGE} {...props} />
-);
+export const ModalTitle = props => <Text fontWeight="title" {...props} />;
 
 export default Modal;

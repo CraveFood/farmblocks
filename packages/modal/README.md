@@ -100,10 +100,6 @@ This code will render:
 
   > Node for the header section
 
-- **headerProps** (_Object_)
-
-  > Properties passed to the header section
-
 - **footer** (_Node_)
 
   > Node for the footer section
