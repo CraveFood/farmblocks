@@ -39,6 +39,7 @@ class Radio extends React.Component {
       onChange,
       checked: checkedProp,
       className,
+      labelProps,
       ...remainingProps
     } = this.props;
     const { checked } = this.state;
@@ -50,7 +51,7 @@ class Radio extends React.Component {
 
     const { disabled } = inputProps;
 
-    const labelProps = {
+    const wrapperProps = {
       className,
       checked,
       disabled,
@@ -59,7 +60,7 @@ class Radio extends React.Component {
     const fontColor = (disabled && fontTypes.SUBTLE) || fontTypes.NORMAL;
 
     return (
-      <Label {...labelProps}>
+      <Label {...wrapperProps}>
         <input className="hiddenInput" type="radio" {...inputProps} />
         <div className="visibleInput">
           <div className="checkedIndicator" />
@@ -69,7 +70,7 @@ class Radio extends React.Component {
             fontWeight="title"
             type={fontColor}
             size={fontSizes.MEDIUM}
-            {...this.props.labelProps}
+            {...labelProps}
           >
             {label}
           </Text>
