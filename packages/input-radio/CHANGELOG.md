@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.6.0...@crave/farmblocks-input-radio@3.6.1) (2021-02-11)
+
+
+### Bug Fixes
+
+* **input-radio:** prevent labelProps from being passed to input ([8e13c8b](https://github.com/CraveFood/farmblocks/commit/8e13c8b5bb630de9fa48b3fa5e42f20e7a83b6a9))
+
+
+
+
+
 # [3.6.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.5.8...@crave/farmblocks-input-radio@3.6.0) (2021-02-10)
 
 

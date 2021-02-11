@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@5.1.4...@crave/farmblocks-empty-state@5.1.5) (2021-02-11)
+
+
+### Bug Fixes
+
+* **empty-state:** proptype ([8a88cc0](https://github.com/CraveFood/farmblocks/commit/8a88cc0cdccac4cebe80b3f5597035c0fd75a8f4))
+
+
+
+
+
 ## [5.1.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-empty-state@5.1.3...@crave/farmblocks-empty-state@5.1.4) (2020-10-29)
 
 
