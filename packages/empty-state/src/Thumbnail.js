@@ -5,11 +5,11 @@ import Image, { thumbnailSizes } from "@crave/farmblocks-image";
 import { fontTypes } from "@crave/farmblocks-text";
 
 const Icon = styled.div`
-  font-size: 72px;
+  font-size: ${({ iconFontSize }) => iconFontSize || "72px"};
   color: ${fontTypes.SUBTLE};
 `;
 
-const Thumbnail = ({ imageSrc, icon }) => {
+const Thumbnail = ({ imageSrc, icon, iconFontSize }) => {
   if (imageSrc) {
     return (
       <Image className="thumbnail" size={thumbnailSizes.LARGE} src={imageSrc} />
@@ -17,7 +17,11 @@ const Thumbnail = ({ imageSrc, icon }) => {
   }
 
   if (icon) {
-    return <Icon>{icon}</Icon>;
+    return (
+      <Icon className="icon-wrapper" iconFontSize={iconFontSize}>
+        {icon}
+      </Icon>
+    );
   }
 
   return null;
@@ -25,6 +29,7 @@ const Thumbnail = ({ imageSrc, icon }) => {
 
 Thumbnail.propTypes = {
   imageSrc: PropTypes.string,
+  iconFontSize: PropTypes.string,
   icon: PropTypes.node,
 };
 

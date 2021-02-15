@@ -10,19 +10,20 @@ const EmptyState = ({
   className,
   imageSrc,
   icon,
+  iconFontSize,
   title,
   description,
   actions,
   info,
 }) => (
   <Container className={className}>
-    <Thumbnail imageSrc={imageSrc} icon={icon} />
+    <Thumbnail imageSrc={imageSrc} icon={icon} iconFontSize={iconFontSize} />
 
     <Text
       className="title"
       fontWeight="title"
       align="center"
-      size={fontSizes.HUGE}
+      size={fontSizes.X_LARGE}
       type={fontTypes.NORMAL}
     >
       {title}
@@ -32,7 +33,7 @@ const EmptyState = ({
       <Text
         className="description"
         align="center"
-        size={fontSizes.LARGE}
+        size={fontSizes.MEDIUM}
         type={fontTypes.NEUTRAL}
       >
         {description}
@@ -69,6 +70,7 @@ EmptyState.propTypes = {
   info: PropTypes.string,
   icon: PropTypes.node,
   className: PropTypes.string,
+  iconFontSize: PropTypes.string,
 };
 
 export default EmptyState;
