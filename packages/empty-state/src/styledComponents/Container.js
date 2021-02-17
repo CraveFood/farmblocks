@@ -8,8 +8,9 @@ const Container = styled.div`
   ${space};
   ${flexbox};
 
-  > .thumbnail {
-    margin-bottom: 24px;
+  > .thumbnail,
+  > .icon-wrapper {
+    margin-bottom: 16px;
   }
 
   > .description,
