@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-import { useTransition } from "react-spring";
+import { useTransition } from "react-spring/web.cjs";
 import Button, { buttonVariants } from "@crave/farmblocks-button";
 import Text from "@crave/farmblocks-text";
 import { MdRemove } from "@crave/farmblocks-icon";
@@ -53,7 +53,7 @@ const Modal = ({
     onChange: isOpen ? onOpen : onClose,
   });
 
-  const fade = useTransition(isOpen, null, {
+  const fade = useTransition(isOpen, {
     from: {
       opacity: 0,
       position:
@@ -65,7 +65,7 @@ const Modal = ({
     trail: 1,
     unique: true,
   });
-  const slide = useTransition(isOpen, null, {
+  const slide = useTransition(isOpen, {
     from: { transform: "translate3D(0, 50px, 0)" },
     enter: { transform: "translate3D(0, 0, 0)" },
     leave: { transform: "translate3D(0, 50px, 0)" },
@@ -73,12 +73,11 @@ const Modal = ({
   });
 
   return ReactDOM.createPortal(
-    fade.map(
-      ({ item: fadeItem, key: fadeKey, props: fadeStyle }) =>
-        fadeItem && (
+    fade(
+      (fadeStyle, item) =>
+        item && (
           <Wrapper
             className={className}
-            key={fadeKey}
             style={fadeStyle}
             p={[1, 1, 5]}
             pb={[2, 2, 5]}
@@ -89,10 +88,10 @@ const Modal = ({
               className="overlay"
               onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
             />
-            {slide.map(
-              ({ item: slideItem, key: slideKey, props: slideStyle }) =>
+            {slide(
+              (slideStyle, slideItem) =>
                 slideItem && (
-                  <CardWrapper key={slideKey} style={slideStyle}>
+                  <CardWrapper style={slideStyle}>
                     <ConstrainedCard
                       floating
                       className="card"

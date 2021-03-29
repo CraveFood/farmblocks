@@ -1,6 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { Transition } from "react-spring/renderprops.cjs";
+import { Transition } from "react-spring/web.cjs";
 import { PrimaryButton, NeutralButton } from "@crave/farmblocks-button";
 import { colors } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
@@ -144,20 +144,17 @@ class AmountSelectors extends React.Component {
             enter={{ opacity: 1 }}
             leave={{ opacity: 0 }}
           >
-            {message =>
-              message &&
-              (props => (
-                <TooltipContent
-                  style={props}
-                  className="tooltip-content"
-                  positionX={POSITIONS.X.LEFT}
-                  isVisible
-                  {...this.props.tooltipProps}
-                >
-                  {message}
-                </TooltipContent>
-              ))
-            }
+            {(style, message) => (
+              <TooltipContent
+                style={style}
+                className="tooltip-content"
+                positionX={POSITIONS.X.LEFT}
+                isVisible
+                {...this.props.tooltipProps}
+              >
+                {message}
+              </TooltipContent>
+            )}
           </Transition>
         </div>
 
