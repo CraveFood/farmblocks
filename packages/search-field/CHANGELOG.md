@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.14](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.8.13...@crave/farmblocks-search-field@3.8.14) (2021-03-29)
+
+
+### Bug Fixes
+
+* **ScrollBox:** adjust behavior resulting in scrollHeight being null ([6fe9090](https://github.com/CraveFood/farmblocks/commit/6fe909047bfcddc9503831ea287daf590ebfa8de)), closes [#1031](https://github.com/CraveFood/farmblocks/issues/1031)
+
+
+
+
+
 ## [3.8.13](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-search-field@3.8.12...@crave/farmblocks-search-field@3.8.13) (2021-02-17)
 
 **Note:** Version bump only for package @crave/farmblocks-search-field
