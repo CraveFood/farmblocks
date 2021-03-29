@@ -15,6 +15,7 @@ export default class ScrollBox extends React.Component {
   };
 
   componentWillUnmount = () => {
+    this.onScroll.cancel();
     this.wrapper?.removeEventListener("scroll", this.onScroll);
   };
 
@@ -43,6 +44,7 @@ export default class ScrollBox extends React.Component {
       :                     :    |
       -----------------------  --|
     */
+    if (!this.wrapper) return;
     const remainingContent =
       this.wrapper.scrollHeight -
       this.wrapper.scrollTop -
