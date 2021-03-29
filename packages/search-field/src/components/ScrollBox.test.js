@@ -43,7 +43,7 @@ describe("Search Fields / ScrollBox", () => {
 
     test("should stop listening to scroll events on unmount", () => {
       instance.componentWillUnmount();
-
+      expect(instance.onScroll.cancel).toHaveBeenCalledWith();
       expect(removeEventListenerSpy).toHaveBeenCalledTimes(1);
       expect(removeEventListenerSpy).toHaveBeenCalledWith(
         "scroll",
