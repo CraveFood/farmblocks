@@ -241,16 +241,16 @@ exports[`Storyshots Form|Text Input Basic 1`] = `
 `;
 
 exports[`Storyshots Form|Text Input Protected Input 1`] = `
-.c4 {
+.c5 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c4 .farmblocks-icon {
+.c5 .farmblocks-icon {
   display: block;
 }
 
-.c3 {
+.c4 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -263,39 +263,39 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   color: #3498db;
 }
 
-.c3 span.margin-left {
+.c4 span.margin-left {
   margin-left: 4px;
 }
 
-.c3 span.margin-right {
+.c4 span.margin-right {
   margin-right: 4px;
 }
 
-.c3 a {
+.c4 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c3 a:hover {
+.c4 a:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c3 a:hover i {
+.c4 a:hover i {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c3 > a {
+.c4 > a {
   color: inherit;
 }
 
-.c3:hover {
+.c4:hover {
   color: #2980b9;
 }
 
-.c5 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -303,12 +303,21 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   color: #2f313a;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: #dd3311;
+}
+
+.c12 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
 }
 
 .c1 {
@@ -499,395 +508,6 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   margin-bottom: 8px;
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 24px;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-}
-
-.c7 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: #dd3311;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c7 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c7 > .input > input,
-.select__search .c7 > .input input {
-  padding: 8px 16px;
-  line-height: 22px;
-}
-
-.c7 > .input > textarea {
-  padding: 16px;
-}
-
-.c7 > .input input,
-.c7 > .input textarea,
-.c7 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c7 > .input > input,
-.c7 > .input > textarea,
-.select__search .c7 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: #2f313a;
-  background: none;
-}
-
-.c7 > .input > input::-webkit-input-placeholder,
-.c7 > .input > textarea::-webkit-input-placeholder,
-.select__search .c7 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7 > .input > input::-moz-placeholder,
-.c7 > .input > textarea::-moz-placeholder,
-.select__search .c7 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7 > .input > input:-ms-input-placeholder,
-.c7 > .input > textarea:-ms-input-placeholder,
-.select__search .c7 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7 > .input > input::placeholder,
-.c7 > .input > textarea::placeholder,
-.select__search .c7 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c7 > .input > input[type="search"],
-.c7 > .input > textarea[type="search"],
-.select__search .c7 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c7 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c7 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c7 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c7 > .input > input[type="search"]::-ms-clear,
-.c7 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c7 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c7 > .input > input[role="combobox"],
-.c7 > .input > textarea[role="combobox"],
-.select__search .c7 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c7 > .input > .icon {
-  color: #dd3311;
-}
-
-.c7 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c7 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c7 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c7 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c7 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c7 .input.dropdown {
-  cursor: pointer;
-}
-
-.c7 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c7 input[type="number"]::-webkit-inner-spin-button,
-.c7 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c7 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c7 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c7 .prefix,
-.c7 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #dd3311;
-}
-
-.c7 .label {
-  margin-bottom: 8px;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 24px;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-}
-
-.c11 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c11 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c11 > .input > input,
-.select__search .c11 > .input input {
-  padding: 8px 16px;
-  line-height: 22px;
-}
-
-.c11 > .input > textarea {
-  padding: 16px;
-}
-
-.c11 > .input input,
-.c11 > .input textarea,
-.c11 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c11 > .input > input,
-.c11 > .input > textarea,
-.select__search .c11 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: rgba(0,0,0,0.32);
-  background: none;
-}
-
-.c11 > .input > input::-webkit-input-placeholder,
-.c11 > .input > textarea::-webkit-input-placeholder,
-.select__search .c11 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c11 > .input > input::-moz-placeholder,
-.c11 > .input > textarea::-moz-placeholder,
-.select__search .c11 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c11 > .input > input:-ms-input-placeholder,
-.c11 > .input > textarea:-ms-input-placeholder,
-.select__search .c11 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c11 > .input > input::placeholder,
-.c11 > .input > textarea::placeholder,
-.select__search .c11 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c11 > .input > input[type="search"],
-.c11 > .input > textarea[type="search"],
-.select__search .c11 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c11 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c11 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c11 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c11 > .input > input[type="search"]::-ms-clear,
-.c11 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c11 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c11 > .input > input[role="combobox"],
-.c11 > .input > textarea[role="combobox"],
-.select__search .c11 > .input input[role="combobox"] {
-  cursor: default;
-}
-
-.c11 > .input > .icon {
-  color: rgba(0,0,0,0.16);
-}
-
-.c11 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c11 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c11 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c11 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c11 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c11 .input.dropdown {
-  cursor: default;
-}
-
-.c11 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c11 input[type="number"]::-webkit-inner-spin-button,
-.c11 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c11 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c11 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c11 .prefix,
-.c11 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.32);
-}
-
-.c11 .label {
-  margin-bottom: 8px;
-}
-
-.c10 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
-  margin-top: 8px;
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -898,7 +518,6 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   flex-direction: column;
   font-family: Lato,sans-serif;
   font-size: 16px;
-  display: block;
 }
 
 .c2 > .input {
@@ -1075,7 +694,580 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   margin-bottom: 8px;
 }
 
-.c2 .input {
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c8 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c8 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 > .input > input,
+.select__search .c8 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c8 > .input > textarea {
+  padding: 16px;
+}
+
+.c8 > .input input,
+.c8 > .input textarea,
+.c8 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c8 > .input > input,
+.c8 > .input > textarea,
+.select__search .c8 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c8 > .input > input::-webkit-input-placeholder,
+.c8 > .input > textarea::-webkit-input-placeholder,
+.select__search .c8 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::-moz-placeholder,
+.c8 > .input > textarea::-moz-placeholder,
+.select__search .c8 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input:-ms-input-placeholder,
+.c8 > .input > textarea:-ms-input-placeholder,
+.select__search .c8 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input::placeholder,
+.c8 > .input > textarea::placeholder,
+.select__search .c8 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c8 > .input > input[type="search"],
+.c8 > .input > textarea[type="search"],
+.select__search .c8 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c8 > .input > input[type="search"]::-ms-clear,
+.c8 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c8 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c8 > .input > input[role="combobox"],
+.c8 > .input > textarea[role="combobox"],
+.select__search .c8 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c8 > .input > .icon {
+  color: #dd3311;
+}
+
+.c8 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c8 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c8 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c8 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c8 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c8 .input.dropdown {
+  cursor: pointer;
+}
+
+.c8 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c8 input[type="number"]::-webkit-inner-spin-button,
+.c8 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c8 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c8 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c8 .prefix,
+.c8 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #dd3311;
+}
+
+.c8 .label {
+  margin-bottom: 8px;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c10 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-color: #dd3311;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c10 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c10 > .input > input,
+.select__search .c10 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c10 > .input > textarea {
+  padding: 16px;
+}
+
+.c10 > .input input,
+.c10 > .input textarea,
+.c10 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c10 > .input > input,
+.c10 > .input > textarea,
+.select__search .c10 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c10 > .input > input::-webkit-input-placeholder,
+.c10 > .input > textarea::-webkit-input-placeholder,
+.select__search .c10 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 > .input > input::-moz-placeholder,
+.c10 > .input > textarea::-moz-placeholder,
+.select__search .c10 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 > .input > input:-ms-input-placeholder,
+.c10 > .input > textarea:-ms-input-placeholder,
+.select__search .c10 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 > .input > input::placeholder,
+.c10 > .input > textarea::placeholder,
+.select__search .c10 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c10 > .input > input[type="search"],
+.c10 > .input > textarea[type="search"],
+.select__search .c10 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c10 > .input > input[type="search"]::-ms-clear,
+.c10 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c10 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c10 > .input > input[role="combobox"],
+.c10 > .input > textarea[role="combobox"],
+.select__search .c10 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c10 > .input > .icon {
+  color: #dd3311;
+}
+
+.c10 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c10 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c10 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c10 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c10 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c10 .input.dropdown {
+  cursor: pointer;
+}
+
+.c10 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c10 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c10 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c10 .prefix,
+.c10 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: #dd3311;
+}
+
+.c10 .label {
+  margin-bottom: 8px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c14 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c14 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14 > .input > input,
+.select__search .c14 > .input input {
+  padding: 8px 16px;
+  line-height: 22px;
+}
+
+.c14 > .input > textarea {
+  padding: 16px;
+}
+
+.c14 > .input input,
+.c14 > .input textarea,
+.c14 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c14 > .input > input,
+.c14 > .input > textarea,
+.select__search .c14 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c14 > .input > input::-webkit-input-placeholder,
+.c14 > .input > textarea::-webkit-input-placeholder,
+.select__search .c14 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c14 > .input > input::-moz-placeholder,
+.c14 > .input > textarea::-moz-placeholder,
+.select__search .c14 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c14 > .input > input:-ms-input-placeholder,
+.c14 > .input > textarea:-ms-input-placeholder,
+.select__search .c14 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c14 > .input > input::placeholder,
+.c14 > .input > textarea::placeholder,
+.select__search .c14 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c14 > .input > input[type="search"],
+.c14 > .input > textarea[type="search"],
+.select__search .c14 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c14 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c14 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c14 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c14 > .input > input[type="search"]::-ms-clear,
+.c14 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c14 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c14 > .input > input[role="combobox"],
+.c14 > .input > textarea[role="combobox"],
+.select__search .c14 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c14 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c14 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c14 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c14 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c14 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c14 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c14 .input.dropdown {
+  cursor: default;
+}
+
+.c14 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c14 input[type="number"]::-webkit-inner-spin-button,
+.c14 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c14 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c14 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c14 .prefix,
+.c14 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c14 .label {
+  margin-bottom: 8px;
+}
+
+.c13 {
+  margin-top: 8px;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c3 {
+  display: block;
+}
+
+.c3 .input {
   position: absolute;
   top: 0;
   width: 100%;
@@ -1087,203 +1279,20 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   cursor: auto;
 }
 
-.c2 .prefix {
+.c3 .prefix {
   margin: 0 8px 0 0;
 }
 
-.c2 .clear {
+.c3 .clear {
   position: absolute;
   right: 8px;
 }
 
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
+.c7 {
   display: block;
 }
 
-.c6 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c6 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c6 > .input > input,
-.select__search .c6 > .input input {
-  padding: 8px 16px;
-  line-height: 22px;
-}
-
-.c6 > .input > textarea {
-  padding: 16px;
-}
-
-.c6 > .input input,
-.c6 > .input textarea,
-.c6 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c6 > .input > input,
-.c6 > .input > textarea,
-.select__search .c6 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: #2f313a;
-  background: none;
-}
-
-.c6 > .input > input::-webkit-input-placeholder,
-.c6 > .input > textarea::-webkit-input-placeholder,
-.select__search .c6 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 > .input > input::-moz-placeholder,
-.c6 > .input > textarea::-moz-placeholder,
-.select__search .c6 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 > .input > input:-ms-input-placeholder,
-.c6 > .input > textarea:-ms-input-placeholder,
-.select__search .c6 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 > .input > input::placeholder,
-.c6 > .input > textarea::placeholder,
-.select__search .c6 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 > .input > input[type="search"],
-.c6 > .input > textarea[type="search"],
-.select__search .c6 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c6 > .input > input[type="search"]::-ms-clear,
-.c6 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c6 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c6 > .input > input[role="combobox"],
-.c6 > .input > textarea[role="combobox"],
-.select__search .c6 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c6 > .input > .icon {
-  color: rgba(0,0,0,0.16);
-}
-
-.c6 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c6 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c6 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c6 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c6 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c6 .input.dropdown {
-  cursor: pointer;
-}
-
-.c6 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c6 input[type="number"]::-webkit-inner-spin-button,
-.c6 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c6 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c6 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c6 .prefix,
-.c6 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.32);
-}
-
-.c6 .label {
-  margin-bottom: 8px;
-}
-
-.c6 .input {
+.c7 .input {
   position: absolute;
   top: 32px;
   width: 100%;
@@ -1295,203 +1304,20 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   cursor: auto;
 }
 
-.c6 .prefix {
+.c7 .prefix {
   margin: 0 8px 0 0;
 }
 
-.c6 .clear {
+.c7 .clear {
   position: absolute;
   right: 8px;
 }
 
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
+.c11 {
   display: block;
 }
 
-.c9 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-color: #dd3311;
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c9 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c9 > .input > input,
-.select__search .c9 > .input input {
-  padding: 8px 16px;
-  line-height: 22px;
-}
-
-.c9 > .input > textarea {
-  padding: 16px;
-}
-
-.c9 > .input input,
-.c9 > .input textarea,
-.c9 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c9 > .input > input,
-.c9 > .input > textarea,
-.select__search .c9 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: #2f313a;
-  background: none;
-}
-
-.c9 > .input > input::-webkit-input-placeholder,
-.c9 > .input > textarea::-webkit-input-placeholder,
-.select__search .c9 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9 > .input > input::-moz-placeholder,
-.c9 > .input > textarea::-moz-placeholder,
-.select__search .c9 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9 > .input > input:-ms-input-placeholder,
-.c9 > .input > textarea:-ms-input-placeholder,
-.select__search .c9 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9 > .input > input::placeholder,
-.c9 > .input > textarea::placeholder,
-.select__search .c9 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c9 > .input > input[type="search"],
-.c9 > .input > textarea[type="search"],
-.select__search .c9 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c9 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c9 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c9 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c9 > .input > input[type="search"]::-ms-clear,
-.c9 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c9 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c9 > .input > input[role="combobox"],
-.c9 > .input > textarea[role="combobox"],
-.select__search .c9 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c9 > .input > .icon {
-  color: #dd3311;
-}
-
-.c9 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c9 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c9 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c9 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c9 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c9 .input.dropdown {
-  cursor: pointer;
-}
-
-.c9 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c9 input[type="number"]::-webkit-inner-spin-button,
-.c9 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c9 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c9 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c9 .prefix,
-.c9 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: #dd3311;
-}
-
-.c9 .label {
-  margin-bottom: 8px;
-}
-
-.c9 .input {
+.c11 .input {
   position: absolute;
   top: 32px;
   width: 100%;
@@ -1504,11 +1330,11 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
   cursor: auto;
 }
 
-.c9 .prefix {
+.c11 .prefix {
   margin: 0 8px 0 0;
 }
 
-.c9 .clear {
+.c11 .clear {
   position: absolute;
   right: 8px;
 }
@@ -1548,14 +1374,14 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       </div>
     </div>
     <div
-      className="c2 protected-input-cover"
+      className="c2 c3 protected-input-cover"
       data-testid="protected-input-cover"
     >
       <div
         className="input"
       >
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -1567,7 +1393,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -1612,13 +1438,13 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c5 label"
+        className="c6 label"
       >
         With value
       </label>
     </div>
     <div
-      className="c6 protected-input-cover"
+      className="c2 c7 protected-input-cover"
       data-testid="protected-input-cover"
       label="With value"
     >
@@ -1627,7 +1453,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       >
         Foo bar
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -1639,7 +1465,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -1684,13 +1510,13 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c5 label"
+        className="c6 label"
       >
         With protectedValue
       </label>
     </div>
     <div
-      className="c6 protected-input-cover"
+      className="c2 c7 protected-input-cover"
       data-testid="protected-input-cover"
       label="With protectedValue"
     >
@@ -1699,7 +1525,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       >
         Zero
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -1711,7 +1537,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -1738,7 +1564,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
     className="c0"
   >
     <div
-      className="c7"
+      className="c8"
       onClick={[Function]}
       type="text"
     >
@@ -1755,13 +1581,13 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c8 label"
+        className="c9 label"
       >
         Invalid
       </label>
     </div>
     <div
-      className="c9 protected-input-cover"
+      className="c10 c11 protected-input-cover"
       data-testid="protected-input-cover"
       label="Invalid"
     >
@@ -1769,7 +1595,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         className="input"
       >
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -1781,7 +1607,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -1831,13 +1657,13 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c5 label"
+        className="c6 label"
       >
         With prefix
       </label>
     </div>
     <div
-      className="c6 protected-input-cover"
+      className="c2 c7 protected-input-cover"
       data-testid="protected-input-cover"
       label="With prefix"
     >
@@ -1851,7 +1677,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         </div>
         0
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -1863,7 +1689,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -1890,7 +1716,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
     className="c0"
   >
     <div
-      className="c7"
+      className="c8"
       onClick={[Function]}
       type="text"
     >
@@ -1908,12 +1734,12 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c8 label"
+        className="c9 label"
       >
         Validation Messages
       </label>
       <div
-        className="Text-pfq5dp-0 c10 error-message-text"
+        className="c12 c13 error-message-text"
         size={14}
         type="#dd3311"
       >
@@ -1921,7 +1747,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       </div>
     </div>
     <div
-      className="c9 protected-input-cover"
+      className="c10 c11 protected-input-cover"
       data-testid="protected-input-cover"
       label="Validation Messages"
     >
@@ -1930,7 +1756,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       >
         
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -1942,7 +1768,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -1969,7 +1795,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
     className="c0"
   >
     <div
-      className="c7"
+      className="c8"
       onClick={[Function]}
       type="text"
     >
@@ -1987,19 +1813,19 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c8 label"
+        className="c9 label"
       >
         Multiple Validation Messages
       </label>
       <div
-        className="Text-pfq5dp-0 c10 error-message-text"
+        className="c12 c13 error-message-text"
         size={14}
         type="#dd3311"
       >
         Error message here
       </div>
       <div
-        className="Text-pfq5dp-0 c10 error-message-text"
+        className="c12 c13 error-message-text"
         size={14}
         type="#dd3311"
       >
@@ -2007,7 +1833,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       </div>
     </div>
     <div
-      className="c9 protected-input-cover"
+      className="c10 c11 protected-input-cover"
       data-testid="protected-input-cover"
       label="Multiple Validation Messages"
     >
@@ -2016,7 +1842,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
       >
         
         <div
-          className="c3 clear"
+          className="c4 clear"
           disabled={false}
           fontWeight="600"
           size={16}
@@ -2028,7 +1854,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
             onKeyDown={[Function]}
           >
             <span
-              className="c4"
+              className="c5"
               color="currentColor"
               size="1em"
             >
@@ -2055,7 +1881,7 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
     className="c0"
   >
     <div
-      className="c11"
+      className="c14"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -2075,14 +1901,14 @@ exports[`Storyshots Form|Text Input Protected Input 1`] = `
         />
       </div>
       <label
-        className="c5 label"
+        className="c6 label"
         disabled={true}
       >
         Disabled
       </label>
     </div>
     <div
-      className="c6 protected-input-cover"
+      className="c2 c7 protected-input-cover"
       data-testid="protected-input-cover"
       label="Disabled"
     >
@@ -2111,12 +1937,21 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
   color: #dd3311;
 }
 
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: rgba(0,0,0,0.32);
+}
+
+.c4 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
 }
 
 .c0 {
@@ -2495,7 +2330,7 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
   margin-bottom: 8px;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2508,7 +2343,7 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
   font-size: 16px;
 }
 
-.c5 > .input {
+.c6 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2532,32 +2367,32 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
   overflow: auto;
 }
 
-.c5 > .input .wrapped {
+.c6 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c5 > .input > input,
-.select__search .c5 > .input input {
+.c6 > .input > input,
+.select__search .c6 > .input input {
   padding: 8px 16px;
   line-height: 22px;
 }
 
-.c5 > .input > textarea {
+.c6 > .input > textarea {
   padding: 16px;
 }
 
-.c5 > .input input,
-.c5 > .input textarea,
-.c5 > .input select {
+.c6 > .input input,
+.c6 > .input textarea,
+.c6 > .input select {
   font-family: inherit;
   font-size: inherit;
 }
 
-.c5 > .input > input,
-.c5 > .input > textarea,
-.select__search .c5 > .input input {
+.c6 > .input > input,
+.c6 > .input > textarea,
+.select__search .c6 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -2568,128 +2403,122 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
   background: none;
 }
 
-.c5 > .input > input::-webkit-input-placeholder,
-.c5 > .input > textarea::-webkit-input-placeholder,
-.select__search .c5 > .input input::-webkit-input-placeholder {
+.c6 > .input > input::-webkit-input-placeholder,
+.c6 > .input > textarea::-webkit-input-placeholder,
+.select__search .c6 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::-moz-placeholder,
-.c5 > .input > textarea::-moz-placeholder,
-.select__search .c5 > .input input::-moz-placeholder {
+.c6 > .input > input::-moz-placeholder,
+.c6 > .input > textarea::-moz-placeholder,
+.select__search .c6 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input:-ms-input-placeholder,
-.c5 > .input > textarea:-ms-input-placeholder,
-.select__search .c5 > .input input:-ms-input-placeholder {
+.c6 > .input > input:-ms-input-placeholder,
+.c6 > .input > textarea:-ms-input-placeholder,
+.select__search .c6 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input::placeholder,
-.c5 > .input > textarea::placeholder,
-.select__search .c5 > .input input::placeholder {
+.c6 > .input > input::placeholder,
+.c6 > .input > textarea::placeholder,
+.select__search .c6 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 > .input > input[type="search"],
-.c5 > .input > textarea[type="search"],
-.select__search .c5 > .input input[type="search"] {
+.c6 > .input > input[type="search"],
+.c6 > .input > textarea[type="search"],
+.select__search .c6 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c5 > .input > input[type="search"]::-ms-clear,
-.c5 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c5 > .input input[type="search"]::-ms-clear {
+.c6 > .input > input[type="search"]::-ms-clear,
+.c6 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c6 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c5 > .input > input[role="combobox"],
-.c5 > .input > textarea[role="combobox"],
-.select__search .c5 > .input input[role="combobox"] {
+.c6 > .input > input[role="combobox"],
+.c6 > .input > textarea[role="combobox"],
+.select__search .c6 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c5 > .input > .icon {
+.c6 > .input > .icon {
   color: rgba(0,0,0,0.16);
 }
 
-.c5 > .input > .icon.left {
+.c6 > .input > .icon.left {
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.c5 > .input > .icon.right {
+.c6 > .input > .icon.right {
   margin-right: 8px;
   margin-left: -8px;
 }
 
-.c5 > .input > .clear {
+.c6 > .input > .clear {
   color: rgba(0,0,0,0.16);
 }
 
-.c5 > .input > .clear:hover {
+.c6 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c5 > .input > .clear a {
+.c6 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c5 .input.dropdown {
+.c6 .input.dropdown {
   cursor: default;
 }
 
-.c5 input[type="number"] {
+.c6 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c5 input[type="number"]::-webkit-inner-spin-button,
-.c5 input[type="number"]::-webkit-outer-spin-button {
+.c6 input[type="number"]::-webkit-inner-spin-button,
+.c6 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c5 .prefix {
+.c6 .prefix {
   margin-left: 16px;
   margin-right: -8px;
 }
 
-.c5 .suffix {
+.c6 .suffix {
   margin-right: 16px;
   margin-left: -8px;
 }
 
-.c5 .prefix,
-.c5 .suffix {
+.c6 .prefix,
+.c6 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .label {
+.c6 .label {
   margin-bottom: 8px;
 }
 
-.c4 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+.c5 {
   margin-top: 8px;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -2787,7 +2616,7 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
       Validation Messages
     </label>
     <div
-      className="Text-pfq5dp-0 c4 error-message-text"
+      className="c4 c5 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -2818,14 +2647,14 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
       Multiple Validation Messages
     </label>
     <div
-      className="Text-pfq5dp-0 c4 error-message-text"
+      className="c4 c5 error-message-text"
       size={14}
       type="#dd3311"
     >
       Error message here
     </div>
     <div
-      className="Text-pfq5dp-0 c4 error-message-text"
+      className="c4 c5 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -2833,7 +2662,7 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
     </div>
   </div>
   <div
-    className="c5"
+    className="c6"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -2853,7 +2682,7 @@ exports[`Storyshots Form|Text Input Text Area Input 1`] = `
       />
     </div>
     <label
-      className="c6 label"
+      className="c7 label"
       disabled={true}
     >
       Disabled

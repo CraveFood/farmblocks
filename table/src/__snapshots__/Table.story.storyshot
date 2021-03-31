@@ -1,6 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Layout|Table As CSS Grid 1`] = `
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: left;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 {
   min-width: 100%;
   overflow-x: scroll;
@@ -16,7 +40,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
   display: contents;
 }
 
-.__asGrid .c4 {
+.__asGrid .c5 {
   display: contents;
 }
 
@@ -24,15 +48,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
   display: contents;
 }
 
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 600;
+.c4 {
   border: solid rgba(0,0,0,0.08);
   border-width: 0 0 1px;
   padding: 8px 16px;
@@ -40,17 +56,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
   white-space: nowrap;
 }
 
-.c5 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.c7 {
   border-bottom: 1px solid rgba(0,0,0,0.08);
   padding: 8px 16px;
   line-height: 1.5;
@@ -59,23 +65,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
   transition: background-color 0.2s ease-in-out;
 }
 
-.c6 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  padding: 8px 16px;
-  line-height: 1.5;
-  height: 64px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+.c8 {
   font-weight: 700;
   color: #2f313a;
 }
@@ -91,13 +81,13 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
   className="c0  __asGrid"
 >
   <thead
-    className="c1"
+    className="c1 "
   >
     <tr
-      className="c2"
+      className="c2 "
     >
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -106,7 +96,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
         Fruit
       </th>
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -117,13 +107,13 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
     </tr>
   </thead>
   <tbody
-    className="c4"
+    className="c5 "
   >
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -132,7 +122,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
         Apple
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -142,10 +132,10 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -154,7 +144,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
         Banana
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -164,10 +154,10 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -176,7 +166,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
         Cherry
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -186,10 +176,10 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -198,7 +188,7 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
         Coconut
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -212,6 +202,30 @@ exports[`Storyshots Layout|Table As CSS Grid 1`] = `
 `;
 
 exports[`Storyshots Layout|Table Basic 1`] = `
+.c3 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2f313a;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.c6 {
+  font-family: Lato,sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59636f;
+  text-align: left;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .c0 {
   min-width: 100%;
   overflow-x: scroll;
@@ -227,7 +241,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
   display: contents;
 }
 
-.__asGrid .c4 {
+.__asGrid .c5 {
   display: contents;
 }
 
@@ -235,15 +249,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
   display: contents;
 }
 
-.c3 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2f313a;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 600;
+.c4 {
   border: solid rgba(0,0,0,0.08);
   border-width: 0 0 1px;
   padding: 8px 16px;
@@ -251,17 +257,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
   white-space: nowrap;
 }
 
-.c5 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.c7 {
   border-bottom: 1px solid rgba(0,0,0,0.08);
   padding: 8px 16px;
   line-height: 1.5;
@@ -270,23 +266,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
   transition: background-color 0.2s ease-in-out;
 }
 
-.c6 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  padding: 8px 16px;
-  line-height: 1.5;
-  height: 64px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+.c8 {
   font-weight: 700;
   color: #2f313a;
 }
@@ -301,13 +281,13 @@ exports[`Storyshots Layout|Table Basic 1`] = `
   className="c0  "
 >
   <thead
-    className="c1"
+    className="c1 "
   >
     <tr
-      className="c2"
+      className="c2 "
     >
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -316,7 +296,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
         Fruit
       </th>
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -327,13 +307,13 @@ exports[`Storyshots Layout|Table Basic 1`] = `
     </tr>
   </thead>
   <tbody
-    className="c4"
+    className="c5 "
   >
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -342,7 +322,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
         Apple
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -352,10 +332,10 @@ exports[`Storyshots Layout|Table Basic 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -364,7 +344,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
         Banana
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -374,10 +354,10 @@ exports[`Storyshots Layout|Table Basic 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -386,7 +366,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
         Cherry
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -396,10 +376,10 @@ exports[`Storyshots Layout|Table Basic 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -408,7 +388,7 @@ exports[`Storyshots Layout|Table Basic 1`] = `
         Coconut
       </td>
       <td
-        className="Text-pfq5dp-0 c6"
+        className="c6 c7 c8"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -422,29 +402,6 @@ exports[`Storyshots Layout|Table Basic 1`] = `
 `;
 
 exports[`Storyshots Layout|Table Extending Style 1`] = `
-.c0 {
-  min-width: 100%;
-  overflow-x: scroll;
-  border: none;
-  border-spacing: 0;
-}
-
-.c0 tr:hover td {
-  background-color: #f6f8f9;
-}
-
-.__asGrid .c1 {
-  display: contents;
-}
-
-.__asGrid .c4 {
-  display: contents;
-}
-
-.__asGrid .c2 {
-  display: contents;
-}
-
 .c3 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -454,30 +411,6 @@ exports[`Storyshots Layout|Table Extending Style 1`] = `
   text-align: left;
   font-size: 14px;
   font-weight: 600;
-  border: solid rgba(0,0,0,0.08);
-  border-width: 0 0 1px;
-  padding: 8px 16px;
-  line-height: 1.5;
-  white-space: nowrap;
-}
-
-.c5 {
-  font-family: Lato,sans-serif;
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #59636f;
-  text-align: left;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  padding: 8px 16px;
-  line-height: 1.5;
-  height: 64px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .c6 {
@@ -491,146 +424,8 @@ exports[`Storyshots Layout|Table Extending Style 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  padding: 8px 16px;
-  line-height: 1.5;
-  height: 64px;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
-  color: tomato;
 }
 
-@supports (display:contents) {
-  .c0.__asGrid {
-    display: grid;
-  }
-}
-
-<table
-  className="c0  "
->
-  <thead
-    className="c1"
-  >
-    <tr
-      className="c2"
-    >
-      <th
-        className="Text-pfq5dp-0 c3"
-        fontSize={14}
-        fontWeight="600"
-        size={18}
-        type="#2f313a"
-      >
-        Fruit
-      </th>
-      <th
-        className="Text-pfq5dp-0 c3"
-        fontSize={14}
-        fontWeight="600"
-        size={18}
-        type="#2f313a"
-      >
-        Price
-      </th>
-    </tr>
-  </thead>
-  <tbody
-    className="c4"
-  >
-    <tr
-      className="c2"
-    >
-      <td
-        className="Text-pfq5dp-0 c5"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        Apple
-      </td>
-      <td
-        className="Text-pfq5dp-0 c6"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        $ 0.50
-      </td>
-    </tr>
-    <tr
-      className="c2"
-    >
-      <td
-        className="Text-pfq5dp-0 c5"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        Banana
-      </td>
-      <td
-        className="Text-pfq5dp-0 c6"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        $ 0.60
-      </td>
-    </tr>
-    <tr
-      className="c2"
-    >
-      <td
-        className="Text-pfq5dp-0 c5"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        Cherry
-      </td>
-      <td
-        className="Text-pfq5dp-0 c6"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        $ 9,999.99
-      </td>
-    </tr>
-    <tr
-      className="c2"
-    >
-      <td
-        className="Text-pfq5dp-0 c5"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        Coconut
-      </td>
-      <td
-        className="Text-pfq5dp-0 c6"
-        color="#59636f"
-        fontSize={16}
-        size={18}
-        type="#59636f"
-      >
-        $ 2.30
-      </td>
-    </tr>
-  </tbody>
-</table>
-`;
-
-exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
 .c0 {
   min-width: 100%;
   overflow-x: scroll;
@@ -646,7 +441,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
   display: contents;
 }
 
-.__asGrid .c4 {
+.__asGrid .c5 {
   display: contents;
 }
 
@@ -654,6 +449,158 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
   display: contents;
 }
 
+.c4 {
+  border: solid rgba(0,0,0,0.08);
+  border-width: 0 0 1px;
+  padding: 8px 16px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.c7 {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 8px 16px;
+  line-height: 1.5;
+  height: 64px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.c8 {
+  color: tomato;
+}
+
+@supports (display:contents) {
+  .c0.__asGrid {
+    display: grid;
+  }
+}
+
+<table
+  className="c0  "
+>
+  <thead
+    className="c1 "
+  >
+    <tr
+      className="c2 "
+    >
+      <th
+        className="c3 c4"
+        fontSize={14}
+        fontWeight="600"
+        size={18}
+        type="#2f313a"
+      >
+        Fruit
+      </th>
+      <th
+        className="c3 c4"
+        fontSize={14}
+        fontWeight="600"
+        size={18}
+        type="#2f313a"
+      >
+        Price
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="c5 "
+  >
+    <tr
+      className="c2 "
+    >
+      <td
+        className="c6 c7"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        Apple
+      </td>
+      <td
+        className="c6 c7 c8"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        $ 0.50
+      </td>
+    </tr>
+    <tr
+      className="c2 "
+    >
+      <td
+        className="c6 c7"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        Banana
+      </td>
+      <td
+        className="c6 c7 c8"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        $ 0.60
+      </td>
+    </tr>
+    <tr
+      className="c2 "
+    >
+      <td
+        className="c6 c7"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        Cherry
+      </td>
+      <td
+        className="c6 c7 c8"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        $ 9,999.99
+      </td>
+    </tr>
+    <tr
+      className="c2 "
+    >
+      <td
+        className="c6 c7"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        Coconut
+      </td>
+      <td
+        className="c6 c7 c8"
+        color="#59636f"
+        fontSize={16}
+        size={18}
+        type="#59636f"
+      >
+        $ 2.30
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
 .c3 {
   font-family: Lato,sans-serif;
   font-size: 18px;
@@ -663,14 +610,9 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
   text-align: left;
   font-size: 14px;
   font-weight: 600;
-  border: solid rgba(0,0,0,0.08);
-  border-width: 0 0 1px;
-  padding: 8px 16px;
-  line-height: 1.5;
-  white-space: nowrap;
 }
 
-.c5 {
+.c6 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -681,6 +623,40 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.c0 {
+  min-width: 100%;
+  overflow-x: scroll;
+  border: none;
+  border-spacing: 0;
+}
+
+.c0 tr:hover td {
+  background-color: #f6f8f9;
+}
+
+.__asGrid .c1 {
+  display: contents;
+}
+
+.__asGrid .c5 {
+  display: contents;
+}
+
+.__asGrid .c2 {
+  display: contents;
+}
+
+.c4 {
+  border: solid rgba(0,0,0,0.08);
+  border-width: 0 0 1px;
+  padding: 8px 16px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.c7 {
   border-bottom: 1px solid rgba(0,0,0,0.08);
   padding: 8px 16px;
   line-height: 1.5;
@@ -699,13 +675,13 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
   className="c0  "
 >
   <thead
-    className="c1"
+    className="c1 "
   >
     <tr
-      className="c2"
+      className="c2 "
     >
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -714,7 +690,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         Fruit
       </th>
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -723,7 +699,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         Price
       </th>
       <th
-        className="Text-pfq5dp-0 c3"
+        className="c3 c4"
         fontSize={14}
         fontWeight="600"
         size={18}
@@ -733,13 +709,13 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
     </tr>
   </thead>
   <tbody
-    className="c4"
+    className="c5 "
   >
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -748,7 +724,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         Apple
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -757,7 +733,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         $ 0.50
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -772,10 +748,10 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -784,7 +760,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         Banana
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -793,7 +769,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         $ 0.60
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -808,10 +784,10 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -820,7 +796,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         Cherry
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -829,7 +805,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         $ 9,999.99
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -844,10 +820,10 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
       </td>
     </tr>
     <tr
-      className="c2"
+      className="c2 "
     >
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -856,7 +832,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         Coconut
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}
@@ -865,7 +841,7 @@ exports[`Storyshots Layout|Table useTableMap Hook 1`] = `
         N/A
       </td>
       <td
-        className="Text-pfq5dp-0 c5"
+        className="c6 c7"
         color="#59636f"
         fontSize={16}
         size={18}

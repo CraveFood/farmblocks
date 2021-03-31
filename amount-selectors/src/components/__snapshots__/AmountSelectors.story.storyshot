@@ -104,2121 +104,6 @@ exports[`Storyshots Form|AmountSelectors Basic 1`] = `
   box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
-.c5 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #fd6a08;
-  color: #FFFFFF;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c5 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c5:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(255,255,255,0.48);
-  line-height: 1;
-}
-
-.c5:not(:disabled):hover,
-.c5:not(:disabled).hovered,
-.c5:not(:disabled):active,
-.c5:not(:disabled).active {
-  background-color: #D45806;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 4px 4px;
-}
-
-.c5:not(:disabled):hover .icon,
-.c5:not(:disabled).hovered .icon,
-.c5:not(:disabled):active .icon,
-.c5:not(:disabled).active .icon,
-.c5:not(:disabled):focus .icon,
-.c5:not(:disabled).focused .icon {
-  color: #FFFFFF;
-}
-
-.c5:not(:disabled).active,
-.c5:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c5:focus,
-.c5.focused {
-  outline: none;
-}
-
-.c5.focus-visible,
-.c5.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-}
-
-.c4 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c4 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c4 > .input > input,
-.select__search .c4 > .input input {
-  padding: 4px 16px;
-  line-height: 24px;
-}
-
-.c4 > .input > textarea {
-  padding: 16px;
-}
-
-.c4 > .input input,
-.c4 > .input textarea,
-.c4 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c4 > .input > input,
-.c4 > .input > textarea,
-.select__search .c4 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: #2f313a;
-  background: none;
-}
-
-.c4 > .input > input::-webkit-input-placeholder,
-.c4 > .input > textarea::-webkit-input-placeholder,
-.select__search .c4 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::-moz-placeholder,
-.c4 > .input > textarea::-moz-placeholder,
-.select__search .c4 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input:-ms-input-placeholder,
-.c4 > .input > textarea:-ms-input-placeholder,
-.select__search .c4 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::placeholder,
-.c4 > .input > textarea::placeholder,
-.select__search .c4 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input[type="search"],
-.c4 > .input > textarea[type="search"],
-.select__search .c4 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4 > .input > input[type="search"]::-ms-clear,
-.c4 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c4 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c4 > .input > input[role="combobox"],
-.c4 > .input > textarea[role="combobox"],
-.select__search .c4 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c4 > .input > .icon {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c4 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c4 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c4 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c4 .input.dropdown {
-  cursor: pointer;
-}
-
-.c4 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c4 input[type="number"]::-webkit-inner-spin-button,
-.c4 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c4 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c4 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c4 .prefix,
-.c4 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .label {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c1 .inputComponent {
-  margin: 0 8px;
-  min-width: 50px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 .inputComponent input {
-  text-align: center;
-}
-
-.c1 .inputComponent input:invalid {
-  box-shadow: none;
-}
-
-.c1 .button {
-  border-radius: 50%;
-  min-width: 34px;
-  min-height: 34px;
-}
-
-.c0 {
-  width: 200px;
-}
-
-<div
-  className="c0"
-  width="200px"
->
-  <div
-    className="c1"
-  >
-    <div>
-      <button
-        className="c2 button button--decrease   "
-        data-testid="button--decrease"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "transform": "translateX(-0px)",
-            }
-          }
-        >
-          <span
-            className="c3"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height={24}
-              viewBox="4 4 32 32"
-              width={24}
-            >
-              <path
-                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-                fill="rgba(0, 0, 0, 0.16)"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-        <span />
-      </button>
-    </div>
-    <div
-      className="c4 inputComponent"
-      onClick={[Function]}
-      type="number"
-    >
-      <div
-        className="input "
-      >
-        <input
-          className="wrapped "
-          data-testid="input-text"
-          max={1.7976931348623157e+308}
-          min={0}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          readOnly={false}
-          step={1}
-          type="number"
-          value="0.00"
-        />
-      </div>
-    </div>
-    <button
-      className="c5 button button--increase   "
-      data-testid="button--increase"
-      onClick={[Function]}
-      type="button"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "transform": "translateX(-0px)",
-          }
-        }
-      >
-        <span
-          className="c3"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            height={24}
-            viewBox="4 4 32 32"
-            width={24}
-          >
-            <path
-              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-              fill="white"
-              fillRule="nonzero"
-            />
-          </svg>
-        </span>
-      </div>
-      <span />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Form|AmountSelectors Custom step 1`] = `
-.c3 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c3 .farmblocks-icon {
-  display: block;
-}
-
-.c2 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #FFFFFF;
-  color: #59636f;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c2 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c2:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(0,0,0,0.32);
-  line-height: 1;
-}
-
-.c2:not(:disabled):hover,
-.c2:not(:disabled).hovered,
-.c2:not(:disabled):active,
-.c2:not(:disabled).active {
-  color: #3498db;
-  border-width: 2px;
-  border-color: #3498db;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 3px 3px;
-}
-
-.c2:not(:disabled):hover .icon,
-.c2:not(:disabled).hovered .icon,
-.c2:not(:disabled):active .icon,
-.c2:not(:disabled).active .icon,
-.c2:not(:disabled):focus .icon,
-.c2:not(:disabled).focused .icon {
-  color: #3498db;
-}
-
-.c2:not(:disabled).active,
-.c2:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c2:focus,
-.c2.focused {
-  outline: none;
-}
-
-.c2.focus-visible,
-.c2.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c5 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #fd6a08;
-  color: #FFFFFF;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c5 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c5:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(255,255,255,0.48);
-  line-height: 1;
-}
-
-.c5:not(:disabled):hover,
-.c5:not(:disabled).hovered,
-.c5:not(:disabled):active,
-.c5:not(:disabled).active {
-  background-color: #D45806;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 4px 4px;
-}
-
-.c5:not(:disabled):hover .icon,
-.c5:not(:disabled).hovered .icon,
-.c5:not(:disabled):active .icon,
-.c5:not(:disabled).active .icon,
-.c5:not(:disabled):focus .icon,
-.c5:not(:disabled).focused .icon {
-  color: #FFFFFF;
-}
-
-.c5:not(:disabled).active,
-.c5:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c5:focus,
-.c5.focused {
-  outline: none;
-}
-
-.c5.focus-visible,
-.c5.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-}
-
-.c4 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c4 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c4 > .input > input,
-.select__search .c4 > .input input {
-  padding: 4px 16px;
-  line-height: 24px;
-}
-
-.c4 > .input > textarea {
-  padding: 16px;
-}
-
-.c4 > .input input,
-.c4 > .input textarea,
-.c4 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c4 > .input > input,
-.c4 > .input > textarea,
-.select__search .c4 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: #2f313a;
-  background: none;
-}
-
-.c4 > .input > input::-webkit-input-placeholder,
-.c4 > .input > textarea::-webkit-input-placeholder,
-.select__search .c4 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::-moz-placeholder,
-.c4 > .input > textarea::-moz-placeholder,
-.select__search .c4 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input:-ms-input-placeholder,
-.c4 > .input > textarea:-ms-input-placeholder,
-.select__search .c4 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::placeholder,
-.c4 > .input > textarea::placeholder,
-.select__search .c4 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input[type="search"],
-.c4 > .input > textarea[type="search"],
-.select__search .c4 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4 > .input > input[type="search"]::-ms-clear,
-.c4 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c4 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c4 > .input > input[role="combobox"],
-.c4 > .input > textarea[role="combobox"],
-.select__search .c4 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c4 > .input > .icon {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c4 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c4 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c4 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c4 .input.dropdown {
-  cursor: pointer;
-}
-
-.c4 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c4 input[type="number"]::-webkit-inner-spin-button,
-.c4 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c4 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c4 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c4 .prefix,
-.c4 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .label {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c1 .inputComponent {
-  margin: 0 8px;
-  min-width: 50px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 .inputComponent input {
-  text-align: center;
-}
-
-.c1 .inputComponent input:invalid {
-  box-shadow: none;
-}
-
-.c1 .button {
-  border-radius: 50%;
-  min-width: 34px;
-  min-height: 34px;
-}
-
-.c0 {
-  width: 200px;
-}
-
-<div
-  className="c0"
-  width="200px"
->
-  <div
-    className="c1"
-  >
-    <div>
-      <button
-        className="c2 button button--decrease   "
-        data-testid="button--decrease"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "transform": "translateX(-0px)",
-            }
-          }
-        >
-          <span
-            className="c3"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height={24}
-              viewBox="4 4 32 32"
-              width={24}
-            >
-              <path
-                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-                fill="rgba(0, 0, 0, 0.16)"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-        <span />
-      </button>
-    </div>
-    <div
-      className="c4 inputComponent"
-      onClick={[Function]}
-      type="number"
-    >
-      <div
-        className="input "
-      >
-        <input
-          className="wrapped "
-          data-testid="input-text"
-          max={1.7976931348623157e+308}
-          min={0}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          readOnly={false}
-          step={0.7}
-          type="number"
-          value="0.00"
-        />
-      </div>
-    </div>
-    <button
-      className="c5 button button--increase   "
-      data-testid="button--increase"
-      onClick={[Function]}
-      type="button"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "transform": "translateX(-0px)",
-          }
-        }
-      >
-        <span
-          className="c3"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            height={24}
-            viewBox="4 4 32 32"
-            width={24}
-          >
-            <path
-              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-              fill="white"
-              fillRule="nonzero"
-            />
-          </svg>
-        </span>
-      </div>
-      <span />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Form|AmountSelectors Disable typing 1`] = `
-.c3 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c3 .farmblocks-icon {
-  display: block;
-}
-
-.c2 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #FFFFFF;
-  color: #59636f;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c2 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c2:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(0,0,0,0.32);
-  line-height: 1;
-}
-
-.c2:not(:disabled):hover,
-.c2:not(:disabled).hovered,
-.c2:not(:disabled):active,
-.c2:not(:disabled).active {
-  color: #3498db;
-  border-width: 2px;
-  border-color: #3498db;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 3px 3px;
-}
-
-.c2:not(:disabled):hover .icon,
-.c2:not(:disabled).hovered .icon,
-.c2:not(:disabled):active .icon,
-.c2:not(:disabled).active .icon,
-.c2:not(:disabled):focus .icon,
-.c2:not(:disabled).focused .icon {
-  color: #3498db;
-}
-
-.c2:not(:disabled).active,
-.c2:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c2:focus,
-.c2.focused {
-  outline: none;
-}
-
-.c2.focus-visible,
-.c2.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c5 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #fd6a08;
-  color: #FFFFFF;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c5 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c5:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(255,255,255,0.48);
-  line-height: 1;
-}
-
-.c5:not(:disabled):hover,
-.c5:not(:disabled).hovered,
-.c5:not(:disabled):active,
-.c5:not(:disabled).active {
-  background-color: #D45806;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 4px 4px;
-}
-
-.c5:not(:disabled):hover .icon,
-.c5:not(:disabled).hovered .icon,
-.c5:not(:disabled):active .icon,
-.c5:not(:disabled).active .icon,
-.c5:not(:disabled):focus .icon,
-.c5:not(:disabled).focused .icon {
-  color: #FFFFFF;
-}
-
-.c5:not(:disabled).active,
-.c5:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c5:focus,
-.c5.focused {
-  outline: none;
-}
-
-.c5.focus-visible,
-.c5.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-}
-
-.c4 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c4 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c4 > .input > input,
-.select__search .c4 > .input input {
-  padding: 4px 16px;
-  line-height: 24px;
-}
-
-.c4 > .input > textarea {
-  padding: 16px;
-}
-
-.c4 > .input input,
-.c4 > .input textarea,
-.c4 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c4 > .input > input,
-.c4 > .input > textarea,
-.select__search .c4 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: #2f313a;
-  background: none;
-}
-
-.c4 > .input > input::-webkit-input-placeholder,
-.c4 > .input > textarea::-webkit-input-placeholder,
-.select__search .c4 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::-moz-placeholder,
-.c4 > .input > textarea::-moz-placeholder,
-.select__search .c4 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input:-ms-input-placeholder,
-.c4 > .input > textarea:-ms-input-placeholder,
-.select__search .c4 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::placeholder,
-.c4 > .input > textarea::placeholder,
-.select__search .c4 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input[type="search"],
-.c4 > .input > textarea[type="search"],
-.select__search .c4 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4 > .input > input[type="search"]::-ms-clear,
-.c4 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c4 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c4 > .input > input[role="combobox"],
-.c4 > .input > textarea[role="combobox"],
-.select__search .c4 > .input input[role="combobox"] {
-  cursor: pointer;
-}
-
-.c4 > .input > .icon {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c4 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c4 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c4 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c4 .input.dropdown {
-  cursor: pointer;
-}
-
-.c4 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c4 input[type="number"]::-webkit-inner-spin-button,
-.c4 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c4 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c4 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c4 .prefix,
-.c4 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .label {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c1 .inputComponent {
-  margin: 0 8px;
-  min-width: 50px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 .inputComponent input {
-  text-align: center;
-}
-
-.c1 .inputComponent input:invalid {
-  box-shadow: none;
-}
-
-.c1 .button {
-  border-radius: 50%;
-  min-width: 34px;
-  min-height: 34px;
-}
-
-.c0 {
-  width: 200px;
-}
-
-<div
-  className="c0"
-  width="200px"
->
-  <div
-    className="c1"
-  >
-    <div>
-      <button
-        className="c2 button button--decrease   "
-        data-testid="button--decrease"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "transform": "translateX(-0px)",
-            }
-          }
-        >
-          <span
-            className="c3"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height={24}
-              viewBox="4 4 32 32"
-              width={24}
-            >
-              <path
-                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-                fill="rgba(0, 0, 0, 0.16)"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-        <span />
-      </button>
-    </div>
-    <div
-      className="c4 inputComponent"
-      onClick={[Function]}
-      type="number"
-    >
-      <div
-        className="input "
-      >
-        <input
-          className="wrapped "
-          data-testid="input-text"
-          max={1.7976931348623157e+308}
-          min={0}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          readOnly={true}
-          step={1}
-          type="number"
-          value="0.00"
-        />
-      </div>
-    </div>
-    <button
-      className="c5 button button--increase   "
-      data-testid="button--increase"
-      onClick={[Function]}
-      type="button"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "transform": "translateX(-0px)",
-          }
-        }
-      >
-        <span
-          className="c3"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            height={24}
-            viewBox="4 4 32 32"
-            width={24}
-          >
-            <path
-              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-              fill="white"
-              fillRule="nonzero"
-            />
-          </svg>
-        </span>
-      </div>
-      <span />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Form|AmountSelectors Disabled 1`] = `
-.c3 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c3 .farmblocks-icon {
-  display: block;
-}
-
-.c2 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #FFFFFF;
-  color: #59636f;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c2 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c2:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c2 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(0,0,0,0.32);
-  line-height: 1;
-}
-
-.c2:not(:disabled):hover,
-.c2:not(:disabled).hovered,
-.c2:not(:disabled):active,
-.c2:not(:disabled).active {
-  color: #3498db;
-  border-width: 2px;
-  border-color: #3498db;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 3px 3px;
-}
-
-.c2:not(:disabled):hover .icon,
-.c2:not(:disabled).hovered .icon,
-.c2:not(:disabled):active .icon,
-.c2:not(:disabled).active .icon,
-.c2:not(:disabled):focus .icon,
-.c2:not(:disabled).focused .icon {
-  color: #3498db;
-}
-
-.c2:not(:disabled).active,
-.c2:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c2:focus,
-.c2.focused {
-  outline: none;
-}
-
-.c2.focus-visible,
-.c2.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c5 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #fd6a08;
-  color: #FFFFFF;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c5 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c5:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c5:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c5 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(255,255,255,0.48);
-  line-height: 1;
-}
-
-.c5:not(:disabled):hover,
-.c5:not(:disabled).hovered,
-.c5:not(:disabled):active,
-.c5:not(:disabled).active {
-  background-color: #D45806;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 4px 4px;
-}
-
-.c5:not(:disabled):hover .icon,
-.c5:not(:disabled).hovered .icon,
-.c5:not(:disabled):active .icon,
-.c5:not(:disabled).active .icon,
-.c5:not(:disabled):focus .icon,
-.c5:not(:disabled).focused .icon {
-  color: #FFFFFF;
-}
-
-.c5:not(:disabled).active,
-.c5:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c5:focus,
-.c5.focused {
-  outline: none;
-}
-
-.c5.focus-visible,
-.c5.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0;
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-}
-
-.c4 > .input {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  box-sizing: border-box;
-  border: solid 1px;
-  border-radius: 16px;
-  border-color: rgba(0,0,0,0.16);
-  background-color: rgba(0,0,0,0.16);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: text;
-  overflow: auto;
-}
-
-.c4 > .input .wrapped {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c4 > .input > input,
-.select__search .c4 > .input input {
-  padding: 4px 16px;
-  line-height: 24px;
-}
-
-.c4 > .input > textarea {
-  padding: 16px;
-}
-
-.c4 > .input input,
-.c4 > .input textarea,
-.c4 > .input select {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-.c4 > .input > input,
-.c4 > .input > textarea,
-.select__search .c4 > .input input {
-  min-width: 0;
-  border: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: none;
-  color: rgba(0,0,0,0.32);
-  background: none;
-}
-
-.c4 > .input > input::-webkit-input-placeholder,
-.c4 > .input > textarea::-webkit-input-placeholder,
-.select__search .c4 > .input input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::-moz-placeholder,
-.c4 > .input > textarea::-moz-placeholder,
-.select__search .c4 > .input input::-moz-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input:-ms-input-placeholder,
-.c4 > .input > textarea:-ms-input-placeholder,
-.select__search .c4 > .input input:-ms-input-placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input::placeholder,
-.c4 > .input > textarea::placeholder,
-.select__search .c4 > .input input::placeholder {
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 > .input > input[type="search"],
-.c4 > .input > textarea[type="search"],
-.select__search .c4 > .input input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4 > .input > input[type="search"]::-ms-clear,
-.c4 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c4 > .input input[type="search"]::-ms-clear {
-  width: 0;
-  height: 0;
-}
-
-.c4 > .input > input[role="combobox"],
-.c4 > .input > textarea[role="combobox"],
-.select__search .c4 > .input input[role="combobox"] {
-  cursor: default;
-}
-
-.c4 > .input > .icon {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .icon.left {
-  margin-left: 8px;
-  margin-right: -8px;
-}
-
-.c4 > .input > .icon.right {
-  margin-right: 8px;
-  margin-left: -8px;
-}
-
-.c4 > .input > .clear {
-  color: rgba(0,0,0,0.16);
-}
-
-.c4 > .input > .clear:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #3498db;
-}
-
-.c4 > .input > .clear a {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c4 .input.dropdown {
-  cursor: default;
-}
-
-.c4 input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.c4 input[type="number"]::-webkit-inner-spin-button,
-.c4 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c4 .prefix {
-  margin-left: 16px;
-  margin-right: -8px;
-}
-
-.c4 .suffix {
-  margin-right: 16px;
-  margin-left: -8px;
-}
-
-.c4 .prefix,
-.c4 .suffix {
-  font-family: Lato,sans-serif;
-  font-size: 16px;
-  color: rgba(0,0,0,0.32);
-}
-
-.c4 .label {
-  margin-bottom: 8px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.c1 .inputComponent {
-  margin: 0 8px;
-  min-width: 50px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c1 .inputComponent input {
-  text-align: center;
-}
-
-.c1 .inputComponent input:invalid {
-  box-shadow: none;
-}
-
-.c1 .button {
-  border-radius: 50%;
-  min-width: 34px;
-  min-height: 34px;
-}
-
-.c0 {
-  width: 200px;
-}
-
-<div
-  className="c0"
-  width="200px"
->
-  <div
-    className="c1"
-  >
-    <div>
-      <button
-        className="c2 button button--decrease   "
-        data-testid="button--decrease"
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        <div
-          className="icon left-icon"
-          style={
-            Object {
-              "transform": "translateX(-0px)",
-            }
-          }
-        >
-          <span
-            className="c3"
-            color="currentColor"
-            size="1em"
-          >
-            <svg
-              aria-hidden={true}
-              className="farmblocks-icon "
-              height={24}
-              viewBox="4 4 32 32"
-              width={24}
-            >
-              <path
-                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
-                fill="rgba(0, 0, 0, 0.16)"
-                fillRule="nonzero"
-              />
-            </svg>
-          </span>
-        </div>
-        <span />
-      </button>
-    </div>
-    <div
-      className="c4 inputComponent"
-      disabled={true}
-      onClick={[Function]}
-      type="number"
-    >
-      <div
-        className="input "
-      >
-        <input
-          className="wrapped "
-          data-testid="input-text"
-          disabled={true}
-          max={1.7976931348623157e+308}
-          min={0}
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          readOnly={false}
-          step={1}
-          type="number"
-          value="0.00"
-        />
-      </div>
-    </div>
-    <button
-      className="c5 button button--increase   "
-      data-testid="button--increase"
-      disabled={true}
-      onClick={[Function]}
-      type="button"
-    >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "transform": "translateX(-0px)",
-          }
-        }
-      >
-        <span
-          className="c3"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            height={24}
-            viewBox="4 4 32 32"
-            width={24}
-          >
-            <path
-              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
-              fill="rgba(0, 0, 0, 0.16)"
-              fillRule="nonzero"
-            />
-          </svg>
-        </span>
-      </div>
-      <span />
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
-.c4 {
-  display: inline-block;
-  vertical-align: text-bottom;
-}
-
-.c4 .farmblocks-icon {
-  display: block;
-}
-
-.c3 {
-  font-size: 16px;
-  font-family: lato,sans-serif;
-  font-weight: 600;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 4px 4px;
-  border-radius: 4px;
-  line-height: 1.5;
-  height: 32px;
-  min-width: 32px;
-  width: 32px;
-  white-space: nowrap;
-  cursor: pointer;
-  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
-  transition: background 0.3s,color 0.3s,border-color 0.3s;
-  background-color: #FFFFFF;
-  color: #59636f;
-  border: solid 1px rgba(0,0,0,0.16);
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
-}
-
-.c3 span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:disabled {
-  background-color: rgba(0,0,0,0.32);
-  color: rgba(0,0,0,0.32);
-  border-width: 1px;
-  border-color: rgba(0,0,0,0.16);
-  box-shadow: none;
-  cursor: default;
-}
-
-.c3:disabled .icon {
-  color: rgba(0,0,0,0.32);
-}
-
-.c3 .icon {
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  color: rgba(0,0,0,0.32);
-  line-height: 1;
-}
-
-.c3:not(:disabled):hover,
-.c3:not(:disabled).hovered,
-.c3:not(:disabled):active,
-.c3:not(:disabled).active {
-  color: #3498db;
-  border-width: 2px;
-  border-color: #3498db;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
-  padding: 3px 3px;
-}
-
-.c3:not(:disabled):hover .icon,
-.c3:not(:disabled).hovered .icon,
-.c3:not(:disabled):active .icon,
-.c3:not(:disabled).active .icon,
-.c3:not(:disabled):focus .icon,
-.c3:not(:disabled).focused .icon {
-  color: #3498db;
-}
-
-.c3:not(:disabled).active,
-.c3:not(:disabled):active {
-  box-shadow: none;
-}
-
-.c3:focus,
-.c3.focused {
-  outline: none;
-}
-
-.c3.focus-visible,
-.c3.focused:not(:disabled) {
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
-}
-
 .c6 {
   font-size: 16px;
   font-family: lato,sans-serif;
@@ -2309,6 +194,11 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
 .c6.focus-visible,
 .c6.focused:not(:disabled) {
   box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c4 {
+  position: relative;
+  z-index: 1000;
 }
 
 .c5 {
@@ -2499,6 +389,2225 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
   margin-bottom: 8px;
 }
 
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 .inputComponent {
+  margin: 0 8px;
+  min-width: 50px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 .inputComponent input {
+  text-align: center;
+}
+
+.c1 .inputComponent input:invalid {
+  box-shadow: none;
+}
+
+.c1 .button {
+  border-radius: 50%;
+  min-width: 34px;
+  min-height: 34px;
+}
+
+.c0 {
+  width: 200px;
+}
+
+@media only screen and (max-width:) {
+  .c4 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
+}
+
+<div
+  className="c0"
+  width="200px"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      <button
+        className="c2 button button--decrease   "
+        data-testid="button--decrease"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c3"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
+                fill="rgba(0, 0, 0, 0.16)"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+        <span />
+      </button>
+      <div
+        className="c4 tooltip-content"
+        offset="15px"
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      />
+    </div>
+    <div
+      className="c5 inputComponent"
+      onClick={[Function]}
+      type="number"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          data-testid="input-text"
+          max={1.7976931348623157e+308}
+          min={0}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={false}
+          step={1}
+          type="number"
+          value="0.00"
+        />
+      </div>
+    </div>
+    <button
+      className="c6 button button--increase   "
+      data-testid="button--increase"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={24}
+            viewBox="4 4 32 32"
+            width={24}
+          >
+            <path
+              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+              fill="white"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <span />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|AmountSelectors Custom step 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #FFFFFF;
+  color: #59636f;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c2 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c2:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c2:not(:disabled):hover,
+.c2:not(:disabled).hovered,
+.c2:not(:disabled):active,
+.c2:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c2:not(:disabled):hover .icon,
+.c2:not(:disabled).hovered .icon,
+.c2:not(:disabled):active .icon,
+.c2:not(:disabled).active .icon,
+.c2:not(:disabled):focus .icon,
+.c2:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c2:not(:disabled).active,
+.c2:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c2:focus,
+.c2.focused {
+  outline: none;
+}
+
+.c2.focus-visible,
+.c2.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c6 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c6:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c6:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c6:not(:disabled):hover,
+.c6:not(:disabled).hovered,
+.c6:not(:disabled):active,
+.c6:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 4px;
+}
+
+.c6:not(:disabled):hover .icon,
+.c6:not(:disabled).hovered .icon,
+.c6:not(:disabled):active .icon,
+.c6:not(:disabled).active .icon,
+.c6:not(:disabled):focus .icon,
+.c6:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c6:not(:disabled).active,
+.c6:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c6:focus,
+.c6.focused {
+  outline: none;
+}
+
+.c6.focus-visible,
+.c6.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c4 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c5 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c5 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .label {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 .inputComponent {
+  margin: 0 8px;
+  min-width: 50px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 .inputComponent input {
+  text-align: center;
+}
+
+.c1 .inputComponent input:invalid {
+  box-shadow: none;
+}
+
+.c1 .button {
+  border-radius: 50%;
+  min-width: 34px;
+  min-height: 34px;
+}
+
+.c0 {
+  width: 200px;
+}
+
+@media only screen and (max-width:) {
+  .c4 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
+}
+
+<div
+  className="c0"
+  width="200px"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      <button
+        className="c2 button button--decrease   "
+        data-testid="button--decrease"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c3"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
+                fill="rgba(0, 0, 0, 0.16)"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+        <span />
+      </button>
+      <div
+        className="c4 tooltip-content"
+        offset="15px"
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      />
+    </div>
+    <div
+      className="c5 inputComponent"
+      onClick={[Function]}
+      type="number"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          data-testid="input-text"
+          max={1.7976931348623157e+308}
+          min={0}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={false}
+          step={0.7}
+          type="number"
+          value="0.00"
+        />
+      </div>
+    </div>
+    <button
+      className="c6 button button--increase   "
+      data-testid="button--increase"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={24}
+            viewBox="4 4 32 32"
+            width={24}
+          >
+            <path
+              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+              fill="white"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <span />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|AmountSelectors Disable typing 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #FFFFFF;
+  color: #59636f;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c2 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c2:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c2:not(:disabled):hover,
+.c2:not(:disabled).hovered,
+.c2:not(:disabled):active,
+.c2:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c2:not(:disabled):hover .icon,
+.c2:not(:disabled).hovered .icon,
+.c2:not(:disabled):active .icon,
+.c2:not(:disabled).active .icon,
+.c2:not(:disabled):focus .icon,
+.c2:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c2:not(:disabled).active,
+.c2:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c2:focus,
+.c2.focused {
+  outline: none;
+}
+
+.c2.focus-visible,
+.c2.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c6 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c6:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c6:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c6:not(:disabled):hover,
+.c6:not(:disabled).hovered,
+.c6:not(:disabled):active,
+.c6:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 4px;
+}
+
+.c6:not(:disabled):hover .icon,
+.c6:not(:disabled).hovered .icon,
+.c6:not(:disabled):active .icon,
+.c6:not(:disabled).active .icon,
+.c6:not(:disabled):focus .icon,
+.c6:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c6:not(:disabled).active,
+.c6:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c6:focus,
+.c6.focused {
+  outline: none;
+}
+
+.c6.focus-visible,
+.c6.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c4 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c5 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c5 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: pointer;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c5 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .label {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 .inputComponent {
+  margin: 0 8px;
+  min-width: 50px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 .inputComponent input {
+  text-align: center;
+}
+
+.c1 .inputComponent input:invalid {
+  box-shadow: none;
+}
+
+.c1 .button {
+  border-radius: 50%;
+  min-width: 34px;
+  min-height: 34px;
+}
+
+.c0 {
+  width: 200px;
+}
+
+@media only screen and (max-width:) {
+  .c4 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
+}
+
+<div
+  className="c0"
+  width="200px"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      <button
+        className="c2 button button--decrease   "
+        data-testid="button--decrease"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c3"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
+                fill="rgba(0, 0, 0, 0.16)"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+        <span />
+      </button>
+      <div
+        className="c4 tooltip-content"
+        offset="15px"
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      />
+    </div>
+    <div
+      className="c5 inputComponent"
+      onClick={[Function]}
+      type="number"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          data-testid="input-text"
+          max={1.7976931348623157e+308}
+          min={0}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={true}
+          step={1}
+          type="number"
+          value="0.00"
+        />
+      </div>
+    </div>
+    <button
+      className="c6 button button--increase   "
+      data-testid="button--increase"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={24}
+            viewBox="4 4 32 32"
+            width={24}
+          >
+            <path
+              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+              fill="white"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <span />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|AmountSelectors Disabled 1`] = `
+.c3 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c3 .farmblocks-icon {
+  display: block;
+}
+
+.c2 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #FFFFFF;
+  color: #59636f;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c2 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c2:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c2 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c2:not(:disabled):hover,
+.c2:not(:disabled).hovered,
+.c2:not(:disabled):active,
+.c2:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c2:not(:disabled):hover .icon,
+.c2:not(:disabled).hovered .icon,
+.c2:not(:disabled):active .icon,
+.c2:not(:disabled).active .icon,
+.c2:not(:disabled):focus .icon,
+.c2:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c2:not(:disabled).active,
+.c2:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c2:focus,
+.c2.focused {
+  outline: none;
+}
+
+.c2.focus-visible,
+.c2.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c6 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c6 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c6:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c6:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c6:not(:disabled):hover,
+.c6:not(:disabled).hovered,
+.c6:not(:disabled):active,
+.c6:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 4px;
+}
+
+.c6:not(:disabled):hover .icon,
+.c6:not(:disabled).hovered .icon,
+.c6:not(:disabled):active .icon,
+.c6:not(:disabled).active .icon,
+.c6:not(:disabled):focus .icon,
+.c6:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c6:not(:disabled).active,
+.c6:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c6:focus,
+.c6.focused {
+  outline: none;
+}
+
+.c6.focus-visible,
+.c6.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c4 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c5 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: rgba(0,0,0,0.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c5 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 > .input > input,
+.select__search .c5 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c5 > .input > textarea {
+  padding: 16px;
+}
+
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: rgba(0,0,0,0.32);
+  background: none;
+}
+
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
+  cursor: default;
+}
+
+.c5 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c5 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c5 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c5 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c5 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c5 .input.dropdown {
+  cursor: default;
+}
+
+.c5 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c5 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c5 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c5 .prefix,
+.c5 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c5 .label {
+  margin-bottom: 8px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c1 .inputComponent {
+  margin: 0 8px;
+  min-width: 50px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c1 .inputComponent input {
+  text-align: center;
+}
+
+.c1 .inputComponent input:invalid {
+  box-shadow: none;
+}
+
+.c1 .button {
+  border-radius: 50%;
+  min-width: 34px;
+  min-height: 34px;
+}
+
+.c0 {
+  width: 200px;
+}
+
+@media only screen and (max-width:) {
+  .c4 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
+}
+
+<div
+  className="c0"
+  width="200px"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      <button
+        className="c2 button button--decrease   "
+        data-testid="button--decrease"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="icon left-icon"
+          style={
+            Object {
+              "transform": "translateX(-0px)",
+            }
+          }
+        >
+          <span
+            className="c3"
+            color="currentColor"
+            size="1em"
+          >
+            <svg
+              aria-hidden={true}
+              className="farmblocks-icon "
+              height={24}
+              viewBox="4 4 32 32"
+              width={24}
+            >
+              <path
+                d="M27 19H13a1 1 0 100 2h14a1 1 0 000-2z"
+                fill="rgba(0, 0, 0, 0.16)"
+                fillRule="nonzero"
+              />
+            </svg>
+          </span>
+        </div>
+        <span />
+      </button>
+      <div
+        className="c4 tooltip-content"
+        offset="15px"
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      />
+    </div>
+    <div
+      className="c5 inputComponent"
+      disabled={true}
+      onClick={[Function]}
+      type="number"
+    >
+      <div
+        className="input "
+      >
+        <input
+          className="wrapped "
+          data-testid="input-text"
+          disabled={true}
+          max={1.7976931348623157e+308}
+          min={0}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          readOnly={false}
+          step={1}
+          type="number"
+          value="0.00"
+        />
+      </div>
+    </div>
+    <button
+      className="c6 button button--increase   "
+      data-testid="button--increase"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="icon left-icon"
+        style={
+          Object {
+            "transform": "translateX(-0px)",
+          }
+        }
+      >
+        <span
+          className="c3"
+          color="currentColor"
+          size="1em"
+        >
+          <svg
+            aria-hidden={true}
+            className="farmblocks-icon "
+            height={24}
+            viewBox="4 4 32 32"
+            width={24}
+          >
+            <path
+              d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+              fill="rgba(0, 0, 0, 0.16)"
+              fillRule="nonzero"
+            />
+          </svg>
+        </span>
+      </div>
+      <span />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
+.c4 {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+.c4 .farmblocks-icon {
+  display: block;
+}
+
+.c3 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #FFFFFF;
+  color: #59636f;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c3 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c3:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c3 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(0,0,0,0.32);
+  line-height: 1;
+}
+
+.c3:not(:disabled):hover,
+.c3:not(:disabled).hovered,
+.c3:not(:disabled):active,
+.c3:not(:disabled).active {
+  color: #3498db;
+  border-width: 2px;
+  border-color: #3498db;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 3px 3px;
+}
+
+.c3:not(:disabled):hover .icon,
+.c3:not(:disabled).hovered .icon,
+.c3:not(:disabled):active .icon,
+.c3:not(:disabled).active .icon,
+.c3:not(:disabled):focus .icon,
+.c3:not(:disabled).focused .icon {
+  color: #3498db;
+}
+
+.c3:not(:disabled).active,
+.c3:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c3:focus,
+.c3.focused {
+  outline: none;
+}
+
+.c3.focus-visible,
+.c3.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c7 {
+  font-size: 16px;
+  font-family: lato,sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border-radius: 4px;
+  line-height: 1.5;
+  height: 32px;
+  min-width: 32px;
+  width: 32px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-transition: background 0.3s,color 0.3s,border-color 0.3s;
+  transition: background 0.3s,color 0.3s,border-color 0.3s;
+  background-color: #fd6a08;
+  color: #FFFFFF;
+  border: solid 1px rgba(0,0,0,0.16);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
+}
+
+.c7 span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c7:disabled {
+  background-color: rgba(0,0,0,0.32);
+  color: rgba(0,0,0,0.32);
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.16);
+  box-shadow: none;
+  cursor: default;
+}
+
+.c7:disabled .icon {
+  color: rgba(0,0,0,0.32);
+}
+
+.c7 .icon {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: rgba(255,255,255,0.48);
+  line-height: 1;
+}
+
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
+  background-color: #D45806;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+  padding: 4px 4px;
+}
+
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
+  color: #FFFFFF;
+}
+
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
+  box-shadow: none;
+}
+
+.c7:focus,
+.c7.focused {
+  outline: none;
+}
+
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
+}
+
+.c5 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0;
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+}
+
+.c6 > .input {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  border: solid 1px;
+  border-radius: 16px;
+  border-color: rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: text;
+  overflow: auto;
+}
+
+.c6 > .input .wrapped {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 > .input > input,
+.select__search .c6 > .input input {
+  padding: 4px 16px;
+  line-height: 24px;
+}
+
+.c6 > .input > textarea {
+  padding: 16px;
+}
+
+.c6 > .input input,
+.c6 > .input textarea,
+.c6 > .input select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.c6 > .input > input,
+.c6 > .input > textarea,
+.select__search .c6 > .input input {
+  min-width: 0;
+  border: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+  color: #2f313a;
+  background: none;
+}
+
+.c6 > .input > input::-webkit-input-placeholder,
+.c6 > .input > textarea::-webkit-input-placeholder,
+.select__search .c6 > .input input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input::-moz-placeholder,
+.c6 > .input > textarea::-moz-placeholder,
+.select__search .c6 > .input input::-moz-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input:-ms-input-placeholder,
+.c6 > .input > textarea:-ms-input-placeholder,
+.select__search .c6 > .input input:-ms-input-placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input::placeholder,
+.c6 > .input > textarea::placeholder,
+.select__search .c6 > .input input::placeholder {
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 > .input > input[type="search"],
+.c6 > .input > textarea[type="search"],
+.select__search .c6 > .input input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.c6 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c6 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c6 > .input input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c6 > .input > input[type="search"]::-ms-clear,
+.c6 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c6 > .input input[type="search"]::-ms-clear {
+  width: 0;
+  height: 0;
+}
+
+.c6 > .input > input[role="combobox"],
+.c6 > .input > textarea[role="combobox"],
+.select__search .c6 > .input input[role="combobox"] {
+  cursor: pointer;
+}
+
+.c6 > .input > .icon {
+  color: rgba(0,0,0,0.16);
+}
+
+.c6 > .input > .icon.left {
+  margin-left: 8px;
+  margin-right: -8px;
+}
+
+.c6 > .input > .icon.right {
+  margin-right: 8px;
+  margin-left: -8px;
+}
+
+.c6 > .input > .clear {
+  color: rgba(0,0,0,0.16);
+}
+
+.c6 > .input > .clear:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.c6 > .input > .clear a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c6 .input.dropdown {
+  cursor: pointer;
+}
+
+.c6 input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.c6 input[type="number"]::-webkit-inner-spin-button,
+.c6 input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c6 .prefix {
+  margin-left: 16px;
+  margin-right: -8px;
+}
+
+.c6 .suffix {
+  margin-right: 16px;
+  margin-left: -8px;
+}
+
+.c6 .prefix,
+.c6 .suffix {
+  font-family: Lato,sans-serif;
+  font-size: 16px;
+  color: rgba(0,0,0,0.32);
+}
+
+.c6 .label {
+  margin-bottom: 8px;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2540,6 +2649,17 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width:) {
+  .c5 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
 }
 
 <div
@@ -2591,9 +2711,19 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
           </div>
           <span />
         </button>
+        <div
+          className="c5 tooltip-content"
+          offset="15px"
+          onTouchStart={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
       </div>
       <div
-        className="c5 inputComponent"
+        className="c6 inputComponent"
         onClick={[Function]}
         type="number"
       >
@@ -2616,7 +2746,7 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
         </div>
       </div>
       <button
-        className="c6 button button--increase   "
+        className="c7 button button--increase   "
         data-testid="button--increase"
         onClick={[Function]}
         type="button"
@@ -2698,9 +2828,19 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
           </div>
           <span />
         </button>
+        <div
+          className="c5 tooltip-content"
+          offset="15px"
+          onTouchStart={[Function]}
+          style={
+            Object {
+              "opacity": 0,
+            }
+          }
+        />
       </div>
       <div
-        className="c5 inputComponent"
+        className="c6 inputComponent"
         onClick={[Function]}
         type="number"
       >
@@ -2723,7 +2863,7 @@ exports[`Storyshots Form|AmountSelectors Min and max amount 1`] = `
         </div>
       </div>
       <button
-        className="c6 button button--increase   "
+        className="c7 button button--increase   "
         data-testid="button--increase"
         disabled={true}
         onClick={[Function]}
@@ -3657,7 +3797,7 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
   box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
-.c5 {
+.c6 {
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -3691,12 +3831,12 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
-.c5 span {
+.c6 span {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c5:disabled {
+.c6:disabled {
   background-color: rgba(0,0,0,0.32);
   color: rgba(0,0,0,0.32);
   border-width: 1px;
@@ -3705,51 +3845,56 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
   cursor: default;
 }
 
-.c5:disabled .icon {
+.c6:disabled .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c5 .icon {
+.c6 .icon {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   color: rgba(255,255,255,0.48);
   line-height: 1;
 }
 
-.c5:not(:disabled):hover,
-.c5:not(:disabled).hovered,
-.c5:not(:disabled):active,
-.c5:not(:disabled).active {
+.c6:not(:disabled):hover,
+.c6:not(:disabled).hovered,
+.c6:not(:disabled):active,
+.c6:not(:disabled).active {
   background-color: #D45806;
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
   padding: 4px 4px;
 }
 
-.c5:not(:disabled):hover .icon,
-.c5:not(:disabled).hovered .icon,
-.c5:not(:disabled):active .icon,
-.c5:not(:disabled).active .icon,
-.c5:not(:disabled):focus .icon,
-.c5:not(:disabled).focused .icon {
+.c6:not(:disabled):hover .icon,
+.c6:not(:disabled).hovered .icon,
+.c6:not(:disabled):active .icon,
+.c6:not(:disabled).active .icon,
+.c6:not(:disabled):focus .icon,
+.c6:not(:disabled).focused .icon {
   color: #FFFFFF;
 }
 
-.c5:not(:disabled).active,
-.c5:not(:disabled):active {
+.c6:not(:disabled).active,
+.c6:not(:disabled):active {
   box-shadow: none;
 }
 
-.c5:focus,
-.c5.focused {
+.c6:focus,
+.c6.focused {
   outline: none;
 }
 
-.c5.focus-visible,
-.c5.focused:not(:disabled) {
+.c6.focus-visible,
+.c6.focused:not(:disabled) {
   box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
 .c4 {
+  position: relative;
+  z-index: 1000;
+}
+
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3762,7 +3907,7 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
   font-size: 16px;
 }
 
-.c4 > .input {
+.c5 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3786,32 +3931,32 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
   overflow: auto;
 }
 
-.c4 > .input .wrapped {
+.c5 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c4 > .input > input,
-.select__search .c4 > .input input {
+.c5 > .input > input,
+.select__search .c5 > .input input {
   padding: 4px 16px;
   line-height: 24px;
 }
 
-.c4 > .input > textarea {
+.c5 > .input > textarea {
   padding: 16px;
 }
 
-.c4 > .input input,
-.c4 > .input textarea,
-.c4 > .input select {
+.c5 > .input input,
+.c5 > .input textarea,
+.c5 > .input select {
   font-family: inherit;
   font-size: inherit;
 }
 
-.c4 > .input > input,
-.c4 > .input > textarea,
-.select__search .c4 > .input input {
+.c5 > .input > input,
+.c5 > .input > textarea,
+.select__search .c5 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3822,118 +3967,118 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
   background: none;
 }
 
-.c4 > .input > input::-webkit-input-placeholder,
-.c4 > .input > textarea::-webkit-input-placeholder,
-.select__search .c4 > .input input::-webkit-input-placeholder {
+.c5 > .input > input::-webkit-input-placeholder,
+.c5 > .input > textarea::-webkit-input-placeholder,
+.select__search .c5 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 > .input > input::-moz-placeholder,
-.c4 > .input > textarea::-moz-placeholder,
-.select__search .c4 > .input input::-moz-placeholder {
+.c5 > .input > input::-moz-placeholder,
+.c5 > .input > textarea::-moz-placeholder,
+.select__search .c5 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 > .input > input:-ms-input-placeholder,
-.c4 > .input > textarea:-ms-input-placeholder,
-.select__search .c4 > .input input:-ms-input-placeholder {
+.c5 > .input > input:-ms-input-placeholder,
+.c5 > .input > textarea:-ms-input-placeholder,
+.select__search .c5 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 > .input > input::placeholder,
-.c4 > .input > textarea::placeholder,
-.select__search .c4 > .input input::placeholder {
+.c5 > .input > input::placeholder,
+.c5 > .input > textarea::placeholder,
+.select__search .c5 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c4 > .input > input[type="search"],
-.c4 > .input > textarea[type="search"],
-.select__search .c4 > .input input[type="search"] {
+.c5 > .input > input[type="search"],
+.c5 > .input > textarea[type="search"],
+.select__search .c5 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.c4 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c4 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c4 > .input input[type="search"]::-webkit-search-cancel-button {
+.c5 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c5 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c5 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c4 > .input > input[type="search"]::-ms-clear,
-.c4 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c4 > .input input[type="search"]::-ms-clear {
+.c5 > .input > input[type="search"]::-ms-clear,
+.c5 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c5 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c4 > .input > input[role="combobox"],
-.c4 > .input > textarea[role="combobox"],
-.select__search .c4 > .input input[role="combobox"] {
+.c5 > .input > input[role="combobox"],
+.c5 > .input > textarea[role="combobox"],
+.select__search .c5 > .input input[role="combobox"] {
   cursor: pointer;
 }
 
-.c4 > .input > .icon {
+.c5 > .input > .icon {
   color: rgba(0,0,0,0.16);
 }
 
-.c4 > .input > .icon.left {
+.c5 > .input > .icon.left {
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.c4 > .input > .icon.right {
+.c5 > .input > .icon.right {
   margin-right: 8px;
   margin-left: -8px;
 }
 
-.c4 > .input > .clear {
+.c5 > .input > .clear {
   color: rgba(0,0,0,0.16);
 }
 
-.c4 > .input > .clear:hover {
+.c5 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c4 > .input > .clear a {
+.c5 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c4 .input.dropdown {
+.c5 .input.dropdown {
   cursor: pointer;
 }
 
-.c4 input[type="number"] {
+.c5 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c4 input[type="number"]::-webkit-inner-spin-button,
-.c4 input[type="number"]::-webkit-outer-spin-button {
+.c5 input[type="number"]::-webkit-inner-spin-button,
+.c5 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c4 .prefix {
+.c5 .prefix {
   margin-left: 16px;
   margin-right: -8px;
 }
 
-.c4 .suffix {
+.c5 .suffix {
   margin-right: 16px;
   margin-left: -8px;
 }
 
-.c4 .prefix,
-.c4 .suffix {
+.c5 .prefix,
+.c5 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.32);
 }
 
-.c4 .label {
+.c5 .label {
   margin-bottom: 8px;
 }
 
@@ -3970,6 +4115,17 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
 
 .c0 {
   width: 200px;
+}
+
+@media only screen and (max-width:) {
+  .c4 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.32);
+    position: fixed;
+  }
 }
 
 <div
@@ -4016,9 +4172,19 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
         </div>
         <span />
       </button>
+      <div
+        className="c4 tooltip-content"
+        offset="15px"
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "opacity": 0,
+          }
+        }
+      />
     </div>
     <div
-      className="c4 inputComponent"
+      className="c5 inputComponent"
       onClick={[Function]}
       type="number"
     >
@@ -4041,7 +4207,7 @@ exports[`Storyshots Form|AmountSelectors Removable 1`] = `
       </div>
     </div>
     <button
-      className="c5 button button--increase   "
+      className="c6 button button--increase   "
       data-testid="button--increase"
       onClick={[Function]}
       type="button"

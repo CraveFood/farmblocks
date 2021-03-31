@@ -1167,12 +1167,21 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
   color: #dd3311;
 }
 
-.c9 {
+.c10 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: rgba(0,0,0,0.32);
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
 }
 
 .c1 {
@@ -1742,7 +1751,7 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
   margin-bottom: 8px;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1755,7 +1764,7 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
   font-size: 16px;
 }
 
-.c8 > .input {
+.c9 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1779,32 +1788,32 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
   overflow: auto;
 }
 
-.c8 > .input .wrapped {
+.c9 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c8 > .input > input,
-.select__search .c8 > .input input {
+.c9 > .input > input,
+.select__search .c9 > .input input {
   padding: 8px 16px;
   line-height: 22px;
 }
 
-.c8 > .input > textarea {
+.c9 > .input > textarea {
   padding: 16px;
 }
 
-.c8 > .input input,
-.c8 > .input textarea,
-.c8 > .input select {
+.c9 > .input input,
+.c9 > .input textarea,
+.c9 > .input select {
   font-family: inherit;
   font-size: inherit;
 }
 
-.c8 > .input > input,
-.c8 > .input > textarea,
-.select__search .c8 > .input input {
+.c9 > .input > input,
+.c9 > .input > textarea,
+.select__search .c9 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -1815,128 +1824,122 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
   background: none;
 }
 
-.c8 > .input > input::-webkit-input-placeholder,
-.c8 > .input > textarea::-webkit-input-placeholder,
-.select__search .c8 > .input input::-webkit-input-placeholder {
+.c9 > .input > input::-webkit-input-placeholder,
+.c9 > .input > textarea::-webkit-input-placeholder,
+.select__search .c9 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input::-moz-placeholder,
-.c8 > .input > textarea::-moz-placeholder,
-.select__search .c8 > .input input::-moz-placeholder {
+.c9 > .input > input::-moz-placeholder,
+.c9 > .input > textarea::-moz-placeholder,
+.select__search .c9 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input:-ms-input-placeholder,
-.c8 > .input > textarea:-ms-input-placeholder,
-.select__search .c8 > .input input:-ms-input-placeholder {
+.c9 > .input > input:-ms-input-placeholder,
+.c9 > .input > textarea:-ms-input-placeholder,
+.select__search .c9 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input::placeholder,
-.c8 > .input > textarea::placeholder,
-.select__search .c8 > .input input::placeholder {
+.c9 > .input > input::placeholder,
+.c9 > .input > textarea::placeholder,
+.select__search .c9 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input[type="search"],
-.c8 > .input > textarea[type="search"],
-.select__search .c8 > .input input[type="search"] {
+.c9 > .input > input[type="search"],
+.c9 > .input > textarea[type="search"],
+.select__search .c9 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+.c9 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c9 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c9 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c8 > .input > input[type="search"]::-ms-clear,
-.c8 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c8 > .input input[type="search"]::-ms-clear {
+.c9 > .input > input[type="search"]::-ms-clear,
+.c9 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c9 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c8 > .input > input[role="combobox"],
-.c8 > .input > textarea[role="combobox"],
-.select__search .c8 > .input input[role="combobox"] {
+.c9 > .input > input[role="combobox"],
+.c9 > .input > textarea[role="combobox"],
+.select__search .c9 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c8 > .input > .icon {
+.c9 > .input > .icon {
   color: rgba(0,0,0,0.16);
 }
 
-.c8 > .input > .icon.left {
+.c9 > .input > .icon.left {
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.c8 > .input > .icon.right {
+.c9 > .input > .icon.right {
   margin-right: 8px;
   margin-left: -8px;
 }
 
-.c8 > .input > .clear {
+.c9 > .input > .clear {
   color: rgba(0,0,0,0.16);
 }
 
-.c8 > .input > .clear:hover {
+.c9 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c8 > .input > .clear a {
+.c9 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c8 .input.dropdown {
+.c9 .input.dropdown {
   cursor: default;
 }
 
-.c8 input[type="number"] {
+.c9 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c8 input[type="number"]::-webkit-inner-spin-button,
-.c8 input[type="number"]::-webkit-outer-spin-button {
+.c9 input[type="number"]::-webkit-inner-spin-button,
+.c9 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c8 .prefix {
+.c9 .prefix {
   margin-left: 16px;
   margin-right: -8px;
 }
 
-.c8 .suffix {
+.c9 .suffix {
   margin-right: 16px;
   margin-left: -8px;
 }
 
-.c8 .prefix,
-.c8 .suffix {
+.c9 .prefix,
+.c9 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.32);
 }
 
-.c8 .label {
+.c9 .label {
   margin-bottom: 8px;
 }
 
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+.c8 {
   margin-top: 8px;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -2132,7 +2135,7 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
       With validation messages
     </label>
     <div
-      className="Text-pfq5dp-0 c7 error-message-text"
+      className="c7 c8 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -2162,14 +2165,14 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
       With two validation messages
     </label>
     <div
-      className="Text-pfq5dp-0 c7 error-message-text"
+      className="c7 c8 error-message-text"
       size={14}
       type="#dd3311"
     >
       Required Field
     </div>
     <div
-      className="Text-pfq5dp-0 c7 error-message-text"
+      className="c7 c8 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -2177,7 +2180,7 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c9"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -2196,14 +2199,14 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
       />
     </div>
     <label
-      className="c9 label"
+      className="c10 label"
       disabled={true}
     >
       Disabled
     </label>
   </div>
   <div
-    className="c8"
+    className="c9"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -2222,7 +2225,7 @@ exports[`Storyshots Form|HOC formInput Input Status 1`] = `
       />
     </div>
     <label
-      className="c9 label"
+      className="c10 label"
       disabled={true}
     >
       Disabled
@@ -2518,12 +2521,21 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
   color: #dd3311;
 }
 
-.c9 {
+.c10 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: rgba(0,0,0,0.32);
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
 }
 
 .c1 {
@@ -3093,7 +3105,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
   margin-bottom: 8px;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3106,7 +3118,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
   font-size: 16px;
 }
 
-.c8 > .input {
+.c9 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3130,32 +3142,32 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
   overflow: auto;
 }
 
-.c8 > .input .wrapped {
+.c9 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c8 > .input > input,
-.select__search .c8 > .input input {
+.c9 > .input > input,
+.select__search .c9 > .input input {
   padding: 8px 16px;
   line-height: 22px;
 }
 
-.c8 > .input > textarea {
+.c9 > .input > textarea {
   padding: 16px;
 }
 
-.c8 > .input input,
-.c8 > .input textarea,
-.c8 > .input select {
+.c9 > .input input,
+.c9 > .input textarea,
+.c9 > .input select {
   font-family: inherit;
   font-size: inherit;
 }
 
-.c8 > .input > input,
-.c8 > .input > textarea,
-.select__search .c8 > .input input {
+.c9 > .input > input,
+.c9 > .input > textarea,
+.select__search .c9 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -3166,128 +3178,122 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
   background: none;
 }
 
-.c8 > .input > input::-webkit-input-placeholder,
-.c8 > .input > textarea::-webkit-input-placeholder,
-.select__search .c8 > .input input::-webkit-input-placeholder {
+.c9 > .input > input::-webkit-input-placeholder,
+.c9 > .input > textarea::-webkit-input-placeholder,
+.select__search .c9 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input::-moz-placeholder,
-.c8 > .input > textarea::-moz-placeholder,
-.select__search .c8 > .input input::-moz-placeholder {
+.c9 > .input > input::-moz-placeholder,
+.c9 > .input > textarea::-moz-placeholder,
+.select__search .c9 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input:-ms-input-placeholder,
-.c8 > .input > textarea:-ms-input-placeholder,
-.select__search .c8 > .input input:-ms-input-placeholder {
+.c9 > .input > input:-ms-input-placeholder,
+.c9 > .input > textarea:-ms-input-placeholder,
+.select__search .c9 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input::placeholder,
-.c8 > .input > textarea::placeholder,
-.select__search .c8 > .input input::placeholder {
+.c9 > .input > input::placeholder,
+.c9 > .input > textarea::placeholder,
+.select__search .c9 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input[type="search"],
-.c8 > .input > textarea[type="search"],
-.select__search .c8 > .input input[type="search"] {
+.c9 > .input > input[type="search"],
+.c9 > .input > textarea[type="search"],
+.select__search .c9 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+.c9 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c9 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c9 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c8 > .input > input[type="search"]::-ms-clear,
-.c8 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c8 > .input input[type="search"]::-ms-clear {
+.c9 > .input > input[type="search"]::-ms-clear,
+.c9 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c9 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c8 > .input > input[role="combobox"],
-.c8 > .input > textarea[role="combobox"],
-.select__search .c8 > .input input[role="combobox"] {
+.c9 > .input > input[role="combobox"],
+.c9 > .input > textarea[role="combobox"],
+.select__search .c9 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c8 > .input > .icon {
+.c9 > .input > .icon {
   color: rgba(0,0,0,0.16);
 }
 
-.c8 > .input > .icon.left {
+.c9 > .input > .icon.left {
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.c8 > .input > .icon.right {
+.c9 > .input > .icon.right {
   margin-right: 8px;
   margin-left: -8px;
 }
 
-.c8 > .input > .clear {
+.c9 > .input > .clear {
   color: rgba(0,0,0,0.16);
 }
 
-.c8 > .input > .clear:hover {
+.c9 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c8 > .input > .clear a {
+.c9 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c8 .input.dropdown {
+.c9 .input.dropdown {
   cursor: default;
 }
 
-.c8 input[type="number"] {
+.c9 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c8 input[type="number"]::-webkit-inner-spin-button,
-.c8 input[type="number"]::-webkit-outer-spin-button {
+.c9 input[type="number"]::-webkit-inner-spin-button,
+.c9 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c8 .prefix {
+.c9 .prefix {
   margin-left: 16px;
   margin-right: -8px;
 }
 
-.c8 .suffix {
+.c9 .suffix {
   margin-right: 16px;
   margin-left: -8px;
 }
 
-.c8 .prefix,
-.c8 .suffix {
+.c9 .prefix,
+.c9 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.32);
 }
 
-.c8 .label {
+.c9 .label {
   margin-bottom: 8px;
 }
 
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+.c8 {
   margin-top: 8px;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -3527,7 +3533,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         Error messages
       </label>
       <div
-        className="Text-pfq5dp-0 c7 error-message-text"
+        className="c7 c8 error-message-text"
         size={14}
         type="#dd3311"
       >
@@ -3535,7 +3541,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
       </div>
     </div>
     <div
-      className="c8"
+      className="c9"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -3559,14 +3565,14 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         />
       </div>
       <label
-        className="c9 label"
+        className="c10 label"
         disabled={true}
       >
         Disabled
       </label>
     </div>
     <div
-      className="c8"
+      className="c9"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -3590,7 +3596,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         />
       </div>
       <label
-        className="c9 label"
+        className="c10 label"
         disabled={true}
       >
         Disabled
@@ -3799,7 +3805,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         Error messages
       </label>
       <div
-        className="Text-pfq5dp-0 c7 error-message-text"
+        className="c7 c8 error-message-text"
         size={14}
         type="#dd3311"
       >
@@ -3807,7 +3813,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
       </div>
     </div>
     <div
-      className="c8"
+      className="c9"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -3831,14 +3837,14 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         </div>
       </div>
       <label
-        className="c9 label"
+        className="c10 label"
         disabled={true}
       >
         Disabled
       </label>
     </div>
     <div
-      className="c8"
+      className="c9"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -3862,7 +3868,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         </div>
       </div>
       <label
-        className="c9 label"
+        className="c10 label"
         disabled={true}
       >
         Disabled
@@ -4106,7 +4112,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         Error messages
       </label>
       <div
-        className="Text-pfq5dp-0 c7 error-message-text"
+        className="c7 c8 error-message-text"
         size={14}
         type="#dd3311"
       >
@@ -4114,7 +4120,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
       </div>
     </div>
     <div
-      className="c8"
+      className="c9"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -4143,14 +4149,14 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         </div>
       </div>
       <label
-        className="c9 label"
+        className="c10 label"
         disabled={true}
       >
         Disabled
       </label>
     </div>
     <div
-      className="c8"
+      className="c9"
       disabled={true}
       onClick={[Function]}
       type="text"
@@ -4179,7 +4185,7 @@ exports[`Storyshots Form|HOC formInput Prefix and Suffix 1`] = `
         </div>
       </div>
       <label
-        className="c9 label"
+        className="c10 label"
         disabled={true}
       >
         Disabled
@@ -4713,12 +4719,21 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
   color: #dd3311;
 }
 
-.c9 {
+.c10 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: rgba(0,0,0,0.32);
+}
+
+.c7 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
 }
 
 .c1 {
@@ -5288,7 +5303,7 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
   margin-bottom: 8px;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5301,7 +5316,7 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
   font-size: 16px;
 }
 
-.c8 > .input {
+.c9 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -5325,32 +5340,32 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
   overflow: auto;
 }
 
-.c8 > .input .wrapped {
+.c9 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c8 > .input > input,
-.select__search .c8 > .input input {
+.c9 > .input > input,
+.select__search .c9 > .input input {
   padding: 4px 16px;
   line-height: 24px;
 }
 
-.c8 > .input > textarea {
+.c9 > .input > textarea {
   padding: 16px;
 }
 
-.c8 > .input input,
-.c8 > .input textarea,
-.c8 > .input select {
+.c9 > .input input,
+.c9 > .input textarea,
+.c9 > .input select {
   font-family: inherit;
   font-size: inherit;
 }
 
-.c8 > .input > input,
-.c8 > .input > textarea,
-.select__search .c8 > .input input {
+.c9 > .input > input,
+.c9 > .input > textarea,
+.select__search .c9 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -5361,128 +5376,122 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
   background: none;
 }
 
-.c8 > .input > input::-webkit-input-placeholder,
-.c8 > .input > textarea::-webkit-input-placeholder,
-.select__search .c8 > .input input::-webkit-input-placeholder {
+.c9 > .input > input::-webkit-input-placeholder,
+.c9 > .input > textarea::-webkit-input-placeholder,
+.select__search .c9 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input::-moz-placeholder,
-.c8 > .input > textarea::-moz-placeholder,
-.select__search .c8 > .input input::-moz-placeholder {
+.c9 > .input > input::-moz-placeholder,
+.c9 > .input > textarea::-moz-placeholder,
+.select__search .c9 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input:-ms-input-placeholder,
-.c8 > .input > textarea:-ms-input-placeholder,
-.select__search .c8 > .input input:-ms-input-placeholder {
+.c9 > .input > input:-ms-input-placeholder,
+.c9 > .input > textarea:-ms-input-placeholder,
+.select__search .c9 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input::placeholder,
-.c8 > .input > textarea::placeholder,
-.select__search .c8 > .input input::placeholder {
+.c9 > .input > input::placeholder,
+.c9 > .input > textarea::placeholder,
+.select__search .c9 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c8 > .input > input[type="search"],
-.c8 > .input > textarea[type="search"],
-.select__search .c8 > .input input[type="search"] {
+.c9 > .input > input[type="search"],
+.c9 > .input > textarea[type="search"],
+.select__search .c9 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.c8 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c8 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c8 > .input input[type="search"]::-webkit-search-cancel-button {
+.c9 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c9 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c9 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c8 > .input > input[type="search"]::-ms-clear,
-.c8 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c8 > .input input[type="search"]::-ms-clear {
+.c9 > .input > input[type="search"]::-ms-clear,
+.c9 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c9 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c8 > .input > input[role="combobox"],
-.c8 > .input > textarea[role="combobox"],
-.select__search .c8 > .input input[role="combobox"] {
+.c9 > .input > input[role="combobox"],
+.c9 > .input > textarea[role="combobox"],
+.select__search .c9 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c8 > .input > .icon {
+.c9 > .input > .icon {
   color: rgba(0,0,0,0.16);
 }
 
-.c8 > .input > .icon.left {
+.c9 > .input > .icon.left {
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.c8 > .input > .icon.right {
+.c9 > .input > .icon.right {
   margin-right: 8px;
   margin-left: -8px;
 }
 
-.c8 > .input > .clear {
+.c9 > .input > .clear {
   color: rgba(0,0,0,0.16);
 }
 
-.c8 > .input > .clear:hover {
+.c9 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c8 > .input > .clear a {
+.c9 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c8 .input.dropdown {
+.c9 .input.dropdown {
   cursor: default;
 }
 
-.c8 input[type="number"] {
+.c9 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c8 input[type="number"]::-webkit-inner-spin-button,
-.c8 input[type="number"]::-webkit-outer-spin-button {
+.c9 input[type="number"]::-webkit-inner-spin-button,
+.c9 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c8 .prefix {
+.c9 .prefix {
   margin-left: 16px;
   margin-right: -8px;
 }
 
-.c8 .suffix {
+.c9 .suffix {
   margin-right: 16px;
   margin-left: -8px;
 }
 
-.c8 .prefix,
-.c8 .suffix {
+.c9 .prefix,
+.c9 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.32);
 }
 
-.c8 .label {
+.c9 .label {
   margin-bottom: 8px;
 }
 
-.c7 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+.c8 {
   margin-top: 8px;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -5678,7 +5687,7 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
       With validation messages
     </label>
     <div
-      className="Text-pfq5dp-0 c7 error-message-text"
+      className="c7 c8 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -5708,14 +5717,14 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
       With two validation messages
     </label>
     <div
-      className="Text-pfq5dp-0 c7 error-message-text"
+      className="c7 c8 error-message-text"
       size={14}
       type="#dd3311"
     >
       Required Field
     </div>
     <div
-      className="Text-pfq5dp-0 c7 error-message-text"
+      className="c7 c8 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -5723,7 +5732,7 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
     </div>
   </div>
   <div
-    className="c8"
+    className="c9"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -5742,14 +5751,14 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
       />
     </div>
     <label
-      className="c9 label"
+      className="c10 label"
       disabled={true}
     >
       Disabled
     </label>
   </div>
   <div
-    className="c8"
+    className="c9"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -5768,7 +5777,7 @@ exports[`Storyshots Form|HOC formInput Small 1`] = `
       />
     </div>
     <label
-      className="c9 label"
+      className="c10 label"
       disabled={true}
     >
       Disabled
@@ -5811,12 +5820,21 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
   color: #dd3311;
 }
 
-.c10 {
+.c11 {
   font-family: Lato,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: rgba(0,0,0,0.32);
+}
+
+.c8 {
+  font-family: Lato,sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dd3311;
+  text-align: left;
 }
 
 .c1 {
@@ -6386,7 +6404,7 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
   margin-bottom: 8px;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6399,7 +6417,7 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
   font-size: 16px;
 }
 
-.c9 > .input {
+.c10 > .input {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -6423,32 +6441,32 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
   overflow: auto;
 }
 
-.c9 > .input .wrapped {
+.c10 > .input .wrapped {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c9 > .input > input,
-.select__search .c9 > .input input {
+.c10 > .input > input,
+.select__search .c10 > .input input {
   padding: 8px 16px;
   line-height: 22px;
 }
 
-.c9 > .input > textarea {
+.c10 > .input > textarea {
   padding: 16px;
 }
 
-.c9 > .input input,
-.c9 > .input textarea,
-.c9 > .input select {
+.c10 > .input input,
+.c10 > .input textarea,
+.c10 > .input select {
   font-family: inherit;
   font-size: inherit;
 }
 
-.c9 > .input > input,
-.c9 > .input > textarea,
-.select__search .c9 > .input input {
+.c10 > .input > input,
+.c10 > .input > textarea,
+.select__search .c10 > .input input {
   min-width: 0;
   border: 0;
   -webkit-flex: 1;
@@ -6459,128 +6477,122 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
   background: none;
 }
 
-.c9 > .input > input::-webkit-input-placeholder,
-.c9 > .input > textarea::-webkit-input-placeholder,
-.select__search .c9 > .input input::-webkit-input-placeholder {
+.c10 > .input > input::-webkit-input-placeholder,
+.c10 > .input > textarea::-webkit-input-placeholder,
+.select__search .c10 > .input input::-webkit-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 > .input > input::-moz-placeholder,
-.c9 > .input > textarea::-moz-placeholder,
-.select__search .c9 > .input input::-moz-placeholder {
+.c10 > .input > input::-moz-placeholder,
+.c10 > .input > textarea::-moz-placeholder,
+.select__search .c10 > .input input::-moz-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 > .input > input:-ms-input-placeholder,
-.c9 > .input > textarea:-ms-input-placeholder,
-.select__search .c9 > .input input:-ms-input-placeholder {
+.c10 > .input > input:-ms-input-placeholder,
+.c10 > .input > textarea:-ms-input-placeholder,
+.select__search .c10 > .input input:-ms-input-placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 > .input > input::placeholder,
-.c9 > .input > textarea::placeholder,
-.select__search .c9 > .input input::placeholder {
+.c10 > .input > input::placeholder,
+.c10 > .input > textarea::placeholder,
+.select__search .c10 > .input input::placeholder {
   color: rgba(0,0,0,0.32);
 }
 
-.c9 > .input > input[type="search"],
-.c9 > .input > textarea[type="search"],
-.select__search .c9 > .input input[type="search"] {
+.c10 > .input > input[type="search"],
+.c10 > .input > textarea[type="search"],
+.select__search .c10 > .input input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.c9 > .input > input[type="search"]::-webkit-search-cancel-button,
-.c9 > .input > textarea[type="search"]::-webkit-search-cancel-button,
-.select__search .c9 > .input input[type="search"]::-webkit-search-cancel-button {
+.c10 > .input > input[type="search"]::-webkit-search-cancel-button,
+.c10 > .input > textarea[type="search"]::-webkit-search-cancel-button,
+.select__search .c10 > .input input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-.c9 > .input > input[type="search"]::-ms-clear,
-.c9 > .input > textarea[type="search"]::-ms-clear,
-.select__search .c9 > .input input[type="search"]::-ms-clear {
+.c10 > .input > input[type="search"]::-ms-clear,
+.c10 > .input > textarea[type="search"]::-ms-clear,
+.select__search .c10 > .input input[type="search"]::-ms-clear {
   width: 0;
   height: 0;
 }
 
-.c9 > .input > input[role="combobox"],
-.c9 > .input > textarea[role="combobox"],
-.select__search .c9 > .input input[role="combobox"] {
+.c10 > .input > input[role="combobox"],
+.c10 > .input > textarea[role="combobox"],
+.select__search .c10 > .input input[role="combobox"] {
   cursor: default;
 }
 
-.c9 > .input > .icon {
+.c10 > .input > .icon {
   color: rgba(0,0,0,0.16);
 }
 
-.c9 > .input > .icon.left {
+.c10 > .input > .icon.left {
   margin-left: 8px;
   margin-right: -8px;
 }
 
-.c9 > .input > .icon.right {
+.c10 > .input > .icon.right {
   margin-right: 8px;
   margin-left: -8px;
 }
 
-.c9 > .input > .clear {
+.c10 > .input > .clear {
   color: rgba(0,0,0,0.16);
 }
 
-.c9 > .input > .clear:hover {
+.c10 > .input > .clear:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #3498db;
 }
 
-.c9 > .input > .clear a {
+.c10 > .input > .clear a {
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
 }
 
-.c9 .input.dropdown {
+.c10 .input.dropdown {
   cursor: default;
 }
 
-.c9 input[type="number"] {
+.c10 input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.c9 input[type="number"]::-webkit-inner-spin-button,
-.c9 input[type="number"]::-webkit-outer-spin-button {
+.c10 input[type="number"]::-webkit-inner-spin-button,
+.c10 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.c9 .prefix {
+.c10 .prefix {
   margin-left: 16px;
   margin-right: -8px;
 }
 
-.c9 .suffix {
+.c10 .suffix {
   margin-right: 16px;
   margin-left: -8px;
 }
 
-.c9 .prefix,
-.c9 .suffix {
+.c10 .prefix,
+.c10 .suffix {
   font-family: Lato,sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.32);
 }
 
-.c9 .label {
+.c10 .label {
   margin-bottom: 8px;
 }
 
-.c8 {
-  font-family: Lato,sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #dd3311;
-  text-align: left;
+.c9 {
   margin-top: 8px;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -6937,7 +6949,7 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
       With left icon and Error messages
     </label>
     <div
-      className="Text-pfq5dp-0 c8 error-message-text"
+      className="c8 c9 error-message-text"
       size={14}
       type="#dd3311"
     >
@@ -6945,7 +6957,7 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
     </div>
   </div>
   <div
-    className="c9"
+    className="c10"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -6987,14 +6999,14 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
       />
     </div>
     <label
-      className="c10 label"
+      className="c11 label"
       disabled={true}
     >
       With left icon and Disabled
     </label>
   </div>
   <div
-    className="c9"
+    className="c10"
     disabled={true}
     onClick={[Function]}
     type="text"
@@ -7036,7 +7048,7 @@ exports[`Storyshots Form|HOC formInput With Icon 1`] = `
       />
     </div>
     <label
-      className="c10 label"
+      className="c11 label"
       disabled={true}
     >
       With left icon and Disabled

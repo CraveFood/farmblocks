@@ -155,16 +155,31 @@ exports[`Storyshots SideNav/SideNav Complete Side Nav Simple 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Drawer Like Using Sidebar On The Right 1`] = `
-.c6 {
+.c7 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c6 .farmblocks-icon {
+.c7 .farmblocks-icon {
   display: block;
 }
 
-.c4 {
+.c0 {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 56px;
+  overflow-x: hidden;
+  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
+  width: 450px;
+}
+
+.c5 {
   box-sizing: border-box;
   color: rgba(0,0,0,0.48);
   font-size: 32px;
@@ -186,39 +201,27 @@ exports[`Storyshots SideNav/SideNav Drawer Like Using Sidebar On The Right 1`] =
   border-radius: 8px;
 }
 
-.c4:hover {
+.c5:hover {
   background-color: rgba(255,68,17,0.08);
   color: #ff4411;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
 }
 
-.c0 {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  top: 56px;
-  overflow-x: hidden;
-  -webkit-transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  transition: width 0.25s,padding-right 0.25s,padding-left 0.25s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
-  width: 450px;
+.c1 {
   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.16);
 }
 
-.c2 {
+.c3 {
   backgroundcolor: hotpink;
   height: 98vh;
 }
 
-.c5 {
+.c6 {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -226,7 +229,7 @@ exports[`Storyshots SideNav/SideNav Drawer Like Using Sidebar On The Right 1`] =
   z-index: 100;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -256,23 +259,23 @@ exports[`Storyshots SideNav/SideNav Drawer Like Using Sidebar On The Right 1`] =
   }
 >
   <nav
-    className="SideBarstyled__SideBar-qox7h9-0 c0"
+    className="c0 c1"
     onClose={[Function]}
   />
   <div
-    className="c1 c2"
+    className="c2 c3"
     data-testid="pageWrapper-navbar"
   >
     <div
-      className="c3"
+      className="c4"
     />
     <div
-      className="c4 c5"
+      className="c5 c6"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c6"
+        className="c7"
         color="currentColor"
         size="1em"
       >
@@ -296,16 +299,16 @@ exports[`Storyshots SideNav/SideNav Drawer Like Using Sidebar On The Right 1`] =
 `;
 
 exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c2 .farmblocks-icon {
+.c3 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -315,7 +318,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   font-weight: 600;
 }
 
-.c10 {
+.c12 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -326,7 +329,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   text-transform: uppercase;
 }
 
-.c11 {
+.c13 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -335,13 +338,13 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   text-align: left;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   border-radius: 100%;
   object-fit: cover;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -356,44 +359,6 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 56px;
-}
-
-.c4 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c4:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c1 {
@@ -416,10 +381,6 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 110;
 }
 
 .c1:hover {
@@ -428,21 +389,9 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
+  box-sizing: border-box;
   color: rgba(0,0,0,0.48);
-}
-
-.c5 .thumb-container {
+  font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -455,31 +404,36 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-  font-size: 32px;
-  color: rgba(0,0,0,0.48);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.c5 .thumb-container svg {
-  display: block;
-}
-
-.c5:hover,
-.c5.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c5:hover .icon,
-.c5.active .icon {
+.c5:hover {
+  background-color: rgba(255,68,17,0.08);
   color: #ff4411;
 }
 
-.c5.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
+.c6 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c2 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
 }
 
 .c7 {
@@ -494,7 +448,6 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
   list-style-type: none;
   padding: 8px;
   cursor: pointer;
-  background-color: white;
   color: rgba(0,0,0,0.48);
 }
 
@@ -539,6 +492,62 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
 }
 
 .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+}
+
+.c9 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+  font-size: 32px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c9 .thumb-container svg {
+  display: block;
+}
+
+.c9:hover,
+.c9.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c9:hover .icon,
+.c9.active .icon {
+  color: #ff4411;
+}
+
+.c9.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c11 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 56px;
@@ -583,13 +592,13 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
       className="c0"
     />
     <div
-      className="NavButtonstyled-th6kal-0 c1"
+      className="c1 c2"
       data-testid="toggle-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c2"
+        className="c3"
         color="currentColor"
         size="1em"
       >
@@ -609,17 +618,17 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
       </span>
     </div>
     <nav
-      className="c3"
+      className="c4"
       data-testid="navbar-collapsed"
     >
       <div
-        className="NavButtonstyled-th6kal-0 c4"
+        className="c5 c6"
         data-testid="close-navbar"
         onClick={[Function]}
         role="button"
       >
         <span
-          className="c2"
+          className="c3"
           color="currentColor"
           size="1em"
         >
@@ -649,7 +658,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         }
       >
         <li
-          className="c5"
+          className="c7"
         >
           <div
             className="thumb-container"
@@ -658,7 +667,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
               className="icon"
             >
               <span
-                className="c2"
+                className="c3"
                 color="currentColor"
                 size="1em"
               >
@@ -679,7 +688,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
             </span>
           </div>
           <div
-            className="c6"
+            className="c8"
             fontWeight="title"
             size={18}
             type="inherit"
@@ -699,7 +708,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         }
       >
         <li
-          className="c5"
+          className="c7"
         >
           <div
             className="thumb-container"
@@ -708,7 +717,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
               className="icon"
             >
               <span
-                className="c2"
+                className="c3"
                 color="currentColor"
                 size="1em"
               >
@@ -729,7 +738,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
             </span>
           </div>
           <div
-            className="c6"
+            className="c8"
             fontWeight="title"
             size={18}
             type="inherit"
@@ -749,7 +758,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         }
       >
         <li
-          className="c5"
+          className="c7"
         >
           <div
             className="thumb-container"
@@ -758,7 +767,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
               className="icon"
             >
               <span
-                className="c2"
+                className="c3"
                 color="currentColor"
                 size="1em"
               >
@@ -779,7 +788,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
             </span>
           </div>
           <div
-            className="c6"
+            className="c8"
             fontWeight="title"
             size={18}
             type="inherit"
@@ -799,7 +808,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         }
       >
         <li
-          className="c5"
+          className="c7"
         >
           <div
             className="thumb-container"
@@ -808,7 +817,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
               className="icon"
             >
               <span
-                className="c2"
+                className="c3"
                 color="currentColor"
                 size="1em"
               >
@@ -829,7 +838,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
             </span>
           </div>
           <div
-            className="c6"
+            className="c8"
             fontWeight="title"
             size={18}
             type="inherit"
@@ -849,14 +858,14 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         }
       >
         <li
-          className="c7"
+          className="c9"
         >
           <div
             className="thumb-container"
           >
             <img
               alt=""
-              className="c8"
+              className="c10"
               height={36}
               size={36}
               src="https://picsum.photos/640/?image=889"
@@ -867,7 +876,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
             />
           </div>
           <div
-            className="c6"
+            className="c8"
             fontWeight="title"
             size={18}
             type="inherit"
@@ -878,7 +887,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
       </a>
     </nav>
     <div
-      className="c9"
+      className="c11"
       data-testid="pageWrapper-navbar"
     >
       <div
@@ -892,7 +901,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
         }
       >
         <div
-          className="c10"
+          className="c12"
           fontWeight="title"
           size={32}
           type="#2f313a"
@@ -907,7 +916,7 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
           }
         >
           <div
-            className="c11"
+            className="c13"
             size={18}
             type="#2f313a"
           >
@@ -921,16 +930,16 @@ exports[`Storyshots SideNav/SideNav Nav With Js Media Query 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c1 .farmblocks-icon {
+.c2 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -940,7 +949,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c10 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -951,7 +960,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   text-transform: uppercase;
 }
 
-.c9 {
+.c11 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -960,7 +969,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   text-align: left;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -997,43 +1006,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   background: #f6f8f9CC;
 }
 
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c3:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
 .c0 {
   box-sizing: border-box;
   color: #ff4411;
@@ -1054,10 +1026,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
 }
 
 .c0:hover {
@@ -1065,7 +1033,54 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   color: #ff4411;
 }
 
+.c4 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.c4:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
 .c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c1 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1082,7 +1097,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   padding: 8px 16px;
 }
 
-.c5 .thumb-container {
+.c7 .thumb-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1102,43 +1117,43 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   color: rgba(0,0,0,0.48);
 }
 
-.c5 .thumb-container svg {
+.c7 .thumb-container svg {
   display: block;
 }
 
-.c5:hover,
-.c5.active {
+.c7:hover,
+.c7.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
-.c5:hover .icon,
-.c5.active .icon {
+.c7:hover .icon,
+.c7.active .icon {
   color: #ff4411;
 }
 
-.c5.active {
+.c7.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
 }
 
-.c5:hover,
-.c5.active {
+.c7:hover,
+.c7.active {
   color: #ff4411;
 }
 
-.c5.active {
+.c7.active {
   padding-left: 16px;
   border-left: none;
 }
 
-.c7 {
+.c9 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1162,13 +1177,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
   }
 >
   <div
-    className="NavButtonstyled-th6kal-0 c0"
+    className="c0 c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
   >
     <span
-      className="c1"
+      className="c2"
       color="currentColor"
       size="1em"
     >
@@ -1188,17 +1203,17 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
     </span>
   </div>
   <nav
-    className="c2"
+    className="c3"
     data-testid="navbar-collapsed"
   >
     <div
-      className="NavButtonstyled-th6kal-0 c3"
+      className="c4 c5"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c1"
+        className="c2"
         color="currentColor"
         size="1em"
       >
@@ -1218,10 +1233,10 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
       </span>
     </div>
     <div
-      className="c4"
+      className="c6"
     />
     <li
-      className="c5 active"
+      className="c7 active"
       onClick={[Function]}
     >
       <div
@@ -1231,7 +1246,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -1252,7 +1267,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -1261,7 +1276,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -1271,7 +1286,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -1292,7 +1307,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -1301,7 +1316,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -1311,7 +1326,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -1332,7 +1347,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -1341,7 +1356,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -1351,7 +1366,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -1372,7 +1387,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -1382,7 +1397,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
     </li>
   </nav>
   <div
-    className="c7"
+    className="c9"
     data-testid="pageWrapper-navbar"
   >
     <div
@@ -1396,7 +1411,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
       }
     >
       <div
-        className="c8"
+        className="c10"
         fontWeight="title"
         size={32}
         type="#2f313a"
@@ -1411,7 +1426,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
         }
       >
         <div
-          className="c9"
+          className="c11"
           size={18}
           type="#2f313a"
         >
@@ -1424,16 +1439,16 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c1 .farmblocks-icon {
+.c2 .farmblocks-icon {
   display: block;
 }
 
-.c5 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1443,7 +1458,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   font-weight: 600;
 }
 
-.c9 {
+.c11 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -1454,7 +1469,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   text-transform: uppercase;
 }
 
-.c10 {
+.c12 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -1463,13 +1478,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   text-align: left;
 }
 
-.c7 {
+.c9 {
   box-sizing: border-box;
   border-radius: 100%;
   object-fit: cover;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -1506,43 +1521,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   background: #f6f8f9CC;
 }
 
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c3:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
-}
-
 .c0 {
   box-sizing: border-box;
   color: #ff4411;
@@ -1563,10 +1541,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
 }
 
 .c0:hover {
@@ -1575,23 +1549,9 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
+  box-sizing: border-box;
   color: rgba(0,0,0,0.48);
-  border-radius: 90px;
-  padding: 8px 16px;
-}
-
-.c4 .thumb-container {
+  font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1604,41 +1564,35 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-  font-size: 32px;
-  color: rgba(0,0,0,0.48);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.c4 .thumb-container svg {
-  display: block;
-}
-
-.c4:hover,
-.c4.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c4:hover .icon,
-.c4.active .icon {
+.c4:hover {
+  background-color: rgba(255,68,17,0.08);
   color: #ff4411;
 }
 
-.c4.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
+.c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
-.c4:hover,
-.c4.active {
-  color: #ff4411;
-}
-
-.c4.active {
-  padding-left: 16px;
-  border-left: none;
+.c1 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
 }
 
 .c6 {
@@ -1653,7 +1607,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   list-style-type: none;
   padding: 8px;
   cursor: pointer;
-  background-color: white;
   color: rgba(0,0,0,0.48);
   border-radius: 90px;
   padding: 8px 16px;
@@ -1710,6 +1663,74 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
 }
 
 .c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+  border-radius: 90px;
+  padding: 8px 16px;
+}
+
+.c8 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+  font-size: 32px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c8 .thumb-container svg {
+  display: block;
+}
+
+.c8:hover,
+.c8.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c8:hover .icon,
+.c8.active .icon {
+  color: #ff4411;
+}
+
+.c8.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c8:hover,
+.c8.active {
+  color: #ff4411;
+}
+
+.c8.active {
+  padding-left: 16px;
+  border-left: none;
+}
+
+.c10 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
@@ -1724,13 +1745,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
   }
 >
   <div
-    className="NavButtonstyled-th6kal-0 c0"
+    className="c0 c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
   >
     <span
-      className="c1"
+      className="c2"
       color="currentColor"
       size="1em"
     >
@@ -1750,17 +1771,17 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
     </span>
   </div>
   <nav
-    className="c2"
+    className="c3"
     data-testid="navbar-collapsed"
   >
     <div
-      className="NavButtonstyled-th6kal-0 c3"
+      className="c4 c5"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c1"
+        className="c2"
         color="currentColor"
         size="1em"
       >
@@ -1790,7 +1811,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
       }
     >
       <li
-        className="c4"
+        className="c6"
         onClick={[Function]}
       >
         <div
@@ -1800,7 +1821,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -1821,7 +1842,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
           </span>
         </div>
         <div
-          className="c5"
+          className="c7"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -1841,7 +1862,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
       }
     >
       <li
-        className="c4"
+        className="c6"
         onClick={[Function]}
       >
         <div
@@ -1851,7 +1872,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -1872,7 +1893,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
           </span>
         </div>
         <div
-          className="c5"
+          className="c7"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -1892,7 +1913,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
       }
     >
       <li
-        className="c4"
+        className="c6"
         onClick={[Function]}
       >
         <div
@@ -1902,7 +1923,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -1923,7 +1944,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
           </span>
         </div>
         <div
-          className="c5"
+          className="c7"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -1943,7 +1964,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
       }
     >
       <li
-        className="c4"
+        className="c6"
         onClick={[Function]}
       >
         <div
@@ -1953,7 +1974,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -1974,7 +1995,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
           </span>
         </div>
         <div
-          className="c5"
+          className="c7"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -1994,7 +2015,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
       }
     >
       <li
-        className="c6"
+        className="c8"
         onClick={[Function]}
       >
         <div
@@ -2002,7 +2023,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
         >
           <img
             alt=""
-            className="c7"
+            className="c9"
             height={36}
             size={36}
             src="https://picsum.photos/640/?image=889"
@@ -2013,7 +2034,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
           />
         </div>
         <div
-          className="c5"
+          className="c7"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -2024,7 +2045,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
     </a>
   </nav>
   <div
-    className="c8"
+    className="c10"
     data-testid="pageWrapper-navbar"
   >
     <div
@@ -2038,7 +2059,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
       }
     >
       <div
-        className="c9"
+        className="c11"
         fontWeight="title"
         size={32}
         type="#2f313a"
@@ -2053,7 +2074,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
         }
       >
         <div
-          className="c10"
+          className="c12"
           size={18}
           type="#2f313a"
         >
@@ -2066,16 +2087,16 @@ exports[`Storyshots SideNav/SideNav Side Nav Full Screen With Router 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c1 .farmblocks-icon {
+.c2 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -2085,7 +2106,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c10 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -2096,7 +2117,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   text-transform: uppercase;
 }
 
-.c9 {
+.c11 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -2105,7 +2126,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   text-align: left;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -2120,43 +2141,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 0px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c3:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c0 {
@@ -2179,10 +2163,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
 }
 
 .c0:hover {
@@ -2190,7 +2170,54 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   color: #ff4411;
 }
 
+.c4 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.c4:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
 .c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c1 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2205,7 +2232,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   color: rgba(0,0,0,0.48);
 }
 
-.c5 .thumb-container {
+.c7 .thumb-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2225,33 +2252,33 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   color: rgba(0,0,0,0.48);
 }
 
-.c5 .thumb-container svg {
+.c7 .thumb-container svg {
   display: block;
 }
 
-.c5:hover,
-.c5.active {
+.c7:hover,
+.c7.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
-.c5:hover .icon,
-.c5.active .icon {
+.c7:hover .icon,
+.c7.active .icon {
   color: #ff4411;
 }
 
-.c5.active {
+.c7.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
 }
 
-.c7 {
+.c9 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2275,13 +2302,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
   }
 >
   <div
-    className="NavButtonstyled-th6kal-0 c0"
+    className="c0 c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
   >
     <span
-      className="c1"
+      className="c2"
       color="currentColor"
       size="1em"
     >
@@ -2301,17 +2328,17 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
     </span>
   </div>
   <nav
-    className="c2"
+    className="c3"
     data-testid="navbar-collapsed"
   >
     <div
-      className="NavButtonstyled-th6kal-0 c3"
+      className="c4 c5"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c1"
+        className="c2"
         color="currentColor"
         size="1em"
       >
@@ -2331,10 +2358,10 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
       </span>
     </div>
     <div
-      className="c4"
+      className="c6"
     />
     <li
-      className="c5 active"
+      className="c7 active"
       onClick={[Function]}
     >
       <div
@@ -2344,7 +2371,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -2365,7 +2392,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -2374,7 +2401,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -2384,7 +2411,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -2405,7 +2432,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -2414,7 +2441,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -2424,7 +2451,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -2445,7 +2472,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -2454,7 +2481,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -2464,7 +2491,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -2485,7 +2512,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -2495,7 +2522,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
     </li>
   </nav>
   <div
-    className="c7"
+    className="c9"
     data-testid="pageWrapper-navbar"
   >
     <div
@@ -2509,7 +2536,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
       }
     >
       <div
-        className="c8"
+        className="c10"
         fontWeight="title"
         size={32}
         type="#2f313a"
@@ -2524,7 +2551,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
         }
       >
         <div
-          className="c9"
+          className="c11"
           size={18}
           type="#2f313a"
         >
@@ -2537,16 +2564,16 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c1 .farmblocks-icon {
+.c2 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -2556,7 +2583,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   font-weight: 600;
 }
 
-.c10 {
+.c12 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -2567,7 +2594,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   text-transform: uppercase;
 }
 
-.c11 {
+.c13 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -2576,13 +2603,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   text-align: left;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   border-radius: 100%;
   object-fit: cover;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -2597,43 +2624,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 0px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.c3:hover {
-  background-color: rgba(39,174,96,0.08);
-  color: #27ae60;
 }
 
 .c0 {
@@ -2656,10 +2646,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 90;
 }
 
 .c0:hover {
@@ -2667,22 +2653,10 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   color: #27ae60;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
+.c4 {
+  box-sizing: border-box;
   color: rgba(0,0,0,0.48);
-}
-
-.c5 .thumb-container {
+  font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2695,31 +2669,35 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-  font-size: 32px;
-  color: rgba(0,0,0,0.48);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.c5 .thumb-container svg {
-  display: block;
-}
-
-.c5:hover,
-.c5.active {
-  color: #2f313a;
-  background-color: rgba(39,174,96,0.04);
-}
-
-.c5:hover .icon,
-.c5.active .icon {
+.c4:hover {
+  background-color: rgba(39,174,96,0.08);
   color: #27ae60;
 }
 
-.c5.active {
-  padding-left: 4px;
-  border-left: 4px solid #27ae60;
+.c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.c1 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 90;
 }
 
 .c7 {
@@ -2734,7 +2712,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   list-style-type: none;
   padding: 8px;
   cursor: pointer;
-  background-color: white;
   color: rgba(0,0,0,0.48);
 }
 
@@ -2779,12 +2756,68 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
 }
 
 .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+}
+
+.c9 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+  font-size: 32px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c9 .thumb-container svg {
+  display: block;
+}
+
+.c9:hover,
+.c9.active {
+  color: #2f313a;
+  background-color: rgba(39,174,96,0.04);
+}
+
+.c9:hover .icon,
+.c9.active .icon {
+  color: #27ae60;
+}
+
+.c9.active {
+  padding-left: 4px;
+  border-left: 4px solid #27ae60;
+}
+
+.c11 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2808,13 +2841,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
   }
 >
   <div
-    className="NavButtonstyled-th6kal-0 c0"
+    className="c0 c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
   >
     <span
-      className="c1"
+      className="c2"
       color="currentColor"
       size="1em"
     >
@@ -2834,17 +2867,17 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
     </span>
   </div>
   <nav
-    className="c2"
+    className="c3"
     data-testid="navbar-collapsed"
   >
     <div
-      className="NavButtonstyled-th6kal-0 c3"
+      className="c4 c5"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c1"
+        className="c2"
         color="currentColor"
         size="1em"
       >
@@ -2864,7 +2897,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       </span>
     </div>
     <div
-      className="c4"
+      className="c6"
     />
     <a
       aria-current={null}
@@ -2877,7 +2910,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
         onClick={[Function]}
       >
         <div
@@ -2887,7 +2920,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -2908,7 +2941,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -2928,7 +2961,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
         onClick={[Function]}
       >
         <div
@@ -2938,7 +2971,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -2959,7 +2992,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -2979,7 +3012,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
         onClick={[Function]}
       >
         <div
@@ -2989,7 +3022,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -3010,7 +3043,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -3030,7 +3063,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
         onClick={[Function]}
       >
         <div
@@ -3040,7 +3073,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -3061,7 +3094,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -3081,7 +3114,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       }
     >
       <li
-        className="c7"
+        className="c9"
         onClick={[Function]}
       >
         <div
@@ -3089,7 +3122,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
         >
           <img
             alt=""
-            className="c8"
+            className="c10"
             height={36}
             size={36}
             src="https://picsum.photos/640/?image=889"
@@ -3100,7 +3133,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
           />
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -3111,7 +3144,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
     </a>
   </nav>
   <div
-    className="c9"
+    className="c11"
     data-testid="pageWrapper-navbar"
   >
     <div
@@ -3125,7 +3158,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
       }
     >
       <div
-        className="c10"
+        className="c12"
         fontWeight="title"
         size={32}
         type="#2f313a"
@@ -3140,7 +3173,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
         }
       >
         <div
-          className="c11"
+          className="c13"
           size={18}
           type="#2f313a"
         >
@@ -3153,16 +3186,16 @@ exports[`Storyshots SideNav/SideNav Side Nav Overlay With Router 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c1 .farmblocks-icon {
+.c2 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -3172,7 +3205,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   font-weight: 600;
 }
 
-.c8 {
+.c10 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -3183,7 +3216,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   text-transform: uppercase;
 }
 
-.c9 {
+.c11 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -3192,7 +3225,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   text-align: left;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -3207,44 +3240,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 56px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c3:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c0 {
@@ -3267,10 +3262,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 110;
 }
 
 .c0:hover {
@@ -3278,7 +3269,55 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   color: #ff4411;
 }
 
+.c4 {
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.48);
+  font-size: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.c4:hover {
+  background-color: rgba(255,68,17,0.08);
+  color: #ff4411;
+}
+
 .c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c1 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3293,7 +3332,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   color: rgba(0,0,0,0.48);
 }
 
-.c5 .thumb-container {
+.c7 .thumb-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3313,27 +3352,27 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   color: rgba(0,0,0,0.48);
 }
 
-.c5 .thumb-container svg {
+.c7 .thumb-container svg {
   display: block;
 }
 
-.c5:hover,
-.c5.active {
+.c7:hover,
+.c7.active {
   color: #2f313a;
   background-color: rgba(255,68,17,0.04);
 }
 
-.c5:hover .icon,
-.c5.active .icon {
+.c7:hover .icon,
+.c7.active .icon {
   color: #ff4411;
 }
 
-.c5.active {
+.c7.active {
   padding-left: 4px;
   border-left: 4px solid #ff4411;
 }
 
-.c7 {
+.c9 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
@@ -3344,7 +3383,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   margin-left: 56px;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3368,13 +3407,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
   }
 >
   <div
-    className="NavButtonstyled-th6kal-0 c0"
+    className="c0 c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
   >
     <span
-      className="c1"
+      className="c2"
       color="currentColor"
       size="1em"
     >
@@ -3394,17 +3433,17 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
     </span>
   </div>
   <nav
-    className="c2"
+    className="c3"
     data-testid="navbar-collapsed"
   >
     <div
-      className="NavButtonstyled-th6kal-0 c3"
+      className="c4 c5"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c1"
+        className="c2"
         color="currentColor"
         size="1em"
       >
@@ -3424,10 +3463,10 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
       </span>
     </div>
     <div
-      className="c4"
+      className="c6"
     />
     <li
-      className="c5 active"
+      className="c7 active"
       onClick={[Function]}
     >
       <div
@@ -3437,7 +3476,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -3458,7 +3497,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -3467,7 +3506,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -3477,7 +3516,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -3498,7 +3537,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -3507,7 +3546,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -3517,7 +3556,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -3538,7 +3577,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -3547,7 +3586,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
       </div>
     </li>
     <li
-      className="c5"
+      className="c7"
       onClick={[Function]}
     >
       <div
@@ -3557,7 +3596,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
           className="icon"
         >
           <span
-            className="c1"
+            className="c2"
             color="currentColor"
             size="1em"
           >
@@ -3578,7 +3617,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
         </span>
       </div>
       <div
-        className="c6"
+        className="c8"
         fontWeight="title"
         size={18}
         type="inherit"
@@ -3588,7 +3627,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
     </li>
   </nav>
   <div
-    className="c7"
+    className="c9"
     data-testid="pageWrapper-navbar"
   >
     <div
@@ -3602,7 +3641,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
       }
     >
       <div
-        className="c8"
+        className="c10"
         fontWeight="title"
         size={32}
         type="#2f313a"
@@ -3617,7 +3656,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
         }
       >
         <div
-          className="c9"
+          className="c11"
           size={18}
           type="#2f313a"
         >
@@ -3630,16 +3669,16 @@ exports[`Storyshots SideNav/SideNav Side Nav Push 1`] = `
 `;
 
 exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
-.c1 {
+.c2 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c1 .farmblocks-icon {
+.c2 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -3649,7 +3688,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   font-weight: 600;
 }
 
-.c10 {
+.c12 {
   font-family: Lato,sans-serif;
   font-size: 32px;
   -webkit-font-smoothing: antialiased;
@@ -3660,7 +3699,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   text-transform: uppercase;
 }
 
-.c11 {
+.c13 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -3669,13 +3708,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   text-align: left;
 }
 
-.c8 {
+.c10 {
   box-sizing: border-box;
   border-radius: 100%;
   object-fit: cover;
 }
 
-.c2 {
+.c3 {
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -3690,44 +3729,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.32);
   z-index: 100;
   width: 56px;
-}
-
-.c3 {
-  box-sizing: border-box;
-  color: rgba(0,0,0,0.48);
-  font-size: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  cursor: pointer;
-  border-radius: 8px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  display: none;
-}
-
-.c3:hover {
-  background-color: rgba(255,68,17,0.08);
-  color: #ff4411;
 }
 
 .c0 {
@@ -3750,10 +3751,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   width: 40px;
   cursor: pointer;
   border-radius: 8px;
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 110;
 }
 
 .c0:hover {
@@ -3761,22 +3758,10 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   color: #ff4411;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 8px;
-  cursor: pointer;
+.c4 {
+  box-sizing: border-box;
   color: rgba(0,0,0,0.48);
-}
-
-.c5 .thumb-container {
+  font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3789,31 +3774,36 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  margin-right: 8px;
-  font-size: 32px;
-  color: rgba(0,0,0,0.48);
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.c5 .thumb-container svg {
-  display: block;
-}
-
-.c5:hover,
-.c5.active {
-  color: #2f313a;
-  background-color: rgba(255,68,17,0.04);
-}
-
-.c5:hover .icon,
-.c5.active .icon {
+.c4:hover {
+  background-color: rgba(255,68,17,0.08);
   color: #ff4411;
 }
 
-.c5.active {
-  padding-left: 4px;
-  border-left: 4px solid #ff4411;
+.c5 {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  display: none;
+}
+
+.c1 {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
 }
 
 .c7 {
@@ -3828,7 +3818,6 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   list-style-type: none;
   padding: 8px;
   cursor: pointer;
-  background-color: white;
   color: rgba(0,0,0,0.48);
 }
 
@@ -3873,6 +3862,62 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
 }
 
 .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0,0,0,0.48);
+}
+
+.c9 .thumb-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  margin-right: 8px;
+  font-size: 32px;
+  color: rgba(0,0,0,0.48);
+}
+
+.c9 .thumb-container svg {
+  display: block;
+}
+
+.c9:hover,
+.c9.active {
+  color: #2f313a;
+  background-color: rgba(255,68,17,0.04);
+}
+
+.c9:hover .icon,
+.c9.active .icon {
+  color: #ff4411;
+}
+
+.c9.active {
+  padding-left: 4px;
+  border-left: 4px solid #ff4411;
+}
+
+.c11 {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   padding-top: 0;
@@ -3883,7 +3928,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   margin-left: 56px;
 }
 
-.c4 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3907,13 +3952,13 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
   }
 >
   <div
-    className="NavButtonstyled-th6kal-0 c0"
+    className="c0 c1"
     data-testid="toggle-navbar"
     onClick={[Function]}
     role="button"
   >
     <span
-      className="c1"
+      className="c2"
       color="currentColor"
       size="1em"
     >
@@ -3933,17 +3978,17 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
     </span>
   </div>
   <nav
-    className="c2"
+    className="c3"
     data-testid="navbar-collapsed"
   >
     <div
-      className="NavButtonstyled-th6kal-0 c3"
+      className="c4 c5"
       data-testid="close-navbar"
       onClick={[Function]}
       role="button"
     >
       <span
-        className="c1"
+        className="c2"
         color="currentColor"
         size="1em"
       >
@@ -3963,7 +4008,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       </span>
     </div>
     <div
-      className="c4"
+      className="c6"
     />
     <a
       aria-current={null}
@@ -3976,7 +4021,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
       >
         <div
           className="thumb-container"
@@ -3985,7 +4030,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -4006,7 +4051,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -4026,7 +4071,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
       >
         <div
           className="thumb-container"
@@ -4035,7 +4080,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -4056,7 +4101,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -4076,7 +4121,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
       >
         <div
           className="thumb-container"
@@ -4085,7 +4130,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -4106,7 +4151,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -4126,7 +4171,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       }
     >
       <li
-        className="c5"
+        className="c7"
       >
         <div
           className="thumb-container"
@@ -4135,7 +4180,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
             className="icon"
           >
             <span
-              className="c1"
+              className="c2"
               color="currentColor"
               size="1em"
             >
@@ -4156,7 +4201,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
           </span>
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -4176,14 +4221,14 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       }
     >
       <li
-        className="c7"
+        className="c9"
       >
         <div
           className="thumb-container"
         >
           <img
             alt=""
-            className="c8"
+            className="c10"
             height={36}
             size={36}
             src="https://picsum.photos/640/?image=889"
@@ -4194,7 +4239,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
           />
         </div>
         <div
-          className="c6"
+          className="c8"
           fontWeight="title"
           size={18}
           type="inherit"
@@ -4205,7 +4250,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
     </a>
   </nav>
   <div
-    className="c9"
+    className="c11"
     data-testid="pageWrapper-navbar"
   >
     <div
@@ -4219,7 +4264,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
       }
     >
       <div
-        className="c10"
+        className="c12"
         fontWeight="title"
         size={32}
         type="#2f313a"
@@ -4234,7 +4279,7 @@ exports[`Storyshots SideNav/SideNav Side Nav Push With Router 1`] = `
         }
       >
         <div
-          className="c11"
+          className="c13"
           size={18}
           type="#2f313a"
         >
