@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@4.1.7...@crave/farmblocks-filter-popover@4.2.0) (2021-04-06)
+
+
+### Features
+
+* **FilterPopover:** add onOutsideClick prop ([308d02f](https://github.com/CraveFood/farmblocks/commit/308d02f1ec3f65518be6d8afac2bccc47dd16614)), closes [#1037](https://github.com/CraveFood/farmblocks/issues/1037)
+
+
+
+
+
 ## [4.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-filter-popover@4.1.6...@crave/farmblocks-filter-popover@4.1.7) (2021-02-17)
 
 **Note:** Version bump only for package @crave/farmblocks-filter-popover
