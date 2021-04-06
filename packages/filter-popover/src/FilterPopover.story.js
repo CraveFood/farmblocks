@@ -10,6 +10,7 @@ storiesOf("Filter Popover", module)
     <FilterPopover
       triggerLabel="Filter"
       formTitle="Form Title"
+      onOutsideClick={action("onOutsideClick")}
       formContent={
         <div>
           <TextInput label="Product" />
