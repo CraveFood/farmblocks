@@ -13,6 +13,7 @@ const FilterPopover = props => {
         padding: "0px",
         ...props.tooltipProps,
       }}
+      onOutsideClick={props.onOutsideClick}
       trigger={isVisible => (
         <Button
           className="trigger"
@@ -81,6 +82,7 @@ FilterPopover.propTypes = {
   tooltipProps: PropTypes.object,
   dismissOnSave: PropTypes.bool,
   hasValue: PropTypes.bool,
+  onOutsideClick: PropTypes.func,
   className: PropTypes.string,
 };
 

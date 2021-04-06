@@ -1,7 +1,7 @@
 import React from "react";
 import {
   render,
-  fireEvent,
+  waitFor,
   waitForElementToBeRemoved,
   screen,
 } from "@testing-library/react";
@@ -85,7 +85,7 @@ describe("Filter Popover", () => {
     expect(screen.queryByText("Form content")).not.toBeInTheDocument();
 
     // Open popover
-    fireEvent.click(screen.queryByText("Trigger"));
+    userEvent.click(screen.queryByText("Trigger"));
 
     // click on Cancel button
     const cancelNode = await screen.findByText("Cancel");
@@ -114,7 +114,7 @@ describe("Filter Popover", () => {
     expect(screen.queryByText("Form content")).not.toBeInTheDocument();
 
     // Open popover
-    fireEvent.click(screen.queryByText("Trigger"));
+    userEvent.click(screen.queryByText("Trigger"));
 
     // call dismiss
     const cancelNode = await screen.findByText("Click to dismiss");
@@ -125,5 +125,35 @@ describe("Filter Popover", () => {
     );
 
     expect(screen.queryByText("Click to dismiss")).not.toBeInTheDocument();
+  });
+
+  test("should call onOutsideClick when dismissing popover through an outer click", async () => {
+    const onOutsideClick = jest.fn();
+
+    render(
+      <div>
+        <h1>Outer element</h1>
+
+        <FilterPopover
+          triggerLabel="Trigger"
+          formTitle="Form Title"
+          onOutsideClick={onOutsideClick}
+          onFormSaveClick={onFormSaveClickMock}
+          formContent={<div>Form content</div>}
+          dismissOnSave
+        />
+      </div>,
+    );
+
+    expect(screen.queryByText("Form content")).not.toBeInTheDocument();
+
+    // open popover
+    userEvent.click(screen.getByText("Trigger"));
+    await waitFor(() => screen.queryByText("Form content"));
+
+    // click outside
+    userEvent.click(screen.getByText("Outer element"));
+
+    expect(onOutsideClick).toBeCalledTimes(1);
   });
 });
