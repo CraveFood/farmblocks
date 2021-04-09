@@ -4,19 +4,6 @@ import PropTypes from "prop-types";
 const DEFAULT_TIME = 2000;
 
 class BrieflyDisplay extends React.Component {
-  static propTypes = {
-    time: PropTypes.number,
-    autoRemove: PropTypes.bool,
-    onTimeout: PropTypes.func,
-    children: PropTypes.node,
-  };
-
-  static defaultProps = {
-    time: DEFAULT_TIME,
-    autoRemove: true,
-    onTimeout: () => null,
-  };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -46,5 +33,18 @@ class BrieflyDisplay extends React.Component {
     return this.props.children;
   }
 }
+
+BrieflyDisplay.propTypes = {
+  time: PropTypes.number,
+  autoRemove: PropTypes.bool,
+  onTimeout: PropTypes.func,
+  children: PropTypes.node,
+};
+
+BrieflyDisplay.defaultProps = {
+  time: DEFAULT_TIME,
+  autoRemove: true,
+  onTimeout: () => null,
+};
 
 export default BrieflyDisplay;

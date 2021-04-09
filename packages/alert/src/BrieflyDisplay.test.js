@@ -3,12 +3,12 @@ import renderer from "react-test-renderer";
 
 import BrieflyDisplay from "./BrieflyDisplay";
 
-describe("BrieflyDisplay", function() {
+describe("BrieflyDisplay", () => {
   jest.useFakeTimers();
   afterEach(() => {
     clearTimeout.mockClear();
   });
-  test("component should remove itself after timeout", function() {
+  test("component should remove itself after timeout", () => {
     const component = renderer.create(
       <BrieflyDisplay time={10000}>
         <p>foo</p>
@@ -27,7 +27,7 @@ describe("BrieflyDisplay", function() {
     expect(finalJson).toBeNull();
   });
 
-  test("hide timer should be canceled if the component unmounts", function() {
+  test("hide timer should be canceled if the component unmounts", () => {
     const alert = renderer.create(
       <BrieflyDisplay time={3000}>
         <p>foo</p>

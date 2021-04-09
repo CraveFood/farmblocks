@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+
 import * as React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -30,11 +32,15 @@ export default (WrappedComponent) =>
       ...formInputProps,
     };
 
-    state = {
-      isEditing: false,
-      value: this.props.value,
-      editedValue: "",
-    };
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        isEditing: false,
+        value: this.props.value,
+        editedValue: "",
+      };
+    }
 
     componentDidUpdate = (prevProps) => {
       if (this.props.value !== prevProps.value) {

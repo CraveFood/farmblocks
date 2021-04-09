@@ -56,7 +56,7 @@ describe("Select input", () => {
     });
     test("should render items", () => {
       const menuWrapper = shallow(
-        renderMenu(items.map(x => <li key={x.value}>{x.label}</li>)),
+        renderMenu(items.map((x) => <li key={x.value}>{x.label}</li>)),
       );
 
       const ulWrapper = menuWrapper.find("ul");
@@ -86,7 +86,7 @@ describe("Select input", () => {
     });
 
     test("custom item render", () => {
-      const customRenderItem = item => `${item.value} - ${item.label}`;
+      const customRenderItem = (item) => `${item.value} - ${item.label}`;
 
       wrapper = mount(<Select items={items} renderItem={customRenderItem} />);
 

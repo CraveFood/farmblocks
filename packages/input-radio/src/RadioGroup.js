@@ -4,9 +4,12 @@ import PropTypes from "prop-types";
 import Group from "./styledComponents/Group";
 
 class RadioGroup extends React.Component {
-  state = {
-    value: this.props.defaultValue,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: props.defaultValue,
+    };
+  }
 
   componentDidUpdate = (prevProps) => {
     const { defaultValue } = this.props;

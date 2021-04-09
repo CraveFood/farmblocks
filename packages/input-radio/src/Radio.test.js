@@ -4,7 +4,7 @@ import { shallow, configure } from "enzyme";
 
 import Radio from ".";
 
-describe("Radio", function() {
+describe("Radio", () => {
   configure({ adapter: new Adapter() });
 
   describe("handleClick", () => {
@@ -17,7 +17,7 @@ describe("Radio", function() {
       onClickSpy.mockReset();
       onChangeSpy.mockReset();
     });
-    test("should repass event to given onClick prop", function() {
+    test("should repass event to given onClick prop", () => {
       const event = {};
       const component = shallow(<Radio onClick={onClickSpy} />);
       const { handleClick } = component.instance();
@@ -26,14 +26,14 @@ describe("Radio", function() {
       expect(onClickSpy).toHaveBeenCalledTimes(1);
       expect(onClickSpy).toHaveBeenCalledWith(event);
     });
-    test("should not call onClick if prop disabled is given", function() {
+    test("should not call onClick if prop disabled is given", () => {
       const component = shallow(<Radio onClick={onClickSpy} disabled />);
       const { handleClick } = component.instance();
       handleClick();
 
       expect(onClickSpy).not.toHaveBeenCalled();
     });
-    test("should call onChange with given value", function() {
+    test("should call onChange with given value", () => {
       const value = "a value";
       const component = shallow(<Radio onChange={onChangeSpy} value={value} />);
       const { handleClick } = component.instance();
@@ -42,7 +42,7 @@ describe("Radio", function() {
       expect(onChangeSpy).toHaveBeenCalledTimes(1);
       expect(onChangeSpy).toHaveBeenCalledWith(value);
     });
-    test("should not call onChange if already checked", function() {
+    test("should not call onChange if already checked", () => {
       const component = shallow(<Radio onChange={onChangeSpy} checked />);
       const { handleClick } = component.instance();
       handleClick();

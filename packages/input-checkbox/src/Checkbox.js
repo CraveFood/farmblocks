@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+
 import * as React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
@@ -24,9 +26,12 @@ const createCheckbox = ({ isSwitch }) =>
       onChange: () => null,
     };
 
-    state = {
-      clicked: false,
-    };
+    constructor(props) {
+      super(props);
+      this.state = {
+        clicked: false,
+      };
+    }
 
     onMouseUp = (event) => {
       if (isSwitch) {

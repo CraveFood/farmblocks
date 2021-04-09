@@ -4,10 +4,10 @@ import Adapter from "enzyme-adapter-react-16";
 
 import Stepper from "./Stepper";
 
-describe("Stepper", function() {
+describe("Stepper", () => {
   Enzyme.configure({ adapter: new Adapter() });
 
-  test("should not dispatch click on a completed step", function() {
+  test("should not dispatch click on a completed step", () => {
     const steps = ["Completed step"];
     const completedSteps = 1;
 
@@ -26,7 +26,7 @@ describe("Stepper", function() {
     expect(onClickMock).not.toBeCalled();
   });
 
-  test("should not dispatch click on a pending step", function() {
+  test("should not dispatch click on a pending step", () => {
     const steps = ["Current step", "Pending step"];
     const completedSteps = 0;
 
@@ -46,7 +46,7 @@ describe("Stepper", function() {
     expect(onClickMock).not.toBeCalled();
   });
 
-  test("should dispatch click on a current step", function() {
+  test("should dispatch click on a current step", () => {
     const index = 0;
     const steps = ["Current step"];
     const completedSteps = 0;

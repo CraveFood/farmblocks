@@ -28,7 +28,7 @@ describe("Popover", () => {
     const wrapper = shallow(
       <Popover
         trigger={<span>trigger</span>}
-        content={dismiss => (
+        content={(dismiss) => (
           <button id="dismiss" onClick={dismiss}>
             content
           </button>
@@ -57,11 +57,11 @@ describe("Popover", () => {
       render() {
         return (
           <div>
-            <span ref={node => (this.outer = node)} />
+            <span ref={(node) => (this.outer = node)} />
             <Popover
               trigger={<span>trigger</span>}
               content={() => (
-                <span ref={node => (this.inner = node)}>content</span>
+                <span ref={(node) => (this.inner = node)}>content</span>
               )}
               {...this.props}
             />
@@ -411,7 +411,7 @@ describe("Popover", () => {
           content={() => <span>content</span>}
           onOpen={onOpenSpy}
           onBeforeOpen={() =>
-            new Promise(resolve => (resolvePromise = resolve))
+            new Promise((resolve) => (resolvePromise = resolve))
           }
         />,
       );

@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+
 import React from "react";
 import PropTypes from "prop-types";
 import Image, { badgeSizes } from "@crave/farmblocks-image";

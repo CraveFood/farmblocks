@@ -1,4 +1,4 @@
-/* eslint-disable react/no-multi-comp */
+/* eslint-disable react/no-multi-comp, max-classes-per-file,react/state-in-constructor */
 
 import React from "react";
 import { storiesOf } from "@storybook/react";

@@ -10,30 +10,12 @@ import BrieflyDisplay from "./BrieflyDisplay";
 const DEFAULT_Z_INDEX = 2500;
 
 class Alert extends React.Component {
-  static propTypes = {
-    text: PropTypes.string.isRequired,
-    type: PropTypes.oneOf(Object.keys(AlertTypes)),
-    dismissable: PropTypes.bool,
-    autoRemove: PropTypes.bool,
-    onDismiss: PropTypes.func,
-    visibleTime: PropTypes.number,
-    zIndex: PropTypes.number,
-    bottomAligned: PropTypes.bool,
-    className: PropTypes.string,
-  };
-
-  static defaultProps = {
-    type: AlertTypes.NEWS,
-    dismissable: true,
-    autoRemove: true,
-    zIndex: DEFAULT_Z_INDEX,
-    onDismiss: () => null,
-    bottomAligned: false,
-  };
-
-  state = {
-    isVisible: true,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isVisible: true,
+    };
+  }
 
   dismissHandler = () => {
     this.setState({ isVisible: false });
@@ -87,5 +69,26 @@ class Alert extends React.Component {
     );
   }
 }
+
+Alert.propTypes = {
+  text: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(Object.keys(AlertTypes)),
+  dismissable: PropTypes.bool,
+  autoRemove: PropTypes.bool,
+  onDismiss: PropTypes.func,
+  visibleTime: PropTypes.number,
+  zIndex: PropTypes.number,
+  bottomAligned: PropTypes.bool,
+  className: PropTypes.string,
+};
+
+Alert.defaultProps = {
+  type: AlertTypes.NEWS,
+  dismissable: true,
+  autoRemove: true,
+  zIndex: DEFAULT_Z_INDEX,
+  onDismiss: () => null,
+  bottomAligned: false,
+};
 
 export default Alert;

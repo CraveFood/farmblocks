@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+
 import * as React from "react";
 import PropTypes from "prop-types";
 import wrapDisplayName from "recompose/wrapDisplayName";
@@ -60,10 +62,13 @@ const formInput = (WrappedComponent) =>
       mb: "24px",
     };
 
-    state = {
-      value: getValueFromProps(this.props),
-      focused: this.props.focused,
-    };
+    constructor(props) {
+      super(props);
+      this.state = {
+        value: getValueFromProps(props),
+        focused: props.focused,
+      };
+    }
 
     componentDidMount() {
       if (this.props.focused) {

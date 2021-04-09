@@ -28,9 +28,12 @@ const Container = styled.div`
 `;
 
 class Popover extends React.Component {
-  state = {
-    isVisible: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isVisible: false,
+    };
+  }
 
   componentDidMount() {
     document.addEventListener("click", this.handleOuterClick, {

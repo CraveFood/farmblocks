@@ -6,9 +6,12 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 import Label from "./styledComponents/Label";
 
 class Radio extends React.Component {
-  state = {
-    checked: this.props.checked,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      checked: props.checked,
+    };
+  }
 
   componentDidUpdate(prevProps) {
     const { checked } = this.props;

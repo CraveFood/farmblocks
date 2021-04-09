@@ -104,7 +104,7 @@ describe("Filter Popover", () => {
         formTitle="Form Title"
         onFormSaveClick={onFormSaveClickMock}
         onFormCancelClick={onFormCancelClickMock}
-        formContent={dismiss => (
+        formContent={(dismiss) => (
           <button onClick={() => dismiss()}>Click to dismiss</button>
         )}
         dismissOnSave

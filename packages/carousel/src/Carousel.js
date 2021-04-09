@@ -17,9 +17,12 @@ const defaultConfig = {
 };
 
 class Carousel extends React.Component {
-  state = {
-    activeItem: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: 0,
+    };
+  }
 
   componentDidMount = () => {
     this.setInterval();

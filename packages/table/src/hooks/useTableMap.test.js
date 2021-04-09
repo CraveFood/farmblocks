@@ -80,7 +80,7 @@ describe("Table Hooks / useTableMap", () => {
     });
 
     it("should use the given rowComponent", () => {
-      const Row = props => <TR data-testid="customRow" {...props} />;
+      const Row = (props) => <TR data-testid="customRow" {...props} />;
 
       renderTable({
         options: {
@@ -95,8 +95,8 @@ describe("Table Hooks / useTableMap", () => {
 
     it("should use the given cellComponents", () => {
       const cellComponents = {
-        column1: props => <TD data-testid="customCell" {...props} />,
-        $default: props => <TD data-testid="defaultCell" {...props} />,
+        column1: (props) => <TD data-testid="customCell" {...props} />,
+        $default: (props) => <TD data-testid="defaultCell" {...props} />,
       };
 
       renderTable({

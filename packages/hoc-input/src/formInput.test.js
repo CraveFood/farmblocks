@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 
 import formInput from ".";
 
-describe("formInput", function() {
+describe("formInput", () => {
   const EnhancedInput = formInput("input");
 
   describe("onChange and value", () => {
