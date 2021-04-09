@@ -16,7 +16,7 @@ const checkboxStories = (moduleTitle, Checkbox) =>
         return (
           <Checkbox
             checked={checked}
-            onChange={e => {
+            onChange={(e) => {
               setChecked(e.target.checked);
               action("onChange")(e);
             }}
@@ -77,7 +77,7 @@ const checkboxStories = (moduleTitle, Checkbox) =>
           <Checkbox
             checked={checked}
             loading={loading}
-            onChange={e => {
+            onChange={(e) => {
               setLoading(true);
               setChecked(e.target.checked);
               setTimeout(() => {

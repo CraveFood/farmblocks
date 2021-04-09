@@ -13,7 +13,7 @@ export default class Step extends React.Component {
     className: PropTypes.string,
   };
 
-  renderIcon = IconName => <IconName size={20} className="icon" />;
+  renderIcon = (IconName) => <IconName size={20} className="icon" />;
 
   render() {
     const { status } = this.props;

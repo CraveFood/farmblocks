@@ -43,7 +43,7 @@ const StepContainer = styled.div`
     line-height: 1.33;
   }
 
-  cursor: ${props => props.status === statusTypes.CURRENT && "pointer"};
+  cursor: ${(props) => props.status === statusTypes.CURRENT && "pointer"};
 
   color: ${colorConstants.CARBON};
 

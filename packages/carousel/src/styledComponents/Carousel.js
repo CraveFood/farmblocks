@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const scale = props => (props.shouldScale ? 1.219 : 1);
-const activeItemWidth = props => props.itemConfig.width * scale(props);
-const activeItemHeight = props => props.itemConfig.height * scale(props);
-const spaceBetweenItems = props => props.itemConfig.margin * 2;
-const stepDistance = props => props.itemConfig.width + spaceBetweenItems(props);
-const activeItemMargin = props => {
+const scale = (props) => (props.shouldScale ? 1.219 : 1);
+const activeItemWidth = (props) => props.itemConfig.width * scale(props);
+const activeItemHeight = (props) => props.itemConfig.height * scale(props);
+const spaceBetweenItems = (props) => props.itemConfig.margin * 2;
+const stepDistance = (props) =>
+  props.itemConfig.width + spaceBetweenItems(props);
+const activeItemMargin = (props) => {
   const { itemConfig } = props;
   const scaledWidth = itemConfig.width * scale(props);
 
@@ -24,26 +25,26 @@ const Container = styled.div`
   ul {
     position: relative;
     left: 50%;
-    margin-left: ${props => -(activeItemWidth(props) / 2)}px;
-    height: ${props => activeItemHeight(props) + spaceBetweenItems(props)}px;
+    margin-left: ${(props) => -(activeItemWidth(props) / 2)}px;
+    height: ${(props) => activeItemHeight(props) + spaceBetweenItems(props)}px;
     list-style: none;
     padding: 0;
     display: inline-flex;
     align-items: center;
 
     transform: translateX(
-      ${props => -(props.activeItem * stepDistance(props))}px
+      ${(props) => -(props.activeItem * stepDistance(props))}px
     );
-    transition: transform ${props => props.itemConfig.transitionTime}s;
+    transition: transform ${(props) => props.itemConfig.transitionTime}s;
     will-change: transform;
 
     li {
-      margin: ${props => props.itemConfig.margin}px;
-      min-width: ${props => props.itemConfig.width}px;
-      width: ${props => props.itemConfig.width}px;
-      height: ${props => props.itemConfig.height}px;
+      margin: ${(props) => props.itemConfig.margin}px;
+      min-width: ${(props) => props.itemConfig.width}px;
+      width: ${(props) => props.itemConfig.width}px;
+      height: ${(props) => props.itemConfig.height}px;
 
-      transition: all ${props => props.itemConfig.transitionTime}s;
+      transition: all ${(props) => props.itemConfig.transitionTime}s;
       will-change: transform;
 
       .image {

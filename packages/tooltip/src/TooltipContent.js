@@ -36,7 +36,7 @@ const Tooltip = ({
 
   const overlayRef = useRef(null);
 
-  const handleClose = e => {
+  const handleClose = (e) => {
     if (e.target === overlayRef.current) {
       onHideButtonClick();
     }

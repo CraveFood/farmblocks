@@ -42,8 +42,8 @@ export const formInputProps = {
 
 const getValueFromProps = ({ input, value }) => (input ? input.value : value);
 
-const formInput = WrappedComponent => {
-  return class Input extends React.Component {
+const formInput = (WrappedComponent) =>
+  class Input extends React.Component {
     static displayName = wrapDisplayName(WrappedComponent, "formInput");
 
     static propTypes = {
@@ -71,7 +71,7 @@ const formInput = WrappedComponent => {
       }
     }
 
-    componentDidUpdate = prevProps => {
+    componentDidUpdate = (prevProps) => {
       if (this.props.focused && !prevProps.focused) {
         this.setInputFocus();
       }
@@ -109,7 +109,7 @@ const formInput = WrappedComponent => {
       this.inputRef?.focus();
     };
 
-    onChange = event => {
+    onChange = (event) => {
       this.setState({
         value: event.value || event.target.value,
       });
@@ -118,7 +118,7 @@ const formInput = WrappedComponent => {
       this.props.onChange?.(event);
     };
 
-    onFocus = event => {
+    onFocus = (event) => {
       this.props.onFocus?.(event);
 
       if (!this.props.autoControlFocusedStyle) {
@@ -127,7 +127,7 @@ const formInput = WrappedComponent => {
       this.setState({ focused: true });
     };
 
-    onBlur = event => {
+    onBlur = (event) => {
       this.props.onBlur?.(event);
 
       if (!this.props.autoControlFocusedStyle) {
@@ -174,7 +174,7 @@ const formInput = WrappedComponent => {
         // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <div
           className={`input ${isDropdown ? "dropdown" : ""}`}
-          ref={element => {
+          ref={(element) => {
             this.inputRef = element && element.querySelector("input, textarea");
           }}
         >
@@ -257,7 +257,7 @@ const formInput = WrappedComponent => {
             </Label>
           )}
 
-          {validationMessages?.map(text => (
+          {validationMessages?.map((text) => (
             <Text
               className="error-message-text"
               size={fontSizes.SMALL}
@@ -272,6 +272,5 @@ const formInput = WrappedComponent => {
       );
     }
   };
-};
 
 export default formInput;

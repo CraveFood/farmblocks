@@ -98,21 +98,21 @@ Button.defaultProps = {
 
 export default Button;
 
-export const PrimaryButton = props => (
+export const PrimaryButton = (props) => (
   <Button {...props} variant={buttonVariants.PRIMARY} />
 );
-export const NeutralButton = props => (
+export const NeutralButton = (props) => (
   <Button {...props} variant={buttonVariants.NEUTRAL} />
 );
-export const SecondaryButton = props => (
+export const SecondaryButton = (props) => (
   <Button {...props} variant={buttonVariants.SECONDARY} />
 );
-export const PositiveButton = props => (
+export const PositiveButton = (props) => (
   <Button {...props} variant={buttonVariants.POSITIVE} />
 );
-export const NegativeButton = props => (
+export const NegativeButton = (props) => (
   <Button {...props} variant={buttonVariants.NEGATIVE} />
 );
-export const GhostButton = props => (
+export const GhostButton = (props) => (
   <Button {...props} variant={buttonVariants.GHOST} />
 );

@@ -2,15 +2,15 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const pinSize = props => props.pinSize;
-const offset = props => pinSize(props) / 2;
+const pinSize = (props) => props.pinSize;
+const offset = (props) => pinSize(props) / 2;
 
 const interactiveStyle = css`
-  ${props =>
+  ${(props) =>
     props.animated
       ? "transition: transform 0.3s, color 0.3s, background-color 0.3s"
       : ""};
-  font-size: ${props => props.pinSize - 10}px;
+  font-size: ${(props) => props.pinSize - 10}px;
   height: ${pinSize}px;
   box-sizing: border-box;
   cursor: pointer;
@@ -18,7 +18,7 @@ const interactiveStyle = css`
   bottom: -${offset}px;
   text-shadow: none;
 
-  color: ${props => props.pinColor};
+  color: ${(props) => props.pinColor};
   background-color: white;
 
   border-radius: 50%;
@@ -32,7 +32,7 @@ const interactiveStyle = css`
 
   &.open {
     color: white;
-    background-color: ${props => props.pinHighlightColor || props.pinColor};
+    background-color: ${(props) => props.pinHighlightColor || props.pinColor};
   }
 `;
 
@@ -48,11 +48,11 @@ const Pin = styled.div`
   bottom: 0;
   left: -${offset}px;
 
-  color: ${props => props.pinColor};
+  color: ${(props) => props.pinColor};
 
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.24));
 
-  ${props => (props.interactive ? interactiveStyle : "")};
+  ${(props) => (props.interactive ? interactiveStyle : "")};
 `;
 
 Pin.propTypes = {

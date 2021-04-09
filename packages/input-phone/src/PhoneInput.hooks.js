@@ -13,7 +13,7 @@ export const useCountrySearch = (data, query, priority) => {
     try {
       const codes = priority?.split(",");
 
-      const topCountries = data?.filter(country =>
+      const topCountries = data?.filter((country) =>
         codes?.includes(country.code),
       );
 
@@ -23,7 +23,7 @@ export const useCountrySearch = (data, query, priority) => {
       );
 
       const orderedTopCountries =
-        codes?.map(code => indexedTopCountries[code]) || [];
+        codes?.map((code) => indexedTopCountries[code]) || [];
 
       return [...orderedTopCountries, ...data];
     } catch (_error) {
@@ -43,15 +43,15 @@ export const useCountrySearch = (data, query, priority) => {
     return allCountries;
   }
 
-  return fuse.current.search(query).map(result => result.item);
+  return fuse.current.search(query).map((result) => result.item);
 };
 
 export const useHighlight = ({ items, listRef, selectFn, cancelFnRef }) => {
   const [highlightIndex, setHighlightIndex] = useState(-1);
 
   const changeHighlight = useCallback(
-    modifier => {
-      setHighlightIndex(index => {
+    (modifier) => {
+      setHighlightIndex((index) => {
         if (!items.length) {
           return -1;
         }
@@ -75,7 +75,7 @@ export const useHighlight = ({ items, listRef, selectFn, cancelFnRef }) => {
   }, [highlightIndex, listRef]);
 
   const handleKeyDown = useCallback(
-    event => {
+    (event) => {
       const { key } = event;
       if (key === "Enter") {
         if (highlightIndex === -1) {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const ChevronDown = props => (
+const ChevronDown = (props) => (
   <svg
     height="24"
     viewBox="0 0 24 24"

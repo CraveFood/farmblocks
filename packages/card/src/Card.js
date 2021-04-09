@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import StyledCard from "./styledComponents/Card";
 import { cardTypes } from "./constants/cardTypes";
 
-const Card = props => <StyledCard {...props} />;
+const Card = (props) => <StyledCard {...props} />;
 
 Card.defaultProps = {
   width: "100%",

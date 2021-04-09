@@ -19,7 +19,7 @@ const RenderImage = ({
   ...props
 }) => <Image src={src} size={size} {...props} />;
 
-const Group = props => (
+const Group = (props) => (
   <div
     style={{
       display: "flex",
@@ -39,7 +39,7 @@ storiesOf("Image", module)
       <div style={{ display: "flex" }}>
         {Object.keys(badgeSizes)
           .reverse()
-          .map(size => (
+          .map((size) => (
             <div style={{ marginRight: "36px" }}>
               <div>{`${size} - ${badgeSizes[size]}px`}</div>
               <RenderImage size={badgeSizes[size]} badge />
@@ -52,7 +52,7 @@ storiesOf("Image", module)
       <div style={{ display: "flex" }}>
         {Object.keys(thumbnailSizes)
           .reverse()
-          .map(size => (
+          .map((size) => (
             <div style={{ marginRight: "36px" }}>
               <div>{`${size} - ${thumbnailSizes[size]}px`}</div>
               <RenderImage size={thumbnailSizes[size]} />
@@ -69,7 +69,7 @@ storiesOf("Image", module)
       <div style={{ display: "flex" }}>
         {Object.keys(badgeSizes)
           .reverse()
-          .map(size => (
+          .map((size) => (
             <div style={{ marginRight: "36px" }}>
               <div>{`${size} - ${badgeSizes[size]}px`}</div>
               <RenderImage size={badgeSizes[size]} badge withBoxShadow />
@@ -82,7 +82,7 @@ storiesOf("Image", module)
       <div style={{ display: "flex" }}>
         {Object.keys(thumbnailSizes)
           .reverse()
-          .map(size => (
+          .map((size) => (
             <div style={{ marginRight: "36px" }}>
               <div>{`${size} - ${thumbnailSizes[size]}px`}</div>
               <RenderImage size={thumbnailSizes[size]} withBoxShadow />
@@ -93,13 +93,13 @@ storiesOf("Image", module)
   ))
   .add("image fit values", () => (
     <Group>
-      {Object.keys(imgSrcs).map(src => (
+      {Object.keys(imgSrcs).map((src) => (
         <>
           <div style={{ padding: "16px 0 16px 0", fontWeight: "bold" }}>
             {src} image
           </div>
           <div style={{ display: "flex" }}>
-            {Object.keys(fitModes).map(mode => (
+            {Object.keys(fitModes).map((mode) => (
               <div style={{ paddingRight: "28px" }}>
                 <div>{`${fitModes[mode]}`}</div>
                 <RenderImage fit={fitModes[mode]} src={imgSrcs[src]} />

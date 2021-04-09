@@ -6,7 +6,7 @@ import PhoneInput from ".";
 export default {
   title: "Form|Phone Input",
   component: PhoneInput,
-  decorators: [story => <div style={{ height: 400 }}>{story()}</div>],
+  decorators: [(story) => <div style={{ height: 400 }}>{story()}</div>],
   parameters: {
     componentSubtitle: "An Input component for international phone numbers",
   },
@@ -23,7 +23,7 @@ export const withState = () => {
     const [value, setValue] = useState("");
     return (
       <PhoneInput
-        onChange={newValue => {
+        onChange={(newValue) => {
           action("onChange")(newValue);
           setValue(newValue);
         }}
@@ -47,7 +47,7 @@ export const changingDefaultCountry = () => {
     return (
       <>
         <PhoneInput
-          onChange={newValue => {
+          onChange={(newValue) => {
             action("onChange")(newValue);
             setValue(newValue);
           }}

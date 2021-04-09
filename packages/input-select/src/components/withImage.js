@@ -12,7 +12,7 @@ const ItemImage = styled(Image)`
 
 export const refName = "inputRef";
 
-export default Input =>
+export default (Input) =>
   class InputWithImage extends React.Component {
     static propTypes = {
       image: PropTypes.string,

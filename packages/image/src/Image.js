@@ -5,9 +5,7 @@ import StyledImage from "./styledComponents/Image";
 import { MEDIUM } from "./constants/thumbnailSizes";
 import { COVER } from "./constants/fitModes";
 
-const Image = props => {
-  return <StyledImage {...props} />;
-};
+const Image = (props) => <StyledImage {...props} />;
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,

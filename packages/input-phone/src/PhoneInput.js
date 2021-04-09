@@ -90,7 +90,7 @@ const PhoneInput = ({
     [country],
   );
 
-  const handleCountrySelection = useCallback(code => {
+  const handleCountrySelection = useCallback((code) => {
     setSelectedCountry(code);
     setCountryQuery("");
     triggerChange("", code);
@@ -104,7 +104,7 @@ const PhoneInput = ({
     cancelFnRef: dismissRef,
   });
 
-  const handleSearchChange = useCallback(event => {
+  const handleSearchChange = useCallback((event) => {
     setCountryQuery(event.target.value);
     resetIndex();
     listRef.current?.scrollTo(0);
@@ -154,11 +154,11 @@ const PhoneInput = ({
               code={country}
             />
           }
-          content={dismiss => {
+          content={(dismiss) => {
             dismissRef.current = dismiss;
             return (
               <PopoverWrapper
-                onClick={event => {
+                onClick={(event) => {
                   // We stop propagation to avoid giving focus to the main input
                   // This happens because the popover is inside the input wrapper
                   event.stopPropagation();

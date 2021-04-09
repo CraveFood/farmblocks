@@ -4,9 +4,9 @@ import { TOP, CENTER } from "./constants/positions";
 
 const Container = styled.div`
   position: relative;
-  z-index: ${props => props.zIndex};
+  z-index: ${(props) => props.zIndex};
 
-  @media only screen and (max-width: ${props => props.fullScreenBreakpoint}) {
+  @media only screen and (max-width: ${(props) => props.fullScreenBreakpoint}) {
     top: 0;
     right: 0;
     bottom: 0;
@@ -21,7 +21,7 @@ const centerAlignment = css`
   transform: translateX(-50%);
 `;
 
-const positionXStyle = coordinate => ({ positionX }) => {
+const positionXStyle = (coordinate) => ({ positionX }) => {
   if (positionX === CENTER) {
     return centerAlignment;
   }
@@ -86,7 +86,7 @@ const StyledTooltip = styled.div`
   visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
 
   position: absolute;
-  padding: ${props => props.padding || "8px"};
+  padding: ${(props) => props.padding || "8px"};
   background-color: #ffffff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   border: solid 1px rgba(0, 0, 0, 0.16);
@@ -106,9 +106,9 @@ const StyledTooltip = styled.div`
   ${arrow};
   ${positionYStyle};
 
-  overflow: ${props => props.overflow};
+  overflow: ${(props) => props.overflow};
 
-  @media only screen and (max-width: ${props => props.fullScreenBreakpoint}) {
+  @media only screen and (max-width: ${(props) => props.fullScreenBreakpoint}) {
     right: 16px;
     left: 16px;
     white-space: pre-wrap;

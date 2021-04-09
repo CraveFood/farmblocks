@@ -7,7 +7,7 @@ import buttonVariants from "../constants/buttonVariants";
 
 const buttonHeight = ({ small }) => (small ? 32 : 40);
 
-const calcPadding = borderWidth => ({ paddingX, paddingY }) =>
+const calcPadding = (borderWidth) => ({ paddingX, paddingY }) =>
   `${paddingY - borderWidth + 1}px ${paddingX - borderWidth + 1}px`;
 
 function themeStyle(props) {
@@ -90,7 +90,7 @@ const Button = styled.button`
   line-height: 1.5;
   height: ${buttonHeight}px;
   min-width: ${buttonHeight}px;
-  width: ${props => {
+  width: ${(props) => {
     if (props.fluid) return "100%";
     if (props.iconOnly) return `${buttonHeight(props)}px`;
     return null;

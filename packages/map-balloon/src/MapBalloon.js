@@ -60,7 +60,7 @@ const MapBalloon = ({
             pinSize={pinSize}
             interactive={interactivePin}
             animated={animated}
-            onClick={onPinClick && (event => onPinClick(value, event))}
+            onClick={onPinClick && ((event) => onPinClick(value, event))}
           >
             {pinIcon}
           </Pin>
@@ -79,7 +79,7 @@ const MapBalloon = ({
               pinSize={pinSize}
               interactive={interactiveBalloon}
               onClick={
-                onBalloonClick && (event => onBalloonClick(value, event))
+                onBalloonClick && ((event) => onBalloonClick(value, event))
               }
               balloonSize={balloonSize}
             >
@@ -115,7 +115,7 @@ const MapBalloon = ({
   );
 };
 
-export const requiredIfNoSingleImage = propType => (...args) => {
+export const requiredIfNoSingleImage = (propType) => (...args) => {
   const [props] = args;
   return props.singleImage ? propType(...args) : propType.isRequired(...args);
 };

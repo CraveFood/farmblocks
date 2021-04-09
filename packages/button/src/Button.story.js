@@ -78,7 +78,7 @@ const getStories = ({ title, ...props }) => (
   </GridContainer>
 );
 
-const CommonStory = props => (
+const CommonStory = (props) => (
   <FlexContainer>
     <RowTitles />
     {getStories({ ...props, title: "Default" })}

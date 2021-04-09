@@ -166,6 +166,6 @@ Modal.propTypes = {
   zIndex: PropTypes.number,
 };
 
-export const ModalTitle = props => <Text fontWeight="title" {...props} />;
+export const ModalTitle = (props) => <Text fontWeight="title" {...props} />;
 
 export default Modal;

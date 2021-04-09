@@ -84,43 +84,35 @@ storiesOf("Modal", module)
       <PreLine>{lipsum}</PreLine>
     </Modal>
   ))
-  .add("With cardProps and custom header", () => {
-    return (
-      <Modal
-        isOpen
-        header={<Header>HEADER</Header>}
-        cardProps={{ width: "400px", floating: false }}
-      >
-        <PreLine>{lipsum}</PreLine>
-      </Modal>
-    );
-  })
-  .add("With cardProps, header and footer", () => {
-    return (
-      <Modal
-        isOpen
-        header={<ModalTitle>HEADER</ModalTitle>}
-        footer={
-          <div
-            style={{
-              width: "100%",
-              justifyContent: "flex-end",
-              display: "flex",
-            }}
-          >
-            <Button
-              text="Action Button"
-              variant={buttonVariants.PRIMARY}
-              small
-            />
-          </div>
-        }
-        cardProps={{ width: "400px", floating: false }}
-      >
-        <PreLine>{lipsum}</PreLine>
-      </Modal>
-    );
-  })
+  .add("With cardProps and custom header", () => (
+    <Modal
+      isOpen
+      header={<Header>HEADER</Header>}
+      cardProps={{ width: "400px", floating: false }}
+    >
+      <PreLine>{lipsum}</PreLine>
+    </Modal>
+  ))
+  .add("With cardProps, header and footer", () => (
+    <Modal
+      isOpen
+      header={<ModalTitle>HEADER</ModalTitle>}
+      footer={
+        <div
+          style={{
+            width: "100%",
+            justifyContent: "flex-end",
+            display: "flex",
+          }}
+        >
+          <Button text="Action Button" variant={buttonVariants.PRIMARY} small />
+        </div>
+      }
+      cardProps={{ width: "400px", floating: false }}
+    >
+      <PreLine>{lipsum}</PreLine>
+    </Modal>
+  ))
   .add("With custom close button props", () => (
     <Modal
       isOpen

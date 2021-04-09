@@ -5,9 +5,9 @@ import { colors as colorConstants } from "@crave/farmblocks-theme";
 const DropdownMenuWrapper = styled.div`
   margin-top: 16px;
   min-width: 100%;
-  width: ${props => props.width};
+  width: ${(props) => props.width};
   whitespace: no-wrap;
-  max-height: ${props => props.maxHeight};
+  max-height: ${(props) => props.maxHeight};
   overflow-y: auto;
   scroll-behavior: smooth;
 
@@ -18,9 +18,9 @@ const DropdownMenuWrapper = styled.div`
   background: white;
 
   position: absolute;
-  right: ${props => props.align === "right" && 0};
+  right: ${(props) => props.align === "right" && 0};
 
-  z-index: ${props => props.zIndex};
+  z-index: ${(props) => props.zIndex};
 
   > ul {
     list-style: none;

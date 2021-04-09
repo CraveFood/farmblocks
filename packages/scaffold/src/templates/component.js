@@ -1,6 +1,6 @@
 const { format } = require("prettier");
 
-const componentTemplate = componentName =>
+const componentTemplate = (componentName) =>
   format(
     `
 import * as React from "react"; 

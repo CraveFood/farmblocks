@@ -7,7 +7,7 @@ import Modal from "./Modal";
 
 const modalPropKeys = [...Object.keys(Modal.propTypes), "className"];
 
-const DialogModal = props => (
+const DialogModal = (props) => (
   <Modal
     showCloseButton={false}
     {...pick(props, modalPropKeys)}

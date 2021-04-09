@@ -37,7 +37,7 @@ class AmountSelectors extends React.Component {
     const validValue = parseFloat(value);
 
     this.setState(
-      state => ({
+      (state) => ({
         value: validValue,
         displayValue: validValue || state.displayValue,
       }),
@@ -64,7 +64,7 @@ class AmountSelectors extends React.Component {
     return this.props.onChange(validValue);
   };
 
-  getValidValue = value => {
+  getValidValue = (value) => {
     const parsedValue = parseFloat(value) || 0;
     const validValue = Math.min(
       this.props.max,
@@ -74,7 +74,7 @@ class AmountSelectors extends React.Component {
     return Number(validValue.toFixed(2));
   };
 
-  updateStateWithNewValue = value => {
+  updateStateWithNewValue = (value) => {
     const validValue = this.getValidValue(value);
     this.setState({
       value: validValue,

@@ -14,29 +14,27 @@ const Tag = ({
   disabled,
   children,
   ...wrapperProps
-}) => {
-  return (
-    <StyledTag disabled={disabled} removable={!!onRemove} {...wrapperProps}>
-      {icon && <div className="icon">{icon}</div>}
-      {text || children}
-      {onRemove && !disabled && (
-        <div
-          role="button"
-          tabIndex="0"
-          className="close-icon"
-          onClick={() => onRemove(value)}
-          onKeyDown={event => {
-            if (event.key === "Enter" || event.key === " ") {
-              onRemove(value);
-            }
-          }}
-        >
-          <MdRemove />
-        </div>
-      )}
-    </StyledTag>
-  );
-};
+}) => (
+  <StyledTag disabled={disabled} removable={!!onRemove} {...wrapperProps}>
+    {icon && <div className="icon">{icon}</div>}
+    {text || children}
+    {onRemove && !disabled && (
+      <div
+        role="button"
+        tabIndex="0"
+        className="close-icon"
+        onClick={() => onRemove(value)}
+        onKeyDown={(event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            onRemove(value);
+          }
+        }}
+      >
+        <MdRemove />
+      </div>
+    )}
+  </StyledTag>
+);
 
 Tag.defaultProps = {
   type: tagTypes.SECONDARY,

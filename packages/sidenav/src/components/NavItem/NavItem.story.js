@@ -8,7 +8,7 @@ import NavItem from "./NavItem";
 export default { title: "SideNav/NavItem", component: NavItem };
 
 export const NavItems = () => {
-  const NavItemWithToggle = props => {
+  const NavItemWithToggle = (props) => {
     const [active, { toggle }] = useToggle(false);
     return <NavItem active={active} onClick={toggle} {...props} />;
   };

@@ -23,8 +23,8 @@ export const protectedValueProps = {
 
 // HOC that covers a component with a dummy text field
 // until the edit button is clicked
-export default WrappedComponent => {
-  return class ProtectedInput extends React.Component {
+export default (WrappedComponent) =>
+  class ProtectedInput extends React.Component {
     static propTypes = {
       ...protectedValueProps,
       ...formInputProps,
@@ -36,7 +36,7 @@ export default WrappedComponent => {
       editedValue: "",
     };
 
-    componentDidUpdate = prevProps => {
+    componentDidUpdate = (prevProps) => {
       if (this.props.value !== prevProps.value) {
         this.setState({
           value: this.props.value,
@@ -53,12 +53,12 @@ export default WrappedComponent => {
       this.setState({ isEditing: false, editedValue: "" });
     };
 
-    onReplace = value => {
+    onReplace = (value) => {
       this.setState({ value, isEditing: false, editedValue: "" });
     };
 
     // protected fields will listen to Enter key as an OK and Esc key as Cancel
-    onKeyDown = evt => {
+    onKeyDown = (evt) => {
       if (evt.key === "Enter") {
         const { value } = evt.target;
         this.onReplace(value);
@@ -90,11 +90,11 @@ export default WrappedComponent => {
             focused={covered ? this.state.isEditing : focused}
             value={isEditing ? this.state.editedValue : this.state.value}
             onKeyDown={this.onKeyDown}
-            onChange={event => {
+            onChange={(event) => {
               this.setState({ editedValue: event.target.value });
               this.props.onChange?.(event);
             }}
-            onBlur={event => {
+            onBlur={(event) => {
               if (covered && isEditing) {
                 this.onCancel();
               }
@@ -118,4 +118,3 @@ export default WrappedComponent => {
       );
     }
   };
-};

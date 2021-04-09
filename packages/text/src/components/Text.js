@@ -6,24 +6,21 @@ import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
 import paragraphLineHeights from "../constants/paragraphLineHeights";
 
-const paragraphStyle = props => {
-  return (
-    props.paragraph &&
-    css`
-      line-height: ${paragraphLineHeights[props.size]};
-    `
-  );
-};
+const paragraphStyle = (props) =>
+  props.paragraph &&
+  css`
+    line-height: ${paragraphLineHeights[props.size]};
+  `;
 
 const Text = styled.div`
   font-family: Lato, sans-serif;
-  font-size: ${props => `${props.size}px`};
+  font-size: ${(props) => `${props.size}px`};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: ${props => props.type};
+  color: ${(props) => props.type};
 
-  text-align: ${props => props.align};
+  text-align: ${(props) => props.align};
 
   ${paragraphStyle};
   ${typography};

@@ -5,16 +5,16 @@ const { getCountryCallingCode } = require("libphonenumber-js");
 
 const getNativeNames = (names, englishName) => {
   const nativeNames = Array.from(
-    new Set(Object.keys(names).map(lang => names[lang].common)),
+    new Set(Object.keys(names).map((lang) => names[lang].common)),
   )
-    .filter(nativeName => nativeName !== englishName)
+    .filter((nativeName) => nativeName !== englishName)
     .join("; ");
 
   return nativeNames;
 };
 
 const trimmedList = countries
-  .map(country => {
+  .map((country) => {
     let callingCode;
     try {
       callingCode = getCountryCallingCode(country.cca2);
@@ -32,7 +32,7 @@ const trimmedList = countries
       altSpellings: country.altSpellings,
     };
   })
-  .filter(country => country !== null)
+  .filter((country) => country !== null)
   .sort((a, b) => a.name.localeCompare(b.name, "en"));
 
 const flags = trimmedList.reduce((acc, country) => {

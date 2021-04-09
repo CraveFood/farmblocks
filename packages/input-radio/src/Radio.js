@@ -17,7 +17,7 @@ class Radio extends React.Component {
     }
   }
 
-  handleClick = event => {
+  handleClick = (event) => {
     const { disabled, value } = this.props;
     const { checked } = this.state;
     if (!disabled) {

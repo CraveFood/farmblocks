@@ -14,7 +14,7 @@ const Container = styled.div`
   align-items: center;
 
   .text {
-    margin-bottom: ${props => props.size === fontSizes.MEDIUM && "8px"};
+    margin-bottom: ${(props) => props.size === fontSizes.MEDIUM && "8px"};
   }
 
   > .image {
@@ -24,7 +24,7 @@ const Container = styled.div`
 
 Container.displayName = "HelperContentContainer";
 
-const HelperContent = props => {
+const HelperContent = (props) => {
   const renderLink = props.linkText && (props.linkHref || props.linkOnClick);
 
   return (

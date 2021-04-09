@@ -16,7 +16,7 @@ export const CloseButton = styled(NavButtonStyled)`
   ${({ variant }) => variant === PUSH && "display: none;"}
 `;
 
-export default props => (
+export default (props) => (
   <NavButton component={CloseButton} {...props}>
     <MdRemove />
   </NavButton>

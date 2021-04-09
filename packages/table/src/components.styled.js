@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors, fontSizes, fontWeights } from "@crave/farmblocks-theme";
 import Text from "@crave/farmblocks-text";
 
-export const Table = styled.table.attrs(props => ({
+export const Table = styled.table.attrs((props) => ({
   className: `${props.className || ""} ${
     props.$columnsTemplate ? "__asGrid" : ""
   }`,
@@ -57,7 +57,7 @@ TH.defaultProps = {
   fontWeight: fontWeights.SEMIBOLD,
 };
 
-export const TD = styled(Text).attrs(props => ({
+export const TD = styled(Text).attrs((props) => ({
   type: props.color,
 }))`
   border-bottom: 1px solid ${colors.GREY_08};

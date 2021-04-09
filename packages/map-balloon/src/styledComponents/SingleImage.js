@@ -9,7 +9,7 @@ const EnhancedImage = styled(Image)`
   position: absolute;
   bottom: 16px;
   left: -92px;
-  border-radius: ${props => props.borderRadius};
+  border-radius: ${(props) => props.borderRadius};
   box-shadow: 0 2px 16px 0 ${colors.GREY_16};
 `;
 
@@ -21,10 +21,10 @@ const Pin = styled.div`
   position: absolute;
   bottom: -8px;
   left: -8px;
-  background-color: ${props => props.pinColor};
+  background-color: ${(props) => props.pinColor};
 `;
 
-const SingleImage = props => (
+const SingleImage = (props) => (
   <div>
     <Pin {...props} />
     <EnhancedImage {...props} size={184} />
