@@ -43,7 +43,7 @@ export const useCountrySearch = (data, query, priority) => {
     return allCountries;
   }
 
-  return fuse.current.search(query);
+  return fuse.current.search(query).map(result => result.item);
 };
 
 export const useHighlight = ({ items, listRef, selectFn, cancelFnRef }) => {

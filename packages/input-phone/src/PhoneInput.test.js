@@ -61,7 +61,7 @@ describe("PhoneInput", () => {
 
       rerender(<PhoneInput value="tel:+5511987654321" />);
 
-      expect(screen.getByDisplayValue("11 98765-4321")).toBeInTheDocument();
+      expect(screen.getByDisplayValue("(11) 98765-4321")).toBeInTheDocument();
     });
 
     test("should trigger onChange with the value formated to RFC3966", () => {
