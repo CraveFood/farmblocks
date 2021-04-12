@@ -23,8 +23,10 @@ const checkboxColors = props => {
 const checkboxStyles = props =>
   !props.switch &&
   css`
-    width: ${checkboxSize};
-    height: ${checkboxSize};
+    max-width: ${checkboxSize};
+    max-height: ${checkboxSize};
+    min-width: ${checkboxSize};
+    min-height: ${checkboxSize};
     border-radius: 4px;
 
     .checkmark {
