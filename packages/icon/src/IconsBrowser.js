@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import Text, { fontSizes } from "@crave/farmblocks-text";
+import Link, { linkTypes } from "@crave/farmblocks-link";
 
 import * as icons from "./jsx";
 import { croppedSizes } from "../sizes";
@@ -94,7 +95,15 @@ export default () => (
                 <IconCanvas>
                   <Icon size={size} aria-label={name} />
                 </IconCanvas>
-                <Text size={fontSizes.SMALL}>{name}</Text>
+                <Text size={fontSizes.SMALL}>
+                  {name}
+                  <Link
+                    leftIcon={<icons.SmDownload />}
+                    href={`https://raw.githubusercontent.com/CraveFood/farmblocks/master/packages/icon/src/svg/${groupName}/${name}.svg`}
+                    type={linkTypes.NEUTRAL}
+                    target="_blank"
+                  />
+                </Text>
               </Item>
             );
           })}
