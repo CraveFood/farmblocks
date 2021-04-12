@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@4.0.10...@crave/farmblocks-input-select@4.0.11) (2021-04-12)
+
+
+### Bug Fixes
+
+* **Checkbox:** prevent checkbox from shrinking when there's not enough width ([5e2ab05](https://github.com/CraveFood/farmblocks/commit/5e2ab0560c9b8bae71395e065dfe3124dde0ee78)), closes [#1033](https://github.com/CraveFood/farmblocks/issues/1033)
+
+
+
+
+
 ## [4.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-select@4.0.9...@crave/farmblocks-input-select@4.0.10) (2021-02-17)
 
 **Note:** Version bump only for package @crave/farmblocks-input-select
