@@ -34,7 +34,7 @@ IconWrapper.defaultProps = {
   size: "1em",
 };
 
-export const withWrapper = Icon =>
+export const withWrapper = (Icon) =>
   // eslint-disable-next-line react/prop-types
   React.forwardRef(({ className = "", ...props }, ref) => (
     <IconWrapper>

@@ -4,9 +4,9 @@ import { storiesOf } from "@storybook/react";
 import StyledDropdownItemWrapper from "../styledComponents/DropdownItemWrapper";
 import StyledDropdownMenuWrapper from "../styledComponents/DropdownMenuWrapper";
 
-const DropdownItemWrapper = props => <StyledDropdownItemWrapper {...props} />;
+const DropdownItemWrapper = (props) => <StyledDropdownItemWrapper {...props} />;
 
-const DropdownMenuWrapper = props => <StyledDropdownMenuWrapper {...props} />;
+const DropdownMenuWrapper = (props) => <StyledDropdownMenuWrapper {...props} />;
 
 storiesOf("Dropdown/Styled components/Menu and item", module)
   .add("Default", () => (

@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: absolute;
-  top: ${props => props.y}px;
-  left: ${props => props.x}px;
+  top: ${(props) => props.y}px;
+  left: ${(props) => props.x}px;
 
-  opacity: ${props => props.opacity};
+  opacity: ${(props) => props.opacity};
 `;
 Wrapper.propTypes = {
   x: PropTypes.number.isRequired,

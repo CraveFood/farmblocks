@@ -6,13 +6,13 @@ import Tag from "./Tag";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe("Tag", function() {
+describe("Tag", () => {
   let onRemoveMock;
   beforeEach(() => {
     onRemoveMock = jest.fn();
   });
 
-  test("should call onRemove when clicking on the icon", function() {
+  test("should call onRemove when clicking on the icon", () => {
     const value = { value: "some value" };
     const wrapper = shallow(
       <Tag text="some text" value={value} onRemove={onRemoveMock} />,
@@ -22,7 +22,7 @@ describe("Tag", function() {
     expect(onRemoveMock).toHaveBeenCalledWith(value);
   });
 
-  test("should call onRemove by pressing Enter or Space keys", function() {
+  test("should call onRemove by pressing Enter or Space keys", () => {
     const value = { value: "some value" };
     const wrapper = shallow(
       <Tag text="some text" value={value} onRemove={onRemoveMock} />,

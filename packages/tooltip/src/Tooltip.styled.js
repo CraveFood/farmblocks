@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.div`
   position: relative;
-  display: ${props => (props.displayBlock ? "block" : "inline-block")};
+  display: ${(props) => (props.displayBlock ? "block" : "inline-block")};
 
   .hit-area {
     position: absolute;

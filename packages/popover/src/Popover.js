@@ -6,7 +6,7 @@ import { TooltipContent } from "@crave/farmblocks-tooltip";
 
 const Container = styled.div`
   display: inline-block;
-  width: ${props => props.width};
+  width: ${(props) => props.width};
 
   .appear-enter {
     opacity: 0;
@@ -28,9 +28,12 @@ const Container = styled.div`
 `;
 
 class Popover extends React.Component {
-  state = {
-    isVisible: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isVisible: false,
+    };
+  }
 
   componentDidMount() {
     document.addEventListener("click", this.handleOuterClick, {
@@ -44,7 +47,7 @@ class Popover extends React.Component {
     });
   }
 
-  handleOuterClick = event => {
+  handleOuterClick = (event) => {
     if (this.popover?.contains(event.target)) {
       return;
     }
@@ -55,7 +58,7 @@ class Popover extends React.Component {
     }
   };
 
-  toggle = async event => {
+  toggle = async (event) => {
     event?.stopPropagation?.();
     const { onOpen, onClose, disabled } = this.props;
 
@@ -89,7 +92,7 @@ class Popover extends React.Component {
     return (
       <Container
         className={this.props.className}
-        ref={popover => {
+        ref={(popover) => {
           this.popover = popover;
         }}
         width={this.props.triggerWidth}

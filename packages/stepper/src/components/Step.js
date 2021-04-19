@@ -5,35 +5,27 @@ import { SmCheck, SmPlaceholder, SmChevronRight } from "@crave/farmblocks-icon";
 import Container from "../styledComponents/Step";
 import statusTypes from "../constants/statusTypes";
 
-export default class Step extends React.Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired,
-    status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
-    onClick: PropTypes.func.isRequired,
-    className: PropTypes.string,
-  };
+const Step = ({ status, ...props }) => {
+  const isCompleted = status === statusTypes.COMPLETED;
 
-  renderIcon = IconName => <IconName size={20} className="icon" />;
+  return (
+    <Container
+      className={props.className}
+      status={status}
+      onClick={props.onClick}
+    >
+      {isCompleted ? (
+        <SmCheck size={20} className="icon" />
+      ) : (
+        <SmPlaceholder size={20} className="icon" />
+      )}
 
-  render() {
-    const { status } = this.props;
-    const isCompleted = status === statusTypes.COMPLETED;
+      <div className="description">{props.children}</div>
 
-    return (
-      <Container
-        className={this.props.className}
-        status={status}
-        onClick={this.props.onClick}
-      >
-        {this.renderIcon(isCompleted ? SmCheck : SmPlaceholder)}
-
-        <div className="description">{this.props.children}</div>
-
-        {!isCompleted && this.renderIcon(SmChevronRight)}
-      </Container>
-    );
-  }
-}
+      {!isCompleted && <SmChevronRight size={20} className="icon" />}
+    </Container>
+  );
+};
 
 Step.propTypes = {
   children: PropTypes.node.isRequired,
@@ -41,3 +33,12 @@ Step.propTypes = {
   onClick: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
+
+Step.propTypes = {
+  children: PropTypes.node.isRequired,
+  status: PropTypes.oneOf(Object.keys(statusTypes)).isRequired,
+  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+
+export default Step;

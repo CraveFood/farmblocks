@@ -31,7 +31,7 @@ const Buttons = ({ actions }) => {
       mt={2}
       justifyContent="center"
     >
-      {actions.map(buttonProps => (
+      {actions.map((buttonProps) => (
         <Button
           key={`empty-state-button-${buttonProps.text}`}
           data-testid={`empty-state-button-${buttonProps.text}`}

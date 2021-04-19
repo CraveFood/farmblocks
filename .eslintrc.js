@@ -27,6 +27,7 @@ module.exports = {
     "react/no-array-index-key": "warn",
     "react/forbid-prop-types": "warn",
     "react/no-did-update-set-state": "warn",
+    "react/jsx-props-no-spreading": "off",
     "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
     "react/sort-comp": [
       "error",

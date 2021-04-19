@@ -21,12 +21,12 @@ const StyledContent = styled.div`
   );
 `;
 
-const Wrapper = props => <StyledWrapper {...props} />;
+const Wrapper = (props) => <StyledWrapper {...props} />;
 
-const Content = props => <StyledContent {...props} />;
+const Content = (props) => <StyledContent {...props} />;
 
 storiesOf("Search Field/ScrollBox (Private)", module)
-  .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
+  .addDecorator((storyFn) => <Wrapper>{storyFn()}</Wrapper>)
   .add("Default", () => (
     <ScrollBox>
       <Content />

@@ -1,4 +1,4 @@
-/* eslint-disable react/no-multi-comp */
+/* eslint-disable react/no-multi-comp, max-classes-per-file,react/state-in-constructor */
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -17,7 +17,7 @@ const StyledDemoGrid = styled.div`
   background: #ccc url(${bgImage});
 `;
 
-const DemoGrid = props => <StyledDemoGrid {...props} />;
+const DemoGrid = (props) => <StyledDemoGrid {...props} />;
 
 const imageSet = [
   {
@@ -54,7 +54,7 @@ storiesOf("Map Balloon", module)
 
       componentDidMount() {
         this.interval = window.setInterval(
-          () => this.setState(prevState => ({ open: !prevState.open })),
+          () => this.setState((prevState) => ({ open: !prevState.open })),
           2000,
         );
       }
@@ -202,7 +202,7 @@ storiesOf("Map Balloon", module)
         state = { open: false };
 
         handlePinClick = () =>
-          this.setState(prevState => ({ open: !prevState.open }));
+          this.setState((prevState) => ({ open: !prevState.open }));
 
         render() {
           return (

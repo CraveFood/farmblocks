@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+
 import React from "react";
 import PropTypes from "prop-types";
 import Image, { badgeSizes } from "@crave/farmblocks-image";
@@ -12,7 +14,7 @@ const ItemImage = styled(Image)`
 
 export const refName = "inputRef";
 
-export default Input =>
+export default (Input) =>
   class InputWithImage extends React.Component {
     static propTypes = {
       image: PropTypes.string,

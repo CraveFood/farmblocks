@@ -34,7 +34,7 @@ const animation = css`
 const interactiveStyle = css`
   cursor: pointer;
 
-  bottom: ${props => props.pinSize / 2 + 8}px;
+  bottom: ${(props) => props.pinSize / 2 + 8}px;
 
   color: ${colors.GREY_16};
 
@@ -44,16 +44,16 @@ const interactiveStyle = css`
   }
 `;
 const Balloon = styled(Card).attrs({ overflow: "hidden", p: 0 })`
-  ${props => props.animated && animation};
+  ${(props) => props.animated && animation};
   position: absolute;
-  bottom: ${props => props.pinSize + 8}px;
+  bottom: ${(props) => props.pinSize + 8}px;
 
-  ${props => alignStyles[props.align]};
+  ${(props) => alignStyles[props.align]};
 
-  height: ${props => props.balloonSize}px;
-  width: ${props => props.balloonSize}px;
+  height: ${(props) => props.balloonSize}px;
+  width: ${(props) => props.balloonSize}px;
   padding: 0;
-  border-radius: ${props => props.borderRadius};
+  border-radius: ${(props) => props.borderRadius};
   border: none;
   box-shadow: 0 2px 16px 0 ${colors.GREY_16};
 
@@ -66,7 +66,7 @@ const Balloon = styled(Card).attrs({ overflow: "hidden", p: 0 })`
     margin: 16px 8px;
   }
 
-  ${props => (props.interactive ? interactiveStyle : "")};
+  ${(props) => (props.interactive ? interactiveStyle : "")};
 `;
 
 export const Caption = styled(Text)`

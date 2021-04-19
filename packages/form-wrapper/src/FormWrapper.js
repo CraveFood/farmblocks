@@ -8,7 +8,7 @@ export const Body = styled.div`
   padding: 16px 16px 0 16px;
 `;
 
-const FormWrapper = props => {
+const FormWrapper = (props) => {
   const {
     title,
     extraContent,

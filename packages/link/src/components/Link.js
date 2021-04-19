@@ -6,7 +6,7 @@ import { MdLinkExternal } from "@crave/farmblocks-icon";
 import linkTypes from "../constants/linkTypes";
 import StyledLink from "../styledComponents/Link";
 
-const Link = props => {
+const Link = (props) => {
   const {
     size,
     lineHeight,

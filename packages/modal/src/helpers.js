@@ -7,7 +7,7 @@ export const useModal = ({ openAtMount = false } = {}) => {
     () => ({
       open: () => setOpen(true),
       close: () => setOpen(false),
-      toggle: () => setOpen(val => !val),
+      toggle: () => setOpen((val) => !val),
     }),
 
     [setOpen],

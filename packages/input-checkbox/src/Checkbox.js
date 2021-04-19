@@ -1,3 +1,5 @@
+/* eslint-disable react/static-property-placement */
+
 import * as React from "react";
 import PropTypes from "prop-types";
 import Text from "@crave/farmblocks-text";
@@ -24,11 +26,14 @@ const createCheckbox = ({ isSwitch }) =>
       onChange: () => null,
     };
 
-    state = {
-      clicked: false,
-    };
+    constructor(props) {
+      super(props);
+      this.state = {
+        clicked: false,
+      };
+    }
 
-    onMouseUp = event => {
+    onMouseUp = (event) => {
       if (isSwitch) {
         // we use a clicked state to flag that the
         // switch change started from a pointer click and not the spacebar
@@ -37,7 +42,7 @@ const createCheckbox = ({ isSwitch }) =>
       return this.props.onMouseUp(event);
     };
 
-    onChange = event => {
+    onChange = (event) => {
       if (this.state.clicked) {
         // we only want to show the focus outline for when
         // the focus was gained with a tab keypress and not a click

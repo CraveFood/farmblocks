@@ -1,13 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   border-radius: 4px;
   object-fit: cover;
 }
 
-.c3 {
+.c1 {
+  margin-top: 16px;
+  min-width: 100%;
+  whitespace: no-wrap;
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  border: solid 1px rgba(0,0,0,0.16);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
+  background: white;
+  position: absolute;
+}
+
+.c1 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c4 {
   cursor: pointer;
   overflow: hidden;
   -webkit-transition: all ease 0.2s;
@@ -16,35 +38,35 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
   border-bottom: solid 1px rgba(0,0,0,0.16);
 }
 
-.c3:hover {
+.c4:hover {
   background: #3498db;
   color: white;
 }
 
-.c3:first-child {
+.c4:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 
-.c3:last-child {
+.c4:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
-.c3 > div {
+.c4 > div {
   padding: 14px;
 }
 
-.c3 > div:focus {
+.c4 > div:focus {
   outline: auto;
   outline-color: #3498db;
 }
 
-.c3 > div:hover {
+.c4 > div:hover {
   outline: none;
 }
 
-.c8 {
+.c9 {
   cursor: auto;
   overflow: hidden;
   -webkit-transition: all ease 0.2s;
@@ -53,30 +75,30 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
   border-bottom: solid 1px rgba(0,0,0,0.16);
 }
 
-.c8:first-child {
+.c9:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 
-.c8:last-child {
+.c9:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
-.c8 > div {
+.c9 > div {
   padding: 14px;
 }
 
-.c8 > div:focus {
+.c9 > div:focus {
   outline: auto;
   outline-color: #3498db;
 }
 
-.c8 > div:hover {
+.c9 > div:hover {
   outline: none;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,11 +110,11 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
   width: 100%;
 }
 
-.c5 > label {
+.c6 > label {
   padding: 0 8px 0 0;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107,15 +129,15 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
   align-items: center;
 }
 
-.c7 {
+.c8 {
   margin: -6px 8px -6px 0;
 }
 
-.c7:first-child {
+.c8:first-child {
   margin-left: -6px;
 }
 
-.c2 {
+.c3 {
   overflow-y: auto;
   -webkit-scroll-behavior: smooth;
   -moz-scroll-behavior: smooth;
@@ -123,29 +145,10 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
   scroll-behavior: smooth;
 }
 
-.c1 {
-  margin-top: 16px;
-  min-width: 100%;
-  whitespace: no-wrap;
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
-  border: solid 1px rgba(0,0,0,0.16);
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
-  background: white;
-  position: absolute;
+.c2 {
   top: 72px;
   position: absolute;
   width: 100%;
-}
-
-.c1 > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .c0 {
@@ -156,10 +159,10 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
   className="c0"
 >
   <div
-    className="DropdownMenuWrapper-sc-1jtvy22-0 c1"
+    className="c1 c2"
   >
     <ul
-      className="c2 scroll"
+      className="c3 scroll"
       style={
         Object {
           "maxHeight": undefined,
@@ -167,17 +170,17 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
       }
     >
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -188,17 +191,17 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
         </div>
       </li>
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -209,17 +212,17 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
         </div>
       </li>
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -230,7 +233,7 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
         </div>
       </li>
       <li
-        className="c8 itemWrapper footer"
+        className="c9 itemWrapper footer"
       />
     </ul>
   </div>
@@ -238,16 +241,16 @@ exports[`Storyshots Search Field/Menu (Private) Default 1`] = `
 `;
 
 exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
-.c5 {
+.c6 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c5 .farmblocks-icon {
+.c6 .farmblocks-icon {
   display: block;
 }
 
-.c8 {
+.c9 {
   font-family: Lato,sans-serif;
   display: inline-block;
   position: relative;
@@ -260,39 +263,39 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   color: #59636f;
 }
 
-.c8 span.margin-left {
+.c9 span.margin-left {
   margin-left: 4px;
 }
 
-.c8 span.margin-right {
+.c9 span.margin-right {
   margin-right: 4px;
 }
 
-.c8 a {
+.c9 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 a:hover {
+.c9 a:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 a:hover i {
+.c9 a:hover i {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 > a {
+.c9 > a {
   color: inherit;
 }
 
-.c8:hover {
+.c9:hover {
   color: #3498db;
 }
 
-.c6 {
+.c7 {
   font-family: Lato,sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -301,53 +304,13 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   text-align: left;
 }
 
-.c7 {
+.c8 {
   font-family: Lato,sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2f313a;
   text-align: left;
-}
-
-.c3 {
-  cursor: auto;
-  overflow: hidden;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
-  color: #59636f;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c3:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-.c3:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.c3 > div {
-  padding: 14px;
-}
-
-.c3 > div:focus {
-  outline: auto;
-  outline-color: #3498db;
-}
-
-.c3 > div:hover {
-  outline: none;
-}
-
-.c2 {
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
 }
 
 .c1 {
@@ -364,9 +327,6 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   background: white;
   position: absolute;
-  top: 72px;
-  position: absolute;
-  width: 100%;
 }
 
 .c1 > ul {
@@ -375,11 +335,57 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   padding: 0;
 }
 
+.c4 {
+  cursor: auto;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c4:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c4:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c4 > div {
+  padding: 14px;
+}
+
+.c4 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c4 > div:hover {
+  outline: none;
+}
+
+.c3 {
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.c2 {
+  top: 72px;
+  position: absolute;
+  width: 100%;
+}
+
 .c0 {
   width: 400px;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -392,7 +398,7 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   background: #f6f8f9;
 }
 
-.c4 .icon {
+.c5 .icon {
   width: 24px;
   height: 24px;
   display: -webkit-box;
@@ -413,7 +419,7 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   font-size: 12px;
 }
 
-.c4 .link {
+.c5 .link {
   display: block;
 }
 
@@ -421,10 +427,10 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
   className="c0"
 >
   <div
-    className="DropdownMenuWrapper-sc-1jtvy22-0 c1"
+    className="c1 c2"
   >
     <ul
-      className="c2 scroll"
+      className="c3 scroll"
       style={
         Object {
           "maxHeight": undefined,
@@ -432,13 +438,13 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
       }
     >
       <li
-        className="c3 itemWrapper footer"
+        className="c4 itemWrapper footer"
       >
         <div
-          className="c4"
+          className="c5"
         >
           <span
-            className="c5"
+            className="c6"
             color="currentColor"
             size="1em"
           >
@@ -457,18 +463,18 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
             </svg>
           </span>
           <div
-            className="c6"
+            className="c7"
             size={14}
             type="#2f313a"
           >
             Can’t find a farmers market?
             <div
-              className="c7"
+              className="c8"
               size={18}
               type="#2f313a"
             >
               <div
-                className="c8 link"
+                className="c9 link"
                 disabled={false}
                 fontWeight="600"
                 size={16}
@@ -488,126 +494,10 @@ exports[`Storyshots Search Field/Menu (Private) footer only 1`] = `
 `;
 
 exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   border-radius: 4px;
   object-fit: cover;
-}
-
-.c3 {
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
-  color: #59636f;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c3:hover {
-  background: #3498db;
-  color: white;
-}
-
-.c3:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-.c3:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.c3 > div {
-  padding: 14px;
-}
-
-.c3 > div:focus {
-  outline: auto;
-  outline-color: #3498db;
-}
-
-.c3 > div:hover {
-  outline: none;
-}
-
-.c8 {
-  cursor: auto;
-  overflow: hidden;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
-  color: #59636f;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c8:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-.c8:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.c8 > div {
-  padding: 14px;
-}
-
-.c8 > div:focus {
-  outline: auto;
-  outline-color: #3498db;
-}
-
-.c8 > div:hover {
-  outline: none;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c5 > label {
-  padding: 0 8px 0 0;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  margin: -6px 8px -6px 0;
-}
-
-.c7:first-child {
-  margin-left: -6px;
-}
-
-.c2 {
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
 }
 
 .c1 {
@@ -624,15 +514,134 @@ exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   background: white;
   position: absolute;
-  top: 72px;
-  position: absolute;
-  width: 100%;
 }
 
 .c1 > ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.c4 {
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c4:hover {
+  background: #3498db;
+  color: white;
+}
+
+.c4:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c4:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c4 > div {
+  padding: 14px;
+}
+
+.c4 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c4 > div:hover {
+  outline: none;
+}
+
+.c9 {
+  cursor: auto;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c9:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c9:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c9 > div {
+  padding: 14px;
+}
+
+.c9 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c9 > div:hover {
+  outline: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c6 > label {
+  padding: 0 8px 0 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  margin: -6px 8px -6px 0;
+}
+
+.c8:first-child {
+  margin-left: -6px;
+}
+
+.c3 {
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.c2 {
+  top: 72px;
+  position: absolute;
+  width: 100%;
 }
 
 .c0 {
@@ -643,10 +652,10 @@ exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
   className="c0"
 >
   <div
-    className="DropdownMenuWrapper-sc-1jtvy22-0 c1"
+    className="c1 c2"
   >
     <ul
-      className="c2 scroll"
+      className="c3 scroll"
       style={
         Object {
           "maxHeight": undefined,
@@ -654,18 +663,18 @@ exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
       }
     >
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
         onMouseDown={[Function]}
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -676,18 +685,18 @@ exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
         </div>
       </li>
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
         onMouseDown={[Function]}
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -698,18 +707,18 @@ exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
         </div>
       </li>
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
         onMouseDown={[Function]}
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -720,7 +729,7 @@ exports[`Storyshots Search Field/Menu (Private) onItemClick 1`] = `
         </div>
       </li>
       <li
-        className="c8 itemWrapper footer"
+        className="c9 itemWrapper footer"
       />
     </ul>
   </div>
@@ -738,126 +747,10 @@ exports[`Storyshots Search Field/Menu (Private) with empty items 1`] = `
 `;
 
 exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   border-radius: 4px;
   object-fit: cover;
-}
-
-.c3 {
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
-  color: #59636f;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c3:hover {
-  background: #3498db;
-  color: white;
-}
-
-.c3:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-.c3:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.c3 > div {
-  padding: 14px;
-}
-
-.c3 > div:focus {
-  outline: auto;
-  outline-color: #3498db;
-}
-
-.c3 > div:hover {
-  outline: none;
-}
-
-.c8 {
-  cursor: auto;
-  overflow: hidden;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
-  color: #59636f;
-  border-bottom: solid 1px rgba(0,0,0,0.16);
-}
-
-.c8:first-child {
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-
-.c8:last-child {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.c8 > div {
-  padding: 14px;
-}
-
-.c8 > div:focus {
-  outline: auto;
-  outline-color: #3498db;
-}
-
-.c8 > div:hover {
-  outline: none;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c5 > label {
-  padding: 0 8px 0 0;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7 {
-  margin: -6px 8px -6px 0;
-}
-
-.c7:first-child {
-  margin-left: -6px;
-}
-
-.c2 {
-  overflow-y: auto;
-  -webkit-scroll-behavior: smooth;
-  -moz-scroll-behavior: smooth;
-  -ms-scroll-behavior: smooth;
-  scroll-behavior: smooth;
 }
 
 .c1 {
@@ -874,15 +767,134 @@ exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16);
   background: white;
   position: absolute;
-  top: 72px;
-  position: absolute;
-  width: 100%;
 }
 
 .c1 > ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.c4 {
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c4:hover {
+  background: #3498db;
+  color: white;
+}
+
+.c4:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c4:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c4 > div {
+  padding: 14px;
+}
+
+.c4 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c4 > div:hover {
+  outline: none;
+}
+
+.c9 {
+  cursor: auto;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: #59636f;
+  border-bottom: solid 1px rgba(0,0,0,0.16);
+}
+
+.c9:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.c9:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.c9 > div {
+  padding: 14px;
+}
+
+.c9 > div:focus {
+  outline: auto;
+  outline-color: #3498db;
+}
+
+.c9 > div:hover {
+  outline: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c6 > label {
+  padding: 0 8px 0 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  margin: -6px 8px -6px 0;
+}
+
+.c8:first-child {
+  margin-left: -6px;
+}
+
+.c3 {
+  overflow-y: auto;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.c2 {
+  top: 72px;
+  position: absolute;
+  width: 100%;
 }
 
 .c0 {
@@ -893,10 +905,10 @@ exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
   className="c0"
 >
   <div
-    className="DropdownMenuWrapper-sc-1jtvy22-0 c1"
+    className="c1 c2"
   >
     <ul
-      className="c2 scroll"
+      className="c3 scroll"
       style={
         Object {
           "maxHeight": undefined,
@@ -904,18 +916,18 @@ exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
       }
     >
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
         onMouseDown={[Function]}
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -926,18 +938,18 @@ exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
         </div>
       </li>
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
         onMouseDown={[Function]}
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -948,18 +960,18 @@ exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
         </div>
       </li>
       <li
-        className="c3 itemWrapper"
+        className="c4 itemWrapper"
         onMouseDown={[Function]}
       >
         <div
-          className="c4 itemContainer item"
+          className="c5 itemContainer item"
         >
           <div
-            className="c5 labelContainer"
+            className="c6 labelContainer"
           >
             <img
               alt=""
-              className="c6 c7 itemImage"
+              className="c7 c8 itemImage"
               height={40}
               size={40}
               src="https://picsum.photos/100?image=0"
@@ -970,7 +982,7 @@ exports[`Storyshots Search Field/Menu (Private) with key names 1`] = `
         </div>
       </li>
       <li
-        className="c8 itemWrapper footer"
+        className="c9 itemWrapper footer"
       />
     </ul>
   </div>

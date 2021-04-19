@@ -41,9 +41,9 @@ const StyledFooterWrapper = styled.div`
   }
 `;
 
-const Wrapper = props => <StyledWrapper {...props} />;
+const Wrapper = (props) => <StyledWrapper {...props} />;
 
-const FooterWrapper = props => <StyledFooterWrapper {...props} />;
+const FooterWrapper = (props) => <StyledFooterWrapper {...props} />;
 
 const Footer = () => (
   <FooterWrapper>
@@ -60,7 +60,7 @@ const Footer = () => (
 );
 
 storiesOf("Search Field/Menu (Private)", module)
-  .addDecorator(storyFn => <Wrapper>{storyFn()}</Wrapper>)
+  .addDecorator((storyFn) => <Wrapper>{storyFn()}</Wrapper>)
   .add("Default", () => <Menu items={items} />)
   .add("onItemClick", () => (
     <Menu onItemClick={action("onItemClick")} items={items} />
@@ -68,7 +68,7 @@ storiesOf("Search Field/Menu (Private)", module)
   .add("with key names", () => (
     <Menu
       onItemClick={action("onItemClick")}
-      items={items.map(x => ({
+      items={items.map((x) => ({
         code: x.value,
         name: x.label,
         photo: x.image,

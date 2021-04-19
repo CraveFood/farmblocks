@@ -90,7 +90,7 @@ storiesOf("Filter Popover", module)
     <FilterPopover
       triggerLabel="Filter"
       formTitle="Form Title"
-      formContent={dismiss => (
+      formContent={(dismiss) => (
         <button onClick={() => dismiss()}>Click to dismiss</button>
       )}
     />

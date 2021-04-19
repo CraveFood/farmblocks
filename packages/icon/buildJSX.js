@@ -18,8 +18,8 @@ if (!fs.existsSync(jsxSourcePath)) {
   fs.mkdirSync(jsxSourcePath);
 }
 
-const isDir = name => fs.lstatSync(`${svgSourcePath}/${name}`).isDirectory();
-const isSvg = file => path.extname(file).toLowerCase() === ".svg";
+const isDir = (name) => fs.lstatSync(`${svgSourcePath}/${name}`).isDirectory();
+const isSvg = (file) => path.extname(file).toLowerCase() === ".svg";
 
 const groups = fs
   .readdirSync(svgSourcePath)
@@ -147,7 +147,7 @@ async function buildIndex(components) {
       "./src/jsx/index.js",
       components
         .map(
-          component =>
+          (component) =>
             `export { default as ${component} } from "./${component}";`,
         )
         .sort()
@@ -164,6 +164,4 @@ async function buildIndex(components) {
   }
 }
 
-buildJSX()
-  .then(buildIndex)
-  .then(lintFiles);
+buildJSX().then(buildIndex).then(lintFiles);

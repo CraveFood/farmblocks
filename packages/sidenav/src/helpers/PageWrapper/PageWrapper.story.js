@@ -32,7 +32,7 @@ export const PageWrapperDefault = () => {
               {Object.keys(variants)
                 .slice()
                 .reverse()
-                .map(variant => (
+                .map((variant) => (
                   <Radio
                     key={variant}
                     value={variants[variant]}

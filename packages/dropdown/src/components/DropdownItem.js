@@ -4,7 +4,7 @@ import { MenuItem } from "react-aria-menubutton";
 
 import DropdownItemWrapper from "../styledComponents/DropdownItemWrapper";
 
-const DropdownItem = props => {
+const DropdownItem = (props) => {
   const { value, text, children, ...rest } = props;
   return (
     <DropdownItemWrapper {...rest}>

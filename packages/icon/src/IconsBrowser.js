@@ -83,7 +83,7 @@ export default () => (
     </Text>
     <hr />
     <Grid>
-      {groupNames.map(groupName => (
+      {groupNames.map((groupName) => (
         <>
           <GroupHeader size={fontSizes.X_LARGE} key={groupName}>
             {groupName}

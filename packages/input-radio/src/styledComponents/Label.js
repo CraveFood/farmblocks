@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const enabledStyles = props =>
+const enabledStyles = (props) =>
   (props.disabled &&
     css`
       .visibleInput {
@@ -18,7 +18,7 @@ const enabledStyles = props =>
     }
   `;
 
-const checkedStyles = props =>
+const checkedStyles = (props) =>
   props.checked &&
   css`
     .checkedIndicator {

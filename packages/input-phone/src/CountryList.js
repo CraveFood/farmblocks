@@ -14,7 +14,7 @@ const CountryList = React.forwardRef(({ data }, ref) => (
           height={height}
           itemCount={data.items.length}
           itemData={data}
-          itemKey={index => data.items[index].code}
+          itemKey={(index) => data.items[index].code}
           itemSize={54}
           width={width}
           ref={ref}

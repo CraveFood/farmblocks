@@ -58,13 +58,13 @@ const LinkContainer = styled.div`
     margin-right: 4px;
   }
 
-  font-size: ${props => props.size}px;
+  font-size: ${(props) => props.size}px;
   font-weight: ${({ fontWeight }) => fontWeight};
 
-  line-height: ${props => props.lineHeight};
+  line-height: ${(props) => props.lineHeight};
 
   transition: all 0.3s ease;
-  cursor: ${props => (props.disabled ? "default" : "pointer")};
+  cursor: ${(props) => (props.disabled ? "default" : "pointer")};
 
   ${textDecoration};
 

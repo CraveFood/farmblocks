@@ -10,10 +10,10 @@ const StyledAlert = styled(Alert)`
   transform: rotate(5deg);
 `;
 
-const ExtendedAlert = props => <StyledAlert {...props} />;
+const ExtendedAlert = (props) => <StyledAlert {...props} />;
 
 storiesOf("Alert", module)
-  .addDecorator(storyFn => (
+  .addDecorator((storyFn) => (
     <div style={{ transform: "scale(1)", height: 200 }}>{storyFn()}</div>
   ))
   .add("default", () => (

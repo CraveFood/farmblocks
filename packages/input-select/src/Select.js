@@ -41,7 +41,7 @@ class Select extends React.Component {
     };
   }
 
-  componentDidUpdate = prevProps => {
+  componentDidUpdate = (prevProps) => {
     const { value } = this.props;
     if (
       ((value || value === 0) &&
@@ -56,7 +56,7 @@ class Select extends React.Component {
     }
   };
 
-  onMenuVisibilityChange = isMenuOpen => {
+  onMenuVisibilityChange = (isMenuOpen) => {
     if (!this.props.disableSearch && isMenuOpen && this.input) {
       this.input.select();
     }
@@ -64,7 +64,7 @@ class Select extends React.Component {
     this.props.onMenuVisibilityChange?.(isMenuOpen);
   };
 
-  onFilter = event => {
+  onFilter = (event) => {
     if (!this.state.isSearching && !this.props.multi) {
       this.props.onChange("");
     }
@@ -82,9 +82,9 @@ class Select extends React.Component {
     onChange(item.value);
   };
 
-  onRemoveTag = value => this.onSelect("", { value });
+  onRemoveTag = (value) => this.onSelect("", { value });
 
-  onKeyDown = autoCompleteOnKeyDown => event => {
+  onKeyDown = (autoCompleteOnKeyDown) => (event) => {
     const { value } = this.props;
     if (
       this.props.multi &&
@@ -98,21 +98,21 @@ class Select extends React.Component {
   };
 
   // eslint-disable-next-line consistent-return
-  getSelectedLabel = props => {
+  getSelectedLabel = (props) => {
     const item =
       (props.value || props.value === 0) &&
-      props.items.find(x => x.value === props.value);
+      props.items.find((x) => x.value === props.value);
 
     if (item) {
       return item.label;
     }
   };
 
-  normalizeItems = memoize(items => groupBy(items, "value"));
+  normalizeItems = memoize((items) => groupBy(items, "value"));
 
   renderTags = () => {
     const items = this.normalizeItems(this.props.items);
-    return getValues(this.props)?.map(value => {
+    return getValues(this.props)?.map((value) => {
       const item = items[value]?.[0];
       if (!item) return null;
 
@@ -129,7 +129,7 @@ class Select extends React.Component {
     });
   };
 
-  renderInput = autoCompleteProps => {
+  renderInput = (autoCompleteProps) => {
     const { ref, ...rest } = autoCompleteProps;
 
     const {
@@ -150,7 +150,7 @@ class Select extends React.Component {
       : this.props.validationMessages;
 
     const selectedItem = items.find(
-      item => item.label === autoCompleteProps.value,
+      (item) => item.label === autoCompleteProps.value,
     );
     const image = selectedItem && selectedItem.image;
 
@@ -172,7 +172,7 @@ class Select extends React.Component {
     );
   };
 
-  renderMenu = items => {
+  renderMenu = (items) => {
     const { noResultsMessage, maxHeight } = this.props;
 
     if (!items?.length) {
@@ -215,7 +215,7 @@ class Select extends React.Component {
     );
   };
 
-  shouldItemRender = item => {
+  shouldItemRender = (item) => {
     const { selectedLabel } = this.state;
     if (this.state.isSearching) {
       return (
@@ -236,7 +236,7 @@ class Select extends React.Component {
         <ReactAutocomplete
           items={items}
           shouldItemRender={this.shouldItemRender}
-          getItemValue={item => item.label}
+          getItemValue={(item) => item.label}
           value={this.state.selectedLabel}
           onChange={this.onFilter}
           onSelect={this.onSelect}
@@ -246,7 +246,7 @@ class Select extends React.Component {
           autoHighlight={false}
           onMenuVisibilityChange={this.onMenuVisibilityChange}
           wrapperStyle={{}}
-          ref={ref => {
+          ref={(ref) => {
             this.input = ref;
           }}
         />

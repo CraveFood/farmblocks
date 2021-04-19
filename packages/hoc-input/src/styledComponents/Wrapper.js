@@ -15,7 +15,7 @@ const getColorByStatus = ({ fallbackColor }) => ({
   return fallbackColor;
 };
 
-const customCursor = props => (props.disabled ? "default" : "pointer");
+const customCursor = (props) => (props.disabled ? "default" : "pointer");
 
 const fontStyles = css`
   font-family: Lato, sans-serif;
@@ -42,7 +42,8 @@ const Wrapper = styled.div`
     border: solid 1px;
     border-radius: ${({ borderRadius }) => borderRadius};
     border-color: ${getColorByStatus({ fallbackColor: colors.GREY_16 })};
-    background-color: ${props => (props.disabled ? colors.GREY_16 : "#ffffff")};
+    background-color: ${(props) =>
+      props.disabled ? colors.GREY_16 : "#ffffff"};
 
     ${focusedStyle};
 
@@ -80,7 +81,7 @@ const Wrapper = styled.div`
       border: 0;
       flex: 1;
       outline: none;
-      color: ${props => (props.disabled ? colors.GREY_32 : colors.CARBON)};
+      color: ${(props) => (props.disabled ? colors.GREY_32 : colors.CARBON)};
       background: none;
       &::placeholder {
         color: ${colors.GREY_32};

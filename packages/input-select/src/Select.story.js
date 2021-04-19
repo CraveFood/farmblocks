@@ -1,3 +1,5 @@
+/* eslint-disable react/state-in-constructor */
+
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
@@ -65,7 +67,7 @@ storiesOf("Select Input", module)
     <Select
       placeholder="Select fruit"
       label="Fruit"
-      items={items.map(item => ({ ...item, image: imgSrc }))}
+      items={items.map((item) => ({ ...item, image: imgSrc }))}
       onChange={action("onChange")}
       renderItem={(item, selected) => (
         <div
@@ -223,7 +225,7 @@ storiesOf("Select Input", module)
         });
       };
 
-      onSelectChange = value => {
+      onSelectChange = (value) => {
         this.setState({
           itemValue: value,
         });
@@ -271,7 +273,7 @@ storiesOf("Select Input", module)
 
 const ValueState = ({ children }) => {
   const [value, setValue] = useState([]);
-  return React.Children.map(children, child =>
+  return React.Children.map(children, (child) =>
     React.cloneElement(child, { value, onChange: setValue }),
   );
 };

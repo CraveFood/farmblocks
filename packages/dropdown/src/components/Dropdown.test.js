@@ -6,10 +6,10 @@ import Adapter from "enzyme-adapter-react-16";
 import Dropdown from "./Dropdown";
 import DropdownItem from "./DropdownItem";
 
-describe("Dropdown", function() {
+describe("Dropdown", () => {
   Enzyme.configure({ adapter: new Adapter() });
 
-  test("default handle selection function returns null", function() {
+  test("default handle selection function returns null", () => {
     const component = renderer.create(
       <Dropdown width="150px">
         <DropdownItem value={1}>Option 1</DropdownItem>
@@ -21,7 +21,7 @@ describe("Dropdown", function() {
     expect(tree.props.handleSelection()).toBeFalsy();
   });
 
-  test("click on an option should call handle selection", function() {
+  test("click on an option should call handle selection", () => {
     const handleSelectionMock = jest.fn();
 
     const tree = mount(
@@ -39,16 +39,12 @@ describe("Dropdown", function() {
     expect(tree.find("DropdownMenuWrapper").length).toBe(1);
 
     // click on the first option of the dropdown items
-    tree
-      .find("AriaMenuButtonMenuItem")
-      .first()
-      .childAt(0)
-      .simulate("click");
+    tree.find("AriaMenuButtonMenuItem").first().childAt(0).simulate("click");
 
     expect(handleSelectionMock).toBeCalledWith(1, expect.anything());
   });
 
-  test("should align options to the right and set zIndex", function() {
+  test("should align options to the right and set zIndex", () => {
     const align = "right";
     const zIndex = 10;
     const tree = mount(

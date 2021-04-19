@@ -33,7 +33,7 @@ const questions = [
     type: "input",
     name: "keywords",
     default: "farmblocks, react",
-    filter: value => value.split(",").map(v => v.trim()),
+    filter: (value) => value.split(",").map((v) => v.trim()),
     message: "Keywords",
   },
   {
@@ -44,7 +44,7 @@ const questions = [
 ];
 
 prompt(questions)
-  .then(answers => {
+  .then((answers) => {
     const packageJSON = packageContents(answers);
     const readme = readmeContents(answers);
     const { fullName, shortName } = answers;

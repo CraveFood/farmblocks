@@ -105,7 +105,7 @@ describe("Modal", () => {
         <Modal onRequestClose={onRequestCloseSpy} isOpen />,
       );
 
-      ["Enter", "Tab", " ", "Unidentified", "Alt"].forEach(key => {
+      ["Enter", "Tab", " ", "Unidentified", "Alt"].forEach((key) => {
         fireEvent.keyDown(container, { key });
       });
       expect(onRequestCloseSpy).not.toHaveBeenCalled();

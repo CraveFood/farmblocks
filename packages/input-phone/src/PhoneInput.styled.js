@@ -8,7 +8,7 @@ export const PopoverWrapper = styled.div`
   height: 100%;
   min-height: 340px;
   min-width: 280px;
-  @media only screen and (max-width: ${props => props.fullScreenBreakpoint}) {
+  @media only screen and (max-width: ${(props) => props.fullScreenBreakpoint}) {
     min-height: calc(100vh - 32px);
   }
 `;
@@ -24,7 +24,7 @@ export const CountryListWrapper = styled.ul`
 export const NationalNumberInput = styled(TextInput)`
   .input {
     overflow: unset;
-    @media only screen and (max-width: ${props =>
+    @media only screen and (max-width: ${(props) =>
         props.tooltipProps?.fullScreenBreakpoint ||
         props.fullScreenBreakpoint}) {
       input {

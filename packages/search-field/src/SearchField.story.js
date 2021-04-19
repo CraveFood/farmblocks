@@ -1,4 +1,4 @@
-/* eslint-disable react/no-multi-comp, no-shadow */
+/* eslint-disable react/no-multi-comp, no-shadow, max-classes-per-file, react/state-in-constructor */
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
@@ -66,7 +66,7 @@ const StyledLoading = styled.div`
   }
 `;
 
-const Loading = props => <StyledLoading {...props} />;
+const Loading = (props) => <StyledLoading {...props} />;
 
 storiesOf("Search Field", module)
   .add("Default", () => <SearchField label="Fruits" />)
@@ -102,7 +102,7 @@ storiesOf("Search Field", module)
   ))
   .add("onBeforeChange proceeding", () => (
     <SearchField
-      onBeforeChange={args => {
+      onBeforeChange={(args) => {
         action("onBeforeChange")(args);
         args.proceed();
       }}
@@ -113,7 +113,7 @@ storiesOf("Search Field", module)
   ))
   .add("onBeforeChange halting", () => (
     <SearchField
-      onBeforeChange={args => {
+      onBeforeChange={(args) => {
         action("onBeforeChange")(args);
       }}
       onChange={action("onChange")}
@@ -150,7 +150,7 @@ storiesOf("Search Field", module)
     <SearchField
       onSearchChange={action("onSearchChange")}
       onChange={action("onChange")}
-      items={items.map(x => ({
+      items={items.map((x) => ({
         code: x.value,
         name: x.label,
         photo: x.image,

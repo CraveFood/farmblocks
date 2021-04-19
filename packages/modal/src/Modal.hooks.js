@@ -7,7 +7,7 @@ import { getScrollWidth } from "./utils";
 export const useESCKey = ({ condition, element, listener }) =>
   useEffect(() => {
     if (condition) {
-      const handleKeyDown = event => {
+      const handleKeyDown = (event) => {
         if (event.key === "Escape") listener?.(event);
       };
 

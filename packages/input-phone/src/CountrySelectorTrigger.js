@@ -13,14 +13,12 @@ const Trigger = styled.div`
 `;
 
 const CountrySelectorTrigger = React.memo(
-  ({ callingCode, flag, code, ...props }) => {
-    return (
-      <Trigger {...props}>
-        {emojiSupport() ? flag : code} +{callingCode}
-        <ChevronDown />
-      </Trigger>
-    );
-  },
+  ({ callingCode, flag, code, ...props }) => (
+    <Trigger {...props}>
+      {emojiSupport() ? flag : code} +{callingCode}
+      <ChevronDown />
+    </Trigger>
+  ),
 );
 
 CountrySelectorTrigger.propTypes = {

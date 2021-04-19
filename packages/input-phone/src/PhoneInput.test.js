@@ -13,7 +13,7 @@ import PhoneInput from "./PhoneInput";
 
 jest.mock("detect-emoji-support", () => jest.fn().mockReturnValue(true));
 
-jest.mock("react-virtualized-auto-sizer", () => props =>
+jest.mock("react-virtualized-auto-sizer", () => (props) =>
   props.children({ width: 300, height: 340 }),
 );
 
@@ -61,7 +61,7 @@ describe("PhoneInput", () => {
 
       rerender(<PhoneInput value="tel:+5511987654321" />);
 
-      expect(screen.getByDisplayValue("11 98765-4321")).toBeInTheDocument();
+      expect(screen.getByDisplayValue("(11) 98765-4321")).toBeInTheDocument();
     });
 
     test("should trigger onChange with the value formated to RFC3966", () => {

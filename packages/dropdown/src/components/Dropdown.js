@@ -11,7 +11,7 @@ import { SmChevronDown } from "@crave/farmblocks-icon";
 import DropdownWrapper from "../styledComponents/DropdownWrapper";
 import DropdownMenuWrapper from "../styledComponents/DropdownMenuWrapper";
 
-const Dropdown = props => {
+const Dropdown = (props) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (

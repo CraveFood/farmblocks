@@ -10,7 +10,7 @@ import { addSerializer } from "jest-specific-snapshot";
 // and https://github.com/storybooks/storybook/issues/887#issuecomment-357073807
 addSerializer(styleSheetSerializer);
 
-jest.spyOn(ReactDOM, "createPortal").mockImplementation(node => node);
+jest.spyOn(ReactDOM, "createPortal").mockImplementation((node) => node);
 
 initStoryshots({
   framework: "react",

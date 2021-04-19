@@ -5,7 +5,7 @@ const checkboxSize = "16px";
 const toggleSize = "24px";
 const margin = "8px";
 
-const checkboxColors = props => {
+const checkboxColors = (props) => {
   if (props.disabled) {
     return css`
       color: ${colors.GREY_16};
@@ -20,7 +20,7 @@ const checkboxColors = props => {
   `;
 };
 
-const checkboxStyles = props =>
+const checkboxStyles = (props) =>
   !props.switch &&
   css`
     max-width: ${checkboxSize};
@@ -53,7 +53,7 @@ export const Loading = styled.div`
   }
 `;
 
-const switchBackground = props => {
+const switchBackground = (props) => {
   if (props.disabled) {
     return colors.GREY_32;
   }
@@ -63,7 +63,7 @@ const switchBackground = props => {
   return colors.SUGAR;
 };
 
-const switchStyles = props =>
+const switchStyles = (props) =>
   props.switch &&
   css`
     width: 56px;
@@ -89,7 +89,7 @@ const switchStyles = props =>
     background: ${switchBackground};
   `;
 
-const hoverStyles = props => {
+const hoverStyles = (props) => {
   /* eslint-disable consistent-return */
 
   if (props.disabled) {
@@ -135,7 +135,7 @@ const hoverStyles = props => {
 
 const Label = styled.label`
   display: inline-flex;
-  cursor: ${props => (props.disabled ? "default" : "pointer")};
+  cursor: ${(props) => (props.disabled ? "default" : "pointer")};
   padding-left: ${margin};
 
   .centerVisibleCheckbox {
@@ -161,16 +161,17 @@ const Label = styled.label`
   }
 
   .label {
-    margin-left: ${props => (props.hasText ? margin : "0")};
+    margin-left: ${(props) => (props.hasText ? margin : "0")};
   }
 
   :hover .visibleCheckbox {
     ${hoverStyles};
-    border-width: ${props => (props.disabled || props.switch ? "1px" : "2px")};
+    border-width: ${(props) =>
+      props.disabled || props.switch ? "1px" : "2px"};
   }
 
   .hiddenCheckbox:focus + div .visibleCheckbox {
-    ${props =>
+    ${(props) =>
       props.switch
         ? css`
             outline: auto 2px Highlight;

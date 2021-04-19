@@ -47,32 +47,30 @@ const ProtectedCover = ({
   label,
   validationMessages,
   invalid,
-}) => {
-  return (
-    <Cover
-      label={label}
-      validationMessages={validationMessages}
-      invalid={invalid || validationMessages?.length}
-      className="protected-input-cover"
-      data-testid="protected-input-cover"
-    >
-      <div className="input">
-        {prefix && <div className="prefix">{prefix}</div>}
-        {protectedValue || value}
-        {!disabled && (
-          <Link
-            className="clear"
-            onClick={handleEditClick}
-            onKeyDown={handleEditClick}
-            data-testid="edit-link"
-          >
-            <SmEdit />
-          </Link>
-        )}
-      </div>
-    </Cover>
-  );
-};
+}) => (
+  <Cover
+    label={label}
+    validationMessages={validationMessages}
+    invalid={invalid || validationMessages?.length}
+    className="protected-input-cover"
+    data-testid="protected-input-cover"
+  >
+    <div className="input">
+      {prefix && <div className="prefix">{prefix}</div>}
+      {protectedValue || value}
+      {!disabled && (
+        <Link
+          className="clear"
+          onClick={handleEditClick}
+          onKeyDown={handleEditClick}
+          data-testid="edit-link"
+        >
+          <SmEdit />
+        </Link>
+      )}
+    </div>
+  </Cover>
+);
 
 ProtectedCover.propTypes = {
   value: PropTypes.node,

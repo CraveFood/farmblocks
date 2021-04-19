@@ -4,7 +4,7 @@ import { mount, configure } from "enzyme";
 
 import Radio, { RadioGroup } from ".";
 
-describe("RadioGroup", function() {
+describe("RadioGroup", () => {
   configure({ adapter: new Adapter() });
 
   describe("handleChange", () => {
@@ -13,7 +13,7 @@ describe("RadioGroup", function() {
       onChangeSpy = jest.fn();
       setStateSpy = jest.fn();
     });
-    test("should run onChange when children changes", function() {
+    test("should run onChange when children changes", () => {
       const value = "a value";
       const component = mount(
         <RadioGroup name="radioExample" onChange={onChangeSpy}>
@@ -21,10 +21,7 @@ describe("RadioGroup", function() {
           <Radio value="second" label="Second" />
         </RadioGroup>,
       );
-      const childOnChange = component
-        .find(Radio)
-        .first()
-        .props().onChange;
+      const childOnChange = component.find(Radio).first().props().onChange;
       childOnChange(value);
 
       expect(onChangeSpy).toHaveBeenCalledTimes(1);

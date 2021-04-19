@@ -29,25 +29,23 @@ const ActionsContainer = styled.div`
   }
 `;
 
-const Footer = props => {
-  return (
-    <Container className={props.className}>
-      <HelperContent
-        className="helperContent"
-        text={props.helpText}
-        linkText={props.helpLinkText}
-        linkHref={props.helpLinkHref}
-        imageSrc={props.helpImageSrc}
-        linkOnClick={props.onHelpLinkClick}
-        size={props.helpFontSize}
-      />
+const Footer = (props) => (
+  <Container className={props.className}>
+    <HelperContent
+      className="helperContent"
+      text={props.helpText}
+      linkText={props.helpLinkText}
+      linkHref={props.helpLinkHref}
+      imageSrc={props.helpImageSrc}
+      linkOnClick={props.onHelpLinkClick}
+      size={props.helpFontSize}
+    />
 
-      <ActionsContainer className="actionsContainer">
-        {props.actions}
-      </ActionsContainer>
-    </Container>
-  );
-};
+    <ActionsContainer className="actionsContainer">
+      {props.actions}
+    </ActionsContainer>
+  </Container>
+);
 
 Footer.propTypes = {
   helpImageSrc: PropTypes.string,

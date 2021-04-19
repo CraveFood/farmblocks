@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 
-const labelColor = props => {
+const labelColor = (props) => {
   if (props.focused) {
     return colors.INDIGO_MILK_CAP;
   }

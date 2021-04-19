@@ -33,7 +33,7 @@ export default {
   title: "SideNav/SideNav",
   component: SideNav,
   decorators: [
-    storyFn => (
+    (storyFn) => (
       <div style={{ transform: "scale(1)", minHeight: "500px" }}>
         {storyFn()}
       </div>
@@ -48,7 +48,7 @@ export const SideNavSimple = () => (
 export const CompleteSideNavSimple = () => (
   <>
     <SideNav
-      render={props => (
+      render={(props) => (
         <>
           <NavItem active {...props}>
             Item 1 (active)
@@ -118,10 +118,10 @@ export const SideNavPush = () => {
           expanded={expanded}
           onToggle={toggle}
           onClose={collapse}
-          render={props => (
+          render={(props) => (
             <>
               <NavHeader />
-              {tabs.map(tab => (
+              {tabs.map((tab) => (
                 <NavItem
                   key={tab}
                   onClick={() => setSelected(tab)}
@@ -150,7 +150,7 @@ export const SideNavOverlay = () => {
   const SideNavOverlayComp = () => {
     const [expanded, { toggle, collapse }] = useToggle(false);
     const [selected, setSelected] = useState(tabs[0]);
-    const handleClick = tab => {
+    const handleClick = (tab) => {
       if (expanded) {
         collapse();
       }
@@ -164,10 +164,10 @@ export const SideNavOverlay = () => {
           onToggle={toggle}
           onClose={collapse}
           variant={OVERLAY}
-          render={props => (
+          render={(props) => (
             <>
               <NavHeader />
-              {tabs.map(tab => (
+              {tabs.map((tab) => (
                 <NavItem
                   key={tab}
                   icon={icons[tab]}
@@ -200,7 +200,7 @@ export const SideNavFullScreen = () => {
   const SideNavFullScreenComp = () => {
     const [expanded, { toggle, collapse }] = useToggle(false);
     const [selected, setSelected] = useState(tabs[0]);
-    const handleClick = tab => {
+    const handleClick = (tab) => {
       if (expanded) {
         collapse();
       }
@@ -214,10 +214,10 @@ export const SideNavFullScreen = () => {
           onToggle={toggle}
           onClose={collapse}
           variant={FULLSCREEN}
-          render={props => (
+          render={(props) => (
             <>
               <NavHeader />
-              {tabs.map(tab => (
+              {tabs.map((tab) => (
                 <NavItem
                   key={tab}
                   icon={icons[tab]}
@@ -251,7 +251,7 @@ export const SideNavPushWithRouter = withRouter(({ location }) => {
         expanded={expanded}
         onToggle={toggle}
         onClose={collapse}
-        render={props => (
+        render={(props) => (
           <>
             <NavHeader />
             <NavLinkItems tabs={tabs} location={location} {...props} />
@@ -283,7 +283,7 @@ export const SideNavOverlayWithRouter = withRouter(({ location }) => {
         onToggle={toggle}
         onClose={collapse}
         highlightColor={highlightColor}
-        render={props => (
+        render={(props) => (
           <>
             <NavHeader />
             <NavLinkItems
@@ -316,7 +316,7 @@ export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
         variant={FULLSCREEN}
         onToggle={toggle}
         onClose={collapse}
-        render={props => (
+        render={(props) => (
           <NavLinkItems
             tabs={tabs}
             location={location}
@@ -354,7 +354,7 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
         backgroundColor={sidebarColor}
         onClose={collapse}
         offsetTop="56px"
-        render={props => (
+        render={(props) => (
           <NavLinkItems
             tabs={tabs}
             location={location}
@@ -376,7 +376,7 @@ NavWithJsMediaQuery.story = {
 /* eslint-disable */
 const NavLinkItems = ({ tabs, location, onClick, ...props }) => (
   <>
-    {tabs.map(tab => (
+    {tabs.map((tab) => (
       <NavLink to={`/${tab}`} key={tab} style={{ textDecoration: "none" }}>
         <NavItem
           active={location.pathname === `/${tab}`}
@@ -413,7 +413,7 @@ const NavRoutes = ({ tabs }) => (
     }}
   >
     <Switch>
-      {[...tabs, "account"].map(tab => (
+      {[...tabs, "account"].map((tab) => (
         <Route path={`/${tab}`} key={tab}>
           <Text upper fontWeight="title" size={32}>
             {tab}

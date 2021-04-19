@@ -4,7 +4,7 @@ import { transparentize } from "polished";
 
 import { FULLSCREEN } from "../../constants/variants";
 
-const isFullScreen = variant => variant === FULLSCREEN;
+const isFullScreen = (variant) => variant === FULLSCREEN;
 const GREY_48 = "rgba(0, 0, 0, 0.48)";
 
 const fullScreenStyle = css`

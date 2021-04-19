@@ -242,7 +242,7 @@ describe("SearchField", () => {
       centerChildByIndexSpy.mockReset();
     });
 
-    const getStateChange = modifier => {
+    const getStateChange = (modifier) => {
       instance.changeHighlight(modifier);
 
       // run function given to setState

@@ -47,7 +47,7 @@ storiesOf("Popover", module)
     <Popover
       trigger={<Link>Trigger</Link>}
       onOutsideClick={action("onOutsideClick")}
-      content={dismiss => (
+      content={(dismiss) => (
         <div>
           <Text>Popover content</Text>
           <button onClick={dismiss}>Dismiss</button>
@@ -61,7 +61,7 @@ storiesOf("Popover", module)
       onOutsideClick={action("onOutsideClick")}
       onOpen={action("onOpen")}
       onClose={action("onClose")}
-      content={dismiss => (
+      content={(dismiss) => (
         <div>
           <Text>Popover content</Text>
           <button onClick={dismiss}>Dismiss</button>
@@ -73,7 +73,7 @@ storiesOf("Popover", module)
     <Popover
       trigger={<button>Trigger</button>}
       onOutsideClick={action("onOutsideClick")}
-      content={dismiss => (
+      content={(dismiss) => (
         <div>
           <Text>Popover content</Text>
           <button onClick={dismiss}>Dismiss</button>
@@ -86,12 +86,12 @@ storiesOf("Popover", module)
     <Popover
       trigger={<button>hit me</button>}
       onOutsideClick={action("onOutsideClick")}
-      content={dismiss => (
+      content={(dismiss) => (
         <div style={{ display: "flex" }}>
           <button onClick={dismiss}>dismiss foo</button>
           <Popover
             trigger={<button>other popover</button>}
-            content={dismissSecond => (
+            content={(dismissSecond) => (
               <button onClick={dismissSecond}>dismiss bar</button>
             )}
           />
@@ -101,7 +101,7 @@ storiesOf("Popover", module)
   ))
   .add("trigger as function", () => (
     <Popover
-      trigger={isVisible => (
+      trigger={(isVisible) => (
         <Link>{`This Popover is ${isVisible ? "open" : "closed"}`}</Link>
       )}
       content={() => <Text>Popover content</Text>}
@@ -141,7 +141,7 @@ storiesOf("Popover", module)
       content={() => <Text>Popover content</Text>}
       onBeforeOpen={() => {
         action("onBeforeOpen")();
-        return new Promise(resolve => setTimeout(resolve, 2000));
+        return new Promise((resolve) => setTimeout(resolve, 2000));
       }}
       onOpen={action("onOpen")}
       onOutsideClick={action("onOutsideClick")}

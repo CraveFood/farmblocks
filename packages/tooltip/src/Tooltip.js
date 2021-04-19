@@ -6,7 +6,7 @@ import { CSSTransition } from "react-transition-group";
 import TooltipContent from "./TooltipContent";
 import Container from "./Tooltip.styled";
 
-const Tooltip = props => {
+const Tooltip = (props) => {
   const {
     className,
     disableTooltip,
@@ -25,7 +25,7 @@ const Tooltip = props => {
     setIsVisible(false);
   };
 
-  const handleOuterClick = event => {
+  const handleOuterClick = (event) => {
     if (tooltip.current?.contains(event.target)) {
       return;
     }
@@ -51,7 +51,7 @@ const Tooltip = props => {
       ref={tooltip}
       className={className}
       displayBlock={displayBlock}
-      onMouseLeave={event => {
+      onMouseLeave={(event) => {
         hide();
         onMouseLeave?.(event);
       }}
@@ -59,7 +59,7 @@ const Tooltip = props => {
       {!disableTooltip && (
         <div
           className="hit-area"
-          onMouseOver={e => {
+          onMouseOver={(e) => {
             setIsVisible(true);
             onMouseOver?.(e);
           }}

@@ -1,8 +1,7 @@
 fail_fast: true
 repos:
-  - repo: https://github.com/prettier/prettier
-    # see https://github.com/prettier/prettier/issues/4637#issuecomment-396475333
-    rev: "1.19.1"
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v2.2.1"
     hooks:
       - id: prettier
         exclude: ".mdx$"

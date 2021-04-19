@@ -32,7 +32,7 @@ class SearchField extends React.Component {
     }
   };
 
-  componentDidUpdate = prevProps => {
+  componentDidUpdate = (prevProps) => {
     if (
       prevProps.debounceDelay !== this.props.debounceDelay ||
       prevProps.onSearchChange !== this.props.onSearchChange
@@ -72,7 +72,7 @@ class SearchField extends React.Component {
       return this.setState(emptyState);
     }
 
-    const selectedItem = items?.find(item => item[valueKey] === value);
+    const selectedItem = items?.find((item) => item[valueKey] === value);
     if (selectedItem) {
       return this.setState({
         inputValue: selectedItem[labelKey],
@@ -83,8 +83,8 @@ class SearchField extends React.Component {
     return this.setState(emptyState);
   };
 
-  changeHighlight = modifier => {
-    this.setState(prevState => {
+  changeHighlight = (modifier) => {
+    this.setState((prevState) => {
       const { items } = this.props;
       const highlightedIndex = items
         ? Math.max(
@@ -101,7 +101,7 @@ class SearchField extends React.Component {
     });
   };
 
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     const { key, target } = event;
     switch (key) {
       case "Enter":
@@ -131,12 +131,12 @@ class SearchField extends React.Component {
     this.setState({ focused: true, highlightedIndex: -1 });
   };
 
-  handleSearchChangeEvent = event => {
+  handleSearchChangeEvent = (event) => {
     const { value } = event.target;
     this.handleSearchChangeValue(value);
   };
 
-  handleSearchChangeValue = value => {
+  handleSearchChangeValue = (value) => {
     this.debouncedOnSearchChange(value);
     if (!value) {
       this.debouncedOnSearchChange.flush();
@@ -196,14 +196,14 @@ class SearchField extends React.Component {
     this.selectResult(selectedIndex);
   };
 
-  renderMenu = props => {
+  renderMenu = (props) => {
     const { highlightedIndex } = this.state;
 
     return (
       <Menu
         {...props}
         className="menu"
-        innerRef={node => {
+        innerRef={(node) => {
           this.scroller = node;
         }}
         onItemClick={this.handleItemClick}
