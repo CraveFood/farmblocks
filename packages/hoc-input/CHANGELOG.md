@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@9.0.2...@crave/farmblocks-hoc-input@9.0.3) (2021-04-19)
+
+
+### Bug Fixes
+
+* bump polished version ([7ecd9c3](https://github.com/CraveFood/farmblocks/commit/7ecd9c3a883f358a5bacac1cb3ce1acf234d90a4))
+
+
+
+
+
 ## [9.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-hoc-input@9.0.1...@crave/farmblocks-hoc-input@9.0.2) (2020-10-21)
 
 **Note:** Version bump only for package @crave/farmblocks-hoc-input

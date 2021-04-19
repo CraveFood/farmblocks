@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.28](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@2.2.27...@crave/farmblocks-popover@2.2.28) (2021-04-19)
+
+
+### Bug Fixes
+
+* bump object.values version ([2fb1bcc](https://github.com/CraveFood/farmblocks/commit/2fb1bcc0ffe8df470d726cc168c7f36974dd7628))
+* bump react-transition-group version ([8a818bc](https://github.com/CraveFood/farmblocks/commit/8a818bc33b2b92c4e28f297e77c4a9a4aa3cad6e))
+
+
+
+
+
 ## [2.2.27](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-popover@2.2.26...@crave/farmblocks-popover@2.2.27) (2021-02-17)
 
 **Note:** Version bump only for package @crave/farmblocks-popover

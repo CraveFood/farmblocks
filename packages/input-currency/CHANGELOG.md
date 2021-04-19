@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-currency@1.4.6...@crave/farmblocks-input-currency@1.4.7) (2021-04-19)
+
+
+### Bug Fixes
+
+* bump react-number-format version ([2829446](https://github.com/CraveFood/farmblocks/commit/282944671a5a8df2c47e2242523ddf0ac8aa9390))
+
+
+
+
+
 ## [1.4.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-currency@1.4.5...@crave/farmblocks-input-currency@1.4.6) (2020-10-29)
 
 **Note:** Version bump only for package @crave/farmblocks-input-currency

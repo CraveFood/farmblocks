@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@3.0.2...@crave/farmblocks-tags@3.0.3) (2021-04-19)
+
+
+### Bug Fixes
+
+* bump object.values version ([2fb1bcc](https://github.com/CraveFood/farmblocks/commit/2fb1bcc0ffe8df470d726cc168c7f36974dd7628))
+
+
+
+
+
 ## [3.0.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-tags@3.0.1...@crave/farmblocks-tags@3.0.2) (2020-10-21)
 
 

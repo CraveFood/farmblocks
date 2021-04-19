@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.33](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-phone@0.3.32...@crave/farmblocks-input-phone@0.3.33) (2021-04-19)
+
+
+### Bug Fixes
+
+* **input-phone:** bump dependencies ([f24821a](https://github.com/CraveFood/farmblocks/commit/f24821aa1a8878783baa3df76dbaacecdacb5988))
+* **input-phone:** bump fuse.js and libphonenumber-js version ([8597090](https://github.com/CraveFood/farmblocks/commit/8597090ac97951ddf23dff6ca7d6345ea8948edb))
+
+
+
+
+
 ## [0.3.32](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-phone@0.3.31...@crave/farmblocks-input-phone@0.3.32) (2021-04-12)
 
 **Note:** Version bump only for package @crave/farmblocks-input-phone

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@6.1.6...@crave/farmblocks-amount-selectors@6.1.7) (2021-04-19)
+
+
+### Bug Fixes
+
+* bump object.values version ([2fb1bcc](https://github.com/CraveFood/farmblocks/commit/2fb1bcc0ffe8df470d726cc168c7f36974dd7628))
+* use new react-spring api ([1a89779](https://github.com/CraveFood/farmblocks/commit/1a89779920c9634c4f6a8b114b458d8dba2e72e8))
+
+
+
+
+
 ## [6.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-amount-selectors@6.1.5...@crave/farmblocks-amount-selectors@6.1.6) (2021-02-17)
 
 **Note:** Version bump only for package @crave/farmblocks-amount-selectors

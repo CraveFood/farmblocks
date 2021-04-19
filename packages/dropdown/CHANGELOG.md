@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.3.0...@crave/farmblocks-dropdown@3.3.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* **dropdown:** bump react-aria-menubutton version ([f4d4c30](https://github.com/CraveFood/farmblocks/commit/f4d4c30dfe987c77bea34e852f99ed7ba7813652))
+
+
+
+
+
 # [3.3.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.2.0...@crave/farmblocks-dropdown@3.3.0) (2021-01-11)
 
 

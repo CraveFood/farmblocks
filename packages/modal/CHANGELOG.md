@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.8...@crave/farmblocks-modal@4.1.9) (2021-04-19)
+
+
+### Bug Fixes
+
+* use new react-spring api ([1a89779](https://github.com/CraveFood/farmblocks/commit/1a89779920c9634c4f6a8b114b458d8dba2e72e8))
+
+
+
+
+
 ## [4.1.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.7...@crave/farmblocks-modal@4.1.8) (2021-02-17)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
