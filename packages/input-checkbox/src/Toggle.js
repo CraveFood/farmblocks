@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { MdCheck, MdLoading } from "@crave/farmblocks-icon";
+import { SmCheck, MdLoading } from "@crave/farmblocks-icon";
 
 import { Loading } from "./styledComponents/Checkbox";
 
@@ -29,7 +29,7 @@ const Toggle = ({ isSwitch, loading }) => {
 
   return (
     <div className="visibleCheckbox">
-      <MdCheck className="checkmark" size="100%" />
+      <SmCheck className="checkmark" size="100%" />
     </div>
   );
 };

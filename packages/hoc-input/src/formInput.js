@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import wrapDisplayName from "recompose/wrapDisplayName";
 import Link from "@crave/farmblocks-link";
 import Label from "@crave/farmblocks-label";
-import { MdSearch, MdRemove, SmChevronDown } from "@crave/farmblocks-icon";
+import { SmMagnifier, SmCross, SmChevronDown } from "@crave/farmblocks-icon";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
 
@@ -157,7 +157,7 @@ const formInput = (WrappedComponent) =>
 
       const isSearch =
         inputProps.type && inputProps.type.toLowerCase() === "search";
-      const LeftIcon = leftIcon || (isSearch && MdSearch);
+      const LeftIcon = leftIcon || (isSearch && SmMagnifier);
 
       const clearButton = isSearch && this.state.value && (
         <Link
@@ -165,7 +165,7 @@ const formInput = (WrappedComponent) =>
           data-testid="input-clear"
           onClick={this.handleClearClick}
         >
-          <MdRemove size={32} />
+          <SmCross size={24} />
         </Link>
       );
 
