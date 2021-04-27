@@ -7,6 +7,7 @@ const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
     height={size}
     viewBox="4 4 32 32"
     width={size}
+    xmlns="http://www.w3.org/2000/svg"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}

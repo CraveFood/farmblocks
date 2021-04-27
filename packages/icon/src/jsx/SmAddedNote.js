@@ -7,14 +7,15 @@ const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
     width={size}
     height={size}
     viewBox="2 2 20 20"
+    xmlns="http://www.w3.org/2000/svg"
     ref={ref}
     aria-hidden={!props["aria-label"]}
     {...props}
   >
     <path
-      d="M19.707 5.707a1 1 0 01.293.707V21a1 1 0 01-1 1H5a1 1 0 01-1-1V3a1 1 0 011-1h10.586a1 1 0 01.707.293l3.414 3.414zm-6.054 2.76l-2.359 3.754-.987-1.35a1 1 0 00-1.614 1.18l1.857 2.54a1 1 0 001.653-.059l3.144-5a1 1 0 10-1.694-1.064z"
+      d="M15.586 2a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V21a1 1 0 01-1 1H5a1 1 0 01-1-1V3a1 1 0 011-1h10.586zm-.415 2H6v16h12V6.829L15.171 4zm-1.518 4.468a1 1 0 011.75.962l-.056.102-3.144 5a1 1 0 01-1.57.158l-.083-.1-1.857-2.539a1 1 0 011.534-1.277l.08.097.987 1.35 2.36-3.753z"
       fill={color}
-      fillRule="nonzero"
+      fillRule="evenodd"
     />
   </svg>
 ));
