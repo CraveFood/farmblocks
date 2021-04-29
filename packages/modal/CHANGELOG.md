@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.9...@crave/farmblocks-modal@4.2.0) (2021-04-29)
+
+
+### Features
+
+* use new sm icons ([0b15177](https://github.com/CraveFood/farmblocks/commit/0b1517742f0a69c50a407eb9d81072c0a89ea192))
+
+
+
+
+
 ## [4.1.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.1.8...@crave/farmblocks-modal@4.1.9) (2021-04-19)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@6.1.5...@crave/farmblocks-alert@6.1.6) (2021-04-29)
+
+**Note:** Version bump only for package @crave/farmblocks-alert
+
+
+
+
+
 ## [6.1.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-alert@6.1.4...@crave/farmblocks-alert@6.1.5) (2021-04-19)
 
 **Note:** Version bump only for package @crave/farmblocks-alert

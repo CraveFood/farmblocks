@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@1.1.1...@crave/farmblocks-icon@1.2.0) (2021-04-29)
+
+
+### Features
+
+* **icon:** add new icon svgs ([d311e12](https://github.com/CraveFood/farmblocks/commit/d311e12e5e910397c6ea5ab0992339c1c5ce2fd3))
+* **icon:** generate icons js files ([233ea2a](https://github.com/CraveFood/farmblocks/commit/233ea2aa81ed63dc3f099d02cd4f8fd96375eb68))
+
+
+
+
+
 ## [1.1.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@1.1.0...@crave/farmblocks-icon@1.1.1) (2021-04-19)
 
 **Note:** Version bump only for package @crave/farmblocks-icon

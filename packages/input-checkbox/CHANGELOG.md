@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@6.0.4...@crave/farmblocks-input-checkbox@6.1.0) (2021-04-29)
+
+
+### Features
+
+* use new sm icons ([0b15177](https://github.com/CraveFood/farmblocks/commit/0b1517742f0a69c50a407eb9d81072c0a89ea192))
+
+
+
+
+
 ## [6.0.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-checkbox@6.0.3...@crave/farmblocks-input-checkbox@6.0.4) (2021-04-19)
 
 **Note:** Version bump only for package @crave/farmblocks-input-checkbox

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@4.0.9...@crave/farmblocks-more-info@4.1.0) (2021-04-29)
+
+
+### Features
+
+* use new sm icons ([0b15177](https://github.com/CraveFood/farmblocks/commit/0b1517742f0a69c50a407eb9d81072c0a89ea192))
+
+
+
+
+
 ## [4.0.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-more-info@4.0.8...@crave/farmblocks-more-info@4.0.9) (2021-04-19)
 
 **Note:** Version bump only for package @crave/farmblocks-more-info
