@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { useTransition } from "react-spring/web.cjs";
 import Button, { buttonVariants } from "@crave/farmblocks-button";
 import Text from "@crave/farmblocks-text";
-import { MdRemove } from "@crave/farmblocks-icon";
+import { SmCross } from "@crave/farmblocks-icon";
 
 import {
   Wrapper,
@@ -104,7 +104,7 @@ const Modal = ({
                           {showCloseButton && (
                             <Button
                               className="closeButton"
-                              icon={<MdRemove size={24} />}
+                              icon={<SmCross size={20} />}
                               small
                               variant={buttonVariants.NEUTRAL}
                               onClick={onRequestClose}

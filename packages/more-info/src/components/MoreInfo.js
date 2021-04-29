@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Tooltip, { POSITIONS } from "@crave/farmblocks-tooltip";
 import Text from "@crave/farmblocks-text";
 import { fontSizes, fontTypes } from "@crave/farmblocks-theme";
-import { MdQuestion } from "@crave/farmblocks-icon";
+import { SmQuestion } from "@crave/farmblocks-icon";
 
 import StyledInfo from "../styledComponents/StyledInfo";
 
@@ -39,7 +39,7 @@ MoreInfo.propTypes = {
 };
 
 MoreInfo.defaultProps = {
-  trigger: <MdQuestion />,
+  trigger: <SmQuestion size={16} />,
   tooltipProps: {
     positionX: POSITIONS.X.CENTER,
   },

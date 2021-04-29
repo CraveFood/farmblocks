@@ -4,7 +4,7 @@ import { Transition } from "react-spring/web.cjs";
 import { PrimaryButton, NeutralButton } from "@crave/farmblocks-button";
 import { colors } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";
-import { MdAdd, MdMinus, MdTrash } from "@crave/farmblocks-icon";
+import { SmAdd, SmRemove, SmTrash } from "@crave/farmblocks-icon";
 import formInput from "@crave/farmblocks-hoc-input";
 
 import Wrapper from "../styledComponents/AmountSelector";
@@ -112,7 +112,7 @@ class AmountSelectors extends React.Component {
               data-testid="button--decrease"
               small
               icon={
-                <MdMinus
+                <SmRemove
                   size={24}
                   color={
                     disableDecreaseButton ? colors.GREY_16 : colors.RED_ORANGE
@@ -128,7 +128,7 @@ class AmountSelectors extends React.Component {
               data-testid="button--remove"
               small
               icon={
-                <MdTrash
+                <SmTrash
                   size={24 - 8}
                   color={disabled ? colors.GREY_16 : colors.RED_ORANGE}
                 />
@@ -183,7 +183,7 @@ class AmountSelectors extends React.Component {
           data-testid="button--increase"
           small
           icon={
-            <MdAdd
+            <SmAdd
               size={24}
               color={disableIncreaseButton ? colors.GREY_16 : "white"}
             />

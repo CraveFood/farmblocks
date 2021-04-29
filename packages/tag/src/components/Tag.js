@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import values from "object.values";
-import { MdRemove } from "@crave/farmblocks-icon";
+import { SmCross } from "@crave/farmblocks-icon";
 
 import StyledTag from "./styledComponent/StyledTag";
 import tagTypes from "../constants/tagTypes";
@@ -30,7 +30,7 @@ const Tag = ({
           }
         }}
       >
-        <MdRemove />
+        <SmCross />
       </div>
     )}
   </StyledTag>
