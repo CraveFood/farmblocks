@@ -1,63 +1,76 @@
 import styled from "styled-components";
-import { colors } from "@crave/farmblocks-theme";
 
-const scale = (props) => (props.shouldScale ? 1.219 : 1);
-const activeItemWidth = (props) => props.itemConfig.width * scale(props);
-const activeItemHeight = (props) => props.itemConfig.height * scale(props);
-const spaceBetweenItems = (props) => props.itemConfig.margin * 2;
-const stepDistance = (props) =>
-  props.itemConfig.width + spaceBetweenItems(props);
-const activeItemMargin = (props) => {
-  const { itemConfig } = props;
-  const scaledWidth = itemConfig.width * scale(props);
+export const Container = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
 
-  // We get the difference from scaled width and normal width.
-  // This difference is the total margin we have to compensate due to transform: scale.
-  // Then we divide it by 2 because we need to add this on left and right margin
-  const scaledMargin = (scaledWidth - itemConfig.width) / 2;
-
-  // Just add the default margin to it
-  return scaledMargin + itemConfig.margin;
-};
-
-const Container = styled.div`
+export const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
   position: relative;
-  ul {
-    position: relative;
-    left: 50%;
-    margin-left: ${(props) => -(activeItemWidth(props) / 2)}px;
-    height: ${(props) => activeItemHeight(props) + spaceBetweenItems(props)}px;
-    list-style: none;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
+`;
 
-    transform: translateX(
-      ${(props) => -(props.activeItem * stepDistance(props))}px
-    );
-    transition: transform ${(props) => props.itemConfig.transitionTime}s;
-    will-change: transform;
+export const ContentWrapper = styled.div`
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+`;
 
-    li {
-      margin: ${(props) => props.itemConfig.margin}px;
-      min-width: ${(props) => props.itemConfig.width}px;
-      width: ${(props) => props.itemConfig.width}px;
-      height: ${(props) => props.itemConfig.height}px;
+export const Content = styled.div`
+  display: flex;
+  transition: ${(props) =>
+    props.transitionEnabled ? "all 250ms linear" : "none"};
+  transform: translateX(
+    -${(props) => props.currentIndex * (100 / props.displayNumber)}%
+  );
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-      transition: all ${(props) => props.itemConfig.transitionTime}s;
-      will-change: transform;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-      .image {
-        box-shadow: 0 4px 40px 0 ${colors.GREY_32};
-      }
+  & > * {
+    width: ${(props) => 100 / props.displayNumber}%;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+`;
 
-      &.active {
-        transform: scale(${scale});
-        transform-origin: bottom;
-        margin: 0 ${activeItemMargin}px;
-      }
+export const Arrow = styled.button`
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  background-color: white;
+  border: 1px solid #ddd;
+  ${(props) => (props.direction === "left" ? "let: 24px" : "right: 24px")};
+
+  @media (hover: none) and (pointer: coarse) {
+    & {
+      display: none;
     }
   }
 `;
 
-export default Container;
+export const DotsContainer = styled.div`
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Dot = styled.span`
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: ${(props) => (props.active ? "black" : "white")};
+`;

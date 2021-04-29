@@ -1,139 +1,208 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import Image from "@crave/farmblocks-image";
-import Text from "@crave/farmblocks-text";
 
-import Container from "./styledComponents/Carousel";
+import {
+  Container,
+  Wrapper,
+  Content,
+  ContentWrapper,
+  Arrow,
+  DotsContainer,
+  Dot,
+} from "./styledComponents/Carousel";
 
-const defaultConfig = {
-  width: 656,
-  height: 328,
-  margin: 20,
-  fontSize: 88,
-  displayTime: 4,
-  transitionTime: 2,
-  border: "4px solid rgba(255, 255, 255, 0.56)",
-  borderRadius: "16px",
-};
+function Carousel({ imageSet, displayNumber, infiniteLoop }) {
+  const [currentIndex, setCurrentIndex] = useState(
+    infiniteLoop ? displayNumber : 0,
+  );
 
-class Carousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeItem: 0,
-    };
+  const [dotIndex, setDotIndex] = useState(0);
+
+  const [totalOfCards, setTotalOfCards] = useState(imageSet.length);
+  const [touchPosition, setTouchPosition] = useState(null);
+
+  const [isRepeating, setIsRepeating] = useState(
+    infiniteLoop && imageSet.length > displayNumber,
+  );
+  const [transitionEnabled, setTransitionEnabled] = useState(true);
+
+  useEffect(() => {
+    setTotalOfCards(imageSet.length);
+    setIsRepeating(infiniteLoop && imageSet.length > displayNumber);
+  }, [imageSet, displayNumber, infiniteLoop]);
+
+  useEffect(() => {
+    if (isRepeating) {
+      if (currentIndex === displayNumber || currentIndex === totalOfCards) {
+        setTransitionEnabled(true);
+      }
+    }
+  }, [currentIndex, isRepeating, displayNumber, totalOfCards]);
+
+  function handleDotClick(index) {
+    setDotIndex(index);
+    setCurrentIndex(index + displayNumber);
   }
 
-  componentDidMount = () => {
-    this.setInterval();
-  };
+  function nextSlide() {
+    if (dotIndex < totalOfCards - 1) setDotIndex((prevState) => prevState + 1);
+    else if (isRepeating && dotIndex === totalOfCards - 1) {
+      setDotIndex(0);
+    }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.imageSet !== this.props.imageSet) {
-      this.setState({ activeItem: 0 });
-      this.setInterval();
+    if (isRepeating || currentIndex < totalOfCards - displayNumber) {
+      setCurrentIndex((prevState) => prevState + 1);
     }
   }
 
-  componentWillUnmount = () => {
-    this.clearInterval();
-  };
+  function prevSlide() {
+    if (dotIndex === 0) setDotIndex(totalOfCards - 1);
+    else setDotIndex((prevState) => prevState - 1);
 
-  nextItem = () => {
-    const activeItem = this.state.activeItem + 1; // eslint-disable-line
-    if (activeItem === this.props.imageSet.length) {
-      this.clearInterval();
-      this.props.onEnd();
+    if (isRepeating || currentIndex > 0) {
+      setCurrentIndex((prevState) => prevState - 1);
+    }
+  }
+
+  function handleTouchStart(event) {
+    const touchDown = event.touches[0].clientX;
+    setTouchPosition(touchDown);
+  }
+
+  function handleTouchMove(event) {
+    const touchDown = touchPosition;
+
+    if (touchDown === null) {
       return;
     }
-    this.props.onChange(activeItem);
-    this.setState({ activeItem });
-  };
 
-  setInterval = () => {
-    if (this.transitionId) {
-      return;
+    const currentTouch = event.touches[0].clientX;
+    const diff = touchDown - currentTouch;
+
+    if (diff > 5) {
+      nextSlide();
     }
 
-    const { displayTime } = { ...defaultConfig, ...this.props.itemConfig };
-
-    this.transitionId = window.setInterval(this.nextItem, displayTime * 1000);
-  };
-
-  clearInterval = () => {
-    if (this.transitionId) {
-      window.clearInterval(this.transitionId);
-      delete this.transitionId;
+    if (diff < -5) {
+      prevSlide();
     }
-  };
 
-  render() {
-    const { imageSet, itemConfig } = this.props;
-    const configProps = { ...defaultConfig, ...itemConfig };
-
-    return (
-      <Container
-        activeItem={this.state.activeItem}
-        itemConfig={configProps}
-        shouldScale={this.props.scale}
-        className={this.props.className}
-      >
-        <ul>
-          {imageSet.map((item, index) => {
-            const isActive = index === this.state.activeItem;
-            return (
-              <li key={index} className={isActive ? "active" : ""}>
-                <Image
-                  className="image"
-                  src={item.image}
-                  width="100%"
-                  height="100%"
-                  borderRadius={configProps.borderRadius}
-                  css={{
-                    border: configProps.border,
-                  }}
-                />
-                <Text
-                  className="itemLabel"
-                  size={configProps.fontSize}
-                  align="center"
-                  fontWeight="title"
-                >
-                  {item.name}
-                </Text>
-              </li>
-            );
-          })}
-        </ul>
-      </Container>
-    );
+    setTouchPosition(null);
   }
+
+  function handleTransitionEnd() {
+    if (isRepeating) {
+      if (currentIndex === 0) {
+        setTransitionEnabled(false);
+        setCurrentIndex(totalOfCards);
+      } else if (currentIndex === totalOfCards + displayNumber) {
+        setTransitionEnabled(false);
+        setCurrentIndex(displayNumber);
+      }
+    }
+  }
+
+  function renderExtraPrev() {
+    const output = [];
+    for (let index = 0; index < displayNumber; index += 1) {
+      output.push(
+        <div key={imageSet[totalOfCards - 1 - index].image}>
+          <div style={{ padding: 8 }}>
+            <img
+              src={imageSet[totalOfCards - 1 - index].image}
+              alt={imageSet[totalOfCards - 1 - index].name}
+              style={{ width: "100%" }}
+            />
+          </div>
+        </div>,
+      );
+    }
+    output.reverse();
+    return output;
+  }
+
+  function renderExtraNext() {
+    const output = [];
+    for (let index = 0; index < displayNumber; index += 1) {
+      output.push(
+        <div key={imageSet[index].image}>
+          <div style={{ padding: 8 }}>
+            <img
+              src={imageSet[index].image}
+              alt={imageSet[index].name}
+              style={{ width: "100%" }}
+            />
+          </div>
+        </div>,
+      );
+    }
+    return output;
+  }
+
+  return (
+    <Container>
+      <Wrapper>
+        {(isRepeating || currentIndex > 0) && (
+          <Arrow onClick={prevSlide} direction="left">
+            &lt;
+          </Arrow>
+        )}
+        <ContentWrapper
+          onTouchStart={(event) => handleTouchStart(event)}
+          onTouchMove={(event) => handleTouchMove(event)}
+        >
+          <Content
+            currentIndex={currentIndex}
+            displayNumber={displayNumber}
+            transitionEnabled={transitionEnabled}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {totalOfCards > displayNumber && isRepeating && renderExtraPrev()}
+            {imageSet.map((item) => (
+              <div key={item.image}>
+                <div style={{ padding: 8 }}>
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    style={{ width: "100%" }}
+                  />
+                </div>
+              </div>
+            ))}
+            {totalOfCards > displayNumber && isRepeating && renderExtraNext()}
+          </Content>
+        </ContentWrapper>
+        {(isRepeating || currentIndex < totalOfCards - displayNumber) && (
+          <Arrow onClick={nextSlide} direction="right">
+            &gt;
+          </Arrow>
+        )}
+
+        {isRepeating && (
+          <DotsContainer>
+            {imageSet.map((_, index) => (
+              <Dot
+                active={dotIndex === index}
+                onClick={() => handleDotClick(index)}
+              />
+            ))}
+          </DotsContainer>
+        )}
+      </Wrapper>
+    </Container>
+  );
 }
 
 Carousel.propTypes = {
   imageSet: PropTypes.arrayOf(
     PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
-  ),
-  onChange: PropTypes.func,
-  onEnd: PropTypes.func,
-  scale: PropTypes.bool,
-  itemConfig: PropTypes.shape({
-    width: PropTypes.number,
-    height: PropTypes.number,
-    margin: PropTypes.number,
-    fontSize: PropTypes.number,
-    displayTime: PropTypes.number,
-    transitionTime: PropTypes.number,
-    border: PropTypes.string,
-  }),
-  className: PropTypes.string,
+  ).isRequired,
+  displayNumber: PropTypes.number,
+  infiniteLoop: PropTypes.bool,
 };
-
 Carousel.defaultProps = {
-  itemConfig: defaultConfig,
-  scale: true,
-  onChange: () => null,
-  onEnd: () => null,
+  displayNumber: 3,
+  infiniteLoop: true,
 };
 
 export default Carousel;
