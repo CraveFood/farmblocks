@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-
 import {
   Container,
   Wrapper,
   Content,
   ContentWrapper,
-  Arrow,
-  DotsContainer,
-  Dot,
 } from "./styledComponents/Carousel";
 
-function Carousel({ imageSet, displayNumber, infiniteLoop }) {
-  const [currentIndex, setCurrentIndex] = useState(
-    infiniteLoop ? displayNumber : 0,
+import ArrowButton from "./components/ArrowButton";
+import Dots from "./components/Dots";
+
+const getWidth = () => window.innerWidth;
+
+function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
+  const [displayNumber, setDisplayNumber] = useState(
+    slidesToShow < imageSet.length ? slidesToShow : imageSet.length,
   );
 
   const [dotIndex, setDotIndex] = useState(0);
@@ -21,10 +22,50 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
   const [totalOfCards, setTotalOfCards] = useState(imageSet.length);
   const [touchPosition, setTouchPosition] = useState(null);
 
+  const [currentIndex, setCurrentIndex] = useState(
+    infiniteLoop && displayNumber < imageSet.length ? displayNumber : 0,
+  );
+
   const [isRepeating, setIsRepeating] = useState(
     infiniteLoop && imageSet.length > displayNumber,
   );
   const [transitionEnabled, setTransitionEnabled] = useState(true);
+
+  const [screendWidth, setScreenWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setScreenWidth(window.innerWidth);
+  }
+
+  function handleResize() {
+    const screenSize = getWidth();
+    if (screenSize < 768) {
+      setDisplayNumber(1);
+      setCurrentIndex(dotIndex + 1 < imageSet.length ? dotIndex + 1 : 0);
+    } else if (displayNumber < imageSet.length) {
+      if (screenSize < 1200) {
+        setDisplayNumber(2);
+        setCurrentIndex(imageSet.length > 2 ? dotIndex + 2 : 0);
+      } else if (slidesToShow > 2 && imageSet.length >= slidesToShow) {
+        setDisplayNumber(slidesToShow);
+        setCurrentIndex(dotIndex + slidesToShow);
+      } else {
+        setDisplayNumber(2);
+        setCurrentIndex(dotIndex + 2);
+      }
+    }
+  }
+
+  useEffect(() => {
+    handleResize();
+  }, [screendWidth]);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
   useEffect(() => {
     setTotalOfCards(imageSet.length);
@@ -75,7 +116,6 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
     if (touchDown === null) {
       return;
     }
-
     const currentTouch = event.touches[0].clientX;
     const diff = touchDown - currentTouch;
 
@@ -86,7 +126,6 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
     if (diff < -5) {
       prevSlide();
     }
-
     setTouchPosition(null);
   }
 
@@ -107,11 +146,10 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
     for (let index = 0; index < displayNumber; index += 1) {
       output.push(
         <div key={imageSet[totalOfCards - 1 - index].image}>
-          <div style={{ padding: 8 }}>
+          <div style={{ padding: 10 }}>
             <img
               src={imageSet[totalOfCards - 1 - index].image}
               alt={imageSet[totalOfCards - 1 - index].name}
-              style={{ width: "100%" }}
             />
           </div>
         </div>,
@@ -126,12 +164,8 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
     for (let index = 0; index < displayNumber; index += 1) {
       output.push(
         <div key={imageSet[index].image}>
-          <div style={{ padding: 8 }}>
-            <img
-              src={imageSet[index].image}
-              alt={imageSet[index].name}
-              style={{ width: "100%" }}
-            />
+          <div style={{ padding: 10 }}>
+            <img src={imageSet[index].image} alt={imageSet[index].name} />
           </div>
         </div>,
       );
@@ -143,9 +177,7 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
     <Container>
       <Wrapper>
         {(isRepeating || currentIndex > 0) && (
-          <Arrow onClick={prevSlide} direction="left">
-            &lt;
-          </Arrow>
+          <ArrowButton onClick={prevSlide} direction="left" />
         )}
         <ContentWrapper
           onTouchStart={(event) => handleTouchStart(event)}
@@ -160,12 +192,8 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
             {totalOfCards > displayNumber && isRepeating && renderExtraPrev()}
             {imageSet.map((item) => (
               <div key={item.image}>
-                <div style={{ padding: 8 }}>
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    style={{ width: "100%" }}
-                  />
+                <div style={{ padding: 10 }}>
+                  <img src={item.image} alt={item.name} />
                 </div>
               </div>
             ))}
@@ -173,22 +201,16 @@ function Carousel({ imageSet, displayNumber, infiniteLoop }) {
           </Content>
         </ContentWrapper>
         {(isRepeating || currentIndex < totalOfCards - displayNumber) && (
-          <Arrow onClick={nextSlide} direction="right">
-            &gt;
-          </Arrow>
-        )}
-
-        {isRepeating && (
-          <DotsContainer>
-            {imageSet.map((_, index) => (
-              <Dot
-                active={dotIndex === index}
-                onClick={() => handleDotClick(index)}
-              />
-            ))}
-          </DotsContainer>
+          <ArrowButton onClick={nextSlide} direction="right" />
         )}
       </Wrapper>
+      {isRepeating && (
+        <Dots
+          imageSet={imageSet}
+          handleClick={handleDotClick}
+          selectedDot={dotIndex}
+        />
+      )}
     </Container>
   );
 }
@@ -197,11 +219,11 @@ Carousel.propTypes = {
   imageSet: PropTypes.arrayOf(
     PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
   ).isRequired,
-  displayNumber: PropTypes.number,
+  slidesToShow: PropTypes.number,
   infiniteLoop: PropTypes.bool,
 };
 Carousel.defaultProps = {
-  displayNumber: 3,
+  slidesToShow: 3,
   infiniteLoop: true,
 };
 

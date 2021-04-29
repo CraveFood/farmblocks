@@ -10,6 +10,9 @@ export const Wrapper = styled.div`
   display: flex;
   width: 100%;
   position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ContentWrapper = styled.div`
@@ -37,40 +40,8 @@ export const Content = styled.div`
     flex-shrink: 0;
     flex-grow: 1;
   }
-`;
 
-export const Arrow = styled.button`
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  background-color: white;
-  border: 1px solid #ddd;
-  ${(props) => (props.direction === "left" ? "let: 24px" : "right: 24px")};
-
-  @media (hover: none) and (pointer: coarse) {
-    & {
-      display: none;
-    }
+  div img {
+    width: 100%;
   }
-`;
-
-export const DotsContainer = styled.div`
-  position: absolute;
-  bottom: 25px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Dot = styled.span`
-  padding: 10px;
-  margin-right: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-  background: ${(props) => (props.active ? "black" : "white")};
 `;
