@@ -9,8 +9,8 @@ import {
 
 import ArrowButton from "./components/ArrowButton";
 import Dots from "./components/Dots";
-
-const getWidth = () => window.innerWidth;
+import useResizeWindow from "./hooks/useResizeWindow";
+import useTouch from "./hooks/useTouch";
 
 function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
   const [displayNumber, setDisplayNumber] = useState(
@@ -18,59 +18,23 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
   );
 
   const [dotIndex, setDotIndex] = useState(0);
-
-  const [totalOfCards, setTotalOfCards] = useState(imageSet.length);
-  const [touchPosition, setTouchPosition] = useState(null);
-
   const [currentIndex, setCurrentIndex] = useState(
     infiniteLoop && displayNumber < imageSet.length ? displayNumber : 0,
   );
 
-  const [isRepeating, setIsRepeating] = useState(
-    infiniteLoop && imageSet.length > displayNumber,
-  );
+  useResizeWindow({
+    displayNumber,
+    setDisplayNumber,
+    setCurrentIndex,
+    dotIndex,
+    numberOfCards: imageSet.length,
+    slidesToShow,
+    infiniteLoop,
+  });
+
+  const totalOfCards = imageSet.length;
+  const isRepeating = infiniteLoop && imageSet.length > displayNumber;
   const [transitionEnabled, setTransitionEnabled] = useState(true);
-
-  const [screendWidth, setScreenWidth] = useState(window.innerWidth);
-
-  function handleWindowSizeChange() {
-    setScreenWidth(window.innerWidth);
-  }
-
-  function handleResize() {
-    const screenSize = getWidth();
-    if (screenSize < 768) {
-      setDisplayNumber(1);
-      setCurrentIndex(dotIndex + 1 < imageSet.length ? dotIndex + 1 : 0);
-    } else if (displayNumber < imageSet.length) {
-      if (screenSize < 1200) {
-        setDisplayNumber(2);
-        setCurrentIndex(imageSet.length > 2 ? dotIndex + 2 : 0);
-      } else if (slidesToShow > 2 && imageSet.length >= slidesToShow) {
-        setDisplayNumber(slidesToShow);
-        setCurrentIndex(dotIndex + slidesToShow);
-      } else {
-        setDisplayNumber(2);
-        setCurrentIndex(dotIndex + 2);
-      }
-    }
-  }
-
-  useEffect(() => {
-    handleResize();
-  }, [screendWidth]);
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    setTotalOfCards(imageSet.length);
-    setIsRepeating(infiniteLoop && imageSet.length > displayNumber);
-  }, [imageSet, displayNumber, infiniteLoop]);
 
   useEffect(() => {
     if (isRepeating) {
@@ -105,29 +69,10 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
     }
   }
 
-  function handleTouchStart(event) {
-    const touchDown = event.touches[0].clientX;
-    setTouchPosition(touchDown);
-  }
-
-  function handleTouchMove(event) {
-    const touchDown = touchPosition;
-
-    if (touchDown === null) {
-      return;
-    }
-    const currentTouch = event.touches[0].clientX;
-    const diff = touchDown - currentTouch;
-
-    if (diff > 5) {
-      nextSlide();
-    }
-
-    if (diff < -5) {
-      prevSlide();
-    }
-    setTouchPosition(null);
-  }
+  const { handleTouchStart, handleTouchMove } = useTouch({
+    nextSlide,
+    prevSlide,
+  });
 
   function handleTransitionEnd() {
     if (isRepeating) {
@@ -201,7 +146,11 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
           </Content>
         </ContentWrapper>
         {(isRepeating || currentIndex < totalOfCards - displayNumber) && (
-          <ArrowButton onClick={nextSlide} direction="right" />
+          <ArrowButton
+            data-testid="right-arrow"
+            onClick={nextSlide}
+            direction="right"
+          />
         )}
       </Wrapper>
       {isRepeating && (
