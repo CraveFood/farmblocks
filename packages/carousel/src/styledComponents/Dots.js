@@ -12,6 +12,9 @@ export const Dot = styled.span`
   margin-right: 5px;
   cursor: pointer;
   border-radius: 50%;
-  background: ${(props) =>
-    props.active ? "rgba(0, 0, 0, 0.48)" : "rgba(0, 0, 0, 0.08)"};
+  background: rgba(0, 0, 0, 0.08);
+
+  &.active {
+    background: rgba(0, 0, 0, 0.48);
+  }
 `;

@@ -7,9 +7,9 @@ const ArrowButton = ({ direction, onClick }, props) => (
   <Button
     icon={
       direction === "left" ? (
-        <SmChevronLeft size={24} />
+        <SmChevronLeft data-testid="left-arrow" size={24} />
       ) : (
-        <SmChevronRight size={24} />
+        <SmChevronRight data-testid="right-arrow" size={24} />
       )
     }
     onClick={onClick}

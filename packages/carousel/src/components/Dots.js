@@ -4,12 +4,12 @@ import { Dot, DotsContainer } from "../styledComponents/Dots";
 
 function Dots({ imageSet, handleClick, selectedDot }) {
   return (
-    <DotsContainer>
+    <DotsContainer data-testid="dots-container">
       {imageSet.map((item, index) => (
         <Dot
           key={item.image}
-          active={selectedDot === index}
           onClick={() => handleClick(index)}
+          className={selectedDot === index ? "active" : ""}
         />
       ))}
     </DotsContainer>
