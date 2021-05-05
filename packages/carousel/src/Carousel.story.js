@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 
 import Carousel from ".";
 
@@ -44,58 +43,25 @@ const imageSet = [
 ];
 
 storiesOf("Carousel", module)
-  .add("1 photo", () => <Carousel imageSet={imageSet.slice(0, 1)} />)
-
-  .add("1 photo with onEnd", () => (
-    <Carousel onEnd={action("slideshow end")} imageSet={imageSet.slice(0, 1)} />
-  ))
-
-  .add("2 photos", () => <Carousel imageSet={imageSet.slice(0, 2)} />)
-
-  .add("all photos", () => <Carousel imageSet={imageSet} />)
-  .add("no scale", () => <Carousel imageSet={imageSet} scale={false} />)
-
-  .add("all photos with onChange and onEnd", () => (
+  .add("1 photo", () => (
     <Carousel
-      onChange={action("photo changed")}
-      onEnd={action("end")}
-      imageSet={imageSet}
+      imageSet={imageSet.slice(0, 1)}
+      infiniteLoop={false}
+      slidesToShow={1}
     />
   ))
-  .add("partial custom config", () => (
+
+  .add("2 photos", () => (
     <Carousel
-      itemConfig={{
-        displayTime: 6.5,
-        transitionTime: 2.5,
-      }}
-      imageSet={imageSet}
+      imageSet={imageSet.slice(0, 2)}
+      infiniteLoop={false}
+      slidesToShow={2}
     />
   ))
-  .add("custom config", () => (
-    <Carousel
-      itemConfig={{
-        width: 200,
-        height: 200,
-        margin: 2,
-        displayTime: 2,
-        transitionTime: 0.5,
-        border: { radius: "100%", width: "4px", color: "green" },
-      }}
-      imageSet={imageSet}
-    />
+
+  .add("all photos", () => (
+    <Carousel imageSet={imageSet} infiniteLoop={false} slidesToShow={3} />
   ))
-  .add("extended style", () => (
-    <Carousel
-      css="
-        background: lavender;
-        .image {
-          background-size: 50%;
-          background-repeat: repeat;
-        }
-        .itemLabel {
-          color: red;
-        }
-      "
-      imageSet={imageSet}
-    />
+  .add("infinite loop", () => (
+    <Carousel imageSet={imageSet} infiniteLoop slidesToShow={3} />
   ));
