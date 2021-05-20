@@ -11,14 +11,14 @@ describe("Carousel", () => {
 
   it("should render component without arrows and dots", () => {
     const initialValues = {
-      imageSet: [
+      slides: [
         {
-          image: "image1.png",
-          name: "image1.png",
+          id: "image1",
+          content: <img src="image1.png" alt="image1.png" />,
         },
         {
-          image: "image2.png",
-          name: "image2.png",
+          id: "image2",
+          content: <img src="image2.png" alt="image2.png" />,
         },
       ],
       slidesToShow: 2,
@@ -32,18 +32,18 @@ describe("Carousel", () => {
   });
   it("should render component with arrows", () => {
     const initialValues = {
-      imageSet: [
+      slides: [
         {
-          image: "image1.png",
-          name: "image1.png",
+          id: "image1",
+          content: <img src="image1.png" alt="image1.png" />,
         },
         {
-          image: "image2.png",
-          name: "image2.png",
+          id: "image2",
+          content: <img src="image2.png" alt="image2.png" />,
         },
         {
-          image: "image3.png",
-          name: "image3.png",
+          id: "image3",
+          content: <img src="image3.png" alt="image3.png" />,
         },
       ],
       slidesToShow: 2,
@@ -68,18 +68,18 @@ describe("Carousel", () => {
 
   it("should render component with infinite scroll", async () => {
     const initialValues = {
-      imageSet: [
+      slides: [
         {
-          image: "image1.png",
-          name: "image1.png",
+          id: "image1",
+          content: <img src="image1.png" alt="image1.png" />,
         },
         {
-          image: "image2.png",
-          name: "image2.png",
+          id: "image2",
+          content: <img src="image2.png" alt="image2.png" />,
         },
         {
-          image: "image3.png",
-          name: "image3.png",
+          id: "image3",
+          content: <img src="image3.png" alt="image3.png" />,
         },
       ],
       slidesToShow: 2,

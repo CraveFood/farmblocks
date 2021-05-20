@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Dot, DotsContainer } from "../styledComponents/Dots";
 
-function Dots({ imageSet, handleClick, selectedDot }) {
+function Dots({ slides, handleClick, selectedDot }) {
   return (
     <DotsContainer data-testid="dots-container">
-      {imageSet.map((item, index) => (
+      {slides.map((item, index) => (
         <Dot
-          key={item.image}
+          key={item.id}
           onClick={() => handleClick(index)}
           className={selectedDot === index ? "active" : ""}
         />
@@ -17,8 +17,11 @@ function Dots({ imageSet, handleClick, selectedDot }) {
 }
 
 Dots.propTypes = {
-  imageSet: PropTypes.arrayOf(
-    PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      content: PropTypes.node,
+    }),
   ).isRequired,
   handleClick: PropTypes.func,
   selectedDot: PropTypes.number,

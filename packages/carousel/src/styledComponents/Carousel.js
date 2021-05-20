@@ -19,6 +19,7 @@ export const ContentWrapper = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
+  margin: 0px 16px;
 `;
 
 export const Content = styled.div`
@@ -39,9 +40,5 @@ export const Content = styled.div`
     width: ${(props) => 100 / props.displayNumber}%;
     flex-shrink: 0;
     flex-grow: 1;
-  }
-
-  div img {
-    width: 100%;
   }
 `;

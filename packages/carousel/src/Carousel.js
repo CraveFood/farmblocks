@@ -6,20 +6,20 @@ import {
   Content,
   ContentWrapper,
 } from "./styledComponents/Carousel";
-
+import Slide from "./components/Slide";
 import ArrowButton from "./components/ArrowButton";
 import Dots from "./components/Dots";
 import useResizeWindow from "./hooks/useResizeWindow";
 import useTouch from "./hooks/useTouch";
 
-function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
+function Carousel({ slides, slidesToShow, infiniteLoop, breakpoints }) {
   const [displayNumber, setDisplayNumber] = useState(
-    slidesToShow < imageSet.length ? slidesToShow : imageSet.length,
+    slidesToShow < slides.length ? slidesToShow : slides.length,
   );
 
   const [dotIndex, setDotIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(
-    infiniteLoop && displayNumber < imageSet.length ? displayNumber : 0,
+    infiniteLoop && displayNumber < slides.length ? displayNumber : 0,
   );
 
   useResizeWindow({
@@ -27,13 +27,14 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
     setDisplayNumber,
     setCurrentIndex,
     dotIndex,
-    numberOfCards: imageSet.length,
+    numberOfCards: slides.length,
     slidesToShow,
+    breakpoints,
     infiniteLoop,
   });
 
-  const totalOfCards = imageSet.length;
-  const isRepeating = infiniteLoop && imageSet.length > displayNumber;
+  const totalOfCards = slides.length;
+  const isRepeating = infiniteLoop && slides.length > displayNumber;
   const [transitionEnabled, setTransitionEnabled] = useState(true);
 
   useEffect(() => {
@@ -90,14 +91,9 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
     const output = [];
     for (let index = 0; index < displayNumber; index += 1) {
       output.push(
-        <div key={imageSet[totalOfCards - 1 - index].image}>
-          <div style={{ padding: 10 }}>
-            <img
-              src={imageSet[totalOfCards - 1 - index].image}
-              alt={imageSet[totalOfCards - 1 - index].name}
-            />
-          </div>
-        </div>,
+        <Slide key={slides[totalOfCards - 1 - index].id}>
+          {slides[totalOfCards - 1 - index].content}
+        </Slide>,
       );
     }
     output.reverse();
@@ -108,11 +104,7 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
     const output = [];
     for (let index = 0; index < displayNumber; index += 1) {
       output.push(
-        <div key={imageSet[index].image}>
-          <div style={{ padding: 10 }}>
-            <img src={imageSet[index].image} alt={imageSet[index].name} />
-          </div>
-        </div>,
+        <Slide key={slides[index].id}>{slides[index].content}</Slide>,
       );
     }
     return output;
@@ -135,12 +127,8 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
             onTransitionEnd={handleTransitionEnd}
           >
             {totalOfCards > displayNumber && isRepeating && renderExtraPrev()}
-            {imageSet.map((item) => (
-              <div key={item.image}>
-                <div style={{ padding: 10 }}>
-                  <img src={item.image} alt={item.name} />
-                </div>
-              </div>
+            {slides.map((item) => (
+              <Slide key={item.id}>{item.content}</Slide>
             ))}
             {totalOfCards > displayNumber && isRepeating && renderExtraNext()}
           </Content>
@@ -155,7 +143,7 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
       </Wrapper>
       {isRepeating && (
         <Dots
-          imageSet={imageSet}
+          slides={slides}
           handleClick={handleDotClick}
           selectedDot={dotIndex}
         />
@@ -165,15 +153,20 @@ function Carousel({ imageSet, slidesToShow, infiniteLoop }) {
 }
 
 Carousel.propTypes = {
-  imageSet: PropTypes.arrayOf(
-    PropTypes.shape({ image: PropTypes.string, name: PropTypes.string }),
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      content: PropTypes.node,
+    }),
   ).isRequired,
   slidesToShow: PropTypes.number,
+  breakpoints: PropTypes.arrayOf(PropTypes.number),
   infiniteLoop: PropTypes.bool,
 };
 Carousel.defaultProps = {
   slidesToShow: 3,
-  infiniteLoop: true,
+  breakpoints: [1, 2],
+  infiniteLoop: false,
 };
 
 export default Carousel;

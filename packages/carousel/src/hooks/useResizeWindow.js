@@ -10,6 +10,7 @@ const useResizeWindow = ({
   dotIndex,
   numberOfCards,
   slidesToShow,
+  breakpoints,
   infiniteLoop,
 }) => {
   const [screendWidth, setScreenWidth] = useState(window.innerWidth);
@@ -23,7 +24,7 @@ const useResizeWindow = ({
     let incrementIndex = infiniteLoop ? 2 : 0;
 
     if (screenSize < 768) {
-      setDisplayNumber(1);
+      setDisplayNumber(breakpoints[0]);
       if (infiniteLoop) incrementIndex = 1;
       setCurrentIndex(
         dotIndex + incrementIndex < numberOfCards
@@ -32,14 +33,17 @@ const useResizeWindow = ({
       );
     } else if (displayNumber < numberOfCards) {
       if (screenSize < 1200) {
-        setDisplayNumber(2);
+        setDisplayNumber(breakpoints[1]);
         setCurrentIndex(numberOfCards > 2 ? dotIndex + incrementIndex : 0);
-      } else if (slidesToShow > 2 && numberOfCards >= slidesToShow) {
+      } else if (
+        slidesToShow > breakpoints[1] &&
+        numberOfCards >= slidesToShow
+      ) {
         setDisplayNumber(slidesToShow);
         if (infiniteLoop) incrementIndex = slidesToShow;
         setCurrentIndex(dotIndex + incrementIndex);
       } else {
-        setDisplayNumber(2);
+        setDisplayNumber(breakpoints[1]);
         setCurrentIndex(dotIndex + incrementIndex);
       }
     }
@@ -64,6 +68,7 @@ useResizeWindow.propTypes = {
   dotIndex: PropTypes.number,
   numberOfCards: PropTypes.number,
   slidesToShow: PropTypes.number,
+  breakpoints: PropTypes.arrayOf(PropTypes.number),
   infiniteLoop: PropTypes.bool,
 };
 

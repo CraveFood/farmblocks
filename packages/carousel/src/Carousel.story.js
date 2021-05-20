@@ -5,47 +5,54 @@ import Carousel from ".";
 
 const imageSet = [
   {
-    image: "https://picsum.photos/640/?image=1080",
-    name: "Organic Pepper",
+    id: "organic-pepper",
+    content: (
+      <img src="https://picsum.photos/640/?image=1080" alt="Organic Pepper" />
+    ),
   },
   {
-    image: "https://picsum.photos/640/?image=824",
-    name: "Tomato",
+    id: "tomato",
+    content: <img src="https://picsum.photos/640/?image=824" alt="Tomato" />,
+  },
+
+  {
+    id: "grapefruit",
+    content: (
+      <img src="https://picsum.photos/640/?image=889" alt="Grapefruit" />
+    ),
   },
   {
-    image: "https://picsum.photos/640/?image=889",
-    name: "Grapefruit",
+    id: "tomato-2",
+    content: <img src="https://picsum.photos/640/?image=674" alt="Tomato" />,
   },
   {
-    image: "https://picsum.photos/640/?image=674",
-    name: "Tomato",
+    id: "tomato-3",
+    content: <img src="https://picsum.photos/640/?image=292" alt="Tomato" />,
   },
   {
-    image: "https://picsum.photos/640/?image=292",
-    name: "Tomato",
+    id: "tomato-4",
+    content: <img src="https://picsum.photos/640/?image=517" alt="Tomato" />,
   },
   {
-    image: "https://picsum.photos/640/?image=517",
-    name: "Tomato",
+    id: "tomato-5",
+    content: <img src="https://picsum.photos/640/?image=627" alt="Tomato" />,
   },
   {
-    image: "https://picsum.photos/640/?image=627",
-    name: "Tomato",
+    id: "tomato-6",
+    content: <img src="https://picsum.photos/640/?image=75" alt="Tomato" />,
   },
   {
-    image: "https://picsum.photos/640/?image=75",
-    name: "Tomato",
-  },
-  {
-    image: "https://picsum.photos/640/?image=766",
-    name: "Romaine Lettuce",
+    id: "romaine-lettuce",
+    content: (
+      <img src="https://picsum.photos/640/?image=766" alt="Romaine Lettuce" />
+    ),
   },
 ];
 
 storiesOf("Carousel", module)
   .add("1 photo", () => (
     <Carousel
-      imageSet={imageSet.slice(0, 1)}
+      slides={imageSet.slice(0, 1)}
       infiniteLoop={false}
       slidesToShow={1}
     />
@@ -53,15 +60,15 @@ storiesOf("Carousel", module)
 
   .add("2 photos", () => (
     <Carousel
-      imageSet={imageSet.slice(0, 2)}
+      slides={imageSet.slice(0, 2)}
       infiniteLoop={false}
       slidesToShow={2}
     />
   ))
 
   .add("all photos", () => (
-    <Carousel imageSet={imageSet} infiniteLoop={false} slidesToShow={3} />
+    <Carousel slides={imageSet} infiniteLoop={false} slidesToShow={3} />
   ))
   .add("infinite loop", () => (
-    <Carousel imageSet={imageSet} infiniteLoop slidesToShow={3} />
+    <Carousel slides={imageSet} infiniteLoop slidesToShow={3} />
   ));

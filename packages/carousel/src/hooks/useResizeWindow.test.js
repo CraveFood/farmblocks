@@ -10,6 +10,7 @@ const CompWithResizeHook = ({
   dotIndex,
   numberOfCards,
   slidesToShow,
+  breakpoints,
   infiniteLoop,
 }) => {
   useResizeWindow({
@@ -19,6 +20,7 @@ const CompWithResizeHook = ({
     dotIndex,
     numberOfCards,
     slidesToShow,
+    breakpoints,
     infiniteLoop,
   });
 
@@ -36,6 +38,7 @@ CompWithResizeHook.propTypes = {
   dotIndex: PropTypes.number,
   numberOfCards: PropTypes.number,
   slidesToShow: PropTypes.number,
+  breakpoints: PropTypes.arrayOf(PropTypes.number),
   infiniteLoop: PropTypes.bool,
 };
 
@@ -66,6 +69,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
       dotIndex: 0,
       numberOfCards: 5,
       slidesToShow: 3,
+      breakpoints: [1, 2],
       infiniteLoop: true,
     };
     makeSut(initialValues);
@@ -91,6 +95,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
         dotIndex: initialDotIndex,
         numberOfCards: 5,
         slidesToShow: 3,
+        breakpoints: [1, 2],
         infiniteLoop: true,
       };
       // Set screenwidth to be 700
@@ -114,6 +119,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
         dotIndex: initialDotIndex,
         numberOfCards: 5,
         slidesToShow: 3,
+        breakpoints: [1, 2],
         infiniteLoop: true,
       };
       // Set screenwidth to be 900
@@ -138,6 +144,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
         dotIndex: initialDotIndex,
         numberOfCards: 5,
         slidesToShow: slidesToShowMock,
+        breakpoints: [1, 2],
         infiniteLoop: true,
       };
       // Set screenwidth to be 1600
