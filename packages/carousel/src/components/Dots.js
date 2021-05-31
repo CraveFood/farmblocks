@@ -17,12 +17,7 @@ function Dots({ slides, handleClick, selectedDot }) {
 }
 
 Dots.propTypes = {
-  slides: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      content: PropTypes.node,
-    }),
-  ).isRequired,
+  slides: PropTypes.node.isRequired,
   handleClick: PropTypes.func,
   selectedDot: PropTypes.number,
 };

@@ -9,7 +9,7 @@ const useResizeWindow = ({
   setCurrentIndex,
   dotIndex,
   numberOfCards,
-  slidesToShow,
+  defaultQtyOfSlides,
   breakpoints,
   infiniteLoop,
 }) => {
@@ -36,11 +36,11 @@ const useResizeWindow = ({
         setDisplayNumber(breakpoints[1]);
         setCurrentIndex(numberOfCards > 2 ? dotIndex + incrementIndex : 0);
       } else if (
-        slidesToShow > breakpoints[1] &&
-        numberOfCards >= slidesToShow
+        defaultQtyOfSlides > breakpoints[1] &&
+        numberOfCards >= defaultQtyOfSlides
       ) {
-        setDisplayNumber(slidesToShow);
-        if (infiniteLoop) incrementIndex = slidesToShow;
+        setDisplayNumber(defaultQtyOfSlides);
+        if (infiniteLoop) incrementIndex = defaultQtyOfSlides;
         setCurrentIndex(dotIndex + incrementIndex);
       } else {
         setDisplayNumber(breakpoints[1]);
@@ -67,7 +67,7 @@ useResizeWindow.propTypes = {
   setCurrentIndex: PropTypes.func,
   dotIndex: PropTypes.number,
   numberOfCards: PropTypes.number,
-  slidesToShow: PropTypes.number,
+  defaultQtyOfSlides: PropTypes.number,
   breakpoints: PropTypes.arrayOf(PropTypes.number),
   infiniteLoop: PropTypes.bool,
 };

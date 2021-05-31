@@ -1,25 +1,33 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import { SmChevronRight, SmChevronLeft } from "@crave/farmblocks-icon";
+
 import {
   Container,
   Wrapper,
   Content,
-  ContentWrapper,
+  ArrowButton,
+  Slide,
 } from "./styledComponents/Carousel";
-import Slide from "./components/Slide";
-import ArrowButton from "./components/ArrowButton";
+
 import Dots from "./components/Dots";
 import useResizeWindow from "./hooks/useResizeWindow";
 import useTouch from "./hooks/useTouch";
 
-function Carousel({ slides, slidesToShow, infiniteLoop, breakpoints }) {
+function Carousel({ qtyOfSlidesPerSet, infiniteLoop, children, style }) {
+  const defaultQtyOfSlides = qtyOfSlidesPerSet[0] || qtyOfSlidesPerSet;
+
+  const breakpoints = Array.isArray(qtyOfSlidesPerSet)
+    ? [qtyOfSlidesPerSet[2], qtyOfSlidesPerSet[1]]
+    : [1, 2];
+
   const [displayNumber, setDisplayNumber] = useState(
-    slidesToShow < slides.length ? slidesToShow : slides.length,
+    defaultQtyOfSlides < children.length ? defaultQtyOfSlides : children.length,
   );
 
   const [dotIndex, setDotIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(
-    infiniteLoop && displayNumber < slides.length ? displayNumber : 0,
+    infiniteLoop && displayNumber < children.length ? displayNumber : 0,
   );
 
   useResizeWindow({
@@ -27,14 +35,14 @@ function Carousel({ slides, slidesToShow, infiniteLoop, breakpoints }) {
     setDisplayNumber,
     setCurrentIndex,
     dotIndex,
-    numberOfCards: slides.length,
-    slidesToShow,
+    numberOfCards: children.length,
+    defaultQtyOfSlides,
     breakpoints,
     infiniteLoop,
   });
 
-  const totalOfCards = slides.length;
-  const isRepeating = infiniteLoop && slides.length > displayNumber;
+  const totalOfCards = children.length;
+  const isRepeating = infiniteLoop && children.length > displayNumber;
   const [transitionEnabled, setTransitionEnabled] = useState(true);
 
   useEffect(() => {
@@ -90,11 +98,7 @@ function Carousel({ slides, slidesToShow, infiniteLoop, breakpoints }) {
   function renderExtraPrev() {
     const output = [];
     for (let index = 0; index < displayNumber; index += 1) {
-      output.push(
-        <Slide key={slides[totalOfCards - 1 - index].id}>
-          {slides[totalOfCards - 1 - index].content}
-        </Slide>,
-      );
+      output.push(children[totalOfCards - 1 - index]);
     }
     output.reverse();
     return output;
@@ -103,47 +107,51 @@ function Carousel({ slides, slidesToShow, infiniteLoop, breakpoints }) {
   function renderExtraNext() {
     const output = [];
     for (let index = 0; index < displayNumber; index += 1) {
-      output.push(
-        <Slide key={slides[index].id}>{slides[index].content}</Slide>,
-      );
+      output.push(children[index]);
     }
     return output;
   }
 
+  const showLeftArrow = isRepeating || currentIndex > 0;
+  const showRightArrow =
+    isRepeating || currentIndex < totalOfCards - displayNumber;
+  const renderExtras = totalOfCards > displayNumber && isRepeating;
+
   return (
-    <Container>
+    <Container style={style}>
       <Wrapper>
-        {(isRepeating || currentIndex > 0) && (
-          <ArrowButton onClick={prevSlide} direction="left" />
+        {showLeftArrow && (
+          <ArrowButton
+            style={{ left: 24 }}
+            data-testid="left-arrow"
+            icon={<SmChevronLeft size={24} />}
+            onClick={prevSlide}
+          />
         )}
-        <ContentWrapper
+        <Content
+          currentIndex={currentIndex}
+          displayNumber={displayNumber}
+          transitionEnabled={transitionEnabled}
+          onTransitionEnd={handleTransitionEnd}
           onTouchStart={(event) => handleTouchStart(event)}
           onTouchMove={(event) => handleTouchMove(event)}
         >
-          <Content
-            currentIndex={currentIndex}
-            displayNumber={displayNumber}
-            transitionEnabled={transitionEnabled}
-            onTransitionEnd={handleTransitionEnd}
-          >
-            {totalOfCards > displayNumber && isRepeating && renderExtraPrev()}
-            {slides.map((item) => (
-              <Slide key={item.id}>{item.content}</Slide>
-            ))}
-            {totalOfCards > displayNumber && isRepeating && renderExtraNext()}
-          </Content>
-        </ContentWrapper>
-        {(isRepeating || currentIndex < totalOfCards - displayNumber) && (
+          {renderExtras && renderExtraPrev()}
+          {children}
+          {renderExtras && renderExtraNext()}
+        </Content>
+        {showRightArrow && (
           <ArrowButton
+            style={{ right: 24 }}
             data-testid="right-arrow"
+            icon={<SmChevronRight size={24} />}
             onClick={nextSlide}
-            direction="right"
           />
         )}
       </Wrapper>
       {isRepeating && (
         <Dots
-          slides={slides}
+          slides={children}
           handleClick={handleDotClick}
           selectedDot={dotIndex}
         />
@@ -153,20 +161,16 @@ function Carousel({ slides, slidesToShow, infiniteLoop, breakpoints }) {
 }
 
 Carousel.propTypes = {
-  slides: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      content: PropTypes.node,
-    }),
-  ).isRequired,
-  slidesToShow: PropTypes.number,
-  breakpoints: PropTypes.arrayOf(PropTypes.number),
+  children: PropTypes.node.isRequired,
+  qtyOfSlidesPerSet: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.arrayOf(PropTypes.number),
+  ]),
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   infiniteLoop: PropTypes.bool,
 };
 Carousel.defaultProps = {
-  slidesToShow: 3,
-  breakpoints: [1, 2],
   infiniteLoop: false,
 };
 
-export default Carousel;
+export { Carousel, Slide };
