@@ -6,9 +6,11 @@ import {
   Container,
   Wrapper,
   Content,
+  ButtonContainer,
   ArrowButton,
-  Slide,
 } from "./styledComponents/Carousel";
+
+import Slide from "./components/Slide";
 
 import Dots from "./components/Dots";
 import useResizeWindow from "./hooks/useResizeWindow";
@@ -120,34 +122,38 @@ function Carousel({ qtyOfSlidesPerSet, infiniteLoop, children, style }) {
   return (
     <Container style={style}>
       <Wrapper>
-        {showLeftArrow && (
-          <ArrowButton
-            style={{ left: 24 }}
-            data-testid="left-arrow"
-            icon={<SmChevronLeft size={24} />}
-            onClick={prevSlide}
-          />
-        )}
-        <Content
-          currentIndex={currentIndex}
-          displayNumber={displayNumber}
-          transitionEnabled={transitionEnabled}
-          onTransitionEnd={handleTransitionEnd}
-          onTouchStart={(event) => handleTouchStart(event)}
-          onTouchMove={(event) => handleTouchMove(event)}
-        >
-          {renderExtras && renderExtraPrev()}
-          {children}
-          {renderExtras && renderExtraNext()}
-        </Content>
-        {showRightArrow && (
-          <ArrowButton
-            style={{ right: 24 }}
-            data-testid="right-arrow"
-            icon={<SmChevronRight size={24} />}
-            onClick={nextSlide}
-          />
-        )}
+        <ButtonContainer direction="left">
+          {showLeftArrow && (
+            <ArrowButton
+              data-testid="left-arrow"
+              icon={<SmChevronLeft size={24} />}
+              onClick={prevSlide}
+            />
+          )}
+        </ButtonContainer>
+        <div style={{ overflow: "hidden" }}>
+          <Content
+            currentIndex={currentIndex}
+            displayNumber={displayNumber}
+            transitionEnabled={transitionEnabled}
+            onTransitionEnd={handleTransitionEnd}
+            onTouchStart={(event) => handleTouchStart(event)}
+            onTouchMove={(event) => handleTouchMove(event)}
+          >
+            {renderExtras && renderExtraPrev()}
+            {children}
+            {renderExtras && renderExtraNext()}
+          </Content>
+        </div>
+        <ButtonContainer direction="right">
+          {showRightArrow && (
+            <ArrowButton
+              data-testid="right-arrow"
+              icon={<SmChevronRight size={24} />}
+              onClick={nextSlide}
+            />
+          )}
+        </ButtonContainer>
       </Wrapper>
       {isRepeating && (
         <Dots

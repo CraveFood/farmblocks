@@ -8,10 +8,11 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 `;
 
 export const Content = styled.div`
@@ -23,42 +24,34 @@ export const Content = styled.div`
   -ms-overflow-style: none;
   scrollbar-width: none;
   transform: translateX(
-    -${(props) => props.currentIndex * (100.5 / props.displayNumber)}%
+    -${(props) => props.currentIndex * (100 / props.displayNumber)}%
   );
 
   & > * {
     width: ${(props) => 100 / props.displayNumber}%;
     flex-shrink: 0;
     flex-grow: 1;
-    border: 1px solid green;
   }
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: ${(props) =>
+    props.direction === "left" ? "flex-end" : "flex-start"};
+  align-items: center;
+  ${(props) =>
+    props.direction === "left" ? "margin-right: 16px" : "margin-left: 16px"};
+`;
+
 export const ArrowButton = styled(Button)`
-  z-index: 1;
   border-radius: 32px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 
   @media (hover: none) and (pointer: coarse) {
     & {
       display: none;
     }
-  }
-`;
-
-export const Slide = styled.div`
-  margin: 16px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  * {
-    border-radius: 20px;
-    width: 100%;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
   }
 `;
