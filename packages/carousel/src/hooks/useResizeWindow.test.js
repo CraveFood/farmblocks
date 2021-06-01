@@ -9,7 +9,7 @@ const CompWithResizeHook = ({
   setCurrentIndex,
   dotIndex,
   numberOfCards,
-  slidesToShow,
+  defaultQtyOfSlides,
   breakpoints,
   infiniteLoop,
 }) => {
@@ -19,7 +19,7 @@ const CompWithResizeHook = ({
     setCurrentIndex,
     dotIndex,
     numberOfCards,
-    slidesToShow,
+    defaultQtyOfSlides,
     breakpoints,
     infiniteLoop,
   });
@@ -37,7 +37,7 @@ CompWithResizeHook.propTypes = {
   setCurrentIndex: PropTypes.func,
   dotIndex: PropTypes.number,
   numberOfCards: PropTypes.number,
-  slidesToShow: PropTypes.number,
+  defaultQtyOfSlides: PropTypes.number,
   breakpoints: PropTypes.arrayOf(PropTypes.number),
   infiniteLoop: PropTypes.bool,
 };
@@ -68,7 +68,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
       setCurrentIndex: setCurrentIndexMock,
       dotIndex: 0,
       numberOfCards: 5,
-      slidesToShow: 3,
+      defaultQtyOfSlides: 3,
       breakpoints: [1, 2],
       infiniteLoop: true,
     };
@@ -94,7 +94,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
         setCurrentIndex: setCurrentIndexMock,
         dotIndex: initialDotIndex,
         numberOfCards: 5,
-        slidesToShow: 3,
+        defaultQtyOfSlides: 3,
         breakpoints: [1, 2],
         infiniteLoop: true,
       };
@@ -118,7 +118,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
         setCurrentIndex: setCurrentIndexMock,
         dotIndex: initialDotIndex,
         numberOfCards: 5,
-        slidesToShow: 3,
+        defaultQtyOfSlides: 3,
         breakpoints: [1, 2],
         infiniteLoop: true,
       };
@@ -143,7 +143,7 @@ describe("(Carousel/hooks) useResizeWindow", () => {
         setCurrentIndex: setCurrentIndexMock,
         dotIndex: initialDotIndex,
         numberOfCards: 5,
-        slidesToShow: slidesToShowMock,
+        defaultQtyOfSlides: slidesToShowMock,
         breakpoints: [1, 2],
         infiniteLoop: true,
       };

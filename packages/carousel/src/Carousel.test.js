@@ -2,27 +2,28 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-import Carousel from "./Carousel";
+import { Carousel, Slide } from ".";
 
 describe("Carousel", () => {
+  const imageSet = [
+    <img src="https://picsum.photos/640/?image=1080" alt="Organic Pepper" />,
+    <img src="https://picsum.photos/640/?image=824" alt="Tomato" />,
+    <img src="https://picsum.photos/640/?image=889" alt="Grapefruit" />,
+  ];
+
   const makeSut = ({ ...props }) => {
-    render(<Carousel {...props} />);
+    render(
+      <Carousel {...props}>
+        {imageSet.map((value) => (
+          <Slide>{value}</Slide>
+        ))}
+      </Carousel>,
+    );
   };
 
   it("should render component without arrows and dots", () => {
     const initialValues = {
-      slides: [
-        {
-          id: "image1",
-          content: <img src="image1.png" alt="image1.png" />,
-        },
-        {
-          id: "image2",
-          content: <img src="image2.png" alt="image2.png" />,
-        },
-      ],
-      slidesToShow: 2,
-      infiniteLoop: false,
+      qtyOfSlidesPerSet: imageSet.length,
     };
     makeSut(initialValues);
 
@@ -32,22 +33,7 @@ describe("Carousel", () => {
   });
   it("should render component with arrows", () => {
     const initialValues = {
-      slides: [
-        {
-          id: "image1",
-          content: <img src="image1.png" alt="image1.png" />,
-        },
-        {
-          id: "image2",
-          content: <img src="image2.png" alt="image2.png" />,
-        },
-        {
-          id: "image3",
-          content: <img src="image3.png" alt="image3.png" />,
-        },
-      ],
-      slidesToShow: 2,
-      infiniteLoop: false,
+      qtyOfSlidesPerSet: imageSet.length - 1,
     };
     makeSut(initialValues);
 
@@ -66,23 +52,9 @@ describe("Carousel", () => {
     expect(screen.queryByTestId("left-arrow")).toBeInTheDocument();
   });
 
-  it("should render component with infinite scroll", async () => {
+  it("should render component with infinite scroll", () => {
     const initialValues = {
-      slides: [
-        {
-          id: "image1",
-          content: <img src="image1.png" alt="image1.png" />,
-        },
-        {
-          id: "image2",
-          content: <img src="image2.png" alt="image2.png" />,
-        },
-        {
-          id: "image3",
-          content: <img src="image3.png" alt="image3.png" />,
-        },
-      ],
-      slidesToShow: 2,
+      qtyOfSlidesPerSet: 2,
       infiniteLoop: true,
     };
     makeSut(initialValues);

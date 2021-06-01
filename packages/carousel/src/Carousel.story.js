@@ -1,74 +1,77 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-import Carousel from ".";
+import { Carousel, Slide } from ".";
 
 const imageSet = [
-  {
-    id: "organic-pepper",
-    content: (
-      <img src="https://picsum.photos/640/?image=1080" alt="Organic Pepper" />
-    ),
-  },
-  {
-    id: "tomato",
-    content: <img src="https://picsum.photos/640/?image=824" alt="Tomato" />,
-  },
-
-  {
-    id: "grapefruit",
-    content: (
-      <img src="https://picsum.photos/640/?image=889" alt="Grapefruit" />
-    ),
-  },
-  {
-    id: "tomato-2",
-    content: <img src="https://picsum.photos/640/?image=674" alt="Tomato" />,
-  },
-  {
-    id: "tomato-3",
-    content: <img src="https://picsum.photos/640/?image=292" alt="Tomato" />,
-  },
-  {
-    id: "tomato-4",
-    content: <img src="https://picsum.photos/640/?image=517" alt="Tomato" />,
-  },
-  {
-    id: "tomato-5",
-    content: <img src="https://picsum.photos/640/?image=627" alt="Tomato" />,
-  },
-  {
-    id: "tomato-6",
-    content: <img src="https://picsum.photos/640/?image=75" alt="Tomato" />,
-  },
-  {
-    id: "romaine-lettuce",
-    content: (
-      <img src="https://picsum.photos/640/?image=766" alt="Romaine Lettuce" />
-    ),
-  },
+  <img src="https://picsum.photos/640/?image=1080" alt="Organic Pepper" />,
+  <img src="https://picsum.photos/640/?image=824" alt="Tomato" />,
+  <img src="https://picsum.photos/640/?image=889" alt="Grapefruit" />,
+  <img src="https://picsum.photos/640/?image=674" alt="Tomato" />,
+  <img src="https://picsum.photos/640/?image=292" alt="Tomato" />,
+  <img src="https://picsum.photos/640/?image=517" alt="Tomato" />,
+  <img src="https://picsum.photos/640/?image=627" alt="Tomato" />,
+  <img src="https://picsum.photos/640/?image=75" alt="Tomato" />,
+  <img src="https://picsum.photos/640/?image=766" alt="Romaine Lettuce" />,
 ];
 
 storiesOf("Carousel", module)
   .add("1 photo", () => (
-    <Carousel
-      slides={imageSet.slice(0, 1)}
-      infiniteLoop={false}
-      slidesToShow={1}
-    />
+    <div
+      style={{
+        marginLeft: "auto",
+        marginRight: "auto",
+        marginTop: 64,
+      }}
+    >
+      <Carousel qtyOfSlidesPerSet={1}>
+        <Slide>{imageSet[0]}</Slide>
+      </Carousel>
+    </div>
   ))
 
   .add("2 photos", () => (
-    <Carousel
-      slides={imageSet.slice(0, 2)}
-      infiniteLoop={false}
-      slidesToShow={2}
-    />
+    <div
+      style={{
+        marginLeft: "auto",
+        marginRight: "auto",
+        marginTop: 64,
+      }}
+    >
+      <Carousel qtyOfSlidesPerSet={2}>
+        <Slide>{imageSet[0]}</Slide>
+        <Slide>{imageSet[1]}</Slide>
+      </Carousel>
+    </div>
   ))
 
   .add("all photos", () => (
-    <Carousel slides={imageSet} infiniteLoop={false} slidesToShow={3} />
+    <div
+      style={{
+        marginLeft: "auto",
+        marginRight: "auto",
+        marginTop: 64,
+      }}
+    >
+      <Carousel infiniteLoop={false} qtyOfSlidesPerSet={4}>
+        {imageSet.map((value) => (
+          <Slide>{value}</Slide>
+        ))}
+      </Carousel>
+    </div>
   ))
   .add("infinite loop", () => (
-    <Carousel slides={imageSet} infiniteLoop slidesToShow={3} />
+    <div
+      style={{
+        marginLeft: "auto",
+        marginRight: "auto",
+        marginTop: 64,
+      }}
+    >
+      <Carousel infiniteLoop qtyOfSlidesPerSet={[3, 2, 1]}>
+        {imageSet.map((value) => (
+          <Slide>{value}</Slide>
+        ))}
+      </Carousel>
+    </div>
   ));
