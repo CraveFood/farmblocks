@@ -13,15 +13,8 @@ exports[`Storyshots Carousel 1 photo 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -30,38 +23,32 @@ exports[`Storyshots Carousel 1 photo 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c2 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  margin: 0px 16px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c3 {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
-  -webkit-transform: translateX( -0% );
-  -ms-transform: translateX( -0% );
-  transform: translateX( -0% );
   -ms-overflow-style: none;
   -webkit-scrollbar-width: none;
   -moz-scrollbar-width: none;
   -ms-scrollbar-width: none;
   scrollbar-width: none;
-}
-
-.c3::-webkit-scrollbar {
-  display: none;
+  -webkit-transform: translateX( -NaN% );
+  -ms-transform: translateX( -NaN% );
+  transform: translateX( -NaN% );
 }
 
 .c3 > * {
-  width: 100%;
+  width: NaN%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -71,15 +58,49 @@ exports[`Storyshots Carousel 1 photo 1`] = `
   flex-grow: 1;
 }
 
+.c3::-webkit-scrollbar {
+  display: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
 .c5 {
-  margin: 16px 8px;
+  padding: 8px;
 }
 
 .c5 * {
-  border-radius: 20px;
   width: 100%;
-  max-width: 350px;
-  max-height: 225px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
 }
 
@@ -99,33 +120,55 @@ exports[`Storyshots Carousel 1 photo 1`] = `
 }
 
 <div
-  className="c0"
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 64,
+    }
+  }
 >
   <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
+      className="c1"
     >
       <div
-        className="c3"
-        onTransitionEnd={[Function]}
+        className="c2"
+        direction="left"
+      />
+      <div
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
       >
         <div
-          className="c4"
+          className="c3"
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          onTransitionEnd={[Function]}
         >
           <div
-            className="c5"
+            className="c4"
           >
-            <img
-              alt="Organic Pepper"
-              src="https://picsum.photos/640/?image=1080"
-            />
+            <div
+              className="c5"
+            >
+              <img
+                alt="Organic Pepper"
+                src="https://picsum.photos/640/?image=1080"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <div
+        className="c6"
+        direction="right"
+      />
     </div>
   </div>
 </div>
@@ -144,15 +187,8 @@ exports[`Storyshots Carousel 2 photos 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -161,34 +197,28 @@ exports[`Storyshots Carousel 2 photos 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c2 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  margin: 0px 16px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c3 {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
-  -webkit-transform: translateX( -0% );
-  -ms-transform: translateX( -0% );
-  transform: translateX( -0% );
   -ms-overflow-style: none;
   -webkit-scrollbar-width: none;
   -moz-scrollbar-width: none;
   -ms-scrollbar-width: none;
   scrollbar-width: none;
-}
-
-.c3::-webkit-scrollbar {
-  display: none;
+  -webkit-transform: translateX( -0% );
+  -ms-transform: translateX( -0% );
+  transform: translateX( -0% );
 }
 
 .c3 > * {
@@ -202,15 +232,49 @@ exports[`Storyshots Carousel 2 photos 1`] = `
   flex-grow: 1;
 }
 
+.c3::-webkit-scrollbar {
+  display: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
 .c5 {
-  margin: 16px 8px;
+  padding: 8px;
 }
 
 .c5 * {
-  border-radius: 20px;
   width: 100%;
-  max-width: 350px;
-  max-height: 225px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
 }
 
@@ -230,61 +294,83 @@ exports[`Storyshots Carousel 2 photos 1`] = `
 }
 
 <div
-  className="c0"
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 64,
+    }
+  }
 >
   <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
+      className="c1"
     >
       <div
-        className="c3"
-        onTransitionEnd={[Function]}
+        className="c2"
+        direction="left"
+      />
+      <div
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
       >
         <div
-          className="c4"
+          className="c3"
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          onTransitionEnd={[Function]}
         >
           <div
-            className="c5"
+            className="c4"
           >
-            <img
-              alt="Organic Pepper"
-              src="https://picsum.photos/640/?image=1080"
-            />
+            <div
+              className="c5"
+            >
+              <img
+                alt="Organic Pepper"
+                src="https://picsum.photos/640/?image=1080"
+              />
+            </div>
           </div>
-        </div>
-        <div
-          className="c4"
-        >
           <div
-            className="c5"
+            className="c4"
           >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=824"
-            />
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=824"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <div
+        className="c6"
+        direction="right"
+      />
     </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Carousel all photos 1`] = `
-.c8 {
+.c9 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c8 .farmblocks-icon {
+.c9 .farmblocks-icon {
   display: block;
 }
 
-.c6 {
+.c7 {
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -318,12 +404,12 @@ exports[`Storyshots Carousel all photos 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
-.c6 span {
+.c7 span {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c6:disabled {
+.c7:disabled {
   background-color: rgba(0,0,0,0.32);
   color: rgba(0,0,0,0.32);
   border-width: 1px;
@@ -332,21 +418,21 @@ exports[`Storyshots Carousel all photos 1`] = `
   cursor: default;
 }
 
-.c6:disabled .icon {
+.c7:disabled .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c6 .icon {
+.c7 .icon {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   color: rgba(0,0,0,0.32);
   line-height: 1;
 }
 
-.c6:not(:disabled):hover,
-.c6:not(:disabled).hovered,
-.c6:not(:disabled):active,
-.c6:not(:disabled).active {
+.c7:not(:disabled):hover,
+.c7:not(:disabled).hovered,
+.c7:not(:disabled):active,
+.c7:not(:disabled).active {
   color: #3498db;
   border-width: 2px;
   border-color: #3498db;
@@ -354,27 +440,27 @@ exports[`Storyshots Carousel all photos 1`] = `
   padding: 3px 3px;
 }
 
-.c6:not(:disabled):hover .icon,
-.c6:not(:disabled).hovered .icon,
-.c6:not(:disabled):active .icon,
-.c6:not(:disabled).active .icon,
-.c6:not(:disabled):focus .icon,
-.c6:not(:disabled).focused .icon {
+.c7:not(:disabled):hover .icon,
+.c7:not(:disabled).hovered .icon,
+.c7:not(:disabled):active .icon,
+.c7:not(:disabled).active .icon,
+.c7:not(:disabled):focus .icon,
+.c7:not(:disabled).focused .icon {
   color: #3498db;
 }
 
-.c6:not(:disabled).active,
-.c6:not(:disabled):active {
+.c7:not(:disabled).active,
+.c7:not(:disabled):active {
   box-shadow: none;
 }
 
-.c6:focus,
-.c6.focused {
+.c7:focus,
+.c7.focused {
   outline: none;
 }
 
-.c6.focus-visible,
-.c6.focused:not(:disabled) {
+.c7.focus-visible,
+.c7.focused:not(:disabled) {
   box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
@@ -390,15 +476,8 @@ exports[`Storyshots Carousel all photos 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -407,38 +486,32 @@ exports[`Storyshots Carousel all photos 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c2 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  margin: 0px 16px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c3 {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
-  -webkit-transform: translateX( -0% );
-  -ms-transform: translateX( -0% );
-  transform: translateX( -0% );
   -ms-overflow-style: none;
   -webkit-scrollbar-width: none;
   -moz-scrollbar-width: none;
   -ms-scrollbar-width: none;
   scrollbar-width: none;
-}
-
-.c3::-webkit-scrollbar {
-  display: none;
+  -webkit-transform: translateX( -0% );
+  -ms-transform: translateX( -0% );
+  transform: translateX( -0% );
 }
 
 .c3 > * {
-  width: 33.333333333333336%;
+  width: 25%;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -448,15 +521,53 @@ exports[`Storyshots Carousel all photos 1`] = `
   flex-grow: 1;
 }
 
+.c3::-webkit-scrollbar {
+  display: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.c8 {
+  border-radius: 32px;
+}
+
 .c5 {
-  margin: 16px 8px;
+  padding: 8px;
 }
 
 .c5 * {
-  border-radius: 20px;
   width: 100%;
-  max-width: 350px;
-  max-height: 225px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
 }
 
@@ -475,194 +586,212 @@ exports[`Storyshots Carousel all photos 1`] = `
   justify-content: center;
 }
 
-.c7 {
-  z-index: 1;
-  border-radius: 32px;
-}
-
 @media (hover:none) and (pointer:coarse) {
-  .c7 {
+  .c8 {
     display: none;
   }
 }
 
 <div
-  className="c0"
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 64,
+    }
+  }
 >
   <div
-    className="c1"
+    className="c0"
   >
     <div
-      className="c2"
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
+      className="c1"
     >
       <div
-        className="c3"
-        onTransitionEnd={[Function]}
-      >
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Organic Pepper"
-              src="https://picsum.photos/640/?image=1080"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=824"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Grapefruit"
-              src="https://picsum.photos/640/?image=889"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=674"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=292"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=517"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=627"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=75"
-            />
-          </div>
-        </div>
-        <div
-          className="c4"
-        >
-          <div
-            className="c5"
-          >
-            <img
-              alt="Romaine Lettuce"
-              src="https://picsum.photos/640/?image=766"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <button
-      className="c6 c7   "
-      onClick={[Function]}
-      type="button"
-    >
+        className="c2"
+        direction="left"
+      />
       <div
-        className="icon left-icon"
         style={
           Object {
-            "transform": "translateX(-0px)",
+            "overflow": "hidden",
           }
         }
       >
-        <span
-          className="c8"
-          color="currentColor"
-          size="1em"
+        <div
+          className="c3"
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          onTransitionEnd={[Function]}
         >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            data-testid="right-arrow"
-            height={24}
-            viewBox="2 2 20 20"
-            width={24}
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="c4"
           >
-            <path
-              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
-              fill="currentColor"
-              fillRule="evenodd"
-            />
-          </svg>
-        </span>
+            <div
+              className="c5"
+            >
+              <img
+                alt="Organic Pepper"
+                src="https://picsum.photos/640/?image=1080"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=824"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Grapefruit"
+                src="https://picsum.photos/640/?image=889"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=674"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=292"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=517"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=627"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=75"
+              />
+            </div>
+          </div>
+          <div
+            className="c4"
+          >
+            <div
+              className="c5"
+            >
+              <img
+                alt="Romaine Lettuce"
+                src="https://picsum.photos/640/?image=766"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <span />
-    </button>
+      <div
+        className="c6"
+        direction="right"
+      >
+        <button
+          className="c7 c8   "
+          data-testid="right-arrow"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "transform": "translateX(-0px)",
+              }
+            }
+          >
+            <span
+              className="c9"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height={24}
+                viewBox="2 2 20 20"
+                width={24}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+          <span />
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Carousel infinite loop 1`] = `
-.c4 {
+.c5 {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.c4 .farmblocks-icon {
+.c5 .farmblocks-icon {
   display: block;
 }
 
-.c2 {
+.c3 {
   font-size: 16px;
   font-family: lato,sans-serif;
   font-weight: 600;
@@ -696,12 +825,12 @@ exports[`Storyshots Carousel infinite loop 1`] = `
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16);
 }
 
-.c2 span {
+.c3 span {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.c2:disabled {
+.c3:disabled {
   background-color: rgba(0,0,0,0.32);
   color: rgba(0,0,0,0.32);
   border-width: 1px;
@@ -710,21 +839,21 @@ exports[`Storyshots Carousel infinite loop 1`] = `
   cursor: default;
 }
 
-.c2:disabled .icon {
+.c3:disabled .icon {
   color: rgba(0,0,0,0.32);
 }
 
-.c2 .icon {
+.c3 .icon {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   color: rgba(0,0,0,0.32);
   line-height: 1;
 }
 
-.c2:not(:disabled):hover,
-.c2:not(:disabled).hovered,
-.c2:not(:disabled):active,
-.c2:not(:disabled).active {
+.c3:not(:disabled):hover,
+.c3:not(:disabled).hovered,
+.c3:not(:disabled):active,
+.c3:not(:disabled).active {
   color: #3498db;
   border-width: 2px;
   border-color: #3498db;
@@ -732,27 +861,27 @@ exports[`Storyshots Carousel infinite loop 1`] = `
   padding: 3px 3px;
 }
 
-.c2:not(:disabled):hover .icon,
-.c2:not(:disabled).hovered .icon,
-.c2:not(:disabled):active .icon,
-.c2:not(:disabled).active .icon,
-.c2:not(:disabled):focus .icon,
-.c2:not(:disabled).focused .icon {
+.c3:not(:disabled):hover .icon,
+.c3:not(:disabled).hovered .icon,
+.c3:not(:disabled):active .icon,
+.c3:not(:disabled).active .icon,
+.c3:not(:disabled):focus .icon,
+.c3:not(:disabled).focused .icon {
   color: #3498db;
 }
 
-.c2:not(:disabled).active,
-.c2:not(:disabled):active {
+.c3:not(:disabled).active,
+.c3:not(:disabled):active {
   box-shadow: none;
 }
 
-.c2:focus,
-.c2.focused {
+.c3:focus,
+.c3.focused {
   outline: none;
 }
 
-.c2.focus-visible,
-.c2.focused:not(:disabled) {
+.c3.focus-visible,
+.c3.focused:not(:disabled) {
   box-shadow: 0 0 0 3px rgba(52,152,219,0.56);
 }
 
@@ -768,15 +897,8 @@ exports[`Storyshots Carousel infinite loop 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -785,34 +907,28 @@ exports[`Storyshots Carousel infinite loop 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  margin: 0px 16px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c6 {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
-  -webkit-transform: translateX( -100% );
-  -ms-transform: translateX( -100% );
-  transform: translateX( -100% );
   -ms-overflow-style: none;
   -webkit-scrollbar-width: none;
   -moz-scrollbar-width: none;
   -ms-scrollbar-width: none;
   scrollbar-width: none;
-}
-
-.c6::-webkit-scrollbar {
-  display: none;
+  -webkit-transform: translateX( -100% );
+  -ms-transform: translateX( -100% );
+  transform: translateX( -100% );
 }
 
 .c6 > * {
@@ -826,40 +942,57 @@ exports[`Storyshots Carousel infinite loop 1`] = `
   flex-grow: 1;
 }
 
-.c8 {
-  margin: 16px 8px;
+.c6::-webkit-scrollbar {
+  display: none;
 }
 
-.c8 * {
-  border-radius: 20px;
-  width: 100%;
-  max-width: 350px;
-  max-height: 225px;
-  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
-}
-
-.c7 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c3 {
-  z-index: 1;
-  border-radius: 32px;
+  margin-right: 16px;
 }
 
 .c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.c4 {
+  border-radius: 32px;
+}
+
+.c8 {
+  padding: 8px;
+}
+
+.c8 * {
   width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.08);
+}
+
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -875,6 +1008,22 @@ exports[`Storyshots Carousel infinite loop 1`] = `
 }
 
 .c10 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
   height: 8px;
   width: 8px;
   margin-right: 6px;
@@ -883,328 +1032,352 @@ exports[`Storyshots Carousel infinite loop 1`] = `
   background: rgba(0,0,0,0.08);
 }
 
-.c10.active {
+.c11.active {
   background: rgba(0,0,0,0.48);
 }
 
 @media (hover:none) and (pointer:coarse) {
-  .c3 {
+  .c4 {
     display: none;
   }
 }
 
 <div
-  className="c0"
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "marginTop": 64,
+    }
+  }
 >
   <div
-    className="c1"
+    className="c0"
   >
-    <button
-      className="c2 c3   "
-      onClick={[Function]}
-      type="button"
+    <div
+      className="c1"
     >
       <div
-        className="icon left-icon"
+        className="c2"
+        direction="left"
+      >
+        <button
+          className="c3 c4   "
+          data-testid="left-arrow"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="icon left-icon"
+            style={
+              Object {
+                "transform": "translateX(-0px)",
+              }
+            }
+          >
+            <span
+              className="c5"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height={24}
+                viewBox="2 2 20 20"
+                width={24}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.414 12l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L11.414 12z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+          <span />
+        </button>
+      </div>
+      <div
         style={
           Object {
-            "transform": "translateX(-0px)",
+            "overflow": "hidden",
           }
         }
       >
-        <span
-          className="c4"
-          color="currentColor"
-          size="1em"
+        <div
+          className="c6"
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          onTransitionEnd={[Function]}
         >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            data-testid="left-arrow"
-            height={24}
-            viewBox="2 2 20 20"
-            width={24}
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            className="c7"
           >
-            <path
-              d="M11.414 12l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L11.414 12z"
-              fill="currentColor"
-              fillRule="evenodd"
-            />
-          </svg>
-        </span>
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=627"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=75"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Romaine Lettuce"
+                src="https://picsum.photos/640/?image=766"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Organic Pepper"
+                src="https://picsum.photos/640/?image=1080"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=824"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Grapefruit"
+                src="https://picsum.photos/640/?image=889"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=674"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=292"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=517"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=627"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=75"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Romaine Lettuce"
+                src="https://picsum.photos/640/?image=766"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Organic Pepper"
+                src="https://picsum.photos/640/?image=1080"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Tomato"
+                src="https://picsum.photos/640/?image=824"
+              />
+            </div>
+          </div>
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+            >
+              <img
+                alt="Grapefruit"
+                src="https://picsum.photos/640/?image=889"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <span />
-    </button>
-    <div
-      className="c5"
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
       <div
-        className="c6"
-        onTransitionEnd={[Function]}
+        className="c9"
+        direction="right"
       >
-        <div
-          className="c7"
+        <button
+          className="c3 c4   "
+          data-testid="right-arrow"
+          onClick={[Function]}
+          type="button"
         >
           <div
-            className="c8"
+            className="icon left-icon"
+            style={
+              Object {
+                "transform": "translateX(-0px)",
+              }
+            }
           >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=627"
-            />
+            <span
+              className="c5"
+              color="currentColor"
+              size="1em"
+            >
+              <svg
+                aria-hidden={true}
+                className="farmblocks-icon "
+                height={24}
+                viewBox="2 2 20 20"
+                width={24}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
+                  fill="currentColor"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
           </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=75"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Romaine Lettuce"
-              src="https://picsum.photos/640/?image=766"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Organic Pepper"
-              src="https://picsum.photos/640/?image=1080"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=824"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Grapefruit"
-              src="https://picsum.photos/640/?image=889"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=674"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=292"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=517"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=627"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=75"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Romaine Lettuce"
-              src="https://picsum.photos/640/?image=766"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Organic Pepper"
-              src="https://picsum.photos/640/?image=1080"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Tomato"
-              src="https://picsum.photos/640/?image=824"
-            />
-          </div>
-        </div>
-        <div
-          className="c7"
-        >
-          <div
-            className="c8"
-          >
-            <img
-              alt="Grapefruit"
-              src="https://picsum.photos/640/?image=889"
-            />
-          </div>
-        </div>
+          <span />
+        </button>
       </div>
     </div>
-    <button
-      className="c2 c3   "
-      onClick={[Function]}
-      type="button"
+    <div
+      className="c10"
+      data-testid="dots-container"
     >
-      <div
-        className="icon left-icon"
-        style={
-          Object {
-            "transform": "translateX(-0px)",
-          }
-        }
-      >
-        <span
-          className="c4"
-          color="currentColor"
-          size="1em"
-        >
-          <svg
-            aria-hidden={true}
-            className="farmblocks-icon "
-            data-testid="right-arrow"
-            height={24}
-            viewBox="2 2 20 20"
-            width={24}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.586 12L9.293 8.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414L12.586 12z"
-              fill="currentColor"
-              fillRule="evenodd"
-            />
-          </svg>
-        </span>
-      </div>
-      <span />
-    </button>
-  </div>
-  <div
-    className="c9"
-    data-testid="dots-container"
-  >
-    <span
-      className="c10 active"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
-    <span
-      className="c10"
-      onClick={[Function]}
-    />
+      <span
+        className="c11 active"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+      <span
+        className="c11"
+        onClick={[Function]}
+      />
+    </div>
   </div>
 </div>
 `;
