@@ -5,11 +5,10 @@ const getWidth = () => window.innerWidth;
 
 const useResizeWindow = ({
   setDisplayNumber,
-  displayNumber,
   setCurrentIndex,
   dotIndex,
   numberOfCards,
-  defaultQtyOfSlides,
+  qtyOfSlidesPerSet,
   breakpoints,
   infiniteLoop,
 }) => {
@@ -21,33 +20,34 @@ const useResizeWindow = ({
 
   const handleResize = () => {
     const screenSize = getWidth();
-    let incrementIndex = infiniteLoop ? 2 : 0;
-
-    if (screenSize < 768) {
-      setDisplayNumber(breakpoints[0]);
-      if (infiniteLoop) incrementIndex = 1;
-      setCurrentIndex(
-        dotIndex + incrementIndex < numberOfCards
-          ? dotIndex + incrementIndex
-          : 0,
-      );
-    } else if (displayNumber < numberOfCards) {
-      if (screenSize < 1200) {
-        setDisplayNumber(breakpoints[1]);
-        setCurrentIndex(numberOfCards > 2 ? dotIndex + incrementIndex : 0);
-      } else if (
-        defaultQtyOfSlides > breakpoints[1] &&
-        numberOfCards >= defaultQtyOfSlides
-      ) {
-        setDisplayNumber(defaultQtyOfSlides);
-        if (infiniteLoop) incrementIndex = defaultQtyOfSlides;
-        setCurrentIndex(dotIndex + incrementIndex);
-      } else {
-        setDisplayNumber(breakpoints[1]);
-        setCurrentIndex(dotIndex + incrementIndex);
+    for (let i = 0; i < breakpoints.length; i += 1) {
+      if (screenSize <= breakpoints[i].width) {
+        setDisplayNumber(breakpoints[i].slidesToShow);
+        if (infiniteLoop)
+          setCurrentIndex(dotIndex + breakpoints[i].slidesToShow);
+        else
+          setCurrentIndex(
+            breakpoints[i].slidesToShow < numberOfCards ? dotIndex : 0,
+          );
+        return;
       }
     }
+    setDisplayNumber(qtyOfSlidesPerSet);
+
+    if (infiniteLoop) {
+      setCurrentIndex(
+        qtyOfSlidesPerSet < numberOfCards ? dotIndex + qtyOfSlidesPerSet : 0,
+      );
+    } else setCurrentIndex(qtyOfSlidesPerSet < numberOfCards ? dotIndex : 0);
   };
+
+  function sortBreakpoints() {
+    breakpoints.sort((a, b) => (a.width > b.width ? 1 : -1));
+  }
+
+  useEffect(() => {
+    sortBreakpoints();
+  }, []);
 
   useEffect(() => {
     handleResize();
@@ -62,13 +62,17 @@ const useResizeWindow = ({
 };
 
 useResizeWindow.propTypes = {
-  displayNumber: PropTypes.number,
   setDisplayNumber: PropTypes.func,
   setCurrentIndex: PropTypes.func,
   dotIndex: PropTypes.number,
   numberOfCards: PropTypes.number,
-  defaultQtyOfSlides: PropTypes.number,
-  breakpoints: PropTypes.arrayOf(PropTypes.number),
+  qtyOfSlidesPerSet: PropTypes.number,
+  breakpoints: PropTypes.arrayOf(
+    PropTypes.shape({
+      width: PropTypes.number,
+      slidesToShow: PropTypes.number,
+    }),
+  ),
   infiniteLoop: PropTypes.bool,
 };
 

@@ -16,15 +16,15 @@ import Dots from "./components/Dots";
 import useResizeWindow from "./hooks/useResizeWindow";
 import useTouch from "./hooks/useTouch";
 
-function Carousel({ qtyOfSlidesPerSet, infiniteLoop, children, style }) {
-  const defaultQtyOfSlides = qtyOfSlidesPerSet[0] || qtyOfSlidesPerSet;
-
-  const breakpoints = Array.isArray(qtyOfSlidesPerSet)
-    ? [qtyOfSlidesPerSet[2], qtyOfSlidesPerSet[1]]
-    : [1, 2];
-
+function Carousel({
+  qtyOfSlidesPerSet,
+  infiniteLoop,
+  breakpoints,
+  children,
+  style,
+}) {
   const [displayNumber, setDisplayNumber] = useState(
-    defaultQtyOfSlides < children.length ? defaultQtyOfSlides : children.length,
+    qtyOfSlidesPerSet < children.length ? qtyOfSlidesPerSet : children.length,
   );
 
   const [dotIndex, setDotIndex] = useState(0);
@@ -32,16 +32,16 @@ function Carousel({ qtyOfSlidesPerSet, infiniteLoop, children, style }) {
     infiniteLoop && displayNumber < children.length ? displayNumber : 0,
   );
 
-  useResizeWindow({
-    displayNumber,
-    setDisplayNumber,
-    setCurrentIndex,
-    dotIndex,
-    numberOfCards: children.length,
-    defaultQtyOfSlides,
-    breakpoints,
-    infiniteLoop,
-  });
+  if (breakpoints?.length)
+    useResizeWindow({
+      setDisplayNumber,
+      setCurrentIndex,
+      dotIndex,
+      numberOfCards: children.length,
+      breakpoints,
+      qtyOfSlidesPerSet,
+      infiniteLoop,
+    });
 
   const totalOfCards = children.length;
   const isRepeating = infiniteLoop && children.length > displayNumber;
@@ -168,15 +168,19 @@ function Carousel({ qtyOfSlidesPerSet, infiniteLoop, children, style }) {
 
 Carousel.propTypes = {
   children: PropTypes.node.isRequired,
-  qtyOfSlidesPerSet: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.arrayOf(PropTypes.number),
-  ]),
+  qtyOfSlidesPerSet: PropTypes.number,
+  breakpoints: PropTypes.arrayOf(
+    PropTypes.shape({
+      width: PropTypes.number,
+      slidesToShow: PropTypes.number,
+    }),
+  ),
   style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   infiniteLoop: PropTypes.bool,
 };
 Carousel.defaultProps = {
   infiniteLoop: false,
+  qtyOfSlidesPerSet: 1,
 };
 
 export { Carousel, Slide };

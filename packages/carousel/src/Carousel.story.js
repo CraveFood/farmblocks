@@ -24,7 +24,7 @@ storiesOf("Carousel", module)
         marginTop: 64,
       }}
     >
-      <Carousel qtyOfSlidesPerSet={1}>
+      <Carousel>
         <Slide>{imageSet[0]}</Slide>
       </Carousel>
     </div>
@@ -53,13 +53,30 @@ storiesOf("Carousel", module)
         marginTop: 64,
       }}
     >
-      <Carousel infiniteLoop={false} qtyOfSlidesPerSet={4}>
+      <Carousel
+        qtyOfSlidesPerSet={4}
+        breakpoints={[
+          {
+            width: 768,
+            slidesToShow: 1,
+          },
+          {
+            width: 1200,
+            slidesToShow: 3,
+          },
+          {
+            width: 1000,
+            slidesToShow: 2,
+          },
+        ]}
+      >
         {imageSet.map((value) => (
           <Slide>{value}</Slide>
         ))}
       </Carousel>
     </div>
   ))
+
   .add("infinite loop", () => (
     <div
       style={{
@@ -68,9 +85,22 @@ storiesOf("Carousel", module)
         marginTop: 64,
       }}
     >
-      <Carousel infiniteLoop qtyOfSlidesPerSet={[3, 2, 1]}>
+      <Carousel
+        infiniteLoop
+        qtyOfSlidesPerSet={3}
+        breakpoints={[
+          {
+            width: 768,
+            slidesToShow: 1,
+          },
+          {
+            width: 1200,
+            slidesToShow: 2,
+          },
+        ]}
+      >
         {imageSet.map((value) => (
-          <Slide>{value}</Slide>
+          <Slide borderRadius={50}>{value}</Slide>
         ))}
       </Carousel>
     </div>
