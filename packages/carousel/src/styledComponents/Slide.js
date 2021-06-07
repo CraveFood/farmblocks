@@ -4,7 +4,7 @@ export const Container = styled.div`
   padding: 8px;
   * {
     width: 100%;
-    border-radius: 20px;
+    border-radius: ${({ borderRadius }) => borderRadius}px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
   }
 `;
