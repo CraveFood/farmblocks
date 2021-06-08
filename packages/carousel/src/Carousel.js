@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import PropTypes from "prop-types";
 import { SmChevronRight, SmChevronLeft } from "@crave/farmblocks-icon";
-
 import {
   Container,
   Wrapper,
@@ -27,6 +26,21 @@ function Carousel({
     qtyOfSlidesPerSet < children.length ? qtyOfSlidesPerSet : children.length,
   );
 
+  const [isCalled, setIsCalled] = useState(false);
+
+  function preventDoubleClick(functionToBeCalled, interval = 300) {
+    let timer = 0;
+    if (!isCalled) {
+      setIsCalled(true);
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        setIsCalled(false);
+      }, interval);
+      return functionToBeCalled();
+    }
+    return false;
+  }
+
   const [dotIndex, setDotIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(
     infiniteLoop && displayNumber < children.length ? displayNumber : 0,
@@ -44,7 +58,11 @@ function Carousel({
     });
 
   const totalOfCards = children.length;
-  const isRepeating = infiniteLoop && children.length > displayNumber;
+  const isRepeating = useMemo(
+    () => infiniteLoop && children.length > displayNumber,
+    [children, infiniteLoop, displayNumber],
+  );
+
   const [transitionEnabled, setTransitionEnabled] = useState(true);
 
   useEffect(() => {
@@ -65,8 +83,9 @@ function Carousel({
     else if (isRepeating && dotIndex === totalOfCards - 1) {
       setDotIndex(0);
     }
+    const result = totalOfCards - displayNumber;
 
-    if (isRepeating || currentIndex < totalOfCards - displayNumber) {
+    if (isRepeating || currentIndex < result) {
       setCurrentIndex((prevState) => prevState + 1);
     }
   }
@@ -97,22 +116,22 @@ function Carousel({
     }
   }
 
-  function renderExtraPrev() {
+  const renderExtraPrev = useMemo(() => {
     const output = [];
     for (let index = 0; index < displayNumber; index += 1) {
       output.push(children[totalOfCards - 1 - index]);
     }
     output.reverse();
     return output;
-  }
+  }, [children, totalOfCards, displayNumber]);
 
-  function renderExtraNext() {
+  const renderExtraNext = useMemo(() => {
     const output = [];
     for (let index = 0; index < displayNumber; index += 1) {
       output.push(children[index]);
     }
     return output;
-  }
+  }, [children, displayNumber]);
 
   const showLeftArrow = isRepeating || currentIndex > 0;
   const showRightArrow =
@@ -127,7 +146,7 @@ function Carousel({
             <ArrowButton
               data-testid="left-arrow"
               icon={<SmChevronLeft size={24} />}
-              onClick={prevSlide}
+              onClick={() => preventDoubleClick(prevSlide)}
             />
           )}
         </ButtonContainer>
@@ -140,9 +159,9 @@ function Carousel({
             onTouchStart={(event) => handleTouchStart(event)}
             onTouchMove={(event) => handleTouchMove(event)}
           >
-            {renderExtras && renderExtraPrev()}
+            {renderExtras && renderExtraPrev}
             {children}
-            {renderExtras && renderExtraNext()}
+            {renderExtras && renderExtraNext}
           </Content>
         </div>
         <ButtonContainer direction="right">
@@ -150,7 +169,7 @@ function Carousel({
             <ArrowButton
               data-testid="right-arrow"
               icon={<SmChevronRight size={24} />}
-              onClick={nextSlide}
+              onClick={() => preventDoubleClick(nextSlide)}
             />
           )}
         </ButtonContainer>
