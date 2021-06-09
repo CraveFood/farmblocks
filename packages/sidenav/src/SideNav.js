@@ -7,7 +7,7 @@ import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
 import SideBar from "./components/SideBar";
 import { ToggleButton, CloseButton } from "./components/NavButton";
 
-const SideNav = ({ render, onToggle, onClose, ...props }) => {
+const SideNav = ({ render, onToggle, onClose, forwardRef, ...props }) => {
   const { highlightColor, variant, expanded, zIndex } = props;
 
   useScrollLock({
@@ -29,6 +29,7 @@ const SideNav = ({ render, onToggle, onClose, ...props }) => {
       )}
       <SideBar
         data-testid={`navbar-${props.expanded ? "expanded" : "collapsed"}`}
+        ref={forwardRef}
         {...props}
       >
         {onClose && (
@@ -104,9 +105,13 @@ SideNav.propTypes = {
   */
   onClose: PropTypes.func,
   /**
-    The position to anchor the sidebar, accepts "right" or "left"
-  */
+   The position to anchor the sidebar, accepts "right" or "left"
+   */
   position: PropTypes.oneOf(["right", "left"]),
+  /**
+    ref to be forwarded to SideBar component
+  */
+  forwardRef: PropTypes.object,
 };
 
 export default SideNav;
