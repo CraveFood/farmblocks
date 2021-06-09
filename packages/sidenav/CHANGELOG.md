@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@3.1.0...@crave/farmblocks-sidenav@3.2.0) (2021-06-09)
+
+
+### Features
+
+* **SideNav:** forward ref to SideBar component ([1b9be8c](https://github.com/CraveFood/farmblocks/commit/1b9be8cea0da8d60ed7efc3d47eac292d69dcc36))
+
+
+
+
+
 # [3.1.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@3.0.10...@crave/farmblocks-sidenav@3.1.0) (2021-04-29)
 
 
