@@ -21,6 +21,8 @@ function Carousel({
   breakpoints,
   children,
   style,
+  leftButton,
+  rightButton,
 }) {
   const [displayNumber, setDisplayNumber] = useState(
     qtyOfSlidesPerSet < children.length ? qtyOfSlidesPerSet : children.length,
@@ -145,7 +147,8 @@ function Carousel({
           {showLeftArrow && (
             <ArrowButton
               data-testid="left-arrow"
-              icon={<SmChevronLeft size={24} />}
+              {...leftButton}
+              icon={leftButton?.icon || <SmChevronLeft size={24} />}
               onClick={() => preventDoubleClick(prevSlide)}
             />
           )}
@@ -168,7 +171,8 @@ function Carousel({
           {showRightArrow && (
             <ArrowButton
               data-testid="right-arrow"
-              icon={<SmChevronRight size={24} />}
+              {...rightButton}
+              icon={rightButton?.icon || <SmChevronRight size={24} />}
               onClick={() => preventDoubleClick(nextSlide)}
             />
           )}
@@ -194,8 +198,10 @@ Carousel.propTypes = {
       slidesToShow: PropTypes.number,
     }),
   ),
-  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   infiniteLoop: PropTypes.bool,
+  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  leftButton: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  rightButton: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 Carousel.defaultProps = {
   infiniteLoop: false,
