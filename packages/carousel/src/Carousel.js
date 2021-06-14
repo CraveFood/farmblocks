@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import PropTypes from "prop-types";
+import debounce from "lodash.debounce";
 import { SmChevronRight, SmChevronLeft } from "@crave/farmblocks-icon";
 import {
   Container,
@@ -15,33 +16,22 @@ import Dots from "./components/Dots";
 import useResizeWindow from "./hooks/useResizeWindow";
 import useTouch from "./hooks/useTouch";
 
-function Carousel({
-  qtyOfSlidesPerSet,
-  infiniteLoop,
-  breakpoints,
-  children,
-  style,
-  leftButton,
-  rightButton,
-}) {
+function Carousel(
+  {
+    qtyOfSlidesPerSet,
+    infiniteLoop,
+    breakpoints,
+    children,
+    leftButtonProps,
+    rightButtonProps,
+  },
+  ...props
+) {
+  const CAROUSEL_DELAY = 300;
+
   const [displayNumber, setDisplayNumber] = useState(
     qtyOfSlidesPerSet < children.length ? qtyOfSlidesPerSet : children.length,
   );
-
-  const [isCalled, setIsCalled] = useState(false);
-
-  function preventDoubleClick(functionToBeCalled, interval = 300) {
-    let timer = 0;
-    if (!isCalled) {
-      setIsCalled(true);
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        setIsCalled(false);
-      }, interval);
-      return functionToBeCalled();
-    }
-    return false;
-  }
 
   const [dotIndex, setDotIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(
@@ -80,7 +70,7 @@ function Carousel({
     setCurrentIndex(index + displayNumber);
   }
 
-  function nextSlide() {
+  const nextSlide = debounce(() => {
     if (dotIndex < totalOfCards - 1) setDotIndex((prevState) => prevState + 1);
     else if (isRepeating && dotIndex === totalOfCards - 1) {
       setDotIndex(0);
@@ -90,16 +80,16 @@ function Carousel({
     if (isRepeating || currentIndex < result) {
       setCurrentIndex((prevState) => prevState + 1);
     }
-  }
+  }, CAROUSEL_DELAY);
 
-  function prevSlide() {
+  const prevSlide = debounce(() => {
     if (dotIndex === 0) setDotIndex(totalOfCards - 1);
     else setDotIndex((prevState) => prevState - 1);
 
     if (isRepeating || currentIndex > 0) {
       setCurrentIndex((prevState) => prevState - 1);
     }
-  }
+  }, CAROUSEL_DELAY);
 
   const { handleTouchStart, handleTouchMove } = useTouch({
     nextSlide,
@@ -141,15 +131,18 @@ function Carousel({
   const renderExtras = totalOfCards > displayNumber && isRepeating;
 
   return (
-    <Container style={style}>
+    <Container {...props}>
       <Wrapper>
         <ButtonContainer direction="left">
           {showLeftArrow && (
             <ArrowButton
               data-testid="left-arrow"
-              {...leftButton}
-              icon={leftButton?.icon || <SmChevronLeft size={24} />}
-              onClick={() => preventDoubleClick(prevSlide)}
+              icon={<SmChevronLeft size={24} />}
+              {...leftButtonProps}
+              onClick={(event) => {
+                prevSlide();
+                leftButtonProps?.onClick?.(event);
+              }}
             />
           )}
         </ButtonContainer>
@@ -171,9 +164,12 @@ function Carousel({
           {showRightArrow && (
             <ArrowButton
               data-testid="right-arrow"
-              {...rightButton}
-              icon={rightButton?.icon || <SmChevronRight size={24} />}
-              onClick={() => preventDoubleClick(nextSlide)}
+              icon={<SmChevronRight size={24} />}
+              {...rightButtonProps}
+              onClick={(event) => {
+                nextSlide();
+                rightButtonProps?.onClick?.(event);
+              }}
             />
           )}
         </ButtonContainer>
@@ -199,9 +195,8 @@ Carousel.propTypes = {
     }),
   ),
   infiniteLoop: PropTypes.bool,
-  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-  leftButton: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-  rightButton: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  leftButtonProps: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  rightButtonProps: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 Carousel.defaultProps = {
   infiniteLoop: false,
