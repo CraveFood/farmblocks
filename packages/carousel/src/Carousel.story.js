@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 
 import { MdArrowLeft, MdArrowRight } from "@crave/farmblocks-icon";
 
-import { Carousel, Slide } from ".";
+import { Carousel, Slide, useResizeWindow } from ".";
 
 const imageSet = [
   <img src="https://picsum.photos/640/?image=1080" alt="Organic Pepper" />,
@@ -60,66 +60,73 @@ storiesOf("Carousel", module)
     </div>
   ))
 
-  .add("all photos", () => (
-    <div
-      style={{
-        marginLeft: "auto",
-        marginRight: "auto",
-        marginTop: 64,
-      }}
-    >
-      <Carousel
-        qtyOfSlidesPerSet={4}
-        breakpoints={[
-          {
-            width: 768,
-            slidesToShow: 1,
-          },
-          {
-            width: 1200,
-            slidesToShow: 3,
-          },
-          {
-            width: 1000,
-            slidesToShow: 2,
-          },
-        ]}
+  .add("all photos", () => {
+    const { displayNumber } = useResizeWindow({
+      breakpoints: [
+        {
+          width: 768,
+          slidesToShow: 1,
+        },
+        {
+          width: 1200,
+          slidesToShow: 3,
+        },
+        {
+          width: 1000,
+          slidesToShow: 2,
+        },
+      ],
+      qtyOfSlidesPerSet: 4,
+    });
+    return (
+      <div
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginTop: 64,
+        }}
       >
-        {imageSet.map((value) => (
-          <Slide>{value}</Slide>
-        ))}
-      </Carousel>
-    </div>
-  ))
-
-  .add("infinite loop", () => (
-    <div
-      style={{
-        marginLeft: "auto",
-        marginRight: "auto",
-        marginTop: 64,
-      }}
-    >
-      <Carousel
-        infiniteLoop
-        qtyOfSlidesPerSet={3}
-        breakpoints={[
-          {
-            width: 768,
-            slidesToShow: 1,
-          },
-          {
-            width: 1200,
-            slidesToShow: 2,
-          },
-        ]}
+        <Carousel qtyOfSlidesPerSet={displayNumber}>
+          {imageSet.map((value) => (
+            <Slide>{value}</Slide>
+          ))}
+        </Carousel>
+      </div>
+    );
+  })
+  .add("infinite loop", () => {
+    const { displayNumber } = useResizeWindow({
+      breakpoints: [
+        {
+          width: 768,
+          slidesToShow: 1,
+        },
+        {
+          width: 1200,
+          slidesToShow: 2,
+        },
+      ],
+      infiniteLoop: true,
+      qtyOfSlidesPerSet: 3,
+      numberOfCards: imageSet.length,
+      dotIndex: 0,
+    });
+    return (
+      <div
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginTop: 64,
+        }}
       >
-        {imageSet.map((value) => (
-          <Slide>{value}</Slide>
-        ))}
-      </Carousel>
-    </div>
-  ))
+        <Carousel infiniteLoop qtyOfSlidesPerSet={displayNumber}>
+          {imageSet.map((value) => (
+            <Slide>{value}</Slide>
+          ))}
+        </Carousel>
+      </div>
+    );
+  })
   .add("Custom carousel", () => (
     <div
       style={{
@@ -133,8 +140,8 @@ storiesOf("Carousel", module)
       <Carousel
         infiniteLoop
         qtyOfSlidesPerSet={2}
-        leftButton={leftButtonStyle}
-        rightButton={rightButtonStyle}
+        leftButtonProps={leftButtonStyle}
+        rightButtonProps={rightButtonStyle}
       >
         {imageSet.map((value) => (
           <Slide borderRadius={500}>{value}</Slide>
