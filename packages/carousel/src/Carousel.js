@@ -10,17 +10,13 @@ import {
   ArrowButton,
 } from "./styledComponents/Carousel";
 
-import Slide from "./components/Slide";
-
 import Dots from "./components/Dots";
-import useResizeWindow from "./hooks/useResizeWindow";
 import useTouch from "./hooks/useTouch";
 
 function Carousel(
   {
     qtyOfSlidesPerSet,
     infiniteLoop,
-    breakpoints,
     children,
     leftButtonProps,
     rightButtonProps,
@@ -29,25 +25,19 @@ function Carousel(
 ) {
   const CAROUSEL_DELAY = 300;
 
-  const [displayNumber, setDisplayNumber] = useState(
-    qtyOfSlidesPerSet < children.length ? qtyOfSlidesPerSet : children.length,
-  );
+  const displayNumber =
+    qtyOfSlidesPerSet < children.length ? qtyOfSlidesPerSet : children.length;
 
   const [dotIndex, setDotIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(
     infiniteLoop && displayNumber < children.length ? displayNumber : 0,
   );
 
-  if (breakpoints?.length)
-    useResizeWindow({
-      setDisplayNumber,
-      setCurrentIndex,
-      dotIndex,
-      numberOfCards: children.length,
-      breakpoints,
-      qtyOfSlidesPerSet,
-      infiniteLoop,
-    });
+  useEffect(() => {
+    if (infiniteLoop) setCurrentIndex(dotIndex + displayNumber);
+    else if (currentIndex > children.length - qtyOfSlidesPerSet)
+      setCurrentIndex(children.length - qtyOfSlidesPerSet);
+  }, [displayNumber]);
 
   const totalOfCards = children.length;
   const isRepeating = useMemo(
@@ -188,12 +178,6 @@ function Carousel(
 Carousel.propTypes = {
   children: PropTypes.node.isRequired,
   qtyOfSlidesPerSet: PropTypes.number,
-  breakpoints: PropTypes.arrayOf(
-    PropTypes.shape({
-      width: PropTypes.number,
-      slidesToShow: PropTypes.number,
-    }),
-  ),
   infiniteLoop: PropTypes.bool,
   leftButtonProps: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   rightButtonProps: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
@@ -203,4 +187,4 @@ Carousel.defaultProps = {
   qtyOfSlidesPerSet: 1,
 };
 
-export { Carousel, Slide };
+export default Carousel;

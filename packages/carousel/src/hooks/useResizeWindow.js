@@ -5,17 +5,10 @@ import debounce from "lodash.debounce";
 
 const getWidth = () => window.innerWidth;
 
-const useResizeWindow = ({
-  setDisplayNumber,
-  setCurrentIndex,
-  dotIndex,
-  numberOfCards,
-  qtyOfSlidesPerSet,
-  breakpoints,
-  infiniteLoop,
-}) => {
+const useResizeWindow = ({ qtyOfSlidesPerSet, breakpoints }) => {
   const RESIZE_DELAY = 300;
   const [screendWidth, setScreenWidth] = useState(window.innerWidth);
+  const [displayNumber, setDisplayNumber] = useState(qtyOfSlidesPerSet);
 
   const handleWindowSizeChange = () => {
     setScreenWidth(window.innerWidth);
@@ -26,22 +19,10 @@ const useResizeWindow = ({
     for (let i = 0; i < breakpoints.length; i += 1) {
       if (screenSize <= breakpoints[i].width) {
         setDisplayNumber(breakpoints[i].slidesToShow);
-        if (infiniteLoop)
-          setCurrentIndex(dotIndex + breakpoints[i].slidesToShow);
-        else
-          setCurrentIndex(
-            breakpoints[i].slidesToShow < numberOfCards ? dotIndex : 0,
-          );
         return;
       }
     }
     setDisplayNumber(qtyOfSlidesPerSet);
-
-    if (infiniteLoop) {
-      setCurrentIndex(
-        qtyOfSlidesPerSet < numberOfCards ? dotIndex + qtyOfSlidesPerSet : 0,
-      );
-    } else setCurrentIndex(qtyOfSlidesPerSet < numberOfCards ? dotIndex : 0);
   }
 
   function sortBreakpoints() {
@@ -70,13 +51,11 @@ const useResizeWindow = ({
       window.removeEventListener("resize", handleWindowSizeChange);
     };
   }, []);
+
+  return { displayNumber };
 };
 
 useResizeWindow.propTypes = {
-  setDisplayNumber: PropTypes.func,
-  setCurrentIndex: PropTypes.func,
-  dotIndex: PropTypes.number,
-  numberOfCards: PropTypes.number,
   qtyOfSlidesPerSet: PropTypes.number,
   breakpoints: PropTypes.arrayOf(
     PropTypes.shape({
@@ -84,7 +63,6 @@ useResizeWindow.propTypes = {
       slidesToShow: PropTypes.number,
     }),
   ),
-  infiniteLoop: PropTypes.bool,
 };
 
 export default useResizeWindow;
