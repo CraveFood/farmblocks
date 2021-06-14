@@ -8,6 +8,7 @@ const getWidth = () => window.innerWidth;
 const useResizeWindow = ({ qtyOfSlidesPerSet, breakpoints }) => {
   const RESIZE_DELAY = 300;
   const [screendWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenThresholds, setScreenThresholds] = useState(breakpoints);
   const [displayNumber, setDisplayNumber] = useState(qtyOfSlidesPerSet);
 
   const handleWindowSizeChange = () => {
@@ -16,9 +17,9 @@ const useResizeWindow = ({ qtyOfSlidesPerSet, breakpoints }) => {
 
   function handleResize() {
     const screenSize = getWidth();
-    for (let i = 0; i < breakpoints.length; i += 1) {
-      if (screenSize <= breakpoints[i].width) {
-        setDisplayNumber(breakpoints[i].slidesToShow);
+    for (let i = 0; i < screenThresholds.length; i += 1) {
+      if (screenSize <= screenThresholds[i].width) {
+        setDisplayNumber(screenThresholds[i].slidesToShow);
         return;
       }
     }
@@ -26,7 +27,9 @@ const useResizeWindow = ({ qtyOfSlidesPerSet, breakpoints }) => {
   }
 
   function sortBreakpoints() {
-    breakpoints.sort((a, b) => (a.width > b.width ? 1 : -1));
+    setScreenThresholds(
+      breakpoints.sort((a, b) => (a.width > b.width ? 1 : -1)),
+    );
   }
 
   useEffect(() => {
