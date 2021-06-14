@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 const useTouch = ({ nextSlide, prevSlide }) => {
+  const TOUCH_THRESHOLD = 5;
   const [touchPosition, setTouchPosition] = useState(null);
   const handleTouchStart = (event) => {
     const touchDown = event.touches[0].clientX;
@@ -15,13 +16,13 @@ const useTouch = ({ nextSlide, prevSlide }) => {
       return;
     }
     const currentTouch = event.touches[0].clientX;
-    const diff = touchDown - currentTouch;
+    const touchDragDiff = touchDown - currentTouch;
 
-    if (diff > 5) {
+    if (touchDragDiff > TOUCH_THRESHOLD) {
       nextSlide();
     }
 
-    if (diff < -5) {
+    if (touchDragDiff < -TOUCH_THRESHOLD) {
       prevSlide();
     }
     setTouchPosition(null);
