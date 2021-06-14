@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import PropTypes from "prop-types";
+
+import debounce from "lodash.debounce";
 
 const getWidth = () => window.innerWidth;
 
@@ -12,13 +14,14 @@ const useResizeWindow = ({
   breakpoints,
   infiniteLoop,
 }) => {
+  const RESIZE_DELAY = 300;
   const [screendWidth, setScreenWidth] = useState(window.innerWidth);
 
   const handleWindowSizeChange = () => {
     setScreenWidth(window.innerWidth);
   };
 
-  const handleResize = () => {
+  function handleResize() {
     const screenSize = getWidth();
     for (let i = 0; i < breakpoints.length; i += 1) {
       if (screenSize <= breakpoints[i].width) {
@@ -39,7 +42,7 @@ const useResizeWindow = ({
         qtyOfSlidesPerSet < numberOfCards ? dotIndex + qtyOfSlidesPerSet : 0,
       );
     } else setCurrentIndex(qtyOfSlidesPerSet < numberOfCards ? dotIndex : 0);
-  };
+  }
 
   function sortBreakpoints() {
     breakpoints.sort((a, b) => (a.width > b.width ? 1 : -1));
@@ -49,8 +52,16 @@ const useResizeWindow = ({
     sortBreakpoints();
   }, []);
 
+  const debouncedFunctionRef = useRef();
+  debouncedFunctionRef.current = () => handleResize();
+
+  const debouncedChange = useCallback(
+    debounce(() => debouncedFunctionRef.current(), RESIZE_DELAY),
+    [],
+  );
+
   useEffect(() => {
-    handleResize();
+    debouncedChange();
   }, [screendWidth]);
 
   useEffect(() => {
