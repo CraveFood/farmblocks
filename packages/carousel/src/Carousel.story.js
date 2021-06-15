@@ -61,71 +61,79 @@ storiesOf("Carousel", module)
   ))
 
   .add("all photos", () => {
-    const { displayNumber } = useResizeWindow({
-      breakpoints: [
-        {
-          width: 768,
-          slidesToShow: 1,
-        },
-        {
-          width: 1200,
-          slidesToShow: 3,
-        },
-        {
-          width: 1000,
-          slidesToShow: 2,
-        },
-      ],
-      qtyOfSlidesPerSet: 4,
-    });
-    return (
-      <div
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginTop: 64,
-        }}
-      >
-        <Carousel qtyOfSlidesPerSet={displayNumber}>
-          {imageSet.map((value) => (
-            <Slide>{value}</Slide>
-          ))}
-        </Carousel>
-      </div>
-    );
+    const AllPhotos = () => {
+      const { displayNumber } = useResizeWindow({
+        breakpoints: [
+          {
+            width: 768,
+            slidesToShow: 1,
+          },
+          {
+            width: 1200,
+            slidesToShow: 3,
+          },
+          {
+            width: 1000,
+            slidesToShow: 2,
+          },
+        ],
+        qtyOfSlidesPerSet: 4,
+      });
+      return (
+        <div
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: 64,
+          }}
+        >
+          <Carousel qtyOfSlidesPerSet={displayNumber}>
+            {imageSet.map((value) => (
+              <Slide>{value}</Slide>
+            ))}
+          </Carousel>
+        </div>
+      );
+    };
+
+    return <AllPhotos />;
   })
   .add("infinite loop", () => {
-    const { displayNumber } = useResizeWindow({
-      breakpoints: [
-        {
-          width: 768,
-          slidesToShow: 1,
-        },
-        {
-          width: 1200,
-          slidesToShow: 2,
-        },
-      ],
-      infiniteLoop: true,
-      qtyOfSlidesPerSet: 3,
-      numberOfCards: imageSet.length,
-      dotIndex: 0,
-    });
-    return (
-      <div
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginTop: 64,
-        }}
-      >
-        <Carousel infiniteLoop qtyOfSlidesPerSet={displayNumber}>
-          {imageSet.map((value) => (
-            <Slide>{value}</Slide>
-          ))}
-        </Carousel>
-      </div>
-    );
+    const InfinitLoop = () => {
+      const { displayNumber } = useResizeWindow({
+        breakpoints: [
+          {
+            width: 768,
+            slidesToShow: 1,
+          },
+          {
+            width: 1200,
+            slidesToShow: 2,
+          },
+        ],
+        infiniteLoop: true,
+        qtyOfSlidesPerSet: 3,
+        numberOfCards: imageSet.length,
+        dotIndex: 0,
+      });
+      return (
+        <div
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: 64,
+          }}
+        >
+          <Carousel infiniteLoop qtyOfSlidesPerSet={displayNumber}>
+            {imageSet.map((value) => (
+              <Slide>{value}</Slide>
+            ))}
+          </Carousel>
+        </div>
+      );
+    };
+
+    return <InfinitLoop />;
   })
   .add("Custom carousel", () => (
     <div
