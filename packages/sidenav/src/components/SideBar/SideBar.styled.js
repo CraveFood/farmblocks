@@ -19,7 +19,6 @@ const fullScreenStyle = css`
 
   backdrop-filter: blur(8px);
   background: ${({ backgroundColor }) => backgroundColor};
-  background: ${({ backgroundColor }) => backgroundColor}CC;
 `;
 
 const overlayStyle = css`
