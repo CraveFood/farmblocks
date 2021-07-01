@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@3.2.0...@crave/farmblocks-sidenav@3.2.1) (2021-07-01)
+
+
+### Bug Fixes
+
+* **SideBar:** baackground color on fullscreen mode ([389c9e0](https://github.com/CraveFood/farmblocks/commit/389c9e0383dbef2d8875aafba7edab822826ee09))
+
+
+
+
+
 # [3.2.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@3.1.0...@crave/farmblocks-sidenav@3.2.0) (2021-06-09)
 
 
