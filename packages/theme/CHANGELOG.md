@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.11.0 (2021-07-07)
+
+
+### Features
+
+* **theme:** add font size x_small ([7f47549](https://github.com/CraveFood/farmblocks/commit/7f475499e3df2fdea986714bf3eec2907eff074b))
+
+
+
+
+
 ## [1.10.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.10.0...@crave/farmblocks-theme@1.10.1) (2020-10-21)
 
 
