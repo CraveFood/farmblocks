@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useScrollLock } from "@crave/farmblocks-modal";
-import { colors } from "@crave/farmblocks-theme";
+import { ScrollLock, colors } from "@crave/farmblocks-theme";
 
 import { FULLSCREEN, PUSH, OVERLAY } from "./constants/variants";
 import SideBar from "./components/SideBar";
@@ -9,11 +8,6 @@ import { ToggleButton, CloseButton } from "./components/NavButton";
 
 const SideNav = ({ render, onToggle, onClose, forwardRef, ...props }) => {
   const { highlightColor, variant, expanded, zIndex } = props;
-
-  useScrollLock({
-    condition: props.expanded && props.variant !== PUSH,
-    element: document.body,
-  });
 
   return (
     <>
@@ -43,6 +37,8 @@ const SideNav = ({ render, onToggle, onClose, forwardRef, ...props }) => {
         )}
         {render({ highlightColor, variant })}
       </SideBar>
+
+      {props.expanded && props.variant !== PUSH && <ScrollLock />}
     </>
   );
 };
