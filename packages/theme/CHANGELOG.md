@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.11.0...@crave/farmblocks-theme@1.12.0) (2021-07-23)
+
+
+### Features
+
+* **theme:** add ScrollLock component ([377169a](https://github.com/CraveFood/farmblocks/commit/377169a3bf8d654dc8faa4f11c154bfe9f258568))
+
+
+
+
+
 # 1.11.0 (2021-07-07)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.2.1...@crave/farmblocks-modal@4.2.2) (2021-07-23)
+
+
+### Bug Fixes
+
+* **modal:** use ScrollLock from theme package ([e70921d](https://github.com/CraveFood/farmblocks/commit/e70921d34924a4ae25476c5240240b67ca30f6da))
+* **useScrollLock:** reset element style whenever condition changes ([83eb6ba](https://github.com/CraveFood/farmblocks/commit/83eb6ba5f54abcc303045b4ebe36eb7648f06d69))
+
+
+
+
+
 ## [4.2.1](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.2.0...@crave/farmblocks-modal@4.2.1) (2021-07-07)
 
 **Note:** Version bump only for package @crave/farmblocks-modal

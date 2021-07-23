@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@3.2.2...@crave/farmblocks-sidenav@3.2.3) (2021-07-23)
+
+
+### Bug Fixes
+
+* **sidenav:** use ScrollLock from theme package ([9852b7f](https://github.com/CraveFood/farmblocks/commit/9852b7f19f493cd985b4e5d9d0ee67ba86244992))
+
+
+
+
+
 ## [3.2.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-sidenav@3.2.1...@crave/farmblocks-sidenav@3.2.2) (2021-07-07)
 
 **Note:** Version bump only for package @crave/farmblocks-sidenav
