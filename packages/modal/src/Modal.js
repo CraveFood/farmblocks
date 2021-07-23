@@ -5,6 +5,7 @@ import { useTransition } from "react-spring/web.cjs";
 import Button, { buttonVariants } from "@crave/farmblocks-button";
 import Text from "@crave/farmblocks-text";
 import { SmCross } from "@crave/farmblocks-icon";
+import { ScrollLock } from "@crave/farmblocks-theme";
 
 import {
   Wrapper,
@@ -15,7 +16,7 @@ import {
   Section,
   HeaderWrapper,
 } from "./Modal.styled";
-import { useESCKey, useScrollLock, useChangeCallback } from "./Modal.hooks";
+import { useESCKey, useChangeCallback } from "./Modal.hooks";
 
 const Modal = ({
   isOpen,
@@ -43,10 +44,7 @@ const Modal = ({
     element: parentNode,
     listener: onRequestClose,
   });
-  useScrollLock({
-    condition: isOpen,
-    element: parentNode,
-  });
+
   useChangeCallback({
     initialValue: Modal.defaultProps.isOpen,
     currentValue: isOpen,
@@ -73,63 +71,66 @@ const Modal = ({
   });
 
   return ReactDOM.createPortal(
-    fade(
-      (fadeStyle, item) =>
-        item && (
-          <Wrapper
-            className={className}
-            style={fadeStyle}
-            p={[1, 1, 5]}
-            pb={[2, 2, 5]}
-            justifyContent={verticalAlign}
-          >
-            <Overlay
-              data-testid="modal-overlay"
-              className="overlay"
-              onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
-            />
-            {slide(
-              (slideStyle, slideItem) =>
-                slideItem && (
-                  <CardWrapper style={slideStyle}>
-                    <ConstrainedCard
-                      floating
-                      className="card"
-                      p={0}
-                      {...cardProps}
-                    >
-                      {(header || showCloseButton) && (
-                        <Section className="header" header>
-                          <HeaderWrapper>{header}</HeaderWrapper>
-                          {showCloseButton && (
-                            <Button
-                              className="closeButton"
-                              icon={<SmCross size={20} />}
-                              small
-                              variant={buttonVariants.NEUTRAL}
-                              onClick={onRequestClose}
-                              data-testid="modal-close-icon"
-                              {...closeButtonProps}
-                            />
-                          )}
-                        </Section>
-                      )}
+    <>
+      {isOpen && <ScrollLock />}
+      {fade(
+        (fadeStyle, item) =>
+          item && (
+            <Wrapper
+              className={className}
+              style={fadeStyle}
+              p={[1, 1, 5]}
+              pb={[2, 2, 5]}
+              justifyContent={verticalAlign}
+            >
+              <Overlay
+                data-testid="modal-overlay"
+                className="overlay"
+                onClick={shouldCloseOnOverlayClick ? onRequestClose : undefined}
+              />
+              {slide(
+                (slideStyle, slideItem) =>
+                  slideItem && (
+                    <CardWrapper style={slideStyle}>
+                      <ConstrainedCard
+                        floating
+                        className="card"
+                        p={0}
+                        {...cardProps}
+                      >
+                        {(header || showCloseButton) && (
+                          <Section className="header" header>
+                            <HeaderWrapper>{header}</HeaderWrapper>
+                            {showCloseButton && (
+                              <Button
+                                className="closeButton"
+                                icon={<SmCross size={20} />}
+                                small
+                                variant={buttonVariants.NEUTRAL}
+                                onClick={onRequestClose}
+                                data-testid="modal-close-icon"
+                                {...closeButtonProps}
+                              />
+                            )}
+                          </Section>
+                        )}
 
-                      <ContentWrapper className="content">
-                        {children}
-                      </ContentWrapper>
-                      {footer && (
-                        <Section className="footer" {...footerProps}>
-                          {footer}
-                        </Section>
-                      )}
-                    </ConstrainedCard>
-                  </CardWrapper>
-                ),
-            )}
-          </Wrapper>
-        ),
-    ),
+                        <ContentWrapper className="content">
+                          {children}
+                        </ContentWrapper>
+                        {footer && (
+                          <Section className="footer" {...footerProps}>
+                            {footer}
+                          </Section>
+                        )}
+                      </ConstrainedCard>
+                    </CardWrapper>
+                  ),
+              )}
+            </Wrapper>
+          ),
+      )}
+    </>,
     parentNode,
   );
 };

@@ -1,8 +1,6 @@
 /* eslint-disable no-param-reassign, consistent-return */
 
-import { useEffect, useRef, useState } from "react";
-
-import { getScrollWidth } from "./utils";
+import { useEffect, useRef } from "react";
 
 export const useESCKey = ({ condition, element, listener }) =>
   useEffect(() => {
@@ -17,28 +15,6 @@ export const useESCKey = ({ condition, element, listener }) =>
       };
     }
   }, [condition]);
-
-export const useScrollLock = ({ condition, element }) => {
-  const [originalStyle, setOriginalStyle] = useState(element.style.cssText);
-
-  useEffect(() => {
-    if (condition) {
-      setOriginalStyle(element.style.cssText);
-
-      element.style.cssText = `
-        ${element.style.cssText}
-        overflow: hidden;
-        padding-right: ${getScrollWidth()}px;
-      `;
-    } else {
-      element.style.cssText = originalStyle;
-    }
-
-    return () => {
-      element.style.cssText = originalStyle;
-    };
-  }, [condition]);
-};
 
 export const useChangeCallback = ({ currentValue, initialValue, onChange }) => {
   const lastValue = useRef(initialValue);

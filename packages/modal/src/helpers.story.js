@@ -7,7 +7,7 @@ import { action } from "@storybook/addon-actions";
 import Modal, { useModal, ModalManager } from ".";
 
 const TallComponent = styled.div`
-  height: 9000px;
+  height: 1500px;
   background: linear-gradient(to bottom, #3f5efb, #fc466b);
   color: white;
   display: flex;

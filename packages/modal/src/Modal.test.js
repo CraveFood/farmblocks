@@ -2,16 +2,8 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 
 import Modal from "./Modal";
-import { getScrollWidth } from "./utils";
-
-jest.mock("./utils");
 
 describe("Modal", () => {
-  afterEach(() => {
-    document.body.style.cssText = null;
-    getScrollWidth.mockReset();
-  });
-
   describe("render", () => {
     it("should render the content when isOpen", () => {
       const { rerender } = render(<Modal className="myModal" />);
@@ -119,46 +111,6 @@ describe("Modal", () => {
       unmount();
       fireEvent.keyDown(container, { key: "Escape" });
       expect(onRequestCloseSpy).not.toHaveBeenCalled();
-    });
-  });
-
-  describe("scroll lock", () => {
-    it("should lock scroll of underneath content by setting body overflow to hidden", () => {
-      expect(document.body.style.overflow).toEqual("");
-
-      render(<Modal className="myModal" isOpen />);
-      expect(document.body.style.overflow).toEqual("hidden");
-    });
-
-    it("should roll back original overflow on unmount", () => {
-      const originalOverflow = "original";
-      document.body.style.overflow = originalOverflow;
-
-      const { unmount } = render(<Modal className="myModal" isOpen />);
-      expect(document.body.style.overflow).not.toEqual(originalOverflow);
-
-      unmount();
-      expect(document.body.style.overflow).toEqual(originalOverflow);
-    });
-
-    it("should add a padding to offset the scrollbar size while it gets hidden", () => {
-      getScrollWidth.mockReturnValueOnce(50);
-      expect(document.body.style.paddingRight).toEqual("");
-
-      render(<Modal className="myModal" isOpen />);
-      expect(document.body.style.paddingRight).toEqual("50px");
-    });
-
-    it("should roll back original padding on unmount", () => {
-      const originalPadding = "500vw";
-      document.body.style.paddingRight = originalPadding;
-
-      const { unmount } = render(<Modal className="myModal" isOpen />);
-      expect(document.body.style.paddingRight).not.toEqual(originalPadding);
-
-      unmount();
-      expect(document.body.style.paddingRight).toEqual(originalPadding);
-      document.body.style.paddingRight = null;
     });
   });
 
