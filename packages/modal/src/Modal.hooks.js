@@ -2,8 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-import { getScrollWidth } from "./utils";
-
 export const useESCKey = ({ condition, element, listener }) =>
   useEffect(() => {
     if (condition) {
@@ -14,23 +12,6 @@ export const useESCKey = ({ condition, element, listener }) =>
       element.addEventListener("keydown", handleKeyDown);
       return () => {
         element.removeEventListener("keydown", handleKeyDown);
-      };
-    }
-  }, [condition]);
-
-export const useScrollLock = ({ condition, element }) =>
-  useEffect(() => {
-    if (condition) {
-      const originalStyle = element.style.cssText;
-
-      element.style.cssText = `
-        ${originalStyle}
-        overflow: hidden;
-        padding-right: ${getScrollWidth()}px;
-      `;
-
-      return () => {
-        element.style.cssText = originalStyle;
       };
     }
   }, [condition]);
