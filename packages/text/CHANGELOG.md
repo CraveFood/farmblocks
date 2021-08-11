@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.6.9...@crave/farmblocks-text@3.6.10) (2021-08-11)
+
+**Note:** Version bump only for package @crave/farmblocks-text
+
+
+
+
+
 ## [3.6.9](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-text@3.6.8...@crave/farmblocks-text@3.6.9) (2021-07-26)
 
 **Note:** Version bump only for package @crave/farmblocks-text

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.12.2...@crave/farmblocks-theme@1.12.3) (2021-08-11)
+
+
+### Bug Fixes
+
+* **theme:** adjust font size value of x_small from 14 to 12 ([03a0b7e](https://github.com/CraveFood/farmblocks/commit/03a0b7e879d9889f456636c79fca43fdc271c84a)), closes [#1056](https://github.com/CraveFood/farmblocks/issues/1056)
+
+
+
+
+
 ## [1.12.2](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-theme@1.12.1...@crave/farmblocks-theme@1.12.2) (2021-07-26)
 
 **Note:** Version bump only for package @crave/farmblocks-theme

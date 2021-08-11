@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.11](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.10...@crave/farmblocks-button@10.0.11) (2021-08-11)
+
+**Note:** Version bump only for package @crave/farmblocks-button
+
+
+
+
+
 ## [10.0.10](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-button@10.0.9...@crave/farmblocks-button@10.0.10) (2021-07-26)
 
 **Note:** Version bump only for package @crave/farmblocks-button

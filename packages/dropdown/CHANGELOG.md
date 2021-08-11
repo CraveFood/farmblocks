@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.3.6...@crave/farmblocks-dropdown@3.3.7) (2021-08-11)
+
+**Note:** Version bump only for package @crave/farmblocks-dropdown
+
+
+
+
+
 ## [3.3.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-dropdown@3.3.5...@crave/farmblocks-dropdown@3.3.6) (2021-07-26)
 
 **Note:** Version bump only for package @crave/farmblocks-dropdown
