@@ -36,6 +36,7 @@ const Modal = ({
   header,
   footer,
   footerProps,
+  ...props
 }) => {
   if (!parentNode) return null;
 
@@ -82,6 +83,7 @@ const Modal = ({
               p={[1, 1, 5]}
               pb={[2, 2, 5]}
               justifyContent={verticalAlign}
+              {...props}
             >
               <Overlay
                 data-testid="modal-overlay"
