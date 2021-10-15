@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.6](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.2.5...@crave/farmblocks-modal@4.2.6) (2021-10-15)
+
+
+### Bug Fixes
+
+* **modal:** pass remaining props to the modal wrapper ([aee7591](https://github.com/CraveFood/farmblocks/commit/aee759138342c70b4ad20adf1db1d710f2e6ed86))
+
+
+
+
+
 ## [4.2.5](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-modal@4.2.4...@crave/farmblocks-modal@4.2.5) (2021-08-11)
 
 **Note:** Version bump only for package @crave/farmblocks-modal
