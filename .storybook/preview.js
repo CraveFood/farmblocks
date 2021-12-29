@@ -1,15 +1,6 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import {
-  configure,
-  addDecorator,
-  getStorybook,
-  setAddon,
-} from "@storybook/react";
-import createPercyAddon from "@percy-io/percy-storybook";
-
-const { percyAddon, serializeStories } = createPercyAddon();
-setAddon(percyAddon);
+import { configure, addDecorator } from "@storybook/react";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -59,5 +50,3 @@ function withGlobalStyle(storyFn) {
 }
 
 addDecorator(withGlobalStyle);
-
-serializeStories(getStorybook);
