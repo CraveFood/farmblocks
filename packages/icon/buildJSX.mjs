@@ -1,18 +1,19 @@
 /* eslint-disable no-console, import/no-extraneous-dependencies */
-const fs = require("fs");
-const path = require("path");
-const { promisify } = require("util");
-const exec = promisify(require("child_process").exec);
-const junk = require("junk");
-const svgr = require("@svgr/core").default;
-const ora = require("ora");
+import { isNotJunk } from "junk";
+import fs from "fs";
+import path from "path";
+import { promisify } from "util";
+import { transform } from "@svgr/core";
+import ora from "ora";
+import childProcess from "child_process";
+import { originalSizes, croppedSizes } from "./sizes.mjs";
+
+const exec = promisify(childProcess.exec);
 
 const jsxStatus = ora("Loading SVG files").start();
 
 const svgSourcePath = "./src/svg";
 const jsxSourcePath = "./src/jsx";
-
-const { originalSizes, croppedSizes } = require("./sizes");
 
 if (!fs.existsSync(jsxSourcePath)) {
   fs.mkdirSync(jsxSourcePath);
@@ -23,7 +24,7 @@ const isSvg = (file) => path.extname(file).toLowerCase() === ".svg";
 
 const groups = fs
   .readdirSync(svgSourcePath)
-  .filter(junk.not) // exclude system files/folders
+  .filter(isNotJunk) // exclude system files/folders
   .filter(isDir);
 
 async function lintFiles() {
@@ -37,37 +38,33 @@ async function lintFiles() {
   }
 }
 
-const jsxTemplate = (
-  { template },
-  { state: { componentName, group } },
-  { imports, jsx },
-) => template.ast`
-  ${imports}
-  import PropTypes from 'prop-types';
+const jsxTemplate = (variables, { tpl, options }) => tpl`
+    ${variables.imports}
+    import PropTypes from 'prop-types';
 
-  import {withWrapper} from '../Icon';
-  
-  const Vector = React.forwardRef(({size, color, ...props}, ref) => (
-    ${jsx}
-  ));
+    import {withWrapper} from '../Icon';
 
-  Vector.propTypes = {
-    color: PropTypes.string,
-    size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    'aria-label': PropTypes.string
-  };
+    const Vector = React.forwardRef(({size, color, ...props}, ref) => (
+      ${variables.jsx}
+    ));
 
-  Vector.defaultProps = {
-    color: "currentColor",
-    size: "1em"
-  };
+    Vector.propTypes = {
+      color: PropTypes.string,
+      size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      'aria-label': PropTypes.string
+    };
 
-  const ${componentName} = withWrapper(Vector);
+    Vector.defaultProps = {
+      color: "currentColor",
+      size: "1em"
+    };
 
-  ${componentName}.groupName = "${group}";
+    const ${variables.componentName} = withWrapper(Vector);
 
-  export default ${componentName};
-`;
+    ${variables.componentName}.groupName = "${options.state.group}";
+
+    export default ${variables.componentName};
+  `;
 
 function convertFilesOfGroups(group, groupPath) {
   return async (groupFilesAccPromise, file) => {
@@ -86,7 +83,7 @@ function convertFilesOfGroups(group, groupPath) {
     const croppedSize = croppedSizes[iconSizeName];
     const margin = Math.floor((originalSize - croppedSize) / 2);
 
-    const jsxCode = await svgr(
+    const jsxCode = await transform(
       svgCode,
       {
         icon: true,
