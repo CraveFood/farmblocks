@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-import { useTransition } from "react-spring/web.cjs";
+import { useTransition } from "@react-spring/web";
 import Button, { buttonVariants } from "@crave/farmblocks-button";
 import Text from "@crave/farmblocks-text";
 import { SmCross } from "@crave/farmblocks-icon";

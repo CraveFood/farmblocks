@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { animated } from "react-spring/web.cjs";
+import { animated } from "@react-spring/web";
 import { space, flexbox } from "styled-system";
 import { colors } from "@crave/farmblocks-theme";
 import Card from "@crave/farmblocks-card";
