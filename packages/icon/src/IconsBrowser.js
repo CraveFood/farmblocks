@@ -6,7 +6,12 @@ import Text, { fontSizes } from "@crave/farmblocks-text";
 import Link, { linkTypes } from "@crave/farmblocks-link";
 
 import * as icons from "./jsx";
-import { croppedSizes } from "../sizes";
+
+const croppedSizes = {
+  Sm: 20,
+  Md: 32,
+  Lg: 88,
+};
 
 export const Pre = styled.pre`
   display: inline-block;

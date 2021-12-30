@@ -13,7 +13,7 @@ const Vector = React.forwardRef(({ size, color, ...props }, ref) => (
     {...props}
   >
     <path
-      d="M20 12a1 1 0 011 1v6h6a1 1 0 010 2h-6v6a1 1 0 01-2 0v-6h-6a1 1 0 010-2h6v-6a1 1 0 011-1z"
+      d="M20 12a1 1 0 0 1 1 1v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1-2 0v-6h-6a1 1 0 0 1 0-2h6v-6a1 1 0 0 1 1-1Z"
       fill={color}
       fillRule="nonzero"
     />
