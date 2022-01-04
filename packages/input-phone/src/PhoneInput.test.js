@@ -13,11 +13,20 @@ import PhoneInput from "./PhoneInput";
 
 jest.mock("detect-emoji-support", () => jest.fn().mockReturnValue(true));
 
-jest.mock("react-virtualized-auto-sizer", () => (props) =>
-  props.children({ width: 300, height: 340 }),
+jest.mock(
+  "react-virtualized-auto-sizer",
+  () => (props) => props.children({ width: 300, height: 340 }),
 );
 
 describe("PhoneInput", () => {
+  beforeAll(() => {
+    global.setImmediate = (cb) => cb();
+  });
+
+  afterAll(() => {
+    global.setImmediate = undefined;
+  });
+
   describe("country prefix", () => {
     test("should get the country from the RFC3966 value", () => {
       const { rerender } = render(<PhoneInput value="tel:+4407400123456" />);
@@ -94,7 +103,7 @@ describe("PhoneInput", () => {
     test("should search for country", async () => {
       expect(screen.queryByText("+260")).not.toBeInTheDocument();
       // ASCII search
-      userEvent.type(screen.getByTestId("country-search-input"), "aibmaz"); // for some reason after upgrading to @testing-library/user-event@13.5.0 the input order has been flipped
+      userEvent.type(screen.getByTestId("country-search-input"), "zambia");
       expect(screen.getByText("+260")).toBeInTheDocument();
 
       // Unicode search

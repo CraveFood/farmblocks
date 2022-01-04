@@ -17,7 +17,6 @@ describe("Carousel", () => {
   });
 
   afterEach(() => {
-    clearTimeout.mockClear();
     clearIntervalSpy.mockClear();
     setIntervalSpy.mockClear();
   });

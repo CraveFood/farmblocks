@@ -550,16 +550,6 @@ describe("SearchField", () => {
     });
   });
 
-  describe("preventBlur", () => {
-    let preventDefaultSpy;
-    beforeEach(() => {
-      preventDefaultSpy = jest.fn();
-    });
-    afterEach(() => {
-      preventDefaultSpy.mockReset();
-    });
-  });
-
   describe("onItemClick", () => {
     let currentTarget, event, scroller, onChangeSpy;
     beforeEach(() => {
