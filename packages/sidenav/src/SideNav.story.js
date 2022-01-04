@@ -330,7 +330,9 @@ const Lorem = () => (
   </div>
 );
 
-const LoremBlock = ({ variant }) => (
+const LoremBlock = (
+  { variant }, //eslint-disable-line
+) => (
   <div
     style={{
       margin: "0 24px",

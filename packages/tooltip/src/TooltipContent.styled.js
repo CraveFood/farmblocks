@@ -21,15 +21,17 @@ const centerAlignment = css`
   transform: translateX(-50%);
 `;
 
-const positionXStyle = (coordinate) => ({ positionX }) => {
-  if (positionX === CENTER) {
-    return centerAlignment;
-  }
+const positionXStyle =
+  (coordinate) =>
+  ({ positionX }) => {
+    if (positionX === CENTER) {
+      return centerAlignment;
+    }
 
-  return css`
-    ${positionX}: ${coordinate};
-  `;
-};
+    return css`
+      ${positionX}: ${coordinate};
+    `;
+  };
 
 const positionYStyle = ({ positionY, offset, triggerHeight }) => {
   if (positionY === TOP) {

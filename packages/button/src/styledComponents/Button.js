@@ -7,8 +7,10 @@ import buttonVariants from "../constants/buttonVariants";
 
 const buttonHeight = ({ small }) => (small ? 32 : 40);
 
-const calcPadding = (borderWidth) => ({ paddingX, paddingY }) =>
-  `${paddingY - borderWidth + 1}px ${paddingX - borderWidth + 1}px`;
+const calcPadding =
+  (borderWidth) =>
+  ({ paddingX, paddingY }) =>
+    `${paddingY - borderWidth + 1}px ${paddingX - borderWidth + 1}px`;
 
 function themeStyle(props) {
   const theme = { ...buttonThemes, ...props.theme };

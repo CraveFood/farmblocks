@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Label from ".";
 
 export default {
-  title: "Form|Label",
+  title: "Form/Label",
 };
 
 const Container = styled.div`

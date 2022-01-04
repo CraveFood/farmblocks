@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable storybook/story-exports */
 import React from "react";
 import { action } from "@storybook/addon-actions";
 
@@ -45,7 +46,7 @@ const FruitTable = () => {
 };
 
 export default {
-  title: "Layout|Table/hooks",
+  title: "Layout/Table/hooks",
   includeStories: [], // don't load this to storybook, we import it in the MDX file
 };
 

@@ -5,15 +5,13 @@ import { colors, fontSizes } from "@crave/farmblocks-theme";
 
 const outlineColor = transparentize(0.92, colors.INDIGO_MILK_CAP);
 
-const getColorByStatus = ({ fallbackColor }) => ({
-  focused,
-  active,
-  invalid,
-}) => {
-  if (focused || active) return colors.INDIGO_MILK_CAP;
-  if (invalid) return colors.STRAWBERRY;
-  return fallbackColor;
-};
+const getColorByStatus =
+  ({ fallbackColor }) =>
+  ({ focused, active, invalid }) => {
+    if (focused || active) return colors.INDIGO_MILK_CAP;
+    if (invalid) return colors.STRAWBERRY;
+    return fallbackColor;
+  };
 
 const customCursor = (props) => (props.disabled ? "default" : "pointer");
 

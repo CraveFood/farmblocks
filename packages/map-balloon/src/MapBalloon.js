@@ -115,10 +115,12 @@ const MapBalloon = ({
   );
 };
 
-export const requiredIfNoSingleImage = (propType) => (...args) => {
-  const [props] = args;
-  return props.singleImage ? propType(...args) : propType.isRequired(...args);
-};
+export const requiredIfNoSingleImage =
+  (propType) =>
+  (...args) => {
+    const [props] = args;
+    return props.singleImage ? propType(...args) : propType.isRequired(...args);
+  };
 
 MapBalloon.propTypes = {
   x: PropTypes.number,
