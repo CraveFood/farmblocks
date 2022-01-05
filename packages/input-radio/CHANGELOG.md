@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.8](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.6.7...@crave/farmblocks-input-radio@3.6.8) (2022-01-05)
+
+**Note:** Version bump only for package @crave/farmblocks-input-radio
+
+
+
+
+
 ## [3.6.7](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-input-radio@3.6.6...@crave/farmblocks-input-radio@3.6.7) (2021-08-11)
 
 **Note:** Version bump only for package @crave/farmblocks-input-radio
