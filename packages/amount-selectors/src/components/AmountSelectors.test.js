@@ -82,13 +82,14 @@ describe("Amount selectors", () => {
 
       const input = screen.getByRole("spinbutton");
 
-      userEvent.type(input, "{backspace}{backspace}abc99.8");
+      userEvent.type(input, "{selectall}{del}abc99.8");
       userEvent.click(
         screen.getByRole("button", {
           name: "Click me so input will loose focus",
         }),
       );
 
+      expect(onChange).toBeCalledWith(99.8);
       expect(onChange).toHaveBeenLastCalledWith(99.8);
       expect(input).toHaveValue(99.8);
     });
@@ -110,12 +111,12 @@ describe("Amount selectors", () => {
       const input = screen.getByRole("spinbutton");
       expect(input).toHaveValue(0);
 
-      userEvent.type(input, "{backspace}{backspace}999");
+      userEvent.type(input, "{selectall}{del}999");
       userEvent.click(button);
       expect(input).toHaveValue(max);
       expect(onChange).toBeCalledWith(max);
 
-      userEvent.type(input, "{backspace}{backspace}3");
+      userEvent.type(input, "{selectall}{del}3");
       userEvent.click(button);
       expect(input).toHaveValue(min);
       expect(onChange).toBeCalledWith(min);

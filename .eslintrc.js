@@ -7,6 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "prettier", // Turns off all rules that are unnecessary or might conflict with Prettier.
+    "plugin:storybook/recommended",
   ],
   plugins: [
     "react",
@@ -14,7 +15,8 @@ module.exports = {
     "prettier", // Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
   ],
   rules: {
-    "prettier/prettier": "error", // Prettier rules must throw errors
+    "prettier/prettier": "error",
+    // Prettier rules must throw errors
     "no-unused-expressions": "off",
     "babel/no-unused-expressions": "error",
     "react/jsx-filename-extension": "off",
@@ -28,10 +30,17 @@ module.exports = {
     "react/forbid-prop-types": "warn",
     "react/no-did-update-set-state": "warn",
     "react/jsx-props-no-spreading": "off",
-    "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
+    "consistent-return": [
+      "error",
+      {
+        treatUndefinedAsUnspecified: true,
+      },
+    ],
     "react/sort-comp": [
       "error",
-      { order: ["lifecycle", "everything-else", "render", "static-methods"] },
+      {
+        order: ["lifecycle", "everything-else", "render", "static-methods"],
+      },
     ],
   },
   overrides: [

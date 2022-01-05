@@ -1,6 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { Transition } from "react-spring/web.cjs";
+import { Transition } from "@react-spring/web";
 import { PrimaryButton, NeutralButton } from "@crave/farmblocks-button";
 import { colors } from "@crave/farmblocks-theme";
 import { TooltipContent, POSITIONS } from "@crave/farmblocks-tooltip";

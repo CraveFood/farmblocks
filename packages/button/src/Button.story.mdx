@@ -4,16 +4,16 @@ import styled, { ThemeProvider } from "styled-components";
 import { MdSettings, SmChevronDown, MdEdit } from "@crave/farmblocks-icon";
 
 import Button, {
-  buttonVariants, 
+  buttonVariants,
   PrimaryButton,
   SecondaryButton,
   NeutralButton,
   PositiveButton,
   NegativeButton,
-  GhostButton,} 
-from "./";
+  GhostButton,
+} from "./";
 
-<Meta title="Form|Button" />
+<Meta title="Form/Button" />
 
 # Farmblocks Button
 
@@ -34,7 +34,6 @@ const Form = () => (
 );
 ```
 
-
 ## Properties
 
 - **children** (_Node)_
@@ -49,13 +48,17 @@ const Form = () => (
 
 <Preview>
   <Story name="Default">
-    <Button onClick={action('onClick')}>Default button</Button>
+    <Button onClick={action("onClick")}>Default button</Button>
   </Story>
   <Story name="Small">
-    <Button onClick={action('onClick')} small>Small button</Button>
+    <Button onClick={action("onClick")} small>
+      Small button
+    </Button>
   </Story>
   <Story name="Active">
-    <Button onClick={action('onClick')} active>Active button</Button>
+    <Button onClick={action("onClick")} active>
+      Active button
+    </Button>
   </Story>
 </Preview>
 
@@ -64,7 +67,9 @@ const Form = () => (
 
 <Preview>
   <Story name="Disabled">
-    <Button onClick={action('onClick')} disabled>Disabled</Button>
+    <Button onClick={action("onClick")} disabled>
+      Disabled
+    </Button>
   </Story>
 </Preview>
 
@@ -79,20 +84,25 @@ const Form = () => (
 
 - **fluid** (_Boolean_)
   > Set width to 100% of it's parent
-  
+
 <Preview>
   <Story name="Fluid">
     <div style={{ width: 400, height: 150, background: "rgba(0, 0, 0, 0.32)" }}>
-    <Button variant={buttonVariants.PRIMARY} fluid text="Primary" />
-    <br />
-    <Button variant={buttonVariants.PRIMARY} fluid icon={<MdSettings size={22} />}>
-      Primary With Icon
-    </Button>
-  </div>
+      <Button variant={buttonVariants.PRIMARY} fluid text="Primary" />
+      <br />
+      <Button
+        variant={buttonVariants.PRIMARY}
+        fluid
+        icon={<MdSettings size={22} />}
+      >
+        Primary With Icon
+      </Button>
+    </div>
   </Story>
 </Preview>
 
 ## Using Icons
+
 - **icon** (_Node_)
   > farmblocks-icon node to be rendered on the left side, or as an icon only button
 - **rightIcon** (_Node_)
@@ -100,19 +110,29 @@ const Form = () => (
 
 <Preview>
   <Story name="With icon">
-    <Button onClick={action('onClick')} icon={<MdSettings size={22} />}>Left Icon</Button>
+    <Button onClick={action("onClick")} icon={<MdSettings size={22} />}>
+      Left Icon
+    </Button>
   </Story>
   <Story name="With right icon">
-    <Button onClick={action('onClick')} rightIcon={<SmChevronDown size={20} />}>Right Icon</Button>
+    <Button onClick={action("onClick")} rightIcon={<SmChevronDown size={20} />}>
+      Right Icon
+    </Button>
   </Story>
   <Story name="With both icons">
-    <Button onClick={action('onClick')} icon={<MdSettings size={22} />} rightIcon={<SmChevronDown size={20} />}>Both icons</Button>
+    <Button
+      onClick={action("onClick")}
+      icon={<MdSettings size={22} />}
+      rightIcon={<SmChevronDown size={20} />}
+    >
+      Both icons
+    </Button>
   </Story>
 </Preview>
 
-
 ## Default Variants
-These are the default variants that this component works with. 
+
+These are the default variants that this component works with.
 
 - **variant** (_One of buttonVariants_) = `buttonVariants.NEUTRAL`
   > set the variant style
@@ -122,6 +142,7 @@ These are the default variants that this component works with.
 </Preview>
 
 ## Named components
+
 For convenience, we also export these named components: `PrimaryButton`, `SecondaryButton`, `PositiveButton`, `NegativeButton`, `GhostButton` that will automatically set the variant style
 
 <Preview>
@@ -146,6 +167,7 @@ For convenience, we also export these named components: `PrimaryButton`, `Second
 </Preview>
 
 ## Custom Theme
+
 It's possible to customize the themes using styled-components `ThemeProvider`. Please refer to the `buttonThemes` file to see implementation details
 
 <Preview>
@@ -176,7 +198,7 @@ It's possible to customize the themes using styled-components `ThemeProvider`. P
       />
       <br />
       <Button
-        variant='myVariant'
+        variant="myVariant"
         onClick={action("buttonClicked")}
         text="🦄 My Beautiful Own Variant"
       />
@@ -202,6 +224,7 @@ Inline customizations are still possible:
 </Preview>
 
 ## Test Properties
+
 The following properties are used for testing purposes and should not be used on a production environment
 
 - **hovered** (_Boolean_)

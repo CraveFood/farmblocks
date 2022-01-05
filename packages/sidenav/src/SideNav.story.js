@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import Text from "@crave/farmblocks-text";
-import { Switch, Route, NavLink, withRouter } from "react-router-dom";
-import StoryRouter from "storybook-react-router";
 import { useMediaQuery } from "react-responsive";
 import {
   MdVendors,
@@ -242,107 +240,20 @@ export const SideNavFullScreen = () => {
   return <SideNavFullScreenComp />;
 };
 
-export const SideNavPushWithRouter = withRouter(({ location }) => {
-  const [expanded, { toggle, collapse }] = useToggle(false);
+export const NavWithJsMediaQuery = () => {
+  const [selected, setSelected] = useState(tabs[0]);
 
-  return (
-    <>
-      <SideNav
-        expanded={expanded}
-        onToggle={toggle}
-        onClose={collapse}
-        render={(props) => (
-          <>
-            <NavHeader />
-            <NavLinkItems tabs={tabs} location={location} {...props} />
-          </>
-        )}
-      />
-
-      <PageWrapper expanded={expanded}>
-        <NavRoutes tabs={tabs} />
-      </PageWrapper>
-    </>
-  );
-});
-SideNavPushWithRouter.story = {
-  decorators: [StoryRouter()],
-};
-
-export const SideNavOverlayWithRouter = withRouter(({ location }) => {
-  const [expanded, { toggle, collapse }] = useToggle(false);
-
-  const highlightColor = colors.AVOCADO;
-  const handleClick = expanded ? collapse : undefined;
-
-  return (
-    <>
-      <SideNav
-        expanded={expanded}
-        variant={OVERLAY}
-        onToggle={toggle}
-        onClose={collapse}
-        highlightColor={highlightColor}
-        render={(props) => (
-          <>
-            <NavHeader />
-            <NavLinkItems
-              tabs={tabs}
-              location={location}
-              onClick={collapse}
-              {...props}
-            />
-          </>
-        )}
-      />
-
-      <PageWrapper variant={OVERLAY} expanded={expanded} onClick={handleClick}>
-        <NavRoutes tabs={tabs} />
-      </PageWrapper>
-    </>
-  );
-});
-SideNavOverlayWithRouter.story = {
-  decorators: [StoryRouter()],
-};
-
-export const SideNavFullScreenWithRouter = withRouter(({ location }) => {
-  const [expanded, { toggle, collapse }] = useToggle(false);
-
-  return (
-    <>
-      <SideNav
-        expanded={expanded}
-        variant={FULLSCREEN}
-        onToggle={toggle}
-        onClose={collapse}
-        render={(props) => (
-          <NavLinkItems
-            tabs={tabs}
-            location={location}
-            onClick={collapse}
-            {...props}
-          />
-        )}
-      />
-
-      <PageWrapper variant={FULLSCREEN} expanded={expanded}>
-        <NavRoutes tabs={tabs} />
-      </PageWrapper>
-    </>
-  );
-});
-SideNavFullScreenWithRouter.story = {
-  decorators: [StoryRouter()],
-};
-
-export const NavWithJsMediaQuery = withRouter(({ location }) => {
   const [expanded, { toggle, collapse }] = useToggle(false);
   const isMobile = useMediaQuery({ maxWidth: 760 });
+  const handleClick = (tab) => {
+    if (expanded) {
+      collapse();
+    }
+    setSelected(tab);
+  };
 
   const variant = isMobile ? FULLSCREEN : PUSH;
   const sidebarColor = isMobile ? "white" : undefined;
-  const handleClick = isMobile ? collapse : undefined;
 
   return (
     <div>
@@ -355,81 +266,28 @@ export const NavWithJsMediaQuery = withRouter(({ location }) => {
         onClose={collapse}
         offsetTop="56px"
         render={(props) => (
-          <NavLinkItems
-            tabs={tabs}
-            location={location}
-            onClick={handleClick}
-            {...props}
-          />
+          <>
+            <NavHeader />
+            {tabs.map((tab) => (
+              <NavItem
+                key={tab}
+                icon={icons[tab]}
+                active={tab === selected}
+                onClick={() => handleClick(tab)}
+                {...props}
+              >
+                {tab}
+              </NavItem>
+            ))}
+          </>
         )}
       />
       <PageWrapper expanded={expanded} variant={variant} offsetTop="56px">
-        <NavRoutes tabs={tabs} />
+        <LoremBlock variant={variant} />
       </PageWrapper>
     </div>
   );
-});
-NavWithJsMediaQuery.story = {
-  decorators: [StoryRouter()],
 };
-
-/* eslint-disable */
-const NavLinkItems = ({ tabs, location, onClick, ...props }) => (
-  <>
-    {tabs.map((tab) => (
-      <NavLink to={`/${tab}`} key={tab} style={{ textDecoration: "none" }}>
-        <NavItem
-          active={location.pathname === `/${tab}`}
-          onClick={onClick}
-          icon={icons[tab]}
-          {...props}
-        >
-          {tab}
-        </NavItem>
-      </NavLink>
-    ))}
-
-    <NavLink to="/account" style={{ textDecoration: "none" }}>
-      <NavItem
-        image="https://picsum.photos/640/?image=889"
-        backgroundColor="white"
-        active={location.pathname === "/account"}
-        onClick={onClick}
-        {...props}
-      >
-        Account
-      </NavItem>
-    </NavLink>
-  </>
-);
-
-const NavRoutes = ({ tabs }) => (
-  <div
-    style={{
-      margin: "0 24px",
-      padding: "24px",
-      height: "100vh",
-      boxSizing: "border-box",
-    }}
-  >
-    <Switch>
-      {[...tabs, "account"].map((tab) => (
-        <Route path={`/${tab}`} key={tab}>
-          <Text upper fontWeight="title" size={32}>
-            {tab}
-          </Text>
-          <Lorem />
-        </Route>
-      ))}
-      <Route>
-        <Text upper fontWeight="title" size={32}>
-          select a route
-        </Text>
-        <Lorem />
-      </Route>
-    </Switch>
-  </div>
-);
 
 // story helper components
 
@@ -472,7 +330,9 @@ const Lorem = () => (
   </div>
 );
 
-const LoremBlock = ({ variant }) => (
+const LoremBlock = (
+  { variant }, //eslint-disable-line
+) => (
   <div
     style={{
       margin: "0 24px",

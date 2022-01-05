@@ -18,7 +18,7 @@ import IconsBrowser, { Pre } from "./IconsBrowser";
 import withAnimation from "./withAnimation";
 
 export default {
-  title: "Assets|Icons",
+  title: "Assets/Icons",
   component: IconWrapper,
   parameters: {
     componentSubtitle: "A list of SVG icons in JSX",

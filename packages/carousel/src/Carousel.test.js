@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { configure, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import Carousel from ".";
 
 describe("Carousel", () => {
@@ -17,7 +17,6 @@ describe("Carousel", () => {
   });
 
   afterEach(() => {
-    clearTimeout.mockClear();
     clearIntervalSpy.mockClear();
     setIntervalSpy.mockClear();
   });

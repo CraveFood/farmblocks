@@ -19,7 +19,7 @@ describe("formInput", () => {
     });
 
     const INITIAL_VALUE = "initial value";
-    const UPDATED_VALUE = "updated value";
+    const UPDATED_VALUE = "uv";
 
     it("should update input value after receiving new value through props", () => {
       const { rerender } = render(<EnhancedInput value={INITIAL_VALUE} />);

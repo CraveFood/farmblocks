@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import PhoneInput from ".";
 
 export default {
-  title: "Form|Phone Input",
+  title: "Form/Phone Input",
   component: PhoneInput,
   decorators: [(story) => <div style={{ height: 400 }}>{story()}</div>],
   parameters: {

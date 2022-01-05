@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rm -rf lib",
     "build": "yarn clean && babel --root-mode upward src -d lib --ignore 'src/**/*.test.js','src/**/*.story.js'",
-    "buildJSX": "rm -rf ./src/jsx && node ./buildJSX.js"
+    "buildJSX": "rm -rf ./src/jsx && node ./buildJSX.mjs"
   },
   "repository": {
     "type": "git",
@@ -30,16 +30,16 @@
     "react"
   ],
   "peerDependencies": {
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.0",
     "react": "^16.9.0",
-    "styled-components": "^5.2.2"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "@svgr/core": "^5.5.0",
-    "@svgr/plugin-jsx": "^5.5.0",
-    "@svgr/plugin-prettier": "^5.5.0",
-    "@svgr/plugin-svgo": "^5.5.0",
-    "junk": "^3.1.0",
-    "ora": "^5.4.0"
+    "@svgr/core": "^6.1.2",
+    "@svgr/plugin-jsx": "^6.1.2",
+    "@svgr/plugin-prettier": "^6.1.2",
+    "@svgr/plugin-svgo": "^6.1.2",
+    "junk": "^4.0.0",
+    "ora": "^6.0.1"
   }
 }

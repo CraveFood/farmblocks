@@ -1,5 +1,5 @@
 import React from "react";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import debounce from "lodash.debounce";
 import Enzyme, { mount } from "enzyme";
 import { render, fireEvent } from "@testing-library/react";
@@ -547,16 +547,6 @@ describe("SearchField", () => {
 
         expect(stateChange).toHaveProperty("inputValue", "");
       });
-    });
-  });
-
-  describe("preventBlur", () => {
-    let preventDefaultSpy;
-    beforeEach(() => {
-      preventDefaultSpy = jest.fn();
-    });
-    afterEach(() => {
-      preventDefaultSpy.mockReset();
     });
   });
 

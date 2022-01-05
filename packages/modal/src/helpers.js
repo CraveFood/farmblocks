@@ -12,10 +12,10 @@ export const useModal = ({ openAtMount = false } = {}) => {
 
     [setOpen],
   );
-  const props = useMemo(() => ({ isOpen, onRequestClose: actions.close }), [
-    isOpen,
-    actions,
-  ]);
+  const props = useMemo(
+    () => ({ isOpen, onRequestClose: actions.close }),
+    [isOpen, actions],
+  );
 
   return [props, actions];
 };

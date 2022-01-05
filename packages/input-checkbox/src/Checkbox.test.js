@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Adapter from "enzyme-adapter-react-16";
+import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import { mount, configure } from "enzyme";
 
 import { Checkbox, Switch } from ".";

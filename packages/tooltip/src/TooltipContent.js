@@ -20,19 +20,14 @@ const Tooltip = ({
 
   const tooltipRef = useRef(null);
 
-  const {
-    positionX,
-    positionY,
-    triggerHeight,
-    triggerWidth,
-    ready,
-  } = useAutoAlign({
-    originalPositionX,
-    originalPositionY,
-    tooltipRef,
-    isVisible: props.isVisible,
-    offset: props.offset,
-  });
+  const { positionX, positionY, triggerHeight, triggerWidth, ready } =
+    useAutoAlign({
+      originalPositionX,
+      originalPositionY,
+      tooltipRef,
+      isVisible: props.isVisible,
+      offset: props.offset,
+    });
 
   const overlayRef = useRef(null);
 
