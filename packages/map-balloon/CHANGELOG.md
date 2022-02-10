@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.16](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@4.0.15...@crave/farmblocks-map-balloon@4.0.16) (2022-02-10)
+
+**Note:** Version bump only for package @crave/farmblocks-map-balloon
+
+
+
+
+
 ## [4.0.15](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-map-balloon@4.0.14...@crave/farmblocks-map-balloon@4.0.15) (2022-01-05)
 
 **Note:** Version bump only for package @crave/farmblocks-map-balloon

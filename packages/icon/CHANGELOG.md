@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@1.2.3...@crave/farmblocks-icon@1.2.4) (2022-02-10)
+
+
+### Bug Fixes
+
+* **icon:** bump react peer dependency ([4a8f251](https://github.com/CraveFood/farmblocks/commit/4a8f25189f7108aae37bec1fadb4d863a6cf584b))
+
+
+
+
+
 ## [1.2.3](https://github.com/CraveFood/farmblocks/compare/@crave/farmblocks-icon@1.2.2...@crave/farmblocks-icon@1.2.3) (2022-01-05)
 
 **Note:** Version bump only for package @crave/farmblocks-icon
