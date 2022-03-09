@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { space, flexbox } from "styled-system";
-import { useMediaQuery } from "react-responsive";
 import Button from "@crave/farmblocks-button";
 
 export const Wrapper = styled.div`
@@ -22,8 +21,6 @@ const Buttons = ({ actions }) => {
     return null;
   }
 
-  const isMobile = useMediaQuery({ maxWidth: "40em" });
-
   return (
     <Wrapper
       className="buttons"
@@ -35,9 +32,8 @@ const Buttons = ({ actions }) => {
         <Button
           key={`empty-state-button-${buttonProps.text}`}
           data-testid={`empty-state-button-${buttonProps.text}`}
-          fluid={isMobile}
           {...buttonProps}
-          small={buttonProps.small || isMobile}
+          small={buttonProps.small}
         />
       ))}
     </Wrapper>
