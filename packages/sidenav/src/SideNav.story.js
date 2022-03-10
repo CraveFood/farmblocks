@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { colors } from "@crave/farmblocks-theme";
 import Text from "@crave/farmblocks-text";
-import { useMediaQuery } from "react-responsive";
 import {
   MdVendors,
   MdViewList,
@@ -238,55 +237,6 @@ export const SideNavFullScreen = () => {
   };
 
   return <SideNavFullScreenComp />;
-};
-
-export const NavWithJsMediaQuery = () => {
-  const [selected, setSelected] = useState(tabs[0]);
-
-  const [expanded, { toggle, collapse }] = useToggle(false);
-  const isMobile = useMediaQuery({ maxWidth: 760 });
-  const handleClick = (tab) => {
-    if (expanded) {
-      collapse();
-    }
-    setSelected(tab);
-  };
-
-  const variant = isMobile ? FULLSCREEN : PUSH;
-  const sidebarColor = isMobile ? "white" : undefined;
-
-  return (
-    <div>
-      <TopNav isPush={!isMobile} />
-      <SideNav
-        expanded={expanded}
-        onToggle={toggle}
-        variant={variant}
-        backgroundColor={sidebarColor}
-        onClose={collapse}
-        offsetTop="56px"
-        render={(props) => (
-          <>
-            <NavHeader />
-            {tabs.map((tab) => (
-              <NavItem
-                key={tab}
-                icon={icons[tab]}
-                active={tab === selected}
-                onClick={() => handleClick(tab)}
-                {...props}
-              >
-                {tab}
-              </NavItem>
-            ))}
-          </>
-        )}
-      />
-      <PageWrapper expanded={expanded} variant={variant} offsetTop="56px">
-        <LoremBlock variant={variant} />
-      </PageWrapper>
-    </div>
-  );
 };
 
 // story helper components
